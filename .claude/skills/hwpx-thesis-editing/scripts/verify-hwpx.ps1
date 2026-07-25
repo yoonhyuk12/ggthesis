@@ -3,11 +3,19 @@ param(
     [Parameter(Mandatory = $true)][string]$HwpxPath,
     [string]$PdfPath,                       # 지정하면 COM으로 PDF 변환까지 수행
     [int]$AppearTimeoutSec = 60,            # 프로세스가 뜨기를 기다리는 최대 시간
-    [int]$SettleSec = 8                     # 뜬 뒤 계속 살아있는지 확인하는 시간
+    [int]$SettleSec = 8,                    # 뜬 뒤 계속 살아있는지 확인하는 시간
+    [string]$HwpExe                          # 미지정이면 설치된 한글을 자동 탐지
 )
 
-$HwpExe = "C:\Program Files (x86)\Hnc\Office 2020\HOffice110\Bin\Hwp.exe"
-if (-not (Test-Path $HwpExe)) { throw "한글 실행파일 없음: $HwpExe" }
+if (-not $HwpExe) {
+    $HwpExe = Get-ChildItem -Path "C:\Program Files (x86)\Hnc", "C:\Program Files\Hnc" `
+        -Filter "Hwp.exe" -Recurse -ErrorAction SilentlyContinue |
+        Sort-Object FullName -Descending | Select-Object -First 1 -ExpandProperty FullName
+}
+if (-not $HwpExe -or -not (Test-Path $HwpExe)) {
+    throw "한글 실행파일을 찾지 못했습니다. -HwpExe 로 경로를 직접 지정하세요 (예: 'C:\Program Files (x86)\Hnc\Office 2020\HOffice110\Bin\Hwp.exe')"
+}
+Write-Output "한글: $HwpExe"
 if (-not (Test-Path $HwpxPath)) { throw "대상 hwpx 없음: $HwpxPath" }
 $HwpxPath = (Resolve-Path $HwpxPath).Path
 
