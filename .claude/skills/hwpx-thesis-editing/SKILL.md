@@ -29,7 +29,11 @@ description: Use when 논문 hwpx를 수정하거나 검증할 때 — MD 원고
 | 표 편집 | `set_table_cell_text`, `fill_by_path`, `merge_table_cells`, `format_table` |
 | 사본 분리 | `copy_document` |
 
+**경로는 저장소 상대경로로 넘긴다.** 서버가 저장소 루트로 샌드박스돼 있어 임시 폴더·스크래치패드 경로는 `path is outside sandbox root`로 거부된다.
+
 `package_get_xml`·`validate_structure` 등 package 계열은 `HWPX_MCP_ADVANCED=1`일 때만 활성화되며 **현재 설정에는 없다.** 내부 XML이 필요하면 아래 unzip 방법을 쓴다.
+
+**폴백.** MCP가 `open-safety verification: package validation failed`로 열기를 거부하면(과거 v2.18.1에서 전 파일 발생) Python `zipfile`로 `Contents/section0.xml`을 직접 치환한다. 이때 백업 생성·항목 순서·압축 방식을 유지하고, 표 셀 텍스트는 여러 문단/run으로 쪼개져 있을 수 있으니 전역 문자열 치환 전에 원문 XML 문맥을 확인한다.
 
 ## 검증 루프 (필수 — 이거 없이 "완료" 금지)
 
