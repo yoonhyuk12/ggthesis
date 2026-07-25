@@ -1,0 +1,3 @@
+[console_scripts]
+hwpx-mcp-legacy = hwpx_mcp_server.legacy_server:main
+hwpx-mcp-server = hwpx_mcp_server.server:main

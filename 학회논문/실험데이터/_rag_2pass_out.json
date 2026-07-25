@@ -1,0 +1,26 @@
+{
+  "search_model": "gemini-3.1-flash-lite",
+  "rag_enabled": true,
+  "k_max": 3,
+  "frame_found": true,
+  "warning_message": "중장비 접근 위험: 1명",
+  "selected": [
+    {
+      "id": "577c3ea8",
+      "why": "통제된작업",
+      "ct": "false_alarm"
+    },
+    {
+      "id": "f08c1afe",
+      "why": "신호수인정",
+      "ct": "false_alarm"
+    },
+    {
+      "id": "0626f424",
+      "why": "기타",
+      "ct": "false_alarm"
+    }
+  ],
+  "selected_count": 3,
+  "empty_camera_selected": 0
+}

@@ -1,0 +1,1205 @@
+# SPDX-License-Identifier: Apache-2.0
+"""MCP 서버가 제공하는 도구 정의."""
+
+from __future__ import annotations
+
+import os
+import logging
+
+from dataclasses import dataclass
+from typing import Any, Callable, Dict, List, Optional, Sequence, Literal
+
+import mcp.types as types
+from pydantic import BaseModel, Field, ConfigDict, model_validator
+
+from .core.plan import (
+    ApplyEditInput,
+    ContextOutput,
+    GetContextInput,
+    PlanEditInput,
+    PreviewEditInput,
+    SearchInput,
+    SearchOutput,
+    ServerResponse,
+)
+from .core.locator import (
+    DocumentLocator,
+    HandleLocator,
+    document_locator_schema,
+    normalize_locator_payload,
+    locator_path,
+)
+from .schema.builder import build_tool_schema
+from .hwpx_ops import HwpxOps
+
+
+LOGGER = logging.getLogger(__name__)
+ToolCategory = Literal["core", "tables", "styles", "pipeline", "debug"]
+_TOOL_CATEGORY_SET: set[str] = {"core", "tables", "styles", "pipeline", "debug"}
+
+
+class _BaseModel(BaseModel):
+    model_config = ConfigDict(populate_by_name=True, extra="forbid")
+
+
+def _hardening_enabled() -> bool:
+    value = os.getenv("HWPX_MCP_HARDENING", "0")
+    return value.strip().lower() in {"1", "true", "yes", "on"}
+
+
+class DocumentLocatorInput(_BaseModel):
+    document: DocumentLocator = Field(alias="document")
+
+    @model_validator(mode="before")
+    @classmethod
+    def _inflate_document(cls, data: object) -> object:
+        if isinstance(data, dict):
+            return normalize_locator_payload(dict(data), field_name="document")
+        return data
+
+    def to_hwpx_payload(self, *, require_path: bool = True) -> Dict[str, Any]:
+        payload = self.model_dump(exclude={"document"})
+        path = locator_path(self.document)
+        if path is not None:
+            payload["path"] = path
+            return payload
+
+        if isinstance(self.document, HandleLocator):
+            payload["handleId"] = self.document.handle_id
+            if require_path:
+                payload["path"] = None
+            return payload
+
+        if require_path:
+            raise ValueError("document locator must include a path, uri, or handleId")
+        return payload
+
+    @classmethod
+    def model_json_schema(cls, *args: Any, **kwargs: Any) -> Dict[str, Any]:
+        schema = super().model_json_schema(*args, **kwargs)
+        properties = schema.get("properties")
+        if isinstance(properties, dict) and "document" in properties:
+            properties["document"] = document_locator_schema()
+        return schema
+
+
+class OpenInfoOutput(_BaseModel):
+    meta: Dict[str, Any]
+    sectionCount: int
+    paragraphCount: int
+    headerCount: int
+
+
+class SectionsOutput(_BaseModel):
+    sections: List[Dict[str, Any]]
+
+
+class HeadersOutput(_BaseModel):
+    headers: List[Dict[str, Any]]
+
+
+class PackagePartOutput(_BaseModel):
+    parts: List[str]
+
+
+class PackageTextInput(DocumentLocatorInput):
+    part_name: str = Field(alias="partName")
+    encoding: Optional[str] = None
+
+
+class PackageTextOutput(_BaseModel):
+    text: str
+
+
+class ReadTextInput(DocumentLocatorInput):
+    offset: int = 0
+    limit: Optional[int] = None
+    with_highlights: bool = Field(False, alias="withHighlights")
+    with_footnotes: bool = Field(False, alias="withFootnotes")
+
+
+class ReadTextOutput(_BaseModel):
+    textChunk: str
+    nextOffset: Optional[int]
+
+
+class ReadParagraphsInput(DocumentLocatorInput):
+    paragraph_indexes: Sequence[int] = Field(alias="paragraphIndexes")
+    with_highlights: bool = Field(False, alias="withHighlights")
+    with_footnotes: bool = Field(False, alias="withFootnotes")
+
+
+class ParagraphText(_BaseModel):
+    paragraphIndex: int
+    text: str
+
+
+class ReadParagraphsOutput(_BaseModel):
+    paragraphs: List[ParagraphText]
+
+
+class TextExtractReportInput(DocumentLocatorInput):
+    mode: str = "plain"
+
+
+class TextExtractReportOutput(_BaseModel):
+    content: str
+
+
+class AnalyzeTemplateInput(DocumentLocatorInput):
+    placeholder_patterns: Optional[Sequence[str]] = Field(None, alias="placeholderPatterns")
+    lock_keywords: Optional[Sequence[str]] = Field(None, alias="lockKeywords")
+
+
+class TemplateRegion(_BaseModel):
+    name: str
+    startParagraph: int
+    endParagraph: int
+    editable: bool
+    reason: str
+
+
+class TemplatePlaceholder(_BaseModel):
+    token: str
+    paragraphIndex: int
+    zone: str
+    editable: bool
+    context: str
+
+
+class AnalyzeTemplateOutput(_BaseModel):
+    summary: Dict[str, Any]
+    regions: List[TemplateRegion]
+    placeholders: List[TemplatePlaceholder]
+
+
+class FindInput(DocumentLocatorInput):
+    query: str
+    is_regex: bool = Field(False, alias="isRegex")
+    max_results: int = Field(100, alias="maxResults")
+    context_radius: int = Field(80, alias="contextRadius")
+
+
+class MatchResult(_BaseModel):
+    paragraphIndex: int
+    start: int
+    end: int
+    context: str
+
+
+class FindOutput(_BaseModel):
+    matches: List[MatchResult]
+
+
+class StyleFilter(_BaseModel):
+    colorHex: Optional[str] = None
+    underline: Optional[bool] = None
+    charPrIDRef: Optional[str] = None
+
+
+class FindRunsInput(DocumentLocatorInput):
+    filters: Optional[StyleFilter] = None
+    max_results: int = Field(200, alias="maxResults")
+
+
+class RunInfo(_BaseModel):
+    text: str
+    paragraphIndex: int
+    charPrIDRef: Optional[str]
+    style: Dict[str, Any]
+
+
+class FindRunsOutput(_BaseModel):
+    runs: List[RunInfo]
+
+
+class ReplaceRunsInput(DocumentLocatorInput):
+    search: str
+    replacement: str
+    style_filter: Optional[StyleFilter] = Field(None, alias="styleFilter")
+    limit_per_run: Optional[int] = Field(None, alias="limitPerRun")
+    dry_run: bool = Field(False, alias="dryRun")
+
+
+class ReplaceRunsOutput(_BaseModel):
+    replacedCount: int
+
+
+class RunStyleModel(_BaseModel):
+    bold: Optional[bool] = False
+    italic: Optional[bool] = False
+    underline: Optional[bool] = False
+    colorHex: Optional[str] = None
+
+
+class AddParagraphInput(DocumentLocatorInput):
+    text: str = ""
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    run_style: Optional[RunStyleModel] = Field(None, alias="runStyle")
+
+
+class AddParagraphOutput(_BaseModel):
+    paragraphIndex: int
+
+
+class InsertParagraphsInput(DocumentLocatorInput):
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    paragraphs: Sequence[str]
+    run_style: Optional[RunStyleModel] = Field(None, alias="runStyle")
+    dry_run: bool = Field(False, alias="dryRun")
+
+
+class InsertParagraphsOutput(_BaseModel):
+    added: int
+
+
+class AddTableInput(DocumentLocatorInput):
+    rows: int
+    cols: int
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    border_style: Optional[Literal["solid", "none"]] = Field(None, alias="borderStyle")
+    border_color: Optional[str] = Field(None, alias="borderColor")
+    border_width: Optional[str | float | int] = Field(None, alias="borderWidth")
+    fill_color: Optional[str] = Field(None, alias="fillColor")
+    auto_fit: bool = Field(False, alias="autoFit")
+
+
+class AddTableOutput(_BaseModel):
+    tableIndex: int
+    cellCount: int
+
+
+class SetTableBorderFillInput(DocumentLocatorInput):
+    table_index: int = Field(alias="tableIndex")
+    border_style: Optional[Literal["solid", "none"]] = Field(None, alias="borderStyle")
+    border_color: Optional[str] = Field(None, alias="borderColor")
+    border_width: Optional[str | float | int] = Field(None, alias="borderWidth")
+    fill_color: Optional[str] = Field(None, alias="fillColor")
+
+
+class SetTableBorderFillOutput(_BaseModel):
+    borderFillIDRef: str
+    anchorCells: int
+
+
+class TableCellAnchor(_BaseModel):
+    row: int
+    column: int
+
+
+class TableCellPosition(_BaseModel):
+    row: int
+    column: int
+    anchor: TableCellAnchor
+    rowSpan: int
+    colSpan: int
+    text: Optional[str] = None
+
+
+class GetTableCellMapInput(DocumentLocatorInput):
+    table_index: int = Field(alias="tableIndex")
+
+
+class TableCellMapOutput(_BaseModel):
+    rowCount: int
+    columnCount: int
+    grid: List[List[TableCellPosition]]
+
+
+class SetTableCellInput(DocumentLocatorInput):
+    table_index: int = Field(alias="tableIndex")
+    row: int
+    col: int
+    text: str
+    logical: Optional[bool] = Field(None, alias="logical")
+    split_merged: Optional[bool] = Field(None, alias="splitMerged")
+    dry_run: bool = Field(False, alias="dryRun")
+    auto_fit: bool = Field(False, alias="autoFit")
+
+
+class SetTableCellOutput(_BaseModel):
+    ok: bool
+
+
+class ReplaceTableRegionInput(DocumentLocatorInput):
+    table_index: int = Field(alias="tableIndex")
+    start_row: int = Field(alias="startRow")
+    start_col: int = Field(alias="startCol")
+    values: Sequence[Sequence[str]]
+    logical: Optional[bool] = Field(None, alias="logical")
+    split_merged: Optional[bool] = Field(None, alias="splitMerged")
+    dry_run: bool = Field(False, alias="dryRun")
+    auto_fit: bool = Field(False, alias="autoFit")
+
+
+class ReplaceTableRegionOutput(_BaseModel):
+    updatedCells: int
+
+
+class SplitTableCellInput(DocumentLocatorInput):
+    table_index: int = Field(alias="tableIndex")
+    row: int
+    col: int
+
+
+class SplitTableCellOutput(_BaseModel):
+    startRow: int
+    startCol: int
+    rowSpan: int
+    colSpan: int
+
+
+class AddShapeInput(DocumentLocatorInput):
+    shape_type: str = Field("RECTANGLE", alias="shapeType")
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    dry_run: bool = Field(True, alias="dryRun")
+
+
+class ObjectIdOutput(_BaseModel):
+    objectId: Optional[str]
+
+
+class AddControlInput(DocumentLocatorInput):
+    control_type: str = Field("TEXTBOX", alias="controlType")
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    dry_run: bool = Field(True, alias="dryRun")
+
+
+class AddMemoInput(DocumentLocatorInput):
+    text: str
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    author: Optional[str] = None
+    timestamp: Optional[str] = None
+
+
+class AddMemoOutput(_BaseModel):
+    memoId: Optional[str]
+
+
+class AttachMemoFieldInput(DocumentLocatorInput):
+    paragraph_index: int = Field(alias="paragraphIndex")
+    memo_id: str = Field(alias="memoId")
+
+
+class AttachMemoFieldOutput(_BaseModel):
+    fieldId: str
+
+
+class AddMemoWithAnchorInput(DocumentLocatorInput):
+    text: str
+    section_index: Optional[int] = Field(None, alias="sectionIndex")
+    memo_shape_id_ref: Optional[str] = Field(None, alias="memoShapeIdRef")
+
+
+class AddMemoWithAnchorOutput(_BaseModel):
+    memoId: Optional[str]
+    paragraphIndex: int
+    fieldId: str
+
+
+class RemoveMemoInput(DocumentLocatorInput):
+    memo_id: str = Field(alias="memoId")
+    dry_run: bool = Field(True, alias="dryRun")
+
+
+class RemoveMemoOutput(_BaseModel):
+    removed: bool
+
+
+class EnsureRunStyleInput(DocumentLocatorInput):
+    bold: Optional[bool] = False
+    italic: Optional[bool] = False
+    underline: Optional[bool] = False
+    colorHex: Optional[str] = None
+
+
+class EnsureRunStyleOutput(_BaseModel):
+    charPrIDRef: Optional[str]
+
+
+class StylesAndBulletsOutput(_BaseModel):
+    styles: List[Dict[str, Any]]
+    bullets: List[Dict[str, Any]]
+
+
+class TextSpanModel(_BaseModel):
+    paragraph_index: int = Field(alias="paragraphIndex")
+    start: int
+    end: int
+
+
+class ApplyStyleToTextInput(DocumentLocatorInput):
+    spans: Sequence[TextSpanModel]
+    char_pr_id_ref: str = Field(alias="charPrIDRef")
+    dry_run: bool = Field(True, alias="dryRun")
+
+
+class ApplyStyleToTextOutput(_BaseModel):
+    styledSpans: int
+
+
+class ApplyStyleInput(DocumentLocatorInput):
+    paragraph_indexes: Sequence[int] = Field(alias="paragraphIndexes")
+    char_pr_id_ref: str = Field(alias="charPrIDRef")
+    dry_run: bool = Field(True, alias="dryRun")
+
+
+class ApplyStyleOutput(_BaseModel):
+    updated: int
+
+
+
+
+class OpenDocumentHandleOutput(_BaseModel):
+    handle: Dict[str, Any]
+
+
+class ListOpenDocumentsOutput(_BaseModel):
+    documents: List[Dict[str, Any]]
+    sessionPolicy: Dict[str, Any]
+
+
+class CloseDocumentHandleInput(_BaseModel):
+    handle_id: str = Field(alias="handleId")
+
+
+class CloseDocumentHandleOutput(_BaseModel):
+    closed: bool
+
+
+class CopyTableBetweenDocumentsInput(_BaseModel):
+    source_document: DocumentLocator = Field(alias="sourceDocument")
+    source_table_index: int = Field(alias="sourceTableIndex")
+    target_document: DocumentLocator = Field(alias="targetDocument")
+    target_section_index: Optional[int] = Field(None, alias="targetSectionIndex")
+    auto_fit: bool = Field(False, alias="autoFit")
+
+    @model_validator(mode="before")
+    @classmethod
+    def _inflate_documents(cls, data: object) -> object:
+        if not isinstance(data, dict):
+            return data
+
+        source_data = dict(data)
+        if "sourceDocument" not in source_data:
+            source_data = normalize_locator_payload(source_data, field_name="sourceDocument")
+
+        target_payload = source_data.get("targetDocument")
+        if target_payload is None:
+            target_payload = {}
+            for key in ("targetPath", "targetUri", "targetHandleId", "targetBackend"):
+                if key in source_data:
+                    target_payload[key] = source_data.pop(key)
+            if target_payload:
+                normalized_target: Dict[str, Any] = {}
+                if "targetPath" in target_payload:
+                    normalized_target["path"] = target_payload["targetPath"]
+                    normalized_target["type"] = "path"
+                if "targetUri" in target_payload:
+                    normalized_target["uri"] = target_payload["targetUri"]
+                    normalized_target["type"] = "uri"
+                if "targetHandleId" in target_payload:
+                    normalized_target["handleId"] = target_payload["targetHandleId"]
+                    normalized_target["type"] = "handle"
+                if "targetBackend" in target_payload:
+                    normalized_target["backend"] = target_payload["targetBackend"]
+                source_data["targetDocument"] = normalized_target
+        return source_data
+
+    @classmethod
+    def model_json_schema(cls, *args: Any, **kwargs: Any) -> Dict[str, Any]:
+        schema = super().model_json_schema(*args, **kwargs)
+        properties = schema.get("properties")
+        if isinstance(properties, dict):
+            if "sourceDocument" in properties:
+                properties["sourceDocument"] = document_locator_schema()
+            if "targetDocument" in properties:
+                properties["targetDocument"] = document_locator_schema()
+        return schema
+
+    def to_hwpx_payload(self, ops: HwpxOps) -> Dict[str, Any]:
+        source_locator = DocumentLocatorInput(document=self.source_document).to_hwpx_payload(require_path=False)
+        source_path = ops.resolve_document_path(
+            path=source_locator.get("path"),
+            handle_id=source_locator.get("handleId"),
+        )
+        target_locator = DocumentLocatorInput(document=self.target_document).to_hwpx_payload(require_path=False)
+        target_path = ops.resolve_document_path(
+            path=target_locator.get("path"),
+            handle_id=target_locator.get("handleId"),
+        )
+        return {
+            "source_path": source_path,
+            "source_table_index": self.source_table_index,
+            "target_path": target_path,
+            "target_section_index": self.target_section_index,
+            "auto_fit": self.auto_fit,
+        }
+
+
+class CopyTableBetweenDocumentsOutput(_BaseModel):
+    targetTableIndex: int
+    copiedCells: int
+    rowCount: int
+    columnCount: int
+
+class SaveOutput(_BaseModel):
+    ok: bool
+    verificationReport: Optional[Dict[str, Any]] = None
+
+
+class SaveAsInput(DocumentLocatorInput):
+    out: str
+
+
+class OutPathOutput(_BaseModel):
+    outPath: str
+    verificationReport: Optional[Dict[str, Any]] = None
+
+
+class ExportOutput(_BaseModel):
+    content: str
+    format: str
+
+
+class ConvertHwpToHwpxInput(_BaseModel):
+    source: str
+    output: Optional[str] = None
+
+
+class ConvertHwpToHwpxOutput(_BaseModel):
+    success: bool
+    outputPath: str
+    paragraphsConverted: int
+    tablesConverted: int
+    skippedElements: List[str]
+    warnings: List[str]
+
+
+class FillTemplateInput(_BaseModel):
+    source: str
+    output: str
+    replacements: Dict[str, str]
+    preserve_style: bool = Field(True, alias="preserveStyle")
+    split_newlines: bool = Field(True, alias="splitNewlines")
+
+
+class FillTemplateOutput(_BaseModel):
+    outPath: str
+    replacedCount: int
+
+
+class MakeBlankInput(_BaseModel):
+    out: str
+
+
+class MasterHistoryVersionOutput(_BaseModel):
+    masterPages: List[Any]
+    histories: List[Any]
+    versions: Optional[Dict[str, Any]]
+
+
+class ObjectFindByTagInput(DocumentLocatorInput):
+    tag_name: str = Field(alias="tagName")
+    max_results: int = Field(200, alias="maxResults")
+
+
+class ObjectFindByAttrInput(DocumentLocatorInput):
+    element_type: str = Field(alias="elementType")
+    attr: str
+    value: str
+    max_results: int = Field(200, alias="maxResults")
+
+
+class ObjectsOutput(_BaseModel):
+    objects: List[Dict[str, Any]]
+
+
+class ValidateStructureInput(DocumentLocatorInput):
+    level: str = "basic"
+
+
+class ValidateStructureOutput(_BaseModel):
+    ok: bool
+    issues: List[Dict[str, Any]]
+
+
+class LintRules(_BaseModel):
+    max_line_len: Optional[int] = Field(None, alias="maxLineLen")
+    forbid_patterns: Optional[Sequence[str]] = Field(None, alias="forbidPatterns")
+
+
+class LintInput(DocumentLocatorInput):
+    rules: LintRules = Field(default_factory=LintRules)
+
+
+class LintOutput(_BaseModel):
+    warnings: List[Dict[str, Any]]
+
+
+class PackageXmlInput(DocumentLocatorInput):
+    part_name: str = Field(alias="partName")
+
+
+class PackageXmlOutput(_BaseModel):
+    xmlString: str
+
+
+class GetToolGuideInput(_BaseModel):
+    workflow: Optional[str] = Field(
+        None,
+        description="Workflow name (read, edit, template, export, table, style). If omitted, returns the full guide.",
+    )
+
+
+class GetToolGuideOutput(_BaseModel):
+    guide: str
+
+
+_TOOL_GUIDE: Dict[str, str] = {
+    "read": (
+        "## 문서 읽기 워크플로\n"
+        "1. `open_info` — 문서 메타(문단 수, 표 수, 섹션) 파악\n"
+        "2. `read_text` — 페이지네이션된 텍스트 읽기\n"
+        "3. `read_paragraphs` — 특정 문단 인덱스로 상세 읽기\n"
+        "4. `text_extract_report` — 전체 텍스트 한번에 추출\n"
+        "5. `export_text` / `export_html` / `export_markdown` — 형식별 내보내기\n"
+    ),
+    "edit": (
+        "## 문서 편집 워크플로\n"
+        "1. `open_info`로 문서 구조 확인\n"
+        "2. `read_paragraphs`로 편집 대상 문단 확인\n"
+        "3. `find`로 편집할 텍스트 위치 검색\n"
+        "4. `replace_text` / `insert_paragraph` / `delete_paragraph` 등으로 편집\n"
+        "5. `save`로 저장 (atomic save — 임시파일→검증→이동 방식)\n"
+        "⚠️ 항상 편집 전 `read_paragraphs`로 현재 상태를 확인하세요.\n"
+    ),
+    "template": (
+        "## 템플릿 워크플로\n"
+        "1. `analyze_template_structure`로 템플릿 구조/플레이스홀더 분석\n"
+        "2. `fill_template`로 일괄 치환 (source → output 복사 후 치환)\n"
+        "3. 결과 파일을 `read_text`로 검증\n"
+    ),
+    "export": (
+        "## 내보내기 워크플로\n"
+        "- `export_text` — 순수 텍스트 (python-hwpx 2.4 네이티브)\n"
+        "- `export_html` — HTML 변환\n"
+        "- `export_markdown` — Markdown 변환\n"
+        "- `text_extract_report` — 구조화된 텍스트 추출\n"
+    ),
+    "table": (
+        "## 표 편집 워크플로\n"
+        "1. `get_table_cell_map`으로 셀 구조(grid) 파악\n"
+        "2. `read_table_cell`로 특정 셀 내용 읽기\n"
+        "3. `write_table_cell` / `insert_table_row` / `delete_table_row` 등 편집\n"
+        "4. `merge_table_cells` / `split_table_cell`로 병합/분할\n"
+        "5. `set_cell_border`로 테두리 스타일 설정\n"
+    ),
+    "style": (
+        "## 스타일 워크플로\n"
+        "1. `list_styles_and_bullets`로 현재 스타일 목록 확인\n"
+        "2. `apply_style_to_paragraphs`로 문단 스타일 적용\n"
+        "3. `apply_style_to_text_ranges`로 텍스트 범위 스타일 적용\n"
+    ),
+}
+
+
+def _get_tool_guide(ops: HwpxOps, data: GetToolGuideInput) -> Dict[str, Any]:
+    if data.workflow and data.workflow in _TOOL_GUIDE:
+        return {"guide": _TOOL_GUIDE[data.workflow]}
+    # Return full guide
+    full = "# HWPX MCP 도구 사용 가이드\n\n"
+    full += "\n".join(_TOOL_GUIDE.values())
+    return {"guide": full}
+
+
+@dataclass
+class ToolDefinition:
+    name: str
+    description: str
+    input_model: type[_BaseModel]
+    output_model: type[_BaseModel]
+    func: Callable[[HwpxOps, _BaseModel], Dict[str, Any]]
+    category: ToolCategory = "core"
+
+    def to_tool(self) -> types.Tool:
+        return types.Tool(
+            name=self.name,
+            description=self.description,
+            inputSchema=build_tool_schema(self.input_model),
+            outputSchema=build_tool_schema(self.output_model),
+        )
+
+    def call(self, ops: HwpxOps, arguments: Dict[str, Any]) -> Dict[str, Any]:
+        data = self.input_model.model_validate(arguments)
+        raw = self.func(ops, data)
+        return self.output_model.model_validate(raw).model_dump(
+            by_alias=True, exclude_none=True
+        )
+
+
+def _simple(
+    method_name: str,
+    *,
+    require_path: bool = True,
+) -> Callable[[HwpxOps, _BaseModel], Dict[str, Any]]:
+    def caller(ops: HwpxOps, data: _BaseModel) -> Dict[str, Any]:
+        method = getattr(ops, method_name)
+        to_payload = getattr(data, "to_hwpx_payload", None)
+        if callable(to_payload):
+            try:
+                payload = to_payload(require_path=require_path)
+            except TypeError:  # pragma: no cover - defensive guard
+                payload = to_payload()
+        else:
+            payload = data.model_dump()
+
+        if payload.get("path") is None and payload.get("handleId"):
+            payload["path"] = ops.resolve_document_path(handle_id=payload["handleId"])
+        payload.pop("handleId", None)
+        return method(**payload)
+
+    return caller
+
+
+
+
+def _copy_table_between_documents(ops: HwpxOps, data: CopyTableBetweenDocumentsInput) -> Dict[str, Any]:
+    payload = data.to_hwpx_payload(ops)
+    return ops.copy_table_between_documents(**payload)
+
+
+def _parse_toolset_env() -> set[str] | None:
+    raw = os.getenv("HWPX_MCP_TOOLSET")
+    if raw is None or not raw.strip():
+        return None
+
+    requested = {item.strip().lower() for item in raw.split(",") if item.strip()}
+    unknown = sorted(requested - _TOOL_CATEGORY_SET)
+    if unknown:
+        LOGGER.warning(
+            "Ignoring unknown tool categories from HWPX_MCP_TOOLSET: %s",
+            ", ".join(unknown),
+        )
+    return requested & _TOOL_CATEGORY_SET
+
+
+def build_tool_definitions() -> List[ToolDefinition]:
+    tools = [
+        ToolDefinition(
+            name="open_document_handle",
+            description="문서 로케이터를 등록하고 handleId를 반환합니다.",
+            input_model=DocumentLocatorInput,
+            output_model=OpenDocumentHandleOutput,
+            func=_simple("open_document_handle"),
+        ),
+        ToolDefinition(
+            name="list_open_documents",
+            description="현재 세션에 등록된 문서 handle 목록을 반환합니다.",
+            input_model=_BaseModel,
+            output_model=ListOpenDocumentsOutput,
+            func=_simple("list_open_documents", require_path=False),
+        ),
+        ToolDefinition(
+            name="get_tool_guide",
+            description="Return workflow guidance for HWPX MCP tools. Specify a workflow name (read/edit/template/export/table/style) or omit for the full guide.",
+            input_model=GetToolGuideInput,
+            output_model=GetToolGuideOutput,
+            func=_get_tool_guide,
+        ),
+        ToolDefinition(
+            name="close_document_handle",
+            description="지정한 handleId를 세션 레지스트리에서 제거합니다.",
+            input_model=CloseDocumentHandleInput,
+            output_model=CloseDocumentHandleOutput,
+            func=_simple("close_document_handle", require_path=False),
+        ),
+        ToolDefinition(
+            name="open_info",
+            description="Return metadata about an HWPX document.",
+            input_model=DocumentLocatorInput,
+            output_model=OpenInfoOutput,
+            func=_simple("open_info"),
+        ),
+        ToolDefinition(
+            name="list_sections",
+            description="List sections within a document.",
+            input_model=DocumentLocatorInput,
+            output_model=SectionsOutput,
+            func=_simple("list_sections"),
+        ),
+        ToolDefinition(
+            name="list_headers",
+            description="List header references used by the document.",
+            input_model=DocumentLocatorInput,
+            output_model=HeadersOutput,
+            func=_simple("list_headers"),
+        ),
+        ToolDefinition(
+            name="package_parts",
+            description="List OPC package part names.",
+            input_model=DocumentLocatorInput,
+            output_model=PackagePartOutput,
+            func=_simple("package_parts"),
+        ),
+        ToolDefinition(
+            name="package_get_text",
+            description="Read the raw text payload of an OPC part.",
+            input_model=PackageTextInput,
+            output_model=PackageTextOutput,
+            func=_simple("package_get_text"),
+        ),
+        ToolDefinition(
+            name="read_text",
+            description="Read document text using pagination.",
+            input_model=ReadTextInput,
+            output_model=ReadTextOutput,
+            func=_simple("read_text"),
+        ),
+        ToolDefinition(
+            name="read_paragraphs",
+            description="Read specific paragraphs by index.",
+            input_model=ReadParagraphsInput,
+            output_model=ReadParagraphsOutput,
+            func=_simple("get_paragraphs"),
+        ),
+        ToolDefinition(
+            name="text_extract_report",
+            description="Extract the full text of the document.",
+            input_model=TextExtractReportInput,
+            output_model=TextExtractReportOutput,
+            func=_simple("text_extract_report"),
+        ),
+        ToolDefinition(
+            name="analyze_template_structure",
+            description="Analyze template-like regions and placeholder candidates.",
+            input_model=AnalyzeTemplateInput,
+            output_model=AnalyzeTemplateOutput,
+            func=_simple("analyze_template_structure"),
+            category="pipeline",
+        ),
+        ToolDefinition(
+            name="find",
+            description="Search for text occurrences.",
+            input_model=FindInput,
+            output_model=FindOutput,
+            func=_simple("find"),
+        ),
+        ToolDefinition(
+            name="find_runs_by_style",
+            description="Find runs filtered by style attributes.",
+            input_model=FindRunsInput,
+            output_model=FindRunsOutput,
+            func=_simple("find_runs_by_style"),
+            category="styles",
+        ),
+        ToolDefinition(
+            name="replace_text_in_runs",
+            description="Replace text within runs matching a style filter.",
+            input_model=ReplaceRunsInput,
+            output_model=ReplaceRunsOutput,
+            func=_simple("replace_text_in_runs"),
+            category="styles",
+        ),
+        ToolDefinition(
+            name="add_paragraph",
+            description="Append a new paragraph to the document.",
+            input_model=AddParagraphInput,
+            output_model=AddParagraphOutput,
+            func=_simple("add_paragraph"),
+        ),
+        ToolDefinition(
+            name="insert_paragraphs_bulk",
+            description="Insert multiple paragraphs efficiently.",
+            input_model=InsertParagraphsInput,
+            output_model=InsertParagraphsOutput,
+            func=_simple("insert_paragraphs_bulk"),
+        ),
+        ToolDefinition(
+            name="add_table",
+            description="Add a table to the document.",
+            input_model=AddTableInput,
+            output_model=AddTableOutput,
+            func=_simple("add_table"),
+            category="tables",
+        ),
+        ToolDefinition(
+            name="set_table_border_fill",
+            description="Update a table's border fill and anchor cells.",
+            input_model=SetTableBorderFillInput,
+            output_model=SetTableBorderFillOutput,
+            func=_simple("set_table_border_fill"),
+            category="tables",
+        ),
+        ToolDefinition(
+            name="get_table_cell_map",
+            description="Return the logical grid coverage for a table, including merged spans.",
+            input_model=GetTableCellMapInput,
+            output_model=TableCellMapOutput,
+            func=_simple("get_table_cell_map"),
+            category="tables",
+        ),
+        ToolDefinition(
+            name="set_table_cell_text",
+            description="Update the text of a table cell.",
+            input_model=SetTableCellInput,
+            output_model=SetTableCellOutput,
+            func=_simple("set_table_cell_text"),
+            category="tables",
+        ),
+        ToolDefinition(
+            name="replace_table_region",
+            description="Replace a region of table cells.",
+            input_model=ReplaceTableRegionInput,
+            output_model=ReplaceTableRegionOutput,
+            func=_simple("replace_table_region"),
+            category="tables",
+        ),
+        ToolDefinition(
+            name="split_table_cell",
+            description="Split a merged table cell back into individual cells and report the original span.",
+            input_model=SplitTableCellInput,
+            output_model=SplitTableCellOutput,
+            func=_simple("split_table_cell"),
+            category="tables",
+        ),
+        ToolDefinition(
+            name="copy_table_between_documents",
+            description="원본 문서의 표를 대상 문서로 복사합니다.",
+            input_model=CopyTableBetweenDocumentsInput,
+            output_model=CopyTableBetweenDocumentsOutput,
+            func=_copy_table_between_documents,
+            category="tables",
+        ),
+        ToolDefinition(
+            name="add_shape",
+            description="Insert a basic shape object.",
+            input_model=AddShapeInput,
+            output_model=ObjectIdOutput,
+            func=_simple("add_shape"),
+        ),
+        ToolDefinition(
+            name="add_control",
+            description="Insert a control object.",
+            input_model=AddControlInput,
+            output_model=ObjectIdOutput,
+            func=_simple("add_control"),
+        ),
+        ToolDefinition(
+            name="add_memo",
+            description="Create a memo entry.",
+            input_model=AddMemoInput,
+            output_model=AddMemoOutput,
+            func=_simple("add_memo"),
+        ),
+        ToolDefinition(
+            name="attach_memo_field",
+            description="Attach a memo to a paragraph via field.",
+            input_model=AttachMemoFieldInput,
+            output_model=AttachMemoFieldOutput,
+            func=_simple("attach_memo_field"),
+        ),
+        ToolDefinition(
+            name="add_memo_with_anchor",
+            description="Create a memo and insert an anchor paragraph.",
+            input_model=AddMemoWithAnchorInput,
+            output_model=AddMemoWithAnchorOutput,
+            func=_simple("add_memo_with_anchor"),
+        ),
+        ToolDefinition(
+            name="remove_memo",
+            description="Remove a memo by identifier.",
+            input_model=RemoveMemoInput,
+            output_model=RemoveMemoOutput,
+            func=_simple("remove_memo"),
+        ),
+        ToolDefinition(
+            name="ensure_run_style",
+            description="Ensure a run style exists and return its identifier.",
+            input_model=EnsureRunStyleInput,
+            output_model=EnsureRunStyleOutput,
+            func=_simple("ensure_run_style"),
+            category="styles",
+        ),
+        ToolDefinition(
+            name="list_styles_and_bullets",
+            description="List style and bullet definitions.",
+            input_model=DocumentLocatorInput,
+            output_model=StylesAndBulletsOutput,
+            func=_simple("list_styles_and_bullets"),
+            category="styles",
+        ),
+        ToolDefinition(
+            name="apply_style_to_text_ranges",
+            description="Apply a charPr style to specific text spans.",
+            input_model=ApplyStyleToTextInput,
+            output_model=ApplyStyleToTextOutput,
+            func=_simple("apply_style_to_text_ranges"),
+            category="styles",
+        ),
+        ToolDefinition(
+            name="apply_style_to_paragraphs",
+            description="Apply a charPr style to paragraphs and runs.",
+            input_model=ApplyStyleInput,
+            output_model=ApplyStyleOutput,
+            func=_simple("apply_style_to_paragraphs"),
+            category="styles",
+        ),
+        ToolDefinition(
+            name="save",
+            description="Persist in-memory changes to disk.",
+            input_model=DocumentLocatorInput,
+            output_model=SaveOutput,
+            func=_simple("save"),
+        ),
+        ToolDefinition(
+            name="save_as",
+            description="Save the document to a new path.",
+            input_model=SaveAsInput,
+            output_model=OutPathOutput,
+            func=_simple("save_as"),
+        ),
+        ToolDefinition(
+            name="export_text",
+            description="Export document content as plain text.",
+            input_model=DocumentLocatorInput,
+            output_model=ExportOutput,
+            func=_simple("export_text"),
+        ),
+        ToolDefinition(
+            name="export_html",
+            description="Export document content as HTML.",
+            input_model=DocumentLocatorInput,
+            output_model=ExportOutput,
+            func=_simple("export_html"),
+        ),
+        ToolDefinition(
+            name="export_markdown",
+            description="Export document content as Markdown.",
+            input_model=DocumentLocatorInput,
+            output_model=ExportOutput,
+            func=_simple("export_markdown"),
+        ),
+        ToolDefinition(
+            name="fill_template",
+            description="Copy a template and apply multiple text replacements in one call.",
+            input_model=FillTemplateInput,
+            output_model=FillTemplateOutput,
+            func=_simple("fill_template", require_path=False),
+        ),
+        ToolDefinition(
+            name="make_blank",
+            description="Create a new blank HWPX file.",
+            input_model=MakeBlankInput,
+            output_model=OutPathOutput,
+            func=_simple("make_blank"),
+        ),
+        ToolDefinition(
+            name="convert_hwp_to_hwpx",
+            description="Convert a .hwp binary document into .hwpx.",
+            input_model=ConvertHwpToHwpxInput,
+            output_model=ConvertHwpToHwpxOutput,
+            func=_simple("convert_hwp_to_hwpx", require_path=False),
+        ),
+        ToolDefinition(
+            name="list_master_pages_histories_versions",
+            description="List master pages, histories and version info.",
+            input_model=DocumentLocatorInput,
+            output_model=MasterHistoryVersionOutput,
+            func=_simple("list_master_pages_histories_versions"),
+            category="debug",
+        ),
+        ToolDefinition(
+            name="object_find_by_tag",
+            description="Find objects by tag name.",
+            input_model=ObjectFindByTagInput,
+            output_model=ObjectsOutput,
+            func=_simple("object_find_by_tag"),
+            category="debug",
+        ),
+        ToolDefinition(
+            name="object_find_by_attr",
+            description="Find objects by attribute value.",
+            input_model=ObjectFindByAttrInput,
+            output_model=ObjectsOutput,
+            func=_simple("object_find_by_attr"),
+            category="debug",
+        ),
+        ToolDefinition(
+            name="validate_structure",
+            description="Validate document structure using schema checks.",
+            input_model=ValidateStructureInput,
+            output_model=ValidateStructureOutput,
+            func=_simple("validate_structure"),
+            category="debug",
+        ),
+        ToolDefinition(
+            name="lint_text_conventions",
+            description="Run lightweight lint checks against paragraphs.",
+            input_model=LintInput,
+            output_model=LintOutput,
+            func=lambda ops, data: ops.lint_text_conventions(
+                data.to_hwpx_payload()["path"],
+                **(data.rules.model_dump()),
+            ),
+            category="debug",
+        ),
+        ToolDefinition(
+            name="package_get_xml",
+            description="Read an OPC part as XML string.",
+            input_model=PackageXmlInput,
+            output_model=PackageXmlOutput,
+            func=_simple("package_get_xml"),
+            category="debug",
+        ),
+    ]
+    if _hardening_enabled():
+        tools.extend([
+            ToolDefinition(
+                name="hwpx.plan_edit",
+                description="Plan hardened edits for preview/apply.",
+                input_model=PlanEditInput,
+                output_model=ServerResponse,
+                func=_simple("plan_edit", require_path=False),
+                category="pipeline",
+            ),
+            ToolDefinition(
+                name="hwpx.preview_edit",
+                description="Preview a hardened edit plan.",
+                input_model=PreviewEditInput,
+                output_model=ServerResponse,
+                func=_simple("preview_edit"),
+                category="pipeline",
+            ),
+            ToolDefinition(
+                name="hwpx.apply_edit",
+                description="Apply a hardened edit plan (preview required).",
+                input_model=ApplyEditInput,
+                output_model=ServerResponse,
+                func=_simple("apply_edit"),
+                category="pipeline",
+            ),
+            ToolDefinition(
+                name="hwpx.search",
+                description="Search document content using hardened handles.",
+                input_model=SearchInput,
+                output_model=SearchOutput,
+                func=_simple("search", require_path=False),
+                category="pipeline",
+            ),
+            ToolDefinition(
+                name="hwpx.get_context",
+                description="Return paragraph context around a hardened target.",
+                input_model=GetContextInput,
+                output_model=ContextOutput,
+                func=_simple("get_context", require_path=False),
+                category="pipeline",
+            ),
+        ])
+    keep_tools = {
+        'add_paragraph', 'add_table', 'get_table_cell_map', 'set_table_cell_text', 
+        'replace_table_region', 'merge_table_cells', 'split_table_cell', 'set_table_border_fill', 
+        'list_styles_and_bullets', 'ensure_run_style', 'apply_style_to_paragraphs', 
+        'apply_style_to_text_ranges'
+    }
+    return [tool for tool in tools if tool.name in keep_tools]

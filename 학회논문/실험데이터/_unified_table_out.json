@@ -1,0 +1,62 @@
+[
+  {
+    "cam": "백학지구",
+    "n": 31,
+    "zero_acc": 0.645,
+    "zero_fp": 6,
+    "f3_acc": 0.774,
+    "f3_fp": 0,
+    "rag_acc": 0.774,
+    "rag_fp": 0
+  },
+  {
+    "cam": "흥부지구",
+    "n": 101,
+    "zero_acc": 0.891,
+    "zero_fp": 7,
+    "f3_acc": 0.931,
+    "f3_fp": 3,
+    "rag_acc": 0.941,
+    "rag_fp": 2
+  },
+  {
+    "cam": "풍동지구",
+    "n": 15,
+    "zero_acc": 0.867,
+    "zero_fp": 1,
+    "f3_acc": 0.933,
+    "f3_fp": 0,
+    "rag_acc": 0.933,
+    "rag_fp": 0
+  },
+  {
+    "cam": "선곡지구",
+    "n": 16,
+    "zero_acc": 0.562,
+    "zero_fp": 3,
+    "f3_acc": 0.812,
+    "f3_fp": 0,
+    "rag_acc": 0.562,
+    "rag_fp": 3
+  },
+  {
+    "cam": "애룡저수지",
+    "n": 30,
+    "zero_acc": null,
+    "zero_fp": null,
+    "f3_acc": 0.8,
+    "f3_fp": 5,
+    "rag_acc": 0.967,
+    "rag_fp": 0
+  },
+  {
+    "cam": "상방지구",
+    "n": 9,
+    "zero_acc": 0.889,
+    "zero_fp": 0,
+    "f3_acc": 0.556,
+    "f3_fp": 3,
+    "rag_acc": 0.667,
+    "rag_fp": 2
+  }
+]

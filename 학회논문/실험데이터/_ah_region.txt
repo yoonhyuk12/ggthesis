@@ -1,0 +1,30 @@
+224|        valid_msgs = []
+247|                        valid_msgs.append((warn_key, msg))
+250|            if (telegram_ready or app_ready) and valid_msgs:
+251|                for warn_key, _ in valid_msgs:
+261|        if (telegram_ready or app_ready) and valid_msgs:
+262|            valid_msgs, sent_warn_keys, blocked_warn_keys, second_check_reasons = \
+263|                self._ai_second_check(camera_name, valid_msgs, img_array,
+268|        if valid_msgs and telegram_ready:
+270|                camera_name, ','.join(tg_ids), valid_msgs, second_check_reasons,
+277|        if valid_msgs and app_ready:
+279|                camera_name, app_ids, valid_msgs, second_check_reasons,
+285|        if valid_msgs and (telegram_ready or app_ready):
+288|                camera_name, valid_msgs, second_check_reasons,
+292|                for warn_key, _ in valid_msgs:
+323|    def _ai_second_check(self, camera_name, valid_msgs, img_array,
+345|                        wk.startswith('restricted_zone_') for wk, _ in valid_msgs
+366|            for warn_key, msg in valid_msgs:
+401|            valid_msgs = reviewed
+406|            for warn_key, msg in valid_msgs:
+414|        return valid_msgs, sent_warn_keys, blocked_warn_keys, second_check_reasons
+521|    def _send_telegram(self, camera_name, telegram_id, valid_msgs, second_check_reasons,
+537|        warning_msg = "\n".join(msg for _, msg in valid_msgs)
+544|        for warn_key, _ in valid_msgs:
+676|    def _record_combined_history(self, camera_name, valid_msgs, second_check_reasons,
+691|        warning_msg = "\n".join(msg for _, msg in valid_msgs)
+697|        for warn_key, _ in valid_msgs:
+751|        confirmed_keys = [wk for wk, _ in valid_msgs]
+814|    def _send_app_alert(self, camera_name, app_ids, valid_msgs, second_check_reasons,
+831|        warning_msg = "\n".join(msg for _, msg in valid_msgs)
+841|        for warn_key, _ in valid_msgs:

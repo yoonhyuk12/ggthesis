@@ -1,0 +1,2304 @@
+# SPDX-License-Identifier: Apache-2.0
+""":mod:`python-hwpx` 위에 구축한 고수준 연산 모음."""
+
+from __future__ import annotations
+
+import copy
+import dataclasses
+import hashlib
+import logging
+import math
+import re
+import re as _re
+from dataclasses import asdict
+from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Sequence, Tuple
+from uuid import uuid4
+from xml.etree import ElementTree as ET
+
+from .core.plan import (
+    ApplyData,
+    ApplyEditInput,
+    ContextOutput,
+    GetContextInput,
+    PipelineError,
+    PlanEditInput,
+    PlanManager,
+    PreviewEditInput,
+    ReplaceTextArgs,
+    SearchHitModel,
+    SearchInput,
+    SearchOutput,
+)
+from .hwp_support import HwpBinaryError, extract_hwp_text
+from .hwp_converter import HwpConversionError, convert_hwp_to_hwpx
+from .metadata import tools_meta
+from .core.locator import RegisteredHandle
+from .core.context import default_session_lifecycle_policy
+from .core.resources import (
+    DocumentMetadataResource,
+    DocumentParagraphsResource,
+    DocumentTablesResource,
+    ParagraphResourceEntry,
+    TableResourceEntry,
+)
+from .errors import build_error_payload
+from .storage import DocumentStorage, LocalDocumentStorage
+from .upstream import (
+    AnnotationOptions,
+    HH_NS,
+    HP_NS,
+    HwpxDocument,
+    HwpxOxmlMemo,
+    HwpxOxmlParagraph,
+    HwpxOxmlRun,
+    HwpxOxmlTable,
+    ValidationReport,
+    create_object_finder,
+    create_text_extractor,
+    default_cell_width,
+    ensure_char_style,
+    export_document,
+    new_document,
+    normalize_hex_color,
+    open_package,
+    validate_document_path,
+)
+
+logger = logging.getLogger(__name__)
+
+_CELL_TEXT_ILLEGAL = _re.compile(
+    r"[\x00-\x08\x09\x0b\x0c\x0d\x0e-\x1f\ufffe\uffff]"
+)
+
+
+def _sanitize_cell_text(value: str) -> str:
+    """Remove characters illegal inside HWPML <hp:t> nodes.
+
+    Tab (U+0009) is stripped - it must live in a separate cell column,
+    not be concatenated with the text. \r is stripped; \n is kept.
+    Logs a warning when anything is actually removed.
+    """
+    cleaned = _CELL_TEXT_ILLEGAL.sub("", value)
+    if cleaned != value:
+        logger.warning(
+            "cell text contained illegal characters and was sanitised",
+            extra={"original_len": len(value), "cleaned_len": len(cleaned)},
+        )
+    return cleaned
+
+_DEFAULT_CELL_WIDTH = default_cell_width()
+
+_AUTO_FIT_CHAR_UNIT = max(360, _DEFAULT_CELL_WIDTH // 10)
+_AUTO_FIT_PADDING_CHARS = 2
+_AUTO_FIT_MIN_COLUMN_WIDTH = max(_AUTO_FIT_CHAR_UNIT * (_AUTO_FIT_PADDING_CHARS + 1), _DEFAULT_CELL_WIDTH // 2)
+_AUTO_FIT_MAX_COLUMN_WIDTH = _DEFAULT_CELL_WIDTH * 12
+
+
+DEFAULT_PAGING_PARAGRAPH_LIMIT = 200
+
+
+class HwpxOperationError(RuntimeError):
+    """문서 단위 작업이 실패했을 때 사용하는 예외."""
+
+    def __init__(
+        self,
+        message: str,
+        *,
+        code: str = "OPERATION_FAILED",
+        details: Optional[Dict[str, Any]] = None,
+        hint: Optional[str] = None,
+    ) -> None:
+        super().__init__(message)
+        self.code = code
+        self.message = message
+        self.details = details
+        self.hint = hint
+
+    def to_payload(self) -> Dict[str, Any]:
+        return build_error_payload(
+            code=self.code,
+            message=self.message,
+            details=self.details,
+            hint=self.hint,
+        )
+
+
+class HwpxHandleNotFoundError(HwpxOperationError):
+    """등록되지 않은 핸들 조회 시 사용하는 예외."""
+
+
+class HwpxOps:
+    """MCP 도구에서 활용하는 안전한 고수준 헬퍼 모음."""
+
+    def __init__(
+        self,
+        *,
+        base_directory: Path | None = None,
+        paging_paragraph_limit: int = DEFAULT_PAGING_PARAGRAPH_LIMIT,
+        auto_backup: bool = False,
+        storage: DocumentStorage | None = None,
+    ) -> None:
+        if storage is not None and (base_directory is not None or auto_backup):
+            logger.debug(
+                "Ignoring base_directory/auto_backup parameters because explicit storage was provided",
+                extra={"base_directory": str(base_directory) if base_directory else None},
+            )
+
+        if storage is None:
+            storage = LocalDocumentStorage(
+                base_directory=base_directory,
+                auto_backup=auto_backup,
+                logger=logger,
+            )
+
+        self.storage = storage
+        self.base_directory = storage.base_directory
+        self.paging_limit = max(1, paging_paragraph_limit)
+        self._plan_manager = PlanManager()
+        self._registered_handles: Dict[str, RegisteredHandle] = {}
+
+    @property
+    def plan_manager(self) -> PlanManager:
+        return self._plan_manager
+
+    # ------------------------------------------------------------------
+    # Basic helpers
+    # ------------------------------------------------------------------
+    def _new_error(
+        self,
+        code: str,
+        message: str,
+        *,
+        details: Optional[Dict[str, Any]] = None,
+        hint: Optional[str] = None,
+    ) -> HwpxOperationError:
+        return HwpxOperationError(message, code=code, details=details, hint=hint)
+
+    def _resolve_path(self, path: str, *, must_exist: bool = True) -> Path:
+        try:
+            resolved = self.storage.resolve_path(path, must_exist=must_exist)
+        except FileNotFoundError as exc:
+            raise self._new_error(
+                "DOCUMENT_NOT_FOUND",
+                f"문서를 찾을 수 없습니다: {path}",
+                details={"path": path},
+            ) from exc
+        except PermissionError as exc:
+            raise self._new_error(
+                "PERMISSION_DENIED",
+                f"문서 접근 권한이 없습니다: {path}",
+                details={"path": path},
+            ) from exc
+        self._register_handle(path, resolved)
+        return resolved
+
+    def _make_handle_id(self, path: str, backend: Optional[str] = None) -> str:
+        seed = f"{backend or 'local'}::{path}"
+        digest = hashlib.sha256(seed.encode("utf-8")).hexdigest()[:16]
+        return f"h_{digest}"
+
+    def _register_handle(self, path: str, resolved: Path) -> RegisteredHandle:
+        relative = self._relative_path(resolved)
+        handle_id = self._make_handle_id(relative)
+        handle = RegisteredHandle(handleId=handle_id, path=relative)
+        self._registered_handles[handle_id] = handle
+        return handle
+
+    def list_registered_handles(self) -> List[RegisteredHandle]:
+        return sorted(self._registered_handles.values(), key=lambda item: item.handle_id)
+
+    def open_document_handle(self, path: str) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        handle = self._register_handle(path, resolved)
+        return {"handle": handle.model_dump(by_alias=True)}
+
+    def list_open_documents(self) -> Dict[str, Any]:
+        policy = default_session_lifecycle_policy()
+        return {
+            "documents": [
+                handle.model_dump(by_alias=True)
+                for handle in self.list_registered_handles()
+            ],
+            "sessionPolicy": policy.as_dict(),
+        }
+
+    def close_document_handle(self, handle_id: str) -> Dict[str, Any]:
+        removed = self._registered_handles.pop(handle_id, None)
+        return {"closed": removed is not None}
+
+    def get_registered_handle(self, handle_id: str) -> RegisteredHandle:
+        handle = self._registered_handles.get(handle_id)
+        if handle is None:
+            raise HwpxHandleNotFoundError(f"등록되지 않은 handleId입니다: {handle_id}")
+        return handle
+
+    def resolve_document_path(
+        self,
+        *,
+        path: Optional[str] = None,
+        handle_id: Optional[str] = None,
+    ) -> str:
+        if path:
+            return path
+        if handle_id:
+            return self.get_registered_handle(handle_id).path
+        raise self._new_error(
+            "DOCUMENT_LOCATOR_REQUIRED",
+            "path 또는 handleId 중 하나를 제공해야 합니다.",
+        )
+
+    def get_metadata_by_handle(self, handle_id: str) -> Dict[str, Any]:
+        handle = self.get_registered_handle(handle_id)
+        payload = self.open_info(handle.path)
+        model = DocumentMetadataResource(
+            handleId=handle.handle_id,
+            locator=handle.model_dump(by_alias=True),
+            meta=payload["meta"],
+            sectionCount=payload["sectionCount"],
+            paragraphCount=payload["paragraphCount"],
+            headerCount=payload["headerCount"],
+        )
+        return model.model_dump(by_alias=True)
+
+    def get_paragraphs_by_handle(self, handle_id: str) -> Dict[str, Any]:
+        handle = self.get_registered_handle(handle_id)
+        resolved = self._resolve_path(handle.path)
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, _ = self._read_only_hwp_paragraphs(handle.path)
+            serialized = [
+                ParagraphResourceEntry(paragraphIndex=index, text=text)
+                for index, text in enumerate(paragraphs)
+            ]
+            model = DocumentParagraphsResource(handleId=handle.handle_id, paragraphs=serialized)
+            return model.model_dump(by_alias=True)
+
+        serialized: List[ParagraphResourceEntry] = []
+        with create_text_extractor(resolved) as extractor:
+            for paragraph in extractor.iter_document_paragraphs():
+                serialized.append(
+                    ParagraphResourceEntry(
+                        paragraphIndex=paragraph.index,
+                        text=paragraph.text(preserve_breaks=True),
+                    )
+                )
+        model = DocumentParagraphsResource(handleId=handle.handle_id, paragraphs=serialized)
+        return model.model_dump(by_alias=True)
+
+    def get_tables_by_handle(self, handle_id: str) -> Dict[str, Any]:
+        handle = self.get_registered_handle(handle_id)
+        resolved = self._resolve_path(handle.path)
+        if resolved.suffix.lower() == ".hwp":
+            model = DocumentTablesResource(handleId=handle.handle_id, tables=[])
+            return model.model_dump(by_alias=True)
+
+        document, _ = self._open_document(handle.path)
+        tables = self._iter_tables(document)
+        serialized = [
+            TableResourceEntry(
+                tableIndex=index,
+                rowCount=len(table.rows),
+                columnCount=len(table.columns),
+            )
+            for index, table in enumerate(tables)
+        ]
+        model = DocumentTablesResource(handleId=handle.handle_id, tables=serialized)
+        return model.model_dump(by_alias=True)
+
+    def _resolve_output_path(self, path: str) -> Path:
+        return self.storage.resolve_output_path(path)
+
+    def _ensure_backup(self, path: Path) -> Optional[Path]:
+        return self.storage.ensure_backup(path)
+
+    def _relative_path(self, path: Path) -> str:
+        return self.storage.relative_path(path)
+
+    def _maybe_backup(self, path: Path) -> None:
+        self.storage.maybe_backup(path)
+
+    def _open_document(self, path: str) -> Tuple[HwpxDocument, Path]:
+        resolved = self._resolve_path(path)
+        if resolved.suffix.lower() == ".hwp":
+            raise self._new_error(
+                "READ_ONLY_HWP_DOCUMENT",
+                "HWP 파일은 편집이 불가합니다. 먼저 convert_hwp_to_hwpx 도구로 HWPX 변환 후 편집하세요.",
+            )
+        try:
+            document, resolved = self.storage.open_document(path)
+        except FileNotFoundError as exc:
+            raise self._new_error(
+                "DOCUMENT_NOT_FOUND",
+                f"문서를 찾을 수 없습니다: {path}",
+                details={"path": path},
+            ) from exc
+        except PermissionError as exc:
+            raise self._new_error(
+                "PERMISSION_DENIED",
+                f"문서 접근 권한이 없습니다: {path}",
+                details={"path": path},
+            ) from exc
+        except Exception as exc:  # pragma: no cover - delegated to backend
+            raise self._new_error(
+                "DOCUMENT_OPEN_FAILED",
+                f"failed to open '{path}': {exc}",
+                details={"path": path},
+            ) from exc
+        return document, resolved
+
+    def _read_only_hwp_paragraphs(self, path: str) -> Tuple[List[str], Path, str]:
+        resolved = self._resolve_path(path)
+        try:
+            snapshot = extract_hwp_text(resolved)
+        except HwpBinaryError as exc:
+            raise self._new_error("HWP_TEXT_EXTRACT_FAILED", f"HWP 텍스트 추출 실패: {exc}") from exc
+        return snapshot.paragraphs, resolved, snapshot.source
+
+    def _ensure_planner_document(self, doc_id: str, path: str) -> None:
+        resolved = self._resolve_path(path)
+        paragraphs: List[str] = []
+        with create_text_extractor(resolved) as extractor:
+            for paragraph in extractor.iter_document_paragraphs():
+                paragraphs.append(paragraph.text(preserve_breaks=True))
+        self._plan_manager.register_document(doc_id, "\n".join(paragraphs))
+
+    def _save_document(self, document: HwpxDocument, target: Path) -> Dict[str, Any]:
+        try:
+            return self.storage.save_document(document, target)
+        except PermissionError as exc:
+            raise self._new_error(
+                "PERMISSION_DENIED",
+                f"문서 저장 권한이 없습니다: {target}",
+                details={"path": str(target)},
+            ) from exc
+        except Exception as exc:  # pragma: no cover - delegated to backend
+            raise self._new_error(
+                "DOCUMENT_SAVE_FAILED",
+                f"failed to save '{target}': {exc}",
+                details={"path": str(target)},
+            ) from exc
+
+    def _iter_paragraphs(self, document: HwpxDocument) -> List[HwpxOxmlParagraph]:
+        return list(document.paragraphs)
+
+    def _iter_tables(self, document: HwpxDocument) -> List[HwpxOxmlTable]:
+        tables: List[HwpxOxmlTable] = []
+        for paragraph in document.paragraphs:
+            tables.extend(paragraph.tables)
+        return tables
+
+    def _auto_fit_table_columns(self, table: HwpxOxmlTable) -> List[int]:
+        column_count = table.column_count
+        if column_count <= 0:
+            return []
+
+        char_requirements: List[float] = [0.0] * column_count
+        for position in table.iter_grid():
+            if not position.is_anchor:
+                continue
+            text = position.cell.text or ""
+            lines = text.splitlines()
+            if not lines:
+                lines = [text]
+            longest = max(len(line) for line in lines)
+            span = max(1, position.col_span)
+            per_column = longest / span if span else float(longest)
+            for offset in range(span):
+                column_index = position.column + offset
+                if 0 <= column_index < column_count:
+                    char_requirements[column_index] = max(
+                        char_requirements[column_index],
+                        per_column,
+                    )
+
+        column_widths: List[int] = []
+        for requirement in char_requirements:
+            width = int(math.ceil((requirement + _AUTO_FIT_PADDING_CHARS) * _AUTO_FIT_CHAR_UNIT))
+            width = max(width, _AUTO_FIT_MIN_COLUMN_WIDTH)
+            width = min(width, _AUTO_FIT_MAX_COLUMN_WIDTH)
+            column_widths.append(width)
+
+        total_width = sum(column_widths)
+        if total_width <= 0:
+            column_widths = [max(_AUTO_FIT_MIN_COLUMN_WIDTH, _AUTO_FIT_CHAR_UNIT)] * column_count
+            total_width = sum(column_widths)
+
+        size_element = table.element.find(f"{HP_NS}sz")
+        if size_element is not None:
+            size_element.set("width", str(total_width))
+
+        for position in table.iter_grid():
+            if not position.is_anchor:
+                continue
+            span = max(1, position.col_span)
+            start = position.column
+            width_value = 0
+            for offset in range(span):
+                column_index = start + offset
+                if 0 <= column_index < column_count:
+                    width_value += column_widths[column_index]
+            if width_value <= 0:
+                continue
+            cell_size = position.cell.element.find(f"{HP_NS}cellSz")
+            if cell_size is not None:
+                cell_size.set("width", str(width_value))
+
+        table.mark_dirty()
+        return column_widths
+
+    def _normalize_color(self, color: str | None) -> Optional[str]:
+        return normalize_hex_color(color, field_name="colorHex")
+
+    def _ensure_char_style(
+        self,
+        document: HwpxDocument,
+        run_style: Optional[Dict[str, Any]],
+    ) -> Optional[str]:
+        if not run_style:
+            return None
+        bold = bool(run_style.get("bold", False))
+        italic = bool(run_style.get("italic", False))
+        underline = bool(run_style.get("underline", False))
+        color = self._normalize_color(run_style.get("colorHex"))
+        try:
+            return ensure_char_style(
+                document,
+                base_char_pr_id=None,
+                bold=bold,
+                italic=italic,
+                underline=underline,
+                color=color,
+            )
+        except (ValueError, RuntimeError) as exc:
+            message = str(exc)
+            if "document does not contain any headers" in message:
+                raise self._new_error("STYLE_HEADER_MISSING", message) from exc
+            if "char property does not expose an identifier" in message:
+                raise self._new_error("STYLE_CHAR_PROPERTY_ID_MISSING", message) from exc
+            raise
+
+    def _ensure_table_border_fill(
+        self,
+        document: HwpxDocument,
+        *,
+        border_style: Optional[str] = None,
+        border_color: Optional[str] = None,
+        border_width: Optional[str | float | int] = None,
+        fill_color: Optional[str] = None,
+    ) -> str:
+        normalized_style = (border_style or "").strip().lower() or None
+        if normalized_style not in {None, "solid", "none"}:
+            raise ValueError(f"Unsupported border style: {border_style}")
+
+        normalized_border_color = self._normalize_color(border_color)
+        normalized_fill_color = self._normalize_color(fill_color)
+
+        if normalized_style == "none" and not any(
+            [normalized_border_color, normalized_fill_color, border_width]
+        ):
+            return "0"
+
+        if (
+            normalized_style in {None, "solid"}
+            and normalized_border_color is None
+            and normalized_fill_color is None
+            and border_width is None
+        ):
+            return document.oxml.ensure_basic_border_fill()
+
+        if not document.headers:
+            raise self._new_error(
+                "STYLE_BORDER_FILL_HEADER_MISSING",
+                "document does not contain any headers to host border fills",
+            )
+
+        header = document.headers[0]
+
+        border_type = "NONE" if normalized_style == "none" else "SOLID"
+
+        def normalize_length(value: Optional[str | float | int], default: str) -> str:
+            if value is None:
+                return default
+            if isinstance(value, (int, float)):
+                return f"{value:g} mm"
+            text = str(value).strip()
+            if not text:
+                return default
+            match = re.fullmatch(r"([0-9]+(?:\\.[0-9]+)?)\\s*([A-Za-z]+)?", text)
+            if match:
+                number, unit = match.groups()
+                unit = (unit or "mm").lower()
+                return f"{number} {unit}"
+            return text
+
+        if border_type == "NONE":
+            width_default = "0 mm"
+            diag_default = "0 mm"
+        else:
+            width_default = "0.12 mm"
+            diag_default = "0.1 mm"
+
+        width_value = normalize_length(border_width, width_default)
+        if border_width is not None:
+            diagonal_width_value = normalize_length(border_width, width_default)
+        else:
+            diagonal_width_value = normalize_length(None, diag_default)
+
+        def normalize_length_token(value: Optional[str]) -> str:
+            if not value:
+                return ""
+            return re.sub(r"\s+", "", str(value)).lower()
+
+        width_token = normalize_length_token(width_value)
+        diagonal_width_token = normalize_length_token(diagonal_width_value)
+
+        if border_type == "SOLID":
+            edge_color = normalized_border_color or "#000000"
+            diagonal_color = edge_color
+        else:
+            edge_color = normalized_border_color
+            diagonal_color = normalized_border_color
+
+        ref_list = header.element.find(f"{HH_NS}refList")
+        if ref_list is None:
+            ref_list = ET.SubElement(header.element, f"{HH_NS}refList")
+            header.mark_dirty()
+
+        border_fills_element = ref_list.find(f"{HH_NS}borderFills")
+        if border_fills_element is None:
+            border_fills_element = ET.SubElement(
+                ref_list, f"{HH_NS}borderFills", {"itemCnt": "0"}
+            )
+            header.mark_dirty()
+
+        def matches(existing: ET.Element) -> bool:
+            if (existing.get("threeD") or "0") != "0":
+                return False
+            if (existing.get("shadow") or "0") != "0":
+                return False
+            if (existing.get("centerLine") or "NONE").upper() != "NONE":
+                return False
+            if (existing.get("breakCellSeparateLine") or "0") != "0":
+                return False
+
+            for slash_name in ("slash", "backSlash"):
+                slash = existing.find(f"{HH_NS}{slash_name}")
+                if slash is None:
+                    return False
+                if (slash.get("type") or "NONE").upper() != "NONE":
+                    return False
+                if slash.get("Crooked", "0") != "0":
+                    return False
+                if slash.get("isCounter", "0") != "0":
+                    return False
+
+            for child_name in ("leftBorder", "rightBorder", "topBorder", "bottomBorder"):
+                border_child = existing.find(f"{HH_NS}{child_name}")
+                if border_child is None:
+                    return False
+                if (border_child.get("type") or "").upper() != border_type:
+                    return False
+                if normalize_length_token(border_child.get("width")) != width_token:
+                    return False
+                if edge_color is not None:
+                    if (border_child.get("color") or "").upper() != edge_color:
+                        return False
+                else:
+                    if border_child.get("color") not in (None, ""):
+                        return False
+
+            diagonal_child = existing.find(f"{HH_NS}diagonal")
+            if diagonal_child is None:
+                return False
+            expected_diagonal_type = "SOLID" if border_type == "SOLID" else "NONE"
+            if (diagonal_child.get("type") or "").upper() != expected_diagonal_type:
+                return False
+            if normalize_length_token(diagonal_child.get("width")) != diagonal_width_token:
+                return False
+            if diagonal_color is not None:
+                if (diagonal_child.get("color") or "").upper() != diagonal_color:
+                    return False
+            else:
+                if diagonal_child.get("color") not in (None, ""):
+                    return False
+
+            fill_brush = existing.find(f"{HH_NS}fillBrush")
+            if normalized_fill_color is None:
+                if fill_brush is not None:
+                    return False
+            else:
+                if fill_brush is None:
+                    return False
+                solid_brush = fill_brush.find(f"{HH_NS}solidBrush")
+                if solid_brush is None:
+                    return False
+                if (solid_brush.get("type") or "SOLID").upper() != "SOLID":
+                    return False
+                if (solid_brush.get("color") or "").upper() != normalized_fill_color:
+                    return False
+
+            return True
+
+        for candidate in border_fills_element.findall(f"{HH_NS}borderFill"):
+            identifier = candidate.get("id")
+            if not identifier:
+                continue
+            if matches(candidate):
+                return identifier
+
+        # Upstream still does not expose a public border-fill creation API.
+        # Keep the private helper usage isolated here until python-hwpx offers one.
+        if not hasattr(header, "_allocate_border_fill_id"):
+            raise self._new_error("STYLE_ID_ALLOCATOR_MISSING", "header does not expose ID allocation helpers")
+
+        new_id = header._allocate_border_fill_id(border_fills_element)  # type: ignore[attr-defined]
+        border_fill_element = ET.SubElement(
+            border_fills_element,
+            f"{HH_NS}borderFill",
+            {
+                "id": new_id,
+                "threeD": "0",
+                "shadow": "0",
+                "centerLine": "NONE",
+                "breakCellSeparateLine": "0",
+            },
+        )
+
+        for slash_name in ("slash", "backSlash"):
+            ET.SubElement(
+                border_fill_element,
+                f"{HH_NS}{slash_name}",
+                {"type": "NONE", "Crooked": "0", "isCounter": "0"},
+            )
+
+        def append_border(name: str, *, width: str, color: Optional[str], kind: str) -> None:
+            attrs = {"type": kind}
+            if width:
+                attrs["width"] = width
+            if color is not None:
+                attrs["color"] = color
+            ET.SubElement(border_fill_element, f"{HH_NS}{name}", attrs)
+
+        for side in ("leftBorder", "rightBorder", "topBorder", "bottomBorder"):
+            append_border(side, width=width_value, color=edge_color, kind=border_type)
+
+        append_border(
+            "diagonal",
+            width=diagonal_width_value,
+            color=diagonal_color,
+            kind="SOLID" if border_type == "SOLID" else "NONE",
+        )
+
+        if normalized_fill_color is not None:
+            fill_brush = ET.SubElement(border_fill_element, f"{HH_NS}fillBrush")
+            ET.SubElement(
+                fill_brush,
+                f"{HH_NS}solidBrush",
+                {"type": "SOLID", "color": normalized_fill_color, "alpha": "255"},
+            )
+
+        if hasattr(header, "_update_border_fills_item_count"):
+            header._update_border_fills_item_count(border_fills_element)  # type: ignore[attr-defined]
+        else:
+            count = len(border_fills_element.findall(f"{HH_NS}borderFill"))
+            border_fills_element.set("itemCnt", str(count))
+        header.mark_dirty()
+        return new_id
+
+    # ------------------------------------------------------------------
+    # Document information
+    # ------------------------------------------------------------------
+    def open_info(self, path: str) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, source = self._read_only_hwp_paragraphs(path)
+            stat = resolved.stat()
+            meta = {
+                "path": self._relative_path(resolved),
+                "absolutePath": str(resolved),
+                "size": stat.st_size,
+                "modified": datetime.fromtimestamp(stat.st_mtime).isoformat(),
+                "format": "hwp",
+                "readOnly": True,
+                "extractionSource": source,
+            }
+            return {
+                "meta": meta,
+                "sectionCount": 0,
+                "paragraphCount": len(paragraphs),
+                "headerCount": 0,
+            }
+
+        document, resolved = self._open_document(path)
+        sections = document.sections
+        section_count = len(sections)
+        paragraph_count = sum(len(section.paragraphs) for section in sections)
+        header_count = len(document.headers)
+        stat = resolved.stat()
+        meta = {
+            "path": self._relative_path(resolved),
+            "absolutePath": str(resolved),
+            "size": stat.st_size,
+            "modified": datetime.fromtimestamp(stat.st_mtime).isoformat(),
+        }
+        return {
+            "meta": meta,
+            "sectionCount": section_count,
+            "paragraphCount": paragraph_count,
+            "headerCount": header_count,
+        }
+
+    def list_sections(self, path: str) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        sections: List[Dict[str, Any]] = []
+        for index, section in enumerate(document.sections):
+            sections.append(
+                {
+                    "index": index,
+                    "paragraphCount": len(section.paragraphs),
+                    "partName": getattr(section, "part_name", None),
+                }
+            )
+        return {"sections": sections}
+
+    def list_headers(self, path: str) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        headers: List[Dict[str, Any]] = []
+        has_master_page = bool(document.master_pages)
+        for index, header in enumerate(document.headers):
+            headers.append(
+                {
+                    "index": index,
+                    "styleCount": len(header.styles),
+                    "bulletCount": len(header.bullets),
+                    "hasMasterPage": has_master_page,
+                    "partName": getattr(header, "part_name", None),
+                }
+            )
+        return {"headers": headers}
+
+    def package_parts(self, path: str) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        package = open_package(resolved)
+        parts = sorted(package.part_names())
+        return {"parts": parts}
+
+    def package_get_text(self, path: str, part_name: str, encoding: str | None = None) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        package = open_package(resolved)
+        text = package.get_text(part_name, encoding=encoding or "utf-8")
+        return {"text": text}
+
+
+    # ------------------------------------------------------------------
+    # Text extraction
+    # ------------------------------------------------------------------
+    def read_text(
+        self,
+        path: str,
+        *,
+        offset: int = 0,
+        limit: Optional[int] = None,
+        with_highlights: bool = False,
+        with_footnotes: bool = False,
+    ) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, _ = self._read_only_hwp_paragraphs(path)
+            effective_limit = self.paging_limit if limit is None else max(1, limit)
+            start = max(0, offset)
+            chunk = paragraphs[start : start + effective_limit]
+            next_offset = None
+            if start + effective_limit < len(paragraphs):
+                next_offset = start + effective_limit
+            return {"textChunk": "\n".join(chunk), "nextOffset": next_offset}
+
+        if limit is None:
+            effective_limit = self.paging_limit
+        else:
+            effective_limit = max(1, limit)
+        annotations = None
+        if with_highlights or with_footnotes:
+            annotations = AnnotationOptions(
+                highlight="markers" if with_highlights else "ignore",
+                footnote="inline" if with_footnotes else "ignore",
+                endnote="inline" if with_footnotes else "ignore",
+            )
+        paragraphs: List[str] = []
+        next_offset: Optional[int] = None
+        start = max(0, offset)
+        with create_text_extractor(resolved) as extractor:
+            paragraph_iter = extractor.iter_document_paragraphs()
+            sentinel = object()
+
+            skip_exhausted = False
+            for _ in range(start):
+                if next(paragraph_iter, sentinel) is sentinel:
+                    skip_exhausted = True
+                    break
+
+            if not skip_exhausted:
+                while len(paragraphs) < effective_limit:
+                    paragraph = next(paragraph_iter, sentinel)
+                    if paragraph is sentinel:
+                        break
+                    paragraphs.append(
+                        paragraph.text(annotations=annotations, preserve_breaks=True)
+                    )
+
+                if len(paragraphs) == effective_limit:
+                    if next(paragraph_iter, sentinel) is not sentinel:
+                        next_offset = start + len(paragraphs)
+
+        return {"textChunk": "\n".join(paragraphs), "nextOffset": next_offset}
+
+    def get_paragraphs(
+        self,
+        path: str,
+        paragraph_indexes: Sequence[int],
+        *,
+        with_highlights: bool = False,
+        with_footnotes: bool = False,
+    ) -> Dict[str, Any]:
+        if not paragraph_indexes:
+            return {"paragraphs": []}
+        normalized_indexes: List[int] = []
+        unique_indexes: set[int] = set()
+        for index in paragraph_indexes:
+            if index < 0:
+                raise ValueError("paragraphIndexes must contain non-negative integers")
+            normalized_indexes.append(int(index))
+            unique_indexes.add(int(index))
+
+        resolved = self._resolve_path(path)
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, _ = self._read_only_hwp_paragraphs(path)
+            collected = {idx: paragraphs[idx] for idx in unique_indexes if idx < len(paragraphs)}
+            missing = [index for index in normalized_indexes if index not in collected]
+            if missing:
+                raise ValueError(
+                    "paragraphIndexes out of range: " + ", ".join(str(idx) for idx in sorted(set(missing)))
+                )
+            return {
+                "paragraphs": [
+                    {"paragraphIndex": index, "text": collected[index]}
+                    for index in normalized_indexes
+                ]
+            }
+
+        annotations = None
+        if with_highlights or with_footnotes:
+            annotations = AnnotationOptions(
+                highlight="markers" if with_highlights else "ignore",
+                footnote="inline" if with_footnotes else "ignore",
+                endnote="inline" if with_footnotes else "ignore",
+            )
+
+        collected: Dict[int, str] = {}
+        with create_text_extractor(resolved) as extractor:
+            for paragraph in extractor.iter_document_paragraphs():
+                para_index = paragraph.index
+                if para_index in unique_indexes and para_index not in collected:
+                    collected[para_index] = paragraph.text(
+                        annotations=annotations, preserve_breaks=True
+                    )
+                    if len(collected) == len(unique_indexes):
+                        break
+
+        missing = [index for index in normalized_indexes if index not in collected]
+        if missing:
+            raise ValueError(
+                "paragraphIndexes out of range: " + ", ".join(str(idx) for idx in sorted(set(missing)))
+            )
+
+        return {
+            "paragraphs": [
+                {"paragraphIndex": index, "text": collected[index]}
+                for index in normalized_indexes
+            ]
+        }
+
+    def text_extract_report(self, path: str, mode: str = "plain") -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, source = self._read_only_hwp_paragraphs(path)
+            return {
+                "content": "\n".join(paragraphs)
+                + f"\n\n[HWP read-only mode] extraction_source={source}; annotations/structure are unavailable."
+            }
+
+        annotations = None
+        if mode == "with_annotations":
+            annotations = AnnotationOptions(
+                highlight="markers",
+                footnote="inline",
+                endnote="inline",
+                control="placeholder",
+            )
+        with create_text_extractor(resolved) as extractor:
+            content = extractor.extract_text(
+                annotations=annotations,
+                include_nested=True,
+            )
+        return {"content": content}
+
+    def analyze_template_structure(
+        self,
+        path: str,
+        *,
+        placeholder_patterns: Optional[Sequence[str]] = None,
+        lock_keywords: Optional[Sequence[str]] = None,
+    ) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, source = self._read_only_hwp_paragraphs(path)
+        else:
+            paragraphs = []
+            with create_text_extractor(resolved) as extractor:
+                for paragraph in extractor.iter_document_paragraphs():
+                    paragraphs.append(paragraph.text(preserve_breaks=True))
+            source = "hwpx.text_extractor"
+
+        paragraph_count = len(paragraphs)
+        if paragraph_count == 0:
+            return {
+                "summary": {
+                    "isTemplate": False,
+                    "paragraphCount": 0,
+                    "placeholderCount": 0,
+                    "extractionSource": source,
+                },
+                "regions": [],
+                "placeholders": [],
+            }
+
+        top_band = max(1, min(3, max(1, paragraph_count // 10)))
+        bottom_band = max(1, min(3, max(1, paragraph_count // 10)))
+        if top_band + bottom_band > paragraph_count:
+            bottom_band = max(1, paragraph_count - top_band)
+
+        header_range = (0, max(0, top_band - 1))
+        body_range = (top_band, max(top_band, paragraph_count - bottom_band - 1))
+        footer_range = (max(0, paragraph_count - bottom_band), paragraph_count - 1)
+
+        default_placeholder_patterns = [
+            r"\{\{[^{}]+\}\}",
+            r"\[[^\[\]]*(입력|작성|기재)[^\[\]]*\]",
+            r"(본문 영역|제목을 입력하세요|날짜를 입력하세요|제20\d{2}년)",
+        ]
+        default_lock_keywords = [
+            "로고",
+            "교훈",
+            "연락처",
+            "슬로건",
+            "학교장",
+            "직인",
+        ]
+
+        compiled_patterns = [
+            re.compile(pattern)
+            for pattern in (placeholder_patterns or default_placeholder_patterns)
+        ]
+        lock_terms = [term.strip() for term in (lock_keywords or default_lock_keywords) if term and term.strip()]
+
+        def paragraph_zone(index: int) -> str:
+            if header_range[0] <= index <= header_range[1]:
+                return "header"
+            if footer_range[0] <= index <= footer_range[1]:
+                return "footer"
+            return "body"
+
+        placeholders: List[Dict[str, Any]] = []
+        locked_indexes: set[int] = set()
+        for index, text in enumerate(paragraphs):
+            stripped = text.strip()
+            if not stripped:
+                continue
+
+            zone = paragraph_zone(index)
+            contains_lock_keyword = any(keyword in stripped for keyword in lock_terms)
+            if zone in {"header", "footer"} or contains_lock_keyword:
+                locked_indexes.add(index)
+
+            for pattern in compiled_patterns:
+                for match in pattern.finditer(stripped):
+                    token = match.group(0)
+                    placeholders.append(
+                        {
+                            "token": token,
+                            "paragraphIndex": index,
+                            "zone": zone,
+                            "editable": index not in locked_indexes,
+                            "context": stripped[:200],
+                        }
+                    )
+
+        is_template = bool(placeholders) or any(index in locked_indexes for index in range(paragraph_count))
+        regions = [
+            {
+                "name": "header",
+                "startParagraph": header_range[0],
+                "endParagraph": header_range[1],
+                "editable": False,
+                "reason": "상단 고정 영역(휴리스틱)",
+            },
+            {
+                "name": "body",
+                "startParagraph": body_range[0],
+                "endParagraph": body_range[1],
+                "editable": True,
+                "reason": "본문 편집 가능 영역(휴리스틱)",
+            },
+            {
+                "name": "footer",
+                "startParagraph": footer_range[0],
+                "endParagraph": footer_range[1],
+                "editable": False,
+                "reason": "하단 고정 영역(휴리스틱)",
+            },
+        ]
+
+        return {
+            "summary": {
+                "isTemplate": is_template,
+                "paragraphCount": paragraph_count,
+                "placeholderCount": len(placeholders),
+                "lockedParagraphCount": len(locked_indexes),
+                "extractionSource": source,
+            },
+            "regions": regions,
+            "placeholders": placeholders,
+        }
+
+    # ------------------------------------------------------------------
+    # Search & replace
+    # ------------------------------------------------------------------
+    def find(
+        self,
+        path: str,
+        query: str,
+        *,
+        is_regex: bool = False,
+        max_results: int = 100,
+        context_radius: int = 80,
+    ) -> Dict[str, Any]:
+        if not query:
+            raise ValueError("query must be a non-empty string")
+        resolved = self._resolve_path(path)
+        matches: List[Dict[str, Any]] = []
+        radius = max(0, context_radius)
+
+        def build_context(text: str, start: int, end: int) -> str:
+            context_start = max(0, start - radius)
+            context_end = min(len(text), end + radius)
+            snippet = text[context_start:context_end]
+            if context_start > 0:
+                snippet = "..." + snippet
+            if context_end < len(text):
+                snippet = snippet + "..."
+            return snippet
+
+        pattern = re.compile(query) if is_regex else None
+        if resolved.suffix.lower() == ".hwp":
+            paragraphs, _, _ = self._read_only_hwp_paragraphs(path)
+            for para_index, text in enumerate(paragraphs):
+                if is_regex:
+                    for match in pattern.finditer(text):  # type: ignore[union-attr]
+                        matches.append(
+                            {
+                                "paragraphIndex": para_index,
+                                "start": match.start(),
+                                "end": match.end(),
+                                "context": build_context(text, match.start(), match.end()),
+                            }
+                        )
+                        if len(matches) >= max_results:
+                            return {"matches": matches}
+                else:
+                    start = 0
+                    while True:
+                        found = text.find(query, start)
+                        if found == -1:
+                            break
+                        matches.append(
+                            {
+                                "paragraphIndex": para_index,
+                                "start": found,
+                                "end": found + len(query),
+                                "context": build_context(text, found, found + len(query)),
+                            }
+                        )
+                        if len(matches) >= max_results:
+                            return {"matches": matches}
+                        start = found + len(query)
+            return {"matches": matches}
+
+        with create_text_extractor(resolved) as extractor:
+            for paragraph in extractor.iter_document_paragraphs():
+                text = paragraph.text()
+                if is_regex:
+                    for match in pattern.finditer(text):  # type: ignore[union-attr]
+                        matches.append(
+                            {
+                                "paragraphIndex": paragraph.index,
+                                "start": match.start(),
+                                "end": match.end(),
+                                "context": build_context(text, match.start(), match.end()),
+                            }
+                        )
+                        if len(matches) >= max_results:
+                            return {"matches": matches}
+                else:
+                    start = 0
+                    while True:
+                        found = text.find(query, start)
+                        if found == -1:
+                            break
+                        matches.append(
+                            {
+                                "paragraphIndex": paragraph.index,
+                                "start": found,
+                                "end": found + len(query),
+                                "context": build_context(text, found, found + len(query)),
+                            }
+                        )
+                        if len(matches) >= max_results:
+                            return {"matches": matches}
+                        start = found + len(query)
+        return {"matches": matches}
+
+    def find_runs_by_style(
+        self,
+        path: str,
+        *,
+        filters: Optional[Dict[str, Any]] = None,
+        max_results: int = 200,
+    ) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        filter_args: Dict[str, Any] = {}
+        if filters:
+            if "colorHex" in filters and filters["colorHex"]:
+                filter_args["text_color"] = self._normalize_color(filters["colorHex"])
+            if "underline" in filters:
+                filter_args["underline_type"] = "SOLID" if filters["underline"] else "NONE"
+            if "charPrIDRef" in filters and filters["charPrIDRef"]:
+                filter_args["char_pr_id_ref"] = filters["charPrIDRef"]
+        runs = document.find_runs_by_style(**filter_args)
+        paragraph_index_map: Dict[int, int] = {}
+        paragraphs = self._iter_paragraphs(document)
+        for index, paragraph in enumerate(paragraphs):
+            paragraph_index_map[id(paragraph.element)] = index
+        results: List[Dict[str, Any]] = []
+        for run in runs[:max_results]:
+            paragraph = run.paragraph
+            para_index = paragraph_index_map.get(id(paragraph.element), -1)
+            style = {}
+            if run.style is not None:
+                style_data = run.style
+                if dataclasses.is_dataclass(style_data):
+                    style = asdict(style_data)
+            results.append(
+                {
+                    "text": run.text,
+                    "paragraphIndex": para_index,
+                    "charPrIDRef": run.char_pr_id_ref,
+                    "style": style,
+                }
+            )
+        return {"runs": results}
+
+    def replace_text_in_runs(
+        self,
+        path: str,
+        search: str,
+        replacement: str,
+        *,
+        style_filter: Optional[Dict[str, Any]] = None,
+        limit_per_run: Optional[int] = None,
+        dry_run: bool = False,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        filter_args: Dict[str, Any] = {}
+        if style_filter:
+            if "colorHex" in style_filter and style_filter["colorHex"]:
+                filter_args["text_color"] = self._normalize_color(style_filter["colorHex"])
+            if "underline" in style_filter:
+                filter_args["underline_type"] = "SOLID" if style_filter["underline"] else "NONE"
+            if "charPrIDRef" in style_filter and style_filter["charPrIDRef"]:
+                filter_args["char_pr_id_ref"] = style_filter["charPrIDRef"]
+        replaced = document.replace_text_in_runs(
+            search,
+            replacement,
+            limit=limit_per_run,
+            **filter_args,
+        )
+        if not dry_run and replaced:
+            self._save_document(document, resolved)
+        return {"replacedCount": replaced}
+
+    # ------------------------------------------------------------------
+    # Paragraph and table editing
+    # ------------------------------------------------------------------
+    def add_paragraph(
+        self,
+        path: str,
+        text: str = "",
+        *,
+        section_index: Optional[int] = None,
+        run_style: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        char_id = self._ensure_char_style(document, run_style)
+        paragraph = document.add_paragraph(
+            text,
+            section_index=section_index,
+            char_pr_id_ref=char_id,
+        )
+        paragraphs = self._iter_paragraphs(document)
+        index = len(paragraphs) - 1
+        element_id = id(paragraph.element)
+        for idx, candidate in enumerate(paragraphs):
+            if id(candidate.element) == element_id:
+                index = idx
+                break
+        self._save_document(document, resolved)
+        return {"paragraphIndex": index}
+
+    def insert_paragraphs_bulk(
+        self,
+        path: str,
+        paragraphs: Sequence[str],
+        *,
+        section_index: Optional[int] = None,
+        run_style: Optional[Dict[str, Any]] = None,
+        dry_run: bool = False,
+    ) -> Dict[str, Any]:
+        if not paragraphs:
+            return {"added": 0}
+
+        if dry_run:
+            return {"added": len(paragraphs)}
+
+        document, resolved = self._open_document(path)
+        char_id = self._ensure_char_style(document, run_style)
+        count = 0
+        for text in paragraphs:
+            document.add_paragraph(
+                text,
+                section_index=section_index,
+                char_pr_id_ref=char_id,
+            )
+            count += 1
+        self._save_document(document, resolved)
+        return {"added": count}
+
+    def add_table(
+        self,
+        path: str,
+        rows: int,
+        cols: int,
+        *,
+        section_index: Optional[int] = None,
+        border_style: str | None = None,
+        border_color: Optional[str] = None,
+        border_width: Optional[str | float | int] = None,
+        fill_color: Optional[str] = None,
+        auto_fit: bool = False,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        border_fill = self._ensure_table_border_fill(
+            document,
+            border_style=border_style,
+            border_color=border_color,
+            border_width=border_width,
+            fill_color=fill_color,
+        )
+        table = document.add_table(
+            rows,
+            cols,
+            section_index=section_index,
+            border_fill_id_ref=border_fill,
+        )
+        if auto_fit:
+            self._auto_fit_table_columns(table)
+        tables = self._iter_tables(document)
+        element_id = id(table.element)
+        index = len(tables) - 1
+        for idx, candidate in enumerate(tables):
+            if id(candidate.element) == element_id:
+                index = idx
+                break
+        self._save_document(document, resolved)
+        return {"tableIndex": index, "cellCount": rows * cols}
+
+    def set_table_border_fill(
+        self,
+        path: str,
+        table_index: int,
+        *,
+        border_style: str | None = None,
+        border_color: Optional[str] = None,
+        border_width: Optional[str | float | int] = None,
+        fill_color: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        tables = self._iter_tables(document)
+        try:
+            table = tables[table_index]
+        except IndexError as exc:
+            raise self._new_error("TABLE_INDEX_OUT_OF_RANGE", "tableIndex out of range", details={"tableIndex": table_index}) from exc
+
+        border_fill = self._ensure_table_border_fill(
+            document,
+            border_style=border_style,
+            border_color=border_color,
+            border_width=border_width,
+            fill_color=fill_color,
+        )
+
+        table.element.set("borderFillIDRef", border_fill)
+        anchor_elements: set[int] = set()
+        for position in table.iter_grid():
+            if getattr(position, "is_anchor", False):
+                cell_element = position.cell.element
+                cell_element.set("borderFillIDRef", border_fill)
+                anchor_elements.add(id(cell_element))
+
+        table.mark_dirty()
+        self._save_document(document, resolved)
+        return {"borderFillIDRef": border_fill, "anchorCells": len(anchor_elements)}
+
+    def get_table_cell_map(
+        self,
+        path: str,
+        table_index: int,
+    ) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        tables = self._iter_tables(document)
+        try:
+            table = tables[table_index]
+        except IndexError as exc:
+            raise self._new_error("TABLE_INDEX_OUT_OF_RANGE", "tableIndex out of range", details={"tableIndex": table_index}) from exc
+
+        grid_positions = table.get_cell_map()
+        serialized: List[List[Dict[str, Any]]] = []
+        for row in grid_positions:
+            row_payload: List[Dict[str, Any]] = []
+            for position in row:
+                anchor_row, anchor_col = position.anchor
+                row_span, col_span = position.span
+                cell_text: Optional[str] = None
+                cell = position.cell
+                if cell is not None:
+                    cell_text = cell.text
+                row_payload.append(
+                    {
+                        "row": position.row,
+                        "column": position.column,
+                        "anchor": {"row": anchor_row, "column": anchor_col},
+                        "rowSpan": row_span,
+                        "colSpan": col_span,
+                        "text": cell_text,
+                    }
+                )
+            serialized.append(row_payload)
+        row_count = len(serialized)
+        column_count = len(serialized[0]) if serialized else 0
+        return {"grid": serialized, "rowCount": row_count, "columnCount": column_count}
+
+    def set_table_cell_text(
+        self,
+        path: str,
+        table_index: int,
+        row: int,
+        col: int,
+        text: str,
+        *,
+        dry_run: bool = False,
+        logical: Optional[bool] = None,
+        split_merged: Optional[bool] = None,
+        auto_fit: bool = False,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        tables = self._iter_tables(document)
+        try:
+            table = tables[table_index]
+        except IndexError as exc:
+            raise self._new_error("TABLE_INDEX_OUT_OF_RANGE", "tableIndex out of range", details={"tableIndex": table_index}) from exc
+        kwargs: Dict[str, bool] = {}
+        if logical is not None:
+            kwargs["logical"] = logical
+        if split_merged is not None:
+            kwargs["split_merged"] = split_merged
+        guidance = (
+            "failed to update table cell; check indexes, enable logical addressing, "
+            "or split merged cells first"
+        )
+        try:
+            table.set_cell_text(row, col, _sanitize_cell_text(text), **kwargs)
+        except (IndexError, ValueError) as exc:
+            raise self._new_error("TABLE_CELL_OPERATION_FAILED", f"{guidance}: {exc}") from exc
+        if auto_fit and not dry_run:
+            self._auto_fit_table_columns(table)
+        if not dry_run:
+            self._save_document(document, resolved)
+        return {"ok": True}
+
+    def replace_table_region(
+        self,
+        path: str,
+        table_index: int,
+        start_row: int,
+        start_col: int,
+        values: Sequence[Sequence[str]],
+        *,
+        dry_run: bool = False,
+        logical: Optional[bool] = None,
+        split_merged: Optional[bool] = None,
+        auto_fit: bool = False,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        tables = self._iter_tables(document)
+        try:
+            table = tables[table_index]
+        except IndexError as exc:
+            raise self._new_error("TABLE_INDEX_OUT_OF_RANGE", "tableIndex out of range", details={"tableIndex": table_index}) from exc
+        kwargs: Dict[str, bool] = {}
+        if logical is not None:
+            kwargs["logical"] = logical
+        if split_merged is not None:
+            kwargs["split_merged"] = split_merged
+        guidance = (
+            "failed to update table cell; check indexes, enable logical addressing, "
+            "or split merged cells first"
+        )
+        updated = 0
+        for row_offset, row_values in enumerate(values):
+            for col_offset, cell_text in enumerate(row_values):
+                logical_row = start_row + row_offset
+                logical_col = start_col + col_offset
+                try:
+                    table.set_cell_text(
+                        logical_row,
+                        logical_col,
+                        _sanitize_cell_text(cell_text),
+                        **kwargs,
+                    )
+                except (IndexError, ValueError) as exc:
+                    message = (
+                        f"{guidance} while writing cell ({logical_row}, {logical_col})"
+                    )
+                    raise self._new_error("TABLE_CELL_OPERATION_FAILED", f"{message}: {exc}", details={"row": logical_row, "col": logical_col}) from exc
+                updated += 1
+        if auto_fit and not dry_run and updated > 0:
+            self._auto_fit_table_columns(table)
+        if not dry_run:
+            self._save_document(document, resolved)
+        return {"updatedCells": updated}
+
+    def split_table_cell(
+        self,
+        path: str,
+        table_index: int,
+        row: int,
+        col: int,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        tables = self._iter_tables(document)
+        try:
+            table = tables[table_index]
+        except IndexError as exc:
+            raise self._new_error("TABLE_INDEX_OUT_OF_RANGE", "tableIndex out of range", details={"tableIndex": table_index}) from exc
+        try:
+            target = table.cell(row, col)
+        except (IndexError, ValueError) as exc:
+            raise self._new_error(
+                "TABLE_CELL_INDEX_OUT_OF_RANGE",
+                "table cell coordinates out of range; enable logical addressing to verify merged grids",
+                details={"row": row, "col": col},
+            ) from exc
+        anchor_row, anchor_col = target.address
+        span_row, span_col = target.span
+        changed = span_row > 1 or span_col > 1
+        guidance = (
+            "failed to split merged cell; check indexes or split manually if logical addressing shows overlaps"
+        )
+        try:
+            table.split_merged_cell(row, col)
+        except (IndexError, ValueError) as exc:
+            raise self._new_error("TABLE_CELL_OPERATION_FAILED", f"{guidance}: {exc}") from exc
+        if changed:
+            self._save_document(document, resolved)
+        return {
+            "startRow": anchor_row,
+            "startCol": anchor_col,
+            "rowSpan": span_row,
+            "colSpan": span_col,
+        }
+
+    def copy_table_between_documents(
+        self,
+        source_path: str,
+        source_table_index: int,
+        target_path: str,
+        *,
+        target_section_index: Optional[int] = None,
+        auto_fit: bool = False,
+    ) -> Dict[str, Any]:
+        source_map = self.get_table_cell_map(source_path, source_table_index)
+        row_count = int(source_map["rowCount"])
+        column_count = int(source_map["columnCount"])
+        if row_count <= 0 or column_count <= 0:
+            raise self._new_error(
+                "TABLE_EMPTY",
+                "복사할 표 셀이 비어 있습니다.",
+                details={"tableIndex": source_table_index},
+            )
+
+        values: List[List[str]] = []
+        for row in source_map["grid"]:
+            row_values: List[str] = []
+            for cell in row:
+                row_values.append((cell.get("text") or "").strip())
+            values.append(row_values)
+
+        created = self.add_table(
+            target_path,
+            rows=row_count,
+            cols=column_count,
+            section_index=target_section_index,
+            auto_fit=auto_fit,
+        )
+        target_table_index = int(created["tableIndex"])
+        updated = self.replace_table_region(
+            target_path,
+            table_index=target_table_index,
+            start_row=0,
+            start_col=0,
+            values=values,
+            auto_fit=auto_fit,
+        )
+        return {
+            "targetTableIndex": target_table_index,
+            "copiedCells": updated["updatedCells"],
+            "rowCount": row_count,
+            "columnCount": column_count,
+        }
+
+    def add_shape(
+        self,
+        path: str,
+        *,
+        shape_type: str = "RECTANGLE",
+        section_index: Optional[int] = None,
+        dry_run: bool = True,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        shape = document.add_shape(shape_type, section_index=section_index)
+        if not dry_run:
+            self._save_document(document, resolved)
+        return {"objectId": shape.element.get("id")}
+
+    def add_control(
+        self,
+        path: str,
+        *,
+        control_type: str = "TEXTBOX",
+        section_index: Optional[int] = None,
+        dry_run: bool = True,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        control = document.add_control(control_type=control_type, section_index=section_index)
+        if not dry_run:
+            self._save_document(document, resolved)
+        return {"objectId": control.element.get("id")}
+
+    # ------------------------------------------------------------------
+    # Memo management
+    # ------------------------------------------------------------------
+    def add_memo(
+        self,
+        path: str,
+        text: str,
+        *,
+        section_index: Optional[int] = None,
+        author: str | None = None,
+        timestamp: str | None = None,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        memo = document.add_memo(
+            text,
+            section_index=section_index,
+            attributes={"author": author or "", "createDateTime": timestamp or datetime.now().strftime("%Y-%m-%d %H:%M:%S")},
+        )
+        self._save_document(document, resolved)
+        return {"memoId": memo.id}
+
+    def attach_memo_field(
+        self,
+        path: str,
+        paragraph_index: int,
+        memo_id: str,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        paragraphs = self._iter_paragraphs(document)
+        try:
+            paragraph = paragraphs[paragraph_index]
+        except IndexError as exc:
+            raise self._new_error("PARAGRAPH_INDEX_OUT_OF_RANGE", "paragraphIndex out of range", details={"paragraphIndex": paragraph_index}) from exc
+        memo = self._find_memo(document, memo_id)
+        if memo is None:
+            raise self._new_error("MEMO_NOT_FOUND", f"memo '{memo_id}' not found", details={"memoId": memo_id})
+        field_id = document.attach_memo_field(paragraph, memo)
+        self._save_document(document, resolved)
+        return {"fieldId": field_id}
+
+    def add_memo_with_anchor(
+        self,
+        path: str,
+        *,
+        text: str,
+        section_index: Optional[int] = None,
+        memo_shape_id_ref: str | None = None,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        memo, paragraph, field_id = document.add_memo_with_anchor(
+            text,
+            section_index=section_index,
+            memo_shape_id_ref=memo_shape_id_ref,
+        )
+        paragraphs = self._iter_paragraphs(document)
+        paragraph_index = len(paragraphs) - 1
+        paragraph_element_id = id(paragraph.element)
+        for idx, candidate in enumerate(paragraphs):
+            if id(candidate.element) == paragraph_element_id:
+                paragraph_index = idx
+                break
+        self._save_document(document, resolved)
+        return {"memoId": memo.id, "paragraphIndex": paragraph_index, "fieldId": field_id}
+
+    def remove_memo(
+        self,
+        path: str,
+        memo_id: str,
+        *,
+        dry_run: bool = True,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        memo = self._find_memo(document, memo_id)
+        if memo is None:
+            return {"removed": False}
+        memo.remove()
+        if not dry_run:
+            self._save_document(document, resolved)
+        return {"removed": True}
+
+    def _find_memo(self, document: HwpxDocument, memo_id: str) -> Optional[HwpxOxmlMemo]:
+        for section in document.sections:
+            for memo in section.memos:
+                if memo.id == memo_id:
+                    return memo
+        return None
+
+    # ------------------------------------------------------------------
+    # Style helpers
+    # ------------------------------------------------------------------
+    def ensure_run_style(self, path: str, **run_style: Any) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        char_id = self._ensure_char_style(document, run_style)
+        return {"charPrIDRef": char_id}
+
+    def list_styles_and_bullets(self, path: str) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        styles = [asdict(style) for style in document.styles.values() if dataclasses.is_dataclass(style)]
+        bullets = [asdict(bullet) for bullet in document.bullets.values() if dataclasses.is_dataclass(bullet)]
+        return {"styles": styles, "bullets": bullets}
+
+    def apply_style_to_text_ranges(
+        self,
+        path: str,
+        spans: Sequence[Dict[str, int]],
+        char_pr_id_ref: str,
+        *,
+        dry_run: bool = True,
+    ) -> Dict[str, Any]:
+        if not char_pr_id_ref:
+            raise ValueError("char_pr_id_ref must be provided")
+
+        document, resolved = self._open_document(path)
+        paragraphs = self._iter_paragraphs(document)
+
+        class _Segment:
+            __slots__ = ("element", "attr", "text")
+
+            def __init__(self, element: ET.Element, attr: str, text: str) -> None:
+                self.element = element
+                self.attr = attr
+                self.text = text
+
+            def set(self, value: str) -> None:
+                self.text = value
+                if value:
+                    setattr(self.element, self.attr, value)
+                else:
+                    setattr(self.element, self.attr, "")
+
+        def _gather_segments(element: ET.Element) -> List[_Segment]:
+            segments: List[_Segment] = []
+
+            def visit(node: ET.Element) -> None:
+                text_value = node.text or ""
+                segments.append(_Segment(node, "text", text_value))
+                for child in list(node):
+                    visit(child)
+                    tail_value = child.tail or ""
+                    segments.append(_Segment(child, "tail", tail_value))
+
+            for text_node in element.findall(f"{HP_NS}t"):
+                visit(text_node)
+            return segments
+
+        def _slice_run(run_obj: HwpxOxmlRun, start: int, end: int) -> None:
+            segments = _gather_segments(run_obj.element)
+            if not segments:
+                return
+            total_length = sum(len(segment.text) for segment in segments)
+            start = max(0, min(start, total_length))
+            end = max(0, min(end, total_length))
+            if start >= end:
+                for segment in segments:
+                    if segment.text:
+                        segment.set("")
+                run_obj.paragraph.section.mark_dirty()
+                return
+            changed = False
+            offset = 0
+            for segment in segments:
+                seg_start = offset
+                seg_end = seg_start + len(segment.text)
+                offset = seg_end
+                if end <= seg_start or start >= seg_end:
+                    if segment.text:
+                        segment.set("")
+                        changed = True
+                    continue
+                local_start = max(start, seg_start) - seg_start
+                local_end = min(end, seg_end) - seg_start
+                new_value = segment.text[local_start:local_end]
+                if segment.text != new_value:
+                    segment.set(new_value)
+                    changed = True
+            if changed:
+                run_obj.paragraph.section.mark_dirty()
+
+        def _split_run(run_obj: HwpxOxmlRun, local_start: int, local_end: int) -> None:
+            text_value = run_obj.text or ""
+            length = len(text_value)
+            if length == 0:
+                return
+            local_start = max(0, min(local_start, length))
+            local_end = max(0, min(local_end, length))
+            if local_start >= local_end:
+                return
+            if local_start == 0 and local_end == length:
+                run_obj.char_pr_id_ref = char_pr_id_ref
+                return
+
+            segments: List[Tuple[int, int, Optional[str]]] = []
+            original_char = run_obj.char_pr_id_ref
+            if local_start > 0:
+                segments.append((0, local_start, original_char))
+            segments.append((local_start, local_end, char_pr_id_ref))
+            if local_end < length:
+                segments.append((local_end, length, original_char))
+
+            parent = run_obj.paragraph.element
+            run_children = list(parent)
+            try:
+                index = run_children.index(run_obj.element)
+            except ValueError:  # pragma: no cover - defensive branch
+                return
+
+            new_elements: List[ET.Element] = []
+            for seg_start, seg_end, char_id in segments:
+                if seg_start >= seg_end:
+                    continue
+                element_copy = copy.deepcopy(run_obj.element)
+                segment_run = HwpxOxmlRun(element_copy, run_obj.paragraph)
+                _slice_run(segment_run, seg_start, seg_end)
+                if char_id is None:
+                    segment_run.char_pr_id_ref = None
+                else:
+                    segment_run.char_pr_id_ref = char_id
+                new_elements.append(element_copy)
+
+            if not new_elements:
+                parent.remove(run_obj.element)
+                run_obj.paragraph.section.mark_dirty()
+                return
+
+            for offset, element in enumerate(new_elements):
+                parent.insert(index + offset, element)
+            parent.remove(run_obj.element)
+            run_obj.paragraph.section.mark_dirty()
+
+        def _paragraph_length(paragraph: HwpxOxmlParagraph) -> int:
+            return sum(len(run.text or "") for run in paragraph.runs)
+
+        def _apply_span(paragraph: HwpxOxmlParagraph, span_start: int, span_end: int) -> bool:
+            if span_start >= span_end:
+                return False
+            applied = False
+            cursor = span_start
+            while cursor < span_end:
+                runs = list(paragraph.runs)
+                offset = 0
+                target: Tuple[HwpxOxmlRun, int, int, int] | None = None
+                for candidate in runs:
+                    text = candidate.text or ""
+                    length = len(text)
+                    run_start = offset
+                    run_end = run_start + length
+                    if run_end <= cursor:
+                        offset = run_end
+                        continue
+                    if run_start >= span_end:
+                        target = None
+                        break
+                    if length == 0:
+                        offset = run_end
+                        continue
+                    target = (candidate, run_start, run_end, length)
+                    break
+
+                if target is None:
+                    break
+
+                run_obj, run_start, run_end, length = target
+                local_start = max(0, cursor - run_start)
+                local_end = min(length, span_end - run_start)
+                if local_start >= local_end:
+                    cursor = max(cursor + 1, run_end)
+                    continue
+
+                _split_run(run_obj, local_start, local_end)
+                applied = True
+                cursor = min(span_end, run_end)
+
+            return applied
+
+        styled = 0
+        for span in spans:
+            if isinstance(span, dict):
+                paragraph_index = int(span.get("paragraph_index", -1))
+                start = int(span.get("start", 0))
+                end = int(span.get("end", 0))
+            else:
+                paragraph_index = int(getattr(span, "paragraph_index", getattr(span, "paragraphIndex", -1)))
+                start = int(getattr(span, "start", 0))
+                end = int(getattr(span, "end", 0))
+
+            if paragraph_index < 0 or paragraph_index >= len(paragraphs):
+                continue
+
+            start = max(0, start)
+            end = max(start, end)
+            if start >= end:
+                continue
+
+            paragraph = paragraphs[paragraph_index]
+            total_length = _paragraph_length(paragraph)
+            if total_length == 0 or start >= total_length:
+                continue
+            clamped_end = min(end, total_length)
+
+            if _apply_span(paragraph, start, clamped_end):
+                styled += 1
+
+        if not dry_run and styled:
+            self._save_document(document, resolved)
+
+        return {"styledSpans": styled}
+
+    def apply_style_to_paragraphs(
+        self,
+        path: str,
+        paragraph_indexes: Sequence[int],
+        char_pr_id_ref: str,
+        *,
+        dry_run: bool = True,
+    ) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        paragraphs = self._iter_paragraphs(document)
+        updated = 0
+        for index in paragraph_indexes:
+            if index < 0 or index >= len(paragraphs):
+                continue
+            paragraph = paragraphs[index]
+            paragraph.char_pr_id_ref = char_pr_id_ref
+            for run in paragraph.runs:
+                run.char_pr_id_ref = char_pr_id_ref
+            updated += 1
+        if not dry_run and updated:
+            self._save_document(document, resolved)
+        return {"updated": updated}
+
+    # ------------------------------------------------------------------
+    # Persistence helpers
+    # ------------------------------------------------------------------
+    def save(self, path: str) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        verification_report = self._save_document(document, resolved)
+        return {"ok": True, "verificationReport": verification_report}
+
+    def save_as(self, path: str, out: str) -> Dict[str, Any]:
+        document, resolved = self._open_document(path)
+        out_path = self._resolve_output_path(out)
+        verification_report = self._save_document(document, out_path)
+        return {"outPath": str(out_path), "verificationReport": verification_report}
+
+    def fill_template(
+        self,
+        source: str,
+        output: str,
+        replacements: Dict[str, str],
+        *,
+        preserve_style: bool = True,
+        split_newlines: bool = True,
+    ) -> Dict[str, Any]:
+        document, _ = self._open_document(source)
+        out_path = self._resolve_output_path(output)
+
+        replaced_count = 0
+        for needle, replacement in replacements.items():
+            if not needle:
+                continue
+            content = replacement
+            if not split_newlines:
+                content = content.replace("\r\n", " ").replace("\n", " ")
+
+            replaced_count += document.replace_text_in_runs(needle, content)
+
+        if not preserve_style:
+            logger.debug(
+                "fill_template called with preserve_style=False, but current backend always preserves run style"
+            )
+
+        self._save_document(document, out_path)
+        return {
+            "outPath": str(out_path),
+            "replacedCount": replaced_count,
+        }
+
+    # ------------------------------------------------------------------
+    # Export helpers (python-hwpx ≥ 2.4)
+    # ------------------------------------------------------------------
+    def export_text(self, path: str) -> Dict[str, Any]:
+        """Export document content as plain text."""
+        document, _ = self._open_document(path)
+        return {"content": export_document(document, "text"), "format": "text"}
+
+    def export_html(self, path: str) -> Dict[str, Any]:
+        """Export document content as HTML."""
+        document, _ = self._open_document(path)
+        return {"content": export_document(document, "html"), "format": "html"}
+
+    def export_markdown(self, path: str) -> Dict[str, Any]:
+        """Export document content as Markdown."""
+        document, _ = self._open_document(path)
+        return {"content": export_document(document, "markdown"), "format": "markdown"}
+
+    def make_blank(self, out: str) -> Dict[str, Any]:
+        document = new_document()
+        out_path = self._resolve_output_path(out)
+        self._save_document(document, out_path)
+        return {"outPath": str(out_path)}
+
+    def convert_hwp_to_hwpx(self, source: str, output: Optional[str] = None) -> Dict[str, Any]:
+        resolved_source = self._resolve_path(source)
+        if resolved_source.suffix.lower() != ".hwp":
+            raise self._new_error("SOURCE_FILE_TYPE_INVALID", "source는 .hwp 파일이어야 합니다")
+
+        if output:
+            resolved_output = self._resolve_output_path(output)
+        else:
+            resolved_output = resolved_source.with_suffix(".hwpx")
+
+        try:
+            result = convert_hwp_to_hwpx(str(resolved_source), str(resolved_output))
+        except HwpConversionError as exc:
+            raise self._new_error("HWP_CONVERSION_FAILED", f"HWP 변환 실패: {exc}") from exc
+
+        return {
+            "success": result.success,
+            "outputPath": result.output_path,
+            "paragraphsConverted": result.paragraphs_converted,
+            "tablesConverted": result.tables_converted,
+            "skippedElements": result.skipped_elements,
+            "warnings": result.warnings,
+        }
+
+    # ------------------------------------------------------------------
+    # Package & metadata queries
+    # ------------------------------------------------------------------
+    def list_master_pages_histories_versions(self, path: str) -> Dict[str, Any]:
+        document, _ = self._open_document(path)
+        master_pages = [getattr(page, "part_name", None) for page in document.master_pages]
+        histories = [getattr(history, "part_name", None) for history in document.histories]
+        version = document.version
+        version_info = asdict(version) if version and dataclasses.is_dataclass(version) else None
+        return {
+            "masterPages": master_pages,
+            "histories": histories,
+            "versions": version_info,
+        }
+
+    # ------------------------------------------------------------------
+    # Object finder
+    # ------------------------------------------------------------------
+    def object_find_by_tag(
+        self,
+        path: str,
+        tag_name: str,
+        *,
+        max_results: int = 200,
+    ) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        finder = create_object_finder(resolved)
+        objects = []
+        for found in finder.iter(tag=tag_name, limit=max_results):
+            element = found.element
+            objects.append(
+                {
+                    "type": element.tag,
+                    "text": element.text or "",
+                    "attrs": dict(element.attrib),
+                    "path": found.path,
+                }
+            )
+        return {"objects": objects}
+
+    def object_find_by_attr(
+        self,
+        path: str,
+        element_type: str | None,
+        attr: str,
+        value: str | None,
+        *,
+        max_results: int = 200,
+    ) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        finder = create_object_finder(resolved)
+        tag_filter = None if element_type in {None, "", "*"} else element_type
+        attr_matcher: Any = value if value is not None else (lambda _: True)
+        objects = []
+        for found in finder.iter(tag=tag_filter, attrs={attr: attr_matcher}, limit=max_results):
+            element = found.element
+            objects.append(
+                {
+                    "type": element.tag,
+                    "text": element.text or "",
+                    "attrs": dict(element.attrib),
+                    "path": found.path,
+                }
+            )
+        return {"objects": objects}
+
+    # ------------------------------------------------------------------
+    # Validation & linting
+    # ------------------------------------------------------------------
+    def validate_structure(self, path: str, level: str = "basic") -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        report: ValidationReport = validate_document_path(resolved)
+        issues = [
+            {
+                "part": issue.part_name,
+                "message": issue.message,
+            }
+            for issue in report.issues
+        ]
+        return {"ok": not issues, "issues": issues}
+
+    def lint_text_conventions(
+        self,
+        path: str,
+        *,
+        max_line_len: Optional[int] = None,
+        forbid_patterns: Optional[Sequence[str]] = None,
+    ) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        patterns = [re.compile(pat) for pat in (forbid_patterns or [])]
+        warnings: List[Dict[str, Any]] = []
+        with create_text_extractor(resolved) as extractor:
+            for paragraph in extractor.iter_document_paragraphs():
+                text = paragraph.text()
+                if max_line_len is not None and len(text) > max_line_len:
+                    warnings.append(
+                        {
+                            "paragraphIndex": paragraph.index,
+                            "message": f"Paragraph exceeds {max_line_len} characters",
+                        }
+                    )
+                for pattern in patterns:
+                    if pattern.search(text):
+                        warnings.append(
+                            {
+                                "paragraphIndex": paragraph.index,
+                                "message": f"Pattern '{pattern.pattern}' found",
+                            }
+                        )
+        return {"warnings": warnings}
+
+    # ------------------------------------------------------------------
+    # Hardened planning helpers
+    # ------------------------------------------------------------------
+    def plan_edit(
+        self,
+        *,
+        path: str,
+        operations: Sequence[Dict[str, Any]],
+        trace_id: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        payload = PlanEditInput.model_validate(
+            {"path": path, "operations": operations, "traceId": trace_id}
+        )
+        doc_path = payload.path_or_none()
+        if doc_path is not None:
+            self._ensure_planner_document(payload.doc_id, doc_path)
+        trace = payload.trace_id or f"plan-{uuid4().hex}"
+        try:
+            record = self._plan_manager.create_plan_record(
+                payload.doc_id, payload.operations, trace_id=trace
+            )
+        except PipelineError as error:
+            return self._plan_manager.error_response(payload.doc_id, trace, error)
+        return self._plan_manager.plan_response(record)
+
+    def preview_edit(
+        self,
+        *,
+        plan_id: str,
+        trace_id: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        payload = PreviewEditInput.model_validate(
+            {"planId": plan_id, "traceId": trace_id}
+        )
+        trace = payload.trace_id or payload.plan_id
+        try:
+            preview = self._plan_manager.preview_plan_record(payload.plan_id)
+        except PipelineError as error:
+            plan = self._plan_manager.get_plan_record(payload.plan_id)
+            doc_id = plan.doc_id if plan is not None else payload.plan_id
+            return self._plan_manager.error_response(
+                doc_id, trace, error, plan_id=payload.plan_id
+            )
+        return self._plan_manager.preview_response(preview)
+
+    def apply_edit(
+        self,
+        *,
+        plan_id: str,
+        confirm: bool,
+        idempotency_key: Optional[str] = None,
+        trace_id: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        payload = ApplyEditInput.model_validate(
+            {
+                "planId": plan_id,
+                "confirm": confirm,
+                "idempotencyKey": idempotency_key,
+                "traceId": trace_id,
+            }
+        )
+        trace = payload.trace_id or payload.plan_id
+        try:
+            result = self._plan_manager.apply_plan_record(
+                payload.plan_id,
+                confirm=payload.confirm,
+                idempotency_key=payload.idempotency_key,
+            )
+        except PipelineError as error:
+            plan = self._plan_manager.get_plan_record(payload.plan_id)
+            doc_id = plan.doc_id if plan is not None else payload.plan_id
+            template = tools_meta.ERROR_PREVIEW_REQUIRED if error.error_code == "PREVIEW_REQUIRED" else None
+            return self._plan_manager.error_response(
+                doc_id,
+                trace,
+                error,
+                plan_id=payload.plan_id,
+                next_action=template,
+            )
+        plan_record = self._plan_manager.get_plan_record(payload.plan_id)
+        if plan_record is None:  # pragma: no cover - defensive
+            raise self._new_error("PLAN_RECORD_MISSING", "plan record missing after apply", details={"planId": payload.plan_id})
+        return self._plan_manager.apply_response(plan_record, result, trace)
+
+    def search(
+        self,
+        *,
+        path: str,
+        pattern: str,
+        scope: Optional[str] = None,
+        is_regex: bool = False,
+        limit: int = 20,
+    ) -> Dict[str, Any]:
+        payload = SearchInput.model_validate(
+            {
+                "path": path,
+                "pattern": pattern,
+                "scope": scope,
+                "is_regex": is_regex,
+                "limit": limit,
+            }
+        )
+        doc_path = payload.path_or_none()
+        if doc_path is not None:
+            self._ensure_planner_document(payload.doc_id, doc_path)
+        try:
+            hits = self._plan_manager.search_document(payload.doc_id, payload)
+        except PipelineError as error:
+            raise self._new_error("PIPELINE_ERROR", error.message, details={"pipelineCode": error.error_code}, hint=error.hint) from error
+        models = [
+            SearchHitModel(
+                nodeId=hit.node_id,
+                paragraphIndex=hit.paragraph_index,
+                match=hit.match,
+                context=hit.context,
+            )
+            for hit in hits
+        ]
+        return SearchOutput(matches=models).model_dump(by_alias=True)
+
+    def get_context(
+        self,
+        *,
+        path: str,
+        target: Dict[str, Any],
+        window: int = 1,
+    ) -> Dict[str, Any]:
+        payload = GetContextInput.model_validate(
+            {"path": path, "target": target, "window": window}
+        )
+        doc_path = payload.path_or_none()
+        if doc_path is not None:
+            self._ensure_planner_document(payload.doc_id, doc_path)
+        try:
+            view = self._plan_manager.context_window(
+                payload.doc_id, payload.target, window=payload.window
+            )
+        except PipelineError as error:
+            raise self._new_error("PIPELINE_ERROR", error.message, details={"pipelineCode": error.error_code}, hint=error.hint) from error
+        return view.model_dump(by_alias=True)
+
+    # ------------------------------------------------------------------
+    # Raw package helpers
+    # ------------------------------------------------------------------
+    def package_get_xml(self, path: str, part_name: str) -> Dict[str, Any]:
+        resolved = self._resolve_path(path)
+        package = open_package(resolved)
+        element = package.get_xml(part_name)
+        from xml.etree import ElementTree as ET
+
+        xml_string = ET.tostring(element, encoding="unicode")
+        return {"xmlString": xml_string}

@@ -1,0 +1,59 @@
+{
+  "baekhak": {
+    "now_total": 5,
+    "now_dir": {
+      "false_alarm": 5
+    }
+  },
+  "seongok": {
+    "now_total": 1,
+    "now_dir": {
+      "false_alarm": 1
+    }
+  },
+  "pungdong": {
+    "now_total": 5,
+    "now_dir": {
+      "false_alarm": 2,
+      "miss": 3
+    }
+  },
+  "heungbu": {
+    "now_total": 4,
+    "now_dir": {
+      "false_alarm": 4
+    }
+  },
+  "aeryong": {
+    "now_total": 3,
+    "now_dir": {
+      "miss": 2,
+      "false_alarm": 1
+    }
+  },
+  "sangbang": {
+    "now_total": 5,
+    "now_dir": {
+      "false_alarm": 1,
+      "miss": 4
+    }
+  },
+  "exp_백학지구": {
+    "n_at_experiment": 5
+  },
+  "exp_상방지구": {
+    "n_at_experiment": 5
+  },
+  "exp_선곡지구": {
+    "n_at_experiment": 1
+  },
+  "exp_애룡저수지(고정)": {
+    "n_at_experiment": 3
+  },
+  "exp_풍동지구": {
+    "n_at_experiment": 5
+  },
+  "exp_흥부지구": {
+    "n_at_experiment": 4
+  }
+}

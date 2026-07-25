@@ -1,0 +1,25 @@
+138|        if machinery_trigger_confs:
+139|            count_machinery = len(machinery_trigger_confs)
+140|            if _i18n_available:
+141|                msg = f"{t('warn_machinery_proximity')}: {count_machinery}{t('warn_person_count')}"
+142|            else:
+143|                msg = f'중장비 접근 위험: {count_machinery}명'
+144|            warnings['warning_close_to_machinery'] = {
+145|                'count': count_machinery,
+146|                'msg': msg,
+147|                'trigger_confs': machinery_trigger_confs,
+148|            }
+149|
+150|        if vehicle_trigger_confs:
+151|            count_vehicle = len(vehicle_trigger_confs)
+152|            if _i18n_available:
+153|                msg = f"{t('warn_vehicle_proximity')}: {count_vehicle}{t('warn_person_count')}"
+154|            else:
+155|                msg = f'차량 접근 위험: {count_vehicle}명'
+156|            warnings['warning_close_to_vehicle'] = {
+157|                'count': count_vehicle,
+158|                'msg': msg,
+159|                'trigger_confs': vehicle_trigger_confs,
+160|            }
+161|
+162|    def _check_pole_restricted_area(self, datas, warnings, pole_polygons):

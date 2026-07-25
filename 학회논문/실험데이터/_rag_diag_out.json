@@ -1,0 +1,340 @@
+{
+  "classify_cases": [
+    {
+      "note": "작업지휘자로 위험사항 없음",
+      "ct": "false_alarm",
+      "tags": {
+        "who": "작업지휘자",
+        "what": "굴착기",
+        "how": "작업반경내근접",
+        "why": "통제된작업",
+        "direction": "false_alarm"
+      }
+    },
+    {
+      "note": "빨간색 안전모/조끼 미착용, 신호수 부재 상태로 보아야",
+      "ct": "miss",
+      "tags": {
+        "who": "미상",
+        "what": "굴착기",
+        "how": "작업반경내근접",
+        "why": "신호수부정",
+        "direction": "miss"
+      }
+    },
+    {
+      "note": "충분히 거리가 있음",
+      "ct": "false_alarm",
+      "tags": {
+        "who": "작업자",
+        "what": "굴착기",
+        "how": "이격거리확보",
+        "why": "실제위험",
+        "direction": "false_alarm"
+      }
+    }
+  ],
+  "cameras": {
+    "백학지구 - 연포천(4급 방성경)": {
+      "backfilled": 0,
+      "samples": [
+        {
+          "id": "0626f424",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "이격거리확보",
+            "why": "기타",
+            "direction": "false_alarm"
+          },
+          "emb": true
+        },
+        {
+          "id": "577c3ea8",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업지휘자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "통제된작업",
+            "direction": "false_alarm"
+          },
+          "emb": true
+        },
+        {
+          "id": "106e30cc",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업지휘자",
+            "what": "굴착기",
+            "how": "이격거리확보",
+            "why": "신호수인정",
+            "direction": "false_alarm"
+          },
+          "emb": true
+        },
+        {
+          "id": "f08c1afe",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "신호수",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "신호수인정",
+            "direction": "false_alarm"
+          },
+          "emb": true
+        },
+        {
+          "id": "12fb96ab",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "없음",
+            "how": "이격거리확보",
+            "why": "기타",
+            "direction": "false_alarm"
+          },
+          "emb": true
+        }
+      ]
+    },
+    "상방지구 - 강화옹진(4급 김유라)": {
+      "backfilled": 0,
+      "samples": [
+        {
+          "id": "8b8cf9f8",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "트럭차량",
+            "how": "작업반경내근접",
+            "why": "통제된작업",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        },
+        {
+          "id": "e4a54d1a",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "트럭차량",
+            "how": "작업반경내근접",
+            "why": "신호수부정",
+            "direction": "miss"
+          },
+          "emb": false
+        },
+        {
+          "id": "a89dd173",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "크레인",
+            "how": "작업반경내근접",
+            "why": "신호수부정",
+            "direction": "miss"
+          },
+          "emb": false
+        },
+        {
+          "id": "4e0efdd7",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "크레인",
+            "how": "작업반경내근접",
+            "why": "신호수부정",
+            "direction": "miss"
+          },
+          "emb": false
+        },
+        {
+          "id": "25325df7",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "크레인",
+            "how": "작업반경내근접",
+            "why": "신호수부정",
+            "direction": "miss"
+          },
+          "emb": false
+        }
+      ]
+    },
+    "풍동지구 - 고양(3급 김효섭)": {
+      "backfilled": 0,
+      "samples": [
+        {
+          "id": "af5bce29",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "이격거리확보",
+            "why": "통제된작업",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        },
+        {
+          "id": "afa6dc4e",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업지휘자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "통제된작업",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        },
+        {
+          "id": "1122d426",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "실제위험",
+            "direction": "miss"
+          },
+          "emb": false
+        },
+        {
+          "id": "a74964ba",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "신호수부정",
+            "direction": "miss"
+          },
+          "emb": false
+        },
+        {
+          "id": "52d5f558",
+          "ct": "miss",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "신호수부정",
+            "direction": "miss"
+          },
+          "emb": false
+        }
+      ]
+    },
+    "흥부지구 - 화성수원(7급 서영천)": {
+      "backfilled": 0,
+      "samples": [
+        {
+          "id": "6719f8ca",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "보행자외부인",
+            "what": "트럭차량",
+            "how": "통행중",
+            "why": "기타",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        },
+        {
+          "id": "7aad2efa",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "통제된작업",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        },
+        {
+          "id": "50509a0b",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "기타",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        },
+        {
+          "id": "7c7a6949",
+          "ct": "false_alarm",
+          "tags": {
+            "who": "작업자",
+            "what": "굴착기",
+            "how": "작업반경내근접",
+            "why": "장비미가동",
+            "direction": "false_alarm"
+          },
+          "emb": false
+        }
+      ]
+    }
+  },
+  "queries": {
+    "통제된작업": [
+      {
+        "id": "577c3ea8",
+        "why": "통제된작업",
+        "score": 7.0
+      },
+      {
+        "id": "f08c1afe",
+        "why": "신호수인정",
+        "score": 4.0
+      },
+      {
+        "id": "0626f424",
+        "why": "기타",
+        "score": 3.5
+      }
+    ],
+    "신호수인정": [
+      {
+        "id": "f08c1afe",
+        "why": "신호수인정",
+        "score": 7.0
+      },
+      {
+        "id": "106e30cc",
+        "why": "신호수인정",
+        "score": 5.5
+      },
+      {
+        "id": "577c3ea8",
+        "why": "통제된작업",
+        "score": 4.0
+      }
+    ],
+    "실제위험": [
+      {
+        "id": "f08c1afe",
+        "why": "신호수인정",
+        "score": 4.0
+      },
+      {
+        "id": "577c3ea8",
+        "why": "통제된작업",
+        "score": 4.0
+      },
+      {
+        "id": "0626f424",
+        "why": "기타",
+        "score": 3.5
+      }
+    ]
+  }
+}

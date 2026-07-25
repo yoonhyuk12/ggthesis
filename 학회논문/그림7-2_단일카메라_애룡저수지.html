@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>그림 7-2 — 단일 카메라(애룡저수지 고정) 무관 교정 역효과</title>
+<style>
+  body { font-family: "맑은 고딕", "Malgun Gothic", sans-serif; padding: 24px; line-height: 1.4; color:#222; }
+  h3 { font-size: 13pt; margin: 0 0 4px 0; }
+  .cap-sub { font-size: 9pt; color: #666; margin: 0 0 12px 0; }
+  .note-sub { font-size: 9pt; color: #666; margin-top: 10px; max-width: 660px; }
+  .fig-block { margin: 0 0 40px 0; }
+  table { border-collapse: collapse; width: 660px; font-size: 10pt; margin: 10px 0 6px 0; }
+  th, td { border: 1px solid #000; padding: 6px 8px; text-align: center; }
+  th { background-color: #e8e8e8; font-weight: bold; }
+  tr.peak td { background-color: #fdecea; font-weight: bold; }
+  .guide { border: 2px solid #1565c0; background: #e3f2fd; border-radius: 8px;
+           padding: 14px 18px; margin-bottom: 30px; font-size: 10pt; color: #0d3c61; max-width:660px; }
+  .legend { font-size: 10pt; margin: 6px 0 0 80px; }
+  .legend span { margin-right: 18px; }
+  .sw { display:inline-block; width:14px; height:14px; vertical-align:middle; margin-right:5px; border:1px solid #999;}
+</style>
+</head>
+<body>
+
+<div class="guide">
+  <div style="font-size:11pt; font-weight:bold; margin-bottom:6px;">📋 한글(HWP)에 그림 넣는 법</div>
+  ① 이 파일을 브라우저(크롬·엣지)에서 엽니다.<br>
+  ② 아래 <b>차트 영역을 캡처</b>(Win+Shift+S)하거나, 차트에 마우스 우클릭 → <b>이미지 복사</b>.<br>
+  ③ 한글에서 <b>Ctrl+V</b>로 붙여넣고 크기를 본문 폭에 맞추세요. (캡션·각주는 표 바깥 글로 따로 입력)<br>
+  <span style="font-size:9pt; color:#555;">※ 아래 데이터 표는 부록·발표용으로 별도 복사해 쓸 수 있습니다.</span>
+</div>
+
+<div class="fig-block">
+<h3>그림 7-2. 무관 교정 주입의 역효과 — 단일 카메라 사례(애룡저수지·고정, n=30, 교정 3건)</h3>
+<p class="cap-sub">제로샷에서 정확도 0.967·오경보 0건이던 카메라에 고정-k가 맥락 무관 교정을 강제 주입하자 오경보 5건이 신규 발생해 정확도가 0.800으로 하락했고, 선택적 주입(RAG)에서 0.967로 회복되었다.</p>
+
+<svg width="680" height="420" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" font-family="'맑은 고딕','Malgun Gothic',sans-serif">
+  <!-- plot frame -->
+  <rect x="80" y="40" width="480" height="310" fill="#ffffff" stroke="#bbbbbb"/>
+
+  <!-- left axis gridlines + labels (Accuracy 0~1) -->
+  <g font-size="10" fill="#555">
+    <line x1="80" y1="350" x2="560" y2="350" stroke="#ddd"/><text x="74" y="354" text-anchor="end">0.0</text>
+    <line x1="80" y1="288" x2="560" y2="288" stroke="#eee"/><text x="74" y="292" text-anchor="end">0.2</text>
+    <line x1="80" y1="226" x2="560" y2="226" stroke="#eee"/><text x="74" y="230" text-anchor="end">0.4</text>
+    <line x1="80" y1="164" x2="560" y2="164" stroke="#eee"/><text x="74" y="168" text-anchor="end">0.6</text>
+    <line x1="80" y1="102" x2="560" y2="102" stroke="#eee"/><text x="74" y="106" text-anchor="end">0.8</text>
+    <line x1="80" y1="40"  x2="560" y2="40"  stroke="#eee"/><text x="74" y="44"  text-anchor="end">1.0</text>
+  </g>
+  <!-- right axis labels (FP 0~6) -->
+  <g font-size="10" fill="#c0392b">
+    <text x="566" y="354" text-anchor="start">0</text>
+    <text x="566" y="303" text-anchor="start">1</text>
+    <text x="566" y="251" text-anchor="start">2</text>
+    <text x="566" y="199" text-anchor="start">3</text>
+    <text x="566" y="147" text-anchor="start">4</text>
+    <text x="566" y="96"  text-anchor="start">5</text>
+    <text x="566" y="44"  text-anchor="start">6</text>
+  </g>
+
+  <!-- FP bars (right scale: y = 350 - fp*51.67) -->
+  <g fill="#ef9a9a" stroke="#c0392b" stroke-width="0.7">
+    <!-- 제로샷 FP0: no bar -->
+    <rect x="235" y="92" width="50" height="258"/>  <!-- 고정k=3 FP5 -->
+    <rect x="355" y="92" width="50" height="258"/>  <!-- 고정k=5 FP5 -->
+    <!-- RAG FP0: no bar -->
+  </g>
+  <!-- FP value labels -->
+  <g font-size="11" fill="#c0392b" font-weight="bold" text-anchor="middle">
+    <text x="140" y="344">0</text>
+    <text x="260" y="86">5</text>
+    <text x="380" y="86">5</text>
+    <text x="500" y="344">0</text>
+  </g>
+
+  <!-- Accuracy line (left scale: y = 350 - acc*310) -->
+  <polyline points="140,50 260,102 380,102 500,50" fill="none" stroke="#1565c0" stroke-width="2.5"/>
+  <g fill="#1565c0">
+    <circle cx="140" cy="50"  r="5"/>
+    <circle cx="260" cy="102" r="5"/>
+    <circle cx="380" cy="102" r="5"/>
+    <circle cx="500" cy="50"  r="5"/>
+  </g>
+  <!-- Accuracy value labels -->
+  <g font-size="11" fill="#0d3c61" font-weight="bold" text-anchor="middle">
+    <text x="140" y="36">0.967</text>
+    <text x="260" y="120">0.800</text>
+    <text x="380" y="120">0.800</text>
+    <text x="500" y="36">0.967</text>
+  </g>
+
+  <!-- x category labels -->
+  <g font-size="11" fill="#222" text-anchor="middle">
+    <text x="140" y="372">제로샷</text>
+    <text x="260" y="372">고정 k=3</text>
+    <text x="380" y="372">고정 k=5</text>
+    <text x="500" y="372">RAG(제안)</text>
+  </g>
+
+  <!-- axis titles -->
+  <text x="24" y="200" font-size="11" fill="#0d3c61" transform="rotate(-90 24,200)" text-anchor="middle">정확도(Accuracy)</text>
+  <text x="652" y="200" font-size="11" fill="#c0392b" transform="rotate(90 652,200)" text-anchor="middle">오경보 수(FP)</text>
+</svg>
+
+<div class="legend">
+  <span><span class="sw" style="background:#1565c0;border-color:#1565c0;"></span>정확도(좌축, 선)</span>
+  <span><span class="sw" style="background:#ef9a9a;border-color:#c0392b;"></span>오경보 FP(우축, 막대)</span>
+</div>
+
+<table>
+  <thead>
+    <tr><th>조건</th><th>정확도(Acc)</th><th>오경보(FP)</th><th>TP/FP/TN/FN</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>제로샷</td><td>0.967</td><td>0</td><td>0 / 0 / 29 / 1</td></tr>
+    <tr class="peak"><td>고정 k=3</td><td>0.800</td><td>5</td><td>0 / 5 / 24 / 1</td></tr>
+    <tr class="peak"><td>고정 k=5</td><td>0.800</td><td>5</td><td>0 / 5 / 24 / 1</td></tr>
+    <tr><td>RAG(제안)</td><td>0.967</td><td>0</td><td>0 / 0 / 29 / 1</td></tr>
+  </tbody>
+</table>
+<p class="note-sub">※ 애룡저수지(고정) 카메라 단일 사례(n=30, 등록 교정 3건). 정확도=(TP+TN)/n. 고정-k는 맥락과 무관한 교정까지 강제 주입해 신규 오경보 5건을 유발(정확도 0.967→0.800)한 반면, RAG는 같은 맥락의 교정이 없어 미주입(fallback)함으로써 제로샷 수준(0.967)을 유지하였다. 상방지구에서도 동일 방향(제로샷 0.889→고정-k 0.556)의 역효과가 관찰되었다. 출처: 본 연구 실험데이터(_rag_compare_out.json, _agg_zeroshot_out.json).</p>
+</div>
+
+</body>
+</html>

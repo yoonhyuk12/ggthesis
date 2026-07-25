@@ -1,0 +1,24 @@
+{
+  "rag_enabled": true,
+  "k_max": 3,
+  "fs_enabled": true,
+  "frame_found": true,
+  "rag_selected": [
+    {
+      "id": "106e30cc",
+      "why": "신호수인정",
+      "ct": "false_alarm"
+    },
+    {
+      "id": "577c3ea8",
+      "why": "통제된작업",
+      "ct": "false_alarm"
+    },
+    {
+      "id": "0626f424",
+      "why": "기타",
+      "ct": "false_alarm"
+    }
+  ],
+  "all_count": 5
+}

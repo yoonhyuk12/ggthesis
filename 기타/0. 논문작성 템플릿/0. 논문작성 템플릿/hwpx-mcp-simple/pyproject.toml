@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hwpx-mcp-server"
+version = "2.2.6"
+description = "MCP server for reading, editing, inspecting, and validating local HWPX documents with AI agents."
+readme = "README.md"
+authors = [{ name = "Kohkyuhyun" }]
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+keywords = ["hwpx", "hancom", "mcp", "model-context-protocol", "document-automation", "ai-agent"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "python-hwpx>=2.9.1", # interop fixes (issue #30/#34/#35) required by the current MCP surface
+
+    "pydantic>=2.7",
+    "anyio>=4.0",
+    "mcp>=1.14.1",
+    "modelcontextprotocol>=0.1.0",
+    "olefile>=0.47",
+    "uvicorn>=0.30",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/airmang/hwpx-mcp-server"
+Issues = "https://github.com/airmang/hwpx-mcp-server/issues"
+
+[project.scripts]
+"hwpx-mcp-server" = "hwpx_mcp_server.server:main"
+"hwpx-mcp-legacy" = "hwpx_mcp_server.legacy_server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"

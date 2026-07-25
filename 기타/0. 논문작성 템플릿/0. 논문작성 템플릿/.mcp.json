@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "hwpx": {
+      "command": "hwpx-mcp-simple\\.venv\\Scripts\\hwpx-mcp-server.exe",
+      "args": [],
+      "env": {
+        "HWPX_MCP_AUTOBACKUP": "1"
+      }
+    }
+  }
+}
