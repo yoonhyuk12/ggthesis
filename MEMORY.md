@@ -1,6 +1,6 @@
 # MEMORY.md — 세션 간 누적 학습 기록
 
-> `.claude/rules/learn-tags.md` 형식을 따른다. 한 줄 = 한 학습, Incorrect → Correct 방향 명시.
+> `recording-learnings` 스킬의 형식을 따른다. 한 줄 = 한 학습, Incorrect → Correct 방향 명시.
 
 ## Notation Registry (변수·용어 규칙)
 

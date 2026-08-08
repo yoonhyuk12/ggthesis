@@ -1,3 +1,10 @@
+---
+paths:
+  - "CLAUDE.md"
+  - "docs/*.md"
+  - ".claude/rules/*.md"
+---
+
 # Rule: Keep CLAUDE.md Lean
 
 ## Principle

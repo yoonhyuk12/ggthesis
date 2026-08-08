@@ -1,4 +1,9 @@
-# Rule: Record Learnings with [LEARN] Tags
+---
+name: recording-learnings
+description: Use when a correction is discovered and must be recorded to MEMORY.md — 사용자가 세션 중 무언가를 바로잡았을 때, 심사·지도교수 코멘트가 반복 실수를 드러냈을 때, 인용·수치·법령·표기·hwpx 도구 사용법이 틀렸다고 확인됐을 때. `[LEARN:category]` 태그 형식, 카테고리 선택, 중복 점검, MEMORY.md 기록 위치를 다룬다.
+---
+
+# Recording Learnings with [LEARN] Tags
 
 ## Format
 
