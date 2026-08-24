@@ -6,7 +6,7 @@
 
 ## Key Decisions (결정·근거·날짜)
 
-- [2026-07-12] 학위논문을 6장 구조로 재구성(제3장 시스템 개발 신설) — 지도교수 구두 지시("개발 목차 검토") + 사례 박사논문 목차 기준. 변수 모형(X1~X4→M→Y, W)은 불변. 계획: `plan/2026-07-12_개발장신설_목차재구성.md`
+- [LEARN:method] 6장 구조 전환 뒤에도 변수 모형(X1~X4→M→Y, W)은 불변 → [SUPERSEDED 2026-08-24] 현행 주 분석은 AI 관제 시스템 도입 여부에 따른 안전관리 실효성의 조정 평균을 비교하는 두 집단 ANCOVA이며, 구 매개·조절 모형은 `backup/구 연구 방법/model.md`에 보존 — applies when: 연구모형·가설·분석방법·논문 제목을 작성하거나 검토할 때
 
 ## Citations (인용 교정)
 
@@ -17,10 +17,11 @@
 
 ## Anti-Patterns (방법·도메인 교정)
 
-- [LEARN:method] 서브에이전트가 X1~X4 변수명을 임의 창작(예: "검출 신뢰성") → 확정 명칭은 docs/02-연구모형.md 기준(X1 시스템 인프라 범용성, X2 1차 탐지(YOLO) 및 제어 안정성, X3 2차 검증(LLM) 오탐 필터링, X4 알림 전파 즉각성) — applies when: Worker에게 변수 관련 집필 위임 시 브리프에 확정 명칭을 명시
+- [LEARN:method] X1~X4를 현행 ANCOVA의 독립변수로 취급 → X1~X4는 도입 집단 전용 D블록의 시스템 특성 인식 참고척도이며, 현행 독립변수는 AI 관제 시스템 도입 여부 — applies when: Worker에게 변수·가설 관련 집필을 위임하거나 제3장과 제4장의 연결을 검토할 때
 
 ## hwpx Pitfalls
 
+- [LEARN:hwpx] HWPX 기준 원본이 `논문구조/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`에 있음 → [SUPERSEDED 2026-08-24] 현재 최신 기준 원본은 `C:/Users/EKR/orca/ggthesis/00. hwpx/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`이며, 한글 이관 요청 시 이를 `C:/Users/EKR/orca/ggthesis/00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한 뒤 복사본의 타깃만 수정하고 Asia/Seoul 작업 시각을 사용 — applies when: 사용자가 논문 내용을 한글(hwpx)로 옮겨 달라고 요청할 때
 - [LEARN:hwpx] hwpx MCP 서버(v2.18.1)가 모든 파일에서 "open-safety verification: package validation failed"로 열기 실패(백업본 포함, ZIP·manifest 정상) → 읽기·타깃 치환은 Python zipfile로 Contents/section0.xml 직접 수술(수정 전 백업 생성, 동일 순서·압축 유지, 위치 기반 치환) — applies when: hwpx MCP find_text/search_and_replace가 open failed를 반환할 때. 표 셀은 텍스트가 여러 문단/run으로 쪼개져 있을 수 있어 문자열 전역 치환 전 반드시 원문 XML 문맥 확인 [SUPERSEDED 2026-07-25: 재클론한 hwpx-mcp-simple에서 `get_document_info`가 학회논문 백업본을 정상 개방(194문단·17표)해 이 실패는 재현되지 않음. zipfile 수술은 여전히 유효한 폴백이나 더 이상 기본 경로가 아니다]
 - [LEARN:hwpx] hwpx MCP 서버는 저장소 루트(C:\Users\EKR\orca\ggthesis)로 샌드박스됨 → 스크래치패드·임시 경로를 넘기면 "path is outside sandbox root"로 거부 — applies when: MCP 도구에 파일 경로를 넘길 때. 저장소 상대경로를 쓴다
 - [LEARN:hwpx] 한글 크래시 판정을 "Start-Process 후 고정 12초 대기 → Get-Process Hwp" 방식으로 하면 세션 첫(콜드) 실행이 12초를 넘겨 뜨는 탓에 **정상 파일이 CRASHED로 오탐**된다(같은 파일이 COM으로는 정상 개방·PDF 변환됨, 워밍업 후에는 6초에도 ALIVE) → 워밍업 후 폴링하는 `.claude/skills/hwpx-thesis-editing/scripts/verify-hwpx.ps1` 사용 — applies when: 수정한 hwpx의 개방 가능 여부를 검증할 때
