@@ -23,7 +23,7 @@ When you need information about the project, check in this order:
 1. **`01.docs/` 원고** — 장 구조·변수·가설·문항·수치·분석 설계의 단일 원본이다
 2. **CLAUDE.md 참고 자료 인덱스** — PDF 분류, 일정, 스킬 호출, 디펜스 논리, G*Power 조작법
 3. **`프로그램 기술분석서.md`** — AI CCTV Viewer 상세 기술 명세
-4. **`.claude/reference/05-참조자료.md`** — referernce/ PDF 분류 (원문 PDF를 열기 전에 분류부터)
+4. **`.claude/reference/05-참조자료.md`** — 02.reference/ PDF 분류 (원문 PDF를 열기 전에 분류부터)
 5. **Only then** use Grep/Glob for targeted searches
 6. **Web search is a last resort** — never search the web for something already documented locally (단, 법령·고시 최신본 확인은 예외 — mark-unverified 규칙)
 
@@ -32,4 +32,4 @@ When you need information about the project, check in this order:
 - Globbing for `**/*.md` across the entire repo to "find" documentation CLAUDE.md already lists
 - Grepping for keywords when CLAUDE.md explicitly lists where things are
 - 참고 자료 5종을 전부 열어 "맥락을 파악"하려는 것 — 필요한 하나만 연다
-- Opening `referernce/` PDFs before reading `.claude/reference/05-참조자료.md`
+- Opening `02.reference/` PDFs before reading `.claude/reference/05-참조자료.md`

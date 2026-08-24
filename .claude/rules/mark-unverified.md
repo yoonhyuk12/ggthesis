@@ -8,7 +8,7 @@
 
 A claim is unverified when:
 
-- The citation (저자·연도·제목·게재지) has NOT been confirmed against the actual PDF in `referernce/` or an academic index (RISS, DBpia, Google Scholar, Crossref)
+- The citation (저자·연도·제목·게재지) has NOT been confirmed against the actual PDF in `02.reference/` or an academic index (RISS, DBpia, Google Scholar, Crossref)
 - The cited page number has NOT been checked against the source PDF — use the `verifying-citation-pages` skill (인쇄 쪽수 vs PDF 페이지 인덱스 함정 주의)
 - The statistic has NOT been computed from the survey data / SPSS·PROCESS output, or quoted from a paper just read in this session
 - 법령·고시·금액 기준 (산업안전보건법, 고용노동부 고시, 산안비 계상 요율·한도 등) has NOT been re-checked against the current official text — 법령·고시는 매년 바뀐다
@@ -28,7 +28,7 @@ The `[UNVERIFIED]` flag is preserved through edits until verification actually h
 
 | Claim type | Primary source |
 |---|---|
-| 인용 존재·서지 | `referernce/` PDF 원문; 없으면 RISS·Google Scholar·Crossref 웹 검증 |
+| 인용 존재·서지 | `02.reference/` PDF 원문; 없으면 RISS·Google Scholar·Crossref 웹 검증 |
 | 인용 페이지 | 원문 PDF + `verifying-citation-pages` 스킬 |
 | 법령·고시·금액 | 국가법령정보센터·고용노동부 최신 원문 (WebFetch/WebSearch) |
 | 통계 수치 | 설문 원자료·SPSS/PROCESS 출력 |

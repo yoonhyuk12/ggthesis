@@ -47,7 +47,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 논문 작업 공통 규칙 14종이 `.claude/rules/`에 있다. 이 중 7종(`cross-chapter-consistency`·`mark-unverified`·`scope-discipline`·`subagent-write-guard`·`audit-before-fix`·`plan-first`·`read-docs-first`)은 **매 세션 전문이 자동 로드되므로 여기서 요약하지 않는다.** 나머지 7종은 `paths:`로 해당 파일을 다룰 때만 로드되니, 그중 다음 3종은 존재만 기억해 둔다.
 
-- `doi-verification` — 존재 확인 안 된 문헌은 참고문헌에 쓰지 않는다 (referernce/ 우선)
+- `doi-verification` — 존재 확인 안 된 문헌은 참고문헌에 쓰지 않는다 (02.reference/ 우선)
 - `paper-code-consistency` — 원고 수치는 분석 출력·확정 모형 문서와 대조 후 커밋
 - `spec-before-quality` — 스펙 확인 후 품질 리뷰
 
@@ -89,7 +89,7 @@ Worker에게 위임하는 일:
 
 | 파일 | 언제 로드하나 |
 | --- | --- |
-| [05-참조자료.md](.claude/reference/05-참조자료.md) | `referernce/` PDF 44종 분류 — **원문 PDF를 열기 전에 여기부터 본다** |
+| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` PDF 44종 분류 — **원문 PDF를 열기 전에 여기부터 본다** |
 | [06-일정.md](.claude/reference/06-일정.md) | 마일스톤·우선순위 점검 |
 | [08-Agent스킬.md](.claude/reference/08-Agent스킬.md) | write-academic-report 등 자동화 스킬 호출 |
 | [09-디펜스논리.md](.claude/reference/09-디펜스논리.md) | 심사위원 예상 질문 대응, 제6장 결론 시사점 |
@@ -108,7 +108,7 @@ Worker에게 위임하는 일:
 | `.claude/rules/` | 작업 규칙 | 지시 시에만 |
 | `.claude/skills/` | 프로젝트 스킬 6종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills) | 지시 시에만 |
 | `.claude/reference/` | 원고에 없는 참고 자료 5종(위 인덱스) + 하네스 자료 (`커맨드_및_스킬_정리.md`, awesome-agent-skills 카탈로그, hwpx-writing-kit 원본 아카이브) | 읽기 전용 |
-| `referernce/` | 선행연구 PDF 44종 (분류: `.claude/reference/05-참조자료.md`), `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
+| `02.reference/` | 선행연구 PDF 44종 (분류: `.claude/reference/05-참조자료.md`), `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
 | `프로그램 기술분석서.md` | AI CCTV Viewer 상세 기술 명세 (제3장 시스템 개발의 근거) | 읽기 전용 |
 | `기타/0. 논문작성 템플릿/…` | 박종용 교수님 논문작성요령 (경로는 위 절 참조) | 읽기 전용 |
 | `학회논문/`, `논문구조_백업_2026-07-12/`, `backup/`, `논문양식참조/` | 선행 학회 투고본·백업 스냅샷·양식 | 읽기 전용 (수정 금지) |

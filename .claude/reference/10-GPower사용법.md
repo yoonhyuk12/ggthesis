@@ -112,4 +112,4 @@ C:\Users\EKR\Downloads\GPowerWin_3.1.9.7\GPower_3.1.9.7_143\GPowerNT.exe
 
 - `01.docs/04_연구설계.md` 제5절 제1항 — 표본 설계 (산출값을 반영할 위치)
 - `01.docs/07_참조번호목록.md` 「표본 크기 산정 근거」 절 — 인용 문헌 6종의 확보 상태
-- `referernce/61`·`referernce/62` — G*Power 논문 원문
+- `02.reference/61`·`02.reference/62` — G*Power 논문 원문

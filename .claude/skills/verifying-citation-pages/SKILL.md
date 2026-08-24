@@ -1,6 +1,6 @@
 ---
 name: verifying-citation-pages
-description: Use when checking whether a thesis/paper reference's 인용 페이지 (cited page numbers) actually contain the content the body attributes to it — cross-referencing 06_참고문헌.md entries against source PDFs in referernce/. Critical when a citation's page seems to land on a title page, blank page, or wrong section (the printed page vs PDF page-index trap).
+description: Use when checking whether a thesis/paper reference's 인용 페이지 (cited page numbers) actually contain the content the body attributes to it — cross-referencing 06_참고문헌.md entries against source PDFs in 02.reference/. Critical when a citation's page seems to land on a title page, blank page, or wrong section (the printed page vs PDF page-index trap).
 ---
 
 # Verifying Citation Pages (인용 페이지 원문 대조)
@@ -30,7 +30,7 @@ Each entry in `학회논문/06_참고문헌.md` ends with 〔인용 페이지: �
    ```
    Record the *specific claim* (e.g. "BERTopic+GPT-4o 사고 패턴 분석, 사후 분석, 실시간 경보 불가"). This is what must be supported.
 
-3. **Locate the source PDF** in `referernce/` (filename starts with its download-order number, unrelated to `[NN]`). Match by title.
+3. **Locate the source PDF** in `02.reference/` (filename starts with its download-order number, unrelated to `[NN]`). Match by title.
 
 4. **Derive the printed↔PDF offset.** Read a few body PDF pages, find a footer page number (e.g. `- 3 -`):
    ```
@@ -50,7 +50,7 @@ Each entry in `학회논문/06_참고문헌.md` ends with 〔인용 페이지: �
 |---|---|---|
 | Cited page shows title/blank page | Read PDF index instead of printed page | Derive offset (step 4) |
 | Footer number missing on a page | Chapter-opening or figure-only page | Read an adjacent page to anchor the offset |
-| PDF filename number ≠ `[NN]` | referernce/ uses download order, 참고문헌 uses citation order | Match by title, not number |
+| PDF filename number ≠ `[NN]` | 02.reference/ uses download order, 참고문헌 uses citation order | Match by title, not number |
 | No 〔인용 페이지〕 in entry | 원문 미확보 문헌 | Skip PDF dual-check |
 
 ## Common Mistakes
@@ -58,4 +58,4 @@ Each entry in `학회논문/06_참고문헌.md` ends with 〔인용 페이지: �
 - **Trusting the PDF page index = printed page.** The #1 error. Always anchor on a footer number first.
 - **Reusing an offset across documents.** Each PDF's front matter differs.
 - **Verifying the page exists but not the *content*.** The claim in the body must be supported by that exact page, not merely "the paper is about this topic."
-- **Confusing referernce/ file numbers with citation `[NN]`.** They are independent numbering schemes.
+- **Confusing 02.reference/ file numbers with citation `[NN]`.** They are independent numbering schemes.
