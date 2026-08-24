@@ -127,5 +127,8 @@
       "mcp__hwpx__get_paragraphs_text",
       "mcp__hwpx__insert_paragraph"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "hwpx"
+  ]
 }
