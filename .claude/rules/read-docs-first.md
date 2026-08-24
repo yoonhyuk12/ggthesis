@@ -8,8 +8,8 @@
 
 Before doing any work:
 
-1. `CLAUDE.md` — already auto-loaded; follow its 문서 인덱스 pointers
-2. The `docs/*.md` part matching the task (필요한 파트만 — 전부 로드하지 말 것)
+1. `CLAUDE.md` — already auto-loaded; follow its 참고 자료 인덱스 pointers
+2. 원고 사실은 `논문구조/`에서 찾는다. 그 밖의 참고 자료는 CLAUDE.md 인덱스의 `.claude/reference/` 중 필요한 것만 로드한다
 3. 논문 원고 작업이면 박종용 교수님 논문작성요령 전문 (경로는 CLAUDE.md 참조)
 4. The latest file in `plan/` (if resuming work)
 5. `MEMORY.md` (if it exists) — accumulated corrections and decisions
@@ -20,15 +20,16 @@ This takes seconds and prevents minutes of aimless searching.
 
 When you need information about the project, check in this order:
 
-1. **CLAUDE.md and `docs/` index** — identity, 연구모형, 시스템 명세, 작성 규칙, 통계 설계, 디펜스 논리
-2. **`프로그램 기술분석서.md`** — AI CCTV Viewer 상세 기술 명세
-3. **`docs/05-참조자료.md`** — referernce/ PDF 분류 (원문 PDF를 열기 전에 분류부터)
-4. **Only then** use Grep/Glob for targeted searches
-5. **Web search is a last resort** — never search the web for something already documented locally (단, 법령·고시 최신본 확인은 예외 — mark-unverified 규칙)
+1. **`논문구조/` 원고** — 장 구조·변수·가설·문항·수치·분석 설계의 단일 원본이다
+2. **CLAUDE.md 참고 자료 인덱스** — PDF 분류, 일정, 스킬 호출, 디펜스 논리, G*Power 조작법
+3. **`프로그램 기술분석서.md`** — AI CCTV Viewer 상세 기술 명세
+4. **`.claude/reference/05-참조자료.md`** — referernce/ PDF 분류 (원문 PDF를 열기 전에 분류부터)
+5. **Only then** use Grep/Glob for targeted searches
+6. **Web search is a last resort** — never search the web for something already documented locally (단, 법령·고시 최신본 확인은 예외 — mark-unverified 규칙)
 
 ## Anti-Patterns (Do NOT Do These)
 
 - Globbing for `**/*.md` across the entire repo to "find" documentation CLAUDE.md already lists
 - Grepping for keywords when CLAUDE.md explicitly lists where things are
-- Reading all 9 `docs/*.md` files "to understand context" when the task needs only one
-- Opening `referernce/` PDFs before reading `docs/05-참조자료.md`
+- 참고 자료 5종을 전부 열어 "맥락을 파악"하려는 것 — 필요한 하나만 연다
+- Opening `referernce/` PDFs before reading `.claude/reference/05-참조자료.md`

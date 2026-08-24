@@ -51,7 +51,7 @@ For experimental/exploratory tasks: skip full planning.
 When starting a new session or after context compression:
 
 1. Read the most recent file in `plan/` — where the last plan left off
-2. Follow the CLAUDE.md 문서 인덱스 to load only the `docs/*.md` parts needed
+2. Follow the CLAUDE.md 참고 자료 인덱스 to load only the `.claude/reference/` parts needed
 
 ## Execution Stall Detector
 

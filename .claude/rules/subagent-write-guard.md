@@ -27,7 +27,7 @@ they would seem like a natural next step:
 - Do NOT call any hwpx write tool (search_and_replace, replace_*, apply_*,
   set_*, insert_*, delete_*, add_*, create_* 등 mcp__hwpx__ 쓰기 계열).
   The orchestrator handles all hwpx edits, sequentially.
-- Do NOT edit `MEMORY.md`, `CLAUDE.md`, `docs/*.md`, or any project-level
+- Do NOT edit `MEMORY.md`, `CLAUDE.md`, `.claude/**`, `plan/**`, or any project-level
   documentation file.
 - Do NOT edit or create any file outside the assigned scope.
 
@@ -41,7 +41,7 @@ Sub-agents that draft 논문 원고 MUST NOT invent citations. Paste this into a
 
 ```
 You may draft prose, but you must NOT invent citations.
-Allowed: (1) cite only papers listed in the brief or in docs/05-참조자료.md,
+Allowed: (1) cite only papers listed in the brief or in .claude/reference/05-참조자료.md,
 exactly as given; (2) if a claim needs a source you don't have, write
 [CITE_TODO: 주장 요약] instead of a citation.
 Forbidden: inventing plausible 저자(연도) citations; asserting page numbers

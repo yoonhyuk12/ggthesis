@@ -2,7 +2,7 @@
 paths:
   - "논문구조/**"
   - "referernce/**"
-  - "docs/05-참조자료.md"
+  - ".claude/reference/05-참조자료.md"
 ---
 
 # Rule: Verify Every Reference Before Writing
@@ -17,7 +17,7 @@ Hallucinated papers are worse than missing papers. A missing citation is an hone
 
 Before writing any paper reference:
 
-1. **First check `referernce/`** — 이 프로젝트의 선행연구 PDF 44종 (분류는 `docs/05-참조자료.md`). 보유 PDF에서 인용하는 것이 기본이다.
+1. **First check `referernce/`** — 이 프로젝트의 선행연구 PDF 44종 (분류는 `.claude/reference/05-참조자료.md`). 보유 PDF에서 인용하는 것이 기본이다.
 2. **보유하지 않은 문헌을 인용해야 하면 존재를 검증하라** — RISS, DBpia, Google Scholar, Crossref 중 최소 1곳에서 실제 검색 결과를 확인한다 (WebSearch/WebFetch). Zero hits = the paper does not exist.
 3. **Only write verified references** — never record a reference you cannot find, regardless of how confident you are it exists.
 

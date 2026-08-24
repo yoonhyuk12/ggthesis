@@ -32,7 +32,7 @@ The `[UNVERIFIED]` flag is preserved through edits until verification actually h
 | 인용 페이지 | 원문 PDF + `verifying-citation-pages` 스킬 |
 | 법령·고시·금액 | 국가법령정보센터·고용노동부 최신 원문 (WebFetch/WebSearch) |
 | 통계 수치 | 설문 원자료·SPSS/PROCESS 출력 |
-| 시스템 사양 (X1~X4 운영적 정의) | `프로그램 기술분석서.md`, `docs/03-연구대상시스템.md` |
+| 시스템 사양 (X1~X4 운영적 정의) | `프로그램 기술분석서.md`, `논문구조/03_시스템개발.md` |
 
 ## When This Applies
 
