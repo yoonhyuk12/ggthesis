@@ -8,8 +8,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - **⭐ 현재 집필 대상 — `01.docs/` 학위논문 한 편뿐이다.** 내용 작업은 이 디렉토리의 MD 원고를 중심으로 하며, HWPX 기준 원본과 이관 산출물은 아래 규칙에 따라 `C:/Users/EKR/orca/ggthesis/00. hwpx/`에서 관리한다. 이 두 경로 밖에 논문 초안을 새로 만들지 않는다.
 - **원고 구성 (`01.docs/`, 6장 구조):** `00_목차.md`(표지·국문초록 골격·목차·표/그림 목차) · `01_서론.md` · `02_이론적배경.md` · `03_시스템개발.md` · `04_연구설계.md` · `05_실증분석결과.md` · `06_결론.md` · `07_참조번호목록.md`(확정 서지 단일 기준) · `부록1_설문지_양식.md` · `부록2_설문항목_근거매핑.md` · `설문항목_작업이력.md`.
-- **HWPX 기준 원본(현재 최신본):** `C:/Users/EKR/orca/ggthesis/00. hwpx/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`. 이 파일을 직접 덮어쓰지 않고 이관 작업의 복사 원본으로 사용한다(이관 계획: `03.plan/260725_1412_MD원고_hwpx이관_오케스트레이션.md`).
-- **HWPX 이관 산출물 규칙:** 사용자가 한글(hwpx)로 옮겨 달라고 요청하면 위 최신본을 `C:/Users/EKR/orca/ggthesis/00. hwpx/`에 먼저 복사하고, 복사본의 요청 부분만 수정한 뒤 `YYMMDD_HHMM_논문명.hwpx` 형식으로 저장한다. 날짜와 시간은 작업 시점의 Asia/Seoul 현지시각을 사용한다.
+- **HWPX 최신본 판정 규칙 — 파일명을 고정해 적지 않는다.** `C:/Users/EKR/orca/ggthesis/00. hwpx/`에서 **`YYMMDD_HHMM` 접두사가 가장 큰 파일이 그 시점의 최신본**이다. 특정 파일명을 이 문서에 박아 두면 새 산출물이 나올 때마다 낡아 옛 파일을 복사하게 되므로, 작업할 때마다 디렉토리를 직접 확인한다. 접두사가 없는 `260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`는 이관을 시작한 최초 기준 원본이며 최신본 비교 대상이 아니다(이관 계획: `03.plan/260725_1412_MD원고_hwpx이관_오케스트레이션.md`).
+- **HWPX 이관 산출물 규칙:** 사용자가 한글(hwpx)로 옮겨 달라고 요청하면 위 규칙으로 최신본을 확인해 `C:/Users/EKR/orca/ggthesis/00. hwpx/`에 먼저 복사하고, 복사본의 요청 부분만 수정한 뒤 `YYMMDD_HHMM_논문명.hwpx` 형식으로 저장한다. 원본은 어느 것도 직접 덮어쓰지 않는다. 날짜와 시간은 작업 시점의 Asia/Seoul 현지시각을 사용한다.
 - **계획·브리프 파일명 규칙:** `03.plan/`에 저장하는 계획 문서와 서브에이전트 브리프는 **`YYMMDD_HHMM_플랜명.md`** 형식으로 이름 짓는다. 날짜와 시각은 작성 시점의 Asia/Seoul 현지시각을 쓴다. 시각을 알 수 없는 과거 문서만 `0000`을 쓰며, 이는 실제 시각이 아니라 미상이라는 표시다. `README.md`는 폴더 색인이므로 규칙에서 제외하고, 새 파일을 만들면 그 목록에 한 줄 추가한다.
 - **읽기 전용 참고 영역 — 지시 없이 수정하지 않는다.** `학회논문/`(선행 학회 투고본), `논문구조_백업_2026-07-12/`, `backup/`(ANCOVA 전환 이전 스냅샷), `논문양식참조/`, 루트의 다른 hwpx·pdf. 인용·서식 참고 용도로만 읽는다.
 - **🔴 hwpx 빨간색 표기 규칙 (상시):** hwpx에서는 **본문이 아닌 것을 모두 빨간 글자로 출력한다.** 아직 못 채운 자리, 확정해야 할 결정, 검증해야 할 근거, 작성 가이드·방향 서술이 여기 해당한다. 대상은 접두사로 판정한다 — `[DATA PENDING`, `[확정 필요`, `[CITE_TODO`, `[그림 삽입 예정`, `[UNVERIFIED`. 여는 대괄호부터 닫는 대괄호까지 통째로 빨갛게 하며, 본문 문단과 **표 셀 양쪽에 모두** 적용한다. 지도교수·심사위원이 미완성 지점을 한눈에 보게 하려는 것이다.
@@ -31,7 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 박종용 교수님 논문작성요령 — 논문 작성 최우선 지침
 
-지도교수(박종용 교수님)의 논문작성요령 전문이 `기타/0. 논문작성 템플릿/0. 논문작성 템플릿/3. 기타/박종용교수님_논문작성요령20260707.md`에 있다(원본은 같은 이름의 .hwpx). **논문 원고를 작성·수정·검토할 때는 이 지침을 다른 일반 지침보다 우선 적용하고, 작업 시작 전에 전문을 반드시 읽어라.** 장별 상세 템플릿(서론 절 구성, 문헌고찰 변수별 기술순서, 심사위원 예상 질문, 결론 5요소)과 세컨오더 팩터 4대 판단 기준은 전문에만 있다.
+지도교수(박종용 교수님)의 논문작성요령 전문이 **`논문양식참조/박종용교수님_논문작성요령20260707.md`**에 있다. 한글 원본 .hwpx는 `기타/0. 논문작성 템플릿/0. 논문작성 템플릿/3. 기타/`에 있으나 그 디렉토리에 MD는 없으므로, 읽을 때는 위 `논문양식참조/` 경로를 쓴다. **논문 원고를 작성·수정·검토할 때는 이 지침을 다른 일반 지침보다 우선 적용하고, 작업 시작 전에 전문을 반드시 읽어라.** 장별 상세 템플릿(서론 절 구성, 문헌고찰 변수별 기술순서, 심사위원 예상 질문, 결론 5요소)과 세컨오더 팩터 4대 판단 기준은 전문에만 있다.
 
 항상 지켜야 할 핵심 규칙.
 - 작성 순서는 3장 → 2장 → 1장 → 4장 → 5장이며, 서론은 뒷장을 쓰면서 계속 수정한다. (요령 원문의 장 번호는 5장 구조 기준이다. 본 논문은 시스템 개발 장을 신설한 **6장 구조**이므로, 장 번호는 `01.docs/00_목차.md`의 실제 구성에 대응시켜 읽는다.)
@@ -46,8 +46,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 작업 규칙 (`.claude/rules/`)
 
-논문 작업 공통 규칙 14종이 `.claude/rules/`에 있다. 이 중 7종(`cross-chapter-consistency`·`mark-unverified`·`scope-discipline`·`subagent-write-guard`·`audit-before-fix`·`plan-first`·`read-docs-first`)은 **매 세션 전문이 자동 로드되므로 여기서 요약하지 않는다.** 나머지 7종은 `paths:`로 해당 파일을 다룰 때만 로드되니, 그중 다음 3종은 존재만 기억해 둔다.
+논문 작업 공통 규칙 15종이 `.claude/rules/`에 있다. 이 중 7종(`cross-chapter-consistency`·`mark-unverified`·`scope-discipline`·`subagent-write-guard`·`audit-before-fix`·`plan-first`·`read-docs-first`)은 **매 세션 전문이 자동 로드되므로 여기서 요약하지 않는다.** 나머지 8종은 `paths:`로 해당 파일을 다룰 때만 로드되니, 그중 다음 4종은 존재만 기억해 둔다.
 
+- `defense-feedback` — 공개발표·1차·2차 심사 지적사항 8항목을 본 논문 설계로 번역한 집필 지침 (`01.docs/**` 편집 시 자동 로드). **본 연구는 횡단 비교이므로 결과 서술에 "도입 이후 향상", "개선시켰다" 같은 시간·인과 표현을 쓰지 않는다** — 나머지는 규칙 파일 참조
 - `doi-verification` — 존재 확인 안 된 문헌은 참고문헌에 쓰지 않는다 (02.reference/ 우선)
 - `paper-code-consistency` — 원고 수치는 분석 출력·확정 모형 문서와 대조 후 커밋
 - `spec-before-quality` — 스펙 확인 후 품질 리뷰
@@ -90,7 +91,7 @@ Worker에게 위임하는 일:
 
 | 파일 | 언제 로드하나 |
 | --- | --- |
-| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` PDF 44종 분류 — **원문 PDF를 열기 전에 여기부터 본다** |
+| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` PDF 분류 — **원문 PDF를 열기 전에 여기부터 본다.** 단 등재 범위는 01~44번뿐이고 45~62번은 미분류이므로, 그 구간은 파일명으로 직접 찾는다 |
 | [06-일정.md](.claude/reference/06-일정.md) | 마일스톤·우선순위 점검 |
 | [08-Agent스킬.md](.claude/reference/08-Agent스킬.md) | write-academic-report 등 자동화 스킬 호출 |
 | [09-디펜스논리.md](.claude/reference/09-디펜스논리.md) | 심사위원 예상 질문 대응, 제6장 결론 시사점 |
@@ -104,14 +105,37 @@ Worker에게 위임하는 일:
 | --- | --- | --- |
 | `01.docs/` | **현행 학위논문 원고(MD)** | ✅ 원고 쓰기 대상 |
 | `00. hwpx/` | HWPX 기준 원본 + 사용자 요청 시 기준 원본을 복사하여 부분 수정한 이관 산출물 (`YYMMDD_HHMM_논문명.hwpx`) | ✅ HWPX 기준본·산출물 저장 |
+| `tools/hwpx_transfer/` | MD 원고 → hwpx 조립 파이프라인 (실행법은 아래). 빨간색 마커 규칙이 `blocks_to_hwpx.py`에 들어 있다 | 지시 시에만 |
 | `03.plan/` | 작업 계획·서브에이전트 브리프 (세션 재개 시 최신 파일부터 읽는다) | ✅ 계획 저장 |
 | `MEMORY.md` | 누적 교정·결정 기록 (`[LEARN]` 태그, 형식은 `recording-learnings` 스킬) | ✅ 학습 기록 |
 | `.claude/rules/` | 작업 규칙 | 지시 시에만 |
 | `.claude/skills/` | 프로젝트 스킬 6종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills) | 지시 시에만 |
 | `.claude/reference/` | 원고에 없는 참고 자료 5종(위 인덱스) + 하네스 자료 (`커맨드_및_스킬_정리.md`, awesome-agent-skills 카탈로그, hwpx-writing-kit 원본 아카이브) | 읽기 전용 |
-| `02.reference/` | 선행연구 PDF 44종 (분류: `.claude/reference/05-참조자료.md`), `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
+| `02.reference/` | 선행연구 자료 62건(01~62번, 이 중 PDF 61개). 분류는 `.claude/reference/05-참조자료.md`에 01~44번만 등재. `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
 | `프로그램 기술분석서.md` | AI CCTV Viewer 상세 기술 명세 (제3장 시스템 개발의 근거) | 읽기 전용 |
 | `기타/0. 논문작성 템플릿/…` | 박종용 교수님 논문작성요령 (경로는 위 절 참조) | 읽기 전용 |
+| `기타/논문심사(공개발표1차2차)_지적사항 정리 최종본.pdf` | 공개발표·1차·2차 심사 지적사항 원문 (요약·번역본은 `.claude/rules/defense-feedback.md`) | 읽기 전용 |
 | `학회논문/`, `논문구조_백업_2026-07-12/`, `backup/`, `논문양식참조/` | 선행 학회 투고본·백업 스냅샷·양식 | 읽기 전용 (수정 금지) |
+
+### MD → hwpx 조립 파이프라인
+
+MD 원고 전체를 hwpx로 다시 조립할 때만 쓴다. 문단 하나를 고치는 부분 수정은 이 파이프라인이 아니라 위의 hwpx 부분 치환 규칙을 따른다(전체 재조립은 사용자 직접 수정분을 지운다). 저장소 루트에서 2단계로 실행한다.
+
+```bash
+# 1단계 — 인자 없음. 01.docs/*.md 를 읽어 staging/*.blocks.json 과 parse_report.md 생성
+python tools/hwpx_transfer/md_to_blocks.py
+
+# 2단계 — 블록 JSON + 양식 hwpx → 학위논문 hwpx 조립
+python tools/hwpx_transfer/blocks_to_hwpx.py \
+  --template "공학대학원_건축안전_윤혁_…YOLO-VLM… - 복사본.hwpx" \
+  --style-map tools/hwpx_transfer/staging/style_map.json \
+  --blocks tools/hwpx_transfer/staging/ch01.blocks.json … apx2.blocks.json \
+  --references tools/hwpx_transfer/staging/references.json \
+  --output "00. hwpx/YYMMDD_HHMM_논문명.hwpx"
+```
+
+`--smoke`를 주면 `--output` 없이 `staging/test_out/smoke.hwpx`로 뽑아 확인만 할 수 있다. 표준 라이브러리만 쓰므로 별도 설치는 필요 없다.
+
+**⚠️ Windows 콘솔 함정.** 두 스크립트 모두 한국어로 진행 상황을 출력하는데, 기본 코드 페이지(cp949)에서는 줄표(`—`) 때문에 `UnicodeEncodeError`로 죽는다. 스크립트 버그가 아니라 콘솔 인코딩 문제이므로, 실행 앞에 **`PYTHONIOENCODING=utf-8`을 붙인다.**
 
 하네스 설정 중 `.mcp.json`(MCP 서버 등록)과 `skills-lock.json`(skills CLI 잠금)은 도구가 프로젝트 루트에서만 읽으므로 루트에 둔다. hwpx MCP 서버 본체 `hwpx-mcp-simple/`은 전용 venv 경로가 절대 경로로 박혀 있어 옮기지 않으며, `.gitignore`로 추적에서 제외한다.
