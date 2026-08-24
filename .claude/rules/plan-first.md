@@ -42,7 +42,7 @@ For experimental/exploratory tasks: skip full planning.
 ## Protocol
 
 1. **Draft a plan** before making changes
-2. **Save the plan** to `plan/YYYY-MM-DD_설명.md` (기존 `plan/` 디렉토리 사용)
+2. **Save the plan** to `03.plan/YYYY-MM-DD_설명.md` (기존 `03.plan/` 디렉토리 사용)
 3. **Get approval** — present the plan to the user and wait for confirmation
 4. **Implement**, noting any deviations from the plan
 
@@ -50,12 +50,12 @@ For experimental/exploratory tasks: skip full planning.
 
 When starting a new session or after context compression:
 
-1. Read the most recent file in `plan/` — where the last plan left off
+1. Read the most recent file in `03.plan/` — where the last plan left off
 2. Follow the CLAUDE.md 참고 자료 인덱스 to load only the `.claude/reference/` parts needed
 
 ## Execution Stall Detector
 
-When a plan already exists (in `plan/` or stated by the user), enforce execution momentum:
+When a plan already exists (in `03.plan/` or stated by the user), enforce execution momentum:
 
 - **2-message rule:** If 2 consecutive messages pass after a plan is confirmed and no file has been edited, STOP reading/auditing and start implementing immediately. Print: "Stall detected — starting execution now."
 - **No re-planning approved plans:** Do not re-read, re-audit, or re-draft a plan that the user has already approved. Start from step 1 and make changes.

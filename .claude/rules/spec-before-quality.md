@@ -23,7 +23,7 @@ paths:
 |---------|---------------|
 | 논문 원고 | `01.docs/04_연구설계.md`의 확정 변수·가설, `01.docs/00_목차.md`의 장·절 구조, 박종용 교수님 논문작성요령 |
 | 분석 작업 | `01.docs/04_연구설계.md` 제5절의 분석 설계 (design-before-results 규칙과 연동) |
-| 일반 작업 | `plan/`의 승인된 계획 or the user's explicit instructions |
+| 일반 작업 | `03.plan/`의 승인된 계획 or the user's explicit instructions |
 
 ## How to Apply
 

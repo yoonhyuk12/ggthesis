@@ -11,7 +11,7 @@ Before doing any work:
 1. `CLAUDE.md` — already auto-loaded; follow its 참고 자료 인덱스 pointers
 2. 원고 사실은 `01.docs/`에서 찾는다. 그 밖의 참고 자료는 CLAUDE.md 인덱스의 `.claude/reference/` 중 필요한 것만 로드한다
 3. 논문 원고 작업이면 박종용 교수님 논문작성요령 전문 (경로는 CLAUDE.md 참조)
-4. The latest file in `plan/` (if resuming work)
+4. The latest file in `03.plan/` (if resuming work)
 5. `MEMORY.md` (if it exists) — accumulated corrections and decisions
 
 This takes seconds and prevents minutes of aimless searching.

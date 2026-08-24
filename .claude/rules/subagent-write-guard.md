@@ -27,7 +27,7 @@ they would seem like a natural next step:
 - Do NOT call any hwpx write tool (search_and_replace, replace_*, apply_*,
   set_*, insert_*, delete_*, add_*, create_* 등 mcp__hwpx__ 쓰기 계열).
   The orchestrator handles all hwpx edits, sequentially.
-- Do NOT edit `MEMORY.md`, `CLAUDE.md`, `.claude/**`, `plan/**`, or any project-level
+- Do NOT edit `MEMORY.md`, `CLAUDE.md`, `.claude/**`, `03.plan/**`, or any project-level
   documentation file.
 - Do NOT edit or create any file outside the assigned scope.
 
