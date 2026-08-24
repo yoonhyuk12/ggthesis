@@ -23,7 +23,7 @@
 
 ## hwpx Pitfalls
 
-- [LEARN:hwpx] HWPX 기준 원본이 `논문구조/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`에 있음 → [SUPERSEDED 2026-08-24] 현재 최신 기준 원본은 `C:/Users/EKR/orca/ggthesis/00. hwpx/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`이며, 한글 이관 요청 시 이를 `C:/Users/EKR/orca/ggthesis/00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한 뒤 복사본의 타깃만 수정하고 Asia/Seoul 작업 시각을 사용 — applies when: 사용자가 논문 내용을 한글(hwpx)로 옮겨 달라고 요청할 때
+- [LEARN:hwpx] HWPX 기준 원본이 `논문구조/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`(현 `01.docs/`)에 있음 → [SUPERSEDED 2026-08-24] 현재 최신 기준 원본은 `C:/Users/EKR/orca/ggthesis/00. hwpx/260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`이며, 한글 이관 요청 시 이를 `C:/Users/EKR/orca/ggthesis/00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한 뒤 복사본의 타깃만 수정하고 Asia/Seoul 작업 시각을 사용 — applies when: 사용자가 논문 내용을 한글(hwpx)로 옮겨 달라고 요청할 때
 - [LEARN:hwpx] hwpx MCP 서버(v2.18.1)가 모든 파일에서 "open-safety verification: package validation failed"로 열기 실패(백업본 포함, ZIP·manifest 정상) → 읽기·타깃 치환은 Python zipfile로 Contents/section0.xml 직접 수술(수정 전 백업 생성, 동일 순서·압축 유지, 위치 기반 치환) — applies when: hwpx MCP find_text/search_and_replace가 open failed를 반환할 때. 표 셀은 텍스트가 여러 문단/run으로 쪼개져 있을 수 있어 문자열 전역 치환 전 반드시 원문 XML 문맥 확인 [SUPERSEDED 2026-07-25: 재클론한 hwpx-mcp-simple에서 `get_document_info`가 학회논문 백업본을 정상 개방(194문단·17표)해 이 실패는 재현되지 않음. zipfile 수술은 여전히 유효한 폴백이나 더 이상 기본 경로가 아니다]
 - [LEARN:hwpx] hwpx MCP 서버는 저장소 루트(C:\Users\EKR\orca\ggthesis)로 샌드박스됨 → 스크래치패드·임시 경로를 넘기면 "path is outside sandbox root"로 거부 — applies when: MCP 도구에 파일 경로를 넘길 때. 저장소 상대경로를 쓴다
 - [LEARN:hwpx] 한글 크래시 판정을 "Start-Process 후 고정 12초 대기 → Get-Process Hwp" 방식으로 하면 세션 첫(콜드) 실행이 12초를 넘겨 뜨는 탓에 **정상 파일이 CRASHED로 오탐**된다(같은 파일이 COM으로는 정상 개방·PDF 변환됨, 워밍업 후에는 6초에도 ALIVE) → 워밍업 후 폴링하는 `.claude/skills/hwpx-thesis-editing/scripts/verify-hwpx.ps1` 사용 — applies when: 수정한 hwpx의 개방 가능 여부를 검증할 때

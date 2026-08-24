@@ -15,7 +15,7 @@ Run the full audit (e.g., 원고 전체 점검, MD↔hwpx 대조, 인용·참고
 Present findings grouped by severity:
 - **Structural anomalies** — redundant files, missing sections, orphaned drafts, inconsistent 장·절 numbering
 - **Consistency gaps** — MD와 hwpx 불일치, 본문 수치와 표 수치 불일치, stale cross-references
-- **Convention violations** — files outside `논문구조/`, 인용 표기 형식 위반
+- **Convention violations** — files outside `01.docs/`, 인용 표기 형식 위반
 
 ### 3. Wait for triage
 

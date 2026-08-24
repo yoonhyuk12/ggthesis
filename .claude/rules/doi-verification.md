@@ -1,6 +1,6 @@
 ---
 paths:
-  - "논문구조/**"
+  - "01.docs/**"
   - "referernce/**"
   - ".claude/reference/05-참조자료.md"
 ---

@@ -1,6 +1,6 @@
 ---
 paths:
-  - "논문구조/**"
+  - "01.docs/**"
   - "학회논문/**"
 ---
 
@@ -13,8 +13,8 @@ paths:
 ## When this applies
 
 - Editing 3장(연구방법)·4장(분석결과) — 표본 수, 측정 문항 수, 분석 모형, 계수·p값·신뢰구간을 기술하는 문단
-- Editing a paragraph that describes 설문 구성 (문항 수, 척도, 하위요인) — `논문구조/04_연구설계.md` 제4절의 확정 문항표와 일치해야 한다
-- Editing 시스템 기술 문단 (X1~X4 운영적 정의, 아키텍처) — `프로그램 기술분석서.md`·`논문구조/03_시스템개발.md`와 일치해야 한다
+- Editing a paragraph that describes 설문 구성 (문항 수, 척도, 하위요인) — `01.docs/04_연구설계.md` 제4절의 확정 문항표와 일치해야 한다
+- Editing 시스템 기술 문단 (X1~X4 운영적 정의, 아키텍처) — `프로그램 기술분석서.md`·`01.docs/03_시스템개발.md`와 일치해야 한다
 - 표와 본문이 같은 수치를 말하는지 — 표를 고치면 본문도, 본문을 고치면 표도 확인
 - MD를 수정한 뒤 hwpx에 반영할 때 — 두 원고의 해당 문단이 같은 수치·주장을 담는지
 
@@ -27,7 +27,7 @@ paths:
 
 1. **For every quantitative claim in the prose** (표본 수, 문항 수, 계수, p값, 부트스트랩 횟수, 신뢰구간), open the source that produces it — SPSS/PROCESS 출력, 설문 원자료, 확정 연구모형 문서. The values must match exactly.
 2. **For every "시스템은 X를 수행한다" claim**, confirm X actually appears in `프로그램 기술분석서.md` (실제 구현된 기능인지, 계획 단계 기능인지 구분).
-3. **가설 번호(H1·탐색적 H2)와 변수 역할(집단 변수·공변량·탐색 변수·참고 변수)**이 `논문구조/04_연구설계.md` 제1·2절의 확정 정의와 어긋나지 않는지 확인한다.
+3. **가설 번호(H1·탐색적 H2)와 변수 역할(집단 변수·공변량·탐색 변수·참고 변수)**이 `01.docs/04_연구설계.md` 제1·2절의 확정 정의와 어긋나지 않는지 확인한다.
 
 ## Failure modes prevented
 

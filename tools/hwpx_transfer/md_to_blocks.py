@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO / "논문구조"
+SRC_DIR = REPO / "01.docs"
 OUT_DIR = Path(__file__).resolve().parent / "staging"
 
 FILES = [

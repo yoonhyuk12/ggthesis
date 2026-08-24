@@ -15,7 +15,7 @@ paths:
 
 **요약본을 만들지 마라.** 같은 사실을 두 곳에 두면 원본이 바뀔 때 반드시 어긋난다. 편의를 위한 요약이 가장 흔한 사고 원인이다.
 
-- 원고 사실(장 구조·변수·가설·문항·수치·분석 설계)의 단일 원본은 `논문구조/`다. CLAUDE.md에도, `.claude/reference/`에도 사본을 만들지 않는다.
+- 원고 사실(장 구조·변수·가설·문항·수치·분석 설계)의 단일 원본은 `01.docs/`다. CLAUDE.md에도, `.claude/reference/`에도 사본을 만들지 않는다.
 - 참고 자료는 **원고에 담을 수 없는 것만** `.claude/reference/`에 둔다 (PDF 분류, 일정, 스킬 호출법, 디펜스 논리, 도구 조작법).
 - 이미 있는 문서를 가리키는 한 줄 링크는 사본이 아니다. 그 문서의 내용을 옮겨 적은 순간 사본이 된다.
 
@@ -30,9 +30,9 @@ paths:
 
 ## What Does NOT Belong in CLAUDE.md
 
-- 연구모형·가설·측정도구 상세 → `논문구조/04_연구설계.md`
-- 장·절 구성표 → `논문구조/00_목차.md`
-- 시스템 기술 명세 → `논문구조/03_시스템개발.md`, `프로그램 기술분석서.md`
+- 연구모형·가설·측정도구 상세 → `01.docs/04_연구설계.md`
+- 장·절 구성표 → `01.docs/00_목차.md`
+- 시스템 기술 명세 → `01.docs/03_시스템개발.md`, `프로그램 기술분석서.md`
 - 문헌 노트·참조자료 상세 → `.claude/reference/05-참조자료.md`
 - Long reference lists (>10 entries)
 - Anything that duplicates content already in another project file
@@ -44,7 +44,7 @@ When the material exists elsewhere, use a one-line summary + link — 내용을 
 ```markdown
 ## 분석 설계
 
-도입/미도입 두 집단 ANCOVA. 단일 원본은 [`논문구조/04_연구설계.md`](논문구조/04_연구설계.md) 제5절.
+도입/미도입 두 집단 ANCOVA. 단일 원본은 [`01.docs/04_연구설계.md`](01.docs/04_연구설계.md) 제5절.
 ```
 
 ## Thresholds

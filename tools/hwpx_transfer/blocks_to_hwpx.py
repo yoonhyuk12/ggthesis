@@ -3,7 +3,7 @@
 
 사용 예:
     python tools/hwpx_transfer/blocks_to_hwpx.py \
-        --template 논문구조/260725_경기공학_건축안전_윤혁_논문작성.hwpx \
+        --template "공학대학원_건축안전_윤혁_…YOLO-VLM… - 복사본.hwpx" \
         --style-map tools/hwpx_transfer/staging/style_map.json \
         --blocks ch01.blocks.json ch02.blocks.json ... apx2.blocks.json \
         --references tools/hwpx_transfer/staging/references.json \
@@ -637,7 +637,7 @@ def load_blocks(paths):
 
 
 # 부록1 설문지 표지 박스(원고 코드펜스, parse_report §5-3 — 메인이 별도 서식으로 재구성).
-# 논문 제목이 바뀌면 `논문구조/부록1_설문지_양식.md`의 표지 박스와 함께 여기도 고쳐야 한다.
+# 논문 제목이 바뀌면 `01.docs/부록1_설문지_양식.md`의 표지 박스와 함께 여기도 고쳐야 한다.
 SURVEY_COVER_TITLE = [
     "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템",
     "개발 및 실증 연구",

@@ -10,7 +10,7 @@ hwpx는 특히 위험하다: 쓰기 도구는 호출 즉시 저장되고, 병렬
 
 The sub-agent prompt must contain something like:
 
-> "You are authorised to: edit files matching `논문구조/*.md`. You are NOT authorised to run git commands, hwpx write tools, or edit any other file."
+> "You are authorised to: edit files matching `01.docs/*.md`. You are NOT authorised to run git commands, hwpx write tools, or edit any other file."
 
 The default is read-only + scoped writes. Explicit affirmation expands the surface.
 

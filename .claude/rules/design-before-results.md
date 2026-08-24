@@ -1,6 +1,6 @@
 ---
 paths:
-  - "논문구조/**"
+  - "01.docs/**"
 ---
 
 # Rule: Design Before Results
@@ -27,7 +27,7 @@ paths:
 **DO:**
 - 가설과 분석 모형(집단 변수·공변량 구성, 탐색적 보조 분석의 지위)을 결과를 보기 전에 확정한다
 - 공변량은 이론적 근거와 함께 사전에 투입 목록을 정한다 (분석 후 해석하지 않는다 — 교수님 요령)
-- 분석 계획은 `논문구조/04_연구설계.md` 제5절에 기록한다 (별도 요약 문서를 만들지 않는다)
+- 분석 계획은 `01.docs/04_연구설계.md` 제5절에 기록한다 (별도 요약 문서를 만들지 않는다)
 - When results are surprising, document the surprise *before* changing the specification
 
 **DON'T:**
@@ -45,6 +45,6 @@ If the answer is yes, stop and specify the plan first. If the answer is "I don't
 
 ## How to Apply
 
-1. When the user asks to "run the analysis" or "check the results", first confirm the specification is locked (`논문구조/04_연구설계.md` 제2·5절 기준)
+1. When the user asks to "run the analysis" or "check the results", first confirm the specification is locked (`01.docs/04_연구설계.md` 제2·5절 기준)
 2. If no analysis plan exists, draft one and get approval before executing
 3. Treat specification changes after seeing results as a new analysis requiring justification
