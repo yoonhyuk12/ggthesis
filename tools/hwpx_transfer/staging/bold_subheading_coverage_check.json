@@ -1,0 +1,378 @@
+{
+  "parser_command": "python tools/hwpx_transfer/md_to_blocks.py",
+  "parser_returncode": 0,
+  "parser_stdout": "01_서론.md -> ch01.blocks.json: blocks=41 excluded=56 missing=0\n02_이론적배경.md -> ch02.blocks.json: blocks=96 excluded=113 missing=0\n03_시스템개발.md -> ch03.blocks.json: blocks=85 excluded=86 missing=0\n04_연구설계.md -> ch04.blocks.json: blocks=93 excluded=83 missing=0\n05_실증분석결과.md -> ch05.blocks.json: blocks=83 excluded=96 missing=0\n06_결론.md -> ch06.blocks.json: blocks=40 excluded=59 missing=0\n부록1_설문지_양식.md -> apx1.blocks.json: blocks=63 excluded=86 missing=0\n부록2_설문항목_근거매핑.md -> apx2.blocks.json: blocks=25 excluded=33 missing=0\nreport: C:\\Users\\EKR\\orca\\ggthesis\\tools\\hwpx_transfer\\staging\\parse_report.md\ntotal blocks=526, coverage missing=0\n",
+  "parser_stderr": "",
+  "trace_events": [
+    {
+      "phase": "parse",
+      "source_line": 55,
+      "parser_line": 273,
+      "source_text": "**1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 55,
+      "parser_line": 274,
+      "source_text": "**1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 55,
+      "parser_line": 275,
+      "source_text": "**1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 65,
+      "parser_line": 273,
+      "source_text": "**2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 65,
+      "parser_line": 274,
+      "source_text": "**2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 65,
+      "parser_line": 275,
+      "source_text": "**2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 136,
+      "parser_line": 273,
+      "source_text": "**1. 공통부 A. 인구통계학적 특성 6문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 136,
+      "parser_line": 274,
+      "source_text": "**1. 공통부 A. 인구통계학적 특성 6문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 136,
+      "parser_line": 275,
+      "source_text": "**1. 공통부 A. 인구통계학적 특성 6문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 147,
+      "parser_line": 273,
+      "source_text": "**2. 공통부 B. 안전관리 실효성 일반형 8문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 147,
+      "parser_line": 274,
+      "source_text": "**2. 공통부 B. 안전관리 실효성 일반형 8문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 147,
+      "parser_line": 275,
+      "source_text": "**2. 공통부 B. 안전관리 실효성 일반형 8문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 162,
+      "parser_line": 273,
+      "source_text": "**3. 공통부 C. 안전관리 예산 제약성 4문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 162,
+      "parser_line": 274,
+      "source_text": "**3. 공통부 C. 안전관리 예산 제약성 4문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 162,
+      "parser_line": 275,
+      "source_text": "**3. 공통부 C. 안전관리 예산 제약성 4문항.**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 173,
+      "parser_line": 273,
+      "source_text": "**4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 173,
+      "parser_line": 274,
+      "source_text": "**4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 173,
+      "parser_line": 275,
+      "source_text": "**4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 188,
+      "parser_line": 273,
+      "source_text": "**5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 188,
+      "parser_line": 274,
+      "source_text": "**5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).**"
+    },
+    {
+      "phase": "parse",
+      "source_line": 188,
+      "parser_line": 275,
+      "source_text": "**5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).**"
+    },
+    {
+      "phase": "coverage",
+      "source_line": 55,
+      "parser_line": 309,
+      "normalized_source": "연구문제1.시스템도입에따른안전관리실효성차이.",
+      "assignment_kind": "text",
+      "assignment_text": "1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.",
+      "normalized_assignment": "연구문제1.시스템도입에따른안전관리실효성차이."
+    },
+    {
+      "phase": "coverage",
+      "source_line": 65,
+      "parser_line": 309,
+      "normalized_source": "탐색적연구문제2.안전관리예산제약성과도입효과의상호작용.",
+      "assignment_kind": "text",
+      "assignment_text": "2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.",
+      "normalized_assignment": "탐색적연구문제2.안전관리예산제약성과도입효과의상호작용."
+    },
+    {
+      "phase": "coverage",
+      "source_line": 136,
+      "parser_line": 309,
+      "normalized_source": "공통부A.인구통계학적특성6문항.",
+      "assignment_kind": "text",
+      "assignment_text": "1. 공통부 A. 인구통계학적 특성 6문항.",
+      "normalized_assignment": "공통부A.인구통계학적특성6문항."
+    },
+    {
+      "phase": "coverage",
+      "source_line": 147,
+      "parser_line": 309,
+      "normalized_source": "공통부B.안전관리실효성일반형8문항.",
+      "assignment_kind": "text",
+      "assignment_text": "2. 공통부 B. 안전관리 실효성 일반형 8문항.",
+      "normalized_assignment": "공통부B.안전관리실효성일반형8문항."
+    },
+    {
+      "phase": "coverage",
+      "source_line": 162,
+      "parser_line": 309,
+      "normalized_source": "공통부C.안전관리예산제약성4문항.",
+      "assignment_kind": "text",
+      "assignment_text": "3. 공통부 C. 안전관리 예산 제약성 4문항.",
+      "normalized_assignment": "공통부C.안전관리예산제약성4문항."
+    },
+    {
+      "phase": "coverage",
+      "source_line": 173,
+      "parser_line": 309,
+      "normalized_source": "도입현장전용부D.시스템특성인식8문항.[확정필요:D블록유지여부]",
+      "assignment_kind": "text",
+      "assignment_text": "4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]",
+      "normalized_assignment": "도입현장전용부D.시스템특성인식8문항.[확정필요:D블록유지여부]"
+    },
+    {
+      "phase": "coverage",
+      "source_line": 188,
+      "parser_line": 309,
+      "normalized_source": "도입현장전용부E.경보피로도완화인식4문항(참고용기술척도).",
+      "assignment_kind": "text",
+      "assignment_text": "5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).",
+      "normalized_assignment": "도입현장전용부E.경보피로도완화인식4문항(참고용기술척도)."
+    }
+  ],
+  "targets": [
+    {
+      "source_line": 55,
+      "source_text": "**1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.**",
+      "normalized_source": "연구문제1.시스템도입에따른안전관리실효성차이.",
+      "expected_text": "1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.",
+      "normalized_expected": "연구문제1.시스템도입에따른안전관리실효성차이.",
+      "block_hits": [
+        {
+          "index": 15,
+          "type": "p",
+          "text": "1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.",
+          "runs": [
+            {
+              "text": "1. 연구문제 1. 시스템 도입에 따른 안전관리 실효성 차이.",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    },
+    {
+      "source_line": 65,
+      "source_text": "**2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.**",
+      "normalized_source": "탐색적연구문제2.안전관리예산제약성과도입효과의상호작용.",
+      "expected_text": "2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.",
+      "normalized_expected": "탐색적연구문제2.안전관리예산제약성과도입효과의상호작용.",
+      "block_hits": [
+        {
+          "index": 20,
+          "type": "p",
+          "text": "2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.",
+          "runs": [
+            {
+              "text": "2. 탐색적 연구문제 2. 안전관리 예산 제약성과 도입 효과의 상호작용.",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    },
+    {
+      "source_line": 136,
+      "source_text": "**1. 공통부 A. 인구통계학적 특성 6문항.**",
+      "normalized_source": "공통부A.인구통계학적특성6문항.",
+      "expected_text": "1. 공통부 A. 인구통계학적 특성 6문항.",
+      "normalized_expected": "공통부A.인구통계학적특성6문항.",
+      "block_hits": [
+        {
+          "index": 52,
+          "type": "p",
+          "text": "1. 공통부 A. 인구통계학적 특성 6문항.",
+          "runs": [
+            {
+              "text": "1. 공통부 A. 인구통계학적 특성 6문항.",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    },
+    {
+      "source_line": 147,
+      "source_text": "**2. 공통부 B. 안전관리 실효성 일반형 8문항.**",
+      "normalized_source": "공통부B.안전관리실효성일반형8문항.",
+      "expected_text": "2. 공통부 B. 안전관리 실효성 일반형 8문항.",
+      "normalized_expected": "공통부B.안전관리실효성일반형8문항.",
+      "block_hits": [
+        {
+          "index": 54,
+          "type": "p",
+          "text": "2. 공통부 B. 안전관리 실효성 일반형 8문항.",
+          "runs": [
+            {
+              "text": "2. 공통부 B. 안전관리 실효성 일반형 8문항.",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    },
+    {
+      "source_line": 162,
+      "source_text": "**3. 공통부 C. 안전관리 예산 제약성 4문항.**",
+      "normalized_source": "공통부C.안전관리예산제약성4문항.",
+      "expected_text": "3. 공통부 C. 안전관리 예산 제약성 4문항.",
+      "normalized_expected": "공통부C.안전관리예산제약성4문항.",
+      "block_hits": [
+        {
+          "index": 57,
+          "type": "p",
+          "text": "3. 공통부 C. 안전관리 예산 제약성 4문항.",
+          "runs": [
+            {
+              "text": "3. 공통부 C. 안전관리 예산 제약성 4문항.",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    },
+    {
+      "source_line": 173,
+      "source_text": "**4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]**",
+      "normalized_source": "도입현장전용부D.시스템특성인식8문항.[확정필요:D블록유지여부]",
+      "expected_text": "4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]",
+      "normalized_expected": "도입현장전용부D.시스템특성인식8문항.[확정필요:D블록유지여부]",
+      "block_hits": [
+        {
+          "index": 60,
+          "type": "p",
+          "text": "4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]",
+          "runs": [
+            {
+              "text": "4. 도입 현장 전용부 D. 시스템 특성 인식 8문항. [확정 필요: D블록 유지 여부]",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    },
+    {
+      "source_line": 188,
+      "source_text": "**5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).**",
+      "normalized_source": "도입현장전용부E.경보피로도완화인식4문항(참고용기술척도).",
+      "expected_text": "5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).",
+      "normalized_expected": "도입현장전용부E.경보피로도완화인식4문항(참고용기술척도).",
+      "block_hits": [
+        {
+          "index": 63,
+          "type": "p",
+          "text": "5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).",
+          "runs": [
+            {
+              "text": "5. 도입 현장 전용부 E. 경보 피로도 완화 인식 4문항(참고용 기술 척도).",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "exclusion_hits": [],
+      "reported_missing": false
+    }
+  ],
+  "missing_lines": [],
+  "block_counts": {
+    "ch01": 41,
+    "ch02": 96,
+    "ch03": 85,
+    "ch04": 93,
+    "ch05": 83,
+    "ch06": 40,
+    "apx1": 63,
+    "apx2": 25
+  },
+  "baseline_counts": {
+    "ch01": 41,
+    "ch02": 96,
+    "ch03": 85,
+    "ch04": 93,
+    "ch05": 83,
+    "ch06": 40,
+    "apx1": 63,
+    "apx2": 25
+  },
+  "total_blocks": 526,
+  "count_regressions": {},
+  "parse_report_has_missing_zero": true,
+  "pass": true
+}

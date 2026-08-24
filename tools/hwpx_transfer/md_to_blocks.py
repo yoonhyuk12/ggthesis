@@ -128,13 +128,13 @@ HEAD_MARKER_RE = re.compile(r"^#{1,6}\s+")
 def norm(s):
     """커버리지 비교용 정규화: 헤딩·리스트 마커, 마커 문자(#, |, **, `, -, \\, >), 공백을 제거한다.
 
-    헤딩 마커를 먼저 벗겨야 "#### 1. 제목"(원본 행)과 "1. 제목"(블록 텍스트)이
-    같은 리스트 마커 제거를 거쳐 대칭으로 비교된다.
+    헤딩 마커와 인라인 마커를 먼저 벗겨야 "#### 1. 제목"·"**1. 제목**"(원본 행)과
+    "1. 제목"(블록 텍스트)이 같은 리스트 마커 제거를 거쳐 대칭으로 비교된다.
     """
     s = HEAD_MARKER_RE.sub("", s, count=1)
-    s = LIST_MARKER_RE.sub("", s, count=1)
     for ch in NORM_STRIP:
         s = s.replace(ch, "")
+    s = LIST_MARKER_RE.sub("", s, count=1)
     return "".join(s.split())
 
 
