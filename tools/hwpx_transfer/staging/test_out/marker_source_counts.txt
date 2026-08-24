@@ -1,0 +1,10 @@
+apx1.blocks.json total=7 table_cells=0 other=7 by_type={'h1': 0, 'h2': 0, 'h3': 0, 'p': 7, 'table': 0}
+apx2.blocks.json total=7 table_cells=0 other=7 by_type={'h1': 0, 'h2': 1, 'p': 6, 'table': 0}
+ch01.blocks.json total=4 table_cells=0 other=4 by_type={'figure_caption': 0, 'figure_placeholder': 2, 'h1': 0, 'h2': 0, 'h3': 0, 'p': 2}
+ch02.blocks.json total=16 table_cells=4 other=12 by_type={'h1': 0, 'h2': 0, 'h3': 0, 'h4': 0, 'p': 12, 'table': 4, 'table_caption': 0}
+ch03.blocks.json total=4 table_cells=0 other=4 by_type={'figure_caption': 0, 'figure_placeholder': 4, 'h1': 0, 'h2': 0, 'h3': 0, 'p': 0, 'table': 0, 'table_caption': 0}
+ch04.blocks.json total=11 table_cells=4 other=7 by_type={'figure_caption': 0, 'h1': 0, 'h2': 0, 'h3': 0, 'p': 7, 'table': 4, 'table_caption': 0}
+ch05.blocks.json total=553 table_cells=491 other=62 by_type={'h1': 0, 'h2': 0, 'h3': 0, 'p': 62, 'table': 491, 'table_caption': 0}
+ch06.blocks.json total=13 table_cells=0 other=13 by_type={'h1': 0, 'h2': 0, 'h3': 3, 'p': 10}
+all_total=615
+all_by_type={'figure_caption': 0, 'figure_placeholder': 6, 'h1': 0, 'h2': 1, 'h3': 3, 'h4': 0, 'p': 106, 'table': 499, 'table_caption': 0}

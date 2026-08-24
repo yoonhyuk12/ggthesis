@@ -11,8 +11,8 @@
 
 설계 요약.
   - 양식 hwpx의 ZIP 엔트리 순서·압축 방식을 그대로 유지하고 Contents/section1.xml,
-    Contents/section2.xml 두 개만 교체한다. 나머지(mimetype·header.xml·section0.xml·
-    BinData 등)는 바이트 그대로 복사한다.
+    Contents/section2.xml을 교체한다. 가이드 마커에 필요한 빨간 charPr가 양식에 없으면
+    Contents/header.xml에 원본 charPr의 색상만 바꾼 복제본을 추가한다.
   - section1(전면부)은 목차·표목차·그림목차만 재생성하고 제목 상자·감사의 글·논문개요
     문단은 양식의 XML을 바이트 수준 그대로 옮긴다.
   - section2(본문)는 blocks 순서대로 새로 만든다. 첫 문단에는 양식 section2 첫 문단의
@@ -25,6 +25,7 @@ import os
 import re
 import sys
 import zipfile
+import xml.etree.ElementTree as ET
 
 # ── 양식 실측 상수 ────────────────────────────────────────────────────────────
 # 표 폭. 양식 대표 표(<표 3-1>, section2 p223)의 sz.width 실측값을 그대로 쓴다.
@@ -50,6 +51,12 @@ H4_FALLBACK_CHAR = BODY_BOLD_CHAR
 CELL_LINEBREAK_TOKEN = "<br>"
 EMSP_TOKEN = "&emsp;"
 EMSP_CHAR = " "
+
+# 본문이 아니라 미확정 자리·인용·그림 지시임을 나타내는 마커. 대괄호 전부가 아니라
+# 이 다섯 접두사만 판정하며 콜론·줄표 등 접두사 뒤 구분 문자는 제한하지 않는다.
+GUIDE_MARKER_RE = re.compile(
+    r"\[(?:DATA PENDING|확정 필요|CITE_TODO|그림 삽입 예정|UNVERIFIED)[^\]]*\]"
+)
 
 XML_PROLOG = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>'
 
@@ -88,9 +95,10 @@ class IdGen(object):
 
 
 class Assembler(object):
-    def __init__(self, style_map, ids):
+    def __init__(self, style_map, ids, red_char_pr=None):
         self.sm = style_map
         self.ids = ids
+        self.red_char_pr = red_char_pr
         self.char_height = self._char_heights()
 
     def _char_heights(self):
@@ -104,6 +112,30 @@ class Assembler(object):
 
     def height_of(self, char_pr):
         return self.char_height.get(str(char_pr), 1100)
+
+    @staticmethod
+    def _text_run(char_pr, text):
+        return '<hp:run charPrIDRef="%s"><hp:t>%s</hp:t></hp:run>' % (char_pr, esc(text))
+
+    def marker_aware_runs(self, text, char_pr):
+        """텍스트를 가이드 마커 경계로 나눠 마커 조각에만 빨간 charPr를 적용한다."""
+        matches = list(GUIDE_MARKER_RE.finditer(text))
+        if not matches:
+            return self._text_run(char_pr, text)
+        if self.red_char_pr is None:
+            raise RuntimeError("가이드 마커용 빨간 charPr 공급자가 설정되지 않았다")
+
+        red_char_pr = self.red_char_pr(str(char_pr))
+        parts = []
+        cursor = 0
+        for match in matches:
+            if match.start() > cursor:
+                parts.append(self._text_run(char_pr, text[cursor:match.start()]))
+            parts.append(self._text_run(red_char_pr, match.group(0)))
+            cursor = match.end()
+        if cursor < len(text):
+            parts.append(self._text_run(char_pr, text[cursor:]))
+        return "".join(parts)
 
     # ── 문단 ──────────────────────────────────────────────────────────────
     def para(self, para_pr, style, runs_xml, char_for_height, page_break=False, horzsize=LINE_W):
@@ -119,8 +151,7 @@ class Assembler(object):
         )
 
     def text_para(self, spec, text, page_break=False, prefix=""):
-        run = '<hp:run charPrIDRef="%s"><hp:t>%s</hp:t></hp:run>' % (
-            spec["char"], esc(prefix + text))
+        run = self.marker_aware_runs(prefix + text, spec["char"])
         return self.para(spec["para"], spec["style"], run, spec["char"], page_break)
 
     def runs_para(self, spec, runs, page_break=False, prefix=""):
@@ -129,7 +160,7 @@ class Assembler(object):
         for i, r in enumerate(runs):
             body = (prefix if i == 0 else "") + r.get("text", "")
             char = BODY_BOLD_CHAR if r.get("bold") else spec["char"]
-            parts.append('<hp:run charPrIDRef="%s"><hp:t>%s</hp:t></hp:run>' % (char, esc(body)))
+            parts.append(self.marker_aware_runs(body, char))
         if not parts:
             parts.append('<hp:run charPrIDRef="%s"/>' % spec["char"])
         return self.para(spec["para"], spec["style"], "".join(parts), spec["char"], page_break)
@@ -166,7 +197,7 @@ class Assembler(object):
         out = []
         for line in lines:
             if line:
-                run = '<hp:run charPrIDRef="%s"><hp:t>%s</hp:t></hp:run>' % (char_pr, esc(line))
+                run = self.marker_aware_runs(line, char_pr)
             else:
                 run = '<hp:run charPrIDRef="%s"/>' % char_pr
             out.append(self.para(para_pr, "0", run, char_pr, horzsize=inner))
@@ -262,6 +293,21 @@ def set_page_break(para_xml, value="1"):
     return re.sub(r'(<hp:p [^>]*?pageBreak=")\d(")', r"\g<1>%s\g<2>" % value, para_xml, count=1)
 
 
+def _local_name(tag):
+    return tag.rsplit("}", 1)[-1]
+
+
+def _char_pr_signature(element, root=True):
+    """charPr의 id·본문색만 제외한 구조 서명. 기존 빨간 charPr의 정확한 재사용 판정용."""
+    attrs = tuple(sorted(
+        (key, value)
+        for key, value in element.attrib.items()
+        if not (root and key in ("id", "textColor"))
+    ))
+    children = tuple(_char_pr_signature(child, root=False) for child in element)
+    return _local_name(element.tag), attrs, children
+
+
 class Template(object):
     """양식 hwpx에서 재사용할 XML 조각을 뽑아 둔다."""
 
@@ -270,12 +316,99 @@ class Template(object):
         with zipfile.ZipFile(path) as z:
             self.infos = z.infolist()
             self.raw = {i.filename: z.read(i.filename) for i in self.infos}
+        self.header_xml = self.raw["Contents/header.xml"].decode("utf-8")
         self.s1 = self.raw["Contents/section1.xml"].decode("utf-8")
         self.s2 = self.raw["Contents/section2.xml"].decode("utf-8")
         self.s1_paras = split_paragraphs(self.s1)
         self.s2_paras = split_paragraphs(self.s2)
+        self._prepare_char_prs()
         self._slice_front_matter()
         self._slice_sec2_controls()
+
+    def _prepare_char_prs(self):
+        root = ET.fromstring(self.header_xml)
+        char_prs = {
+            element.get("id"): element
+            for element in root.iter()
+            if _local_name(element.tag) == "charPr"
+        }
+        char_properties = next(
+            (element for element in root.iter() if _local_name(element.tag) == "charProperties"),
+            None,
+        )
+        if char_properties is None:
+            raise SystemExit("양식 header.xml에서 charProperties를 찾지 못했다")
+        declared = int(char_properties.get("itemCnt", "-1"))
+        if declared != len(char_prs):
+            raise SystemExit(
+                "양식 header.xml의 charPr itemCnt(%d)와 실제 개수(%d)가 다르다"
+                % (declared, len(char_prs))
+            )
+
+        self._char_prs = char_prs
+        self._char_pr_signatures = {
+            char_id: _char_pr_signature(element) for char_id, element in char_prs.items()
+        }
+        self._red_char_by_signature = {
+            self._char_pr_signatures[char_id]: char_id
+            for char_id, element in char_prs.items()
+            if element.get("textColor", "").upper() == "#FF0000"
+        }
+        self._red_char_by_base = {}
+        self._char_pr_count = len(char_prs)
+        self._next_char_pr_id = max(int(char_id) for char_id in char_prs) + 1
+
+    def red_char_pr_id(self, base_char_pr_id):
+        """원본과 id·textColor 외 속성이 같은 빨간 charPr ID를 돌려준다."""
+        base_char_pr_id = str(base_char_pr_id)
+        if base_char_pr_id in self._red_char_by_base:
+            return self._red_char_by_base[base_char_pr_id]
+        if base_char_pr_id not in self._char_prs:
+            raise SystemExit("양식 header.xml에 charPr id=%s가 없다" % base_char_pr_id)
+
+        signature = self._char_pr_signatures[base_char_pr_id]
+        existing = self._red_char_by_signature.get(signature)
+        if existing is not None:
+            self._red_char_by_base[base_char_pr_id] = existing
+            return existing
+
+        pattern = re.compile(
+            r'<hh:charPr\b[^>]*\bid="%s"[^>]*>.*?</hh:charPr>' % re.escape(base_char_pr_id),
+            re.S,
+        )
+        match = pattern.search(self.header_xml)
+        if not match:
+            raise SystemExit("양식 header.xml에서 charPr id=%s XML을 찾지 못했다" % base_char_pr_id)
+
+        new_id = str(self._next_char_pr_id)
+        self._next_char_pr_id += 1
+        clone = re.sub(
+            r'\bid="%s"' % re.escape(base_char_pr_id), 'id="%s"' % new_id,
+            match.group(0), count=1,
+        )
+        clone, color_subs = re.subn(
+            r'\btextColor="[^"]*"', 'textColor="#FF0000"', clone, count=1,
+        )
+        if color_subs != 1:
+            raise SystemExit("charPr id=%s에 textColor 속성이 없다" % base_char_pr_id)
+
+        closing = "</hh:charProperties>"
+        if closing not in self.header_xml:
+            raise SystemExit("양식 header.xml의 charProperties 닫는 태그를 찾지 못했다")
+        self.header_xml = self.header_xml.replace(closing, clone + closing, 1)
+        self._char_pr_count += 1
+        self.header_xml, count_subs = re.subn(
+            r'(<hh:charProperties\b[^>]*\bitemCnt=")\d+(")',
+            lambda item: item.group(1) + str(self._char_pr_count) + item.group(2),
+            self.header_xml,
+            count=1,
+        )
+        if count_subs != 1:
+            raise SystemExit("양식 header.xml의 charPr itemCnt를 갱신하지 못했다")
+
+        self._red_char_by_base[base_char_pr_id] = new_id
+        self._red_char_by_signature[signature] = new_id
+        return new_id
 
     def _para(self, xml_text, spans, idx):
         a, b = spans[idx]
@@ -322,7 +455,7 @@ class Document(object):
         self.tpl = template
         self.sm = style_map
         self.ids = IdGen()
-        self.asm = Assembler(style_map, self.ids)
+        self.asm = Assembler(style_map, self.ids, template.red_char_pr_id)
         self.body = []          # section2 문단 XML 목록
         self.toc = []           # (level, 제목)
         self.lot = []           # 표 목차 항목
@@ -593,6 +726,7 @@ def main(argv=None):
     s1 = doc.build_section1()   # s1_head에 XML 프롤로그와 <hs:sec …> 열림 태그가 포함돼 있다
     s2 = doc.build_section2()
     write_hwpx(template, output, {
+        "Contents/header.xml": template.header_xml,
         "Contents/section1.xml": s1,
         "Contents/section2.xml": s2,
     })

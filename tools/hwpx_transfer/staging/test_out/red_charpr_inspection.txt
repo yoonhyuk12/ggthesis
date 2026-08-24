@@ -1,0 +1,12 @@
+template=C:\Users\EKR\orca\ggthesis\공학대학원_건축안전_윤혁_중소규모 건설현장을 위한 YOLO-VLM 안전관제 시스템 실증 연구 알람 피로도 완화와 안전 자원 제약성의 조절효과를 중심으로 - 복사본.hwpx
+charPr_count=134
+red_ids=15,33,40,68,116
+red id=15 height=1600 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=True borderFill=2 exact_black_matches=63
+red id=33 height=1600 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=True borderFill=3 exact_black_matches=14
+red id=40 height=1200 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=True borderFill=2 exact_black_matches=none
+red id=68 height=1100 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=False borderFill=3 exact_black_matches=62
+red id=116 height=1200 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=False borderFill=2 exact_black_matches=13
+target id=61 height=1100 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=False borderFill=2 exact_red_matches=none
+target id=9 height=1100 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=True borderFill=2 exact_red_matches=none
+target id=7 height=1000 font={'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'} bold=False borderFill=3 exact_red_matches=none
+target id=58 height=1000 font={'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'} bold=False borderFill=2 exact_red_matches=none
