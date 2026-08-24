@@ -1,0 +1,462 @@
+counts: charPr=134 paraPr=115 style=40 tabPr=9 borderFill=73
+fontfaces: {('HANGUL', '0'): '±º∏≤', ('HANGUL', '1'): '±º∏≤√º', ('HANGUL', '2'): 'µ∏øÚ', ('HANGUL', '3'): '∏º¿∫ ∞ÌµÒ', ('HANGUL', '4'): '«‘√ ∑“µ∏øÚ', ('HANGUL', '5'): '«‘√ ∑“πŸ≈¡', ('HANGUL', '6'): '»ﬁ∏’∏Ì¡∂', ('HANGUL', '7'): '«—æÁΩ≈∏Ì¡∂', ('HANGUL', '8'): 'Segoe UI', ('HANGUL', '9'): 'ªÍµπ∏Ì¡∂ L', ('HANGUL', '10'): 'ªÍµπ∞ÌµÒ L', ('HANGUL', '11'): '≥™¥Æ∞ÌµÒ', ('LATIN', '0'): '±º∏≤', ('LATIN', '1'): '±º∏≤√º', ('LATIN', '2'): 'µ∏øÚ', ('LATIN', '3'): '∏º¿∫ ∞ÌµÒ', ('LATIN', '4'): '«‘√ ∑“µ∏øÚ', ('LATIN', '5'): '«‘√ ∑“πŸ≈¡', ('LATIN', '6'): '»ﬁ∏’∏Ì¡∂', ('LATIN', '7'): 'Segoe UI', ('LATIN', '8'): '«—æÁΩ≈∏Ì¡∂', ('LATIN', '9'): 'ªÍµπ∏Ì¡∂ L', ('LATIN', '10'): 'ªÍµπ∞ÌµÒ L', ('LATIN', '11'): '≥™¥Æ∞ÌµÒ', ('HANJA', '0'): '±º∏≤', ('HANJA', '1'): '±º∏≤√º', ('HANJA', '2'): 'µ∏øÚ', ('HANJA', '3'): '∏º¿∫ ∞ÌµÒ', ('HANJA', '4'): '«—ƒƒπŸ≈¡', ('HANJA', '5'): '«‘√ ∑“µ∏øÚ', ('HANJA', '6'): '«‘√ ∑“πŸ≈¡', ('HANJA', '7'): '»ﬁ∏’∏Ì¡∂', ('HANJA', '8'): '«—æÁΩ≈∏Ì¡∂', ('HANJA', '9'): 'Segoe UI', ('HANJA', '10'): 'ªÍµπ∏Ì¡∂ L', ('HANJA', '11'): 'ªÍµπ∞ÌµÒ L', ('HANJA', '12'): '≥™¥Æ∞ÌµÒ', ('JAPANESE', '0'): '±º∏≤', ('JAPANESE', '1'): '±º∏≤√º', ('JAPANESE', '2'): 'µ∏øÚ', ('JAPANESE', '3'): '∏º¿∫ ∞ÌµÒ', ('JAPANESE', '4'): '«—ƒƒπŸ≈¡', ('JAPANESE', '5'): '«‘√ ∑“µ∏øÚ', ('JAPANESE', '6'): '«‘√ ∑“πŸ≈¡', ('JAPANESE', '7'): '»ﬁ∏’∏Ì¡∂', ('JAPANESE', '8'): '«—æÁΩ≈∏Ì¡∂', ('JAPANESE', '9'): 'Segoe UI', ('JAPANESE', '10'): 'ªÍµπ∏Ì¡∂ L', ('JAPANESE', '11'): 'ªÍµπ∞ÌµÒ L', ('JAPANESE', '12'): '≥™¥Æ∞ÌµÒ', ('OTHER', '0'): '±º∏≤', ('OTHER', '1'): '±º∏≤√º', ('OTHER', '2'): '∏º¿∫ ∞ÌµÒ', ('OTHER', '3'): '«—ƒƒπŸ≈¡', ('OTHER', '4'): '«‘√ ∑“µ∏øÚ', ('OTHER', '5'): '«‘√ ∑“πŸ≈¡', ('OTHER', '6'): '»ﬁ∏’∏Ì¡∂', ('OTHER', '7'): '«—æÁΩ≈∏Ì¡∂', ('OTHER', '8'): 'ªÍµπ∏Ì¡∂ L', ('OTHER', '9'): 'ªÍµπ∞ÌµÒ L', ('OTHER', '10'): '≥™¥Æ∞ÌµÒ', ('SYMBOL', '0'): '±º∏≤', ('SYMBOL', '1'): '±º∏≤√º', ('SYMBOL', '2'): 'µ∏øÚ', ('SYMBOL', '3'): '∏º¿∫ ∞ÌµÒ', ('SYMBOL', '4'): '«—ƒƒπŸ≈¡', ('SYMBOL', '5'): '«‘√ ∑“µ∏øÚ', ('SYMBOL', '6'): '«‘√ ∑“πŸ≈¡', ('SYMBOL', '7'): '»ﬁ∏’∏Ì¡∂', ('SYMBOL', '8'): 'Segoe UI', ('SYMBOL', '9'): '«—æÁΩ≈∏Ì¡∂', ('SYMBOL', '10'): 'ªÍµπ∏Ì¡∂ L', ('SYMBOL', '11'): 'ªÍµπ∞ÌµÒ L', ('SYMBOL', '12'): '≥™¥Æ∞ÌµÒ', ('USER', '0'): '±º∏≤', ('USER', '1'): '±º∏≤√º', ('USER', '2'): 'µ∏øÚ', ('USER', '3'): '∏º¿∫ ∞ÌµÒ', ('USER', '4'): '«—ƒƒπŸ≈¡', ('USER', '5'): '«‘√ ∑“µ∏øÚ', ('USER', '6'): '«‘√ ∑“πŸ≈¡', ('USER', '7'): '»ﬁ∏’∏Ì¡∂', ('USER', '8'): 'Segoe UI', ('USER', '9'): '∏Ì¡∂', ('USER', '10'): 'ªÍµπ∏Ì¡∂ L', ('USER', '11'): 'ªÍµπ∞ÌµÒ L', ('USER', '12'): '≥™¥Æ∞ÌµÒ'}
+
+=== styles (all) ===
+style 0: name='πŸ≈¡±€' engName='Normal' type=PARA paraPrIDRef=1 charPrIDRef=60 nextStyleIDRef=0
+style 1: name='∫ªπÆ' engName='Body' type=PARA paraPrIDRef=49 charPrIDRef=60 nextStyleIDRef=1
+style 2: name='∞≥ø‰ 1' engName='Outline 1' type=PARA paraPrIDRef=10 charPrIDRef=60 nextStyleIDRef=2
+style 3: name='∞≥ø‰ 2' engName='Outline 2' type=PARA paraPrIDRef=18 charPrIDRef=60 nextStyleIDRef=3
+style 4: name='∞≥ø‰ 3' engName='Outline 3' type=PARA paraPrIDRef=17 charPrIDRef=60 nextStyleIDRef=4
+style 5: name='∞≥ø‰ 4' engName='Outline 4' type=PARA paraPrIDRef=16 charPrIDRef=60 nextStyleIDRef=5
+style 6: name='∞≥ø‰ 5' engName='Outline 5' type=PARA paraPrIDRef=15 charPrIDRef=60 nextStyleIDRef=6
+style 7: name='∞≥ø‰ 6' engName='Outline 6' type=PARA paraPrIDRef=14 charPrIDRef=60 nextStyleIDRef=7
+style 8: name='∞≥ø‰ 7' engName='Outline 7' type=PARA paraPrIDRef=13 charPrIDRef=60 nextStyleIDRef=8
+style 9: name='¬  π¯»£' engName='Page Number' type=CHAR paraPrIDRef=0 charPrIDRef=6 nextStyleIDRef=0
+style 10: name='∏”∏Æ∏ª' engName='Header' type=PARA paraPrIDRef=9 charPrIDRef=3 nextStyleIDRef=10
+style 11: name='∞¢¡÷' engName='Footnote' type=PARA paraPrIDRef=8 charPrIDRef=4 nextStyleIDRef=11
+style 12: name='πÃ¡÷' engName='Endnote' type=PARA paraPrIDRef=8 charPrIDRef=4 nextStyleIDRef=12
+style 13: name='∏ﬁ∏' engName='Memo' type=PARA paraPrIDRef=7 charPrIDRef=5 nextStyleIDRef=13
+style 14: name='¬˜∑  ¡¶∏Ò' engName='TOC Heading' type=PARA paraPrIDRef=19 charPrIDRef=10 nextStyleIDRef=14
+style 15: name='¬˜∑  1' engName='TOC 1' type=PARA paraPrIDRef=20 charPrIDRef=11 nextStyleIDRef=15
+style 16: name='¬˜∑  2' engName='TOC 2' type=PARA paraPrIDRef=21 charPrIDRef=11 nextStyleIDRef=16
+style 17: name='¬˜∑  3' engName='TOC 3' type=PARA paraPrIDRef=22 charPrIDRef=11 nextStyleIDRef=17
+style 18: name='MSπŸ≈¡±€' engName='MsoNormal' type=PARA paraPrIDRef=0 charPrIDRef=12 nextStyleIDRef=18
+style 19: name='xl71' engName='xl71' type=PARA paraPrIDRef=2 charPrIDRef=66 nextStyleIDRef=19
+style 20: name='xl73' engName='xl73' type=PARA paraPrIDRef=2 charPrIDRef=65 nextStyleIDRef=20
+style 21: name='xl68' engName='xl68' type=PARA paraPrIDRef=2 charPrIDRef=66 nextStyleIDRef=21
+style 22: name='xl67' engName='xl67' type=PARA paraPrIDRef=2 charPrIDRef=65 nextStyleIDRef=22
+style 23: name='xl72' engName='xl72' type=PARA paraPrIDRef=2 charPrIDRef=65 nextStyleIDRef=23
+style 24: name='xl70' engName='xl70' type=PARA paraPrIDRef=2 charPrIDRef=65 nextStyleIDRef=24
+style 25: name='xl69' engName='xl69' type=PARA paraPrIDRef=2 charPrIDRef=66 nextStyleIDRef=25
+style 26: name='xl66' engName='xl66' type=PARA paraPrIDRef=2 charPrIDRef=64 nextStyleIDRef=26
+style 27: name='xl65' engName='xl65' type=PARA paraPrIDRef=2 charPrIDRef=66 nextStyleIDRef=27
+style 28: name='¡÷-∏Ì¡∂' engName='' type=PARA paraPrIDRef=39 charPrIDRef=47 nextStyleIDRef=28
+style 29: name='ƒ∏º«' engName='' type=PARA paraPrIDRef=40 charPrIDRef=46 nextStyleIDRef=29
+style 30: name='«•≥ªøÎ' engName='' type=PARA paraPrIDRef=38 charPrIDRef=45 nextStyleIDRef=30
+style 31: name='(%)9.5∏Ì¡∂' engName='' type=PARA paraPrIDRef=42 charPrIDRef=48 nextStyleIDRef=31
+style 32: name='°€' engName='' type=PARA paraPrIDRef=41 charPrIDRef=44 nextStyleIDRef=32
+style 33: name='∏”∏Æ∏ª(Ω≈∏Ì¡∂9)' engName='' type=PARA paraPrIDRef=6 charPrIDRef=2 nextStyleIDRef=33
+style 34: name='¿œπ›,∆Øºˆ¡˝¥‹' engName='' type=PARA paraPrIDRef=0 charPrIDRef=18 nextStyleIDRef=34
+style 35: name='xl47899' engName='xl47899' type=PARA paraPrIDRef=3 charPrIDRef=1 nextStyleIDRef=35
+style 36: name='xl47898' engName='xl47898' type=PARA paraPrIDRef=47 charPrIDRef=1 nextStyleIDRef=36
+style 37: name='td' engName='td' type=PARA paraPrIDRef=37 charPrIDRef=1 nextStyleIDRef=37
+style 38: name='xl47901' engName='xl47901' type=PARA paraPrIDRef=48 charPrIDRef=1 nextStyleIDRef=38
+style 39: name='xl47900' engName='xl47900' type=PARA paraPrIDRef=47 charPrIDRef=1 nextStyleIDRef=39
+
+=== charPr of interest ===
+charPr 63: {'id': '63', 'height': '1600', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 67: {'id': '67', 'height': '1500', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 41: {'id': '41', 'height': '1400', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 61: {'id': '61', 'height': '1100', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 62: {'id': '62', 'height': '1100', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '3'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 13: {'id': '13', 'height': '1200', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 116: {'id': '116', 'height': '1200', 'textColor': '#FF0000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 21: {'id': '21', 'height': '1400', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '3'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '-8', 'latin': '-8', 'hanja': '-8', 'japanese': '-8', 'other': '-8', 'symbol': '-8', 'user': '-8'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 42: {'id': '42', 'height': '1600', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '7'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 52: {'id': '52', 'height': '1500', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#C0C0C0', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 9: {'id': '9', 'height': '1100', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 36: {'id': '36', 'height': '1300', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '3'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    bold: {}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 50: {'id': '50', 'height': '100', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '7', 'latin': '8', 'hanja': '8', 'japanese': '8', 'other': '7', 'symbol': '9', 'user': '9'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+charPr 54: {'id': '54', 'height': '1100', 'textColor': '#000000', 'shadeColor': 'none', 'useFontSpace': '0', 'useKerning': '0', 'symMark': 'NONE', 'borderFillIDRef': '2'}
+    fontRef: {'hangul': '5', 'latin': '5', 'hanja': '6', 'japanese': '6', 'other': '5', 'symbol': '6', 'user': '6'}
+    ratio: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    spacing: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    relSz: {'hangul': '100', 'latin': '100', 'hanja': '100', 'japanese': '100', 'other': '100', 'symbol': '100', 'user': '100'}
+    offset: {'hangul': '0', 'latin': '0', 'hanja': '0', 'japanese': '0', 'other': '0', 'symbol': '0', 'user': '0'}
+    underline: {'type': 'NONE', 'shape': 'SOLID', 'color': '#000000'}
+    strikeout: {'shape': 'NONE', 'color': '#000000'}
+    outline: {'type': 'NONE'}
+    shadow: {'type': 'NONE', 'color': '#B2B2B2', 'offsetX': '10', 'offsetY': '10'}
+
+=== paraPr of interest ===
+paraPr 24: {'id': '24', 'tabPrIDRef': '3', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 57: {'id': '57', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'BREAK_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 66: {'id': '66', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'BREAK_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 51: {'id': '51', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 50: {'id': '50', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 25: {'id': '25', 'tabPrIDRef': '3', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 31: {'id': '31', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 30: {'id': '30', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 52: {'id': '52', 'tabPrIDRef': '4', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 26: {'id': '26', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 5: {'id': '5', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 72: {'id': '72', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 74: {'id': '74', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 12: {'id': '12', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 59: {'id': '59', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+paraPr 70: {'id': '70', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+    align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+    heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+    breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+    autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+    switch: {}
+        case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+        default: {}
+    border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+=== tabPr (all) ===
+tabPr 0: {'id': '0', 'autoTabLeft': '0', 'autoTabRight': '0'}
+tabPr 1: {'id': '1', 'autoTabLeft': '1', 'autoTabRight': '0'}
+tabPr 2: {'id': '2', 'autoTabLeft': '0', 'autoTabRight': '1'}
+tabPr 3: {'id': '3', 'autoTabLeft': '0', 'autoTabRight': '0'}
+    switch: {}
+tabPr 4: {'id': '4', 'autoTabLeft': '0', 'autoTabRight': '1'}
+    switch: {}
+tabPr 5: {'id': '5', 'autoTabLeft': '0', 'autoTabRight': '0'}
+    switch: {}
+tabPr 6: {'id': '6', 'autoTabLeft': '0', 'autoTabRight': '0'}
+    switch: {}
+    switch: {}
+    switch: {}
+tabPr 7: {'id': '7', 'autoTabLeft': '0', 'autoTabRight': '0'}
+    switch: {}
+    switch: {}
+tabPr 8: {'id': '8', 'autoTabLeft': '0', 'autoTabRight': '0'}
+    switch: {}
+
+=== borderFill (all, summary) ===
+borderFill 1: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm diagonal=SOLID/0.1 mm
+borderFill 2: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm diagonal=SOLID/0.1 mm fill=none
+borderFill 3: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm diagonal=SOLID/0.1 mm fill=none
+borderFill 4: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm
+borderFill 5: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 6: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 7: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm diagonal=SOLID/0.1 mm fill=none
+borderFill 8: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.4 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm
+borderFill 9: threeD=0 leftBorder=NONE/0.4 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm
+borderFill 10: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm diagonal=SOLID/0.12 mm
+borderFill 11: threeD=0 leftBorder=DOUBLE_SLIM/0.5 mm rightBorder=DOUBLE_SLIM/0.5 mm topBorder=DOUBLE_SLIM/0.5 mm bottomBorder=DOUBLE_SLIM/0.5 mm diagonal=SOLID/0.12 mm
+borderFill 12: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm fill=#D9D9D9
+borderFill 13: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 14: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 15: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 16: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm
+borderFill 17: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm
+borderFill 18: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm fill=#D8D8D8
+borderFill 19: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm
+borderFill 20: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm
+borderFill 21: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 22: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 23: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 24: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 25: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 26: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 27: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 28: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 29: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 30: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 31: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 32: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm diagonal=SOLID/0.1 mm fill=#FFD966
+borderFill 33: threeD=0 leftBorder=NONE/0.4 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm fill=#D8D8D8
+borderFill 34: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.4 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm fill=#D8D8D8
+borderFill 35: threeD=0 leftBorder=NONE/0.1 mm rightBorder=NONE/0.1 mm topBorder=NONE/0.1 mm bottomBorder=NONE/0.1 mm fill=none
+borderFill 36: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm fill=#D9D9D9
+borderFill 37: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm fill=#D9D9D9
+borderFill 38: threeD=0 leftBorder=NONE/0.4 mm rightBorder=NONE/0.4 mm topBorder=NONE/0.4 mm bottomBorder=NONE/0.5 mm
+borderFill 39: threeD=0 leftBorder=NONE/0.4 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm
+borderFill 40: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.4 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.12 mm
+borderFill 41: threeD=0 leftBorder=NONE/0.4 mm rightBorder=NONE/0.4 mm topBorder=NONE/0.5 mm bottomBorder=SOLID/0.12 mm
+borderFill 42: threeD=0 leftBorder=NONE/0.4 mm rightBorder=SOLID/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm
+borderFill 43: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm fill=#D9D9D9
+borderFill 44: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.4 mm topBorder=NONE/0.12 mm bottomBorder=SOLID/0.12 mm
+borderFill 45: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 46: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 47: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm fill=#E5E5E5
+borderFill 48: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm fill=#E5E5E5
+borderFill 49: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm fill=#E5E5E5
+borderFill 50: threeD=0 leftBorder=NONE/0.12 mm rightBorder=NONE/0.12 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm fill=#5D5D5D
+borderFill 51: threeD=0 leftBorder=NONE/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.4 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm fill=#BBBBBB
+borderFill 52: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.4 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm
+borderFill 53: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=NONE/0.25 mm topBorder=SOLID/0.4 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm
+borderFill 54: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.25 mm bottomBorder=NONE/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 55: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 56: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 57: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=NONE/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 58: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 59: threeD=0 leftBorder=NONE/0.12 mm rightBorder=SOLID/0.12 mm topBorder=SOLID/0.12 mm bottomBorder=NONE/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 60: threeD=0 leftBorder=SOLID/0.12 mm rightBorder=NONE/0.25 mm topBorder=NONE/0.12 mm bottomBorder=NONE/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 61: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=NONE/0.25 mm topBorder=NONE/0.4 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm
+borderFill 62: threeD=0 leftBorder=NONE/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm
+borderFill 63: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm
+borderFill 64: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=NONE/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.25 mm diagonal=SOLID/0.1 mm
+borderFill 65: threeD=0 leftBorder=NONE/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 66: threeD=0 leftBorder=NONE/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 67: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 68: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 69: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=NONE/0.25 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.4 mm diagonal=SOLID/0.1 mm
+borderFill 70: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=NONE/0.25 mm topBorder=SOLID/0.25 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 71: threeD=0 leftBorder=NONE/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 72: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=SOLID/0.25 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm
+borderFill 73: threeD=0 leftBorder=SOLID/0.25 mm rightBorder=NONE/0.25 mm topBorder=SOLID/0.12 mm bottomBorder=SOLID/0.12 mm diagonal=SOLID/0.1 mm

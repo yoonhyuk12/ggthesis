@@ -1,0 +1,611 @@
+=== fontfaces (HANGUL) ===
+  font id=0: 굴림
+  font id=1: 굴림체
+  font id=2: 돋움
+  font id=3: 맑은 고딕
+  font id=4: 함초롬돋움
+  font id=5: 함초롬바탕
+  font id=6: 휴먼명조
+  font id=7: 한양신명조
+  font id=8: Segoe UI
+  font id=9: 산돌명조 L
+  font id=10: 산돌고딕 L
+  font id=11: 나눔고딕
+
+=== style names (all 40) ===
+  style 0: name=바탕글 type=PARA paraPr=1 charPr=60
+  style 1: name=본문 type=PARA paraPr=49 charPr=60
+  style 2: name=개요 1 type=PARA paraPr=10 charPr=60
+  style 3: name=개요 2 type=PARA paraPr=18 charPr=60
+  style 4: name=개요 3 type=PARA paraPr=17 charPr=60
+  style 5: name=개요 4 type=PARA paraPr=16 charPr=60
+  style 6: name=개요 5 type=PARA paraPr=15 charPr=60
+  style 7: name=개요 6 type=PARA paraPr=14 charPr=60
+  style 8: name=개요 7 type=PARA paraPr=13 charPr=60
+  style 9: name=쪽 번호 type=CHAR paraPr=0 charPr=6
+  style 10: name=머리말 type=PARA paraPr=9 charPr=3
+  style 11: name=각주 type=PARA paraPr=8 charPr=4
+  style 12: name=미주 type=PARA paraPr=8 charPr=4
+  style 13: name=메모 type=PARA paraPr=7 charPr=5
+  style 14: name=차례 제목 type=PARA paraPr=19 charPr=10
+  style 15: name=차례 1 type=PARA paraPr=20 charPr=11
+  style 16: name=차례 2 type=PARA paraPr=21 charPr=11
+  style 17: name=차례 3 type=PARA paraPr=22 charPr=11
+  style 18: name=MS바탕글 type=PARA paraPr=0 charPr=12
+  style 19: name=xl71 type=PARA paraPr=2 charPr=66
+  style 20: name=xl73 type=PARA paraPr=2 charPr=65
+  style 21: name=xl68 type=PARA paraPr=2 charPr=66
+  style 22: name=xl67 type=PARA paraPr=2 charPr=65
+  style 23: name=xl72 type=PARA paraPr=2 charPr=65
+  style 24: name=xl70 type=PARA paraPr=2 charPr=65
+  style 25: name=xl69 type=PARA paraPr=2 charPr=66
+  style 26: name=xl66 type=PARA paraPr=2 charPr=64
+  style 27: name=xl65 type=PARA paraPr=2 charPr=66
+  style 28: name=주-명조 type=PARA paraPr=39 charPr=47
+  style 29: name=캡션 type=PARA paraPr=40 charPr=46
+  style 30: name=표내용 type=PARA paraPr=38 charPr=45
+  style 31: name=(%)9.5명조 type=PARA paraPr=42 charPr=48
+  style 32: name=○ type=PARA paraPr=41 charPr=44
+  style 33: name=머리말(신명조9) type=PARA paraPr=6 charPr=2
+  style 34: name=일반,특수집단 type=PARA paraPr=0 charPr=18
+  style 35: name=xl47899 type=PARA paraPr=3 charPr=1
+  style 36: name=xl47898 type=PARA paraPr=47 charPr=1
+  style 37: name=td type=PARA paraPr=37 charPr=1
+  style 38: name=xl47901 type=PARA paraPr=48 charPr=1
+  style 39: name=xl47900 type=PARA paraPr=47 charPr=1
+
+=== paraPr deep dump (IDs of interest) ===
+--- paraPr 5 ---
+    paraPr: {'id': '5', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 12 ---
+    paraPr: {'id': '12', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 24 ---
+    paraPr: {'id': '24', 'tabPrIDRef': '3', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 25 ---
+    paraPr: {'id': '25', 'tabPrIDRef': '3', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 26 ---
+    paraPr: {'id': '26', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 30 ---
+    paraPr: {'id': '30', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 31 ---
+    paraPr: {'id': '31', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'CENTER', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'BREAK_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 50 ---
+    paraPr: {'id': '50', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 51 ---
+    paraPr: {'id': '51', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 52 ---
+    paraPr: {'id': '52', 'tabPrIDRef': '4', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 57 ---
+    paraPr: {'id': '57', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'BREAK_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 59 ---
+    paraPr: {'id': '59', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '-2414', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '-4828', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '3', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 64 ---
+    paraPr: {'id': '64', 'tabPrIDRef': '5', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '170', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 66 ---
+    paraPr: {'id': '66', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'LEFT', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'BREAK_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '70', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '70', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 70 ---
+    paraPr: {'id': '70', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '80', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '80', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 72 ---
+    paraPr: {'id': '72', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '180', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+--- paraPr 74 ---
+    paraPr: {'id': '74', 'tabPrIDRef': '0', 'condense': '0', 'fontLineHeight': '0', 'snapToGrid': '1', 'suppressLineNumbers': '0', 'checked': '0'}
+        align: {'horizontal': 'JUSTIFY', 'vertical': 'BASELINE'}
+        heading: {'type': 'NONE', 'idRef': '0', 'level': '0'}
+        breakSetting: {'breakLatinWord': 'KEEP_WORD', 'breakNonLatinWord': 'KEEP_WORD', 'widowOrphan': '0', 'keepWithNext': '0', 'keepLines': '0', 'pageBreakBefore': '0', 'lineWrap': 'BREAK'}
+        autoSpacing: {'eAsianEng': '0', 'eAsianNum': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '190', 'unit': 'HWPUNIT'}
+            default: {}
+                margin: {}
+                    intent: {'value': '0', 'unit': 'HWPUNIT'}
+                    left: {'value': '0', 'unit': 'HWPUNIT'}
+                    right: {'value': '0', 'unit': 'HWPUNIT'}
+                    prev: {'value': '0', 'unit': 'HWPUNIT'}
+                    next: {'value': '0', 'unit': 'HWPUNIT'}
+                lineSpacing: {'type': 'PERCENT', 'value': '190', 'unit': 'HWPUNIT'}
+        border: {'borderFillIDRef': '2', 'offsetLeft': '0', 'offsetRight': '0', 'offsetTop': '0', 'offsetBottom': '0', 'connect': '0', 'ignoreMargin': '0'}
+
+=== tabPr deep dump ===
+--- tabPr 0 attrs={'id': '0', 'autoTabLeft': '0', 'autoTabRight': '0'} ---
+    tabPr: {'id': '0', 'autoTabLeft': '0', 'autoTabRight': '0'}
+--- tabPr 1 attrs={'id': '1', 'autoTabLeft': '1', 'autoTabRight': '0'} ---
+    tabPr: {'id': '1', 'autoTabLeft': '1', 'autoTabRight': '0'}
+--- tabPr 2 attrs={'id': '2', 'autoTabLeft': '0', 'autoTabRight': '1'} ---
+    tabPr: {'id': '2', 'autoTabLeft': '0', 'autoTabRight': '1'}
+--- tabPr 3 attrs={'id': '3', 'autoTabLeft': '0', 'autoTabRight': '0'} ---
+    tabPr: {'id': '3', 'autoTabLeft': '0', 'autoTabRight': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '39684', 'type': 'RIGHT', 'leader': 'DASH', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '79368', 'type': 'RIGHT', 'leader': 'DASH'}
+--- tabPr 4 attrs={'id': '4', 'autoTabLeft': '0', 'autoTabRight': '1'} ---
+    tabPr: {'id': '4', 'autoTabLeft': '0', 'autoTabRight': '1'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '36852', 'type': 'RIGHT', 'leader': 'DASH', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '73704', 'type': 'RIGHT', 'leader': 'DASH'}
+--- tabPr 5 attrs={'id': '5', 'autoTabLeft': '0', 'autoTabRight': '0'} ---
+    tabPr: {'id': '5', 'autoTabLeft': '0', 'autoTabRight': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '34647', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '69294', 'type': 'LEFT', 'leader': 'NONE'}
+--- tabPr 6 attrs={'id': '6', 'autoTabLeft': '0', 'autoTabRight': '0'} ---
+    tabPr: {'id': '6', 'autoTabLeft': '0', 'autoTabRight': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '3139', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '6278', 'type': 'LEFT', 'leader': 'NONE'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '3139', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '6278', 'type': 'LEFT', 'leader': 'NONE'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '3139', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '6278', 'type': 'LEFT', 'leader': 'NONE'}
+--- tabPr 7 attrs={'id': '7', 'autoTabLeft': '0', 'autoTabRight': '0'} ---
+    tabPr: {'id': '7', 'autoTabLeft': '0', 'autoTabRight': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '3139', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '6278', 'type': 'LEFT', 'leader': 'NONE'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '3139', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '6278', 'type': 'LEFT', 'leader': 'NONE'}
+--- tabPr 8 attrs={'id': '8', 'autoTabLeft': '0', 'autoTabRight': '0'} ---
+    tabPr: {'id': '8', 'autoTabLeft': '0', 'autoTabRight': '0'}
+        switch: {}
+            case: {'{http://www.hancom.co.kr/hwpml/2011/paragraph}required-namespace': 'http://www.hancom.co.kr/hwpml/2016/HwpUnitChar'}
+                tabItem: {'pos': '3402', 'type': 'LEFT', 'leader': 'NONE', 'unit': 'HWPUNIT'}
+            default: {}
+                tabItem: {'pos': '6804', 'type': 'LEFT', 'leader': 'NONE'}
+
+=== section0.xml secPr ===
+    secPr: {'id': '', 'textDirection': 'HORIZONTAL', 'spaceColumns': '1134', 'tabStop': '8000', 'tabStopVal': '4000', 'tabStopUnit': 'HWPUNIT', 'outlineShapeIDRef': '1', 'memoShapeIDRef': '0', 'textVerticalWidthHead': '0', 'masterPageCnt': '0'}
+        grid: {'lineGrid': '0', 'charGrid': '0', 'wonggojiFormat': '0'}
+        startNum: {'pageStartsOn': 'BOTH', 'page': '0', 'pic': '0', 'tbl': '0', 'equation': '0'}
+        visibility: {'hideFirstHeader': '0', 'hideFirstFooter': '0', 'hideFirstMasterPage': '0', 'border': 'SHOW_ALL', 'fill': 'SHOW_ALL', 'hideFirstPageNum': '0', 'hideFirstEmptyLine': '0', 'showLineNumber': '0'}
+        lineNumberShape: {'restartType': '0', 'countBy': '0', 'distance': '0', 'startNumber': '0'}
+        pagePr: {'landscape': 'WIDELY', 'width': '53858', 'height': '72567', 'gutterType': 'LEFT_ONLY'}
+            margin: {'header': '0', 'footer': '0', 'gutter': '0', 'left': '8503', 'right': '8503', 'top': '8503', 'bottom': '7086'}
+        footNotePr: {}
+            autoNumFormat: {'type': 'DIGIT', 'userChar': '', 'prefixChar': '', 'suffixChar': ')', 'supscript': '0'}
+            noteLine: {'length': '-1', 'type': 'SOLID', 'width': '0.12 mm', 'color': '#000000'}
+            noteSpacing: {'betweenNotes': '283', 'belowLine': '567', 'aboveLine': '850'}
+            numbering: {'type': 'CONTINUOUS', 'newNum': '1'}
+            placement: {'place': 'EACH_COLUMN', 'beneathText': '0'}
+        endNotePr: {}
+            autoNumFormat: {'type': 'DIGIT', 'userChar': '', 'prefixChar': '', 'suffixChar': ')', 'supscript': '0'}
+            noteLine: {'length': '14692344', 'type': 'SOLID', 'width': '0.12 mm', 'color': '#000000'}
+            noteSpacing: {'betweenNotes': '0', 'belowLine': '567', 'aboveLine': '850'}
+            numbering: {'type': 'CONTINUOUS', 'newNum': '1'}
+            placement: {'place': 'END_OF_DOCUMENT', 'beneathText': '0'}
+        pageBorderFill: {'type': 'BOTH', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+        pageBorderFill: {'type': 'EVEN', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+        pageBorderFill: {'type': 'ODD', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+
+=== section1.xml secPr ===
+    secPr: {'id': '', 'textDirection': 'HORIZONTAL', 'spaceColumns': '1134', 'tabStop': '8000', 'tabStopVal': '4000', 'tabStopUnit': 'HWPUNIT', 'outlineShapeIDRef': '2', 'memoShapeIDRef': '0', 'textVerticalWidthHead': '0', 'masterPageCnt': '0'}
+        grid: {'lineGrid': '0', 'charGrid': '0', 'wonggojiFormat': '0'}
+        startNum: {'pageStartsOn': 'BOTH', 'page': '0', 'pic': '0', 'tbl': '0', 'equation': '0'}
+        visibility: {'hideFirstHeader': '0', 'hideFirstFooter': '0', 'hideFirstMasterPage': '0', 'border': 'SHOW_ALL', 'fill': 'SHOW_ALL', 'hideFirstPageNum': '0', 'hideFirstEmptyLine': '0', 'showLineNumber': '0'}
+        lineNumberShape: {'restartType': '0', 'countBy': '0', 'distance': '0', 'startNumber': '0'}
+        pagePr: {'landscape': 'WIDELY', 'width': '53858', 'height': '72567', 'gutterType': 'LEFT_ONLY'}
+            margin: {'header': '0', 'footer': '4251', 'gutter': '0', 'left': '8503', 'right': '8503', 'top': '9921', 'bottom': '4251'}
+        footNotePr: {}
+            autoNumFormat: {'type': 'DIGIT', 'userChar': '', 'prefixChar': '', 'suffixChar': ')', 'supscript': '0'}
+            noteLine: {'length': '-1', 'type': 'SOLID', 'width': '0.12 mm', 'color': '#000000'}
+            noteSpacing: {'betweenNotes': '283', 'belowLine': '567', 'aboveLine': '850'}
+            numbering: {'type': 'CONTINUOUS', 'newNum': '1'}
+            placement: {'place': 'EACH_COLUMN', 'beneathText': '0'}
+        endNotePr: {}
+            autoNumFormat: {'type': 'DIGIT', 'userChar': '', 'prefixChar': '', 'suffixChar': ')', 'supscript': '0'}
+            noteLine: {'length': '14692344', 'type': 'SOLID', 'width': '0.12 mm', 'color': '#000000'}
+            noteSpacing: {'betweenNotes': '0', 'belowLine': '567', 'aboveLine': '850'}
+            numbering: {'type': 'CONTINUOUS', 'newNum': '1'}
+            placement: {'place': 'END_OF_DOCUMENT', 'beneathText': '0'}
+        pageBorderFill: {'type': 'BOTH', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+        pageBorderFill: {'type': 'EVEN', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+        pageBorderFill: {'type': 'ODD', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+
+=== section2.xml secPr ===
+    secPr: {'id': '', 'textDirection': 'HORIZONTAL', 'spaceColumns': '1134', 'tabStop': '8000', 'tabStopVal': '4000', 'tabStopUnit': 'HWPUNIT', 'outlineShapeIDRef': '3', 'memoShapeIDRef': '1', 'textVerticalWidthHead': '0', 'masterPageCnt': '0'}
+        grid: {'lineGrid': '0', 'charGrid': '0', 'wonggojiFormat': '0'}
+        startNum: {'pageStartsOn': 'BOTH', 'page': '0', 'pic': '0', 'tbl': '0', 'equation': '0'}
+        visibility: {'hideFirstHeader': '0', 'hideFirstFooter': '0', 'hideFirstMasterPage': '0', 'border': 'SHOW_ALL', 'fill': 'SHOW_ALL', 'hideFirstPageNum': '0', 'hideFirstEmptyLine': '0', 'showLineNumber': '0'}
+        lineNumberShape: {'restartType': '0', 'countBy': '0', 'distance': '0', 'startNumber': '0'}
+        pagePr: {'landscape': 'WIDELY', 'width': '53858', 'height': '72567', 'gutterType': 'LEFT_ONLY'}
+            margin: {'header': '0', 'footer': '4251', 'gutter': '0', 'left': '7086', 'right': '7086', 'top': '9921', 'bottom': '4251'}
+        footNotePr: {}
+            autoNumFormat: {'type': 'DIGIT', 'userChar': '', 'prefixChar': '', 'suffixChar': ')', 'supscript': '0'}
+            noteLine: {'length': '-1', 'type': 'SOLID', 'width': '0.12 mm', 'color': '#000000'}
+            noteSpacing: {'betweenNotes': '283', 'belowLine': '567', 'aboveLine': '850'}
+            numbering: {'type': 'CONTINUOUS', 'newNum': '1'}
+            placement: {'place': 'EACH_COLUMN', 'beneathText': '0'}
+        endNotePr: {}
+            autoNumFormat: {'type': 'DIGIT', 'userChar': '', 'prefixChar': '', 'suffixChar': ')', 'supscript': '0'}
+            noteLine: {'length': '14692344', 'type': 'SOLID', 'width': '0.12 mm', 'color': '#000000'}
+            noteSpacing: {'betweenNotes': '0', 'belowLine': '567', 'aboveLine': '850'}
+            numbering: {'type': 'CONTINUOUS', 'newNum': '1'}
+            placement: {'place': 'END_OF_DOCUMENT', 'beneathText': '0'}
+        pageBorderFill: {'type': 'BOTH', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+        pageBorderFill: {'type': 'EVEN', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}
+        pageBorderFill: {'type': 'ODD', 'borderFillIDRef': '1', 'textBorder': 'PAPER', 'headerInside': '0', 'footerInside': '0', 'fillArea': 'PAPER'}
+            offset: {'left': '1417', 'right': '1417', 'top': '1417', 'bottom': '1417'}

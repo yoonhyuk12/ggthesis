@@ -1,0 +1,85 @@
+table 3-1 raw XML saved, length=29675
+tbl attrs: {'id': '2121231814', 'zOrder': '19', 'numberingType': 'TABLE', 'textWrap': 'TOP_AND_BOTTOM', 'textFlow': 'BOTH_SIDES', 'lock': '0', 'dropcapstyle': 'None', 'pageBreak': 'CELL', 'repeatHeader': '1', 'rowCnt': '10', 'colCnt': '4', 'cellSpacing': '0', 'borderFillIDRef': '6', 'noAdjust': '0'}
+  tbl/sz: {'width': '39142', 'widthRelTo': 'ABSOLUTE', 'height': '27699', 'heightRelTo': 'ABSOLUTE', 'protect': '0'}
+  tbl/pos: {'treatAsChar': '1', 'affectLSpacing': '0', 'flowWithText': '1', 'allowOverlap': '0', 'holdAnchorAndSO': '0', 'vertRelTo': 'PARA', 'horzRelTo': 'PARA', 'vertAlign': 'TOP', 'horzAlign': 'LEFT', 'vertOffset': '0', 'horzOffset': '0'}
+  tbl/outMargin: {'left': '141', 'right': '141', 'top': '141', 'bottom': '141'}
+  tbl/inMargin: {'left': '510', 'right': '510', 'top': '141', 'bottom': '141'}
+rows=10
+  r0 bf=13 addr=(0,0) span=(4,1) sz=(39142,2697) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=11,style=0,charPr=['58']"] txt='<표 3-1> 연구변수의 구성'
+  r1 bf=45 addr=(0,1) span=(1,1) sz=(7380,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='변수 구분'
+  r1 bf=6 addr=(1,1) span=(1,1) sz=(3135,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=76,style=0,charPr=['7']"] txt='변수 코드'
+  r1 bf=6 addr=(2,1) span=(1,1) sz=(9644,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='하위요인'
+  r1 bf=46 addr=(3,1) span=(1,1) sz=(18983,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=27,charPr=['7']"] txt='개  념'
+  r2 bf=45 addr=(0,2) span=(1,4) sz=(7380,11060) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='독립변수(X)'
+  r2 bf=6 addr=(1,2) span=(1,1) sz=(3135,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='X1'
+  r2 bf=6 addr=(2,2) span=(1,1) sz=(9644,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='시스템 인프라 범용성'
+  r2 bf=46 addr=(3,2) span=(1,1) sz=(18983,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=26,charPr=['89']"] txt='일반 PC 구동 가능, ONVIF 카메라 호'
+  r3 bf=6 addr=(1,3) span=(1,1) sz=(3135,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='X2'
+  r3 bf=6 addr=(2,3) span=(1,1) sz=(9644,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=0,charPr=['7']"] txt='1차 탐지(YOLO) 및 제어 안정성'
+  r3 bf=46 addr=(3,3) span=(1,1) sz=(18983,3165) margin={'left': '510', 'right': '510', 'top': '141', 'bottom': '141'} ["paraPr=75,style=26,charPr=['92']"] txt='쿨링타임 기반 안정 동작, 온·오프라인 필터'
+row width sums:
+  r0: n=1 sum=39142 widths=[39142]
+  r1: n=4 sum=39142 widths=[7380, 3135, 9644, 18983]
+  r2: n=4 sum=39142 widths=[7380, 3135, 9644, 18983]
+  r3: n=3 sum=31762 widths=[3135, 9644, 18983]
+  r4: n=3 sum=31762 widths=[3135, 9644, 18983]
+  r5: n=3 sum=31762 widths=[3135, 9644, 18983]
+  r6: n=4 sum=39142 widths=[7380, 3135, 9644, 18983]
+  r7: n=4 sum=39142 widths=[7380, 3135, 9644, 18983]
+  r8: n=4 sum=39142 widths=[7380, 3135, 9644, 18983]
+  r9: n=4 sum=39142 widths=[7380, 3135, 9644, 18983]
+tbl caption element: False
+s2 para 221: paraPr=31 style=0 text='<그림 3-1 연구모형>'
+s2 para 222: paraPr=72 style=0 text='  연구모형의 변수 간 관계는 네 가지 이론적 근거에 기반한다. 첫째, 독립변수(X)와 종속변수(Y) 간의 '
+s2 para 223: paraPr=51 style=0 text='<표 3-1> 연구변수의 구성변수 구분변수 코드하위요인개  념독립변수(X)X1시스템 인프라 범용성일반 PC '
+para223 runs:
+  run charPr=67 children=['tbl', 't']
+
+s1 para 0: style=0 paraPr=26 tbl=Y
+  full text: '목  차'
+  tbl attrs: rowCnt=2 colCnt=1 borderFill=6
+
+s1 para 78: style=0 paraPr=25 tbl=Y
+  full text: '표 목 차'
+  tbl attrs: rowCnt=2 colCnt=1 borderFill=6
+
+s1 para 82: style=0 paraPr=26 tbl=Y
+  full text: '그 림 목 차 '
+  tbl attrs: rowCnt=2 colCnt=1 borderFill=6
+
+s1 para 85: style=0 paraPr=53 tbl=Y
+  full text: '감사의 글 '
+  tbl attrs: rowCnt=2 colCnt=1 borderFill=6
+
+s1 para 110: style=1 paraPr=30 tbl=Y
+  full text: '논 문  개 요     '
+  tbl attrs: rowCnt=2 colCnt=1 borderFill=6
+
+TOC entry para7 raw XML:
+<hp:p xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph" id="2147483648" paraPrIDRef="25" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0"><hp:run charPrIDRef="116"><hp:t>제 1 장  서  론<hp:tab width="27252" leader="3" type="2" />1</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos="0" vertpos="18485" vertsize="1200" textheight="1200" baseline="1020" spacing="840" horzpos="0" horzsize="36852" flags="393216" /></hp:linesegarray></hp:p>
+
+List-of-tables entry para80 raw XML:
+<hp:p xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph" id="2147483648" paraPrIDRef="52" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0"><hp:run charPrIDRef="61"><hp:t>&lt;표 1-1&gt; 연구의 흐름도<hp:tab width="23616" leader="3" type="2" />5</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos="0" vertpos="13205" vertsize="1100" textheight="1100" baseline="935" spacing="772" horzpos="0" horzsize="36852" flags="393216" /></hp:linesegarray></hp:p>
+
+section0.xml header/footer/pageNum elements:
+
+section1.xml header/footer/pageNum elements:
+  ('pageNum', {'pos': 'BOTTOM_CENTER', 'formatType': 'ROMAN_SMALL', 'sideChar': '-'}, '')
+  ('newNum', {'num': '1', 'numType': 'PAGE'}, '')
+
+section2.xml header/footer/pageNum elements:
+  ('pageNum', {'pos': 'BOTTOM_CENTER', 'formatType': 'DIGIT', 'sideChar': '-'}, '')
+  ('newNum', {'num': '1', 'numType': 'PAGE'}, '')
+  ('autoNum', {'num': '1', 'numType': 'FOOTNOTE'}, '')
+  ('autoNum', {'num': '2', 'numType': 'FOOTNOTE'}, '')
+  ('autoNum', {'num': '3', 'numType': 'FOOTNOTE'}, '')
+  ('autoNum', {'num': '4', 'numType': 'FOOTNOTE'}, '')
+  ('autoNum', {'num': '5', 'numType': 'FOOTNOTE'}, '')
+  ('autoNum', {'num': '6', 'numType': 'FOOTNOTE'}, '')
+  ('autoNum', {'num': '7', 'numType': 'FOOTNOTE'}, '')
+
+s0 para 0: pageBreak=0 text='2026학년도석사학위논문중소규모 건설현장을 위한 YOLO-VLM 안전관제 시스템 실증 연구: 경보 피로도의 매개효과와 안전관리 예산 제약성의 조절효과를 중심으로지도교수 : 박 종 '
+
+s0 para 1: pageBreak=1 text='중소규모 건설현장을 위한 YOLO-VLM 안전관제 시스템 실증 연구: 경보 피로도의 매개효과와 안전관리 예산 제약성의 조절효과를 중심으로이 논문을 석사학위논문으로 제출함2026년 '
+
+s0 para 2: pageBreak=0 text='윤   혁의 석사학위논문을 인준함심 사 위 원 장                인심 사 위 원               인심 사 위 원               인2026년 12월 '

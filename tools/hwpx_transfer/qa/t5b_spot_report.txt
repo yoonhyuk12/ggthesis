@@ -1,0 +1,220 @@
+### ch4 제4장 연구설계
+  표1  (hwpx idx 209) 10x3
+     첫 행(hwpx 실물): <표 4-1> 연구변수의 구성 |  | 
+     r7  c1  일치 MD='안전관리 실효성'  HWPX='안전관리 실효성'
+     r8  c1  일치 MD='인구통계학적 특성'  HWPX='인구통계학적 특성'
+     r2  c2  일치 MD='쿨링타임 기반 안정 동작, 온·오프라인 필터링'  HWPX='쿨링타임 기반 안정 동작, 온·오프라인 필터링'
+  표2  (hwpx idx 245) 16x4
+     첫 행(hwpx 실물): <표 4-2> 연구가설 종합 |  |  | 
+     r9  c3  일치 MD='정(+)'  HWPX='정(+)'
+     r2  c0  일치 MD='연구가설 1-2'  HWPX='연구가설 1-2'
+     r0  c0  일치 MD='가설'  HWPX='가설'
+  표3  (hwpx idx 260) 10x5
+     첫 행(hwpx 실물): <표 4-3> 변수의 조작적 정의와 측정도구의 구성 |  |  |  | 
+     r6  c4  일치 MD='윤영석(2025), 이준호(2024), Zhou et al.(2023)'  HWPX='윤영석(2025), 이준호(2024), Zhou et al.(2023)'
+     r3  c3  일치 MD='Likert 5점'  HWPX='Likert 5점'
+     r5  c4  일치 MD='Cvach(2012), 김현수(2026)'  HWPX='Cvach(2012), 김현수(2026)'
+  표4  (hwpx idx 273) 17x3
+     첫 행(hwpx 실물): 구분 | 문항 | 근거
+     r5  c1  일치 MD='알람이 단시간에 폭주해도 쿨링타임 등 제어 기능으로 시스템 지연이나 멈춤 없이 안정적으로 동작한다.'  HWPX='알람이 단시간에 폭주해도 쿨링타임 등 제어 기능으로 시스템 지연이나 멈춤 없이 안정적으로 동작한다.'
+     r3  c1  일치 MD='시스템 도입 시 별도의 전용 통신망 구축 없이 기존 네트워크 환경에서도 운용할 수 있다. [확정 필요: 신규'  HWPX='시스템 도입 시 별도의 전용 통신망 구축 없이 기존 네트워크 환경에서도 운용할 수 있다. [확정 필요: 신규'
+     r2  c2  일치 MD='[17, 36]'  HWPX='[17, 36]'
+  표5  (hwpx idx 275) 5x3
+     첫 행(hwpx 실물): 구분 | 문항 | 근거
+     r0  c0  일치 MD='구분'  HWPX='구분'
+     r1  c1  일치 MD='LLM이 가짜 위험을 걸러주어 잦은 알람 확인에 대한 스트레스가 현저히 줄었다.'  HWPX='LLM이 가짜 위험을 걸러주어 잦은 알람 확인에 대한 스트레스가 현저히 줄었다.'
+     r4  c2  일치 MD='[05, 42]'  HWPX='[05, 42]'
+  표6  (hwpx idx 277) 5x3
+     첫 행(hwpx 실물): 구분 | 문항 | 근거
+     r3  c1  일치 MD='산업안전보건관리비 계상 기준만으로는 첨단 안전관리 시스템 도입이 어렵다. [확정 필요: 신규 문항]'  HWPX='산업안전보건관리비 계상 기준만으로는 첨단 안전관리 시스템 도입이 어렵다. [확정 필요: 신규 문항]'
+     r2  c2  일치 MD='[22, 39, 40]'  HWPX='[22, 39, 40]'
+     r1  c0  일치 MD='W-1'  HWPX='W-1'
+  표7  (hwpx idx 279) 9x3
+     첫 행(hwpx 실물): 구분 | 문항 (하위항목) | 근거
+     r6  c0  일치 MD='Y-6'  HWPX='Y-6'
+     r5  c0  일치 MD='Y-5'  HWPX='Y-5'
+     r2  c1  일치 MD='오탐에 속아 불필요하게 현장에 헛걸음하는 빈도가 확연히 감소하였다. (정확성)'  HWPX='오탐에 속아 불필요하게 현장에 헛걸음하는 빈도가 확연히 감소하였다. (정확성)'
+  표8  (hwpx idx 283) 11x4
+     첫 행(hwpx 실물): <표 4-4> 설문지의 최종 구성 |  |  | 
+     r6  c0  일치 MD='매개변수(M)'  HWPX='매개변수(M)'
+     r1  c0  일치 MD='일반사항'  HWPX='일반사항'
+     r4  c1  일치 MD='X3. 2차 검증(LLM) 오탐 필터링'  HWPX='X3. 2차 검증(LLM) 오탐 필터링'
+  표9  (hwpx idx 290) 8x2
+     첫 행(hwpx 실물): <표 4-5> 자료수집 개요 | 
+     r4  c1  일치 MD='2026년 하반기 [확정 필요: 설문 실시 월]'  HWPX='2026년 하반기 [확정 필요: 설문 실시 월]'
+     r5  c0  일치 MD='목표 표본'  HWPX='목표 표본'
+     r6  c0  일치 MD='표본 산정 근거'  HWPX='표본 산정 근거'
+
+### ch5 제5장 실증분석 결과
+  표1  (hwpx idx 301) 23x4
+     첫 행(hwpx 실물): <표 5-1> 조사대상자의 인구통계학적 특성 |  |  | 
+     r20 c1  일치 MD='[DATA PENDING: 구간 확정]'  HWPX='[DATA PENDING: 구간 확정]'
+     r8  c0  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+     r13 c3  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표2  (hwpx idx 307) 29x9
+     첫 행(hwpx 실물): <표 5-2> 탐색적 요인분석 및 신뢰도 분석 결과(독립·매개·조절변수) |  |  |  |  |  |  |  | 
+     r9  c1  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r24 c5  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r21 c5  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표3  (hwpx idx 310) 12x4
+     첫 행(hwpx 실물): <표 5-3> 탐색적 요인분석 및 신뢰도 분석 결과(종속변수) |  |  | 
+     r0  c0  일치 MD='문항'  HWPX='문항'
+     r6  c3  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+     r2  c0  일치 MD='Y-2 (정확성)'  HWPX='Y-2 (정확성)'
+  표4  (hwpx idx 316) 34x7
+     첫 행(hwpx 실물): <표 5-4> 확인적 요인분석 결과 |  |  |  |  |  | 
+     r10 c1  일치 MD='X3-2'  HWPX='X3-2'
+     r0  c1  일치 MD='문항'  HWPX='문항'
+     r15 c3  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표5  (hwpx idx 320) 9x5
+     첫 행(hwpx 실물): <표 5-5> 잠재변수별 개념신뢰도(CR) 및 평균분산추출(AVE) |  |  |  | 
+     r5  c1  일치 MD='4'  HWPX='4'
+     r6  c2  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r3  c3  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표6  (hwpx idx 322) 9x8
+     첫 행(hwpx 실물): <표 5-6> 판별타당성 분석 결과(Fornell-Larcker 기준) |  |  |  |  |  |  | 
+     r2  c0  일치 MD='X2'  HWPX='X2'
+     r1  c2  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+     r2  c2  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표7  (hwpx idx 326) 8x4
+     첫 행(hwpx 실물): <표 5-7> 측정모형의 적합도 평가 결과 |  |  | 
+     r3  c2  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r0  c0  일치 MD='적합도 지수'  HWPX='적합도 지수'
+     r1  c0  일치 MD='χ² (df, p)'  HWPX='χ² (df, p)'
+  표8  (hwpx idx 335) 9x6
+     첫 행(hwpx 실물): <표 5-8> 주요 변수의 기술통계량 |  |  |  |  | 
+     r2  c3  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r7  c4  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r3  c0  일치 MD='X3. 2차 검증(LLM) 오탐 필터링'  HWPX='X3. 2차 검증(LLM) 오탐 필터링'
+  표9  (hwpx idx 340) 9x9
+     첫 행(hwpx 실물): <표 5-9> 잠재변수 간 상관관계 및 다중공선성 진단 |  |  |  |  |  |  |  | 
+     r2  c4  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+     r7  c3  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r1  c7  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+  표10 (hwpx idx 344) 7x4
+     첫 행(hwpx 실물): <표 5-10> 구조모형의 적합도 평가 결과 |  |  | 
+     r0  c1  일치 MD='수용 기준'  HWPX='수용 기준'
+     r3  c1  일치 MD='≥ .90'  HWPX='≥ .90'
+     r5  c2  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표11 (hwpx idx 347) 11x8
+     첫 행(hwpx 실물): <표 5-11> 구조모형 경로계수 분석 결과(직접효과) |  |  |  |  |  |  | 
+     r8  c5  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r7  c3  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r8  c2  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표12 (hwpx idx 351) 6x9
+     첫 행(hwpx 실물): <표 5-12> 경보 피로도의 매개효과 검정 결과(부트스트래핑 5,000회) |  |  |  |  |  |  |  | 
+     r0  c4  일치 MD='총효과(c)'  HWPX='총효과(c)'
+     r1  c5  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r0  c1  일치 MD='경로'  HWPX='경로'
+  표13 (hwpx idx 355) 5x6
+     첫 행(hwpx 실물): <표 5-13> 안전관리 예산 제약성의 조절효과 분석 결과 |  |  |  |  | 
+     r3  c2  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r2  c4  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r0  c4  일치 MD='p'  HWPX='p'
+  표14 (hwpx idx 358) 5x7
+     첫 행(hwpx 실물): <표 5-14> 단순기울기 분석 결과(W 수준별 M → Y 효과) |  |  |  |  |  | 
+     r2  c0  일치 MD='평균'  HWPX='평균'
+     r3  c5  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+     r2  c1  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표15 (hwpx idx 360) 4x6
+     첫 행(hwpx 실물): <표 5-15> 다중집단 분석 결과(예산 제약 고·저 집단 간 M → Y 경로 비교) |  |  |  |  | 
+     r0  c5  일치 MD='집단 간 차이 검정(Δχ², p)'  HWPX='집단 간 차이 검정(Δχ², p)'
+     r0  c4  일치 MD='p'  HWPX='p'
+     r1  c4  일치 MD='[DATA PENDING]'  HWPX='[DATA PENDING]'
+  표16 (hwpx idx 364) 16x5
+     첫 행(hwpx 실물): <표 5-16> 가설검정 결과 종합 |  |  |  | 
+     r13 c0  일치 MD='H4-4'  HWPX='H4-4'
+     r7  c0  일치 MD='H2-3'  HWPX='H2-3'
+     r5  c0  일치 MD='H2-1'  HWPX='H2-1'
+
+### apx1 부록1 설문지
+  표1  (hwpx idx 445) 5x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r2  c4  일치 MD='③'  HWPX='③'
+     r0  c4  일치 MD='보통\\n이다'  HWPX='보통\\n이다'
+     r3  c6  일치 MD='⑤'  HWPX='⑤'
+  표2  (hwpx idx 447) 5x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r0  c5  일치 MD='그렇다'  HWPX='그렇다'
+     r4  c3  일치 MD='②'  HWPX='②'
+     r2  c6  일치 MD='⑤'  HWPX='⑤'
+  표3  (hwpx idx 449) 5x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r1  c4  일치 MD='③'  HWPX='③'
+     r3  c0  일치 MD='B3-3'  HWPX='B3-3'
+     r0  c4  일치 MD='보통\\n이다'  HWPX='보통\\n이다'
+  표4  (hwpx idx 451) 5x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r2  c5  일치 MD='④'  HWPX='④'
+     r3  c3  일치 MD='②'  HWPX='②'
+     r4  c4  일치 MD='③'  HWPX='③'
+  표5  (hwpx idx 454) 5x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r2  c2  일치 MD='①'  HWPX='①'
+     r4  c2  일치 MD='①'  HWPX='①'
+     r4  c1  일치 MD='본 시스템 도입 이후 경보 알림에 대한 피로감과 부담감이 감소하였다. [확정 필요: 신규 문항]'  HWPX='본 시스템 도입 이후 경보 알림에 대한 피로감과 부담감이 감소하였다. [확정 필요: 신규 문항]'
+  표6  (hwpx idx 457) 5x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r0  c3  일치 MD='그렇지\\n않다'  HWPX='그렇지\\n않다'
+     r4  c0  일치 MD='D-4'  HWPX='D-4'
+     r0  c6  일치 MD='매우\\n그렇다'  HWPX='매우\\n그렇다'
+  표7  (hwpx idx 460) 9x7
+     첫 행(hwpx 실물): 번호 | 문항 | 전혀\n그렇지\n않다 | 그렇지\n않다 | 보통\n이다 | 그렇다 | 매우\n그렇다
+     r6  c6  일치 MD='⑤'  HWPX='⑤'
+     r4  c1  일치 MD='직접 돌아다니며 점검해야 했던 물리적 순찰의 체력적·시간적 부담이 줄었다.'  HWPX='직접 돌아다니며 점검해야 했던 물리적 순찰의 체력적·시간적 부담이 줄었다.'
+     r2  c6  일치 MD='⑤'  HWPX='⑤'
+
+### apx2 부록2 근거매핑
+  표1  (hwpx idx 494) 9x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r4  c3  일치 MD='p.11 (II.1 정의 및 분류)'  HWPX='p.11 (II.1 정의 및 분류)'
+     r4  c4  일치 MD='스마트 안전장비를 「전파법」상 무선설비·통신 융복합 시스템으로 정의하며, 기존 CCTV·통신 인프라와 연동하'  HWPX='스마트 안전장비를 「전파법」상 무선설비·통신 융복합 시스템으로 정의하며, 기존 CCTV·통신 인프라와 연동하'
+     r5  c5  일치 MD='기존 매핑 재사용'  HWPX='기존 매핑 재사용'
+  표2  (hwpx idx 496) 10x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r9  c1  일치 MD='(동일)'  HWPX='(동일)'
+     r8  c5  일치 MD='기존 매핑 재사용'  HWPX='기존 매핑 재사용'
+     r5  c1  일치 MD='YOLO 탐지 신뢰도가 위험 누락 없이 충분히 민감 [신규 문항]'  HWPX='YOLO 탐지 신뢰도가 위험 누락 없이 충분히 민감 [신규 문항]'
+  표3  (hwpx idx 498) 14x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r10 c0  일치 MD='B3-3'  HWPX='B3-3'
+     r1  c1  일치 MD='자연 배경(나무·자재 등)을 사람·위험 객체로 오인하지 않음'  HWPX='자연 배경(나무·자재 등)을 사람·위험 객체로 오인하지 않음'
+     r2  c0  일치 MD='B3-1'  HWPX='B3-1'
+  표4  (hwpx idx 500) 10x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r7  c4  일치 MD='객체+장면그래프+위험유형 사전(Hazard Map)을 결합한 한국어 캡션이 위험 단서·작업자·도구 관계까지 '  HWPX='객체+장면그래프+위험유형 사전(Hazard Map)을 결합한 한국어 캡션이 위험 단서·작업자·도구 관계까지 '
+     r5  c4  일치 MD='TAM+TPB 통합 모델 SEM 검증 결과 PU·PEoU가 6종 wearable 채택 의도에 정(+) 영향,'  HWPX='TAM+TPB 통합 모델 SEM 검증 결과 PU·PEoU가 6종 wearable 채택 의도에 정(+) 영향,'
+     r8  c3  일치 MD='p.74-86 (4장 알고리즘별 적용실험)'  HWPX='p.74-86 (4장 알고리즘별 적용실험)'
+  표5  (hwpx idx 502) 8x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r1  c0  일치 MD='C-1'  HWPX='C-1'
+     r1  c1  일치 MD='LLM이 가짜 위험 차단 → 잦은 알람 확인 스트레스 감소'  HWPX='LLM이 가짜 위험 차단 → 잦은 알람 확인 스트레스 감소'
+     r3  c2  일치 MD='05'  HWPX='05'
+  표6  (hwpx idx 504) 11x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r2  c0  일치 MD='D-1'  HWPX='D-1'
+     r9  c2  일치 MD='29'  HWPX='29'
+     r3  c5  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+  표7  (hwpx idx 506) 23x6
+     첫 행(hwpx 실물): 문항 | 문항요지 | 근거PDF | 페이지 | 근거 요약 (1~2줄) | 비고
+     r9  c1  일치 MD='물리적 순찰의 체력적·시간적 부담 감소'  HWPX='물리적 순찰의 체력적·시간적 부담 감소'
+     r21 c3  일치 MD='p.71-122 (9·10절 비용 비교)'  HWPX='p.71-122 (9·10절 비용 비교)'
+     r18 c5  일치 MD='(빈 셀)'  HWPX='(빈 셀)'
+  표8  (hwpx idx 508) 9x4
+     첫 행(hwpx 실물): 변수 | 문항수 | 매핑 행수 | 핵심 PDF
+     r7  c2  일치 MD='24'  HWPX='24'
+     r4  c3  일치 MD='04, 06, 09, 18, 33, 38, 41'  HWPX='04, 06, 09, 18, 33, 38, 41'
+     r0  c1  일치 MD='문항수'  HWPX='문항수'
+
+무작위 셀 표본: 일치 120 / 불일치 0
+
+== &emsp; 변환 코드포인트 확인 (부록1 Part A 보기 문단)
+  idx 428: EM SPACE (U+2003) —  [EM][EM]① 시공사 [EM][EM]② 발주청(공사감독·감리원 포함) | EM SPACE(U+2003)
+  idx 430: EM SPACE (U+2003) —  [EM][EM]① 남성 [EM][EM]② 여성 | EM SPACE(U+2003)
+  idx 432: EM SPACE (U+2003) —  [EM][EM]① 20대 [EM][EM]② 30대 [EM][EM]③ 40대 [EM][EM]④ 50대 [EM][EM]⑤ 60대 | EM SPACE(U+2003)
+  idx 434: EM SPACE (U+2003) —  [EM][EM]① 3년 미만 [EM][EM]② 3년 이상 ~ 5년 미만 [EM][EM]③ 5년 이상 ~ 10년 미만 | EM SPACE(U+2003)
+  idx 435: EM SPACE (U+2003) —  [EM][EM]④ 10년 이상 ~ 20년 미만 [EM][EM]⑤ 20년 이상 | EM SPACE(U+2003)
+  idx 437: EM SPACE (U+2003) —  [EM][EM]① 공사감독 [EM][EM]② 안전관리자 [EM][EM]③ 현장소장 [EM][EM]④ 기타 ([EM][EM][ | EM SPACE(U+2003)
+  idx 439: EM SPACE (U+2003) —  [EM][EM]① 20억 원 미만 [EM][EM]② 20억 원 이상 ~ 50억 원 미만 [EM][EM]③ 50억 원 이상 ~ | EM SPACE(U+2003)
+  idx 440: EM SPACE (U+2003) —  [EM][EM]④ 100억 원 이상 ~ 120억 원 미만 [EM][EM]⑤ 120억 원 이상 | EM SPACE(U+2003)
+  idx 442: EM SPACE (U+2003) —  [EM](① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다) | EM SPACE(U+2003)

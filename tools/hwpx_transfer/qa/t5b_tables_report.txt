@@ -1,0 +1,51 @@
+### ch4 제4장 연구설계 — MD 표 9개, hwpx 표 9개
+  [OK ] 표1 (hwpx idx 209) 기대 10x3 / 실제 10x3 (rowCnt=10 colCnt=3) 캡션=<표 4-1> 연구변수의 구성
+  [OK ] 표2 (hwpx idx 245) 기대 16x4 / 실제 16x4 (rowCnt=16 colCnt=4) 캡션=<표 4-2> 연구가설 종합
+  [OK ] 표3 (hwpx idx 260) 기대 10x5 / 실제 10x5 (rowCnt=10 colCnt=5) 캡션=<표 4-3> 변수의 조작적 정의와 측정도구의 구성
+  [OK ] 표4 (hwpx idx 273) 기대 17x3 / 실제 17x3 (rowCnt=17 colCnt=3) 캡션=—
+  [OK ] 표5 (hwpx idx 275) 기대 5x3 / 실제 5x3 (rowCnt=5 colCnt=3) 캡션=—
+  [OK ] 표6 (hwpx idx 277) 기대 5x3 / 실제 5x3 (rowCnt=5 colCnt=3) 캡션=—
+  [OK ] 표7 (hwpx idx 279) 기대 9x3 / 실제 9x3 (rowCnt=9 colCnt=3) 캡션=—
+  [OK ] 표8 (hwpx idx 283) 기대 11x4 / 실제 11x4 (rowCnt=11 colCnt=4) 캡션=<표 4-4> 설문지의 최종 구성
+  [OK ] 표9 (hwpx idx 290) 기대 8x2 / 실제 8x2 (rowCnt=8 colCnt=2) 캡션=<표 4-5> 자료수집 개요
+
+### ch5 제5장 실증분석 결과 — MD 표 16개, hwpx 표 16개
+  [OK ] 표1 (hwpx idx 301) 기대 23x4 / 실제 23x4 (rowCnt=23 colCnt=4) 캡션=<표 5-1> 조사대상자의 인구통계학적 특성
+  [OK ] 표2 (hwpx idx 307) 기대 29x9 / 실제 29x9 (rowCnt=29 colCnt=9) 캡션=<표 5-2> 탐색적 요인분석 및 신뢰도 분석 결과(독립·매개·조절변수)
+  [OK ] 표3 (hwpx idx 310) 기대 12x4 / 실제 12x4 (rowCnt=12 colCnt=4) 캡션=<표 5-3> 탐색적 요인분석 및 신뢰도 분석 결과(종속변수)
+  [OK ] 표4 (hwpx idx 316) 기대 34x7 / 실제 34x7 (rowCnt=34 colCnt=7) 캡션=<표 5-4> 확인적 요인분석 결과
+  [OK ] 표5 (hwpx idx 320) 기대 9x5 / 실제 9x5 (rowCnt=9 colCnt=5) 캡션=<표 5-5> 잠재변수별 개념신뢰도(CR) 및 평균분산추출(AVE)
+  [OK ] 표6 (hwpx idx 322) 기대 9x8 / 실제 9x8 (rowCnt=9 colCnt=8) 캡션=<표 5-6> 판별타당성 분석 결과(Fornell-Larcker 기준)
+  [OK ] 표7 (hwpx idx 326) 기대 8x4 / 실제 8x4 (rowCnt=8 colCnt=4) 캡션=<표 5-7> 측정모형의 적합도 평가 결과
+  [OK ] 표8 (hwpx idx 335) 기대 9x6 / 실제 9x6 (rowCnt=9 colCnt=6) 캡션=<표 5-8> 주요 변수의 기술통계량
+  [OK ] 표9 (hwpx idx 340) 기대 9x9 / 실제 9x9 (rowCnt=9 colCnt=9) 캡션=<표 5-9> 잠재변수 간 상관관계 및 다중공선성 진단
+  [OK ] 표10 (hwpx idx 344) 기대 7x4 / 실제 7x4 (rowCnt=7 colCnt=4) 캡션=<표 5-10> 구조모형의 적합도 평가 결과
+  [OK ] 표11 (hwpx idx 347) 기대 11x8 / 실제 11x8 (rowCnt=11 colCnt=8) 캡션=<표 5-11> 구조모형 경로계수 분석 결과(직접효과)
+  [OK ] 표12 (hwpx idx 351) 기대 6x9 / 실제 6x9 (rowCnt=6 colCnt=9) 캡션=<표 5-12> 경보 피로도의 매개효과 검정 결과(부트스트래핑 5,000
+  [OK ] 표13 (hwpx idx 355) 기대 5x6 / 실제 5x6 (rowCnt=5 colCnt=6) 캡션=<표 5-13> 안전관리 예산 제약성의 조절효과 분석 결과
+  [OK ] 표14 (hwpx idx 358) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=<표 5-14> 단순기울기 분석 결과(W 수준별 M → Y 효과)
+  [OK ] 표15 (hwpx idx 360) 기대 4x6 / 실제 4x6 (rowCnt=4 colCnt=6) 캡션=<표 5-15> 다중집단 분석 결과(예산 제약 고·저 집단 간 M → Y
+  [OK ] 표16 (hwpx idx 364) 기대 16x5 / 실제 16x5 (rowCnt=16 colCnt=5) 캡션=<표 5-16> 가설검정 결과 종합
+
+### ch6 제6장 결론 — MD 표 0개, hwpx 표 0개
+
+### apx1 부록1 설문지 — MD 표 7개, hwpx 표 7개
+  [OK ] 표1 (hwpx idx 445) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=—
+  [OK ] 표2 (hwpx idx 447) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=—
+  [OK ] 표3 (hwpx idx 449) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=—
+  [OK ] 표4 (hwpx idx 451) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=—
+  [OK ] 표5 (hwpx idx 454) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=—
+  [OK ] 표6 (hwpx idx 457) 기대 5x7 / 실제 5x7 (rowCnt=5 colCnt=7) 캡션=—
+  [OK ] 표7 (hwpx idx 460) 기대 9x7 / 실제 9x7 (rowCnt=9 colCnt=7) 캡션=—
+
+### apx2 부록2 근거매핑 — MD 표 8개, hwpx 표 8개
+  [OK ] 표1 (hwpx idx 494) 기대 9x6 / 실제 9x6 (rowCnt=9 colCnt=6) 캡션=—
+  [OK ] 표2 (hwpx idx 496) 기대 10x6 / 실제 10x6 (rowCnt=10 colCnt=6) 캡션=—
+  [OK ] 표3 (hwpx idx 498) 기대 14x6 / 실제 14x6 (rowCnt=14 colCnt=6) 캡션=—
+  [OK ] 표4 (hwpx idx 500) 기대 10x6 / 실제 10x6 (rowCnt=10 colCnt=6) 캡션=—
+  [OK ] 표5 (hwpx idx 502) 기대 8x6 / 실제 8x6 (rowCnt=8 colCnt=6) 캡션=—
+  [OK ] 표6 (hwpx idx 504) 기대 11x6 / 실제 11x6 (rowCnt=11 colCnt=6) 캡션=—
+  [OK ] 표7 (hwpx idx 506) 기대 23x6 / 실제 23x6 (rowCnt=23 colCnt=6) 캡션=—
+  [OK ] 표8 (hwpx idx 508) 기대 9x4 / 실제 9x4 (rowCnt=9 colCnt=4) 캡션=—
+
+== 표 대조 실패: 0건
