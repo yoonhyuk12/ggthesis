@@ -108,9 +108,11 @@ Worker에게 위임하는 일:
 | `tools/hwpx_transfer/` | MD 원고 → hwpx 조립 파이프라인 (실행법은 아래). 빨간색 마커 규칙이 `blocks_to_hwpx.py`에 들어 있다 | 지시 시에만 |
 | `03.plan/` | 작업 계획·서브에이전트 브리프 (세션 재개 시 최신 파일부터 읽는다) | ✅ 계획 저장 |
 | `MEMORY.md` | 누적 교정·결정 기록 (`[LEARN]` 태그, 형식은 `recording-learnings` 스킬) | ✅ 학습 기록 |
+| `log.md` | 프로젝트 파일 변경 자동 기록 (`YYMMDD_HHMMSS : 수정내용`, 최신 항목이 맨 위). 도구 호출마다 훅이 갱신하고, 세션 시작 시 최근 25건이 컨텍스트에 자동으로 들어온다 | 🤖 훅 자동 기록 (직접 편집하지 않는다) |
 | `.claude/rules/` | 작업 규칙 | 지시 시에만 |
 | `.claude/skills/` | 프로젝트 스킬 6종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills) | 지시 시에만 |
 | `.claude/reference/` | 원고에 없는 참고 자료 5종(위 인덱스) + 하네스 자료 (`커맨드_및_스킬_정리.md`, awesome-agent-skills 카탈로그, hwpx-writing-kit 원본 아카이브) | 읽기 전용 |
+| `.claude/hooks/` | 훅 2종. `log_change.py`(PostToolUse)는 `git status` 스냅샷을 대조해 바뀐 파일을 `log.md`에 적고, `session_brief.py`(SessionStart)는 `log.md` 최근 25건을 세션 시작 컨텍스트에 넣는다. 등록은 `.claude/settings.json` | 지시 시에만 |
 | `02.reference/` | 선행연구 자료 62건(01~62번, 이 중 PDF 61개). 분류는 `.claude/reference/05-참조자료.md`에 01~44번만 등재. `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
 | `프로그램 기술분석서.md` | AI CCTV Viewer 상세 기술 명세 (제3장 시스템 개발의 근거) | 읽기 전용 |
 | `기타/0. 논문작성 템플릿/…` | 박종용 교수님 논문작성요령 (경로는 위 절 참조) | 읽기 전용 |

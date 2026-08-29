@@ -8,3 +8,8 @@ __pycache__/
 
 # hwpx MCP 자동 백업(HWPX_MCP_AUTOBACKUP) 산출물
 *.hwpx.bak
+
+# log.md 기록 훅의 내부 상태 파일 (.claude/hooks/log_change.py)
+.claude/hooks/.log_state.json
+.claude/hooks/.log.lock
+log.md.tmp
