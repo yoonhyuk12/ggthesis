@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **⚠️ hwpx 수정 전 필수 — 사용자 직접 수정분 보존:** 사용자가 hwpx를 한글에서 **직접 수정**하는 경우가 있다. 따라서 hwpx를 수정하기 전에는 **반드시 해당 문단/표의 현재 hwpx 텍스트를 먼저 읽어(find_text·get_paragraph_text) 실제 상태를 확인**하고, **부분(타깃) 치환만** 수행한다. MD 기준으로 hwpx를 **통째로 재생성·덮어쓰기 하지 말 것**(사용자가 직접 넣은 수정이 삭제됨). 만약 hwpx에만 있고 MD에는 없는 내용(사용자 직접 수정분)을 발견하면, **삭제하지 말고 그대로 두며**, 필요 시 그 내용을 **MD에 역동기화**하여 단일 원본을 일치시킨다.
 - **분석 설계 기준:** 통계 설계·도구는 `01.docs/04_연구설계.md` 제5절의 현행 기술(도입/미도입 두 집단 ANCOVA, jamovi)을 단일 원본으로 따른다. 다른 곳에 요약본을 만들지 않는다.
 - **장 간 일관성 (파급 반영):** 원고의 한 부분을 수정할 때, 그 내용이 다른 장에 연결·관계·언급되어 있으면(상호참조, 목차, 연결 길잡이 문장, 초록·요약, 설계-보고-한계 체인, 설문 4종 세트) **파급 지점을 grep으로 찾아 함께 수정**하여 장 간 논리적 일관성을 유지한다. 기계적 정합(번호·수치·표기)은 같은 턴에 즉시, 내용적 재작성이 필요한 파급은 보고 후 승인. 체크리스트: `.claude/rules/cross-chapter-consistency.md`
-- **지도교수:** 박종용 교수님 (경기대학교 공학대학원 건축안전 전공)
+- **지도교수:** 박종용 교수님 (경기대학교 공학대학원 건축·안전공학전공)
 - **논문 제목:** 중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로 (2026-08-24 확정. 제목의 단일 원본은 `01.docs/00_목차.md`이다)
 
 ## 소통·실행 태도 — 공치사 금지, 비판 우선
@@ -91,7 +91,7 @@ Worker에게 위임하는 일:
 
 | 파일 | 언제 로드하나 |
 | --- | --- |
-| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` PDF 분류 — **원문 PDF를 열기 전에 여기부터 본다.** 단 등재 범위는 01~44번뿐이고 45~62번은 미분류이므로, 그 구간은 파일명으로 직접 찾는다 |
+| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` 자료 62건 전건 분류 — **원문 PDF를 열기 전에 여기부터 본다.** 45~62번은 원문 확인 후 등재해 활용 장·절과 인용 시 주의점까지 적혀 있다 |
 | [06-일정.md](.claude/reference/06-일정.md) | 마일스톤·우선순위 점검 |
 | [08-Agent스킬.md](.claude/reference/08-Agent스킬.md) | write-academic-report 등 자동화 스킬 호출 |
 | [09-디펜스논리.md](.claude/reference/09-디펜스논리.md) | 심사위원 예상 질문 대응, 제6장 결론 시사점 |
@@ -113,7 +113,7 @@ Worker에게 위임하는 일:
 | `.claude/skills/` | 프로젝트 스킬 6종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills) | 지시 시에만 |
 | `.claude/reference/` | 원고에 없는 참고 자료 5종(위 인덱스) + 하네스 자료 (`커맨드_및_스킬_정리.md`, awesome-agent-skills 카탈로그, hwpx-writing-kit 원본 아카이브) | 읽기 전용 |
 | `.claude/hooks/` | 훅 2종. `log_change.py`(PostToolUse)는 `git status` 스냅샷을 대조해 바뀐 파일을 `log.md`에 적고, `session_brief.py`(SessionStart)는 `log.md` 최근 25건을 세션 시작 컨텍스트에 넣는다. 등록은 `.claude/settings.json` | 지시 시에만 |
-| `02.reference/` | 선행연구 자료 62건(01~62번, 이 중 PDF 61개). 분류는 `.claude/reference/05-참조자료.md`에 01~44번만 등재. `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
+| `02.reference/` | 선행연구 자료 62건(01~62번, 이 중 PDF 61개). 전건이 `.claude/reference/05-참조자료.md`에 분류돼 있다. `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
 | `프로그램 기술분석서.md` | AI CCTV Viewer 상세 기술 명세 (제3장 시스템 개발의 근거) | 읽기 전용 |
 | `기타/0. 논문작성 템플릿/…` | 박종용 교수님 논문작성요령 (경로는 위 절 참조) | 읽기 전용 |
 | `기타/논문심사(공개발표1차2차)_지적사항 정리 최종본.pdf` | 공개발표·1차·2차 심사 지적사항 원문 (요약·번역본은 `.claude/rules/defense-feedback.md`) | 읽기 전용 |
