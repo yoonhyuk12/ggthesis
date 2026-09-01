@@ -91,7 +91,7 @@ Worker에게 위임하는 일:
 
 | 파일 | 언제 로드하나 |
 | --- | --- |
-| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` 자료 62건 전건 분류 — **원문 PDF를 열기 전에 여기부터 본다.** 45~62번은 원문 확인 후 등재해 활용 장·절과 인용 시 주의점까지 적혀 있다 |
+| [05-참조자료.md](.claude/reference/05-참조자료.md) | `02.reference/` 자료 69건 전건 분류 — **원문 PDF를 열기 전에 여기부터 본다.** 45~62번은 원문 확인 후 등재해 활용 장·절과 인용 시 주의점까지 적혀 있다 |
 | [06-일정.md](.claude/reference/06-일정.md) | 마일스톤·우선순위 점검 |
 | [08-Agent스킬.md](.claude/reference/08-Agent스킬.md) | write-academic-report 등 자동화 스킬 호출 |
 | [09-디펜스논리.md](.claude/reference/09-디펜스논리.md) | 심사위원 예상 질문 대응, 제6장 결론 시사점 |
@@ -113,7 +113,7 @@ Worker에게 위임하는 일:
 | `.claude/skills/` | 프로젝트 스킬 6종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills) | 지시 시에만 |
 | `.claude/reference/` | 원고에 없는 참고 자료 5종(위 인덱스) + 하네스 자료 (`커맨드_및_스킬_정리.md`, awesome-agent-skills 카탈로그, hwpx-writing-kit 원본 아카이브) | 읽기 전용 |
 | `.claude/hooks/` | 훅 2종. `log_change.py`(PostToolUse)는 `git status` 스냅샷을 대조해 바뀐 파일을 `log.md`에 적고, `session_brief.py`(SessionStart)는 `log.md` 최근 25건을 세션 시작 컨텍스트에 넣는다. 등록은 `.claude/settings.json` | 지시 시에만 |
-| `02.reference/` | 선행연구 자료 62건(01~62번, 이 중 PDF 61개). 전건이 `.claude/reference/05-참조자료.md`에 분류돼 있다. `37. 기사_및_웹자료.md`는 비용 비교 논거 핵심 자료 | 읽기 전용 |
+| `02.reference/` | 선행연구 자료 69건(01~69번, 이 중 PDF 68개). 전건이 `.claude/reference/05-참조자료.md`에 분류돼 있다. 기사·웹자료는 하위 폴더 `02.reference/기사_및_웹자료/`로 분리했으며, 그 안의 `37. 기사_및_웹자료.md`가 비용 비교 논거 핵심 자료다 | 읽기 전용 |
 | `프로그램 기술분석서.md` | AI CCTV Viewer 상세 기술 명세 (제3장 시스템 개발의 근거) | 읽기 전용 |
 | `기타/0. 논문작성 템플릿/…` | 박종용 교수님 논문작성요령 (경로는 위 절 참조) | 읽기 전용 |
 | `기타/논문심사(공개발표1차2차)_지적사항 정리 최종본.pdf` | 공개발표·1차·2차 심사 지적사항 원문 (요약·번역본은 `.claude/rules/defense-feedback.md`) | 읽기 전용 |
