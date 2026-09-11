@@ -1,3 +1,7 @@
+260912_085447 : 03.plan/260912_0837_hwpx노하우_동기이관_가이드.md 수정 — "data = data.replace(b'pageBreak="CELL"', b'pageBreak="NONE"'…"
+260912_085441 : 03.plan/260912_0837_hwpx노하우_동기이관_가이드.md 수정 — "### 4-4. 대형 문서 읽기 본문 XML이 1MB를 넘으면 파이썬 MCP 읽기 도구를 절대 쓰지 않는다.…"
+260912_085223 : 01.docs/07_참조번호목록.md 수정
+260912_085150 : 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/07_참조번호목록.md 수정, tools/hwpx_transfer/staging/references.json 수정
 260912_084143 : 03.plan/README.md 수정
 260912_084124 : .mcp.json 수정, 03.plan/README.md 수정
 260912_084103 : 03.plan/260912_0837_hwpx노하우_동기이관_가이드.md 추가 — "# hwpx 논문 작성 노하우 이관 가이드 (동기용) > 작성 2026-09-12. 같은 전공에서 비슷한 학…"
