@@ -60,7 +60,7 @@
       "textFlow": "BOTH_SIDES",
       "lock": "0",
       "dropcapstyle": "None",
-      "pageBreak": "CELL",
+      "pageBreak": "NONE",
       "repeatHeader": "1",
       "cellSpacing": "0",
       "borderFillIDRef": "6",

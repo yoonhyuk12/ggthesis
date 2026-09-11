@@ -6,10 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 빠른 참조
 
-- **⭐ 현재 집필 대상 — `01.docs/` 학위논문 한 편뿐이다.** 내용 작업은 이 디렉토리의 MD 원고를 중심으로 하며, HWPX 기준 원본과 이관 산출물은 아래 규칙에 따라 `C:/Users/EKR/orca/ggthesis/00. hwpx/`에서 관리한다. 이 두 경로 밖에 논문 초안을 새로 만들지 않는다.
+- **⭐ 현재 집필 대상 — `01.docs/` 학위논문 한 편뿐이다.** 내용 작업은 이 디렉토리의 MD 원고를 중심으로 하며, HWPX 기준 원본과 이관 산출물은 아래 규칙에 따라 저장소 루트의 **`00. hwpx/`**에서 관리한다(항상 저장소 상대경로로 적는다 — 절대경로를 박아 두면 PC가 바뀔 때 깨진다. 2026-09-11에 `C:/Users/EKR/…` 경로가 다른 PC에서 없어 hwpx MCP까지 연결 실패했다). 이 두 경로 밖에 논문 초안을 새로 만들지 않는다.
 - **원고 구성 (`01.docs/`, 6장 구조):** `00_목차.md`(표지·국문초록 골격·목차·표/그림 목차) · `01_서론.md` · `02_이론적배경.md` · `03_시스템개발.md` · `04_연구설계.md` · `05_실증분석결과.md` · `06_결론.md` · `07_참조번호목록.md`(확정 서지 단일 기준) · `부록1_설문지_양식.md` · `부록2_설문항목_근거매핑.md` · `설문항목_작업이력.md`.
-- **HWPX 최신본 판정 규칙 — 파일명을 고정해 적지 않는다.** `C:/Users/EKR/orca/ggthesis/00. hwpx/`에서 **`YYMMDD_HHMM` 접두사가 가장 큰 파일이 그 시점의 최신본**이다. 특정 파일명을 이 문서에 박아 두면 새 산출물이 나올 때마다 낡아 옛 파일을 복사하게 되므로, 작업할 때마다 디렉토리를 직접 확인한다. 접두사가 없는 `260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`는 이관을 시작한 최초 기준 원본이며 최신본 비교 대상이 아니다(이관 계획: `03.plan/260725_1412_MD원고_hwpx이관_오케스트레이션.md`).
-- **HWPX 이관 산출물 규칙:** 사용자가 한글(hwpx)로 옮겨 달라고 요청하면 위 규칙으로 최신본을 확인해 `C:/Users/EKR/orca/ggthesis/00. hwpx/`에 먼저 복사하고, 복사본의 요청 부분만 수정한 뒤 `YYMMDD_HHMM_논문명.hwpx` 형식으로 저장한다. 원본은 어느 것도 직접 덮어쓰지 않는다. 날짜와 시간은 작업 시점의 Asia/Seoul 현지시각을 사용한다.
+- **HWPX 최신본 판정 규칙 — 파일명을 고정해 적지 않는다.** `00. hwpx/`에서 **`YYMMDD_HHMM` 접두사가 가장 큰 파일이 그 시점의 최신본**이다. 특정 파일명을 이 문서에 박아 두면 새 산출물이 나올 때마다 낡아 옛 파일을 복사하게 되므로, 작업할 때마다 디렉토리를 직접 확인한다. 접두사가 없는 `260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`는 이관을 시작한 최초 기준 원본이며 최신본 비교 대상이 아니다(이관 계획: `03.plan/260725_1412_MD원고_hwpx이관_오케스트레이션.md`).
+- **HWPX 이관 산출물 규칙:** 사용자가 한글(hwpx)로 옮겨 달라고 요청하면 위 규칙으로 최신본을 확인해 `00. hwpx/`에 먼저 복사하고, 복사본의 요청 부분만 수정한 뒤 `YYMMDD_HHMM_논문명.hwpx` 형식으로 저장한다. 원본은 어느 것도 직접 덮어쓰지 않는다. 날짜와 시간은 작업 시점의 Asia/Seoul 현지시각을 사용한다.
+- **🟥 hwpx 산출물은 한글이 실제로 열어야 완료다.** ZIP·XML 검증만 통과한 파일이 한글에서 `Open=False`였던 사고(2026-09-11)가 있다. 텍스트 길이가 바뀐 문단의 `linesegarray` 정리, 한글 COM 개방·재조판 저장, 표 쪽 넘김 3단계(새 쪽 → 컬럼 폭 → 표 나눔, `pageBreak="CELL"` 금지)는 `.claude/rules/hwpx-output-verification.md`를 따른다. 2.5MB 본문에 hwpx MCP 읽기 도구를 쓰면 40분 넘게 멈추므로 본문 대조는 Python으로 직접 읽는다.
+- **hwpx 읽기·진단은 rhwp MCP(`.mcp.json`의 `rhwp`, 읽기 전용).** 2.5MB 본문을 `hwp_open` 89ms로 열고 `hwp_doc_search`·`hwp_doc_text`로 조회한다(python-hwpx MCP는 같은 파일에 40분 멈춤). 쓰기 도구 111종은 `.claude/settings.json`으로 차단돼 있다 — rhwp 저장은 패키지 전체 재생성이라 사용자 직접 수정분을 지운다. 부분 수정은 `hwpx-thesis-editing/SKILL.md`의 타깃 치환 표준 경로(`fill_hwpx.py replace` + `tools/hwpx_transfer/verify_replace.py`), 표 쪽맞춤 판정은 `tools/hwpx_transfer/tblplan.py`를 쓴다. 바이너리는 `.claude/rhwp/`(gitignore, 재설치법은 그 README).
 - **계획·브리프 파일명 규칙:** `03.plan/`에 저장하는 계획 문서와 서브에이전트 브리프는 **`YYMMDD_HHMM_플랜명.md`** 형식으로 이름 짓는다. 날짜와 시각은 작성 시점의 Asia/Seoul 현지시각을 쓴다. 시각을 알 수 없는 과거 문서만 `0000`을 쓰며, 이는 실제 시각이 아니라 미상이라는 표시다. `README.md`는 폴더 색인이므로 규칙에서 제외하고, 새 파일을 만들면 그 목록에 한 줄 추가한다.
 - **읽기 전용 참고 영역 — 지시 없이 수정하지 않는다.** `학회논문/`(선행 학회 투고본), `논문구조_백업_2026-07-12/`, `backup/`(ANCOVA 전환 이전 스냅샷), `논문양식참조/`, 루트의 다른 hwpx·pdf. 인용·서식 참고 용도로만 읽는다.
 - **🔴 hwpx 빨간색 표기 규칙 (상시):** hwpx에서는 **본문이 아닌 것을 모두 빨간 글자로 출력한다.** 아직 못 채운 자리, 확정해야 할 결정, 검증해야 할 근거, 작성 가이드·방향 서술이 여기 해당한다. 대상은 접두사로 판정한다 — `[DATA PENDING`, `[확정 필요`, `[CITE_TODO`, `[그림 삽입 예정`, `[UNVERIFIED`. 여는 대괄호부터 닫는 대괄호까지 통째로 빨갛게 하며, 본문 문단과 **표 셀 양쪽에 모두** 적용한다. 지도교수·심사위원이 미완성 지점을 한눈에 보게 하려는 것이다.
@@ -46,8 +48,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 작업 규칙 (`.claude/rules/`)
 
-논문 작업 공통 규칙 15종이 `.claude/rules/`에 있다. 이 중 7종(`cross-chapter-consistency`·`mark-unverified`·`scope-discipline`·`subagent-write-guard`·`audit-before-fix`·`plan-first`·`read-docs-first`)은 **매 세션 전문이 자동 로드되므로 여기서 요약하지 않는다.** 나머지 8종은 `paths:`로 해당 파일을 다룰 때만 로드되니, 그중 다음 4종은 존재만 기억해 둔다.
+논문 작업 공통 규칙 16종이 `.claude/rules/`에 있다. 이 중 7종(`cross-chapter-consistency`·`mark-unverified`·`scope-discipline`·`subagent-write-guard`·`audit-before-fix`·`plan-first`·`read-docs-first`)은 **매 세션 전문이 자동 로드되므로 여기서 요약하지 않는다.** 나머지 9종은 `paths:`로 해당 파일을 다룰 때만 로드되니, 그중 다음 5종은 존재만 기억해 둔다.
 
+- `hwpx-output-verification` — hwpx 산출물 검증(한글 COM 개방·lineseg 정리·표 쪽 넘김 3단계·MCP 읽기 도구 한계) (`00. hwpx/**`, `tools/hwpx_transfer/**` 편집 시 자동 로드)
 - `defense-feedback` — 공개발표·1차·2차 심사 지적사항 8항목을 본 논문 설계로 번역한 집필 지침 (`01.docs/**` 편집 시 자동 로드). **본 연구는 횡단 비교이므로 결과 서술에 "도입 이후 향상", "개선시켰다" 같은 시간·인과 표현을 쓰지 않는다** — 나머지는 규칙 파일 참조
 - `doi-verification` — 존재 확인 안 된 문헌은 참고문헌에 쓰지 않는다 (02.reference/ 우선)
 - `paper-code-consistency` — 원고 수치는 분석 출력·확정 모형 문서와 대조 후 커밋
@@ -77,6 +80,7 @@ Worker에게 위임하는 일:
 브리프 기준:
 - 네가 이미 파악한 컨텍스트를 담아 Worker가 재탐색하지 않게 하라
 - 파일 경로, 프로젝트 컨벤션, 알려진 함정, 완료 기준(통과해야 할 테스트)을 포함하라
+- **hwpx 분석을 위임할 때는** 문단 덤프 JSON을 먼저 만들어 넘기고, 산출물 스키마를 JSON으로 고정하며, hwpx MCP 도구는 읽기 계열까지 금지한다(워커가 2.5MB 본문에 MCP 읽기를 호출해 40분 멈춘 2026-09-11 사고). 무응답 60분이면 화면을 읽고 interrupt한다 — 절차는 `.claude/rules/subagent-write-guard.md`
 
 경계:
 - 검증은 Worker가 한다. 브리프에 검증 절차(실행할 테스트·확인할 diff)를 포함시켜 Worker가 검증까지 마치고 증거를 보고하게 하라. 증거가 첨부된 보고는 신뢰하고 승인한다 — 같은 검증을 Advisor가 반복하지 않는다. 증거 없이 "완료"만 보고되면 그때만 직접 확인한다

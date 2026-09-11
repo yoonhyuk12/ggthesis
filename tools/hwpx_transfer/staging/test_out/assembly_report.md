@@ -1,10 +1,10 @@
 # 조립 리포트
 
-- 양식: `논문구조/260725_경기공학_건축안전_윤혁_논문작성.hwpx`
-- 출력: `C:\Users\EKR\orca\ggthesis\tools\hwpx_transfer\staging\test_out\smoke.hwpx`
-- 본문 문단 수: 160
-- 목차 항목: 26 (장 5)
-- 표 목차 항목: 0 / 그림 목차 항목: 3
+- 양식: `공학대학원_건축안전_윤혁_중소규모 건설현장을 위한 YOLO-VLM 안전관제 시스템 실증 연구 알람 피로도 완화와 안전 자원 제약성의 조절효과를 중심으로 - 복사본.hwpx`
+- 출력: `C:\Users\User\Documents\2026 개발관련\03. 경기대 논문\tools\hwpx_transfer\staging\test_out\smoke.hwpx`
+- 본문 문단 수: 675
+- 목차 항목: 111 (장 13)
+- 표 목차 항목: 28 / 그림 목차 항목: 8
 
 ## 메모
 

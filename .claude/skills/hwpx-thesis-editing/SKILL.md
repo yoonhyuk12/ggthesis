@@ -35,6 +35,91 @@ description: Use when 논문 hwpx를 수정하거나 검증할 때 — MD 원고
 
 **폴백.** MCP가 `open-safety verification: package validation failed`로 열기를 거부하면(과거 v2.18.1에서 전 파일 발생) Python `zipfile`로 `Contents/section0.xml`을 직접 치환한다. 이때 백업 생성·항목 순서·압축 방식을 유지하고, 표 셀 텍스트는 여러 문단/run으로 쪼개져 있을 수 있으니 전역 문자열 치환 전에 원문 XML 문맥을 확인한다.
 
+## 기존 hwpx의 부분(타깃) 치환 — 표준 경로
+
+문단 몇 개를 고치는 일상 작업의 표준 경로다. **전체 재조립은 사용자가 한글에서 직접 고친 내용을 지우므로 쓰지 않는다.** 도구는 전역 스킬의 `~/.claude/skills/hwpx/scripts/fill_hwpx.py replace`이며, 바뀐 ZIP 엔트리만 재작성하고 바뀐 문단의 줄배치 캐시(`<hp:linesegarray>`)만 제거한다.
+
+### 0단계 — 최신본 복사 (원본 불변)
+
+```bash
+# 00. hwpx/ 에서 YYMMDD_HHMM 접두사가 가장 큰 파일이 최신본
+cp "00. hwpx/<최신본>.hwpx" <스크래치>/base.hwpx
+```
+
+`00. hwpx/`의 파일은 **제자리 수정하지 않는다.** 작업은 복사본에서 하고, 검증을 다 통과한 결과만 `00. hwpx/YYMMDD_HHMM_논문명.hwpx`(Asia/Seoul)로 저장한다.
+
+### 1단계 — 대상 문구를 현재 hwpx에서 읽어 확정
+
+MD가 아니라 **hwpx의 현재 텍스트**에서 키를 딴다(사용자 직접 수정분이 있을 수 있다). **본문이 2.5MB라 hwpx MCP 읽기 도구는 쓰지 않는다** — 응답 없이 40분 넘게 멈춘다. Python `zipfile`이나 아래 덤프를 쓴다.
+
+```bash
+python ~/.claude/skills/hwpx/scripts/map_preflight.py dump base.hwpx > paras.txt
+```
+
+키는 **문서 전체에서 유일**해야 한다. 유일성은 "문단이 직접 소유한 텍스트" 기준으로 센다 — 표를 감싼 바깥 문단이 셀 텍스트까지 끌어안아 멀쩡한 구절이 "2회"로 보인다.
+
+### 2단계 — 치환 맵 작성
+
+```json
+{
+  "제3장 제2절에서 서술한 탐지 파이프라인은": "제3장 제2절에서 서술한 탐지 파이프라인은(수정)",
+  "표 4-4 최종 문항 구성": "표 4-4 최종 설문 문항 구성"
+}
+```
+
+- 🔴 **빨간 마커(`[DATA PENDING`·`[확정 필요`·`[CITE_TODO`·`[그림 삽입 예정`·`[UNVERIFIED`)를 가로지르는 키를 쓰지 마라.** 마커 안쪽만, 또는 마커 바깥쪽만 잡는다. 가로지르면 치환기가 매칭 범위 전체를 첫 run에 몰아넣어 **오류 없이** 마커 앞부분을 검정으로 바꾼다.
+- 같은 이유로 **글자모양이 섞인 구간(굵게·밑줄·각주 참조 등)을 통째로 잡지 마라.** 앞쪽 글자모양이 뒤쪽을 흡수한다.
+- 한 키가 다른 키의 부분 문자열이어도 된다(긴 키부터 매칭한다).
+
+### 3단계 — 사전검증 (필수)
+
+```bash
+python ~/.claude/skills/hwpx/scripts/map_preflight.py check base.hwpx --map map.json
+# => "전부 매칭. replace 안전." 이 나와야 진행
+```
+
+### 4단계 — 치환
+
+```bash
+PYTHONIOENCODING=utf-8 python ~/.claude/skills/hwpx/scripts/fill_hwpx.py \
+    replace base.hwpx out.hwpx --map map.json
+echo $?    # 0 이어야 한다
+```
+
+**exit code가 0이 아니면 `out.hwpx`를 즉시 버린다.** 키 일부만 못 찾아도 exit 2가 나오는데, 그때도 파일은 **찾은 키만 적용된 반쪽짜리로 생성된다.** `--allow-unmatched`는 못 찾은 키를 알면서 넘길 때만 쓴다. (Windows 콘솔 cp949에서 진행 출력의 줄표 때문에 죽으므로 `PYTHONIOENCODING=utf-8`을 반드시 붙인다.)
+
+### 5단계 — 검증 (순서대로, 전부 통과해야 완료)
+
+| # | 검증 | 통과 기준 |
+|---|---|---|
+| 1 | ZIP 엔트리 목록·순서·압축 방식 | base와 동일 |
+| 2 | 엔트리 SHA256 | 바꾼 섹션 외 전부 동일 |
+| 3 | 문단 개수 | base와 동일 |
+| 4 | 달라진 문단 수 | **의도한 개수와 정확히 일치** (초과분 = 오치환) |
+| 5 | 달라진 문단의 `<hp:linesegarray>` | 제거됐거나 `textpos` 최댓값 ≤ 새 텍스트 길이 |
+| 6 | 전체 `<hp:run>`·`<hp:t>` 개수 | base와 동일 |
+| 7 | 빨간 charPr별 run 개수 | base와 동일 |
+| 8 | **마커 접두사의 빨간 run 소속 횟수** | base와 동일 |
+| 9 | `fill_hwpx.py check out.hwpx --strict` | `ok: true`, exit 0 |
+| 10 | `~/.claude/skills/hwpx/scripts/validate.py out.hwpx` | `VALID` |
+| 11 | `tools/hwpx_transfer/extract_text.py --input out.hwpx --check-integrity` | 문제 0건 |
+| 12 | **한컴이 실제로 여는가** | 크래시 없음, 쪽수가 base와 동일 |
+
+1~8은 저장소 스크립트 하나로 돌린다.
+
+```bash
+python tools/hwpx_transfer/verify_replace.py base.hwpx out.hwpx <기대 변경 문단 수>
+# PASS = exit 0, FAIL = exit 1
+```
+
+12는 아래 "검증 루프"의 `.claude/skills/hwpx-thesis-editing/scripts/verify-hwpx.ps1`로 한다. **ZIP·XML 검증만 통과한 파일이 한글에서 `Open=False`였던 사고가 실제로 있었다(2026-09-11). 한글이 열어야 완료다.** 남의 Hwp 프로세스는 죽이지 않는다.
+
+**검증 8이 이 절차의 핵심이다.** 치환 키가 run 경계를 가로지르면 빨간 마커 앞부분이 검정으로 바뀌는데, run 개수·`<hp:t>` 개수·빨간 run 개수가 전부 그대로라 1~7로는 잡히지 않고 `fill_hwpx.py`는 exit 0, `check --strict`와 `validate.py`도 통과한다. 8이 FAIL이면 키를 마커 한쪽으로 좁혀 다시 치환한다.
+
+### 6단계 — 산출
+
+검증 전부 통과 후에만 `00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한다. 그 전에 MD(`01.docs/`)가 먼저 수정돼 있어야 한다.
+
 ## 검증 루프 (필수 — 이거 없이 "완료" 금지)
 
 한컴오피스 2020 경로. `C:\Program Files (x86)\Hnc\Office 2020\HOffice110\Bin\Hwp.exe`

@@ -13,3 +13,9 @@ __pycache__/
 .claude/hooks/.log_state.json
 .claude/hooks/.log.lock
 log.md.tmp
+
+# korean-law MCP 서버 본체(외부 클론 + node_modules) — 추적 대상이 아니다
+.claude/korean-law-mcp/
+
+# rhwp v0.8.6 윈도우 바이너리(읽기 전용 MCP 서버) — 추적 대상이 아니다. 재설치: github.com/edwardkim/rhwp/releases
+.claude/rhwp/
