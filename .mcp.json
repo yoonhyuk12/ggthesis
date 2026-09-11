@@ -17,7 +17,7 @@
       }
     },
     "rhwp": {
-      "command": ".claude\rhwp\rhwp.exe",
+      "command": ".claude/rhwp/rhwp.exe",
       "args": [
         "mcp-serve"
       ]
