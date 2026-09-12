@@ -1,0 +1,291 @@
+{
+  "_meta": {
+    "source": "04. 미소논문/00. hwpx/양식원본_260912_1059_윤혁작성본.hwpx",
+    "measured": "2026-09-12",
+    "measured_by": "W4(조립기) — 개발용 임시 실측본. W3의 style_map_miso.json이 도착하면 그것으로 교체한다",
+    "units": "charPr.height = hu(1/100pt), 길이 = HWPUNIT(1/7200 inch), 값은 모두 XML 실측",
+    "header_counts": {
+      "charPr": 81,
+      "paraPr": 64,
+      "borderFill": 29,
+      "tabPr": 6
+    },
+    "warning": "윤혁 기준 파일(style_map_yoonhyuk_reference.json)의 id는 전부 무효다. 이 파일은 260912 양식 실측값이다."
+  },
+  "h1_chapter": {
+    "styleIDRef": "1",
+    "paraPrIDRef": "49",
+    "charPrIDRef": "56",
+    "pageBreak": "1",
+    "_detail": "s2 p0 '제1장 서론' 실측. charPr56=16pt bold"
+  },
+  "h2_section": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "46",
+    "charPrIDRef": "60",
+    "_detail": "s2 p2 '제1절 연구의 배경 및 필요성' 실측. charPr60=15pt bold"
+  },
+  "h3_item": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "46",
+    "charPrIDRef": "39",
+    "_detail": "s2 p4 '제1항 …' 실측. charPr39=14pt bold"
+  },
+  "body": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "46",
+    "charPrIDRef": "36",
+    "_detail": "s2 p6 본문 문단 실측. charPr36=11pt 흑색"
+  },
+  "caption": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "31",
+    "charPrIDRef": "8",
+    "_detail": "s2 p7 '<그림 1-1> …' 실측. paraPr31=가운데정렬, charPr8=11pt"
+  },
+  "toc_entry": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "47",
+    "charPrIDRef": "13",
+    "_detail": "s1 p2 '제1장 서론' 실측. charPr13=12pt 흑색"
+  },
+  "toc_lot_entry": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "47",
+    "charPrIDRef": "36",
+    "_detail": "s1 p107 '<표 2-1> …' 실측"
+  },
+  "table": {
+    "tbl_attrs": {
+      "numberingType": "TABLE",
+      "textWrap": "TOP_AND_BOTTOM",
+      "textFlow": "BOTH_SIDES",
+      "lock": "0",
+      "dropcapstyle": "None",
+      "pageBreak": "NONE",
+      "repeatHeader": "1",
+      "cellSpacing": "0",
+      "borderFillIDRef": "6",
+      "noAdjust": "0",
+      "pos": {
+        "treatAsChar": "1",
+        "flowWithText": "1",
+        "vertRelTo": "PARA",
+        "horzRelTo": "PARA"
+      },
+      "outMargin": {
+        "left": "141",
+        "right": "141",
+        "top": "141",
+        "bottom": "141"
+      },
+      "inMargin": {
+        "left": "510",
+        "right": "510",
+        "top": "141",
+        "bottom": "141"
+      },
+      "sz": {
+        "width": "39142",
+        "widthRelTo": "ABSOLUTE",
+        "heightRelTo": "ABSOLUTE"
+      }
+    },
+    "cell_paraPr": "55",
+    "cell_charPr": "7",
+    "caption_paraPr": "11",
+    "caption_charPr": "53",
+    "cell_padding": {
+      "left": "510",
+      "right": "510",
+      "top": "141",
+      "bottom": "141"
+    },
+    "_grid": "대표 표(<표 2-1>, s2 p81) colCnt=6 열폭 [8504,10485,4259,6240,5391,4263] 합=39142. 캡션 행은 colSpan 전체 병합 + borderFill 13 + paraPr 11 + charPr 53",
+    "cell_style": "0"
+  },
+  "constants": {
+    "TABLE_WIDTH": 39142,
+    "ROW_MIN_H": 1565,
+    "LINE_W": 39684,
+    "REF_TITLE": {
+      "style": "0",
+      "para": "5",
+      "char": "56"
+    },
+    "REF_CATEGORY": {
+      "style": "0",
+      "para": "12",
+      "char": "35"
+    },
+    "REF_ENTRY": {
+      "style": "0",
+      "para": "50",
+      "char": "8"
+    },
+    "APPENDIX_TITLE": {
+      "style": "0",
+      "para": "31",
+      "char": "14"
+    },
+    "BODY_BOLD_CHAR": "9",
+    "CELL_BOLD_CHAR": "16",
+    "H4_FALLBACK_CHAR": "9",
+    "BLANK_CHAR": "36",
+    "TOC_BLANK_CHAR": "13",
+    "TOC_ENTRY_CHAR": "13",
+    "BORDER_INNER": "6",
+    "BORDER_LEFT_EDGE": "28",
+    "BORDER_RIGHT_EDGE": "29",
+    "BORDER_CAPTION_ROW": "13",
+    "BORDER_HEADER_GRAY": "7",
+    "RED_CHAR_BY_BASE": {
+      "36": "68",
+      "8": "61",
+      "7": "69",
+      "9": "70",
+      "39": "71",
+      "56": "15",
+      "14": "32",
+      "72": "73",
+      "76": "74",
+      "77": "75",
+      "78": "67"
+    },
+    "CHAR_HEIGHTS": {
+      "56": 1600,
+      "14": 1600,
+      "60": 1500,
+      "39": 1400,
+      "35": 1300,
+      "13": 1200,
+      "36": 1100,
+      "8": 1100,
+      "9": 1100,
+      "61": 1100,
+      "7": 1000,
+      "53": 1000,
+      "16": 1000
+    },
+    "_note": "RED_CHAR_BY_BASE는 signature 매칭이 실패할 때만 쓰이는 명시 매핑이다(양식 header 실측). BORDER_HEADER_GRAY는 현재 조립기가 쓰지 않는다(#BBBBBB 셀 7만 존재)."
+  },
+  "front_matter": {
+    "s1_toc_title_idx": 0,
+    "s1_lot_title_idx": 106,
+    "s1_lof_title_idx": 136,
+    "s1_thanks_range": [
+      147,
+      171
+    ],
+    "s1_abstract_range": [
+      172,
+      173
+    ],
+    "abstract_body": {
+      "style": "0",
+      "para": "46",
+      "char": "8"
+    },
+    "thanks_body": {
+      "style": "0",
+      "para": "46",
+      "char": "8"
+    },
+    "thanks_date": {
+      "style": "0",
+      "para": "51",
+      "char": "36"
+    },
+    "thanks_name": {
+      "style": "0",
+      "para": "51",
+      "char": "36"
+    },
+    "_detail": "s1 174문단. 목차 0–105, 표목차 106–135, 그림목차 136–146, 감사의 글 147–171(제목상자 147), 논문개요 172–173(제목상자 172). 양식 감사의 글 본문 charPr61은 빨강이라 생성분은 흑색 charPr8을 쓴다(마커는 조립기가 빨갛게 칠한다)"
+  },
+  "cover": [
+    {
+      "section0_idx": 0,
+      "run_ordinal": 5,
+      "old": "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로",
+      "role": "title"
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 6,
+      "old": "지도교수 : 박 종 용",
+      "role": "advisor"
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 8,
+      "old": "건축ㆍ안전공학전공",
+      "role": "major"
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 9,
+      "old": "윤   혁",
+      "role": "name"
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 1,
+      "old": "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로",
+      "role": "submit_title"
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 3,
+      "old": "2026년 12월  일",
+      "role": "date"
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 5,
+      "old": "건축․안전공학전공",
+      "role": "major"
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 6,
+      "old": "윤   혁",
+      "role": "name"
+    },
+    {
+      "section0_idx": 2,
+      "run_ordinal": 0,
+      "old": "윤   혁의 석사학위논문을 인준함",
+      "role": "approval_title"
+    },
+    {
+      "section0_idx": 2,
+      "run_ordinal": 10,
+      "old": "2026년 12월  일",
+      "role": "date"
+    }
+  ],
+  "page": {
+    "width": "53858",
+    "height": "72567",
+    "size_mm": "190.0 x 256.0",
+    "_note": "양식 secPr를 바이트 그대로 이식하므로 조립기는 이 값을 쓰지 않는다(참고용)"
+  },
+  "sections": [
+    {
+      "file": "section0.xml",
+      "role": "표지·속표지(제출서)·인준서 — 문단 3개가 각각 전면 표 1개",
+      "paragraphs": 3
+    },
+    {
+      "file": "section1.xml",
+      "role": "전면부: 목차·표목차·그림목차·감사의 글·논문개요",
+      "paragraphs": 174
+    },
+    {
+      "file": "section2.xml",
+      "role": "본문·참고문헌·부록·Abstract",
+      "paragraphs": 646
+    }
+  ]
+}

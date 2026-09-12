@@ -1,0 +1,10 @@
+{
+  "output": "00. hwpx/260912_1741_경기공학_건축안전_윤혁_논문작성_작성본.hwpx",
+  "sha256": "4beb9e5a422ec147f1d9e25d42dc6159876027d54c99efa1ec40df79548bdf97",
+  "base_unchanged": true,
+  "pages": 114,
+  "worker_model": "gpt-6-astra",
+  "worker_effort": "low",
+  "purpose_page_note": "Existing formatting places 1804-character purpose across body pages 4-6; not fitted to a single page.",
+  "preexisting_note": "Reference list has overlapping glyphs in baseline and output; unchanged outside requested scope."
+}

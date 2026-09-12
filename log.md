@@ -1,3 +1,144 @@
+260912_161433 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/260912_1613_미소논문_미리보기.pdf 수정
+260912_161418 : 03.plan/260912_1422_미소논문_hwpx작성_오케스트레이션.md 수정, 03.plan/README.md 수정, 04. 미소논문/README.md 수정
+260912_161407 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/260912_1613_미소논문_미리보기.pdf 추가
+260912_161348 : 04. 미소논문/00. hwpx/260912_1613_미소논문.hwpx 추가, 04. 미소논문/tools/hwpx_transfer/staging/assembly_report_260912_1613.md 추가
+260912_161215 : 04. 미소논문/tools/hwpx_transfer/analysis/assembler_changes.md 수정
+260912_161155 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/verify_report_w7.md 수정 — "# W7 — 부록 설문 양식 이식 + guide 문단 제외 검증 리포트 - 대상: `tools/hwpx_tr…"
+260912_160655 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/check_guide_absent.py 추가
+260912_160615 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_160608 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_160526 : 04. 미소논문/tools/hwpx_transfer/analysis/assembler_changes.md 수정
+260912_160448 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/verify_report_w7.md 추가 — "# W7 — 부록 설문 양식 이식 검증 리포트 - 대상: `tools/hwpx_transfer/staging…"
+260912_155608 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/check_survey_grid.py 수정
+260912_155551 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/check_survey_grid.py 추가
+260912_155527 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_155520 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "if not items: return i for box_title, chunk in self._partA_c…"
+260912_155506 : 04. 미소논문/tools/hwpx_transfer/staging/survey_layout.json 수정 — ""partA_sections": ["2. 사전 설문"], "_partA_주석": "문항 8개를 한 상자에 넣…"
+260912_155314 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_155300 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_154920 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_154912 : 04. 미소논문/tools/hwpx_transfer/staging/apx1.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/apx2.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch01.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch02.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch03.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 4건
+260912_154907 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "lines += ["## 설문 양식 적용 (--survey-layout)", ""] if doc.survey…"
+260912_154859 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_154849 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "# ── 설문 양식 적용 ──────────────────────────────────────────────…"
+260912_154824 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_154803 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "def __init__(self, template, style_map, const, image_root, s…"
+260912_154754 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "# 진술문 열의 "한 줄에 몇 글자" 힌트 — 양식 문항 행 중 두 줄 이상인 것에서 실측한다 stmt_sa…"
+260912_154745 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_154729 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "@staticmethod def _wrap_lines(text, horzsize, char_h, hint=N…"
+260912_154721 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "def lineseg_metrics(para_xml): """(줄 높이, 줄 폭, 첫 줄 글자수 힌트, 글자…"
+260912_154651 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "for ri in (1, 2): cells = [t_r[ri][a:b] for a, b in tc_spans…"
+260912_154642 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "@staticmethod def _pad_label(label, pad): """`소속` → `소 속` 처럼…"
+260912_154627 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "@staticmethod def _wrap_lines(text, horzsize, line_h, hint=N…"
+260912_154612 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "return self.para(body["paraPrIDRef"], body["styleIDRef"], ru…"
+260912_154334 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "ABSTRACT_PLACEHOLDER = "[확정 필요: 영문초록 작성]" # 양식(윤혁 논문) 부록의 설문…"
+260912_154326 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "self._prepare_char_prs() self._slice_front_matter() self._sl…"
+260912_154316 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "# ── 설문 양식 클론용 XML 구조 헬퍼 ───────────────────────────────────…"
+260912_154238 : 04. 미소논문/tools/hwpx_transfer/staging/survey_layout.json 추가 — "{ "_meta": { "목적": "부록 설문에 윤혁 논문(양식원본_260912_1059)의 설문 표 양식 …"
+260912_154217 : 04. 미소논문/01.docs/07.부록.md 수정
+260912_153340 : 04. 미소논문/03.plan/W7_survey_layout.md 추가 — "# W7 — 부록 설문 양식을 윤혁 논문 설문 표 양식 그대로 입히기 공통 규칙: `_COMMON_워커공통규…"
+260912_153113 : 04. 미소논문/00. hwpx/260912_1525_미소논문.hwpx 수정
+260912_152626 : 03.plan/260912_1422_미소논문_hwpx작성_오케스트레이션.md 수정, 03.plan/README.md 수정, 04. 미소논문/README.md 수정
+260912_152601 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/260912_1525_미소논문_미리보기.pdf 추가
+260912_152538 : 04. 미소논문/00. hwpx/260912_1525_미소논문.hwpx 추가, 04. 미소논문/tools/hwpx_transfer/staging/assembly_report_260912_1525.md 추가
+260912_152417 : 04. 미소논문/tools/hwpx_transfer/analysis/assembler_changes.md 추가 — "# 조립기(`blocks_to_hwpx.py`) 변경 요약 — 미소 논문 260912 양식용 W4가 개조한 …"
+260912_152333 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/verify_report.md 추가 — "# W5 — 조립 결과 검증 리포트 - 대상: `tools/hwpx_transfer/staging/test_…"
+260912_151435 : 04. 미소논문/03.plan/W5_verify.md 추가 — "# W5 — 조립 결과 검증 (Wave 2) 공통 규칙: `_COMMON_워커공통규칙.md` 를 먼저 읽는다…"
+260912_151400 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_145408 : 04. 미소논문/01.docs/00.목차.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/apx1.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/apx2.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch01.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch02.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch03.blocks.json 수정 외 5건
+260912_145300 : 04. 미소논문/qa/md_normalize_report.md 추가 — "# W6 — MD 자리표시자 정규화 + 목차 동기화 보고 자리표시자 **409건 전건 정규화**(G2 `qa…"
+260912_145245 : 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_145227 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_145037 : 04. 미소논문/01.docs/00.목차.md 수정
+260912_145027 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 수정
+260912_145023 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "fn = sm["page"]["footnote"] w("용지 %s x %s HWPUNIT (%s mm), l…"
+260912_145017 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "w("주의 3 — `run_ordinal`은 **표 셀 안 run까지 포함한** 문단 내 `<hp:run>`…"
+260912_145008 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "cell(it["old"], 54), it["_t_count"],"
+260912_145004 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "cell(p["text"], 36)))"
+260912_144959 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "% (cell(p["text"], 26), p["styleIDRef"], p["paraPrIDRef"],"
+260912_144956 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "% (key, idx, cell(p["text"], 30), p["styleIDRef"], p["paraPr…"
+260912_144934 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "def hfont(cid): return fonts["HANGUL"].get(chars[cid]["hangu…"
+260912_144923 : 04. 미소논문/01.docs/00.목차.md 수정, 04. 미소논문/01.docs/01.서론.md 수정, 04. 미소논문/01.docs/02.이론적배경.md 수정, 04. 미소논문/01.docs/04.연구설계.md 수정, 04. 미소논문/01.docs/05.실증분석결과.md 수정, 04. 미소논문/01.docs/06.결론.md 수정 외 3건
+260912_144918 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 수정
+260912_144912 : 04. 미소논문/tools/hwpx_transfer/normalize_placeholders.py 추가 — "# -*- coding: utf-8 -*- """MD 원고의 대괄호 자리표시자 접두사를 6종 마커로 정규화한…"
+260912_144912 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "ok = verify(reloaded, chars, paras, bfs, tabs, secs) ok = ve…"
+260912_144908 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "for key, want in (("REF_TITLE", "5"), ("REF_CATEGORY", "12")…"
+260912_144904 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 수정
+260912_144858 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "import collections import json import os import re import sy…"
+260912_144843 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144839 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 수정
+260912_144833 : 04. 미소논문/tools/hwpx_transfer/staging/cover_miso.json 수정 — "[ { "role": "title", "new": "건설현장 불시·단발성 작업 위험성평가 AI 자동생성 시스…"
+260912_144833 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "RUN_TOKEN = re.compile(r'<hp:run charPrIDRef="(\d+)"|</hp:ru…"
+260912_144815 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144758 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 수정
+260912_144752 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "CHAR_KEYS = {"charPrIDRef", "cell_charPr", "char", "char_bla…"
+260912_144747 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 수정
+260912_144743 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "w("메인이 추정한 앵커 `0 / 106 / 136 / [147,171] / [172,173]`은 덤프 실측…"
+260912_144729 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — ""widths": re.findall(r'<hp:cellSz width="(\d+)"', rows[1]) i…"
+260912_144724 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "cap = re.search(r'<hp:t>(.*?)</hp:t>', rows[0], re.S) if row…"
+260912_144717 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — ""lot_title": ("s1 p106 '%s' — paraPr %s, pageBreak=%s, charP…"
+260912_144711 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "black_of = {red: base for base, red in red_by_base.items()} …"
+260912_144700 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — ""splittable": len(hit) == 1 and hit[0].count(needle) == 1, "…"
+260912_144656 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "def runs_of(f): """문단 조각 안의 run을 문서 순서대로 (ordinal, charPrIDR…"
+260912_144650 : 04. 미소논문/tools/hwpx_transfer/staging/style_map_dev.json 수정
+260912_144642 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144618 : 04. 미소논문/03.plan/W6_md_normalize.md 추가 — "# W6 — MD 자리표시자 접두사 정규화 + 목차 파일 동기화 (원고 수정 허용됨) 공통 규칙: `_COM…"
+260912_144617 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 수정, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 수정
+260912_144612 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 수정 — "# tabPr는 탭 항목이 없으면 self-closing(<hh:tabPr … />)으로 나온다. 둘 다 잡…"
+260912_144608 : 04. 미소논문/qa/citation_crosscheck.md 수정
+260912_144556 : 04. 미소논문/tools/hwpx_transfer/analysis/template_analysis_miso.md 추가, 04. 미소논문/tools/hwpx_transfer/staging/style_map_miso.json 추가
+260912_144555 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정, 04. 미소논문/tools/hwpx_transfer/staging/test_out/assembly_report.md 추가, 04. 미소논문/tools/hwpx_transfer/staging/test_out/smoke.hwpx 추가
+260912_144553 : 04. 미소논문/tools/hwpx_transfer/analysis/probe_style_map.py 추가 — "# -*- coding: utf-8 -*- """양식(260912_1059) 스타일 실측 → style_ma…"
+260912_144524 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144516 : 04. 미소논문/qa/citation_crosscheck.md 수정
+260912_144440 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144430 : 04. 미소논문/qa/citation_crosscheck.md 수정
+260912_144427 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144402 : 04. 미소논문/tools/hwpx_transfer/staging/apx1.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/apx2.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch01.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch02.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch03.blocks.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 4건
+260912_144357 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — "report.append("- **guide 문단 %d개** — `p` 블록에 `\"guide\": true…"
+260912_144345 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — "report.append("## 5. 인용구(`> …`) 처리 — guide 문단") report.appen…"
+260912_144338 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정
+260912_144324 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — "report.append("`p`는 문단 전체 수이고 `p(guide)`는 그 가운데 인용구에서 온 `gui…"
+260912_144308 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — ""`table_caption`·`figure_caption`으로 인식한다. (e) 인용구(`> …`)는 **…"
+260912_144259 : 04. 미소논문/qa/citation_crosscheck.md 수정, 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정
+260912_144255 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — ""quote_guide": "인용구 — guide 문단(p, guide=true)으로 유지", "quote_…"
+260912_144250 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정, 04. 미소논문/tools/hwpx_transfer/staging/dev_blocks/apx1.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/dev_blocks/apx2.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/dev_blocks/ch01.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/dev_blocks/ch02.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/dev_blocks/ch03.blocks.json 추가 외 5건
+260912_144242 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — "first = QUOTE_PREFIX_RE.sub("", lines[i], count=1).strip() g…"
+260912_144223 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — "# 인용구는 제외하지 않는다 — 집필 지침([작성 가이드])까지 모두 guide 문단으로 낸다. # 조립기가…"
+260912_144216 : 04. 미소논문/qa/citation_crosscheck.md 추가
+260912_144150 : 04. 미소논문/tools/hwpx_transfer/extract_text.py 수정
+260912_144138 : 04. 미소논문/tools/hwpx_transfer/verify_replace.py 수정
+260912_144111 : 04. 미소논문/tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "# 블록 JSON과 양식 hwpx를 입력받아 서식을 이식한 학위논문 hwpx를 조립하는 스크립트 """blo…"
+260912_144050 : 04. 미소논문/qa/md_lint.md 수정
+260912_143955 : 04. 미소논문/qa/md_lint.md 추가
+260912_143756 : 04. 미소논문/tools/hwpx_transfer/staging/references.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/references_report.md 수정
+260912_143751 : 04. 미소논문/tools/hwpx_transfer/refs_md_to_json.py 수정 — "sys.stdout.write(diff_text + "\n") sys.stdout.write(fid_text…"
+260912_143738 : 04. 미소논문/tools/hwpx_transfer/staging/references.json 수정, 04. 미소논문/tools/hwpx_transfer/staging/references_report.md 수정
+260912_143733 : 04. 미소논문/tools/hwpx_transfer/refs_md_to_json.py 수정
+260912_143727 : 04. 미소논문/tools/hwpx_transfer/staging/cover_miso.json 추가 — "[ { "role": "title", "new": "건설현장 불시·단발성 작업 위험성평가 AI 자동생성 시스…"
+260912_143725 : 04. 미소논문/tools/hwpx_transfer/refs_md_to_json.py 수정 — "lines.append("add_references() 소비 필드 no·text 결손 : %d건" % sum…"
+260912_143721 : 04. 미소논문/tools/hwpx_transfer/staging/style_map_dev.json 추가 — "{ "_meta": { "source": "04. 미소논문/00. hwpx/양식원본_260912_1059_윤…"
+260912_143657 : 04. 미소논문/qa/toc_audit.md 추가
+260912_143629 : 04. 미소논문/tools/hwpx_transfer/staging/references.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/references_report.md 추가
+260912_143624 : 04. 미소논문/tools/hwpx_transfer/refs_md_to_json.py 추가 — "# -*- coding: utf-8 -*- """01.docs/08.참고문헌.md → tools/hwpx_t…"
+260912_143615 : 04. 미소논문/tools/hwpx_transfer/staging/apx1.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/apx2.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/ch01.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/ch02.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/ch03.blocks.json 추가, 04. 미소논문/tools/hwpx_transfer/staging/ch04.blocks.json 추가 외 4건
+260912_143610 : 04. 미소논문/tools/hwpx_transfer/md_to_blocks.py 수정 — "# 논문 MD 원고를 한 글자도 바꾸지 않고 구조화 블록 JSON으로 변환하는 결정적(비-LLM) 파서 — …"
+260912_143203 : 03.plan/README.md 수정
+260912_143141 : 03.plan/README.md 수정
+260912_142948 : 04. 미소논문/README.md 추가 — "# 04. 미소논문 — 김미소 석사학위논문 hwpx 작성 작업 영역 2026-09-12 개설. 윤혁 논문의 …"
+260912_142914 : 04. 미소논문/03.plan/G3_citation_crosscheck.md 추가 — "# G3 — 본문 인용 ↔ 참고문헌 목록 대조 (읽기 전용) 공통 규칙: `_COMMON_워커공통규칙.md`…"
+260912_142902 : 04. 미소논문/03.plan/G2_md_lint.md 추가 — "# G2 — MD 원고 파서 호환성 린트 · 자리표시자 인벤토리 (읽기 전용) 공통 규칙: `_COMMON_…"
+260912_142839 : 04. 미소논문/03.plan/G1_toc_audit.md 추가 — "# G1 — 목차·표/그림 목차 정합 감사 (읽기 전용) 공통 규칙: `_COMMON_워커공통규칙.md` 를…"
+260912_142825 : 04. 미소논문/03.plan/W4_assembler.md 추가 — "# W4 — 조립기 개조 (blocks_to_hwpx.py → 미소 논문 · 260912 양식) 공통 규칙:…"
+260912_142723 : 04. 미소논문/03.plan/W3_stylemap.md 추가 — "# W3 — 양식(260912_1059) 스타일 실측 → style_map_miso.json 공통 규칙: `…"
+260912_142648 : 04. 미소논문/03.plan/W2_references.md 추가 — "# W2 — 참고문헌 references.json 생성 공통 규칙: `_COMMON_워커공통규칙.md` 를 …"
+260912_142625 : 04. 미소논문/03.plan/W1_parser.md 추가 — "# W1 — MD 파서 개조 (md_to_blocks.py → 미소 원고) 공통 규칙: `_COMMON_워커…"
+260912_142554 : 04. 미소논문/03.plan/_COMMON_워커공통규칙.md 추가 — "# 워커 공통 규칙 (모든 브리프에 적용) 작업 루트는 저장소 루트 `C:/Users/User/Documen…"
+260912_142529 : 03.plan/260912_1422_미소논문_hwpx작성_오케스트레이션.md 추가 — "# 미소논문 MD → hwpx 작성 준비 오케스트레이션 (2026-09-12 14:22 KST) > 사용자 …"
+260912_142252 : 04. 미소논문/tools/hwpx_transfer/analysis/section0_paras.json 추가, 04. 미소논문/tools/hwpx_transfer/analysis/section1_paras.json 추가, 04. 미소논문/tools/hwpx_transfer/analysis/section2_paras.json 추가
+260912_142233 : 04. 미소논문/00. hwpx/양식원본_260912_1059_윤혁작성본.hwpx 추가, 04. 미소논문/01.docs/00.목차.md 추가, 04. 미소논문/01.docs/01.서론.md 추가, 04. 미소논문/01.docs/02.이론적배경.md 추가, 04. 미소논문/01.docs/03.시스템개발.md 추가, 04. 미소논문/01.docs/04.연구설계.md 추가 외 33건
+260912_141905 : .claude/settings.local.json 수정, 01.docs/01_서론.md 수정, 03.plan/260912_1156_신규지시사항.md 수정
+260912_120029 : 공학대학원_건축안전_윤혁_중소규모 건설현장을 위한 YOLO-VLM 안전관제 시스템 실증 연구 알람 피로도 완화와 안전 자원 제약성의 조절효과를 중심으로 - 복사본.hwpx 삭제
 260912_115634 : 03.plan/260912_1156_신규지시사항.md 추가
 260912_112843 : .claude/rules/hwpx-output-verification.md 수정 — "이는 사용자의 의도적 편집이 아니라 한글의 셀 조판 정규화 부산물이므로 **규칙으로 삼지 않는다**. `tb…"
 260912_112826 : .claude/rules/hwpx-output-verification.md 수정 — "- **Don't** 절·항 제목을 이전 문단에 바로 붙이기 — 앞에 빈 줄 1줄을 넣는다(장 제목·이미 빈…"

@@ -1,0 +1,1 @@
+C:\Users\User\AppData\Local\Programs\Python\Python312\python.exe: can't open file 'C:\\Users\\User\\Documents\\2026 媛쒕컻愿??\03. 寃쎄린? ?쇰Ц\\dump_ch05.py': [Errno 2] No such file or directory

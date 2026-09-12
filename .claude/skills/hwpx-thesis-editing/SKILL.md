@@ -11,12 +11,14 @@ description: Use when 논문 hwpx를 수정하거나 검증할 때 — MD 원고
 
 ## 절대 규칙
 
-1. **MD 먼저, hwpx 나중.** MD가 단일 원본이다.
+1. **내용 수정은 MD 먼저, hwpx 나중.** MD가 단일 원본이다. 열폭·줄간격·여백·쪽 나눔·조판 목차 쪽수만 고치는 레이아웃 작업은 MD를 수정하지 않는다.
 2. **쓰기 전에 반드시 현재 hwpx 텍스트를 읽는다.** `find_text`·`get_paragraph_text`로 실제 상태를 확인한 뒤 타깃 치환만 한다.
 3. **통째 재생성·덮어쓰기 금지.** hwpx에만 있고 MD에 없는 내용을 발견하면 삭제하지 말고, 그 내용을 MD로 역동기화한다.
-4. **hwpx 쓰기는 메인 컨텍스트가 단독·순차로 한다.** 서브에이전트에 위임 금지, 같은 파일 병렬 쓰기 금지.
+4. **hwpx 쓰기와 한글 COM 개방·저장·PDF 출력은 메인 컨텍스트가 단독·순차로 한다.** 서브에이전트에 위임 금지, 같은 파일 병렬 쓰기 금지.
 
-**이 스킬을 쓰지 않는 경우.** 백지에서 새 hwpx를 조립·생성하는 작업은 이 스킬의 대상이 아니다.
+**표 작업 필수:** [표 생성·배치 규칙](../../rules/hwpx-table-layout.md)과 [산출물 검증 규칙](../../rules/hwpx-output-verification.md)을 먼저 읽는다. 최소 높이·열폭·쪽 나눔·PDF 검증은 표 생성·배치 규칙을 기준으로 적용한다.
+
+**이 스킬을 쓰지 않는 경우.** 백지에서 새 hwpx를 조립·생성하는 작업은 이 부분 수정 스킬의 대상이 아니다. 다만 위 두 규칙은 새 생성·전체 조립에도 적용되며, [CLAUDE.md](../../../CLAUDE.md)의 공통 생성 지침에서 직접 연결한다.
 
 ## MCP 도구 (이 저장소 `.mcp.json` 기준)
 
@@ -96,16 +98,18 @@ echo $?    # 0 이어야 한다
 | 2 | 엔트리 SHA256 | 바꾼 섹션 외 전부 동일 |
 | 3 | 문단 개수 | base와 동일 |
 | 4 | 달라진 문단 수 | **의도한 개수와 정확히 일치** (초과분 = 오치환) |
-| 5 | 달라진 문단의 `<hp:linesegarray>` | 제거됐거나 `textpos` 최댓값 ≤ 새 텍스트 길이 |
+| 5 | 달라진 문단의 `<hp:linesegarray>` | 제거되어 한글에서 재조판됨 |
 | 6 | 전체 `<hp:run>`·`<hp:t>` 개수 | base와 동일 |
 | 7 | 빨간 charPr별 run 개수 | base와 동일 |
 | 8 | **마커 접두사의 빨간 run 소속 횟수** | base와 동일 |
 | 9 | `fill_hwpx.py check out.hwpx --strict` | `ok: true`, exit 0 |
 | 10 | `~/.claude/skills/hwpx/scripts/validate.py out.hwpx` | `VALID` |
 | 11 | `tools/hwpx_transfer/extract_text.py --input out.hwpx --check-integrity` | 문제 0건 |
-| 12 | **한컴이 실제로 여는가** | 크래시 없음, 쪽수가 base와 동일 |
+| 12 | **한컴이 실제로 여는가** | 개방·재저장·PDF 출력 성공; 단순 치환은 쪽수 유지, 표·목차 재조판은 의도한 쪽수 변경과 전 표·목차 대응 검증 |
 
-1~8은 저장소 스크립트 하나로 돌린다.
+이 표의 개수·엔트리 동일성 조건은 텍스트 타깃 치환의 기준이다. 표 레이아웃 변경은 [표 생성·배치 규칙](../../rules/hwpx-table-layout.md)의 폭·격자·내용·해석된 서식 보존 기준으로 의도한 차이를 기록하고, 한글 재저장으로 바뀐 스타일 ID·캐시는 실제 서식과 PDF로 대조한다. 레이아웃 변화로 쪽수가 달라지는 것 자체는 실패가 아니며, 최종 전 표와 목차를 검증해야 한다.
+
+1~8은 저장소 스크립트 하나로 돌린다. 다만 검증 5는 스크립트가 길이 범위 검사만 통과시켜도 변경 문단 캐시 제거를 별도로 확인한다.
 
 ```bash
 python tools/hwpx_transfer/verify_replace.py base.hwpx out.hwpx <기대 변경 문단 수>
@@ -118,7 +122,7 @@ python tools/hwpx_transfer/verify_replace.py base.hwpx out.hwpx <기대 변경 �
 
 ### 6단계 — 산출
 
-검증 전부 통과 후에만 `00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한다. 그 전에 MD(`01.docs/`)가 먼저 수정돼 있어야 한다.
+검증 전부 통과 후에만 `00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한다. 내용 수정이라면 그 전에 해당 논문의 MD가 먼저 수정돼 있어야 한다. 레이아웃만 수정했다면 MD는 유지한다.
 
 ## 검증 루프 (필수 — 이거 없이 "완료" 금지)
 
@@ -129,12 +133,12 @@ python tools/hwpx_transfer/verify_replace.py base.hwpx out.hwpx <기대 변경 �
 .\.claude\skills\hwpx-thesis-editing\scripts\verify-hwpx.ps1 `
     -HwpxPath "학회논문\학회2_....hwpx" -PdfPath "$env:TEMP\check.pdf"
 
-# 2) 바뀐 쪽만 PNG로 렌더해 육안 확인 (Windows PowerShell 5.1로 실행)
+# 2) 확인할 쪽을 PNG로 렌더해 육안 확인 (Windows PowerShell 5.1로 실행)
 powershell.exe -NoProfile -File .\.claude\skills\hwpx-thesis-editing\scripts\render-pdf.ps1 `
     -PdfPath "$env:TEMP\check.pdf" -OutDir "$env:TEMP\png" -Pages "3-5"
 ```
 
-`-Pages`는 `all`, `5`, `2-7`, `1,4,9-11` 형식을 받는다. 렌더한 PNG를 Read로 직접 열어 표 정렬·줄바꿈·쪽 넘김을 눈으로 확인한다.
+`-Pages`는 `all`, `5`, `2-7`, `1,4,9-11` 형식을 받는다. 렌더한 PNG를 Read로 직접 열어 표 정렬·줄바꿈·쪽 넘김을 눈으로 확인한다. 표 생성·레이아웃 변경에서는 예시의 일부 쪽 범위만으로 끝내지 않고 중첩 표를 포함한 전 표의 모든 쪽·이어지는 쪽·마지막 행·꼬리말·반복 마커 횟수 및 점선 목차 인쇄 쪽수를 검증한다. PDF 출력 전 한글 재조판 SaveAs와 재개방은 필수다.
 
 **콜드 스타트 오탐 주의.** 한글은 세션 첫 실행이 12초를 넘겨 뜬다. 고정 대기 후 `Get-Process Hwp`로 판정하면 **멀쩡한 파일이 CRASHED로 나온다**(실측 확인). `verify-hwpx.ps1`은 워밍업 후 폴링하는 방식이라 이 오탐이 없으므로, 크래시 판정은 직접 명령을 짜지 말고 이 스크립트를 쓴다.
 
@@ -142,7 +146,7 @@ powershell.exe -NoProfile -File .\.claude\skills\hwpx-thesis-editing\scripts\ren
 
 - **셀 명시 폭이 열 그리드(`colAddr`/`colSpan`)와 어긋나면 한글이 행을 재배치해 행 전체가 깨진다.** 셀 폭은 반드시 그리드 열폭 합산으로 도출한다.
 - **행 높이 선언값은 최소값이다.** 내용이 길면 자라고, 넘치면 표 전체가 다음 쪽으로 밀린다. 늘릴 때는 소폭씩 한다.
-- 치수 단위는 HWPUNIT. 1mm = 283.465, 1pt = 100. A4 세로 = 59528 × 84188. 줄 전진 높이 ≈ 글자크기 × 130%(10pt → 1300), 셀 상하 패딩 282.
+- 치수 단위는 HWPUNIT. 1mm = 283.465, 1pt = 100. A4 세로 = 59528 × 84188. 줄간격·셀 안쪽 여백은 문서의 실제 값을 읽는다. 글자크기 × 130%나 고정 패딩을 모든 표의 기본값으로 가정하지 않는다.
 
 ## 정답 XML 확보
 

@@ -1,0 +1,597 @@
+{
+  "_meta": {
+    "source": "04. 미소논문/00. hwpx/양식원본_260912_1059_윤혁작성본.hwpx",
+    "measured": "2026-09-12",
+    "measured_by": "tools/hwpx_transfer/analysis/probe_style_map.py (W3)",
+    "units": "charPr.height = hu(1/100pt), 길이 = HWPUNIT(1/7200 inch), 값은 모두 XML 실측",
+    "header_counts": {
+      "charPr": 81,
+      "paraPr": 64,
+      "style": 40,
+      "tabPr": 6,
+      "borderFill": 29
+    },
+    "font_note": "본문·제목 fontRef: hangul=6(한양신명조), latin=7(한양신명조). 표 안 캡션 charPr 53만 hangul/latin=0(굴림).",
+    "renumber_warning": "한글 재저장으로 header가 정규화돼 기준 파일(윤혁 260725)의 charPr/paraPr/borderFill/tabPr id와 전혀 호환되지 않는다. 기준 파일 값을 복사하면 안 된다."
+  },
+  "h1_chapter": {
+    "styleIDRef": "1",
+    "paraPrIDRef": "49",
+    "charPrIDRef": "56",
+    "pageBreak": "1",
+    "_detail": "장 제목. s2 p0 '제1장 서론' 실측(paraPr 49=LEFT·줄간격 PERCENT 170, charPr 56=16pt 한양신명조 bold, style 1 '본문'). 새 장은 hp:p pageBreak=\"1\"로 쪽을 넘긴다.",
+    "_toc_side": {
+      "styleIDRef": "0",
+      "paraPrIDRef": "47",
+      "charPrIDRef": "13",
+      "_note": "목차 쪽 장 항목(s1 p2). 이 양식의 목차 항목은 장·절·항 모두 흑색 charPr 13(12pt) 한 종류이며 쪽번호·리더 탭이 아직 없다."
+    }
+  },
+  "h2_section": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "46",
+    "charPrIDRef": "60",
+    "_detail": "절 제목. s2 p2 '제1절 …' 실측(paraPr 46=JUSTIFY·줄간격 PERCENT 170, charPr 60=15pt bold). 본문 표를 감싸는 run도 이 charPr를 쓴다(본문 표 46개 중 40개)."
+  },
+  "h3_item": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "46",
+    "charPrIDRef": "39",
+    "_detail": "항 제목. s2 p4 '제1항 …' 실측(charPr 39=14pt bold). 문단 서식은 본문과 같은 paraPr 46."
+  },
+  "body": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "46",
+    "charPrIDRef": "36",
+    "_detail": "일반 본문. s2 p6(서론 첫 문단) 실측. paraPr 46=JUSTIFY·줄간격 PERCENT 170·들여쓰기 0(문단 첫머리 공백으로 들여씀), charPr 36=11pt 한양신명조."
+  },
+  "caption": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "31",
+    "charPrIDRef": "8",
+    "_detail": "그림 캡션 문단(표 밖). s2 p7 '<그림 1-1> …' 실측. paraPr 31=CENTER, charPr 8=11pt. 표 캡션은 표 첫 행(전 열 병합, borderFill 13, paraPr 11, charPr 53)에 넣는다."
+  },
+  "toc_entry": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "47",
+    "charPrIDRef": "13",
+    "tabPrIDRef": "4",
+    "inline_tab": {
+      "leader": "3",
+      "type": "2",
+      "width_example": "36852",
+      "_note": "이 양식의 목차에는 인라인 탭(<hp:tab>)과 쪽번호가 **하나도 없다**(section1/2 통틀어 <hp:tab> 0건). leader=3(DASH)·type=2(RIGHT)는 기준 파일과 같은 코드값을 관례로 남긴 것이며, 실제 리더를 넣으려면 paraPr 47의 tabPr 4(RIGHT pos 36852, leader DASH)에 맞춘다."
+    },
+    "_detail": "목차 항목. s1 p2~p104 실측 — 장·절·항 항목이 모두 paraPr 47 / charPr 13(12pt) 한 종류이고, 들여쓰기는 문단 앞 공백 문자로만 준다."
+  },
+  "toc_lot_entry": {
+    "styleIDRef": "0",
+    "paraPrIDRef": "47",
+    "charPrIDRef": "36",
+    "tabPrIDRef": "4",
+    "_detail": "표목차·그림목차 항목. s1 p107 '<표 2-1> …'·p138 '<그림 1-1> …' 실측. 목차 항목과 같은 paraPr 47를 쓰되 charPr는 본문과 같은 36(11pt)."
+  },
+  "table": {
+    "tbl_attrs": {
+      "numberingType": "TABLE",
+      "textWrap": "TOP_AND_BOTTOM",
+      "textFlow": "BOTH_SIDES",
+      "lock": "0",
+      "dropcapstyle": "None",
+      "pageBreak": "NONE",
+      "repeatHeader": "1",
+      "cellSpacing": "0",
+      "borderFillIDRef": "6",
+      "noAdjust": "0",
+      "pos": {
+        "treatAsChar": "1",
+        "affectLSpacing": "0",
+        "flowWithText": "1",
+        "allowOverlap": "0",
+        "holdAnchorAndSO": "0",
+        "vertRelTo": "PARA",
+        "horzRelTo": "PARA",
+        "vertAlign": "TOP",
+        "horzAlign": "LEFT",
+        "vertOffset": "0",
+        "horzOffset": "0"
+      },
+      "outMargin": {
+        "left": "141",
+        "right": "141",
+        "top": "141",
+        "bottom": "141"
+      },
+      "inMargin": {
+        "left": "510",
+        "right": "510",
+        "top": "141",
+        "bottom": "141"
+      },
+      "sz": {
+        "width": "39142",
+        "widthRelTo": "ABSOLUTE",
+        "heightRelTo": "ABSOLUTE"
+      },
+      "_pageBreak_note": "실측값도 NONE이었고(본문 표 46개 전부), 규칙상 CELL로 바꾸지 않는다."
+    },
+    "borderFills": {
+      "6": "left SOLID 0.12 mm / right SOLID 0.12 mm / top SOLID 0.12 mm / bottom SOLID 0.12 mm",
+      "7": "left NONE 0.25 mm / right SOLID 0.25 mm / top SOLID 0.4 mm / bottom SOLID 0.25 mm / 배경 #BBBBBB",
+      "13": "left NONE 0.12 mm / right NONE 0.12 mm / top NONE 0.12 mm / bottom SOLID 0.12 mm",
+      "28": "left NONE 0.12 mm / right SOLID 0.12 mm / top SOLID 0.12 mm / bottom SOLID 0.12 mm",
+      "29": "left SOLID 0.12 mm / right NONE 0.12 mm / top SOLID 0.12 mm / bottom SOLID 0.12 mm"
+    },
+    "cell_paraPr": "55",
+    "cell_paraPr_variants": {
+      "55": "CENTER·줄간격 PERCENT 160 (1429회)",
+      "11": "CENTER·줄간격 PERCENT 160 (216회)",
+      "33": "JUSTIFY·줄간격 PERCENT 120 (114회)",
+      "61": "CENTER·줄간격 PERCENT 150 (36회)",
+      "29": "CENTER·줄간격 PERCENT 120 (24회)",
+      "24": "CENTER·줄간격 PERCENT 120 (18회)"
+    },
+    "cell_charPr": "7",
+    "cell_charPr_variants": {
+      "7": "10pt 한양신명조 (988회)",
+      "69": "10pt 한양신명조 빨강 (515회)",
+      "8": "11pt 한양신명조 (216회)",
+      "37": "1pt 한양신명조 bold (114회)",
+      "16": "10pt 한양신명조 bold (36회)",
+      "36": "11pt 한양신명조 (18회)"
+    },
+    "cell_padding": {
+      "left": "510",
+      "right": "510",
+      "top": "141",
+      "bottom": "141"
+    },
+    "caption_row": {
+      "borderFillIDRef": "13",
+      "paraPrIDRef": "11",
+      "charPrIDRef": "53",
+      "styleIDRef": "0"
+    },
+    "_grid": "대표 표(<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스, s2 p81) colCnt=6 rowCnt=16, 데이터 행 열폭 ['8504', '10485', '4259', '6240', '5391', '4263'] 합=39142=표 폭 39142. 모든 행의 cellSz.width 합이 표 폭과 일치해야 한다(rowSpan 셀은 해당 행에서 제외). cellSz.height는 참고값(최빈 1565, 한글이 재계산)."
+  },
+  "constants": {
+    "TABLE_WIDTH": 39142,
+    "ROW_MIN_H": 1565,
+    "LINE_W": 39684,
+    "REF_TITLE": {
+      "style": "0",
+      "para": "5",
+      "char": "56"
+    },
+    "REF_CATEGORY": {
+      "style": "0",
+      "para": "12",
+      "char": "35"
+    },
+    "REF_ENTRY": {
+      "style": "0",
+      "para": "50",
+      "char": "8"
+    },
+    "APPENDIX_TITLE": {
+      "style": "0",
+      "para": "31",
+      "char": "14"
+    },
+    "BODY_BOLD_CHAR": "9",
+    "CELL_BOLD_CHAR": "16",
+    "H4_FALLBACK_CHAR": "9",
+    "BLANK_CHAR": "36",
+    "TOC_BLANK_CHAR": "36",
+    "TOC_ENTRY_CHAR": "13",
+    "BORDER_INNER": "6",
+    "BORDER_LEFT_EDGE": "28",
+    "BORDER_RIGHT_EDGE": "29",
+    "BORDER_CAPTION_ROW": "13",
+    "BORDER_HEADER_GRAY": "7",
+    "RED_CHAR_BY_BASE": {
+      "7": "69",
+      "8": "61",
+      "9": "70",
+      "13": "67",
+      "14": "32",
+      "36": "68",
+      "38": "68",
+      "39": "71",
+      "48": "69",
+      "49": "69",
+      "56": "15",
+      "64": "69",
+      "65": "67",
+      "72": "70",
+      "76": "67",
+      "77": "67",
+      "78": "67",
+      "79": "15",
+      "80": "69"
+    },
+    "CHAR_HEIGHTS": {
+      "0": 1000,
+      "1": 1100,
+      "2": 900,
+      "3": 900,
+      "4": 900,
+      "5": 900,
+      "6": 1000,
+      "7": 1000,
+      "8": 1100,
+      "9": 1100,
+      "10": 1600,
+      "11": 1100,
+      "12": 1000,
+      "13": 1200,
+      "14": 1600,
+      "15": 1600,
+      "16": 1000,
+      "17": 1200,
+      "18": 1000,
+      "19": 1000,
+      "20": 1400,
+      "21": 1600,
+      "22": 1500,
+      "23": 2100,
+      "24": 1700,
+      "25": 1600,
+      "26": 1700,
+      "27": 1500,
+      "28": 2000,
+      "29": 2000,
+      "30": 1400,
+      "31": 1400,
+      "32": 1600,
+      "33": 1600,
+      "34": 200,
+      "35": 1300,
+      "36": 1100,
+      "37": 100,
+      "38": 1100,
+      "39": 1400,
+      "40": 1200,
+      "41": 1400,
+      "42": 1100,
+      "43": 1000,
+      "44": 1100,
+      "45": 950,
+      "46": 1000,
+      "47": 2200,
+      "48": 1000,
+      "49": 1000,
+      "50": 1100,
+      "51": 800,
+      "52": 1100,
+      "53": 1000,
+      "54": 1000,
+      "55": 1000,
+      "56": 1600,
+      "57": 1000,
+      "58": 1000,
+      "59": 1000,
+      "60": 1500,
+      "61": 1100,
+      "62": 1400,
+      "63": 1100,
+      "64": 1000,
+      "65": 1200,
+      "66": 1000,
+      "67": 1200,
+      "68": 1100,
+      "69": 1000,
+      "70": 1100,
+      "71": 1400,
+      "72": 1100,
+      "73": 1100,
+      "74": 1200,
+      "75": 1200,
+      "76": 1200,
+      "77": 1200,
+      "78": 1200,
+      "79": 1600,
+      "80": 1000
+    },
+    "_notes": {
+      "BODY_BOLD_CHAR": "charPr 9는 본문 charPr 36와 11pt·한양신명조·borderFill 2가 같고 bold만 다른 짝(문서 내 48회 사용).",
+      "CELL_BOLD_CHAR": "charPr 16는 셀 기본 charPr 7(10pt)의 bold 짝(36회 사용).",
+      "BLANK_CHAR": "빈 문단에는 run이 없어 charPr를 잴 수 없으므로 본문 charPr를 그대로 쓴다.",
+      "TOC_BLANK_CHAR": "목차 영역 빈 문단(s1 p1·p105·p135·p146)도 run이 없다. 이 문단들의 paraPr는 46(본문과 동일)이므로 charPr도 본문 값을 쓴다.",
+      "BORDER_HEADER_GRAY": "이 양식에는 '사방 실선 + 회색 배경' borderFill이 **없다**. winBrush faceColor를 가진 정의는 borderFill 7, 19, 27뿐이고, 그중 표 셀에 실제로 쓰인 것은 7(배경 #BBBBBB)이다. 본문 표의 머리행은 회색 배경 없이 좌우 개방 테두리(28/29)와 bold charPr 16로만 구분한다.",
+      "RED_CHAR_BY_BASE": "색만 다른 짝이 여러 개면 문서에서 더 많이 쓰인 빨간 charPr를 골랐다. 형식은 '검은 charPr → 빨간 charPr'.",
+      "CHAR_HEIGHTS": "header.xml의 charPr 전수(81개) 높이(hu)."
+    }
+  },
+  "front_matter": {
+    "s1_toc_title_idx": 0,
+    "s1_lot_title_idx": 106,
+    "s1_lof_title_idx": 136,
+    "s1_thanks_range": [
+      147,
+      171
+    ],
+    "s1_abstract_range": [
+      172,
+      173
+    ],
+    "abstract_body": {
+      "style": "0",
+      "para": "46",
+      "char": "8"
+    },
+    "thanks_body": {
+      "style": "0",
+      "para": "46",
+      "char": "61",
+      "char_black": "8",
+      "_note": "양식의 이 문단은 **빨간 charPr 61**로 쓰여 있다(윤혁 논문의 작성 중 표시). 미소 논문 본문으로 채울 때는 검은 짝 charPr 8를 쓰고, 아직 못 채운 자리에만 빨강을 남긴다."
+    },
+    "thanks_date": {
+      "style": "0",
+      "para": "51",
+      "char": "36",
+      "old": "2026 년 12 월"
+    },
+    "thanks_name": {
+      "style": "0",
+      "para": "51",
+      "char": "36",
+      "old": "윤   혁 "
+    },
+    "_detail": {
+      "toc_title": "s1 p0 '목  차' — paraPr 26, 제목 상자 표 안 charPr 56",
+      "lot_title": "s1 p106 '표 목 차' — paraPr 25, pageBreak=1, charPr 15(**빨강** #FF0000. 검은 짝은 charPr 79이며 목차·그림목차 제목은 그 검은 charPr를 쓴다)",
+      "lof_title": "s1 p136 '그 림 목 차' — paraPr 26, pageBreak=1, charPr 56",
+      "thanks": "s1 p147 제목 상자(pageBreak=1) → p148 본문 1문단 → p149~p169 빈 문단 21개 → p170 '2026 년 12 월' → p171 '윤   혁'. 윤혁 논문의 사용자 직접 작성분이므로 미소 논문에서는 p148·p170·p171 텍스트만 갈아끼우고 문단 경계를 유지한다.",
+      "abstract": "s1 p172 '논 문  개 요' 제목 상자(style 1, pageBreak=1) + p173 공백 본문 자리(paraPr 46, charPr 8). 국문초록 본문은 p173 자리에 넣는다."
+    }
+  },
+  "cover": [
+    {
+      "section0_idx": 0,
+      "run_ordinal": 2,
+      "charPrIDRef": "31",
+      "old": "2026",
+      "role": "year",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 6,
+      "charPrIDRef": "47",
+      "old": "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로",
+      "role": "title",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 8,
+      "charPrIDRef": "21",
+      "old": "지도교수 : 박 종 용",
+      "role": "advisor",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 12,
+      "charPrIDRef": "22",
+      "old": "건축ㆍ안전공학전공",
+      "role": "major",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 0,
+      "run_ordinal": 14,
+      "charPrIDRef": "24",
+      "old": "윤   혁",
+      "role": "name",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 3,
+      "charPrIDRef": "47",
+      "old": "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로",
+      "role": "title",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 5,
+      "charPrIDRef": "25",
+      "old": "이 논문을 석사학위논문으로 제출함",
+      "role": "submit_title",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 6,
+      "charPrIDRef": "26",
+      "old": "2026년 12월  일",
+      "role": "date",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 10,
+      "charPrIDRef": "22",
+      "old": "건축․안전공학전공",
+      "role": "major",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 1,
+      "run_ordinal": 12,
+      "charPrIDRef": "24",
+      "old": "윤   혁",
+      "role": "name",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 2,
+      "run_ordinal": 2,
+      "charPrIDRef": "29",
+      "old": "윤   혁의 석사학위논문을 인준함",
+      "role": "approval_title",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    },
+    {
+      "section0_idx": 2,
+      "run_ordinal": 25,
+      "charPrIDRef": "26",
+      "old": "2026년 12월  일",
+      "role": "date",
+      "splittable": true,
+      "_t_count": 1,
+      "_t_nonempty": 1
+    }
+  ],
+  "page": {
+    "width": "53858",
+    "height": "72567",
+    "size_mm": "190.0 x 256.0",
+    "landscape": "WIDELY",
+    "gutterType": "LEFT_ONLY",
+    "margins": {
+      "section0_cover": {
+        "left": "8503",
+        "right": "8503",
+        "top": "8503",
+        "bottom": "7086",
+        "header": "0",
+        "footer": "0",
+        "gutter": "0"
+      },
+      "section1_front": {
+        "left": "8503",
+        "right": "8503",
+        "top": "9921",
+        "bottom": "4251",
+        "header": "0",
+        "footer": "4251",
+        "gutter": "0"
+      },
+      "section2_body": {
+        "left": "7086",
+        "right": "7086",
+        "top": "9921",
+        "bottom": "4251",
+        "header": "0",
+        "footer": "4251",
+        "gutter": "0"
+      }
+    },
+    "margins_mm_note": "7086=25mm, 8503=30mm, 9921=35mm, 4251=15mm",
+    "page_numbering": {
+      "section0": "없음(표지)",
+      "section1": {
+        "pos": "BOTTOM_CENTER",
+        "formatType": "ROMAN_SMALL",
+        "sideChar": "-",
+        "newNum": null
+      },
+      "section2": {
+        "pos": "BOTTOM_CENTER",
+        "formatType": "DIGIT",
+        "sideChar": "-",
+        "newNum": "1"
+      }
+    },
+    "footnote": {
+      "numFormat": "DIGIT",
+      "suffixChar": ")",
+      "numbering": "CONTINUOUS",
+      "noteLineWidth": "0.12 mm"
+    }
+  },
+  "sections": [
+    {
+      "file": "section0.xml",
+      "role": "표지·속표지(제출서)·인준서 — 문단 3개가 각각 전면 표 1개",
+      "paragraphs": 3
+    },
+    {
+      "file": "section1.xml",
+      "role": "전면부: 목차·표목차·그림목차·감사의 글·논문개요(제목만) — 쪽번호 로마 소문자",
+      "paragraphs": 174
+    },
+    {
+      "file": "section2.xml",
+      "role": "본문 제1~6장·참고문헌·부록(설문지 2종) — 쪽번호 아라비아, 본문 표 46개",
+      "paragraphs": 646
+    }
+  ],
+  "front_matter_ranges": {
+    "표지": [
+      "section0",
+      0,
+      0
+    ],
+    "속표지_제출서": [
+      "section0",
+      1,
+      1
+    ],
+    "인준서": [
+      "section0",
+      2,
+      2
+    ],
+    "목차": [
+      "section1",
+      0,
+      105
+    ],
+    "표목차": [
+      "section1",
+      106,
+      135
+    ],
+    "그림목차": [
+      "section1",
+      136,
+      146
+    ],
+    "감사의글": [
+      "section1",
+      147,
+      171
+    ],
+    "논문개요": [
+      "section1",
+      172,
+      173
+    ],
+    "_preserve_note": "감사의 글(s1 147~171)은 윤혁 논문의 사용자 직접 작성분이다. 미소 논문에서는 본문(p148)·날짜(p170)·성명(p171)을 갈아끼우되 제목 상자와 빈 문단 리듬은 그대로 둔다. 논문개요(s1 172~173)는 제목 상자(p172)와 공백 본문 문단(p173) 둘뿐이라 경계 보존이 필수다."
+  },
+  "conventions": {
+    "page_break": "hp:p의 pageBreak=\"1\" 속성만 쓴다(pageBreakBefore paraPr 없음). 양식 실측: 참고문헌(s2 p554)·부록(s2 p593)·표목차(s1 p106)·그림목차(s1 p136)·감사의 글(s1 p147)·논문개요(s1 p172)·속표지(s0 p1).",
+    "blank_line": "장·절·항 제목 뒤에 빈 문단 1개(paraPr 46, run 없음)가 기본 리듬(s2 p1·p3·p5 실측). 표·그림 캡션 앞뒤도 같은 빈 문단으로 띄운다.",
+    "heading_box": "전면부 블록 제목(목차·표목차·그림목차·감사의 글·논문개요)은 문단 안에 표 1개를 넣은 제목 상자다(has_tbl=True). 본문 장 제목은 표가 아니라 문단이다.",
+    "table_inline": "표는 본문 문단의 run 안에 treatAsChar=1로 인라인 배치되고, 그 run의 charPr는 절 제목 charPr 60를 쓴다(본문 표 46개 중 40개).",
+    "footnote_style": "각주 스타일 11(각주)이 정의돼 있고 본문에는 hp:autoNum 각주가 1건 있다."
+  }
+}

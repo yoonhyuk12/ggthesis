@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "generated_from": "01.docs/07_참조번호목록.md (단일 기준, 2026-07-25 판독)",
+    "policy": "07목록에서 '확정(원문 대조)' 또는 '검증 완료(웹 대조)' 표시가 있는 서지만 categories에 수록. [확정 필요]·미검증·⚠ 미해소 항목은 flagged. 서지 문자열은 07목록 '참고문헌 표기 골격'의 확정 표기를 그대로 사용(창작·보완 없음).",
+    "category_assumptions": "단행본·소프트웨어·arXiv 프리프린트는 5분류(가~마)에 자연 슬롯이 없어 '마. 기타'에 배치. 정부·공공기관 발간물(현황분석·가이드라인)은 '다. 보고서'에 배치. 조립 전 지도교수 양식과 대조 필요."
+  },
+  "categories": {
+    "가. 학위논문": [
+      {
+        "no": 1,
+        "text": "김윤헌, 「건설현장 위험상황 이해 및 대응을 위한 인공지능 안전인지 프레임워크 연구」, 성균관대학교 일반대학원 글로벌스마트시티융합전공 박사학위논문, 2026.",
+        "source_ref": "07목록 전체목록 #04 · 원문대조필요 #04(확정 2026-07-12, 표지·책등 대조) · 표기골격 국내문헌"
+      },
+      {
+        "no": 2,
+        "text": "김현수, 「통합관제센터 운영을 위한 Vision AI–VLM 비교 및 하이브리드 연구」, 중앙대학교 대학원 ICT안전학과 석사학위논문, 2026.",
+        "source_ref": "07목록 전체목록 #05 · 원문대조필요 #05(확정 2026-07-12) · 표기골격 국내문헌"
+      },
+      {
+        "no": 3,
+        "text": "박종학, 「YOLO(You Only Look Once) 모델별 건설 현장 위험 상태 및 객체 인식 성능 비교」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2025.",
+        "source_ref": "07목록 전체목록 #03 · 원문대조필요 #03(재확정 2026-07-12, 수여 연도 2025 기준) · 표기골격 국내문헌"
+      },
+      {
+        "no": 4,
+        "text": "왕인국, 「건설현장 위험요인 식별을 위한 RAG와 Fine-tuning 기반 LLM 성능향상에 관한 연구」, 광운대학교 대학원 석사학위논문, 2025.",
+        "source_ref": "07목록 전체목록 #13 · 원문대조필요 #13(확정 2026-07-12, 수여 연도 2025) · 표기골격 국내문헌"
+      },
+      {
+        "no": 5,
+        "text": "윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2025.",
+        "source_ref": "07목록 전체목록 #29 · 원문대조필요 #29(확정 2026-07-12) · 표기골격 국내문헌"
+      },
+      {
+        "no": 6,
+        "text": "이동건, 「통합기술수용모델(UTAUT)을 활용한 건설근로자들의 스마트안전장비 수용에 영향을 미치는 요인에 관한 연구」, 인하대학교 공학대학원 건축토목공간정보공학과 석사학위논문, 2024.",
+        "source_ref": "07목록 전체목록 #38 · 원문대조필요 #38(확정 2026-07-12, 표지 2024년 8월) · 표기골격 국내문헌"
+      },
+      {
+        "no": 7,
+        "text": "이준호, 「건설현장 중대재해 감소를 위한 스마트 안전장비의 지원방법 개선에 관한 연구」, 한양대학교 융합산업대학원 석사학위논문, 2024.",
+        "source_ref": "07목록 전체목록 #39 · 원문대조필요 #39(확정 2026-07-12, 표지 2024년 2월) · 표기골격 국내문헌"
+      },
+      {
+        "no": 8,
+        "text": "황병복, 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문, 2026.",
+        "source_ref": "07목록 전체목록 #44 · 원문대조필요 #44(확정 2026-07-12, 2026년 2월) · 표기골격 국내문헌"
+      }
+    ],
+    "나. 학술지": [
+      {
+        "no": 1,
+        "text": "Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268-277.",
+        "source_ref": "07목록 전체목록 #42 · 원문대조필요 #42(확정 2026-07-12, 파일명 2022는 다운로드 오류) · 표기골격 국외문헌"
+      },
+      {
+        "no": 2,
+        "text": "Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319-340.",
+        "source_ref": "07목록 방법론문헌 #1(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
+      },
+      {
+        "no": 3,
+        "text": "Lawshe, C. H., \"A quantitative approach to content validity\", Personnel Psychology, Vol. 28, No. 4, 1975, pp. 563-575.",
+        "source_ref": "07목록 방법론문헌 #4(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
+      },
+      {
+        "no": 4,
+        "text": "Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285.",
+        "source_ref": "07목록 전체목록 #68 · 표기골격 국외문헌"
+      },
+      {
+        "no": 5,
+        "text": "Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
+        "source_ref": "07목록 방법론문헌 #12(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
+      }
+    ],
+    "다. 보고서": [
+      {
+        "no": 1,
+        "text": "고용노동부, 『2024 산업재해 현황분석』, 고용노동부, 2024.",
+        "source_ref": "07목록 전체목록 #30(고용노동부, 2024 — ⚠ 없음) · 표기골격 국내문헌"
+      },
+      {
+        "no": 2,
+        "text": "한국산업안전보건공단, 『스마트 안전장비 활용 가이드라인』, 한국산업안전보건공단, 2024.",
+        "source_ref": "07목록 전체목록 #36(한국산업안전보건공단, 2024 — ⚠ 없음) · 표기골격 국내문헌"
+      }
+    ],
+    "라. 관련법": [],
+    "마. 기타": [
+      {
+        "no": 1,
+        "text": "Aiken, L. S., & West, S. G., Multiple Regression: Testing and Interpreting Interactions, Sage, 1991.",
+        "source_ref": "07목록 방법론문헌 #11(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌 — 단행본",
+        "note": "단행본 — 분류 슬롯 부재로 '마. 기타' 배치 (가정)"
+      },
+      {
+        "no": 2,
+        "text": "Shadish, W. R., Cook, T. D., & Campbell, D. T., Experimental and Quasi-Experimental Designs for Generalized Causal Inference, Houghton Mifflin, 2002.",
+        "source_ref": "07목록 방법론문헌 #2(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌 — 단행본 (골격 말미의 검증 메모 괄호는 서지 아님이라 제외)",
+        "note": "단행본 — 분류 슬롯 부재로 '마. 기타' 배치 (가정)"
+      },
+      {
+        "no": 3,
+        "text": "The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org",
+        "source_ref": "07목록 방법론문헌 #6(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌 — 소프트웨어",
+        "note": "소프트웨어 — 분류 슬롯 부재로 '마. 기타' 배치 (가정)"
+      },
+      {
+        "no": 4,
+        "text": "Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666, 2025.",
+        "source_ref": "07목록 전체목록 #23 · 원문대조필요 #23(확정 2026-07-12) · 표기골격 국외문헌 — arXiv 프리프린트",
+        "note": "arXiv 프리프린트 — 학술지 게재 미확인 상태라 '마. 기타' 배치 (가정)"
+      },
+      {
+        "no": 5,
+        "text": "Yao, S., Rahimi Ardabili, B., Danesh Pazho, A., Alinezhad Noghre, G., Neff, C., Bourque, L., & Tabkhi, H., \"From Lab to Field: Real-World Evaluation of an AI-Driven Smart Video Solution to Enhance Community Safety\", arXiv:2312.02078, 2023.",
+        "source_ref": "07목록 전체목록 #65 · 표기골격 국외문헌 — arXiv 프리프린트",
+        "note": "arXiv 프리프린트 — 학술지 게재 미확인 상태라 '마. 기타' 배치 (가정)"
+      }
+    ]
+  },
+  "flagged": [
+    {
+      "text": "노희상·박종용·정상윤, 「건설산업 ESG 안전·보건 정책과 건설안전 성과와의 관계 연구」, 『안전문화연구』(ISSN 2586-2685)",
+      "reason": "발간호·연도가 게재 확정 교정본에 미기재 — 07목록에 [발간정보 확정 필요]로 명시(ref 45 등재 예정). 권(호)·연도·쪽 결손.",
+      "source_ref": "07목록 주2 · 방법론문헌 #7"
+    },
+    {
+      "text": "류수영, 「CCTV 기반 산업안전 관제 시스템에 관한 연구」, 2023",
+      "reason": "학위수여기관·대학원·학위구분 미확정 — 골격에 [학위 정보 확정 필요]로 명시.",
+      "source_ref": "07목록 전체목록 #17 · 표기골격 국내문헌"
+    },
+    {
+      "text": "이석희·고대식·송석일, 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, 2025",
+      "reason": "저자·연도·게재지는 01장 각주 기준 확정이나 게재 쪽수 미기재(골격에 권호까지만 있음). 02장 CITE_TODO ⚠도 미해소.",
+      "source_ref": "07목록 전체목록 #09 · 원문대조필요 #09 · 표기골격 국내문헌"
+    },
+    {
+      "text": "An et al. (2025), An Integrated YOLO and LLM …",
+      "reason": "논문 제목 전문·저널명·권호·쪽 미확정 — 골격에 [저널·권호 확정 필요]로 명시.",
+      "source_ref": "07목록 전체목록 #08 · 표기골격 국외문헌"
+    },
+    {
+      "text": "Zhou et al. (2023), Analysis of factors of willingness …",
+      "reason": "논문 제목 전문·저널명·권호·쪽 미확정 — 골격에 [저널·권호 확정 필요]로 명시.",
+      "source_ref": "07목록 전체목록 #40 · 표기골격 국외문헌"
+    },
+    {
+      "text": "Chong et al. (2023), The Adoption Intentions of Wearable Technology for Construction Safety",
+      "reason": "저널명·권호·쪽 미확정 — 골격에 [저널·권호 확정 필요]로 명시.",
+      "source_ref": "07목록 전체목록 #41 · 표기골격 국외문헌"
+    },
+    {
+      "text": "이병길, 스마트장비(Drone·AIoT)를 활용한 … (ref 06)",
+      "reason": "연도 미확정(02장 CITE_TODO vs 03장 '이병길(2024)' 상충). ref 18과 동일 연구의 이본 여부도 미확인. 제목 전문·게재처·학위정보 결손.",
+      "source_ref": "07목록 전체목록 #06 · 원문대조필요 #06"
+    },
+    {
+      "text": "스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구 (ref 18)",
+      "reason": "저자·연도 미확인. ref 06과 저자·내용 중복 가능성(별개 문헌 여부 미확인).",
+      "source_ref": "07목록 전체목록 #18 · 원문대조필요 #18"
+    },
+    {
+      "text": "Deep Learning-Based Safety Analysis for High-Altitude Construction Workers PPE Detection and Posture Recognition Model Development (ref 19)",
+      "reason": "저자·연도 미확인(02장 CITE_TODO 상태). 게재처·권호·쪽 일체 결손.",
+      "source_ref": "07목록 전체목록 #19 · 원문대조필요 #19"
+    },
+    {
+      "text": "중소규모 건설현장 재해예방을 위한 스마트 건설안전기술 활용 방안 (ref 22)",
+      "reason": "저자·연도 미확인(02장 CITE_TODO 4회). 게재처 결손.",
+      "source_ref": "07목록 전체목록 #22 · 원문대조필요 #22"
+    },
+    {
+      "text": "국내 소규모 민간 건설프로젝트의 산업안전보건관리비 준수 실태 분석 및 개선방안 제시연구 (ref 28)",
+      "reason": "저자·연도 미확인 — '오세욱 외(2022)' 후보만 있고 원문 대조 미완. 게재처 결손.",
+      "source_ref": "07목록 전체목록 #28 · 원문대조필요 #28"
+    },
+    {
+      "text": "건설현장의 스마트 안전장비 성능과 도입 효과 분석 (ref 32)",
+      "reason": "저자·연도 미확인(02장 CITE_TODO 상태). 게재처 결손.",
+      "source_ref": "07목록 전체목록 #32 · 원문대조필요 #32"
+    },
+    {
+      "text": "기사·웹자료 — 김포신문(2021)·연합뉴스(2024) 등 (ref 37)",
+      "reason": "개별 기사의 매체·일자·기사 제목·URL 서지 미확정. ref 37 수록 자료와 02장 인용의 대응 여부도 미확인. '기타 자료' 소절 분리 수록 여부 지도교수 협의 대기.",
+      "source_ref": "07목록 전체목록 #37 · 원문대조필요 #37 · 골격 말미 협의 메모"
+    },
+    {
+      "text": "객체 감지 기술을 활용한 반도체 건설 현장의 작업자 사고 예방 기술 연구 (ref 20)",
+      "reason": "Ⅲ장 인용은 있으나 07목록에 저자·연도·게재처 확정 기록이 전무.",
+      "source_ref": "07목록 전체목록 #20"
+    },
+    {
+      "text": "서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안 (ref 33)",
+      "reason": "Ⅲ장 인용은 있으나 07목록에 저자(발행처)·연도 확정 기록이 전무.",
+      "source_ref": "07목록 전체목록 #33"
+    },
+    {
+      "text": "정보기술수용이론(TAM)의 대안적 모델의 개발에 관한 연구 (ref 43)",
+      "reason": "Ⅲ장 인용은 있으나 07목록에 저자·연도·게재처 확정 기록이 전무.",
+      "source_ref": "07목록 전체목록 #43"
+    },
+    {
+      "text": "「산업안전보건법」",
+      "reason": "인용 조항·시행 기준일 미확정 — 골격에 [확정 필요] 명시. 최신 조문 확인(mark-unverified 규칙) 후 '라. 관련법'에 등재해야 함.",
+      "source_ref": "07목록 표기골격 3. 법령"
+    },
+    {
+      "text": "「건설기술 진흥법」",
+      "reason": "인용 조항·시행 기준일 미확정 — 골격에 [확정 필요] 명시. '라. 관련법' 후보.",
+      "source_ref": "07목록 표기골격 3. 법령"
+    },
+    {
+      "text": "「건설산업기본법」",
+      "reason": "인용 조항·시행 기준일 미확정 — 골격에 [확정 필요] 명시. '라. 관련법' 후보.",
+      "source_ref": "07목록 표기골격 3. 법령"
+    },
+    {
+      "text": "「중대재해 처벌 등에 관한 법률」",
+      "reason": "인용 조항 미확정 — 골격에 [확정 필요: 인용 조항] 명시. 시행일·법률번호는 ref 58 원문 대조(2026-08-25) 완료. '라. 관련법' 후보.",
+      "source_ref": "07목록 표기골격 3. 법령 · 전체목록 #58"
+    },
+    {
+      "text": "EFA 적용 기준(KMO·Bartlett) 근거 문헌",
+      "reason": "인용할 문헌 자체가 미확정([확정 필요 — 미검증]). 저자·연도·서지 일체 없음.",
+      "source_ref": "07목록 방법론문헌 #13"
+    },
+    {
+      "text": "Cronbach's α 기준(.70) 근거 문헌",
+      "reason": "Nunnally 후보만 있고 미검증([확정 필요 — 미검증]). 연도·판·쪽 일체 미확정.",
+      "source_ref": "07목록 방법론문헌 #14"
+    },
+    {
+      "text": "요인적재값 기준(.50/교차적재 .40) 근거 문헌",
+      "reason": "인용할 문헌 자체가 미확정([확정 필요 — 미검증]).",
+      "source_ref": "07목록 방법론문헌 #15"
+    },
+    {
+      "text": "다중공선성 진단 기준(상관계수·VIF) 근거 문헌",
+      "reason": "인용할 문헌 자체가 미확정([확정 필요 — 미검증]).",
+      "source_ref": "07목록 방법론문헌 #16"
+    },
+    {
+      "text": "Green & Swets (1966) — 신호감지이론(SDT) 원전",
+      "reason": "02장 내주로 인용됐으나 원전 서지(제목·출판사) 미확보, 참조번호 미부여 — 존재 검증 후 46~ 부여 예정.",
+      "source_ref": "07목록 이론원전 #17"
+    },
+    {
+      "text": "Dixon, Wickens & McCarley (2007) — 오경보/미탐 비대칭 효과",
+      "reason": "02장 내주로 인용됐으나 원전 서지(저널·권호·쪽) 미확보, 참조번호 미부여.",
+      "source_ref": "07목록 이론원전 #18"
+    },
+    {
+      "text": "Igbaria & Tan (1997) — IT 수용과 개인 수행도",
+      "reason": "02장 내주로 인용됐으나 원전 서지 미확보, 참조번호 미부여.",
+      "source_ref": "07목록 이론원전 #19"
+    },
+    {
+      "text": "Radjou, Prabhu & Ahuja (2012) — Jugaad/절약형 혁신",
+      "reason": "02장 내주로 인용됐으나 원전 서지 미확보, 참조번호 미부여.",
+      "source_ref": "07목록 이론원전 #20"
+    },
+    {
+      "text": "Zeschky, Widenmayer & Gassmann (2011) — 절약형 혁신 정의",
+      "reason": "02장 내주로 인용됐으나 원전 서지 미확보, 참조번호 미부여.",
+      "source_ref": "07목록 이론원전 #21"
+    },
+    {
+      "text": "Bhatti (2012) — 절약형 혁신 개념화",
+      "reason": "02장 내주로 인용됐으나 원전 서지 미확보, 참조번호 미부여.",
+      "source_ref": "07목록 이론원전 #22"
+    },
+    {
+      "text": "Tiwari & Herstatt (2012) — 절약형 엔지니어링",
+      "reason": "02장 내주로 인용됐으나 원전 서지 미확보, 참조번호 미부여.",
+      "source_ref": "07목록 이론원전 #23"
+    }
+  ],
+  "sort_rule": "각 분류 내 정렬: 국내 저자 가나다순 → 국외 저자(제1저자 성) 알파벳순 (07목록 표기골격의 '국내 가나다순 / 국외 제1저자 알파벳순' 규칙을 5분류 체계에 적용한 가정). 번호(no)는 분류별로 1부터 재시작 (가정 — 조립 시 양식의 실제 번호 체계 확인 필요)."
+}

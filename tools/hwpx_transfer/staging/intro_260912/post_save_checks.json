@@ -1,0 +1,15 @@
+{
+  "markers_same": true,
+  "texts_same": {
+    "Contents/section0.xml": true,
+    "Contents/section1.xml": true,
+    "Contents/section2.xml": true
+  },
+  "tables_same": {
+    "Contents/section0.xml": true,
+    "Contents/section1.xml": true,
+    "Contents/section2.xml": true
+  },
+  "binaries_same": true,
+  "original_sha256_unchanged": true
+}

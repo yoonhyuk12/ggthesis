@@ -129,6 +129,8 @@
     ]
   },
   "enabledMcpjsonServers": [
-    "hwpx"
+    "hwpx",
+    "korean-law",
+    "rhwp"
   ]
 }

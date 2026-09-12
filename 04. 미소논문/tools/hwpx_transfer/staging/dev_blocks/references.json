@@ -1,0 +1,254 @@
+{
+ "categories": {
+  "가. 기존 확보 문헌 (석사논문 인용 풀)": [
+   {
+    "no": 1,
+    "text": "김태헌(2025), \"건설현장 위험상황 이해 및 대응을 위한 인공지능 안전인지 프레임워크 연구\", 성균관대학교 대학원 박사학위논문."
+   },
+   {
+    "no": 2,
+    "text": "왕인국(2024), \"위험요인 식별을 위한 RAG 및 Fine-tuning 기반 LLM 모델 개발\", 광운대학교 대학원 석사학위논문."
+   },
+   {
+    "no": 3,
+    "text": "조도빈(2026), \"국내 소규모 민간 건설프로젝트의 산업안전보건관리비 준수 실태와 개선방안 연구\", 울산대학교 대학원 박사학위논문."
+   },
+   {
+    "no": 4,
+    "text": "한소은(2026), \"건설현장 '일일 위험성 평가서' 자동 생성 모델 - Vision-Language Model(VLM)을 활용하여\", 인천대학교 대학원 석사학위논문."
+   },
+   {
+    "no": 5,
+    "text": "Hussain, R.(2025), \"A Framework for Personalized Safety Training using Large Language Models in Construction Meta-Scenes\", Ph.D. Dissertation, Chung-Ang University."
+   },
+   {
+    "no": 6,
+    "text": "Isah, M.A.(2023), \"Development of Question-Answering System to Improve Construction Risk Identification in NATM Tunnels\", Ph.D. Dissertation, Kyungpook National University."
+   },
+   {
+    "no": 7,
+    "text": "Lee, G.(2024), \"Development of the Specialized Question-Answering System using a Bridge Maintenance Knowledge Base and Large Language Model\", Ph.D. Dissertation, Seoul National University."
+   },
+   {
+    "no": 8,
+    "text": "김석기·원정훈(2025), \"Analysis of Patterns and Causes of Fatal Accidents in Small-Scale Construction Sites Using Combined BERTopic and LLM Models\", 『한국안전학회지』 40(5), pp.65-75. DOI:10.14341/JKOSOS.2025.40.5.65."
+   },
+   {
+    "no": 9,
+    "text": "Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., et al.(2020), \"Language Models are Few-Shot Learners\", *Advances in Neural Information Processing Systems*, 33, pp.1877-1901."
+   },
+   {
+    "no": 10,
+    "text": "Karpukhin, V., Oğuz, B., Min, S., Lewis, P., Wu, L., Edunov, S., Chen, D., & Yih, W.(2020), \"Dense Passage Retrieval for Open-Domain Question Answering\", *Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)*, pp.6769-6781. DOI:10.18653/v1/2020.emnlp-main.550."
+   },
+   {
+    "no": 11,
+    "text": "Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D.(2020), \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\", *Advances in Neural Information Processing Systems*, 33, pp.9459-9474."
+   },
+   {
+    "no": 12,
+    "text": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I.(2017), \"Attention Is All You Need\", *Advances in Neural Information Processing Systems*, 30."
+   },
+   {
+    "no": 13,
+    "text": "김민기·박성호(2024), \"서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안\", 서울연구원."
+   },
+   {
+    "no": 14,
+    "text": "안전보건공단(2024), 위험성평가 지원시스템(KRAS), 한국산업안전보건공단, https://kras.kosha.or.kr. (법적 근거: 「사업장 위험성평가에 관한 지침」, 고용노동부고시 제2024-76호 — [54] 참조)"
+   },
+   {
+    "no": 15,
+    "text": "안전보건공단(2025), \"2024 산업재해 현황분석\", 한국산업안전보건공단."
+   },
+   {
+    "no": 16,
+    "text": "안전보건공단(2026), \"2026년 안전일터 조성지원 사업 공고문\", 한국산업안전보건공단."
+   },
+   {
+    "no": 17,
+    "text": "최수영(2025), \"'23년 OECD 경제 10대국 건설업 사고사망만인율 비교\", 『건설동향브리핑』 제1019호, 한국건설산업연구원, 2025.8.14."
+   },
+   {
+    "no": 18,
+    "text": "산업안전보건법, 법률 제20239호(2024. 2. 6. 일부개정)."
+   },
+   {
+    "no": 19,
+    "text": "중대재해 처벌 등에 관한 법률(중대재해처벌법), 법률 제17907호(2021. 1. 26. 제정)."
+   },
+   {
+    "no": 20,
+    "text": "Wu, J., Wu, S., Ma, Y. et al.(2025), \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", *arXiv preprint*."
+   }
+  ],
+  "나. 신규 확보 문헌 (2026-07-25 웹 검증)": [
+   {
+    "no": 21,
+    "text": "박천수(2024), \"건설 사업장에서 위험성평가 실시 영향 요인\", 『노동정책연구』 24(4), pp.67-95. DOI:10.22914/jlp.2024.24.4.003."
+   },
+   {
+    "no": 22,
+    "text": "송민용·김두환·문유미(2024), \"스마트플랫폼을 활용한 위험성 평가 시스템의 실효성 검증연구: 매개효과 검증을 중심으로\", 『한국재난정보학회 논문집』 20(4), pp.879-890."
+   },
+   {
+    "no": 23,
+    "text": "이동엽·임대식·김기현·우수정·박종석·문영호·정애솔(2025), \"전력산업 맞춤형 JSA 위험성 평가기법 개발 및 모바일 구축에 관한 연구\", 『한국설비안전학회지』 30(2), pp.111-119."
+   },
+   {
+    "no": 24,
+    "text": "조대진·이준원·어원석·최상찬·김득환(2023), \"중소규모 사업장에서 위험성평가 시행과 안전성과의 관계에 관한 연구\", 『안전문화연구』 25, pp.319-333. DOI:10.52902/kjsc.2023.25.319."
+   },
+   {
+    "no": 25,
+    "text": "최현준(2022), \"소규모 건축현장 재해감소를 위한 위험성평가 방안\", 『한국재난정보학회 논문집』 18(2), pp.395-404."
+   },
+   {
+    "no": 26,
+    "text": "Davis, F. D.(1989), \"Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology\", *MIS Quarterly*, 13(3), pp.319-340. DOI:10.2307/249008."
+   },
+   {
+    "no": 27,
+    "text": "DeLone, W. H., & McLean, E. R.(1992), \"Information Systems Success: The Quest for the Dependent Variable\", *Information Systems Research*, 3(1), pp.60-95."
+   },
+   {
+    "no": 28,
+    "text": "DeLone, W. H., & McLean, E. R.(2003), \"The DeLone and McLean Model of Information Systems Success: A Ten-Year Update\", *Journal of Management Information Systems*, 19(4), pp.9-30. DOI:10.1080/07421222.2003.11045748."
+   },
+   {
+    "no": 29,
+    "text": "Downes, E. J., & McMillan, S. J.(2000), \"Defining Interactivity: A Qualitative Identification of Key Dimensions\", *New Media & Society*, 2(2), pp.157-179. DOI:10.1177/14614440022225751."
+   },
+   {
+    "no": 30,
+    "text": "Fornell, C., & Larcker, D. F.(1981), \"Evaluating Structural Equation Models with Unobservable Variables and Measurement Error\", *Journal of Marketing Research*, 18(1), pp.39-50."
+   },
+   {
+    "no": 31,
+    "text": "Griffin, M. A., & Neal, A.(2000), \"Perceptions of Safety at Work: A Framework for Linking Safety Climate to Safety Performance, Knowledge, and Motivation\", *Journal of Occupational Health Psychology*, 5(3), pp.347-358. DOI:10.1037/1076-8998.5.3.347."
+   },
+   {
+    "no": 32,
+    "text": "Henseler, J., Ringle, C. M., & Sarstedt, M.(2015), \"A New Criterion for Assessing Discriminant Validity in Variance-Based Structural Equation Modeling\", *Journal of the Academy of Marketing Science*, 43(1), pp.115-135. DOI:10.1007/s11747-014-0403-8."
+   },
+   {
+    "no": 33,
+    "text": "Hu, L., & Bentler, P. M.(1999), \"Cutoff Criteria for Fit Indexes in Covariance Structure Analysis: Conventional Criteria versus New Alternatives\", *Structural Equation Modeling*, 6(1), pp.1-55. DOI:10.1080/10705519909540118."
+   },
+   {
+    "no": 34,
+    "text": "Lawshe, C. H.(1975), \"A Quantitative Approach to Content Validity\", *Personnel Psychology*, 28(4), pp.563-575. DOI:10.1111/j.1744-6570.1975.tb01393.x."
+   },
+   {
+    "no": 35,
+    "text": "Neal, A., & Griffin, M. A.(2006), \"A Study of the Lagged Relationships among Safety Climate, Safety Motivation, Safety Behavior, and Accidents at the Individual and Group Levels\", *Journal of Applied Psychology*, 91(4), pp.946-953."
+   },
+   {
+    "no": 36,
+    "text": "Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P.(2003), \"Common Method Biases in Behavioral Research: A Critical Review of the Literature and Recommended Remedies\", *Journal of Applied Psychology*, 88(5), pp.879-903. DOI:10.1037/0021-9010.88.5.879."
+   },
+   {
+    "no": 37,
+    "text": "Preacher, K. J., & Hayes, A. F.(2008), \"Asymptotic and Resampling Strategies for Assessing and Comparing Indirect Effects in Multiple Mediator Models\", *Behavior Research Methods*, 40(3), pp.879-891. DOI:10.3758/BRM.40.3.879."
+   },
+   {
+    "no": 38,
+    "text": "Steuer, J.(1992), \"Defining Virtual Reality: Dimensions Determining Telepresence\", *Journal of Communication*, 42(4), pp.73-93. DOI:10.1111/j.1460-2466.1992.tb00812.x."
+   },
+   {
+    "no": 39,
+    "text": "Heinrich, H. W.(1931), *Industrial Accident Prevention: A Scientific Approach*, New York: McGraw-Hill."
+   },
+   {
+    "no": 40,
+    "text": "Hollnagel, E., Wears, R. L., & Braithwaite, J.(2015), *From Safety-I to Safety-II: A White Paper*, The Resilient Health Care Net."
+   },
+   {
+    "no": 41,
+    "text": "Kline, R. B.(2016), *Principles and Practice of Structural Equation Modeling* (4th ed.), New York: Guilford Press."
+   },
+   {
+    "no": 42,
+    "text": "Nunnally, J. C., & Bernstein, I. H.(1994), *Psychometric Theory* (3rd ed.), New York: McGraw-Hill."
+   },
+   {
+    "no": 43,
+    "text": "West, S. G., Finch, J. F., & Curran, P. J.(1995), \"Structural Equation Models with Nonnormal Variables: Problems and Remedies\", In R. H. Hoyle (Ed.), *Structural Equation Modeling: Concepts, Issues, and Applications* (pp.56-75), Thousand Oaks, CA: Sage."
+   }
+  ],
+  "다. 신규 확보 문헌 (2026-08-01 원문 검증 — 실험설계 재구성분)": [
+   {
+    "no": 44,
+    "text": "김성훈(2017), \"건설현장의 위험성평가 실효성에 관한 연구\", 한국교통대학교 글로벌융합대학원 안전공학과 석사학위논문."
+   },
+   {
+    "no": 45,
+    "text": "서용하(2013), \"건설업 위험성평가 실효성에 관한 연구\", 인천대학교 대학원 석사학위논문. [UNVERIFIED — 학과·페이지수 미확인, 원문 표지에서 보완 필요]"
+   },
+   {
+    "no": 46,
+    "text": "윤종훈(2009), \"비정형작업의 근골격계질환 위험성 평가를 위한 작업특성의 비교\", 충북대학교 대학원 안전공학과 석사학위논문."
+   },
+   {
+    "no": 47,
+    "text": "정다예(2018), \"국내 위험성평가의 문제점과 개선방안에 관한 연구\", 서울과학기술대학교 안전공학과 석사학위논문."
+   },
+   {
+    "no": 48,
+    "text": "김정해·오윤경(2023), \"건설 현장 산업재해 예방을 위한 안전관리 개선방안: 법제도 및 관리 감독체계를 중심으로\", 『국가정책연구』 37(2), pp.49-84."
+   },
+   {
+    "no": 49,
+    "text": "대한산업안전협회(2002), \"비정상작업의 안전대책\", 『안전기술』 통권 60호, pp.30-33."
+   },
+   {
+    "no": 50,
+    "text": "정지현·이성주·정성춘(2019), \"건설업 유해·위험방지계획서 제도의 규제순응도 및 단계별 수행실태 조사·분석에 관한 연구\", 『대한건축학회연합논문집』 21(5), pp.29-40."
+   },
+   {
+    "no": 51,
+    "text": "고용노동부(2023), 『새로운 위험성평가 안내서 2023』, 세종: 고용노동부 산재예방지원과. 발간등록번호 11-1492000-000993-01."
+   },
+   {
+    "no": 52,
+    "text": "고용노동부·한국산업안전보건공단(2023), 『작업 전 안전점검회의 가이드(TBM: Tool Box Meeting)』, 세종: 고용노동부."
+   },
+   {
+    "no": 53,
+    "text": "한국산업안전보건공단(2020), 『작업위험성평가에 관한 기술지침』(KOSHA GUIDE P-140-2020), 울산: 한국산업안전보건공단."
+   },
+   {
+    "no": 54,
+    "text": "사업장 위험성평가에 관한 지침, 고용노동부고시 제2024-76호(2024. 12. 18. 일부개정, 2025. 1. 2. 시행)."
+   }
+  ],
+  "라. 신규 확보 문헌 (2026-08-01 원문 검증 — 측정도구 원척도·통계 기준분)": [
+   {
+    "no": 55,
+    "text": "유희복·이준원·이양우·김범수·정상민(2024), \"건설현장 안전보건성과 영향요인 연구 — C 건설현장 종사자 의견 청취 중심으로 —\", 『안전문화연구』 28, pp.29-44. DOI:10.52902/kjsc.2024.28.29."
+   },
+   {
+    "no": 56,
+    "text": "Faul, F., Erdfelder, E., Lang, A.-G., & Buchner, A.(2007), \"G*Power 3: A Flexible Statistical Power Analysis Program for the Social, Behavioral, and Biomedical Sciences\", *Behavior Research Methods*, 39(2), pp.175-191. DOI:10.3758/BF03193146."
+   },
+   {
+    "no": 57,
+    "text": "Koo, T. K., & Li, M. Y.(2016), \"A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research\", *Journal of Chiropractic Medicine*, 15(2), pp.155-163. DOI:10.1016/j.jcm.2016.02.012."
+   },
+   {
+    "no": 58,
+    "text": "Man, S. S., Chan, A. H. S., & Alabdulkarim, S.(2019), \"Quantification of Risk Perception: Development and Validation of the Construction Worker Risk Perception (CoWoRP) Scale\", *Journal of Safety Research*, 71, pp.25-39. DOI:10.1016/j.jsr.2019.09.009."
+   },
+   {
+    "no": 59,
+    "text": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D.(2003), \"User Acceptance of Information Technology: Toward a Unified View\", *MIS Quarterly*, 27(3), pp.425-478. DOI:10.2307/30036540."
+   },
+   {
+    "no": 60,
+    "text": "Cohen, J.(1988), *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.), Hillsdale, NJ: Lawrence Erlbaum Associates."
+   }
+  ],
+  "마. 추가 확보 필요 문헌 (CiteTodo — 잔여)": []
+ },
+ "flagged": []
+}

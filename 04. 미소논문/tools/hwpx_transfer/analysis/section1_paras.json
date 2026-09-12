@@ -1,0 +1,2692 @@
+[
+{
+"idx": 0,
+"byte_start": 873,
+"byte_end": 5001,
+"paraPrIDRef": "26",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": true,
+"text": "목  차",
+"runs": [
+[
+"56",
+""
+],
+[
+"56",
+"목  차"
+]
+]
+},
+{
+"idx": 1,
+"byte_start": 5001,
+"byte_end": 5312,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 2,
+"byte_start": 5312,
+"byte_end": 5650,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "제1장 서론",
+"runs": [
+[
+"13",
+"제1장 서론"
+]
+]
+},
+{
+"idx": 3,
+"byte_start": 5650,
+"byte_end": 5999,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제1절 연구의 배경 및 필요성",
+"runs": [
+[
+"13",
+" 제1절 연구의 배경 및 필요성"
+]
+]
+},
+{
+"idx": 4,
+"byte_start": 5999,
+"byte_end": 6352,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 연구제목과 관련된 사회 현상",
+"runs": [
+[
+"13",
+"  제1항 연구제목과 관련된 사회 현상"
+]
+]
+},
+{
+"idx": 5,
+"byte_start": 6352,
+"byte_end": 6711,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 기존 선행연구의 경향성과 학술적 한계",
+"runs": [
+[
+"13",
+"  제2항 기존 선행연구의 경향성과 학술적 한계"
+]
+]
+},
+{
+"idx": 6,
+"byte_start": 6711,
+"byte_end": 7057,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 연구의 필요성",
+"runs": [
+[
+"13",
+"  제3항 연구의 필요성"
+]
+]
+},
+{
+"idx": 7,
+"byte_start": 7057,
+"byte_end": 7419,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제4항 본 연구의 차별성 및 학술적·실무적 공헌도",
+"runs": [
+[
+"13",
+"  제4항 본 연구의 차별성 및 학술적·실무적 공헌도"
+]
+]
+},
+{
+"idx": 8,
+"byte_start": 7419,
+"byte_end": 7763,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제2절 연구의 목적",
+"runs": [
+[
+"13",
+" 제2절 연구의 목적"
+]
+]
+},
+{
+"idx": 9,
+"byte_start": 7763,
+"byte_end": 8118,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 연구 대상 및 범위 설정 목적",
+"runs": [
+[
+"13",
+"  제1항 연구 대상 및 범위 설정 목적"
+]
+]
+},
+{
+"idx": 10,
+"byte_start": 8118,
+"byte_end": 8472,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 연구문제 도출의 논리적 배경",
+"runs": [
+[
+"13",
+"  제2항 연구문제 도출의 논리적 배경"
+]
+]
+},
+{
+"idx": 11,
+"byte_start": 8472,
+"byte_end": 8815,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 연구목적",
+"runs": [
+[
+"13",
+"  제3항 연구목적"
+]
+]
+},
+{
+"idx": 12,
+"byte_start": 8815,
+"byte_end": 9170,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제4항 연구 결과의 궁극적 활용 목적",
+"runs": [
+[
+"13",
+"  제4항 연구 결과의 궁극적 활용 목적"
+]
+]
+},
+{
+"idx": 13,
+"byte_start": 9170,
+"byte_end": 9519,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제3절 연구의 범위 및 방법",
+"runs": [
+[
+"13",
+" 제3절 연구의 범위 및 방법"
+]
+]
+},
+{
+"idx": 14,
+"byte_start": 9519,
+"byte_end": 9871,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제4절 연구의 기대효과 및 차별성",
+"runs": [
+[
+"13",
+" 제4절 연구의 기대효과 및 차별성"
+]
+]
+},
+{
+"idx": 15,
+"byte_start": 9871,
+"byte_end": 10214,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "제2장 이론적 배경",
+"runs": [
+[
+"13",
+"제2장 이론적 배경"
+]
+]
+},
+{
+"idx": 16,
+"byte_start": 10214,
+"byte_end": 10575,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+"runs": [
+[
+"13",
+" 제1절 스마트 건설 안전관리와 AI 영상관제 기술"
+]
+]
+},
+{
+"idx": 17,
+"byte_start": 10575,
+"byte_end": 10921,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 개념 및 정의",
+"runs": [
+[
+"13",
+"  제1항 개념 및 정의"
+]
+]
+},
+{
+"idx": 18,
+"byte_start": 10921,
+"byte_end": 11269,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 국내·외 선행연구",
+"runs": [
+[
+"13",
+"  제2항 국내·외 선행연구"
+]
+]
+},
+{
+"idx": 19,
+"byte_start": 11269,
+"byte_end": 11622,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 시스템 기술 특성 하위요인",
+"runs": [
+[
+"13",
+"  제3항 시스템 기술 특성 하위요인"
+]
+]
+},
+{
+"idx": 20,
+"byte_start": 11622,
+"byte_end": 11968,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제2절 안전관리 실효성",
+"runs": [
+[
+"13",
+" 제2절 안전관리 실효성"
+]
+]
+},
+{
+"idx": 21,
+"byte_start": 11968,
+"byte_end": 12314,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 개념 및 정의",
+"runs": [
+[
+"13",
+"  제1항 개념 및 정의"
+]
+]
+},
+{
+"idx": 22,
+"byte_start": 12314,
+"byte_end": 12662,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 국내·외 선행연구",
+"runs": [
+[
+"13",
+"  제2항 국내·외 선행연구"
+]
+]
+},
+{
+"idx": 23,
+"byte_start": 12662,
+"byte_end": 13006,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제3절 경보 피로도",
+"runs": [
+[
+"13",
+" 제3절 경보 피로도"
+]
+]
+},
+{
+"idx": 24,
+"byte_start": 13006,
+"byte_end": 13352,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 개념 및 정의",
+"runs": [
+[
+"13",
+"  제1항 개념 및 정의"
+]
+]
+},
+{
+"idx": 25,
+"byte_start": 13352,
+"byte_end": 13700,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 국내·외 선행연구",
+"runs": [
+[
+"13",
+"  제2항 국내·외 선행연구"
+]
+]
+},
+{
+"idx": 26,
+"byte_start": 13700,
+"byte_end": 14045,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제4절 안전관리 예산 제약성",
+"runs": [
+[
+"13",
+" 제4절 안전관리 예산 제약성"
+]
+]
+},
+{
+"idx": 27,
+"byte_start": 14045,
+"byte_end": 14390,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 개념 및 정의",
+"runs": [
+[
+"13",
+"  제1항 개념 및 정의"
+]
+]
+},
+{
+"idx": 28,
+"byte_start": 14390,
+"byte_end": 14737,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 국내·외 선행연구",
+"runs": [
+[
+"13",
+"  제2항 국내·외 선행연구"
+]
+]
+},
+{
+"idx": 29,
+"byte_start": 14737,
+"byte_end": 15258,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제5절 스마트 안전기술 도입 효과 선행연구 고찰 (연구가설 도출 근거)",
+"runs": [
+[
+"13",
+" 제5절 스마트 안전기술 도입 효과 선행연구 고찰 (연구가설 도출 근거)"
+]
+]
+},
+{
+"idx": 30,
+"byte_start": 15258,
+"byte_end": 15625,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 스마트 안전기술 도입 효과에 관한 국내·외 선행연구",
+"runs": [
+[
+"13",
+"  제1항 스마트 안전기술 도입 효과에 관한 국내·외 선행연구"
+]
+]
+},
+{
+"idx": 31,
+"byte_start": 15625,
+"byte_end": 15986,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 안전관리 예산 제약성과 도입 효과의 관계",
+"runs": [
+[
+"13",
+"  제2항 안전관리 예산 제약성과 도입 효과의 관계"
+]
+]
+},
+{
+"idx": 32,
+"byte_start": 15986,
+"byte_end": 16351,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 경보 피로도 완화와 시스템 효과의 작동 메커니즘",
+"runs": [
+[
+"13",
+"  제3항 경보 피로도 완화와 시스템 효과의 작동 메커니즘"
+]
+]
+},
+{
+"idx": 33,
+"byte_start": 16351,
+"byte_end": 16709,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제4항 선행연구 종합 및 본 연구의 차별성",
+"runs": [
+[
+"13",
+"  제4항 선행연구 종합 및 본 연구의 차별성"
+]
+]
+},
+{
+"idx": 34,
+"byte_start": 16709,
+"byte_end": 17049,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제6절 소결",
+"runs": [
+[
+"13",
+" 제6절 소결"
+]
+]
+},
+{
+"idx": 35,
+"byte_start": 17049,
+"byte_end": 17412,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+"runs": [
+[
+"13",
+"제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발"
+]
+]
+},
+{
+"idx": 36,
+"byte_start": 17412,
+"byte_end": 17759,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제1절 시스템 개발 개요",
+"runs": [
+[
+"13",
+" 제1절 시스템 개발 개요"
+]
+]
+},
+{
+"idx": 37,
+"byte_start": 17759,
+"byte_end": 18104,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제2절 요구사항 분석",
+"runs": [
+[
+"13",
+" 제2절 요구사항 분석"
+]
+]
+},
+{
+"idx": 38,
+"byte_start": 18104,
+"byte_end": 18453,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제3절 시스템 아키텍처 설계",
+"runs": [
+[
+"13",
+" 제3절 시스템 아키텍처 설계"
+]
+]
+},
+{
+"idx": 39,
+"byte_start": 18453,
+"byte_end": 18819,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제4절 1차 검출 모듈 설계: 고민감도 YOLO 객체 탐지",
+"runs": [
+[
+"13",
+" 제4절 1차 검출 모듈 설계: 고민감도 YOLO 객체 탐지"
+]
+]
+},
+{
+"idx": 40,
+"byte_start": 18819,
+"byte_end": 19182,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제5절 2차 검증 모듈 설계: LLM 기반 문맥 검증",
+"runs": [
+[
+"13",
+" 제5절 2차 검증 모듈 설계: LLM 기반 문맥 검증"
+]
+]
+},
+{
+"idx": 41,
+"byte_start": 19182,
+"byte_end": 19535,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 검증 필요성과 입출력 구조",
+"runs": [
+[
+"13",
+"  제1항 검증 필요성과 입출력 구조"
+]
+]
+},
+{
+"idx": 42,
+"byte_start": 19535,
+"byte_end": 19894,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 프롬프트 엔지니어링과 통합 판정 로직",
+"runs": [
+[
+"13",
+"  제2항 프롬프트 엔지니어링과 통합 판정 로직"
+]
+]
+},
+{
+"idx": 43,
+"byte_start": 19894,
+"byte_end": 20254,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 RAG 기반 Few-shot 현장 적응",
+"runs": [
+[
+"13",
+"  제3항 RAG 기반 Few-shot 현장 적응"
+]
+]
+},
+{
+"idx": 44,
+"byte_start": 20254,
+"byte_end": 20604,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제6절 실시간 경보 전파 설계",
+"runs": [
+[
+"13",
+" 제6절 실시간 경보 전파 설계"
+]
+]
+},
+{
+"idx": 45,
+"byte_start": 20604,
+"byte_end": 20948,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제7절 시스템 구현",
+"runs": [
+[
+"13",
+" 제7절 시스템 구현"
+]
+]
+},
+{
+"idx": 46,
+"byte_start": 20948,
+"byte_end": 21299,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제8절 시스템 검증 및 성능평가",
+"runs": [
+[
+"13",
+" 제8절 시스템 검증 및 성능평가"
+]
+]
+},
+{
+"idx": 47,
+"byte_start": 21299,
+"byte_end": 21656,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 검증 데이터셋 구축 및 평가 지표",
+"runs": [
+[
+"13",
+"  제1항 검증 데이터셋 구축 및 평가 지표"
+]
+]
+},
+{
+"idx": 48,
+"byte_start": 21656,
+"byte_end": 22015,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 LLM 백업 검증의 오경보 감소 효과",
+"runs": [
+[
+"13",
+"  제2항 LLM 백업 검증의 오경보 감소 효과"
+]
+]
+},
+{
+"idx": 49,
+"byte_start": 22015,
+"byte_end": 22379,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 RAG 기반 Few-shot 교정의 성능 실험",
+"runs": [
+[
+"13",
+"  제3항 RAG 기반 Few-shot 교정의 성능 실험"
+]
+]
+},
+{
+"idx": 50,
+"byte_start": 22379,
+"byte_end": 22724,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제4항 적용 타당성",
+"runs": [
+[
+"13",
+"  제4항 적용 타당성"
+]
+]
+},
+{
+"idx": 51,
+"byte_start": 22724,
+"byte_end": 23086,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제9절 소결: 시스템 기술 특성의 도출과 실증연구의 필요성",
+"runs": [
+[
+"13",
+" 제9절 소결: 시스템 기술 특성의 도출과 실증연구의 필요성"
+]
+]
+},
+{
+"idx": 52,
+"byte_start": 23086,
+"byte_end": 23426,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "제4장 연구설계",
+"runs": [
+[
+"13",
+"제4장 연구설계"
+]
+]
+},
+{
+"idx": 53,
+"byte_start": 23426,
+"byte_end": 23770,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제1절 연구모형 설계",
+"runs": [
+[
+"13",
+" 제1절 연구모형 설계"
+]
+]
+},
+{
+"idx": 54,
+"byte_start": 23770,
+"byte_end": 24118,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제2절 연구문제 및 연구가설",
+"runs": [
+[
+"13",
+" 제2절 연구문제 및 연구가설"
+]
+]
+},
+{
+"idx": 55,
+"byte_start": 24118,
+"byte_end": 24475,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제3절 변수의 조작적 정의 및 측정도구 구성",
+"runs": [
+[
+"13",
+" 제3절 변수의 조작적 정의 및 측정도구 구성"
+]
+]
+},
+{
+"idx": 56,
+"byte_start": 24475,
+"byte_end": 24824,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 변수의 조작적 정의",
+"runs": [
+[
+"13",
+"  제1항 변수의 조작적 정의"
+]
+]
+},
+{
+"idx": 57,
+"byte_start": 24824,
+"byte_end": 25184,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 측정도구의 구성 및 설문문항 도출 출처",
+"runs": [
+[
+"13",
+"  제2항 측정도구의 구성 및 설문문항 도출 출처"
+]
+]
+},
+{
+"idx": 58,
+"byte_start": 25184,
+"byte_end": 25537,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제4절 설문조사 설계 및 척도 검증",
+"runs": [
+[
+"13",
+" 제4절 설문조사 설계 및 척도 검증"
+]
+]
+},
+{
+"idx": 59,
+"byte_start": 25537,
+"byte_end": 25889,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 설문조사의 개요 및 절차",
+"runs": [
+[
+"13",
+"  제1항 설문조사의 개요 및 절차"
+]
+]
+},
+{
+"idx": 60,
+"byte_start": 25889,
+"byte_end": 26239,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 변수별 설문문항 요약",
+"runs": [
+[
+"13",
+"  제2항 변수별 설문문항 요약"
+]
+]
+},
+{
+"idx": 61,
+"byte_start": 26239,
+"byte_end": 26590,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 본 설문지의 최종 구성",
+"runs": [
+[
+"13",
+"  제3항 본 설문지의 최종 구성"
+]
+]
+},
+{
+"idx": 62,
+"byte_start": 26590,
+"byte_end": 26938,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제5절 자료수집과 분석방법",
+"runs": [
+[
+"13",
+" 제5절 자료수집과 분석방법"
+]
+]
+},
+{
+"idx": 63,
+"byte_start": 26938,
+"byte_end": 27289,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 데이터 수집 표본 설계",
+"runs": [
+[
+"13",
+"  제1항 데이터 수집 표본 설계"
+]
+]
+},
+{
+"idx": 64,
+"byte_start": 27289,
+"byte_end": 27632,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 분석절차",
+"runs": [
+[
+"13",
+"  제2항 분석절차"
+]
+]
+},
+{
+"idx": 65,
+"byte_start": 27632,
+"byte_end": 27976,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "제5장 실증분석 결과",
+"runs": [
+[
+"13",
+"제5장 실증분석 결과"
+]
+]
+},
+{
+"idx": 66,
+"byte_start": 27976,
+"byte_end": 28330,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제1절 조사대상자의 인구통계학적 특성",
+"runs": [
+[
+"13",
+" 제1절 조사대상자의 인구통계학적 특성"
+]
+]
+},
+{
+"idx": 67,
+"byte_start": 28330,
+"byte_end": 28686,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제2절 측정도구의 신뢰도 및 타당도 검증",
+"runs": [
+[
+"13",
+" 제2절 측정도구의 신뢰도 및 타당도 검증"
+]
+]
+},
+{
+"idx": 68,
+"byte_start": 28686,
+"byte_end": 29040,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제3절 기술통계 및 집단 동질성 검증",
+"runs": [
+[
+"13",
+" 제3절 기술통계 및 집단 동질성 검증"
+]
+]
+},
+{
+"idx": 69,
+"byte_start": 29040,
+"byte_end": 29390,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 주요 변수의 기술통계",
+"runs": [
+[
+"13",
+"  제1항 주요 변수의 기술통계"
+]
+]
+},
+{
+"idx": 70,
+"byte_start": 29390,
+"byte_end": 29747,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 두 집단의 사전 특성 동질성 검증",
+"runs": [
+[
+"13",
+"  제2항 두 집단의 사전 특성 동질성 검증"
+]
+]
+},
+{
+"idx": 71,
+"byte_start": 29747,
+"byte_end": 30105,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제4절 가설 검정: 공분산분석(ANCOVA)",
+"runs": [
+[
+"13",
+" 제4절 가설 검정: 공분산분석(ANCOVA)"
+]
+]
+},
+{
+"idx": 72,
+"byte_start": 30105,
+"byte_end": 30455,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 공분산분석 가정 점검",
+"runs": [
+[
+"13",
+"  제1항 공분산분석 가정 점검"
+]
+]
+},
+{
+"idx": 73,
+"byte_start": 30455,
+"byte_end": 30812,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 안전관리 실효성에 대한 공분산분석",
+"runs": [
+[
+"13",
+"  제2항 안전관리 실효성에 대한 공분산분석"
+]
+]
+},
+{
+"idx": 74,
+"byte_start": 30812,
+"byte_end": 31171,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제3항 안전관리 실효성 하위영역별 공분산분석",
+"runs": [
+[
+"13",
+"  제3항 안전관리 실효성 하위영역별 공분산분석"
+]
+]
+},
+{
+"idx": 75,
+"byte_start": 31171,
+"byte_end": 31518,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제5절 탐색적 보조 분석",
+"runs": [
+[
+"13",
+" 제5절 탐색적 보조 분석"
+]
+]
+},
+{
+"idx": 76,
+"byte_start": 31518,
+"byte_end": 31881,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+"runs": [
+[
+"13",
+"  제1항 집단과 안전관리 예산 제약성의 상호작용 분석"
+]
+]
+},
+{
+"idx": 77,
+"byte_start": 31881,
+"byte_end": 32224,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제6절 연구결과 및 논의",
+"runs": [
+[
+"13",
+" 제6절 연구결과 및 논의"
+]
+]
+},
+{
+"idx": 78,
+"byte_start": 32224,
+"byte_end": 32569,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제1항 연구결과 종합",
+"runs": [
+[
+"13",
+"  제1항 연구결과 종합"
+]
+]
+},
+{
+"idx": 79,
+"byte_start": 32569,
+"byte_end": 32909,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  제2항 논의",
+"runs": [
+[
+"13",
+"  제2항 논의"
+]
+]
+},
+{
+"idx": 80,
+"byte_start": 32909,
+"byte_end": 33247,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "제6장 결론",
+"runs": [
+[
+"13",
+"제6장 결론"
+]
+]
+},
+{
+"idx": 81,
+"byte_start": 33247,
+"byte_end": 33592,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제1절 연구결과의 요약",
+"runs": [
+[
+"13",
+" 제1절 연구결과의 요약"
+]
+]
+},
+{
+"idx": 82,
+"byte_start": 33592,
+"byte_end": 33932,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제2절 논의",
+"runs": [
+[
+"13",
+" 제2절 논의"
+]
+]
+},
+{
+"idx": 83,
+"byte_start": 33932,
+"byte_end": 34407,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  1. AI 관제 시스템 도입 효과 비교 결과에 관한 논의 [DATA PENDING]",
+"runs": [
+[
+"13",
+"  1. "
+],
+[
+"76",
+"AI 관제 시스템 도입 효과 비교 결과에 관한 논의 "
+],
+[
+"74",
+"[DATA PENDING]"
+]
+]
+},
+{
+"idx": 84,
+"byte_start": 34407,
+"byte_end": 34880,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  2. 안전관리 실효성 하위영역 비교 결과에 관한 논의 [DATA PENDING]",
+"runs": [
+[
+"13",
+"  2. "
+],
+[
+"77",
+"안전관리 실효성 하위영역 비교 결과에 관한 논의 "
+],
+[
+"75",
+"[DATA PENDING]"
+]
+]
+},
+{
+"idx": 85,
+"byte_start": 34880,
+"byte_end": 35357,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  3. 예산 제약성에 따른 도입 효과 차이에 관한 탐색적 논의 [DATA PENDING]",
+"runs": [
+[
+"13",
+"  3. "
+],
+[
+"78",
+"예산 제약성에 따른 도입 효과 차이에 관한 탐색적 논의 "
+],
+[
+"67",
+"[DATA PENDING]"
+]
+]
+},
+{
+"idx": 86,
+"byte_start": 35357,
+"byte_end": 35698,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제3절 시사점",
+"runs": [
+[
+"13",
+" 제3절 시사점"
+]
+]
+},
+{
+"idx": 87,
+"byte_start": 35698,
+"byte_end": 36043,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  1. 실무적 시사점",
+"runs": [
+[
+"13",
+"  1. 실무적 시사점"
+]
+]
+},
+{
+"idx": 88,
+"byte_start": 36043,
+"byte_end": 36388,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  2. 학술적 시사점",
+"runs": [
+[
+"13",
+"  2. 학술적 시사점"
+]
+]
+},
+{
+"idx": 89,
+"byte_start": 36388,
+"byte_end": 36733,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  3. 정책적 시사점",
+"runs": [
+[
+"13",
+"  3. 정책적 시사점"
+]
+]
+},
+{
+"idx": 90,
+"byte_start": 36733,
+"byte_end": 37077,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제4절 연구의 한계",
+"runs": [
+[
+"13",
+" 제4절 연구의 한계"
+]
+]
+},
+{
+"idx": 91,
+"byte_start": 37077,
+"byte_end": 37422,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 제5절 향후 연구방향",
+"runs": [
+[
+"13",
+" 제5절 향후 연구방향"
+]
+]
+},
+{
+"idx": 92,
+"byte_start": 37422,
+"byte_end": 37759,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "참고문헌",
+"runs": [
+[
+"13",
+"참고문헌"
+]
+]
+},
+{
+"idx": 93,
+"byte_start": 37759,
+"byte_end": 38103,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "부 록 (도입 현장)",
+"runs": [
+[
+"13",
+"부 록 (도입 현장)"
+]
+]
+},
+{
+"idx": 94,
+"byte_start": 38103,
+"byte_end": 38454,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part A. 인구통계학적 특성",
+"runs": [
+[
+"13",
+" Part A. 인구통계학적 특성"
+]
+]
+},
+{
+"idx": 95,
+"byte_start": 38454,
+"byte_end": 38804,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part B. 안전관리 실효성",
+"runs": [
+[
+"13",
+" Part B. 안전관리 실효성"
+]
+]
+},
+{
+"idx": 96,
+"byte_start": 38804,
+"byte_end": 39157,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part C. 안전관리 예산 제약성",
+"runs": [
+[
+"13",
+" Part C. 안전관리 예산 제약성"
+]
+]
+},
+{
+"idx": 97,
+"byte_start": 39157,
+"byte_end": 39500,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " 도입 현장 전용부",
+"runs": [
+[
+"13",
+" 도입 현장 전용부"
+]
+]
+},
+{
+"idx": 98,
+"byte_start": 39500,
+"byte_end": 39851,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part D. 시스템 특성 인식",
+"runs": [
+[
+"13",
+" Part D. 시스템 특성 인식"
+]
+]
+},
+{
+"idx": 99,
+"byte_start": 39851,
+"byte_end": 40202,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part E. 경보 피로도 완화",
+"runs": [
+[
+"13",
+" Part E. 경보 피로도 완화"
+]
+]
+},
+{
+"idx": 100,
+"byte_start": 40202,
+"byte_end": 40547,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "부 록 (미도입 현장)",
+"runs": [
+[
+"13",
+"부 록 (미도입 현장)"
+]
+]
+},
+{
+"idx": 101,
+"byte_start": 40547,
+"byte_end": 40898,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part A. 인구통계학적 특성",
+"runs": [
+[
+"13",
+" Part A. 인구통계학적 특성"
+]
+]
+},
+{
+"idx": 102,
+"byte_start": 40898,
+"byte_end": 41248,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part B. 안전관리 실효성",
+"runs": [
+[
+"13",
+" Part B. 안전관리 실효성"
+]
+]
+},
+{
+"idx": 103,
+"byte_start": 41248,
+"byte_end": 41597,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": " Part C. 안전관리 예산 제약성",
+"runs": [
+[
+"13",
+" Part C. 안전관리 예산 제약성"
+]
+]
+},
+{
+"idx": 104,
+"byte_start": 41597,
+"byte_end": 41937,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "Abstract",
+"runs": [
+[
+"13",
+"Abstract"
+]
+]
+},
+{
+"idx": 105,
+"byte_start": 41937,
+"byte_end": 42248,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 106,
+"byte_start": 42248,
+"byte_end": 44044,
+"paraPrIDRef": "25",
+"styleIDRef": "0",
+"pageBreak": "1",
+"has_tbl": true,
+"text": "표 목 차",
+"runs": [
+[
+"15",
+"표 목 차"
+]
+]
+},
+{
+"idx": 107,
+"byte_start": 44044,
+"byte_end": 44411,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 2-1&gt; 시스템 기술 특성 하위요인 도출 매트릭스",
+"runs": [
+[
+"36",
+"&lt;표 2-1&gt; 시스템 기술 특성 하위요인 도출 매트릭스"
+]
+]
+},
+{
+"idx": 108,
+"byte_start": 44411,
+"byte_end": 44789,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 2-2&gt; 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+"runs": [
+[
+"36",
+"&lt;표 2-2&gt; 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교"
+]
+]
+},
+{
+"idx": 109,
+"byte_start": 44789,
+"byte_end": 45149,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 2-3&gt; 하위요인 관련 선행연구 요약",
+"runs": [
+[
+"36",
+"&lt;표 2-3&gt; 하위요인 관련 선행연구 요약"
+]
+]
+},
+{
+"idx": 110,
+"byte_start": 45149,
+"byte_end": 45526,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 2-4&gt; 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+"runs": [
+[
+"36",
+"&lt;표 2-4&gt; 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교"
+]
+]
+},
+{
+"idx": 111,
+"byte_start": 45526,
+"byte_end": 45894,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 2-5&gt; 스마트 안전기술 도입 효과 선행연구 종합",
+"runs": [
+[
+"36",
+"&lt;표 2-5&gt; 스마트 안전기술 도입 효과 선행연구 종합"
+]
+]
+},
+{
+"idx": 112,
+"byte_start": 45894,
+"byte_end": 46255,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 2-6&gt; 선행연구와 본 연구의 차별성",
+"runs": [
+[
+"36",
+"&lt;표 2-6&gt; 선행연구와 본 연구의 차별성"
+]
+]
+},
+{
+"idx": 113,
+"byte_start": 46255,
+"byte_end": 46630,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-1&gt; 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+"runs": [
+[
+"36",
+"&lt;표 3-1&gt; 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항"
+]
+]
+},
+{
+"idx": 114,
+"byte_start": 46630,
+"byte_end": 46989,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-2&gt; 시스템 모듈 구성과 역할",
+"runs": [
+[
+"36",
+"&lt;표 3-2&gt; 시스템 모듈 구성과 역할"
+]
+]
+},
+{
+"idx": 115,
+"byte_start": 46989,
+"byte_end": 47347,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-3&gt; 시스템 구현 기술 스택",
+"runs": [
+[
+"36",
+"&lt;표 3-3&gt; 시스템 구현 기술 스택"
+]
+]
+},
+{
+"idx": 116,
+"byte_start": 47347,
+"byte_end": 47724,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-4&gt; 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+"runs": [
+[
+"36",
+"&lt;표 3-4&gt; 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)"
+]
+]
+},
+{
+"idx": 117,
+"byte_start": 47724,
+"byte_end": 48087,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-5&gt; 성능평가 지표 정의와 측정 목적",
+"runs": [
+[
+"36",
+"&lt;표 3-5&gt; 성능평가 지표 정의와 측정 목적"
+]
+]
+},
+{
+"idx": 118,
+"byte_start": 48087,
+"byte_end": 48630,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-6&gt; 1차 단독 대 2단계 파이프라인 성능 비교(n=878, 196.8시간, 38대 카메라)",
+"runs": [
+[
+"36",
+"&lt;표 3-6&gt; 1차 단독 대 2단계 파이프라인 성능 비교(n=878, 196.8시간, 38대 카메라)"
+]
+]
+},
+{
+"idx": 119,
+"byte_start": 48630,
+"byte_end": 49010,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-7&gt; 제로샷·고정-k·RAG의 성능 비교(n=202, 6개 카메라)",
+"runs": [
+[
+"36",
+"&lt;표 3-7&gt; 제로샷·고정-k·RAG의 성능 비교(n=202, 6개 카메라)"
+]
+]
+},
+{
+"idx": 120,
+"byte_start": 49010,
+"byte_end": 49391,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 3-8&gt; 상용 솔루션 대비 첫해 도입 비용(TCO) 비교(단위: 만 원)",
+"runs": [
+[
+"36",
+"&lt;표 3-8&gt; 상용 솔루션 대비 첫해 도입 비용(TCO) 비교(단위: 만 원)"
+]
+]
+},
+{
+"idx": 121,
+"byte_start": 49391,
+"byte_end": 49745,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 4-1&gt; 연구변수의 구성",
+"runs": [
+[
+"36",
+"&lt;표 4-1&gt; 연구변수의 구성"
+]
+]
+},
+{
+"idx": 122,
+"byte_start": 49745,
+"byte_end": 50098,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 4-2&gt; 연구가설 종합",
+"runs": [
+[
+"36",
+"&lt;표 4-2&gt; 연구가설 종합"
+]
+]
+},
+{
+"idx": 123,
+"byte_start": 50098,
+"byte_end": 50464,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 4-3&gt; 변수의 조작적 정의와 측정도구의 구성",
+"runs": [
+[
+"36",
+"&lt;표 4-3&gt; 변수의 조작적 정의와 측정도구의 구성"
+]
+]
+},
+{
+"idx": 124,
+"byte_start": 50464,
+"byte_end": 50820,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 4-4&gt; 설문지의 최종 구성",
+"runs": [
+[
+"36",
+"&lt;표 4-4&gt; 설문지의 최종 구성"
+]
+]
+},
+{
+"idx": 125,
+"byte_start": 50820,
+"byte_end": 51173,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 4-5&gt; 자료수집 개요",
+"runs": [
+[
+"36",
+"&lt;표 4-5&gt; 자료수집 개요"
+]
+]
+},
+{
+"idx": 126,
+"byte_start": 51173,
+"byte_end": 51540,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-1&gt; 조사대상의 인구통계학적 특성 (집단별)",
+"runs": [
+[
+"36",
+"&lt;표 5-1&gt; 조사대상의 인구통계학적 특성 (집단별)"
+]
+]
+},
+{
+"idx": 127,
+"byte_start": 51540,
+"byte_end": 51901,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-2&gt; 측정도구의 신뢰도 검증 결과",
+"runs": [
+[
+"36",
+"&lt;표 5-2&gt; 측정도구의 신뢰도 검증 결과"
+]
+]
+},
+{
+"idx": 128,
+"byte_start": 51901,
+"byte_end": 52264,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-3&gt; 주요 변수의 기술통계 (집단별)",
+"runs": [
+[
+"36",
+"&lt;표 5-3&gt; 주요 변수의 기술통계 (집단별)"
+]
+]
+},
+{
+"idx": 129,
+"byte_start": 52264,
+"byte_end": 52631,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-4&gt; 두 집단의 사전 특성 동질성 검증 결과",
+"runs": [
+[
+"36",
+"&lt;표 5-4&gt; 두 집단의 사전 특성 동질성 검증 결과"
+]
+]
+},
+{
+"idx": 130,
+"byte_start": 52631,
+"byte_end": 53165,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-5&gt; 공분산분석 가정 점검 결과 (독립성·정규성·등분산성·회귀기울기 동질성)",
+"runs": [
+[
+"36",
+"&lt;표 5-5&gt; 공분산분석 가정 점검 결과 (독립성·정규성·등분산성·회귀기울기 동질성)"
+]
+]
+},
+{
+"idx": 131,
+"byte_start": 53165,
+"byte_end": 53543,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-6&gt; 안전관리 실효성에 대한 공분산분석 결과 (조정 평균 포함)",
+"runs": [
+[
+"36",
+"&lt;표 5-6&gt; 안전관리 실효성에 대한 공분산분석 결과 (조정 평균 포함)"
+]
+]
+},
+{
+"idx": 132,
+"byte_start": 53543,
+"byte_end": 53899,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-7&gt; 하위영역별 공분산분석 결과",
+"runs": [
+[
+"36",
+"&lt;표 5-7&gt; 하위영역별 공분산분석 결과"
+]
+]
+},
+{
+"idx": 133,
+"byte_start": 53899,
+"byte_end": 54256,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-8&gt; 탐색적 보조 분석 결과",
+"runs": [
+[
+"36",
+"&lt;표 5-8&gt; 탐색적 보조 분석 결과"
+]
+]
+},
+{
+"idx": 134,
+"byte_start": 54256,
+"byte_end": 54614,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;표 5-9&gt; 연구가설 검증 결과 종합",
+"runs": [
+[
+"36",
+"&lt;표 5-9&gt; 연구가설 검증 결과 종합"
+]
+]
+},
+{
+"idx": 135,
+"byte_start": 54614,
+"byte_end": 54924,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 136,
+"byte_start": 54924,
+"byte_end": 56731,
+"paraPrIDRef": "26",
+"styleIDRef": "0",
+"pageBreak": "1",
+"has_tbl": true,
+"text": "그 림 목 차",
+"runs": [
+[
+"56",
+"그 림 목 차"
+]
+]
+},
+{
+"idx": 137,
+"byte_start": 56731,
+"byte_end": 57041,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 138,
+"byte_start": 57041,
+"byte_end": 57405,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 1-1&gt; 산업별 업무상사고 사망재해 분포도",
+"runs": [
+[
+"36",
+"&lt;그림 1-1&gt; 산업별 업무상사고 사망재해 분포도"
+]
+]
+},
+{
+"idx": 139,
+"byte_start": 57405,
+"byte_end": 57768,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 1-2&gt; 연도별 업무상사고 사망재해 추이",
+"runs": [
+[
+"36",
+"&lt;그림 1-2&gt; 연도별 업무상사고 사망재해 추이"
+]
+]
+},
+{
+"idx": 140,
+"byte_start": 57768,
+"byte_end": 58121,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 1-3&gt; 연구의 흐름도",
+"runs": [
+[
+"36",
+"&lt;그림 1-3&gt; 연구의 흐름도"
+]
+]
+},
+{
+"idx": 141,
+"byte_start": 58121,
+"byte_end": 58494,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 3-1&gt; YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+"runs": [
+[
+"36",
+"&lt;그림 3-1&gt; YOLO-LLM 이중 캐스케이드 시스템 아키텍처"
+]
+]
+},
+{
+"idx": 142,
+"byte_start": 58494,
+"byte_end": 58864,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 3-2&gt; LLM 2차 검증 입출력 구조와 판정 흐름",
+"runs": [
+[
+"36",
+"&lt;그림 3-2&gt; LLM 2차 검증 입출력 구조와 판정 흐름"
+]
+]
+},
+{
+"idx": 143,
+"byte_start": 58864,
+"byte_end": 59232,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 3-3&gt; RAG 기반 Few-shot 교정 절차",
+"runs": [
+[
+"36",
+"&lt;그림 3-3&gt; RAG 기반 Few-shot 교정 절차"
+]
+]
+},
+{
+"idx": 144,
+"byte_start": 59232,
+"byte_end": 59604,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 3-4&gt; 시스템 운영 화면(AI CCTV Viewer)",
+"runs": [
+[
+"36",
+"&lt;그림 3-4&gt; 시스템 운영 화면(AI CCTV Viewer)"
+]
+]
+},
+{
+"idx": 145,
+"byte_start": 59604,
+"byte_end": 59955,
+"paraPrIDRef": "47",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "&lt;그림 4-1&gt; 연구모형",
+"runs": [
+[
+"36",
+"&lt;그림 4-1&gt; 연구모형"
+]
+]
+},
+{
+"idx": 146,
+"byte_start": 59955,
+"byte_end": 60266,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 147,
+"byte_start": 60266,
+"byte_end": 62910,
+"paraPrIDRef": "48",
+"styleIDRef": "0",
+"pageBreak": "1",
+"has_tbl": true,
+"text": "감사의 글 ",
+"runs": [
+[
+"52",
+"감사의 글"
+],
+[
+"32",
+" "
+]
+]
+},
+{
+"idx": 148,
+"byte_start": 62910,
+"byte_end": 63275,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  2025년 3월 대학원 진학을 시작한 지 어느덧 2년이 지나 졸업 논문을 ",
+"runs": [
+[
+"61",
+"  2025년 3월 대학원 진학을 시작한 지 어느덧 2년이 지나 졸업 논문을 "
+]
+]
+},
+{
+"idx": 149,
+"byte_start": 63275,
+"byte_end": 63577,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 150,
+"byte_start": 63577,
+"byte_end": 63879,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 151,
+"byte_start": 63879,
+"byte_end": 64181,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 152,
+"byte_start": 64181,
+"byte_end": 64483,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 153,
+"byte_start": 64483,
+"byte_end": 64785,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 154,
+"byte_start": 64785,
+"byte_end": 65087,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 155,
+"byte_start": 65087,
+"byte_end": 65389,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 156,
+"byte_start": 65389,
+"byte_end": 65691,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 157,
+"byte_start": 65691,
+"byte_end": 65993,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 158,
+"byte_start": 65993,
+"byte_end": 66295,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 159,
+"byte_start": 66295,
+"byte_end": 66597,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 160,
+"byte_start": 66597,
+"byte_end": 66899,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 161,
+"byte_start": 66899,
+"byte_end": 67201,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 162,
+"byte_start": 67201,
+"byte_end": 67503,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 163,
+"byte_start": 67503,
+"byte_end": 67805,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 164,
+"byte_start": 67805,
+"byte_end": 68107,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 165,
+"byte_start": 68107,
+"byte_end": 68409,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 166,
+"byte_start": 68409,
+"byte_end": 68711,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 167,
+"byte_start": 68711,
+"byte_end": 69013,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 168,
+"byte_start": 69013,
+"byte_end": 69315,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 169,
+"byte_start": 69315,
+"byte_end": 69617,
+"paraPrIDRef": "28",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "",
+"runs": []
+},
+{
+"idx": 170,
+"byte_start": 69617,
+"byte_end": 69951,
+"paraPrIDRef": "51",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "2026 년 12 월",
+"runs": [
+[
+"36",
+"2026 년 12 월"
+]
+]
+},
+{
+"idx": 171,
+"byte_start": 69951,
+"byte_end": 70280,
+"paraPrIDRef": "51",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "윤   혁 ",
+"runs": [
+[
+"36",
+"윤   혁 "
+]
+]
+},
+{
+"idx": 172,
+"byte_start": 70280,
+"byte_end": 72112,
+"paraPrIDRef": "30",
+"styleIDRef": "1",
+"pageBreak": "1",
+"has_tbl": true,
+"text": "논 문  개 요  ",
+"runs": [
+[
+"54",
+"논 문  개 요"
+],
+[
+"32",
+"  "
+]
+]
+},
+{
+"idx": 173,
+"byte_start": 72112,
+"byte_end": 72444,
+"paraPrIDRef": "46",
+"styleIDRef": "0",
+"pageBreak": "0",
+"has_tbl": false,
+"text": "  ",
+"runs": [
+[
+"8",
+"  "
+]
+]
+}
+]

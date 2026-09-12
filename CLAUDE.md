@@ -10,14 +10,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **원고 구성 (`01.docs/`, 6장 구조):** `00_목차.md`(표지·국문초록 골격·목차·표/그림 목차) · `01_서론.md` · `02_이론적배경.md` · `03_시스템개발.md` · `04_연구설계.md` · `05_실증분석결과.md` · `06_결론.md` · `07_참조번호목록.md`(확정 서지 단일 기준) · `부록1_설문지_양식.md` · `부록2_설문항목_근거매핑.md` · `설문항목_작업이력.md`.
 - **HWPX 최신본 판정 규칙 — 파일명을 고정해 적지 않는다.** `00. hwpx/`에서 **`YYMMDD_HHMM` 접두사가 가장 큰 파일이 그 시점의 최신본**이다. 특정 파일명을 이 문서에 박아 두면 새 산출물이 나올 때마다 낡아 옛 파일을 복사하게 되므로, 작업할 때마다 디렉토리를 직접 확인한다. 접두사가 없는 `260725_경기공학_건축안전_윤혁_논문작성_작성본.hwpx`는 이관을 시작한 최초 기준 원본이며 최신본 비교 대상이 아니다(이관 계획: `03.plan/260725_1412_MD원고_hwpx이관_오케스트레이션.md`).
 - **HWPX 이관 산출물 규칙:** 사용자가 한글(hwpx)로 옮겨 달라고 요청하면 위 규칙으로 최신본을 확인해 `00. hwpx/`에 먼저 복사하고, 복사본의 요청 부분만 수정한 뒤 `YYMMDD_HHMM_논문명.hwpx` 형식으로 저장한다. 원본은 어느 것도 직접 덮어쓰지 않는다. 날짜와 시간은 작업 시점의 Asia/Seoul 현지시각을 사용한다.
-- **🟥 hwpx 산출물은 한글이 실제로 열어야 완료다.** ZIP·XML 검증만 통과한 파일이 한글에서 `Open=False`였던 사고(2026-09-11)가 있다. 텍스트 길이가 바뀐 문단의 `linesegarray` 정리, 한글 COM 개방·재조판 저장, 표 쪽 넘김 3단계(새 쪽 → 컬럼 폭 → 표 나눔, `pageBreak="CELL"` 금지)는 `.claude/rules/hwpx-output-verification.md`를 따른다. 2.5MB 본문에 hwpx MCP 읽기 도구를 쓰면 40분 넘게 멈추므로 본문 대조는 Python으로 직접 읽는다.
-- **hwpx 읽기·진단은 rhwp MCP(`.mcp.json`의 `rhwp`, 읽기 전용).** 2.5MB 본문을 `hwp_open` 89ms로 열고 `hwp_doc_search`·`hwp_doc_text`로 조회한다(python-hwpx MCP는 같은 파일에 40분 멈춤). 쓰기 도구 111종은 `.claude/settings.json`으로 차단돼 있다 — rhwp 저장은 패키지 전체 재생성이라 사용자 직접 수정분을 지운다. 부분 수정은 `hwpx-thesis-editing/SKILL.md`의 타깃 치환 표준 경로(`fill_hwpx.py replace` + `tools/hwpx_transfer/verify_replace.py`), 표 쪽맞춤 판정은 `tools/hwpx_transfer/tblplan.py`를 쓴다. 바이너리는 `.claude/rhwp/`(gitignore, 재설치법은 그 README).
+- **HWPX 새 생성·이관·전체 조립·부분 수정 모두 필수:** [표 생성·배치 규칙](.claude/rules/hwpx-table-layout.md)을 먼저 읽는다. 경로 제한 없이 루트와 중첩 논문에 공통 적용하며, 부분 수정 스킬의 대상이 아닌 새 생성에도 적용한다. 내용·실제 글꼴에 따른 열폭, 전체 폭·병합 격자 보존, 한글 재조판 후 전 표 PDF 검증과 점선 목차의 인쇄 쪽수 갱신이 완료 조건이다.
+- **🟥 hwpx 산출물은 한글이 실제로 열어야 완료다.** ZIP·XML 검증만 통과한 파일이 한글에서 `Open=False`였던 사고(2026-09-11)가 있다. 내용·배치가 바뀐 문단의 `linesegarray` 제거, 한글 COM 개방·재조판 저장, 표 쪽 넘김 3단계(새 쪽 → 컬럼 폭 → 표 나눔, `pageBreak="CELL"` 금지)는 `.claude/rules/hwpx-output-verification.md`를 따른다. 2.5MB 본문에 hwpx MCP 읽기 도구를 쓰면 40분 넘게 멈추므로 본문 대조는 Python으로 직접 읽는다.
+- **hwpx 읽기·진단은 rhwp MCP(`.mcp.json`의 `rhwp`, 읽기 전용).** 2.5MB 본문을 `hwp_open` 89ms로 열고 `hwp_doc_search`·`hwp_doc_text`로 조회한다(python-hwpx MCP는 같은 파일에 40분 멈춤). 쓰기 도구 111종은 `.claude/settings.json`으로 차단돼 있다 — rhwp 저장은 패키지 전체 재생성이라 사용자 직접 수정분을 지운다. 부분 수정은 [부분 수정 스킬](.claude/skills/hwpx-thesis-editing/SKILL.md)의 타깃 치환 표준 경로(`fill_hwpx.py replace` + `tools/hwpx_transfer/verify_replace.py`), `tools/hwpx_transfer/tblplan.py`의 최소 높이 판정은 참고용이며 실제 쪽맞춤 증거가 아니다. 바이너리는 `.claude/rhwp/`(gitignore, 재설치법은 그 README).
 - **계획·브리프 파일명 규칙:** `03.plan/`에 저장하는 계획 문서와 서브에이전트 브리프는 **`YYMMDD_HHMM_플랜명.md`** 형식으로 이름 짓는다. 날짜와 시각은 작성 시점의 Asia/Seoul 현지시각을 쓴다. 시각을 알 수 없는 과거 문서만 `0000`을 쓰며, 이는 실제 시각이 아니라 미상이라는 표시다. `README.md`는 폴더 색인이므로 규칙에서 제외하고, 새 파일을 만들면 그 목록에 한 줄 추가한다.
 - **읽기 전용 참고 영역 — 지시 없이 수정하지 않는다.** `학회논문/`(선행 학회 투고본), `논문구조_백업_2026-07-12/`, `backup/`(ANCOVA 전환 이전 스냅샷), `논문양식참조/`, 루트의 다른 hwpx·pdf. 인용·서식 참고 용도로만 읽는다.
 - **🔴 hwpx 빨간색 표기 규칙 (상시):** hwpx에서는 **본문이 아닌 것을 모두 빨간 글자로 출력한다.** 아직 못 채운 자리, 확정해야 할 결정, 검증해야 할 근거, 작성 가이드·방향 서술이 여기 해당한다. 대상은 접두사로 판정한다 — `[DATA PENDING`, `[확정 필요`, `[CITE_TODO`, `[그림 삽입 예정`, `[UNVERIFIED`. 여는 대괄호부터 닫는 대괄호까지 통째로 빨갛게 하며, 본문 문단과 **표 셀 양쪽에 모두** 적용한다. 지도교수·심사위원이 미완성 지점을 한눈에 보게 하려는 것이다.
   - **대괄호라고 다 마커가 아니다.** `[38, 41, 44]`(설문 문항 근거 참조번호), `[0.974, 0.991]`(신뢰구간), `[양식 1: 도입 현장용]`(설문 양식 라벨)은 실제 본문이므로 **검은색을 유지**한다. "대괄호 전부 빨강"은 오답이다.
   - **색은 MD가 아니라 조립 단계에서 입힌다.** MD는 색 정보를 갖지 않는 단일 원본이므로 절대 손대지 말고, `tools/hwpx_transfer/blocks_to_hwpx.py`가 빨간 `charPr`를 물리게 한다. 그래야 재조립해도 표기가 자동으로 따라온다.
-- **수정 순서:** 모든 내용 수정은 **항상 MD(Markdown)를 먼저 수정한 뒤, 그 내용을 hwpx에 반영**하는 순서로 한다. MD가 단일 원본(source of truth)이며, hwpx는 MD를 따라간다.
+- **수정 순서:** 모든 내용 수정은 **항상 MD(Markdown)를 먼저 수정한 뒤, 그 내용을 hwpx에 반영**하는 순서로 한다. MD가 단일 원본(source of truth)이며, hwpx는 MD를 따라간다. 열폭·여백·쪽 나눔·조판 목차 쪽수만 고치는 레이아웃 작업은 MD를 수정하지 않는다.
 - **⚠️ hwpx 수정 전 필수 — 사용자 직접 수정분 보존:** 사용자가 hwpx를 한글에서 **직접 수정**하는 경우가 있다. 따라서 hwpx를 수정하기 전에는 **반드시 해당 문단/표의 현재 hwpx 텍스트를 먼저 읽어(find_text·get_paragraph_text) 실제 상태를 확인**하고, **부분(타깃) 치환만** 수행한다. MD 기준으로 hwpx를 **통째로 재생성·덮어쓰기 하지 말 것**(사용자가 직접 넣은 수정이 삭제됨). 만약 hwpx에만 있고 MD에는 없는 내용(사용자 직접 수정분)을 발견하면, **삭제하지 말고 그대로 두며**, 필요 시 그 내용을 **MD에 역동기화**하여 단일 원본을 일치시킨다.
 - **분석 설계 기준:** 통계 설계·도구는 `01.docs/04_연구설계.md` 제5절의 현행 기술(도입/미도입 두 집단 ANCOVA, jamovi)을 단일 원본으로 따른다. 다른 곳에 요약본을 만들지 않는다.
 - **장 간 일관성 (파급 반영):** 원고의 한 부분을 수정할 때, 그 내용이 다른 장에 연결·관계·언급되어 있으면(상호참조, 목차, 연결 길잡이 문장, 초록·요약, 설계-보고-한계 체인, 설문 4종 세트) **파급 지점을 grep으로 찾아 함께 수정**하여 장 간 논리적 일관성을 유지한다. 기계적 정합(번호·수치·표기)은 같은 턴에 즉시, 내용적 재작성이 필요한 파급은 보고 후 승인. 체크리스트: `.claude/rules/cross-chapter-consistency.md`
@@ -48,9 +49,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 작업 규칙 (`.claude/rules/`)
 
-논문 작업 공통 규칙 16종이 `.claude/rules/`에 있다. 이 중 7종(`cross-chapter-consistency`·`mark-unverified`·`scope-discipline`·`subagent-write-guard`·`audit-before-fix`·`plan-first`·`read-docs-first`)은 **매 세션 전문이 자동 로드되므로 여기서 요약하지 않는다.** 나머지 9종은 `paths:`로 해당 파일을 다룰 때만 로드되니, 그중 다음 5종은 존재만 기억해 둔다.
+논문 작업 공통 규칙은 `.claude/rules/`에 있다. `paths:`가 없는 규칙은 매 세션 로드되고, `paths:`가 있는 규칙은 해당 파일을 다룰 때 로드된다. HWPX 생성·수정에는 아래 두 규칙을 경로와 무관하게 반드시 읽는다.
 
-- `hwpx-output-verification` — hwpx 산출물 검증(한글 COM 개방·lineseg 정리·표 쪽 넘김 3단계·MCP 읽기 도구 한계) (`00. hwpx/**`, `tools/hwpx_transfer/**` 편집 시 자동 로드)
+- [hwpx-table-layout](.claude/rules/hwpx-table-layout.md) — 새 표 생성부터 열폭·병합·쪽 나눔·전 표 PDF 검증·목차 갱신까지, 경로 제한 없이 상시 로드
+- [hwpx-output-verification](.claude/rules/hwpx-output-verification.md) — 한글 COM 개방·재조판 저장·캐시 제거·PDF 검증, 루트 및 중첩 논문 HWPX·도구 경로에서 자동 로드
 - `defense-feedback` — 공개발표·1차·2차 심사 지적사항 8항목을 본 논문 설계로 번역한 집필 지침 (`01.docs/**` 편집 시 자동 로드). **본 연구는 횡단 비교이므로 결과 서술에 "도입 이후 향상", "개선시켰다" 같은 시간·인과 표현을 쓰지 않는다** — 나머지는 규칙 파일 참조
 - `doi-verification` — 존재 확인 안 된 문헌은 참고문헌에 쓰지 않는다 (02.reference/ 우선)
 - `paper-code-consistency` — 원고 수치는 분석 출력·확정 모형 문서와 대조 후 커밋

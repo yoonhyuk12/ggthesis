@@ -1,0 +1,4160 @@
+{
+  "base_sha256": "4beb9e5a422ec147f1d9e25d42dc6159876027d54c99efa1ec40df79548bdf97",
+  "entries": [
+    {
+      "toc_idx": 3,
+      "title": "제1장 서론",
+      "kind": "heading",
+      "body_idx": 0,
+      "body_text": "제1장 서론",
+      "pdf_page": 13,
+      "printed_page": 1,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 13,
+            "text": "제1장서론",
+            "bbox": [
+              78.318,
+              106.923,
+              170.187,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": null,
+          "printed_page": 1,
+          "rationale": "First body page folio suppressed; next physical page14 displays - 2 -."
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 4,
+      "title": " 제1절 연구의 배경 및 필요성",
+      "kind": "heading",
+      "body_idx": 2,
+      "body_text": "제1절 연구의 배경 및 필요성",
+      "pdf_page": 13,
+      "printed_page": 1,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 13,
+            "text": "제1절연구의배경및필요성",
+            "bbox": [
+              78.318,
+              157.748,
+              311.111,
+              177.598
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": null,
+          "printed_page": 1,
+          "rationale": "First body page folio suppressed; next physical page14 displays - 2 -."
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 5,
+      "title": "  제1항 중소규모 건설현장의 안전관리 현황과 선행연구의 한계",
+      "kind": "heading",
+      "body_idx": 4,
+      "body_text": "제1항 중소규모 건설현장의 안전관리 현황과 선행연구의 한계",
+      "pdf_page": 13,
+      "printed_page": 1,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 13,
+            "text": "제1항중소규모건설현장의안전관리현황과선행연구의",
+            "bbox": [
+              78.318,
+              206.774,
+              515.842,
+              225.33
+            ]
+          },
+          {
+            "pdf_page": 13,
+            "text": "한계",
+            "bbox": [
+              78.318,
+              233.025,
+              110.101,
+              251.581
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": null,
+          "printed_page": 1,
+          "rationale": "First body page folio suppressed; next physical page14 displays - 2 -."
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 6,
+      "title": "  제2항 연구의 필요성 및 차별성과 기대효과",
+      "kind": "heading",
+      "body_idx": 16,
+      "body_text": "제2항 연구의 필요성 및 차별성과 기대효과",
+      "pdf_page": 15,
+      "printed_page": 3,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 15,
+            "text": "제2항연구의필요성및차별성과기대효과",
+            "bbox": [
+              78.318,
+              310.82,
+              401.064,
+              329.376
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 3 -",
+          "printed_page": 3
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 7,
+      "title": " 제2절 연구의 목적",
+      "kind": "heading",
+      "body_idx": 24,
+      "body_text": "제2절 연구의 목적",
+      "pdf_page": 16,
+      "printed_page": 4,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 16,
+            "text": "제2절연구의목적",
+            "bbox": [
+              78.318,
+              520.351,
+              224.878,
+              540.202
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 4 -",
+          "printed_page": 4
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 8,
+      "title": " 제3절 연구의 범위 및 방법",
+      "kind": "heading",
+      "body_idx": 33,
+      "body_text": "제3절 연구의 범위 및 방법",
+      "pdf_page": 18,
+      "printed_page": 6,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 18,
+            "text": "제3절연구의범위및방법",
+            "bbox": [
+              78.318,
+              352.055,
+              293.6,
+              371.906
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 6 -",
+          "printed_page": 6
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 9,
+      "title": "제2장 이론적 배경",
+      "kind": "heading",
+      "body_idx": 42,
+      "body_text": "제2장 이론적 배경",
+      "pdf_page": 20,
+      "printed_page": 8,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 20,
+            "text": "제2장이론적배경",
+            "bbox": [
+              78.318,
+              106.923,
+              234.712,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 8 -",
+          "printed_page": 8
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 10,
+      "title": " 제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+      "kind": "heading",
+      "body_idx": 44,
+      "body_text": "제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+      "pdf_page": 20,
+      "printed_page": 8,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 20,
+            "text": "제1절스마트건설안전관리와AI 영상관제기술",
+            "bbox": [
+              78.318,
+              157.748,
+              469.785,
+              177.598
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 8 -",
+          "printed_page": 8
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 11,
+      "title": "  제1항 개념 및 정의",
+      "kind": "heading",
+      "body_idx": 46,
+      "body_text": "제1항 개념 및 정의",
+      "pdf_page": 20,
+      "printed_page": 8,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 20,
+            "text": "제1항개념및정의",
+            "bbox": [
+              78.318,
+              206.774,
+              223.08,
+              225.33
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 8 -",
+          "printed_page": 8
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 12,
+      "title": "  제2항 국내·외 선행연구",
+      "kind": "heading",
+      "body_idx": 54,
+      "body_text": "제2항 국내·외 선행연구",
+      "pdf_page": 22,
+      "printed_page": 10,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 22,
+            "text": "제2항국내·외선행연구",
+            "bbox": [
+              78.318,
+              272.582,
+              254.502,
+              291.138
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 10 -",
+          "printed_page": 10
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 13,
+      "title": "  제3항 시스템 기술 특성 하위요인",
+      "kind": "heading",
+      "body_idx": 155,
+      "body_text": "제3항 시스템 기술 특성 하위요인",
+      "pdf_page": 25,
+      "printed_page": 13,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 25,
+            "text": "제3항시스템기술특성하위요인",
+            "bbox": [
+              78.318,
+              145.521,
+              328.262,
+              164.077
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 13 -",
+          "printed_page": 13
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 14,
+      "title": " 제2절 안전관리 실효성",
+      "kind": "heading",
+      "body_idx": 223,
+      "body_text": "제2절 안전관리 실효성",
+      "pdf_page": 29,
+      "printed_page": 17,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 29,
+            "text": "제2절안전관리실효성",
+            "bbox": [
+              78.318,
+              659.04,
+              259.779,
+              678.89
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 17 -",
+          "printed_page": 17
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 15,
+      "title": "  제1항 개념 및 정의",
+      "kind": "heading",
+      "body_idx": 225,
+      "body_text": "제1항 개념 및 정의",
+      "pdf_page": 30,
+      "printed_page": 18,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 30,
+            "text": "제1항개념및정의",
+            "bbox": [
+              78.318,
+              107.283,
+              223.08,
+              125.838
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 18 -",
+          "printed_page": 18
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 16,
+      "title": "  제2항 국내·외 선행연구",
+      "kind": "heading",
+      "body_idx": 231,
+      "body_text": "제2항 국내·외 선행연구",
+      "pdf_page": 30,
+      "printed_page": 18,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 30,
+            "text": "제2항국내·외선행연구",
+            "bbox": [
+              78.318,
+              670.787,
+              254.502,
+              689.343
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 18 -",
+          "printed_page": 18
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 17,
+      "title": " 제3절 경보 피로도",
+      "kind": "heading",
+      "body_idx": 237,
+      "body_text": "제3절 경보 피로도",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 31,
+            "text": "제3절경보피로도",
+            "bbox": [
+              78.318,
+              662.036,
+              224.877,
+              681.887
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 19 -",
+          "printed_page": 19
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 18,
+      "title": "  제1항 개념 및 정의",
+      "kind": "heading",
+      "body_idx": 239,
+      "body_text": "제1항 개념 및 정의",
+      "pdf_page": 32,
+      "printed_page": 20,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 32,
+            "text": "제1항개념및정의",
+            "bbox": [
+              78.318,
+              107.283,
+              223.08,
+              125.838
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 20 -",
+          "printed_page": 20
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 19,
+      "title": "  제2항 국내·외 선행연구",
+      "kind": "heading",
+      "body_idx": 246,
+      "body_text": "제2항 국내·외 선행연구",
+      "pdf_page": 32,
+      "printed_page": 20,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 32,
+            "text": "제2항국내·외선행연구",
+            "bbox": [
+              78.318,
+              564.463,
+              254.502,
+              583.019
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 20 -",
+          "printed_page": 20
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 20,
+      "title": " 제4절 안전관리 예산 제약성",
+      "kind": "heading",
+      "body_idx": 252,
+      "body_text": "제4절 안전관리 예산 제약성",
+      "pdf_page": 33,
+      "printed_page": 21,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 33,
+            "text": "제4절안전관리예산제약성",
+            "bbox": [
+              78.318,
+              496.737,
+              302.836,
+              516.587
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 21 -",
+          "printed_page": 21
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 21,
+      "title": "  제1항 개념 및 정의",
+      "kind": "heading",
+      "body_idx": 254,
+      "body_text": "제1항 개념 및 정의",
+      "pdf_page": 33,
+      "printed_page": 21,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 33,
+            "text": "제1항개념및정의",
+            "bbox": [
+              78.318,
+              545.644,
+              223.08,
+              564.199
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 21 -",
+          "printed_page": 21
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 22,
+      "title": "  제2항 국내·외 선행연구",
+      "kind": "heading",
+      "body_idx": 284,
+      "body_text": "제2항 국내·외 선행연구",
+      "pdf_page": 35,
+      "printed_page": 23,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 35,
+            "text": "제2항국내·외선행연구",
+            "bbox": [
+              78.318,
+              166.258,
+              254.502,
+              184.814
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 23 -",
+          "printed_page": 23
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 23,
+      "title": " 제5절 스마트 안전기술 도입 효과 선행연구 고찰 (연구가설 도출 근거)",
+      "kind": "heading",
+      "body_idx": 290,
+      "body_text": "제5절 스마트 안전기술 도입 효과 선행연구 고찰(연구 가설 도출 근거)",
+      "pdf_page": 35,
+      "printed_page": 23,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 35,
+            "text": "제5절스마트안전기술도입효과선행연구고찰(연구",
+            "bbox": [
+              78.318,
+              664.554,
+              515.72,
+              684.404
+            ]
+          },
+          {
+            "pdf_page": 36,
+            "text": "가설도출근거)",
+            "bbox": [
+              86.593,
+              107.043,
+              213.678,
+              126.893
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 23 -",
+          "printed_page": 23
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 24,
+      "title": "  제1항 스마트 안전기술 도입 효과에 관한 국내·외 선행연구",
+      "kind": "heading",
+      "body_idx": 292,
+      "body_text": "제1항 스마트 안전기술 도입 효과에 관한 국내·외 선행연구",
+      "pdf_page": 36,
+      "printed_page": 24,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 36,
+            "text": "제1항스마트안전기술도입효과에관한국내·외선행연",
+            "bbox": [
+              78.318,
+              156.069,
+              515.721,
+              174.625
+            ]
+          },
+          {
+            "pdf_page": 36,
+            "text": "구",
+            "bbox": [
+              78.318,
+              182.321,
+              93.789,
+              200.876
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 24 -",
+          "printed_page": 24
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 25,
+      "title": "  제2항 안전관리 예산 제약성과 도입 효과의 관계",
+      "kind": "heading",
+      "body_idx": 301,
+      "body_text": "제2항 안전관리 예산 제약성과 도입 효과의 관계",
+      "pdf_page": 37,
+      "printed_page": 25,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 37,
+            "text": "제2항안전관리예산제약성과도입효과의관계",
+            "bbox": [
+              78.318,
+              372.793,
+              441.361,
+              391.348
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 25 -",
+          "printed_page": 25
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 26,
+      "title": "  제3항 경보 피로도 완화와 시스템 효과의 작동 메커니즘",
+      "kind": "heading",
+      "body_idx": 307,
+      "body_text": "제3항 경보 피로도 완화와 시스템 효과의 작동 메커니즘",
+      "pdf_page": 38,
+      "printed_page": 26,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 38,
+            "text": "제3항경보피로도완화와시스템효과의작동메커니즘",
+            "bbox": [
+              78.318,
+              148.518,
+              497.851,
+              167.073
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 26 -",
+          "printed_page": 26
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 27,
+      "title": "  제4항 선행연구 종합 및 본 연구의 차별성",
+      "kind": "heading",
+      "body_idx": 312,
+      "body_text": "제4항 선행연구 종합 및 본 연구의 차별성",
+      "pdf_page": 38,
+      "printed_page": 26,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 38,
+            "text": "제4항선행연구종합및본연구의차별성",
+            "bbox": [
+              78.318,
+              481.754,
+              392.548,
+              500.309
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 26 -",
+          "printed_page": 26
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 28,
+      "title": " 제6절 소결",
+      "kind": "heading",
+      "body_idx": 385,
+      "body_text": "제6절 소결",
+      "pdf_page": 40,
+      "printed_page": 28,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 40,
+            "text": "제6절소결",
+            "bbox": [
+              78.318,
+              559.548,
+              164.43,
+              579.399
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 28 -",
+          "printed_page": 28
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 29,
+      "title": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "kind": "heading",
+      "body_idx": 392,
+      "body_text": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "pdf_page": 42,
+      "printed_page": 30,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 42,
+            "text": "제3장YOLO-LLM 하이브리드안전관제시스템개발",
+            "bbox": [
+              78.318,
+              106.923,
+              512.913,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 30 -",
+          "printed_page": 30
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 30,
+      "title": " 제1절 시스템 개발 개요",
+      "kind": "heading",
+      "body_idx": 394,
+      "body_text": "제1절 시스템 개발 개요",
+      "pdf_page": 42,
+      "printed_page": 30,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 42,
+            "text": "제1절시스템개발개요",
+            "bbox": [
+              78.318,
+              157.748,
+              267.934,
+              177.598
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 30 -",
+          "printed_page": 30
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 31,
+      "title": " 제2절 요구사항 분석",
+      "kind": "heading",
+      "body_idx": 400,
+      "body_text": "제2절 요구사항 분석",
+      "pdf_page": 43,
+      "printed_page": 31,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 43,
+            "text": "제2절요구사항분석",
+            "bbox": [
+              78.318,
+              228.111,
+              242.268,
+              247.961
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 31 -",
+          "printed_page": 31
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 32,
+      "title": " 제3절 시스템 아키텍처 설계",
+      "kind": "heading",
+      "body_idx": 439,
+      "body_text": "제3절 시스템 아키텍처 설계",
+      "pdf_page": 45,
+      "printed_page": 33,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 45,
+            "text": "제3절시스템아키텍처설계",
+            "bbox": [
+              78.318,
+              506.566,
+              302.835,
+              526.417
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 33 -",
+          "printed_page": 33
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 33,
+      "title": " 제4절 1차 검출 모듈 설계: 고민감도 YOLO 객체 탐지",
+      "kind": "heading",
+      "body_idx": 473,
+      "body_text": "제4절 1차 검출 모듈 설계: 고민감도 YOLO 객체 탐지",
+      "pdf_page": 47,
+      "printed_page": 35,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 47,
+            "text": "제4절1차검출모듈설계: 고민감도YOLO 객체탐지",
+            "bbox": [
+              78.318,
+              272.342,
+              514.521,
+              292.193
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 35 -",
+          "printed_page": 35
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 34,
+      "title": " 제5절 2차 검증 모듈 설계: LLM 기반 문맥 검증",
+      "kind": "heading",
+      "body_idx": 479,
+      "body_text": "제5절 2차 검증 모듈 설계: LLM 기반 문맥 검증",
+      "pdf_page": 48,
+      "printed_page": 36,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 48,
+            "text": "제5절2차검증모듈설계: LLM 기반문맥검증",
+            "bbox": [
+              78.318,
+              334.435,
+              467.986,
+              354.285
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 36 -",
+          "printed_page": 36
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 35,
+      "title": "  제1항 검증 필요성과 입출력 구조",
+      "kind": "heading",
+      "body_idx": 483,
+      "body_text": "제1항 검증 필요성과 입출력 구조",
+      "pdf_page": 48,
+      "printed_page": 36,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 48,
+            "text": "제1항검증필요성과입출력구조",
+            "bbox": [
+              78.318,
+              569.378,
+              328.262,
+              587.933
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 36 -",
+          "printed_page": 36
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 36,
+      "title": "  제2항 프롬프트 엔지니어링과 통합 판정 로직",
+      "kind": "heading",
+      "body_idx": 491,
+      "body_text": "제2항 프롬프트 엔지니어링과 통합 판정 로직",
+      "pdf_page": 49,
+      "printed_page": 37,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 49,
+            "text": "제2항프롬프트엔지니어링과통합판정로직",
+            "bbox": [
+              78.318,
+              561.826,
+              417.374,
+              580.382
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 37 -",
+          "printed_page": 37
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 37,
+      "title": "  제3항 RAG 기반 Few-shot 현장 적응",
+      "kind": "heading",
+      "body_idx": 497,
+      "body_text": "제3항 RAG 기반 Few-shot 현장 적응",
+      "pdf_page": 50,
+      "printed_page": 38,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 50,
+            "text": "제3항RAG 기반Few-shot 현장적응",
+            "bbox": [
+              78.318,
+              479.116,
+              366.882,
+              497.672
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 38 -",
+          "printed_page": 38
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 38,
+      "title": " 제6절 실시간 경보 전파 설계",
+      "kind": "heading",
+      "body_idx": 505,
+      "body_text": "제6절 실시간 경보 전파 설계",
+      "pdf_page": 51,
+      "printed_page": 39,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 51,
+            "text": "제6절실시간경보전파설계",
+            "bbox": [
+              78.318,
+              499.734,
+              311.112,
+              519.584
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 39 -",
+          "printed_page": 39
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 39,
+      "title": " 제7절 시스템 구현",
+      "kind": "heading",
+      "body_idx": 511,
+      "body_text": "제7절 시스템 구현",
+      "pdf_page": 52,
+      "printed_page": 40,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 52,
+            "text": "제7절시스템구현",
+            "bbox": [
+              78.318,
+              478.997,
+              224.878,
+              498.847
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 40 -",
+          "printed_page": 40
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 40,
+      "title": " 제8절 시스템 검증 및 성능평가",
+      "kind": "heading",
+      "body_idx": 545,
+      "body_text": "제8절 시스템 검증 및 성능 평가",
+      "pdf_page": 54,
+      "printed_page": 42,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 54,
+            "text": "제8절시스템검증및성능평가",
+            "bbox": [
+              78.318,
+              293.08,
+              336.778,
+              312.93
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 42 -",
+          "printed_page": 42
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 41,
+      "title": "  제1항 검증 데이터셋 구축 및 평가 지표",
+      "kind": "heading",
+      "body_idx": 549,
+      "body_text": "제1항 검증 데이터셋 구축 및 평가 지표",
+      "pdf_page": 54,
+      "printed_page": 42,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 54,
+            "text": "제1항검증데이터셋구축및평가지표",
+            "bbox": [
+              78.318,
+              466.051,
+              376.236,
+              484.606
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 42 -",
+          "printed_page": 42
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 42,
+      "title": "  제2항 LLM 백업 검증의 오경보 감소 효과",
+      "kind": "heading",
+      "body_idx": 589,
+      "body_text": "제2항 LLM 백업 검증의 오경보 감소 효과",
+      "pdf_page": 56,
+      "printed_page": 44,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 56,
+            "text": "제2항LLM 백업검증의오경보감소효과",
+            "bbox": [
+              78.318,
+              481.514,
+              397.105,
+              500.069
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 44 -",
+          "printed_page": 44
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 43,
+      "title": "  제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "kind": "heading",
+      "body_idx": 637,
+      "body_text": "제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "pdf_page": 58,
+      "printed_page": 46,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 58,
+            "text": "제3항RAG 기반Few-shot 교정의성능실험",
+            "bbox": [
+              78.318,
+              231.227,
+              423.37,
+              249.783
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 46 -",
+          "printed_page": 46
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 44,
+      "title": "  제4항 적용 타당성",
+      "kind": "heading",
+      "body_idx": 675,
+      "body_text": "제4항 적용 타당성",
+      "pdf_page": 59,
+      "printed_page": 47,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 59,
+            "text": "제4항적용타당성",
+            "bbox": [
+              78.318,
+              169.255,
+              215.284,
+              187.811
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 47 -",
+          "printed_page": 47
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 45,
+      "title": " 제9절 소결: 시스템 기술 특성의 도출과 실증연구의 필요성",
+      "kind": "heading",
+      "body_idx": 697,
+      "body_text": "제9절 소결: 시스템 기술 특성의 도출과 실증 연구의 필요성",
+      "pdf_page": 61,
+      "printed_page": 49,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 61,
+            "text": "제9절소결: 시스템기술특성의도출과실증연구의",
+            "bbox": [
+              78.318,
+              107.043,
+              515.721,
+              126.893
+            ]
+          },
+          {
+            "pdf_page": 61,
+            "text": "필요성",
+            "bbox": [
+              78.318,
+              135.212,
+              129.649,
+              155.063
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 49 -",
+          "printed_page": 49
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 46,
+      "title": "제4장 연구설계",
+      "kind": "heading",
+      "body_idx": 703,
+      "body_text": "제4장 연구설계",
+      "pdf_page": 63,
+      "printed_page": 51,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 63,
+            "text": "제4장연구설계",
+            "bbox": [
+              78.318,
+              106.923,
+              207.247,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 51 -",
+          "printed_page": 51
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 47,
+      "title": " 제1절 연구모형 설계",
+      "kind": "heading",
+      "body_idx": 705,
+      "body_text": "제1절 연구 모형 설계",
+      "pdf_page": 63,
+      "printed_page": 51,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 63,
+            "text": "제1절연구모형설계",
+            "bbox": [
+              78.318,
+              157.748,
+              250.544,
+              177.598
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 51 -",
+          "printed_page": 51
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 48,
+      "title": " 제2절 연구문제 및 연구가설",
+      "kind": "heading",
+      "body_idx": 736,
+      "body_text": "제2절 연구 문제 및 연구 가설",
+      "pdf_page": 65,
+      "printed_page": 53,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 65,
+            "text": "제2절연구문제및연구가설",
+            "bbox": [
+              78.318,
+              107.043,
+              319.267,
+              126.893
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 53 -",
+          "printed_page": 53
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 49,
+      "title": " 제3절 변수의 조작적 정의 및 측정도구 구성",
+      "kind": "heading",
+      "body_idx": 770,
+      "body_text": "제3절 변수의 조작적 정의 및 측정도구 구성",
+      "pdf_page": 66,
+      "printed_page": 54,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 66,
+            "text": "제3절변수의조작적정의및측정도구구성",
+            "bbox": [
+              78.318,
+              565.302,
+              432.005,
+              585.153
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 54 -",
+          "printed_page": 54
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 50,
+      "title": "  제1항 변수의 조작적 정의",
+      "kind": "heading",
+      "body_idx": 772,
+      "body_text": "제1항 변수의 조작적 정의",
+      "pdf_page": 66,
+      "printed_page": 54,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 66,
+            "text": "제1항변수의조작적정의",
+            "bbox": [
+              78.318,
+              614.209,
+              271.773,
+              632.764
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 54 -",
+          "printed_page": 54
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 51,
+      "title": "  제2항 측정도구의 구성 및 설문문항 도출 출처",
+      "kind": "heading",
+      "body_idx": 780,
+      "body_text": "제2항 측정도구의 구성 및 설문 문항 도출 출처",
+      "pdf_page": 68,
+      "printed_page": 56,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 68,
+            "text": "제2항측정도구의구성및설문문항도출출처",
+            "bbox": [
+              78.318,
+              127.9,
+              432.846,
+              146.456
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 56 -",
+          "printed_page": 56
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 52,
+      "title": " 제4절 설문조사 설계 및 척도 검증",
+      "kind": "heading",
+      "body_idx": 829,
+      "body_text": "제4절 설문조사 설계 및 척도 검증",
+      "pdf_page": 70,
+      "printed_page": 58,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 70,
+            "text": "제4절설문조사설계및척도검증",
+            "bbox": [
+              78.318,
+              107.043,
+              354.168,
+              126.893
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 58 -",
+          "printed_page": 58
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 53,
+      "title": "  제1항 설문조사의 개요 및 절차",
+      "kind": "heading",
+      "body_idx": 831,
+      "body_text": "제1항 설문조사의 개요 및 절차",
+      "pdf_page": 70,
+      "printed_page": 58,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 70,
+            "text": "제1항설문조사의개요및절차",
+            "bbox": [
+              78.318,
+              156.069,
+              312.071,
+              174.625
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 58 -",
+          "printed_page": 58
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 54,
+      "title": "  제2항 변수별 설문문항 요약",
+      "kind": "heading",
+      "body_idx": 839,
+      "body_text": "제2항 변수별 설문 문항 요약",
+      "pdf_page": 70,
+      "printed_page": 58,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 70,
+            "text": "제2항변수별설문문항요약",
+            "bbox": [
+              78.318,
+              678.219,
+              295.76,
+              696.774
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 58 -",
+          "printed_page": 58
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 55,
+      "title": "  제3항 본 설문지의 최종 구성",
+      "kind": "heading",
+      "body_idx": 980,
+      "body_text": "제3항 본 설문지의 최종 구성",
+      "pdf_page": 74,
+      "printed_page": 62,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 74,
+            "text": "제3항본설문지의최종구성",
+            "bbox": [
+              78.318,
+              349.178,
+              295.76,
+              367.734
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 62 -",
+          "printed_page": 62
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 56,
+      "title": " 제5절 자료수집과 분석방법",
+      "kind": "heading",
+      "body_idx": 1041,
+      "body_text": "제5절 자료 수집과 분석방법",
+      "pdf_page": 74,
+      "printed_page": 62,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 74,
+            "text": "제5절자료수집과분석방법",
+            "bbox": [
+              78.318,
+              589.396,
+              302.836,
+              609.246
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 62 -",
+          "printed_page": 62
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 57,
+      "title": "  제1항 데이터 수집 표본 설계",
+      "kind": "heading",
+      "body_idx": 1043,
+      "body_text": "제1항 데이터 수집 표본 설계",
+      "pdf_page": 74,
+      "printed_page": 62,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 74,
+            "text": "제1항데이터수집표본설계",
+            "bbox": [
+              78.318,
+              638.422,
+              295.76,
+              656.978
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 62 -",
+          "printed_page": 62
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 58,
+      "title": "  제2항 분석절차",
+      "kind": "heading",
+      "body_idx": 1072,
+      "body_text": "제2항 분석 절차",
+      "pdf_page": 77,
+      "printed_page": 65,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 77,
+            "text": "제2항분석절차",
+            "bbox": [
+              78.318,
+              387.776,
+              199.093,
+              406.332
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 65 -",
+          "printed_page": 65
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 59,
+      "title": "제5장 실증분석 결과",
+      "kind": "heading",
+      "body_idx": 1088,
+      "body_text": "제5장 실증분석 결과",
+      "pdf_page": 79,
+      "printed_page": 67,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 79,
+            "text": "제5장실증분석결과",
+            "bbox": [
+              78.318,
+              106.923,
+              253.182,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 67 -",
+          "printed_page": 67
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 60,
+      "title": " 제1절 조사대상자의 인구통계학적 특성",
+      "kind": "heading",
+      "body_idx": 1091,
+      "body_text": "제1절 조사 대상자의 인구통계학적 특성",
+      "pdf_page": 79,
+      "printed_page": 67,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 79,
+            "text": "제1절조사대상자의인구통계학적특성",
+            "bbox": [
+              78.318,
+              281.812,
+              398.064,
+              301.662
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 67 -",
+          "printed_page": 67
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 61,
+      "title": " 제2절 측정도구의 신뢰도 및 타당도 검증",
+      "kind": "heading",
+      "body_idx": 1288,
+      "body_text": "제2절 측정도구의 신뢰도 및 타당도 검증",
+      "pdf_page": 79,
+      "printed_page": 67,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 79,
+            "text": "제2절측정도구의신뢰도및타당도검증",
+            "bbox": [
+              78.318,
+              648.012,
+              406.339,
+              667.862
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 67 -",
+          "printed_page": 67
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 62,
+      "title": " 제3절 기술통계 및 집단 동질성 검증",
+      "kind": "heading",
+      "body_idx": 1392,
+      "body_text": "제3절 기술통계 및 집단 동질성 검증",
+      "pdf_page": 83,
+      "printed_page": 71,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 83,
+            "text": "제3절기술통계및집단동질성검증",
+            "bbox": [
+              78.318,
+              107.043,
+              371.558,
+              126.893
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 71 -",
+          "printed_page": 71
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 63,
+      "title": "  제1항 주요 변수의 기술통계",
+      "kind": "heading",
+      "body_idx": 1394,
+      "body_text": "제1항 주요 변수의 기술통계",
+      "pdf_page": 83,
+      "printed_page": 71,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 83,
+            "text": "제1항주요변수의기술통계",
+            "bbox": [
+              78.318,
+              156.069,
+              288.085,
+              174.625
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 71 -",
+          "printed_page": 71
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 64,
+      "title": "  제2항 두 집단의 사전 특성 동질성 검증",
+      "kind": "heading",
+      "body_idx": 1513,
+      "body_text": "제2항 두 집단의 사전 특성 동질성 검증",
+      "pdf_page": 84,
+      "printed_page": 72,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 84,
+            "text": "제2항두집단의사전특성동질성검증",
+            "bbox": [
+              78.318,
+              313.817,
+              376.236,
+              332.373
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 72 -",
+          "printed_page": 72
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 65,
+      "title": " 제4절 가설 검정: 공분산분석(ANCOVA)",
+      "kind": "heading",
+      "body_idx": 1583,
+      "body_text": "제4절 가설 검정: 공분산분석(ANCOVA)",
+      "pdf_page": 84,
+      "printed_page": 72,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 84,
+            "text": "제4절가설검정: 공분산분석(ANCOVA)",
+            "bbox": [
+              78.318,
+              678.099,
+              403.534,
+              697.949
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 72 -",
+          "printed_page": 72
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 66,
+      "title": "  제1항 공분산분석 가정 점검",
+      "kind": "heading",
+      "body_idx": 1585,
+      "body_text": "제1항 공분산분석 가정 점검",
+      "pdf_page": 85,
+      "printed_page": 73,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 85,
+            "text": "제1항공분산분석가정점검",
+            "bbox": [
+              78.318,
+              394.848,
+              288.084,
+              413.404
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 73 -",
+          "printed_page": 73
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 67,
+      "title": "  제2항 안전관리 실효성에 대한 공분산분석",
+      "kind": "heading",
+      "body_idx": 1673,
+      "body_text": "제2항 안전관리 실효성에 대한 공분산분석",
+      "pdf_page": 87,
+      "printed_page": 75,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 87,
+            "text": "제2항안전관리실효성에대한공분산분석",
+            "bbox": [
+              78.318,
+              313.817,
+              393.388,
+              332.373
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 75 -",
+          "printed_page": 75
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 68,
+      "title": "  제3항 안전관리 실효성 하위영역별 공분산분석",
+      "kind": "heading",
+      "body_idx": 1783,
+      "body_text": "제3항 안전관리 실효성 하위영역별 공분산분석",
+      "pdf_page": 88,
+      "printed_page": 76,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 88,
+            "text": "제3항안전관리실효성하위영역별공분산분석",
+            "bbox": [
+              78.318,
+              686.969,
+              425.89,
+              705.525
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 76 -",
+          "printed_page": 76
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 69,
+      "title": " 제5절 탐색적 보조 분석",
+      "kind": "heading",
+      "body_idx": 1840,
+      "body_text": "제5절 탐색적 보조 분석",
+      "pdf_page": 89,
+      "printed_page": 77,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 89,
+            "text": "제5절탐색적보조분석",
+            "bbox": [
+              78.318,
+              613.25,
+              267.934,
+              633.1
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 77 -",
+          "printed_page": 77
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 70,
+      "title": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "kind": "heading",
+      "body_idx": 1843,
+      "body_text": "제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "pdf_page": 90,
+      "printed_page": 78,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 90,
+            "text": "제1항집단과안전관리예산제약성의상호작용분석",
+            "bbox": [
+              78.318,
+              148.518,
+              473.864,
+              167.073
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 78 -",
+          "printed_page": 78
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 71,
+      "title": " 제6절 연구결과 및 논의",
+      "kind": "heading",
+      "body_idx": 1914,
+      "body_text": "제6절 연구 결과 및 논의",
+      "pdf_page": 91,
+      "printed_page": 79,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 91,
+            "text": "제6절연구결과및논의",
+            "bbox": [
+              78.318,
+              504.648,
+              276.21,
+              524.499
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 79 -",
+          "printed_page": 79
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 72,
+      "title": "  제1항 연구결과 종합",
+      "kind": "heading",
+      "body_idx": 1916,
+      "body_text": "제1항 연구 결과 종합",
+      "pdf_page": 91,
+      "printed_page": 79,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 91,
+            "text": "제1항연구결과종합",
+            "bbox": [
+              78.318,
+              553.675,
+              239.27,
+              572.231
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 79 -",
+          "printed_page": 79
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 73,
+      "title": "  제2항 논의",
+      "kind": "heading",
+      "body_idx": 1941,
+      "body_text": "제2항 논의",
+      "pdf_page": 92,
+      "printed_page": 80,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 92,
+            "text": "제2항논의",
+            "bbox": [
+              78.318,
+              591.194,
+              158.794,
+              609.75
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 80 -",
+          "printed_page": 80
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 74,
+      "title": "제6장 결론",
+      "kind": "heading",
+      "body_idx": 1950,
+      "body_text": "제6장 결론",
+      "pdf_page": 94,
+      "printed_page": 82,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 94,
+            "text": "제6장결론",
+            "bbox": [
+              78.318,
+              106.923,
+              170.187,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 82 -",
+          "printed_page": 82
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 75,
+      "title": " 제1절 연구결과의 요약",
+      "kind": "heading",
+      "body_idx": 1952,
+      "body_text": "제1절 연구 결과의 요약",
+      "pdf_page": 94,
+      "printed_page": 82,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 94,
+            "text": "제1절연구결과의요약",
+            "bbox": [
+              78.318,
+              157.748,
+              267.934,
+              177.598
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 82 -",
+          "printed_page": 82
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 76,
+      "title": " 제2절 논의",
+      "kind": "heading",
+      "body_idx": 1959,
+      "body_text": "제2절 논의",
+      "pdf_page": 94,
+      "printed_page": 82,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 94,
+            "text": "제2절논의",
+            "bbox": [
+              78.318,
+              681.815,
+              164.43,
+              701.665
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 82 -",
+          "printed_page": 82
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 77,
+      "title": "  1. AI 관제 시스템 도입 효과 비교 결과에 관한 논의 [DATA PENDING]",
+      "kind": "heading",
+      "body_idx": 1961,
+      "body_text": "1. AI 관제 시스템 도입 여부에 따른 집단 비교 결과에 관한 논의 [DATA PENDING]",
+      "pdf_page": 95,
+      "printed_page": 83,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 95,
+            "text": "1. AI 관제시스템도입여부에따른집단비교결과에",
+            "bbox": [
+              78.318,
+              127.9,
+              515.842,
+              146.456
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "관한논의[DATA PENDING]",
+            "bbox": [
+              85.993,
+              154.152,
+              315.118,
+              172.707
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 83 -",
+          "printed_page": 83
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Wording difference resolved by unique numbered discussion item within Chapter6 Section2; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 78,
+      "title": "  2. 안전관리 실효성 하위영역 비교 결과에 관한 논의 [DATA PENDING]",
+      "kind": "heading",
+      "body_idx": 1963,
+      "body_text": "2. 안전관리 실효성 하위영역 비교 결과에 관한 논의 [DATA PENDING]",
+      "pdf_page": 95,
+      "printed_page": 83,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 95,
+            "text": "2.",
+            "bbox": [
+              78.318,
+              201.14,
+              90.608,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "안전관리",
+            "bbox": [
+              105.663,
+              201.14,
+              169.949,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "실효성",
+            "bbox": [
+              184.94,
+              201.14,
+              233.035,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "하위영역",
+            "bbox": [
+              248.026,
+              201.14,
+              312.312,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "비교",
+            "bbox": [
+              327.423,
+              201.14,
+              359.085,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "결과에",
+            "bbox": [
+              374.197,
+              201.14,
+              422.172,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "관한",
+            "bbox": [
+              437.283,
+              201.14,
+              468.946,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "논의",
+            "bbox": [
+              484.058,
+              201.14,
+              515.72,
+              219.696
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "[DATA PENDING]",
+            "bbox": [
+              78.318,
+              227.391,
+              226.846,
+              245.947
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 83 -",
+          "printed_page": 83
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 79,
+      "title": "  3. 예산 제약성에 따른 도입 효과 차이에 관한 탐색적 논의 [DATA PENDING]",
+      "kind": "heading",
+      "body_idx": 1965,
+      "body_text": "3. 예산 제약성에 따른 집단 차이에 관한 탐색적 논의 [DATA PENDING]",
+      "pdf_page": 95,
+      "printed_page": 83,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 95,
+            "text": "3. 예산제약성에따른집단차이에관한탐색적논의[",
+            "bbox": [
+              78.318,
+              274.26,
+              515.804,
+              292.816
+            ]
+          },
+          {
+            "pdf_page": 95,
+            "text": "DATA PENDING]",
+            "bbox": [
+              78.318,
+              300.631,
+              220.489,
+              319.187
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 83 -",
+          "printed_page": 83
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Wording difference resolved by unique numbered discussion item within Chapter6 Section2; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 80,
+      "title": " 제3절 시사점",
+      "kind": "heading",
+      "body_idx": 1967,
+      "body_text": "제3절 시사점",
+      "pdf_page": 95,
+      "printed_page": 83,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 95,
+            "text": "제3절시사점",
+            "bbox": [
+              78.318,
+              347.38,
+              181.821,
+              367.231
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 83 -",
+          "printed_page": 83
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 81,
+      "title": "  1. 실무적 시사점",
+      "kind": "heading",
+      "body_idx": 1970,
+      "body_text": "1. 실무적 시사점",
+      "pdf_page": 95,
+      "printed_page": 83,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 95,
+            "text": "1. 실무적시사점",
+            "bbox": [
+              78.318,
+              437.642,
+              203.65,
+              456.197
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 83 -",
+          "printed_page": 83
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 82,
+      "title": "  2. 학술적 시사점",
+      "kind": "heading",
+      "body_idx": 1975,
+      "body_text": "2. 학술적 시사점",
+      "pdf_page": 96,
+      "printed_page": 84,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 96,
+            "text": "2. 학술적시사점",
+            "bbox": [
+              78.318,
+              334.554,
+              203.65,
+              353.11
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 84 -",
+          "printed_page": 84
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 83,
+      "title": "  3. 정책적 시사점",
+      "kind": "heading",
+      "body_idx": 1980,
+      "body_text": "3. 정책적 시사점",
+      "pdf_page": 97,
+      "printed_page": 85,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 97,
+            "text": "3. 정책적시사점",
+            "bbox": [
+              78.318,
+              169.255,
+              203.65,
+              187.811
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 85 -",
+          "printed_page": 85
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 84,
+      "title": " 제4절 연구의 한계",
+      "kind": "heading",
+      "body_idx": 1985,
+      "body_text": "제4절 연구의 한계",
+      "pdf_page": 97,
+      "printed_page": 85,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 97,
+            "text": "제4절연구의한계",
+            "bbox": [
+              78.318,
+              629.312,
+              224.878,
+              649.163
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 85 -",
+          "printed_page": 85
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 85,
+      "title": " 제5절 향후 연구방향",
+      "kind": "heading",
+      "body_idx": 1996,
+      "body_text": "제5절 향후 연구 방향",
+      "pdf_page": 100,
+      "printed_page": 88,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 100,
+            "text": "제5절향후연구방향",
+            "bbox": [
+              78.318,
+              107.043,
+              250.544,
+              126.893
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 88 -",
+          "printed_page": 88
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 86,
+      "title": "참고문헌",
+      "kind": "heading",
+      "body_idx": 2004,
+      "body_text": "참고문헌",
+      "pdf_page": 101,
+      "printed_page": 89,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 101,
+            "text": "참고문헌",
+            "bbox": [
+              260.379,
+              106.923,
+              333.658,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 89 -",
+          "printed_page": 89
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 87,
+      "title": "부 록 (도입 현장)",
+      "kind": "heading",
+      "body_idx": 2043,
+      "body_text": "부   록 (도입 현장)",
+      "pdf_page": 104,
+      "printed_page": 92,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 104,
+            "text": "부",
+            "bbox": [
+              212.045,
+              106.923,
+              229.676,
+              128.068
+            ]
+          },
+          {
+            "pdf_page": 104,
+            "text": "록(도입현장)",
+            "bbox": [
+              257.021,
+              106.923,
+              381.99,
+              128.068
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 92 -",
+          "printed_page": 92
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 88,
+      "title": " Part A. 인구통계학적 특성",
+      "kind": "heading",
+      "body_idx": 2063,
+      "body_text": "Part A. 인구통계학적 특성",
+      "pdf_page": 105,
+      "printed_page": 93,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 105,
+            "text": "Part A. 인구통계학적특성",
+            "bbox": [
+              78.318,
+              107.043,
+              295.04,
+              126.893
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 93 -",
+          "printed_page": 93
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 89,
+      "title": " Part B. 안전관리 실효성",
+      "kind": "heading",
+      "body_idx": 2084,
+      "body_text": "Part B. 안전관리 실효성",
+      "pdf_page": 106,
+      "printed_page": 94,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 106,
+            "text": "Part B. 안전관리실효성",
+            "bbox": [
+              78.36,
+              107.16,
+              276.36,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 94 -",
+          "printed_page": 94
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 90,
+      "title": " Part C. 안전관리 예산 제약성",
+      "kind": "heading",
+      "body_idx": 2174,
+      "body_text": "Part C. 안전관리 예산 제약성",
+      "pdf_page": 107,
+      "printed_page": 95,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 107,
+            "text": "Part C. 안전관리예산제약성",
+            "bbox": [
+              78.36,
+              107.16,
+              319.199,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 95 -",
+          "printed_page": 95
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 91,
+      "title": " 도입 현장 전용부",
+      "kind": "heading",
+      "body_idx": 2236,
+      "body_text": "도입 현장 전용부",
+      "pdf_page": 108,
+      "printed_page": 96,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 108,
+            "text": "도입현장전용부",
+            "bbox": [
+              78.36,
+              107.16,
+              215.879,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 96 -",
+          "printed_page": 96
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 92,
+      "title": " Part D. 시스템 특성 인식",
+      "kind": "heading",
+      "body_idx": 2237,
+      "body_text": "Part D. 시스템 특성 인식",
+      "pdf_page": 108,
+      "printed_page": 96,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 108,
+            "text": "Part D. 시스템특성인식",
+            "bbox": [
+              78.36,
+              133.68,
+              285.36,
+              153.552
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 96 -",
+          "printed_page": 96
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 93,
+      "title": " Part E. 경보 피로도 완화",
+      "kind": "heading",
+      "body_idx": 2326,
+      "body_text": "Part E. 경보 피로도 완화",
+      "pdf_page": 109,
+      "printed_page": 97,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 109,
+            "text": "Part E. 경보피로도완화",
+            "bbox": [
+              78.36,
+              107.16,
+              284.16,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 97 -",
+          "printed_page": 97
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 94,
+      "title": "부 록 (미도입 현장)",
+      "kind": "heading",
+      "body_idx": 2389,
+      "body_text": "부   록 (미도입 현장)",
+      "pdf_page": 110,
+      "printed_page": 98,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 110,
+            "text": "부",
+            "bbox": [
+              202.8,
+              107.04,
+              220.44,
+              128.208
+            ]
+          },
+          {
+            "pdf_page": 110,
+            "text": "록(미도입현장)",
+            "bbox": [
+              247.92,
+              107.04,
+              391.437,
+              128.208
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 98 -",
+          "printed_page": 98
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 95,
+      "title": " Part A. 인구통계학적 특성",
+      "kind": "heading",
+      "body_idx": 2409,
+      "body_text": "Part A. 인구통계학적 특성",
+      "pdf_page": 111,
+      "printed_page": 99,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 111,
+            "text": "Part A. 인구통계학적특성",
+            "bbox": [
+              78.36,
+              107.16,
+              295.2,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 99 -",
+          "printed_page": 99
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 96,
+      "title": " Part B. 안전관리 실효성",
+      "kind": "heading",
+      "body_idx": 2430,
+      "body_text": "Part B. 안전관리 실효성",
+      "pdf_page": 112,
+      "printed_page": 100,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 112,
+            "text": "Part B. 안전관리실효성",
+            "bbox": [
+              78.36,
+              107.16,
+              276.36,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 100 -",
+          "printed_page": 100
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 97,
+      "title": " Part C. 안전관리 예산 제약성",
+      "kind": "heading",
+      "body_idx": 2520,
+      "body_text": "Part C. 안전관리 예산 제약성",
+      "pdf_page": 113,
+      "printed_page": 101,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 113,
+            "text": "Part C. 안전관리예산제약성",
+            "bbox": [
+              78.36,
+              107.16,
+              319.199,
+              127.032
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 101 -",
+          "printed_page": 101
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 98,
+      "title": "Abstract",
+      "kind": "heading",
+      "body_idx": 2584,
+      "body_text": "Abstract",
+      "pdf_page": 114,
+      "printed_page": 102,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 114,
+            "text": "Abstract",
+            "bbox": [
+              259.32,
+              107.04,
+              334.992,
+              128.208
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 102 -",
+          "printed_page": 102
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 102,
+      "title": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "kind": "table",
+      "body_idx": 62,
+      "body_text": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "pdf_page": 24,
+      "printed_page": 12,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 24,
+            "text": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+            "bbox": [
+              160.593,
+              114.111,
+              431.406,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 12 -",
+          "printed_page": 12
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 103,
+      "title": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "kind": "table",
+      "body_idx": 168,
+      "body_text": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "pdf_page": 27,
+      "printed_page": 15,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 27,
+            "text": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+            "bbox": [
+              125.092,
+              320.765,
+              466.907,
+              331.796
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 15 -",
+          "printed_page": 15
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 104,
+      "title": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "kind": "table",
+      "body_idx": 189,
+      "body_text": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "pdf_page": 29,
+      "printed_page": 17,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 29,
+            "text": "<표 2-3> 하위요인 관련 선행연구 요약",
+            "bbox": [
+              193.695,
+              114.111,
+              398.304,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 17 -",
+          "printed_page": 17
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 105,
+      "title": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "kind": "table",
+      "body_idx": 260,
+      "body_text": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "pdf_page": 34,
+      "printed_page": 22,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 34,
+            "text": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+            "bbox": [
+              122.454,
+              486.064,
+              469.546,
+              497.095
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 22 -",
+          "printed_page": 22
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 106,
+      "title": "<표 2-5> 스마트 안전기술 도입 효과 선행연구 종합",
+      "kind": "table",
+      "body_idx": 316,
+      "body_text": "<표 2-5> 스마트 안전기술 도입 효과 선행연구 종합",
+      "pdf_page": 39,
+      "printed_page": 27,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 39,
+            "text": "<표 2-5> 스마트 안전기술 도입 효과 선행연구 종합",
+            "bbox": [
+              160.593,
+              114.111,
+              431.406,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 27 -",
+          "printed_page": 27
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 107,
+      "title": "<표 2-6> 선행연구와 본 연구의 차별성",
+      "kind": "table",
+      "body_idx": 363,
+      "body_text": "<표 2-6> 선행연구와 본 연구의 차별성",
+      "pdf_page": 40,
+      "printed_page": 28,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 40,
+            "text": "<표 2-6> 선행연구와 본 연구의 차별성",
+            "bbox": [
+              193.695,
+              238.175,
+              398.304,
+              249.206
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 28 -",
+          "printed_page": 28
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 108,
+      "title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "kind": "table",
+      "body_idx": 408,
+      "body_text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "pdf_page": 45,
+      "printed_page": 33,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 45,
+            "text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+            "bbox": [
+              125.332,
+              114.111,
+              466.667,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 33 -",
+          "printed_page": 33
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 109,
+      "title": "<표 3-2> 시스템 모듈 구성과 역할",
+      "kind": "table",
+      "body_idx": 446,
+      "body_text": "<표 3-2> 시스템 모듈 구성과 역할",
+      "pdf_page": 46,
+      "printed_page": 34,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 46,
+            "text": "<표 3-2> 시스템 모듈 구성과 역할",
+            "bbox": [
+              204.729,
+              424.092,
+              387.27,
+              435.123
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 34 -",
+          "printed_page": 34
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 110,
+      "title": "<표 3-3> 시스템 구현 기술 스택",
+      "kind": "table",
+      "body_idx": 515,
+      "body_text": "<표 3-3> 시스템 구현 기술 스택",
+      "pdf_page": 53,
+      "printed_page": 41,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 53,
+            "text": "<표 3-3> 시스템 구현 기술 스택",
+            "bbox": [
+              210.246,
+              134.848,
+              381.753,
+              145.879
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 41 -",
+          "printed_page": 41
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 111,
+      "title": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "kind": "table",
+      "body_idx": 554,
+      "body_text": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "pdf_page": 55,
+      "printed_page": 43,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 55,
+            "text": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+            "bbox": [
+              137.925,
+              176.083,
+              454.015,
+              187.114
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 43 -",
+          "printed_page": 43
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 112,
+      "title": "<표 3-5> 성능평가 지표 정의와 측정 목적",
+      "kind": "table",
+      "body_idx": 566,
+      "body_text": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "pdf_page": 56,
+      "printed_page": 44,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 56,
+            "text": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+            "bbox": [
+              182.661,
+              114.111,
+              409.338,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 44 -",
+          "printed_page": 44
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 113,
+      "title": "<표 3-6> 1차 단독 대 2단계 파이프라인 성능 비교(n=878, 196.8시간, 38대 카메라)",
+      "kind": "table",
+      "body_idx": 594,
+      "body_text": "<표 3-6> 1차 단독 대 2단계 파이프라인 성능 비교(n=878, 196.8시간, 38대 카메라)",
+      "pdf_page": 57,
+      "printed_page": 45,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 57,
+            "text": "<표 3-6> 1차 단독 대 2단계 파이프라인 성능 비교(n=878, 196.8시간, 38대 ",
+            "bbox": [
+              97.507,
+              298.589,
+              498.167,
+              309.62
+            ]
+          },
+          {
+            "pdf_page": 57,
+            "text": "카메라)",
+            "bbox": [
+              277.41,
+              316.21,
+              314.649,
+              327.241
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 45 -",
+          "printed_page": 45
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 114,
+      "title": "<표 3-7> 제로샷·고정-k·RAG의 성능 비교(n=202, 6개 카메라)",
+      "kind": "table",
+      "body_idx": 641,
+      "body_text": "<표 3-7> 제로샷·고정-k·RAG의 성능 비교(n=202, 6개 카메라)",
+      "pdf_page": 58,
+      "printed_page": 46,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 58,
+            "text": "<표 3-7> 제로샷·고정-k·RAG의 성능 비교(n=202, 6개 카메라)",
+            "bbox": [
+              132.648,
+              388.371,
+              459.291,
+              399.402
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 46 -",
+          "printed_page": 46
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 115,
+      "title": "<표 3-8> 상용 솔루션 대비 첫해 도입 비용(TCO) 비교(단위: 만 원)",
+      "kind": "table",
+      "body_idx": 680,
+      "body_text": "<표 3-8> 상용 솔루션 대비 첫해 도입 비용(TCO) 비교(단위: 만 원)",
+      "pdf_page": 59,
+      "printed_page": 47,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 59,
+            "text": "<표 3-8> 상용 솔루션 대비 첫해 도입 비용(TCO) 비교(단위: 만 원)",
+            "bbox": [
+              119.695,
+              491.698,
+              472.244,
+              502.729
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 47 -",
+          "printed_page": 47
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 116,
+      "title": "<표 4-1> 연구변수의 구성",
+      "kind": "table",
+      "body_idx": 714,
+      "body_text": "<표 4-1> 연구변수의 구성",
+      "pdf_page": 64,
+      "printed_page": 52,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 64,
+            "text": "<표 4-1> 연구변수의 구성",
+            "bbox": [
+              226.797,
+              308.419,
+              365.082,
+              319.449
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 52 -",
+          "printed_page": 52
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 117,
+      "title": "<표 4-2> 연구가설 종합",
+      "kind": "table",
+      "body_idx": 755,
+      "body_text": "<표 4-2> 연구 가설 종합",
+      "pdf_page": 66,
+      "printed_page": 54,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 66,
+            "text": "<표 4-2> 연구 가설 종합",
+            "bbox": [
+              229.556,
+              362.12,
+              362.324,
+              373.151
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 54 -",
+          "printed_page": 54
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 118,
+      "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "kind": "table",
+      "body_idx": 785,
+      "body_text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "pdf_page": 69,
+      "printed_page": 57,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 69,
+            "text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+            "bbox": [
+              168.868,
+              114.111,
+              423.131,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 57 -",
+          "printed_page": 57
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 119,
+      "title": "<표 4-4> 설문지의 최종 구성",
+      "kind": "table",
+      "body_idx": 984,
+      "body_text": "<표 4-4> 설문지의 최종 구성",
+      "pdf_page": 75,
+      "printed_page": 63,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 75,
+            "text": "<표 4-4> 설문지의 최종 구성",
+            "bbox": [
+              218.522,
+              114.111,
+              373.478,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 63 -",
+          "printed_page": 63
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 120,
+      "title": "<표 4-5> 자료수집 개요",
+      "kind": "table",
+      "body_idx": 1050,
+      "body_text": "<표 4-5> 자료 수집 개요",
+      "pdf_page": 77,
+      "printed_page": 65,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 77,
+            "text": "<표 4-5> 자료 수집 개요",
+            "bbox": [
+              229.556,
+              114.111,
+              362.324,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 65 -",
+          "printed_page": 65
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 121,
+      "title": "<표 5-1> 조사대상의 인구통계학적 특성 (집단별)",
+      "kind": "table",
+      "body_idx": 1095,
+      "body_text": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "pdf_page": 80,
+      "printed_page": 68,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 80,
+            "text": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+            "bbox": [
+              167.429,
+              114.111,
+              424.51,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 68 -",
+          "printed_page": 68
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 122,
+      "title": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "kind": "table",
+      "body_idx": 1292,
+      "body_text": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "pdf_page": 81,
+      "printed_page": 69,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 81,
+            "text": "<표5-2> 측정도구의신뢰도검증결과",
+            "bbox": [
+              184.94,
+              211.089,
+              409.938,
+              225.617
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 69 -",
+          "printed_page": 69
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 123,
+      "title": "<표 5-3> 주요 변수의 기술통계 (집단별)",
+      "kind": "table",
+      "body_idx": 1398,
+      "body_text": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "pdf_page": 83,
+      "printed_page": 71,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 83,
+            "text": "<표 5-3> 주요 변수의 기술통계(집단별)",
+            "bbox": [
+              192.376,
+              292.596,
+              399.683,
+              303.627
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 71 -",
+          "printed_page": 71
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 124,
+      "title": "<표 5-4> 두 집단의 사전 특성 동질성 검증 결과",
+      "kind": "table",
+      "body_idx": 1517,
+      "body_text": "<표 5-4> 두 집단의 사전 특성 동질성 검증 결과",
+      "pdf_page": 85,
+      "printed_page": 73,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 85,
+            "text": "<표 5-4> 두 집단의 사전 특성 동질성 검증 결과",
+            "bbox": [
+              168.868,
+              114.111,
+              423.131,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 73 -",
+          "printed_page": 73
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 125,
+      "title": "<표 5-5> 공분산분석 가정 점검 결과 (독립성·정규성·등분산성·회귀기울기 동질성)",
+      "kind": "table",
+      "body_idx": 1590,
+      "body_text": "<표 5-5> 공분산분석 가정 점검 결과(독립성·정규성·등분산성·회귀기울기 동질성)",
+      "pdf_page": 86,
+      "printed_page": 74,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 86,
+            "text": "<표 5-5> 공분산분석 가정 점검 결과(독립성·정규성·등분산성·회귀기울기 동",
+            "bbox": [
+              99.786,
+              112.553,
+              492.213,
+              123.584
+            ]
+          },
+          {
+            "pdf_page": 86,
+            "text": "질성)",
+            "bbox": [
+              282.927,
+              130.293,
+              309.132,
+              141.324
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 74 -",
+          "printed_page": 74
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 126,
+      "title": "<표 5-6> 안전관리 실효성에 대한 공분산분석 결과 (조정 평균 포함)",
+      "kind": "table",
+      "body_idx": 1676,
+      "body_text": "<표 5-6> 안전관리 실효성에 대한 공분산분석 결과(조정 평균 포함)",
+      "pdf_page": 87,
+      "printed_page": 75,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 87,
+            "text": "<표5-6> 안전관리실효성에대한공분산분석결과(조정평균포함)",
+            "bbox": [
+              104.343,
+              464.612,
+              490.507,
+              479.14
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 75 -",
+          "printed_page": 75
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 127,
+      "title": "<표 5-7> 하위영역별 공분산분석 결과",
+      "kind": "table",
+      "body_idx": 1787,
+      "body_text": "<표 5-7> 하위영역별 공분산분석 결과",
+      "pdf_page": 89,
+      "printed_page": 77,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 89,
+            "text": "<표 5-7> 하위영역별 공분산분석 결과",
+            "bbox": [
+              196.454,
+              217.438,
+              395.546,
+              228.469
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 77 -",
+          "printed_page": 77
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 128,
+      "title": "<표 5-8> 탐색적 보조 분석 결과",
+      "kind": "table",
+      "body_idx": 1846,
+      "body_text": "<표 5-8> 탐색적 보조 분석 결과",
+      "pdf_page": 90,
+      "printed_page": 78,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 90,
+            "text": "<표5-8> 탐색적보조분석결과",
+            "bbox": [
+              203.17,
+              299.313,
+              391.708,
+              313.841
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 78 -",
+          "printed_page": 78
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 129,
+      "title": "<표 5-9> 연구가설 검증 결과 종합",
+      "kind": "table",
+      "body_idx": 1920,
+      "body_text": "<표 5-9> 연구 가설 검증 결과 종합",
+      "pdf_page": 92,
+      "printed_page": 80,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": true,
+        "pdf_lines": [
+          {
+            "pdf_page": 92,
+            "text": "<표 5-9> 연구 가설 검증 결과 종합",
+            "bbox": [
+              201.971,
+              114.111,
+              390.029,
+              125.142
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 80 -",
+          "printed_page": 80
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    },
+    {
+      "toc_idx": 134,
+      "title": "<그림 1-1> 산업별 업무상사고 사망재해 분포도",
+      "kind": "figure",
+      "body_idx": 7,
+      "body_text": "<그림 1-1> 산업별 업무상사고 사망재해 분포도",
+      "pdf_page": 13,
+      "printed_page": 1,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 13,
+            "text": "<그림1-1> 산업별업무상사고사망재해분포도",
+            "bbox": [
+              160.593,
+              487.148,
+              434.285,
+              501.676
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": null,
+          "printed_page": 1,
+          "rationale": "First body page folio suppressed; next physical page14 displays - 2 -."
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 135,
+      "title": "<그림 1-2> 연도별 업무상사고 사망재해 추이",
+      "kind": "figure",
+      "body_idx": 9,
+      "body_text": "<그림 1-2> 연도별 업무상사고 사망재해 추이",
+      "pdf_page": 13,
+      "printed_page": 1,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 13,
+            "text": "<그림1-2> 연도별업무상사고사망재해추이",
+            "bbox": [
+              166.71,
+              549.12,
+              428.168,
+              563.648
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": null,
+          "printed_page": 1,
+          "rationale": "First body page folio suppressed; next physical page14 displays - 2 -."
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 136,
+      "title": "<그림 1-3> 연구의 흐름도",
+      "kind": "figure",
+      "body_idx": 39,
+      "body_text": "<그림 1-3> 연구의 흐름도",
+      "pdf_page": 19,
+      "printed_page": 7,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 19,
+            "text": "<그림1-3> 연구의흐름도",
+            "bbox": [
+              221.28,
+              355.771,
+              373.478,
+              370.299
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 7 -",
+          "printed_page": 7
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 137,
+      "title": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "kind": "figure",
+      "body_idx": 442,
+      "body_text": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "pdf_page": 46,
+      "printed_page": 34,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 46,
+            "text": "<그림3-1> YOLO-LLM 이중캐스케이드시스템아키텍처",
+            "bbox": [
+              128.93,
+              149.117,
+              465.947,
+              163.645
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 34 -",
+          "printed_page": 34
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 138,
+      "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "kind": "figure",
+      "body_idx": 487,
+      "body_text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "pdf_page": 49,
+      "printed_page": 37,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 49,
+            "text": "<그림3-2> LLM 2차검증입출력구조와판정흐름",
+            "bbox": [
+              147.04,
+              293.799,
+              447.837,
+              308.327
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 37 -",
+          "printed_page": 37
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 139,
+      "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "kind": "figure",
+      "body_idx": 501,
+      "body_text": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "pdf_page": 51,
+      "printed_page": 39,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 51,
+            "text": "<그림3-3> RAG 기반Few-shot 교정절차",
+            "bbox": [
+              171.507,
+              273.062,
+              423.371,
+              287.59
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 39 -",
+          "printed_page": 39
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 140,
+      "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "kind": "figure",
+      "body_idx": 542,
+      "body_text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "pdf_page": 54,
+      "printed_page": 42,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 54,
+            "text": "<그림3-4> 시스템운영화면(AI CCTV Viewer)",
+            "bbox": [
+              156.875,
+              190.472,
+              437.974,
+              205
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 42 -",
+          "printed_page": 42
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions."
+      }
+    },
+    {
+      "toc_idx": 141,
+      "title": "<그림 4-1> 연구모형",
+      "kind": "figure",
+      "body_idx": 734,
+      "body_text": "<그림 4-1> 연구 모형",
+      "pdf_page": 64,
+      "printed_page": 52,
+      "evidence": {
+        "xml_owned_text_verified": true,
+        "xml_nested_in_cell": false,
+        "pdf_lines": [
+          {
+            "pdf_page": 64,
+            "text": "<그림4-1> 연구모형",
+            "bbox": [
+              233.513,
+              565.182,
+              361.364,
+              579.71
+            ]
+          }
+        ],
+        "printed_label": {
+          "text": "- 52 -",
+          "printed_page": 52
+        },
+        "rationale": "Whitespace-normalized exact standalone PDF lines in ordered XML body context; excludes prose mentions. Spacing difference only; TOC title retained."
+      }
+    }
+  ],
+  "unresolved": [],
+  "notes": [
+    "PDF physical pages are 1-based. Physical13 is printed1 with suppressed visible folio. Every physical14..114 footer individually verified as printed2..102.",
+    "TOC23/body290 starts physical35 (printed23) and continues physical36 (printed24); use heading start page. XML lineseg vertical reset independently confirms split.",
+    "Repeated generic headings and appendix Parts A/B/C resolved by ordered XML and standalone PDF lines; no front matter or incidental prose references.",
+    "TOC77 maps body1961: 도입 효과 비교 -> 도입 여부에 따른 집단 비교. TOC79 maps body1965: 도입 효과 차이 -> 집단 차이. Both uniquely numbered items in Chapter6 Section2; original TOC titles preserved.",
+    "Whitespace normalized only for matching; all title strings retain original text and leading spaces.",
+    "All table/figure entries identify actual captions, including nested cell paragraphs and figure captions with no image.",
+    "Only page_map.json and mapping_report.md written; HWPX, PDF, dump and manuscripts not modified."
+  ]
+}
