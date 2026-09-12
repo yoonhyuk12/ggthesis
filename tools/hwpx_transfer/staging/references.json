@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_from": "논문구조/07_참조번호목록.md (단일 기준, 2026-07-25 판독)",
+    "generated_from": "01.docs/07_참조번호목록.md (단일 기준, 2026-07-25 판독)",
     "policy": "07목록에서 '확정(원문 대조)' 또는 '검증 완료(웹 대조)' 표시가 있는 서지만 categories에 수록. [확정 필요]·미검증·⚠ 미해소 항목은 flagged. 서지 문자열은 07목록 '참고문헌 표기 골격'의 확정 표기를 그대로 사용(창작·보완 없음).",
     "category_assumptions": "단행본·소프트웨어·arXiv 프리프린트는 5분류(가~마)에 자연 슬롯이 없어 '마. 기타'에 배치. 정부·공공기관 발간물(현황분석·가이드라인)은 '다. 보고서'에 배치. 조립 전 지도교수 양식과 대조 필요."
   },
@@ -50,48 +50,28 @@
     "나. 학술지": [
       {
         "no": 1,
-        "text": "Bentler, P. M., & Chou, C. P., \"Practical issues in structural modeling\", Sociological Methods & Research, Vol. 16, No. 1, 1987, pp. 78-117.",
-        "source_ref": "07목록 방법론문헌 #5(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
-      },
-      {
-        "no": 2,
         "text": "Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268-277.",
         "source_ref": "07목록 전체목록 #42 · 원문대조필요 #42(확정 2026-07-12, 파일명 2022는 다운로드 오류) · 표기골격 국외문헌"
       },
       {
-        "no": 3,
+        "no": 2,
         "text": "Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319-340.",
         "source_ref": "07목록 방법론문헌 #1(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
       },
       {
-        "no": 4,
-        "text": "Fornell, C., & Larcker, D. F., \"Evaluating structural equation models with unobservable variables and measurement error\", Journal of Marketing Research, Vol. 18, No. 1, 1981, pp. 39-50.",
-        "source_ref": "07목록 방법론문헌 #8(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
-      },
-      {
-        "no": 5,
-        "text": "Hu, L., & Bentler, P. M., \"Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives\", Structural Equation Modeling, Vol. 6, No. 1, 1999, pp. 1-55.",
-        "source_ref": "07목록 방법론문헌 #9(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
-      },
-      {
-        "no": 6,
+        "no": 3,
         "text": "Lawshe, C. H., \"A quantitative approach to content validity\", Personnel Psychology, Vol. 28, No. 4, 1975, pp. 563-575.",
         "source_ref": "07목록 방법론문헌 #4(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
       },
       {
-        "no": 7,
+        "no": 4,
+        "text": "Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285.",
+        "source_ref": "07목록 전체목록 #68 · 표기골격 국외문헌"
+      },
+      {
+        "no": 5,
         "text": "Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
         "source_ref": "07목록 방법론문헌 #12(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
-      },
-      {
-        "no": 8,
-        "text": "Rosseel, Y., \"lavaan: An R package for structural equation modeling\", Journal of Statistical Software, Vol. 48, No. 2, 2012, pp. 1-36.",
-        "source_ref": "07목록 방법론문헌 #6(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
-      },
-      {
-        "no": 9,
-        "text": "Shrout, P. E., & Bolger, N., \"Mediation in experimental and nonexperimental studies: New procedures and recommendations\", Psychological Methods, Vol. 7, No. 4, 2002, pp. 422-445.",
-        "source_ref": "07목록 방법론문헌 #10(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌"
       }
     ],
     "다. 보고서": [
@@ -116,26 +96,26 @@
       },
       {
         "no": 2,
-        "text": "Kline, R. B., Principles and Practice of Structural Equation Modeling (5th ed.), Guilford Press, 2023.",
-        "source_ref": "07목록 방법론문헌 #3(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌 — 단행본",
-        "note": "단행본 — 분류 슬롯 부재로 '마. 기타' 배치 (가정)"
-      },
-      {
-        "no": 3,
         "text": "Shadish, W. R., Cook, T. D., & Campbell, D. T., Experimental and Quasi-Experimental Designs for Generalized Causal Inference, Houghton Mifflin, 2002.",
         "source_ref": "07목록 방법론문헌 #2(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌 — 단행본 (골격 말미의 검증 메모 괄호는 서지 아님이라 제외)",
         "note": "단행본 — 분류 슬롯 부재로 '마. 기타' 배치 (가정)"
       },
       {
-        "no": 4,
+        "no": 3,
         "text": "The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org",
         "source_ref": "07목록 방법론문헌 #6(검증 완료 2026-07-12 웹 대조) · 표기골격 국외문헌 — 소프트웨어",
         "note": "소프트웨어 — 분류 슬롯 부재로 '마. 기타' 배치 (가정)"
       },
       {
-        "no": 5,
+        "no": 4,
         "text": "Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666, 2025.",
         "source_ref": "07목록 전체목록 #23 · 원문대조필요 #23(확정 2026-07-12) · 표기골격 국외문헌 — arXiv 프리프린트",
+        "note": "arXiv 프리프린트 — 학술지 게재 미확인 상태라 '마. 기타' 배치 (가정)"
+      },
+      {
+        "no": 5,
+        "text": "Yao, S., Rahimi Ardabili, B., Danesh Pazho, A., Alinezhad Noghre, G., Neff, C., Bourque, L., & Tabkhi, H., \"From Lab to Field: Real-World Evaluation of an AI-Driven Smart Video Solution to Enhance Community Safety\", arXiv:2312.02078, 2023.",
+        "source_ref": "07목록 전체목록 #65 · 표기골격 국외문헌 — arXiv 프리프린트",
         "note": "arXiv 프리프린트 — 학술지 게재 미확인 상태라 '마. 기타' 배치 (가정)"
       }
     ]
@@ -235,6 +215,11 @@
       "text": "「건설산업기본법」",
       "reason": "인용 조항·시행 기준일 미확정 — 골격에 [확정 필요] 명시. '라. 관련법' 후보.",
       "source_ref": "07목록 표기골격 3. 법령"
+    },
+    {
+      "text": "「중대재해 처벌 등에 관한 법률」",
+      "reason": "인용 조항 미확정 — 골격에 [확정 필요: 인용 조항] 명시. 시행일·법률번호는 ref 58 원문 대조(2026-08-25) 완료. '라. 관련법' 후보.",
+      "source_ref": "07목록 표기골격 3. 법령 · 전체목록 #58"
     },
     {
       "text": "EFA 적용 기준(KMO·Bartlett) 근거 문헌",
