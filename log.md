@@ -1,3 +1,10 @@
+260912_115634 : 03.plan/260912_1156_신규지시사항.md 추가
+260912_112843 : .claude/rules/hwpx-output-verification.md 수정 — "이는 사용자의 의도적 편집이 아니라 한글의 셀 조판 정규화 부산물이므로 **규칙으로 삼지 않는다**. `tb…"
+260912_112826 : .claude/rules/hwpx-output-verification.md 수정 — "- **Don't** 절·항 제목을 이전 문단에 바로 붙이기 — 앞에 빈 줄 1줄을 넣는다(장 제목·이미 빈…"
+260912_112818 : .claude/rules/hwpx-output-verification.md 수정 — "- MD→hwpx 조립(`blocks_to_hwpx.py`)과 타깃 치환 양쪽에 적용한다. 빈 줄은 hwpx…"
+260912_112351 : 00. hwpx/260912_1059_경기공학_건축안전_윤혁_논문작성_작성본.hwpx 수정
+260912_111528 : .claude/rules/hwpx-output-verification.md 수정 — "- **Don't** 워커에게 hwpx MCP 읽기 도구로 본문을 읽게 하기 (금지 목록은 `subagent…"
+260912_111522 : .claude/rules/hwpx-output-verification.md 수정, 00. hwpx/260912_1059_경기공학_건축안전_윤혁_논문작성_작성본.hwpx 추가, tools/hwpx_transfer/staging/scratch_cite/apply_cite_edits.py 추가, tools/hwpx_transfer/staging/scratch_cite/base.hwpx 추가, tools/hwpx_transfer/staging/scratch_cite/check_fire_lee.py 추가, tools/hwpx_transfer/staging/scratch_cite/check_out.py 추가 외 4건
 260912_085447 : 03.plan/260912_0837_hwpx노하우_동기이관_가이드.md 수정 — "data = data.replace(b'pageBreak="CELL"', b'pageBreak="NONE"'…"
 260912_085441 : 03.plan/260912_0837_hwpx노하우_동기이관_가이드.md 수정 — "### 4-4. 대형 문서 읽기 본문 XML이 1MB를 넘으면 파이썬 MCP 읽기 도구를 절대 쓰지 않는다.…"
 260912_085223 : 01.docs/07_참조번호목록.md 수정
