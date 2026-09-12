@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "ch4_items_24_unchanged": true,
+    "appendix1_bytes_unchanged": true,
+    "appendix2_item_texts_match_ch4": true,
+    "history_original_text_preserved": true,
+    "ch4_only_author_and_reference_changes": true,
+    "no_active_ref18_mapping": true,
+    "no_active_author_typos": true,
+    "mapping_merged_meanings_and_pages": true,
+    "appendix1_item_texts_match_ch4": true,
+    "followup_kim_structure_distinguished": true,
+    "followup_appendix2_item_texts_preserved": true
+  },
+  "actual_mapping_rows": {
+    "B": 21,
+    "C": 10,
+    "D": 19,
+    "E": 7
+  },
+  "actual_mapping_total": 57,
+  "item_counts": {
+    "ch4_likert": 24,
+    "appendix1_likert": 24,
+    "appendix2_unique_current_items": 24
+  },
+  "validation_note": "초기 검사에서 A블록과 이전경로 표까지 센 추출 조건을 B~E 현행 24문항으로 교정함; 원고 변경 없음."
+}

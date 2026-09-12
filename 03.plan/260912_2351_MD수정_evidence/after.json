@@ -1,0 +1,79 @@
+[
+  {
+    "name": "00_목차.md",
+    "sha256": "f14970e2724a0342a222c645f626396265c12454c56cc05384d61ac47eab62c3",
+    "content_changed": true,
+    "before_lines": 206,
+    "after_lines": 216
+  },
+  {
+    "name": "01_서론.md",
+    "sha256": "ea5748b60ceb76f09debf4fa1679bfe27c0f6fdad1ef311a78afa6f7761b2629",
+    "content_changed": true,
+    "before_lines": 85,
+    "after_lines": 94
+  },
+  {
+    "name": "02_이론적배경.md",
+    "sha256": "14d95a92c880acf0224019617272de37e2bd39f7b5b4fd14733a5686165f55d8",
+    "content_changed": true,
+    "before_lines": 277,
+    "after_lines": 277
+  },
+  {
+    "name": "03_시스템개발.md",
+    "sha256": "53b795f5541e639837340963c814ad1e0fc041835e461c5bf0ebe996ad4c2a76",
+    "content_changed": true,
+    "before_lines": 230,
+    "after_lines": 238
+  },
+  {
+    "name": "04_연구설계.md",
+    "sha256": "05891306e1688ccaa78b04e241188a8dd5c76dea6d7a15480b723f554ff5381a",
+    "content_changed": true,
+    "before_lines": 246,
+    "after_lines": 277
+  },
+  {
+    "name": "05_실증분석결과.md",
+    "sha256": "0db86db9e312f26c4ea1f5611bafb75291733dfbd6bd522ebc455fd1ce7af0f7",
+    "content_changed": true,
+    "before_lines": 281,
+    "after_lines": 335
+  },
+  {
+    "name": "06_결론.md",
+    "sha256": "dc67070df1c8e5a2bb30743cab4dad1ecb65164ed8ab7af3548974411080cad4",
+    "content_changed": true,
+    "before_lines": 128,
+    "after_lines": 136
+  },
+  {
+    "name": "07_참조번호목록.md",
+    "sha256": "75b823af74335e7b235f40768f1da7a7c80ba4ed9054d1aebcda179ad7199aec",
+    "content_changed": true,
+    "before_lines": 306,
+    "after_lines": 311
+  },
+  {
+    "name": "부록1_설문지_양식.md",
+    "sha256": "5cc77bf5b1eb9a2162b4ac78052f900d9c41443d68d89f037a6926a71a340224",
+    "content_changed": true,
+    "before_lines": 202,
+    "after_lines": 212
+  },
+  {
+    "name": "부록2_설문항목_근거매핑.md",
+    "sha256": "21881c258437496d344f6f92417e1642a22a7cf662f8992182e285b9e9cf5b3d",
+    "content_changed": true,
+    "before_lines": 156,
+    "after_lines": 158
+  },
+  {
+    "name": "설문항목_작업이력.md",
+    "sha256": "206345c7892618a617558973c6e61885668d208ab7ffbd23ff5a3b09566da707",
+    "content_changed": true,
+    "before_lines": 289,
+    "after_lines": 301
+  }
+]

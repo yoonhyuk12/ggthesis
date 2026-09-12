@@ -1,0 +1,1326 @@
+{
+  "entries": [
+    {
+      "toc_idx": 3,
+      "old_toc_title": "제1장 서론",
+      "body_text": "제1장 서론",
+      "kind": "heading",
+      "physical": 13,
+      "printed": 1,
+      "y": 106.92314910888672,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 4,
+      "old_toc_title": " 제1절 연구의 배경 및 필요성",
+      "body_text": "제1절 연구의 배경 및 필요성",
+      "kind": "heading",
+      "physical": 13,
+      "printed": 1,
+      "y": 151.8740234375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 5,
+      "old_toc_title": "  제1항 중소규모 건설현장의 안전관리 현황과 선행연구의 한계",
+      "body_text": "제1항 중소규모 건설현장의 안전관리 현황과 선행연구의 한계",
+      "kind": "heading",
+      "physical": 13,
+      "printed": 1,
+      "y": 195.02685546875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 6,
+      "old_toc_title": "  제2항 연구의 필요성 및 차별성과 기대효과",
+      "body_text": "제2항 연구의 필요성 및 차별성과 기대효과",
+      "kind": "heading",
+      "physical": 16,
+      "printed": 4,
+      "y": 248.84805297851562,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 7,
+      "old_toc_title": " 제2절 연구의 목적",
+      "body_text": "제2절 연구의 목적",
+      "kind": "heading",
+      "physical": 17,
+      "printed": 5,
+      "y": 540.9688110351562,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 8,
+      "old_toc_title": " 제3절 연구의 범위 및 방법",
+      "body_text": "제3절 연구의 범위 및 방법",
+      "kind": "heading",
+      "physical": 19,
+      "printed": 7,
+      "y": 496.73712158203125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 9,
+      "old_toc_title": "제2장 이론적 배경",
+      "body_text": "제2장 이론적 배경",
+      "kind": "heading",
+      "physical": 22,
+      "printed": 10,
+      "y": 106.92314910888672,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 10,
+      "old_toc_title": " 제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+      "body_text": "제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+      "kind": "heading",
+      "physical": 22,
+      "printed": 10,
+      "y": 157.7476043701172,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 11,
+      "old_toc_title": "  제1항 개념 및 정의",
+      "body_text": "제1항 개념 및 정의",
+      "kind": "heading",
+      "physical": 22,
+      "printed": 10,
+      "y": 206.77401733398438,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 12,
+      "old_toc_title": "  제2항 국내·외 선행연구",
+      "body_text": "제2항 국내·외 선행연구",
+      "kind": "heading",
+      "physical": 24,
+      "printed": 12,
+      "y": 293.1995849609375,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 13,
+      "old_toc_title": "  제3항 시스템 기술 특성 하위요인",
+      "body_text": "제3항 시스템 기술 특성 하위요인",
+      "kind": "heading",
+      "physical": 27,
+      "printed": 15,
+      "y": 124.90350341796875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 14,
+      "old_toc_title": " 제2절 안전관리 실효성",
+      "body_text": "제2절 안전관리 실효성",
+      "kind": "heading",
+      "physical": 32,
+      "printed": 20,
+      "y": 124.78362274169922,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 15,
+      "old_toc_title": "  제1항 개념 및 정의",
+      "body_text": "제1항 개념 및 정의",
+      "kind": "heading",
+      "physical": 32,
+      "printed": 20,
+      "y": 173.690185546875,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 16,
+      "old_toc_title": "  제2항 국내·외 선행연구",
+      "body_text": "제2항 국내·외 선행연구",
+      "kind": "heading",
+      "physical": 33,
+      "printed": 21,
+      "y": 330.47882080078125,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 17,
+      "old_toc_title": " 제3절 경보 피로도",
+      "body_text": "제3절 경보 피로도",
+      "kind": "heading",
+      "physical": 34,
+      "printed": 22,
+      "y": 248.7281951904297,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 18,
+      "old_toc_title": "  제1항 개념 및 정의",
+      "body_text": "제1항 개념 및 정의",
+      "kind": "heading",
+      "physical": 34,
+      "printed": 22,
+      "y": 297.7546081542969,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 19,
+      "old_toc_title": "  제2항 국내·외 선행연구",
+      "body_text": "제2항 국내·외 선행연구",
+      "kind": "heading",
+      "physical": 36,
+      "printed": 24,
+      "y": 124.90350341796875,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 20,
+      "old_toc_title": " 제4절 안전관리 예산 제약성",
+      "body_text": "제4절 안전관리 예산 제약성",
+      "kind": "heading",
+      "physical": 37,
+      "printed": 25,
+      "y": 124.78362274169922,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 21,
+      "old_toc_title": "  제1항 개념 및 정의",
+      "body_text": "제1항 개념 및 정의",
+      "kind": "heading",
+      "physical": 37,
+      "printed": 25,
+      "y": 173.690185546875,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 22,
+      "old_toc_title": "  제2항 국내·외 선행연구",
+      "body_text": "제2항 국내·외 선행연구",
+      "kind": "heading",
+      "physical": 39,
+      "printed": 27,
+      "y": 124.90350341796875,
+      "candidate_count": 4
+    },
+    {
+      "toc_idx": 23,
+      "old_toc_title": " 제5절 스마트 안전기술 도입 효과 선행연구 고찰",
+      "body_text": "제5절 스마트 안전기술 도입 효과 선행연구 고찰(연구 가설 도출 근거)",
+      "kind": "heading",
+      "physical": 40,
+      "printed": 28,
+      "y": 124.78362274169922,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 24,
+      "old_toc_title": "  제1항 스마트 안전기술 도입 효과에 관한 국내·외 선행연구",
+      "body_text": "제1항 스마트 안전기술 도입 효과에 관한 국내·외 선행연구",
+      "kind": "heading",
+      "physical": 40,
+      "printed": 28,
+      "y": 193.58843994140625,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 25,
+      "old_toc_title": "  제2항 안전관리 예산 제약성과 도입 효과의 관계",
+      "body_text": "제2항 안전관리 예산 제약성과 도입 효과의 관계",
+      "kind": "heading",
+      "physical": 41,
+      "printed": 29,
+      "y": 496.8570251464844,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 26,
+      "old_toc_title": "  제3항 경보 피로도 완화와 시스템 효과의 작동 메커니즘",
+      "body_text": "제3항 경보 피로도 완화와 시스템 효과의 작동 메커니즘",
+      "kind": "heading",
+      "physical": 42,
+      "printed": 30,
+      "y": 293.1995849609375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 27,
+      "old_toc_title": "  제4항 선행연구 종합 및 본 연구의 차별성",
+      "body_text": "제4항 선행연구 종합 및 본 연구의 차별성",
+      "kind": "heading",
+      "physical": 42,
+      "printed": 30,
+      "y": 626.4354248046875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 28,
+      "old_toc_title": " 제6절 소결",
+      "body_text": "제6절 소결",
+      "kind": "heading",
+      "physical": 46,
+      "printed": 34,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 29,
+      "old_toc_title": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "body_text": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "kind": "heading",
+      "physical": 47,
+      "printed": 35,
+      "y": 127.66049194335938,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 30,
+      "old_toc_title": " 제1절 시스템 개발 개요",
+      "body_text": "제1절 시스템 개발 개요",
+      "kind": "heading",
+      "physical": 47,
+      "printed": 35,
+      "y": 178.48495483398438,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 31,
+      "old_toc_title": " 제2절 요구사항 분석",
+      "body_text": "제2절 요구사항 분석",
+      "kind": "heading",
+      "physical": 48,
+      "printed": 36,
+      "y": 269.34564208984375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 32,
+      "old_toc_title": " 제3절 시스템 아키텍처 설계",
+      "body_text": "제3절 시스템 아키텍처 설계",
+      "kind": "heading",
+      "physical": 50,
+      "printed": 38,
+      "y": 527.183837890625,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 33,
+      "old_toc_title": " 제4절 1차 검출 모듈 설계: 고민감도 YOLO 객체 탐지",
+      "body_text": "제4절 1차 검출 모듈 설계: 고민감도 YOLO 객체 탐지",
+      "kind": "heading",
+      "physical": 52,
+      "printed": 40,
+      "y": 621.88037109375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 34,
+      "old_toc_title": " 제5절 2차 검증 모듈 설계: LLM 기반 문맥 검증",
+      "body_text": "제5절 2차 검증 모듈 설계: LLM 기반 문맥 검증",
+      "kind": "heading",
+      "physical": 55,
+      "printed": 43,
+      "y": 127.78035736083984,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 35,
+      "old_toc_title": "  제1항 검증 필요성과 입출력 구조",
+      "body_text": "제1항 검증 필요성과 입출력 구조",
+      "kind": "heading",
+      "physical": 55,
+      "printed": 43,
+      "y": 362.7236022949219,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 36,
+      "old_toc_title": "  제2항 프롬프트 엔지니어링과 통합 판정 로직",
+      "body_text": "제2항 프롬프트 엔지니어링과 통합 판정 로직",
+      "kind": "heading",
+      "physical": 57,
+      "printed": 45,
+      "y": 251.84475708007812,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 37,
+      "old_toc_title": "  제3항 RAG 기반 Few-shot 현장 적응",
+      "body_text": "제3항 RAG 기반 Few-shot 현장 적응",
+      "kind": "heading",
+      "physical": 58,
+      "printed": 46,
+      "y": 272.58209228515625,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 38,
+      "old_toc_title": " 제6절 실시간 경보 전파 설계",
+      "body_text": "제6절 실시간 경보 전파 설계",
+      "kind": "heading",
+      "physical": 60,
+      "printed": 48,
+      "y": 189.7526397705078,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 39,
+      "old_toc_title": " 제7절 시스템 구현",
+      "body_text": "제7절 시스템 구현",
+      "kind": "heading",
+      "physical": 61,
+      "printed": 49,
+      "y": 210.37010192871094,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 40,
+      "old_toc_title": " 제8절 시스템 검증 및 성능평가",
+      "body_text": "제8절 시스템 검증 및 성능 평가",
+      "kind": "heading",
+      "physical": 63,
+      "printed": 51,
+      "y": 416.9043884277344,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 41,
+      "old_toc_title": "  제1항 검증 데이터셋 구축 및 평가 지표",
+      "body_text": "제1항 검증 데이터셋 구축 및 평가 지표",
+      "kind": "heading",
+      "physical": 63,
+      "printed": 51,
+      "y": 610.6127319335938,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 42,
+      "old_toc_title": "  제2항 LLM 백업 검증의 오경보 감소 효과",
+      "body_text": "제2항 LLM 백업 검증의 오경보 감소 효과",
+      "kind": "heading",
+      "physical": 65,
+      "printed": 53,
+      "y": 626.6751708984375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 43,
+      "old_toc_title": "  제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "body_text": "제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "kind": "heading",
+      "physical": 67,
+      "printed": 55,
+      "y": 293.1995849609375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 44,
+      "old_toc_title": "  제4항 적용 타당성",
+      "body_text": "제4항 적용 타당성",
+      "kind": "heading",
+      "physical": 69,
+      "printed": 57,
+      "y": 127.90022277832031,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 45,
+      "old_toc_title": " 제9절 소결: 시스템 기술 특성의 도출과 실증연구의 필요성",
+      "body_text": "제9절 소결: 시스템 기술 특성의 도출과 실증 연구의 필요성",
+      "kind": "heading",
+      "physical": 71,
+      "printed": 59,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 46,
+      "old_toc_title": "제4장 연구설계",
+      "body_text": "제4장 연구설계",
+      "kind": "heading",
+      "physical": 73,
+      "printed": 61,
+      "y": 127.66049194335938,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 47,
+      "old_toc_title": " 제1절 연구모형 설계",
+      "body_text": "제1절 연구 모형 설계",
+      "kind": "heading",
+      "physical": 73,
+      "printed": 61,
+      "y": 178.48495483398438,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 48,
+      "old_toc_title": " 제2절 연구문제 및 연구가설",
+      "body_text": "제2절 연구 문제 및 연구 가설",
+      "kind": "heading",
+      "physical": 76,
+      "printed": 64,
+      "y": 220.7987060546875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 49,
+      "old_toc_title": " 제3절 변수의 조작적 정의 및 측정도구 구성",
+      "body_text": "제3절 변수의 조작적 정의 및 측정도구 구성",
+      "kind": "heading",
+      "physical": 78,
+      "printed": 66,
+      "y": 127.78035736083984,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 50,
+      "old_toc_title": "  제1항 변수의 조작적 정의",
+      "body_text": "제1항 변수의 조작적 정의",
+      "kind": "heading",
+      "physical": 78,
+      "printed": 66,
+      "y": 176.68690490722656,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 51,
+      "old_toc_title": "  제2항 측정도구의 구성 및 설문문항 도출 출처",
+      "body_text": "제2항 측정도구의 구성 및 설문 문항 도출 출처",
+      "kind": "heading",
+      "physical": 80,
+      "printed": 68,
+      "y": 127.90022277832031,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 52,
+      "old_toc_title": " 제4절 설문조사 설계 및 척도 검증",
+      "body_text": "제4절 설문조사 설계 및 척도 검증",
+      "kind": "heading",
+      "physical": 82,
+      "printed": 70,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 53,
+      "old_toc_title": "  제1항 설문조사의 개요 및 절차",
+      "body_text": "제1항 설문조사의 개요 및 절차",
+      "kind": "heading",
+      "physical": 82,
+      "printed": 70,
+      "y": 172.61135864257812,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 54,
+      "old_toc_title": "  제2항 변수별 설문문항 요약",
+      "body_text": "제2항 변수별 설문 문항 요약",
+      "kind": "heading",
+      "physical": 83,
+      "printed": 71,
+      "y": 227.15174865722656,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 55,
+      "old_toc_title": "  제3항 본 설문지의 최종 구성",
+      "body_text": "제3항 본 설문지의 최종 구성",
+      "kind": "heading",
+      "physical": 87,
+      "printed": 75,
+      "y": 349.17840576171875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 56,
+      "old_toc_title": " 제5절 자료수집과 분석방법",
+      "body_text": "제5절 자료 수집과 분석방법",
+      "kind": "heading",
+      "physical": 88,
+      "printed": 76,
+      "y": 558.1100463867188,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 57,
+      "old_toc_title": "  제1항 데이터 수집 표본 설계",
+      "body_text": "제1항 데이터 수집 표본 설계",
+      "kind": "heading",
+      "physical": 88,
+      "printed": 76,
+      "y": 607.0166625976562,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 58,
+      "old_toc_title": "  제2항 분석절차",
+      "body_text": "제2항 분석 절차",
+      "kind": "heading",
+      "physical": 90,
+      "printed": 78,
+      "y": 416.9043884277344,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 59,
+      "old_toc_title": "제5장 실증분석 결과",
+      "body_text": "제5장 실증분석 결과",
+      "kind": "heading",
+      "physical": 95,
+      "printed": 83,
+      "y": 127.66049194335938,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 60,
+      "old_toc_title": " 제1절 조사대상자의 인구통계학적 특성",
+      "body_text": "제1절 조사 대상자의 인구통계학적 특성",
+      "kind": "heading",
+      "physical": 95,
+      "printed": 83,
+      "y": 405.7565612792969,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 61,
+      "old_toc_title": " 제2절 측정도구의 신뢰도 및 타당도 검증",
+      "body_text": "제2절 측정도구의 신뢰도 및 타당도 검증",
+      "kind": "heading",
+      "physical": 98,
+      "printed": 86,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 62,
+      "old_toc_title": " 제3절 기술통계 및 집단 동질성 검증",
+      "body_text": "제3절 기술통계 및 사전 특성 분포·균형 진단",
+      "kind": "heading",
+      "physical": 101,
+      "printed": 89,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 63,
+      "old_toc_title": "  제1항 주요 변수의 기술통계",
+      "body_text": "제1항 주요 변수의 기술통계",
+      "kind": "heading",
+      "physical": 101,
+      "printed": 89,
+      "y": 172.61135864257812,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 64,
+      "old_toc_title": "  제2항 두 집단의 사전 특성 동질성 검증",
+      "body_text": "제2항 두 집단의 사전 특성 분포·균형 진단",
+      "kind": "heading",
+      "physical": 104,
+      "printed": 92,
+      "y": 313.8170471191406,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 65,
+      "old_toc_title": " 제4절 가설 검정: 공분산분석(ANCOVA)",
+      "body_text": "제4절 가설 검정: 현장 임의절편 선형혼합모형",
+      "kind": "heading",
+      "physical": 106,
+      "printed": 94,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 66,
+      "old_toc_title": "  제1항 공분산분석 가정 점검",
+      "body_text": "제1항 혼합모형 가정 및 적합 상태 점검",
+      "kind": "heading",
+      "physical": 106,
+      "printed": 94,
+      "y": 172.61135864257812,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 67,
+      "old_toc_title": "  제2항 안전관리 실효성에 대한 공분산분석",
+      "body_text": "제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형",
+      "kind": "heading",
+      "physical": 109,
+      "printed": 97,
+      "y": 123.82467651367188,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 68,
+      "old_toc_title": "  제3항 안전관리 실효성 하위영역별 공분산분석",
+      "body_text": "제3항 안전관리 실효성 하위영역별 혼합모형",
+      "kind": "heading",
+      "physical": 111,
+      "printed": 99,
+      "y": 234.8233642578125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 69,
+      "old_toc_title": " 제5절 탐색적 보조 분석",
+      "body_text": "제5절 탐색적 보조 분석",
+      "kind": "heading",
+      "physical": 112,
+      "printed": 100,
+      "y": 492.062255859375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 70,
+      "old_toc_title": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "body_text": "제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "kind": "heading",
+      "physical": 112,
+      "printed": 100,
+      "y": 635.3057250976562,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 71,
+      "old_toc_title": " 제6절 연구결과 및 논의",
+      "body_text": "제6절 연구 결과 및 논의",
+      "kind": "heading",
+      "physical": 115,
+      "printed": 103,
+      "y": 135.2122344970703,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 72,
+      "old_toc_title": "  제1항 연구결과 종합",
+      "body_text": "제1항 연구 결과 종합",
+      "kind": "heading",
+      "physical": 115,
+      "printed": 103,
+      "y": 184.2386474609375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 73,
+      "old_toc_title": "  제2항 논의",
+      "body_text": "제2항 논의",
+      "kind": "heading",
+      "physical": 116,
+      "printed": 104,
+      "y": 174.8888702392578,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 74,
+      "old_toc_title": "제6장 결론",
+      "body_text": "제6장 결론",
+      "kind": "heading",
+      "physical": 118,
+      "printed": 106,
+      "y": 127.66049194335938,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 75,
+      "old_toc_title": " 제1절 연구결과의 요약",
+      "body_text": "제1절 연구 결과의 요약",
+      "kind": "heading",
+      "physical": 118,
+      "printed": 106,
+      "y": 178.48495483398438,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 76,
+      "old_toc_title": " 제2절 논의",
+      "body_text": "제2절 논의",
+      "kind": "heading",
+      "physical": 120,
+      "printed": 108,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 77,
+      "old_toc_title": "  1. AI 관제 시스템 도입 효과 비교 결과에 관한 논의",
+      "body_text": "1. AI 관제 시스템 도입 여부에 따른 집단 비교 결과에 관한 논의 [DATA PENDING]",
+      "kind": "heading",
+      "physical": 120,
+      "printed": 108,
+      "y": 172.61135864257812,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 78,
+      "old_toc_title": "  2. 안전관리 실효성 하위영역 비교 결과에 관한 논의",
+      "body_text": "2. 안전관리 실효성 하위영역 비교 결과에 관한 논의 [DATA PENDING]",
+      "kind": "heading",
+      "physical": 120,
+      "printed": 108,
+      "y": 245.851318359375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 79,
+      "old_toc_title": "  3. 예산 제약성에 따른 도입 효과 차이에 관한 탐색적 논의",
+      "body_text": "3. 예산 제약성에 따른 집단 차이에 관한 탐색적 논의 [DATA PENDING]",
+      "kind": "heading",
+      "physical": 120,
+      "printed": 108,
+      "y": 318.9714050292969,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 80,
+      "old_toc_title": " 제3절 시사점",
+      "body_text": "제3절 시사점",
+      "kind": "heading",
+      "physical": 120,
+      "printed": 108,
+      "y": 392.09149169921875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 81,
+      "old_toc_title": "  1. 실무적 시사점",
+      "body_text": "1. 실무적 시사점",
+      "kind": "heading",
+      "physical": 120,
+      "printed": 108,
+      "y": 503.0901794433594,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 82,
+      "old_toc_title": "  2. 학술적 시사점",
+      "body_text": "2. 학술적 시사점",
+      "kind": "heading",
+      "physical": 121,
+      "printed": 109,
+      "y": 458.4989318847656,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 83,
+      "old_toc_title": "  3. 정책적 시사점",
+      "body_text": "3. 정책적 시사점",
+      "kind": "heading",
+      "physical": 122,
+      "printed": 110,
+      "y": 310.2209777832031,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 84,
+      "old_toc_title": " 제4절 연구의 한계",
+      "body_text": "제4절 연구의 한계",
+      "kind": "heading",
+      "physical": 123,
+      "printed": 111,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 85,
+      "old_toc_title": " 제5절 향후 연구방향",
+      "body_text": "제5절 향후 연구 방향",
+      "kind": "heading",
+      "physical": 126,
+      "printed": 114,
+      "y": 123.7048110961914,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 86,
+      "old_toc_title": "참고문헌",
+      "body_text": "참고문헌",
+      "kind": "heading",
+      "physical": 127,
+      "printed": 115,
+      "y": 127.66049194335938,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 87,
+      "old_toc_title": "부 록 (도입 현장)",
+      "body_text": "부   록 (도입 현장)",
+      "kind": "heading",
+      "physical": 132,
+      "printed": 120,
+      "y": 106.92314910888672,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 88,
+      "old_toc_title": " Part A. 인구통계학적 특성",
+      "body_text": "Part A. 인구통계학적 특성",
+      "kind": "heading",
+      "physical": 133,
+      "printed": 121,
+      "y": 107.04301452636719,
+      "candidate_count": 2
+    },
+    {
+      "toc_idx": 89,
+      "old_toc_title": " Part B. 안전관리 실효성",
+      "body_text": "Part B. 안전관리 실효성",
+      "kind": "heading",
+      "physical": 135,
+      "printed": 123,
+      "y": 107.15999603271484,
+      "candidate_count": 2
+    },
+    {
+      "toc_idx": 90,
+      "old_toc_title": " Part C. 안전관리 예산 제약성",
+      "body_text": "Part C. 안전관리 예산 제약성",
+      "kind": "heading",
+      "physical": 136,
+      "printed": 124,
+      "y": 107.15999603271484,
+      "candidate_count": 2
+    },
+    {
+      "toc_idx": 91,
+      "old_toc_title": " 도입 현장 전용부",
+      "body_text": "도입 현장 전용부",
+      "kind": "heading",
+      "physical": 137,
+      "printed": 125,
+      "y": 107.15999603271484,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 92,
+      "old_toc_title": " Part D. 시스템 특성 인식",
+      "body_text": "Part D. 시스템 특성 인식",
+      "kind": "heading",
+      "physical": 137,
+      "printed": 125,
+      "y": 133.67999267578125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 93,
+      "old_toc_title": " Part E. 경보 피로도 완화",
+      "body_text": "Part E. 경보 피로도 완화",
+      "kind": "heading",
+      "physical": 138,
+      "printed": 126,
+      "y": 562.0800170898438,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 94,
+      "old_toc_title": "부 록 (미도입 현장)",
+      "body_text": "부   록 (미도입 현장)",
+      "kind": "heading",
+      "physical": 140,
+      "printed": 128,
+      "y": 107.04000091552734,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 95,
+      "old_toc_title": " Part A. 인구통계학적 특성",
+      "body_text": "Part A. 인구통계학적 특성",
+      "kind": "heading",
+      "physical": 141,
+      "printed": 129,
+      "y": 107.15999603271484,
+      "candidate_count": 2
+    },
+    {
+      "toc_idx": 96,
+      "old_toc_title": " Part B. 안전관리 실효성",
+      "body_text": "Part B. 안전관리 실효성",
+      "kind": "heading",
+      "physical": 143,
+      "printed": 131,
+      "y": 107.15999603271484,
+      "candidate_count": 2
+    },
+    {
+      "toc_idx": 97,
+      "old_toc_title": " Part C. 안전관리 예산 제약성",
+      "body_text": "Part C. 안전관리 예산 제약성",
+      "kind": "heading",
+      "physical": 144,
+      "printed": 132,
+      "y": 107.15999603271484,
+      "candidate_count": 2
+    },
+    {
+      "toc_idx": 98,
+      "old_toc_title": "Abstract",
+      "body_text": "Abstract",
+      "kind": "heading",
+      "physical": 145,
+      "printed": 133,
+      "y": 127.80000305175781,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 102,
+      "old_toc_title": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "body_text": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "kind": "table",
+      "physical": 26,
+      "printed": 14,
+      "y": 134.8482208251953,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 103,
+      "old_toc_title": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "body_text": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "kind": "table",
+      "physical": 29,
+      "printed": 17,
+      "y": 258.7927551269531,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 104,
+      "old_toc_title": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "body_text": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "kind": "table",
+      "physical": 30,
+      "printed": 18,
+      "y": 320.7650451660156,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 105,
+      "old_toc_title": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "body_text": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "kind": "table",
+      "physical": 38,
+      "printed": 26,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 106,
+      "old_toc_title": "<표 2-5> 스마트 안전기술 도입 효과 선행연구 종합",
+      "body_text": "<표 2-5> 스마트 안전기술 도입 효과 선행연구 종합",
+      "kind": "table",
+      "physical": 44,
+      "printed": 32,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 107,
+      "old_toc_title": "<표 2-6> 선행연구와 본 연구의 차별성",
+      "body_text": "<표 2-6> 선행연구와 본 연구의 차별성",
+      "kind": "table",
+      "physical": 45,
+      "printed": 33,
+      "y": 223.671142578125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 108,
+      "old_toc_title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "body_text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "kind": "table",
+      "physical": 50,
+      "printed": 38,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 109,
+      "old_toc_title": "<표 3-2> 시스템 모듈 구성과 역할",
+      "body_text": "<표 3-2> 시스템 모듈 구성과 역할",
+      "kind": "table",
+      "physical": 52,
+      "printed": 40,
+      "y": 196.82049560546875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 110,
+      "old_toc_title": "<표 3-3> 시스템 구현 기술 스택",
+      "body_text": "<표 3-3> 시스템 구현 기술 스택",
+      "kind": "table",
+      "physical": 62,
+      "printed": 50,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 111,
+      "old_toc_title": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "body_text": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "kind": "table",
+      "physical": 64,
+      "printed": 52,
+      "y": 589.3914794921875,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 112,
+      "old_toc_title": "<표 3-5> 성능평가 지표 정의와 측정 목적",
+      "body_text": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "kind": "table",
+      "physical": 65,
+      "printed": 53,
+      "y": 362.1198425292969,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 113,
+      "old_toc_title": "<표 3-6> 1차 단독 대 2단계 파이프라인 성능 비교(n=878, 196.8시간, 38대 카메라)",
+      "body_text": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "kind": "table",
+      "physical": 66,
+      "printed": 54,
+      "y": 381.17901611328125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 114,
+      "old_toc_title": "<표 3-7> 제로샷·고정-k·RAG의 성능 비교(n=202, 6개 카메라)",
+      "body_text": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "kind": "table",
+      "physical": 68,
+      "printed": 56,
+      "y": 126.69712829589844,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 115,
+      "old_toc_title": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교",
+      "body_text": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)",
+      "kind": "table",
+      "physical": 70,
+      "printed": 58,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 116,
+      "old_toc_title": "<표 4-1> 연구변수의 구성",
+      "body_text": "<표 4-1> 연구변수의 구성",
+      "kind": "table",
+      "physical": 74,
+      "printed": 62,
+      "y": 308.41851806640625,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 117,
+      "old_toc_title": "<표 4-2> 연구가설 종합",
+      "body_text": "<표 4-2> 연구 가설 종합",
+      "kind": "table",
+      "physical": 77,
+      "printed": 65,
+      "y": 444.7095947265625,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 118,
+      "old_toc_title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "body_text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "kind": "table",
+      "physical": 81,
+      "printed": 69,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 119,
+      "old_toc_title": "<표 4-4> 설문지의 최종 구성",
+      "body_text": "<표 4-4> 설문지의 최종 구성",
+      "kind": "table",
+      "physical": 88,
+      "printed": 76,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 120,
+      "old_toc_title": "<표 4-5> 자료수집 개요",
+      "body_text": "<표 4-5> 자료 수집 개요",
+      "kind": "table",
+      "physical": 90,
+      "printed": 78,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 121,
+      "old_toc_title": "<표 5-1> 조사대상의 인구통계학적 특성 (집단별)",
+      "body_text": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "kind": "table",
+      "physical": 97,
+      "printed": 85,
+      "y": 114.11087799072266,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 122,
+      "old_toc_title": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "body_text": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "kind": "table",
+      "physical": 99,
+      "printed": 87,
+      "y": 107.76223754882812,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 123,
+      "old_toc_title": "<표 5-3> 주요 변수의 기술통계 (집단별)",
+      "body_text": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "kind": "table",
+      "physical": 102,
+      "printed": 90,
+      "y": 109.43598937988281,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 124,
+      "old_toc_title": "<표 5-4> 두 집단의 사전 특성 동질성 검증 결과",
+      "body_text": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "kind": "table",
+      "physical": 104,
+      "printed": 92,
+      "y": 453.10040283203125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 125,
+      "old_toc_title": "<표 5-5> 공분산분석 가정 점검 결과 (독립성·정규성·등분산성·회귀기울기 동질성)",
+      "body_text": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "kind": "table",
+      "physical": 107,
+      "printed": 95,
+      "y": 116.98773956298828,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 126,
+      "old_toc_title": "<표 5-6> 안전관리 실효성에 대한 공분산분석 결과 (조정 평균 포함)",
+      "body_text": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "kind": "table",
+      "physical": 109,
+      "printed": 97,
+      "y": 424.81573486328125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 127,
+      "old_toc_title": "<표 5-7> 하위영역별 공분산분석 결과",
+      "body_text": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "kind": "table",
+      "physical": 111,
+      "printed": 99,
+      "y": 351.4515075683594,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 128,
+      "old_toc_title": "<표 5-8> 탐색적 보조 분석 결과",
+      "body_text": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "kind": "table",
+      "physical": 113,
+      "printed": 101,
+      "y": 166.01856994628906,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 129,
+      "old_toc_title": "<표 5-9> 연구가설 검증 결과 종합",
+      "body_text": "<표 5-9> 연구 가설 검증 결과 종합",
+      "kind": "table",
+      "physical": 115,
+      "printed": 103,
+      "y": 300.0277099609375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 133,
+      "old_toc_title": "<그림 1-1> 산업별 업무상사고 사망재해 분포도",
+      "body_text": "<그림 1-1> 산업별 업무상사고 사망재해 분포도",
+      "kind": "figure",
+      "physical": 13,
+      "printed": 1,
+      "y": 673.064453125,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 134,
+      "old_toc_title": "<그림 1-2> 연도별 업무상사고 사망재해 추이",
+      "body_text": "<그림 1-2> 연도별 업무상사고 사망재해 추이",
+      "kind": "figure",
+      "physical": 14,
+      "printed": 2,
+      "y": 436.4430236816406,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 135,
+      "old_toc_title": "<그림 1-3> 연구의 흐름도",
+      "body_text": "<그림 1-3> 연구의 흐름도",
+      "kind": "figure",
+      "physical": 21,
+      "printed": 9,
+      "y": 502.1312561035156,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 136,
+      "old_toc_title": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "body_text": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "kind": "figure",
+      "physical": 51,
+      "printed": 39,
+      "y": 614.2088012695312,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 137,
+      "old_toc_title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "body_text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "kind": "figure",
+      "physical": 56,
+      "printed": 44,
+      "y": 639.6210327148438,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 138,
+      "old_toc_title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "body_text": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "kind": "figure",
+      "physical": 59,
+      "printed": 47,
+      "y": 639.6210327148438,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 139,
+      "old_toc_title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "body_text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "kind": "figure",
+      "physical": 63,
+      "printed": 51,
+      "y": 355.65130615234375,
+      "candidate_count": 1
+    },
+    {
+      "toc_idx": 140,
+      "old_toc_title": "<그림 4-1> 연구모형",
+      "body_text": "<그림 4-1> 연구 모형",
+      "kind": "figure",
+      "physical": 75,
+      "printed": 63,
+      "y": 617.6849975585938,
+      "candidate_count": 1
+    }
+  ],
+  "unresolved": [],
+  "pages": 145
+}

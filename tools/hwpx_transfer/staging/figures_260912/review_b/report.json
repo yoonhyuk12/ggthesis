@@ -1,0 +1,2136 @@
+{
+  "target": "tools/hwpx_transfer/staging/figures_260912/final.pdf",
+  "sha256": "50b3290b239e9b2b06e4b9ccd4aebd680d353e2fa19920262576f31948d986c4",
+  "source_cells": "tools/hwpx_transfer/staging/figures_260912/tables.json",
+  "scope_physical_pages": [
+    61,
+    120
+  ],
+  "review_complete": true,
+  "layout_verdict": "issues_found",
+  "summary": {
+    "pages_visually_inspected": 60,
+    "table_pages": 35,
+    "source_table_objects": 39,
+    "nonempty_source_paragraphs_checked": 1001,
+    "source_text_missing_count": 0,
+    "last_row_clipping_observed": false,
+    "footer_intrusion_observed": false,
+    "issue_severity_counts": {
+      "high": 1,
+      "medium": 1,
+      "low": 2
+    }
+  },
+  "inspected_table_pages": [
+    61,
+    63,
+    64,
+    65,
+    69,
+    72,
+    75,
+    77,
+    78,
+    79,
+    80,
+    81,
+    83,
+    86,
+    87,
+    88,
+    89,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "continuation_panel_pages": [
+    88,
+    94,
+    97
+  ],
+  "nested_survey_table_pages": [
+    111,
+    117
+  ],
+  "figure_pages": [
+    70
+  ],
+  "method": [
+    "Rendered all 60 physical pages with PyMuPDF/fitz at 1.6x (115.2 dpi), saved full-page PNGs and 15 four-page contact sheets, and visually inspected every sheet.",
+    "Additional full-page inspection of 70,108,109,113; high-resolution crops retained for collisions and survey header.",
+    "Matched every nonempty source table paragraph after whitespace normalization on its mapped rendered page, including all final-row source paragraphs.",
+    "Collected page/footnote coordinates and large-drawing lower bounds as supporting footer-clearance evidence. Drawing lower bound includes non-table rules and is conservative, not an automatically inferred table bbox."
+  ],
+  "limits": [
+    "Read-only PDF/source-JSON review; no HWPX reads/writes, MCP, COM or delegation.",
+    "No earlier PDF baseline was inspected; no issue is labeled chronologically preexisting. Source-present evidence only identifies what was already encoded in supplied tables.json.",
+    "This is a layout review, not a substantive statistical, citation or source-authenticity audit. Red pending markers and intentionally blank result values were not counted as clipping."
+  ],
+  "issues": [
+    {
+      "id": "B01",
+      "severity": "high",
+      "pages": [
+        108,
+        109
+      ],
+      "category": "incidental bibliography legibility",
+      "description": "English reference continuation lines have severe horizontal character collisions. Page 108 Davis, Pisu and Podsakoff endings are compressed; page 109 the Yao continuation at the top is substantially unreadable, and the MonitorVLM ending also collides. Text extraction recovers strings but the rendered glyphs overlap.",
+      "origin": "unknown; no earlier rendered baseline inspected",
+      "bbox_evidence": {
+        "108": [
+          [
+            104.94,
+            416.54,
+            517.35,
+            431.07
+          ],
+          [
+            104.94,
+            525.75,
+            516.63,
+            540.27
+          ],
+          [
+            104.94,
+            591.31,
+            517.11,
+            605.84
+          ]
+        ],
+        "109": [
+          [
+            104.94,
+            107.76,
+            518.66,
+            122.29
+          ],
+          [
+            104.94,
+            509.56,
+            517.0,
+            524.09
+          ]
+        ]
+      },
+      "evidence": [
+        "p108.png",
+        "p109.png",
+        "crop_bibliography_108.png",
+        "crop_bibliography_109_top.png",
+        "crop_bibliography_109_bottom.png"
+      ],
+      "recommendation": "Repair character spacing/line composition for these reference paragraphs and re-render the affected pages."
+    },
+    {
+      "id": "B02",
+      "severity": "medium",
+      "pages": [
+        80,
+        81,
+        85,
+        86,
+        90,
+        91
+      ],
+      "category": "floating table placement interrupts reading order",
+      "description": "Table 4-4 occupies the top of page 81 between the final syllable sequence 건설현장에 on page 80 and 서 안전관리 업무를 수행하는 on page 81, splitting a sentence with an entire unrelated table. Table 5-1 appears on page 86 after the section-2 reliability heading at the end of page 85; Table 5-4 appears on page 91 after the section-4 ANCOVA heading at the end of page 90. These latter two tables visually fall under the following section rather than the demographics/homogeneity section they summarize.",
+      "origin": "unknown; no earlier rendered baseline inspected",
+      "evidence": [
+        "sheet77.png",
+        "sheet81.png",
+        "sheet85.png",
+        "sheet89.png"
+      ],
+      "recommendation": "Place each floating table with its introducing paragraph and before the next section heading; avoid inserting tables inside a continued sentence."
+    },
+    {
+      "id": "B03",
+      "severity": "low",
+      "pages": [
+        87,
+        88,
+        93,
+        94,
+        96,
+        97
+      ],
+      "category": "detached continuation-panel identification",
+      "description": "Table 5-2 panel B, Table 5-6 panel B and Table 5-8 panel B have their explanatory panel labels on pages 87, 93 and 96, while the corresponding grids start pages 88, 94 and 97 without a repeated table number, panel label or continuation indication. Column headings and all final rows are intact.",
+      "origin": "unknown; source tables 26,31,34 contain column headings but no standalone table/panel caption",
+      "evidence": [
+        "sheet85.png",
+        "sheet93.png",
+        "sheet97.png"
+      ],
+      "recommendation": "Keep each panel label with its grid or repeat a compact table-number/panel caption on the continuation page."
+    },
+    {
+      "id": "B04",
+      "severity": "low",
+      "pages": [
+        112,
+        113,
+        114,
+        115,
+        118,
+        119
+      ],
+      "category": "survey header grid clarity",
+      "description": "All six Likert tables show two empty subdivided grid bands beneath the three anchor labels; band boundaries do not align consistently with the five answer columns below, most conspicuously in Part C. Header positions 2 and 4 are blank, while the complete five-point wording remains in the instruction line above and all numbered answers 1-5 and final question rows are visible. This is a source-present header design defect, not demonstrated PDF text omission.",
+      "origin": "Source-present: tables.json indices 39,40,41,42,46,47 row 0 columns 4 and 8 have empty paragraphs; rows 1 and 2 are empty cells with mixed spans. No chronological claim that it predates the current editing task.",
+      "source_indices": [
+        39,
+        40,
+        41,
+        42,
+        46,
+        47
+      ],
+      "evidence": [
+        "p113.png",
+        "sheet109.png",
+        "sheet113.png",
+        "sheet117.png",
+        "crop_survey_header_113.png"
+      ],
+      "recommendation": "Simplify header to one row aligned with the five response columns, with consistently chosen anchor labels."
+    }
+  ],
+  "pages": [
+    {
+      "physical_page": 61,
+      "printed_page": 50,
+      "render": "p061.png",
+      "visually_inspected": true,
+      "table_indices": [
+        9,
+        10
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 9,
+          "source_rows": 4,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 9,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 3,
+          "last_row_source_text": [
+            "LLM: 오탐(BLOCK)",
+            "FN — 위음성(위험 누락)",
+            "TN — 진음성(안전 차단 성공)"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        },
+        {
+          "source_index": 10,
+          "source_rows": 8,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 22,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 7,
+          "last_row_source_text": [
+            "정확도(Accuracy)",
+            "(TP+TN)/N",
+            "전체 판정의 정확률, 종합 신뢰성"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 700.0339965820312,
+      "drawing_to_footer_gap_pt": 42.39141845703125
+    },
+    {
+      "physical_page": 62,
+      "printed_page": 51,
+      "render": "p062.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 63,
+      "printed_page": 52,
+      "render": "p063.png",
+      "visually_inspected": true,
+      "table_indices": [
+        11
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 11,
+          "source_rows": 11,
+          "source_cols": 4,
+          "nonempty_source_paragraphs_checked": 41,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 10,
+          "last_row_source_text": [
+            "특이도(Specificity)",
+            "0.000",
+            "0.984 [0.974, 0.991]",
+            "+0.984"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 376.9880065917969,
+      "drawing_to_footer_gap_pt": 365.4374084472656
+    },
+    {
+      "physical_page": 64,
+      "printed_page": 53,
+      "render": "p064.png",
+      "visually_inspected": true,
+      "table_indices": [
+        12
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 12,
+          "source_rows": 6,
+          "source_cols": 6,
+          "nonempty_source_paragraphs_checked": 32,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 5,
+          "last_row_source_text": [
+            "RAG 동적선택",
+            "(제안)",
+            "0.462",
+            "0.250",
+            "0.324",
+            "0.876",
+            "7"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 344.1440124511719,
+      "drawing_to_footer_gap_pt": 398.2814025878906
+    },
+    {
+      "physical_page": 65,
+      "printed_page": 54,
+      "render": "p065.png",
+      "visually_inspected": true,
+      "table_indices": [
+        13
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 13,
+          "source_rows": 6,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 16,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 5,
+          "last_row_source_text": [
+            "첫해 TCO",
+            "4,540",
+            "210(약 95% 절감)"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 415.22601318359375,
+      "drawing_to_footer_gap_pt": 327.19940185546875
+    },
+    {
+      "physical_page": 66,
+      "printed_page": 55,
+      "render": "p066.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 67,
+      "printed_page": 56,
+      "render": "p067.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 68,
+      "printed_page": 57,
+      "render": "p068.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 69,
+      "printed_page": 58,
+      "render": "p069.png",
+      "visually_inspected": true,
+      "table_indices": [
+        14
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 14,
+          "source_rows": 7,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 19,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 6,
+          "last_row_source_text": [
+            "참고 변수",
+            "경보 피로도 완화 인식",
+            "주 분석에 투입하지 않고 도입 집단의 기술통계만 보고하는 전용 응답 변수"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 516.635009765625,
+      "drawing_to_footer_gap_pt": 225.7904052734375
+    },
+    {
+      "physical_page": 70,
+      "printed_page": 59,
+      "render": "p070.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": "Figure 4-1 research model",
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 71,
+      "printed_page": 60,
+      "render": "p071.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 72,
+      "printed_page": 61,
+      "render": "p072.png",
+      "visually_inspected": true,
+      "table_indices": [
+        15
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 15,
+          "source_rows": 4,
+          "source_cols": 4,
+          "nonempty_source_paragraphs_checked": 13,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 3,
+          "last_row_source_text": [
+            "H2",
+            "탐색적·보조",
+            "예산 제약성이 큰 현장일수록 도입에 따른 안전관리 실효성 차이가 더 클 것이다.",
+            "집단 × W → Y"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 533.89599609375,
+      "drawing_to_footer_gap_pt": 208.5294189453125
+    },
+    {
+      "physical_page": 73,
+      "printed_page": 62,
+      "render": "p073.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 74,
+      "printed_page": 63,
+      "render": "p074.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 75,
+      "printed_page": 64,
+      "render": "p075.png",
+      "visually_inspected": true,
+      "table_indices": [
+        16
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 16,
+          "source_rows": 8,
+          "source_cols": 6,
+          "nonempty_source_paragraphs_checked": 43,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 7,
+          "last_row_source_text": [
+            "공변량",
+            "소속 구분·성별·연령·경력·직위·현장 공사금액 규모",
+            "전체 응답자",
+            "6",
+            "명목·서열",
+            "연구자 구성"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 704.22998046875,
+      "drawing_to_footer_gap_pt": 38.1954345703125
+    },
+    {
+      "physical_page": 76,
+      "printed_page": 65,
+      "render": "p076.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 77,
+      "printed_page": 66,
+      "render": "p077.png",
+      "visually_inspected": true,
+      "table_indices": [
+        17,
+        18
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 17,
+          "source_rows": 7,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 21,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 6,
+          "last_row_source_text": [
+            "A-6",
+            "현장 공사금액 규모",
+            "공변량 및 집단 동질성 검증"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        },
+        {
+          "source_index": 18,
+          "source_rows": 9,
+          "source_cols": 4,
+          "nonempty_source_paragraphs_checked": 36,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 8,
+          "last_row_source_text": [
+            "B-8",
+            "우리 현장의 안전관리 방식은 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다.",
+            "위험 통제력",
+            "[38, 41, 44]"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 699.9140014648438,
+      "drawing_to_footer_gap_pt": 42.51141357421875
+    },
+    {
+      "physical_page": 78,
+      "printed_page": 67,
+      "render": "p078.png",
+      "visually_inspected": true,
+      "table_indices": [
+        19
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 19,
+          "source_rows": 5,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 15,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 4,
+          "last_row_source_text": [
+            "C-4",
+            "소속 기관인 본사 또는 발주처로부터 별도의 스마트 안전 예산을 지원·승인받기 어려운 여건이다.",
+            "[29, 39]"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 317.65301513671875,
+      "drawing_to_footer_gap_pt": 424.77239990234375
+    },
+    {
+      "physical_page": 79,
+      "printed_page": 68,
+      "render": "p079.png",
+      "visually_inspected": true,
+      "table_indices": [
+        20
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 20,
+          "source_rows": 9,
+          "source_cols": 4,
+          "nonempty_source_paragraphs_checked": 36,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 8,
+          "last_row_source_text": [
+            "D-8",
+            "모바일 메신저만으로 직관적인 상황 파악과 현장 지시가 가능하다.",
+            "알림 전파 즉각성",
+            "[38, 41]"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 597.7860107421875,
+      "drawing_to_footer_gap_pt": 144.639404296875
+    },
+    {
+      "physical_page": 80,
+      "printed_page": 69,
+      "render": "p080.png",
+      "visually_inspected": true,
+      "table_indices": [
+        21
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B02"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 21,
+          "source_rows": 5,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 15,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 4,
+          "last_row_source_text": [
+            "E-4",
+            "본 시스템 도입 이후 경보 알림에 대한 피로감과 부담감이 감소하였다.",
+            "[05, 42]"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 276.2979736328125,
+      "drawing_to_footer_gap_pt": 466.12744140625
+    },
+    {
+      "physical_page": 81,
+      "printed_page": 70,
+      "render": "p081.png",
+      "visually_inspected": true,
+      "table_indices": [
+        22
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B02"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 22,
+          "source_rows": 10,
+          "source_cols": 6,
+          "nonempty_source_paragraphs_checked": 46,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 9,
+          "last_row_source_text": [
+            "현행안 합계",
+            "미도입 집단 18문항, 도입 집단 30문항",
+            "18 또는 30"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 573.6920166015625,
+      "drawing_to_footer_gap_pt": 168.7333984375
+    },
+    {
+      "physical_page": 82,
+      "printed_page": 71,
+      "render": "p082.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 83,
+      "printed_page": 72,
+      "render": "p083.png",
+      "visually_inspected": true,
+      "table_indices": [
+        23
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 23,
+          "source_rows": 11,
+          "source_cols": 2,
+          "nonempty_source_paragraphs_checked": 21,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 10,
+          "last_row_source_text": [
+            "분석 단위",
+            "개인 응답자 단위, 현장 단위 군집 구조 별도 점검"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 359.24700927734375,
+      "drawing_to_footer_gap_pt": 383.17840576171875
+    },
+    {
+      "physical_page": 84,
+      "printed_page": 73,
+      "render": "p084.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 85,
+      "printed_page": 74,
+      "render": "p085.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [
+        "B02"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 86,
+      "printed_page": 75,
+      "render": "p086.png",
+      "visually_inspected": true,
+      "table_indices": [
+        24
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B02"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 24,
+          "source_rows": 26,
+          "source_cols": 8,
+          "nonempty_source_paragraphs_checked": 46,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 25,
+          "last_row_source_text": [
+            "합계"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 679.656005859375,
+      "drawing_to_footer_gap_pt": 62.7694091796875
+    },
+    {
+      "physical_page": 87,
+      "printed_page": 76,
+      "render": "p087.png",
+      "visually_inspected": true,
+      "table_indices": [
+        25
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B03"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 25,
+          "source_rows": 8,
+          "source_cols": 8,
+          "nonempty_source_paragraphs_checked": 22,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 7,
+          "last_row_source_text": [
+            "안전관리 예산 제약성",
+            "전체"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 525.7449951171875,
+      "drawing_to_footer_gap_pt": 216.680419921875
+    },
+    {
+      "physical_page": 88,
+      "printed_page": 77,
+      "render": "p088.png",
+      "visually_inspected": true,
+      "table_indices": [
+        26
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B03"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 26,
+          "source_rows": 3,
+          "source_cols": 9,
+          "nonempty_source_paragraphs_checked": 11,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 2,
+          "last_row_source_text": [
+            "안전관리 예산 제약성 문항"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 312.49798583984375,
+      "drawing_to_footer_gap_pt": 429.92742919921875
+    },
+    {
+      "physical_page": 89,
+      "printed_page": 78,
+      "render": "p089.png",
+      "visually_inspected": true,
+      "table_indices": [
+        27
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 27,
+          "source_rows": 18,
+          "source_cols": 7,
+          "nonempty_source_paragraphs_checked": 32,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 17,
+          "last_row_source_text": [
+            "경보 피로도 완화 인식",
+            "도입"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 662.156005859375,
+      "drawing_to_footer_gap_pt": 80.2694091796875
+    },
+    {
+      "physical_page": 90,
+      "printed_page": 79,
+      "render": "p090.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [
+        "B02"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 91,
+      "printed_page": 80,
+      "render": "p091.png",
+      "visually_inspected": true,
+      "table_indices": [
+        28
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B02"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 28,
+          "source_rows": 8,
+          "source_cols": 9,
+          "nonempty_source_paragraphs_checked": 22,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 7,
+          "last_row_source_text": [
+            "현장 공사금액 규모"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 374.95001220703125,
+      "drawing_to_footer_gap_pt": 367.47540283203125
+    },
+    {
+      "physical_page": 92,
+      "printed_page": 81,
+      "render": "p092.png",
+      "visually_inspected": true,
+      "table_indices": [
+        29
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 29,
+          "source_rows": 11,
+          "source_cols": 8,
+          "nonempty_source_paragraphs_checked": 40,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 10,
+          "last_row_source_text": [
+            "잔차 정규성",
+            "전체 모형 잔차",
+            "Q-Q 도표",
+            "해당 없음",
+            "해당 없음"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 690.6840209960938,
+      "drawing_to_footer_gap_pt": 51.74139404296875
+    },
+    {
+      "physical_page": 93,
+      "printed_page": 82,
+      "render": "p093.png",
+      "visually_inspected": true,
+      "table_indices": [
+        30
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B03"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 30,
+          "source_rows": 4,
+          "source_cols": 8,
+          "nonempty_source_paragraphs_checked": 17,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 3,
+          "last_row_source_text": [
+            "도입−미도입",
+            "해당 없음",
+            "해당 없음"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 616.365966796875,
+      "drawing_to_footer_gap_pt": 126.0594482421875
+    },
+    {
+      "physical_page": 94,
+      "printed_page": 83,
+      "render": "p094.png",
+      "visually_inspected": true,
+      "table_indices": [
+        31
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B03"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 31,
+          "source_rows": 9,
+          "source_cols": 7,
+          "nonempty_source_paragraphs_checked": 18,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 8,
+          "last_row_source_text": [
+            "오차",
+            "해당 없음",
+            "해당 없음",
+            "해당 없음"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 345.4620056152344,
+      "drawing_to_footer_gap_pt": 396.9634094238281
+    },
+    {
+      "physical_page": 95,
+      "printed_page": 84,
+      "render": "p095.png",
+      "visually_inspected": true,
+      "table_indices": [
+        32
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 32,
+          "source_rows": 7,
+          "source_cols": 8,
+          "nonempty_source_paragraphs_checked": 16,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 6,
+          "last_row_source_text": [
+            "위험 통제력"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 457.89898681640625,
+      "drawing_to_footer_gap_pt": 284.52642822265625
+    },
+    {
+      "physical_page": 96,
+      "printed_page": 85,
+      "render": "p096.png",
+      "visually_inspected": true,
+      "table_indices": [
+        33
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B03"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 33,
+          "source_rows": 4,
+          "source_cols": 7,
+          "nonempty_source_paragraphs_checked": 10,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 3,
+          "last_row_source_text": [
+            "집단×안전관리 예산 제약성"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 527.4229736328125,
+      "drawing_to_footer_gap_pt": 215.00244140625
+    },
+    {
+      "physical_page": 97,
+      "printed_page": 86,
+      "render": "p097.png",
+      "visually_inspected": true,
+      "table_indices": [
+        34
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B03"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 34,
+          "source_rows": 4,
+          "source_cols": 8,
+          "nonempty_source_paragraphs_checked": 11,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 3,
+          "last_row_source_text": [
+            "높음(평균+1SD)"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 259.156005859375,
+      "drawing_to_footer_gap_pt": 483.2694091796875
+    },
+    {
+      "physical_page": 98,
+      "printed_page": 87,
+      "render": "p098.png",
+      "visually_inspected": true,
+      "table_indices": [
+        35
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 35,
+          "source_rows": 4,
+          "source_cols": 6,
+          "nonempty_source_paragraphs_checked": 17,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 3,
+          "last_row_source_text": [
+            "H2",
+            "예산 제약성이 클수록 도입에 따른 안전관리 실효성 차이가 더 클 것이다.",
+            "탐색적 집단×예산 제약성 상호작용 분석",
+            "B 또는 F = [DATA PENDING: 통계량], p = [DATA PENDING: p], 상호작용 방향 = [DATA PENDING: 방향]",
+            "ηp² 또는 ΔR² = [DATA PENDING: 효과크기]"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 435.7229919433594,
+      "drawing_to_footer_gap_pt": 306.7024230957031
+    },
+    {
+      "physical_page": 99,
+      "printed_page": 88,
+      "render": "p099.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 100,
+      "printed_page": 89,
+      "render": "p100.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 101,
+      "printed_page": 90,
+      "render": "p101.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 102,
+      "printed_page": 91,
+      "render": "p102.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 103,
+      "printed_page": 92,
+      "render": "p103.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 104,
+      "printed_page": 93,
+      "render": "p104.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 105,
+      "printed_page": 94,
+      "render": "p105.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 106,
+      "printed_page": 95,
+      "render": "p106.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 107,
+      "printed_page": 96,
+      "render": "p107.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 108,
+      "printed_page": 97,
+      "render": "p108.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [
+        "B01"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 109,
+      "printed_page": 98,
+      "render": "p109.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [
+        "B01"
+      ],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    },
+    {
+      "physical_page": 110,
+      "printed_page": 99,
+      "render": "p110.png",
+      "visually_inspected": true,
+      "table_indices": [
+        36
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        280.64788818359375,
+        742.4254150390625,
+        314.2143249511719,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 36,
+          "source_rows": 2,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 10,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 1,
+          "last_row_source_text": [
+            "안녕하십니까?",
+            "경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.",
+            "먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.",
+            "본 설문은 귀하의 현장에서 운용한 AI 안전 알림 시스템의 사용 경험을 바탕으로 현장의 안전관리 실효성과 시스템 특성 인식을 조사하여, 도입 현장과 미도입 현장의 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다.",
+            "응답에는 정답이 없으며, 시스템을 운용하고 AI 알림을 수신하신 경험에 근거하여 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다.",
+            " 다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다. 설문에 응해 주셔서 진심으로 감사드립니다.",
+            "2026년 9월"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 701.4730224609375,
+      "drawing_to_footer_gap_pt": 40.952392578125
+    },
+    {
+      "physical_page": 111,
+      "printed_page": 100,
+      "render": "p111.png",
+      "visually_inspected": true,
+      "table_indices": [
+        37,
+        38
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        277.6495361328125,
+        742.4254150390625,
+        317.21270751953125,
+        753.453369140625
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 37,
+          "source_rows": 1,
+          "source_cols": 1,
+          "nonempty_source_paragraphs_checked": 16,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 0,
+          "last_row_source_text": [
+            " A-1) 귀하의 소속 구분은 ?",
+            "   ① 시공사   ② 발주청(공사감독·감리원 포함)",
+            " A-2) 귀하의 성별은?",
+            "   ① 남성   ② 여성",
+            " A-3) 귀하의 연령대는?",
+            "   ① 20대   ② 30대   ③ 40대   ④ 50대   ⑤ 60대 이상",
+            " A-4) 귀하의 건설현장 안전관리 또는 공사감독 경력은?",
+            "   ① 3년 미만   ② 3년 이상 ∼ 5년 미만   ③ 5년 이상 ∼ 10년 미만",
+            "   ④ 10년 이상 ∼ 20년 미만   ⑤ 20년 이상",
+            " A-5) 귀하의 직위는?",
+            "   ① 공사감독   ② 안전관리자   ③ 현장소장   ④ 기타 (    )",
+            " A-6) 현재 담당 현장의 공사금액 규모는? ",
+            "      [확정 필요: 공사금액 구간 기준]",
+            "   ① 20억 원 미만   ② 20억 원 이상 ∼ 50억 원 미만",
+            "     ③ 50억 원 이상 ∼ 100억 원 미만",
+            "   ④ 100억 원 이상 ∼ 120억 원 미만   ⑤ 120억 원 이상"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        },
+        {
+          "source_index": 38,
+          "source_rows": 1,
+          "source_cols": 1,
+          "nonempty_source_paragraphs_checked": 1,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 0,
+          "last_row_source_text": [
+            "A. 실태조사 대상자 개요"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 679.5369873046875,
+      "drawing_to_footer_gap_pt": 62.888427734375
+    },
+    {
+      "physical_page": 112,
+      "printed_page": 101,
+      "render": "p112.png",
+      "visually_inspected": true,
+      "table_indices": [
+        39
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B04"
+      ],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 39,
+          "source_rows": 11,
+          "source_cols": 12,
+          "nonempty_source_paragraphs_checked": 64,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 10,
+          "last_row_source_text": [
+            "B-8",
+            "우리 현장의 안전관리 방식은 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다.",
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 690.0850219726562,
+      "drawing_to_footer_gap_pt": 53.1517333984375
+    },
+    {
+      "physical_page": 113,
+      "printed_page": 102,
+      "render": "p113.png",
+      "visually_inspected": true,
+      "table_indices": [
+        40
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B04"
+      ],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 40,
+          "source_rows": 7,
+          "source_cols": 12,
+          "nonempty_source_paragraphs_checked": 36,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 6,
+          "last_row_source_text": [
+            "C-4",
+            "소속 기관인 본사 또는 발주처로부터 별도의 스마트 안전 예산을 지원·승인받기 어려운 여건이다.",
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 602.3410034179688,
+      "drawing_to_footer_gap_pt": 140.895751953125
+    },
+    {
+      "physical_page": 114,
+      "printed_page": 103,
+      "render": "p114.png",
+      "visually_inspected": true,
+      "table_indices": [
+        41
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B04"
+      ],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 41,
+          "source_rows": 11,
+          "source_cols": 12,
+          "nonempty_source_paragraphs_checked": 64,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 10,
+          "last_row_source_text": [
+            "D-8",
+            "모바일 메신저만으로 직관적인 상황 파악과 현장 지시가 가능하다.",
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 696.0789794921875,
+      "drawing_to_footer_gap_pt": 47.15777587890625
+    },
+    {
+      "physical_page": 115,
+      "printed_page": 104,
+      "render": "p115.png",
+      "visually_inspected": true,
+      "table_indices": [
+        42
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B04"
+      ],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 42,
+          "source_rows": 7,
+          "source_cols": 12,
+          "nonempty_source_paragraphs_checked": 36,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 6,
+          "last_row_source_text": [
+            "E-4",
+            "본 시스템 도입 이후 경보 알림에 대한 피로감과 부담감이 감소하였다.",
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 501.4110107421875,
+      "drawing_to_footer_gap_pt": 241.82574462890625
+    },
+    {
+      "physical_page": 116,
+      "printed_page": 105,
+      "render": "p116.png",
+      "visually_inspected": true,
+      "table_indices": [
+        43
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 43,
+          "source_rows": 2,
+          "source_cols": 3,
+          "nonempty_source_paragraphs_checked": 10,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 1,
+          "last_row_source_text": [
+            "안녕하십니까?",
+            "경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.",
+            "먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.",
+            "본 설문은 건설현장의 안전관리 실태와 여건을 조사하여 현장 간 안전관리 실효성의 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다.",
+            "응답에는 정답이 없으며, 귀하가 담당하시는 현장의 안전관리 실태와 여건에 근거하여 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다.",
+            " 다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다. 설문에 응해 주셔서 진심으로 감사드립니다.",
+            "2026년 9월"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 701.4730224609375,
+      "drawing_to_footer_gap_pt": 41.76373291015625
+    },
+    {
+      "physical_page": 117,
+      "printed_page": 106,
+      "render": "p117.png",
+      "visually_inspected": true,
+      "table_indices": [
+        44,
+        45
+      ],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 44,
+          "source_rows": 1,
+          "source_cols": 1,
+          "nonempty_source_paragraphs_checked": 16,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 0,
+          "last_row_source_text": [
+            " A-1) 귀하의 소속 구분은 ?",
+            "   ① 시공사   ② 발주청(공사감독·감리원 포함)",
+            " A-2) 귀하의 성별은?",
+            "   ① 남성   ② 여성",
+            " A-3) 귀하의 연령대는?",
+            "   ① 20대   ② 30대   ③ 40대   ④ 50대   ⑤ 60대 이상",
+            " A-4) 귀하의 건설현장 안전관리 또는 공사감독 경력은?",
+            "   ① 3년 미만   ② 3년 이상 ∼ 5년 미만   ③ 5년 이상 ∼ 10년 미만",
+            "   ④ 10년 이상 ∼ 20년 미만   ⑤ 20년 이상",
+            " A-5) 귀하의 직위는?",
+            "   ① 공사감독   ② 안전관리자   ③ 현장소장   ④ 기타 (    )",
+            " A-6) 현재 담당 현장의 공사금액 규모는? ",
+            "      [확정 필요: 공사금액 구간 기준]",
+            "   ① 20억 원 미만   ② 20억 원 이상 ∼ 50억 원 미만",
+            "     ③ 50억 원 이상 ∼ 100억 원 미만",
+            "   ④ 100억 원 이상 ∼ 120억 원 미만   ⑤ 120억 원 이상"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        },
+        {
+          "source_index": 45,
+          "source_rows": 1,
+          "source_cols": 1,
+          "nonempty_source_paragraphs_checked": 1,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 0,
+          "last_row_source_text": [
+            "A. 실태조사 대상자 개요"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 679.5369873046875,
+      "drawing_to_footer_gap_pt": 63.69976806640625
+    },
+    {
+      "physical_page": 118,
+      "printed_page": 107,
+      "render": "p118.png",
+      "visually_inspected": true,
+      "table_indices": [
+        46
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B04"
+      ],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 46,
+          "source_rows": 11,
+          "source_cols": 12,
+          "nonempty_source_paragraphs_checked": 64,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 10,
+          "last_row_source_text": [
+            "B-8",
+            "우리 현장의 안전관리 방식은 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다.",
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 690.0850219726562,
+      "drawing_to_footer_gap_pt": 53.1517333984375
+    },
+    {
+      "physical_page": 119,
+      "printed_page": 108,
+      "render": "p119.png",
+      "visually_inspected": true,
+      "table_indices": [
+        47
+      ],
+      "figure": null,
+      "issue_ids": [
+        "B04"
+      ],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": [
+        {
+          "source_index": 47,
+          "source_rows": 7,
+          "source_cols": 12,
+          "nonempty_source_paragraphs_checked": 36,
+          "missing_normalized_paragraphs": [],
+          "last_row_zero_based": 6,
+          "last_row_source_text": [
+            "C-4",
+            "소속 기관인 본사 또는 발주처로부터 별도의 스마트 안전 예산을 지원·승인받기 어려운 여건이다.",
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "last_row_visible": true,
+          "last_row_clipping_observed": false,
+          "note": "Source matching supplements visual examination; blank result cells and blank survey header cells are present in the supplied source."
+        }
+      ],
+      "max_large_drawing_bottom_pt": 602.3410034179688,
+      "drawing_to_footer_gap_pt": 140.895751953125
+    },
+    {
+      "physical_page": 120,
+      "printed_page": 109,
+      "render": "p120.png",
+      "visually_inspected": true,
+      "table_indices": [],
+      "figure": null,
+      "issue_ids": [],
+      "footer_bbox_pt": [
+        277.79998779296875,
+        743.2367553710938,
+        317.3846435546875,
+        754.2767333984375
+      ],
+      "footer_intrusion_observed": false,
+      "tables": []
+    }
+  ]
+}

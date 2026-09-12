@@ -1,0 +1,18 @@
+Deep Learning-Based Safety Analysis for
+High-Altitude Construction Workers: PPE Detection
+and Posture Recognition Model Development
+Yirong Mi
+School of Architectural, Civil, Environmental, and Energy Engineering,
+Major in Architectural Engineering
+The Graduate School
+Supervised by Professor Dong-Eun Lee
+Approved as a qualified thesis of Yirong Mi
+for the degree of Ph.D. by the Evaluation Committee
+June 2025
+Chairman                         
+                          
+                          
+                          
+                           
+The Graduate School Council
+Kyungpook National University

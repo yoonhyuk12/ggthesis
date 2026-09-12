@@ -1,0 +1,77 @@
+{
+  "series": "산재보상 승인자료 기준 업무상사고 사망자",
+  "distribution_2024": [
+    {
+      "industry": "건설업",
+      "fatalities": 328,
+      "percent": 39.66
+    },
+    {
+      "industry": "제조업",
+      "fatalities": 187,
+      "percent": 22.61
+    },
+    {
+      "industry": "기타의 사업",
+      "fatalities": 145,
+      "percent": 17.53
+    },
+    {
+      "industry": "운수·창고·통신업",
+      "fatalities": 138,
+      "percent": 16.69
+    },
+    {
+      "industry": "임업",
+      "fatalities": 11,
+      "percent": 1.33
+    },
+    {
+      "industry": "농업",
+      "fatalities": 9,
+      "percent": 1.09
+    },
+    {
+      "industry": "광업",
+      "fatalities": 4,
+      "percent": 0.48
+    },
+    {
+      "industry": "전기·가스·수도업",
+      "fatalities": 2,
+      "percent": 0.24
+    },
+    {
+      "industry": "어업",
+      "fatalities": 2,
+      "percent": 0.24
+    },
+    {
+      "industry": "금융 및 보험업",
+      "fatalities": 1,
+      "percent": 0.12
+    }
+  ],
+  "construction_2020_2024": [
+    {
+      "year": 2020,
+      "fatalities": 458
+    },
+    {
+      "year": 2021,
+      "fatalities": 417
+    },
+    {
+      "year": 2022,
+      "fatalities": 402
+    },
+    {
+      "year": 2023,
+      "fatalities": 356
+    },
+    {
+      "year": 2024,
+      "fatalities": 328
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "screenshot_bytes_identical": true,
+  "screenshot_sha256": "203afb5af50af77801bcd570b2f10d0796db7354bfd14ff189143b5a731bb569",
+  "charts": [
+    {
+      "file": "fig_1_1_industry_fatalities_2024.svg",
+      "size_px": [
+        1771,
+        1322
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "editable_svg_text": true,
+      "visual_inspection": "passed"
+    },
+    {
+      "file": "fig_1_2_construction_fatalities_2020_2024.svg",
+      "size_px": [
+        1771,
+        1240
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "editable_svg_text": true,
+      "visual_inspection": "passed"
+    }
+  ]
+}

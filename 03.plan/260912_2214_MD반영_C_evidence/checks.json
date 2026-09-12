@@ -1,0 +1,36 @@
+{
+  "00_목차.md": {
+    "changed": true,
+    "chapter_headings_preserved": true,
+    "data_pending_preserved": true,
+    "old_citations_remaining": []
+  },
+  "01_서론.md": {
+    "changed": true,
+    "chapter_headings_preserved": true,
+    "data_pending_preserved": true,
+    "old_citations_remaining": []
+  },
+  "03_시스템개발.md": {
+    "changed": true,
+    "chapter_headings_preserved": true,
+    "data_pending_preserved": true,
+    "old_citations_remaining": [],
+    "experimental_table_rows_preserved": true,
+    "experimental_numeric_tokens_preserved": false,
+    "experimental_numeric_tokens_preserved_excluding_resolved_citation_marker": true,
+    "raw_numeric_check_note": "Raw comparison differs only because the resolved Han citation marker repeated year 2026; experiment numbers after marker exclusion are identical."
+  },
+  "05_실증분석결과.md": {
+    "changed": false,
+    "chapter_headings_preserved": true,
+    "data_pending_preserved": true,
+    "old_citations_remaining": []
+  },
+  "06_결론.md": {
+    "changed": true,
+    "chapter_headings_preserved": true,
+    "data_pending_preserved": true,
+    "old_citations_remaining": []
+  }
+}

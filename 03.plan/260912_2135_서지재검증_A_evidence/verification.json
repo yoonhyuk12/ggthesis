@@ -1,0 +1,11 @@
+{
+  "refs_06_18_same_bytes": true,
+  "all_115_page_texts_equal": true,
+  "visual_checked": [
+    "06:2,3,4",
+    "22:6,8",
+    "28:2,3,4",
+    "32:11"
+  ],
+  "method": "PyMuPDF extraction and rendered image inspection; requests HTML direct retrieval; web search/open"
+}

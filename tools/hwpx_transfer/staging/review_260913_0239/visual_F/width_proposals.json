@@ -1,0 +1,64 @@
+{
+  "basis": "Actual PDF glyph bbox widths; displayed scale approximately 0.01104 PDF point per HWPUNIT; each cell left/right margins 510+510. Estimates require main Hancom reflow and visual confirmation, not a fit guarantee.",
+  "tables": [
+    {
+      "section": "Contents/section2.xml",
+      "table_index_zero_based": 12,
+      "identifier": "table 3-7",
+      "original": [
+        9319,
+        3728,
+        3728,
+        3728,
+        3728,
+        3728,
+        3728,
+        3728,
+        3727
+      ],
+      "minimal_recall_fix": [
+        9319,
+        3728,
+        4128,
+        3328,
+        3728,
+        3728,
+        3728,
+        3728,
+        3727
+      ],
+      "preferred_all_english_headers": [
+        9319,
+        5300,
+        4100,
+        3300,
+        5400,
+        2931,
+        2931,
+        2931,
+        2930
+      ],
+      "rationale": "Recall measured ~30.2pt against ~29.9pt current inner width; +400 HWPUNIT gives ~4.4pt breathing room from F1. Preferred array also fits Precision/Accuracy and donates from short numerical columns; condition width unchanged."
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_index_zero_based": 25,
+      "identifier": "table 5-2 panel A Cronbach",
+      "original": [
+        10641,
+        6080,
+        6080,
+        5700,
+        10641
+      ],
+      "proposed": [
+        10641,
+        5280,
+        6080,
+        6500,
+        10641
+      ],
+      "rationale": "Cronbach apostrophe+s glyphs total ~56.9pt; current inner width ~51.7pt, proposed ~60.5pt. Donate 800 from short item-count column, whose remaining inner width ~47pt still accommodates header ~38.6pt. Retain font and margins; parentheses wrap should improve but actual reflow required."
+    }
+  ]
+}

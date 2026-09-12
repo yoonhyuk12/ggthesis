@@ -1,0 +1,1544 @@
+=== PDF PAGE 1 ===
+Academic Editors: Tae Wan Kim,
+Annie Guerriero, Sungjin Kim,
+Minkoo Kim and Jung In Kim
+Received: 13 March 2025
+Revised: 17 April 2025
+Accepted: 22 April 2025
+Published: 24 April 2025
+Citation:
+Kim, J.; Wang, I.; Yu, J.; Lee,
+S. A Practical Image Augmentation
+Method for Construction Safety Using
+Object Range Expansion Synthesis.
+Buildings 2025, 15, 1447. https://
+doi.org/10.3390/buildings15091447
+Copyright: © 2025 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license
+(https://creativecommons.org/
+licenses/by/4.0/).
+Article
+A Practical Image Augmentation Method for Construction Safety
+Using Object Range Expansion Synthesis
+Jaemin Kim
+, Ingook Wang, Jungho Yu and Seulki Lee *
+Department of Architecture Engineering, Kwangwoon University, Seoul 01897, Republic of Korea;
+znlsl10@naver.com (J.K.); ingookwang11@naver.com (I.W.); myazure@kw.ac.kr (J.Y.)
+* Correspondence: sklee@kw.ac.kr; Tel.: +82-2-940-8459
+Abstract: This study aims to propose a practical and realistic synthetic data generation
+method for object recognition in hazardous and data-scarce environments, such as con-
+struction sites. Artificial intelligence (AI) applications in such dynamic domains require
+domain-specific datasets, yet collecting real-world data can be challenging due to safety
+concerns, logistical constraints, and high labor costs. To address these limitations, we intro-
+duce object range expansion synthesis (ORES), a lightweight and non-generative method
+for generating synthetic image data by inserting real object masks into varied background
+scenes using open datasets. ORES synthesizes new scenes, while preserving scale and
+ground alignment, enabling controllable and realistic data augmentation. A dataset of
+30,000 synthetic images was created using the proposed method and used to train an object
+recognition model. When tested on real-world construction site images, the model achieved
+a mean average precision at IoU 0.50 (mAP50) of 98.74% and a recall of 54.55%. While
+recall indicates room for improvement, the high precision highlights the practical value
+of synthetic data in enhancing model performance without requiring extensive field data
+collection. This research contributes a scalable approach to data generation in safety-critical
+and data-deficient environments, reducing dependence on direct data acquisition, while
+maintaining model efficacy. It provides a foundation for accelerating the deployment of
+AI technologies in high-risk industries by overcoming data bottlenecks and supporting
+real-world applications through practical synthetic augmentation.
+Keywords: synthetic data; artificial intelligence performance; machine learning; construction
+sites
+1. Introduction
+Construction automation and robotics technologies play a crucial role in enhancing
+work efficiency and safety at construction sites. AI-based automation systems, including
+construction robots, drones, and automated inspection systems, require accurate object
+recognition, which relies on machine learning and deep learning models trained with large-
+scale, high-quality datasets [1]. In the construction industry, research is being conducted to
+manage sites using object recognition and model training with large datasets. Rho et al. [2]
+proposed a method that utilizes object recognition technology to automatically identify
+work targets and site conditions from worker-captured images, integrating this informa-
+tion with building information modeling (BIM) for construction process management.
+Jung et al. [3] developed a model that detects concrete cracks and extracts crack characteris-
+tics using a deep learning model trained on collected datasets. Considering the importance
+of data in the construction field, Park et al. [4] conducted a study on labeling objects in
+construction site images and classifying them by work type using a trained model.
+Buildings 2025, 15, 1447
+https://doi.org/10.3390/buildings15091447
+
+=== PDF PAGE 2 ===
+Buildings 2025, 15, 1447
+2 of 23
+Despite the increasing use of training data in research, constructing high-quality
+datasets for construction sites remains a significant challenge. Construction sites are
+complex environments with various structural elements, dynamic work conditions, and
+continuous changes. Large volumes of training data are required for accurate object
+recognition, especially when background information is diverse or objects have intricate
+shapes. In such cases, extensive labeled datasets are needed, making it difficult to effectively
+learn object features [5]. This issue is particularly evident in construction sites, where
+linear structures, such as scaffolding, are abundant, and background information is highly
+entangled. These characteristics make it difficult to produce reliable results using existing
+datasets. Furthermore, access to construction sites is often restricted, and there are safety
+risks during data collection. Construction sites are hazardous environments with heavy
+machinery and numerous workers, making it challenging to collect images from diverse
+angles and obtain a comprehensive dataset of various objects. Additionally, data collection
+incurs significant time and labor costs. The data shortage caused by these site-specific
+challenges is a major obstacle to the advancement of construction automation and robotics
+technologies. It directly affects model accuracy and limits real-world applicability.
+To address these challenges, recent studies have aimed to improve object recognition
+performance by increasing the volume of training datasets through data augmentation and
+synthetic data generation. However, most existing augmentation methods are based on
+generic image processing techniques and fail to adequately reflect the unique characteristics
+and complexity of construction environments. For example, simple transformations, such
+as image rotation or color adjustment, have limitations in reproducing the realism of object
+placement and scene composition specific to construction sites. While 3D simulation-
+based synthesis methods are capable of generating photorealistic images, they require
+advanced technical expertise and substantial computational resources, and the modeling
+and rendering processes are complex and time consuming. GAN-based generation methods
+have the potential to produce novel visual content, but they offer limited controllability over
+the outputs, suffer from training instability, and face challenges in domain generalization,
+making them difficult to apply in real-world construction scenarios. In addition, the process
+of labeling large volumes of generated synthetic data is highly labor-intensive.
+The most critical factor in generating synthetic data is ensuring that it closely resembles
+real-world environments. One of the most challenging aspects of data synthesis is adjusting
+object positions and sizes realistically. This issue can be addressed through augmentation
+and synthesis techniques. By utilizing prior knowledge of object types and placements, new
+data can be generated, while maintaining appropriate sizes and ground alignments. This
+allows for the addition or replacement of identical or different object types, ensuring realistic
+positioning. This approach enables efficient training dataset creation with minimal manual
+intervention. Additionally, it allows for the synthesis of various object types that blend
+naturally with their backgrounds, significantly expanding the range of object variations in
+the dataset. In addition, training datasets can be efficiently constructed without the need
+for complex labeling processes by leveraging information from existing open datasets. The
+ORES method proposed in this study offers several key advantages:
+•
+Realistic data generation: objects and backgrounds are separated, and augmentation
+and synthesis are performed, while maintaining realistic object placement and size.
+•
+Consideration of complex background elements: the augmentation process takes
+into account the presence of frequently occurring linear structures in construction
+environments, such as scaffolding.
+•
+High applicability in construction automation: the generated dataset has strong po-
+tential for use in construction robots, automated inspection systems, and AI-based
+construction monitoring.
+
+=== PDF PAGE 3 ===
+Buildings 2025, 15, 1447
+3 of 23
+This study presents a cost-effective and high-efficiency data augmentation methodol-
+ogy applicable to construction robots and automation systems. By addressing the issue of in-
+sufficient training data, which significantly impacts AI system performance in construction
+sites, this method enables the creation of large-scale, realistic training datasets. This, in turn,
+helps overcome data shortages for construction robots and automated quality inspection
+systems. The contributions of this research include improving AI utilization in construction
+sites, establishing reliable datasets, and enhancing object recognition performance. Further-
+more, beyond dataset construction for complex construction environments, this study is
+expected to expand the applicability of AI systems in similarly intricate backgrounds.
+To achieve our objectives, the research process can be summarized as follows. In
+Section 2, the considerations and requirements for constructing a training dataset are first
+defined. The methods proposed in previous studies for constructing such datasets are
+analyzed and compared, and a design approach is presented. In Section 3, object range
+expansion synthesis (ORES) for the construction of a training dataset using synthetic data
+is introduced. The application of ORES is explained, targeting scaffolding (which accounts
+for a considerable proportion of falling accidents and can have a diverse background
+information) as a linear object. In Section 4, the performance of the proposed method is
+empirically validated.
+2. Literature Review
+Several key considerations must be taken into account when constructing a training
+dataset for accurate object recognition. First, ethical standards must be followed to ensure
+that data collection methods do not expose personal information. When collecting real-
+world data, personally identifiable information may be inadvertently included. If such
+data are collected, additional post-processing is required to remove or anonymize sensitive
+content, which results in increased labor and time. In this regard, synthetic data generation
+can offer a more efficient and privacy conscious alternative. Second, both the quantity and
+quality of training data are crucial. A large dataset with poor quality or a small dataset with
+high quality may both hinder the performance of object recognition models. Inadequate or
+imbalanced datasets can lead to performance degradation [6]. Therefore, the effectiveness
+of machine learning models largely depends on the sufficiency and quality of the data.
+A synthetic data generation approach that improves both the quantity and quality of train-
+ing data, while minimizing time and labor costs is necessary. Third, accurate and consistent
+object labeling is essential for ensuring the reliability of the dataset. Object labeling is a
+critical step in preparing data for object recognition, yet it is often challenging to label
+newly collected data with high precision. Thus, it is important to develop high-efficiency
+synthetic data generation methods that maximize the use of existing open datasets with a
+small amount of labeled data. Finally, a model validation process using the constructed
+training dataset is required. This step should include quantitative performance metrics to
+verify whether the dataset contributes to improved object recognition accuracy.
+The methods used to construct a training dataset can be distinguished based on the
+type of data used (Figure 1). The training dataset is divided into real and augmented
+datasets. Real datasets can be collected through visual devices (such as CCTV) or con-
+structed via web crawling. However, collecting real data in construction sites can be
+challenging for the following reasons:
+•
+Environmental changes: The environment at construction sites can vary consider-
+ably with the weather, season, and time of day, and these changes can compromise
+data consistency.
+
+=== PDF PAGE 4 ===
+Buildings 2025, 15, 1447
+4 of 23
+•
+Safety and accessibility: Owing to safety concerns, data collection may be restricted to
+certain areas or certain times. Additionally, many construction sites can be difficult to
+access, limiting the scope of data collection.
+•
+Lack of diversity: Data collection can be limited to specific projects or sites that may
+struggle to achieve diversity. This can limit the generalizability of the model.
+•
+Labeling challenges: Labeling data from construction sites can be a time-consuming
+process that requires expertise, making the accurate labeling of large volumes of
+data challenging.
+Figure 1. Training dataset building methods.
+To overcome these limitations, the augmentation methods used for datasets can be di-
+vided into classic augmentation—which geometrically transforms existing training samples
+to increase the input diversity—and synthetic augmentation—which uses trained genera-
+tive models on existing input training samples to create new, previously unseen samples [7].
+Augmentation using synthetic data can be further categorized into methods that generate
+data through deep learning, methods that create synthetic data by modeling in virtual
+environments using 3D programming, and methods that insert objects into 2D images.
+The requirements for generating synthetic data are summarized in Table 1. Utilizing
+large-scale synthetic data can help mitigate the degradation of data quality; therefore,
+it is essential to secure a sufficient volume of data through synthetic data generation
+methods [8]. In addition, the generated synthetic data must ensure diversity to produce
+realistic images [8]. When synthesizing various objects and backgrounds, environmental
+factors such as lighting, weather conditions, and perspectives must be taken into account,
+and a wide range of object types relevant to the construction domain should be included.
+Similarly, backgrounds should be composed of images that reflect diverse construction
+environments under different conditions. To ensure realism, the size and scale of objects
+in synthetic images must be appropriately adjusted to fit the surrounding environment,
+and the spatial relationship between objects and backgrounds should appear natural
+and realistic. Inserted objects should be resized according to the spatial context of the
+background and placed in a visually coherent manner in terms of position, depth, and
+perspective. If the size, scale, or positioning of objects in synthetic images does not align
+with the environmental context, discrepancies from real-world data may occur. For example,
+synthesized images showing scaffolding floating in the air or placed in construction sites
+where scaffolding is not needed can significantly differ from real data, ultimately degrading
+the performance of object recognition model training. Furthermore, lighting, shadows,
+and geometric consistency between the object and the background must be maintained to
+simulate the visual integration seen in real-world imagery.
+
+=== PDF PAGE 5 ===
+Buildings 2025, 15, 1447
+5 of 23
+Table 1. Requirements for generating synthetic data at construction sites.
+Requirements
+Detail
+Quantity
+- Data Volume
+- A sufficient amount of training data must be available to ensure
+effective learning of the object recognition model.
+- The synthesis of diverse objects and backgrounds must consider
+changes in environmental conditions.
+Quality
+Diversity
+- Object Variety
+- Synthesized datasets must include a wide range of object types
+relevant to the construction domain.
+- Background Variety
+- Backgrounds should represent various construction environments,
+including different lighting, weather conditions, and perspectives.
+- Environmental Changes
+- In the synthesized images, the size and scale of objects should be
+suitably adjusted to fit the environment.
+- The synthesized object’s relationship with the background should
+appear natural, and its placement should realistically align with
+the environment.
+Reality
+- Scale Matching
+- Inserted objects must be resized appropriately to match the spatial
+context of the background.
+- Visual Coherence
+- Object placement must appear natural in relation to the
+background in terms of position, depth, and perspective.
+- Scene Integration
+- The lighting, shadows, and geometry between objects and
+backgrounds must be visually consistent to simulate
+real-world integration.
+A comparison and analysis of the methods presented in 25 prior studies related to the
+construction of training datasets for construction sites, based on the previously defined
+requirements, is summarized in Table 2. Earlier studies that constructed training datasets
+using real data typically employed direct on-site data collection or web-crawling techniques.
+However, these methods face several limitations due to the temporary and dynamic nature
+of construction sites, making it both costly and labor-intensive to obtain high-quality
+training data. Furthermore, due to the continuous changes in construction projects, it
+is difficult to build generalized datasets from a limited number of sites. Data sharing
+is also hindered by issues related to privacy and confidentiality [9]. To overcome these
+limitations, research has shifted toward the use of augmented data. Augmentation methods
+are generally classified into classical and synthetic techniques. Classical augmentation
+focuses on modifying pixel values; although such techniques can be applied quickly, they
+provide limited diversity and fail to generate substantially new visual content. As a
+result, they are insufficient for capturing the complex visual characteristics of construction
+environments [10].
+Table 2. Training dataset literature review by building method.
+Method
+Description Based on Requirements
+Authors
+Real Data
+Actual
+field collection
+Data collected from actual sites has high
+realism, but collecting a diverse set of data
+requires a lot of labor.
+[9,11–13]
+Web crawling
+The data collected in practice has high realism,
+but there are limitations in obtaining the
+desired variety of data.
+[14]
+Augmented
+Data
+Classic
+augmentation
+Simple enhancement
+through pixel
+value modification
+It is possible to increase the amount of training
+data with less labor, but there are limitations in
+enhancing the diversity of backgrounds
+and objects.
+[15–18]
+
+=== PDF PAGE 6 ===
+Buildings 2025, 15, 1447
+6 of 23
+Table 2. Cont.
+Method
+Description Based on Requirements
+Authors
+Augmented
+Data
+Synthetic
+augmentation
+3D rendering
+Implementing the backgrounds and objects of
+construction sites in 3D requires a lot of labor
+and has lower realism compared to actual sites.
+[19–21]
+GAN
+GAN-generated images can be realistic, but
+building GAN models is labor-intensive and
+controlling the generated images is challenging.
+[22,23]
+Generative AI
+Pre-trained text to image models can efficiently
+generate photorealistic images from textual
+prompts. While less labor intensive the output
+quality and domain relevance rely on prompt
+design and precise control over image details
+remains limited.
+[24–27]
+Object infusion
+Enhances diversity by inserting objects and
+backgrounds, making it efficient for creating
+large datasets.
+[28]
+To address this, synthetic data generation approaches have been proposed to expand
+both the volume and diversity of training datasets. These can be broadly categorized into
+three types: methods based on 3D environments, those utilizing 2D environments, and
+hybrid approaches. While 3D modeling can simulate realistic spatial arrangements, it is
+generally limited to pre-modeled construction objects, and the creation of diverse and
+realistic scenes is time-consuming and resource-intensive. Moreover, adjusting parameters
+such as lighting, color, and material textures to reflect the variability of construction ele-
+ments requires expert knowledge and adds further complexity [1]. In contrast, 2D synthetic
+approaches involve deep learning techniques—such as generative adversarial networks
+(GANs)—or object insertion strategies, where isolated construction objects are placed into
+real background images to create diverse training data. These methods are relatively more
+effective in achieving object-level diversity and visual realism with lower costs and simpler
+infrastructure. GANs are designed to learn the data distribution of real-world images
+in order to generate synthetic samples for realistic applications [29]. While GANs are
+effective at improving visual fidelity by minimizing unnatural artifacts, their application
+to construction site data synthesis remains limited. This is due to the inherent complex-
+ity, heterogeneity, and temporal variability of construction environments, which make it
+challenging for GANs to replicate the fine-grained spatial and contextual relationships
+required for domain-specific realism from the initial stage of generation. Recently, with
+advances in generative AI, new approaches such as text-to-image models and diffusion-
+based architecture have been explored for synthetic data creation. These methods offer
+the advantage of generating photorealistic images solely from textual prompts. However,
+their effectiveness is heavily dependent on prompt quality and design. Moreover, precise
+control over detailed visual elements remains difficult, which limits their applicability in
+structured and safety-critical domains, such as construction sites.
+Table 3 presents a comparative analysis of synthetic data generation methods. Based
+on the comparison of synthetic data generation methods, object range expansion synthesis
+(ORES) demonstrates high practicality and resource efficiency. It can be implemented
+with minimal preprocessing using open datasets, supports batch processing, and operates
+without the need for high-end hardware. In contrast, methods such as 3D rendering, GANs,
+and generative AI (diffusion models, text-to-image) offer advantages in visual realism and
+expressiveness but require significant technical expertise, computational resources, and
+complex data preparation processes. Therefore, ORES is well-suited for large-scale training
+
+=== PDF PAGE 7 ===
+Buildings 2025, 15, 1447
+7 of 23
+dataset generation in the construction domain, providing a balanced solution in terms of
+accessibility, cost-effectiveness, and implementation efficiency.
+Table 3. Comparative analysis of synthetic data generation methods.
+Criteria
+ORES (Object Range
+Expansion Synthesis)
+3D Rendering
+GANs
+Stable Diffusion,
+Text-to-Image
+Labor Requirements
+Utilizes 2D datasets
+and basic image
+processing tools
+Requires domain expertise
+in 3D modeling, simulation
+management
+Involve deep learning
+model design, tuning, and
+implementation expertise
+Requires prompt
+engineering and basic
+understanding of
+model behavior
+Data Preparation Time
+Open datasets can
+be used with
+minimal preprocessing
+Preparation includes 3D
+asset creation,
+lighting setup
+Require curation and
+annotation of
+training datasets
+Preparation mainly
+involves designing and
+refining prompts; optional
+post-processing may
+be added
+Data Synthesis Time
+Supports fast batch
+processing; parallel
+generation achievable with
+low computing resources
+Each scene must be
+rendered individually,
+which is computationally
+intensive
+Generation time depends
+on training stability
+and convergence
+Typically, within seconds
+to minutes
+Cost Efficiency
+Requires no specialized
+hardware or
+licensed software
+Involves substantial
+investment in 3D modeling
+tools, rendering software,
+and computer infrastructure
+Significant GPU resources
+and training time for
+model development
+Can utilize publicly
+available pretrained
+models; large-scale
+deployment may still
+require GPU resources
+In this study, we compared dataset expansion methods for object synthesis, as shown
+in Table 3. The object infusion using rendering method enables the rapid collection of objects
+from various angles within a 3D environment; however, when these objects are composited
+into a 2D background, aligning realistic angles between the background and objects proves
+challenging, resulting in low realism. In contrast, the object infusion using deep learning
+method can achieve high realism through deep learning processes, but it requires significant
+time and labor costs to implement the deep learning models. Meanwhile, the object range
+expansion synthesis (ORES) method leverages existing datasets to efficiently generate
+large-scale, diverse compositions, achieving a balance between low cost and time efficiency.
+This method also maintains adequate realism by synthesizing objects in appropriate spatial
+contexts. Therefore, the proposed object range expansion synthesis (ORES) approach
+provides high efficiency for large-scale dataset generation, while preserving a reasonable
+level of realism, making it cost- and time-effective for extensive data augmentation.
+Table 4 presents a practical comparison between the proposed ORES method and ex-
+isting synthetic data generation techniques, including 3D modeling, GANs, and generative
+AI. Leveraging open datasets, ORES enables rapid data preparation without requiring high-
+performance hardware and allows for scalable expansion through template-based insertion.
+Although it may lack algorithmic novelty, ORES demonstrates strong potential in terms of
+practicality, cost-effectiveness, and applicability in real-world construction environments.
+Table 5 presents a literature review of object infusion methods used for data synthesis.
+It compares traditional rendering-based approaches, deep learning-based techniques, and
+the proposed Object Range Expansion Synthesis (ORES), highlighting their characteristics
+in terms of realism, efficiency, and resource requirements.
+
+=== PDF PAGE 8 ===
+Buildings 2025, 15, 1447
+8 of 23
+Table 4. Comparison between ORES and existing synthetic data generation methods.
+Criteria
+ORES
+(Object Range Expansion Synthesis)
+Existing Methods
+(3D Modeling/GANs/Generative AI)
+Data Preparation Time
+Utilizes open datasets; minimal preprocessing
+enables rapid implementation
+Requires time-consuming preparation (3D
+modeling, prompt engineering, data cleaning)
+Hardware Requirements
+Can run on standard PCs; supports parallel
+processing without high-end GPUs
+Demands high-performance GPUs and
+large-scale computation resources
+Design Complexity
+Simplified design with fixed object position
+and scale
+GANs suffer from instability; generative AI
+highly sensitive to prompt quality
+Visual Coherence
+Maintains object size, position, and
+background consistency for realistic images
+3D rendering requires complex light/material
+tuning; GANs often lack background realism
+Scalability
+Easily extensible via template-based insertion
+across object and background types
+Domain-specific retraining or model
+redesign required
+Practical Usability
+Applicable in short-term and
+small-to-medium-scale projects
+Typically, requires large research teams and
+advanced infrastructure
+Table 5. Literature review about object infusion.
+Method
+Description Based on Requirements
+Features
+Object infusion using rendering
+3D-rendered objects can be inserted into 2D
+backgrounds to capture various angles, but
+realism in placement and angles is low
+Allows for multiple angles but lacks realism,
+often resulting in unrealistic placements
+Object infusion using
+deep learning
+Generates realistic data using deep learning
+algorithms but requires significant time and
+effort to develop
+Provides high realism but demands
+substantial resources and time
+Object range expansion
+synthesis (ORES)
+Matches various objects and backgrounds
+from an open dataset to synthesize new
+objects into existing images, creating
+diverse variations
+Leverages open datasets to automatically
+generate diverse variations, ensuring high
+efficiency in data creation
+Table 6 presents a comparison between the method described in this study and
+15 other studies that proposed methods for generating synthetic data with respect to
+the construction of the training dataset. A comparison was made in terms of the quantity,
+quality, and efficiency of synthetic data creation, and a relative evaluation was conducted
+owing to the limitations of comparing absolute numbers. Neuhausen [20] generated data
+in a 3D environment to improve the recognition performance of workers in hazardous
+situations at construction sites using a cycle-rendering engine. Kim [10] proposed a virtual
+synthetic image creation method that overlayed worker objects created through 3D model-
+ing onto real site images to address the lack of training data at construction sites. Zeng [17]
+augmented construction site images by modifying the image pixel intensity to address
+the effects of lighting changes at outdoor construction sites. Bang [30] used GAN-based
+image inpainting and the concepts of object class probability and relative size to remove
+construction objects from the site images obtained using unmanned aerial vehicles (UAVs)
+and reconstructed the removed areas with new objects. Consequently, efforts have been
+made to address the challenges associated with field data collection by synthesizing data to
+create training datasets.
+
+=== PDF PAGE 9 ===
+Buildings 2025, 15, 1447
+9 of 23
+Table 6. Synthetic data generation literature review.
+Authors
+Method
+Quantity
+Environment
+and Object
+[1]
+Framework for automatically generating a
+training dataset by creating images and labeling
+target objects using web crawling and virtual
+reality technologies.
+Web crawling + synthetic image dataset
+and training dataset comprising
+99,800 images in 42 min
+Construction site and
+heavy equipment
+[10]
+Insertion of workers in various poses modeled in
+3D into 2D construction site backgrounds,
+resulting in a 50% reduction in the actual
+data needed.
+Hybrid dataset 10,000 (worker)
+(Real5000 + Syn5000)
+Construction site
+and worker
+[14]
+Automatic collection of desired images from the
+Internet, reflecting various visual characteristics
+of objects (same object, different manufacturers,
+etc.) for training images.
+Automatic image labeling using an image
+segmentation model.
+Completely random cross-over sampling of the
+foreground and background.
+Automatically creates a training dataset
+comprising 5864 images in 53.5 min
+Construction site
+[19]
+Generating 2D synthetic images of building
+elements (e.g., columns, walls, and slabs) using
+building information modeling (BIM).
+Synthetic datasets are used to train dense neural
+network (DNN) architectures.
+The developed model effectively and accurately
+positions building elements in real
+construction images.
+-
+Building
+[20]
+Data generation in a 3D environment to improve
+the recognition performance of workers in
+hazardous situations on construction sites.
+Rendering using the cycles rendering engine,
+a mini batch size of 64 based on the Darknet 53
+model (pretrained on ImageNet).
+8 different scenes
+Total 3835 frames 32 tracked subjects
+Construction site
+and worker
+[21]
+Generating a large-scale labeled dataset for
+excavator pose estimation using domain
+randomization with a gaming engine.
+12,000 synthetic images (training dataset)
+3000 real images (validation dataset)
+Construction site
+and excavator
+[23]
+Creation of synthetic images through the
+removal of workers from construction site
+images and inpainting using a U-Net model
+optimized using Adam.
+Applying context encoders to remove duplicated
+objects in images and inpainted background
+context, with areas requiring context inpainting
+being predefined in size and location within
+the image.
+Application of the U-Net deep learning
+architecture for direct image-to-image
+conversion to relax the fixed size and location
+constraints of context inpainting.
+5846 construction images
+Panoramic view of a
+construction site
+where objects have
+been removed
+[25]
+Synthetic images were generated using stable
+diffusion with construction-related prompts.
+Context-based labeling was applied to enhance
+dataset quality.
+150,000
+Construction task,
+CNN trained with
+context-
+based labeling
+[26]
+A text-to-image model was used to generate
+images of 27 construction hazard scenarios based
+on structured prompts.
+3585 images across 27 scenarios
+Construction
+accidents, object
+relations captured
+
+=== PDF PAGE 10 ===
+Buildings 2025, 15, 1447
+10 of 23
+Table 6. Cont.
+Authors
+Method
+Quantity
+Environment
+and Object
+[27]
+Pretrained generative AI was used to create
+scaffolding images. The model learned
+distinctive features, though image diversity
+was limited.
+-
+Scaffolding,
+segmentation
+performance evaluated
+[30]
+Generation by combining 3D models of
+construction equipment and various background
+images taken at construction sites.
+Training of a machine learning-based excavator
+detection model using only synthetic datasets.
+Improving detection accuracy while reducing
+the time required for image annotation.
+3D model with 16 backgrounds 765 (no. of
+positive images)
+Construction site and
+excavator (modeling)
+[31]
+Development of a framework for object
+recognition during curtain wall installation work
+from tower cranes.
+Insertion of labeled images of curtain wall panels
+and crane hooks created with the Unity engine.
+Creation of training data and understanding
+crane movements using the intersection over
+union (IoU) tracker.
+Generate 300,000 training images per hour
+Curtain wall work
+site via crane and
+crane hook and
+curtain wall panel
+[32]
+Building an excavator database using 3D
+modeling tools and game engines.
+Building a synthetic image database including
+the location and pose of excavators.
+-
+-
+[33]
+Building a training dataset by generating dust in
+a 3D environment and inserting data created in a
+construction background with inserted dirt.
+3860 synthetic dust images (training
+dataset)
+1015 real images (test dataset)
+Construction site with
+dust inserted
+[34]
+Building virtual data from real building images
+through BIM and augmented data using a GAN.
+Inside the building
+[35]
+Data collection using UAVs.
+Use of GAN-based image inpainting and
+concepts of object class probability and
+relative size.
+Method of removing objects (e.g., excavators)
+from site images and reconstructing new objects
+(e.g., mobile cranes) in areas where objects have
+been removed.
+544 (training dataset)
+112 (test dataset)
+Construction site and
+heavy equipment
+(taken by UAV)
+[36]
+Photorealistic images of construction accidents
+were synthesized using stable diffusion. Prompts
+were crafted to reflect real-world
+safety incidents.
+2324 fall accident cases analyzed using
+GPT-4, 300 synthetic images generated
+Safety incidents,
+object detection, and
+action recognition
+Our re-
+search
+Efficiently generates high-quality synthetic data
+by separating backgrounds and objects and
+inpainting. Allows realistic synthesis of various
+object forms in original locations, expanding
+object range and diversity with minimal real
+data and without extra labeling or 3D modeling.
+Generate 30,000 synthetic images
+Scaffolding
+Worker
+ladder
+To better situate our contribution in relation to existing methods, we provide an an-
+alytical synthesis of the techniques summarized in Table 6. Prior studies have explored
+various synthetic data generation strategies using 3D rendering, domain randomization,
+GANs, and generative AI techniques. Many approaches focused on specific objects, such as
+excavators [21,30], workers [10,20], or safety incidents [25–27,36], often relying on resource-
+intensive processes, such as 3D modeling [19,24], unity-based simulations [23], or text-to-
+
+=== PDF PAGE 11 ===
+Buildings 2025, 15, 1447
+11 of 23
+image diffusion models [36]. While these methods demonstrated strong visual realism
+or automation potential, they typically require significant time, expertise, or hardware
+resources, limiting their short-term field applicability. In contrast, the proposed ORES
+method prioritizes efficiency and real-world usability, offering a lightweight, easily scalable
+alternative without the need for high-performance infrastructure. Unlike most prior work,
+our study specifically targets linear and safety-critical objects (scaffolding, ladders), which
+are underrepresented in existing literature despite their high relevance to fall-related con-
+struction accidents. By minimizing preprocessing and eliminating the need for 3D modeling
+or manual labeling, ORES enables the rapid construction of realistic, diverse datasets sup-
+porting practical deployment in safety-focused AI systems with lower operational burden.
+Considering their diversity of backgrounds and objects, construction sites require
+various arrays of objects and backgrounds in their training data. Additionally, owing to
+the frequent changes in object types and visual characteristics at sites depending on the
+construction work, there is a need for the ongoing development of the training dataset [1].
+However, previous studies that generated training datasets using synthetic data primarily
+focused on relatively easy-to-synthesize objects, such as heavy machinery and workers,
+which limits their applicability when the types of objects vary. Additionally, creating
+synthetic data that considers realistic positions and scales is challenging, and the labor
+required to achieve realistic placement is substantial. Consequently, a method is required
+that can secure training data for a range of objects and efficiently generate substantial
+volumes of them.
+3. Methods: Object Range Expansion Synthesis (ORES)
+3.1. Distinction of the Proposed Method
+When generating synthetic data using 3D-modeled objects, it is often necessary to
+remodel the object or reconstruct the 3D environment if the object type changes. This study
+proposes a method to increase the volume of data by leveraging existing open datasets
+and a small amount of training data, enhancing the diversity of synthetic data through
+the separation and synthesis of objects and backgrounds. The proposed method is distinct
+in that it allows for the construction of training datasets using a small dataset without
+additional labeling, even when the object-type changes. Additionally, it is possible to
+synthesize objects of the same type or different types by aligning them to realistic positions
+and scales using existing information about object locations and types. Table 6 presents an
+analysis comparing previous studies with the current research. Through the ORES method
+proposed in this study, it is possible to synthesize both planar objects, such as workers
+with a solid background, and linear objects, like frame scaffolds, which have open areas
+in the background. Additionally, using object and background information from existing
+open datasets, object synthesis can be performed in a way that aligns with the background
+context. For example, if background data from masonry and plastering work is available,
+objects like ladders or workers, which are likely to be found in this construction type, can
+be synthesized instead of frame scaffolds, thereby generating a more diverse dataset. The
+proposed object range expansion synthesis (ORES) method distinguishes itself by enabling
+the expansion of object ranges to create diverse datasets using only a small amount of
+field data and leveraging background information. Moreover, since the open datasets
+used already contain labeled information, there is no need for additional labeling, thereby
+minimizing labor and time costs.
+Table 7 presents analysis of previous studies and distinctiveness of this research. Each
+method is evaluated in terms of its limitations, object types, ability to specify realistic
+compositing locations, and automation of annotation. While traditional approaches often
+suffer from unrealistic placement and limited background context integration, the proposed
+
+=== PDF PAGE 12 ===
+Buildings 2025, 15, 1447
+12 of 23
+Object Range Expansion Synthesis method demonstrates improved accuracy on object
+placement by leveraging existing location information, and supports automated annotation,
+ensuring synthetic dataset generation for construction environments.
+Table 7. Analysis of previous studies and distinctiveness of this research.
+Method
+Ref. No.
+Limitations
+Synthetic Data Generation
+Object
+Specify Realistic
+Compositing
+Location
+Annotation
+Automation
+Object Range
+Expansion
+Synthesis
+Paner
+Linear
+3D Modeling +
+Object Infusion
+[1]
+Unnaturalness from
+web-crawled objects
+Including background
+Heavy
+equipment
+✗
+∆
+Random located
+except upper part
+✗
+✗
+[10]
+Modeled worker
+differs from
+real images.
+Worker
+✗
+✗
+#
+✗
+New 3D model
+creation required
+[30]
+Synthetic images
+created with random
+backgrounds differ
+from real images.
+Excavator
+✗
+✗
+Located without
+considering
+background
+#
+✗
+Object
+Infusion
+[14]
+Synthetic images do
+not account for
+ground conditions
+and environments and
+construction sites.
+Excavators
+✗
+✗
+Random located
+✗
+✗
+[24]
+Image quality is
+highly dependent on
+prompt design,
+making detailed
+control difficult.
+Small
+construction
+tools (bucket,
+cord reel,
+hammer, tacker)
+✗
+∆
+✗
+✗
+[35]
+Discrepancy between
+the remaining original
+background and the
+composite
+background of the
+separated object
+Heavy
+equipment
+✗
+∆
+Approximate
+positioning of
+the composite
+✗
+Object Range
+Expansion Synthesis
+(Our research)
+Limited in handling
+dynamic
+environmental factors
+such as lighting
+changes, occlusion
+Worker
+Frame
+scaffolding,
+ladder,
+mobile
+scaffolding
+#
+Accurate
+placement based
+on existing object
+location
+information
+#
+#
+#: Applicable, ✗: Not Applicable, ∆: Partially Applicable.
+Training datasets collected from actual field data are limited in quantity and diversity
+due to restricted objects and environments within the same space. Collecting and labeling
+large, diverse datasets manually is an extremely time-consuming task, which can delay the
+deployment of computer vision technology in applications such as construction equipment
+recognition [30]. Furthermore, the process of creating synthetic data also involves labor-
+intensive data labeling. Therefore, this study aims to address these issues by proposing a
+method that reduces labeling labor, while improving object recognition rates using a small
+amount of data.
+Figure 2 illustrates the number of possible cases for creating synthetic data by sepa-
+rating objects from the original image and performing inpainting. In the proposed ORES
+method of this study, object replacement involves generating data by replacing the object
+in its original position with either a different instance of the same object type or an entirely
+different object. In Figure 2 below, objects were first separated from the original image
+containing a scaffold and a worker, followed by inpainting. The first synthetic image shows
+the result of combining a different object of the same type. The second synthetic result
+
+=== PDF PAGE 13 ===
+Buildings 2025, 15, 1447
+13 of 23
+illustrates the combination of a different object type, where a ladder was placed in the
+position of the scaffold, and a ladder was combined with a worker. Another example shows
+a replacement of the scaffold with a trestle scaffold. As such, this study demonstrates that
+the required objects for training datasets can be generated in large quantities using various
+backgrounds and objects from open datasets. Furthermore, depending on the variety of
+objects available, it is possible to significantly expand the scope of objects and construct
+richer datasets.
+Figure 2. Synthetic dataset generation via ORES.
+3.1.1. In Terms of Quantity and Variety
+Combining classic and synthetic augmentation can enhance the variety of training
+data, positively impacting model performance. As shown in Figure 3, a limited number
+of images can be divided into backgrounds and objects, each of which can be separately
+augmented to increase data quantity. Without augmentation, the single image remains
+unchanged. However, by independently augmenting the backgrounds and objects, their
+volume can be effectively doubled. Subsequently, combining the augmented objects and
+backgrounds results in a notable increase in the quantity and diversity of the training data.
+However, repeated training on the same data runs the risk of overfitting, potentially reduc-
+ing the accuracy and generalizability of the model. To mitigate the risk of overfitting and
+ensure diversity, different types of objects and their augmented datasets can be randomly
+mixed during training. By using labeled 2D objects from one image, we can place these
+objects on various background images. This method of data synthesis introduces domain
+randomization, which enhances both the data diversity and generalization capabilities,
+as different objects are synthesized into new images. Although generating images that
+perfectly resemble real images can be challenging, expanding the dataset with slightly
+lower-quality synthetic data can help reduce overfitting and improve both the accuracy
+and generalization abilities.
+Figure 3. Concept of introducing diversity in training data.
+
+=== PDF PAGE 14 ===
+Buildings 2025, 15, 1447
+14 of 23
+Consequently, the data synthesis method proposed in this study efficiently expands a
+small number of images into a larger dataset, ensuring diversity, preventing overfitting,
+and facilitating the construction of an optimal training dataset.
+3.1.2. In Terms of Quality
+Using object insertion as a synthesis method is more labor efficient than modeling in a
+3D environment. It also provides faster synthesis and enables the insertion of various object
+types within the same timeframe. Traditional object insertion synthesis often involves the
+random or manual placement of objects onto the background. However, random placement
+can result in synthetic data with unrealistic object positions and scenarios, and random
+or inappropriate augmentation can potentially diminish model performance [7]. Bang
+et al. [35] generated synthetic data with low realism by placing construction objects in image
+gaps, without considering the actual terrain or construction site conditions. This method
+has limitations, as it introduces object placements that do not exist in real construction sites,
+which can degrade the recognition performance.
+The proposed method separates objects from the background and retains information
+on the types and positions of the separated objects. During the augmentation of different
+objects, contextual appropriateness is considered during the synthesis process. Additionally,
+the size of the original separated objects aids their placement in the background at an
+appropriate scale. This approach facilitates the construction of a synthesis dataset in which
+object sizes and types are contextually appropriate, in contrast to previous studies. Manual
+synthesis allows for human inspection and object placement; although, manually creating
+of a large volume of training data is time intensive.
+Consequently, in this study, the synthesis process was automated, enabling users to
+just select the object types and their placements. This automation facilitates the efficient
+generation of synthesized images in the desired quantities, ensuring the efficient production
+of synthetic data that resemble real-world data.
+3.2. Process of Building Synthetic Dataset
+The synthetic dataset proposed in this study was constructed as follows: (1) image
+labeling and object separation from the background; (2) augmentation and synthesis of the
+background and object; and (3) object recognition model evaluation (Figure 4).
+ 
+Figure 4. Object range expansion synthesis (ORES) process.
+The process of applying the synthetic dataset construction, as defined in Figure 4, to
+create synthetic data for scaffolding is shown in Figure 5.
+3.2.1. Image Labeling and Object Separation from Background (Figure 5A)
+The code for generating the synthetic images was written in Python 3.9.19 using Visual
+Studio (https://visualstudio.microsoft.com/, accessed on 21 April 2025), and labeling was
+performed using LabelMe (https://labelme.io/, accessed on 21 April 2025). Additionally,
+
+=== PDF PAGE 15 ===
+Buildings 2025, 15, 1447
+15 of 23
+the data used to train the initial object recognition model were directly collected from the
+field, and the construction site image data were collected using AI-Hub (https://www.
+aihub.or.kr, accessed on 21 April 2025), a publicly available dataset platform for AI research
+In Korea.
+Labeling was performed on the original scaffolding image (Figure 6) using segmenta-
+tion. This process includes the separation of the background and object by applying the
+“you only look at coefficients” (YOLACT) model to the labeled scaffolding field data. In this
+study, time was saved by using a prelabeled OpenAI annotation dataset. Labeling training
+data typically requires considerable time and effort owing to the manual labeling of large
+datasets. However, the time and labor costs can be minimized by initially labeling the
+objects intended for synthesis and subsequently synthesizing the labeled object data onto
+the background data. This method enables the quick and efficient creation of a training
+dataset, surpassing the traditional method of labeling all augmented and expanded datasets
+in terms of speed and efficiency.
+Figure 5. Synthetic data generation process of scaffolding based on the proposed method.
+ 
+Figure 6. Original scaffolding images.
+
+=== PDF PAGE 16 ===
+Buildings 2025, 15, 1447
+16 of 23
+3.2.2. Augmentation and Synthesis of Background and Object (Figure 5B)
+The separated object undergoes an augmentation process, and the background from
+which it is separated is painted. Objects extracted from construction site images can then
+be enhanced through classical augmentation (such as color, saturation, and brightness
+adjustments). In object augmentation, the input values can be modified between −255 and
+255 using an algorithm. Concurrently, the backgrounds from which the objects are removed
+can be naturally processed through inpainting. Figure 7 shows the background image
+after the separation and inpainting of the scaffolding, and it illustrates the natural AI-
+based processing of the original scaffolding. The backgrounds of the separated objects
+can be categorized based on the field image context. The background dataset comprises
+both inpainted backgrounds from which objects are removed and backgrounds with no
+object separation.
+ 
+Figure 7. Inpainted background image.
+The subsequent step entails synthesizing the object dataset, sorted by type, with the
+background dataset categorized based on construction site conditions. This synthetic data
+creation technique involves isolating the existing objects and then synthesizing various
+forms of the same object type in their original locations. The type and size of the synthe-
+sized object can then be determined based on those of the original object. As the object’s
+placement aligns with the background context, and its size is calibrated based on the
+original object’s size, this method enables the generation of highly realistic synthetic data,
+mirroring the actual site conditions.
+Figure 8 illustrates the synthetic scaffolding data generated using this method, show-
+ing multiple variations of the same object type synthesized into a single background.
+Figure 9 presents the results of same-type object synthesis and cross-type object synthesis,
+where objects are replaced with either the same type or a different type. This method
+addresses data diversity problems and expands the dataset by integrating various object
+forms into a single background. Moreover, a modest volume of initial training data can
+be transformed into an extensive dataset through object separation, augmentation, and
+background synthesis.
+In this study, 4000 real data images were used to generate 30,000 synthetic images, and
+the creation of the 30,000 training data images was achieved in 30 min. This demonstrates
+
+=== PDF PAGE 17 ===
+Buildings 2025, 15, 1447
+17 of 23
+that a substantial volume of training data can be rapidly produced with a minimal set of
+real data using synthetic data techniques.
+ 
+Figure 8. Scaffolding synthetic data.
+ 
+Figure 9. ORES-based synthetic data: examples of same-type and cross-type object replacement.
+3.2.3. Test of Object Recognition Model
+The final stage involved assessing the accuracy of the object recognition model using
+the synthesized images. If the accuracy fell below 92% after training using the synthetic
+data and testing with real data, the process reverted to the object recognition model training
+phase. Continuous training enhances the model’s accuracy, leading to the development of
+an object recognition model with a high recognition rate.
+
+=== PDF PAGE 18 ===
+Buildings 2025, 15, 1447
+18 of 23
+4. Validation
+4.1. Validation Scenario
+Validation tests were conducted to evaluate the performance of the object recognition
+model trained using synthetic data. The dataset for assessing the object recognition accuracy
+comprised 30,000 synthetic images for training and 1500 real images for testing. Model
+training involved dividing the synthetic data into a training dataset of 21,000 images and
+validation dataset of 9000 images (in a 7:3 ratio). Owing to the large time and labor costs
+involved in obtaining an equivalent volume of real data as synthetic data in the field, tests
+were conducted using 1500 real data images. The training and development environment
+comprised the RTX4080 (Nvidia Corporation, Santa Clara, CA, USA), RTX3080 (Nvidia
+Corporation), Ubuntu 20.04 LTS, Pytorch 2.0.1, and ResNet50 as the backbone.
+4.2. Results of Validation
+The core contribution of this study lies in the application of a practical, domain-specific
+synthetic data strategy object range expansion synthesis (ORES) tailored for construction
+safety contexts. In particular, the study focuses on generating synthetic datasets for linear
+structures, such as frame scaffolds and ladders, which are frequently associated with fall-
+related accidents and represent a significant safety concern on construction sites. These
+objects are structurally sensitive to visual inconsistencies due to their transparency and
+the need for background continuity, making it difficult to ensure visual realism using
+conventional data augmentation or synthesis techniques. This challenge is further amplified
+in construction environments, where lighting, background, and spatial conditions are
+constantly changing.
+Therefore, this study prioritizes practical applicability and domain relevance over
+purely technical novelty, selecting safety critical and contextually representative objects to
+validate the effectiveness of the proposed approach. Although the experimental scope was
+limited to a small number of object categories, the methodology demonstrates substantial
+academic value as a data-driven solution to real-world safety issues. We plan to expand
+the scope of this research by including additional objects and high-risk scenarios, such
+as rooftop work and aerial operations to further enhance its generalizability and field
+applicability. By focusing on difficult-to-represent safety-critical structures, this study
+demonstrates that domain-aware data synthesis can be both feasible and impactful for
+training AI models in complex real-world environments
+Figure 10 shows the results of the object recognition model trained with 30,000 synthetic
+data images and tested on real data. The segments marked in red indicate the recognition
+of scaffolding, whereas those marked in blue indicate the recognition of workers. Training
+with synthetic data yields high recognition rates, even at long distances. Although precisely
+identifying the exact boundaries of the scaffolding proved to be challenging, recognizing
+the general shape of the scaffolding and workers using bounding boxes was feasible. When
+evaluating the performance of the recognition model, an improvement in accuracy with
+an increased number of epochs was evident when trained using 30,000 synthetic data
+images (Table 8). The intersection over union (IoU) threshold—which assesses the overlap
+between the predicted and actual object locations—was maintained at 0.5, following the
+recommendation of most prior studies. The recognition model’s accuracy at this threshold
+is summarized in Table 9. By comparing the accuracy results with those of previous studies
+that used synthetic data for training, an enhancement in the performance in all aspects is
+evident (Table 10).
+
+=== PDF PAGE 19 ===
+Buildings 2025, 15, 1447
+19 of 23
+ 
+Figure 10. Scaffolding recognition results.
+Table 8. Test results (mAP).
+Epoch
+Average
+mAP50
+mAP55
+mAP60
+mAP65
+mAP70
+10
+35.55
+94.68
+92.39
+85.34
+70.18
+32.47
+50
+43.84
+98.62
+97.60
+97.54
+92.04
+68.50
+100
+44.9
+98.63
+98.63
+97.33
+94.46
+72.51
+150
+44.29
+98.74
+98.74
+98.36
+92.93
+71.05
+200
+44.61
+98.70
+98.70
+98.35
+93.22
+71.90
+250
+44.41
+98.74
+98.63
+98.29
+92.92
+71.28
+Table 9. Accuracy of scaffolding recognition model trained using synthetic data.
+Epoch
+mAP50
+F1score
+Precision
+Recall
+250
+98.74
+64.59
+99.24
+54.55
+However, despite the high precision observed, the recall remained relatively low
+(54.55%), indicating that some objects, particularly scaffolding structures, were not detected
+during testing. To further investigate and improve this limitation, we propose the following
+analyses and enhancement strategies.
+•
+Object-wise precision and recall analysis: Additional object categories will be in-
+troduced to compare precision and recall across multiple object types. This will help
+determine whether the low recall is a consistent issue across all categories or primarily
+concentrated in specific object types.
+•
+Augmentation of complex visual conditions: In the current approach, objects and
+backgrounds are separated and recombined to generate synthetic data. However,
+the training data lacks scenarios involving occlusion, partial visibility, and lighting
+variation. To address this, future work will include additional augmentation tech-
+niques that simulate changes in viewpoint, illumination, and background context.
+These enhancements are expected to improve recognition performance in challenging
+visual environments.
+•
+Integration of real and synthetic data: To reduce the domain gap between synthetic
+and real-world data, a hybrid training strategy will be explored. By combining a
+proportion of real images with synthetic ones, it is expected that the model can benefit
+from the realism of actual data, while leveraging the scalability of synthetic data,
+thereby enhancing recall and overall robustness.
+
+=== PDF PAGE 20 ===
+Buildings 2025, 15, 1447
+20 of 23
+Table 10. Accuracy comparison with existing research using synthetic data.
+Method
+Dataset
+Object
+Algorithm
+Precision
+Recall
+F1 Score
+3D rendering
+[20]
+8 different scenes
+Total 3835 frames
+32 tracked subjects
+Construction site
+and worker
+CNN
+YOLOv3
+94%
+-
+-
+3D rendering +
+object infusion
+[1]
+Web crawled + synthetic
+image database. Training
+database comprising
+99,800 images
+in 42 min
+Construction
+site and
+heavy equipment
+YOLOv5
+Batch size 16,
+Faster R-CNN
+-
+-
+63.11%
+3D rendering +
+object infusion
+[10]
+Hybrid dataset 10,000
+(worker)
+(real5000 + syn5000)
+Construction site
+and worker
+DNN
+YOLOv3
+67.8%
+-
+-
+3D rendering +
+object infusion
+[30]
+3D model with 16
+backgrounds 765 (no. of
+positive images)
+Construction site
+and excavator
+(modeling)
+-
+75%
+98%
+-
+Web crawling +
+object detection
+[14]
+Automatically creates
+5864 data (179 s)
+Construction
+site and
+heavy equipment
+Faster R-CNN
+92.71%
+88.14%
+-
+Deep learning +
+object infusion
+[35]
+76,320 synthetic data
+(6 different
+construction sites)
+Construction site
+and heavy
+equipment (taken
+by UAV)
+Faster R-CNN
+57.13%
+60.22%,
+-
+Object range
+expansion
+synthesis (ORES)
+30,000
+synthetic data
+Scaffolding
+YOLACT
+99.24%
+54.55%
+64.59%
+5. Conclusions
+This study proposed object range expansion synthesis (ORES) as a practical and ef-
+ficient method for generating large-scale training datasets from limited real-world data.
+By inserting 2D objects into spatially annotated backgrounds, ORES enables rapid dataset
+generation without requiring 3D modeling or programming. The experimental results
+on scaffolding confirmed that the proposed method achieved an object recognition per-
+formance comparable to that of existing approaches. The proposed approach has strong
+potential for real-world applications in AI based construction automation systems, in-
+cluding object detection, quality inspection, autonomous equipment, and drone-based
+monitoring. Especially in environments where real data collection is difficult or hazardous,
+ORES offers a cost-effective and scalable solution for generating diverse and realistic
+training datasets.
+To demonstrate the practical applicability of ORES, we present a deployment roadmap
+in Figure 11, outlining the complete pipeline from real-world data collection to on-site
+application. The process includes synthetic dataset generation via ORES, training of
+object detection models, and actual deployment in tasks such as on-site risk alerting,
+quality control monitoring, and drone-based safety surveillance. Notably, the workflow
+incorporates a feedback mechanism for continuous model enhancement based on missed
+detections or false positives. This practical roadmap bridges the gap between synthetic
+data generation and operational implementation, highlighting the field readiness of ORES
+in dynamic construction environments.
+However, this study has several limitations. First, while the model achieved a high
+mAP50 of 98.74, the recall was relatively low at 54.55, indicating that some actual objects
+were not detected. This is likely due to the visual similarity between scaffolding and
+background elements, which hinders effective feature extraction. Second, the current im-
+
+=== PDF PAGE 21 ===
+Buildings 2025, 15, 1447
+21 of 23
+plementation lacks the precise consideration of viewpoint alignment between objects and
+backgrounds. Object and background angles were simplified into three categories—frontal,
+side, and oblique—but this classification is insufficient for accurate visual alignment. As a
+result, the synthesized images, particularly for linear objects (frame scaffold, ladder), often
+appear unnatural when the background behind the object differs visually from the insertion
+background. To address this, future work should consider a background-matching mech-
+anism that selectively pairs backgrounds with similar color and environmental features,
+especially in cases where the background is partially visible through the object structure.
+Moreover, the current study focuses solely on scaffolding, limiting the generalizability of
+the results across broader construction scenarios.
+Figure 11. Workflow for real-world implementation of ORES in construction site applications.
+To enhance the applicability and robustness of the proposed model, future research
+should pursue several key directions. First, object-wise precision and recall analysis should
+be conducted by expanding the variety of object types used in training and evaluation to
+determine whether the observed low recall is a general issue or limited to specific categories.
+Incorporating advanced augmentation techniques that simulate complex visual conditions,
+such as occlusion, partial visibility, lighting variation, and viewpoint diversity, will help
+improve recognition performance under real-world scenarios. It is also essential to expand
+the diversity of construction objects and environmental contexts included in training to
+ensure better model generalization. In addition, applying hybrid training strategies that
+combine synthetic and real-world data in balanced proportions is expected to reduce
+domain gaps and improve recall performance. Lastly, field-based experiments, such as
+crane automation and drone-based inspections, should be conducted to validate practical
+feasibility and the real-world performance of the proposed approach.
+In conclusion, ORES presents a practical, field-oriented approach to addressing the
+issue of data scarcity in the construction domain. Its key strength lies in enabling the effi-
+cient and scalable generation of training datasets without the need for advanced technical
+infrastructure. The method is particularly suitable for safety-critical scenarios involving
+high-risk objects, such as scaffolding and ladders, and it can be effectively applied even
+in resource-constrained environments. By balancing realism, usability, and adaptability,
+ORES not only enhances object recognition accuracy but also offers a meaningful contribu-
+
+=== PDF PAGE 22 ===
+Buildings 2025, 15, 1447
+22 of 23
+tion toward the broader adoption of AI-based safety management systems in real-world
+construction settings. This balance positions ORES as a domain-aware, resource-efficient
+solution to advanced AI safety applications in construction.
+Author Contributions: Conceptualization, J.Y.; Methodology, I.W. and J.Y.; Validation, I.W.; Investiga-
+tion, J.K.; Data curation, J.K. and I.W.; Writing—original draft, J.K.; Writing—review & editing, S.L.;
+Visualization, J.K., I.W. and S.L.; Supervision, J.Y. and S.L.; Project administration, J.Y. and S.L. All
+authors have read and agreed to the published version of the manuscript.
+Funding: The present research has been conducted by the Research Grant of Kwangwoon University
+in 2025. This work was supported by a Korea Agency for Infrastructure Technology Advancement
+(KAIA) grant funded by the Ministry of Land, Infrastructure and Transport (Grant RS-2024-00512799).
+Data Availability Statement: The data supporting the findings of this study are included in the
+article. Further inquiries can be directed to the corresponding authors.
+Conflicts of Interest: The authors declare no conflict of interest.
+References
+1.
+Hwang, J.; Kim, J.; Chi, S. Site-optimized training image database development using web-crawled and synthetic images. Autom.
+Constr. 2023, 151, 104886. [CrossRef]
+2.
+Rho, J.; Park, M.; Lee, H.-S. Automated construction progress management using computer vision-based CNN model and BIM.
+Korean J. Constr. Eng. Manag. 2020, 21, 11–19.
+3.
+Jung, S.-Y.; Lee, S.-K.; Park, C.-I.; Cho, S.-Y.; Yu, J.H. A Method for Detecting Concrete Cracks using Deep-Learning and Image
+Processing. J. Archit. Inst. Korea Struct. Constr. 2019, 35, 163–170.
+4.
+Park, M.-G.; Kim, K.-H. Development of an Automatic Classification Model for Construction Site Photos with Semantic Analysis
+based on Korean Construction Specification. Korean J. Constr. Eng. Manag. 2024, 25, 58–67.
+5.
+Zhang, X.; Tang, T.; Wu, Y.; Quan, T. Construction Site Fence Recognition Method Based on Multi-Scale Attention Fusion
+ENet Segmentation Network. In Proceedings of the 35th International Conference on Software Engineering and Knowledge
+Engineering, Virtual, 1–10 July 2023.
+6.
+Cortes, C.; Jackel, L.D.; Chiang, W.P. Limits on Learning Machine Accuracy Imposed by Data Quality. In Advances in Neural
+Information Processing Systems; Morgan Kaufmann Publishers Inc.: San Francisco, CA, USA, 1995; pp. 239–246.
+7.
+Jain, S.; Seth, G.; Paruthi, A.; Soni, U.; Kumar, G. Synthetic data augmentation for surface defect detection and classification using
+deep learning. J. Intell. Manuf. 2022, 33, 1007–1020. [CrossRef]
+8.
+Man, K.; Chahl, J. A Review of Synthetic Image Data and Its Use in Computer Vision. J. Imaging 2022, 8, 310. [CrossRef]
+9.
+An, X.; Zhou, L.; Liu, Z.; Wang, C.; Li, P.; Li, Z. Dataset and benchmark for detecting moving objects in construction sites. Autom.
+Constr. 2021, 122, 103482. [CrossRef]
+10.
+Kim, J.; Kim, D.; Lee, S.; Chi, S. Hybrid DNN training using both synthetic and real construction images to overcome training
+data shortage. Autom. Constr. 2023, 149, 104771. [CrossRef]
+11.
+Duan, R.; Deng, H.; Tian, M.; Deng, Y.; Lin, J. SODA: A large-scale open site object detection dataset for deep learning in
+construction. Autom. Constr. 2022, 142, 104499. [CrossRef]
+12.
+Xiao, B.; Kang, S.C. Development of an image data set of construction machines for deep learning object detection. J. Comput. Civ.
+Eng. 2021, 35, 05020005. [CrossRef]
+13.
+Kim, H.; Kim, H.; Hong, Y.W.; Byun, H. Detecting construction equipment using a region-based fully convolutional network and
+transfer learning. J. Comput. Civ. Eng. 2018, 32, 04017082. [CrossRef]
+14.
+Hwang, J.; Kim, J.; Chi, S.; Seo, J. Development of training image database using web crawling for vision-based site monitoring.
+Autom. Constr. 2022, 135, 104141. [CrossRef]
+15.
+Son, H.; Choi, H.; Seong, H.; Kim, C. Detection of construction workers under varying poses and changing background in image
+sequences via very deep residual networks. Autom. Constr. 2019, 99, 27–38. [CrossRef]
+16.
+Kim, J.; Chi, S. Action recognition of earthmoving excavators based on sequential pattern analysis of visual features and operation
+cycles. Autom. Constr. 2019, 104, 255–264. [CrossRef]
+17.
+Zeng, T.; Wang, J.; Cui, B.; Wang, X.; Wang, D.; Zhang, Y. The equipment detection and localization of large-scale construction
+jobsite by far-field construction surveillance video based on improving YOLOv3 and grey wolf optimizer improving extreme
+learning machine. Constr. Build. Mater. 2021, 291, 123268. [CrossRef]
+18.
+Xiao, B.; Lin, Q.; Chen, Y. A vision-based method for automatic tracking of construction machines at nighttime based on deep
+learning illumination enhancement. Autom. Constr. 2021, 127, 103721. [CrossRef]
+
+=== PDF PAGE 23 ===
+Buildings 2025, 15, 1447
+23 of 23
+19.
+Braun, A.; Borrmann, A. Combining inverse photogrammetry and BIM for automated labeling of construction site images for
+machine learning. Autom. Constr. 2019, 106, 102879. [CrossRef]
+20.
+Neuhausen, M.; Herbers, P.; König, M. Using synthetic data to improve and evaluate the tracking performance of construction
+workers on site. Appl. Sci. 2020, 10, 4948. [CrossRef]
+21.
+Assadzadeh, A.; Arashpour, M.; Brilakis, I.; Ngo, T.; Konstantinou, E. Vision-based excavator pose estimation using synthetically
+generated datasets with domain randomization. Autom. Constr. 2022, 134, 104089. [CrossRef]
+22.
+Baek, F.; Kim, D.; Park, S.; Kim, H.; Lee, S. Conditional generative adversarial networks with adversarial attack and defense for
+generative data augmentation. J. Comput. Civ. Eng. 2022, 36, 04022001. [CrossRef]
+23.
+Angah, O.; Chen, A.Y. Removal of occluding construction workers in job site image data using U-Net based context encoders.
+Autom. Constr. 2020, 119, 103332. [CrossRef]
+24.
+Kim, H.; Yi, J.-S. Image generation of hazardous situations in construction sites using text-to-image generative model for training
+deep neural networks. Autom. Constr. 2024, 166, 105615. [CrossRef]
+25.
+Hong, S.; Choi, B.; Ham, Y.; Jeon, J.; Kim, H. Massive-Scale construction dataset synthesis through Stable Diffusion for Machine
+learning training. Adv. Eng. Inform. 2024, 62, 102866. [CrossRef]
+26.
+Saovana, N.; Khosakitchalert, C. Assessing the Viability of Generative AI-Created Construction Scaffolding for Deep Learning-
+Based Image Segmentation. In Proceedings of the 2024 1st International Conference on Robotics, Engineering, Science, and
+Technology (RESTCON), Pataya, Thailand, 16–18 February 2024; IEEE: Piscataway, NJ, USA, 2024; pp. 38–43.
+27.
+Jeong, I.; Kim, J.; Lim, S.; Hwang, J.; Chi, S. Training Dataset Generation through Generative AI for Multi-Modal Safety
+Monitoring in Construction. In Proceedings of the International Conference on Construction Engineering and Project Management,
+Sapporo, Japan, 29 July–1 August 2024; Korea Institute of Construction Engineering and Management: Seoul, Republic of Korea,
+2024; pp. 455–462.
+28.
+Lee, J.G.; Hwang, J.; Chi, S.; Seo, J. Synthetic image dataset development for vision-based construction equipment detection.
+J. Comput. Civ. Eng. 2022, 36, 04022020. [CrossRef]
+29.
+Chai, P.; Hou, L.; Zhang, G.; Tushar, Q.; Zou, Y. Generative adversarial networks in construction applications. Autom. Constr.
+2024, 159, 105265. [CrossRef]
+30.
+Soltani, M.M.; Zhu, Z.; Hammad, A. Automated annotation for visual recognition of construction resources using synthetic
+images. Autom. Constr. 2016, 62, 14–23. [CrossRef]
+31.
+Jeong, I.; Hwang, J.; Kim, J.; Chi, S.; Hwang, B.G.; Kim, J. Vision-Based Productivity Monitoring of Tower Crane Operations
+during Curtain Wall Installation Using a Database-Free Approach. J. Comput. Civ. Eng. 2023, 37, 04023015. [CrossRef]
+32.
+Mahmood, B.; Han, S.; Seo, J. Implementation experiments on convolutional neural network training using synthetic images for
+3D pose estimation of an excavator on real images. Autom. Constr. 2022, 133, 103996. [CrossRef]
+33.
+Xiong, R.; Tang, P. Machine learning using synthetic images for detecting dust emissions on construction sites. Smart Sustain.
+Built Environ. 2021, 10, 487–503. [CrossRef]
+34.
+Hong, Y.; Park, S.; Kim, H.; Kim, H. Synthetic data generation using building information models. Autom. Constr. 2021, 130, 103871.
+[CrossRef]
+35.
+Bang, S.; Baek, F.; Park, S.; Kim, W.; Kim, H. Image augmentation to improve construction resource detection using generative
+adversarial networks, cut-and-paste, and image transformation techniques. Autom. Constr. 2020, 115, 103198. [CrossRef]
+36.
+Taiwo, R.; Bello, I.T.; Abdulai, S.F.; Yussif, A.-M.; Salami, B.A.; Saka, A.; Zayed, T. Generative AI in the Construction Industry:
+A State-of-the-art Analysis. arXiv 2024, arXiv:2402.09939.
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

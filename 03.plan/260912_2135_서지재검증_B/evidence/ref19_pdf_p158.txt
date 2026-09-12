@@ -1,0 +1,82 @@
+- 150 -
+The PPE_YOLO model displays significant improvement in overall 
+performance, with precision increasing from 0.97 to 0.98, indicating a 
+further reduction in misdetection rates. Moreover, mAP@0.5 rises to 
+0.98, and mAP@0.5–0.95 increases to 0.772, demonstrating the 
+enhanced detection of the optimized model across IoU thresholds. In 
+terms of category performance, the detection accuracy for gloves 
+improved from 0.891 to 0.922, and mAP@0.5–0.95 increased from 
+0.509 to 0.554, significantly reducing misdetections for small targets. 
+Large targets, such as safety ropes (mAP@0.5–0.95: 0.889) and safety 
+helmets 
+(mAP@0.5–0.95: 
+0.821), 
+demonstrated 
+more 
+stable 
+performance, with recall reaching 1. Safety shoe detection slightly 
+improved in mAP@0.5–0.95 to 0.726, optimizing the ability of the 
+model to handle complex backgrounds and subtle differences. The 
+model 
+demonstrated 
+a 
+notable 
+enhancement 
+in 
+consistency 
+for 
+precision and recall across all categories, indicating that it reduces 
+misdetections and missed detections and improves adaptability to small 
+targets and complex backgrounds.
+In summary, the PPE-YOLO model outperforms the original model at 
+global and category levels, presenting significant improvement under 
+Class
+Images
+Instances
+P
+R
+mAP50
+mAP50-95
+all
+200
+1160
+0.980
+0.970
+0.980
+0.772
+Protective-Gloves
+200
+302
+0.922
+0.858
+0.925
+0.554
+Safety-Rope
+200
+139
+1.000
+1.000
+0.995
+0.889
+Safety-helmet
+200
+200
+1.000
+1.000
+0.995
+0.821
+Safety-vest
+200
+138
+0.986
+1.000
+0.989
+0.869
+Work-Boots
+200
+381
+0.992
+0.992
+0.995
+0.726
+Table 16. Performance metrics of the PPE_YOLO model.

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="179.0mm" viewBox="0 0 1500 1790">
+<title>연구의 흐름도</title>
+<rect width="1500" height="100%" fill="white"/>
+<rect x="45" y="50" width="1410" height="220" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="50" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="103" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제1·2장  연구 배경과 이론적 근거</text>
+<text x="1360" y="103" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">Why</text>
+<text x="80" y="180" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">중소규모 건설현장의 안전관리 문제와 선행연구의 한계</text>
+<text x="80" y="231" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">시스템 개발 및 도입 여부에 따른 실효성 비교의 필요성</text>
+<polyline points="750,270 750,330" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,330 759.0,312.0 741.0,312.0" fill="#243C55"/>
+<rect x="45" y="330" width="1410" height="220" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="330" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="383" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제3장  YOLO-LLM 안전관제 시스템 개발</text>
+<text x="1360" y="383" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">How</text>
+<text x="80" y="460" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">YOLO 1차 탐지와 LLM 2차 문맥 검증의 결합</text>
+<text x="80" y="511" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">시스템 구현 및 현장 운영 로그 기반 기술 성능 검증</text>
+<polyline points="750,550 750,610" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,610 759.0,592.0 741.0,592.0" fill="#243C55"/>
+<rect x="45" y="610" width="1410" height="300" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="610" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="663" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제4장  도입·미도입 현장 비교 조사 설계</text>
+<text x="1360" y="663" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">How</text>
+<text x="80" y="740" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">문항 구성 → 전문가 내용타당도 검증 → 예비조사</text>
+<text x="80" y="791" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">도입 30개소·미도입 30개소, 사후 설문 1회</text>
+<text x="80" y="842" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장당 2명·총 120부 목표 / 공변량·분석 절차 설정</text>
+<polyline points="750,910 750,970" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,970 759.0,952.0 741.0,952.0" fill="#243C55"/>
+<rect x="45" y="970" width="1410" height="340" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="970" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="1023" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제5장  실증분석 결과</text>
+<text x="1360" y="1023" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">What</text>
+<text x="80" y="1100" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">자료 정제·기술통계·신뢰도·집단 동질성 검증</text>
+<text x="80" y="1151" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장 군집성 및 ANCOVA 가정 점검</text>
+<text x="80" y="1202" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1 주 분석: ANCOVA로 실효성 조정 평균 비교</text>
+<text x="80" y="1253" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H2 탐색적 보조 분석: 집단 × 예산 제약성</text>
+<polyline points="750,1310 750,1370" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,1370 759.0,1352.0 741.0,1352.0" fill="#243C55"/>
+<rect x="45" y="1370" width="1410" height="230" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="1370" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="1423" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제6장  결론</text>
+<text x="1360" y="1423" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">의미</text>
+<text x="80" y="1500" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연구 결과 요약 및 학술적·실무적·정책적 시사점</text>
+<text x="80" y="1551" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연구의 한계와 향후 연구 방향</text>
+<text x="750" y="1670" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 개인 응답 분석 · jamovi 사용</text>
+<text x="750" y="1725" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">조정된 집단 차이를 해석하며 인과 효과를 단정하지 않는다.</text>
+</svg>

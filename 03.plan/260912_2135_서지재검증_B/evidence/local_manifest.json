@@ -1,0 +1,22 @@
+[
+  {
+    "file": "02.reference\\19. Deep Learning-Based Safety Analysis for High-Altitude Construction Workers PPE Detection and Posture Recognition Model Development.pdf",
+    "sha256": "632a0b380aaa12966316e437fd80d62e3241fffc6b9451e5ca3caa0cd7dfd72c",
+    "pdf_pages": 218,
+    "inspected_pages": [
+      2,
+      3,
+      158,
+      215
+    ]
+  },
+  {
+    "file": "02.reference\\45. 최종_건설산업 ESG 안전보건 정책과 건설안전 성과와의 관계_경기대학교 노희상.pdf",
+    "sha256": "4db0b96701f1357d6ca4caf9c6df3600bc4c5091793bc76d7ea8a60b4f17b7eb",
+    "pdf_pages": 25,
+    "inspected_pages": [
+      1,
+      25
+    ]
+  }
+]

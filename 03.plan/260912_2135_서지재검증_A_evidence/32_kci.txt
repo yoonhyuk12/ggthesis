@@ -1,0 +1,466 @@
+https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003224913
+HTTP 200
+건설현장의 스마트 안전장비 성능과 도입 효과 분석 본문 바로가기 KOAJ Korea Open Access Journals KOAJ 소개 학술지 논문 통계 한국어 English toggle menu KCI 등재 건설현장의 스마트 안전장비 성능과 도입 효과 분석 An Analysis of the Performance and Implementation Effects of Smart Safety Equipment at Construction Sites Crisisonomy 약어 : 
+				
+				
+					KRCEM 2025
+					
+					
+						vol.21,
+					
+					
+					
+						no.6,
+					
+					
+					
+						
+						
+							pp.125 - 135 DOI : 10.14251/crisisonomy.2025.21.6.125 발행기관 : (사)위기관리이론과실천 연구분야 :
+				
+				정책학 Copyright ©
+				
+				
+					 (사)위기관리이론과실천 류정 1 , 
+					
+					박인선 2 1 국토안전관리원 2 중앙대학교 인용한 논문 수 :   - 151 회 열람 현재 페이지 인쇄 PDF 다운로드 인용보기 공유 Facebook Twitter 초록 본 연구는 스마트 안전장비를 도입한 중소규모 건설현장의 안전사고 위험요인 탐지 정확도와 재해율 저감 효과를 실증적으로 분석하여, 국토교통부 스마트 안전장비 지원사업의 정책적 방향을 제시하고자 수행하였다. 2023년 해당 지원사업에 따라 스마트 안전장비를 설치·운영한 13개 건설현장을 대상으로, YoLo V4 알고리즘을 기반으로 한 AI CCTV가 쓰러짐, 화재 발생, 안전모 미착용 등의 위험요인을 얼마나 정확히 탐지하는지를 분석한 결과, 화재 발생과 안전모 미착용은 허용 기준치인 90.0%를 상회하였으나, 쓰러짐은 기준치에 미달하였다. 또한 도입 효과를 분석하기 위해 스마트 안전장비 지원사업으로 운영된 건설현장과 일반 건설현장의 재해율을 비교한 결과, 표본 수의 한계는 있으나 스마트 안전장비가 도입된 건설현장의 재해율은 0.0%로 나타났으며, 이는 일반 소규모 건설현장의 평균 재해율인 0.461%에 비해 매우 낮은 수준으로 사고 예방 효과를 확인하였다. 이에 따라 향후에는 영상 탐지 성능이 더욱 우수한 알고리즘과 스마트 장비를 도입하여 정확도를 높이는 한편, 스마트 안전장비가 자연스럽게 보급되도록 정부에서 장비구입 자금지원 등의 제도를 병행 추진하길 기대한다. This study aims to empirically analyze the risk detection accuracy and accident reduction effect of smart safety equipment at small and medium sized construction sites, and to suggest policy directions for government support. Using data from 13 sites equipped with AI-based CCTV in 2023, we evaluated the detection accuracy of safety helmet violations, falls, and fire occurrences based on the YoLo v4 algorithm. Results showed that fire and helmet-related risks exceeded the acceptable threshold of 90.0%, while fall detection was below it. Although the sample size was limited, sites with smart equipment recorded a 0.0% accident rate, compared to 0.461% at general small sites, demonstrating a clear preventive effect. These findings confirm the effectiveness of smart safety technologies in field conditions. To enhance accuracy and applicability, adoption of advanced algorithms and improved equipment is necessary. Additionally, the government should provide financial incentives and institutional support to promote broader deployment of smart safety systems. 키워드 스마트 안전장비, 스마트 장비, 스마트 기술, AI CCTV, AI 안전장비 smart safety equipment, smart equipment, smart technology, AI CCTV, AI safety equipment 참고문헌(9) 1.
+								
+								
+									
+									
+									
+									
+									
+									
+									[기타]
+								
+								
+								
+								
+								
+									/ 2022
+								
+								
+								
+								
+									
+									
+										/ Guidelines for the Implementation of Safety Management in Construction Projects
+									
+								
+								
+								
+								
+									/ Established in 2016, revised on December 20, 2022, Ministry of Land, Infrastucture and Transport Notice No. 2022-791. National Law Information Center 2.
+								
+								
+									[학술지]
+									
+									
+									
+									
+									
+									
+								
+								
+								
+									Jeong, Doyoon
+								
+								
+								
+									/ 2023 / Development of a Worker Smart Safety Management Platform using AIoT-based image processing / Journal of Information Technology and Convergence Engineering
+								
+								
+								
+									/ 13
+								
+								
+								
+									(3)
+								
+								
+								
+									: 1 ~ 3 3.
+								
+								
+									[학술지]
+									
+									
+									
+									
+									
+									
+								
+								
+								
+									Jia, X.
+								
+								
+								
+									/ 2025
+								
+								
+								
+								
+									
+									
+										/ GeoIoU-SEA-YOLO: An Advanced Model for Detecting Unsafe Behaviors on Construction Sites
+									
+								
+								
+								
+								
+									/ Sensors
+								
+								
+								
+									/ 25
+								
+								
+								
+									(4)
+								
+								
+								
+									: 1238 4.
+								
+								
+									[학술지]
+									
+									
+									
+									
+									
+									
+								
+								
+								
+									Lee, Kiseok
+								
+								
+								
+									/ 2022 / A Study on the Application of Object Detection Technology in Construction Sites through Case Analysis / Journal of the Korea Society of Disaster Information
+								
+								
+								
+									/ 18
+								
+								
+								
+									(2)
+								
+								
+								
+									: 269 ~ 2 5.
+								
+								
+									
+									
+									
+									
+									
+									[인터넷자료]
+									
+								
+								
+								
+									Korea Authority of Land & Infrastructure Safety
+								
+								
+								
+								
+								
+								
+									
+									
+										/ Guidelines for the Use of Smart Safety Equipment, Construction Safety Management Integrated Information(CSI)-Construction Safety Library 6.
+								
+								
+									
+									
+									
+									
+									
+									[인터넷자료]
+									
+								
+								
+								
+									Ministry of Employment and Labor
+								
+								
+								
+								
+								
+								
+									
+									
+										/ e-Nara Indicators - Industrial Accident Status - Fatal Accident Rate (Nationa l Development Index) 7.
+								
+								
+									
+									
+									
+									[보고서]
+									
+									
+									
+								
+								
+								
+									Ministry of Employment and Labor
+								
+								
+								
+									/ 2024
+								
+								
+								
+								
+									
+									
+										/ Announcement of Provisional Results for "Status of Fatal Accidents Subject to Accident Investigation" in Industrial Accident Statistics 8.
+								
+								
+									[학술지]
+									
+									
+									
+									
+									
+									
+								
+								
+								
+									Nath, N. D.
+								
+								
+								
+									/ 2020
+								
+								
+								
+								
+									
+									
+										/ Deep Learning for Site Safety: Real-time Detection of Personal Protective Equipment
+									
+								
+								
+								
+								
+									/ Automation in Construction
+								
+								
+								
+									/ 112
+								
+								
+								
+								
+								
+									: 103085 9.
+								
+								
+									
+									
+									
+									
+									
+									[인터넷자료]
+									
+								
+								
+								
+									News1
+								
+								
+								
+								
+								
+								
+									
+									
+										/ Sharp Decline in Construction Accidents... "On-site Inspections and Smart Safety Equipment" [2024 Construction Safety]
+									
+								
+								
+								
+								
+									/ News1 학술지 저작권 정책 CCL 정보가 제공되지 않았습니다. TOP 초록 키워드 참고문헌 toggle menu 타입을 선택하세요 BibTex RIS APA Harvard MLA Vancouver Chicago 건설현장의 스마트 안전장비 성능과 도입 효과 분석 @article{ART003224913}, author={
+							
+							
+								류정
+							
+							
+								and
+								
+								
+									
+									박인선
+									
+								
+							
+						}, title={
+							
+							
+								건설현장의 스마트 안전장비 성능과 도입 효과 분석
+							
+						}, journal={
+							
+							
+								Crisisonomy
+							
+						}, issn={2466-1198}, year={2025}, number={6}, pages={125 - 135}, doi={10.14251/crisisonomy.2025.21.6.125}, url={http://dx.doi.org/10.14251/crisisonomy.2025.21.6.125} TY - JOUR AU - 류정
+						
+						
+							
+							
+								
+								AU - 박인선 TI - 건설현장의 스마트 안전장비 성능과 도입 효과 분석 T2 - Crisisonomy PY - 2025 VL - 21 IS - 6 PB -  (사)위기관리이론과실천 SP - 125 - 135 SN - 2466-1198 AB - 본 연구는 스마트 안전장비를 도입한 중소규모 건설현장의 안전사고 위험요인 탐지 정확도와 재해율 저감 효과를 실증적으로 분석하여, 국토교통부 스마트 안전장비 지원사업의 정책적 방향을 제시하고자 수행하였다. 2023년 해당 지원사업에 따라 스마트 안전장비를 설치·운영한 13개 건설현장을 대상으로, YoLo V4 알고리즘을 기반으로 한 AI CCTV가 쓰러짐, 화재 발생, 안전모 미착용 등의 위험요인을 얼마나 정확히 탐지하는지를 분석한 결과, 화재 발생과 안전모 미착용은 허용 기준치인 90.0%를 상회하였으나, 쓰러짐은 기준치에 미달하였다. 또한 도입 효과를 분석하기 위해 스마트 안전장비 지원사업으로 운영된 건설현장과 일반 건설현장의 재해율을 비교한 결과, 표본 수의 한계는 있으나 스마트 안전장비가 도입된 건설현장의 재해율은 0.0%로 나타났으며, 이는 일반 소규모 건설현장의 평균 재해율인 0.461%에 비해 매우 낮은 수준으로 사고 예방 효과를 확인하였다. 이에 따라 향후에는 영상 탐지 성능이 더욱 우수한 알고리즘과 스마트 장비를 도입하여 정확도를 높이는 한편, 스마트 안전장비가 자연스럽게 보급되도록 정부에서 장비구입 자금지원 등의 제도를 병행 추진하길 기대한다. KW - 스마트 안전장비, 스마트 장비, 스마트 기술, AI CCTV, AI 안전장비 DO - 10.14251/crisisonomy.2025.21.6.125 UR - http://dx.doi.org/10.14251/crisisonomy.2025.21.6.125 ER - 류정
+						
+						
+							, 
+							
+							
+								
+								박인선
+								
+									
+									
+								
+							
+						
+						
+						(2025).
+						
+						
+						
+							건설현장의 스마트 안전장비 성능과 도입 효과 분석.
+						
+						
+						
+						
+							Crisisonomy,
+						
+						
+						
+							
+								21(6),
+							
+							
+							
+						
+						
+						125 - 135. 류정
+						
+						
+							, 
+							
+							
+								
+								박인선
+								
+									
+									
+								
+							
+						
+						
+						. 2025,
+						
+						“건설현장의 스마트 안전장비 성능과 도입 효과 분석”,
+						
+						
+							vol.21,
+						
+						
+						
+							no.6,
+						
+						
+						pp. 125 - 135.
+						Available from: doi:10.14251/crisisonomy.2025.21.6.125 류정
+						
+						
+							
+								
+									and
+									
+									박인선
+								
+								
+							
+						
+						
+						“건설현장의 스마트 안전장비 성능과 도입 효과 분석“
+						
+						
+						
+							Crisisonomy
+						
+						
+						
+							
+								21.6
+							
+							
+							
+						
+						
+						pp. 125 - 135.
+						
+						(2025): 125. 류정
+						
+						
+							, 
+							
+								
+								박인선
+								
+							
+						
+						.
+						건설현장의 스마트 안전장비 성능과 도입 효과 분석
+						
+						
+						
+							Crisisonomy
+						
+						[Internet].
+						2025;
+						
+						
+							
+								21(6),
+							
+							
+							
+						:
+						125 - 135.
+						Available from: doi:10.14251/crisisonomy.2025.21.6.125 류정
+						
+						
+							, 
+							
+							
+								
+								박인선
+								
+									
+									
+								
+							
+						
+						. “건설현장의 스마트 안전장비 성능과 도입 효과 분석“
+						
+						Crisisonomy
+						
+						
+							
+								21, no.6,
+							
+							
+							
+						
+						(2025): 125 - 135. doi: :10.14251/crisisonomy.2025.21.6.125 텍스트 파일로 저장 피인용 논문 (우)305-754 대전광역시 유성구 가정로 201 한국연구재단 TEL: 042-869-6674, 1544-6118 E-mail: kciadmin@nrf.re.kr COPYRIGHT BY 2024 NRF. ALL RIGHTS RESERVED. About KOAJ KOAJ 안내 KCI DOI 사업 개요 KCI DOI 가입신청 안내 DOAJ 가입 신청서 작성 안내 Journals Articles Statistics 기관·학술지 통계 Data 구축 통계

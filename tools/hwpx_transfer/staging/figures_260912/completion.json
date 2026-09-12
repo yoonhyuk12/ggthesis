@@ -1,0 +1,17 @@
+{
+  "outputs": [
+    "00. hwpx\\260912_2032_경기공학_건축안전_윤혁_논문_그림삽입본.hwpx",
+    "00. hwpx\\260912_2032_경기공학_건축안전_윤혁_논문_그림삽입본.pdf"
+  ],
+  "source": "00. hwpx\\260912_1757_경기공학_건축안전_윤혁_논문작성_작성본.hwpx",
+  "source_sha256": "7e7da28f1d716531a03c4557df217bb4ba4801f389aefcf1ccf8ffb5b780e976",
+  "snapshot_and_original_unchanged": true,
+  "pictures": 8,
+  "tables_preserved": 48,
+  "toc_entries_verified": 132,
+  "pdf_pages": 120,
+  "hancom_open_resave_reopen_pdf": true,
+  "final_sha256": "531ec626fea47ef126e99e12d21fda8668bb8e1210a0fb858fbefd70dc41d2f5",
+  "remaining_layout_issues": "Prior-document bibliography glyph collisions, floating table placement, survey header and minor wrapping; see review reports. No table final-row clipping or footer intrusion found.",
+  "orchestration_run": "run_b8bcc93752fe"
+}

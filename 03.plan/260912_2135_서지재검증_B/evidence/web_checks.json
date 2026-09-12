@@ -1,0 +1,51 @@
+[
+  {
+    "id": "ref37_gimpo",
+    "url": "https://www.igimpo.com/news/articleView.html?idxno=63694",
+    "status": 200,
+    "access_date": "2026-09-12",
+    "checks": {
+      "도시안전정보센터, 지능형 CCTV 선별관제시스템 구축": true,
+      "김정아": true,
+      "2021.05.04": true,
+      "750": true
+    }
+  },
+  {
+    "id": "ref37_yna",
+    "url": "https://www.yna.co.kr/view/AKR20240524079100051",
+    "status": 200,
+    "access_date": "2026-09-12",
+    "checks": {
+      "부산 강서구, 271억원 들여 지능형 CCTV 관제 시스템 도입": true,
+      "손형주": true,
+      "2024-05-24": true,
+      "350": true
+    }
+  },
+  {
+    "id": "ref45_kci",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003308483",
+    "status": 200,
+    "access_date": "2026-09-12",
+    "checks": {
+      "노희상": true,
+      "박종용": true,
+      "정상윤": true,
+      "2026": true,
+      "89-112": true,
+      "10.52902/kjsc.2026.51.89": true
+    }
+  },
+  {
+    "id": "ref19_catalog",
+    "url": "https://k-knowledge.kr/srch/read.jsp?id=276403938",
+    "status": 403,
+    "access_date": "2026-09-12",
+    "checks": {
+      "미이롱": false,
+      "2025-08": false,
+      "경북대학교": false
+    }
+  }
+]

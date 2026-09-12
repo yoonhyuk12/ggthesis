@@ -1,0 +1,4022 @@
+=== PDF PAGE 1 ===
+ 
+저작자표시-비영리-변경금지 2.0 대한민국 
+이용자는 아래의 조건을 따르는 경우에 한하여 자유롭게 
+l 이 저작물을 복제, 배포, 전송, 전시, 공연 및 방송할 수 있습니다.  
+다음과 같은 조건을 따라야 합니다: 
+l 귀하는, 이 저작물의 재이용이나 배포의 경우, 이 저작물에 적용된 이용허락조건
+을 명확하게 나타내어야 합니다.  
+l 저작권자로부터 별도의 허가를 받으면 이러한 조건들은 적용되지 않습니다.  
+저작권법에 따른 이용자의 권리는 위의 내용에 의하여 영향을 받지 않습니다. 
+이것은 이용허락규약(Legal Code)을 이해하기 쉽게 요약한 것입니다.  
+Disclaimer 
+ 
+  
+  
+저작자표시. 귀하는 원저작자를 표시하여야 합니다. 
+비영리. 귀하는 이 저작물을 영리 목적으로 이용할 수 없습니다. 
+변경금지. 귀하는 이 저작물을 개작, 변형 또는 가공할 수 없습니다. 
+
+=== PDF PAGE 2 ===
+ 
+116th Doctoral Dissertation 
+Thesis Advisor : Kyong Ju Kim 
+ 
+ 
+Development of an Automated Construction 
+Contract Review Framework Using LLM 
+and Domain Knowledge 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+February 2025 
+ 
+ 
+ 
+ 
+ 
+ 
+The Graduate School 
+Chung-Ang University 
+Department of Smart Cities 
+Major in Smart Planning, Construction & Information System 
+Eu Wang Kim 
+ 
+ 
+ 
+
+=== PDF PAGE 3 ===
+ 
+Development of an Automated Construction 
+Contract Review Framework Using LLM 
+and Domain Knowledge 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Presented to the Faculties of the Chung-Ang University in 
+Partial Fulfillment of the Requirement of the Degree of 
+Doctor of Philosophy 
+ 
+ 
+ 
+ 
+ 
+February 2025 
+ 
+ 
+ 
+ 
+ 
+The Graduate School 
+Chung-Ang University 
+Department of Smart Cities 
+Major in Smart Planning, Construction & Information System 
+Eu Wang Kim 
+ 
+ 
+
+=== PDF PAGE 4 ===
+Development of an Automated Construction Contract Review 
+Framework Using LLM and Domain Knowledge 
+by 
+Eu Wang Kim 
+Department of Smart Cities 
+Chung-Ang University 
+ 
+Date: February 2025 
+ 
+Approved: 
+ 
+     
+ 
+ 
+Dissertation submitted in partial fulfillment of 
+the requirements for the degree of Doctor of Philosophy in the Department of 
+Smart Cities in the Graduate School 
+of Chung-Ang University 
+ 
+2025 
+
+=== PDF PAGE 5 ===
+i 
+ 
+Abstract 
+ 
+Eu Wang Kim 
+Major in Smart Planning, Construction & Information System 
+Department of Smart Cities  
+The Graduate School, Chung-Ang University 
+ 
+ 
+Reviewing construction contracts requires expertise in both 
+engineering and law, yet many organizations lack specialized professionals. 
+While Large Language Models (LLMs) have potential, they often struggle to 
+integrate domain-specific knowledge or produce reliable outputs for complex 
+contracts. Addressing these challenges, this study introduces the Clause-
+Oriented Review with Agent-based Retrieval-Augmented Generation 
+(CORA-RAG) system, which enhances analysis accuracy and reliability 
+through three key components: (1) integrating structured domain knowledge 
+via a knowledge-enhanced RAG pipeline aligned with Standard Contract 
+Forms (SCFs); (2) employing classification-based filtering combined with 
+hybrid dense-sparse retrieval mechanisms to improve retrieval accuracy; and 
+(3) utilizing a multi-agent LLM framework with a multi-stage generation 
+process that includes context refinement and agent collaboration. 
+CORA-RAG's knowledge base comprises over 2,000 text segments 
+
+=== PDF PAGE 6 ===
+ii 
+mapped to SCFs, enabling precise interpretation of contractual provisions. 
+The system uses a multi-agent approach, with each agent LLM focusing on 
+different aspects of analysis, such as semantic understanding, context 
+analysis, and risk assessment. The structured analysis progresses through 
+stages: detecting differences, refining context, addressing practical and legal 
+aspects, and conducting detailed risk and opportunity assessments—all 
+facilitated by agent collaboration in a comprehensive generation framework. 
+Validation involved quantitative evaluation using Retrieval-
+Augmented Generation Answering System (RAGAS) metrics and expert 
+assessments. Using Oman's General Conditions as a case study, performance 
+evaluations showed significant improvements: a 52.6% increase in Context 
+Recall and a 48.3% increase in Faithfulness compared to basic RAG 
+approaches, particularly in complex reasoning and multi-context 
+understanding. Classification-based filtering combined with hybrid retrieval 
+methods reduced irrelevant data early in the process, while the multi-agent 
+LLM framework enhanced the reliability and accuracy of content generation. 
+Expert evaluations from thirteen construction industry professionals, 
+including contractors, clients, and consultants, indicated that the system 
+operates at an analytical level equivalent to junior professionals with 2–4 
+years of experience. Experts confirmed the system's utility in expediting 
+
+=== PDF PAGE 7 ===
+iii 
+basic contract analysis and enhancing work efficiency by reducing review 
+time. It effectively assists practitioners, especially those with less experience, 
+in navigating complex contracts by identifying relevant clauses and 
+highlighting deviations. However, limitations were noted in interpreting 
+nuanced language and conducting sophisticated legal analyses and risk 
+assessments—areas typically requiring more experienced professionals. 
+Key contributions of this study include developing an SCF-based 
+structured knowledge framework, enhancing retrieval accuracy through 
+classification-based filtering combined with hybrid dense-sparse retrieval 
+techniques, and implementing a context-aware, multi-stage answer 
+generation process via a multi-agent LLM framework. By integrating 
+structured knowledge with advanced agent collaboration in both retrieval and 
+generation, the CORA-RAG system provides construction professionals with 
+a reliable and efficient tool for detailed contract reviews, addressing the 
+growing need for automated expertise in construction contract analysis. 
+ 
+ 
+Keywords: AI-driven Review, Contract Management, Retrieval-
+Augmented Generation (RAG), Large Language Models (LLM), 
+Knowledge Base 
+ 
+ 
+
+=== PDF PAGE 8 ===
+iv 
+Table of Contents 
+ 
+ 
+Abstract ......................................................................................................... i 
+List of Tables ............................................................................................. viii 
+List of Figures ...............................................................................................x 
+1.Introduction ................................................................................................1 
+1.1 Background and Motivation ...........................................................1 
+1.2 Research Objectives ........................................................................2 
+1.3 Thesis Structure ..............................................................................4 
+2.Research Background ................................................................................7 
+2.1 Challenges in Construction Contract Review .................................7 
+2.2 AI and LLM Applications in Contract Management ....................10 
+2.3 Related Work and Research Gaps .................................................12 
+3.Retrieve-Focused Framework and Validation ..........................................19 
+3.1 System Requirements ...................................................................19 
+3.2 Overview of Retrieve-Focused System Architecture ...................21 
+
+=== PDF PAGE 9 ===
+v 
+3.3 Knowledge Base Component .......................................................27 
+3.4 Retrieval Component ....................................................................31 
+3.5 Generation Component .................................................................33 
+3.6 Experimental Validation for Retrieval ..........................................37 
+3.6.1 Evaluation Method and Objectives .....................................37 
+3.6.2 Dataset .................................................................................37 
+3.6.3 System Implementation and Comparison ...........................38 
+3.6.4 Evaluation Metrics ..............................................................40 
+3.6.5 Results and Analysis ...........................................................42 
+3.7 Interim Discussion ........................................................................46 
+3.7.1 Performance Analysis ..........................................................46 
+3.7.2 Enhancements via Structured Information Integration .......47 
+3.7.3 Limitations ..........................................................................50 
+4.Generate-Focused Framework .................................................................52 
+4.1 Multi-agent LLM Framework.......................................................52 
+4.1.1 Motivation for Refinement and Generation ........................52 
+
+=== PDF PAGE 10 ===
+vi 
+4.1.2 System Requirements for Multi-Agent LLM Framework ..55 
+4.2 Generation System Architecture ...................................................57 
+4.2.1 Context Refinement Pipeline ..............................................57 
+4.2.2 Multi-stage Generation Process ..........................................61 
+4.2.3 System Implementation .......................................................63 
+4.2.4 User Interface of CORA-RAG System ...............................69 
+4.2.5 Detailed Architecture Implementation and Case Analysis ..73 
+4.3 Expert Evaluation .........................................................................82 
+4.3.1 Evaluation Methodology .....................................................82 
+4.3.2 Performance Assessment and System Capabilities .............85 
+4.3.3 Analytical Capability and Limitations.................................87 
+4.3.4 Implementation Potential and Future Directions ................90 
+4.4 Summary .......................................................................................95 
+5.Discussion ................................................................................................98 
+5.1 Technical Performance Analysis ...................................................98 
+5.1.1 System Architecture and Integration ...................................98 
+
+=== PDF PAGE 11 ===
+vii 
+5.1.2 Multi-stage Generation Process ..........................................99 
+5.2 Practical Implications and Limitations .........................................99 
+5.2.1 System Benefits and Applications .......................................99 
+5.2.2 Current Limitations and Challenges ..................................100 
+6.Conclusion .............................................................................................102 
+6.1 Research Summary and Achievements .......................................102 
+6.2 Research Contributions ...............................................................103 
+6.3 Research Limitations ..................................................................105 
+6.4 Future Research ..........................................................................106 
+References .................................................................................................109 
+Appendix I. Expert Evaluation Form ........................................................ 117 
+Appendix II. Used prompts in retrieval phase ..........................................124 
+Appendix III. Used prompts in generation phase .....................................128 
+Appendix IV. Guide for Expert Assessment .............................................133 
+국문초록...................................................................................................138 
+
+=== PDF PAGE 12 ===
+viii 
+ 
+List of Tables 
+ 
+Table 1. Progressive Expansion of FIDIC Contract Suite (1977-2023) .......9 
+Table 2. Literature review ...........................................................................16 
+Table 3. Comparison of LLM approaches ..................................................25 
+Table 4. Composition the knowledge base .................................................30 
+Table 5. Overview of Test Dataset ..............................................................38 
+Table 6. Experimental Setup .......................................................................39 
+Table 7. Evaluation metrics and description ...............................................41 
+Table 8. Performance result of different LLM approaches .........................45 
+Table 9.  Context Refinement Pipeline Agents ..........................................60 
+Table 10. Multi-stage Generation Process Agents ......................................63 
+Table 11. Expert information ......................................................................83 
+Table 12. Clause Types Assessed ................................................................83 
+Table 13. Evaluation Categories and Metrics .............................................84 
+
+=== PDF PAGE 13 ===
+ix 
+Table 14. Scoring Criteria ...........................................................................85 
+Table 15. Expert evaluation results .............................................................93 
+Table 16. Expert Feedback Summary .........................................................94 
+ 
+ 
+
+=== PDF PAGE 14 ===
+x 
+List of Figures 
+ 
+Figure 1. System architecture .....................................................................23 
+Figure 2. Comparison of CORA-RAG with Existing Approaches .............24 
+Figure 3. Structured Integration Process of Knowledge into the SCF 
+Classification within the Knowledge Base .................................................29 
+Figure 4. Sequence diagram of proposed method .......................................36 
+Figure 5. Comparison of Retrieved Contexts and Generated Answers by 
+Different Models .........................................................................................49 
+Figure 6. Simulating Contract Review Process in Practice ........................54 
+Figure 7. Multi-stage Analysis Process of CORA-RAG System ................57 
+Figure 8. Refinement and Analysis Workflow ............................................68 
+Figure 9. Sequential analysis process in CORA-RAG system ...................71 
+Figure 10. Analysis Results in CORA-RAG System ..................................72 
+Figure 11. Multi-stage Knowledge Integration and Analysis Process ........78 
+Figure 12. Initial Processing and Knowledge Base Architecture ...............79 
+
+=== PDF PAGE 15 ===
+xi 
+Figure 13. Result of Context Information Extraction .................................80 
+Figure 14. Results of Each Agent Generation .............................................81 
+
+=== PDF PAGE 16 ===
+1 
+1. Introduction 
+1.1 Background and Motivation 
+Construction projects often encounter disputes due to inadequate 
+contract 
+management, 
+which 
+includes 
+ambiguous 
+terms, 
+poor 
+communication, and misinterpretations of obligations. Errors and omissions 
+in contract documents are primary causes of disputes in major construction 
+markets, significantly impacting project success by escalating costs and 
+delaying timelines (Arcadis, 2022). Recent industry reports have highlighted 
+a dramatic rise in construction dispute costs over a short period (Arcadis, 
+2023). 
+To address these challenges, improving the efficiency of contract 
+management is essential. The emergence of Artificial Intelligence (AI) and 
+Large Language Models (LLMs) offers promising approaches to provide 
+expert knowledge and increase productivity. Specifically, AI-driven contract 
+analysis tools have the potential to streamline contract review processes and 
+strengthen risk management capabilities. By automating repetitive tasks, 
+these technologies enable construction professionals to manage contracts 
+more efficiently. 
+However, applying current LLMs in contract management presents 
+
+=== PDF PAGE 17 ===
+2 
+limitations. As general-purpose models, they raise concerns about the 
+trustworthiness and accuracy of their outcomes when applied to precision-
+critical contractual contexts. The lack of domain-specific knowledge can lead 
+to missing subtle meanings in complex clauses, hindering the models’ ability 
+to interpret contracts holistically. This difficulty makes it challenging to 
+provide reliable analysis across entire documents, as nuances and 
+interdependencies between clauses may be overlooked or misinterpreted. 
+ 
+1.2 Research Objectives 
+This research aims to overcome the significant challenges in 
+automating construction contract reviews by introducing a structured 
+knowledge-integrated Retrieval-Augmented Generation (RAG) pipeline 
+tailored for construction contracts. The proposed system, named Clause-
+Oriented Review with Agentic RAG (CORA-RAG), integrates domain 
+expertise with the advanced capabilities of language models. The study 
+focuses on three primary objectives: 
+1. Develop a Structured Knowledge Framework: Systematically 
+organize technical and legal expertise by mapping contract clauses to relevant 
+analyses 
+and 
+practical 
+considerations. 
+This 
+framework 
+ensures 
+
+=== PDF PAGE 18 ===
+3 
+comprehensive coverage of essential aspects in contract review and enables 
+the system to interpret complex contractual relationships with clarity and 
+precision. It utilizes Standard Contract Forms (SCFs) such as FIDIC and 
+Oman’s General Conditions. 
+2. Create a Robust Retrieval Mechanism: Maintain accuracy when 
+dealing with complex and extensive contract data by employing a two-stage 
+retrieval process. Initially, classification-based filtering narrows the search 
+scope within the knowledge base, enhancing focus and reducing irrelevant 
+data. Subsequently, a hybrid search approach combines dense retrieval 
+(semantic matching) and sparse retrieval (keyword-based matching) to 
+ensure both contextual understanding and precise identification of critical 
+contractual elements. 
+3. Establish Reliable Generation Processes: Integrate structured 
+references into the system’s outputs to enhance response accuracy and 
+reliability. By refining retrieved contexts and incorporating domain-specific 
+knowledge, the system produces analysis outputs that align with legal, 
+technical, and practical requirements, ensuring that generated insights are not 
+only accurate but also actionable in professional settings. 
+Through these objectives, the proposed CORA-RAG system aims to 
+
+=== PDF PAGE 19 ===
+4 
+enhance the efficiency of contract reviews by addressing key challenges such 
+as the lack of domain expertise, maintaining accuracy in analysis, and 
+ensuring reliable results. The CORA-RAG system follows a step-by-step 
+process: it begins by identifying differences between new contracts and 
+standard forms, refines the context by analyzing interpretation, practical 
+issues, and legal aspects, and finally performs a detailed review—including 
+risk and opportunity assessment—to ensure a thorough understanding of the 
+contract. By combining structured knowledge with advanced LLM 
+technologies, CORA-RAG bridges the gap between traditional manual 
+methods and modern automated tools, enhancing the practicality and 
+reliability of construction contract reviews. 
+ 
+1.3 Thesis Structure 
+This thesis is organized into six chapters to systematically present 
+the research background, methodology, findings, and contributions. 
+Chapter 1: Introduction provides an overview of the research, 
+detailing the background, motivation, and objectives. It underscores the 
+challenges faced in construction contract review and introduces the CORA-
+RAG system as a potential solution to these issues. 
+
+=== PDF PAGE 20 ===
+5 
+Chapter 2: Research Background reviews the existing challenges in 
+construction contract management and explores the applications of AI and 
+LLM technologies. It identifies key research gaps, such as the need for 
+structured knowledge integration, effective retrieval mechanisms, and 
+reliable output generation. 
+Chapter 3: Retrieve-Focused Framework and Validation describes 
+the architecture of the CORA-RAG system’s retrieval-focused framework. It 
+explains the design of the knowledge base, retrieval mechanisms, and system 
+components, followed by an experimental validation to assess retrieval 
+performance. 
+Chapter 4: Generate-Focused Framework and Validation focuses on 
+the generation aspect of the system, detailing the multi-stage generation 
+process, context refinement pipeline, and system implementation. This 
+chapter also presents expert evaluations to validate the quality and reliability 
+of the generated outputs. 
+Chapter 5: Discussion provides an in-depth analysis of the system’s 
+technical performance and practical implications. It discusses the benefits 
+and applications of the system while addressing its current limitations and 
+challenges. 
+
+=== PDF PAGE 21 ===
+6 
+Chapter 6: Conclusion summarizes the key findings and 
+contributions of the research. It also outlines the study's limitations and offers 
+recommendations for future research. 
+ 
+
+=== PDF PAGE 22 ===
+7 
+2. Research Background 
+2.1 Challenges in Construction Contract Review  
+The importance of construction contract review has grown 
+significantly as the value of disputes escalates. This process requires expert 
+knowledge that is both timely and appropriately scoped. Engineers frequently 
+encounter challenges with legal implications, while lawyers may struggle to 
+grasp the technical details (Seppälä, 2023, p. 162). The complexity of 
+international projects is further compounded by the need to interpret 
+contracts across various legal systems, necessitating a thorough 
+understanding of diverse contractual forms and legal principles (Dmaidi et 
+al., 2013). 
+Expertise in construction contract review involves understanding, 
+analyzing, and interpreting complex contract provisions that intertwine 
+technical and legal aspects. Professionals must possess deep knowledge of 
+construction processes, contract law, industry practices, and specific project 
+contexts. This integration is essential to identify risks, provide clear 
+interpretations, and align with project objectives and the parties' intentions. 
+The complexity is notably higher in FIDIC contracts, where provisions across 
+different clauses are highly interconnected. FIDIC contracts serve as 
+
+=== PDF PAGE 23 ===
+8 
+fundamental building blocks in construction project delivery worldwide, 
+leading to extensive studies and applications (Migliaccio & Shrestha, 2022, 
+p. 283). 
+Understanding these contracts demands a comprehensive approach 
+to analyze how various clauses interact (Baker et al., 2013, p. 30). The 
+presence of numerous cross-references and complex sentence structures 
+increases the risk of misunderstanding (Rasslan & Nassar, 2017). Contract 
+interpretation principles require reviewers to adopt a holistic approach rather 
+than focusing on isolated words or phrases, necessitating a thorough 
+comprehension of the entire document (McMeel, 2011, p. 80). 
+Table 1 illustrates the progressive expansion of FIDIC's contract 
+suite from a single contract form in 1977 to 18 distinct works contracts by 
+2023. This expansion reflects both the growing complexity of the 
+construction industry and the increasing challenges faced by contract review 
+professionals. The suite's growth shows a strategic pattern of diversification, 
+from the traditional Red Book to specialized forms like the Gold Book for 
+design-build-operate projects (2008) and the Emerald Book for underground 
+works (2019). Each new addition targets specific project delivery methods or 
+specialized construction sectors, significantly expanding the knowledge 
+requirements for professionals. 
+
+=== PDF PAGE 24 ===
+9 
+This expansion has created two major challenges: professionals must 
+now maintain expertise across a wider range of contract types, each with 
+specific provisions, and understand the complex interrelationships between 
+different contract forms. The periodic updates and reprints, including the 
+2022 reprints of the 2017 Rainbow Suite, further necessitate continuous 
+learning to maintain current expertise across this expanding contract portfolio. 
+Table 1. Progressive Expansion of FIDIC Contract Suite (1977-2023) 
+Year Cumulative Count 
+Works Contract 
+1977 
+1 
+Red Book (3rd Edition) 
+1987 
+3 
+Red Book (4th Edition), Yellow Book (3rd Edition) 
+1995 
+4 
+Orange Book (1st Edition) 
+1999 
+8 
+Red Book (1st Edition), Yellow Book (1st Edition), 
+Silver Book (1st Edition), Green Book (1st Edition) 
+2005 
+9 
+Pink Book (MDB Harmonised Edition, Version 1) 
+2006 
+11 
+Pink Book (MDB Harmonised Edition, Version 2), 
+Blue-Green Book (1st Edition) 
+2008 
+12 
+Gold Book (1st Edition) 
+2010 
+12 
+Pink Book (MDB Harmonised Edition, Version 3) 
+2016 
+13 
+Blue-Green Book (2nd Edition) 
+2017 
+16 
+Red Book (2nd Edition), Yellow Book (2nd 
+Edition), Silver Book (2nd Edition) 
+2019 
+17 
+Emerald Book (1st Edition) 
+2021 
+18 
+Green Book (2nd Edition) 
+- 
+- 
+2022: Red Book, Yellow Book, Silver Book (2017 
+Editions) Reprint 
+- 
+- 
+2023: Emerald Book Reprint 
+
+=== PDF PAGE 25 ===
+10 
+2.2 AI and LLM Applications in Contract Management  
+Automated review in construction contract management is evolving, 
+presenting both technological advancements and implementation challenges. 
+Early research prominently featured rule-based Natural Language Processing 
+(NLP) approaches for risk detection, compliance checking, and clause 
+analysis (Hamie & Abdul-Malak, 2018; Lee et al., 2019; Serag et al., 2010; 
+Xu & Cai, 2018; Zhang et al., 2016). These methods were later extended to 
+include uncertainty analysis and automated compliance checking (Faraji et 
+al., 2021; Guo et al., 2021). 
+Conventional machine learning methods began with litigation 
+outcome prediction using various classifiers (Arditi & Pulket, 2005). 
+Subsequent studies implemented Support Vector Machines (SVM), Naïve 
+Bayes, and other machine learning approaches for compliance checking and 
+requirements classification (Candaş & Tokdemir, 2022; Hassan et al., 2020; 
+Salama & El-Gohary, 2016). Hybrid approaches combining rule-based and 
+machine learning methods were also explored (Choi et al., 2021; Hassan & 
+Le, 2020). 
+Deep learning and transformer-based models have further enhanced 
+contract analysis capabilities. Models like Bidirectional Long Short-Term 
+
+=== PDF PAGE 26 ===
+11 
+Memory (Bi-LSTM), Conditional Random Fields (CRF), and Bidirectional 
+Encoder Representations from Transformers (BERT) have been utilized to 
+improve performance in tasks such as clause classification and information 
+extraction (Moon et al., 2022; Xue et al., 2022; Zheng et al., 2022; Zhou et 
+al., 2023). Recent studies have advanced the field using architectures like 
+DeBERTa and pre-trained BERT models for risk prediction and dispute 
+classification (Ko et al., 2024; Pham & Han, 2023; Qi et al., 2024; Zhong et 
+al., 2024). 
+Recently, LLMs with knowledge-augmented approaches have 
+emerged in contract management (Wong et al., 2023; Zheng et al., 2023). 
+While these advancements offer significant potential, current methods still 
+face substantial challenges: 
+ 
+Insufficient Domain Expertise: LLMs, being trained on 
+general datasets, often lack the specialized technical and 
+legal knowledge required for in-depth contract analysis. 
+ 
+Performance Degradation with Lengthy Documents: 
+LLMs' accuracy notably drops when processing lengthy 
+documents, with reported accuracy decreasing to 55% for 
+documents exceeding ten paragraphs (Wang et al., 2024). 
+
+=== PDF PAGE 27 ===
+12 
+ 
+Reliability Concerns: The probabilistic nature of LLM 
+outputs leads to issues like hallucinations and inconsistent 
+context understanding, which are critical in precision-
+sensitive contractual contexts. 
+These limitations are particularly evident in RAG systems, which 
+continue to struggle with managing large volumes of unstructured 
+information and maintaining consistent interpretation of complex contract 
+relationships. This underscores the need for an improved methodology that 
+effectively integrates domain expertise while ensuring reliable contract 
+analysis capabilities. 
+ 
+2.3 Related Work and Research Gaps  
+The evolution from basic NLP techniques to advanced LLMs in AI-
+driven contract management highlights the increasing importance of 
+integrating domain-specific knowledge with structured information to 
+enhance analysis performance. Effective contract review requires extensive 
+expertise in both technical and legal domains, making knowledge integration 
+particularly challenging. This reflects the principle that "knowledge is 
+power" in expert systems, where system performance is more heavily reliant 
+
+=== PDF PAGE 28 ===
+13 
+on domain knowledge quality than on reasoning capabilities (Brock, 2018). 
+A fundamental limitation of LLMs is their struggle with domain-
+specific knowledge that is not widely represented in their training data 
+(Mallen et al., 2022). Kandpal et al. (2022) indicate that simply increasing 
+model size does not significantly improve the recall of specialized or rare 
+information. In the context of construction contracts, where specialized 
+technical and legal expertise is essential, these limitations become especially 
+significant. 
+Several critical challenges have been identified: 
+ 
+Difficulty in Organizing Domain Expertise: Construction 
+contracts require the integration of both technical and legal 
+knowledge to analyze specific provisions. Current systems 
+struggle to incorporate and maintain such diverse expertise 
+in a structured format. 
+ 
+Accuracy 
+Degradation 
+with 
+Complex 
+Documents: 
+Managing lengthy and complex documents remains 
+problematic. Existing basic RAG approaches, which handle 
+unstructured data, face limitations in effective information 
+retrieval and matching, leading to decreased accuracy. 
+
+=== PDF PAGE 29 ===
+14 
+ 
+Reliability Issues in LLM-Generated Content: Ensuring 
+result reliability is a critical concern. LLM-based systems 
+are prone to hallucinations and may misinterpret complex 
+contractual 
+relationships, 
+necessitating 
+sophisticated 
+verification 
+mechanisms 
+to 
+ensure 
+accuracy 
+and 
+consistency (Zheng et al., 2023). 
+Addressing these challenges requires an approach that effectively 
+integrates structured domain knowledge into the AI models. This research 
+proposes the development of a structured knowledge-integrated RAG 
+pipeline that enhances the RAG process for construction contract review. The 
+proposed solution focuses on: 
+ 
+Implementing a Structured Knowledge Framework: 
+Systematically organizing technical and legal expertise to 
+provide a comprehensive knowledge base for analysis. 
+ 
+Developing a Precise Retrieval Mechanism: Employing a 
+two-stage retrieval process that combines classification-
+based filtering with dense-sparse retrieval methods to 
+maintain accuracy when dealing with complex and 
+extensive contract data. 
+
+=== PDF PAGE 30 ===
+15 
+ 
+Establishing Reliable Answer Generation Processes: 
+Integrating structured references into the system's outputs 
+to improve response accuracy and reliability. 
+By bridging the gap between the challenges in practical contract 
+review and the limitations of existing AI methods, this approach aims to 
+enhance the practical applicability of automated contract review tools in 
+construction projects. The integration of structured domain knowledge is 
+expected to improve the accuracy, consistency, and reliability of AI-driven 
+contract analysis, making it a valuable tool for professionals in the industry.
+
+=== PDF PAGE 31 ===
+16 
+Table 2. Literature review 
+Authors 
+Year 
+Rule-based 
+NLP 
+Conventiona
+l ML 
+DL/ 
+Transformer 
+LLM 
+Research Purpose 
+Data Used 
+Features 
+Youssef 
+et al. 
+2018 
+- 
+- 
+- 
+- 
+Contract Risk Identification 
+Construction 
+Contracts 
+AHP 
+Ganbat 
+et al. 
+2020 
+- 
+- 
+- 
+- 
+Contract Risk Identification 
+Survey Data 
+Social Network Analysis 
+(SNA) 
+Zhang & 
+El-
+Gohary 
+2016 
+O 
+- 
+- 
+- 
+Compliance checking 
+Construction 
+Regulatory 
+Documents 
+Rule-based NLP, Domain-
+specific ontology 
+Hamie & 
+Abdul-
+Malak 
+2018 
+O 
+- 
+- 
+- 
+Classification of Priority 
+Clauses 
+Construction 
+Contract 
+Documents 
+Rule-based NLP 
+Xu & 
+Cai 
+2018 
+O 
+- 
+- 
+- 
+Compliance checking for the 
+AEC domain 
+Regulatory 
+Documents 
+Rule-based NLP, Semantic 
+Frames, FrameNet, 
+Semantic Role Labeling 
+Lee et al. 2019 
+O 
+- 
+- 
+- 
+Risk Factor Identification 
+Construction 
+Contracts 
+Rule-based NLP, Parsey 
+McParseface 
+Lee et al. 2020 
+O 
+- 
+- 
+- 
+Missing Clause Identification 
+Contract Text 
+Data 
+Rule-based NLP 
+Faraji et 
+al. 
+2021 
+O 
+- 
+- 
+- 
+Identification of Contract 
+Obligations 
+Construction 
+Contracts 
+Rule-based NLP, Lexicon 
+Database 
+Guo et 
+2021 
+O 
+- 
+- 
+- 
+Compliance Checking for 
+Regulatory 
+SPARQL, BimSPARQL, 
+
+=== PDF PAGE 32 ===
+17 
+Authors 
+Year 
+Rule-based 
+NLP 
+Conventiona
+l ML 
+DL/ 
+Transformer 
+LLM 
+Research Purpose 
+Data Used 
+Features 
+al. 
+Construction Projects 
+Documents and 
+BIM Data 
+ifcOWL 
+Serag et 
+al. 
+2010 
+O 
+△ 
+- 
+- 
+Contract Risk Identification 
+Construction 
+Contract 
+Clauses 
+Named Entity Recognition, 
+Logic Reasoners 
+Salama 
+& El-
+Gohary 
+2016 
+- 
+O 
+- 
+- 
+Support Automated 
+Compliance Checking 
+through Contract Document 
+Classification 
+Construction 
+Contracts 
+SVM, Naïve Bayes, 
+Maximum Entropy, Deontic 
+Model 
+Candaş 
+& 
+Tokdemi
+r 
+2022 
+- 
+O 
+- 
+- 
+Requirements Identification 
+Construction 
+Contracts 
+SVC, REG, DTC, GNB, 
+MNB, MLP 
+Arditi & 
+Pulket 
+2005 
+O 
+O 
+- 
+- 
+Judgment Prediction 
+Case Law Data 
+Boosted Decision Trees, 
+ANN, ADABOOST 
+Hassan 
+& Le 
+2020 
+O 
+O 
+- 
+- 
+Requirements Identification 
+Contract 
+Documents 
+Word2Vec, Naïve Bayes, 
+SVM, Neural Network 
+Hassan 
+et al. 
+2020 
+O 
+O 
+- 
+- 
+Contract Requirements 
+Classification 
+Construction 
+Contracts 
+Naïve Bayes, SVM 
+Choi et 
+al. 
+2021 
+O 
+O 
+- 
+- 
+Contract Risk Identification 
+ITB Documents 
+Random Forest, NER, 
+phrase-matcher 
+Lee et al. 2023 
+O 
+O 
+- 
+- 
+Specification Review 
+Specification 
+Rule-based NLP, 
+
+=== PDF PAGE 33 ===
+18 
+Authors 
+Year 
+Rule-based 
+NLP 
+Conventiona
+l ML 
+DL/ 
+Transformer 
+LLM 
+Research Purpose 
+Data Used 
+Features 
+Documents 
+Word2Vec, DSSM 
+Moon et 
+al. 
+2022 
+- 
+- 
+O 
+- 
+Specification Review 
+Specification 
+Documents 
+Word2Vec, Bi-LSTM, CRF, 
+Doc2Vec 
+Xue et 
+al. 
+2022 
+- 
+- 
+O 
+- 
+Contract 
+Summarization/Interpretation 
+Construction 
+Contracts 
+Distilbart, Pegasus, BART 
+Zheng et 
+al. 
+2022 
+- 
+- 
+O 
+- 
+Complex Regulation 
+Interpretation 
+Web Crawling 
+Data 
+BERT 
+Zhou et 
+al. 
+2023 
+- 
+- 
+O 
+- 
+Missing Clause Identification 
+Construction 
+Contracts 
+BERT, MatchPyramid, 
+CNN, LSTM 
+Qi et al. 
+2024 
+- 
+- 
+O 
+- 
+Contract Risk Identification 
+Construction 
+Contracts 
+DeBERTa 
+Pham & 
+Han 
+2023 
+- 
+O 
+O 
+- 
+Risk and Responsibility 
+Prediction 
+Construction 
+Contracts 
+BERT, BiLSTM, CNN 
+Zhong et 
+al. 
+2024 
+- 
+O 
+O 
+- 
+Contract Risk Identification 
+Case Law Data 
+TextCNN, LSTM, RCNN, 
+Transformer 
+Zheng et 
+al. 
+2023 
+- 
+- 
+O 
+O 
+Complex Regulation 
+Interpretation 
+Regulatory 
+Texts 
+LLM-FuncMapper, BERT 
+Wong et 
+al. 
+2023 
+O 
+O 
+O 
+O 
+Contract Risk Identification 
+Contract 
+Documents 
+GPT, DeBERTa, BART, 
+SVM, Naive Bayes 
+ 
+
+=== PDF PAGE 34 ===
+19 
+3. Retrieve-Focused Framework and Validation 
+3.1 System Requirements 
+To effectively address the challenges in automating construction 
+contract reviews, the proposed system must meet several key requirements. 
+These requirements focus on integrating expert knowledge, incorporating 
+precise retrieval mechanisms, generating accurate and traceable outputs, and 
+maintaining connections to reference sources—crucial for processing 
+complex construction contracts. 
+First, the system needs to integrate technical and legal 
+expertise through a systematically organized knowledge structure. LLMs 
+often struggle with domain-specific knowledge that isn't widely represented 
+in their training data, especially in specialized fields like construction 
+contracts. Therefore, integrating structured knowledge into the RAG pipeline 
+is essential for accurately analyzing specific clauses and handling specialized 
+terms. This ensures comprehensive coverage and precise interpretation of 
+contract clauses. 
+Second, 
+the 
+system 
+must 
+incorporate precise 
+retrieval 
+mechanisms to effectively extract relevant clauses and information from 
+extensive text documents. To overcome limitations in handling large volumes 
+
+=== PDF PAGE 35 ===
+20 
+of unstructured information and maintaining consistent interpretations, the 
+system should employ a two-stage retrieval process. This includes 
+classification-based filtering to narrow down pertinent sections and dense-
+sparse retrieval methods to extract precise information, even from lengthy 
+and complex documents with interconnected clauses. 
+Third, the system must generate answers that are not only accurate 
+but also traceable to their sources. Given the uncertainty inherent in LLM 
+outputs, implementing reference-based answer generation ensures that all 
+responses are supported by and linked to specific sections of the knowledge 
+base. This approach enhances the reliability and trustworthiness of the 
+automated analysis, allowing users to verify outputs and maintain confidence 
+in the system's recommendations. 
+ 
+ 
+ 
+
+=== PDF PAGE 36 ===
+21 
+3.2 Overview of Retrieve-Focused System Architecture 
+This research proposes an approach that addresses these 
+requirements: 
+ 
+Implementing a Structured Knowledge Framework that 
+organizes technical and legal expertise. 
+ 
+Developing a Precise Retrieval Mechanism that maintains 
+accuracy even with complex documents. 
+ 
+Establishing Reliable Answer Generation Processes based 
+on structured reference knowledge. 
+The proposed framework enhances the conventional RAG pipeline 
+by integrating structured domain knowledge with a two-stage retrieval 
+process and reference-based generation, ensuring reliability and precision in 
+contract analysis. 
+The system's core functionality includes three main components: 
+1. Knowledge Base: A repository containing structured contract 
+information. It maps clauses to relevant analyses, interpretations, and 
+practical considerations. This structured knowledge framework ensures 
+comprehensive coverage and precise interpretation of contract clauses by 
+
+=== PDF PAGE 37 ===
+22 
+leveraging SCFs. 
+2. Enhanced Retrieval Mechanism: A retrieval component that 
+combines classification-based filtering with dense-sparse search methods to 
+improve the accuracy of retrieving relevant information. This hybrid 
+approach effectively narrows down pertinent sections and precisely extracts 
+information, even from lengthy and complex documents with interconnected 
+clauses. 
+3. Generation Component: This component performs differential 
+analysis by comparing the input contracts to SCFs while ensuring reliability 
+through contextual interpretation. It analyzes identified differences using 
+expert analysis, legal information, practical issues, and suggested 
+improvements related to the matched SCF clauses. 
+These components are coordinated by a System Controller that 
+manages user interactions and integrates the components to ensure proper 
+data flow and validation. While the core processing flow is sequential 
+through these components, the system controller facilitates interactions 
+among components to maintain efficiency and accuracy. 
+Figure 1 illustrates the system architecture and process flow. When 
+a user inputs a new project contract, it is processed through the three main 
+
+=== PDF PAGE 38 ===
+23 
+components: 
+ 
+The Knowledge Base stores structured expert knowledge 
+and contract information. 
+ 
+The Retrieval Component searches and matches relevant 
+information using the hybrid retrieval mechanism, 
+identifying modified, added, and omitted clauses by 
+comparing the input contract against SCFs, ensuring both 
+precision and relevance. 
+ 
+The Generation Component analyzes these differences, 
+providing comprehensive and reliable analysis outputs. 
+ 
+ 
+Figure 1. System architecture 
+ 
+ 
+Figure 2 presents an architectural comparison between the proposed 
+CORA-RAG methodology and existing approaches. The right side of the 
+
+=== PDF PAGE 39 ===
+24 
+diagram depicts conventional Standard RAG and Search-Augmented 
+Generation methods, which typically involve simple combinations of a 
+knowledge base with a base LLM or a web search engine with a base LLM, 
+respectively. In contrast, the proposed CORA-RAG method, shown on the 
+left, features a more sophisticated structure with the three main components 
+described above. This comparison highlights how CORA-RAG overcomes 
+the limitations of existing approaches, enabling more accurate and reliable 
+contract analysis by integrating structured domain knowledge, advanced 
+retrieval mechanisms, and multi-stage analysis processes.  
+Table 3 compares information retrieval and context processing 
+methods across different approaches, underscoring the distinctive features of 
+the proposed method. 
+ 
+ 
+Figure 2. Comparison of CORA-RAG with Existing Approaches 
+ 
+
+=== PDF PAGE 40 ===
+25 
+ 
+Table 3. Comparison of LLM approaches 
+ 
+Information 
+Retrieval 
+Mechanism 
+Context 
+Information 
+Prompt 
+Limitations 
+Base LLM 
+None 
+None 
+-Basic 
+user 
+prompt 
+only 
+- Hallucination issues 
+- High cost 
+requirements (for 
+fine-tuning) 
+Search-
+Augmented 
+LLM 
+Web search 
+- Unstructured 
+web information 
+- Combined 
+expert and non-
+expert 
+information 
+- Dynamic online 
+content 
+- User 
+prompt 
+- 
+Retrieved 
+web 
+context 
+- Unreliable 
+information sources 
+- Mixes expert/non-
+expert content 
+Standard 
+RAG 
+Corpus-
+based 
+retrieval 
+- Scattered 
+domain 
+information 
+- Unstructured 
+expert knowledge 
+- User 
+prompt 
+- 
+Retrieved 
+context 
+- Poor information 
+retrieval to address 
+complex reasoning 
+- Limited context 
+understanding 
+Proposed 
+Method 
+Knowledge-
+based 
+retrieval 
+- Structured 
+domain 
+information 
+- Organized 
+expert knowledge 
+- User 
+prompt 
+- 
+Retrieved 
+context 
+- High initial costs 
+- Requires ongoing 
+maintenance 
+ 
+Previous approaches to contract analysis face significant limitations: 
+ 
+Base LLMs rely solely on basic user prompts, resulting in 
+hallucination issues and high costs for domain-specific 
+fine-tuning. 
+ 
+Search-Augmented LLMs incorporate web search but 
+suffer from unreliable information sources and difficulties 
+
+=== PDF PAGE 41 ===
+26 
+distinguishing between expert and non-expert content. 
+ 
+Standard RAG systems, while more advanced, are 
+ineffective in handling complex contractual reasoning due 
+to poor retrieval performance with scattered domain 
+information and unstructured knowledge. 
+The proposed method addresses these limitations through 
+knowledge-based retrieval that targets specific domain information and 
+utilizes organized expert knowledge. By integrating a structured knowledge 
+base into the RAG pipeline, the system enhances the precision and reliability 
+of contract analysis. The knowledge base, structured around SCFs, provides 
+a clear framework for systematic analysis of various types of construction 
+contracts through standardized approaches. 
+While the proposed approach requires significant initial investment 
+and ongoing maintenance, these challenges are mitigated through phased 
+implementation, industry collaboration, and systematic update processes 
+aligned with contract standard revisions. This integrated approach ensures 
+high accuracy in contract analysis and delivers transparent and traceable 
+results, effectively addressing the complexities of construction contract 
+review processes. 
+
+=== PDF PAGE 42 ===
+27 
+By maintaining the existing thesis structure and enhancing the clarity 
+and coherence of the content, this revised section emphasizes the innovative 
+aspects of the CORA-RAG system. It highlights how the integration of 
+structured domain knowledge, advanced retrieval mechanisms, and reliable 
+generation processes overcomes the limitations of existing methods, thereby 
+improving the practical applicability of automated contract review tools in 
+construction projects. 
+ 
+3.3 Knowledge Base Component 
+This section addresses the first requirement: the systematic 
+integration of expert knowledge to support accurate interpretation and 
+analysis of contract clauses. The knowledge base incorporates expert 
+knowledge organized around the SCFs, mapping each clause to relevant 
+expert analyses, legal information, and practical considerations. Developed 
+based on FIDIC contract guidebooks by Robinson (2013), Seppälä (2023), 
+and Grose (2016), the knowledge base serves as a comprehensive resource 
+providing detailed insights for each contract clause. 
+For each contractual provision, the system maintains comprehensive 
+documentation, including legal precedents and historical dispute records, 
+
+=== PDF PAGE 43 ===
+28 
+tailored to the complexity of the information. The knowledge selection 
+focuses on construction contract-specific information essential for clause 
+interpretation, understanding legal implications, and addressing practical 
+implementation issues. This structured approach enables comprehensive 
+coverage of contract scenarios, ensuring that the system can interpret 
+complex contractual relationships with precision. 
+Figure 3 illustrates the process of integrating knowledge into the 
+SCF classification within the knowledge base. The workflow encompasses 
+data collection from both SCFs and related guidebooks, highlighting the 
+extraction of relevant information for each clause. Text preprocessing and 
+information processing stages prepare the data by cleaning and standardizing 
+it. The aggregation stage consolidates this information, aligning it with the 
+knowledge base structure through the SCF classification. This classification 
+ensures that each clause is precisely categorized and linked, facilitating 
+comprehensive contextual analysis that considers the context of each clause. 
+By employing the SCF classification, the system systematically organizes 
+contract clauses, ensuring that each clause is accurately mapped to its 
+corresponding knowledge. 
+ 
+
+=== PDF PAGE 44 ===
+29 
+ 
+Figure 3. Structured Integration Process of Knowledge into the SCF Classification within the Knowledge Base 
+ 
+ 
+
+=== PDF PAGE 45 ===
+30 
+Table 4 presents the composition of the knowledge base, integrating 
+each SCF clause or sub-clause with specific types of information. The 
+knowledge is structured around the FIDIC Red Book 1999, providing a 
+detailed framework for each contract clause. 
+ 
+Table 4. Composition the knowledge base 
+Type 
+Description 
+No. of 
+corpus 
+Average of 
+text length 
+Clause /  
+Sub-Clause of 
+SCF 
+Clause text from Standard 
+Contract Forms, providing the 
+base reference for analysis and 
+comparison 
+162 
+168 
+Expert analysis 
+Detailed explanations of 
+contractual requirements and 
+obligations 
+162 
+1488 
+Legal 
+Information 
+Case law, legal requirements, 
+and jurisdictional considerations 
+55 
+568 
+Practical 
+Considerations 
+Common challenges and 
+historical problems 
+162 
+138 
+ 
+Each sub-clause of the FIDIC Red Book is systematically 
+documented. The original contract text averages 168 words, detailed expert 
+analysis averages 1,488 words, and practical considerations average 138 
+words. Legal information is provided through 55 legal documents, each 
+averaging 568 words. 
+
+=== PDF PAGE 46 ===
+31 
+The system transforms this information into machine-friendly 
+formats through a knowledge representation framework that links each clause 
+to its corresponding structured information. This integration enables context-
+aware contract analysis that considers both practical implications and the 
+literal contract language. To maintain the quality of the knowledge base, the 
+framework includes processes for incorporating updates from FIDIC contract 
+revisions and mechanisms for integrating project feedback and lessons 
+learned.  
+ 
+3.4 Retrieval Component  
+This section covers the second requirement, inclusion of precise 
+retrieval mechanisms. Combining classification-based filtering with hybrid 
+search methods, this component accurately and efficiently retrieves relevant 
+information from complex contract documents. 
+The retrieval mechanism operates as a two-stage process. First, 
+clause classification based on SCF classification narrows the search scope 
+within the Knowledge Base, ensuring that only pertinent clauses are 
+considered, reducing noise and improving efficiency. Second, a hybrid search 
+combines dense vector embeddings and sparse keyword-based methods to 
+
+=== PDF PAGE 47 ===
+32 
+precisely identify relevant information. Dense retrieval implements FAISS 
+with the text-embedding-3-small model for semantic similarity searches, 
+mapping textual data into high-dimensional vector space to capture 
+contextual meaning. Sparse retrieval employs BM25—a well-established 
+TF-IDF-based function that ranks documents according to query terms. 
+This two-stage retrieval mechanism effectively targets specific 
+domain knowledge, enhancing the accuracy and reliability of contract 
+analysis. By processing input contracts through this combined classification 
+and hybrid retrieval method—integrating both dense and sparse retrieval 
+techniques with relationship-aware ranking that considers interconnections 
+among contract elements—the system effectively identifies relevant clauses 
+and associated expert knowledge. 
+Furthermore, using SCF classification in the initial filtering reduces 
+the search space and aligns the retrieval process with standardized contract 
+structures. This alignment is crucial for maintaining consistency and ensuring 
+that the retrieved information is contextually relevant. By structuring the 
+retrieval mechanism in this way, the system efficiently handles the 
+complexity and length of construction contracts, providing accurate and 
+reliable analytical results. 
+ 
+
+=== PDF PAGE 48 ===
+33 
+3.5 Generation Component 
+This section addresses the third requirement: generating accurate and 
+traceable answers by maintaining connections to reference sources. The 
+Generation Component is responsible for producing contract analyses based 
+on the information prepared by the Retrieval Component and the structured 
+knowledge base. 
+After the Retrieval Component identifies relevant clauses and 
+associated expert knowledge, the Generation Component performs a 
+differential analysis between the input contract clauses and the corresponding 
+clauses from the SCFs. By comparing the input contract to the SCFs, it 
+identifies discrepancies such as modifications, additions, or omissions. 
+Utilizing contextual information from the knowledge base—including expert 
+analyses, legal information, and practical considerations—the Generation 
+Component assesses the implications of these discrepancies. 
+To ensure transparency and trustworthiness, each conclusion and 
+recommendation is explicitly linked to specific sections of the knowledge 
+base and SCF clauses. This explicit linkage allows users to easily trace the 
+generated analyses back to their underlying sources, enhancing the reliability 
+and credibility of the system's outputs. 
+
+=== PDF PAGE 49 ===
+34 
+Figure 4 illustrates the sequence diagram of the proposed method, 
+detailing the interactions between the system components during the contract 
+analysis process. The process begins when the user submits an input contract 
+to the system. The System Controller receives the contract and orchestrates 
+the analysis by coordinating with the Retrieval Component. The Retrieval 
+Component classifies the input contract clauses based on the SCF 
+classification to narrow down relevant sections. It then performs a hybrid 
+retrieval using both dense vector embeddings and sparse keyword-based 
+searches to fetch pertinent information from the knowledge base. 
+Subsequently, the Generation Component compares the input 
+contract clauses with the corresponding SCF clauses to identify differences. 
+It integrates contextual information such as expert analyses, legal 
+considerations, and practical issues to evaluate the implications of these 
+discrepancies. The system then generates detailed analyses and 
+recommendations, explicitly referencing the relevant sources from the 
+knowledge base and SCFs. 
+Finally, the analyzed output is delivered to the user, providing 
+transparent and traceable insights into the deviations from the SCFs. By 
+maintaining clear connections to reference sources throughout the analysis, 
+the Generation Component produces outputs that are not only accurate but 
+
+=== PDF PAGE 50 ===
+35 
+also verifiable and actionable in professional settings. This approach 
+enhances trust in the automated analysis and supports users in making 
+informed decisions based on reliable and well-documented information. 
+
+=== PDF PAGE 51 ===
+36 
+ 
+Figure 4. Sequence diagram of proposed method 
+
+=== PDF PAGE 52 ===
+37 
+3.6 Experimental Validation for Retrieval 
+3.6.1 Evaluation Method and Objectives 
+In this study, the Retrieval Augmented Generation Assessment 
+System (RAGAS) comprehensively assesses the performance of four 
+approaches: Base LLM, Search-Augmented LLM, Basic RAG, and the 
+proposed method that incorporates structured information. This assessment 
+demonstrates how effectively structured domain knowledge integrates into 
+the RAG for construction contract analysis. 
+Test cases were designed to evaluate the system's capability to 
+analyze contract clauses by considering multiple aspects, including expert 
+analyses, legal information, and practical considerations. Each test case 
+provides detailed ground truth answers that encompass all these aspects, 
+ensuring that the system's responses can be thoroughly evaluated for 
+completeness and accuracy. 
+ 
+3.6.2 Dataset  
+The test dataset comprises two widely recognized construction 
+contract documents: the FIDIC Red Book (1999 version) and Oman's 
+General Contract (2019 version), as detailed in Table 5. The FIDIC Red Book, 
+
+=== PDF PAGE 53 ===
+38 
+comprising 20 main clauses and 162 sub-clauses, was chosen because it is 
+widely used and contains extensive information. Oman's General Contract, 
+featuring 22 main clauses and 167 sub-clauses, was selected to assess the 
+system's adaptability to real-world contract. After excluding definition 
+sections, both documents yielded a comprehensive corpus of 2,071 text 
+segments for analysis. 
+ 
+Table 5. Overview of Test Dataset 
+Document Type 
+No. of Clause / 
+Sub-Clause 
+No. of 
+corpus 
+No. of 
+words 
+No. of 
+tokens 
+FIDIC Red Book 
+20 / 162* 
+1021 
+29280 
+35574 
+Oman's general 
+contract (test) 
+22 / 167* 
+1050 
+33999 
+40809 
+* Excludes definitions section 
+ 
+ 
+ 
+ 
+3.6.3 System Implementation and Comparison 
+The experimental setup involves comparing four approaches, as 
+detailed in Table 6. The Base LLM employs the GPT-4o-mini-2024-07-18 
+model as a benchmark. The Search-Augmented LLM uses web search using 
+the Perplexity API with llama-3.1-sonar-large-128k model. The Basic RAG 
+and the proposed method implement a hybrid retrieval system combining 
+dense and sparse retrieval techniques using FAISS and BM25.  
+
+=== PDF PAGE 54 ===
+39 
+All approaches, excluding Perplexity, use the same base LLM (GPT-
+4o-mini-2024-07-18) to ensure consistent comparison. This consistent 
+baseline allows for evaluation of each approach's effectiveness in contract 
+analysis tasks, demonstrating the advantages of integrating structured domain 
+knowledge into the RAG pipeline. 
+ 
+Table 6. Experimental Setup 
+Approach 
+Base Model 
+Retrieval Configuration 
+Base LLM 
+GPT-4o-mini-
+2024-07-18 
+N/A 
+Search-
+Augmented 
+LLM 
+Llama-3.1-sonar-
+large-128k 
+Web Search (Perplexity API) 
+Top-k: 5 
+Basic RAG 
+GPT-4o-mini-
+2024-07-18 
+Dense: FAISS, text-embedding-3-small 
+Sparse: BM25, k1=1.5, b=0.75 
+Hybrid weights (Dense:0.5, Sparse:0.5) 
+Top-k: 5 
+Proposed 
+Method 
+GPT-4o-mini-
+2024-07-18 
+Dense: FAISS, text-embedding-3-small 
+Sparse: BM25, k1=1.5, b=0.75 
+Hybrid weights (Dense:0.5, Sparse:0.5) 
+Top-k: 5 
+ 
+ 
+ 
+
+=== PDF PAGE 55 ===
+40 
+3.6.4 Evaluation Metrics 
+The evaluation method utilizes RAGAS metrics, enabling 
+assessment without reliance on ground truth human annotations (Es et al., 
+2023). These metrics evaluate both retrieval and generation capabilities and 
+are categorized into retrieval performance, response quality, and overall 
+system effectiveness, as detailed in Table 7. 
+Context Precision measures how relevant the retrieved information 
+is to the query, ensuring the system focuses on pertinent contract clauses 
+without unnecessary content. Context Recall evaluates the completeness of 
+the retrieved information, confirming that all critical clauses needed to 
+answer the query are included. 
+Answer Relevancy assesses how directly the system's responses 
+address the user's specific queries, ensuring practical usefulness for contract 
+reviewers. Faithfulness measures how accurately the responses reflect 
+information from the SCFs and expert knowledge base, maintaining the 
+integrity of contract interpretation. 
+Answer Correctness combines accuracy and quality to provide an 
+overall measure of the system's practical utility, determining whether the 
+answers are correct and useful for professional contract review. These metrics 
+
+=== PDF PAGE 56 ===
+41 
+assess the system's ability to retrieve relevant contract information and 
+generate accurate, reliable analyses, ensuring that the automated review 
+process meets professional standards. 
+ 
+Table 7. Evaluation metrics and description 
+Evaluation level Metric Type 
+Description 
+Input 
+Variables 
+Description 
+Retrieval 
+Context, 
+Precision 
+Relevance of 
+retrieved 
+information 
+Ground 
+Truth, 
+Context 
+Measures the 
+proportion of 
+relevant context 
+within the 
+retrieved 
+information 
+Context 
+Recall 
+Completeness 
+of retrieved 
+information 
+Ground 
+Truth, 
+Context 
+Assesses the 
+proportion of all 
+relevant context 
+successfully 
+retrieved 
+Generation 
+Answer 
+Relevancy 
+How directly 
+the response 
+addresses the 
+query 
+Answer, 
+Question 
+Evaluates 
+alignment 
+between the 
+answer and the 
+question for 
+relevance 
+Faithfulness 
+Consistency 
+with retrieved 
+context 
+Answer, 
+Context 
+Checks that the 
+answer accurately 
+reflects the 
+retrieved context 
+Overall 
+Answer 
+Correctness 
+Combined 
+accuracy and 
+usefulness of 
+the answer 
+Answer, 
+Ground 
+Truth 
+Determines 
+overall answer 
+accuracy and 
+utility against the 
+ground truth 
+ 
+ 
+ 
+
+=== PDF PAGE 57 ===
+42 
+3.6.5 Results and Analysis  
+The experimental results reveal significant performance variations 
+across different model approaches, as Table 8 illustrates. Each approaches 
+shows distinct characteristics in both information retrieval and  answer 
+generation capabilities. 
+(1)  Information Retrieval Performance 
+The Base LLM does not provide context retrieval metrics because it 
+operates without accessing external documents. The Search-Augmented 
+LLM, despite having access to external information, shows moderate 
+retrieval capabilities (Context Precision: 0.721, Recall: 0.558) but with high 
+variability (±0.297 and ±0.392 respectively), indicating stability issues in 
+retrieval performance. 
+The Basic RAG implementation utilizes a hybrid retrieval approach 
+combining dense and sparse retrieval methods (Context Precision: 0.587 ± 
+0.115, Recall: 0.635 ± 0.363). While this approach enables both semantic 
+understanding and exact matching of contract terms, its Context Precision is 
+lower than the Search-Augmented LLM, though with improved stability as 
+shown by lower standard deviations. 
+The proposed method achieves high Context Recall (0.969 ± 0.132) 
+
+=== PDF PAGE 58 ===
+43 
+while exhibiting similar Precision (0.625 ± 0.089) compared to the other 
+methods. This superior performance, particularly in stability as indicated by 
+the lowest standard deviations among all approaches, stems from the 
+structured organization of domain knowledge, enabling more comprehensive 
+and reliable retrieval of relevant contract information. 
+(2)  Answer Generation Quality 
+The Base LLM exhibits strong Answer Relevancy (0.818), reflecting 
+its robust language understanding capabilities developed through pre-
+training. The Search-Augmented LLM shows improved Answer Relevancy 
+(0.884) and Faithfulness (0.770), indicating effective integration of retrieved 
+information in answer generation. The Basic RAG shows moderate 
+Faithfulness (0.602), indicating integration of retrieved information in 
+answer generation, though not surpassing the Search-Augmented LLM's 
+performance (0.770) 
+The proposed method significantly enhances both metrics 
+(Faithfulness: 0.893 ± 0.198, Answer Relevancy: 0.903 ± 0.150), 
+demonstrating effective utilization of structured knowledge in generating 
+accurate and relevant responses. Additionally, the comparatively low 
+standard deviations (±0.198 for Faithfulness and ±0.150 for Answer 
+Relevancy) indicate consistent response quality across various queries, 
+
+=== PDF PAGE 59 ===
+44 
+highlighting the reliability of the proposed method. 
+Furthermore, the proposed method achieves the highest Answer 
+Correctness of 0.750 ± 0.197, indicating its superior ability to provide 
+accurate and correct responses essential for construction contract review. The 
+integration of structured information in the knowledge base enhances the 
+quality and organization of the content used for answer generation. This leads 
+to significant improvements in both Faithfulness (from 0.602 to 0.893) and 
+consistency of performance, as shown by lower standard deviations across 
+metrics.
+
+=== PDF PAGE 60 ===
+45 
+Table 8. Performance result of different LLM approaches 
+ 
+Evaluation Metrics (Mean ± SD) 
+ 
+Context Metrics 
+Answer Metrics 
+Overall Performance 
+Model Type 
+Context 
+Precision 
+Context 
+Recall 
+Answer 
+Relevanc
+y 
+Faithfuln
+ess 
+Answer 
+Correctn
+ess 
+Average 
+Score 
+Base LLM 
+(GPT-4o-mini) 
+N/A 
+N/A 
+0.818 ± 
+0.312 
+N/A 
+0.687 ± 
+0.240 
+0.752 ± 
+0.200 
+Search-
+Augmented 
+LLM 
+(Perplexity 
+API, llama-
+3.1-sonar-
+large) 
+0.721 ± 
+0.297 
+0.558 ± 
+0.392 
+0.884 ± 
+0.093 
+0.770 ± 
+0.252 
+0.616 ± 
+0.205 
+0.710 ± 
+0.134 
+Standard RAG 
+(GPT-4o-mini, 
+Dense+Sparse 
+Retrieval) 
+0.587 ± 
+0.115 
+0.635 ± 
+0.363 
+0.895 ± 
+0.148 
+0.602 ± 
+0.249 
+0.697 ± 
+0.213 
+0.683 ± 
+0.119 
+Proposed 
+Method 
+(GPT-4o-mini, 
+Dense+Sparse 
+Retrieval, 
+Structured 
+information) 
+0.625 ± 
+0.089 
+0.969 ± 
+0.132 
+0.903 ± 
+0.150 
+0.893 ± 
+0.198 
+0.750 ± 
+0.197 
+0.828 ± 
+0.087 
+ 
+
+=== PDF PAGE 61 ===
+46 
+3.7 Interim Discussion 
+3.7.1 Performance Analysis 
+By fulfilling the three requirements outlined in Section 3.1, the 
+Structured Knowledge-Integrated RAG Pipeline effectively addresses 
+significant challenges in automated contract analysis for construction 
+contracts. Firstly, the systematic integration of expert knowledge through a 
+well-organized knowledge structure enables the system to handle specialized 
+technical and legal tasks with greater accuracy. By incorporating domain-
+specific expertise into a knowledge base, the system mitigates the limitations 
+of LLMs in dealing with specialized knowledge not widely represented in 
+their training data, ensuring precise interpretation of contract clauses. 
+Secondly, the incorporation of precise retrieval mechanisms 
+addresses challenges in handling large volumes of unstructured information 
+and maintaining consistent interpretations. By combining classification-
+based filtering with hybrid dense-sparse retrieval techniques, the system 
+mitigates limitations of basic RAG approaches, improving the retrieval of 
+relevant clauses and contextual information. 
+Thirdly, maintaining connections to reference sources enhances 
+traceability, mitigating the probabilistic nature of LLM outputs and ensuring 
+
+=== PDF PAGE 62 ===
+47 
+the reliability. Through reference-based generation, the system allows users 
+to trace conclusions back to original sources, strengthening trustworthiness 
+where accuracy is paramount. 
+ 
+3.7.2 Enhancements via Structured Information Integration 
+The proposed method achieved Context Recall of 0.969 and 
+Faithfulness of 0.893, compared to Basic RAG's 0.602. This demonstrates 
+improved reference maintenance and reduced hallucinations. 
+Figure 5 illustrates the comparative analysis of responses to "What 
+measures must the Contractor take to protect the environment?" across 
+different models. 
+The Base LLM offered only general environmental protection 
+practices without addressing specific contractual requirements. It missed 
+critical obligations like taking "all necessary measures," limiting pollution 
+and noise damage, controlling emissions, and complying with the 
+environmental impact statement. 
+Both the Search-Augmented LLM and Basic RAG included key 
+contractual obligations but diluted their responses with irrelevant information 
+about local regulations, monitoring systems, and legal consequences. This 
+
+=== PDF PAGE 63 ===
+48 
+additional content reduced the precision required in contractual contexts. 
+Moreover, both models exhibited variability in performance metrics. The 
+Search-Augmented LLM demonstrated even more pronounced variability, 
+with a Context Precision standard deviation of ±0.297 and Context Recall 
+standard deviation of ±0.392. This high variability undermines the reliability 
+essential for tasks that require consistent precision, such as contract analysis. 
+The proposed method often generated responses closely matching 
+the contractual content. It specified that the Contractor must take all 
+necessary measures to protect the environment both on and off site, limit 
+damage from pollution and noise, ensure emissions don't exceed specified 
+values, and comply with environmental impact statements. This 
+demonstrates the effectiveness of integrating structured information with 
+advanced retrieval techniques for contractual content, enhancing consistency 
+and maintaining high recall.  
+ 
+
+=== PDF PAGE 64 ===
+49 
+ 
+Figure 5. Comparison of Retrieved Contexts and Generated Answers by 
+Different Models 
+
+=== PDF PAGE 65 ===
+50 
+3.7.3 Limitations 
+Despite the strong performance, certain limitations highlight areas 
+for improvement. First, although the system achieves a high Context Recall 
+(0.969), the relatively lower Context Precision of 0.625 indicates that the 
+retrieval mechanism occasionally includes less relevant information. 
+Additionally, the Answer Correctness metric of 0.750 suggests potential for 
+improvement in generating accurate responses. 
+Second, although the RAGAS evaluation offers valuable 
+quantitative insights into the system's retrieval and answer generation 
+performance, it does not fully capture the nuanced judgments of human 
+experts, highlighting the necessity for manual expert evaluations to ensure 
+comprehensive assessment of analysis quality. 
+Third, the system's effectiveness depends on the comprehensiveness 
+of its knowledge base for SCFs, which may limit its applicability to contracts 
+outside of this scope. This reliance on a specific knowledge base means the 
+system may not be applicable to tailored contracts that are customized or 
+significantly modified. 
+Future research will focus on expanding the knowledge base to cover 
+a wider range of contract types, including customized and non-standard 
+
+=== PDF PAGE 66 ===
+51 
+contracts. Enhancing the knowledge base and advancing retrieval algorithms 
+are anticipated to bridge the remaining gaps. Moreover, integrating human 
+expert manual assessments will be crucial for advancing the system's 
+reliability and effectiveness in contract analysis. 
+ 
+ 
+
+=== PDF PAGE 67 ===
+52 
+4. Generate-Focused Framework 
+4.1 Multi-agent LLM Framework 
+4.1.1 Motivation for Refinement and Generation 
+The initial CORA-RAG system automated parts of the construction 
+contract review process, yet challenges persist in the generation phase due to 
+limitations of current LLMs. These models often struggle with logical 
+reasoning and understanding cause-and-effect relationships within contract 
+terms. They may identify changes in specific clauses but fail to comprehend 
+how these modifications impact interconnected provisions. 
+To overcome these limitations, a multi-agent LLM framework is 
+introduced. This approach employs multiple LLM agents assigned to specific 
+tasks or domains—such as differential analysis, or risk assessment—
+enhancing focus and expertise without altering the underlying models. 
+Instead of fine-tuning, strategic prompt engineering and task-specific 
+configurations are utilized to tailor each agent's function. 
+By assigning specific roles to LLM agents and enabling 
+collaboration, the system can better handle complex contractual contexts. 
+Agents share information and build upon each other's outputs, distributing 
+the workload and improving reasoning. Key aspects of this approach include: 
+
+=== PDF PAGE 68 ===
+53 
+ 
+Task-specific LLM Agents through Prompt Engineering: 
+Directing each agent to focus on a specific task using 
+tailored prompts and instructions. 
+ 
+Collaborative Workflow: Coordinating agents through a 
+central system controller that manages data exchange and 
+ensures a coherent analysis process. 
+ 
+Integration of Domain Expertise: Incorporating expert 
+knowledge into the agents' configurations to ensure 
+accurate and in-depth analysis. 
+Figure 6 illustrates how this system mirrors traditional expert review 
+practices. It integrates LLM agents at key processing stages corresponding to 
+expert tasks like clause identification, contextual analysis, and impact 
+assessment. The left side of the figure represents the traditional sequential 
+review process, forming the foundation of the automated framework. The 
+right side shows the AI-based implementation with task-specific LLM agents. 
+The multi-agent approach improves analysis quality by enabling a 
+better understanding of complex contractual contexts. This ensures that 
+automation maintains the review's depth and quality, leading to accurate and 
+reliable contract analyses aligned with professional standards. 
+
+=== PDF PAGE 69 ===
+54 
+ 
+Figure 6. Simulating Contract Review Process in Practice 
+
+=== PDF PAGE 70 ===
+55 
+4.1.2 System Requirements for Multi-Agent LLM Framework 
+The system employs a coordinated network of LLM agents operating 
+in a structured, sequential workflow to perform comprehensive contract 
+analysis. As illustrated in Figure 7, ensuring effective communication and 
+data flow between agents while maintaining overall process integrity. 
+Validation mechanisms at each stage ensure outputs are reliable and accurate 
+before proceeding to the next phase. 
+1. Agent Deployment and Coordination: The system must support 
+the deployment and coordination of various LLM agents, each assigned to 
+specific tasks such as textual difference analysis, semantic analysis, context 
+analysis, detailed examination, summary generation, risk-opportunity 
+assessment, and results integration. Agents operate sequentially and 
+collaboratively, with each agent's output serving as input for the next. The 
+central system controller facilitates communication among agents, monitors 
+progress, and handles exceptions to ensure workflow continuity. 
+2. Validation Framework: The system incorporates robust validation 
+mechanisms to verify outputs at each analysis stage. This includes automated 
+checks performed by LLM agents and interfaces for domain experts to review 
+and confirm analyses. The absence of robust validation processes involving 
+
+=== PDF PAGE 71 ===
+56 
+domain experts resulted in outputs that, although helpful for basic analysis, 
+fell short in handling complex legal interpretations. Enhancing validation by 
+incorporating interfaces for domain experts to review and confirm analyses 
+is necessary. Such validation will ensure that each agent's contribution aligns 
+with professional standards of accuracy and relevance, thereby improving the 
+system's overall reliability before proceeding to subsequent analysis stages. 
+3. Traceability: The system maintains traceability and transparency 
+in the reasoning process, allowing users to understand how conclusions are 
+reached at each stage. This enhances trust by making the analysis explainable, 
+enabling stakeholders to follow the reasoning behind insights and decisions. 
+Detailed logs and documentation capture each agent's inputs, outputs, and 
+processing steps, facilitating traceability. 
+These requirements establish a foundation for effective collaboration 
+among LLM agents, ensuring a smooth and coherent workflow while 
+maintaining reliability and transparency throughout the contract analysis 
+process. 
+ 
+
+=== PDF PAGE 72 ===
+57 
+ 
+Figure 7. Multi-stage Analysis Process of CORA-RAG System 
+ 
+4.2 Generation System Architecture 
+4.2.1 Context Refinement Pipeline  
+
+=== PDF PAGE 73 ===
+58 
+The Context Refinement Pipeline is a critical component of the 
+CORA-RAG system, integrating specialized technical and legal knowledge 
+essential for construction contract reviews. As depicted in Figure 7, this 
+pipeline operates through a network of LLM agents performing specific tasks, 
+with certain processes operating in parallel to enhance efficiency and depth. 
+The process begins with the Textual Difference Analysis Agent, 
+which identifies significant variations between the new contract clauses and 
+the standard clauses from the FIDIC RED99. This agent processes inputs 
+from both the new contract and the standard contract library to generate a list 
+of detected changes with initial annotations. These changes highlight 
+modifications in contractual language and provisions that require further 
+examination. 
+Following the identification of differences, the pipeline advances 
+into two parallel refinement processes: Semantic Analysis and Context 
+Analysis. 
+ 
+Semantic Analysis Agent: This agent focuses on examining 
+the language modifications identified by the Textual 
+Difference Analysis Agent. It assesses how these changes 
+impact contractual obligations and rights, providing 
+
+=== PDF PAGE 74 ===
+59 
+semantic insights into the contractual modifications. This 
+analysis deepens the understanding of the altered meanings 
+and intentions behind the revised clauses. 
+ 
+Context Analysis Agent: Utilizing expert knowledge 
+bases—including expert analysis, legal information and  
+practical 
+issues—this 
+agent 
+evaluates 
+the 
+legal 
+requirements and practical considerations associated with 
+the contractual changes. It offers contextual insights that 
+illuminate the broader implications of the modifications, 
+such as compliance with laws and the feasibility of 
+implementation. 
+The outputs from the Semantic Analysis Agent and the Context 
+Analysis Agent are then combined by the Combined Refined Context 
+Agent to form a comprehensive refined context. This agent synthesizes the 
+semantic understanding of the language changes with the practical and legal 
+considerations, providing a robust foundation for the subsequent stages of 
+analysis. Validation mechanisms are employed at each stage to ensure the 
+accuracy and reliability of the information before it progresses further in the 
+pipeline. 
+
+=== PDF PAGE 75 ===
+60 
+By operating the Semantic Analysis and Context Analysis in parallel, 
+the system enhances both efficiency and depth in processing contractual 
+modifications. This approach allows for a thorough understanding of 
+complex contractual changes, mirroring professional review practices. The 
+refined context produced at the end of this pipeline equips the system to 
+proceed with detailed examination and risk-opportunity assessments, 
+ultimately supporting stakeholders in making informed decisions regarding 
+contract management. 
+ 
+Table 9.  Context Refinement Pipeline Agents 
+Agent 
+Input 
+Function 
+Output 
+Differences 
+Analysis 
+Agent 
+Input contract, 
+SCF 
+Identifies significant 
+variations between 
+new and standard 
+clauses 
+List of detected 
+changes with initial 
+annotations 
+Semantic 
+Analysis 
+Agent 
+Detected 
+changes from 
+Differences 
+Analysis 
+Examines language 
+modifications and 
+assesses implications 
+on obligations 
+Semantic insights 
+into contractual 
+modifications 
+Context 
+Analysis 
+Agent 
+Detected 
+changes from 
+Textual 
+Difference 
+Analysis, 
+Expert 
+knowledge 
+bases 
+Integrates expert 
+analysis, legal 
+implications and 
+practical 
+considerations 
+Contextual insights 
+related with SCF’s 
+conditions 
+Combined 
+Refined 
+Context 
+Agent 
+Outputs from 
+Semantic and 
+Context 
+Analyses 
+Combines insights to 
+form a comprehensive 
+refined context 
+Comprehensive 
+refined context for 
+further analysis 
+
+=== PDF PAGE 76 ===
+61 
+4.2.2 Multi-stage Generation Process 
+After context refinement, the system proceeds to the Multi-Stage 
+Generation Process, where LLM agents build upon the refined context to 
+perform deeper analyses and generate outputs. As detailed in Table 10, these 
+agents collaborate sequentially to provide users with a consolidated report 
+that includes technical, legal, practical, and strategic recommendations 
+tailored to specific contract scenarios. 
+The Detailed Examination Agent utilizes the accumulated refined 
+context to perform a thorough examination of the contractual provisions. It 
+produces detailed analysis results, highlighting how the changes materially 
+affect the contractor's obligations and what adjustments may be necessary to 
+meet the new standards. 
+Following this, the Summary Generation Agent synthesizes the 
+detailed examination results into concise summaries. This agent distills key 
+findings, allowing stakeholders to grasp the essential points without delving 
+into extensive details. The summaries provide quick overviews that facilitate 
+rapid understanding of the significant enhancements in obligations and their 
+potential impact on responsibilities. 
+Building upon the previous analyses, the Risk-Opportunity 
+
+=== PDF PAGE 77 ===
+62 
+Assessment Agent evaluates the contractual changes to identify key 
+considerations. This agent produces both risk assessments and opportunity 
+assessments: 
+ 
+Risk Assessment: 
+Identifies and articulates legal, 
+operational, and financial risks associated with the 
+contractual modifications. For example, it notes increased 
+legal exposure for the contractor due to potential 
+remediation costs stemming from stricter environmental 
+requirements. 
+ 
+Opportunity Assessment: Highlights beneficial aspects and 
+strategic advantages that the contractual changes may bring. 
+It identifies opportunities such as enhanced market 
+positioning as a responsible contractor focused on 
+sustainability, which could lead to an improved reputation 
+and competitive edge in sustainability-focused markets. 
+Finally, the Results Integration Agent consolidates all analysis 
+outputs. It gathers results from the previous agents, including detailed 
+examinations, summaries, and risk-opportunity assessments, and performs 
+comprehensive analysis integration and report generation. This agent ensures 
+
+=== PDF PAGE 78 ===
+63 
+that all insights are coherently presented, providing a unified perspective on 
+the contractual changes. The output is an integrated analysis report with key 
+recommendations, offering actionable advice that aligns technical, legal, 
+practical, and strategic considerations to support informed decision-making. 
+ 
+Table 10. Multi-stage Generation Process Agents 
+Agent 
+Input 
+Function 
+Output 
+Detailed 
+Examination 
+Agent 
+Accumulated 
+refined 
+context 
+Performs thorough 
+examination and 
+provides insights 
+into contractual 
+provisions 
+Detailed analysis 
+results 
+Summary 
+Generation 
+Agent 
+Detailed 
+analysis 
+results 
+Synthesizes detailed 
+examination results 
+into concise 
+summaries 
+Summary results: 
+quick overviews 
+distilling key findings 
+Risk-
+Opportunity 
+Assessment 
+Agent 
+Outputs from 
+previous 
+analyses 
+Evaluates 
+contractual changes 
+to identify risks and 
+opportunities 
+Risk and opportunity 
+assessments: 
+identification of risks 
+and strategic 
+advantages 
+Results 
+Integration 
+Agent 
+Outputs from 
+previous 
+analyses 
+Integrates all 
+analysis outputs and 
+generates a 
+comprehensive 
+report 
+Integrated analysis 
+report with key 
+recommendations 
+ 
+4.2.3 System Implementation 
+The system integrates the Context Refinement Pipeline and the 
+Multi-Stage Generation Process into an efficient, cohesive workflow, as 
+
+=== PDF PAGE 79 ===
+64 
+depicted in Figure 8. This workflow mirrors traditional expert analysis 
+practices while leveraging the capabilities of LLM agents. Agents are 
+assigned specific tasks within a sequential and collaborative process, each 
+building upon the previous agent's output to ensure depth and accuracy in 
+contract analysis. 
+The implementation begins with the Textual Difference Analysis 
+Agent identifying significant variations between the new contract clauses and 
+the standard clauses. This agent sets the foundation for deeper analysis by 
+pinpointing the exact changes in contractual language that require further 
+examination. 
+Following this, the Semantic Analysis Agent and the Context 
+Analysis Agent operate in parallel to refine the context: 
+ 
+The Semantic Analysis Agent examines the language 
+modifications identified, assessing how these changes 
+impact contractual obligations and rights. It provides 
+semantic insights into the contractual modifications, 
+enhancing the understanding of altered meanings and 
+intentions behind the revised clauses. 
+ 
+The Context Analysis Agent integrates domain knowledge, 
+
+=== PDF PAGE 80 ===
+65 
+including relevant laws, regulations, and industry practices, 
+to evaluate the legal requirements and practical 
+considerations associated with the contractual changes. It 
+offers contextual insights that illuminate the broader 
+implications of the modifications, such as compliance 
+issues or operational challenges. 
+Their outputs are then combined by the Combined Refined Context 
+Agent to form a comprehensive refined context. This agent synthesizes the 
+semantic understanding of the language changes with the practical and legal 
+considerations, providing a robust foundation for the subsequent stages of 
+analysis. Validation mechanisms at each stage ensure the accuracy and 
+reliability of the information before it progresses further in the workflow. 
+Next, the Detailed Examination Agent utilizes the refined context to 
+perform an in-depth analysis of the contractual provisions. It highlights how 
+the changes materially affect obligations and identifies necessary 
+adjustments to meet new standards. This agent delves into the practical 
+impact of the contractual modifications on responsibilities and requirements. 
+The Summary Generation Agent then synthesizes the detailed 
+examination results into concise summaries. It distills key findings, allowing 
+
+=== PDF PAGE 81 ===
+66 
+stakeholders to quickly grasp essential points without delving into extensive 
+details. This facilitates rapid understanding of significant enhancements in 
+obligations and their potential impact. 
+Building upon these analyses, the Risk-Opportunity Assessment 
+Agent evaluates the contractual changes to identify potential risks and 
+opportunities: 
+ 
+It assesses risks by identifying increased legal exposure, 
+potential remediation costs, and other legal, operational, 
+and financial risks associated with the contractual 
+modifications. 
+ 
+It identifies opportunities by highlighting beneficial aspects 
+and strategic advantages, such as enhanced market 
+positioning or improved reputation resulting from 
+compliance with higher standards. 
+Finally, the Results Integration Agent consolidates all analysis 
+outputs. It gathers results from the previous agents—including detailed 
+examinations, summaries, and risk-opportunity assessments—and generates 
+an integrated analysis report with key recommendations. This agent ensures 
+that all insights are coherently presented, providing a unified perspective on 
+
+=== PDF PAGE 82 ===
+67 
+the contractual changes and offering actionable advice that aligns technical, 
+legal, practical, and strategic considerations. 
+The overall process flow is managed by the system controller, which 
+coordinates the sequence of operations, facilitates communication among 
+agents, monitors progress, and handles exceptions to maintain workflow 
+integrity. This structured workflow is illustrated in Figure 8, showing how 
+the agents collaborate from the initial identification of textual differences to 
+the final generation of the comprehensive analysis report. 
+
+=== PDF PAGE 83 ===
+68 
+ 
+Figure 8. Refinement and Analysis Workflow 
+
+=== PDF PAGE 84 ===
+69 
+4.2.4 User Interface of CORA-RAG System 
+The CORA-RAG system provides an interface that organizes 
+relevant contract clauses and facilitates efficient navigation of the analysis 
+results. Users can focus on specific clauses and view key differences 
+highlighted through visual comparisons, enabling them to quickly identify 
+and assess modifications. This interface presents the outputs generated at 
+each stage of the analysis process, displaying detailed examinations, 
+summaries, risk assessments, opportunity identifications, and key 
+recommendations produced by the LLM agents. 
+Figures 9 and 10 illustrate how the multi-stage contract analysis 
+process is presented within the user interface: 
+ 
+Figure 9 depicts the sequential procedure starting with side-
+by-side comparisons of contract clauses. It shows how the 
+Textual Difference Analysis Agent highlights modified 
+clauses and how subsequent agents extract relevant data 
+and refine the context. The interface displays these stages, 
+allowing users to follow the progression of the analysis and 
+understand how each agent contributes to the overall 
+process. 
+
+=== PDF PAGE 85 ===
+70 
+ 
+Figure 
+10 presents 
+the 
+outcomes 
+of 
+higher-level 
+assessments generated by the LLM agents. It displays the 
+integrated analysis report, offering a comprehensive 
+perspective on the contractual changes. This includes 
+detailed analyses, summaries, and evaluations of risks and 
+opportunities, providing stakeholders with a unified 
+overview of the analysis results and the implications of the 
+contractual modifications. 
+
+=== PDF PAGE 86 ===
+71 
+ 
+Figure 9. Sequential analysis process in CORA-RAG system  
+
+=== PDF PAGE 87 ===
+72 
+ 
+Figure 10. Analysis Results in CORA-RAG System
+
+=== PDF PAGE 88 ===
+73 
+4.2.5 Detailed Architecture Implementation and Case Analysis 
+The CORA-RAG system demonstrates its effectiveness through the 
+analysis of Sub-Clause 4.18 "Protection of the Environment" from the Oman 
+case construction contract. The system processes this analysis through its 
+LLM agents in a structured workflow. The system conducts its analysis 
+through several key stages: 
+(1) Initial Analysis:  
+ 
+The process begins with the Textual Difference Analysis 
+Agent identifying significant variations between the 
+standard FIDIC RED99 clauses and the new contract 
+clauses. Notably, the new clause imposes stricter 
+environmental 
+obligations, 
+particularly 
+regarding 
+emissions and discharge controls. By meticulously 
+comparing the texts, the agent highlights these differences, 
+setting the foundation for deeper analysis. 
+(2) Context Refinement:  
+ 
+Following the identification of differences, the system 
+undertakes two parallel refinement processes: Semantic 
+Analysis and Context Analysis. In Semantic Analysis, the 
+
+=== PDF PAGE 89 ===
+74 
+system examines the language modifications and their 
+implications on contractual obligations and rights. This 
+examination provides insights into how the changes affect 
+the interpretation of the clause, clarifying nuanced shifts in 
+meaning that could impact the contract's execution. 
+ 
+Simultaneously, Context Analysis integrates domain 
+knowledge, including legal requirements and practical 
+considerations. The system assesses relevant laws, 
+regulations, and industry practices to understand the 
+broader implications of the contractual changes. This 
+ensures that the modifications are evaluated within the 
+appropriate legal and practical framework, highlighting 
+potential compliance issues or operational challenges. 
+(3) Detailed Examination:  
+ 
+With refined information from both analyses, the Detailed 
+Examination 
+Agent 
+produces 
+comprehensive 
+interpretations. For example, it highlights that "The 
+Contractor's responsibilities regarding environmental 
+damage 
+are 
+intensified," 
+emphasizing 
+enhanced 
+accountability and operational requirements. This stage 
+
+=== PDF PAGE 90 ===
+75 
+deepens the understanding of how the changes materially 
+affect the contractor's obligations and what adjustments 
+may be necessary to meet the new standards. 
+(4) Summary Generation:  
+ 
+To facilitate quick understanding, the Summary Generation 
+Agent synthesizes the detailed examination results into 
+concise summaries. It distills key findings, allowing 
+stakeholders to grasp the essential points without delving 
+into extensive details. An example output includes an 
+overview highlighting the significant enhancements in 
+environmental obligations and their potential impact on 
+contractor responsibilities. This summary aids decision-
+makers in quickly assessing the implications of the 
+contractual changes. 
+(5) Risk-Opportunity Assessment:  
+ 
+Building upon the detailed examination, the Risk-
+Opportunity Assessment Agent evaluates the contractual 
+changes to identify key considerations. Regarding risks, it 
+notes increased legal exposure for the contractor due to 
+
+=== PDF PAGE 91 ===
+76 
+potential remediation costs, outlining potential legal and 
+financial risks associated with stricter environmental 
+requirements. In terms of opportunities, it identifies an 
+enhanced market position as a responsible contractor 
+focused on sustainability, highlighting strategic advantages 
+such as improved reputation and competitive edge in 
+sustainability-focused markets. This assessment provides 
+balanced insights into potential challenges and benefits 
+arising from the contractual modifications. 
+(6) Results Integration:  
+ 
+In the final stage, the Results Integration Agent 
+consolidates all analysis outputs. It gathers results from the 
+previous 
+agents, 
+including 
+detailed 
+examinations, 
+summaries, 
+and 
+risk-opportunity 
+assessments. 
+By 
+performing comprehensive analysis integration and report 
+generation, the agent ensures that all insights are coherently 
+presented, providing a unified perspective on the 
+contractual changes. 
+ 
+The output is an integrated analysis report with key 
+recommendations. This report offers actionable advice, 
+
+=== PDF PAGE 92 ===
+77 
+aligning 
+technical, 
+legal, 
+practical, 
+and 
+strategic 
+considerations to support informed decision-making. Key 
+recommendations might include implementing robust 
+environmental management plans to comply with enhanced 
+obligations and leveraging the heightened environmental 
+focus to strengthen market positioning. By presenting a 
+cohesive and comprehensive analysis, the system equips 
+stakeholders with the necessary information to navigate the 
+contractual changes effectively. 
+This case study highlights the effectiveness of the multi-agent LLM 
+framework in handling complex contractual analyses. The coordinated agents 
+deliver accurate, comprehensive insights that support informed decision-
+making, maintaining professional standards throughout the analysis process. 
+By simplifying the explanation while retaining core arguments, the narrative 
+becomes clearer and more focused, enhancing the reader's understanding of 
+the system's capabilities. 
+ 
+ 
+
+=== PDF PAGE 93 ===
+78 
+ 
+Figure 11. Multi-stage Knowledge Integration and Analysis Process 
+
+=== PDF PAGE 94 ===
+79 
+ 
+Figure 12. Initial Processing and Knowledge Base Architecture 
+
+=== PDF PAGE 95 ===
+80 
+ 
+ 
+Figure 13. Result of Context Information Extraction 
+
+=== PDF PAGE 96 ===
+81 
+ 
+Figure 14. Results of Each Agent Generation 
+ 
+ 
+
+=== PDF PAGE 97 ===
+82 
+4.3 Expert Evaluation 
+4.3.1 Evaluation Methodology 
+The expert evaluation assessed the system's performance, usability, 
+and practical applicability, focusing on the roles of the specialized LLM 
+agents. Thirteen domain experts from construction, engineering, legal 
+advisory, and client organizations participated. They were given direct access 
+to the prototype system to interact with it firsthand, with detailed usage 
+instructions provided as outlined in Appendix III. 
+In addition to using the system, one-hour interviews were conducted 
+with each expert to gather in-depth feedback. The interviews were structured 
+using a prepared evaluation form included in Appendix I. Responses were 
+collected on various aspects, including clause types, performance metrics, 
+and productivity enhancements. This combination of direct system 
+interaction and structured interviews ensured a comprehensive evaluation of 
+the system's capabilities and limitations from professional perspectives. The 
+respondents' distribution is summarized in Table 11, detailing their industry 
+roles, age groups, and experience levels. 
+ 
+
+=== PDF PAGE 98 ===
+83 
+Table 11. Expert information 
+Category 
+Subcategory 
+Number of Respondents 
+Job Role 
+Contractor 
+7 
+Client 
+2 
+Consultant 
+3 
+Age Group 
+30s 
+8 
+40s 
+2 
+50s 
+1 
+60s 
+1 
+Experience Level 
+5–10 years 
+8 
+10–20 years 
+1 
+Over 20 years 
+3 
+ 
+The evaluation was structured to provide both quantitative and 
+qualitative assessments of the system's performance across several 
+dimensions. The experts evaluated the system based on specific criteria 
+related to clause types, performance metrics, and productivity enhancements. 
+(1) Clause Types Assessed 
+Table 12. Clause Types Assessed 
+Clause Type 
+Description 
+Modified Clauses (Major Changes) 
+Significant alterations to standard clauses. 
+Modified Clauses (Minor Changes) 
+Minor modifications to standard clauses. 
+Additional Clauses 
+New clauses added to the contract. 
+Missing Clauses 
+Standard clauses omitted from the contract. 
+
+=== PDF PAGE 99 ===
+84 
+(2) Evaluation Categories and Metrics 
+The evaluation focused on three main categories, each with specific 
+metrics, as outlined in Table 13. 
+ 
+Table 13. Evaluation Categories and Metrics 
+Category 
+Evaluation Metric 
+Description 
+Reference 
+Information 
+(Search 
+Performance) 
+Relevance of Reference 
+Information 
+The extent to which the retrieved 
+information is pertinent to the 
+clauses being reviewed. 
+Sufficiency of Reference 
+Information 
+The adequacy of the information 
+provided, considering both 
+quantitative and qualitative 
+aspects. 
+Clause 
+Analysis 
+Performance 
+Clause Interpretation 
+Accuracy and clarity in 
+interpreting contractual language. 
+Practical Issues Analysis 
+Identification and analysis of 
+practical implications for contract 
+execution. 
+Legal Analysis 
+Depth and correctness of legal 
+implications identified. 
+Risk & Opportunity Assessment 
+Ability to identify risks and 
+opportunities arising from 
+contractual changes, and the 
+appropriateness of the analysis. 
+Productivity 
+Feasibility of Practical 
+Implementation 
+The potential for the system to be 
+adopted in real-world contract 
+review processes. 
+Work Efficiency Improvement 
+Effect 
+The extent to which the system 
+enhances productivity by 
+reducing analysis time and 
+automating tasks. 
+Degree of Decision Support 
+How well the system supports 
+decision-making processes. 
+ 
+
+=== PDF PAGE 100 ===
+85 
+(3) Scoring Criteria 
+Experts rated each metric on a scale of 1 to 5, corresponding to 
+different levels of expertise, as detailed in Table 14. 
+ 
+Table 14. Scoring Criteria 
+Score 
+Experience Level 
+Description 
+1  
+Point 
+Novice 
+(0–2 years of experience) 
+- Lacks ability to acquire and utilize 
+relevant information. 
+- Unable to identify risks effectively. 
+2  
+Points 
+Equivalent to 2–4 years of 
+experience 
+- Basic ability to acquire and utilize 
+information. 
+- Can identify and analyze obvious 
+risks. 
+3  
+Points 
+Intermediate 
+(4–7 years of experience) 
+- Capable of reviewing contract 
+risks for individual clauses. 
+4  
+Points 
+Equivalent to 7–10 years of 
+experience 
+- Able to review contract risks from 
+an integrated perspective. 
+5  
+Points 
+Expert 
+(Over 10 years of experience) 
+- Performs expert-level contract 
+clause reviews. 
+ 
+4.3.2 Performance Assessment and System Capabilities 
+The experts provided both quantitative ratings and qualitative 
+feedback on the system's performance. The quantitative results are 
+
+=== PDF PAGE 101 ===
+86 
+summarized in Table 15, and the qualitative insights are presented in Table 
+16. 
+The evaluation demonstrated that the system performed well in 
+several areas: 
+ 
+Efficiency 
+and 
+Productivity: 
+The 
+metrics 
+under Productivity, 
+specifically Practical 
+Issue 
+Identification and Time Savings, received relatively high 
+average scores of 3.54 and 3.85, respectively. This indicates 
+that the system significantly reduces contract review time 
+and aids practitioners in identifying practical issues 
+efficiently. Experts highlighted that the system enhances 
+work efficiency and has the potential to alleviate the 
+workload for practitioners. 
+ 
+Search 
+Performance: 
+The Relevance 
+of 
+Retrieved 
+Information and Sufficiency 
+of 
+Information metrics 
+received average scores of 3.08 and 3.31, respectively. 
+These scores suggest that the system is moderately 
+effective in retrieving relevant clauses and providing 
+sufficient information for basic contract analysis. 
+The Textual Difference Analysis Agent was particularly 
+
+=== PDF PAGE 102 ===
+87 
+effective in identifying significant variations between 
+contracts. 
+However, the evaluation also identified areas where the system needs 
+improvement: 
+ 
+Analysis 
+Performance: 
+The 
+metrics 
+related 
+to Interpretation, Practical Issues, Legal Analysis, and Risk 
+& Opportunity Analysis received lower average scores, 
+ranging from 2.08 to 2.77. These scores indicate limitations 
+in the system's ability to perform in-depth analysis and 
+provide detailed legal insights. The Semantic Analysis 
+Agent and Context Analysis Agent need enhancements to 
+better handle complex legal interpretations and practical 
+considerations. 
+ 
+4.3.3 Analytical Capability and Limitations 
+The lower scores in the Analysis Performance category highlight 
+specific challenges: 
+(1) Interpretation (2.77) 
+
+=== PDF PAGE 103 ===
+88 
+ 
+Corresponding Experience Level: Approximately 2–4 
+years of experience (Equivalent to 2 Points). 
+ 
+Analysis: With an average score close to 3, the system's 
+ability to accurately interpret contractual language and its 
+implications is between basic and intermediate levels. It 
+aligns with the capabilities of a practitioner with 2–4 years 
+of experience. This indicates that the system can handle 
+standard clauses and perform basic interpretations but 
+struggles with nuanced language that requires deeper 
+understanding typically possessed by more experienced 
+professionals (those with over 4 years of experience). 
+(2) Practical Issues Analysis (Average Score: 2.23) and Legal 
+Analysis (Average Score: 2.08): 
+ 
+Corresponding Experience Level: Around 2–4 years of 
+experience (Equivalent to 2 Points). 
+ 
+Analysis: The system shows limitations in identifying 
+practical implications and providing detailed legal analysis, 
+performing at a level comparable to a practitioner with 2–4 
+years of experience. It possesses a basic ability to acquire 
+
+=== PDF PAGE 104 ===
+89 
+and utilize information and can identify and analyze 
+obvious risks but lacks the depth and specificity expected 
+from more experienced professionals. Experts noted the 
+absence of information on applicable laws and precedents, 
+which are critical for comprehensive legal analysis. 
+(3) Risk & Opportunity Assessment (Average Score: 2.38): 
+ 
+Corresponding Experience Level: Approximately 2–4 
+years of experience (Equivalent to 2 Points). 
+ 
+Analysis: The system's difficulty in distinguishing between 
+risks and opportunities is reflected in its average score, 
+indicating performance at a junior level. The unclear 
+analysis criteria hinder its reliability in supporting decision-
+making processes that depend on accurate risk assessments. 
+This level of performance suggests that the system can 
+identify obvious risks but may not effectively evaluate 
+more complex or nuanced situations, a capability typically 
+developed by practitioners with more than 4 years of 
+experience. 
+These limitations suggest that while the system effectively aids in 
+
+=== PDF PAGE 105 ===
+90 
+preliminary reviews and enhances productivity for tasks requiring basic 
+analysis, it currently operates at an experience level equivalent to that of a 
+junior professional with 2–4 years of experience. To serve as a 
+comprehensive tool for in-depth contract analysis comparable to that 
+performed by intermediate to expert-level practitioners (those with over 4 
+years of experience), the system requires further development. 
+Improving the analytical capabilities of the Semantic Analysis 
+Agent and Context Analysis Agent is essential to elevate the system's 
+performance to match higher experience levels. By enhancing the system to 
+perform at a level equivalent to practitioners with 4–7 years of experience 
+(Intermediate level, 3 Points) or above, it can better handle complex legal 
+interpretations, provide detailed legal analyses, and support more accurate 
+risk assessments. This advancement would enable the system to address 
+nuanced contractual language and intricate legal implications, fulfilling the 
+needs of more advanced contract analysis tasks in the construction industry. 
+ 
+4.3.4 Implementation Potential and Future Directions 
+Despite the identified challenges, experts expressed optimism 
+regarding the system's potential for practical implementation. The higher 
+
+=== PDF PAGE 106 ===
+91 
+scores in Practical Issue Identification and Time Savings, along with positive 
+qualitative feedback, reinforce the system's usefulness in streamlining 
+contract review processes. 
+The experts provided insights on future development priorities: 
+ 
+Enhancing Analytical Depth: Improving the Semantic 
+Analysis Agent and Context Analysis Agent to deliver 
+more accurate and detailed interpretations and legal 
+analyses. Incorporating information on applicable laws, 
+precedents, and critical risk items such as cash flow is 
+essential. 
+ 
+Clarifying Risk Analysis Criteria: Refining the Risk & 
+Opportunity Assessment Agent to establish clear criteria 
+and methodologies for risk assessment, enabling it to 
+distinguish effectively between risks and opportunities. 
+ 
+Technical Enhancements: Addressing processing speed 
+limitations to handle larger datasets and urgent tasks more 
+efficiently. Enhancing the user interface for better clarity 
+and usability will contribute to wider adoption and 
+effectiveness. 
+
+=== PDF PAGE 107 ===
+92 
+The expert evaluation provided valuable insights into the system's 
+current capabilities and areas needing improvement. The system 
+demonstrates significant potential in enhancing efficiency and productivity 
+in contract reviews. However, to serve as a comprehensive tool for detailed 
+legal analysis, further development and refinement of the LLM agents are 
+necessary. By addressing the identified challenges, the system can be 
+enhanced to meet the complex demands of contract analysis in the 
+construction industry. 
+ 
+
+=== PDF PAGE 108 ===
+93 
+Table 15. Expert evaluation results  
+Category 
+Metric 
+Average R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 
+Search 
+Performance
+Relevance of Retrieved Information 3.08 
+4 
+3 
+3 
+3 
+4 
+2 
+3 
+2 
+3 
+3 
+3 
+3 
+4 
+Sufficiency of Information 
+3.31 
+4 
+3 
+5 
+3 
+4 
+2 
+3 
+3 
+3 
+3 
+3 
+3 
+4 
+Analysis 
+Performance
+Interpretation 
+2.77 
+4 
+2 
+4 
+2 
+4 
+2 
+2 
+2 
+2 
+2 
+2 
+4 
+4 
+Practical Issues 
+2.23 
+4 
+2 
+3 
+2 
+4 
+1 
+1 
+1 
+1 
+1 
+2 
+3 
+4 
+Legal Analysis 
+2.08 
+4 
+2 
+3 
+1 
+3 
+1 
+2 
+2 
+1 
+2 
+1 
+2 
+3 
+Risk & Opportunity Analysis 
+2.38 
+4 
+2 
+4 
+2 
+3 
+1 
+2 
+2 
+1 
+2 
+2 
+2 
+4 
+Productivity 
+Practical Issue Identification 
+3.54 
+5 
+2 
+3 
+5 
+4 
+3 
+3 
+3 
+3 
+3 
+3 
+4 
+5 
+Time Savings 
+3.85 
+4 
+2 
+4 
+4 
+4 
+3 
+4 
+4 
+4 
+4 
+4 
+4 
+5 
+ 
+ 
+ 
+
+=== PDF PAGE 109 ===
+94 
+Table 16. Expert Feedback Summary 
+Category 
+Positive Feedback 
+Challenges 
+Efficiency and 
+Productivity 
+- Significantly reduces contract review time, 
+enhancing work efficiency. 
+- Potential to alleviate workload for practitioners. 
+- Assists junior professionals in understanding and 
+approaching contracts. 
+- Can be utilized as an auxiliary tool for contract 
+management by quickly comparing with company 
+standard contracts. 
+- Processing speed is insufficient for large datasets or 
+urgent tasks. 
+- Manual intervention is required for detailed 
+analysis and validation. 
+- Final judgment still needs human expertise, raising 
+applicability concerns. 
+Analytical 
+Capability 
+- Provides excellent relevance and quantity of 
+information. 
+- Effectively summarizes issues related to contract 
+clauses. 
+- Anticipated improvements in work efficiency and 
+reduction of legal costs. 
+- Lacks information on applicable laws and 
+precedents. 
+- Risk analysis criteria are unclear, making it difficult 
+to distinguish between risks and opportunities. 
+- Insufficient analysis of legal issues with low 
+accuracy and specificity. 
+- Lacks emphasis on important risk items such as 
+cash flow. 
+ 
+ 
+ 
+
+=== PDF PAGE 110 ===
+95 
+4.4 Summary 
+This chapter presented the CORA-RAG system, a multi-agent Large 
+Language Model framework developed to automate and enhance the contract 
+review process in the construction industry. By employing agents—such as 
+those for textual difference analysis, semantic analysis, context evaluation, 
+and risk assessment—the system facilitates efficient and comprehensive 
+contract analysis. 
+The pipeline architecture integrates these agents to ensure coherent 
+progression through analysis stages, enhancing the accuracy and reliability 
+of the outputs. Validation mechanisms involving domain experts are 
+incorporated to maintain quality. 
+The system was evaluated both through automated metrics and an 
+expert assessment involving thirteen professionals from contractors, clients, 
+and consulting firms. Results indicated that the system effectively improves 
+efficiency and productivity, significantly reducing contract review time and 
+assisting practitioners, particularly less experienced ones, in understanding 
+complex contracts. 
+However, the evaluation revealed that the system's analytical 
+capabilities currently align with the proficiency level of junior professionals 
+
+=== PDF PAGE 111 ===
+96 
+with 2–4 years of experience. This was evidenced by average scores ranging 
+from 2.08 to 2.77 in areas such as clause interpretation, practical issues 
+analysis, legal analysis, and risk-opportunity assessment. The system 
+demonstrates basic abilities to acquire and utilize information and can 
+identify and analyze obvious risks but struggles with nuanced interpretations 
+and in-depth legal analysis that require expertise comparable to more 
+seasoned practitioners (those with over 4 years of experience). 
+Challenges were identified in handling complex legal interpretations, 
+providing detailed legal insights, and distinguishing effectively between risks 
+and opportunities. Limitations in processing speed and the need for manual 
+intervention in detailed analyses were also noted. 
+Experts expressed optimism about the system's potential for practical 
+implementation, suggesting future development should focus on: 
+ 
+Enhancing the Analytical Capabilities: Improving the 
+agents to perform at higher proficiency levels, equivalent 
+to practitioners with 4–7 years of experience or more. This 
+includes providing more detailed legal insights, accurately 
+interpreting nuanced contractual language, and offering 
+comprehensive analyses. 
+
+=== PDF PAGE 112 ===
+97 
+ 
+Clarifying Risk Analysis Criteria: Refining the risk 
+assessment methodologies to establish clear criteria, 
+enabling the system to distinguish more effectively 
+between risks and opportunities, and support decision-
+making processes. 
+ 
+Improving Technical Performance: Enhancing processing 
+speed to handle larger datasets and urgent tasks efficiently, 
+and improving user interface usability for better user 
+experience. 
+By addressing these areas, the CORA-RAG system can evolve into 
+a comprehensive tool capable of meeting the complex demands of real-world 
+contract analysis in the construction industry. Advancing the system's 
+capabilities to match higher experience levels will enable it to handle intricate 
+legal scenarios and provide in-depth analyses, supporting professionals in 
+making better-informed decisions and managing risks more effectively. 
+ 
+ 
+
+=== PDF PAGE 113 ===
+98 
+5. Discussion  
+5.1 Technical Performance Analysis 
+5.1.1 System Architecture and Integration 
+The CORA-RAG system tackles challenges in automating 
+construction contract reviews by integrating refinement and generation 
+components within a multi-agent LLM framework. agent LLMs focus on 
+specific tasks like legal analysis, technical evaluation, and risk assessment, 
+applying appropriate expertise to enhance accuracy and relevance. This 
+specialization allows the system to handle complex contract clauses 
+effectively. 
+Experimental results show that the CORA-RAG system improves 
+upon base LLMs and standard RAG approaches in automated metrics such 
+as refinement quality and response generation. However, expert evaluations 
+reveal that the system's real-world effectiveness aligns with the performance 
+level of junior professionals with 2–4 years of experience. While the system 
+enhances certain technical aspects, further development is needed to achieve 
+higher proficiency levels in complex contract analysis. 
+ 
+
+=== PDF PAGE 114 ===
+99 
+5.1.2 Multi-stage Generation Process 
+The generation component employs a multi-stage process where 
+agent LLMs refine contextual data and integrate expert knowledge from 
+various domains. Agents handle tasks like differential analysis, and risk-
+opportunity assessment, accurately identifying differences in contract clauses 
+and ensuring coherence across technical and legal domains. 
+Currently, the system provides insights encompassing technical and 
+practical aspects but lacks depth in legal analysis and nuanced interpretations. 
+Its performance is comparable to practitioners with 2–4 years of experience, 
+indicating the need for further refinement to generate comprehensive legal 
+insights. 
+ 
+5.2 Practical Implications and Limitations 
+5.2.1 System Benefits and Applications 
+The CORA-RAG system automates the initial stages of contract 
+review, accelerating the identification of relevant clauses by quickly 
+processing large volumes of text and highlighting deviations. This reduces 
+manual effort and time, enhancing the overall efficiency of contract 
+management processes—particularly valuable in the construction industry, 
+
+=== PDF PAGE 115 ===
+100 
+where contractual documents are extensive and complex. 
+By efficiently refining information and identifying clause changes, 
+the system assists practitioners, especially those with less experience, in 
+navigating complex contracts. It enhances transparency by documenting each 
+agent's steps—such as sources consulted and reasoning applied—building 
+trust in the automated review process. 
+ 
+5.2.2 Current Limitations and Challenges 
+Despite its strengths, the CORA-RAG system currently operates at 
+an analytical level equivalent to junior professionals with 2–4 years of 
+experience. It exhibits limitations in handling highly complex clauses, 
+nuanced legal scenarios, and distinguishing between risks and opportunities, 
+affecting its reliability in supporting decision-making processes that depend 
+on accurate risk assessments and in-depth legal analyses. 
+Improvements are needed in processing speed and user interface to 
+facilitate seamless integration into professional workflows. Enhancing agent 
+LLM performance is essential to elevate the system's analytical capabilities 
+to match those of more experienced practitioners. 
+While automated metrics show positive results, discrepancies with 
+
+=== PDF PAGE 116 ===
+101 
+expert evaluations highlight the limitations of relying solely on these 
+measures for assessing real-world effectiveness. Manual expert evaluation 
+remains crucial for ensuring high-quality contract analysis and guiding 
+system refinement to better align with professional standards. 
+Future development should focus on enhancing the analytical 
+capabilities of the agents to perform at higher proficiency levels, equivalent 
+to practitioners with 4–7 years of experience or more. This includes 
+improving the ability to interpret nuanced contractual language, providing 
+detailed legal analyses, and effectively distinguishing between risks and 
+opportunities. Advancements in these areas are vital for evolving the CORA-
+RAG system into a comprehensive tool capable of meeting the complex 
+demands of real-world contract analysis in the construction industry. 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 117 ===
+102 
+6. Conclusion  
+6.1 Research Summary and Achievements 
+This research addressed three major challenges in automating 
+construction contract review by developing a Structured Knowledge-
+Integrated RAG Pipeline that integrates domain expertise with LLMs through 
+a multi-agent architecture. 
+Firstly, to tackle the challenge of organizing domain expertise, a 
+structured knowledge framework was developed. This framework 
+systematically integrates expert analyses, legal information, and practical 
+considerations into a knowledge base aligned with SCFs. By mapping 
+domain knowledge to specific SCF clauses and employing classification-
+based filtering, the system effectively reduces irrelevant data early in the 
+retrieval process, enhancing accuracy and efficiency compared to methods 
+relying solely on dense and sparse searches without prior filtering. 
+Secondly, to overcome the challenge of maintaining accuracy with 
+complex and extensive contract documents, a two-stage refinement process 
+within a multi-agent LLM system was implemented. Agents are assigned to 
+tasks such as semantic analysis and context analysis, allowing the system to 
+handle intricate contractual conditions. Enhancing context during refinement 
+
+=== PDF PAGE 118 ===
+103 
+and integrating hybrid search techniques significantly improved information 
+accuracy. Experimental validation showed that Context Recall reached 0.969 
+and Faithfulness scored 0.893, indicating substantial improvements over 
+basic RAG approaches and demonstrating the system's high accuracy with 
+complex contracts. 
+Thirdly, to address the challenge of ensuring reliability in LLM-
+generated content, reliable generation processes were established through a 
+multi-agent LLM framework. The system employs a multi-stage refinement 
+pipeline where agent LLMs collaborate to align content generation with 
+domain expertise. The reference-based generation process maintains explicit 
+connections to source materials by citing specific clauses and referencing the 
+knowledge base during content generation. This approach enhances 
+traceability and trustworthiness, ensuring that all generated analyses can be 
+directly linked back to authoritative sources. The system achieved an average 
+score of 0.828 ± 0.087, indicating consistent outputs, though Context 
+Precision of 0.625 and Answer Correctness of 0.750 suggest opportunities 
+for refining retrieval precision and response generation. 
+ 
+6.2 Research Contributions 
+
+=== PDF PAGE 119 ===
+104 
+This research advances the field of construction contract 
+management through three significant contributions: 
+1. Structured Integration of Domain Knowledge: A framework was 
+introduced for integrating domain expertise into automated contract review, 
+transforming the organization and application of construction contract 
+knowledge. By systematically organizing expert analyses, legal information, 
+and practical considerations into a structured knowledge base using 
+ontologies and metadata tagging, the system can access and apply expert 
+interpretations, legal precedents, and practical guidelines during analysis. 
+This enables comprehensive and reliable assessments by drawing on a rich 
+repository of domain-specific knowledge. 
+2. Enhanced Retrieval Accuracy through Classification-Based 
+Filtering: Remarkable improvements in retrieval accuracy were achieved by 
+implementing classification-based filtering combined with hybrid dense-
+sparse retrieval techniques. By categorizing and filtering the knowledge base 
+according to relevant SCF clauses, the system reduces irrelevant data early 
+in the process, improving retrieval efficiency and accuracy. Notable 
+performance gains were observed, with Context Recall improving by 52.6% 
+and Faithfulness by 48.3%, setting new standards for automated document 
+analysis, especially in the context of complex construction contracts. 
+
+=== PDF PAGE 120 ===
+105 
+3. Reliable Generation Processes through Multi-Agent LLM 
+Framework: A multi-agent LLM framework was developed to enhance the 
+reliability and accuracy of content generation. By employing a multi-stage 
+refinement pipeline with agent LLMs, the system aligns content generation 
+with domain expertise. The reference-based generation process maintains 
+explicit connections to source materials by citing specific clauses and 
+referencing the knowledge base during content generation. This approach 
+enhances traceability and trustworthiness, ensuring that all generated 
+analyses can be directly linked back to authoritative sources. 
+ 
+6.3 Research Limitations 
+Despite its advancements, the CORA-RAG system has several 
+limitations: 
+1. Retrieval Precision and Answer Correctness: While Context 
+Recall and Faithfulness scores are high, a Context Precision of 0.625 and 
+Answer Correctness of 0.750 indicate that retrieval sometimes includes less 
+relevant information, and responses may not always be fully accurate. 
+Refining retrieval algorithms and improving answer generation processes are 
+necessary to enhance precision and correctness. 
+
+=== PDF PAGE 121 ===
+106 
+2. Dependence on Knowledge Base Scope: The system's 
+effectiveness heavily relies on the comprehensiveness of its knowledge base 
+concerning standard form contracts. This reliance may limit its applicability 
+to contracts outside of this scope, such as customized or significantly 
+modified contracts, reducing its practicality in varied contractual scenarios. 
+3. Complexity of Multi-Agent LLM Framework: The multi-agent 
+architecture, while enhancing reliability, introduces complexity in agent 
+coordination and communication. Challenges may arise in ensuring seamless 
+collaboration among agents, potentially affecting processing speed and 
+efficiency. Further research is needed to optimize agent interactions and 
+manage the computational overhead associated with the multi-agent system. 
+ 
+6.4 Future Research 
+To enhance the CORA-RAG system and address its limitations, 
+future research should prioritize the following areas: 
+1. Enhancing Agent LLM Capabilities: Improve the training and 
+collaboration of agent LLMs to handle intricate clauses and subtle 
+contractual nuances more effectively. Advanced training on diverse legal 
+scenarios and optimization of agent communication protocols will enhance 
+
+=== PDF PAGE 122 ===
+107 
+their interpretative abilities and processing efficiency. 
+2. Improving Retrieval Precision and Response Generation: Develop 
+more sophisticated retrieval algorithms and refine the generation processes 
+to increase Context Precision and Answer Correctness. Optimizing the 
+integration of the retrieval and generation components will improve 
+information flow and relevance. Implementing advanced validation 
+mechanisms can ensure the accuracy of generated content. 
+3. Expanding the Knowledge Base: Extend the knowledge base 
+beyond standard form contracts to include tailored and non-standard 
+contracts. This expansion will enhance the system's practical applicability 
+across a broader range of contractual scenarios, making it more versatile and 
+valuable in the construction industry. 
+Advancements 
+in 
+these 
+areas 
+will 
+require 
+establishing 
+interdisciplinary teams comprising researchers, legal professionals, and 
+construction industry practitioners. Regular workshops, collaborative 
+development sessions, and pilot projects can facilitate the exchange of 
+expertise, ensuring that system enhancements align with practical 
+requirements and industry needs. By focusing on enhancing agent LLM 
+capacities, refining retrieval and generation processes, and expanding the 
+knowledge base, the CORA-RAG system can further bridge the gap between 
+
+=== PDF PAGE 123 ===
+108 
+technical capabilities and real-world utility. Although the system represents 
+a significant step forward in automating construction contract processes, 
+ongoing refinement—driven by both academic rigor and industry demands—
+will be essential for transforming contract management practices in the 
+construction sector. 
+ 
+ 
+ 
+
+=== PDF PAGE 124 ===
+109 
+References 
+[1] Arcadis. (2022). Global construction disputes report 2022: Adapting to a new 
+normal. 
+Arcadis. 
+https://www.arcadis.com/en/knowledge-
+hub/perspectives/global/global-construction-disputes-report 
+[2] Arcadis. (2023). 13th Annual construction disputes report North America: 
+Embracing change moving forward. Arcadis. https://www.arcadis.com/en-
+us/knowledge-hub/perspectives/north-america/united-
+states/2023/construction-disputes-report-2023 
+[3] Arditi, D., & Pulket, T. (2005). Predicting the Outcome of Construction 
+Litigation Using Boosted Decision Trees. Journal of Computing in Civil 
+Engineering, 
+19(4), 
+387–393. 
+https://10.1061/(ASCE)0887-
+3801(2005)19:4(387) 
+[4] Baker, E., Mellors, B., Chalmers, S., & Lavers, A. (2013). FIDIC contracts: Law 
+and practice (1st ed.). Informa Law from Routledge. 
+[5] Brock, D. C. (2018). Learning from Artificial Intelligence's Previous 
+Awakenings: The History of Expert Systems. The AI Magazine, 39(3), 3–15. 
+https://10.1609/aimag.v39i3.2809 
+[6] Candaş, A. B., & Tokdemir, O. B. (2022). Automating Coordination Efforts for 
+Reviewing Construction Contracts with Multilabel Text Classification. Journal 
+of 
+Construction 
+Engineering 
+and 
+Management, 
+148(6), 
+04022027. 
+
+=== PDF PAGE 125 ===
+110 
+https://10.1061/(ASCE)CO.1943-7862.0002275 
+[7] Choi, S., Choi, S., Kim, J., & Lee, E. (2021). AI and Text-Mining Applications 
+for Analyzing Contractor’s Risk in Invitation to Bid (ITB) and Contracts for 
+Engineering Procurement and Construction (EPC) Projects. Energies, 14(15), 
+4632. https://10.3390/en14154632 
+[8] Dmaidi, N., Dwaikat, M., & Shweiki, I. (2013). Construction contracting 
+management obstacles in Palestine. International Journal of Construction 
+Engineering and Management, 2(1), 15–22. 
+[9] Es, S., James, J., Espinosa-Anke, L., & Schockaert, S. (2023). RAGAS: 
+Automated Evaluation of Retrieval Augmented Generation. arXiv Preprint, 
+https://10.48550/arxiv.2309.15217 
+[10] Faraji, A., Rashidi, M., & Perera, S. (2021). Text Mining Risk Assessment–
+Based Model to Conduct Uncertainty Analysis of the General Conditions of 
+Contract in Housing Construction Projects: Case Study of the NSW GC21. 
+Journal 
+of 
+Architectural 
+Engineering, 
+27(3), 
+04021025. 
+https://10.1061/(ASCE)AE.1943-5568.0000489 
+[11] Ganbat, T., Chong, H., Liao, P., & Leroy, J. (2020). Identification of critical 
+risks in international engineering procurement construction projects of Chinese 
+contractors from the network perspective. Canadian Journal of Civil 
+Engineering, 47(12), 1359–1371. https://10.1139/cjce-2019-0549 
+
+=== PDF PAGE 126 ===
+111 
+[12] Grose, M. (2016). Construction Law in the United Arab Emirates and the Gulf 
+(1st ed.). John Wiley & Sons, Ltd. 
+[13] Guo, D., Onstein, E., & Rosa, A. D. L. (2021). A Semantic Approach for 
+Automated Rule Compliance Checking in Construction Industry. IEEE Access, 
+9, 129648–129660. https://10.1109/ACCESS.2021.3108226 
+[14] Hamie, J. M., & Abdul-Malak, M. U. (2018). Model Language for Specifying 
+the Construction Contract’s Order-of-Precedence Clause. Journal of Legal 
+Affairs and Dispute Resolution in Engineering and Construction, 10(3), 
+04518011. https://10.1061/(ASCE)LA.1943-4170.0000260 
+[15] Hassan, F. u., & Le, T. (2020). Automated Requirements Identification from 
+Construction Contract Documents Using Natural Language Processing. Journal 
+of Legal Affairs and Dispute Resolution in Engineering and Construction, 12(2), 
+04520009. https://10.1061/(ASCE)LA.1943-4170.0000379 
+[16] Hassan, F. u., Le, T., & Tran, D. (2020 March 8–10). Multi-Class Categorization 
+of Design-Build Contract Requirements Using Text Mining and Natural 
+Language Processing Techniques. Construction Research Congress 2020: 
+Project Management and Controls, Materials, and Contract, Tempe, AZ, United 
+States. 
+[17] Kandpal, N., Deng, H., Roberts, A., Wallace, E., & Raffel, C. (2022). Large 
+Language Models Struggle to Learn Long-Tail Knowledge. arXiv Preprint, 
+https://10.48550/arxiv.2211.08411 
+
+=== PDF PAGE 127 ===
+112 
+[18] Ko, T., Lee, J., & David Jeong, H. (2024). Project Requirements Prioritization 
+through NLP-Driven Classification and Adjusted Work Items Analysis. Journal 
+of 
+Construction 
+Engineering 
+and 
+Management, 
+150(3), 
+04023171. 
+https://10.1061/JCEMD4.COENG-13655 
+[19] Lee, G., Moon, S., & Chi, S. (2023). Reference section identification of 
+construction specifications by a deep structured semantic model. Engineering, 
+Construction, 
+and 
+Architectural 
+Management, 
+30(9), 
+4358–4386. 
+https://10.1108/ECAM-10-2021-0920 
+[20] Lee, J., Yi, J., & Son, J. (2019). Development of Automatic-Extraction Model 
+of Poisonous Clauses in International Construction Contracts Using Rule-Based 
+NLP. J. Comput. Civ. Eng., 33(3)https://10.1061/(asce)cp.1943-5487.0000807 
+[21] Mallen, A., Asai, A., Zhong, V., Das, R., Khashabi, D., & Hajishirzi, H. (2022). 
+When Not to Trust Language Models: Investigating Effectiveness of Parametric 
+and Non-Parametric Memories. arXiv Preprint, 
+[22] McMeel, G. (2011). The construction of contracts : interpretation, implication, 
+and rectification (2nd ed.). Oxford University Press. 
+[23] Migliaccio, G. C., & Shrestha, P. P. (2022). Building A Body Of Knowledge In 
+Construction Project Delivery, Procurement And Contracting (1st ed.). World 
+Scientific Publishing Company. 
+[24] Moon, S., Chi, S., & Im, S. (2022). Automated detection of contractual risk 
+
+=== PDF PAGE 128 ===
+113 
+clauses from construction specifications using bidirectional encoder 
+representations from transformers (BERT). Automation in Construction, 142, 
+104465. https://10.1016/j.autcon.2022.104465 
+[25] Pham, H. T. T. L., & Han, S. (2023). Natural Language Processing with 
+Multitask Classification for Semantic Prediction of Risk-Handling Actions in 
+Construction Contracts. Journal of Computing in Civil Engineering, 37(6), 
+04023027. https://10.1061/jccee5.cpeng-5218 
+[26] Qi, X., Chen, Y., Lai, J., & Meng, F. (2024). Multifunctional Analysis of 
+Construction Contracts Using a Machine Learning Approach. Journal of 
+Management 
+in 
+Engineering, 
+40(2), 
+04024002. 
+https://10.1061/JMENEA.MEENG-5604 
+[27] Rasslan, N. D., & Nassar, A. H. (2017). Comparing Suitability of NEC and 
+FIDIC Contracts in Managing Construction Project in Egypt. International 
+Journal of Engineering Research & Technology (IJERT), 6(6), 531–535. 
+[28] Robinson, M. D. (2013). An Employer's and Engineer's Guide to the FIDIC 
+Conditions of Contract (1st ed.). Wiley-Blackwell. 
+[29] Salama, D. M., & El-Gohary, N. M. (2016). Semantic Text Classification for 
+Supporting Automated Compliance Checking in Construction. Journal of 
+Computing 
+in 
+Civil 
+Engineering, 
+30(1), 
+04014106. 
+https://10.1061/(ASCE)CP.1943-5487.0000301 
+
+=== PDF PAGE 129 ===
+114 
+[30] Seppala, C. (2023). The FIDIC Red Book Contract: An International Clause-
+by-Clause Commentary (1st ed.). Wolters Kluwer Law International. 
+[31] Serag, E., Osman, H., & Ghanem, M. (2010 November 16-18). Semantic 
+Detection of Risks and Conflicts in Construction Contracts. Proceedings of the 
+CIB W78 2010: 27th International Conference, Cairo, Egypt. 
+[32] Wang, Z., Zhang, H., Li, C., Eisenschlos, J. M., Perot, V., Wang, Z., Miculicich, 
+L., Fujii, Y., Shang, J., Lee, C., & Pfister, T. (2024). Chain-of-Table: Evolving 
+Tables in the Reasoning Chain for Table Understanding. arXiv Preprint, 
+https://10.48550/arxiv.2401.04398 
+[33] Wong, S., Yang, J., Zheng, C., & Su, X. (2022 December 5-6). Domain 
+Ontology Development Methodology for Construction Contract. 27th 
+International Symposium on Advancement of Construction Management and 
+Real Estate, Hong Kong. 
+[34] Wong, S., Zheng, C., Su, X., & Tang, Y. (2023b). Construction contract risk 
+identification based on knowledge-augmented language model. arXiv (Cornell 
+University), https://10.48550/arxiv.2309.12626 
+[35] Xu, X., & Cai, H. (2018). Semantic Frame-Based Information Extraction from 
+Utility Regulatory Documents to Support Compliance Checking. Springer 
+International Publishing AG. 
+[36] Xue, X., Hou, Y., & Zhang, J. (2022 July 13-15). Automated Construction 
+
+=== PDF PAGE 130 ===
+115 
+Contract Summarization Using Natural Language Processing and Deep 
+Learning. 39th International Symposium on Automation and Robotics in 
+Construction (ISARC 2022), Bogota, Columbia. 
+[37] Youssef, A., Osman, H., Georgy, M., & Yehia, N. (2018). Semantic Risk 
+Assessment for Ad Hoc and Amended Standard Forms of Construction 
+Contracts. Journal of Legal Affairs and Dispute Resolution in Engineering and 
+Construction, 
+10(2), 
+04518002. 
+https://10.1061/(ASCE)LA.1943-
+4170.0000253 
+[38] Zhang, J., El-Gohary, & Nora M. (2016). Semantic NLP-Based Information 
+Extraction from Construction Regulatory Documents for Automated 
+Compliance Checking. Journal of Computing in Civil Engineering, 30(2), 
+04015014. https://10.1061/(ASCE)CP.1943-5487.0000346 
+[39] Zheng, C., Wong, S., Su, X., & Tang, Y. (2023). A knowledge representation 
+approach for construction contract knowledge modeling. arXiv Preprint, 
+https://10.48550/arxiv.2309.12132 
+[40] Zheng, Z., Lu, X., Chen, K., Zhou, Y., & Lin, J. (2022). Pretrained domain-
+specific language model for natural language processing tasks in the AEC 
+domain. 
+Computers 
+in 
+Industry, 
+142, 
+103733. 
+https://10.1016/j.compind.2022.103733 
+[41] Zhong, B., Shen, L., Pan, X., Zhong, X., & He, W. (2024). Dispute 
+Classification and Analysis: Deep Learning–Based Text Mining for 
+
+=== PDF PAGE 131 ===
+116 
+Construction Contract Management. J. Constr. Eng. Manage., 150(1), 
+04023151. https://10.1061/jcemd4.coeng-14080 
+[42] Zhou, H., Gao, B., Tang, S., Li, B., & Wang, S. (2023). Intelligent detection on 
+construction project contract missing clauses based on deep learning and NLP. 
+Engineering, 
+Construction 
+and Architectural Management, 
+ahead-of-
+print(ahead-of-print), ahead–print. https://10.1108/ecam-02-2023-0172 
+ 
+ 
+
+=== PDF PAGE 132 ===
+117 
+Appendix I. Expert Evaluation Form 
+
+=== PDF PAGE 133 ===
+118 
+
+=== PDF PAGE 134 ===
+119 
+ 
+
+=== PDF PAGE 135 ===
+120 
+
+=== PDF PAGE 136 ===
+121 
+ 
+
+=== PDF PAGE 137 ===
+122 
+
+=== PDF PAGE 138 ===
+123 
+ 
+ 
+ 
+
+=== PDF PAGE 139 ===
+124 
+Appendix II. Used prompts in retrieval phase 
+(a) Base LLM 
+Please return ONLY the answer to the following question, excluding the question itself: 
+ 
+Question: [Question] 
+ 
+Please provide a concise and clear answer that directly addresses the question, without including 
+the question in your response. 
+ 
+Example Format: 
+Q: How do contractor rules for fossils and archaeology change in reports, like notice and claims? 
+A: Contractor rules for fossils and archaeology in reports require the Contractor to notify the 
+Engineer upon discovering findings, describe the finding in their notice, and follow the claims 
+procedure outlined in Sub-Clause 20.2. The Engineer must inspect the finding promptly, and the 
+Contractor can request an extension of time and additional payment for delays or costs arising from 
+following the Engineer's instructions. 
+ 
+Remember: Return ONLY your answer without repeating the question. 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 140 ===
+125 
+(b) Perplexity 
+System Message: 
+You are an AI assistant specialized in FIDIC Red Book 1999 analysis. 
+ 
+User Message: 
+Please analyze the following FIDIC Red Book 1999 Sub-Clause: 
+ 
+Sub-Clause Title: [Title] 
+Question: [Question] 
+ 
+Follow these steps: 
+1. Research Sub-Clause focusing on: 
+   - Original text 
+   - Analysis and interpretation 
+   - Practical implementation issues 
+   - Legal implications and cases 
+   - Areas for improvement 
+ 
+2. Provide response in this format: 
+ 
+[ANSWER START] 
+Direct answer to the question based on research 
+[ANSWER END] 
+ 
+[CONTEXT START] 
+||Contents of Sub-Clause(RB/99): [Original text] 
+||Analysis: [Interpretation] 
+||Practical issues: [Implementation challenges] 
+||Related Law: [Legal context] 
+||Improvements: [Suggested improvements] 
+[CONTEXT END] 
+ 
+ 
+ 
+
+=== PDF PAGE 141 ===
+126 
+(c) Standard RAG 
+Please return ONLY the answer to the following question, excluding the question itself: 
+ 
+Question: [Question] 
+ 
+Context: 
+Contents of Sub-Clause(RB/99): [Original clause text] 
+Main Changes: [Changes from RB/99] 
+Analysis: [Detailed analysis] 
+Related Law: [Legal context] 
+Improvements: [Suggested improvements] 
+ 
+Please provide a concise and clear answer that directly addresses the question, without including 
+the question in your response. 
+ 
+Example Format: 
+Q: How do contractor rules for fossils and archaeology change in reports, like notice and claims? 
+A: Contractor rules for fossils and archaeology in reports require the Contractor to notify the 
+Engineer upon discovering findings, describe the finding in their notice, and follow the claims 
+procedure outlined in Sub-Clause 20.2. The Engineer must inspect the finding promptly, and the 
+Contractor can request an extension of time and additional payment for delays or costs arising from 
+following the Engineer's instructions. 
+ 
+Remember: Return ONLY your answer without repeating the question. 
+ 
+ 
+ 
+
+=== PDF PAGE 142 ===
+127 
+(d) Proposed retrieval method 
+System Message: 
+You are an AI assistant specialized in FIDIC Red Book 1999 analysis. 
+ 
+User Input: 
+Sub-Clause Title: [Title] 
+Question: [Question] 
+Context: [Retrieved context from hybrid search] 
+ 
+Analysis Steps: 
+1. Analyze the provided context focusing on: 
+   - Original Sub-Clause text 
+   - Sub-Clause analysis 
+   - Implementation issues 
+   - Legal implications and cases 
+   - Areas for improvement 
+ 
+Response Format: 
+[ANSWER START] 
+Direct answer to the question based on the retrieved context 
+[ANSWER END] 
+ 
+[CONTEXT START] 
+||Contents of Sub-Clause(RB/99): [Original text from context] 
+||Analysis: [Analysis based on context] 
+||Practical issues: [Implementation challenges] 
+||Related Law: [Legal implications] 
+||Improvements: [Areas for improvement] 
+[CONTEXT END] 
+ 
+ 
+ 
+
+=== PDF PAGE 143 ===
+128 
+Appendix III. Used prompts in generation phase 
+(a) Refiner Agent Prompt (Semantic change) 
+Analyze the differences and filter out non-substantial changes. 
+Ignore: 
+- Formatting changes 
+- Grammar or punctuation changes 
+- Word order changes that don't alter meaning 
+- Simple rewording with same meaning 
+ 
+Focus on substantive changes affecting: 
+- Rights and obligations 
+- Legal implications 
+- Risk allocation 
+ 
+Return Format: 
+{ 
+    "status": "success", 
+    "changes": { 
+        "substantive_differences": [ 
+            { 
+                "red99_clause": "원문 조항 텍스트", 
+                "oman_clause": "변경된 조항 텍스트" 
+            } 
+        ] 
+    } 
+} 
+ 
+ 
+ 
+
+=== PDF PAGE 144 ===
+129 
+(b) Refiner Agent Prompt (Context refinement) 
+Analyze and refine the text spans related to the differences found in text_diff. 
+Focus on the following source contents: 
+- red99Analysis: Contains analysis sections 
+- red99RelatedLaw: Contains legal references 
+- red99Practicalissue: Contains practical implications 
+ 
+Return Format: 
+{ 
+    "status": "success", 
+    "refined_spans": { 
+        "analysis": [관련 계약해석 내용], 
+        "legal": [관련 법률 내용], 
+        "practical": [관련 실무 내용] 
+    } 
+} 
+ 
+ 
+ 
+
+=== PDF PAGE 145 ===
+130 
+(c) Detail Analyst Prompt 
+For each substantive difference: 
+1. Analyze legal implications: 
+   - Connect to exact clause changes 
+ 
+2. Examine practical considerations: 
+   - Link to operational impacts 
+   - Implementation challenges 
+ 
+3. Evaluate risk factors: 
+   - Direct consequences 
+   - Potential cascading effects 
+ 
+Return Format: 
+{ 
+    "status": "success", 
+    "analysis": { 
+        "legal_implications": [...], 
+        "practical_considerations": [...], 
+        "risk_factors": [...], 
+        "interrelationships": [...] 
+    } 
+} 
+ 
+ 
+ 
+
+=== PDF PAGE 146 ===
+131 
+(d) Risk/Opportunity Analyst Prompt 
+Analyze opportunities focusing on: 
+1. Identify opportunities from: 
+   - Legal compliance advantages 
+   - Operational efficiency gains 
+   - Market positioning benefits 
+ 
+2. Support with: 
+   - Direct evidence 
+   - Market context 
+   - Quantifiable benefits 
+ 
+Return Format: 
+{ 
+    "status": "success", 
+    "assessment": { 
+        "risks": { 
+            "contractual_risks": [...], 
+            "evidence": [...], 
+            "reasoning": "..." 
+        }, 
+        "opportunities": { 
+            "contractual_opportunities": [...], 
+            "evidence": [...], 
+            "reasoning": "..." 
+        } 
+    } 
+} 
+ 
+ 
+ 
+
+=== PDF PAGE 147 ===
+132 
+(e) Aggregator Agent Prompt 
+Provide detailed comparative analysis: 
+1. Specific Key Findings: 
+   - Identify exact differences in contractual implications 
+ 
+2. Critical Changes: 
+   - List concrete differences in responsibilities 
+   - Reference specific findings 
+   - Explain significance 
+   - Show reasoning process 
+ 
+Return Format: 
+{ 
+    "status": "success", 
+    "summary": { 
+        "key_findings": [...], 
+        "critical_changes": [...] 
+    } 
+} 
+ 
+ 
+ 
+
+=== PDF PAGE 148 ===
+133 
+Appendix IV. Guide for Expert Assessment 
+ 
+
+=== PDF PAGE 149 ===
+134 
+ 
+
+=== PDF PAGE 150 ===
+135 
+ 
+
+=== PDF PAGE 151 ===
+136 
+ 
+
+=== PDF PAGE 152 ===
+137 
+  
+
+=== PDF PAGE 153 ===
+138 
+ 
+국문초록 
+김의왕 
+스마트시티학과  
+스마트계획·건설정보시스템전공 
+중앙대학교 대학원 
+ 
+ 
+건설계약 검토는 기술과 법률 분야의 전문지식을 요구하지만, 
+현업에서는 전문인력 부족으로 많은 어려움을 겪고 있다. 대규모언어모
+델(LLM)이 이러한 문제해결에 잠재력을 보이고 있으나, 복잡한 계약에서 
+도메인지식을 효과적으로 통합하고 활용하여 신뢰할 수 있는 결과물을 
+생성하는 데는 여전히 한계가 있다. 이러한 문제를 해결하기 위해 본 연
+구에서는 CORA-RAG 시스템을 제안한다. 
+CORA-RAG는 2,000개 이상의 텍스트 세그먼트를 포함하는 지식
+베이스를 기반으로 계약조항의 해석이 가능하다. 해당 시스템은 멀티 에
+이전트 접근 방식을 채택하여 의미 분석, 컨텍스트 분석, 위험 평가 등 
+다양한 측면에서 분석을 수행한다. 분석은 차이점 식별, 컨텍스트 정제, 
+
+=== PDF PAGE 154 ===
+139 
+실무 및 법률적 측면의 처리, 상세한 리스크 및 기회 평가 단계를 거치
+며, 이는 에이전트 간 협업을 통해 종합적인 생성 프레임워크 내에서 이
+루어진다. 
+오만의 General Conditions를 이용한 성능평가를 실시하였으며 
+제안된 방법은 기존 RAG 접근방식 대비 Context Recall 52.6%, 
+Faithfulness 48.3% 증가 등 유의미한 개선을 보였다. 분류기반 필터링과 
+하이브리드 검색방법의 도입으로 초기 과정에서 불필요한 정보를 효과
+적으로 제거했으며, 멀티 에이전트 LLM 프레임워크를 통해 분석결과의 
+신뢰성과 정확성을 향상시켰다. 건설산업 분야의 13명의 전문가 평가 
+결과, 제안된 시스템은 경력 2~4년차 주니어 전문가 수준의 분석능력을 
+갖는것으로 나타났다. 전문가들은 해당 시스템이 기본적인 계약분석을 
+신속하게 수행하고 검토시간을 단축하여 업무 효율성을 향상시키는 데 
+유용하며, 특히 경험이 적은 실무자들이 복잡한 계약을 이해 및 분석하
+는 데 큰 도움이 될 것으로 평가되었다. 
+본 연구의 주요 공헌은 SCF 기반의 구조화된 지식 프레임워크 
+
+=== PDF PAGE 155 ===
+140 
+개발, 분류기반 필터링과 하이브리드 검색 방법을 통한 정보 검색 정확
+도 향상, 그리고 멀티 에이전트 LLM 프레임워크를 통한 컨텍스트 인식 
+다단계 답변 생성 프로세스 개발이다. 이러한 실용적인 접근을 통해 
+CORA-RAG는 건설계약 분야에서 증가하는 자동화된 솔루션 수요에 대
+응하는 신뢰성 높고 효율적인 도구로 활용이 가능하다. 
+ 
+핵심어: AI기반 계약서 검토, 계약관리, 검색증강생성(RAG), 대규모 언어모델
+(LLM), 지식베이스 

@@ -1,0 +1,67 @@
+[
+  {
+    "new_page": 32,
+    "same_body_text_old_pages": []
+  },
+  {
+    "new_page": 37,
+    "same_body_text_old_pages": []
+  },
+  {
+    "new_page": 50,
+    "same_body_text_old_pages": []
+  },
+  {
+    "new_page": 80,
+    "same_body_text_old_pages": [
+      74
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 81,
+    "same_body_text_old_pages": [
+      75
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 85,
+    "same_body_text_old_pages": [
+      79
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 86,
+    "same_body_text_old_pages": [
+      80
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 90,
+    "same_body_text_old_pages": [
+      84
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 91,
+    "same_body_text_old_pages": [
+      85
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 108,
+    "same_body_text_old_pages": [
+      102
+    ],
+    "body_raster_equal": true
+  },
+  {
+    "new_page": 109,
+    "same_body_text_old_pages": []
+  }
+]

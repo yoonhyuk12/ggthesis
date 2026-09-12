@@ -1,0 +1,37 @@
+[
+  {
+    "ref": "06",
+    "path": "02.reference/06. 스마트장비(Drone·AIoT)를 활용한_이병길.pdf",
+    "pages": 115,
+    "bytes": 2877754,
+    "sha256": "47b06f88791311e23aba05bcc97d5707d7b2fe3b242cd357eb66a290cad620c3"
+  },
+  {
+    "ref": "18",
+    "path": "02.reference/18. 스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구.pdf",
+    "pages": 115,
+    "bytes": 2877754,
+    "sha256": "47b06f88791311e23aba05bcc97d5707d7b2fe3b242cd357eb66a290cad620c3"
+  },
+  {
+    "ref": "22",
+    "path": "02.reference/22. 중소규모 건설현장 재해예방을 위한 스마트 건설안전기술 활용 방안.pdf",
+    "pages": 158,
+    "bytes": 5030752,
+    "sha256": "9195a691ba79d27481bd025939bc172dc9623b0b5ad927e456a82332966bd3e0"
+  },
+  {
+    "ref": "28",
+    "path": "02.reference/28. 국내 소규모 민간 건설프로젝트의 산업안전보건관리비 준수 실태 분석 및 개선방안 제시연구.pdf",
+    "pages": 69,
+    "bytes": 35274735,
+    "sha256": "54c0fe9a464d5f6f2652d7cf52922c99930881a69e5ebb2b6c0e4ecfd7caed49"
+  },
+  {
+    "ref": "32",
+    "path": "02.reference/32. 건설현장의 스마트 안전장비 성능과 도입 효과 분석.pdf",
+    "pages": 12,
+    "bytes": 653088,
+    "sha256": "af24375037225577b53f99e08534ba0ba4b93bd1f93cbe852e887b85b0cb502b"
+  }
+]

@@ -1,0 +1,575 @@
+[
+  {
+    "table": 0,
+    "pages": [
+      13,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      31,
+      33,
+      34,
+      35,
+      37,
+      40,
+      49,
+      61,
+      62,
+      74,
+      100,
+      109
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "—"
+    ]
+  },
+  {
+    "table": 1,
+    "pages": [
+      27
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "LLM 필터링 후 완화"
+    ]
+  },
+  {
+    "table": 2,
+    "pages": [
+      13,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      29,
+      31,
+      33,
+      34,
+      35,
+      37,
+      40,
+      49,
+      61,
+      62,
+      100
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "노력기대·PEOU가 수용의도에 정(+) 영향"
+    ]
+  },
+  {
+    "table": 3,
+    "pages": [
+      35
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "소프트웨어 업데이트(0원)"
+    ]
+  },
+  {
+    "table": 4,
+    "pages": [
+      23,
+      24,
+      28,
+      29,
+      31,
+      36,
+      37,
+      38,
+      40
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "예산 제약성과 H2의 근거"
+    ]
+  },
+  {
+    "table": 5,
+    "pages": [
+      16,
+      18,
+      41,
+      58,
+      66,
+      78,
+      81,
+      99,
+      103
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "예산 제약성 상호작용(H2, 탐색적)"
+    ]
+  },
+  {
+    "table": 6,
+    "pages": [
+      46
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "1차 실시간·2차 사후 검증 분리 설계"
+    ]
+  },
+  {
+    "table": 7,
+    "pages": [
+      48
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "JSON 원자적 쓰기, SQLite(WAL)"
+    ]
+  },
+  {
+    "table": 8,
+    "pages": [
+      46,
+      48,
+      56
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "LLM 기반 문맥 오탐 필터링"
+    ]
+  },
+  {
+    "table": 9,
+    "pages": [
+      59
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "TN",
+      "진음성(안전 차단 성공)"
+    ]
+  },
+  {
+    "table": 10,
+    "pages": [
+      59,
+      60
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "전체 판정의 정확률, 종합 신뢰성"
+    ]
+  },
+  {
+    "table": 11,
+    "pages": [
+      59,
+      60,
+      61
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "+0.984"
+    ]
+  },
+  {
+    "table": 12,
+    "pages": [
+      61
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "7"
+    ]
+  },
+  {
+    "table": 13,
+    "pages": [
+      63
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "210"
+    ]
+  },
+  {
+    "table": 14,
+    "pages": [
+      67,
+      72
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "주 분석에 투입하지 않고 도입 집단의 기술통계만 보고하는 전용 응답 변수"
+    ]
+  },
+  {
+    "table": 15,
+    "pages": [
+      70
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "집단 × W → Y"
+    ]
+  },
+  {
+    "table": 16,
+    "pages": [
+      67,
+      71,
+      72,
+      73,
+      82,
+      91,
+      92,
+      97
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "연구자 구성"
+    ]
+  },
+  {
+    "table": 17,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "공변량 및 집단 동질성 검증"
+    ]
+  },
+  {
+    "table": 18,
+    "pages": [
+      75,
+      113,
+      119
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "[38, 41, 44]"
+    ]
+  },
+  {
+    "table": 19,
+    "pages": [
+      76,
+      114,
+      120
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "[29, 39]"
+    ]
+  },
+  {
+    "table": 20,
+    "pages": [
+      77,
+      115
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "[38, 41]"
+    ]
+  },
+  {
+    "table": 21,
+    "pages": [
+      78,
+      116
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "[05, 42]"
+    ]
+  },
+  {
+    "table": 22,
+    "pages": [
+      66,
+      69,
+      73,
+      79
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 23,
+    "pages": [
+      81
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "개인 응답자 단위, 현장 단위 군집 구조 별도 점검"
+    ]
+  },
+  {
+    "table": 24,
+    "pages": [
+      84
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 25,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 26,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 27,
+    "pages": [
+      87
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 28,
+    "pages": [
+      89
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 29,
+    "pages": [
+      90,
+      91
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 30,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 31,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "해당 없음"
+    ]
+  },
+  {
+    "table": 32,
+    "pages": [
+      93
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 33,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 34,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 35,
+    "pages": [
+      93,
+      95,
+      96
+    ],
+    "missing_paragraphs": [],
+    "last_cell": []
+  },
+  {
+    "table": 36,
+    "pages": [
+      111,
+      117
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "안녕하십니까?",
+      "경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.",
+      "먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.",
+      "본 설문은 귀하의 현장에서 운용한 AI 안전 알림 시스템의 사용 경험을 바탕으로 현장의 안전관리 실효성과 시스템 특성 인식을 조사하여, 도입 현장과 미도입 현장의 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다.",
+      "응답에는 정답이 없으며, 시스템을 운용하고 AI 알림을 수신하신 경험에 근거하여 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다.",
+      " 다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다. 설문에 응해 주셔서 진심으로 감사드립니다.",
+      "2026년 9월"
+    ]
+  },
+  {
+    "table": 37,
+    "pages": [
+      112,
+      118
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      " A-1) 귀하의 소속 구분은 ?",
+      "   ① 시공사   ② 발주청(공사감독·감리원 포함)",
+      " A-2) 귀하의 성별은?",
+      "   ① 남성   ② 여성",
+      " A-3) 귀하의 연령대는?",
+      "   ① 20대   ② 30대   ③ 40대   ④ 50대   ⑤ 60대 이상",
+      " A-4) 귀하의 건설현장 안전관리 또는 공사감독 경력은?",
+      "   ① 3년 미만   ② 3년 이상 ∼ 5년 미만   ③ 5년 이상 ∼ 10년 미만",
+      "   ④ 10년 이상 ∼ 20년 미만   ⑤ 20년 이상",
+      " A-5) 귀하의 직위는?",
+      "   ① 공사감독   ② 안전관리자   ③ 현장소장   ④ 기타 (    )",
+      " A-6) 현재 담당 현장의 공사금액 규모는? ",
+      "      [확정 필요: 공사금액 구간 기준]",
+      "   ① 20억 원 미만   ② 20억 원 이상 ∼ 50억 원 미만",
+      "     ③ 50억 원 이상 ∼ 100억 원 미만",
+      "   ④ 100억 원 이상 ∼ 120억 원 미만   ⑤ 120억 원 이상"
+    ]
+  },
+  {
+    "table": 38,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "A. 실태조사 대상자 개요"
+    ]
+  },
+  {
+    "table": 39,
+    "pages": [
+      75,
+      113,
+      119
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "⑤"
+    ]
+  },
+  {
+    "table": 40,
+    "pages": [
+      76,
+      114,
+      120
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "⑤"
+    ]
+  },
+  {
+    "table": 41,
+    "pages": [
+      77,
+      115
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "⑤"
+    ]
+  },
+  {
+    "table": 42,
+    "pages": [
+      78,
+      116
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "⑤"
+    ]
+  },
+  {
+    "table": 43,
+    "pages": [
+      111,
+      117
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "안녕하십니까?",
+      "경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.",
+      "먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.",
+      "본 설문은 건설현장의 안전관리 실태와 여건을 조사하여 현장 간 안전관리 실효성의 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다.",
+      "응답에는 정답이 없으며, 귀하가 담당하시는 현장의 안전관리 실태와 여건에 근거하여 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다.",
+      " 다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다. 설문에 응해 주셔서 진심으로 감사드립니다.",
+      "2026년 9월"
+    ]
+  },
+  {
+    "table": 44,
+    "pages": [
+      112,
+      118
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      " A-1) 귀하의 소속 구분은 ?",
+      "   ① 시공사   ② 발주청(공사감독·감리원 포함)",
+      " A-2) 귀하의 성별은?",
+      "   ① 남성   ② 여성",
+      " A-3) 귀하의 연령대는?",
+      "   ① 20대   ② 30대   ③ 40대   ④ 50대   ⑤ 60대 이상",
+      " A-4) 귀하의 건설현장 안전관리 또는 공사감독 경력은?",
+      "   ① 3년 미만   ② 3년 이상 ∼ 5년 미만   ③ 5년 이상 ∼ 10년 미만",
+      "   ④ 10년 이상 ∼ 20년 미만   ⑤ 20년 이상",
+      " A-5) 귀하의 직위는?",
+      "   ① 공사감독   ② 안전관리자   ③ 현장소장   ④ 기타 (    )",
+      " A-6) 현재 담당 현장의 공사금액 규모는? ",
+      "      [확정 필요: 공사금액 구간 기준]",
+      "   ① 20억 원 미만   ② 20억 원 이상 ∼ 50억 원 미만",
+      "     ③ 50억 원 이상 ∼ 100억 원 미만",
+      "   ④ 100억 원 이상 ∼ 120억 원 미만   ⑤ 120억 원 이상"
+    ]
+  },
+  {
+    "table": 45,
+    "pages": [],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "A. 실태조사 대상자 개요"
+    ]
+  },
+  {
+    "table": 46,
+    "pages": [
+      75,
+      113,
+      119
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "⑤"
+    ]
+  },
+  {
+    "table": 47,
+    "pages": [
+      76,
+      114,
+      120
+    ],
+    "missing_paragraphs": [],
+    "last_cell": [
+      "⑤"
+    ]
+  }
+]

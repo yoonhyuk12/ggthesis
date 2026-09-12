@@ -1,0 +1,17 @@
+{
+  "figures": [
+    {"number":"1-1","caption":"산업별 업무상사고 사망재해 분포도","png":"01.docs/figures/evidence/assets/fig_1_1_industry_fatalities_2024.png"},
+    {"number":"1-2","caption":"연도별 업무상사고 사망재해 추이","png":"01.docs/figures/evidence/assets/fig_1_2_construction_fatalities_2020_2024.png"},
+    {"number":"1-3","caption":"연구의 흐름도","png":"01.docs/figures/research/figure_1-3_research_flow.png"},
+    {"number":"3-1","caption":"YOLO-LLM 이중 캐스케이드 시스템 아키텍처","png":"01.docs/figures/system/fig_3_1_architecture.png"},
+    {"number":"3-2","caption":"LLM 2차 검증 입출력 구조와 판정 흐름","png":"01.docs/figures/system/fig_3_2_llm_verification.png"},
+    {"number":"3-3","caption":"RAG 기반 Few-shot 교정 절차","png":"01.docs/figures/system/fig_3_3_rag_correction.png"},
+    {"number":"3-4","caption":"시스템 운영 화면(AI CCTV Viewer)","png":"01.docs/figures/evidence/assets/fig_3_4_viewer_original.png"},
+    {"number":"4-1","caption":"연구 모형","png":"01.docs/figures/research/figure_4-1_research_model.png"}
+  ],
+  "text_corrections": [
+    ["건설업은 우리나라 전체 산업 가운데 사망재해 위험이 가장 높은 업종이다.","건설업은 우리나라 전체 산업 가운데 업무상사고 사망자 수가 가장 많은 업종이다."],
+    ["고용노동부(2024)의 산업재해 현황분석", "고용노동부(2025)의 산업재해 현황분석"],
+    ["고용노동부, 『2024 산업재해 현황분석』, 고용노동부, 2024.","고용노동부, 『2024 산업재해 현황분석』, 고용노동부, 2025."]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "table_count": 48,
+  "all_table_cells_text_width_grid_equal": true,
+  "body_text_sequence_equal_except_intended_changes": true,
+  "remaining_marker_colors_equal": true,
+  "picture_count": 8,
+  "pages": 120,
+  "figure_pdf_pages": [
+    13,
+    14,
+    21,
+    49,
+    53,
+    56,
+    59,
+    70
+  ]
+}

@@ -1,0 +1,7680 @@
+{
+  "cell_replace": [
+    {
+      "section": "Contents/section2.xml",
+      "idx": 172,
+      "old": "기존 단일 YOLO 연구",
+      "new": "단일 YOLO 구조"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 175,
+      "old": "0.4∼0.5 (정밀도-재현율 절충)",
+      "new": "연구·과제별 설정에 따라 정밀도와 재현율 절충"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 176,
+      "old": "0.3 (재현율 극대화)",
+      "new": "0.3 (위험 후보를 넓게 수집하려는 설정)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 181,
+      "old": "임계값 상향으로 구조적 허용",
+      "new": "1차 감지에서 발생 가능"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 182,
+      "old": "최소화",
+      "new": "1차 누락과 2차 실제 위험 차단 모두 가능"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 184,
+      "old": "오탐 통제 수준에서 잔존",
+      "new": "기술 성능과 별도 사용자 평가 필요"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 185,
+      "old": "LLM 필터링 후 완화",
+      "new": "모바일 후보 차단과 피로 완화 인식은 별도 평가"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 271,
+      "old": "YOLO+LLM 오픈소스(0원)",
+      "new": "YOLO 등 공개 소프트웨어 활용(별도 구매비 0원 가정), LLM API 별도"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 283,
+      "old": "소프트웨어 업데이트(0원)",
+      "new": "업데이트 구매비 0원 가정(유지보수 인건비 별도)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 332,
+      "old": "현장 활용성과 관리 성과 연결 근거",
+      "new": "기술 수용의도 형성 근거(실제 관리성과와 구별)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 351,
+      "old": "PU·PEOU와 채택 의도의 정(+) 관계 확인",
+      "new": "기기별 PU·PEOU 등과 채택 의도의 관계 분석"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 372,
+      "old": "YOLO 단독 감지 또는 개별 스마트 장비 중심",
+      "new": "단일 탐지·개별 장비와 일부 YOLO-LLM/VLM 하이브리드 연구"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 373,
+      "old": "YOLO 고민감도 탐지와 LLM 문맥 검증의 이중 캐스케이드",
+      "new": "YOLO 후보 수집과 LLM 문맥 검증의 이중 캐스케이드"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 375,
+      "old": "기술 성능 또는 도입 사용자의 인식 중심",
+      "new": "기술 성능·사용자 인식 중심이며 일부 적용·일반 현장 비교 존재"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 376,
+      "old": "AI 알림 수신 현장 약 30개소와 미수신 현장 약 30개소 비교",
+      "new": "설치·정상 운용 확인 도입 약 30개소와 미설치·미운용 약 30개소 비교"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 381,
+      "old": "단일 시스템 성능 평가 또는 단일 집단 관계 분석",
+      "new": "기술 성능 평가·수용 관계 분석 및 일부 현장 비교"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 382,
+      "old": "응답자·현장 특성을 통제한 jamovi ANCOVA 조정 평균 비교",
+      "new": "현장 임의절편 선형혼합모형으로 특성 조정 후 개인 지각 평균 비교"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 435,
+      "old": "저오탐 임계치 유지 (R4)",
+      "new": "위험 누락과 함께 오경보 감소 평가(R4)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 566,
+      "old": "LLM: 정탐(SEND)",
+      "new": "LLM: 발송(SEND)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 571,
+      "old": "LLM: 오탐(BLOCK)",
+      "new": "LLM: 차단(BLOCK)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 587,
+      "old": "실제 위험 중 SEND된 비율, 사고 누락 방지 능력",
+      "new": "1차 후보 내 실제 위험 중 SEND된 비율, 2차 필터의 위험 보존 정도"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 591,
+      "old": "시간당 오경보율(FAR)",
+      "new": "후보 로그 기반 시간당 오경보 빈도(FAR)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 593,
+      "old": "단위 시간당 잘못된 알림 빈도, 경보 피로의 정량 지표",
+      "new": "기존 196.8시간 분모에 대한 라벨 후보의 오경보 빈도"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 624,
+      "old": "시간당 오경보율",
+      "new": "후보 로그 기반 시간당 오경보 빈도(FAR, 건/시간)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 625,
+      "old": "(FAR, 건/시간)",
+      "new": ""
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 635,
+      "old": "0.886 [0.760, 0.951]",
+      "new": "0.886 [0.760, 0.950]"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 640,
+      "old": "+0.718",
+      "new": "+0.717"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 643,
+      "old": "0.980 [0.968, 0.987]",
+      "new": "0.979 [0.968, 0.987]"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 644,
+      "old": "+0.930",
+      "new": "+0.929"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 606,
+      "old": "<표 3-6> 1차 단독 대 2단계 파이프라인 성능 비교",
+      "new": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 607,
+      "old": "(n=878, 196.8시간, 38대 카메라)",
+      "new": "(n=878, 38대 카메라)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 735,
+      "old": "AI 위험 알림 수신 현장과 미수신 현장을 구분하는 이분형 집단 변수",
+      "new": "설치·정상 운용 확인 도입=1, 미설치·미운용 확인 미도입=0"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 746,
+      "old": "경보 피로도 완화 인식",
+      "new": "시스템 특성 인식·경보 피로도 완화 인식"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 782,
+      "old": "예산 제약성이 큰 현장일수록 도입에 따른 안전관리 실효성 차이가 더 클 것이다.",
+      "new": "조사 시점에 예산 제약을 크게 지각하는 응답자에서 도입·미도입 집단의 지각 실효성 차이가 더 클 것이다."
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 809,
+      "old": "조사 전 시스템 운용과 AI 위험 알림 수신 경험의 유무",
+      "new": "조사 전 설치·정상 운용 확인 여부(알림 경험 별도 기록)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 815,
+      "old": "조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력이 실질적으로 확보된 정도",
+      "new": "현장 관리자가 지각한 현재 안전관리 업무의 실질적 수행 수준"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 821,
+      "old": "스마트 안전장비 도입 예산과 제도적·조직적 지원이 부족한 정도",
+      "new": "조사 시점 개인이 지각한 스마트 안전장비 예산·지원의 제약 정도"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 865,
+      "old": "공변량 및 집단 동질성 검증",
+      "new": "범주형 통제변수 및 사전 특성 분포·균형 진단"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 868,
+      "old": "공변량 및 집단 동질성 검증",
+      "new": "범주형 통제변수 및 사전 특성 분포·균형 진단"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 871,
+      "old": "공변량 및 집단 동질성 검증",
+      "new": "범주형 통제변수 및 사전 특성 분포·균형 진단"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 873,
+      "old": "건설업 경력",
+      "new": "건설현장 안전관리 또는 공사감독 경력"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 874,
+      "old": "공변량 및 집단 동질성 검증",
+      "new": "범주형 통제변수 및 사전 특성 분포·균형 진단"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 877,
+      "old": "공변량 및 집단 동질성 검증",
+      "new": "범주형 통제변수 및 사전 특성 분포·균형 진단"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 880,
+      "old": "공변량 및 집단 동질성 검증",
+      "new": "범주형 통제변수 및 사전 특성 분포·균형 진단"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1033,
+      "old": "범용성·안정성·오탐 필터링·알림 전파 [확정 필요: D블록 유지 여부]",
+      "new": "범용성·안정성·오탐 필터링·알림 전파"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1070,
+      "old": "한국농어촌공사 경기지역본부 산하 중소규모 건설현장의 현장 관리자·안전관리자",
+      "new": "한국농어촌공사 경기지역본부 산하 중소규모 건설현장의 현장 관리자·안전관리자(규모 기준 확정 필요)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1072,
+      "old": "AI 알림 수신 현장 30개소와 미수신 현장 30개소로 구성한 총 60개소",
+      "new": "설치·정상 운용 확인 도입 30현장과 미설치·미운용 확인 미도입 30현장, 총 60현장"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1074,
+      "old": "도입 현장 [확정 필요: 무작위 추출 또는 규모 매칭], 미도입 현장 주요 특성 매칭 우선",
+      "new": "동일 관할의 주요 특성 유사 현장 우선 확보, 구체적 추출·매칭 절차 확정 필요"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1076,
+      "old": "도입 집단은 실제 시스템 운용·알림 수신 경험자, 미도입 집단은 같은 관할 범위의 현장 관리자·안전관리자",
+      "new": "양 집단 동일 직무 범위, 현장당 2명·개인 중복 응답 방지, 알림 경험 별도 기록"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1082,
+      "old": "2026년 하반기 [확정 필요: 설문 실시 월]",
+      "new": "2026년 하반기 [확정 필요: 설문 실시 월·공통 기준기간·최소 운용 기간]"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1084,
+      "old": "현장당 2명, 집단별 응답 60건, 총 120부",
+      "new": "현장당 2명, 집단별 응답 60건, 총 120부(검정력 충분성 미검증)"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1086,
+      "old": "개인 응답자 단위, 현장 단위 군집 구조 별도 점검",
+      "new": "개인 응답자, 현장 ID를 군집으로 하는 현장 임의절편 선형혼합모형"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1954,
+      "old": "핵심 결과",
+      "new": "핵심 추정·불확실성"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1955,
+      "old": "효과크기·설명력",
+      "new": "검정통계량·자유도·p"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1959,
+      "old": "ANCOVA",
+      "new": "현장 임의절편 선형혼합모형"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1960,
+      "old": "F = [DATA PENDING: F], p = [DATA PENDING: p], 조정 평균 차이 = [DATA PENDING: 차이]",
+      "new": ""
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1961,
+      "old": "ηp² = [DATA PENDING: ηp²]",
+      "new": ""
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1964,
+      "old": "예산 제약성이 클수록 도입에 따른 안전관리 실효성 차이가 더 클 것이다.",
+      "new": "조사 시점에 예산 제약을 크게 지각하는 응답자에서 도입·미도입 집단의 지각 실효성 차이가 더 클 것이다."
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1965,
+      "old": "탐색적 집단×예산 제약성 상호작용 분석",
+      "new": "동일 군집 구조의 탐색적 상호작용 혼합모형"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1966,
+      "old": "B 또는 F = [DATA PENDING: 통계량], p = [DATA PENDING: p], 상호작용 방향 = [DATA PENDING: 방향]",
+      "new": ""
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1967,
+      "old": "ηp² 또는 ΔR² = [DATA PENDING: 효과크기]",
+      "new": ""
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2101,
+      "old": "본 설문은 귀하의 현장에서 운용한 AI 안전 알림 시스템의 사용 경험을 바탕으로 현장의 안전관리 실효성과 시스템 특성 인식을 조사하여, 도입 현장과 미도입 현장의 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다.",
+      "new": "본 설문은 건설현장의 안전관리 실태와 여건을 조사하여 현장 간 안전관리 실효성의 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다."
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2102,
+      "old": "응답에는 정답이 없으며, 시스템을 운용하고 AI 알림을 수신하신 경험에 근거하여 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다.",
+      "new": "응답에는 정답이 없으며, 귀하가 담당하시는 현장의 현재 안전관리 업무 수행 수준과 여건을 기준으로 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다."
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2105,
+      "old": "2026년 9월",
+      "new": "2026년 [확정 필요: 설문 실시 월]"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2448,
+      "old": "응답에는 정답이 없으며, 귀하가 담당하시는 현장의 안전관리 실태와 여건에 근거하여 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다.",
+      "new": "응답에는 정답이 없으며, 귀하가 담당하시는 현장의 현재 안전관리 업무 수행 수준과 여건을 기준으로 느끼신 그대로 응답해 주시면 됩니다. 본 설문은 무기명으로 진행하며, 응답 내용은 통계법 제33조에 따라 철저히 비밀이 보장되고 오직 학술 연구 목적의 통계 분석에만 사용합니다."
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2451,
+      "old": "2026년 9월",
+      "new": "2026년 [확정 필요: 설문 실시 월]"
+    }
+  ],
+  "replace_table": [
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 12,
+      "old_anchor_idx": 654,
+      "caption": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "panels": [
+        {
+          "header": [
+            "조건",
+            "Precision",
+            "Recall",
+            "F1",
+            "Accuracy",
+            "TP",
+            "FP",
+            "TN",
+            "FN"
+          ],
+          "rows": [
+            [
+              "제로샷(교정 미사용)",
+              "0.320",
+              "0.333",
+              "0.327",
+              "0.837",
+              "8",
+              "17",
+              "161",
+              "16"
+            ],
+            [
+              "등록순 최대 3개(가용 수만큼)",
+              "0.389",
+              "0.292",
+              "0.333",
+              "0.861",
+              "7",
+              "11",
+              "167",
+              "17"
+            ],
+            [
+              "등록순 최대 5개(가용 수만큼)",
+              "0.368",
+              "0.292",
+              "0.326",
+              "0.856",
+              "7",
+              "12",
+              "166",
+              "17"
+            ],
+            [
+              "RAG 동적선택(제안)",
+              "0.462",
+              "0.250",
+              "0.324",
+              "0.876",
+              "6",
+              "7",
+              "171",
+              "18"
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "note": "",
+          "md_block_idx": 79,
+          "after_new_md_block_idx": 78,
+          "after_new_md_text": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+          "new_row_count_including_header": 5,
+          "new_col_count": 9,
+          "table_idx": 12,
+          "old_anchor_idx": 654
+        }
+      ],
+      "remove_table_indices": [],
+      "all_old_table_indices": [
+        12
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "merged_first_cell"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 25,
+      "old_anchor_idx": 1313,
+      "caption": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "panels": [
+        {
+          "header": [
+            "측정변수",
+            "문항 수",
+            "분석 개인 수(전체/도입/미도입)",
+            "Cronbach's α(전체/도입/미도입)",
+            "문항 간 관련성·점검 결과"
+          ],
+          "rows": [
+            [
+              "안전관리 실효성 전체",
+              "8",
+              "",
+              "",
+              ""
+            ],
+            [
+              "조기인지",
+              "1",
+              "",
+              "해당 없음(단일 문항)",
+              ""
+            ],
+            [
+              "대응 신속성",
+              "1",
+              "",
+              "해당 없음(단일 문항)",
+              ""
+            ],
+            [
+              "원격 파악",
+              "2",
+              "",
+              "",
+              ""
+            ],
+            [
+              "순찰부담 경감",
+              "2",
+              "",
+              "",
+              ""
+            ],
+            [
+              "위험 통제력",
+              "2",
+              "",
+              "",
+              ""
+            ],
+            [
+              "안전관리 예산 제약성",
+              "4",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.8,
+            1.6,
+            1.6,
+            1.5,
+            2.8
+          ],
+          "note": "",
+          "md_block_idx": 16,
+          "after_new_md_block_idx": 15,
+          "after_new_md_text": "패널 A는 전체 및 집단별 내적 일관성 정보이다.",
+          "new_row_count_including_header": 8,
+          "new_col_count": 5,
+          "table_idx": 25,
+          "old_anchor_idx": 1313,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            22
+          ]
+        },
+        {
+          "header": [
+            "분석 대상",
+            "KMO",
+            "Bartlett χ²",
+            "df",
+            "p",
+            "추출 요인 수",
+            "요인적재값 범위",
+            "누적 설명분산(%)",
+            "제거 문항"
+          ],
+          "rows": [
+            [
+              "안전관리 실효성 문항",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "안전관리 예산 제약성 문항",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.5,
+            1.5,
+            1.0,
+            1.0,
+            1.5,
+            1.5,
+            1.6,
+            1.6
+          ],
+          "note": "",
+          "md_block_idx": 20,
+          "after_new_md_block_idx": 19,
+          "after_new_md_text": "패널 B는 탐색적 요인분석을 포함할 때 보고할 타당도 결과이다.",
+          "new_row_count_including_header": 3,
+          "new_col_count": 9,
+          "table_idx": 26,
+          "old_anchor_idx": 1381,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            22
+          ]
+        }
+      ],
+      "remove_table_indices": [
+        26
+      ],
+      "all_old_table_indices": [
+        25,
+        26
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "outside_table_owned_by_B"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 27,
+      "old_anchor_idx": 1416,
+      "caption": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "panels": [
+        {
+          "header": [
+            "변수",
+            "집단",
+            "n",
+            "평균(M)",
+            "표준편차(SD)",
+            "왜도",
+            "첨도"
+          ],
+          "rows": [
+            [
+              "안전관리 실효성 전체",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "전체",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "조기인지",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "대응 신속성",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "원격 파악",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "순찰부담 경감",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "위험 통제력",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "안전관리 예산 제약성",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "경보 피로도 완화 인식",
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.5,
+            1.5,
+            1.6,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 28,
+          "after_new_md_block_idx": 27,
+          "after_new_md_text": "패널 A는 공통 척도와 E 완전응답 평균점수의 분포이다.",
+          "new_row_count_including_header": 17,
+          "new_col_count": 7,
+          "table_idx": 27,
+          "old_anchor_idx": 1416,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "header": [
+            "문항",
+            "유효 응답 수",
+            "경험 부재 비해당 수",
+            "일반 무응답 수",
+            "평균(M)",
+            "표준편차(SD)"
+          ],
+          "rows": [
+            [
+              "D-1",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-2",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-3",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-4",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-5",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-6",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-7",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D-8",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "E-1",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "E-2",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "E-3",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "E-4",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.5,
+            1.5,
+            1.5,
+            1.6,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 31,
+          "after_new_md_block_idx": 30,
+          "after_new_md_text": "패널 B는 도입 집단 전용 D·E의 문항별 응답 상태와 기술통계이다.",
+          "new_row_count_including_header": 13,
+          "new_col_count": 6,
+          "table_idx": null,
+          "after_paragraph_idx": 1529,
+          "before_paragraph_idx": 1530,
+          "after_old_table_idx": 27,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            32,
+            33,
+            34
+          ]
+        }
+      ],
+      "remove_table_indices": [],
+      "all_old_table_indices": [
+        27
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "merged_first_cell"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "old_anchor_idx": 1536,
+      "caption": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "panels": [
+        {
+          "header": [
+            "사전 특성",
+            "집계 단위",
+            "도입 범주별 n(%)",
+            "미도입 범주별 n(%)",
+            "범주별 비율 차이",
+            "표준화 차이",
+            "공통 관측범위·희소범주"
+          ],
+          "rows": [
+            [
+              "소속 구분",
+              "개인",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "성별",
+              "개인",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "연령",
+              "개인",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "경력",
+              "개인",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "직위",
+              "개인",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "현장 공사금액 규모",
+              "현장",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 38,
+          "after_new_md_block_idx": 37,
+          "after_new_md_text": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+          "new_row_count_including_header": 7,
+          "new_col_count": 7,
+          "table_idx": 28,
+          "old_anchor_idx": 1536,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            40
+          ]
+        }
+      ],
+      "remove_table_indices": [],
+      "all_old_table_indices": [
+        28
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "merged_first_cell"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 29,
+      "old_anchor_idx": 1611,
+      "caption": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "panels": [
+        {
+          "header": [
+            "점검 항목",
+            "진단 자료·방법",
+            "결과",
+            "추론에 대한 판단·후속 처리"
+          ],
+          "rows": [
+            [
+              "군집 구조",
+              "현장 ID·중복 응답·현장별 응답 수 분포",
+              "",
+              ""
+            ],
+            [
+              "오차 구조",
+              "현장 간 독립·조건부 잔차 독립 및 임의절편과 설명변수의 관계 검토",
+              "",
+              ""
+            ],
+            [
+              "평균구조",
+              "적합값 대비 잔차·집단/범주별 잔차 양상",
+              "",
+              ""
+            ],
+            [
+              "잔차 분포·등분산성",
+              "집단별 잔차 도표·Q-Q 도표",
+              "",
+              ""
+            ],
+            [
+              "현장 임의효과 분포",
+              "임의절편 추정치 분포·Q-Q 도표",
+              "",
+              ""
+            ],
+            [
+              "영향점",
+              "개인 및 현장 단위 영향 진단",
+              "",
+              ""
+            ],
+            [
+              "수렴·특이적합",
+              "수렴 경고·분산 경계·특이적합 출력",
+              "",
+              ""
+            ],
+            [
+              "영역별 분포",
+              "단일 5점 문항의 범주 분포·천장/바닥효과 포함",
+              "",
+              ""
+            ],
+            [
+              "H2 선형성·상호작용",
+              "W와 Y 관계·집단별 적합/잔차·공통 관측범위",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.8,
+            2.8,
+            1.5,
+            2.8
+          ],
+          "note": "",
+          "md_block_idx": 45,
+          "after_new_md_block_idx": 44,
+          "after_new_md_text": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+          "new_row_count_including_header": 10,
+          "new_col_count": 4,
+          "table_idx": 29,
+          "old_anchor_idx": 1611,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            47
+          ]
+        }
+      ],
+      "remove_table_indices": [],
+      "all_old_table_indices": [
+        29
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "merged_first_cell"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 30,
+      "old_anchor_idx": 1697,
+      "caption": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "panels": [
+        {
+          "header": [
+            "집단",
+            "개인 n",
+            "현장 수",
+            "원평균(M)",
+            "원표준편차(SD)",
+            "조정 평균·차이",
+            "SE",
+            "95% CI"
+          ],
+          "rows": [
+            [
+              "도입",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "미도입",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "도입−미도입",
+              "해당 없음",
+              "해당 없음",
+              "",
+              "해당 없음",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.6,
+            1.6,
+            1.6,
+            1.5,
+            1.6,
+            1.0,
+            1.6
+          ],
+          "note": "",
+          "md_block_idx": 53,
+          "after_new_md_block_idx": 52,
+          "after_new_md_text": "패널 A는 H1 완전사례에서의 원평균과 조정 평균이다.",
+          "new_row_count_including_header": 4,
+          "new_col_count": 8,
+          "table_idx": 30,
+          "old_anchor_idx": 1697,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            60
+          ]
+        },
+        {
+          "header": [
+            "고정효과",
+            "B",
+            "SE",
+            "95% CI",
+            "t 또는 F",
+            "df",
+            "p"
+          ],
+          "rows": [
+            [
+              "절편",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "도입(1)−미도입(0)",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "소속 구분의 기준범주 대비 각 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "성별의 기준범주 대비 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "연령의 기준범주 대비 각 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "경력의 기준범주 대비 각 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "직위의 기준범주 대비 각 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "현장 공사금액의 기준범주 대비 각 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.8,
+            1.5,
+            1.0,
+            1.6,
+            1.5,
+            1.0,
+            1.0
+          ],
+          "note": "",
+          "md_block_idx": 55,
+          "after_new_md_block_idx": 54,
+          "after_new_md_text": "패널 B는 비표준화 고정효과 계수이다.",
+          "new_row_count_including_header": 9,
+          "new_col_count": 7,
+          "table_idx": 31,
+          "old_anchor_idx": 1735,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            60
+          ]
+        },
+        {
+          "header": [
+            "분석 개인 수",
+            "군집 수(도입/미도입/전체)",
+            "현장 분산 τ²",
+            "잔차 분산 σ²",
+            "ICC",
+            "수렴·특이적합"
+          ],
+          "rows": [
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.6,
+            1.6,
+            1.6,
+            1.0,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 58,
+          "after_new_md_block_idx": 57,
+          "after_new_md_text": "패널 C는 분산 성분과 분석 규모·적합 상태이다.",
+          "new_row_count_including_header": 2,
+          "new_col_count": 6,
+          "table_idx": null,
+          "after_old_table_idx": 31,
+          "before_paragraph_idx": 1803,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            60
+          ]
+        }
+      ],
+      "remove_table_indices": [
+        31
+      ],
+      "all_old_table_indices": [
+        30,
+        31
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "outside_table_owned_by_B"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 32,
+      "old_anchor_idx": 1810,
+      "caption": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "panels": [
+        {
+          "header": [
+            "하위영역",
+            "개인 n·현장 수(도입/미도입)",
+            "도입 조정 평균(SE)",
+            "미도입 조정 평균(SE)",
+            "차이 B(SE)",
+            "차이 95% CI",
+            "t 또는 F",
+            "df",
+            "비보정 p",
+            "Holm 보정 p"
+          ],
+          "rows": [
+            [
+              "조기인지",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "대응 신속성",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "원격 파악",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "순찰부담 경감",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "위험 통제력",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.6,
+            1.6,
+            1.6,
+            1.5,
+            1.6,
+            1.5,
+            1.0,
+            1.5,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 65,
+          "after_new_md_block_idx": 64,
+          "after_new_md_text": "패널 A는 영역별 조정 차이와 추론값이다.",
+          "new_row_count_including_header": 6,
+          "new_col_count": 10,
+          "table_idx": 32,
+          "old_anchor_idx": 1810,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            69,
+            73
+          ]
+        },
+        {
+          "header": [
+            "하위영역",
+            "현장 분산 τ²",
+            "잔차 분산 σ²",
+            "ICC",
+            "수렴·특이적합"
+          ],
+          "rows": [
+            [
+              "조기인지",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "대응 신속성",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "원격 파악",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "순찰부담 경감",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "위험 통제력",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.6,
+            1.6,
+            1.0,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 68,
+          "after_new_md_block_idx": 67,
+          "after_new_md_text": "패널 B는 영역별 분산 성분과 적합 상태이다.",
+          "new_row_count_including_header": 6,
+          "new_col_count": 5,
+          "table_idx": null,
+          "after_old_table_idx": 32,
+          "before_paragraph_idx": 1862,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            69,
+            73
+          ]
+        }
+      ],
+      "remove_table_indices": [],
+      "all_old_table_indices": [
+        32
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "merged_first_cell"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 33,
+      "old_anchor_idx": 1874,
+      "caption": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "panels": [
+        {
+          "header": [
+            "고정효과",
+            "B",
+            "SE",
+            "95% CI",
+            "t 또는 F",
+            "df",
+            "p"
+          ],
+          "rows": [
+            [
+              "집단 D(도입=1·미도입=0)",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "예산 제약성 W_c",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D×W_c",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "절편·여섯 특성의 각 더미",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.8,
+            1.5,
+            1.0,
+            1.6,
+            1.5,
+            1.0,
+            1.0
+          ],
+          "note": "",
+          "md_block_idx": 76,
+          "after_new_md_block_idx": 75,
+          "after_new_md_text": "패널 A는 고정효과의 부호 있는 계수와 신뢰구간이다.",
+          "new_row_count_including_header": 5,
+          "new_col_count": 7,
+          "table_idx": 33,
+          "old_anchor_idx": 1874,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            80,
+            83
+          ]
+        },
+        {
+          "header": [
+            "예산 제약성 수준",
+            "실제 W값·공통범위 포함 여부",
+            "도입 조정 평균",
+            "미도입 조정 평균",
+            "조건부 차이 B",
+            "SE",
+            "95% CI",
+            "t",
+            "df",
+            "p"
+          ],
+          "rows": [
+            [
+              "평균−1SD",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "평균",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "평균+1SD",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            2.8,
+            1.6,
+            1.6,
+            1.5,
+            1.0,
+            1.6,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "note": "",
+          "md_block_idx": 79,
+          "after_new_md_block_idx": 78,
+          "after_new_md_text": "패널 B는 양 집단의 공통 관측범위 안에서 산출한 조건부 집단 차이이다.",
+          "new_row_count_including_header": 4,
+          "new_col_count": 10,
+          "table_idx": 34,
+          "old_anchor_idx": 1908,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            80,
+            83
+          ]
+        },
+        {
+          "header": [
+            "개인 n(도입/미도입/전체)",
+            "군집 수(도입/미도입/전체)",
+            "현장 분산 τ²",
+            "잔차 분산 σ²",
+            "ICC",
+            "수렴·특이적합"
+          ],
+          "rows": [
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "width_weights": [
+            2.5,
+            1.6,
+            1.6,
+            1.6,
+            1.0,
+            1.5
+          ],
+          "note": "",
+          "md_block_idx": 82,
+          "after_new_md_block_idx": 81,
+          "after_new_md_text": "패널 C는 H2의 분석 규모와 분산 성분·적합 상태이다.",
+          "new_row_count_including_header": 2,
+          "new_col_count": 6,
+          "table_idx": null,
+          "after_old_table_idx": 34,
+          "before_paragraph_idx": 1941,
+          "blank_result_policy": "Preserve HWPX blank result form; all new DATA PENDING result cells are blank by coordinator instruction.",
+          "result_pending_context_md_block_indices": [
+            83
+          ]
+        }
+      ],
+      "remove_table_indices": [
+        34
+      ],
+      "all_old_table_indices": [
+        33,
+        34
+      ],
+      "preserve_total_width": 39142,
+      "width_weights_status": "proposal_only_main_must_measure_actual_font",
+      "caption_location": "outside_table_owned_by_B"
+    }
+  ],
+  "unresolved": [],
+  "user_edits": [
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 9,
+      "paragraph_indices": [
+        567,
+        568
+      ],
+      "old_md": "TP — 진양성(위험 알림 성공)",
+      "actual": "TP\n진양성(위험 알림 성공)",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 9,
+      "paragraph_indices": [
+        569,
+        570
+      ],
+      "old_md": "FP — 위양성(오경보)",
+      "actual": "FP\n위양성(오경보)",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 9,
+      "paragraph_indices": [
+        572,
+        573
+      ],
+      "old_md": "FN — 위음성(위험 누락)",
+      "actual": "FN\n위음성(위험 누락)",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 9,
+      "paragraph_indices": [
+        574,
+        575
+      ],
+      "old_md": "TN — 진음성(안전 차단 성공)",
+      "actual": "TN\n진음성(안전 차단 성공)",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 16,
+      "paragraph_indices": [
+        827
+      ],
+      "old_md": "범용성·안정성·오탐 필터링·알림 전파를 경험한 정도 [확정 필요: D블록 유지 여부]",
+      "actual": "범용성·안정성·오탐 필터링·알림 전파를 경험한 정도 ",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "paragraph_indices": [
+        1135
+      ],
+      "old_md": "발주청(공사감독·감리원 포함)",
+      "actual": "발주청",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "paragraph_indices": [
+        1258
+      ],
+      "old_md": "현장 공사금액 규모 [확정 필요: 공사금액 구간 기준]",
+      "actual": "현장 공사금액 규모",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "paragraph_indices": [
+        1300
+      ],
+      "old_md": "100.0",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "paragraph_indices": [
+        1302
+      ],
+      "old_md": "100.0",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "paragraph_indices": [
+        1304
+      ],
+      "old_md": "100.0",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "kind": "blank_result_cells",
+      "count": 141,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1129
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1130
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1131
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1132
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1133
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1134
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1136
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1137
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1138
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1139
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1140
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1141
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1144
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1145
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1146
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1147
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1148
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1149
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1151
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1152
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1153
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1154
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1155
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1156
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1159
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1160
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1161
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1162
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1163
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1164
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1166
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1167
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1168
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1169
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1170
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1171
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1173
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1174
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1175
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1176
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1177
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1178
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1180
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1181
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1182
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1183
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1184
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1185
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1187
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1188
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1189
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1190
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1191
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1192
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1195
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1196
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1197
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1198
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1199
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1200
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1202
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1203
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1204
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1205
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1206
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1207
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1209
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1210
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1211
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1212
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1213
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1214
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1216
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1217
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1218
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1219
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1220
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1221
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1223
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1224
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1225
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1226
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1227
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1228
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1231
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1232
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1233
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1234
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1235
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1236
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1238
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1239
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1240
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1241
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1242
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1243
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1245
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1246
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1247
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1248
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1249
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1250
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1252
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1253
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1254
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1255
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1256
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1257
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1260
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1261
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1262
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1263
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1264
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1265
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1268
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1269
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1270
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1271
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1272
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1273
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1276
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1277
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1278
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1279
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1280
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1281
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1284
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1285
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1286
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1287
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1288
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1289
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1291
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1292
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1293
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1294
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1295
+          ],
+          "old_md": "[DATA PENDING: 빈도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1296
+          ],
+          "old_md": "[DATA PENDING: 비율]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1299
+          ],
+          "old_md": "[DATA PENDING: 도입 집단 n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1301
+          ],
+          "old_md": "[DATA PENDING: 미도입 집단 n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 24,
+          "paragraph_indices": [
+            1303
+          ],
+          "old_md": "[DATA PENDING: 전체 n]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 25,
+      "kind": "blank_result_cells",
+      "count": 42,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1324
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1325
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1326
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1327
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1328
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1329
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1332
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1333
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1334
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1335
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1336
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1337
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1340
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1341
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1342
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1343
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1344
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1345
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1348
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1349
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1350
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1351
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1352
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1353
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1356
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1357
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1358
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1359
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1360
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1361
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1364
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1365
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1366
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1367
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1368
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1369
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1372
+          ],
+          "old_md": "[DATA PENDING: 최초 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1373
+          ],
+          "old_md": "[DATA PENDING: 최종 문항 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1374
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1375
+          ],
+          "old_md": "[DATA PENDING: α]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1376
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 25,
+          "paragraph_indices": [
+            1377
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 26,
+      "kind": "blank_result_cells",
+      "count": 16,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1392
+          ],
+          "old_md": "[DATA PENDING: KMO]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1393
+          ],
+          "old_md": "[DATA PENDING: χ²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1394
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1395
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1396
+          ],
+          "old_md": "[DATA PENDING: 요인 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1397
+          ],
+          "old_md": "[DATA PENDING: 적재값 범위]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1398
+          ],
+          "old_md": "[DATA PENDING: 누적 설명분산]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1399
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1401
+          ],
+          "old_md": "[DATA PENDING: KMO]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1402
+          ],
+          "old_md": "[DATA PENDING: χ²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1403
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1404
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1405
+          ],
+          "old_md": "[DATA PENDING: 요인 수]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1406
+          ],
+          "old_md": "[DATA PENDING: 적재값 범위]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1407
+          ],
+          "old_md": "[DATA PENDING: 누적 설명분산]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 26,
+          "paragraph_indices": [
+            1408
+          ],
+          "old_md": "[DATA PENDING: 제거 문항]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 27,
+      "kind": "blank_result_cells",
+      "count": 80,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1427
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1428
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1429
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1430
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1431
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1433
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1434
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1435
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1436
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1437
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1439
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1440
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1441
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1442
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1443
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1446
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1447
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1448
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1449
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1450
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1452
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1453
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1454
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1455
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1456
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1459
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1460
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1461
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1462
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1463
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1465
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1466
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1467
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1468
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1469
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1472
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1473
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1474
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1475
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1476
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1478
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1479
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1480
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1481
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1482
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1485
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1486
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1487
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1488
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1489
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1491
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1492
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1493
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1494
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1495
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1498
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1499
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1500
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1501
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1502
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1504
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1505
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1506
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1507
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1508
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1511
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1512
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1513
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1514
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1515
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1517
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1518
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1519
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1520
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1521
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1524
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1525
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1526
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1527
+          ],
+          "old_md": "[DATA PENDING: 왜도]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 27,
+          "paragraph_indices": [
+            1528
+          ],
+          "old_md": "[DATA PENDING: 첨도]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "paragraph_indices": [
+        1568
+      ],
+      "old_md": "[확정 필요: 최종 코딩에 따른 자료 형태]",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "paragraph_indices": [
+        1571
+      ],
+      "old_md": "[확정 필요: χ² 또는 t]",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "paragraph_indices": [
+        1577
+      ],
+      "old_md": "[확정 필요: 최종 코딩에 따른 자료 형태]",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "paragraph_indices": [
+        1580
+      ],
+      "old_md": "[확정 필요: χ² 또는 t]",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "paragraph_indices": [
+        1595
+      ],
+      "old_md": "[확정 필요: 최종 코딩에 따른 자료 형태]",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "paragraph_indices": [
+        1598
+      ],
+      "old_md": "[확정 필요: χ² 또는 t]",
+      "actual": "",
+      "action": "preserve"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 28,
+      "kind": "blank_result_cells",
+      "count": 36,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1551
+          ],
+          "old_md": "[DATA PENDING: n(%)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1552
+          ],
+          "old_md": "[DATA PENDING: n(%)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1554
+          ],
+          "old_md": "[DATA PENDING: χ²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1555
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1556
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1557
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1560
+          ],
+          "old_md": "[DATA PENDING: n(%)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1561
+          ],
+          "old_md": "[DATA PENDING: n(%)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1563
+          ],
+          "old_md": "[DATA PENDING: χ²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1564
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1565
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1566
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1569
+          ],
+          "old_md": "[DATA PENDING: n(%) 또는 M±SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1570
+          ],
+          "old_md": "[DATA PENDING: n(%) 또는 M±SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1572
+          ],
+          "old_md": "[DATA PENDING: χ²/t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1573
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1574
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1575
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1578
+          ],
+          "old_md": "[DATA PENDING: n(%) 또는 M±SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1579
+          ],
+          "old_md": "[DATA PENDING: n(%) 또는 M±SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1581
+          ],
+          "old_md": "[DATA PENDING: χ²/t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1582
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1583
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1584
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1587
+          ],
+          "old_md": "[DATA PENDING: n(%)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1588
+          ],
+          "old_md": "[DATA PENDING: n(%)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1590
+          ],
+          "old_md": "[DATA PENDING: χ²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1591
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1592
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1593
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1596
+          ],
+          "old_md": "[DATA PENDING: n(%) 또는 M±SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1597
+          ],
+          "old_md": "[DATA PENDING: n(%) 또는 M±SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1599
+          ],
+          "old_md": "[DATA PENDING: χ²/t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1600
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1601
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 28,
+          "paragraph_indices": [
+            1602
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 29,
+      "kind": "blank_result_cells",
+      "count": 37,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1624
+          ],
+          "old_md": "[DATA PENDING: 현장 수·현장별 응답 수 범위·평균 군집 크기]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1627
+          ],
+          "old_md": "[DATA PENDING: 복수 응답 분포 판단]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1628
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1631
+          ],
+          "old_md": "[DATA PENDING: ICC]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1634
+          ],
+          "old_md": "[DATA PENDING: 군집성 판단]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1635
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1638
+          ],
+          "old_md": "[DATA PENDING: 설계효과·유효표본]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1641
+          ],
+          "old_md": "[DATA PENDING: 유효표본 감소 판단]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1642
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1647
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1648
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1649
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1650
+          ],
+          "old_md": "[DATA PENDING: 충족 여부]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1651
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1654
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1655
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1656
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1657
+          ],
+          "old_md": "[DATA PENDING: 충족 여부]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1658
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1661
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1662
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1663
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1664
+          ],
+          "old_md": "[DATA PENDING: 충족 여부]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1665
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1669
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1670
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1671
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1672
+          ],
+          "old_md": "[DATA PENDING: 충족 여부]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1673
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1677
+          ],
+          "old_md": "[DATA PENDING: W]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1678
+          ],
+          "old_md": "[DATA PENDING: 해당 없음]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1679
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1680
+          ],
+          "old_md": "[DATA PENDING: 충족 여부]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1681
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1685
+          ],
+          "old_md": "[DATA PENDING: 도표 판단]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1688
+          ],
+          "old_md": "[DATA PENDING: 충족 여부]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 29,
+          "paragraph_indices": [
+            1689
+          ],
+          "old_md": "[DATA PENDING: 처리 내용]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 30,
+      "kind": "blank_result_cells",
+      "count": 19,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1711
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1712
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1713
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1714
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1715
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1716
+          ],
+          "old_md": "[DATA PENDING: 하한]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1717
+          ],
+          "old_md": "[DATA PENDING: 상한]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1719
+          ],
+          "old_md": "[DATA PENDING: n]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1720
+          ],
+          "old_md": "[DATA PENDING: M]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1721
+          ],
+          "old_md": "[DATA PENDING: SD]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1722
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1723
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1724
+          ],
+          "old_md": "[DATA PENDING: 하한]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1725
+          ],
+          "old_md": "[DATA PENDING: 상한]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1728
+          ],
+          "old_md": "[DATA PENDING: 원평균 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1730
+          ],
+          "old_md": "[DATA PENDING: 조정 평균 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1731
+          ],
+          "old_md": "[DATA PENDING: 차이의 SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1732
+          ],
+          "old_md": "[DATA PENDING: 하한]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 30,
+          "paragraph_indices": [
+            1733
+          ],
+          "old_md": "[DATA PENDING: 상한]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 31,
+      "kind": "blank_result_cells",
+      "count": 45,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1748
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1749
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1750
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1751
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1752
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1753
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1755
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1756
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1757
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1758
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1759
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1760
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1762
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1763
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1764
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1765
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1766
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1767
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1769
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1770
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1771
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1772
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1773
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1774
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1776
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1777
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1778
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1779
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1780
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1781
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1783
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1784
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1785
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1786
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1787
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1788
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1790
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1791
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1792
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1793
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1794
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1795
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1797
+          ],
+          "old_md": "[DATA PENDING: SS]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1798
+          ],
+          "old_md": "[DATA PENDING: df]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 31,
+          "paragraph_indices": [
+            1799
+          ],
+          "old_md": "[DATA PENDING: MS]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 32,
+      "kind": "blank_result_cells",
+      "count": 35,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1823
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1824
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1825
+          ],
+          "old_md": "[DATA PENDING: 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1826
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1827
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1828
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1829
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1831
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1832
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1833
+          ],
+          "old_md": "[DATA PENDING: 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1834
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1835
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1836
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1837
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1839
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1840
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1841
+          ],
+          "old_md": "[DATA PENDING: 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1842
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1843
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1844
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1845
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1847
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1848
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1849
+          ],
+          "old_md": "[DATA PENDING: 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1850
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1851
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1852
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1853
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1855
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1856
+          ],
+          "old_md": "[DATA PENDING: Madj(SE)]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1857
+          ],
+          "old_md": "[DATA PENDING: 차이]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1858
+          ],
+          "old_md": "[DATA PENDING: F]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1859
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1860
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 32,
+          "paragraph_indices": [
+            1861
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 33,
+      "kind": "blank_result_cells",
+      "count": 18,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1887
+          ],
+          "old_md": "[DATA PENDING: B]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1888
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1889
+          ],
+          "old_md": "[DATA PENDING: F/t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1890
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1891
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1892
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1894
+          ],
+          "old_md": "[DATA PENDING: B]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1895
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1896
+          ],
+          "old_md": "[DATA PENDING: F/t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1897
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1898
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1899
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1901
+          ],
+          "old_md": "[DATA PENDING: B]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1902
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1903
+          ],
+          "old_md": "[DATA PENDING: F/t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1904
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1905
+          ],
+          "old_md": "[DATA PENDING: ηp²]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 33,
+          "paragraph_indices": [
+            1906
+          ],
+          "old_md": "[DATA PENDING: 판정]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 34,
+      "kind": "blank_result_cells",
+      "count": 21,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1918
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1919
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1920
+          ],
+          "old_md": "[DATA PENDING: B]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1921
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1922
+          ],
+          "old_md": "[DATA PENDING: t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1923
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1924
+          ],
+          "old_md": "[DATA PENDING: CI]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1926
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1927
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1928
+          ],
+          "old_md": "[DATA PENDING: B]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1929
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1930
+          ],
+          "old_md": "[DATA PENDING: t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1931
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1932
+          ],
+          "old_md": "[DATA PENDING: CI]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1934
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1935
+          ],
+          "old_md": "[DATA PENDING: Madj]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1936
+          ],
+          "old_md": "[DATA PENDING: B]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1937
+          ],
+          "old_md": "[DATA PENDING: SE]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1938
+          ],
+          "old_md": "[DATA PENDING: t]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1939
+          ],
+          "old_md": "[DATA PENDING: p]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 34,
+          "paragraph_indices": [
+            1940
+          ],
+          "old_md": "[DATA PENDING: CI]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 35,
+      "kind": "blank_result_cells",
+      "count": 2,
+      "cells": [
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 35,
+          "paragraph_indices": [
+            1962
+          ],
+          "old_md": "[DATA PENDING: 채택 또는 기각]",
+          "actual": "",
+          "action": "preserve"
+        },
+        {
+          "section": "Contents/section2.xml",
+          "table_idx": 35,
+          "paragraph_indices": [
+            1968
+          ],
+          "old_md": "[DATA PENDING: 탐색적 방향 일치 여부]",
+          "actual": "",
+          "action": "preserve"
+        }
+      ],
+      "action": "preserve_blank_in_existing_and_new_result_cells",
+      "authority": "coordinator ask reply: 기존 대응 결과칸 및 신설 통계 결과칸도 빈칸 양식 보존"
+    }
+  ],
+  "coverage": [
+    {
+      "file": "02_이론적배경.md",
+      "md_block_idx": 16,
+      "caption": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "table_indices": [
+        0
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        15,
+        6
+      ]
+    },
+    {
+      "file": "02_이론적배경.md",
+      "md_block_idx": 30,
+      "caption": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "table_indices": [
+        1
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 7,
+      "new_shape": [
+        5,
+        3
+      ]
+    },
+    {
+      "file": "02_이론적배경.md",
+      "md_block_idx": 36,
+      "caption": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "table_indices": [
+        2
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        13,
+        3
+      ]
+    },
+    {
+      "file": "02_이론적배경.md",
+      "md_block_idx": 64,
+      "caption": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "table_indices": [
+        3
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 2,
+      "new_shape": [
+        7,
+        3
+      ]
+    },
+    {
+      "file": "02_이론적배경.md",
+      "md_block_idx": 89,
+      "caption": "<표 2-5> 스마트 안전기술 도입 효과 선행연구 종합",
+      "table_indices": [
+        4
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 2,
+      "new_shape": [
+        11,
+        4
+      ]
+    },
+    {
+      "file": "02_이론적배경.md",
+      "md_block_idx": 92,
+      "caption": "<표 2-6> 선행연구와 본 연구의 차별성",
+      "table_indices": [
+        5
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 6,
+      "new_shape": [
+        7,
+        3
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 13,
+      "caption": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "table_indices": [
+        6
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 1,
+      "new_shape": [
+        7,
+        4
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 21,
+      "caption": "<표 3-2> 시스템 모듈 구성과 역할",
+      "table_indices": [
+        7
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        6,
+        4
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 52,
+      "caption": "<표 3-3> 시스템 구현 기술 스택",
+      "table_indices": [
+        8
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        8,
+        3
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 66,
+      "caption": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "table_indices": [
+        9
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 2,
+      "new_shape": [
+        3,
+        3
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 69,
+      "caption": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "table_indices": [
+        10
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 3,
+      "new_shape": [
+        7,
+        3
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 74,
+      "caption": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "table_indices": [
+        11
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 8,
+      "new_shape": [
+        10,
+        4
+      ]
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 79,
+      "caption": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "table_indices": [
+        12
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        5,
+        9
+      ],
+      "new_result_markers_rendered_blank": 0
+    },
+    {
+      "file": "03_시스템개발.md",
+      "md_block_idx": 87,
+      "caption": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)",
+      "table_indices": [
+        13
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        5,
+        3
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 9,
+      "caption": "<표 4-1> 연구변수의 구성",
+      "table_indices": [
+        14
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 2,
+      "new_shape": [
+        6,
+        3
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 28,
+      "caption": "<표 4-2> 연구 가설 종합",
+      "table_indices": [
+        15
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 1,
+      "new_shape": [
+        3,
+        4
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 43,
+      "caption": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "table_indices": [
+        16
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 3,
+      "new_shape": [
+        7,
+        6
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 56,
+      "caption": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "table_indices": [
+        17
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 7,
+      "new_shape": [
+        7,
+        3
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 58,
+      "caption": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "table_indices": [
+        18
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        9,
+        4
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 61,
+      "caption": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "table_indices": [
+        19
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        5,
+        3
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 64,
+      "caption": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "table_indices": [
+        20
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        9,
+        4
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 67,
+      "caption": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "table_indices": [
+        21
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        5,
+        3
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 72,
+      "caption": "<표 4-4> 설문지의 최종 구성",
+      "table_indices": [
+        22
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 1,
+      "new_shape": [
+        9,
+        6
+      ]
+    },
+    {
+      "file": "04_연구설계.md",
+      "md_block_idx": 82,
+      "caption": "<표 4-5> 자료 수집 개요",
+      "table_indices": [
+        23
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 7,
+      "new_shape": [
+        10,
+        2
+      ]
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 8,
+      "caption": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "table_indices": [
+        24
+      ],
+      "action": "unchanged_or_already_applied",
+      "paragraph_replacements": 0,
+      "new_shape": [
+        25,
+        8
+      ]
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 16,
+      "caption": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "table_indices": [
+        25,
+        26
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        8,
+        5
+      ],
+      "new_result_markers_rendered_blank": 19
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 20,
+      "caption": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "table_indices": [
+        25,
+        26
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        3,
+        9
+      ],
+      "new_result_markers_rendered_blank": 16
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 28,
+      "caption": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "table_indices": [
+        27
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        17,
+        7
+      ],
+      "new_result_markers_rendered_blank": 80
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 31,
+      "caption": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "table_indices": [
+        27
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        13,
+        6
+      ],
+      "new_result_markers_rendered_blank": 60
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 38,
+      "caption": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "table_indices": [
+        28
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        7,
+        7
+      ],
+      "new_result_markers_rendered_blank": 30
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 45,
+      "caption": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "table_indices": [
+        29
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        10,
+        4
+      ],
+      "new_result_markers_rendered_blank": 18
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 53,
+      "caption": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "table_indices": [
+        30,
+        31
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        4,
+        8
+      ],
+      "new_result_markers_rendered_blank": 18
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 55,
+      "caption": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "table_indices": [
+        30,
+        31
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        9,
+        7
+      ],
+      "new_result_markers_rendered_blank": 48
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 58,
+      "caption": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "table_indices": [
+        30,
+        31
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        2,
+        6
+      ],
+      "new_result_markers_rendered_blank": 6
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 65,
+      "caption": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "table_indices": [
+        32
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        6,
+        10
+      ],
+      "new_result_markers_rendered_blank": 45
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 68,
+      "caption": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "table_indices": [
+        32
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        6,
+        5
+      ],
+      "new_result_markers_rendered_blank": 20
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 76,
+      "caption": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "table_indices": [
+        33,
+        34
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        5,
+        7
+      ],
+      "new_result_markers_rendered_blank": 24
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 79,
+      "caption": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "table_indices": [
+        33,
+        34
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        4,
+        10
+      ],
+      "new_result_markers_rendered_blank": 27
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 82,
+      "caption": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "table_indices": [
+        33,
+        34
+      ],
+      "action": "replace_table_panel",
+      "new_shape": [
+        2,
+        6
+      ],
+      "new_result_markers_rendered_blank": 6
+    },
+    {
+      "file": "05_실증분석결과.md",
+      "md_block_idx": 88,
+      "caption": "<표 5-9> 연구 가설 검증 결과 종합",
+      "table_indices": [
+        35
+      ],
+      "action": "cell_replace",
+      "paragraph_replacements": 9,
+      "new_shape": [
+        3,
+        6
+      ]
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 7,
+      "table_indices": [
+        36
+      ],
+      "paragraph_idx": 2101,
+      "action": "delegated_intro_cell_replace"
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 8,
+      "table_indices": [
+        36
+      ],
+      "paragraph_idx": 2102,
+      "action": "delegated_intro_cell_replace"
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 10,
+      "table_indices": [
+        36
+      ],
+      "paragraph_idx": 2105,
+      "action": "delegated_intro_cell_replace"
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 22,
+      "table_indices": [
+        43
+      ],
+      "paragraph_idx": 2448,
+      "action": "delegated_intro_cell_replace"
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 24,
+      "table_indices": [
+        43
+      ],
+      "paragraph_idx": 2451,
+      "action": "delegated_intro_cell_replace"
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 51,
+      "table_indices": [
+        39,
+        46
+      ],
+      "action": "unchanged_preserve_native_survey_grid",
+      "new_shape": [
+        9,
+        7
+      ]
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 55,
+      "table_indices": [
+        40,
+        47
+      ],
+      "action": "unchanged_preserve_native_survey_grid",
+      "new_shape": [
+        5,
+        7
+      ]
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 61,
+      "table_indices": [
+        41
+      ],
+      "action": "unchanged_preserve_native_survey_grid",
+      "new_shape": [
+        9,
+        7
+      ]
+    },
+    {
+      "file": "부록1_설문지_양식.md",
+      "md_block_idx": 65,
+      "table_indices": [
+        42
+      ],
+      "action": "unchanged_preserve_native_survey_grid",
+      "new_shape": [
+        5,
+        7
+      ]
+    },
+    {
+      "file": "01_서론.md",
+      "action": "no_markdown_tables"
+    },
+    {
+      "file": "06_결론.md",
+      "action": "no_markdown_tables"
+    }
+  ]
+}

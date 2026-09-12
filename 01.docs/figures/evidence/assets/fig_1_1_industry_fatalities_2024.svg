@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="425.19685pt" height="317.480315pt" viewBox="0 0 425.19685 317.480315" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-12T20:10:51.988683</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 317.480315 
+L 425.19685 317.480315 
+L 425.19685 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 131.811024 263.508661 
+L 416.692913 263.508661 
+L 416.692913 34.922835 
+L 131.811024 34.922835 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 131.811024 263.508661 
+L 131.811024 34.922835 
+" clip-path="url(#pb50201d571)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m6fe8a05640" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6fe8a05640" x="131.811024" y="263.508661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="131.811024" y="277.34163" transform="rotate(-0 131.811024 277.34163)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 195.829426 263.508661 
+L 195.829426 34.922835 
+" clip-path="url(#pb50201d571)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6fe8a05640" x="195.829426" y="263.508661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="195.829426" y="277.34163" transform="rotate(-0 195.829426 277.34163)">100</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 259.847828 263.508661 
+L 259.847828 34.922835 
+" clip-path="url(#pb50201d571)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m6fe8a05640" x="259.847828" y="263.508661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="259.847828" y="277.34163" transform="rotate(-0 259.847828 277.34163)">200</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 323.86623 263.508661 
+L 323.86623 34.922835 
+" clip-path="url(#pb50201d571)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6fe8a05640" x="323.86623" y="263.508661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="323.86623" y="277.34163" transform="rotate(-0 323.86623 277.34163)">300</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 387.884632 263.508661 
+L 387.884632 34.922835 
+" clip-path="url(#pb50201d571)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6fe8a05640" x="387.884632" y="263.508661" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="387.884632" y="277.34163" transform="rotate(-0 387.884632 277.34163)">400</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: middle" x="274.251969" y="291.496318" transform="rotate(-0 274.251969 291.496318)">업무상사고 사망자 수(명)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="55.728208" transform="rotate(-0 128.311024 55.728208)">건설업</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="77.262436" transform="rotate(-0 128.311024 77.262436)">제조업</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="98.796663" transform="rotate(-0 128.311024 98.796663)">기타의 사업</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="120.330891" transform="rotate(-0 128.311024 120.330891)">운수·창고·통신업</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="141.865119" transform="rotate(-0 128.311024 141.865119)">임업</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="163.399346" transform="rotate(-0 128.311024 163.399346)">농업</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_17"/>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="184.933574" transform="rotate(-0 128.311024 184.933574)">광업</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_18"/>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="206.467802" transform="rotate(-0 128.311024 206.467802)">전기·가스·수도업</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_19"/>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="228.002029" transform="rotate(-0 128.311024 228.002029)">어업</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_20"/>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family: 'Malgun Gothic'; text-anchor: end" x="128.311024" y="249.536257" transform="rotate(-0 128.311024 249.536257)">금융 및 보험업</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 131.811024 45.313099 
+L 341.791383 45.313099 
+L 341.791383 59.310347 
+L 131.811024 59.310347 
+z
+" clip-path="url(#pb50201d571)" style="fill: #18354f"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 131.811024 66.847327 
+L 251.525436 66.847327 
+L 251.525436 80.844575 
+L 131.811024 80.844575 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 131.811024 88.381555 
+L 224.637707 88.381555 
+L 224.637707 102.378803 
+L 131.811024 102.378803 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 131.811024 109.915783 
+L 220.156419 109.915783 
+L 220.156419 123.913031 
+L 131.811024 123.913031 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 131.811024 131.45001 
+L 138.853048 131.45001 
+L 138.853048 145.447258 
+L 131.811024 145.447258 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 131.811024 152.984238 
+L 137.57268 152.984238 
+L 137.57268 166.981486 
+L 131.811024 166.981486 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 131.811024 174.518466 
+L 134.37176 174.518466 
+L 134.37176 188.515714 
+L 131.811024 188.515714 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 131.811024 196.052693 
+L 133.091392 196.052693 
+L 133.091392 210.049941 
+L 131.811024 210.049941 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 131.811024 217.586921 
+L 133.091392 217.586921 
+L 133.091392 231.584169 
+L 131.811024 231.584169 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 131.811024 239.121149 
+L 132.451208 239.121149 
+L 132.451208 253.118397 
+L 131.811024 253.118397 
+z
+" clip-path="url(#pb50201d571)" style="fill: #888888"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 131.811024 263.508661 
+L 416.692913 263.508661 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #18354f" x="345.632487" y="54.625317" transform="rotate(-0 345.632487 54.625317)">328명 (39.66%)</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="255.36654" y="76.159545" transform="rotate(-0 255.36654 76.159545)">187명 (22.61%)</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="228.478811" y="97.693773" transform="rotate(-0 228.478811 97.693773)">145명 (17.53%)</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="223.997523" y="119.228" transform="rotate(-0 223.997523 119.228)">138명 (16.69%)</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="142.694152" y="140.762228" transform="rotate(-0 142.694152 140.762228)">11명 (1.33%)</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="141.413784" y="162.296456" transform="rotate(-0 141.413784 162.296456)">9명 (1.09%)</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="138.212864" y="183.830683" transform="rotate(-0 138.212864 183.830683)">4명 (0.48%)</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="136.932496" y="205.364911" transform="rotate(-0 136.932496 205.364911)">2명 (0.24%)</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="136.932496" y="226.899139" transform="rotate(-0 136.932496 226.899139)">2명 (0.24%)</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.5px; font-family: 'Malgun Gothic'; text-anchor: start; fill: #222222" x="136.292312" y="248.433366" transform="rotate(-0 136.292312 248.433366)">1명 (0.12%)</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 11px; font-family: 'Malgun Gothic'; text-anchor: middle" x="274.251969" y="22.922835" transform="rotate(-0 274.251969 22.922835)">2024년 산업별 업무상사고 사망자 분포</text>
+   </g>
+  </g>
+  <g id="text_28">
+   <text style="font-size: 8px; font-family: 'Malgun Gothic'" transform="translate(12.755906 294.013951)">자료: 고용노동부, 『2024 산업재해현황분석』, 22쪽.</text>
+   <text style="font-size: 8px; font-family: 'Malgun Gothic'" transform="translate(12.755906 303.193701)">주: 산재보상 승인자료 기준. 전 산업 합계 827명.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb50201d571">
+   <rect x="131.811024" y="34.922835" width="284.88189" height="228.585827"/>
+  </clipPath>
+ </defs>
+</svg>
