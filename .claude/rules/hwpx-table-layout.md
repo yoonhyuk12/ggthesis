@@ -1,6 +1,6 @@
 # HWPX 표 생성·배치 규칙
 
-이 규칙은 `paths:` 제한 없이 항상 로드한다. 루트 `00. hwpx/`·`tools/hwpx_transfer/`, 중첩 논문 `04. 미소논문/00. hwpx/`·`04. 미소논문/tools/hwpx_transfer/`와 향후 다른 논문 경로의 **새 HWPX 생성·MD 이관·전체 조립·기존 표 부분 수정 모두**에 적용한다. 경로는 저장소 상대경로로 기록한다. 기존 파일의 부분 수정 절차는 [부분 수정 스킬](../skills/hwpx-thesis-editing/SKILL.md), 공통 개방·저장 검증은 [산출물 검증 규칙](hwpx-output-verification.md)을 함께 따른다.
+이 규칙은 `paths:` 제한 없이 항상 로드한다. `00. hwpx/`·`tools/hwpx_transfer/`와 향후 다른 논문 경로의 **새 HWPX 생성·MD 이관·전체 조립·기존 표 부분 수정 모두**에 적용한다. 경로는 저장소 상대경로로 기록한다. 기존 파일의 부분 수정 절차는 [부분 수정 스킬](../skills/hwpx-thesis-editing/SKILL.md), 공통 개방·저장 검증은 [산출물 검증 규칙](hwpx-output-verification.md)을 함께 따른다.
 
 ## 원본과 내용 보존
 
@@ -41,4 +41,4 @@
 
 ## 근거와 도구의 한계
 
-2026-09-12 [표 감사 자료](../../04.%20미소논문/tools/hwpx_transfer/staging/table_fit_260912/table_audit.json)는 `before_hancom_resave`, `ok: false`이며 표 인덱스 7·13·21·38·43에 꼬리말 침범 검토를 요구한다. 이 최상위 결과는 수정 전 진단이며, 같은 JSON의 `split_candidate_verification.ok: true`는 분할 후보의 최종 45표 검증 성공을 나타낸다. 두 단계를 구분하고 수정 전 실패를 최종 실패로 인용하지 않는다. 최소 높이·균등 폭만으로 판단하지 않고 실제 재조판 결과를 검증해야 한다는 사례다. 같은 폴더의 [열폭 조정 스크립트](../../04.%20미소논문/tools/hwpx_transfer/staging/table_fit_260912/apply_table_widths.py)와 [표 검증 스크립트](../../04.%20미소논문/tools/hwpx_transfer/staging/table_fit_260912/verify_tables.py)는 측정·검증 참고 자료이며, 세션 전용 인덱스·구역·PDF 매칭 가정을 새 문서에 그대로 적용하지 않는다. 이 규칙을 위해 훅이나 설정을 추가하지 않는다.
+2026-09-12 김미소 논문 작업(2026-09-19 형제 저장소 `../12. 경기대 김미소_논문/`으로 이관)의 [표 감사 자료](../../../12.%20경기대%20김미소_논문/tools/hwpx_transfer/staging/table_fit_260912/table_audit.json)는 `before_hancom_resave`, `ok: false`이며 표 인덱스 7·13·21·38·43에 꼬리말 침범 검토를 요구한다. 이 최상위 결과는 수정 전 진단이며, 같은 JSON의 `split_candidate_verification.ok: true`는 분할 후보의 최종 45표 검증 성공을 나타낸다. 두 단계를 구분하고 수정 전 실패를 최종 실패로 인용하지 않는다. 최소 높이·균등 폭만으로 판단하지 않고 실제 재조판 결과를 검증해야 한다는 사례다. 같은 폴더의 [열폭 조정 스크립트](../../../12.%20경기대%20김미소_논문/tools/hwpx_transfer/staging/table_fit_260912/apply_table_widths.py)와 [표 검증 스크립트](../../../12.%20경기대%20김미소_논문/tools/hwpx_transfer/staging/table_fit_260912/verify_tables.py)는 측정·검증 참고 자료이며, 세션 전용 인덱스·구역·PDF 매칭 가정을 새 문서에 그대로 적용하지 않는다. 이 규칙을 위해 훅이나 설정을 추가하지 않는다.
