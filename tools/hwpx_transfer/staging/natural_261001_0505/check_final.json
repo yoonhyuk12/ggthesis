@@ -1,0 +1,23 @@
+{
+ "text_preserved_vs_candidate": true,
+ "markers": 681,
+ "markers_not_red": 0,
+ "tables": 62,
+ "cell_break": 0,
+ "pics": 6,
+ "pages": [
+  150,
+  150
+ ],
+ "changed_vs_reflowed": [
+  26,
+  27
+ ],
+ "footer_intrusions": [],
+ "toc": {
+  "entries": 120,
+  "mapped": 120,
+  "unresolved": 0,
+  "mismatch": []
+ }
+}

@@ -1,0 +1,363 @@
+{
+ "operations": [
+  {
+   "section": "Contents/section2.xml",
+   "idx": 5,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 6,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 31,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2169,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2172,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2173,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2175,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 42,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 52,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 53,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 54,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 154,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 181,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 216,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 229,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 245,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 246,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 254,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 286,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 348,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 418,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 428,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 475,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 504,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 508,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 510,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 515,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 517,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 524,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 526,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 530,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 535,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 536,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 584,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 591,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 637,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 682,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 736,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 774,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 789,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 824,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 828,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 859,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 860,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 861,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 862,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 867,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1134,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1138,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1139,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1172,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1174,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1178,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1182,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1187,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1192,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1193,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1197,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1396,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1401,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1484,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1746,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 1920,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2029,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2159,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2160,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2161,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2175,
+   "kind": "insert"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2175,
+   "kind": "insert"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 510,
+   "kind": "insert"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 535,
+   "kind": "insert"
+  }
+ ],
+ "marker_fixes": [],
+ "changed_entries": [
+  "Contents/section2.xml"
+ ]
+}

@@ -1,3 +1,71 @@
+261001_055619 : 03.plan/README.md 수정 — "| [261001_0505_자연화_HWPX반영.md](261001_0505_자연화_HWPX반영.md) | 자…"
+261001_055609 : 03.plan/261001_0554_humanizer-kr_워커브리프.md 추가 — "# humanizer-kr 자연화 2차 워커 공통 브리프 (261001_0554 계획의 실행 브리프) 저장소…"
+261001_055508 : 03.plan/261001_0554_humanizer-kr_원고문장_자연화_2차.md 추가 — "# humanizer-kr 스킬 적용 원고 문장 자연화 2차 + HWPX 반영 - 요청(2026-10-01)…"
+261001_055036 : .agents/skills 수정, .claude/skills/humanizer-kr/LICENSE 추가, .claude/skills/humanizer-kr/SKILL.md 추가, .claude/skills/humanizer-kr/agents/openai.yaml 추가, .claude/skills/humanizer-kr/references/korean-source-rules.md 추가, .claude/skills/humanizer-kr/references/rewriting-playbook.md 추가 외 1건
+261001_051118 : 03.plan/README.md 수정
+261001_051115 : 03.plan/261001_0505_자연화_HWPX반영.md 수정 — "## 상태 - 완료. 산출물: `00. hwpx/261001_0511_경기공학_건축안전_윤혁_논문_자연화반영…"
+261001_051102 : 00. hwpx/261001_0511_경기공학_건축안전_윤혁_논문_자연화반영본.hwpx 추가, 00. hwpx/261001_0511_경기공학_건축안전_윤혁_논문_자연화반영본.pdf 추가, tools/hwpx_transfer/staging/natural_261001_0505/completion.json 추가
+261001_051044 : tools/hwpx_transfer/staging/natural_261001_0505/png/final_26_27.png 추가
+261001_051038 : tools/hwpx_transfer/staging/natural_261001_0505/check_final.json 추가
+261001_051020 : tools/hwpx_transfer/staging/natural_261001_0505/final.hwpx 추가, tools/hwpx_transfer/staging/natural_261001_0505/final.pdf 추가
+261001_050951 : tools/hwpx_transfer/staging/natural_261001_0505/keep_with_next.py 추가, tools/hwpx_transfer/staging/natural_261001_0505/layout1.hwpx 추가
+261001_050845 : tools/hwpx_transfer/staging/natural_261001_0505/png/sheet_01.png 추가, tools/hwpx_transfer/staging/natural_261001_0505/png/sheet_02.png 추가, tools/hwpx_transfer/staging/natural_261001_0505/png/sheet_03.png 추가, tools/hwpx_transfer/staging/natural_261001_0505/png/sheet_04.png 추가, tools/hwpx_transfer/staging/natural_261001_0505/png/sheet_05.png 추가, tools/hwpx_transfer/staging/natural_261001_0505/png/sheet_06.png 추가 외 10건
+261001_050833 : tools/hwpx_transfer/staging/natural_261001_0505/check_reflowed.json 추가
+261001_050812 : tools/hwpx_transfer/staging/natural_261001_0505/refresh_toc.py 추가, tools/hwpx_transfer/staging/natural_261001_0505/toc_targets.json 추가, tools/hwpx_transfer/staging/natural_261001_0505/toc_targets_build.py 추가
+261001_050749 : tools/hwpx_transfer/staging/natural_261001_0505/reflowed.hwpx 추가, tools/hwpx_transfer/staging/natural_261001_0505/reflowed.pdf 추가
+261001_050717 : tools/hwpx_transfer/staging/natural_261001_0505/check_candidate.json 추가
+261001_050715 : tools/hwpx_transfer/staging/natural_261001_0505/check_candidate.py 추가 — """"Read-only XML checks: base.hwpx vs candidate.hwpx against…"
+261001_050655 : tools/hwpx_transfer/staging/natural_261001_0505/apply.py 추가, tools/hwpx_transfer/staging/natural_261001_0505/candidate.hwpx 추가, tools/hwpx_transfer/staging/natural_261001_0505/patch_log.json 추가, tools/hwpx_transfer/staging/natural_261001_0505/reflow.ps1 추가
+261001_050642 : tools/hwpx_transfer/staging/natural_261001_0505/build_spec.py 수정, tools/hwpx_transfer/staging/natural_261001_0505/spec.json 수정
+261001_050638 : tools/hwpx_transfer/staging/natural_261001_0505/build_spec.py 수정 — "re.split(r'\n\s*\n', e['new'].strip())]"
+261001_050603 : tools/hwpx_transfer/staging/natural_261001_0505/spec.json 추가
+261001_050558 : tools/hwpx_transfer/staging/natural_261001_0505/build_spec.py 추가 — """"Read-only: naturalize reports (MD old/new paragraphs) -> …"
+261001_050537 : 03.plan/README.md 수정, tools/hwpx_transfer/staging/natural_261001_0505/base_paras.json 추가, tools/hwpx_transfer/staging/natural_261001_0505/base_paras.txt 추가, tools/hwpx_transfer/staging/natural_261001_0505/base_tables.json 추가, tools/hwpx_transfer/staging/natural_261001_0505/new_blocks.json 추가
+261001_050533 : 03.plan/261001_0505_자연화_HWPX반영.md 추가 — "# 자연화 수정 HWPX 반영 - 요청(2026-10-01): `261001_0432` 자연화 작업의 MD …"
+261001_050524 : tools/hwpx_transfer/staging/natural_261001_0505/base.hwpx 추가, tools/hwpx_transfer/staging/natural_261001_0505/prep.py 추가
+261001_050344 : 03.plan/README.md 수정
+261001_050341 : 03.plan/261001_0432_thesis-ai-naturalizer_원고문장_자연화.md 수정 — "- 2026-10-01 승인: 범위=본문 6장+국문초록, 강도=구조·문장만, 체크포인트 커밋 bef066e.…"
+261001_044116 : 01.docs/03_시스템개발.md 수정
+261001_043920 : 01.docs/03_시스템개발.md 수정
+261001_043847 : 01.docs/02_이론적배경.md 수정
+261001_043824 : 01.docs/05_실증분석결과.md 수정 — "import sys, re, json, subprocess, collections, pathlib, impo…"
+261001_043813 : 01.docs/04_연구설계.md 수정
+261001_043807 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/06_결론.md 수정
+261001_043421 : 03.plan/261001_0432_thesis-ai-naturalizer_원고문장_자연화.md 수정, 03.plan/README.md 수정
+261001_043413 : 03.plan/261001_0445_자연화_워커브리프.md 추가 — "# 자연화 워커 공통 브리프 (261001_0432 계획의 실행 브리프) 저장소 루트: `C:/Users/S…"
+261001_043234 : 03.plan/README.md 수정 — "| [261001_0432_thesis-ai-naturalizer_원고문장_자연화.md](261001_043…"
+261001_043227 : 03.plan/261001_0432_thesis-ai-naturalizer_원고문장_자연화.md 추가 — "# thesis-ai-naturalizer 스킬 적용 원고 문장 자연화 - 요청(2026-10-01): 새로…"
+261001_042953 : .agents/skills 수정, .claude/skills/thesis-ai-naturalizer/LICENSE 추가, .claude/skills/thesis-ai-naturalizer/README.md 추가, .claude/skills/thesis-ai-naturalizer/SKILL.md 추가, .claude/skills/thesis-ai-naturalizer/references/copykiller_report_workflow.md 추가, .claude/skills/thesis-ai-naturalizer/references/korean_style_guardrails.md 추가 외 1건
+261001_042941 : .agents/reference 수정, .agents/rules 수정, .agents/skills 수정, .agents/watermarks-remover/ 추가, .claude/skills/clean-user-facing-text/SKILL.md 추가, .claude/skills/clean-user-facing-text/references/detectors.md 추가 외 302건
+260930_223731 : 03.plan/260930_1323_최신MD_HWPX반영.md 수정, 03.plan/README.md 수정, restore-agent-links.ps1 추가
+260930_223718 : 00. hwpx/260930_1337_경기공학_건축안전_윤혁_논문_최신반영본.hwpx 추가, 00. hwpx/260930_1337_경기공학_건축안전_윤혁_논문_최신반영본.pdf 추가
+260930_223704 : tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page004.png 추가, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page007.png 삭제, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page021.png 삭제, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page026.png 삭제, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page043.png 삭제, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page081.png 삭제 외 10건
+260930_223652 : tools/hwpx_transfer/staging/update_260930_1323/reflowed.hwpx 수정, tools/hwpx_transfer/staging/update_260930_1323/reflowed.pdf 수정, tools/hwpx_transfer/staging/update_260930_1323/reflowed_toc_map.json 수정, tools/hwpx_transfer/staging/update_260930_1323/toc1.hwpx 수정, tools/hwpx_transfer/staging/update_260930_1323/toc1_saved.hwpx 수정, tools/hwpx_transfer/staging/update_260930_1323/toc1_saved.pdf 수정 외 2건
+260930_223551 : tools/hwpx_transfer/staging/update_260930_1323/candidate.hwpx 수정, tools/hwpx_transfer/staging/update_260930_1323/patch_log.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec.json 수정
+260930_223448 : tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page007.png 추가, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page021.png 추가, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page026.png 추가, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page043.png 추가, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page081.png 추가, tools/hwpx_transfer/staging/update_260930_1323/png/pdf-page082.png 추가 외 9건
+260930_223400 : tools/hwpx_transfer/staging/update_260930_1323/source.json 수정, tools/hwpx_transfer/staging/update_260930_1323/toc1_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_1323/toc1_saved.pdf 추가, tools/hwpx_transfer/staging/update_260930_1323/toc1_saved_verification.json 추가
+260930_223319 : tools/hwpx_transfer/staging/update_260930_1323/reflowed_toc_map.json 추가, tools/hwpx_transfer/staging/update_260930_1323/toc1.hwpx 추가, tools/hwpx_transfer/staging/update_260930_1323/toc_targets.json 수정
+260930_223310 : tools/hwpx_transfer/staging/update_260930_1323/reflowed.hwpx 추가, tools/hwpx_transfer/staging/update_260930_1323/reflowed.pdf 추가
+260930_223231 : tools/hwpx_transfer/staging/update_260930_1323/candidate.hwpx 수정, tools/hwpx_transfer/staging/update_260930_1323/patch_log.json 수정
+260930_223227 : tools/hwpx_transfer/staging/update_260930_1323/apply.py 수정 — "hb = ed.header_bytes(); body = lambda x: x[x.index(b'?>')+2:…"
+260930_223152 : tools/hwpx_transfer/staging/update_260930_1323/apply.py 수정, tools/hwpx_transfer/staging/update_260930_1323/candidate.hwpx 수정, tools/hwpx_transfer/staging/update_260930_1323/patch_log.json 수정
+260930_223142 : tools/hwpx_transfer/staging/update_260930_1323/apply.py 수정, tools/hwpx_transfer/staging/update_260930_1323/candidate.hwpx 추가, tools/hwpx_transfer/staging/update_260930_1323/patch_log.json 추가, tools/hwpx_transfer/staging/update_260930_1323/spec.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec_worker.json 추가
+260930_223039 : tools/hwpx_transfer/staging/update_260930_1323/W_build.py 수정, tools/hwpx_transfer/staging/update_260930_1323/W_check.py 수정, tools/hwpx_transfer/staging/update_260930_1323/_mdmark.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec_check.txt 수정
+260930_223026 : tools/hwpx_transfer/staging/update_260930_1323/W_build.py 수정, tools/hwpx_transfer/staging/update_260930_1323/W_check.py 추가, tools/hwpx_transfer/staging/update_260930_1323/_mdmark.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec_check.txt 추가
+260930_222950 : tools/hwpx_transfer/staging/update_260930_1323/W_build.py 수정, tools/hwpx_transfer/staging/update_260930_1323/_mdmark.json 수정, tools/hwpx_transfer/staging/update_260930_1323/spec.json 수정
+260930_222935 : tools/hwpx_transfer/staging/update_260930_1323/W_build.py 수정, tools/hwpx_transfer/staging/update_260930_1323/_mdmark.json 추가, tools/hwpx_transfer/staging/update_260930_1323/spec.json 추가
+260930_222929 : tools/hwpx_transfer/staging/update_260930_1323/W_build.py 추가 — "# spec.json 생성기 — 읽기 전용 분석. 입력은 작업 폴더의 덤프·블록 JSON과 01.docs(읽…"
+260930_222853 : tools/hwpx_transfer/staging/update_260930_1323/W_common.py 수정 — "# 공통 로더·정규화 (읽기 전용 분석) import json, pathlib, html, re, diffl…"
+260930_222526 : tools/hwpx_transfer/staging/update_260930_1323/reflow.ps1 추가, tools/hwpx_transfer/staging/update_260930_1323/refresh_toc.py 추가, tools/hwpx_transfer/staging/update_260930_1323/source.json 추가, tools/hwpx_transfer/staging/update_260930_1323/toc_targets.json 추가, tools/hwpx_transfer/staging/update_260930_1323/toc_targets_build.py 추가, tools/hwpx_transfer/staging/update_260930_1323/verify_output.py 추가
+260930_222516 : tools/hwpx_transfer/staging/update_260930_1323/apply.py 추가 — """"Coordinator-only: apply spec.json to base.hwpx as byte-sp…"
+260930_222515 : tools/hwpx_transfer/staging/update_260930_1323/W_common.py 추가, tools/hwpx_transfer/staging/update_260930_1323/W_map.py 추가
+260930_222429 : 03.plan/README.md 수정 — "| [260930_1323_최신MD_HWPX반영.md](260930_1323_최신MD_HWPX반영.md) |…"
+260930_222425 : 03.plan/260930_1323_최신MD_HWPX반영.md 추가 — "# 최신 MD의 HWPX 반영 (한국어 표현 1차 + 레퍼런스 팩트체크) - 지시: 2026-09-30 사용…"
+260930_222332 : tools/hwpx_transfer/staging/update_260930_1323/base_paras.json 추가, tools/hwpx_transfer/staging/update_260930_1323/base_paras.txt 추가, tools/hwpx_transfer/staging/update_260930_1323/base_tables.json 추가, tools/hwpx_transfer/staging/update_260930_1323/new_blocks.json 추가
+260930_222327 : tools/hwpx_transfer/staging/update_260930_1323/prep.py 추가 — """"Read-only prep: base paragraph/table dump + current MD bl…"
+260930_222308 : tools/hwpx_transfer/staging/update_260930_1323/base.hwpx 추가, tools/hwpx_transfer/staging/update_260930_1323/old_blocks.json 추가, tools/hwpx_transfer/staging/update_260930_1323/old_md/07_참조번호목록.md 추가, tools/hwpx_transfer/staging/update_260930_1323/old_md/부록1_설문지_양식.md 추가, tools/hwpx_transfer/staging/update_260930_1323/old_md/부록2_설문항목_근거매핑.md 추가
+260930_213948 : .gitignore 수정
+260930_213942 : 260930_성주의 박사 논문 검토/00. 논문(원본)/01_도심지 주상복합아파트 설계단계 위험요인과 안전관리성과와의 관계 연구_20260930.hwpx 추가, 260930_성주의 박사 논문 검토/00. 논문(원본)/02_설문지_A안_100문항_20261001.hwpx 추가, 260930_성주의 박사 논문 검토/00. 논문(원본)/03_설문지_B안_조절변수5문항_20261001.hwpx 추가
 260930_104119 : 03.plan/README.md 수정
 260930_104109 : 01.docs/04_연구설계.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정, 01.docs/설문항목_작업이력.md 수정
 260930_103928 : 01.docs/04_연구설계.md 수정
