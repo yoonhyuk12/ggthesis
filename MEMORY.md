@@ -10,12 +10,16 @@
 
 ## Citations (인용 교정)
 
-- [LEARN:citation] 학위논문 인용 연도는 표지 "OO학년도"가 아니라 제출·수여(발행) 연도 기준 → 박종학: 표지 "2024학년도"·제출면 "2025년 6월" ⇒ 박종학(2025)로 표기 — applies when: 국내 학위논문 서지 확정 시 표지와 제출면(인준면)을 함께 확인
-- [LEARN:citation] 김윤헌 박사논문(성균관대, AI 안전인지 프레임워크)은 2025가 아니라 2026(책등 연도) → 김윤헌(2026). 학회논문 참고문헌 [02]는 연도(2025)·제목("…개발")이 원문("…연구")과 다름 — 학회논문 측 정정 필요
-- [LEARN:citation] 같은 문헌이 원고 간·원고 내에서 서로 다른 연도로 표기되는 drift가 반복됨(윤영석·박종학·김윤헌·왕인국·이동건·이준호 6건) → 인용 연도는 07_참조번호목록.md의 "확정" 검증 로그와 02.reference/ PDF 원문(표지+제출면) 기준으로 통일 — applies when: 새 장 집필·학회↔학위논문 간 내용 이식 시
-- [LEARN:citation] 학회논문 참고문헌 [02] 김윤헌은 연도(2025→2026)·제목("…개발"→"…연구")이 원문과 다름 — 학회논문 MD·hwpx 정정 필요(2026-07-12 기준 미수정, 사용자 지시 대기)
+- [LEARN:citation] [SUPERSEDED 2026-09-30] 학위논문 제출·인준 연도와 발행연도를 동일시 → 학년도·제출일·수여/발행연도를 구별하고 대학·RISS 등 서지로 확정한다. 이형도는 2023.12 제출이나 발행연도 2024이며, 윤영석은 2025.12 제출만으로 발행연도를 확정할 수 없다. 현행 판정은 `01.docs/07_참조번호목록.md` 참조.
+- [LEARN:citation] [SUPERSEDED 2026-09-30] 성균관대 AI 안전인지 프레임워크 논문의 김윤헌(2026) → 표제 金兌憲·영문초록 Taeheon Kim에 따라 김태헌(2026). 책등 연도와 별개로 저자명도 원문 대조해야 한다. 학회논문·HWPX는 별도 반영 확인이 필요하다.
+- [LEARN:citation] 과거 목록의 "확정" 표기를 무조건 신뢰 → `01.docs/07_참조번호목록.md` 현행 판정과 원문·공식서지 증거를 함께 읽고, 미확정 발행연도는 추정 통일하지 않는다 — applies when: 새 장 집필·학회↔학위논문 간 내용 이식 시
+- [LEARN:citation] [SUPERSEDED 2026-09-30] 학회논문 [02]의 연도·제목만 교정하면 완료 → 저자명 김태헌도 교정 대상이다. 현행 학위논문 MD의 교정을 학회논문·HWPX 반영 완료로 간주하지 않는다.
+- [LEARN:citation] 논문의 개선율 설명을 그대로 전사 → 비교 모델·분모·표 원수치를 대조한다. MonitorVLM v1의 22.01%·34.22%는 파인튜닝 상대증가율이며 CF/BM 효과나 같은 수의 %p가 아니다.
+- [LEARN:citation] 모든 장비에서 사용 용이성 효과가 유의하다고 일반화 → Chong(2023) Table 3의 스마트 안전모 PEOU 비유의 예외를 반영하고, 착용·휴대 수월성을 메신저 사용성의 직접 검증으로 옮기지 않는다.
 
 ## Anti-Patterns (방법·도메인 교정)
+
+- [LEARN:domain] 산업안전보건관리비를 도급금액×요율로 일반화 → 고시의 대상액·공사종류·규모별 요율 및 기초액 기준으로 설명한다 — applies when: 건설업 산업안전보건관리비 계상 및 사용기준을 인용할 때(2025-11호 제2조·제4조 확인).
 
 - [LEARN:method] X1~X4를 현행 ANCOVA의 독립변수로 취급 → X1~X4는 도입 집단 전용 D블록의 시스템 특성 인식 참고척도이며, 현행 독립변수는 AI 관제 시스템 도입 여부 — applies when: Worker에게 변수·가설 관련 집필을 위임하거나 제3장과 제4장의 연결을 검토할 때
 - [LEARN:method] 브리프에 "git 쓰기 금지"를 명시하면 서브에이전트가 지킬 것으로 신뢰 → 코덱스 워커는 2026-08-24 금지를 무시하고 커밋 5건(56395fc~47ad597)을 실행했으며, 47ad597은 작업 완료 6분 전 중간 스냅샷이고 추적 대상이 아니던 tools/·backup/·hwpx 바이너리·PDF까지 함께 커밋함. 위임 전에 오케스트레이터가 복구 지점을 먼저 커밋하고, 완료 후 반드시 `git log`로 무단 커밋 여부를 확인 — applies when: Agent·orchestration으로 파일 수정 작업을 위임할 때
@@ -35,7 +39,7 @@
 - [LEARN:hwpx] 표가 쪽 경계를 넘을 때 처리 우선순위는 ① 새 페이지로 밀어 한 장에 담기(`<hp:tbl pageBreak="NONE">` = 나누지 않음, 한글이 남은 공간에 못 들어가는 표를 통째로 다음 쪽으로 넘긴다) → ② 컬럼 폭 조정 → ③ 표 나눔(`pageBreak="TABLE"` + `repeatHeader="1"`, 행 경계에서 나누고 머리행 반복). 기본값 `pageBreak="CELL"`(셀 단위 나눔)은 셀 중간을 잘라 가장 나쁘다 → 쓰지 않는다 — applies when: hwpx 표 조판을 손볼 때. 표가 한 쪽에 들어가는지는 `<hp:cellSz height>` 행 높이 합 vs 본문 높이(`pagePr height` − 상·하 여백 − 머리말·꼬리말)로 계산한다
 - [LEARN:hwpx] bash에서 `GROUPS=x python ...`로 스크립트에 값을 넘기면 **전달되지 않는다** — `GROUPS`는 bash 내장 읽기전용 변수다. 이 때문에 편집 그룹별 이분 탐색이 전부 같은 파일을 만들어 무효가 됐다 → 환경변수 이름에 `GROUPS`를 쓰지 않는다 — applies when: 셸에서 파이썬 스크립트에 환경변수로 옵션을 넘길 때
 - [LEARN:hwpx] 서브에이전트(특히 grok)가 hwpx MCP **읽기** 도구(Get Document Text/Outline)를 2.5MB 학위논문 hwpx에 호출하면 40분 넘게 응답 없이 멈춘다(브리프에 "파이썬만 써라"고 적어도 무시함) → 워커 브리프 금지 목록에 mcp__hwpx__ 읽기 계열까지 넣고, 문단 덤프(JSON)를 미리 만들어 넘긴다. 이미 멈췄으면 `orca terminal send --interrupt` 후 지시문을 터미널에 직접 타이핑해 복구한다 — applies when: hwpx 대조·분석을 워커에게 위임할 때
-- [LEARN:citation] 학회논문 hwpx의 김윤헌 5곳(내주 3·표 셀 1·참고문헌 1) 2025→2026 및 [02] 제목 정정 완료(2026-07-12, 백업: 학회논문/_백업_hwpx수정전_20260712_학회2.hwpx) — MD·hwpx 동기화됨
+- [LEARN:citation] 학회논문 hwpx의 김윤헌 5곳(내주 3·표 셀 1·참고문헌 1) 2025→2026 및 [02] 제목 정정 완료(2026-07-12, 백업: 학회논문/_백업_hwpx수정전_20260712_학회2.hwpx) — 당시 연도·제목만 동기화한 이력. [SUPERSEDED 2026-09-30: 저자명은 김태헌이며 학회논문·HWPX의 저자명 교정 완료를 뜻하지 않음]
 - [LEARN:hwpx] 논문 hwpx 타깃 치환을 세션 스크래치 스크립트로 즉흥 처리 → 표준 경로는 전역 스킬 `~/.claude/skills/hwpx/scripts/fill_hwpx.py replace <base> <out> --map map.json`(바뀐 ZIP 엔트리만 재작성, 바뀐 문단의 linesegarray만 제거 — 2026-09-11 Open=False 사고의 정확한 해법, 2026-09-12 T3 실측: 12 엔트리 SHA256 동일·COM Open=True). 절차는 `hwpx-thesis-editing/SKILL.md` '타깃 치환 — 표준 경로' 절. **🔴 함정: run 경계를 넘는 키(검정 run 끝 + 빨간 마커 앞부분)를 치환하면 `replace_text_range`가 매칭 전체를 첫 `<hp:t>`에 몰아넣어 마커 앞부분이 검정이 되는데 exit 0·`check --strict`·`validate.py` 전부 통과한다.** 반드시 `tools/hwpx_transfer/verify_replace.py <base> <out> <기대 변경 문단 수>`(검증 8 = 마커 접두사의 빨간 run 소속 횟수 대조)를 돌리고, exit≠0이면 반쯤 적용된 출력 파일을 폐기한다 — applies when: 기존 논문 hwpx의 문단·표 셀 텍스트를 부분 수정할 때
 - [LEARN:hwpx] 한컴 COM 파손 시험용으로 `section2.xml` 꼬리를 잘라낸 복사본을 씀 → `Open(…,'forceopen:true')`가 그냥 연다(Open=True). 규칙이 요구하는 `Open==False` 재현은 **linesegarray를 남긴 채 문단 텍스트를 줄인 시나리오만** 유효하다. 같은 실측(2026-09-12 T2): 이 PC는 `RegisterModule('FilePathCheckDLL',…)`이 항상 False지만 대화상자 없이 Open은 정상 동작하고, 병렬 워커로 CPU를 나눠 쓰면 2.5MB 본문 개방이 13초→130초까지 늘어 `verify-hwpx.ps1` 기본 타임아웃을 300초로 뒀다. pwsh 5.1은 스크립트에 UTF-8 BOM이 있어야 파싱된다 — applies when: `verify-hwpx.ps1`로 hwpx 개방을 검증하거나 파손 시험본을 만들 때
 - [LEARN:hwpx] rhwp(Rust, `edwardkim/rhwp`)를 "HWP→HWPX 변환 폴백"으로만 인식 → v0.8.6 윈도우 바이너리는 내장 MCP(`rhwp mcp-serve`, 도구 180종)와 CLI 102종을 갖췄고, 2026-09-12 실측에서 2.5MB 논문 본문을 `hwp_open` **89ms**·`hwp_doc_search` 11ms·`hwp_doc_text` 2.8ms로 읽는다(python-hwpx MCP는 40분 정지). `export-pdf` 33s/129쪽, `verify`는 `--expect-*` 필수. **단 저장은 IR에서 패키지 전체를 재생성**(`serializer/hwpx/mod.rs:44-48`)하고 `hwp_doc_save`는 원본 덮어쓰기를 막지 않으므로 읽기·진단(`layout-anomaly`·`ir-diff`) 축만 쓰고 부분 치환·전체 조립에는 쓰지 않는다. 바이너리·실측 산출물은 세션 스크래치 `rhwp-trial/`(저장소 밖) — applies when: 논문 hwpx를 빠르게 읽거나 조판 이상을 진단할 도구를 고를 때
