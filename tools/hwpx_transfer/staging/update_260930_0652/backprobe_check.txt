@@ -1,0 +1,240 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+{
+  "original_unchanged": true,
+  "body_text_preserved_through_reflow": true,
+  "red_marker_count": 679,
+  "experiment_pending_count": 588,
+  "missing_marker_multiplicity": [],
+  "toc_unresolved": [],
+  "toc_wrong_folios": [
+    {
+      "text": "제3항 본 설문지의 최종 구성",
+      "expected": 79,
+      "actual": "  제3항 본 설문지의 최종 구성81"
+    },
+    {
+      "text": "제5절 자료 수집과 분석방법",
+      "expected": 80,
+      "actual": " 제5절 자료 수집과 분석방법82"
+    },
+    {
+      "text": "제1항 데이터 수집 표본 설계",
+      "expected": 80,
+      "actual": "  제1항 데이터 수집 표본 설계82"
+    },
+    {
+      "text": "제2항 분석 절차",
+      "expected": 83,
+      "actual": "  제2항 분석 절차85"
+    },
+    {
+      "text": "제5장 실증분석 결과",
+      "expected": 88,
+      "actual": "제5장 실증분석 결과90"
+    },
+    {
+      "text": "제1절 조사 대상자의 인구통계학적 특성",
+      "expected": 88,
+      "actual": " 제1절 조사 대상자의 인구통계학적 특성90"
+    },
+    {
+      "text": "제2절 측정도구의 신뢰도 및 타당도 검증",
+      "expected": 91,
+      "actual": " 제2절 측정도구의 신뢰도 및 타당도 검증93"
+    },
+    {
+      "text": "제3절 기술통계 및 사전 특성 분포·균형 진단",
+      "expected": 94,
+      "actual": " 제3절 기술통계 및 사전 특성 분포·균형 진단96"
+    },
+    {
+      "text": "제1항 주요 변수의 기술통계",
+      "expected": 94,
+      "actual": "  제1항 주요 변수의 기술통계96"
+    },
+    {
+      "text": "제2항 두 집단의 사전 특성 분포·균형 진단",
+      "expected": 96,
+      "actual": "  제2항 두 집단의 사전 특성 분포·균형 진단98"
+    },
+    {
+      "text": "제4절 가설 검정: 현장 임의절편 선형혼합모형",
+      "expected": 98,
+      "actual": " 제4절 가설 검정: 현장 임의절편 선형혼합모형100"
+    },
+    {
+      "text": "제1항 혼합모형 가정 및 적합 상태 점검",
+      "expected": 98,
+      "actual": "  제1항 혼합모형 가정 및 적합 상태 점검100"
+    },
+    {
+      "text": "제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형",
+      "expected": 100,
+      "actual": "  제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형102"
+    },
+    {
+      "text": "제3항 안전관리 실효성 하위영역별 혼합모형",
+      "expected": 102,
+      "actual": "  제3항 안전관리 실효성 하위영역별 혼합모형104"
+    },
+    {
+      "text": "제5절 탐색적 보조 분석",
+      "expected": 103,
+      "actual": " 제5절 탐색적 보조 분석106"
+    },
+    {
+      "text": "제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "expected": 103,
+      "actual": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석106"
+    },
+    {
+      "text": "제6절 연구 결과 및 논의",
+      "expected": 106,
+      "actual": " 제6절 연구 결과 및 논의109"
+    },
+    {
+      "text": "제1항 연구 결과 종합",
+      "expected": 106,
+      "actual": "  제1항 연구 결과 종합109"
+    },
+    {
+      "text": "제2항 논의",
+      "expected": 107,
+      "actual": "  제2항 논의110"
+    },
+    {
+      "text": "제6장 결론",
+      "expected": 111,
+      "actual": "제6장 결론114"
+    },
+    {
+      "text": "참고문헌",
+      "expected": 114,
+      "actual": "참고문헌117"
+    },
+    {
+      "text": "부   록 (도입 현장)",
+      "expected": 120,
+      "actual": "부   록 (도입 현장)123"
+    },
+    {
+      "text": "Part A. 인구통계학적 특성",
+      "expected": 122,
+      "actual": " Part A. 인구통계학적 특성125"
+    },
+    {
+      "text": "Part B. 안전관리 실효성",
+      "expected": 123,
+      "actual": " Part B. 안전관리 실효성126"
+    },
+    {
+      "text": "Part C. 안전관리 예산 제약성",
+      "expected": 125,
+      "actual": " Part C. 안전관리 예산 제약성128"
+    },
+    {
+      "text": "도입 현장 전용부",
+      "expected": 126,
+      "actual": " 도입 현장 전용부129"
+    },
+    {
+      "text": "Part D. 시스템 특성 인식",
+      "expected": 126,
+      "actual": " Part D. 시스템 특성 인식129"
+    },
+    {
+      "text": "Part E. 경보 피로도 완화",
+      "expected": 127,
+      "actual": " Part E. 경보 피로도 완화130"
+    },
+    {
+      "text": "부   록 (미도입 현장)",
+      "expected": 128,
+      "actual": "부   록 (미도입 현장)131"
+    },
+    {
+      "text": "Part A. 인구통계학적 특성",
+      "expected": 130,
+      "actual": " Part A. 인구통계학적 특성134"
+    },
+    {
+      "text": "Part B. 안전관리 실효성",
+      "expected": 131,
+      "actual": " Part B. 안전관리 실효성135"
+    },
+    {
+      "text": "Part C. 안전관리 예산 제약성",
+      "expected": 133,
+      "actual": " Part C. 안전관리 예산 제약성137"
+    },
+    {
+      "text": "Abstract",
+      "expected": 134,
+      "actual": "Abstract138"
+    },
+    {
+      "text": "<표 4-4> 설문지의 최종 구성",
+      "expected": 80,
+      "actual": "<표 4-4> 설문지의 최종 구성82"
+    },
+    {
+      "text": "<표 4-5> 자료 수집 개요",
+      "expected": 83,
+      "actual": "<표 4-5> 자료 수집 개요85"
+    },
+    {
+      "text": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "expected": 90,
+      "actual": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)92"
+    },
+    {
+      "text": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "expected": 92,
+      "actual": "<표 5-2> 측정도구의 신뢰도 검증 결과94"
+    },
+    {
+      "text": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "expected": 94,
+      "actual": "<표 5-3> 주요 변수의 기술통계(집단별)96"
+    },
+    {
+      "text": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "expected": 96,
+      "actual": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과98"
+    },
+    {
+      "text": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "expected": 99,
+      "actual": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과101"
+    },
+    {
+      "text": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "expected": 100,
+      "actual": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)102"
+    },
+    {
+      "text": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "expected": 102,
+      "actual": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)105"
+    },
+    {
+      "text": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "expected": 104,
+      "actual": "<표 5-8> 탐색적 상호작용 혼합모형 결과107"
+    },
+    {
+      "text": "<표 5-9> 연구 가설 검증 결과 종합",
+      "expected": 106,
+      "actual": "<표 5-9> 연구 가설 검증 결과 종합109"
+    }
+  ],
+  "toc_count": 120,
+  "pages": 146,
+  "figure_count": 6,
+  "warnings": {
+    "marker_missing": 0,
+    "table_text_missing": 0,
+    "toc_unresolved": 0,
+    "toc_wrong": 44
+  }
+}

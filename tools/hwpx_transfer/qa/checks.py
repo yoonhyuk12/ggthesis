@@ -158,7 +158,7 @@ W("")
 W("## 검사 5: 미확정 표시 유지\n")
 W("| 표시 | MD 개수 | hwpx 개수 | 판정 |")
 W("|---|---|---|---|")
-marks = ["[그림 삽입 예정", "[확정 필요", "[DATA PENDING", "[CITE_TODO", "[UNVERIFIED"]
+marks = ["[그림 삽입 예정", "[확정 필요", "[DATA PENDING", "[CITE_TODO", "[UNVERIFIED", "실험전"]
 mark_fail = []
 for mk in marks:
     mcount = 0

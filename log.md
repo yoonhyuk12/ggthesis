@@ -1,3 +1,277 @@
+260930_104119 : 03.plan/README.md 수정
+260930_104109 : 01.docs/04_연구설계.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정, 01.docs/설문항목_작업이력.md 수정
+260930_103928 : 01.docs/04_연구설계.md 수정
+260930_103901 : 01.docs/설문항목_작업이력.md 수정
+260930_103825 : 01.docs/부록2_설문항목_근거매핑.md 수정
+260930_103807 : 01.docs/부록1_설문지_양식.md 수정 — "※ Part E는 귀하가 실제로 알림을 확인해 보신 경험을 바탕으로 **리커트 5점 척도**에 응답해 주십시…"
+260930_103804 : 01.docs/부록1_설문지_양식.md 수정 — "※ Part D는 귀하가 직접 경험하신 내용을 바탕으로 **리커트 5점 척도**에 응답해 주십시오. 해당 경…"
+260930_103801 : 01.docs/부록1_설문지_양식.md 수정 — "※ Part A∼C의 문항은 귀하가 담당하시는 현장의 현재 안전관리 업무 수행 수준과 여건을 기준으로 응답해…"
+260930_103759 : 01.docs/부록1_설문지_양식.md 수정 — "본 연구에 큰 도움이 되겠습니다."
+260930_103757 : 01.docs/부록1_설문지_양식.md 수정 — "원하지 않으시면 참여하지 않으시거나 언제든지 응답을 중단하실 수 있습니다. 본 설문은 **무기명**으로 진행…"
+260930_103754 : 01.docs/부록1_설문지_양식.md 수정 — "이 점이 응답에 영향을 주지 않도록 설문지의 배포와 회수를 분리하여, 연구자가 개별 응답지를 작성자와 대조하…"
+260930_103746 : 01.docs/부록1_설문지_양식.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+260930_103736 : 01.docs/04_연구설계.md 수정 — "| E-4 | 본 시스템 도입 이후 알림으로 인한 피로감이 줄었다. |"
+260930_103735 : 01.docs/04_연구설계.md 수정 — "| E-3 | 알림이 오면 ‘또 잘못 온 알림’으로 여겨 무시하기보다 바로 확인하는 경우가 늘었다. |"
+260930_103733 : 01.docs/04_연구설계.md 수정 — "| E-2 | 불필요한 알림을 확인하는 시간이 줄어 핵심 업무에 더 집중하게 되었다. |"
+260930_103732 : 01.docs/04_연구설계.md 수정 — "| E-1 | 본 시스템이 위험이 아닌 상황을 걸러 주어 잦은 알림 확인에 따른 스트레스가 줄었다. |"
+260930_103730 : 01.docs/04_연구설계.md 수정 — "| D-8 | 모바일 메신저로 받은 알림만으로도 현장 상황을 쉽게 파악할 수 있다. |"
+260930_103728 : 01.docs/04_연구설계.md 수정 — "| D-6 | 본 시스템은 촬영 장면 속 작업 상황의 맥락을 파악하여 정상 작업을 위험으로 잘못 알리는 일이…"
+260930_103727 : 01.docs/04_연구설계.md 수정 — "| D-5 | 본 시스템은 현장의 나무나 그림자 같은 배경을 사람이나 위험 요소로 잘못 알리는 일이 드물다.…"
+260930_103725 : 01.docs/04_연구설계.md 수정 — "| D-4 | 본 시스템은 통신 상태가 좋지 않은 현장에서도 위험 여부를 가려내는 기능이 안정적으로 작동한다…"
+260930_103724 : 01.docs/04_연구설계.md 수정 — "| D-3 | 본 시스템은 짧은 시간에 알림이 몰려도 같은 알림의 반복 발송을 제한하여 느려지거나 멈추지 않…"
+260930_103722 : 01.docs/04_연구설계.md 수정 — "| D-2 | 본 시스템은 제조사가 다른 기존 현장 카메라와도 호환되어 카메라를 교체하지 않고 도입할 수 있…"
+260930_103720 : 01.docs/04_연구설계.md 수정 — "| D-1 | 본 시스템은 일반 사무용 PC로 구동되어 고가 AI 서버 등 별도 장비에 대한 투자 부담이 적…"
+260930_103718 : 01.docs/04_연구설계.md 수정 — "| C-4 | 우리 현장은 소속 기관인 본사나 발주청으로부터 스마트 안전장비나 관제 시스템 도입 예산을 별도…"
+260930_103716 : 01.docs/04_연구설계.md 수정 — "| C-3 | 우리 현장은 산업안전보건관리비 계상 기준만으로는 스마트 안전장비나 관제 시스템을 도입하기 어렵…"
+260930_103715 : 01.docs/04_연구설계.md 수정 — "| C-2 | 우리 현장은 스마트 안전장비나 관제 시스템 도입에 쓸 안전관리 예산이 부족하게 편성되어 있다.…"
+260930_103713 : 01.docs/04_연구설계.md 수정 — "| C-1 | 우리 현장은 고가의 스마트 안전장비를 도입하기에는 예산이 부족하다. |"
+260930_103709 : 01.docs/04_연구설계.md 수정 — "| B-8 | 우리 현장에서는 사고로"
+260930_103708 : 01.docs/04_연구설계.md 수정 — "| B-7 | 우리 현장에서는 필요한 경우"
+260930_103707 : 01.docs/04_연구설계.md 수정 — "| B-6 | 우리 현장에서는 불필요한 확인 업무에 쫓기지 않고 실제 위험 대응에 집중한다. |"
+260930_103706 : 01.docs/04_연구설계.md 수정 — "| B-5 | 우리 현장에서는 제한된 인력으로도"
+260930_103705 : 01.docs/04_연구설계.md 수정 — "| B-4 | 우리 현장에서는 멀리 떨어진 곳에서도 위험 정보와 조치 필요사항을 원활하게 공유한다. |"
+260930_103703 : 01.docs/04_연구설계.md 수정 — "| B-3 | 우리 현장에서는 안전관리 담당자가 현장 밖에서도 위험 상황을 신속하게 파악한다. |"
+260930_103701 : 01.docs/04_연구설계.md 수정 — "| B-2 | 우리 현장에서는 관리자가 위험 상황을 인지하면 초동 대응을 빠르게 지시한다. |"
+260930_103700 : 01.docs/04_연구설계.md 수정 — "| B-1 | 우리 현장에서는 위험 상황을 조기에 인지한다. |"
+260930_103334 : 01.docs/01_서론.md 수정 — "H2는 조사 시점에 예산 제약을 크게 지각하는 응답자일수록 집단 차이가 더 큰지를"
+260930_103257 : 01.docs/02_이론적배경.md 수정
+260930_103247 : 01.docs/01_서론.md 수정
+260930_103236 : 01.docs/01_서론.md 수정, 01.docs/06_결론.md 수정
+260930_103208 : 01.docs/00_목차.md 수정
+260930_103204 : 01.docs/05_실증분석결과.md 수정 — "설문지의 배포·회수 운영과 참여 안내는 [DATA PENDING: 실제 배포·회수 담당과 회수 방식, 집단별…"
+260930_103150 : 01.docs/02_이론적배경.md 수정 — "조정한 후, AI 관제 시스템 도입 현장 관리자가 지각한 현재 안전관리 실효성은"
+260930_103147 : 01.docs/03_시스템개발.md 수정 — "본 시스템은 이 부작용을 방지하기 위해"
+260930_103127 : 01.docs/01_서론.md 수정, 01.docs/06_결론.md 수정
+260930_103126 : 01.docs/03_시스템개발.md 수정 — "이어지는 제4장에서는 연구 모형과 가설, 조작적 정의, 설문조사 및 분석 절차를 제시한다. 분석에서는 개인 …"
+260930_103124 : 01.docs/03_시스템개발.md 수정 — "제5장의 실증 분석은 도입 현장과 미도입 현장의 관리자가 지각한 현재 안전관리 업무의 실질적 수행 수준을 비…"
+260930_103122 : 01.docs/03_시스템개발.md 수정 — "제4절 제2항의 오경보 감소·실제 위험 경보 손실 평가에 대응한다."
+260930_103120 : 01.docs/03_시스템개발.md 수정 — "라벨 후보의 오경보는 834건에서 13건으로 감소했지만, 실제 위험 44건 중 5건의 경보도 함께 차단되는 …"
+260930_103119 : 01.docs/03_시스템개발.md 수정 — "도입 비용의 대안별 구성은 국토교통부·국토안전관리원(2024)의 가이드라인(인쇄 22∼23쪽)에 제시된 개별…"
+260930_103117 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계.md 수정
+260930_103115 : 01.docs/03_시스템개발.md 수정 — "기존 실험에서는 조건마다 1회씩 순차 호출하였고, 제로샷 조건에는 별도로 수행한 k값 변화 실험(k-swee…"
+260930_103113 : 01.docs/03_시스템개발.md 수정 — "교정 사례와 평가 사례가 16×16 평균 이미지 해시의 Hamming 거리 4 이하이면서 정규화한 사유의 앞…"
+260930_103111 : 01.docs/03_시스템개발.md 수정 — "본 연구는 김윤헌(2026), Kim et al.(2025), 한소은(2026)의 오경보 필터링 연구와 개선…"
+260930_103109 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계.md 수정
+260930_103108 : 01.docs/03_시스템개발.md 수정 — "경보 피로를 판단하려면 수신자별 알림 노출과 업무 부담을 별도로 측정해야 한다."
+260930_103106 : 01.docs/03_시스템개발.md 수정 — "### 제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실"
+260930_103105 : 01.docs/03_시스템개발.md 수정 — "FAR 산출에 쓴 196.8시간은 기존 분석의 분모이지만, 이를 뒷받침할 실가동·중단 산출표와 카메라별 노출…"
+260930_103103 : 01.docs/03_시스템개발.md 수정 — "오경보 억제를 평가하되 실제 위험 경보 손실을 드러내기 위해"
+260930_103102 : 01.docs/03_시스템개발.md 수정 — "후속 검증은 다음 절차로 수행할 계획이며, 본 논문 작성 시점까지는 실행하지 않았다."
+260930_103100 : 01.docs/03_시스템개발.md 수정
+260930_103058 : 01.docs/03_시스템개발.md 수정 — "이 설정은 기술 성능의 해석에 영향을 주고, 제5장에서 비교하는 도입 집단의 실제 운용 조건도 정한다. 따라…"
+260930_103056 : 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정
+260930_103055 : 01.docs/05_실증분석결과.md 수정
+260930_103053 : 01.docs/03_시스템개발.md 수정 — "이 애플리케이션은 기존 ONVIF 카메라의 영상 수신, 로컬 YOLO 추론, 외부 LLM API 검증과 텔레…"
+260930_103052 : 01.docs/03_시스템개발.md 수정 — "CUDA 가용성은 단순 API 조회를 넘어 실제 커널 실행 테스트까지 거쳐 판정한다. 따라서 드라이버는 설치…"
+260930_103049 : 01.docs/03_시스템개발.md 수정 — "관제 화면을 구성하였다. RTSP 스트림은 PyAV(FFmpeg 바인딩)로 디코딩하며, CUDA 환경에서는 …"
+260930_103047 : 01.docs/03_시스템개발.md 수정 — "확정 경보를 관련 담당자에게 즉시 전달하는 마지막 단계를 맡는다."
+260930_103046 : 01.docs/03_시스템개발.md 수정 — "다만 사용자 교정에는 이미지 확인과 사유 작성에 드는 운영 인건비가 발생한다."
+260930_103044 : 01.docs/03_시스템개발.md 수정 — "구체적으로 교정을 등록할 때 해당 알림의 맥락을 분류하여 함께 저장하고, 새 알림이 발생하면 같은 맥락으로 …"
+260930_103042 : 01.docs/03_시스템개발.md 수정 — "본 시스템은 이러한 부작용을 방지하기 위해 현재 알림과 같은 맥락의 교정만"
+260930_103041 : 01.docs/03_시스템개발.md 수정 — "이는 장애 대응을 위한 구현이므로, 장애 경로의 가용성과 미검증 경보의 위험은 별도로 평가해야 한다."
+260930_103039 : 01.docs/03_시스템개발.md 수정 — "에 이어 출력 스키마(Output), 우선 규칙(Priority Rule), SEND 조건, BLOCK 조건…"
+260930_103037 : 01.docs/03_시스템개발.md 수정 — "셋째, 판정 사유가 한국어 자연어로 출력되므로 사용자가 결과를 검증·교정할 수 있고, 이 사유를 그대로 알림…"
+260930_103036 : 01.docs/03_시스템개발.md 수정 — "이 모듈에서 멀티모달 LLM은 1차 YOLO의 알람 메타데이터, 원본 프레임 이미지, 카메라별 사용자 교정 …"
+260930_103032 : 01.docs/03_시스템개발.md 수정 — "LLM은 SEND/BLOCK을 출력한다. 시스템은 차단 이력도 분석·교정에 활용한다."
+260930_103031 : 01.docs/03_시스템개발.md 수정 — "프롬프트와 교정 사례를 활용한다는 의미로 한정되며,"
+260930_103030 : 01.docs/03_시스템개발.md 수정 — "화재 클래스 재현율(fire recall)은 0.904였고, F1은 0.863에서 0.8895로 높아졌다."
+260930_103028 : 01.docs/03_시스템개발.md 수정 — "두 단계는 서로 다른 결정 기준으로 후보를 선별한다. 이러한 이중 선별은 의료 알람 분야에서 다단계 검증을 …"
+260930_103025 : 01.docs/03_시스템개발.md 수정 — "저비용(R1·R2)과 무학습 적응(R3)에는 범용 하드웨어와 LLM 기반 무학습 검증으로, 저오탐(R4)과 …"
+260930_103023 : 01.docs/03_시스템개발.md 수정 — "스냅샷 중심인 현행 라벨로는 이를 구별할 수 없으므로,"
+260930_103022 : 01.docs/03_시스템개발.md 수정 — "본 연구는 접근 경고를 상태형 위반으로 재정의하지 않으며, 평가 결과를 R5 달성이나 순간형 위험 대응의 근…"
+260930_103020 : 01.docs/03_시스템개발.md 수정 — "본 연구는 이 제약을 다음과 같이 보았다. 첫째,"
+260930_103017 : 01.docs/03_시스템개발.md 수정 — "본 연구가 본 제약은 다음과 같다. 첫째, 전담 안전관리자가 상시 배치되지 못한다(김석기, 2026). 둘째…"
+260930_103013 : 01.docs/03_시스템개발.md 수정 — "다만 직렬 필터에서는 실제 위험 경보 손실이 생길 수 있으므로, SDT에 근거한 설계라는 사실만으로 민감도와…"
+260930_103011 : 01.docs/03_시스템개발.md 수정 — "API만으로 동작하는 데스크톱 응용 프로그램을 설계하였다."
+260930_102812 : 03.plan/README.md 수정
+260930_102810 : 03.plan/260930_1031_한국어표현_수정_1차_워커브리프.md 추가 — "# Worker 브리프 — 한국어 표현 수정 1차 (공통) 저장소 루트: `C:/Users/User/Docu…"
+260930_102743 : 03.plan/260930_1030_한국어표현_수정_1차.md 추가 — "# 한국어 표현 수정 1차 (상 전건 + 중 일부) — 2026-09-30 근거: `260930_1024_원…"
+260930_102510 : 03.plan/README.md 수정
+260930_102502 : 03.plan/260930_1024_원고_한국어표현_점검결과.md 추가
+260930_102434 : 03.plan/260930_1024_레퍼런스_팩트체크.html 추가, 03.plan/README.md 수정
+260930_080949 : 00. hwpx/260930_0808_경기공학_건축안전_윤혁_논문_보완반영본.hwpx 추가, 00. hwpx/260930_0808_경기공학_건축안전_윤혁_논문_보완반영본.pdf 추가
+260930_080724 : 01.docs/03_시스템개발.md 수정 — "자료: 본 연구 대상 시스템의 실제 모니터링·판정 교정 화면(연구자 캡처)."
+260930_080702 : 00. hwpx/260930_0738_경기공학_건축안전_윤혁_논문_보완반영본.hwpx 추가, 00. hwpx/260930_0738_경기공학_건축안전_윤혁_논문_보완반영본.pdf 추가, 03.plan/260930_0652_논문보완_HWPX반영.md 수정, 03.plan/README.md 수정, tools/hwpx_transfer/staging/update_260930_0652/final2_check.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/final2_page114.png 추가 외 2건
+260930_073651 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_final.md 추가, tools/hwpx_transfer/staging/update_260930_0652/final2_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/final2_saved.pdf 추가
+260930_073627 : tools/hwpx_transfer/staging/update_260930_0652/final2.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/final_label_width.py 추가
+260930_073616 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_check.py 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_t3-6_header_zoom.png 추가, tools/hwpx_transfer/staging/update_260930_0652/final_check.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/final_saved_verification.json 추가
+260930_073542 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p039.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p047.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p065.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx15_p047.png 삭제
+260930_073538 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx10_p060.png 수정, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx12_p065.png 수정, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p039.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p047.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p065.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p066.png 추가 외 7건
+260930_073528 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx10_p059.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p039.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p047.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p063.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx15_p047.png 삭제, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx15_p120.png 삭제 외 4건
+260930_073519 : tools/hwpx_transfer/staging/update_260930_0652/final_saved.pdf 수정
+260930_073518 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final.md 수정, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx10_p059.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx10_p060.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx12_p065.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p039.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_idx13_p047.png 추가 외 13건
+260930_073511 : tools/hwpx_transfer/staging/update_260930_0652/final_saved.pdf 수정
+260930_073459 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_l3_t33_p110.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_l3_t39_p114.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_l3_t40_p115.png 추가, tools/hwpx_transfer/staging/update_260930_0652/final_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/final_saved.pdf 추가
+260930_073453 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_l3_result.json 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_targets.json 수정, tools/hwpx_transfer/staging/update_260930_0652/layout3_saved_toc_map.json 추가, tools/hwpx_transfer/staging/update_260930_0652/toc_final.hwpx 추가
+260930_073446 : tools/hwpx_transfer/staging/update_260930_0652/layout2_check.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/layout2_saved_verification.json 추가, tools/hwpx_transfer/staging/update_260930_0652/layout3.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/layout3_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/layout3_saved.pdf 추가, tools/hwpx_transfer/staging/update_260930_0652/refine_back_widths.py 추가
+260930_073330 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_final_locate.py 추가, tools/hwpx_transfer/staging/update_260930_0652/layout2_saved.pdf 수정
+260930_073319 : tools/hwpx_transfer/staging/update_260930_0652/apply_layout_plans.py 수정, tools/hwpx_transfer/staging/update_260930_0652/layout2.hwpx 수정, tools/hwpx_transfer/staging/update_260930_0652/layout2_log.json 수정, tools/hwpx_transfer/staging/update_260930_0652/layout2_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/layout2_saved.pdf 추가
+260930_073232 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final.md 추가
+260930_073147 : tools/hwpx_transfer/staging/update_260930_0652/front_layout_plan.md 추가 — "# front_layout_plan — QA_front B항 열폭 재배분 제안 (읽기 전용 설계) - 원본:…"
+260930_073122 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_p090.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_p102.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_p105.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_p112.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_p113.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_p114.png 추가 외 6건
+260930_073109 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_result.json 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_targets.json 수정, tools/hwpx_transfer/staging/update_260930_0652/backprobe_check.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/backprobe_saved_verification.json 추가
+260930_073100 : tools/hwpx_transfer/staging/update_260930_0652/front_layout_plan.json 수정
+260930_073043 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_render.py 추가, tools/hwpx_transfer/staging/update_260930_0652/backprobe_saved.pdf 수정, tools/hwpx_transfer/staging/update_260930_0652/front_layout_plan.json 추가
+260930_073028 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_check.py 수정, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_dry_result.json 수정, tools/hwpx_transfer/staging/update_260930_0652/backprobe_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/backprobe_saved.pdf 추가
+260930_073013 : tools/hwpx_transfer/staging/update_260930_0652/apply_layout_plans.py 수정, tools/hwpx_transfer/staging/update_260930_0652/layout2.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/layout2_log.json 추가
+260930_073006 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_check.py 수정, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_dry_result.json 수정
+260930_072942 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_check.py 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_dry_result.json 추가
+260930_072914 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_prep.py 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_final_targets.json 추가
+260930_072517 : tools/hwpx_transfer/staging/update_260930_0652/apply_layout_plans.py 수정
+260930_072404 : tools/hwpx_transfer/staging/update_260930_0652/apply_layout_plans.py 수정, tools/hwpx_transfer/staging/update_260930_0652/back_layout_plan.md 추가
+260930_072326 : tools/hwpx_transfer/staging/update_260930_0652/back_layout_plan.json 추가
+260930_072324 : tools/hwpx_transfer/staging/update_260930_0652/back_layout_plan_gen.py 추가 — "# back_layout_plan_gen.py — QA_back 후속: 최소 레이아웃 매니페스트(back_l…"
+260930_072320 : tools/hwpx_transfer/staging/update_260930_0652/apply_layout_plans.py 추가
+260930_072133 : tools/hwpx_transfer/staging/update_260930_0652/add_figure_toc.py 추가, tools/hwpx_transfer/staging/update_260930_0652/toc3.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/toc_targets.json 수정
+260930_072111 : tools/hwpx_transfer/staging/update_260930_0652/QA_back.md 수정 — "- 메인이 제시한 안 `[4043, 9299, 4300×6]`(합 39142)도 성립한다. 다만 항목 열의 …"
+260930_072056 : tools/hwpx_transfer/staging/update_260930_0652/QA_back.md 추가 — "# QA_back — reflowed.pdf 물리 76~150쪽 표 시각 QA (읽기 전용) - 대상: `r…"
+260930_072015 : 03.plan/260930_0652_논문보완_HWPX반영.md 수정, tools/hwpx_transfer/staging/update_260930_0652/QA_front.md 수정
+260930_072013 : tools/hwpx_transfer/staging/update_260930_0652/QA_front.md 수정 — "### A. 목차(4~10쪽) > **최종본 재확인(코디네이터 후속 반영):** `toc2_saved.pdf…"
+260930_071951 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_tables_dump.txt 삭제
+260930_071948 : tools/hwpx_transfer/staging/update_260930_0652/QA_front.md 추가, tools/hwpx_transfer/staging/update_260930_0652/toc2_check.txt 수정, tools/hwpx_transfer/staging/update_260930_0652/toc2_saved_verification.json 추가
+260930_071922 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_p085_086_marker.png 추가, tools/hwpx_transfer/staging/update_260930_0652/toc2_check.txt 추가
+260930_071916 : tools/hwpx_transfer/staging/update_260930_0652/toc2_page8.png 추가
+260930_071909 : tools/hwpx_transfer/staging/update_260930_0652/toc2_saved.pdf 수정
+260930_071841 : tools/hwpx_transfer/staging/update_260930_0652/toc2_saved.pdf 수정
+260930_071840 : tools/hwpx_transfer/staging/update_260930_0652/toc2_saved.pdf 수정
+260930_071834 : tools/hwpx_transfer/staging/update_260930_0652/toc2_saved.pdf 추가
+260930_071830 : tools/hwpx_transfer/staging/update_260930_0652/toc2_saved.hwpx 추가
+260930_071827 : tools/hwpx_transfer/staging/update_260930_0652/fix_toc_wrap.py 추가, tools/hwpx_transfer/staging/update_260930_0652/toc2.hwpx 추가
+260930_071820 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_p135_title.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_p137_nested.png 추가
+260930_071818 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_crops.py 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_lof_p010.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_lot_p008.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_t2-1_p022.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_t2-3_p026_p027a.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_front_t2-3_p027.png 추가 외 7건
+260930_071807 : tools/hwpx_transfer/staging/update_260930_0652/QA_front_measure.py 추가
+260930_071801 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_ls_base.py 추가
+260930_071748 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_t42_49.py 추가
+260930_071706 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_basecmp.py 추가
+260930_071630 : tools/hwpx_transfer/staging/update_260930_0652/visual/final_132.png 추가, tools/hwpx_transfer/staging/update_260930_0652/visual/final_133.png 추가
+260930_071611 : tools/hwpx_transfer/staging/update_260930_0652/toc1_check.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/toc1_saved_verification.json 추가, tools/hwpx_transfer/staging/update_260930_0652/visual/toc_final_004.png 추가, tools/hwpx_transfer/staging/update_260930_0652/visual/toc_final_005.png 추가, tools/hwpx_transfer/staging/update_260930_0652/visual/toc_final_006.png 추가, tools/hwpx_transfer/staging/update_260930_0652/visual/toc_final_007.png 추가 외 3건
+260930_071543 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_footer_scan.py 추가, tools/hwpx_transfer/staging/update_260930_0652/toc1_saved.pdf 수정
+260930_071532 : tools/hwpx_transfer/staging/update_260930_0652/layout1_saved_toc_map.json 추가, tools/hwpx_transfer/staging/update_260930_0652/toc1.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/toc1_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/toc1_saved.pdf 추가
+260930_071512 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_anchor.py 추가
+260930_071454 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_p091_bottom.png 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_p104_bottom.png 추가, tools/hwpx_transfer/staging/update_260930_0652/layout1_check.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/layout1_saved.pdf 수정, tools/hwpx_transfer/staging/update_260930_0652/layout1_saved_verification.json 추가, tools/hwpx_transfer/staging/update_260930_0652/layout1_table51.png 추가
+260930_071413 : tools/hwpx_transfer/staging/update_260930_0652/layout1_saved.pdf 수정
+260930_071402 : tools/hwpx_transfer/staging/update_260930_0652/layout1_saved.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/layout1_saved.pdf 추가
+260930_071357 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_t26.py 추가, tools/hwpx_transfer/staging/update_260930_0652/fix_layout.py 추가, tools/hwpx_transfer/staging/update_260930_0652/layout1.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/verify_output.py 수정
+260930_071346 : tools/hwpx_transfer/staging/update_260930_0652/QA_back_tables.py 추가, tools/hwpx_transfer/staging/update_260930_0652/QA_back_tables_dump.txt 추가
+260930_071252 : 01.docs/07_참조번호목록.md 수정, tools/hwpx_transfer/staging/update_260930_0652/apply_update.py 수정, tools/hwpx_transfer/staging/update_260930_0652/candidate.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/patch_log.json 추가, tools/hwpx_transfer/staging/update_260930_0652/pdf_text.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/prose_B.json 수정 외 154건
+260930_070748 : tools/hwpx_transfer/staging/update_260930_0652/B_sync_report.md 추가 — "# B 후속 — HWPX 직접 수정분의 07 골격 역동기화 검토 - 대상: `base_paras.json` …"
+260930_070720 : tools/hwpx_transfer/staging/update_260930_0652/report_A.md 수정
+260930_070718 : 01.docs/07_참조번호목록.md 수정 — "Wilson, E. B., "Probable Inference, the Law of Succession, a…"
+260930_070716 : 01.docs/07_참조번호목록.md 수정 — "개선방안 제시연구」, 울산대학교 대학원 건축학과 공학박사학위논문, 2026. (ref 28)"
+260930_070658 : tools/hwpx_transfer/staging/update_260930_0652/report_A.md 추가
+260930_070651 : tools/hwpx_transfer/staging/update_260930_0652/reflow.py 삭제
+260930_070558 : tools/hwpx_transfer/staging/update_260930_0652/reflow.ps1 추가
+260930_070537 : tools/hwpx_transfer/staging/update_260930_0652/A_align.json 삭제, tools/hwpx_transfer/staging/update_260930_0652/A_align.py 삭제, tools/hwpx_transfer/staging/update_260930_0652/A_build.py 수정, tools/hwpx_transfer/staging/update_260930_0652/A_verify.json 삭제, tools/hwpx_transfer/staging/update_260930_0652/prose_A.json 수정
+260930_070506 : tools/hwpx_transfer/staging/update_260930_0652/A_build.py 수정, tools/hwpx_transfer/staging/update_260930_0652/A_verify.json 수정, tools/hwpx_transfer/staging/update_260930_0652/prose_A.json 수정
+260930_070429 : tools/hwpx_transfer/staging/update_260930_0652/A_verify.json 추가, tools/hwpx_transfer/staging/update_260930_0652/prose_A.json 추가
+260930_070426 : tools/hwpx_transfer/staging/update_260930_0652/A_build.py 수정 — "nxt = lambda k: k + 2 if k + 1 < len(flat) and flat[k + 1][1…"
+260930_070424 : tools/hwpx_transfer/staging/update_260930_0652/report_C.md 추가 — "# report_C — 표 내부 변경 명세 (C 담당) - 입력: `base_paras.json`·`base…"
+260930_070421 : 03.plan/260930_0652_논문보완_HWPX반영.md 수정
+260930_070417 : tools/hwpx_transfer/staging/update_260930_0652/A_build.py 추가 — "# 제1~3장 본문 최상위 문단 변경 명세(prose_A.json) 생성 + 1회 검증 # 입력: base_…"
+260930_070409 : tools/hwpx_transfer/staging/update_260930_0652/report_B.md 추가 — "# 변경 명세 B 보고 — 제4~6장·참고문헌·부록1 본문 최상위 문단 - 기준: `base_paras.js…"
+260930_070355 : tools/hwpx_transfer/staging/update_260930_0652/C_diag05.txt 삭제
+260930_070346 : tools/hwpx_transfer/staging/update_260930_0652/C_build.py 수정, tools/hwpx_transfer/staging/update_260930_0652/tables_C.json 수정
+260930_070336 : tools/hwpx_transfer/staging/update_260930_0652/tables_C.json 수정
+260930_070333 : tools/hwpx_transfer/staging/update_260930_0652/C_build.py 수정 — "DESIGN_TOTAL = 39142 # base 본문 표 공통 전체 폭(HWPUNIT). 실제 적용 시 메…"
+260930_070322 : tools/hwpx_transfer/staging/update_260930_0652/B_diff.py 수정 — "# 구 MD(f5588d2)와 현행 MD 블록의 장별 차이 출력 — 사용: python B_diff.py 0…"
+260930_070316 : tools/hwpx_transfer/staging/update_260930_0652/B_07diff.txt 삭제, tools/hwpx_transfer/staging/update_260930_0652/B_align_report.txt 삭제, tools/hwpx_transfer/staging/update_260930_0652/B_new_04.txt 삭제, tools/hwpx_transfer/staging/update_260930_0652/B_new_05.txt 삭제, tools/hwpx_transfer/staging/update_260930_0652/B_new_06.txt 삭제, tools/hwpx_transfer/staging/update_260930_0652/B_new_부록1.txt 삭제 외 5건
+260930_070312 : tools/hwpx_transfer/staging/update_260930_0652/tables_C.json 추가
+260930_070308 : tools/hwpx_transfer/staging/update_260930_0652/C_build.py 추가 — """"C 담당: 표 내부 변경 명세(tables_C.json) 생성 + 1회 자체 검증. 입력(읽기 전용):…"
+260930_070246 : tools/hwpx_transfer/staging/update_260930_0652/verify_output.py 추가
+260930_070240 : tools/hwpx_transfer/staging/update_260930_0652/B_verify.py 수정
+260930_070226 : tools/hwpx_transfer/staging/update_260930_0652/B_verify.py 추가 — "# prose_B.json 1회 검증 — old 일치·소유 범위·유일 위치·삽입 앵커/템플릿·적용 후 MD …"
+260930_070152 : tools/hwpx_transfer/staging/update_260930_0652/B_build.py 수정, tools/hwpx_transfer/staging/update_260930_0652/prose_B.json 추가
+260930_070147 : tools/hwpx_transfer/staging/update_260930_0652/B_build.py 추가 — "# 변경 명세 B(제4~6장·참고문헌·부록1 본문 최상위 문단) 생성기 — prose_B.json을 만든다 …"
+260930_070018 : tools/hwpx_transfer/staging/update_260930_0652/apply_update.py 수정, tools/hwpx_transfer/staging/update_260930_0652/reflow.py 추가, tools/hwpx_transfer/staging/update_260930_0652/refresh_toc.py 추가
+260930_065853 : tools/hwpx_transfer/staging/update_260930_0652/C_diag05.txt 추가
+260930_065838 : tools/hwpx_transfer/staging/update_260930_0652/apply_update.py 추가
+260930_065818 : tools/hwpx_transfer/staging/update_260930_0652/A_align.json 추가, tools/hwpx_transfer/staging/update_260930_0652/A_align.py 추가
+260930_065813 : tools/hwpx_transfer/staging/update_260930_0652/B_07diff.txt 추가
+260930_065808 : tools/hwpx_transfer/staging/update_260930_0652/C_analyze.py 추가 — """"old MD / new MD / base HWPX 표 3자 대조 진단 출력 (읽기 전용).""" imp…"
+260930_065753 : tools/hwpx_transfer/staging/update_260930_0652/C_common.py 추가 — """"C 담당 공통 로더: base 표·old/new MD 표 블록 읽기 전용 파싱 (HWPX 직접 읽기 없…"
+260930_065741 : tools/hwpx_transfer/staging/update_260930_0652/B_align_report.txt 수정
+260930_065737 : tools/hwpx_transfer/staging/update_260930_0652/B_align_report.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/B_util.py 수정
+260930_065721 : tools/hwpx_transfer/staging/update_260930_0652/B_util.py 수정
+260930_065702 : tools/hwpx_transfer/staging/update_260930_0652/B_diff.py 추가
+260930_065650 : tools/hwpx_transfer/staging/update_260930_0652/B_new_04.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/B_new_05.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/B_new_06.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/B_new_부록1.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/B_old_04.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/B_old_05.txt 추가 외 2건
+260930_065634 : tools/hwpx_transfer/staging/update_260930_0652/B_top.txt 추가
+260930_065628 : tools/hwpx_transfer/staging/update_260930_0652/B_util.py 추가
+260930_065602 : 03.plan/260930_0652_논문보완_HWPX반영.md 추가, 03.plan/README.md 수정, tools/hwpx_transfer/staging/update_260930_0652/base.hwpx 추가, tools/hwpx_transfer/staging/update_260930_0652/base_paras.json 추가, tools/hwpx_transfer/staging/update_260930_0652/base_paras.txt 추가, tools/hwpx_transfer/staging/update_260930_0652/base_tables.json 추가 외 14건
+260930_064747 : 01.docs/05_실증분석결과.md 수정
+260930_064734 : 01.docs/05_실증분석결과.md 수정
+260930_064552 : 01.docs/05_실증분석결과.md 수정
+260930_064544 : 01.docs/05_실증분석결과.md 수정
+260930_064459 : 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정, 03.plan/260930_0639_현장백업_등록규모_운용근거확인.md 수정, 03.plan/README.md 수정
+260930_064453 : .claude/rules/hwpx-table-layout.md 수정, .claude/skills/hwpx-thesis-editing/SKILL.md 수정, CLAUDE.md 수정, tools/hwpx_transfer/blocks_to_hwpx.py 수정, tools/hwpx_transfer/qa/checks.py 수정, tools/hwpx_transfer/verify_replace.py 수정
+260930_064352 : 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정, 03.plan/260930_0622_공동검토_보완사항_MD반영.md 수정, 03.plan/260930_0639_현장백업_등록규모_운용근거확인.md 수정, 03.plan/README.md 수정
+260930_064154 : 01.docs/04_연구설계.md 수정 — "이 백업으로 확인할 수 없으므로, 명부의 운용 조건은 도입 현장별로 따로 확인한다."
+260930_064150 : 01.docs/04_연구설계.md 수정 — "108대 모두 카메라별 원격 알림 허용이 활성으로 기록되어 있으나, 이는 허용 설정일 뿐 정상 운용, 실제 …"
+260930_064133 : 01.docs/04_연구설계.md 수정 — "| 선정 기준 | 동일 관할의 주요 특성 유사 현장 우선 확보, 구체적 추출·매칭 절차 확정 필요 | | 도…"
+260930_064131 : 01.docs/04_연구설계.md 수정, 03.plan/260930_0639_현장백업_등록규모_운용근거확인.md 수정
+260930_064035 : 03.plan/260930_0639_현장백업_등록규모_운용근거확인.md 추가, 03.plan/README.md 수정
+260930_063849 : 01.docs/05_실증분석결과.md 수정, 03.plan/260930_0622_공동검토_보완사항_MD반영.md 수정, 03.plan/README.md 수정
+260930_063531 : 03.plan/260930_0622_공동검토_보완사항_MD반영.md 수정
+260930_063506 : 01.docs/05_실증분석결과.md 수정, 01.docs/06_결론.md 수정
+260930_063435 : 01.docs/04_연구설계.md 수정 — "| 공변량 | 소속 구분·성별·연령·경력·직위·현장 공사금액 규모 | 전체 응답자 | 6 | 명목·서열 | …"
+260930_063433 : 01.docs/04_연구설계.md 수정 — "| 전체 응답자 | 8 | Likert 5점 | (김현수, 2026; 이동건, 2024; Chong et a…"
+260930_063408 : 01.docs/07_참조번호목록.md 수정
+260930_063248 : 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정
+260930_063224 : 01.docs/06_결론.md 수정
+260930_063216 : 01.docs/05_실증분석결과.md 수정
+260930_063156 : 01.docs/설문항목_작업이력.md 수정
+260930_063138 : 01.docs/부록2_설문항목_근거매핑.md 수정
+260930_063124 : 01.docs/부록1_설문지_양식.md 수정
+260930_063117 : 01.docs/부록1_설문지_양식.md 수정
+260930_063103 : 01.docs/04_연구설계.md 수정 — "분포 겹침이 부족한 범주의 조정 비교는 외삽 위험을 명시한다. 명부에 기록한 인프라·운용 조건은 현장 단위로…"
+260930_063101 : 01.docs/04_연구설계.md 수정 — "| 응답자 기준 | 양 집단 동일 직무 범위, 현장당 2명·개인 중복 응답 방지, 알림 경험 별도 기록 | …"
+260930_063058 : 01.docs/04_연구설계.md 수정 — "현장별 두 응답자의 직무·선정 과정을 기록하여 편의 선정의 범위를 보고한다. 미도입 집단에 CCTV가 없는 …"
+260930_063047 : 01.docs/04_연구설계.md 수정 — "D-6은 LLM이 입력받는 원본 프레임 이미지에 나타난 작업 상황을 범위로 하며 영상의 시간적 전후 관계를 …"
+260930_063035 : 01.docs/04_연구설계.md 수정 — "주 분석인 현장 임의절편 선형혼합모형에는 투입하지 않는다. D-6은 LLM이 판단하는 캡처 이미지 한 장에 …"
+260930_063030 : 01.docs/04_연구설계.md 수정 — "주: B-1부터 B-8까지는 기존 시스템 귀속형 Y 문항을 두 집단 공통의 현장 일반형 문항으로 전환한 초안…"
+260930_063028 : 01.docs/04_연구설계.md 수정 — "근거 열에는 문항의 개념을 도출한 선행연구를 저자·연도로 표기하였다. 문항별 쪽수와 근거 요약은 별도의 근거…"
+260930_063022 : 01.docs/04_연구설계.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+260930_063014 : 01.docs/04_연구설계.md 수정
+260930_062918 : 01.docs/00_목차.md 수정, 01.docs/07_참조번호목록.md 수정
+260930_062855 : 01.docs/03_시스템개발.md 수정
+260930_062839 : 01.docs/04_연구설계.md 수정 — "- **3단계. 전문가 필수성 평정.** 시공사 안전관리 담당자, 발주청 공사감독, 안전보건 전문가와 지도교…"
+260930_062838 : 01.docs/03_시스템개발.md.tmp.2292.7c1076ebedb0 삭제 — "검증한 것은 아니다. 또한 본 연구의 독립변수는"
+260930_062837 : 01.docs/03_시스템개발.md 수정, 01.docs/03_시스템개발.md.tmp.2292.7c1076ebedb0 추가
+260930_062833 : 01.docs/03_시스템개발.md 수정 — "다중 카메라 부하·장애 안정성·사용자 이해와 대응 성과까지 검증한 것은 아니다. 다만 본 연구의"
+260930_062831 : 01.docs/03_시스템개발.md 수정 — "제4절 제4항의 대안별 비용 구성 정리에 대응한다."
+260930_062829 : 01.docs/03_시스템개발.md 수정 — "LLM 1,074건의 중위 응답은 4.1초이나 23.74%가 10초를 초과했으며, 종단 간 약 6초와 대안별…"
+260930_062827 : 01.docs/04_연구설계.md 수정 — "측정도구는 표준화된 기존 척도를 그대로 사용한 것이 아니다. 선행연구의 개념을 근거로 연구자가 작성한 구 설…"
+260930_062822 : 01.docs/03_시스템개발.md 수정 — "도입 비용은 국토교통부·국토안전관리원(2024)의 가이드라인(인쇄 22∼23쪽)에 제시된 개별 단가와 연구자…"
+260930_062821 : 01.docs/04_연구설계.md 수정 — "설치했으나 정상 운용 여부를 확인할 수 없거나 중단·장애가 있는 현장은 미도입으로 재분류하지 않고 분류 유보…"
+260930_062817 : 01.docs/04_연구설계.md 수정 — "| H1 | 주가설 | 공변량을 통제한 후, 도입 현장 관리자가 지각한 현재 안전관리 업무 수준(안전관리 실…"
+260930_062815 : 01.docs/04_연구설계.md 수정 — "**연구 문제 1. 공변량을 통제한 상태에서 AI 관제 시스템 도입 현장과 미도입 현장의 관리자가 지각한 현…"
+260930_062811 : 01.docs/04_연구설계.md 수정 — "| 종속변수 | 안전관리 실효성 | 관리자 개인이 지각한 현재 안전관리 업무 수준. 조기인지, 대응 신속성,…"
+260930_062810 : 01.docs/04_연구설계.md 수정 — "결과는 관리자의 지각 실효성에 대한 조정된 집단 차이로 해석하며 인과 효과를 단정하지 않는다. 비교 조건의 …"
+260930_062804 : 01.docs/03_시스템개발.md 수정 — "따라서 본 비교는 오경보 억제와 위험 검출 손실의 상쇄를 보여주는 사례로 해석한다[확정 필요: 위험 누락 비…"
+260930_062759 : 01.docs/03_시스템개발.md 수정 — "독립 평가자의 눈가림 재판정과 일치도·불일치 조정 절차]. 이 한계를 보완할 후속 검증은 다음 절차로 수행하…"
+260930_062751 : 01.docs/03_시스템개발.md 수정 — "이 결과는 단일 고정 모델·프롬프트의 성능이 아니다[확정 필요: 실험 시점 모델·프롬프트·설정 고정본]. R…"
+260930_062746 : 01.docs/07_참조번호목록.md 수정 — "Zhou, Z.-C., Su, Y.-K., Zheng, Z.-Z., & Wang, Y.-L., "Analys…"
+260930_062745 : 01.docs/03_시스템개발.md 수정 — "제4절은 접근 위험 2종의 1차 후보에 대한 2차 필터 성능을 평가하며, 전체 클래스의 1차 검출 성능을 검…"
+260930_062744 : 01.docs/07_참조번호목록.md 수정 — "Chong, H.-Y., Xu, Y., Lun, C., & Chi, M., "The Adoption Inte…"
+260930_062743 : 01.docs/07_참조번호목록.md 수정 — "류수영, 「CCTV 기반 산업안전 관제 시스템에 관한 연구」, 배재대학교 대학원 컴퓨터공학과 박사학위논문, …"
+260930_062741 : 01.docs/07_참조번호목록.md 수정 — "김민기·박성호, 『서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안』, 서울연구원, 2026. (서울연…"
+260930_062740 : 01.docs/03_시스템개발.md 수정 — "| 현장 제약 | 도출 요구사항 | 구분 | 설계 반영 | 본 연구의 평가 범위(제4절) | | --- | …"
+260930_062739 : 01.docs/07_참조번호목록.md 수정 — "03장 CITE_TODO를 황병복(2026)으로 치환, 02장 표기와 통일 완료 | | 17 | CCTV 기…"
+260930_062727 : 01.docs/03_시스템개발.md 수정 — "다만 이러한 설계 대상과 달리 제4절의 정량 평가 표본은 중장비 접근과 차량 접근의 두 경고 유형에 한정되며…"
+260930_062726 : 01.docs/07_참조번호목록.md 수정 — "--- ## 제4장 문항표 근거 번호 → 저자(연도) 대응 — 2026-09-30 > `04_연구설계.md`…"
+260930_062722 : 01.docs/03_시스템개발.md 수정
+260930_062715 : 01.docs/07_참조번호목록.md 수정 — "> 주1: Ⅲ의 설문 근거 출처는 `04_연구설계.md` 제4절 제2항 문항표다. 전환 전에는 대괄호 관리번…"
+260930_062715 : 01.docs/03_시스템개발.md 수정, 03.plan/260930_0622_공동검토_보완사항_MD반영.md 수정
+260930_062710 : 01.docs/07_참조번호목록.md 수정 — "| 40 | Analysis of factors of willingness.pdf (Zhou et al., …"
+260930_062710 : 01.docs/02_이론적배경.md 수정 — "현장 작동성은 위험 신호가 담당자의 확인·판단·조치로 이어지는 과정을 설명하는 관점이며(<표 2-6>), 기…"
+260930_062708 : 01.docs/07_참조번호목록.md 수정 — "| 33 | 서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안.pdf (김민기·박성호, 2026 — 서…"
+260930_062706 : 01.docs/07_참조번호목록.md 수정 — "| 17 | CCTV 기반 산업안전 관제 시스템에 관한 연구.pdf (류수영, 2023 — 배재대학교 박사학…"
+260930_062704 : 01.docs/07_참조번호목록.md 수정 — "> `02.reference/` 디렉토리 PDF 일련번호와 파일명 매핑표. > **번호 범례 — 내부 관리번…"
+260930_062640 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정
+260930_062624 : 01.docs/02_이론적배경.md 수정 — "미도입 집단에는 CCTV가 없는 현장도 포함되어 있으므로,"
+260930_062620 : 01.docs/02_이론적배경.md 수정 — "선행연구와 가설·설명 메커니즘의 연결은 <표 2-7>과 같다. <표 2-7> 스마트"
+260930_062619 : 01.docs/02_이론적배경.md 수정 — "경보 피로도 완화 인식은 도입 집단의 참고용 기술통계로만 활용하며 매개효과를 검정하지 않는다. 모바일 알림 …"
+260930_062418 : 03.plan/260930_0622_공동검토_보완사항_MD반영.md 추가, 03.plan/README.md 수정
+260921_213853 : 03.plan/260912_1422_미소논문_hwpx작성_오케스트레이션.md 삭제, 03.plan/260912_1731_미소논문_서론수정안.md 삭제, 03.plan/260912_1745_미소논문_hwpx서론_점선목차.md 삭제, 03.plan/260912_1805_미소논문_표열폭_줄수조정.md 삭제, 04. 미소논문/00. hwpx/260912_1525_미소논문.hwpx 삭제, 04. 미소논문/00. hwpx/260912_1613_미소논문.hwpx 삭제 외 199건
 260919_114655 : .claude/rules/hwpx-table-layout.md 수정, 03.plan/README.md 수정, CLAUDE.md 수정
 260919_114346 : 03.plan/260912_1422_미소논문_hwpx작성_오케스트레이션.md 삭제, 03.plan/260912_1731_미소논문_서론수정안.md 삭제, 03.plan/260912_1745_미소논문_hwpx서론_점선목차.md 삭제, 03.plan/260912_1805_미소논문_표열폭_줄수조정.md 삭제, 03.plan/260913_1034_미소논문_도입미도입비교_조사계획.md 삭제, 03.plan/260913_1134_D10_기초인용보완_브리프.md 삭제 외 242건
 260919_114324 : 03.plan/260919_1140_미소논문_별도저장소_이관.md 추가 — "# 미소논문 별도 저장소 이관 (2026-09-19 11:40 KST) > 사용자 지시: `04. 미소논문/…"

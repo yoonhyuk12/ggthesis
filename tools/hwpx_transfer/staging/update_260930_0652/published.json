@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "path": "00. hwpx\\260930_0738_경기공학_건축안전_윤혁_논문_보완반영본.hwpx",
+      "sha256": "3811bdef17bd675fc8cd6f4ab19a96b4ddee395203e9430c039cba00d379d5de",
+      "bytes": 3244957
+    },
+    {
+      "path": "00. hwpx\\260930_0738_경기공학_건축안전_윤혁_논문_보완반영본.pdf",
+      "sha256": "1dccd311bf6dd8b8d22b4f66e248d2785b9556664b751c299e96efc87a9026b0",
+      "bytes": 1993627
+    }
+  ],
+  "pages": 144,
+  "table_count": 62,
+  "markers": 679,
+  "experiment_pending": 588,
+  "toc": 120,
+  "figures": 6,
+  "original_unchanged": true,
+  "front_QA_pages_unchanged": true
+}

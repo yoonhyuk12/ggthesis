@@ -54,8 +54,9 @@ EMSP_CHAR = " "
 
 # 본문이 아니라 미확정 자리·인용·그림 지시임을 나타내는 마커. 대괄호 전부가 아니라
 # 이 다섯 접두사만 판정하며 콜론·줄표 등 접두사 뒤 구분 문자는 제한하지 않는다.
+# 대괄호 없는 `실험전`은 결과표의 미수집 자리 표기(2026-09-30 사용자 지시)로, 낱말 전체를 빨갛게 한다.
 GUIDE_MARKER_RE = re.compile(
-    r"\[(?:DATA PENDING|확정 필요|CITE_TODO|그림 삽입 예정|UNVERIFIED)[^\]]*\]"
+    r"\[(?:DATA PENDING|확정 필요|CITE_TODO|그림 삽입 예정|UNVERIFIED)[^\]]*\]|실험전"
 )
 
 XML_PROLOG = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>'

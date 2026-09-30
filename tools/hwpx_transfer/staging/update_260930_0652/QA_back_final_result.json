@@ -1,0 +1,324 @@
+[
+ {
+  "table": 22,
+  "caption": "4. 도입 현장 전용부 D. 시스템 특성 인식 8문항.",
+  "start": 90,
+  "end": 90,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 90,
+    "pageno": "- 78 -",
+    "body_last_px": 1208,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 26,
+  "caption": "일반 무응답, 설계상 비해당, 경험 부재의 비해당과 현",
+  "start": 102,
+  "end": 102,
+  "expect_실험전": 141,
+  "found_실험전_on_pages": 141,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 102,
+    "pageno": "- 90 -",
+    "body_last_px": 1215,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 28,
+  "caption": "패널 B는 탐색적 요인분석을 포함할 때 보고할 타당도 ",
+  "start": 105,
+  "end": 105,
+  "expect_실험전": 16,
+  "found_실험전_on_pages": 16,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 105,
+    "pageno": "- 93 -",
+    "body_last_px": 912,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 33,
+  "caption": "패널 A는 H1 완전사례에서의 원평균과 조정 평균이다.",
+  "start": 112,
+  "end": 112,
+  "expect_실험전": 18,
+  "found_실험전_on_pages": 18,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 112,
+    "pageno": "- 100 -",
+    "body_last_px": 1091,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 34,
+  "caption": "패널 B는 비표준화 고정효과 계수이다.",
+  "start": 113,
+  "end": 113,
+  "expect_실험전": 48,
+  "found_실험전_on_pages": 54,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 1,
+  "footer": [
+   {
+    "page": 113,
+    "pageno": "- 101 -",
+    "body_last_px": 1269,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 35,
+  "caption": "패널 C는 분산 성분과 분석 규모·적합 상태이다.",
+  "start": 113,
+  "end": 113,
+  "expect_실험전": 6,
+  "found_실험전_on_pages": 54,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 1,
+  "footer": [
+   {
+    "page": 113,
+    "pageno": "- 101 -",
+    "body_last_px": 1269,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 36,
+  "caption": "패널 A는 영역별 조정 차이와 추론값이다.",
+  "start": 114,
+  "end": 114,
+  "expect_실험전": 45,
+  "found_실험전_on_pages": 50,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 114,
+    "pageno": "- 102 -",
+    "body_last_px": 1167,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 38,
+  "caption": "패널 A는 고정효과의 부호 있는 계수와 신뢰구간이다.",
+  "start": 116,
+  "end": 116,
+  "expect_실험전": 24,
+  "found_실험전_on_pages": 51,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 116,
+    "pageno": "- 104 -",
+    "body_last_px": 1168,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 39,
+  "caption": "패널 B는 양 집단의 공통 관측범위 안에서 산출한 조건",
+  "start": 116,
+  "end": 116,
+  "expect_실험전": 27,
+  "found_실험전_on_pages": 51,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 116,
+    "pageno": "- 104 -",
+    "body_last_px": 1168,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 40,
+  "caption": "패널 C는 H2의 분석 규모와 분산 성분·적합 상태이다",
+  "start": 117,
+  "end": 117,
+  "expect_실험전": 6,
+  "found_실험전_on_pages": 9,
+  "split_lines": [],
+  "n_split": 0,
+  "nonred_spans": 0,
+  "footer": [
+   {
+    "page": 117,
+    "pageno": "- 105 -",
+    "body_last_px": 770,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 42,
+  "caption": "부   록 (도입 현장)",
+  "start": 132,
+  "end": 132,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 132,
+    "pageno": "- 120 -",
+    "body_last_px": 1252,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ],
+  "title_page": 132
+ },
+ {
+  "table": 43,
+  "caption": "※ 공통부는 귀하가 담당하는 현장의 현재 안전관리 업무",
+  "start": 134,
+  "end": 134,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 134,
+    "pageno": "- 122 -",
+    "body_last_px": 1243,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 44,
+  "caption": "※ 공통부는 귀하가 담당하는 현장의 현재 안전관리 업무",
+  "start": 134,
+  "end": 134,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 134,
+    "pageno": "- 122 -",
+    "body_last_px": 1243,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ],
+  "nested": [
+   {
+    "page": 134,
+    "gray": [
+     87.1,
+     496.8
+    ],
+    "parent_left": 79.9,
+    "parent_right": 504.0,
+    "page_w": 595.0,
+    "gap_left": 7.2,
+    "gap_right": 7.2
+   }
+  ]
+ },
+ {
+  "table": 49,
+  "caption": "부   록 (미도입 현장)",
+  "start": 140,
+  "end": 140,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 140,
+    "pageno": "- 128 -",
+    "body_last_px": 1257,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ],
+  "title_page": 140
+ },
+ {
+  "table": 50,
+  "caption": "※ 공통부는 귀하가 담당하는 현장의 현재 안전관리 업무",
+  "start": 142,
+  "end": 142,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 142,
+    "pageno": "- 130 -",
+    "body_last_px": 1239,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ]
+ },
+ {
+  "table": 51,
+  "caption": "※ 공통부는 귀하가 담당하는 현장의 현재 안전관리 업무",
+  "start": 142,
+  "end": 142,
+  "expect_실험전": 0,
+  "footer": [
+   {
+    "page": 142,
+    "pageno": "- 130 -",
+    "body_last_px": 1239,
+    "body_bottom_px": 1277.9,
+    "band_px": null
+   }
+  ],
+  "nested": [
+   {
+    "page": 142,
+    "gray": [
+     87.1,
+     496.8
+    ],
+    "parent_left": 79.9,
+    "parent_right": 504.0,
+    "page_w": 595.0,
+    "gap_left": 7.2,
+    "gap_right": 7.2
+   }
+  ]
+ }
+]

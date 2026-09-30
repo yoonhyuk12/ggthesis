@@ -1,0 +1,150 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>논문 레퍼런스 팩트체크</title><style>body{font:16px/1.65 system-ui,Malgun Gothic,sans-serif;color:#192434;max-width:1200px;margin:40px auto;padding:0 24px}h1{font-size:30px}h2{margin-top:40px}p{max-width:1050px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #d5dde8;padding:12px;vertical-align:top}th{background:#eaf0f8;text-align:left}a{color:#1452a0;overflow-wrap:anywhere}.note{background:#eef5ff;padding:18px;border-left:4px solid #3474bf}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 system-ui,Malgun Gothic,sans-serif;background:#f5f7fa;padding:18px}summary{cursor:pointer;font-weight:700;padding:12px;background:#eaf0f8}details{margin:16px 0}@media print{body{margin:0;max-width:none}details{display:block}table{font-size:11px}tr{break-inside:avoid}}</style><body>
+<h1>논문 레퍼런스 팩트체크</h1><p>검증일 2026-09-30 · 현행 01.docs 원고 기준 · 원고 및 HWPX 수정 없음</p>
+<p class="note"><b>현재 상태를 “레퍼런스 검증 완료”로 판단할 수 없다.</b> 실제 존재하는 문헌에서도 저자명·연도·표본 단위·효과 해석·인용 쪽수 오류가 확인됐다. 서지 확인과 개별 주장 검증은 구별해야 한다.</p>
+<h2>검증 범위</h2><p>국내문헌 골격 21종, 국외문헌 골격 30항목을 보유 PDF·학술 레코드·출판사 자료로 대조했다. 통계·가이드라인·관련 법령도 별도 확인했다. 보유 자료는 PDF68개와 웹자료1개이며 SHA-256 중복 대조 결과 PDF 고유 파일은66개다(02=52,06=18). 미인용 보유 자료 전체를 참고문헌 검증 건수로 세지 않았다.</p><p>본문은 주요 수치·핵심 논거·부록 매핑을 대상으로 표적 검증했다. 모든 인용문장과 모든 매핑의 전수 내용감사, 원논문의 원자료 재분석, HWPX와 MD 대조까지 완료했다는 뜻은 아니다. 아래 “일치”는 확인한 서지·문장 범위만 가리킨다.</p>
+<h2>수정·보완 대상</h2><table><thead><tr><th>판정</th><th>항목·원고 위치</th><th>검증 결과</th><th>교정 방향·근거</th></tr></thead><tbody><tr><td>오류 확인</td><td><b>김윤헌 → 김태헌</b><br><a href="../01.docs/07_%EC%B0%B8%EC%A1%B0%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md">07_참조번호목록.md:258</a></td><td>ref04 표제 저자는 金兌憲, 영문초록은 Taeheon Kim이다. 현행 김윤헌은 원문과 다르다. 한글 직접 표기는 해당 PDF에서 찾지 못했지만 한자·영문과 성균관대 연구진 표기가 김태헌으로 일치한다.</td><td>본문·참고문헌·문항근거·부록의 저자명을 함께 교정할 필요가 있다.<br><a href="../02.reference/04.%20%EA%B1%B4%EC%84%A4%ED%98%84%EC%9E%A5%20%EC%9C%84%ED%97%98%EC%83%81%ED%99%A9%20%EC%9D%B4%ED%95%B4%20%EB%B0%8F%20%EB%8C%80%EC%9D%91%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EC%95%88%EC%A0%84%EC%9D%B8%EC%A7%80%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%20%EC%97%B0%EA%B5%AC.pdf#page=104">ref04 PDF104 / 인쇄89</a></td></tr><tr><td>오류 확인</td><td><b>이형도 2023 → 2024</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:29</a> / <a href="../01.docs/07_%EC%B0%B8%EC%A1%B0%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md">07_참조번호목록.md:271</a></td><td>2023.12는 제출·인준 날짜이며 RISS 공식 목록과 DBpia 발행연도는 2024다.</td><td>본문 내주와 확정 서지의 연도를 2024로 통일한다.<br><a href="https://www.dbpia.co.kr/journal/detail?nodeId=T16946333">학위논문 서지</a></td></tr><tr><td>오류 확인</td><td><b>MonitorVLM 성능 향상의 원인 혼동</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:76</a></td><td>22.01%·34.22%는 기초 72B 모델의 도메인 파인튜닝에 따른 상대 개선이다. 이를 조항 필터·행동 확대 모듈의 효과로 묶어 썼다. 표 원수치는 정밀도 73.33→89.47%, 재현율 61.11→82.02%다.</td><td>비교 모델과 기법을 분리한다. 22.01·34.22를 그대로 %p로 바꾸면 안 된다. 원문 자체의 absolute라는 설명도 표 계산과 다르다.<br><a href="https://arxiv.org/abs/2510.03666v1">MonitorVLM v1, pp.6–7</a></td></tr><tr><td>오류 확인 / 원문 모순</td><td><b>Zhou 표본과 비용효과</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:190</a></td><td>513개 기업이 아니라 기업·정부·학계 관계자의 유효 설문 513부다. 원문은 비용효과를 강조하지만 Table10의 t=6.984·p=.161·가설지지 표시, 본문의 비용계수 -.011/-.319가 서로 충돌한다.</td><td>표본 단위를 고치고 “가장 강한 부정적 영향의 입증”을 핵심 근거로 단정하지 않는다. 원문 p값을 추정 보정하지 말고 다른 독립 근거로 보강한다.<br><a href="https://www.nature.com/articles/s41598-023-46241-6">Zhou 원문 pp.7–10,13</a></td></tr><tr><td>오류 확인</td><td><b>Chong의 장비별 예외 누락</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:93</a> / <a href="../01.docs/%EB%B6%80%EB%A1%9D2_%EC%84%A4%EB%AC%B8%ED%95%AD%EB%AA%A9_%EA%B7%BC%EA%B1%B0%EB%A7%A4%ED%95%91.md">부록2_설문항목_근거매핑.md:88</a></td><td>사용 용이성(PEOU)은 6종 중 스마트 안전모에서 비유의(β=.159, N.S.)다. 부록의 6종 모두 효과라는 요약은 잘못됐다. 원척도는 착용·휴대 수월성 등을 물으며 메신저 인터페이스 효과를 직접 측정하지 않았다.</td><td>대부분의 장비라는 범위를 명시하고 메신저 문항과의 연결은 연구자의 개념 응용으로 설명한다.<br><a href="https://doi.org/10.3390/buildings13112747">Chong Table3 / Appendix A</a></td></tr><tr><td>오류 확인</td><td><b>Cvach 부록 인용 쪽수</b><br><a href="../01.docs/%EB%B6%80%EB%A1%9D2_%EC%84%A4%EB%AC%B8%ED%95%AD%EB%AA%A9_%EA%B7%BC%EA%B1%B0%EB%A7%A4%ED%95%91.md">부록2_설문항목_근거매핑.md:99</a></td><td>보유 PDF1=인쇄268이다. Abstract·Cry Wolf는 PDF1/인쇄268, probability match는 PDF3/인쇄270, 짧은 지연 논의는 PDF4/인쇄271에 있다. 부록의 p.2/p.3/p.5 등 일부 표기가 실제 위치와 어긋난다.</td><td>인쇄쪽과 PDF쪽을 분리해 매핑한다. 의료 리뷰를 검증된 건설 설문 원척도로 취급하지 않는다.<br><a href="https://doi.org/10.2345/0899-8205-46.4.268">Cvach 원문</a></td></tr><tr><td>오류 확인</td><td><b>산업안전보건관리비 산식</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:168</a></td><td>원고는 도급금액에 법정 요율을 곱한다고 설명한다. 현행 고시의 기본 대상액은 직접·간접재료비와 직접노무비의 합이며 규모에 따라 기초액을 더한다. 대상액이 불명확하면 총공사금액의 70%를 대상액으로 삼는다.</td><td>“고시에서 정한 대상액·공사종류·규모별 기준에 따라 계상하는 재원”으로 고치고 고시 제2조제1항제2호·제4조를 인용한다.<br><a href="https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20250200610">고용노동부 고시 제2025-11호 원문</a></td></tr><tr><td>근거 미확인 / 조건 누락</td><td><b>류수영 24시간 안정운영과 99%</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:29</a> / <a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:70</a></td><td>멀티프로세싱 구현과 99% 수치는 확인했으나 24시간 연속운영 안정성 시험은 열람·전체텍스트 검색에서 찾지 못했다. 99%는 IoU=.25와 K-fold 조건이 붙는다.</td><td>안정성 실증이라는 표현은 추가 시험 근거 전까지 보류하고 99%의 실험 조건을 명시한다. 이미지 글자를 전수 OCR하지 않았으므로 근거의 절대 부재를 단정하지 않는다.<br><a href="../02.reference/17.%20CCTV%20%EA%B8%B0%EB%B0%98%20%EC%82%B0%EC%97%85%EC%95%88%EC%A0%84%20%EA%B4%80%EC%A0%9C%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%20%EA%B4%80%ED%95%9C%20%EC%97%B0%EA%B5%AC.pdf#page=83">ref17 PDF83 / 인쇄71</a></td></tr><tr><td>오류 확인</td><td><b>김현수 논문 제목 LLM/VLM</b><br><a href="../01.docs/02_%EC%9D%B4%EB%A1%A0%EC%A0%81%EB%B0%B0%EA%B2%BD.md">02_이론적배경.md:29</a> / <a href="../01.docs/07_%EC%B0%B8%EC%A1%B0%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md">07_참조번호목록.md:27</a></td><td>실제 제목은 Vision AI–VLM 비교 및 하이브리드 연구다. 목록 일부와 본문 제목 소개는 LLM으로 남아 있다.</td><td>정식 제목 표기는 VLM으로 맞춘다.<br><a href="../02.reference/05.%20%ED%86%B5%ED%95%A9%EA%B4%80%EC%A0%9C%EC%84%BC%ED%84%B0%20%EC%9A%B4%EC%98%81%EC%9D%84%20%EC%9C%84%ED%95%9C%20Vision%20AI%20%E2%80%93%20VLM%20%EB%B9%84%EA%B5%90.pdf#page=2">ref05 표제면</a></td></tr><tr><td>보완 필요</td><td><b>판본·권호·법령 서지</b><br><a href="../01.docs/07_%EC%B0%B8%EC%A1%B0%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md">07_참조번호목록.md:285</a> / <a href="../01.docs/07_%EC%B0%B8%EC%A1%B0%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md">07_참조번호목록.md:309</a></td><td>Chong은 13(11)호 확인. Yao는 최초 arXiv2023, 보유 v3는2025, 정식 저널도2025다. Brown 권·쪽 및 이석희 외의 쪽·DOI 보완 가능. 산업안전보건법 목록은2025 시행본이며 인용 조항도 미확정이다.</td><td>실제 읽은 판본을 지정한다. 산업안전보건법 제15·17조와 2026.6.1 시행 제21374호를 현행 사용 목적에 맞게 반영한다. 기존2025판을 역사적 출처로 쓰는 것 자체가 잘못은 아니다.<br><a href="https://doi.org/10.1016/j.iot.2025.101716">Yao 저널판</a> / <a href="https://www.law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1000218254">산업안전보건법 제17조</a></td></tr></tbody></table>
+<h2>확인된 항목</h2><ul><li>서론 328명·827명·39.66%는 보유 고용노동부 통계 PDF28(인쇄22)과 일치한다. 계산도 328/827×100=39.6614%다. 산재보상 승인 기준이며 중소규모 현장만의 수치가 아니다. <a href="https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20251201429">2025-12-23 공식 게시자료</a></li>
+<li>가이드라인 AI CCTV500만원, 분석 솔루션2540만원, 종합관리시스템2000만원은 PDF26(인쇄22), 상황실1200만원·대당설치40만원·유지보수연8%는 PDF27(인쇄23)에서 확인했다. 상황실1200만원은 서버·네트워크·방송시설 포함이다. 원고의 해당 출처 미확정 기록은 해소할 수 있다. 월1만~4.6만원 요금과 동등조건 총소유비용은 별도 확인이 남는다.</li>
+<li>Kim의 F1 .863→.8895와 동적 임계값, Pisu의 정밀도98%·약6초 운영점, 조도빈의78건·36.7%, 김현수의 오탐35~40%·검토시간43%, Mi의 PPE mAP50 .980 등은 해당 원문에서 확인했다. 서로 다른 연구의 성능 우열을 뜻하지 않는다.</li>
+<li>Bosch의 추가 검증10초 제한은 원문에서 확인했다. 다만 Alarm Management 수신 이후 추가 지연이므로 본 논문의 검출→단말 도달 전구간과 정확히 같다는 목록의 설명은 수정해야 한다. Bosch와 Keenfinity의 사업 연속성도 <a href="https://www.keenfinity-group.com/xl/en/news/press-room/sale-of-keenfinity-group-from-bosch-completed/">공식 보도자료</a> 및 <a href="https://commerce.keenfinity.tech/sg/en/Alarm-Management/p/F.01U.389.294/">공식 제품 문서 목록</a>으로 확인했다.</li></ul>
+<h2>미확정으로 남겨야 하는 항목</h2><ul><li>윤영석의 학위 발행연도:2025.12 제출·인준만 확인. 2025가 오류라고 단정하거나2026으로 추정 변경하면 안 된다. 왕인국도 이번 검증에서는 수여연도 필드를 직접 확보하지 못했다.</li><li>Kim(2025) 라벨데이터 부재, Tiwari·Herstatt의 정확한 문헌 식별, EN50136-1 정본 Table2, 통제변수별 이론 근거는 기존 CITE_TODO/UNVERIFIED가 남은 항목이다. 이미 표시된 공백을 이번에 새로 발견한 허위 인용으로 세지 않았다.</li><li>Teizer는 보유 ISARC 학회본과 참고문헌에 적은 저널본이 다르다. 개념 확인과 실제 읽은 출처·인용 쪽수를 일치시켜야 한다.</li><li>설문은 본문에서 연구자 수정·개발 문항이라고 명시한다. 다만 부록의 개념 근거를 원격관리·메신저 효과의 직접 실증으로 확장한 설명은 정리해야 한다.</li><li>김석기 원문의 일부 빈도·비율은 내부 모순이 있으나 해당 비율은 현행 본문에서 사용하지 않는다. 원고 오류와 구별한다.</li></ul>
+<h2>국내문헌 21종 확인표</h2><table><thead><tr><th>관리번호·현재 표기</th><th>판정</th><th>이번 확인 증거</th></tr></thead><tbody>
+<tr><td>03 / 박종학(2025)<br>07:263</td><td>일치</td><td>PDF 2–4: 박종학, 경기대 공학대학원 건축·안전공학전공 석사, 2025.6 제출. 디지털집현전 학위 레코드 2025.08.<br>https://k-knowledge.kr/srch/read.jsp?id=276089885</td></tr>
+<tr><td>04 / 김윤헌(2026)<br>07:109,219,258; 01:14; 02:31,47,76; 03:212; 04:152,153,182,184</td><td>저자 오류</td><td>PDF 2·4·5·6: 金兌憲; PDF 104=인쇄89 영문초록 Taeheon Kim. 김태헌(2026)으로 교정 필요. 책등 PDF3 2026, 제출 PDF5 2025.10, 인준 PDF6 2025.12. 성균관대 일반대학원 글로벌스마트시티융합전공 재난관리전공 박사.<br>원문 PDF가 직접 근거. 보조: https://pure.skku.edu/en/publications/vision-based-motion-prediction-for-construction-workers-safety-in/ 및 https://sites.google.com/view/skkuscit/publications/patents/pantent-pending</td></tr>
+<tr><td>05 / 김현수(2026)<br>07:27,220,259; 02:29</td><td>서지 일치·제목 표기 오류</td><td>PDF2–4: 중앙대 ICT안전학과 석사, 2026.2. 정식 제목 Vision AI–VLM 비교 및 하이브리드 연구. 07 목록27 및 검증기록220은 LLM이라 적음(국내문헌 골격259는 VLM으로 정상).<br>원문 PDF</td></tr>
+<tr><td>06/18 / 이창남(2025)<br>07:28,40,270</td><td>일치</td><td>PDF2–4: 경기대 대학원 건설안전학과 박사, 2024학년도·2025.6 제출/인준. 파일명의 이병길은 지도교수. 06·18 모두 동일한 표제 확인. 독립 문헌으로 계수하지 않아야 함.<br>원문 PDF</td></tr>
+<tr><td>09 / 이석희·고대식·송석일(2025)<br>07:268</td><td>일치·서지 보완</td><td>PDF1: Journal of KIIT 23(11),279–282, 2025.11.30, DOI 10.14801/jkiit.2025.23.11.279. 저자와 제목 일치; 현행 참고문헌은 페이지·DOI 빠져 있음.<br>https://doi.org/10.14801/jkiit.2025.23.11.279 (DOI는 이번 원문에서 읽음; 온라인 도착지 별도 재확인 안 함)</td></tr>
+<tr><td>13 / 왕인국(2025)<br>07:264</td><td>저자·기관 일치/발행연도 부분확인</td><td>PDF2–3: 광운대 대학원 건축공학과 공학석사, 2024학년도·2024.12 제출. 국회도서관 연계 디지털집현전에서 동일 제목·왕인국 확인. 이번 조회에서 2025 학위수여 연도 직접 필드를 확보하지 못함. 원고의 2025가 틀렸다고 단정하지 않음.<br>https://k-knowledge.kr/srch/read.jsp?id=270511830</td></tr>
+<tr><td>17 / 류수영(2023)<br>07:262</td><td>일치</td><td>PDF2–4: 배재대 대학원 컴퓨터공학과 컴퓨터공학전공 박사, 2023.12. DBpia T16966753 발행연도2023과 일치. 제출연도가 다음해 발행일 것이라고 자동 추정해서는 안 되는 반례.<br>https://www.dbpia.co.kr/journal/detail?nodeId=T16966753</td></tr>
+<tr><td>22 / 김용선(2022)<br>07:257</td><td>일치</td><td>PDF2·4: 인천대학교 대학원 안전공학과 박사, 2022.8.<br>원문 PDF</td></tr>
+<tr><td>28 / 조도빈(2026)<br>07:272</td><td>일치</td><td>PDF2–3: 울산대 대학원 건축학과/趙桃彬/공학박사. PDF4 인준 이미지에서 2026.2 확인.<br>원문 PDF</td></tr>
+<tr><td>29 / 윤영석(2025)<br>07:231,265; 01:10,68; 02:168; 04:62,91,111,167,169,170</td><td>발행연도 미확인</td><td>PDF2–4: 2025학년도, 2025.12 제출·인준. 저자·학교·전공·석사와 제목은 일치. 학위수여·발행연도2025/2026를 외부 공식서지로 확정하지 못함. 2026으로 자동 교정하지 말 것. 현행 확정기록이 제출일만으로 발행연도2025를 확정한 점은 근거 부족.<br>웹에서 해당 학위 레코드를 이번 검색으로 확보하지 못함(문헌 부재로 판정하지 않음)</td></tr>
+<tr><td>30-VLM / 한소은(2026)<br>07:273</td><td>일치</td><td>PDF2: 인천대 대학원 건축학과 석사 2026.02; PDF3–4 제출·인준2025.12. 현행 연도2026 정상.<br>원문 PDF</td></tr>
+<tr><td>32 / 류정·박인선(2025)<br>07:261</td><td>일치</td><td>PDF1: Crisisonomy21(6),125–135, DOI10.14251/crisisonomy.2025.21.6.125.<br>원문 PDF</td></tr>
+<tr><td>33 / 김민기·박성호(2026)<br>07:255</td><td>일치</td><td>PDF1 표지와3 연구진, PDF128 판권: 서울연구원,2026.2.13,서울연2024-BR-14,ISBN979-11-7552-074-5. 보고서 번호2024와 발행연도2026 구분 정상.<br>원문 PDF</td></tr>
+<tr><td>36 / 국토교통부·국토안전관리원(2024)<br>07:254</td><td>일치</td><td>PDF1 표지 이미지: 스마트 안전장비 활용 가이드라인,2024.03,CS-24-E6-002, 두 기관 로고.<br>원문 PDF</td></tr>
+<tr><td>38 / 이동건(2024)<br>07:266</td><td>일치</td><td>PDF2–3: 인하대 공학대학원 건축토목공간정보공학과(건축공학전공),공학석사,2024.8.<br>원문 PDF</td></tr>
+<tr><td>39 / 이준호(2024)<br>07:269</td><td>일치</td><td>PDF2–3: 한양대 융합산업대학원 건축학과 건축학석사,2024.2.<br>원문 PDF</td></tr>
+<tr><td>44 / 황병복(2026)<br>07:274</td><td>일치</td><td>PDF2–4: 우송대 일반대학원 철도공학과 박사,2026.2.<br>원문 PDF</td></tr>
+<tr><td>45 / 노희상·박종용·정상윤(2026)<br>07:260</td><td>정식 서지 확인</td><td>로컬 PDF1은 투고서식(권호·연도·DOI 빈칸)이나 KCI 공식 ART003308483에서2026,51호,89–112,DOI10.52902/kjsc.2026.51.89,저자순 확인. 현행 원고 서지 정상. 로컬 교정본 쪽수를 출판본으로 산술 치환하면 안 됨.<br>https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003308483</td></tr>
+<tr><td>49 / 이기수(2024)<br>07:267</td><td>일치</td><td>PDF2–4: 명지대 대학원 재난안전학학과간협동과정,재난안전학박사,2024.8.<br>원문 PDF</td></tr>
+<tr><td>51 / 김석기(2026)<br>07:256</td><td>서지 일치/원자료 수치 충돌</td><td>PDF2–3: 충북대 대학원 방재공학협동과정 재난관리전공,공학박사,2026.2. 수치 주의사항은 별도 기재.<br>원문 PDF</td></tr>
+<tr><td>02/52 / 이형도(2023)<br>07:24,75,135,240,271; 02:29</td><td>발행연도 오류</td><td>PDF2는2023학년도,3–4는2023.12 제출·인준. RISS 공식 학위목록 및 DBpia 모두 발행연도2024. 이형도(2024)로 교정 권고. 학교·학과·박사·제목은 일치.<br>https://www.riss.kr/search/Search.do?colName=bib_t&amp;isDetailSearch=Y&amp;queryText=znMajor%2C%EA%B1%B4%EC%84%A4%EC%95%88%EC%A0%84%ED%95%99%EA%B3%BC ; https://www.dbpia.co.kr/journal/detail?nodeId=T16946333</td></tr>
+</tbody></table>
+<h2>상세 검증 기록</h2><details><summary>국외문헌 30항목: 서지 확인과 판본 한계</summary><pre>국외문헌 서지 팩트체크 — 2026-09-30
+범위: 01.docs/07_참조번호목록.md 국외문헌 골격 282–311행의 30항목. 현행 본문 인용 위치도 검색. 원고 수정 없음.
+방법: 보유 PDF 첫 쪽/학위 표제·인준면, Crossref 등록 메타데이터, 출판사·공식 학회·기관 도서관 레코드 대조. 과거 &#x27;검증 완료&#x27; 기록만으로 이번 확인을 갈음하지 않았다. 도서 일부는 출판사/도서관 카탈로그까지만 확인했으므로 개별 인용 페이지·주장의 타당성 검증과 구별한다. 이번 확인 범위에서 가공문헌으로 판정할 근거는 발견되지 않았다.
+
+우선 보완사항
+1. Yao 판본: 07:309는 arXiv:2312.02078, 2023으로 기재하지만 보유 ref65 PDF 1쪽에는 v3, 12 Aug 2025 및 August 13, 2025가 표시된다. 최초 공개연도 2023을 쓰는 것이 곧 허위는 아니나 인용 판본을 식별하지 못한다. 게다가 정식 출판판이 이미 존재: Internet of Things 33 (2025), 101716, DOI 10.1016/j.iot.2025.101716. Crossref와 UNC Charlotte 공식 저장소의 출판 PDF 첫 쪽으로 재확인. 교수 지침의 국외학술지 우선 원칙상 정식판 대조 후 저널판으로 정리하거나, arXiv 유지 시 v3를 명시할 것을 권고한다. 원고 03_시스템개발.md:237의 Yao et al.(2023)도 선택한 판본과 맞춰야 한다. 출판판 첫 쪽에서도 평균 지연 26.76초 확인. 이 보고서는 저널판 본문 전체와 현행 인용 문장 전체를 대조하지 않았다.
+근거: <a href="https://doi.org/10.1016/j.iot.2025.101716">https://doi.org/10.1016/j.iot.2025.101716</a> ; <a href="https://arxiv.org/abs/2312.02078">https://arxiv.org/abs/2312.02078</a> ; <a href="https://ninercommons.charlotte.edu/nanna/record/5293/files/yaosha_etal_frola_ir_205.pdf?registerDownload=1&amp;version=1&amp;withMetadata=0&amp;withWatermark=0">https://ninercommons.charlotte.edu/nanna/record/5293/files/yaosha_etal_frola_ir_205.pdf?registerDownload=1&amp;version=1&amp;withMetadata=0&amp;withWatermark=0</a>
+2. Chong 호수: 07:239의 &#x27;호수가 명시되지 않아 호는 적지 않는다&#x27;는 당시 PDF 확인 한계였다. 이번 Crossref 직접 조회로 Buildings 13(11), 2747 확인. 07:285에 No.11 보완 가능. 오류 DOI는 아니다. <a href="https://api.crossref.org/works/10.3390/buildings13112747">https://api.crossref.org/works/10.3390/buildings13112747</a>
+3. Brown 완전 서지: 07:284는 Brown et al., NeurIPS, 2020까지만 있어 최종 참고문헌으로 불완전하다. 공식 BibTeX에서 Advances in Neural Information Processing Systems 33, 1877–1901, Curran Associates 확인. 저자 표기는 채택 서지양식에 맞춰 완성 필요. <a href="https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Bibtex.bib">https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Bibtex.bib</a>
+4. Teizer 근거 판본: 07:305 저널 논문 존재·서지는 Crossref 일치. 그러나 보유 ref63은 The Role of Automation in Right-time Construction Safety라는 별개 ISARC 2016 학회 논문. 본문 03:21의 개념을 저널판에서 직접 대조했다는 증거는 이번에도 확보하지 못했다. 원고가 이미 구별을 기록한 사항이며 새로 발견한 서지 오류로 세지 않는다. 인용 근거 페이지 확인 시 두 원문을 혼용하면 안 된다.
+5. Wu 판본: 07:308의 제목·7저자·arXiv 번호·최초 공개연도 2025 일치. 공식 arXiv는 v1 2025-10-04, 최신 v2 2026-03-11. 보유 ref23 첫 쪽에 &#x27;JOURNAL OF LATEX CLASS FILES&#x27;가 있지만 서식 잔재이므로 학술지 게재 증거로 쓰면 안 된다. 현재 원고가 arXiv로 적은 것은 적절하다. 본문 수치가 어느 버전에 근거하는지 재현 가능하게 버전 식별 권고. <a href="https://arxiv.org/abs/2510.03666">https://arxiv.org/abs/2510.03666</a>
+
+전수 확인표 (행 번호는 01.docs/07_참조번호목록.md)
+행 | 항목 | 이번 확인 | 근거/범위
+282 | Aiken &amp; West (1991) | 저자·제목·출판사·연도 일치 | SAGE 공식 도서 페이지. <a href="https://www.sagepub.com/shop/buy-a-book/multiple-regression-1-3045">https://www.sagepub.com/shop/buy-a-book/multiple-regression-1-3045</a>
+283 | Bhatti (2012) | 저자·제목·연도·DOI 일치 | SSRN 원 레코드. working paper이며 학술지 논문 아님. <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2005910_code1653301.pdf?abstractid=2005910">https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2005910_code1653301.pdf?abstractid=2005910</a>
+284 | Brown et al. (2020) | 존재·제목·주저자·학회·연도 일치; 서지 보완 | ref55 PDF 1쪽 + NeurIPS 공식 페이지/BibTeX. Vol.33, 1877–1901. <a href="https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html">https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html</a>
+285 | Chong et al. (2023) | 저자·제목·연도·권·논문번호·DOI 일치; 호11 확인 | ref41 PDF 1쪽 + Crossref 10.3390/buildings13112747
+286 | Cvach (2012) | 저자·제목·연도·권호·쪽 일치 | ref42 PDF 1쪽(인쇄268) + Crossref 10.2345/0899-8205-46.4.268. 파일명의 2022는 서지 연도가 아님
+287 | Cohen (1988) | 저자·제목·2판·연도 확인 | Routledge 공식 계승 출판사 페이지. 최초 Lawrence Erlbaum 발행 판권면은 이번 직접 확인하지 않음. <a href="https://www.routledge.com/Statistical-Power-Analysisfor-the-Behavioral-Sciences/Cohen/p/book/9780805802832">https://www.routledge.com/Statistical-Power-Analysisfor-the-Behavioral-Sciences/Cohen/p/book/9780805802832</a>
+288 | Davis (1989) | 저자·제목·연도·권호·쪽 일치 | Crossref 10.2307/249008
+289 | Dixon et al. (2007) | 세 저자·제목·연도·권호·쪽·DOI 일치 | Crossref 10.1518/001872007X215656
+290 | Faul et al. (2007) | 네 저자 순서·제목·연도·권호·쪽 일치 | ref61 PDF 1쪽(인쇄175). Crossref 호출은429였으나 보유 원문 확인 성공
+291 | Faul et al. (2009) | 네 저자 순서·제목·연도·권호·쪽 일치 | ref62 PDF 1쪽(인쇄1149) + Crossref 10.3758/BRM.41.4.1149. 2007판과 Lang/Buchner 저자 순서가 실제로 다름
+292 | Green &amp; Swets (1966) | 저자·제목·출판사·연도 확인 | Indiana University 직접 소장 카탈로그. ISBN은 Google Books 스캔 레코드 보조 확인, 판권면 미열람. <a href="https://iucat.iu.edu/iub/400294">https://iucat.iu.edu/iub/400294</a> ; <a href="https://books.google.nl/books?hl=nl&amp;id=oHV9AAAAMAAJ">https://books.google.nl/books?hl=nl&amp;id=oHV9AAAAMAAJ</a>
+293 | Green (1991) | 저자·제목·연도·권호·쪽 일치 | Crossref 10.1207/s15327906mbr2603_7
+294 | Huitema (2011) | 저자·제목·2판·출판사·연도 일치 | Wiley 공식 도서 페이지. 부제 Statistical Methods for Experiments, Quasi-Experiments, and Single-Case Studies 생략은 식별 오류는 아님. <a href="https://www.wiley-vch.de/en/areas-interest/mathematics-statistics/the-analysis-of-covariance-and-alternatives-978-0-471-74896-0">https://www.wiley-vch.de/en/areas-interest/mathematics-statistics/the-analysis-of-covariance-and-alternatives-978-0-471-74896-0</a>
+295 | Igbaria &amp; Tan (1997) | 저자·제목·연도·권호·쪽·DOI 일치 | Crossref 10.1016/S0378-7206(97)00006-2
+296 | Kim et al. (2025) | 정식 PMLR 서지 일치 | 공식 PMLR 296,151–162. 정식 저자 Dongsik Yoon/Chansung Jung이 맞음. 보유 워크숍 ref08 1쪽의 Dongisk Yoon/Changsun Jung 철자를 정식 서지로 역수정하지 말 것. <a href="https://proceedings.mlr.press/v296/kim25a.html">https://proceedings.mlr.press/v296/kim25a.html</a>
+297 | Kish (1965) | 저자·제목·출판사·연도 확인 | 미국 National Agricultural Library 제공 FAO 공식 레코드 + Wiley 저자 소개. 원문 쪽수 미대조. <a href="https://agris.fao.org/search/en/providers/122535/records/65dde3a7b766d82b18facc30">https://agris.fao.org/search/en/providers/122535/records/65dde3a7b766d82b18facc30</a> ; <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/0471725196">https://onlinelibrary.wiley.com/doi/book/10.1002/0471725196</a>
+298 | Lawshe (1975) | 저자·제목·연도·권호·쪽 일치 | Crossref 10.1111/j.1744-6570.1975.tb01393.x. 온라인 재게시2006을 출판연도로 쓰면 안 됨
+299 | Massoz et al. (2018) | 저자·제목·연도·권호·논문번호 일치 | ref64 PDF1쪽 + Crossref 10.3390/s18092801
+300 | Mi (2025) | 저자·제목·대학·박사·연도 일치 | ref19 PDF2쪽 표제,3쪽 인준. Yirong Mi, June 2025. 원고가 보류한 학위월은 원문 표제/인준월로는6월 확인; 실제 수여월을 같다고 단정하지 않음
+301 | Pisu et al. (2024) | 여섯 저자·제목·권·논문번호·연도 일치 | ref68 PDF1쪽 + Crossref 10.1016/j.eswa.2023.122285. online2023, 권238 정식연도2024 구분 적절
+302 | Podsakoff et al. (2003) | 네 저자·제목·권호·쪽·연도 일치 | Crossref 10.1037/0021-9010.88.5.879
+303 | Radjou et al. (2012) | 세 저자·제목·출판사·연도·ISBN 일치 | Wiley 공식:1판 April2012, ISBN9781118249741. <a href="https://www.wiley-vch.de/de/fachgebiete/finanzen-wirtschaft-recht/wirtschaft-und-management-13ba/allg-wirtschaft-u-management-13ba0/jugaad-innovation-978-1-118-24974-1">https://www.wiley-vch.de/de/fachgebiete/finanzen-wirtschaft-recht/wirtschaft-und-management-13ba/allg-wirtschaft-u-management-13ba0/jugaad-innovation-978-1-118-24974-1</a>
+304 | Shadish et al. (2002) | 저자·제목·Houghton Mifflin·연도 확인 | UNT·Texas A&amp;M 공식 도서관 소장 카탈로그 검색 레코드 확인. 원문 판권/인용페이지 미열람. <a href="https://discover.library.unt.edu/catalog/b2480456">https://discover.library.unt.edu/catalog/b2480456</a> ; <a href="https://catalog.library.tamu.edu/Record/in00001831755/Details">https://catalog.library.tamu.edu/Record/in00001831755/Details</a>
+305 | Teizer (2016) | 저널 서지 일치; 보유 원문은 별개 학회판 | Crossref 10.1108/CI-10-2015-0049. Construction Innovation16(3),253–280. ref63 PDF1쪽은 ISARC2016
+306 | The jamovi project (2026) | 공식 권장 인용과 일치 | 공식 about 페이지가 2026,Version2.7 표기. 실제 연구 설치/사용 버전은 이 확인만으로 검증되지 않음. <a href="https://www.jamovi.org/about.html">https://www.jamovi.org/about.html</a>
+307 | Wilson (1927) | 저자·제목·연도·권호·쪽·DOI 일치 | Crossref 10.1080/01621459.1927.10502953
+308 | Wu et al. (2025) | 저자·제목·arXiv번호·최초연도 일치; 판본 명시 권고 | ref23 PDF1쪽 + arXiv 공식 v1/v2 이력. <a href="https://arxiv.org/abs/2510.03666">https://arxiv.org/abs/2510.03666</a>
+309 | Yao et al. (2023) | 최초 arXiv 서지 존재; 실제 보유판·정식 출판판 정리 필요 | ref65 PDF1쪽은v3(2025); 정식 저널판2025도 이번 확인. <a href="https://arxiv.org/abs/2312.02078">https://arxiv.org/abs/2312.02078</a> ; <a href="https://doi.org/10.1016/j.iot.2025.101716">https://doi.org/10.1016/j.iot.2025.101716</a>
+310 | Zeschky et al. (2011) | 저자·제목·연도·권호·쪽·DOI 일치 | Crossref 10.5437/08956308X5404007. 온라인 재게시2015와 최초2011 구별
+311 | Zhou et al. (2023) | 저자·제목·연도·권·논문번호·DOI 일치 | ref40 PDF1쪽 + Crossref 10.1038/s41598-023-46241-6. Crossref 호1도 확인; Scientific Reports 논문번호식 인용은 원고형식 유지 가능
+
+판정 범위와 한계
+- 위 &#x27;일치&#x27;는 서지 존재/식별 정보에 대한 판정이다. 개별 문장의 내용·일반화·인용 페이지와의 합치 판정은 별도다.
+- 국외문헌 골격30항목 모두 이번 최소1개 원문/공식 메타데이터/직접 소장 기관 카탈로그로 재확인했다. 모든 항목의 모든 필드를 원문 판권면까지 읽었다는 뜻은 아니다. Cohen 최초 출판사 판권, Green ISBN 판권, Shadish 본문 페이지 등은 위에 한계를 개별 기록했다.
+- Crossref17건 조회 중15건 성공,2건429. 실패한 Bhatti는SSRN, Faul2007은보유PDF로 확인. 후속 Yao 정식판 Crossref1건 추가 성공. 검색/접근 실패를 허위문헌 판정으로 사용하지 않았다.
+- 본문·참조목록의 과거 확인 기록과 이번에 추가 확보한 증거를 구분했다. 본문 근거가 미식별인 Kim(2025) 라벨데이터 건은07:208에서 이미 CITE_TODO로 관리 중인 별개 문제이다.
+- 02.reference 전체 보유파일이 전부 현행 참고문헌은 아니다. 이번30항목 집계에 미인용 보유자료를 억지로 넣지 않았다.
+- 임시 증거 파일: thesis_ref_foreign_pdf_headers.json, thesis_ref_foreign_crossref.json, thesis_ref_foreign_yao_journal.json (같은 TEMP 폴더).
+</pre></details>
+<details><summary>본문 주장·수치·인용 페이지 대조</summary><pre>검증일: 2026-09-30 / 원고 수정 없음
+담당: 본문 주장과 참조 원문 일치(고위험 주장 표적검증)
+절차: CLAUDE.md, 교수 작성요령 전문, 참조자료 분류, doi-verification/paper-code-consistency 규칙, verifying-citation-pages 스킬을 읽고 적용. 아래 PDF쪽수는 모두 1부터 세는 화면쪽수이며 인쇄쪽수를 별도 명시함. 보유 PDF 직접 텍스트 추출; Zhou Table10은 렌더링 시각 대조 완료. 과거 메모를 사실 근거로 재사용하지 않음.
+
+[우선 수정 1] MonitorVLM 개선 수치의 원인/단위 혼동
+원고: 01.docs/02_이론적배경.md:33,76 (표107행 등도 구조 구분 고려)
+현행: 조항 필터와 행동 확대 모듈을 통해 정밀도 22.01%, 재현율 34.22% 동시 향상.
+원문: ref23 보유 arXiv v1의 PDF6=인쇄6, IV.B; PDF7=인쇄7 Table I. 22.01/34.22는 Qwen2.5-VL-72B 대비 MonitorVLM-72B-basic의 도메인 파인튜닝 효과이며 CF/BM의 효과가 아니다. 원문 p6가 absolute gains라 부르지만 Table I에서 P73.33→89.47은 +16.14%p/상대22.01%, R61.11→82.02는 +20.91%p/상대34.22%여서 원문 단위 설명 자체가 부정확하다. 3.45/8.62는 BM 제외 모델(89.95/82.46) 대비 완성형(93.05/89.57)의 상대증가율이다(차이는3.10/7.11%p). CF는 Table II에서 정확도 유지하며 추론시간20.35→17.59초(13.56% 감소)에 주로 기여. 따라서 원고의 %를 무조건 %p로 바꾸면 오히려 오류이며, 비교 모델과 분모를 분리해야 한다.
+권고: &#x27;72B 기초모델을 도메인 파인튜닝해 정밀도73.33→89.47%, 재현율61.11→82.02%로 개선하였고, 조항필터·행동확대의 추가 효과도 분석했다&#x27;처럼 원수치/비교구조를 기술하거나 숫자를 생략한다. 최종 인용을 v2로 할 경우 해당 버전으로 재대조 필요(외국문헌 담당 확인 중). 초기 메시지의 &#x27;%p 교정&#x27; 제안은 Table I 확인 후 철회하였으며 본 최종기록을 따른다.
+원문URL: <a href="https://arxiv.org/abs/2510.03666v1">https://arxiv.org/abs/2510.03666v1</a>
+
+[우선 수정 2] Zhou 표본 단위 오류 + 원문 통계의 내부 모순
+원고: 01.docs/02_이론적배경.md:190 &#x27;513개 기업 자료에서 ... 가장 강한 부정적 영향&#x27;; 부록2:57 C-2 ref40은 이를 단정적으로 재사용.
+원문: ref40 PDF7=인쇄7 Data collection. 644 설문 배포, 546 회수, 513 유효 설문. 기업 실무자뿐 아니라 정부 부처와 대학의 전문가·학자를 포함. 513개 기업은 잘못된 단위, &#x27;513부의 유효 설문&#x27;으로 교정해야 함.
+원문 초록(PDF1=인쇄1)에 기술비용 가장 큰 부정요인이라는 저자 주장은 있음. 그러나 원문 자체 결과 모순으로 확실한 실증 사실로 옮기면 곤란:
+- PDF8=인쇄8 Table10 비용 STDEV=.046, t=6.984, p=.161, Support를 동시에 제시. 표 화면렌더링으로 확인하여 추출 오류 배제.
+- PDF9=인쇄9 첫 문단은 비용·기술위험 p&gt;.05임에도 부정효과를 가정하였으므로 수용 가능하다고 설명(타당한 유의성 판단 아님).
+- PDF10=인쇄10 회귀식 비용계수 -.011, PDF13=인쇄13 Discussion 비용계수 -.319로 불일치.
+권고: 저자 결론의 단순 인용과 신뢰할 수 있는 통계 입증을 구분. &#x27;비용을 주요 도입 제약으로 논의하였다&#x27; 정도로 완화하고 다른 독립 연구로 핵심 예산 논거 보강. 원문 p값 임의 보정 금지.
+원문URL: <a href="https://www.nature.com/articles/s41598-023-46241-6">https://www.nature.com/articles/s41598-023-46241-6</a>
+시각 증거: C:/Users/User/AppData/Local/Temp/thesis_zhou_table10.png
+
+[우선 수정 3] Chong 장비별 예외 누락 및 설문 개념의 과도한 확장
+원고: 01.docs/02_이론적배경.md:93,112; 부록2:88 D-8 (&#x27;PU·PEoU가 6종 wearable 채택 의도에 정(+) 영향&#x27;).
+원문: ref41 PDF8=인쇄8 Table3. PU(H1)는 6종 모두 유의. PEoU(H2)는 smart hard hats(Study H)에서 β=.159, N.S.; 나머지 5종 유의. 따라서 &#x27;PEoU가 6종 모두 유의&#x27;는 틀림. 본문도 &#x27;대부분의 기기에서&#x27; 등 범위 한정 필요.
+추가: 부록2:27,29,37,40은 ref41 p4-5 TAM/TPB 모델을 원격 판단·지시·통제 조치 근거로 해석. 해당 원문은 채택 의도에 대한 가설이고 그러한 현장 업무성과나 메신저 기능을 측정하지 않음. PDF14=인쇄14 Appendix A 실제 PEoU 문항은 착용/휴대 수월성, 업무 방해 여부, 착용 편안함이다. 메신저 UI 직관성의 직접 검증으로 표현할 수 없음. 연구자 개념 응용이라고 분리해야 함.
+원문URL: <a href="https://doi.org/10.3390/buildings13112747">https://doi.org/10.3390/buildings13112747</a>
+
+[수정 4] Cvach 인용 페이지 다수 어긋남
+대상: 내부 부록2 34,75,99,101,102,104행(ref42). 보유 PDF는 첫 화면이 곧 인쇄268쪽이며 PDF1→인쇄268, PDF2→269 ... PDF7→274. 부록 p.2 Abstract, p.3 Background/Cry Wolf, p.5 Probability Match는 현재 파일 기준 PDF쪽수도 인쇄쪽수도 아니다.
+실제 대응:
+- Abstract/Background/cry-wolf 설명: PDF1=인쇄268 (부록 E-4 p2, E-2 p3, E-3 p3 교정 대상).
+- excessive alarms와 반응/신뢰 probability match: PDF3=인쇄270 (E-1 p4, E-3 p5 교정 대상).
+- short delay 및 smart alarms 기술 논의: PDF4=인쇄271.
+- Smart alarms/short delays 권고 목록: PDF7=인쇄274. 부록 B-6 p7 등은 PDF 화면쪽수로는 맞지만 인쇄쪽수 표기 필요.
+권고: 모든 페이지 열에 &#x27;인쇄 p.268 (PDF 1쪽)&#x27; 형식 적용. 해당 문헌은 의료 모니터링 리뷰이며 설문 E-1~4의 검증된 원척도가 아니다.
+본문 2장70행 &#x27;짧은 지연 원리를 300/600초 쿨다운에 적용&#x27;은 연구자 설계 응용일 뿐 해당 시간값/안전성을 검증한 근거가 아님. 짧은 지연은 경보 발령 이전 지속성 확인, 쿨다운은 발령 후 반복 억제로 작동도 다르므로 구분하는 편이 정확함.
+원문URL: <a href="https://doi.org/10.2345/0899-8205-46.4.268">https://doi.org/10.2345/0899-8205-46.4.268</a>
+
+[추가 미확인 5] 류수영의 &#x27;24시간 연속 운영 안정성 확보&#x27;
+원고: 2장29,70,105행.
+ref17 국문초록 PDF6=인쇄ii에는 객체검출99%, 시나리오65.61~100%, 코드·멀티프로세싱 최적화가 있다. PDF75=인쇄63 멀티프로세싱/CCTV별 프로세스 구성, PDF76=인쇄64 시스템 구현도 확인.
+하지만 PDF 전체 텍스트에서 &#x27;24시간&#x27;, &#x27;24 시간&#x27;, &#x27;24-hour&#x27; 및 연속운용 시험 결과를 확인하지 못함. 다중 처리 설계 사실을 24시간 검증 성과로 확대했을 가능성. &#x27;24시간 안정성 실증&#x27;은 시험 구간 원자료를 추가 찾기 전 미확인 처리 또는 삭제 권고. 부재를 전면 단정하지는 않음(이미지 내 글자는 전수 OCR하지 않음).
+99% 요약은 원문 초록에 실제 있음. 다만 본문 PDF60=인쇄48은 mAP@0.25/IoU=.25 조건이므로 통상 mAP@.5나 일반 정확도와 비교할 때 이 조건을 명시해야 함.
+
+[확인 통과/범위 한정]
+1. Kim et al.(2025) F1 및 임계값: ref08 PDF4=인쇄4 Table2 YOLOv8s F1=.863→.8895, τ=.3 화재재현율=.904 확인. PDF11=인쇄11 Algorithm1에서 Florence2 판단으로 YOLO 임계값 동적조정 확인. 2장17,33,76,158 / 3장72행은 현재 본 연구의 고정 .3·후단 차단 최적성 직접 근거가 아니라고 구분하여 대체로 적정. 2장 표107행 &#x27;2차 검증 오탐 필터링&#x27; 분류는 본문 한정과 다르게 Kim을 동일 후단 차단 구조로 오독할 수 있어 분류명 완화 권고.
+2. Kim(2025) 라벨데이터 부재: 3장17행은 이미 원출처 미식별 CITE_TODO, ref54 부적합을 명시. 현재 확정 인용 오류가 아니라 남은 근거 공백으로 보고해야 함.
+3. Bosch: ref69 보유 PDF는 메모의 4쪽 자료가 아니라 다쪽 Application note. 직접 근거는 PDF8=인쇄8. Alarm Verification이 추가하는 최대10초 지연, 초과시 Unverified 표시 확인. 3장25행 각주 자체 요약은 적정. 단, ref목록99행의 &#x27;본 R5 측정구간과 정확히 일치&#x27;는 틀림: Bosch는 Alarm Management 수신→운영자 이벤트리스트 표시 구간의 추가검증 지연, 논문은 검출→단말도달. 전구간 동등성/안전 임계값 근거로 확대 금지. Bosch-Keenfinity 공식 관계는 부모 담당.
+4. Pisu: ref68 PDF10=인쇄10, window10 latency1.41s와 window80 latency6.40s, 운영점 precision98%/약6초 원문 확인. 현행3장23행 수치는 적정. Bluetooth RSSI 기반 PPE 시스템이라 CCTV 실측 우월성으로 옮길 수 없고 현행237행이 그 제한을 명시함.
+5. Teizer: ref63 ISARC 논문 PDF4(문서 인쇄 아라비아 쪽번호 미확인) right-time 정의·장비근접 instant reaction 확인. 3장21행 개념은 지지. ref목록305행은 미확보 Construction Innovation 저널본을 인용하므로 직접 읽은 출처와 최종 서지 불일치가 여전히 남음. 학회본으로 정확히 인용하거나 저널 원문 확보 필요. 10초/초 이하의 수치 임계값은 해당 학회본이 제시하지 않음.
+6. EN50136: 3장23행/목록332행에 이미 UNVERIFIED. 이번 조사에서도 정본 Table2 확보하지 못했으므로 확인완료로 변경하지 않음. 10초 평균 전송시간과 종단간 안전 허용시간을 구분하는 현행 설명은 유지 필요.
+7. 김현수: ref05 PDF88=인쇄78 오탐35-40%, PDF90=인쇄80 경보스트레스 감소 정성피드백, PDF94~95=인쇄84~85 검토시간/보고시간/피로완화 서술 실제 확인. 부록2 E-1/E-2/E-4 페이지 및 요약은 그 원문과 대체로 맞음. 실제 데이터 재현성 검증까지 했다는 뜻은 아님.
+8. 박종학: ref03 PDF119=인쇄104 영문초록 mAP@.5=.906, F1=.91, 주요위험클래스 .9 초과 원문 확인. 2장29행 수치 일치. 70행의 &#x27;추락위험 시나리오&#x27;로 좁힌 정확성은 별도 본문 표 확인 필요.
+9. Mi: ref19 PDF158=인쇄150 Table16, all mAP50=.980 확인; PPE 성능과 자세성능을 구분한 2장70행은 적정.
+10. 이형도: ref52 PDF73~74=인쇄59~60. YOLOv5x66.7FPS, YOLOv5n312FPS 및 30FPS real-time 기준 확인. 2장29행 30FPS 이상 요약 지지.
+11. 이동건: ref38 PDF61~62=인쇄52~53 Table16 노력기대 β=.217,p=.002 확인, 2장93행 지지. 그러나 부록2의 인쇄16~18(PDF25~27) UTAUT 이론을 원격 조치 효과의 실증으로 쓰는 것은 개념 확장임.
+12. 설문문항 출처 직접/수정/자체: 4장73행은 표준척도 그대로 사용 아님, 연구자 수정·개발임을 명시하고 129행은 근거가 개념도출임을 밝힘. 따라서 &#x27;검증된 척도를 무단 주장&#x27;하는 상태로 보고하지 않음. 다만 부록2 일부 요약(위 Chong/UTAUT)과 낡은 페이지는 여전히 개념 연결을 직접증거처럼 과장하므로 재정리 필요.
+13. 김석기 62.2/37.8 및441 표본숫자는 현행01.docs MD에 미등장. 부모가 확인한 원문내 산술모순은 본문 현행 오류로 분류하지 않음.
+
+검증 한계: 본문 전 문장/모든 근거문헌 전수 내용감사는 아님. 독립 눈가림 재판정·로그 재계산·인용논문의 원자료 검증은 안 함. Dixon 원문, EN정본, Teizer저널본, 부록2 전64매핑 및 Pisu 등 최종 게재서지/버전은 이번 분담에서 완결하지 못했음. 현행 원고 기존 CITE_TODO/UNVERIFIED와 새 오류를 분리했음. 로컬원고/프로젝트파일 변경 없음, 산출물은 TEMP 전용.
+
+</pre></details>
+<p>보고서만 생성했다. 원고 교정 시에는 저자·연도 등 기계적 수정과 주장 완화·근거 교체 등 내용 수정을 구별해 본문·표·부록에 함께 반영해야 한다.</p></body></html>

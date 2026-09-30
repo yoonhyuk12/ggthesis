@@ -32,7 +32,7 @@ import re
 import sys
 import zipfile
 
-# blocks_to_hwpx.py의 GUIDE_MARKER_RE와 동일한 다섯 접두사.
+# blocks_to_hwpx.py의 GUIDE_MARKER_RE와 동일한 다섯 접두사와 대괄호 없는 `실험전`.
 # 본문이 아닌 것(미확정 자리·인용·그림 지시)만 빨간 글자로 나가야 한다.
 MARKER_PREFIXES = (
     "[DATA PENDING",
@@ -40,6 +40,7 @@ MARKER_PREFIXES = (
     "[CITE_TODO",
     "[그림 삽입 예정",
     "[UNVERIFIED",
+    "실험전",
 )
 
 RED_COLOR = "#FF0000"
