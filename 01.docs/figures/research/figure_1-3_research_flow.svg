@@ -30,9 +30,9 @@
 <rect x="45" y="970" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
 <text x="78" y="1023" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제5장  실증분석 결과</text>
 <text x="1360" y="1023" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">What</text>
-<text x="80" y="1100" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">자료 정제·기술통계·신뢰도·집단 동질성 검증</text>
-<text x="80" y="1151" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장 군집성 및 ANCOVA 가정 점검</text>
-<text x="80" y="1202" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1 주 분석: ANCOVA로 실효성 조정 평균 비교</text>
+<text x="80" y="1100" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">자료 정제·기술통계·신뢰도·사전 특성 분포·균형 진단</text>
+<text x="80" y="1151" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장 군집성 및 혼합모형 가정 점검</text>
+<text x="80" y="1202" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1 주 분석: 선형혼합모형으로 실효성 조정 평균 비교</text>
 <text x="80" y="1253" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H2 탐색적 보조 분석: 집단 × 예산 제약성</text>
 <polyline points="750,1310 750,1370" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="750,1370 759.0,1352.0 741.0,1352.0" fill="#243C55"/>

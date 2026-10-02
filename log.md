@@ -1,3 +1,14 @@
+261002_173619 : 00. hwpx/261002_1610_경기공학_건축안전_윤혁_논문_역할교정반영본.hwpx 수정
+261002_163310 : 00. hwpx/261002_1610_경기공학_건축안전_윤혁_논문_역할교정반영본.pdf 삭제
+261002_163206 : MEMORY.md 수정
+261002_161054 : 00. hwpx/261002_0710_경기공학_건축안전_윤혁_논문_역할교정반영본.hwpx 삭제, 00. hwpx/261002_0710_경기공학_건축안전_윤혁_논문_역할교정반영본.pdf 삭제, 00. hwpx/261002_1610_경기공학_건축안전_윤혁_논문_역할교정반영본.hwpx 추가, 00. hwpx/261002_1610_경기공학_건축안전_윤혁_논문_역할교정반영본.pdf 추가
+261002_161048 : 00. hwpx/261002_0710_경기공학_건축안전_윤혁_논문_역할교정반영본.hwpx 추가, 00. hwpx/261002_0710_경기공학_건축안전_윤혁_논문_역할교정반영본.pdf 추가
+261002_154948 : 03.plan/README.md 수정
+261002_154941 : 03.plan/260930_1120_한국어표현_수정_2차_워커브리프.md 추가
+261002_154932 : 01.docs/01_서론.md 수정, 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/설문항목_작업이력.md 수정
+261002_154907 : 01.docs/04_연구설계.md 수정
+261002_154855 : 01.docs/figures/research/figure_1-3_research_flow.png 수정, 01.docs/figures/research/figure_1-3_research_flow.svg 수정, 01.docs/figures/research/figure_4-1_research_model.png 수정, 01.docs/figures/research/figure_4-1_research_model.svg 수정, 01.docs/figures/research/generate_research_figures.py 수정
+261002_154835 : 03.plan/260930_1120_한국어표현_수정_2차_워커브리프.md 삭제
 261001_060757 : 03.plan/README.md 수정 — "| humanizer-kr 스킬 5개 판단 틀로 01.docs 서술 문단 선별 수정 후 HWPX 부분 반영(…"
 261001_060754 : 03.plan/261001_0554_humanizer-kr_원고문장_자연화_2차.md 수정 — "## 상태 - 2026-10-01 05:54 작성. 승인: 체크포인트 커밋 `e03591a`(이 PC에 gi…"
 261001_060715 : 00. hwpx/261001_0607_경기공학_건축안전_윤혁_논문_자연화2차반영본.hwpx 추가, 00. hwpx/261001_0607_경기공학_건축안전_윤혁_논문_자연화2차반영본.pdf 추가, tools/hwpx_transfer/staging/humanize_261001_0600/completion.json 추가

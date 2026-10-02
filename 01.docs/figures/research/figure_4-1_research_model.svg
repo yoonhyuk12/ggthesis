@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="163.0mm" viewBox="0 0 1500 1630">
 <title>연구 모형: 주 분석과 탐색적 보조 분석</title>
 <rect width="1500" height="100%" fill="white"/>
-<text x="50" y="65" font-family="Malgun Gothic" font-size="44" font-weight="700" fill="#243C55" text-anchor="start">H1  주 분석 · ANCOVA</text>
+<text x="50" y="65" font-family="Malgun Gothic" font-size="44" font-weight="700" fill="#243C55" text-anchor="start">H1  주 분석 · 현장 임의절편 선형혼합모형</text>
 <text x="50" y="123" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">공변량 조정 후 안전관리 실효성의 집단 간 평균 비교</text>
 <rect x="50" y="180" width="530" height="190" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
 <text x="315" y="235" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#20262D" text-anchor="middle">AI 관제 시스템 도입 집단</text>
@@ -22,7 +22,7 @@
 <text x="1137" y="566" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#58616B" text-anchor="middle">하위영역 분석은 보조 결과</text>
 <rect x="380" y="735" width="1070" height="175" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
 <text x="415" y="790" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#243C55" text-anchor="start">공변량 조정</text>
-<text x="415" y="844" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">소속 구분 · 성별 · 연령 · 경력 · 직위</text>
+<text x="415" y="844" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">소속 구분 · 성별 · 연령 · 경력 · 역할</text>
 <text x="415" y="891" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장 공사금액 규모</text>
 <polyline points="1137,735 1137,610" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="1137,610 1128.0,628.0 1146.0,628.0" fill="#243C55"/>
@@ -38,5 +38,5 @@
 <text x="90" y="1355" font-family="Malgun Gothic" font-size="35" font-weight="400" fill="#20262D" text-anchor="start">검정력 제약을 고려하여 방향·효과크기·신뢰구간 중심 해석</text>
 <text x="50" y="1465" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">실선: 주 분석 및 공변량 조정 / 점선: 탐색적 상호작용 분석</text>
 <text x="50" y="1520" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">화살표는 분석 관계를 표시하며 인과관계의 입증을 뜻하지 않는다.</text>
-<text x="50" y="1575" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">사후 설문 1회의 횡단 비교 · 개인 응답 분석 / 현장 군집성 점검</text>
+<text x="50" y="1575" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">사후 설문 1회의 횡단 비교 · 개인 응답 분석 / 현장 군집 반영</text>
 </svg>
