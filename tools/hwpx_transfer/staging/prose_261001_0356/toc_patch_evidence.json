@@ -1,0 +1,719 @@
+{
+  "changes": [
+    {
+      "section": "Contents/section1.xml",
+      "idx": 5,
+      "title": " 제2절 연구의 목적",
+      "old": 3,
+      "recommended": 2,
+      "physical": 14
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 26,
+      "title": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "old": 34,
+      "recommended": 35,
+      "physical": 47
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 27,
+      "title": " 제1절 시스템 개발 방향 및 요구사항",
+      "old": 34,
+      "recommended": 35,
+      "physical": 47
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 28,
+      "title": "  제1항 시스템 개발 개요",
+      "old": 34,
+      "recommended": 35,
+      "physical": 47
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 29,
+      "title": "  제2항 현장 요구사항",
+      "old": 35,
+      "recommended": 36,
+      "physical": 48
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 30,
+      "title": " 제2절 시스템 설계",
+      "old": 39,
+      "recommended": 40,
+      "physical": 52
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 31,
+      "title": "  제1항 전체 아키텍처",
+      "old": 39,
+      "recommended": 40,
+      "physical": 52
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 32,
+      "title": "  제2항 YOLO 탐지 및 제어",
+      "old": 41,
+      "recommended": 42,
+      "physical": 54
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 33,
+      "title": "  제3항 LLM 문맥 검증 및 현장 적응",
+      "old": 44,
+      "recommended": 45,
+      "physical": 57
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 34,
+      "title": "  제4항 경보 전파",
+      "old": 49,
+      "recommended": 50,
+      "physical": 62
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 35,
+      "title": " 제3절 시스템 구현",
+      "old": 50,
+      "recommended": 51,
+      "physical": 63
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 36,
+      "title": "  제1항 실행 환경 및 기술 스택",
+      "old": 50,
+      "recommended": 51,
+      "physical": 63
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 37,
+      "title": "  제2항 주요 기능 및 운영 안정성",
+      "old": 51,
+      "recommended": 52,
+      "physical": 64
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 38,
+      "title": "  제3항 현장 배포 및 운용 구성",
+      "old": 52,
+      "recommended": 53,
+      "physical": 65
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 39,
+      "title": " 제4절 시스템 개발의 효과 분석",
+      "old": 53,
+      "recommended": 54,
+      "physical": 66
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 40,
+      "title": "  제1항 검증 데이터셋 구축 및 평가 지표",
+      "old": 53,
+      "recommended": 54,
+      "physical": 66
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 41,
+      "title": "  제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+      "old": 56,
+      "recommended": 57,
+      "physical": 69
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 42,
+      "title": "  제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "old": 57,
+      "recommended": 58,
+      "physical": 70
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 43,
+      "title": "  제4항 적용 타당성",
+      "old": 59,
+      "recommended": 60,
+      "physical": 72
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 44,
+      "title": " 제5절 소결",
+      "old": 62,
+      "recommended": 63,
+      "physical": 75
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 45,
+      "title": "제4장 연구설계",
+      "old": 64,
+      "recommended": 65,
+      "physical": 77
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 46,
+      "title": " 제1절 연구 모형 설계",
+      "old": 64,
+      "recommended": 65,
+      "physical": 77
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 47,
+      "title": " 제2절 연구 문제 및 연구 가설",
+      "old": 68,
+      "recommended": 69,
+      "physical": 81
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 48,
+      "title": " 제3절 변수의 조작적 정의 및 측정도구 구성",
+      "old": 71,
+      "recommended": 72,
+      "physical": 84
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 49,
+      "title": "  제1항 변수의 조작적 정의",
+      "old": 71,
+      "recommended": 72,
+      "physical": 84
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 50,
+      "title": "  제2항 측정도구의 구성 및 설문 문항 도출 출처",
+      "old": 73,
+      "recommended": 74,
+      "physical": 86
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 51,
+      "title": " 제4절 설문조사 설계 및 척도 검증",
+      "old": 75,
+      "recommended": 76,
+      "physical": 88
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 52,
+      "title": "  제1항 설문조사의 개요 및 절차",
+      "old": 75,
+      "recommended": 76,
+      "physical": 88
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 53,
+      "title": "  제2항 변수별 설문 문항 요약",
+      "old": 76,
+      "recommended": 77,
+      "physical": 89
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 54,
+      "title": "  제3항 본 설문지의 최종 구성",
+      "old": 82,
+      "recommended": 83,
+      "physical": 95
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 55,
+      "title": " 제5절 자료 수집과 분석방법",
+      "old": 83,
+      "recommended": 84,
+      "physical": 96
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 56,
+      "title": "  제1항 데이터 수집 표본 설계",
+      "old": 83,
+      "recommended": 84,
+      "physical": 96
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 57,
+      "title": "  제2항 분석 절차",
+      "old": 86,
+      "recommended": 87,
+      "physical": 99
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 58,
+      "title": "제5장 실증분석 결과",
+      "old": 91,
+      "recommended": 92,
+      "physical": 104
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 59,
+      "title": " 제1절 조사 대상자의 인구통계학적 특성",
+      "old": 91,
+      "recommended": 92,
+      "physical": 104
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 60,
+      "title": " 제2절 측정도구의 신뢰도 및 타당도 검증",
+      "old": 94,
+      "recommended": 95,
+      "physical": 107
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 61,
+      "title": " 제3절 기술통계 및 사전 특성 분포·균형 진단",
+      "old": 97,
+      "recommended": 98,
+      "physical": 110
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 62,
+      "title": "  제1항 주요 변수의 기술통계",
+      "old": 97,
+      "recommended": 98,
+      "physical": 110
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 63,
+      "title": "  제2항 두 집단의 사전 특성 분포·균형 진단",
+      "old": 99,
+      "recommended": 100,
+      "physical": 112
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 64,
+      "title": " 제4절 가설 검정: 현장 임의절편 선형혼합모형",
+      "old": 101,
+      "recommended": 102,
+      "physical": 114
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 65,
+      "title": "  제1항 혼합모형 가정 및 적합 상태 점검",
+      "old": 101,
+      "recommended": 102,
+      "physical": 114
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 66,
+      "title": "  제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형",
+      "old": 103,
+      "recommended": 104,
+      "physical": 116
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 67,
+      "title": "  제3항 안전관리 실효성 하위영역별 혼합모형",
+      "old": 105,
+      "recommended": 106,
+      "physical": 118
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 68,
+      "title": " 제5절 탐색적 보조 분석",
+      "old": 106,
+      "recommended": 107,
+      "physical": 119
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 69,
+      "title": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "old": 107,
+      "recommended": 108,
+      "physical": 120
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 70,
+      "title": " 제6절 연구 결과 및 논의",
+      "old": 109,
+      "recommended": 110,
+      "physical": 122
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 71,
+      "title": "  제1항 연구 결과 종합",
+      "old": 109,
+      "recommended": 110,
+      "physical": 122
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 72,
+      "title": "  제2항 논의",
+      "old": 110,
+      "recommended": 111,
+      "physical": 123
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 73,
+      "title": "제6장 결론",
+      "old": 114,
+      "recommended": 115,
+      "physical": 127
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 74,
+      "title": "참고문헌",
+      "old": 117,
+      "recommended": 118,
+      "physical": 130
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 75,
+      "title": "부   록 (도입 현장)",
+      "old": 123,
+      "recommended": 124,
+      "physical": 136
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 76,
+      "title": " Part A. 인구통계학적 특성",
+      "old": 125,
+      "recommended": 126,
+      "physical": 138
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 77,
+      "title": " Part B. 안전관리 실효성",
+      "old": 126,
+      "recommended": 127,
+      "physical": 139
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 78,
+      "title": " Part C. 안전관리 예산 제약성",
+      "old": 128,
+      "recommended": 129,
+      "physical": 141
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 79,
+      "title": " 도입 현장 전용부",
+      "old": 129,
+      "recommended": 130,
+      "physical": 142
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 80,
+      "title": " Part D. 시스템 특성 인식",
+      "old": 129,
+      "recommended": 130,
+      "physical": 142
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 81,
+      "title": " Part E. 경보 피로도 완화",
+      "old": 130,
+      "recommended": 131,
+      "physical": 143
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 82,
+      "title": "부   록 (미도입 현장)",
+      "old": 132,
+      "recommended": 133,
+      "physical": 145
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 83,
+      "title": " Part A. 인구통계학적 특성",
+      "old": 134,
+      "recommended": 135,
+      "physical": 147
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 84,
+      "title": " Part B. 안전관리 실효성",
+      "old": 135,
+      "recommended": 136,
+      "physical": 148
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 85,
+      "title": " Part C. 안전관리 예산 제약성",
+      "old": 137,
+      "recommended": 138,
+      "physical": 150
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 86,
+      "title": "Abstract",
+      "old": 138,
+      "recommended": 139,
+      "physical": 151
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 98,
+      "title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "old": 38,
+      "recommended": 39,
+      "physical": 51
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 99,
+      "title": "<표 3-2> 시스템 모듈 구성과 역할",
+      "old": 41,
+      "recommended": 42,
+      "physical": 54
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 100,
+      "title": "<표 3-3> 시스템 구현 기술 스택",
+      "old": 51,
+      "recommended": 52,
+      "physical": 64
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 101,
+      "title": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "old": 55,
+      "recommended": 56,
+      "physical": 68
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 102,
+      "title": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "old": 56,
+      "recommended": 57,
+      "physical": 69
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 103,
+      "title": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "old": 57,
+      "recommended": 58,
+      "physical": 70
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 104,
+      "title": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "old": 58,
+      "recommended": 59,
+      "physical": 71
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 105,
+      "title": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)",
+      "old": 60,
+      "recommended": 61,
+      "physical": 73
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 106,
+      "title": "<표 4-1> 연구변수의 구성",
+      "old": 66,
+      "recommended": 67,
+      "physical": 79
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 107,
+      "title": "<표 4-2> 연구 가설 종합",
+      "old": 70,
+      "recommended": 71,
+      "physical": 83
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 108,
+      "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "old": 74,
+      "recommended": 75,
+      "physical": 87
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 109,
+      "title": "<표 4-4> 설문지의 최종 구성",
+      "old": 83,
+      "recommended": 84,
+      "physical": 96
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 110,
+      "title": "<표 4-5> 자료 수집 개요",
+      "old": 86,
+      "recommended": 87,
+      "physical": 99
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 111,
+      "title": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "old": 93,
+      "recommended": 94,
+      "physical": 106
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 112,
+      "title": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "old": 95,
+      "recommended": 96,
+      "physical": 108
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 113,
+      "title": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "old": 97,
+      "recommended": 98,
+      "physical": 110
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 114,
+      "title": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "old": 99,
+      "recommended": 100,
+      "physical": 112
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 115,
+      "title": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "old": 102,
+      "recommended": 103,
+      "physical": 115
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 116,
+      "title": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "old": 103,
+      "recommended": 104,
+      "physical": 116
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 117,
+      "title": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "old": 105,
+      "recommended": 106,
+      "physical": 118
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 118,
+      "title": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "old": 107,
+      "recommended": 108,
+      "physical": 120
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 119,
+      "title": "<표 5-9> 연구 가설 검증 결과 종합",
+      "old": 109,
+      "recommended": 110,
+      "physical": 122
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 124,
+      "title": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "old": 40,
+      "recommended": 41,
+      "physical": 53
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 125,
+      "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "old": 45,
+      "recommended": 46,
+      "physical": 58
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 126,
+      "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "old": 48,
+      "recommended": 49,
+      "physical": 61
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 127,
+      "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "old": 52,
+      "recommended": 53,
+      "physical": 65
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 128,
+      "title": "<그림 4-1> 연구 모형",
+      "old": 67,
+      "recommended": 68,
+      "physical": 80
+    }
+  ],
+  "entries": [
+    "Contents/section1.xml"
+  ]
+}

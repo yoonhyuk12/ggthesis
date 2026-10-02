@@ -1,0 +1,611 @@
+{
+  "same_body_image_pages": 148,
+  "same_pages": [
+    {
+      "final": 1,
+      "old": 1
+    },
+    {
+      "final": 2,
+      "old": 2
+    },
+    {
+      "final": 3,
+      "old": 3
+    },
+    {
+      "final": 5,
+      "old": 5
+    },
+    {
+      "final": 6,
+      "old": 6
+    },
+    {
+      "final": 7,
+      "old": 7
+    },
+    {
+      "final": 8,
+      "old": 8
+    },
+    {
+      "final": 9,
+      "old": 9
+    },
+    {
+      "final": 10,
+      "old": 10
+    },
+    {
+      "final": 11,
+      "old": 11
+    },
+    {
+      "final": 12,
+      "old": 12
+    },
+    {
+      "final": 13,
+      "old": 13
+    },
+    {
+      "final": 14,
+      "old": 14
+    },
+    {
+      "final": 15,
+      "old": 15
+    },
+    {
+      "final": 16,
+      "old": 16
+    },
+    {
+      "final": 17,
+      "old": 17
+    },
+    {
+      "final": 18,
+      "old": 18
+    },
+    {
+      "final": 19,
+      "old": 19
+    },
+    {
+      "final": 20,
+      "old": 20
+    },
+    {
+      "final": 21,
+      "old": 21
+    },
+    {
+      "final": 22,
+      "old": 22
+    },
+    {
+      "final": 23,
+      "old": 23
+    },
+    {
+      "final": 24,
+      "old": 24
+    },
+    {
+      "final": 25,
+      "old": 25
+    },
+    {
+      "final": 26,
+      "old": 26
+    },
+    {
+      "final": 27,
+      "old": 27
+    },
+    {
+      "final": 28,
+      "old": 28
+    },
+    {
+      "final": 29,
+      "old": 29
+    },
+    {
+      "final": 30,
+      "old": 30
+    },
+    {
+      "final": 31,
+      "old": 31
+    },
+    {
+      "final": 32,
+      "old": 32
+    },
+    {
+      "final": 33,
+      "old": 33
+    },
+    {
+      "final": 34,
+      "old": 34
+    },
+    {
+      "final": 35,
+      "old": 35
+    },
+    {
+      "final": 36,
+      "old": 36
+    },
+    {
+      "final": 37,
+      "old": 37
+    },
+    {
+      "final": 38,
+      "old": 38
+    },
+    {
+      "final": 39,
+      "old": 39
+    },
+    {
+      "final": 40,
+      "old": 40
+    },
+    {
+      "final": 41,
+      "old": 41
+    },
+    {
+      "final": 42,
+      "old": 42
+    },
+    {
+      "final": 43,
+      "old": 43
+    },
+    {
+      "final": 44,
+      "old": 44
+    },
+    {
+      "final": 46,
+      "old": 47
+    },
+    {
+      "final": 47,
+      "old": 48
+    },
+    {
+      "final": 48,
+      "old": 49
+    },
+    {
+      "final": 49,
+      "old": 50
+    },
+    {
+      "final": 50,
+      "old": 51
+    },
+    {
+      "final": 51,
+      "old": 52
+    },
+    {
+      "final": 52,
+      "old": 53
+    },
+    {
+      "final": 53,
+      "old": 54
+    },
+    {
+      "final": 54,
+      "old": 55
+    },
+    {
+      "final": 55,
+      "old": 56
+    },
+    {
+      "final": 56,
+      "old": 57
+    },
+    {
+      "final": 57,
+      "old": 58
+    },
+    {
+      "final": 58,
+      "old": 59
+    },
+    {
+      "final": 59,
+      "old": 60
+    },
+    {
+      "final": 60,
+      "old": 61
+    },
+    {
+      "final": 61,
+      "old": 62
+    },
+    {
+      "final": 62,
+      "old": 63
+    },
+    {
+      "final": 63,
+      "old": 64
+    },
+    {
+      "final": 64,
+      "old": 65
+    },
+    {
+      "final": 65,
+      "old": 66
+    },
+    {
+      "final": 66,
+      "old": 67
+    },
+    {
+      "final": 67,
+      "old": 68
+    },
+    {
+      "final": 68,
+      "old": 69
+    },
+    {
+      "final": 69,
+      "old": 70
+    },
+    {
+      "final": 70,
+      "old": 71
+    },
+    {
+      "final": 71,
+      "old": 72
+    },
+    {
+      "final": 72,
+      "old": 73
+    },
+    {
+      "final": 73,
+      "old": 74
+    },
+    {
+      "final": 74,
+      "old": 75
+    },
+    {
+      "final": 75,
+      "old": 76
+    },
+    {
+      "final": 76,
+      "old": 77
+    },
+    {
+      "final": 77,
+      "old": 78
+    },
+    {
+      "final": 78,
+      "old": 79
+    },
+    {
+      "final": 79,
+      "old": 80
+    },
+    {
+      "final": 80,
+      "old": 81
+    },
+    {
+      "final": 81,
+      "old": 82
+    },
+    {
+      "final": 82,
+      "old": 83
+    },
+    {
+      "final": 83,
+      "old": 84
+    },
+    {
+      "final": 84,
+      "old": 85
+    },
+    {
+      "final": 85,
+      "old": 86
+    },
+    {
+      "final": 86,
+      "old": 87
+    },
+    {
+      "final": 87,
+      "old": 88
+    },
+    {
+      "final": 88,
+      "old": 89
+    },
+    {
+      "final": 89,
+      "old": 90
+    },
+    {
+      "final": 90,
+      "old": 91
+    },
+    {
+      "final": 91,
+      "old": 92
+    },
+    {
+      "final": 92,
+      "old": 93
+    },
+    {
+      "final": 93,
+      "old": 94
+    },
+    {
+      "final": 94,
+      "old": 95
+    },
+    {
+      "final": 95,
+      "old": 96
+    },
+    {
+      "final": 96,
+      "old": 97
+    },
+    {
+      "final": 97,
+      "old": 98
+    },
+    {
+      "final": 98,
+      "old": 99
+    },
+    {
+      "final": 99,
+      "old": 100
+    },
+    {
+      "final": 100,
+      "old": 101
+    },
+    {
+      "final": 101,
+      "old": 102
+    },
+    {
+      "final": 102,
+      "old": 103
+    },
+    {
+      "final": 103,
+      "old": 104
+    },
+    {
+      "final": 104,
+      "old": 105
+    },
+    {
+      "final": 105,
+      "old": 106
+    },
+    {
+      "final": 106,
+      "old": 107
+    },
+    {
+      "final": 107,
+      "old": 108
+    },
+    {
+      "final": 108,
+      "old": 109
+    },
+    {
+      "final": 109,
+      "old": 110
+    },
+    {
+      "final": 110,
+      "old": 111
+    },
+    {
+      "final": 111,
+      "old": 112
+    },
+    {
+      "final": 112,
+      "old": 113
+    },
+    {
+      "final": 113,
+      "old": 114
+    },
+    {
+      "final": 114,
+      "old": 115
+    },
+    {
+      "final": 115,
+      "old": 116
+    },
+    {
+      "final": 116,
+      "old": 117
+    },
+    {
+      "final": 117,
+      "old": 118
+    },
+    {
+      "final": 118,
+      "old": 119
+    },
+    {
+      "final": 119,
+      "old": 120
+    },
+    {
+      "final": 120,
+      "old": 121
+    },
+    {
+      "final": 121,
+      "old": 122
+    },
+    {
+      "final": 122,
+      "old": 123
+    },
+    {
+      "final": 123,
+      "old": 124
+    },
+    {
+      "final": 124,
+      "old": 125
+    },
+    {
+      "final": 125,
+      "old": 126
+    },
+    {
+      "final": 126,
+      "old": 127
+    },
+    {
+      "final": 127,
+      "old": 128
+    },
+    {
+      "final": 128,
+      "old": 129
+    },
+    {
+      "final": 129,
+      "old": 130
+    },
+    {
+      "final": 130,
+      "old": 131
+    },
+    {
+      "final": 131,
+      "old": 132
+    },
+    {
+      "final": 132,
+      "old": 133
+    },
+    {
+      "final": 133,
+      "old": 134
+    },
+    {
+      "final": 134,
+      "old": 135
+    },
+    {
+      "final": 135,
+      "old": 136
+    },
+    {
+      "final": 136,
+      "old": 137
+    },
+    {
+      "final": 137,
+      "old": 138
+    },
+    {
+      "final": 138,
+      "old": 139
+    },
+    {
+      "final": 139,
+      "old": 140
+    },
+    {
+      "final": 140,
+      "old": 141
+    },
+    {
+      "final": 141,
+      "old": 142
+    },
+    {
+      "final": 142,
+      "old": 143
+    },
+    {
+      "final": 143,
+      "old": 144
+    },
+    {
+      "final": 144,
+      "old": 145
+    },
+    {
+      "final": 145,
+      "old": 146
+    },
+    {
+      "final": 146,
+      "old": 147
+    },
+    {
+      "final": 147,
+      "old": 148
+    },
+    {
+      "final": 148,
+      "old": 149
+    },
+    {
+      "final": 149,
+      "old": 150
+    },
+    {
+      "final": 150,
+      "old": 151
+    }
+  ],
+  "changed": [
+    {
+      "final": 4,
+      "old": 4
+    },
+    {
+      "final": 45,
+      "old": 45,
+      "reason": "local typography + moved final line"
+    }
+  ],
+  "method": "Compare complete page image above detected printed-footer bbox; align pages after removed orphan page using matching actual content, not folio inference",
+  "old_pages": 151,
+  "final_pages": 150
+}

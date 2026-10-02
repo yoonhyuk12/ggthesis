@@ -1,0 +1,1005 @@
+{
+  "ok": true,
+  "counts": {
+    "replacements": 165,
+    "conflicts": 0,
+    "already_present": 0,
+    "dispositions": 164,
+    "md_paragraphs_ready": 164
+  },
+  "unsafe": [],
+  "paragraphs": [
+    {
+      "section": "Contents/section2.xml",
+      "idx": 4,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 5,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 6,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 7,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 24,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 25,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 26,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 30,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 31,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 35,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 42,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 43,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 44,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 45,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 46,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 47,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 51,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 52,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 53,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 54,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 55,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 148,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 153,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 154,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 156,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 157,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 159,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 160,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 161,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 180,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 181,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 216,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 222,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 224,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 225,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 229,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 230,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 231,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 237,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 238,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 239,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 240,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 244,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 245,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 246,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 252,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 282,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 286,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 287,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 288,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 395,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 400,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 401,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 406,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 407,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 408,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 409,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 417,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 418,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 419,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 423,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 424,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 426,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 427,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 428,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 466,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 472,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 504,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 508,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 509,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 510,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 511,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 515,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 517,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 521,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 523,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 524,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 526,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 527,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 534,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 536,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 572,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 573,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 584,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 588,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 589,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 590,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 591,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 592,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 682,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 686,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 734,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 735,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 736,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 774,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 778,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 779,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 786,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 787,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 788,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 789,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 790,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 791,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 817,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 821,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 824,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 828,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 860,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 861,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 862,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 863,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1133,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1134,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1139,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1140,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1141,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1142,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1172,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1173,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1174,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1175,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1176,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1177,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1178,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1182,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1183,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1184,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1187,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1188,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1192,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1193,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1396,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1400,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1478,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1745,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1746,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1796,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1800,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1920,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1924,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2021,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2025,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2126,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2132,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2154,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2158,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2159,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2160,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2161,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2162,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2163,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2164,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2165,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2169,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2170,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2171,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2172,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2173,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2174,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2175,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 2176,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 924,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 925,
+      "fragments": 1,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 518,
+      "fragments": 2,
+      "sentences": 1
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 535,
+      "fragments": 1,
+      "sentences": 1
+    }
+  ],
+  "source_sha256": "56caa8ab7dbe194b8dbf4c0e3121d2f1e1d960843ecd45ca41f79ea286c0f05e",
+  "mode": "preflight"
+}

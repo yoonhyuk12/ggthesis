@@ -1,0 +1,5964 @@
+{
+  "source_toc_count": 120,
+  "expected_target_count": 120,
+  "source_titles_match": true,
+  "source_title_mismatches": [],
+  "entries": [
+    {
+      "section": "Contents/section1.xml",
+      "idx": 3,
+      "title": "제1장 서론",
+      "current_folio": 1,
+      "text": "제1장 서론1",
+      "kind": "heading",
+      "body_text": "제1장 서론",
+      "candidates": [
+        {
+          "physical": 13,
+          "printed": 1,
+          "y": 106.92314910888672
+        }
+      ],
+      "selected": {
+        "physical": 13,
+        "printed": 1,
+        "y": 106.92314910888672
+      },
+      "final_current_folio": 1,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 4,
+      "title": " 제1절 연구의 배경 및 필요성",
+      "current_folio": 1,
+      "text": " 제1절 연구의 배경 및 필요성1",
+      "kind": "heading",
+      "body_text": "제1절 연구의 배경 및 필요성",
+      "candidates": [
+        {
+          "physical": 13,
+          "printed": 1,
+          "y": 151.8740234375
+        }
+      ],
+      "selected": {
+        "physical": 13,
+        "printed": 1,
+        "y": 151.8740234375
+      },
+      "final_current_folio": 1,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 5,
+      "title": " 제2절 연구의 목적",
+      "current_folio": 3,
+      "text": " 제2절 연구의 목적3",
+      "kind": "heading",
+      "body_text": "제2절 연구의 목적",
+      "candidates": [
+        {
+          "physical": 14,
+          "printed": 2,
+          "y": 624.0380249023438
+        }
+      ],
+      "selected": {
+        "physical": 14,
+        "printed": 2,
+        "y": 624.0380249023438
+      },
+      "final_current_folio": 3,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 6,
+      "title": " 제3절 연구의 범위 및 방법",
+      "current_folio": 3,
+      "text": " 제3절 연구의 범위 및 방법3",
+      "kind": "heading",
+      "body_text": "제3절 연구의 범위 및 방법",
+      "candidates": [
+        {
+          "physical": 15,
+          "printed": 3,
+          "y": 537.9720458984375
+        }
+      ],
+      "selected": {
+        "physical": 15,
+        "printed": 3,
+        "y": 537.9720458984375
+      },
+      "final_current_folio": 3,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 7,
+      "title": "제2장 이론적 배경",
+      "current_folio": 6,
+      "text": "제2장 이론적 배경6",
+      "kind": "heading",
+      "body_text": "제2장 이론적 배경",
+      "candidates": [
+        {
+          "physical": 18,
+          "printed": 6,
+          "y": 106.92314910888672
+        }
+      ],
+      "selected": {
+        "physical": 18,
+        "printed": 6,
+        "y": 106.92314910888672
+      },
+      "final_current_folio": 6,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 8,
+      "title": " 제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+      "current_folio": 6,
+      "text": " 제1절 스마트 건설 안전관리와 AI 영상관제 기술6",
+      "kind": "heading",
+      "body_text": "제1절 스마트 건설 안전관리와 AI 영상관제 기술",
+      "candidates": [
+        {
+          "physical": 18,
+          "printed": 6,
+          "y": 157.7476043701172
+        }
+      ],
+      "selected": {
+        "physical": 18,
+        "printed": 6,
+        "y": 157.7476043701172
+      },
+      "final_current_folio": 6,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 9,
+      "title": "  제1항 개념 및 정의",
+      "current_folio": 6,
+      "text": "  제1항 개념 및 정의6",
+      "kind": "heading",
+      "body_text": "제1항 개념 및 정의",
+      "candidates": [
+        {
+          "physical": 18,
+          "printed": 6,
+          "y": 206.77401733398438
+        },
+        {
+          "physical": 29,
+          "printed": 17,
+          "y": 173.690185546875
+        },
+        {
+          "physical": 31,
+          "printed": 19,
+          "y": 400.9617919921875
+        },
+        {
+          "physical": 34,
+          "printed": 22,
+          "y": 173.690185546875
+        }
+      ],
+      "selected": {
+        "physical": 18,
+        "printed": 6,
+        "y": 206.77401733398438
+      },
+      "final_current_folio": 6,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 10,
+      "title": "  제2항 국내·외 선행연구",
+      "current_folio": 8,
+      "text": "  제2항 국내·외 선행연구8",
+      "kind": "heading",
+      "body_text": "제2항 국내·외 선행연구",
+      "candidates": [
+        {
+          "physical": 20,
+          "printed": 8,
+          "y": 417.1441345214844
+        },
+        {
+          "physical": 30,
+          "printed": 18,
+          "y": 413.0685729980469
+        },
+        {
+          "physical": 33,
+          "printed": 21,
+          "y": 124.90350341796875
+        },
+        {
+          "physical": 37,
+          "printed": 25,
+          "y": 124.90350341796875
+        }
+      ],
+      "selected": {
+        "physical": 20,
+        "printed": 8,
+        "y": 417.1441345214844
+      },
+      "final_current_folio": 8,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 11,
+      "title": "  제3항 시스템 기술 특성 하위요인",
+      "current_folio": 12,
+      "text": "  제3항 시스템 기술 특성 하위요인12",
+      "kind": "heading",
+      "body_text": "제3항 시스템 기술 특성 하위요인",
+      "candidates": [
+        {
+          "physical": 24,
+          "printed": 12,
+          "y": 248.84805297851562
+        }
+      ],
+      "selected": {
+        "physical": 24,
+        "printed": 12,
+        "y": 248.84805297851562
+      },
+      "final_current_folio": 12,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 12,
+      "title": " 제2절 안전관리 실효성",
+      "current_folio": 17,
+      "text": " 제2절 안전관리 실효성17",
+      "kind": "heading",
+      "body_text": "제2절 안전관리 실효성",
+      "candidates": [
+        {
+          "physical": 29,
+          "printed": 17,
+          "y": 124.78362274169922
+        }
+      ],
+      "selected": {
+        "physical": 29,
+        "printed": 17,
+        "y": 124.78362274169922
+      },
+      "final_current_folio": 17,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 13,
+      "title": "  제1항 개념 및 정의",
+      "current_folio": 17,
+      "text": "  제1항 개념 및 정의17",
+      "kind": "heading",
+      "body_text": "제1항 개념 및 정의",
+      "candidates": [
+        {
+          "physical": 29,
+          "printed": 17,
+          "y": 173.690185546875
+        },
+        {
+          "physical": 31,
+          "printed": 19,
+          "y": 400.9617919921875
+        },
+        {
+          "physical": 34,
+          "printed": 22,
+          "y": 173.690185546875
+        }
+      ],
+      "selected": {
+        "physical": 29,
+        "printed": 17,
+        "y": 173.690185546875
+      },
+      "final_current_folio": 17,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 14,
+      "title": "  제2항 국내·외 선행연구",
+      "current_folio": 18,
+      "text": "  제2항 국내·외 선행연구18",
+      "kind": "heading",
+      "body_text": "제2항 국내·외 선행연구",
+      "candidates": [
+        {
+          "physical": 30,
+          "printed": 18,
+          "y": 413.0685729980469
+        },
+        {
+          "physical": 33,
+          "printed": 21,
+          "y": 124.90350341796875
+        },
+        {
+          "physical": 37,
+          "printed": 25,
+          "y": 124.90350341796875
+        }
+      ],
+      "selected": {
+        "physical": 30,
+        "printed": 18,
+        "y": 413.0685729980469
+      },
+      "final_current_folio": 18,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 15,
+      "title": " 제3절 경보 피로도",
+      "current_folio": 19,
+      "text": " 제3절 경보 피로도19",
+      "kind": "heading",
+      "body_text": "제3절 경보 피로도",
+      "candidates": [
+        {
+          "physical": 31,
+          "printed": 19,
+          "y": 352.05523681640625
+        }
+      ],
+      "selected": {
+        "physical": 31,
+        "printed": 19,
+        "y": 352.05523681640625
+      },
+      "final_current_folio": 19,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 16,
+      "title": "  제1항 개념 및 정의",
+      "current_folio": 19,
+      "text": "  제1항 개념 및 정의19",
+      "kind": "heading",
+      "body_text": "제1항 개념 및 정의",
+      "candidates": [
+        {
+          "physical": 31,
+          "printed": 19,
+          "y": 400.9617919921875
+        },
+        {
+          "physical": 34,
+          "printed": 22,
+          "y": 173.690185546875
+        }
+      ],
+      "selected": {
+        "physical": 31,
+        "printed": 19,
+        "y": 400.9617919921875
+      },
+      "final_current_folio": 19,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 17,
+      "title": "  제2항 국내·외 선행연구",
+      "current_folio": 21,
+      "text": "  제2항 국내·외 선행연구21",
+      "kind": "heading",
+      "body_text": "제2항 국내·외 선행연구",
+      "candidates": [
+        {
+          "physical": 33,
+          "printed": 21,
+          "y": 124.90350341796875
+        },
+        {
+          "physical": 37,
+          "printed": 25,
+          "y": 124.90350341796875
+        }
+      ],
+      "selected": {
+        "physical": 33,
+        "printed": 21,
+        "y": 124.90350341796875
+      },
+      "final_current_folio": 21,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 18,
+      "title": " 제4절 안전관리 예산 제약성",
+      "current_folio": 22,
+      "text": " 제4절 안전관리 예산 제약성22",
+      "kind": "heading",
+      "body_text": "제4절 안전관리 예산 제약성",
+      "candidates": [
+        {
+          "physical": 34,
+          "printed": 22,
+          "y": 124.78362274169922
+        }
+      ],
+      "selected": {
+        "physical": 34,
+        "printed": 22,
+        "y": 124.78362274169922
+      },
+      "final_current_folio": 22,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 19,
+      "title": "  제1항 개념 및 정의",
+      "current_folio": 22,
+      "text": "  제1항 개념 및 정의22",
+      "kind": "heading",
+      "body_text": "제1항 개념 및 정의",
+      "candidates": [
+        {
+          "physical": 34,
+          "printed": 22,
+          "y": 173.690185546875
+        }
+      ],
+      "selected": {
+        "physical": 34,
+        "printed": 22,
+        "y": 173.690185546875
+      },
+      "final_current_folio": 22,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 20,
+      "title": "  제2항 국내·외 선행연구",
+      "current_folio": 25,
+      "text": "  제2항 국내·외 선행연구25",
+      "kind": "heading",
+      "body_text": "제2항 국내·외 선행연구",
+      "candidates": [
+        {
+          "physical": 37,
+          "printed": 25,
+          "y": 124.90350341796875
+        }
+      ],
+      "selected": {
+        "physical": 37,
+        "printed": 25,
+        "y": 124.90350341796875
+      },
+      "final_current_folio": 25,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 21,
+      "title": " 제5절 스마트 안전기술 도입 효과 선행연구 고찰(연구 가설 도출 근거)",
+      "current_folio": 26,
+      "text": " 제5절 스마트 안전기술 도입 효과 선행연구 고찰(연구 가설 도출 근거)26",
+      "kind": "heading",
+      "body_text": "제5절 스마트 안전기술 도입 효과 선행연구 고찰(연구 가설 도출 근거)",
+      "candidates": [
+        {
+          "physical": 38,
+          "printed": 26,
+          "y": 124.78362274169922
+        }
+      ],
+      "selected": {
+        "physical": 38,
+        "printed": 26,
+        "y": 124.78362274169922
+      },
+      "final_current_folio": 26,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 22,
+      "title": "  제1항 현장 작동성과 경보 전달의 메커니즘",
+      "current_folio": 26,
+      "text": "  제1항 현장 작동성과 경보 전달의 메커니즘26",
+      "kind": "heading",
+      "body_text": "제1항 현장 작동성과 경보 전달의 메커니즘",
+      "candidates": [
+        {
+          "physical": 38,
+          "printed": 26,
+          "y": 642.8574829101562
+        }
+      ],
+      "selected": {
+        "physical": 38,
+        "printed": 26,
+        "y": 642.8574829101562
+      },
+      "final_current_folio": 26,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 23,
+      "title": "  제2항 스마트 안전기술 도입과 안전관리 실효성의 관계",
+      "current_folio": 29,
+      "text": "  제2항 스마트 안전기술 도입과 안전관리 실효성의 관계29",
+      "kind": "heading",
+      "body_text": "제2항 스마트 안전기술 도입과 안전관리 실효성의 관계",
+      "candidates": [
+        {
+          "physical": 41,
+          "printed": 29,
+          "y": 228.23057556152344
+        }
+      ],
+      "selected": {
+        "physical": 41,
+        "printed": 29,
+        "y": 228.23057556152344
+      },
+      "final_current_folio": 29,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 24,
+      "title": "  제3항 안전관리 예산 제약성과 도입 효과의 관계",
+      "current_folio": 31,
+      "text": "  제3항 안전관리 예산 제약성과 도입 효과의 관계31",
+      "kind": "heading",
+      "body_text": "제3항 안전관리 예산 제약성과 도입 효과의 관계",
+      "candidates": [
+        {
+          "physical": 43,
+          "printed": 31,
+          "y": 425.5349426269531
+        }
+      ],
+      "selected": {
+        "physical": 43,
+        "printed": 31,
+        "y": 425.5349426269531
+      },
+      "final_current_folio": 31,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 25,
+      "title": " 제6절 소결",
+      "current_folio": 33,
+      "text": " 제6절 소결33",
+      "kind": "heading",
+      "body_text": "제6절 소결",
+      "candidates": [
+        {
+          "physical": 45,
+          "printed": 33,
+          "y": 123.7048110961914
+        }
+      ],
+      "selected": {
+        "physical": 45,
+        "printed": 33,
+        "y": 123.7048110961914
+      },
+      "final_current_folio": 33,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 26,
+      "title": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "current_folio": 34,
+      "text": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발34",
+      "kind": "heading",
+      "body_text": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "candidates": [
+        {
+          "physical": 47,
+          "printed": 35,
+          "y": 127.66049194335938
+        }
+      ],
+      "selected": {
+        "physical": 47,
+        "printed": 35,
+        "y": 127.66049194335938
+      },
+      "final_current_folio": 34,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 27,
+      "title": " 제1절 시스템 개발 방향 및 요구사항",
+      "current_folio": 34,
+      "text": " 제1절 시스템 개발 방향 및 요구사항34",
+      "kind": "heading",
+      "body_text": "제1절 시스템 개발 방향 및 요구사항",
+      "candidates": [
+        {
+          "physical": 47,
+          "printed": 35,
+          "y": 178.48495483398438
+        }
+      ],
+      "selected": {
+        "physical": 47,
+        "printed": 35,
+        "y": 178.48495483398438
+      },
+      "final_current_folio": 34,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 28,
+      "title": "  제1항 시스템 개발 개요",
+      "current_folio": 34,
+      "text": "  제1항 시스템 개발 개요34",
+      "kind": "heading",
+      "body_text": "제1항 시스템 개발 개요",
+      "candidates": [
+        {
+          "physical": 47,
+          "printed": 35,
+          "y": 227.39149475097656
+        }
+      ],
+      "selected": {
+        "physical": 47,
+        "printed": 35,
+        "y": 227.39149475097656
+      },
+      "final_current_folio": 34,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 29,
+      "title": "  제2항 현장 요구사항",
+      "current_folio": 35,
+      "text": "  제2항 현장 요구사항35",
+      "kind": "heading",
+      "body_text": "제2항 현장 요구사항",
+      "candidates": [
+        {
+          "physical": 48,
+          "printed": 36,
+          "y": 290.2028503417969
+        }
+      ],
+      "selected": {
+        "physical": 48,
+        "printed": 36,
+        "y": 290.2028503417969
+      },
+      "final_current_folio": 35,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 30,
+      "title": " 제2절 시스템 설계",
+      "current_folio": 39,
+      "text": " 제2절 시스템 설계39",
+      "kind": "heading",
+      "body_text": "제2절 시스템 설계",
+      "candidates": [
+        {
+          "physical": 52,
+          "printed": 40,
+          "y": 189.7526397705078
+        }
+      ],
+      "selected": {
+        "physical": 52,
+        "printed": 40,
+        "y": 189.7526397705078
+      },
+      "final_current_folio": 39,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 31,
+      "title": "  제1항 전체 아키텍처",
+      "current_folio": 39,
+      "text": "  제1항 전체 아키텍처39",
+      "kind": "heading",
+      "body_text": "제1항 전체 아키텍처",
+      "candidates": [
+        {
+          "physical": 52,
+          "printed": 40,
+          "y": 238.6591796875
+        }
+      ],
+      "selected": {
+        "physical": 52,
+        "printed": 40,
+        "y": 238.6591796875
+      },
+      "final_current_folio": 39,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 32,
+      "title": "  제2항 YOLO 탐지 및 제어",
+      "current_folio": 41,
+      "text": "  제2항 YOLO 탐지 및 제어41",
+      "kind": "heading",
+      "body_text": "제2항 YOLO 탐지 및 제어",
+      "candidates": [
+        {
+          "physical": 54,
+          "printed": 42,
+          "y": 498.1755676269531
+        }
+      ],
+      "selected": {
+        "physical": 54,
+        "printed": 42,
+        "y": 498.1755676269531
+      },
+      "final_current_folio": 41,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 33,
+      "title": "  제3항 LLM 문맥 검증 및 현장 적응",
+      "current_folio": 44,
+      "text": "  제3항 LLM 문맥 검증 및 현장 적응44",
+      "kind": "heading",
+      "body_text": "제3항 LLM 문맥 검증 및 현장 적응",
+      "candidates": [
+        {
+          "physical": 57,
+          "printed": 45,
+          "y": 127.90022277832031
+        }
+      ],
+      "selected": {
+        "physical": 57,
+        "printed": 45,
+        "y": 127.90022277832031
+      },
+      "final_current_folio": 44,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 34,
+      "title": "  제4항 경보 전파",
+      "current_folio": 49,
+      "text": "  제4항 경보 전파49",
+      "kind": "heading",
+      "body_text": "제4항 경보 전파",
+      "candidates": [
+        {
+          "physical": 62,
+          "printed": 50,
+          "y": 189.87249755859375
+        }
+      ],
+      "selected": {
+        "physical": 62,
+        "printed": 50,
+        "y": 189.87249755859375
+      },
+      "final_current_folio": 49,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 35,
+      "title": " 제3절 시스템 구현",
+      "current_folio": 50,
+      "text": " 제3절 시스템 구현50",
+      "kind": "heading",
+      "body_text": "제3절 시스템 구현",
+      "candidates": [
+        {
+          "physical": 63,
+          "printed": 51,
+          "y": 251.7248992919922
+        }
+      ],
+      "selected": {
+        "physical": 63,
+        "printed": 51,
+        "y": 251.7248992919922
+      },
+      "final_current_folio": 50,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 36,
+      "title": "  제1항 실행 환경 및 기술 스택",
+      "current_folio": 50,
+      "text": "  제1항 실행 환경 및 기술 스택50",
+      "kind": "heading",
+      "body_text": "제1항 실행 환경 및 기술 스택",
+      "candidates": [
+        {
+          "physical": 63,
+          "printed": 51,
+          "y": 300.7513122558594
+        }
+      ],
+      "selected": {
+        "physical": 63,
+        "printed": 51,
+        "y": 300.7513122558594
+      },
+      "final_current_folio": 50,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 37,
+      "title": "  제2항 주요 기능 및 운영 안정성",
+      "current_folio": 51,
+      "text": "  제2항 주요 기능 및 운영 안정성51",
+      "kind": "heading",
+      "body_text": "제2항 주요 기능 및 운영 안정성",
+      "candidates": [
+        {
+          "physical": 64,
+          "printed": 52,
+          "y": 367.7580871582031
+        }
+      ],
+      "selected": {
+        "physical": 64,
+        "printed": 52,
+        "y": 367.7580871582031
+      },
+      "final_current_folio": 51,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 38,
+      "title": "  제3항 현장 배포 및 운용 구성",
+      "current_folio": 52,
+      "text": "  제3항 현장 배포 및 운용 구성52",
+      "kind": "heading",
+      "body_text": "제3항 현장 배포 및 운용 구성",
+      "candidates": [
+        {
+          "physical": 65,
+          "printed": 53,
+          "y": 458.3790588378906
+        }
+      ],
+      "selected": {
+        "physical": 65,
+        "printed": 53,
+        "y": 458.3790588378906
+      },
+      "final_current_folio": 52,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 39,
+      "title": " 제4절 시스템 개발의 효과 분석",
+      "current_folio": 53,
+      "text": " 제4절 시스템 개발의 효과 분석53",
+      "kind": "heading",
+      "body_text": "제4절 시스템 개발의 효과 분석",
+      "candidates": [
+        {
+          "physical": 66,
+          "printed": 54,
+          "y": 124.78362274169922
+        }
+      ],
+      "selected": {
+        "physical": 66,
+        "printed": 54,
+        "y": 124.78362274169922
+      },
+      "final_current_folio": 53,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 40,
+      "title": "  제1항 검증 데이터셋 구축 및 평가 지표",
+      "current_folio": 53,
+      "text": "  제1항 검증 데이터셋 구축 및 평가 지표53",
+      "kind": "heading",
+      "body_text": "제1항 검증 데이터셋 구축 및 평가 지표",
+      "candidates": [
+        {
+          "physical": 66,
+          "printed": 54,
+          "y": 380.3443298339844
+        }
+      ],
+      "selected": {
+        "physical": 66,
+        "printed": 54,
+        "y": 380.3443298339844
+      },
+      "final_current_folio": 53,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 41,
+      "title": "  제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+      "current_folio": 56,
+      "text": "  제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실56",
+      "kind": "heading",
+      "body_text": "제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+      "candidates": [
+        {
+          "physical": 69,
+          "printed": 57,
+          "y": 361.0454406738281
+        }
+      ],
+      "selected": {
+        "physical": 69,
+        "printed": 57,
+        "y": 361.0454406738281
+      },
+      "final_current_folio": 56,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 42,
+      "title": "  제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "current_folio": 57,
+      "text": "  제3항 RAG 기반 Few-shot 교정의 성능 실험57",
+      "kind": "heading",
+      "body_text": "제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "candidates": [
+        {
+          "physical": 70,
+          "printed": 58,
+          "y": 602.8212280273438
+        }
+      ],
+      "selected": {
+        "physical": 70,
+        "printed": 58,
+        "y": 602.8212280273438
+      },
+      "final_current_folio": 57,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 43,
+      "title": "  제4항 적용 타당성",
+      "current_folio": 59,
+      "text": "  제4항 적용 타당성59",
+      "kind": "heading",
+      "body_text": "제4항 적용 타당성",
+      "candidates": [
+        {
+          "physical": 72,
+          "printed": 60,
+          "y": 417.1441345214844
+        }
+      ],
+      "selected": {
+        "physical": 72,
+        "printed": 60,
+        "y": 417.1441345214844
+      },
+      "final_current_folio": 59,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 44,
+      "title": " 제5절 소결",
+      "current_folio": 62,
+      "text": " 제5절 소결62",
+      "kind": "heading",
+      "body_text": "제5절 소결",
+      "candidates": [
+        {
+          "physical": 75,
+          "printed": 63,
+          "y": 123.7048110961914
+        }
+      ],
+      "selected": {
+        "physical": 75,
+        "printed": 63,
+        "y": 123.7048110961914
+      },
+      "final_current_folio": 62,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 45,
+      "title": "제4장 연구설계",
+      "current_folio": 64,
+      "text": "제4장 연구설계64",
+      "kind": "heading",
+      "body_text": "제4장 연구설계",
+      "candidates": [
+        {
+          "physical": 77,
+          "printed": 65,
+          "y": 127.66049194335938
+        }
+      ],
+      "selected": {
+        "physical": 77,
+        "printed": 65,
+        "y": 127.66049194335938
+      },
+      "final_current_folio": 64,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 46,
+      "title": " 제1절 연구 모형 설계",
+      "current_folio": 64,
+      "text": " 제1절 연구 모형 설계64",
+      "kind": "heading",
+      "body_text": "제1절 연구 모형 설계",
+      "candidates": [
+        {
+          "physical": 77,
+          "printed": 65,
+          "y": 178.48495483398438
+        }
+      ],
+      "selected": {
+        "physical": 77,
+        "printed": 65,
+        "y": 178.48495483398438
+      },
+      "final_current_folio": 64,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 47,
+      "title": " 제2절 연구 문제 및 연구 가설",
+      "current_folio": 68,
+      "text": " 제2절 연구 문제 및 연구 가설68",
+      "kind": "heading",
+      "body_text": "제2절 연구 문제 및 연구 가설",
+      "candidates": [
+        {
+          "physical": 81,
+          "printed": 69,
+          "y": 220.7987060546875
+        }
+      ],
+      "selected": {
+        "physical": 81,
+        "printed": 69,
+        "y": 220.7987060546875
+      },
+      "final_current_folio": 68,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 48,
+      "title": " 제3절 변수의 조작적 정의 및 측정도구 구성",
+      "current_folio": 71,
+      "text": " 제3절 변수의 조작적 정의 및 측정도구 구성71",
+      "kind": "heading",
+      "body_text": "제3절 변수의 조작적 정의 및 측정도구 구성",
+      "candidates": [
+        {
+          "physical": 84,
+          "printed": 72,
+          "y": 127.78035736083984
+        }
+      ],
+      "selected": {
+        "physical": 84,
+        "printed": 72,
+        "y": 127.78035736083984
+      },
+      "final_current_folio": 71,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 49,
+      "title": "  제1항 변수의 조작적 정의",
+      "current_folio": 71,
+      "text": "  제1항 변수의 조작적 정의71",
+      "kind": "heading",
+      "body_text": "제1항 변수의 조작적 정의",
+      "candidates": [
+        {
+          "physical": 84,
+          "printed": 72,
+          "y": 176.68690490722656
+        }
+      ],
+      "selected": {
+        "physical": 84,
+        "printed": 72,
+        "y": 176.68690490722656
+      },
+      "final_current_folio": 71,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 50,
+      "title": "  제2항 측정도구의 구성 및 설문 문항 도출 출처",
+      "current_folio": 73,
+      "text": "  제2항 측정도구의 구성 및 설문 문항 도출 출처73",
+      "kind": "heading",
+      "body_text": "제2항 측정도구의 구성 및 설문 문항 도출 출처",
+      "candidates": [
+        {
+          "physical": 86,
+          "printed": 74,
+          "y": 148.51768493652344
+        }
+      ],
+      "selected": {
+        "physical": 86,
+        "printed": 74,
+        "y": 148.51768493652344
+      },
+      "final_current_folio": 73,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 51,
+      "title": " 제4절 설문조사 설계 및 척도 검증",
+      "current_folio": 75,
+      "text": " 제4절 설문조사 설계 및 척도 검증75",
+      "kind": "heading",
+      "body_text": "제4절 설문조사 설계 및 척도 검증",
+      "candidates": [
+        {
+          "physical": 88,
+          "printed": 76,
+          "y": 123.7048110961914
+        }
+      ],
+      "selected": {
+        "physical": 88,
+        "printed": 76,
+        "y": 123.7048110961914
+      },
+      "final_current_folio": 75,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 52,
+      "title": "  제1항 설문조사의 개요 및 절차",
+      "current_folio": 75,
+      "text": "  제1항 설문조사의 개요 및 절차75",
+      "kind": "heading",
+      "body_text": "제1항 설문조사의 개요 및 절차",
+      "candidates": [
+        {
+          "physical": 88,
+          "printed": 76,
+          "y": 172.61135864257812
+        }
+      ],
+      "selected": {
+        "physical": 88,
+        "printed": 76,
+        "y": 172.61135864257812
+      },
+      "final_current_folio": 75,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 53,
+      "title": "  제2항 변수별 설문 문항 요약",
+      "current_folio": 76,
+      "text": "  제2항 변수별 설문 문항 요약76",
+      "kind": "heading",
+      "body_text": "제2항 변수별 설문 문항 요약",
+      "candidates": [
+        {
+          "physical": 89,
+          "printed": 77,
+          "y": 392.45111083984375
+        }
+      ],
+      "selected": {
+        "physical": 89,
+        "printed": 77,
+        "y": 392.45111083984375
+      },
+      "final_current_folio": 76,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 54,
+      "title": "  제3항 본 설문지의 최종 구성",
+      "current_folio": 82,
+      "text": "  제3항 본 설문지의 최종 구성82",
+      "kind": "heading",
+      "body_text": "제3항 본 설문지의 최종 구성",
+      "candidates": [
+        {
+          "physical": 95,
+          "printed": 83,
+          "y": 349.17840576171875
+        }
+      ],
+      "selected": {
+        "physical": 95,
+        "printed": 83,
+        "y": 349.17840576171875
+      },
+      "final_current_folio": 82,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 55,
+      "title": " 제5절 자료 수집과 분석방법",
+      "current_folio": 83,
+      "text": " 제5절 자료 수집과 분석방법83",
+      "kind": "heading",
+      "body_text": "제5절 자료 수집과 분석방법",
+      "candidates": [
+        {
+          "physical": 96,
+          "printed": 84,
+          "y": 558.1100463867188
+        }
+      ],
+      "selected": {
+        "physical": 96,
+        "printed": 84,
+        "y": 558.1100463867188
+      },
+      "final_current_folio": 83,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 56,
+      "title": "  제1항 데이터 수집 표본 설계",
+      "current_folio": 83,
+      "text": "  제1항 데이터 수집 표본 설계83",
+      "kind": "heading",
+      "body_text": "제1항 데이터 수집 표본 설계",
+      "candidates": [
+        {
+          "physical": 96,
+          "printed": 84,
+          "y": 607.0166625976562
+        }
+      ],
+      "selected": {
+        "physical": 96,
+        "printed": 84,
+        "y": 607.0166625976562
+      },
+      "final_current_folio": 83,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 57,
+      "title": "  제2항 분석 절차",
+      "current_folio": 86,
+      "text": "  제2항 분석 절차86",
+      "kind": "heading",
+      "body_text": "제2항 분석 절차",
+      "candidates": [
+        {
+          "physical": 99,
+          "printed": 87,
+          "y": 620.5618286132812
+        }
+      ],
+      "selected": {
+        "physical": 99,
+        "printed": 87,
+        "y": 620.5618286132812
+      },
+      "final_current_folio": 86,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 58,
+      "title": "제5장 실증분석 결과",
+      "current_folio": 91,
+      "text": "제5장 실증분석 결과91",
+      "kind": "heading",
+      "body_text": "제5장 실증분석 결과",
+      "candidates": [
+        {
+          "physical": 104,
+          "printed": 92,
+          "y": 127.66049194335938
+        }
+      ],
+      "selected": {
+        "physical": 104,
+        "printed": 92,
+        "y": 127.66049194335938
+      },
+      "final_current_folio": 91,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 59,
+      "title": " 제1절 조사 대상자의 인구통계학적 특성",
+      "current_folio": 91,
+      "text": " 제1절 조사 대상자의 인구통계학적 특성91",
+      "kind": "heading",
+      "body_text": "제1절 조사 대상자의 인구통계학적 특성",
+      "candidates": [
+        {
+          "physical": 104,
+          "printed": 92,
+          "y": 426.3740234375
+        }
+      ],
+      "selected": {
+        "physical": 104,
+        "printed": 92,
+        "y": 426.3740234375
+      },
+      "final_current_folio": 91,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 60,
+      "title": " 제2절 측정도구의 신뢰도 및 타당도 검증",
+      "current_folio": 94,
+      "text": " 제2절 측정도구의 신뢰도 및 타당도 검증94",
+      "kind": "heading",
+      "body_text": "제2절 측정도구의 신뢰도 및 타당도 검증",
+      "candidates": [
+        {
+          "physical": 107,
+          "printed": 95,
+          "y": 123.7048110961914
+        }
+      ],
+      "selected": {
+        "physical": 107,
+        "printed": 95,
+        "y": 123.7048110961914
+      },
+      "final_current_folio": 94,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 61,
+      "title": " 제3절 기술통계 및 사전 특성 분포·균형 진단",
+      "current_folio": 97,
+      "text": " 제3절 기술통계 및 사전 특성 분포·균형 진단97",
+      "kind": "heading",
+      "body_text": "제3절 기술통계 및 사전 특성 분포·균형 진단",
+      "candidates": [
+        {
+          "physical": 110,
+          "printed": 98,
+          "y": 123.7048110961914
+        }
+      ],
+      "selected": {
+        "physical": 110,
+        "printed": 98,
+        "y": 123.7048110961914
+      },
+      "final_current_folio": 97,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 62,
+      "title": "  제1항 주요 변수의 기술통계",
+      "current_folio": 97,
+      "text": "  제1항 주요 변수의 기술통계97",
+      "kind": "heading",
+      "body_text": "제1항 주요 변수의 기술통계",
+      "candidates": [
+        {
+          "physical": 110,
+          "printed": 98,
+          "y": 172.61135864257812
+        }
+      ],
+      "selected": {
+        "physical": 110,
+        "printed": 98,
+        "y": 172.61135864257812
+      },
+      "final_current_folio": 97,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 63,
+      "title": "  제2항 두 집단의 사전 특성 분포·균형 진단",
+      "current_folio": 99,
+      "text": "  제2항 두 집단의 사전 특성 분포·균형 진단99",
+      "kind": "heading",
+      "body_text": "제2항 두 집단의 사전 특성 분포·균형 진단",
+      "candidates": [
+        {
+          "physical": 112,
+          "printed": 100,
+          "y": 293.1995849609375
+        }
+      ],
+      "selected": {
+        "physical": 112,
+        "printed": 100,
+        "y": 293.1995849609375
+      },
+      "final_current_folio": 99,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 64,
+      "title": " 제4절 가설 검정: 현장 임의절편 선형혼합모형",
+      "current_folio": 101,
+      "text": " 제4절 가설 검정: 현장 임의절편 선형혼합모형101",
+      "kind": "heading",
+      "body_text": "제4절 가설 검정: 현장 임의절편 선형혼합모형",
+      "candidates": [
+        {
+          "physical": 114,
+          "printed": 102,
+          "y": 123.7048110961914
+        }
+      ],
+      "selected": {
+        "physical": 114,
+        "printed": 102,
+        "y": 123.7048110961914
+      },
+      "final_current_folio": 101,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 65,
+      "title": "  제1항 혼합모형 가정 및 적합 상태 점검",
+      "current_folio": 101,
+      "text": "  제1항 혼합모형 가정 및 적합 상태 점검101",
+      "kind": "heading",
+      "body_text": "제1항 혼합모형 가정 및 적합 상태 점검",
+      "candidates": [
+        {
+          "physical": 114,
+          "printed": 102,
+          "y": 172.61135864257812
+        }
+      ],
+      "selected": {
+        "physical": 114,
+        "printed": 102,
+        "y": 172.61135864257812
+      },
+      "final_current_folio": 101,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 66,
+      "title": "  제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형",
+      "current_folio": 103,
+      "text": "  제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형103",
+      "kind": "heading",
+      "body_text": "제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형",
+      "candidates": [
+        {
+          "physical": 116,
+          "printed": 104,
+          "y": 123.82467651367188
+        }
+      ],
+      "selected": {
+        "physical": 116,
+        "printed": 104,
+        "y": 123.82467651367188
+      },
+      "final_current_folio": 103,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 67,
+      "title": "  제3항 안전관리 실효성 하위영역별 혼합모형",
+      "current_folio": 105,
+      "text": "  제3항 안전관리 실효성 하위영역별 혼합모형105",
+      "kind": "heading",
+      "body_text": "제3항 안전관리 실효성 하위영역별 혼합모형",
+      "candidates": [
+        {
+          "physical": 118,
+          "printed": 106,
+          "y": 216.60328674316406
+        }
+      ],
+      "selected": {
+        "physical": 118,
+        "printed": 106,
+        "y": 216.60328674316406
+      },
+      "final_current_folio": 105,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 68,
+      "title": " 제5절 탐색적 보조 분석",
+      "current_folio": 106,
+      "text": " 제5절 탐색적 보조 분석106",
+      "kind": "heading",
+      "body_text": "제5절 탐색적 보조 분석",
+      "candidates": [
+        {
+          "physical": 119,
+          "printed": 107,
+          "y": 492.062255859375
+        }
+      ],
+      "selected": {
+        "physical": 119,
+        "printed": 107,
+        "y": 492.062255859375
+      },
+      "final_current_folio": 106,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 69,
+      "title": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "current_folio": 107,
+      "text": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석107",
+      "kind": "heading",
+      "body_text": "제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "candidates": [
+        {
+          "physical": 120,
+          "printed": 108,
+          "y": 126.7015380859375
+        }
+      ],
+      "selected": {
+        "physical": 120,
+        "printed": 108,
+        "y": 126.7015380859375
+      },
+      "final_current_folio": 107,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 70,
+      "title": " 제6절 연구 결과 및 논의",
+      "current_folio": 109,
+      "text": " 제6절 연구 결과 및 논의109",
+      "kind": "heading",
+      "body_text": "제6절 연구 결과 및 논의",
+      "candidates": [
+        {
+          "physical": 122,
+          "printed": 110,
+          "y": 135.2122344970703
+        }
+      ],
+      "selected": {
+        "physical": 122,
+        "printed": 110,
+        "y": 135.2122344970703
+      },
+      "final_current_folio": 109,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 71,
+      "title": "  제1항 연구 결과 종합",
+      "current_folio": 109,
+      "text": "  제1항 연구 결과 종합109",
+      "kind": "heading",
+      "body_text": "제1항 연구 결과 종합",
+      "candidates": [
+        {
+          "physical": 122,
+          "printed": 110,
+          "y": 184.2386474609375
+        }
+      ],
+      "selected": {
+        "physical": 122,
+        "printed": 110,
+        "y": 184.2386474609375
+      },
+      "final_current_folio": 109,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 72,
+      "title": "  제2항 논의",
+      "current_folio": 110,
+      "text": "  제2항 논의110",
+      "kind": "heading",
+      "body_text": "제2항 논의",
+      "candidates": [
+        {
+          "physical": 123,
+          "printed": 111,
+          "y": 278.0960693359375
+        }
+      ],
+      "selected": {
+        "physical": 123,
+        "printed": 111,
+        "y": 278.0960693359375
+      },
+      "final_current_folio": 110,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 73,
+      "title": "제6장 결론",
+      "current_folio": 114,
+      "text": "제6장 결론114",
+      "kind": "heading",
+      "body_text": "제6장 결론",
+      "candidates": [
+        {
+          "physical": 127,
+          "printed": 115,
+          "y": 127.66049194335938
+        }
+      ],
+      "selected": {
+        "physical": 127,
+        "printed": 115,
+        "y": 127.66049194335938
+      },
+      "final_current_folio": 114,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 74,
+      "title": "참고문헌",
+      "current_folio": 117,
+      "text": "참고문헌117",
+      "kind": "heading",
+      "body_text": "참고문헌",
+      "candidates": [
+        {
+          "physical": 130,
+          "printed": 118,
+          "y": 127.66049194335938
+        }
+      ],
+      "selected": {
+        "physical": 130,
+        "printed": 118,
+        "y": 127.66049194335938
+      },
+      "final_current_folio": 117,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 75,
+      "title": "부   록 (도입 현장)",
+      "current_folio": 123,
+      "text": "부   록 (도입 현장)123",
+      "kind": "heading",
+      "body_text": "부   록 (도입 현장)",
+      "candidates": [
+        {
+          "physical": 136,
+          "printed": 124,
+          "y": 106.92314910888672
+        }
+      ],
+      "selected": {
+        "physical": 136,
+        "printed": 124,
+        "y": 106.92314910888672
+      },
+      "final_current_folio": 123,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 76,
+      "title": " Part A. 인구통계학적 특성",
+      "current_folio": 125,
+      "text": " Part A. 인구통계학적 특성125",
+      "kind": "heading",
+      "body_text": "Part A. 인구통계학적 특성",
+      "candidates": [
+        {
+          "physical": 138,
+          "printed": 126,
+          "y": 107.04301452636719
+        },
+        {
+          "physical": 147,
+          "printed": 135,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 138,
+        "printed": 126,
+        "y": 107.04301452636719
+      },
+      "final_current_folio": 125,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 77,
+      "title": " Part B. 안전관리 실효성",
+      "current_folio": 126,
+      "text": " Part B. 안전관리 실효성126",
+      "kind": "heading",
+      "body_text": "Part B. 안전관리 실효성",
+      "candidates": [
+        {
+          "physical": 139,
+          "printed": 127,
+          "y": 107.15999603271484
+        },
+        {
+          "physical": 148,
+          "printed": 136,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 139,
+        "printed": 127,
+        "y": 107.15999603271484
+      },
+      "final_current_folio": 126,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 78,
+      "title": " Part C. 안전관리 예산 제약성",
+      "current_folio": 128,
+      "text": " Part C. 안전관리 예산 제약성128",
+      "kind": "heading",
+      "body_text": "Part C. 안전관리 예산 제약성",
+      "candidates": [
+        {
+          "physical": 141,
+          "printed": 129,
+          "y": 107.15999603271484
+        },
+        {
+          "physical": 150,
+          "printed": 138,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 141,
+        "printed": 129,
+        "y": 107.15999603271484
+      },
+      "final_current_folio": 128,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 79,
+      "title": " 도입 현장 전용부",
+      "current_folio": 129,
+      "text": " 도입 현장 전용부129",
+      "kind": "heading",
+      "body_text": "도입 현장 전용부",
+      "candidates": [
+        {
+          "physical": 142,
+          "printed": 130,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 142,
+        "printed": 130,
+        "y": 107.15999603271484
+      },
+      "final_current_folio": 129,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 80,
+      "title": " Part D. 시스템 특성 인식",
+      "current_folio": 129,
+      "text": " Part D. 시스템 특성 인식129",
+      "kind": "heading",
+      "body_text": "Part D. 시스템 특성 인식",
+      "candidates": [
+        {
+          "physical": 142,
+          "printed": 130,
+          "y": 133.67999267578125
+        }
+      ],
+      "selected": {
+        "physical": 142,
+        "printed": 130,
+        "y": 133.67999267578125
+      },
+      "final_current_folio": 129,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 81,
+      "title": " Part E. 경보 피로도 완화",
+      "current_folio": 130,
+      "text": " Part E. 경보 피로도 완화130",
+      "kind": "heading",
+      "body_text": "Part E. 경보 피로도 완화",
+      "candidates": [
+        {
+          "physical": 143,
+          "printed": 131,
+          "y": 584.0399780273438
+        }
+      ],
+      "selected": {
+        "physical": 143,
+        "printed": 131,
+        "y": 584.0399780273438
+      },
+      "final_current_folio": 130,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 82,
+      "title": "부   록 (미도입 현장)",
+      "current_folio": 132,
+      "text": "부   록 (미도입 현장)132",
+      "kind": "heading",
+      "body_text": "부   록 (미도입 현장)",
+      "candidates": [
+        {
+          "physical": 145,
+          "printed": 133,
+          "y": 107.04000091552734
+        }
+      ],
+      "selected": {
+        "physical": 145,
+        "printed": 133,
+        "y": 107.04000091552734
+      },
+      "final_current_folio": 132,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 83,
+      "title": " Part A. 인구통계학적 특성",
+      "current_folio": 134,
+      "text": " Part A. 인구통계학적 특성134",
+      "kind": "heading",
+      "body_text": "Part A. 인구통계학적 특성",
+      "candidates": [
+        {
+          "physical": 147,
+          "printed": 135,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 147,
+        "printed": 135,
+        "y": 107.15999603271484
+      },
+      "final_current_folio": 134,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 84,
+      "title": " Part B. 안전관리 실효성",
+      "current_folio": 135,
+      "text": " Part B. 안전관리 실효성135",
+      "kind": "heading",
+      "body_text": "Part B. 안전관리 실효성",
+      "candidates": [
+        {
+          "physical": 148,
+          "printed": 136,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 148,
+        "printed": 136,
+        "y": 107.15999603271484
+      },
+      "final_current_folio": 135,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 85,
+      "title": " Part C. 안전관리 예산 제약성",
+      "current_folio": 137,
+      "text": " Part C. 안전관리 예산 제약성137",
+      "kind": "heading",
+      "body_text": "Part C. 안전관리 예산 제약성",
+      "candidates": [
+        {
+          "physical": 150,
+          "printed": 138,
+          "y": 107.15999603271484
+        }
+      ],
+      "selected": {
+        "physical": 150,
+        "printed": 138,
+        "y": 107.15999603271484
+      },
+      "final_current_folio": 137,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 86,
+      "title": "Abstract",
+      "current_folio": 138,
+      "text": "Abstract138",
+      "kind": "heading",
+      "body_text": "Abstract",
+      "candidates": [
+        {
+          "physical": 151,
+          "printed": 139,
+          "y": 127.80000305175781
+        }
+      ],
+      "selected": {
+        "physical": 151,
+        "printed": 139,
+        "y": 127.80000305175781
+      },
+      "final_current_folio": 138,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 90,
+      "title": "<표 1-1> 연구 배경의 건설업 사망재해 근거와 해석 범위",
+      "current_folio": 2,
+      "text": "<표 1-1> 연구 배경의 건설업 사망재해 근거와 해석 범위2",
+      "kind": "table",
+      "body_text": "<표 1-1> 연구 배경의 건설업 사망재해 근거와 해석 범위",
+      "candidates": [
+        {
+          "physical": 14,
+          "printed": 2,
+          "y": 344.2593688964844
+        }
+      ],
+      "selected": {
+        "physical": 14,
+        "printed": 2,
+        "y": 344.2593688964844
+      },
+      "final_current_folio": 2,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 91,
+      "title": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "current_folio": 11,
+      "text": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스11",
+      "kind": "table",
+      "body_text": "<표 2-1> 시스템 기술 특성 하위요인 도출 매트릭스",
+      "candidates": [
+        {
+          "physical": 23,
+          "printed": 11,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 23,
+        "printed": 11,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 11,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 92,
+      "title": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "current_folio": 14,
+      "text": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교14",
+      "kind": "table",
+      "body_text": "<표 2-2> 단일 YOLO 구조와 YOLO-LLM 캐스케이드 구조의 비교",
+      "candidates": [
+        {
+          "physical": 26,
+          "printed": 14,
+          "y": 486.06439208984375
+        }
+      ],
+      "selected": {
+        "physical": 26,
+        "printed": 14,
+        "y": 486.06439208984375
+      },
+      "final_current_folio": 14,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 93,
+      "title": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "current_folio": 16,
+      "text": "<표 2-3> 하위요인 관련 선행연구 요약16",
+      "kind": "table",
+      "body_text": "<표 2-3> 하위요인 관련 선행연구 요약",
+      "candidates": [
+        {
+          "physical": 28,
+          "printed": 16,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 28,
+        "printed": 16,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 16,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 94,
+      "title": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "current_folio": 23,
+      "text": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교23",
+      "kind": "table",
+      "body_text": "<표 2-4> 상용 AI 관제 시스템과 본 연구 대상 시스템의 비용 비교",
+      "candidates": [
+        {
+          "physical": 35,
+          "printed": 23,
+          "y": 158.22267150878906
+        }
+      ],
+      "selected": {
+        "physical": 35,
+        "printed": 23,
+        "y": 158.22267150878906
+      },
+      "final_current_folio": 23,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 95,
+      "title": "<표 2-5> 선행연구와 본 연구의 차별성",
+      "current_folio": 26,
+      "text": "<표 2-5> 선행연구와 본 연구의 차별성26",
+      "kind": "table",
+      "body_text": "<표 2-5> 선행연구와 본 연구의 차별성",
+      "candidates": [
+        {
+          "physical": 38,
+          "printed": 26,
+          "y": 327.23797607421875
+        }
+      ],
+      "selected": {
+        "physical": 38,
+        "printed": 26,
+        "y": 327.23797607421875
+      },
+      "final_current_folio": 26,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 96,
+      "title": "<표 2-6> 현장 작동성의 기능–담당자 업무–실효성 영역 연결",
+      "current_folio": 27,
+      "text": "<표 2-6> 현장 작동성의 기능–담당자 업무–실효성 영역 연결27",
+      "kind": "table",
+      "body_text": "<표 2-6> 현장 작동성의 기능–담당자 업무–실효성 영역 연결",
+      "candidates": [
+        {
+          "physical": 39,
+          "printed": 27,
+          "y": 488.8213806152344
+        },
+        {
+          "physical": 40,
+          "printed": 28,
+          "y": 116.98773956298828
+        }
+      ],
+      "selected": {
+        "physical": 39,
+        "printed": 27,
+        "y": 488.8213806152344
+      },
+      "final_current_folio": 27,
+      "first_start_requires_review": true
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 97,
+      "title": "<표 2-7> 스마트 안전기술 도입 효과 선행연구 종합",
+      "current_folio": 29,
+      "text": "<표 2-7> 스마트 안전기술 도입 효과 선행연구 종합29",
+      "kind": "table",
+      "body_text": "<표 2-7> 스마트 안전기술 도입 효과 선행연구 종합",
+      "candidates": [
+        {
+          "physical": 41,
+          "printed": 29,
+          "y": 574.1680908203125
+        },
+        {
+          "physical": 42,
+          "printed": 30,
+          "y": 116.98773956298828
+        },
+        {
+          "physical": 43,
+          "printed": 31,
+          "y": 116.98773956298828
+        }
+      ],
+      "selected": {
+        "physical": 41,
+        "printed": 29,
+        "y": 574.1680908203125
+      },
+      "final_current_folio": 29,
+      "first_start_requires_review": true
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 98,
+      "title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "current_folio": 38,
+      "text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항38",
+      "kind": "table",
+      "body_text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "candidates": [
+        {
+          "physical": 51,
+          "printed": 39,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 51,
+        "printed": 39,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 38,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 99,
+      "title": "<표 3-2> 시스템 모듈 구성과 역할",
+      "current_folio": 41,
+      "text": "<표 3-2> 시스템 모듈 구성과 역할41",
+      "kind": "table",
+      "body_text": "<표 3-2> 시스템 모듈 구성과 역할",
+      "candidates": [
+        {
+          "physical": 54,
+          "printed": 42,
+          "y": 134.8482208251953
+        }
+      ],
+      "selected": {
+        "physical": 54,
+        "printed": 42,
+        "y": 134.8482208251953
+      },
+      "final_current_folio": 41,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 100,
+      "title": "<표 3-3> 시스템 구현 기술 스택",
+      "current_folio": 51,
+      "text": "<표 3-3> 시스템 구현 기술 스택51",
+      "kind": "table",
+      "body_text": "<표 3-3> 시스템 구현 기술 스택",
+      "candidates": [
+        {
+          "physical": 64,
+          "printed": 52,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 64,
+        "printed": 52,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 51,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 101,
+      "title": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "current_folio": 55,
+      "text": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)55",
+      "kind": "table",
+      "body_text": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "candidates": [
+        {
+          "physical": 68,
+          "printed": 56,
+          "y": 196.82049560546875
+        }
+      ],
+      "selected": {
+        "physical": 68,
+        "printed": 56,
+        "y": 196.82049560546875
+      },
+      "final_current_folio": 55,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 102,
+      "title": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "current_folio": 56,
+      "text": "<표 3-5> 성능 평가 지표 정의와 측정 목적56",
+      "kind": "table",
+      "body_text": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "candidates": [
+        {
+          "physical": 69,
+          "printed": 57,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 69,
+        "printed": 57,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 56,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 103,
+      "title": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "current_folio": 57,
+      "text": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)57",
+      "kind": "table",
+      "body_text": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "candidates": [
+        {
+          "physical": 70,
+          "printed": 58,
+          "y": 112.55258178710938
+        }
+      ],
+      "selected": {
+        "physical": 70,
+        "printed": 58,
+        "y": 112.55258178710938
+      },
+      "final_current_folio": 57,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 104,
+      "title": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "current_folio": 58,
+      "text": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)58",
+      "kind": "table",
+      "body_text": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "candidates": [
+        {
+          "physical": 71,
+          "printed": 59,
+          "y": 312.61395263671875
+        }
+      ],
+      "selected": {
+        "physical": 71,
+        "printed": 59,
+        "y": 312.61395263671875
+      },
+      "final_current_folio": 58,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 105,
+      "title": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)",
+      "current_folio": 60,
+      "text": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)60",
+      "kind": "table",
+      "body_text": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)",
+      "candidates": [
+        {
+          "physical": 73,
+          "printed": 61,
+          "y": 362.1198425292969
+        }
+      ],
+      "selected": {
+        "physical": 73,
+        "printed": 61,
+        "y": 362.1198425292969
+      },
+      "final_current_folio": 60,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 106,
+      "title": "<표 4-1> 연구변수의 구성",
+      "current_folio": 66,
+      "text": "<표 4-1> 연구변수의 구성66",
+      "kind": "table",
+      "body_text": "<표 4-1> 연구변수의 구성",
+      "candidates": [
+        {
+          "physical": 79,
+          "printed": 67,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 79,
+        "printed": 67,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 66,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 107,
+      "title": "<표 4-2> 연구 가설 종합",
+      "current_folio": 70,
+      "text": "<표 4-2> 연구 가설 종합70",
+      "kind": "table",
+      "body_text": "<표 4-2> 연구 가설 종합",
+      "candidates": [
+        {
+          "physical": 83,
+          "printed": 71,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 83,
+        "printed": 71,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 70,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 108,
+      "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "current_folio": 74,
+      "text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성74",
+      "kind": "table",
+      "body_text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "candidates": [
+        {
+          "physical": 87,
+          "printed": 75,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 87,
+        "printed": 75,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 74,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 109,
+      "title": "<표 4-4> 설문지의 최종 구성",
+      "current_folio": 83,
+      "text": "<표 4-4> 설문지의 최종 구성83",
+      "kind": "table",
+      "body_text": "<표 4-4> 설문지의 최종 구성",
+      "candidates": [
+        {
+          "physical": 96,
+          "printed": 84,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 96,
+        "printed": 84,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 83,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 110,
+      "title": "<표 4-5> 자료 수집 개요",
+      "current_folio": 86,
+      "text": "<표 4-5> 자료 수집 개요86",
+      "kind": "table",
+      "body_text": "<표 4-5> 자료 수집 개요",
+      "candidates": [
+        {
+          "physical": 99,
+          "printed": 87,
+          "y": 116.98773956298828
+        }
+      ],
+      "selected": {
+        "physical": 99,
+        "printed": 87,
+        "y": 116.98773956298828
+      },
+      "final_current_folio": 86,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 111,
+      "title": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "current_folio": 93,
+      "text": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)93",
+      "kind": "table",
+      "body_text": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "candidates": [
+        {
+          "physical": 106,
+          "printed": 94,
+          "y": 114.11087799072266
+        }
+      ],
+      "selected": {
+        "physical": 106,
+        "printed": 94,
+        "y": 114.11087799072266
+      },
+      "final_current_folio": 93,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 112,
+      "title": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "current_folio": 95,
+      "text": "<표 5-2> 측정도구의 신뢰도 검증 결과95",
+      "kind": "table",
+      "body_text": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "candidates": [
+        {
+          "physical": 108,
+          "printed": 96,
+          "y": 107.76223754882812
+        }
+      ],
+      "selected": {
+        "physical": 108,
+        "printed": 96,
+        "y": 107.76223754882812
+      },
+      "final_current_folio": 95,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 113,
+      "title": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "current_folio": 97,
+      "text": "<표 5-3> 주요 변수의 기술통계(집단별)97",
+      "kind": "table",
+      "body_text": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "candidates": [
+        {
+          "physical": 110,
+          "printed": 98,
+          "y": 304.4628601074219
+        }
+      ],
+      "selected": {
+        "physical": 110,
+        "printed": 98,
+        "y": 304.4628601074219
+      },
+      "final_current_folio": 97,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 114,
+      "title": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "current_folio": 99,
+      "text": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과99",
+      "kind": "table",
+      "body_text": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "candidates": [
+        {
+          "physical": 112,
+          "printed": 100,
+          "y": 432.4829406738281
+        }
+      ],
+      "selected": {
+        "physical": 112,
+        "printed": 100,
+        "y": 432.4829406738281
+      },
+      "final_current_folio": 99,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 115,
+      "title": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "current_folio": 102,
+      "text": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과102",
+      "kind": "table",
+      "body_text": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "candidates": [
+        {
+          "physical": 115,
+          "printed": 103,
+          "y": 116.98773956298828
+        }
+      ],
+      "selected": {
+        "physical": 115,
+        "printed": 103,
+        "y": 116.98773956298828
+      },
+      "final_current_folio": 102,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 116,
+      "title": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "current_folio": 103,
+      "text": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)103",
+      "kind": "table",
+      "body_text": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "candidates": [
+        {
+          "physical": 116,
+          "printed": 104,
+          "y": 424.81573486328125
+        }
+      ],
+      "selected": {
+        "physical": 116,
+        "printed": 104,
+        "y": 424.81573486328125
+      },
+      "final_current_folio": 103,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 117,
+      "title": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "current_folio": 105,
+      "text": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)105",
+      "kind": "table",
+      "body_text": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "candidates": [
+        {
+          "physical": 118,
+          "printed": 106,
+          "y": 351.4515075683594
+        }
+      ],
+      "selected": {
+        "physical": 118,
+        "printed": 106,
+        "y": 351.4515075683594
+      },
+      "final_current_folio": 105,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 118,
+      "title": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "current_folio": 107,
+      "text": "<표 5-8> 탐색적 상호작용 혼합모형 결과107",
+      "kind": "table",
+      "body_text": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "candidates": [
+        {
+          "physical": 120,
+          "printed": 108,
+          "y": 249.08778381347656
+        }
+      ],
+      "selected": {
+        "physical": 120,
+        "printed": 108,
+        "y": 249.08778381347656
+      },
+      "final_current_folio": 107,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 119,
+      "title": "<표 5-9> 연구 가설 검증 결과 종합",
+      "current_folio": 109,
+      "text": "<표 5-9> 연구 가설 검증 결과 종합109",
+      "kind": "table",
+      "body_text": "<표 5-9> 연구 가설 검증 결과 종합",
+      "candidates": [
+        {
+          "physical": 122,
+          "printed": 110,
+          "y": 300.0277099609375
+        }
+      ],
+      "selected": {
+        "physical": 122,
+        "printed": 110,
+        "y": 300.0277099609375
+      },
+      "final_current_folio": 109,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 123,
+      "title": "<그림 1-1> 연구의 흐름도",
+      "current_folio": 5,
+      "text": "<그림 1-1> 연구의 흐름도5",
+      "kind": "figure",
+      "body_text": "<그림 1-1> 연구의 흐름도",
+      "candidates": [
+        {
+          "physical": 17,
+          "printed": 5,
+          "y": 502.1312561035156
+        }
+      ],
+      "selected": {
+        "physical": 17,
+        "printed": 5,
+        "y": 502.1312561035156
+      },
+      "final_current_folio": 5,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 124,
+      "title": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "current_folio": 40,
+      "text": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처40",
+      "kind": "figure",
+      "body_text": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "candidates": [
+        {
+          "physical": 53,
+          "printed": 41,
+          "y": 552.2365112304688
+        }
+      ],
+      "selected": {
+        "physical": 53,
+        "printed": 41,
+        "y": 552.2365112304688
+      },
+      "final_current_folio": 40,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 125,
+      "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "current_folio": 45,
+      "text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름45",
+      "kind": "figure",
+      "body_text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "candidates": [
+        {
+          "physical": 58,
+          "printed": 46,
+          "y": 639.6210327148438
+        }
+      ],
+      "selected": {
+        "physical": 58,
+        "printed": 46,
+        "y": 639.6210327148438
+      },
+      "final_current_folio": 45,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 126,
+      "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "current_folio": 48,
+      "text": "<그림 3-3> RAG 기반 Few-shot 교정 절차48",
+      "kind": "figure",
+      "body_text": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "candidates": [
+        {
+          "physical": 61,
+          "printed": 49,
+          "y": 639.6210327148438
+        }
+      ],
+      "selected": {
+        "physical": 61,
+        "printed": 49,
+        "y": 639.6210327148438
+      },
+      "final_current_folio": 48,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 127,
+      "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "current_folio": 52,
+      "text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)52",
+      "kind": "figure",
+      "body_text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "candidates": [
+        {
+          "physical": 65,
+          "printed": 53,
+          "y": 397.0061340332031
+        }
+      ],
+      "selected": {
+        "physical": 65,
+        "printed": 53,
+        "y": 397.0061340332031
+      },
+      "final_current_folio": 52,
+      "first_start_requires_review": false
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 128,
+      "title": "<그림 4-1> 연구 모형",
+      "current_folio": 67,
+      "text": "<그림 4-1> 연구 모형67",
+      "kind": "figure",
+      "body_text": "<그림 4-1> 연구 모형",
+      "candidates": [
+        {
+          "physical": 80,
+          "printed": 68,
+          "y": 617.6849975585938
+        }
+      ],
+      "selected": {
+        "physical": 80,
+        "printed": 68,
+        "y": 617.6849975585938
+      },
+      "final_current_folio": 67,
+      "first_start_requires_review": false
+    }
+  ],
+  "recommended_changes": [
+    {
+      "section": "Contents/section1.xml",
+      "idx": 5,
+      "title": " 제2절 연구의 목적",
+      "old": 3,
+      "recommended": 2,
+      "physical": 14
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 26,
+      "title": "제3장 YOLO-LLM 하이브리드 안전관제 시스템 개발",
+      "old": 34,
+      "recommended": 35,
+      "physical": 47
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 27,
+      "title": " 제1절 시스템 개발 방향 및 요구사항",
+      "old": 34,
+      "recommended": 35,
+      "physical": 47
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 28,
+      "title": "  제1항 시스템 개발 개요",
+      "old": 34,
+      "recommended": 35,
+      "physical": 47
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 29,
+      "title": "  제2항 현장 요구사항",
+      "old": 35,
+      "recommended": 36,
+      "physical": 48
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 30,
+      "title": " 제2절 시스템 설계",
+      "old": 39,
+      "recommended": 40,
+      "physical": 52
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 31,
+      "title": "  제1항 전체 아키텍처",
+      "old": 39,
+      "recommended": 40,
+      "physical": 52
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 32,
+      "title": "  제2항 YOLO 탐지 및 제어",
+      "old": 41,
+      "recommended": 42,
+      "physical": 54
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 33,
+      "title": "  제3항 LLM 문맥 검증 및 현장 적응",
+      "old": 44,
+      "recommended": 45,
+      "physical": 57
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 34,
+      "title": "  제4항 경보 전파",
+      "old": 49,
+      "recommended": 50,
+      "physical": 62
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 35,
+      "title": " 제3절 시스템 구현",
+      "old": 50,
+      "recommended": 51,
+      "physical": 63
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 36,
+      "title": "  제1항 실행 환경 및 기술 스택",
+      "old": 50,
+      "recommended": 51,
+      "physical": 63
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 37,
+      "title": "  제2항 주요 기능 및 운영 안정성",
+      "old": 51,
+      "recommended": 52,
+      "physical": 64
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 38,
+      "title": "  제3항 현장 배포 및 운용 구성",
+      "old": 52,
+      "recommended": 53,
+      "physical": 65
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 39,
+      "title": " 제4절 시스템 개발의 효과 분석",
+      "old": 53,
+      "recommended": 54,
+      "physical": 66
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 40,
+      "title": "  제1항 검증 데이터셋 구축 및 평가 지표",
+      "old": 53,
+      "recommended": 54,
+      "physical": 66
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 41,
+      "title": "  제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+      "old": 56,
+      "recommended": 57,
+      "physical": 69
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 42,
+      "title": "  제3항 RAG 기반 Few-shot 교정의 성능 실험",
+      "old": 57,
+      "recommended": 58,
+      "physical": 70
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 43,
+      "title": "  제4항 적용 타당성",
+      "old": 59,
+      "recommended": 60,
+      "physical": 72
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 44,
+      "title": " 제5절 소결",
+      "old": 62,
+      "recommended": 63,
+      "physical": 75
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 45,
+      "title": "제4장 연구설계",
+      "old": 64,
+      "recommended": 65,
+      "physical": 77
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 46,
+      "title": " 제1절 연구 모형 설계",
+      "old": 64,
+      "recommended": 65,
+      "physical": 77
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 47,
+      "title": " 제2절 연구 문제 및 연구 가설",
+      "old": 68,
+      "recommended": 69,
+      "physical": 81
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 48,
+      "title": " 제3절 변수의 조작적 정의 및 측정도구 구성",
+      "old": 71,
+      "recommended": 72,
+      "physical": 84
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 49,
+      "title": "  제1항 변수의 조작적 정의",
+      "old": 71,
+      "recommended": 72,
+      "physical": 84
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 50,
+      "title": "  제2항 측정도구의 구성 및 설문 문항 도출 출처",
+      "old": 73,
+      "recommended": 74,
+      "physical": 86
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 51,
+      "title": " 제4절 설문조사 설계 및 척도 검증",
+      "old": 75,
+      "recommended": 76,
+      "physical": 88
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 52,
+      "title": "  제1항 설문조사의 개요 및 절차",
+      "old": 75,
+      "recommended": 76,
+      "physical": 88
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 53,
+      "title": "  제2항 변수별 설문 문항 요약",
+      "old": 76,
+      "recommended": 77,
+      "physical": 89
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 54,
+      "title": "  제3항 본 설문지의 최종 구성",
+      "old": 82,
+      "recommended": 83,
+      "physical": 95
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 55,
+      "title": " 제5절 자료 수집과 분석방법",
+      "old": 83,
+      "recommended": 84,
+      "physical": 96
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 56,
+      "title": "  제1항 데이터 수집 표본 설계",
+      "old": 83,
+      "recommended": 84,
+      "physical": 96
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 57,
+      "title": "  제2항 분석 절차",
+      "old": 86,
+      "recommended": 87,
+      "physical": 99
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 58,
+      "title": "제5장 실증분석 결과",
+      "old": 91,
+      "recommended": 92,
+      "physical": 104
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 59,
+      "title": " 제1절 조사 대상자의 인구통계학적 특성",
+      "old": 91,
+      "recommended": 92,
+      "physical": 104
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 60,
+      "title": " 제2절 측정도구의 신뢰도 및 타당도 검증",
+      "old": 94,
+      "recommended": 95,
+      "physical": 107
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 61,
+      "title": " 제3절 기술통계 및 사전 특성 분포·균형 진단",
+      "old": 97,
+      "recommended": 98,
+      "physical": 110
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 62,
+      "title": "  제1항 주요 변수의 기술통계",
+      "old": 97,
+      "recommended": 98,
+      "physical": 110
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 63,
+      "title": "  제2항 두 집단의 사전 특성 분포·균형 진단",
+      "old": 99,
+      "recommended": 100,
+      "physical": 112
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 64,
+      "title": " 제4절 가설 검정: 현장 임의절편 선형혼합모형",
+      "old": 101,
+      "recommended": 102,
+      "physical": 114
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 65,
+      "title": "  제1항 혼합모형 가정 및 적합 상태 점검",
+      "old": 101,
+      "recommended": 102,
+      "physical": 114
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 66,
+      "title": "  제2항 안전관리 실효성에 대한 현장 임의절편 선형혼합모형",
+      "old": 103,
+      "recommended": 104,
+      "physical": 116
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 67,
+      "title": "  제3항 안전관리 실효성 하위영역별 혼합모형",
+      "old": 105,
+      "recommended": 106,
+      "physical": 118
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 68,
+      "title": " 제5절 탐색적 보조 분석",
+      "old": 106,
+      "recommended": 107,
+      "physical": 119
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 69,
+      "title": "  제1항 집단과 안전관리 예산 제약성의 상호작용 분석",
+      "old": 107,
+      "recommended": 108,
+      "physical": 120
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 70,
+      "title": " 제6절 연구 결과 및 논의",
+      "old": 109,
+      "recommended": 110,
+      "physical": 122
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 71,
+      "title": "  제1항 연구 결과 종합",
+      "old": 109,
+      "recommended": 110,
+      "physical": 122
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 72,
+      "title": "  제2항 논의",
+      "old": 110,
+      "recommended": 111,
+      "physical": 123
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 73,
+      "title": "제6장 결론",
+      "old": 114,
+      "recommended": 115,
+      "physical": 127
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 74,
+      "title": "참고문헌",
+      "old": 117,
+      "recommended": 118,
+      "physical": 130
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 75,
+      "title": "부   록 (도입 현장)",
+      "old": 123,
+      "recommended": 124,
+      "physical": 136
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 76,
+      "title": " Part A. 인구통계학적 특성",
+      "old": 125,
+      "recommended": 126,
+      "physical": 138
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 77,
+      "title": " Part B. 안전관리 실효성",
+      "old": 126,
+      "recommended": 127,
+      "physical": 139
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 78,
+      "title": " Part C. 안전관리 예산 제약성",
+      "old": 128,
+      "recommended": 129,
+      "physical": 141
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 79,
+      "title": " 도입 현장 전용부",
+      "old": 129,
+      "recommended": 130,
+      "physical": 142
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 80,
+      "title": " Part D. 시스템 특성 인식",
+      "old": 129,
+      "recommended": 130,
+      "physical": 142
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 81,
+      "title": " Part E. 경보 피로도 완화",
+      "old": 130,
+      "recommended": 131,
+      "physical": 143
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 82,
+      "title": "부   록 (미도입 현장)",
+      "old": 132,
+      "recommended": 133,
+      "physical": 145
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 83,
+      "title": " Part A. 인구통계학적 특성",
+      "old": 134,
+      "recommended": 135,
+      "physical": 147
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 84,
+      "title": " Part B. 안전관리 실효성",
+      "old": 135,
+      "recommended": 136,
+      "physical": 148
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 85,
+      "title": " Part C. 안전관리 예산 제약성",
+      "old": 137,
+      "recommended": 138,
+      "physical": 150
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 86,
+      "title": "Abstract",
+      "old": 138,
+      "recommended": 139,
+      "physical": 151
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 98,
+      "title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "old": 38,
+      "recommended": 39,
+      "physical": 51
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 99,
+      "title": "<표 3-2> 시스템 모듈 구성과 역할",
+      "old": 41,
+      "recommended": 42,
+      "physical": 54
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 100,
+      "title": "<표 3-3> 시스템 구현 기술 스택",
+      "old": 51,
+      "recommended": 52,
+      "physical": 64
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 101,
+      "title": "<표 3-4> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)",
+      "old": 55,
+      "recommended": 56,
+      "physical": 68
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 102,
+      "title": "<표 3-5> 성능 평가 지표 정의와 측정 목적",
+      "old": 56,
+      "recommended": 57,
+      "physical": 69
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 103,
+      "title": "<표 3-6> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "old": 57,
+      "recommended": 58,
+      "physical": 70
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 104,
+      "title": "<표 3-7> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "old": 58,
+      "recommended": 59,
+      "physical": 71
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 105,
+      "title": "<표 3-8> 상용 솔루션과 본 시스템의 비용 구성 가정 비교(단위: 만 원)",
+      "old": 60,
+      "recommended": 61,
+      "physical": 73
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 106,
+      "title": "<표 4-1> 연구변수의 구성",
+      "old": 66,
+      "recommended": 67,
+      "physical": 79
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 107,
+      "title": "<표 4-2> 연구 가설 종합",
+      "old": 70,
+      "recommended": 71,
+      "physical": 83
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 108,
+      "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "old": 74,
+      "recommended": 75,
+      "physical": 87
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 109,
+      "title": "<표 4-4> 설문지의 최종 구성",
+      "old": 83,
+      "recommended": 84,
+      "physical": 96
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 110,
+      "title": "<표 4-5> 자료 수집 개요",
+      "old": 86,
+      "recommended": 87,
+      "physical": 99
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 111,
+      "title": "<표 5-1> 조사 대상의 인구통계학적 특성(집단별)",
+      "old": 93,
+      "recommended": 94,
+      "physical": 106
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 112,
+      "title": "<표 5-2> 측정도구의 신뢰도 검증 결과",
+      "old": 95,
+      "recommended": 96,
+      "physical": 108
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 113,
+      "title": "<표 5-3> 주요 변수의 기술통계(집단별)",
+      "old": 97,
+      "recommended": 98,
+      "physical": 110
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 114,
+      "title": "<표 5-4> 두 집단의 사전 특성 분포·균형 진단 결과",
+      "old": 99,
+      "recommended": 100,
+      "physical": 112
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 115,
+      "title": "<표 5-5> 혼합모형 가정 및 적합 상태 점검 결과",
+      "old": 102,
+      "recommended": 103,
+      "physical": 115
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 116,
+      "title": "<표 5-6> 안전관리 실효성의 혼합모형 결과(조정 평균·고정효과·분산 성분)",
+      "old": 103,
+      "recommended": 104,
+      "physical": 116
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 117,
+      "title": "<표 5-7> 하위영역별 혼합모형 결과(Holm 보정 포함)",
+      "old": 105,
+      "recommended": 106,
+      "physical": 118
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 118,
+      "title": "<표 5-8> 탐색적 상호작용 혼합모형 결과",
+      "old": 107,
+      "recommended": 108,
+      "physical": 120
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 119,
+      "title": "<표 5-9> 연구 가설 검증 결과 종합",
+      "old": 109,
+      "recommended": 110,
+      "physical": 122
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 124,
+      "title": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "old": 40,
+      "recommended": 41,
+      "physical": 53
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 125,
+      "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "old": 45,
+      "recommended": 46,
+      "physical": 58
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 126,
+      "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "old": 48,
+      "recommended": 49,
+      "physical": 61
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 127,
+      "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "old": 52,
+      "recommended": 53,
+      "physical": 65
+    },
+    {
+      "section": "Contents/section1.xml",
+      "idx": 128,
+      "title": "<그림 4-1> 연구 모형",
+      "old": 67,
+      "recommended": 68,
+      "physical": 80
+    }
+  ],
+  "unresolved": [],
+  "hidden_folio_evidence": [
+    {
+      "section": "Contents/section2.xml",
+      "heading": "제1장 서론",
+      "physical": 13,
+      "printed": 1,
+      "evidence": "first paragraph PAGE newNum + hidePageNum + unique heading + next detected footer",
+      "next_physical": 14,
+      "next_printed": 2
+    }
+  ],
+  "footer_detection": [
+    {
+      "physical": 1,
+      "printed": null,
+      "footer_candidates": []
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "footer_candidates": []
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "footer_candidates": []
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- iv -",
+          "folio": "iv",
+          "bbox": [
+            282.6867980957031,
+            742.4254150390625,
+            312.1754455566406,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- v -",
+          "folio": "v",
+          "bbox": [
+            284.1260070800781,
+            742.4254150390625,
+            310.61627197265625,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 6,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- vi -",
+          "folio": "vi",
+          "bbox": [
+            282.6867980957031,
+            742.4254150390625,
+            312.1754455566406,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 7,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- vii -",
+          "folio": "vii",
+          "bbox": [
+            281.12762451171875,
+            742.4254150390625,
+            313.6146545410156,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 8,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- viii -",
+          "folio": "viii",
+          "bbox": [
+            279.5684814453125,
+            742.4254150390625,
+            315.173828125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 9,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- ix -",
+          "folio": "ix",
+          "bbox": [
+            282.5668640136719,
+            742.4254150390625,
+            312.2953796386719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 10,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- x -",
+          "folio": "x",
+          "bbox": [
+            284.0060729980469,
+            742.4254150390625,
+            310.7362365722656,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 11,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- xi -",
+          "folio": "xi",
+          "bbox": [
+            282.5668640136719,
+            742.4254150390625,
+            312.2953796386719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 12,
+      "printed": null,
+      "footer_candidates": [
+        {
+          "text": "- xii -",
+          "folio": "xii",
+          "bbox": [
+            281.0076904296875,
+            742.4254150390625,
+            313.7345886230469,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 13,
+      "printed": 1,
+      "footer_candidates": []
+    },
+    {
+      "physical": 14,
+      "printed": 2,
+      "footer_candidates": [
+        {
+          "text": "- 2 -",
+          "folio": "2",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 15,
+      "printed": 3,
+      "footer_candidates": [
+        {
+          "text": "- 3 -",
+          "folio": "3",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 16,
+      "printed": 4,
+      "footer_candidates": [
+        {
+          "text": "- 4 -",
+          "folio": "4",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 17,
+      "printed": 5,
+      "footer_candidates": [
+        {
+          "text": "- 5 -",
+          "folio": "5",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 18,
+      "printed": 6,
+      "footer_candidates": [
+        {
+          "text": "- 6 -",
+          "folio": "6",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 19,
+      "printed": 7,
+      "footer_candidates": [
+        {
+          "text": "- 7 -",
+          "folio": "7",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 20,
+      "printed": 8,
+      "footer_candidates": [
+        {
+          "text": "- 8 -",
+          "folio": "8",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 21,
+      "printed": 9,
+      "footer_candidates": [
+        {
+          "text": "- 9 -",
+          "folio": "9",
+          "bbox": [
+            283.7662048339844,
+            742.4254150390625,
+            311.2159729003906,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 22,
+      "printed": 10,
+      "footer_candidates": [
+        {
+          "text": "- 10 -",
+          "folio": "10",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 23,
+      "printed": 11,
+      "footer_candidates": [
+        {
+          "text": "- 11 -",
+          "folio": "11",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 24,
+      "printed": 12,
+      "footer_candidates": [
+        {
+          "text": "- 12 -",
+          "folio": "12",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 25,
+      "printed": 13,
+      "footer_candidates": [
+        {
+          "text": "- 13 -",
+          "folio": "13",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 26,
+      "printed": 14,
+      "footer_candidates": [
+        {
+          "text": "- 14 -",
+          "folio": "14",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 27,
+      "printed": 15,
+      "footer_candidates": [
+        {
+          "text": "- 15 -",
+          "folio": "15",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 28,
+      "printed": 16,
+      "footer_candidates": [
+        {
+          "text": "- 16 -",
+          "folio": "16",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 29,
+      "printed": 17,
+      "footer_candidates": [
+        {
+          "text": "- 17 -",
+          "folio": "17",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 30,
+      "printed": 18,
+      "footer_candidates": [
+        {
+          "text": "- 18 -",
+          "folio": "18",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 31,
+      "printed": 19,
+      "footer_candidates": [
+        {
+          "text": "- 19 -",
+          "folio": "19",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 32,
+      "printed": 20,
+      "footer_candidates": [
+        {
+          "text": "- 20 -",
+          "folio": "20",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 33,
+      "printed": 21,
+      "footer_candidates": [
+        {
+          "text": "- 21 -",
+          "folio": "21",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 34,
+      "printed": 22,
+      "footer_candidates": [
+        {
+          "text": "- 22 -",
+          "folio": "22",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 35,
+      "printed": 23,
+      "footer_candidates": [
+        {
+          "text": "- 23 -",
+          "folio": "23",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 36,
+      "printed": 24,
+      "footer_candidates": [
+        {
+          "text": "- 24 -",
+          "folio": "24",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 37,
+      "printed": 25,
+      "footer_candidates": [
+        {
+          "text": "- 25 -",
+          "folio": "25",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 38,
+      "printed": 26,
+      "footer_candidates": [
+        {
+          "text": "- 26 -",
+          "folio": "26",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 39,
+      "printed": 27,
+      "footer_candidates": [
+        {
+          "text": "- 27 -",
+          "folio": "27",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 40,
+      "printed": 28,
+      "footer_candidates": [
+        {
+          "text": "- 28 -",
+          "folio": "28",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 41,
+      "printed": 29,
+      "footer_candidates": [
+        {
+          "text": "- 29 -",
+          "folio": "29",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 42,
+      "printed": 30,
+      "footer_candidates": [
+        {
+          "text": "- 30 -",
+          "folio": "30",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 43,
+      "printed": 31,
+      "footer_candidates": [
+        {
+          "text": "- 31 -",
+          "folio": "31",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 44,
+      "printed": 32,
+      "footer_candidates": [
+        {
+          "text": "- 32 -",
+          "folio": "32",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 45,
+      "printed": 33,
+      "footer_candidates": [
+        {
+          "text": "- 33 -",
+          "folio": "33",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 46,
+      "printed": 34,
+      "footer_candidates": [
+        {
+          "text": "- 34 -",
+          "folio": "34",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 47,
+      "printed": 35,
+      "footer_candidates": [
+        {
+          "text": "- 35 -",
+          "folio": "35",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 48,
+      "printed": 36,
+      "footer_candidates": [
+        {
+          "text": "- 36 -",
+          "folio": "36",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 49,
+      "printed": 37,
+      "footer_candidates": [
+        {
+          "text": "- 37 -",
+          "folio": "37",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 50,
+      "printed": 38,
+      "footer_candidates": [
+        {
+          "text": "- 38 -",
+          "folio": "38",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 51,
+      "printed": 39,
+      "footer_candidates": [
+        {
+          "text": "- 39 -",
+          "folio": "39",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 52,
+      "printed": 40,
+      "footer_candidates": [
+        {
+          "text": "- 40 -",
+          "folio": "40",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 53,
+      "printed": 41,
+      "footer_candidates": [
+        {
+          "text": "- 41 -",
+          "folio": "41",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 54,
+      "printed": 42,
+      "footer_candidates": [
+        {
+          "text": "- 42 -",
+          "folio": "42",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 55,
+      "printed": 43,
+      "footer_candidates": [
+        {
+          "text": "- 43 -",
+          "folio": "43",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 56,
+      "printed": 44,
+      "footer_candidates": [
+        {
+          "text": "- 44 -",
+          "folio": "44",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 57,
+      "printed": 45,
+      "footer_candidates": [
+        {
+          "text": "- 45 -",
+          "folio": "45",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 58,
+      "printed": 46,
+      "footer_candidates": [
+        {
+          "text": "- 46 -",
+          "folio": "46",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 59,
+      "printed": 47,
+      "footer_candidates": [
+        {
+          "text": "- 47 -",
+          "folio": "47",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 60,
+      "printed": 48,
+      "footer_candidates": [
+        {
+          "text": "- 48 -",
+          "folio": "48",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 61,
+      "printed": 49,
+      "footer_candidates": [
+        {
+          "text": "- 49 -",
+          "folio": "49",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 62,
+      "printed": 50,
+      "footer_candidates": [
+        {
+          "text": "- 50 -",
+          "folio": "50",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 63,
+      "printed": 51,
+      "footer_candidates": [
+        {
+          "text": "- 51 -",
+          "folio": "51",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 64,
+      "printed": 52,
+      "footer_candidates": [
+        {
+          "text": "- 52 -",
+          "folio": "52",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 65,
+      "printed": 53,
+      "footer_candidates": [
+        {
+          "text": "- 53 -",
+          "folio": "53",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 66,
+      "printed": 54,
+      "footer_candidates": [
+        {
+          "text": "- 54 -",
+          "folio": "54",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 67,
+      "printed": 55,
+      "footer_candidates": [
+        {
+          "text": "- 55 -",
+          "folio": "55",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 68,
+      "printed": 56,
+      "footer_candidates": [
+        {
+          "text": "- 56 -",
+          "folio": "56",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 69,
+      "printed": 57,
+      "footer_candidates": [
+        {
+          "text": "- 57 -",
+          "folio": "57",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 70,
+      "printed": 58,
+      "footer_candidates": [
+        {
+          "text": "- 58 -",
+          "folio": "58",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 71,
+      "printed": 59,
+      "footer_candidates": [
+        {
+          "text": "- 59 -",
+          "folio": "59",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 72,
+      "printed": 60,
+      "footer_candidates": [
+        {
+          "text": "- 60 -",
+          "folio": "60",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 73,
+      "printed": 61,
+      "footer_candidates": [
+        {
+          "text": "- 61 -",
+          "folio": "61",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 74,
+      "printed": 62,
+      "footer_candidates": [
+        {
+          "text": "- 62 -",
+          "folio": "62",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 75,
+      "printed": 63,
+      "footer_candidates": [
+        {
+          "text": "- 63 -",
+          "folio": "63",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 76,
+      "printed": 64,
+      "footer_candidates": [
+        {
+          "text": "- 64 -",
+          "folio": "64",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 77,
+      "printed": 65,
+      "footer_candidates": [
+        {
+          "text": "- 65 -",
+          "folio": "65",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 78,
+      "printed": 66,
+      "footer_candidates": [
+        {
+          "text": "- 66 -",
+          "folio": "66",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 79,
+      "printed": 67,
+      "footer_candidates": [
+        {
+          "text": "- 67 -",
+          "folio": "67",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 80,
+      "printed": 68,
+      "footer_candidates": [
+        {
+          "text": "- 68 -",
+          "folio": "68",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 81,
+      "printed": 69,
+      "footer_candidates": [
+        {
+          "text": "- 69 -",
+          "folio": "69",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 82,
+      "printed": 70,
+      "footer_candidates": [
+        {
+          "text": "- 70 -",
+          "folio": "70",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 83,
+      "printed": 71,
+      "footer_candidates": [
+        {
+          "text": "- 71 -",
+          "folio": "71",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 84,
+      "printed": 72,
+      "footer_candidates": [
+        {
+          "text": "- 72 -",
+          "folio": "72",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 85,
+      "printed": 73,
+      "footer_candidates": [
+        {
+          "text": "- 73 -",
+          "folio": "73",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 86,
+      "printed": 74,
+      "footer_candidates": [
+        {
+          "text": "- 74 -",
+          "folio": "74",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 87,
+      "printed": 75,
+      "footer_candidates": [
+        {
+          "text": "- 75 -",
+          "folio": "75",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 88,
+      "printed": 76,
+      "footer_candidates": [
+        {
+          "text": "- 76 -",
+          "folio": "76",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 89,
+      "printed": 77,
+      "footer_candidates": [
+        {
+          "text": "- 77 -",
+          "folio": "77",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 90,
+      "printed": 78,
+      "footer_candidates": [
+        {
+          "text": "- 78 -",
+          "folio": "78",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 91,
+      "printed": 79,
+      "footer_candidates": [
+        {
+          "text": "- 79 -",
+          "folio": "79",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 92,
+      "printed": 80,
+      "footer_candidates": [
+        {
+          "text": "- 80 -",
+          "folio": "80",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 93,
+      "printed": 81,
+      "footer_candidates": [
+        {
+          "text": "- 81 -",
+          "folio": "81",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 94,
+      "printed": 82,
+      "footer_candidates": [
+        {
+          "text": "- 82 -",
+          "folio": "82",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 95,
+      "printed": 83,
+      "footer_candidates": [
+        {
+          "text": "- 83 -",
+          "folio": "83",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 96,
+      "printed": 84,
+      "footer_candidates": [
+        {
+          "text": "- 84 -",
+          "folio": "84",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 97,
+      "printed": 85,
+      "footer_candidates": [
+        {
+          "text": "- 85 -",
+          "folio": "85",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 98,
+      "printed": 86,
+      "footer_candidates": [
+        {
+          "text": "- 86 -",
+          "folio": "86",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 99,
+      "printed": 87,
+      "footer_candidates": [
+        {
+          "text": "- 87 -",
+          "folio": "87",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 100,
+      "printed": 88,
+      "footer_candidates": [
+        {
+          "text": "- 88 -",
+          "folio": "88",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 101,
+      "printed": 89,
+      "footer_candidates": [
+        {
+          "text": "- 89 -",
+          "folio": "89",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 102,
+      "printed": 90,
+      "footer_candidates": [
+        {
+          "text": "- 90 -",
+          "folio": "90",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 103,
+      "printed": 91,
+      "footer_candidates": [
+        {
+          "text": "- 91 -",
+          "folio": "91",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 104,
+      "printed": 92,
+      "footer_candidates": [
+        {
+          "text": "- 92 -",
+          "folio": "92",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 105,
+      "printed": 93,
+      "footer_candidates": [
+        {
+          "text": "- 93 -",
+          "folio": "93",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 106,
+      "printed": 94,
+      "footer_candidates": [
+        {
+          "text": "- 94 -",
+          "folio": "94",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 107,
+      "printed": 95,
+      "footer_candidates": [
+        {
+          "text": "- 95 -",
+          "folio": "95",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 108,
+      "printed": 96,
+      "footer_candidates": [
+        {
+          "text": "- 96 -",
+          "folio": "96",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 109,
+      "printed": 97,
+      "footer_candidates": [
+        {
+          "text": "- 97 -",
+          "folio": "97",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 110,
+      "printed": 98,
+      "footer_candidates": [
+        {
+          "text": "- 98 -",
+          "folio": "98",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 111,
+      "printed": 99,
+      "footer_candidates": [
+        {
+          "text": "- 99 -",
+          "folio": "99",
+          "bbox": [
+            280.64788818359375,
+            742.4254150390625,
+            314.2143249511719,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 112,
+      "printed": 100,
+      "footer_candidates": [
+        {
+          "text": "- 100 -",
+          "folio": "100",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 113,
+      "printed": 101,
+      "footer_candidates": [
+        {
+          "text": "- 101 -",
+          "folio": "101",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 114,
+      "printed": 102,
+      "footer_candidates": [
+        {
+          "text": "- 102 -",
+          "folio": "102",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 115,
+      "printed": 103,
+      "footer_candidates": [
+        {
+          "text": "- 103 -",
+          "folio": "103",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 116,
+      "printed": 104,
+      "footer_candidates": [
+        {
+          "text": "- 104 -",
+          "folio": "104",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 117,
+      "printed": 105,
+      "footer_candidates": [
+        {
+          "text": "- 105 -",
+          "folio": "105",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 118,
+      "printed": 106,
+      "footer_candidates": [
+        {
+          "text": "- 106 -",
+          "folio": "106",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 119,
+      "printed": 107,
+      "footer_candidates": [
+        {
+          "text": "- 107 -",
+          "folio": "107",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 120,
+      "printed": 108,
+      "footer_candidates": [
+        {
+          "text": "- 108 -",
+          "folio": "108",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 121,
+      "printed": 109,
+      "footer_candidates": [
+        {
+          "text": "- 109 -",
+          "folio": "109",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 122,
+      "printed": 110,
+      "footer_candidates": [
+        {
+          "text": "- 110 -",
+          "folio": "110",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 123,
+      "printed": 111,
+      "footer_candidates": [
+        {
+          "text": "- 111 -",
+          "folio": "111",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 124,
+      "printed": 112,
+      "footer_candidates": [
+        {
+          "text": "- 112 -",
+          "folio": "112",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 125,
+      "printed": 113,
+      "footer_candidates": [
+        {
+          "text": "- 113 -",
+          "folio": "113",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 126,
+      "printed": 114,
+      "footer_candidates": [
+        {
+          "text": "- 114 -",
+          "folio": "114",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 127,
+      "printed": 115,
+      "footer_candidates": [
+        {
+          "text": "- 115 -",
+          "folio": "115",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 128,
+      "printed": 116,
+      "footer_candidates": [
+        {
+          "text": "- 116 -",
+          "folio": "116",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 129,
+      "printed": 117,
+      "footer_candidates": [
+        {
+          "text": "- 117 -",
+          "folio": "117",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 130,
+      "printed": 118,
+      "footer_candidates": [
+        {
+          "text": "- 118 -",
+          "folio": "118",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 131,
+      "printed": 119,
+      "footer_candidates": [
+        {
+          "text": "- 119 -",
+          "folio": "119",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 132,
+      "printed": 120,
+      "footer_candidates": [
+        {
+          "text": "- 120 -",
+          "folio": "120",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 133,
+      "printed": 121,
+      "footer_candidates": [
+        {
+          "text": "- 121 -",
+          "folio": "121",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 134,
+      "printed": 122,
+      "footer_candidates": [
+        {
+          "text": "- 122 -",
+          "folio": "122",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 135,
+      "printed": 123,
+      "footer_candidates": [
+        {
+          "text": "- 123 -",
+          "folio": "123",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 136,
+      "printed": 124,
+      "footer_candidates": [
+        {
+          "text": "- 124 -",
+          "folio": "124",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 137,
+      "printed": 125,
+      "footer_candidates": [
+        {
+          "text": "- 125 -",
+          "folio": "125",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 138,
+      "printed": 126,
+      "footer_candidates": [
+        {
+          "text": "- 126 -",
+          "folio": "126",
+          "bbox": [
+            277.6495361328125,
+            742.4254150390625,
+            317.21270751953125,
+            753.453369140625
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 139,
+      "printed": 127,
+      "footer_candidates": [
+        {
+          "text": "- 127 -",
+          "folio": "127",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 140,
+      "printed": 128,
+      "footer_candidates": [
+        {
+          "text": "- 128 -",
+          "folio": "128",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 141,
+      "printed": 129,
+      "footer_candidates": [
+        {
+          "text": "- 129 -",
+          "folio": "129",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 142,
+      "printed": 130,
+      "footer_candidates": [
+        {
+          "text": "- 130 -",
+          "folio": "130",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 143,
+      "printed": 131,
+      "footer_candidates": [
+        {
+          "text": "- 131 -",
+          "folio": "131",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 144,
+      "printed": 132,
+      "footer_candidates": [
+        {
+          "text": "- 132 -",
+          "folio": "132",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 145,
+      "printed": 133,
+      "footer_candidates": [
+        {
+          "text": "- 133 -",
+          "folio": "133",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 146,
+      "printed": 134,
+      "footer_candidates": [
+        {
+          "text": "- 134 -",
+          "folio": "134",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 147,
+      "printed": 135,
+      "footer_candidates": [
+        {
+          "text": "- 135 -",
+          "folio": "135",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 148,
+      "printed": 136,
+      "footer_candidates": [
+        {
+          "text": "- 136 -",
+          "folio": "136",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 149,
+      "printed": 137,
+      "footer_candidates": [
+        {
+          "text": "- 137 -",
+          "folio": "137",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 150,
+      "printed": 138,
+      "footer_candidates": [
+        {
+          "text": "- 138 -",
+          "folio": "138",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    },
+    {
+      "physical": 151,
+      "printed": 139,
+      "footer_candidates": [
+        {
+          "text": "- 139 -",
+          "folio": "139",
+          "bbox": [
+            277.79998779296875,
+            743.2367553710938,
+            317.3846435546875,
+            754.2767333984375
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No physical/printed offset is assumed; hidden folios require explicit XML reset/hiding and next-page evidence.",
+    "Repeated captions require first-start confirmation from table/body evidence.",
+    "An undetected footer remains unresolved; this tool never writes HWPX."
+  ],
+  "final_toc_titles_match": true
+}

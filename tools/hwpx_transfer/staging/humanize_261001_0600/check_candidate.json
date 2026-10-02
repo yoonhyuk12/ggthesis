@@ -1,0 +1,32 @@
+{
+ "base_sha_unchanged": true,
+ "zip_entries_same_order_and_compression": true,
+ "changed_entries": [
+  "Contents/section2.xml"
+ ],
+ "para_count": [
+  2671,
+  2671
+ ],
+ "walk_complete": true,
+ "changed_paragraphs": 18,
+ "inserted_paragraphs": 0,
+ "errors": [],
+ "markers": [
+  681,
+  681
+ ],
+ "markers_not_red": [],
+ "marker_multiset_equal": true,
+ "runs_t": [
+  [
+   2937,
+   2768
+  ],
+  [
+   2937,
+   2768
+  ]
+ ],
+ "ok": true
+}

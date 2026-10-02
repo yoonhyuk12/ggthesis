@@ -1,3 +1,26 @@
+261001_060757 : 03.plan/README.md 수정 — "| humanizer-kr 스킬 5개 판단 틀로 01.docs 서술 문단 선별 수정 후 HWPX 부분 반영(…"
+261001_060754 : 03.plan/261001_0554_humanizer-kr_원고문장_자연화_2차.md 수정 — "## 상태 - 2026-10-01 05:54 작성. 승인: 체크포인트 커밋 `e03591a`(이 PC에 gi…"
+261001_060715 : 00. hwpx/261001_0607_경기공학_건축안전_윤혁_논문_자연화2차반영본.hwpx 추가, 00. hwpx/261001_0607_경기공학_건축안전_윤혁_논문_자연화2차반영본.pdf 추가, tools/hwpx_transfer/staging/humanize_261001_0600/completion.json 추가
+261001_060639 : tools/hwpx_transfer/staging/humanize_261001_0600/png/p24_25_base_vs_reflowed.png 추가
+261001_060556 : tools/hwpx_transfer/staging/humanize_261001_0600/check_reflowed.json 추가, tools/hwpx_transfer/staging/humanize_261001_0600/png/reflowed_sheet_01.png 추가, tools/hwpx_transfer/staging/humanize_261001_0600/png/reflowed_sheet_02.png 추가, tools/hwpx_transfer/staging/humanize_261001_0600/png/reflowed_sheet_03.png 추가, tools/hwpx_transfer/staging/humanize_261001_0600/png/reflowed_sheet_04.png 추가
+261001_060545 : tools/hwpx_transfer/staging/humanize_261001_0600/toc_check.json 추가, tools/hwpx_transfer/staging/humanize_261001_0600/toc_targets.json 추가
+261001_060536 : tools/hwpx_transfer/staging/humanize_261001_0600/check_reflowed.py 추가 — """"Main only: reflowed.hwpx/.pdf vs candidate.hwpx and base …"
+261001_060503 : tools/hwpx_transfer/staging/humanize_261001_0600/reflowed.hwpx 추가, tools/hwpx_transfer/staging/humanize_261001_0600/reflowed.pdf 추가
+261001_060417 : tools/hwpx_transfer/staging/humanize_261001_0600/candidate.hwpx 추가, tools/hwpx_transfer/staging/humanize_261001_0600/check_candidate.json 추가, tools/hwpx_transfer/staging/humanize_261001_0600/patch_log.json 추가, tools/hwpx_transfer/staging/humanize_261001_0600/spec.json 수정
+261001_060337 : tools/hwpx_transfer/staging/humanize_261001_0600/spec.json 추가
+261001_060106 : 01.docs/02_이론적배경.md 수정
+261001_060103 : 01.docs/05_실증분석결과.md 수정
+261001_060048 : 01.docs/03_시스템개발.md 수정
+261001_060039 : 01.docs/03_시스템개발.md 수정, 01.docs/06_결론.md 수정
+261001_060030 : 01.docs/01_서론.md 수정, 01.docs/06_결론.md 수정
+261001_060012 : 01.docs/04_연구설계.md 수정 — "이에 본 연구는 스마트"
+261001_060008 : 01.docs/04_연구설계.md 수정 — "옮기면서 응답자가 이해하기 쉽게 표현을 고쳤다."
+261001_060007 : 01.docs/04_연구설계.md 수정 — "연구자 수정·개발 척도이다. 안전관리 실효성"
+261001_060006 : 01.docs/04_연구설계.md 수정 — "그래서 본 연구는 스마트 건설기술 활용과 성과에 관한 선행연구(황병복, 2026)와 본 시스템의 저비용 인프…"
+261001_055936 : tools/hwpx_transfer/staging/humanize_261001_0600/base_paras.json 추가, tools/hwpx_transfer/staging/humanize_261001_0600/base_paras.txt 추가, tools/hwpx_transfer/staging/humanize_261001_0600/base_tables.json 추가, tools/hwpx_transfer/staging/humanize_261001_0600/build_spec.py 수정, tools/hwpx_transfer/staging/humanize_261001_0600/new_blocks.json 추가
+261001_055919 : tools/hwpx_transfer/staging/humanize_261001_0600/apply.py 추가, tools/hwpx_transfer/staging/humanize_261001_0600/base.hwpx 추가, tools/hwpx_transfer/staging/humanize_261001_0600/build_spec.py 추가, tools/hwpx_transfer/staging/humanize_261001_0600/check_candidate.py 추가, tools/hwpx_transfer/staging/humanize_261001_0600/prep.py 추가, tools/hwpx_transfer/staging/humanize_261001_0600/reflow.ps1 추가 외 2건
+261001_055744 : 03.plan/261001_0554_humanizer-kr_워커브리프.md 수정 — "1. 보호 토큰 대조: 수정 전(`git show e03591a:<path>`)"
+261001_055743 : 03.plan/261001_0554_humanizer-kr_워커브리프.md 수정 — "기준 커밋: `e03591a` — 수정 전 원문은 `git show e03591a:<path>`로 읽는다."
 261001_055619 : 03.plan/README.md 수정 — "| [261001_0505_자연화_HWPX반영.md](261001_0505_자연화_HWPX반영.md) | 자…"
 261001_055609 : 03.plan/261001_0554_humanizer-kr_워커브리프.md 추가 — "# humanizer-kr 자연화 2차 워커 공통 브리프 (261001_0554 계획의 실행 브리프) 저장소…"
 261001_055508 : 03.plan/261001_0554_humanizer-kr_원고문장_자연화_2차.md 추가 — "# humanizer-kr 스킬 적용 원고 문장 자연화 2차 + HWPX 반영 - 요청(2026-10-01)…"

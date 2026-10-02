@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "changed_paragraphs": 165,
+  "md_dispositions": {
+    "replacements": 165,
+    "conflicts": 0,
+    "already_present": 0,
+    "dispositions": 164,
+    "md_paragraphs_ready": 164
+  },
+  "base_sha256": "56caa8ab7dbe194b8dbf4c0e3121d2f1e1d960843ecd45ca41f79ea286c0f05e",
+  "candidate_sha256": "548c4d882cf2c6da2ee3fe970df3d51ff135f6df99a6e18b0cef35d5eff67a45",
+  "checks": [
+    "exact surgical bytes and raw ZIP records",
+    "all specified paragraph text",
+    "p/run/t counts",
+    "charPr refs",
+    "marker text and per-character style",
+    "unaffected text and controls",
+    "changed paragraph cache removal",
+    "source and all MD SHA256"
+  ],
+  "mode": "memory only: no HWPX written",
+  "compiled_helpers": [
+    "apply_prose.py",
+    "build_spec.py",
+    "qa_toc.py",
+    "raw_support.py",
+    "refine_spec.py",
+    "verify_prose.py"
+  ],
+  "spec_sha256": "396377ae369cf92f21ab4176d4902afac85d6084d6e8c80329ec17b8e6a25a59",
+  "sentences_or_phrases": 165,
+  "commands": [
+    "python tools/hwpx_transfer/staging/prose_261001_0356/apply_prose.py --write",
+    "python tools/hwpx_transfer/staging/prose_261001_0356/verify_prose.py"
+  ],
+  "remaining": "Coordinator runs writer, read-only verifier, Hancom COM reflow/save/reopen, PDF all-table/layout and TOC page verification."
+}

@@ -1,0 +1,931 @@
+{
+  "source_pdf": "tools/hwpx_transfer/staging/prose_261001_0356/reflowed.pdf",
+  "source_sha256_at_report": "12121060c61daa3d1c8d405214a2f9e02ed1e6808d5f727429a3ac0fb51145c4",
+  "review_type": "READ ONLY visual inspection of rendered PDF; no XML/text-equivalence tests",
+  "scope": {
+    "physical_pages": [
+      81,
+      151
+    ],
+    "count": 71
+  },
+  "method": "All 18 contact sheets viewed with view_image, four pages per 1700x2464 sheet at 850px/page; 12 selected pages additionally viewed at 1190x1682 full-page zoom. Human/model visual judgments recorded per page.",
+  "summary": {
+    "pages_viewed": 71,
+    "full_page_zooms_viewed": 12,
+    "blocking_layout_defects_found": 0,
+    "table_last_row_clipping_found": false,
+    "footer_collisions_found": false,
+    "missing_continuation_headers_found": false,
+    "caption_orphans_found": false,
+    "heading_orphans_found": [
+      131
+    ],
+    "overall": "pass_with_minor_editorial_observations"
+  },
+  "limitations": [
+    "Visual inspection establishes visible layout only, not exact textual completeness or XML table count. QA worker owns structural/text checks.",
+    "Baseline PDF was not consulted; observations are not classified as newly introduced versus pre-existing.",
+    "Contact sheets used for overall layout and flow; fine glyph verification limited to the 12 full-page zooms.",
+    "Post-TOC-refresh output was not reviewed here; coordinator must establish body-page render identity before carrying this approval forward."
+  ],
+  "issues": [
+    {
+      "id": "B01",
+      "severity": "minor",
+      "pages": [
+        93,
+        94
+      ],
+      "location": "D question-summary table note",
+      "finding": "Note-only continuation page 94 has substantial whitespace; no lost table row.",
+      "action": "Optional pagination refinement."
+    },
+    {
+      "id": "B02",
+      "severity": "minor",
+      "pages": [
+        100
+      ],
+      "location": "Upper paragraph, GAMLj documentation citation",
+      "finding": "Literal Markdown [GAMLj Mixed Models ?? ??](https://gamlj.github.io/mixed.html) syntax is printed.",
+      "action": "Coordinator may report as existing text-format issue; read-only review did not modify."
+    },
+    {
+      "id": "B03",
+      "severity": "minor",
+      "pages": [
+        116
+      ],
+      "location": "Top subsection heading",
+      "finding": "Final syllable ? wraps alone onto the second line.",
+      "action": "Optional heading line-break refinement."
+    },
+    {
+      "id": "B04",
+      "severity": "minor",
+      "pages": [
+        131,
+        132
+      ],
+      "location": "Bottom of physical 131: ?. ???",
+      "finding": "Bibliography subsection heading is orphaned from first entry on physical 132.",
+      "action": "Optional keep-with-next refinement."
+    },
+    {
+      "id": "B05",
+      "severity": "minor",
+      "pages": [
+        136,
+        137,
+        145,
+        146
+      ],
+      "location": "Survey introduction and contact details",
+      "finding": "Contact details spill to almost-empty pages 137 and 146; page 136 keeps affiliation alone below introduction box. No clipping or footer overlap.",
+      "action": "Optional survey pagination refinement."
+    },
+    {
+      "id": "B06",
+      "severity": "informational",
+      "pages": [
+        139,
+        140,
+        142,
+        143,
+        148,
+        149
+      ],
+      "location": "Survey Part B/D instructions and following full tables",
+      "finding": "Instruction-only pages leave large whitespace before full-page tables. Tables retain own column headers and all rows.",
+      "action": "Acceptable if intentional; no cut-off detected."
+    }
+  ],
+  "pages": [
+    {
+      "physical_page": 81,
+      "printed_page": 69,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Prose and hypotheses flow normally; footer clear.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_081.png"
+      ]
+    },
+    {
+      "physical_page": 82,
+      "printed_page": 70,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Hypothesis text complete; lead-in to table on next page.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_081.png"
+      ]
+    },
+    {
+      "physical_page": 83,
+      "printed_page": 71,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 4-2 complete with caption and closing prose; ample footer gap.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_081.png"
+      ]
+    },
+    {
+      "physical_page": 84,
+      "printed_page": 72,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Section headings and prose flow normally.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_081.png"
+      ]
+    },
+    {
+      "physical_page": 85,
+      "printed_page": 73,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Prose continuation; bottom line clear of footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_085.png"
+      ]
+    },
+    {
+      "physical_page": 86,
+      "printed_page": 74,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Measurement description and end-of-section prose; clear footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_085.png"
+      ]
+    },
+    {
+      "physical_page": 87,
+      "printed_page": 75,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 4-3 complete; zoom confirms dense source column and final covariate row not clipped.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_085.png",
+        "visual_B_zoom_87.png"
+      ]
+    },
+    {
+      "physical_page": 88,
+      "printed_page": 76,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Section and procedure prose; red marker continues onto next page.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_085.png"
+      ]
+    },
+    {
+      "physical_page": 89,
+      "printed_page": 77,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Marker continuation legible; subsection and prose leave ample whitespace.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_089.png"
+      ]
+    },
+    {
+      "physical_page": 90,
+      "printed_page": 78,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "A-1?A-6 summary table complete with header and last row.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_089.png"
+      ]
+    },
+    {
+      "physical_page": 91,
+      "printed_page": 79,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "B-1?B-8 table and note complete; footer clear.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_089.png"
+      ]
+    },
+    {
+      "physical_page": 92,
+      "printed_page": 80,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "C-1?C-4 table complete; note below fits.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_089.png"
+      ]
+    },
+    {
+      "physical_page": 93,
+      "printed_page": 81,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "D-1?D-8 table complete; zoom confirms all last-row text within borders.",
+      "issue_ids": [
+        "B01"
+      ],
+      "evidence": [
+        "visual_B_sheet_093.png",
+        "visual_B_zoom_93.png"
+      ]
+    },
+    {
+      "physical_page": 94,
+      "printed_page": 82,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Only preceding D-table note at top; large unused remainder of page.",
+      "issue_ids": [
+        "B01"
+      ],
+      "evidence": [
+        "visual_B_sheet_093.png"
+      ]
+    },
+    {
+      "physical_page": 95,
+      "printed_page": 83,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "E-1?E-4 table, note, and following section complete.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_093.png"
+      ]
+    },
+    {
+      "physical_page": 96,
+      "printed_page": 84,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 4-4 complete; section headings followed by two prose lines.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_093.png"
+      ]
+    },
+    {
+      "physical_page": 97,
+      "printed_page": 85,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Sample-design prose and red pending markers within margins.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_097.png"
+      ]
+    },
+    {
+      "physical_page": 98,
+      "printed_page": 86,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Collection prose with markers; clear footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_097.png"
+      ]
+    },
+    {
+      "physical_page": 99,
+      "printed_page": 87,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 4-5 complete; following heading with prose attached.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_097.png"
+      ]
+    },
+    {
+      "physical_page": 100,
+      "printed_page": 88,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Upper paragraph prints literal Markdown link syntax for GAMLj documentation; zoom confirms visible brackets and URL. No geometric clipping.",
+      "issue_ids": [
+        "B02"
+      ],
+      "evidence": [
+        "visual_B_sheet_097.png",
+        "visual_B_zoom_100.png"
+      ]
+    },
+    {
+      "physical_page": 101,
+      "printed_page": 89,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Analysis prose and displayed equation within margins.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_101.png"
+      ]
+    },
+    {
+      "physical_page": 102,
+      "printed_page": 90,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Analysis prose and numbered paragraphs flow normally.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_101.png"
+      ]
+    },
+    {
+      "physical_page": 103,
+      "printed_page": 91,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Equation continuation and chapter transition prose legible.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_101.png"
+      ]
+    },
+    {
+      "physical_page": 104,
+      "printed_page": 92,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Chapter 5 opening and section prose; marker continues to next page.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_101.png"
+      ]
+    },
+    {
+      "physical_page": 105,
+      "printed_page": 93,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Continuation prose and explanatory note within margins.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_105.png"
+      ]
+    },
+    {
+      "physical_page": 106,
+      "printed_page": 94,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-1 full grid and final total row fit; zoom confirms no footer collision.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_105.png",
+        "visual_B_zoom_106.png"
+      ]
+    },
+    {
+      "physical_page": 107,
+      "printed_page": 95,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Section prose and markers; no overlap.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_105.png"
+      ]
+    },
+    {
+      "physical_page": 108,
+      "printed_page": 96,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-2 panel A caption/header/final row complete; notes and marker fit.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_105.png"
+      ]
+    },
+    {
+      "physical_page": 109,
+      "printed_page": 97,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-2 panel B has panel introduction and column header; final row and notes fit.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_109.png"
+      ]
+    },
+    {
+      "physical_page": 110,
+      "printed_page": 98,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-3 panel A caption, column header, and final E row intact; note moves to next page.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_109.png"
+      ]
+    },
+    {
+      "physical_page": 111,
+      "printed_page": 99,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-3 panel B D-1?E-4 intact. Initial contact-sheet suspicion cleared by full-page zoom: final note ends well above footer 99.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_109.png",
+        "visual_B_zoom_111.png"
+      ]
+    },
+    {
+      "physical_page": 112,
+      "printed_page": 100,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-4 complete; final site-size row and footer separated.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_109.png"
+      ]
+    },
+    {
+      "physical_page": 113,
+      "printed_page": 101,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table note continuation and prose; ample footer gap.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_113.png"
+      ]
+    },
+    {
+      "physical_page": 114,
+      "printed_page": 102,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Section heading wraps across two lines; attached explanatory paragraph.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_113.png"
+      ]
+    },
+    {
+      "physical_page": 115,
+      "printed_page": 103,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-5 complete with note and prose; footer clear.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_113.png"
+      ]
+    },
+    {
+      "physical_page": 116,
+      "printed_page": 104,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Subheading wraps with final syllable ? alone on second line; Table 5-6 panel A complete.",
+      "issue_ids": [
+        "B03"
+      ],
+      "evidence": [
+        "visual_B_sheet_113.png"
+      ]
+    },
+    {
+      "physical_page": 117,
+      "printed_page": 105,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-6 panels B/C each have header and complete final rows; notes clear footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_117.png"
+      ]
+    },
+    {
+      "physical_page": 118,
+      "printed_page": 106,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-7 panel A dense columns; full-page zoom confirms last risk-control row and footer separated.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_117.png",
+        "visual_B_zoom_118.png"
+      ]
+    },
+    {
+      "physical_page": 119,
+      "printed_page": 107,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-7 panel B complete with header; next section has attached prose.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_117.png"
+      ]
+    },
+    {
+      "physical_page": 120,
+      "printed_page": 108,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-8 panel A complete with caption/header/note.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_117.png"
+      ]
+    },
+    {
+      "physical_page": 121,
+      "printed_page": 109,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-8 panels B/C complete with headers and notes; no split rows.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_121.png"
+      ]
+    },
+    {
+      "physical_page": 122,
+      "printed_page": 110,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Table 5-9 complete; final H2 row above footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_121.png"
+      ]
+    },
+    {
+      "physical_page": 123,
+      "printed_page": 111,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Continuation note and discussion section; no clipping.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_121.png"
+      ]
+    },
+    {
+      "physical_page": 124,
+      "printed_page": 112,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Discussion prose and markers; clear footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_121.png"
+      ]
+    },
+    {
+      "physical_page": 125,
+      "printed_page": 113,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Discussion prose and technical numerals; no visible overflow.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_125.png"
+      ]
+    },
+    {
+      "physical_page": 126,
+      "printed_page": 114,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Discussion conclusion and markers; generous whitespace.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_125.png"
+      ]
+    },
+    {
+      "physical_page": 127,
+      "printed_page": 115,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Chapter 6 heading and conclusion prose; marker continues to next page.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_125.png"
+      ]
+    },
+    {
+      "physical_page": 128,
+      "printed_page": 116,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Conclusion continuation; red marker and prose remain above footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_125.png"
+      ]
+    },
+    {
+      "physical_page": 129,
+      "printed_page": 117,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Conclusion ending; normal whitespace.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_129.png"
+      ]
+    },
+    {
+      "physical_page": 130,
+      "printed_page": 118,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "References opening and entries; no clipping.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_129.png"
+      ]
+    },
+    {
+      "physical_page": 131,
+      "printed_page": 119,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Reference entries fit, but ?. ??? is isolated at bottom without first entry.",
+      "issue_ids": [
+        "B04"
+      ],
+      "evidence": [
+        "visual_B_sheet_129.png"
+      ]
+    },
+    {
+      "physical_page": 132,
+      "printed_page": 120,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Bibliography continuation; last entry continues onto next page normally.",
+      "issue_ids": [
+        "B04"
+      ],
+      "evidence": [
+        "visual_B_sheet_129.png"
+      ]
+    },
+    {
+      "physical_page": 133,
+      "printed_page": 121,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Bibliography continuation and URLs within margins.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_133.png"
+      ]
+    },
+    {
+      "physical_page": 134,
+      "printed_page": 122,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Report/other bibliography headings and entries visible; no clipping.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_133.png"
+      ]
+    },
+    {
+      "physical_page": 135,
+      "printed_page": 123,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Remaining references and URLs; no clipping.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_133.png"
+      ]
+    },
+    {
+      "physical_page": 136,
+      "printed_page": 124,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Nested survey introduction complete. Zoom confirms title snug within top cell, date inside lower border, affiliation below box but above footer; remaining contact lines spill to page 137.",
+      "issue_ids": [
+        "B05"
+      ],
+      "evidence": [
+        "visual_B_sheet_133.png",
+        "visual_B_zoom_136.png"
+      ]
+    },
+    {
+      "physical_page": 137,
+      "printed_page": 125,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Only three contact lines at page top; remainder nearly blank.",
+      "issue_ids": [
+        "B05"
+      ],
+      "evidence": [
+        "visual_B_sheet_137.png"
+      ]
+    },
+    {
+      "physical_page": 138,
+      "printed_page": 126,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Survey Part A box and final A-6 choices fit; no footer collision.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_137.png"
+      ]
+    },
+    {
+      "physical_page": 139,
+      "printed_page": 127,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Part B instructions only; table moved to next page, leaving large whitespace.",
+      "issue_ids": [
+        "B06"
+      ],
+      "evidence": [
+        "visual_B_sheet_137.png"
+      ]
+    },
+    {
+      "physical_page": 140,
+      "printed_page": 128,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Survey B-1?B-8 complete; zoom confirms all response columns and last row fit.",
+      "issue_ids": [
+        "B06"
+      ],
+      "evidence": [
+        "visual_B_sheet_137.png",
+        "visual_B_zoom_140.png"
+      ]
+    },
+    {
+      "physical_page": 141,
+      "printed_page": 129,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Survey C-1?C-4 complete with header and instructions.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_141.png"
+      ]
+    },
+    {
+      "physical_page": 142,
+      "printed_page": 130,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Part D instructions only; table moved to next page, leaving large whitespace.",
+      "issue_ids": [
+        "B06"
+      ],
+      "evidence": [
+        "visual_B_sheet_141.png"
+      ]
+    },
+    {
+      "physical_page": 143,
+      "printed_page": 131,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Survey D-1?D-8 complete; full zoom confirms last row, following Part E heading/instructions, and footer do not overlap.",
+      "issue_ids": [
+        "B06"
+      ],
+      "evidence": [
+        "visual_B_sheet_141.png",
+        "visual_B_zoom_143.png"
+      ]
+    },
+    {
+      "physical_page": 144,
+      "printed_page": 132,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Survey E-1?E-4 complete with response header, scale line, and closing thanks.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_141.png"
+      ]
+    },
+    {
+      "physical_page": 145,
+      "printed_page": 133,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Non-adoption survey introduction box complete; full zoom confirms date above border/footer; contact block moved to next page.",
+      "issue_ids": [
+        "B05"
+      ],
+      "evidence": [
+        "visual_B_sheet_145.png",
+        "visual_B_zoom_145.png"
+      ]
+    },
+    {
+      "physical_page": 146,
+      "printed_page": 134,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Only four contact lines at page top; remainder nearly blank.",
+      "issue_ids": [
+        "B05"
+      ],
+      "evidence": [
+        "visual_B_sheet_145.png"
+      ]
+    },
+    {
+      "physical_page": 147,
+      "printed_page": 135,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Non-adoption survey Part A complete; full zoom confirms A-6 choices and bottom border clear footer.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_145.png",
+        "visual_B_zoom_147.png"
+      ]
+    },
+    {
+      "physical_page": 148,
+      "printed_page": 136,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Part B instructions only; table on next page, leaving large whitespace.",
+      "issue_ids": [
+        "B06"
+      ],
+      "evidence": [
+        "visual_B_sheet_145.png"
+      ]
+    },
+    {
+      "physical_page": 149,
+      "printed_page": 137,
+      "visually_viewed": true,
+      "disposition": "pass_with_observation",
+      "observation": "Non-adoption B-1?B-8 complete; zoom confirms response cells and last row fit.",
+      "issue_ids": [
+        "B06"
+      ],
+      "evidence": [
+        "visual_B_sheet_149.png",
+        "visual_B_zoom_149.png"
+      ]
+    },
+    {
+      "physical_page": 150,
+      "printed_page": 138,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Non-adoption C-1?C-4 and closing thanks complete.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_149.png"
+      ]
+    },
+    {
+      "physical_page": 151,
+      "printed_page": 139,
+      "visually_viewed": true,
+      "disposition": "pass",
+      "observation": "Abstract heading and unfilled placeholder only; no layout collision.",
+      "issue_ids": [],
+      "evidence": [
+        "visual_B_sheet_149.png"
+      ]
+    }
+  ]
+}

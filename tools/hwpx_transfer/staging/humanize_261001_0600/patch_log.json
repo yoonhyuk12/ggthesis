@@ -1,0 +1,98 @@
+{
+ "operations": [
+  {
+   "section": "Contents/section2.xml",
+   "idx": 4,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2176,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 42,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 46,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 54,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 154,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 244,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 245,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 254,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 504,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 574,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 780,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 781,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 826,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 869,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2128,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2161,
+   "kind": "replace"
+  },
+  {
+   "section": "Contents/section2.xml",
+   "idx": 2162,
+   "kind": "replace"
+  }
+ ],
+ "marker_fixes": [],
+ "changed_entries": [
+  "Contents/section2.xml"
+ ]
+}

@@ -1,0 +1,8 @@
+{
+  "section": "Contents/section2.xml",
+  "paragraph_idx": 408,
+  "old_charPr": "37",
+  "new_charPr": "78",
+  "change": "spacing 0 to -1; font size ratio color unchanged",
+  "reason": "one orphan line on otherwise blank page at chapter2 end"
+}

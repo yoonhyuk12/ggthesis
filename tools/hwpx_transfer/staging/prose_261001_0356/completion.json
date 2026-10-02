@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "final_approval": true,
+  "source_unchanged": true,
+  "source_sha256": "56caa8ab7dbe194b8dbf4c0e3121d2f1e1d960843ecd45ca41f79ea286c0f05e",
+  "outputs": [
+    {
+      "path": "00. hwpx/261001_0357_경기공학_건축안전_윤혁_논문_문장수정반영본.hwpx",
+      "sha256": "110434663ef91cde6bc209b2e9c6fead919a5db0770c0d73d67e84764fdbb6b9"
+    },
+    {
+      "path": "00. hwpx/261001_0357_경기공학_건축안전_윤혁_논문_문장수정반영본.pdf",
+      "sha256": "c990edc337c0ff733713aa44e4c24ffbca826fb0adb338ff64364af1fd5c03ab"
+    }
+  ],
+  "md_paragraphs": 164,
+  "hwpx_paragraphs": 165,
+  "pages": 150,
+  "tables_including_nested": 62,
+  "red_markers": 681,
+  "figures": 6,
+  "toc_items": 120,
+  "toc_mismatches": 0,
+  "com": "Open, SaveAs HWPX, reopen and SaveAs PDF succeeded for final150",
+  "layout": "Section2 paragraph408 spacing 0 to -1; font size unchanged; orphan line resolved",
+  "toc_final_change": "Section1 paragraph5 purpose heading page3 to page2",
+  "visual_evidence": [
+    "visual_A_report.json",
+    "visual_B_report.json",
+    "visual_final_equivalence.json"
+  ],
+  "final_visual": "148 body page images identical to reviewed output; final pages4 and45 reviewed separately by main",
+  "limitations": "PDF cell localization heuristics are not exhaustive; combined with all-page visual review. Preexisting printed Markdown link and sparse bibliography heading retained. No CopyKiller retest."
+}

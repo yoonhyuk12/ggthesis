@@ -1,0 +1,101 @@
+{
+ "base": "00. hwpx\\261001_0511_경기공학_건축안전_윤혁_논문_자연화반영본.hwpx",
+ "base_sha256_before": "af4e2666bbcced1a588a43db4b2970574f7e3f3117b91d02c8244f48f8152a7d",
+ "base_sha256_after": "af4e2666bbcced1a588a43db4b2970574f7e3f3117b91d02c8244f48f8152a7d",
+ "output": "00. hwpx\\261001_0607_경기공학_건축안전_윤혁_논문_자연화2차반영본.hwpx",
+ "output_sha256": "353c55ebb50574ab2d56450d00f9642af34bd42387b4be67f51573fd1fc335ba",
+ "pdf_sha256": "c71076e97a4e8b09d18695b0d84f497a53d61e7903cfd25c43ab29b839b2e60c",
+ "md_checkpoint": "e03591a",
+ "edits_total": 20,
+ "replaced_paragraphs": 18,
+ "inserted_paragraphs": 0,
+ "conflicts": [],
+ "candidate_check": {
+  "base_sha_unchanged": true,
+  "zip_entries_same_order_and_compression": true,
+  "changed_entries": [
+   "Contents/section2.xml"
+  ],
+  "para_count": [
+   2671,
+   2671
+  ],
+  "walk_complete": true,
+  "changed_paragraphs": 18,
+  "inserted_paragraphs": 0,
+  "errors": [],
+  "markers": [
+   681,
+   681
+  ],
+  "markers_not_red": [],
+  "marker_multiset_equal": true,
+  "runs_t": [
+   [
+    2937,
+    2768
+   ],
+   [
+    2937,
+    2768
+   ]
+  ],
+  "ok": true
+ },
+ "reflowed_check": {
+  "text_preserved": true,
+  "nonempty_paras": [
+   2434,
+   2434
+  ],
+  "markers": 681,
+  "markers_not_red": [],
+  "tables": 54,
+  "pics": 6,
+  "cell_break": 0,
+  "pages": [
+   150,
+   150
+  ],
+  "changed_pages": [
+   13,
+   18,
+   19,
+   20,
+   21,
+   22,
+   24,
+   33,
+   34,
+   35,
+   53,
+   63,
+   74,
+   75,
+   80,
+   85,
+   120,
+   122,
+   123,
+   124,
+   125,
+   127,
+   128
+  ],
+  "footer_intrusions": [],
+  "sheets": [
+   "reflowed_sheet_01.png",
+   "reflowed_sheet_02.png",
+   "reflowed_sheet_03.png",
+   "reflowed_sheet_04.png"
+  ],
+  "pdf_sha256": "c71076e97a4e8b09d18695b0d84f497a53d61e7903cfd25c43ab29b839b2e60c"
+ },
+ "toc": {
+  "entries": 120,
+  "mismatch": [],
+  "unresolved": []
+ },
+ "visual": "changed 23 pages reviewed by main via png/reflowed_sheet_0[1-4].png; no new orphan/footer issue. Pre-existing (also in base) orphan heading \"2. 탐지·제어: 1차 탐지(YOLO) 및 제어 안정성\" at bottom of physical p24 (printed 12) left as-is, reported to user.",
+ "layout_fix": null
+}
