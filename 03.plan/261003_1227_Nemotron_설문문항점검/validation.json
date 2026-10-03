@@ -1,0 +1,243 @@
+{
+  "status": "passed",
+  "executed_at_kst": "2026-10-03T12:57:46+09:00",
+  "command": "python 03.plan/261003_1227_Nemotron_설문문항점검/validate_results.py",
+  "acceptance_pass_count": 1,
+  "checks_passed": 55,
+  "checks": [
+    {
+      "check": "Six distinct source UUIDs",
+      "passed": true
+    },
+    {
+      "check": "Six sites with exactly one case each",
+      "passed": true
+    },
+    {
+      "check": "Each case assigned to a unique site",
+      "passed": true
+    },
+    {
+      "check": "Four adopted sites and two non-adopted sites",
+      "passed": true
+    },
+    {
+      "check": "Two sites per test condition",
+      "passed": true
+    },
+    {
+      "check": "P1 original fields copied exactly",
+      "passed": true
+    },
+    {
+      "check": "P1 provenance complete",
+      "passed": true
+    },
+    {
+      "check": "P1 dataset revision verified",
+      "passed": true
+    },
+    {
+      "check": "P1 name from original text",
+      "passed": true
+    },
+    {
+      "check": "P2 original fields copied exactly",
+      "passed": true
+    },
+    {
+      "check": "P2 provenance complete",
+      "passed": true
+    },
+    {
+      "check": "P2 dataset revision verified",
+      "passed": true
+    },
+    {
+      "check": "P2 name from original text",
+      "passed": true
+    },
+    {
+      "check": "P3 original fields copied exactly",
+      "passed": true
+    },
+    {
+      "check": "P3 provenance complete",
+      "passed": true
+    },
+    {
+      "check": "P3 dataset revision verified",
+      "passed": true
+    },
+    {
+      "check": "P3 name from original text",
+      "passed": true
+    },
+    {
+      "check": "P4 original fields copied exactly",
+      "passed": true
+    },
+    {
+      "check": "P4 provenance complete",
+      "passed": true
+    },
+    {
+      "check": "P4 dataset revision verified",
+      "passed": true
+    },
+    {
+      "check": "P4 name from original text",
+      "passed": true
+    },
+    {
+      "check": "P5 original fields copied exactly",
+      "passed": true
+    },
+    {
+      "check": "P5 provenance complete",
+      "passed": true
+    },
+    {
+      "check": "P5 dataset revision verified",
+      "passed": true
+    },
+    {
+      "check": "P5 name from original text",
+      "passed": true
+    },
+    {
+      "check": "P6 original fields copied exactly",
+      "passed": true
+    },
+    {
+      "check": "P6 provenance complete",
+      "passed": true
+    },
+    {
+      "check": "P6 dataset revision verified",
+      "passed": true
+    },
+    {
+      "check": "P6 name from original text",
+      "passed": true
+    },
+    {
+      "check": "Thirty source items recovered",
+      "passed": true
+    },
+    {
+      "check": "Question bank exactly matches source",
+      "passed": true
+    },
+    {
+      "check": "All 24 B/C/D/E items match chapter 4",
+      "passed": true
+    },
+    {
+      "check": "156 unique applicable items",
+      "passed": true
+    },
+    {
+      "check": "108 common and 48 dedicated items",
+      "passed": true
+    },
+    {
+      "check": "30 items each for P1-P4 and 18 each for P5-P6",
+      "passed": true
+    },
+    {
+      "check": "Every response uses exact source text and line",
+      "passed": true
+    },
+    {
+      "check": "Every response site and UUID match its persona",
+      "passed": true
+    },
+    {
+      "check": "Every status is allowed and has an interpretation/reason",
+      "passed": true
+    },
+    {
+      "check": "Scenario gaps are not treated as wording defects",
+      "passed": true
+    },
+    {
+      "check": "Budget knowledge gaps kept separate",
+      "passed": true
+    },
+    {
+      "check": "No B/C/D/E numeric ratings generated",
+      "passed": true
+    },
+    {
+      "check": "Only 13 directly source-grounded A selections",
+      "passed": true
+    },
+    {
+      "check": "No invented career or site-amount selections",
+      "passed": true
+    },
+    {
+      "check": "Experience absent D/E items follow existing non-applicable rule",
+      "passed": true
+    },
+    {
+      "check": "No-alert adopted cases retained and item-level exceptions respected",
+      "passed": true
+    },
+    {
+      "check": "No-CCTV B3 not marked non-applicable",
+      "passed": true
+    },
+    {
+      "check": "Eight findings with required review fields",
+      "passed": true
+    },
+    {
+      "check": "All input files unchanged from recorded hashes",
+      "passed": true
+    },
+    {
+      "check": "CSV is UTF-8 BOM",
+      "passed": true
+    },
+    {
+      "check": "JSON and CSV identical for every cell",
+      "passed": true
+    },
+    {
+      "check": "HTML includes all 156 response rows",
+      "passed": true
+    },
+    {
+      "check": "HTML uses no external resources",
+      "passed": true
+    },
+    {
+      "check": "HTML contains required LLM and source disclosures",
+      "passed": true
+    },
+    {
+      "check": "Confirmed recruitment and numeric-collection proposals recorded separately",
+      "passed": true
+    },
+    {
+      "check": "No unintended invisible Unicode in generated report",
+      "passed": true
+    }
+  ],
+  "coverage": {
+    "profiles": 6,
+    "sites": 6,
+    "cases_per_site": 1,
+    "adopted_cases": 4,
+    "non_adopted_cases": 2,
+    "common_items": 108,
+    "dedicated_items": 48,
+    "total_applicable_items": 156
+  },
+  "json_csv_identical": true,
+  "utf8_bom": true,
+  "questionnaire_and_design_match": true,
+  "limits": "구조·출처·문항·파일 정합 검증이며 실제 사람의 응답 타당성을 검증한 것은 아니다. 브라우저 화면 렌더링은 별도로 실행하지 않았다."
+}

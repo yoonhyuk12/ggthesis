@@ -1,0 +1,56 @@
+{
+  "review_type": "final_manual_visual_review_of_changed_D_pages",
+  "source_pdf": "tools/hwpx_transfer/staging/survey_261004_0527/ready.pdf",
+  "source_delta_evidence": "tools/hwpx_transfer/staging/survey_261004_0527/ready_visual_delta.json",
+  "status": "pass",
+  "scope": {
+    "section": "Contents/section2.xml",
+    "table_idx": 50,
+    "physical_pages": [147, 148],
+    "printed_pages_read_from_footers": [135, 136],
+    "other_pages": "메인이 제공한 픽셀 일치 증거를 사용하고 변경되지 않은 153쪽은 재검증하지 않았다."
+  },
+  "evidence": [
+    "qa_appendices_visual/ready_d_page_147.png",
+    "qa_appendices_visual/ready_d_page_148.png"
+  ],
+  "checks": [
+    {
+      "name": "heading_and_first_data_row_connected",
+      "passed": true,
+      "observation": "PDF147의 Part D 제목·경험 안내·척도 문장 바로 뒤에서 표 머리행과 D-1이 시작한다. 이전의 제목·안내만 남은 쪽이 해소되었다."
+    },
+    {
+      "name": "first_page_rows_complete",
+      "passed": true,
+      "observation": "PDF147에 D-1부터 D-7까지 순서대로 보이며 각 문항과 ①∼⑤·비해당 칸에 잘림이나 겹침이 없다. D-7의 마지막 전달된다.와 행 하단도 온전히 보인다."
+    },
+    {
+      "name": "row_boundary_split",
+      "passed": true,
+      "observation": "D-7 행이 147쪽 안에서 끝나고 148쪽은 D-8 행으로 이어진다. 문장이나 선택칸 중간에서 나뉘지 않았다."
+    },
+    {
+      "name": "header_repeated_on_continuation",
+      "passed": true,
+      "observation": "PDF148 상단에 시스템 특성 인식의 병합 머리행, 척도 의미, 비해당(점수 아님) 머리행이 반복된다. 기존 열 대응과 회색 제목 띠가 유지된다."
+    },
+    {
+      "name": "last_D8_row_complete",
+      "passed": true,
+      "observation": "PDF148에서 D-8의 전체 문장 모바일 메신저로 받은 알림만으로도 현장 상황을 쉽게 파악할 수 있다., ①∼⑤, 비해당과 하단 테두리까지 보인다."
+    },
+    {
+      "name": "footer_and_following_content_clear",
+      "passed": true,
+      "observation": "두 쪽 모두 표 마지막과 쪽번호 사이에 여백이 있으며 꼬리말 침범이나 본문 가림이 없다. D-8이 148쪽에서 끝나고 이미 통과한 E의 149쪽으로 이어지는 순서를 유지한다. 149쪽 재검증은 메인의 픽셀 일치 증거에 따라 생략했다."
+    },
+    {
+      "name": "remaining_pagination_finding_resolved",
+      "passed": true,
+      "observation": "qa_appendices_followup.json의 PART_HEADING_SEPARATED_D는 안내 바로 아래에서 첫 문항이 시작하고 다음 쪽에서 머리행이 반복되는 배치로 해소되었다."
+    }
+  ],
+  "remaining_findings": [],
+  "review_limit": "D의 변경된 두 쪽만 최종 시각 확인했으며 기존에 확인한 표지·A·B·C·E와 메인의 본문·격자·마커 검증을 반복하지 않았다. 최종 저장과 산출물 확정은 메인이 수행한다."
+}

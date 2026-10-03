@@ -1,0 +1,6 @@
+{
+  "url": "https://datasets-server.huggingface.co/filter?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&where=%22province%22%3D%27%EA%B2%BD%EA%B8%B0%27+AND+%28%22occupation%22%3E%3D%27%EA%B1%B4%EC%84%A4%27+AND+%22occupation%22%3C%27%EA%B1%B4%EC%84%B1%27%29&offset=0&length=12",
+  "requested_at_utc": "2026-10-03T03:32:43.378183+00:00",
+  "error": "HTTPError: HTTP Error 502: Bad Gateway",
+  "completed_at_utc": "2026-10-03T03:32:43.653454+00:00"
+}

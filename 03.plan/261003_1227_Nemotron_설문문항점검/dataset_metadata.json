@@ -1,0 +1,282 @@
+{
+  "url": "https://huggingface.co/api/datasets/nvidia/Nemotron-Personas-Korea",
+  "requested_at_utc": "2026-10-03T03:31:32.453767+00:00",
+  "status": 200,
+  "bytes": 4516,
+  "sha256": "11d9a7b00310c1c68ca2712075cf3e2528140be21e7673515befe4b6141fe075",
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "4516",
+    "Connection": "close",
+    "Date": "Sat, 03 Oct 2026 03:31:34 GMT",
+    "ETag": "W/\"11a4-O/r/wo+bi/OcNGZK5awMvMJ0jsM\"",
+    "X-Powered-By": "huggingface-moon",
+    "X-Request-Id": "Root=1-6ac07715-61febf470a02dfad63b2422c",
+    "RateLimit": "\"api\";r=499;t=163",
+    "RateLimit-Policy": "\"fixed window\";\"api\";q=500;w=300",
+    "cross-origin-opener-policy": "same-origin",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Access-Control-Max-Age": "86400",
+    "Access-Control-Allow-Origin": "https://huggingface.co",
+    "Vary": "Origin",
+    "Access-Control-Expose-Headers": "X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 60921b9745519b7b74d89cadc011a9b2.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "ICN57-P5",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "mmICOlinao5qijfymgLOI6zM_IJBXRZySjCk1kviwl2eKoKQTOtXNA==",
+    "Strict-Transport-Security": "max-age=31536000"
+  },
+  "data": {
+    "_id": "69e695a5d20baec02ee3039c",
+    "id": "nvidia/Nemotron-Personas-Korea",
+    "author": "nvidia",
+    "sha": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+    "lastModified": "2026-06-22T15:37:31.000Z",
+    "private": false,
+    "gated": false,
+    "disabled": false,
+    "tags": [
+      "task_categories:text-generation",
+      "language:ko",
+      "license:cc-by-4.0",
+      "size_categories:1M<n<10M",
+      "format:parquet",
+      "format:optimized-parquet",
+      "modality:image",
+      "modality:text",
+      "library:datasets",
+      "library:dask",
+      "library:polars",
+      "library:mlcroissant",
+      "library:datadesigner",
+      "region:us",
+      "synthetic",
+      "personas",
+      "NVIDIA",
+      "Korean",
+      "datadesigner"
+    ],
+    "description": "\n\t\n\t\t\n\t\n\t\n\t\tNemotron-Personas-Korea\n\t\n\n\n  \n  \n    우리나라 실제 분포에 기반한 합성 페르소나를 위한 복합 AI 시스템\n    A compound AI approach to personas grounded in real-world distributions\n  \n\n\n\n\t\n\t\t\n\t\n\t\n\t\t데이터셋 개요 (Overview)\n\t\n\nNemotron-Personas-Korea는 대한민국의 실제 인구통계학적·지리적·성격 특성 분포를 기반으로 합성된 오픈소스 페르소나 데이터셋(CC BY 4.0)으로, 우리나라 인구의 다양성과 특성을 폭넓게 반영하도록 설계되었습니다. 이는 최초의 대규모 우리말 페르소나 데이터셋이며, 이름, 성별, 나이, 혼인 상태, 교육 수준, 직업, 거주 지역 등의 속성을 실제 대한민국 국가데이터처 국가통계포털(KOSIS), 대법원, 국민건강보험공단, 농촌경제연구원, NAVER Cloud 통계 자료를 기반으로 합성하였습니다.… See the full description on the dataset page: https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea.",
+    "downloads": 5696,
+    "likes": 561,
+    "cardData": {
+      "license": "cc-by-4.0",
+      "task_categories": [
+        "text-generation"
+      ],
+      "language": [
+        "ko"
+      ],
+      "tags": [
+        "synthetic",
+        "personas",
+        "NVIDIA",
+        "Korean",
+        "datadesigner"
+      ],
+      "size_categories": [
+        "1M<n<10M"
+      ],
+      "dataset_info": {
+        "features": [
+          {
+            "name": "uuid",
+            "dtype": "string"
+          },
+          {
+            "name": "professional_persona",
+            "dtype": "string"
+          },
+          {
+            "name": "sports_persona",
+            "dtype": "string"
+          },
+          {
+            "name": "arts_persona",
+            "dtype": "string"
+          },
+          {
+            "name": "travel_persona",
+            "dtype": "string"
+          },
+          {
+            "name": "culinary_persona",
+            "dtype": "string"
+          },
+          {
+            "name": "family_persona",
+            "dtype": "string"
+          },
+          {
+            "name": "persona",
+            "dtype": "string"
+          },
+          {
+            "name": "cultural_background",
+            "dtype": "string"
+          },
+          {
+            "name": "skills_and_expertise",
+            "dtype": "string"
+          },
+          {
+            "name": "skills_and_expertise_list",
+            "dtype": "string"
+          },
+          {
+            "name": "hobbies_and_interests",
+            "dtype": "string"
+          },
+          {
+            "name": "hobbies_and_interests_list",
+            "dtype": "string"
+          },
+          {
+            "name": "career_goals_and_ambitions",
+            "dtype": "string"
+          },
+          {
+            "name": "sex",
+            "dtype": "string"
+          },
+          {
+            "name": "age",
+            "dtype": "int64"
+          },
+          {
+            "name": "marital_status",
+            "dtype": "string"
+          },
+          {
+            "name": "military_status",
+            "dtype": "string"
+          },
+          {
+            "name": "family_type",
+            "dtype": "string"
+          },
+          {
+            "name": "housing_type",
+            "dtype": "string"
+          },
+          {
+            "name": "education_level",
+            "dtype": "string"
+          },
+          {
+            "name": "bachelors_field",
+            "dtype": "string"
+          },
+          {
+            "name": "occupation",
+            "dtype": "string"
+          },
+          {
+            "name": "district",
+            "dtype": "string"
+          },
+          {
+            "name": "province",
+            "dtype": "string"
+          },
+          {
+            "name": "country",
+            "dtype": "string"
+          }
+        ],
+        "splits": [
+          {
+            "name": "train",
+            "num_bytes": 4195142595,
+            "num_examples": 1000000
+          }
+        ],
+        "download_size": 1982395106,
+        "dataset_size": 4195142595
+      },
+      "configs": [
+        {
+          "config_name": "default",
+          "data_files": [
+            {
+              "split": "train",
+              "path": "data/train-*"
+            }
+          ]
+        }
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "data/train-00000-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00001-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00002-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00003-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00004-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00005-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00006-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00007-of-00009.parquet"
+      },
+      {
+        "rfilename": "data/train-00008-of-00009.parquet"
+      },
+      {
+        "rfilename": "images/.DS_Store"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_age_group_distribution.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_approach.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_education_distribution.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_education_map.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_field_stats.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_household_type_distribution.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_marital_status_distribution.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_occupation.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_schema_en.png"
+      },
+      {
+        "rfilename": "images/nemotron_personas_korea_schema_ko.png"
+      }
+    ],
+    "createdAt": "2026-04-20T21:07:49.000Z",
+    "usedStorage": 1985085108
+  },
+  "completed_at_utc": "2026-10-03T03:31:32.824715+00:00"
+}

@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "created_at_kst": "2026-10-03T12:53:58+09:00",
+  "purpose": "실제 조사 전 설문 문항 점검",
+  "generation": {
+    "agent": "Codex",
+    "model_family_from_session_instruction": "GPT-6",
+    "exact_model_id": "gpt-6-astra",
+    "exact_model_id_note": "코디네이터가 orca orchestration worker-show의 provider.model에서 런타임 값을 확인해 전달한 정보(msg_e003fadc56f8, 2026-10-03T03:50:15Z). 더 세부적인 모델 빌드는 미공개.",
+    "temperature": null,
+    "seed": null,
+    "sampling_parameters_note": "세션에 공개되지 않았음; 임의 설정값을 기록하지 않음",
+    "nvidia_model_executed": false,
+    "paid_model_api_called": false,
+    "separate_persona_sessions": false,
+    "implementation": "이 워커가 작성한 해석·발화를 Python 표준 라이브러리로 JSON/CSV/HTML에 저장"
+  },
+  "provenance": {
+    "dataset_url": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+    "dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+    "revision_basis": "HF repository API sha와 selected rows 응답 x-revision을 대조",
+    "dataset_card_url": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea/blob/ada0f5b53a38bb5a30cce09358adde883c1ab63a/README.md",
+    "license": "CC BY 4.0",
+    "creator": "NVIDIA",
+    "changes": "관련 원본 필드 발췌; 가상 현장·소속·지식범위 설정 및 LLM 점검 발화 추가",
+    "request_log": [
+      {
+        "artifact": "architectural_engineer.json",
+        "url": "https://datasets-server.huggingface.co/filter?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&where=%22occupation%22%3D%27%EA%B1%B4%EC%B6%95%EA%B3%B5%ED%95%99+%EA%B8%B0%EC%88%A0%EC%9E%90%27&offset=0&length=12",
+        "requested_at_utc": "2026-10-03T03:33:16.355649+00:00",
+        "completed_at_utc": "2026-10-03T03:33:16.662736+00:00",
+        "error": "HTTPError: HTTP Error 502: Bad Gateway",
+        "error_body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      {
+        "artifact": "civil_engineer.json",
+        "url": "https://datasets-server.huggingface.co/filter?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&where=%22occupation%22%3D%27%ED%86%A0%EB%AA%A9%EA%B3%B5%ED%95%99+%EA%B8%B0%EC%88%A0%EC%9E%90%27&offset=0&length=12",
+        "requested_at_utc": "2026-10-03T03:33:16.355172+00:00",
+        "completed_at_utc": "2026-10-03T03:33:16.662337+00:00",
+        "error": "HTTPError: HTTP Error 502: Bad Gateway",
+        "error_body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      {
+        "artifact": "construction_gyeonggi.json",
+        "url": "https://datasets-server.huggingface.co/filter?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&where=%22province%22%3D%27%EA%B2%BD%EA%B8%B0%27+AND+%28%22occupation%22%3E%3D%27%EA%B1%B4%EC%84%A4%27+AND+%22occupation%22%3C%27%EA%B1%B4%EC%84%B1%27%29&offset=0&length=12",
+        "requested_at_utc": "2026-10-03T03:32:43.378183+00:00",
+        "completed_at_utc": "2026-10-03T03:32:43.653454+00:00",
+        "error": "HTTPError: HTTP Error 502: Bad Gateway"
+      },
+      {
+        "artifact": "construction_manager.json",
+        "url": "https://datasets-server.huggingface.co/filter?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&where=%22occupation%22%3D%27%EA%B1%B4%EC%84%A4+%EB%B0%8F+%EA%B4%91%EC%97%85+%EA%B4%80%EB%A0%A8+%EA%B4%80%EB%A6%AC%EC%9E%90%27&offset=0&length=16",
+        "requested_at_utc": "2026-10-03T03:33:16.354753+00:00",
+        "completed_at_utc": "2026-10-03T03:33:17.524962+00:00",
+        "error": "HTTPError: HTTP Error 500: Internal Server Error",
+        "error_body": "{\"error\":\"The dataset index is corrupted and being rebuilt: The DuckDB database file is invalid or corrupted: /tmp/duckdb-index/downloads/nvidia-Nemotron-Personas-Korea-be457f41/default/train/index.duckdb. It has been removed and will need to be rebuilt.\"}"
+      },
+      {
+        "artifact": "dataset_metadata.json",
+        "url": "https://huggingface.co/api/datasets/nvidia/Nemotron-Personas-Korea",
+        "requested_at_utc": "2026-10-03T03:31:32.453767+00:00",
+        "completed_at_utc": "2026-10-03T03:31:32.824715+00:00",
+        "status": 200,
+        "bytes": 4516,
+        "sha256": "11d9a7b00310c1c68ca2712075cf3e2528140be21e7673515befe4b6141fe075"
+      },
+      {
+        "artifact": "page_0.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=0&length=100",
+        "requested_at_utc": "2026-10-03T03:33:50.536002+00:00",
+        "completed_at_utc": "2026-10-03T03:33:52.024507+00:00",
+        "status": 200,
+        "bytes": 467414,
+        "sha256": "eb74500772c3a6d4fd25fb3193c29d096d1eddb3e3815b5561373e0f58c7da1b"
+      },
+      {
+        "artifact": "page_100.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=100&length=100",
+        "requested_at_utc": "2026-10-03T03:33:50.536345+00:00",
+        "completed_at_utc": "2026-10-03T03:33:52.096883+00:00",
+        "status": 200,
+        "bytes": 465018,
+        "sha256": "6c3a49c0d042959b6469063ffd8a216c9be2b70c4e8b67450494fb680d487521"
+      },
+      {
+        "artifact": "page_1000.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1000&length=100",
+        "requested_at_utc": "2026-10-03T03:34:12.957026+00:00",
+        "completed_at_utc": "2026-10-03T03:34:14.252135+00:00",
+        "status": 200,
+        "bytes": 463200,
+        "sha256": "9cecdc7c16dac1fbeccc5c419112174bc378ac8dce34a1e70977e1eb382b619b"
+      },
+      {
+        "artifact": "page_1100.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1100&length=100",
+        "requested_at_utc": "2026-10-03T03:34:12.957744+00:00",
+        "completed_at_utc": "2026-10-03T03:34:14.129825+00:00",
+        "status": 200,
+        "bytes": 471860,
+        "sha256": "63e10e4757d5aade37d7ec97d83ea2814ccc0b629495dbe1490b7e4507bfc211"
+      },
+      {
+        "artifact": "page_1200.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1200&length=100",
+        "requested_at_utc": "2026-10-03T03:34:12.958307+00:00",
+        "completed_at_utc": "2026-10-03T03:34:14.540316+00:00",
+        "status": 200,
+        "bytes": 475657,
+        "sha256": "b120d04bdf745890227266fbf433e40482e4088e756bce99669a93f2155a5bc9"
+      },
+      {
+        "artifact": "page_1300.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1300&length=100",
+        "requested_at_utc": "2026-10-03T03:34:12.958612+00:00",
+        "completed_at_utc": "2026-10-03T03:34:14.395505+00:00",
+        "status": 200,
+        "bytes": 460937,
+        "sha256": "5ec494f000662da29db8ce942a53843c05c77ff9302de2cd7a0fca83952bb427"
+      },
+      {
+        "artifact": "page_1400.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1400&length=100",
+        "requested_at_utc": "2026-10-03T03:34:14.129857+00:00",
+        "completed_at_utc": "2026-10-03T03:34:15.568044+00:00",
+        "status": 200,
+        "bytes": 469035,
+        "sha256": "e8f288d00cc07944f6dfc4294e03bfc25b4c7cd9f9b635a2b395f4b27b592524"
+      },
+      {
+        "artifact": "page_1500.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1500&length=100",
+        "requested_at_utc": "2026-10-03T03:34:14.252204+00:00",
+        "completed_at_utc": "2026-10-03T03:34:15.262926+00:00",
+        "status": 200,
+        "bytes": 471923,
+        "sha256": "61769dd1e9c55426b4fe793b9fd803de29202f9483d2d6adbff6bfcf93b0ab59"
+      },
+      {
+        "artifact": "page_1600.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1600&length=100",
+        "requested_at_utc": "2026-10-03T03:34:14.395580+00:00",
+        "completed_at_utc": "2026-10-03T03:34:15.645019+00:00",
+        "status": 200,
+        "bytes": 465767,
+        "sha256": "2eaa05079bce834e6ce6e83163a67a65ce3ad26d0d86d83355cf5e8b8c1ad956"
+      },
+      {
+        "artifact": "page_1700.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1700&length=100",
+        "requested_at_utc": "2026-10-03T03:34:14.540388+00:00",
+        "completed_at_utc": "2026-10-03T03:34:15.606854+00:00",
+        "status": 200,
+        "bytes": 462648,
+        "sha256": "6190b42767d3a8a2bb1788e756a7e11da013e3a8af79b56803fcf4eb4addcb1c"
+      },
+      {
+        "artifact": "page_1800.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1800&length=100",
+        "requested_at_utc": "2026-10-03T03:34:15.263004+00:00",
+        "completed_at_utc": "2026-10-03T03:34:16.559763+00:00",
+        "status": 200,
+        "bytes": 465653,
+        "sha256": "4624b16c2fac2e450ea42158c96ac286ef0a2b88d5d407016415e759bae6749e"
+      },
+      {
+        "artifact": "page_1900.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1900&length=100",
+        "requested_at_utc": "2026-10-03T03:34:15.568081+00:00",
+        "completed_at_utc": "2026-10-03T03:34:17.470677+00:00",
+        "status": 200,
+        "bytes": 476073,
+        "sha256": "e84679c9e877e6f5c0d4770664337141f3e7d3eab96bb133119dcf49db19fac5"
+      },
+      {
+        "artifact": "page_200.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=200&length=100",
+        "requested_at_utc": "2026-10-03T03:33:50.536717+00:00",
+        "completed_at_utc": "2026-10-03T03:33:52.064580+00:00",
+        "status": 200,
+        "bytes": 467636,
+        "sha256": "cdea4a1ed0f536c0ccb4ac6a066856cbc3a3d64cc62339f805975cf5918849d1"
+      },
+      {
+        "artifact": "page_300.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=300&length=100",
+        "requested_at_utc": "2026-10-03T03:33:50.537004+00:00",
+        "completed_at_utc": "2026-10-03T03:33:51.988917+00:00",
+        "status": 200,
+        "bytes": 464301,
+        "sha256": "70d8d8fff9bc2cdb8118b16349d318015a99162af7f9a09a99f4a86562873c58"
+      },
+      {
+        "artifact": "page_400.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=400&length=100",
+        "requested_at_utc": "2026-10-03T03:33:51.988948+00:00",
+        "completed_at_utc": "2026-10-03T03:33:53.402514+00:00",
+        "status": 200,
+        "bytes": 457167,
+        "sha256": "565d8e9d298255ae6106102947727c9bcd9280a9ae208f6870ef491336b83298"
+      },
+      {
+        "artifact": "page_500.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=500&length=100",
+        "requested_at_utc": "2026-10-03T03:33:52.024573+00:00",
+        "completed_at_utc": "2026-10-03T03:33:53.413028+00:00",
+        "status": 200,
+        "bytes": 471810,
+        "sha256": "92b2e48ad6f0514881c8b6c8c2085a7672cf7672e3a855ee86d8494b6e3bca46"
+      },
+      {
+        "artifact": "page_600.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=600&length=100",
+        "requested_at_utc": "2026-10-03T03:33:52.064611+00:00",
+        "completed_at_utc": "2026-10-03T03:33:53.143420+00:00",
+        "status": 200,
+        "bytes": 472653,
+        "sha256": "84bf6fe62e27fefbf47dba7b7dbf3e6a8a7f4c985986b5de54df04b16332c555"
+      },
+      {
+        "artifact": "page_700.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=700&length=100",
+        "requested_at_utc": "2026-10-03T03:33:52.096961+00:00",
+        "completed_at_utc": "2026-10-03T03:33:53.089445+00:00",
+        "status": 200,
+        "bytes": 469366,
+        "sha256": "3ad8134357f4ee75bca52ce6c8d1641c08c1a6260d56243d727ac40976c40123"
+      },
+      {
+        "artifact": "page_800.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=800&length=100",
+        "requested_at_utc": "2026-10-03T03:33:53.089516+00:00",
+        "completed_at_utc": "2026-10-03T03:33:54.106484+00:00",
+        "status": 200,
+        "bytes": 471480,
+        "sha256": "847ebc562d2d8cc5bacbd832383fda27bb6e4cbd52d7b5247c115a33f423be33"
+      },
+      {
+        "artifact": "page_900.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=900&length=100",
+        "requested_at_utc": "2026-10-03T03:33:53.143490+00:00",
+        "completed_at_utc": "2026-10-03T03:33:54.123913+00:00",
+        "status": 200,
+        "bytes": 477155,
+        "sha256": "d10a8f5c0896c7f35e302b4332125b83a731b93f00eb1f11c14550872a516f81"
+      },
+      {
+        "artifact": "preview_row.json",
+        "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=0&length=1",
+        "requested_at_utc": "2026-10-03T03:32:43.378524+00:00",
+        "completed_at_utc": "2026-10-03T03:32:44.450931+00:00",
+        "status": 200,
+        "bytes": 7407,
+        "sha256": "5599b488b3b737c66e63fbcb0a0e5bd102e8546dc03334467e29d2debab8a9ab"
+      },
+      {
+        "artifact": "search_1.json",
+        "url": "https://datasets-server.huggingface.co/search?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&query=%ED%98%84%EC%9E%A5%EC%86%8C%EC%9E%A5&offset=0&length=12",
+        "requested_at_utc": "2026-10-03T03:31:32.454197+00:00",
+        "completed_at_utc": "2026-10-03T03:31:53.677591+00:00",
+        "error": "HTTPError: HTTP Error 500: Internal Server Error"
+      },
+      {
+        "artifact": "search_2.json",
+        "url": "https://datasets-server.huggingface.co/search?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&query=%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC%EC%9E%90&offset=0&length=12",
+        "requested_at_utc": "2026-10-03T03:31:32.454565+00:00",
+        "completed_at_utc": "2026-10-03T03:31:53.952128+00:00",
+        "error": "HTTPError: HTTP Error 500: Internal Server Error"
+      },
+      {
+        "artifact": "search_3.json",
+        "url": "https://datasets-server.huggingface.co/search?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&query=%EA%B3%B5%EC%82%AC%EA%B0%90%EB%8F%85&offset=0&length=12",
+        "requested_at_utc": "2026-10-03T03:31:32.454873+00:00",
+        "completed_at_utc": "2026-10-03T03:32:07.622795+00:00",
+        "error": "TimeoutError: The read operation timed out"
+      }
+    ],
+    "known_download_bytes": 9378676,
+    "download_note": "본문을 받은 성공 응답의 바이트 합계이며 HTTP 헤더·실패 응답 본문은 제외. 전체 parquet/약 2GB 데이터셋은 다운로드하지 않음.",
+    "records_inspected": 2000,
+    "selected_records": 6,
+    "api_failure_note": "search 3건(500 2건·timeout 1건), 범위 filter 1건(502), equality filter 3건(500 1건·502 2건). 이후 코디네이터 허용에 따라 rows 20페이지(100행씩)로 전환.",
+    "local_error_note": "별도의 실제 occupation equality 조회 시도는 Python 모듈 경로 오류로 실행 전에 중단되어 네트워크 요청을 보내지 않음."
+  },
+  "inputs": [
+    {
+      "path": "01.docs/부록1_설문지_양식.md",
+      "sha256": "669c5d5f749bb7202b129abe664ce970169df6ad0ffa36fc738c93ccea4390db"
+    },
+    {
+      "path": "01.docs/04_연구설계.md",
+      "sha256": "3a5a494fcc8ac58e9c7cca1fe5be8f9647ccc43a70fb8e923db8ad5e6c3fc2de"
+    },
+    {
+      "path": "논문양식참조/박종용교수님_논문작성요령20260707.md",
+      "sha256": "8e3268a38a61c793d6bfe0e4da5ec42270a7e3c34db7a51dea04edfa0cff72fc"
+    }
+  ],
+  "prompt_and_review_focus": {
+    "task_id": "task_e99f93d02c73",
+    "dispatch_id": "ctx_8d739c731459",
+    "operative_instructions": [
+      "실제 원본 직무 프로필 6개로 공통 18문항×6, 도입 전용 12문항×4를 그대로 읽고 해석·답변가능성·필요정보·모호표현·비해당을 점검",
+      "사용자 정정 반영: 6개 가상현장×1명; S1·S2 도입·알림 경험, S3·S4 도입·정상 운용 무알림, S5·S6 미도입·CCTV 없음",
+      "성과·효율·만족도·예산을 창작하지 말고 현장 정보 미제공과 문항 결함을 구분",
+      "성별·나이로 능력·기술수용성을 판단하지 말 것; 점수분포·검정·효과 추정 금지"
+    ],
+    "coordinator_focus_message": "비교시점(E의 줄었다/늘었다), 복합판단(D3 등), 기술내부를 알아야 하는 문항, 예산담당여부(C), 기존 비해당 안내가 해결하는 항목을 중심으로 실무적인 결과를 작성.",
+    "coordinator_preservation_message": "D3는 반복발송 제한으로 풀면서 제어 안정성이라는 측정기능을 유지한 문항이다. E는 경보 피로도 완화 지각을 기술하는 참고척도이므로 과거 대비 표현 자체를 무조건 삭제하지 말고 비교대상·시점 안내와 경험부재 처리를 먼저 검토.",
+    "selection_fallback_authorization": "search 실패 후 최대 1000~2000행 정도의 소량 페이지에서 건설 관리직을 고르는 방식 허용",
+    "blinding": "위 검토 초점이 사전에 주어졌으므로 블라인드·독립 인지면접이 아니다."
+  },
+  "limitations": [
+    "합성 프로필 6개는 편의 선택한 시험 케이스이며 실제 사람·인구 대표 표본·독립 응답자·실증 증거가 아니다.",
+    "하나의 생성 워커가 모든 해석을 작성하여 비슷한 표현과 동일한 판단 기준을 공유한다. 사람의 인지 과정이나 오해 빈도를 추정할 수 없다.",
+    "현장 배치·소속·보직·예산 담당 여부·경험의 유무가 추가된 가상 조건이며 원본 사실이 아니다.",
+    "원본은 많은 인물을 숙련되고 꼼꼼하다고 서술한다. 그 서술을 수행 수준·안전 성과·응답 신뢰성의 증거로 사용하지 않았다.",
+    "프로필 거주지는 가상 현장 위치나 지역 표본성을 뜻하지 않는다. 제한된 첫 2000행의 선택이므로 직무·지역 다양성이 제한된다.",
+    "이 점검은 제4장에서 계획한 실제 인지면접·전문가 검토·예비조사를 대신하지 않는다.",
+    "문항별 ambiguous는 수정 확정이 아니라 실제 사람에게 확인할 후보이며 기존 안내로 해결되는 항목도 별도 표시했다."
+  ],
+  "user_correction": {
+    "source": "코디네이터가 전달한 사용자 확정(msg_768e031498c4, msg_29b923ad6d34)",
+    "actual_recruitment_plan": {
+      "adopted_sites": 30,
+      "non_adopted_sites": 30,
+      "respondents_per_site": 1,
+      "total_respondents": 60
+    },
+    "simulation_assignment": "6개 가상현장에 각 1명; 조건별 2현장",
+    "earlier_assignment": "초기 3현장×2명 시험안은 폐기했으며 최종 산출물에는 적용하지 않음",
+    "questionnaire_version_note": "읽은 원고는 정정 전 현장당 2명 설계와 A-3·A-4 구간형 문항이다. 이번 점검의 원문 대조 기준은 그 읽기 원본이며 원고를 수정하지 않았다.",
+    "numeric_collection_allowed": "사용자가 실제 만 나이와 건설현장 근무연수의 숫자 수집이 가능하다고 확인했다.",
+    "proposals_only": {
+      "A-3": "응답일 기준 만 나이를 숫자로 수집하는 문항으로 변경 검토",
+      "A-4": "실제 현장 근무기간을 숫자로 수집; 필요하면 년·개월을 받고 정한 규칙에 따라 연수로 환산"
+    },
+    "source_age_caution": "데이터셋 age의 만 나이 여부는 따로 확인하지 않았으므로 새 문항의 실제 만 나이 값으로 전용하지 않는다.",
+    "analysis_direction_note": "코디네이터는 현장 임의절편 없는 두 집단 ANCOVA 방향을 검토한다고 전달했으나 이번 작업은 분석 설계를 변경하거나 실행하지 않는다."
+  },
+  "review_only": true,
+  "manuscript_modified": false,
+  "score_distribution_or_inferential_statistics_created": false,
+  "reproduction": "fetch_sources.py는 공개 API 소량 조회 스크립트이며 rows 페이지 조회 상한은 실행 인자로 관리한다. build_results.py는 저장된 판정 내용을 재직렬화할 뿐 새로운 독립 LLM 응답을 생성하지 않는다.",
+  "validation": {
+    "status": "passed",
+    "executed_at_kst": "2026-10-03T12:57:46+09:00",
+    "command": "python 03.plan/261003_1227_Nemotron_설문문항점검/validate_results.py",
+    "acceptance_pass_count": 1,
+    "checks_passed": 55,
+    "checks": [
+      {
+        "check": "Six distinct source UUIDs",
+        "passed": true
+      },
+      {
+        "check": "Six sites with exactly one case each",
+        "passed": true
+      },
+      {
+        "check": "Each case assigned to a unique site",
+        "passed": true
+      },
+      {
+        "check": "Four adopted sites and two non-adopted sites",
+        "passed": true
+      },
+      {
+        "check": "Two sites per test condition",
+        "passed": true
+      },
+      {
+        "check": "P1 original fields copied exactly",
+        "passed": true
+      },
+      {
+        "check": "P1 provenance complete",
+        "passed": true
+      },
+      {
+        "check": "P1 dataset revision verified",
+        "passed": true
+      },
+      {
+        "check": "P1 name from original text",
+        "passed": true
+      },
+      {
+        "check": "P2 original fields copied exactly",
+        "passed": true
+      },
+      {
+        "check": "P2 provenance complete",
+        "passed": true
+      },
+      {
+        "check": "P2 dataset revision verified",
+        "passed": true
+      },
+      {
+        "check": "P2 name from original text",
+        "passed": true
+      },
+      {
+        "check": "P3 original fields copied exactly",
+        "passed": true
+      },
+      {
+        "check": "P3 provenance complete",
+        "passed": true
+      },
+      {
+        "check": "P3 dataset revision verified",
+        "passed": true
+      },
+      {
+        "check": "P3 name from original text",
+        "passed": true
+      },
+      {
+        "check": "P4 original fields copied exactly",
+        "passed": true
+      },
+      {
+        "check": "P4 provenance complete",
+        "passed": true
+      },
+      {
+        "check": "P4 dataset revision verified",
+        "passed": true
+      },
+      {
+        "check": "P4 name from original text",
+        "passed": true
+      },
+      {
+        "check": "P5 original fields copied exactly",
+        "passed": true
+      },
+      {
+        "check": "P5 provenance complete",
+        "passed": true
+      },
+      {
+        "check": "P5 dataset revision verified",
+        "passed": true
+      },
+      {
+        "check": "P5 name from original text",
+        "passed": true
+      },
+      {
+        "check": "P6 original fields copied exactly",
+        "passed": true
+      },
+      {
+        "check": "P6 provenance complete",
+        "passed": true
+      },
+      {
+        "check": "P6 dataset revision verified",
+        "passed": true
+      },
+      {
+        "check": "P6 name from original text",
+        "passed": true
+      },
+      {
+        "check": "Thirty source items recovered",
+        "passed": true
+      },
+      {
+        "check": "Question bank exactly matches source",
+        "passed": true
+      },
+      {
+        "check": "All 24 B/C/D/E items match chapter 4",
+        "passed": true
+      },
+      {
+        "check": "156 unique applicable items",
+        "passed": true
+      },
+      {
+        "check": "108 common and 48 dedicated items",
+        "passed": true
+      },
+      {
+        "check": "30 items each for P1-P4 and 18 each for P5-P6",
+        "passed": true
+      },
+      {
+        "check": "Every response uses exact source text and line",
+        "passed": true
+      },
+      {
+        "check": "Every response site and UUID match its persona",
+        "passed": true
+      },
+      {
+        "check": "Every status is allowed and has an interpretation/reason",
+        "passed": true
+      },
+      {
+        "check": "Scenario gaps are not treated as wording defects",
+        "passed": true
+      },
+      {
+        "check": "Budget knowledge gaps kept separate",
+        "passed": true
+      },
+      {
+        "check": "No B/C/D/E numeric ratings generated",
+        "passed": true
+      },
+      {
+        "check": "Only 13 directly source-grounded A selections",
+        "passed": true
+      },
+      {
+        "check": "No invented career or site-amount selections",
+        "passed": true
+      },
+      {
+        "check": "Experience absent D/E items follow existing non-applicable rule",
+        "passed": true
+      },
+      {
+        "check": "No-alert adopted cases retained and item-level exceptions respected",
+        "passed": true
+      },
+      {
+        "check": "No-CCTV B3 not marked non-applicable",
+        "passed": true
+      },
+      {
+        "check": "Eight findings with required review fields",
+        "passed": true
+      },
+      {
+        "check": "All input files unchanged from recorded hashes",
+        "passed": true
+      },
+      {
+        "check": "CSV is UTF-8 BOM",
+        "passed": true
+      },
+      {
+        "check": "JSON and CSV identical for every cell",
+        "passed": true
+      },
+      {
+        "check": "HTML includes all 156 response rows",
+        "passed": true
+      },
+      {
+        "check": "HTML uses no external resources",
+        "passed": true
+      },
+      {
+        "check": "HTML contains required LLM and source disclosures",
+        "passed": true
+      },
+      {
+        "check": "Confirmed recruitment and numeric-collection proposals recorded separately",
+        "passed": true
+      },
+      {
+        "check": "No unintended invisible Unicode in generated report",
+        "passed": true
+      }
+    ],
+    "coverage": {
+      "profiles": 6,
+      "sites": 6,
+      "cases_per_site": 1,
+      "adopted_cases": 4,
+      "non_adopted_cases": 2,
+      "common_items": 108,
+      "dedicated_items": 48,
+      "total_applicable_items": 156
+    },
+    "json_csv_identical": true,
+    "utf8_bom": true,
+    "questionnaire_and_design_match": true,
+    "limits": "구조·출처·문항·파일 정합 검증이며 실제 사람의 응답 타당성을 검증한 것은 아니다. 브라우저 화면 렌더링은 별도로 실행하지 않았다."
+  },
+  "prose_audit": {
+    "tool": "clean-user-facing-text/inspect_text.py --audit",
+    "density_tier": "low",
+    "flagged_count": 0,
+    "rewrite_performed": false,
+    "note": "탐지 회피나 인간 저작 판정이 아니다. 원문 인용을 보존하고 설명문을 검토했다."
+  },
+  "artifacts": [
+    {
+      "path": "report.html",
+      "sha256": "9a0346d3229e92a0de31c92e851aa985965b25034b497e4cabd48764bdf16178",
+      "bytes": 162696
+    },
+    {
+      "path": "personas.json",
+      "sha256": "0b1c5fd9f9983cbff3b41db3c395b3f03c79b71a921e7eb52339bc41337bd2b1",
+      "bytes": 32435
+    },
+    {
+      "path": "responses.json",
+      "sha256": "147997377a387f2dc192578a5036e0646d34242327942ff92a611fb8e7755ca5",
+      "bytes": 278744
+    },
+    {
+      "path": "responses.csv",
+      "sha256": "c81f26f365a7edac5070ef872494d9fb3f43a3b1d7c0f123401e93ca5047fe80",
+      "bytes": 140581
+    },
+    {
+      "path": "validation.json",
+      "sha256": "4e0481e7d25f7732a269baa03cc731e0f32b5a0eb33d105fabd9a54309797e7d",
+      "bytes": 5835
+    },
+    {
+      "path": "fetch_sources.py",
+      "sha256": "cdd3486c97710cf893d770906fcc52c02ed9b8a41a475409975a8d63da6364b5",
+      "bytes": 4400
+    },
+    {
+      "path": "build_results.py",
+      "sha256": "5590c1f6f2d2f030cf3b570f7cf00e4db049d385bc22bfe1fd7fc8e4ead3c9f5",
+      "bytes": 62330
+    },
+    {
+      "path": "validate_results.py",
+      "sha256": "ffd162ae64ccdad4728e1383037049cd4045317276d84ce1b5c1f9e78d5a7459",
+      "bytes": 11240
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=0&length=1",
+  "requested_at_utc": "2026-10-03T03:32:43.378524+00:00",
+  "status": 200,
+  "bytes": 7407,
+  "sha256": "5599b488b3b737c66e63fbcb0a0e5bd102e8546dc03334467e29d2debab8a9ab",
+  "headers": {
+    "Content-Type": "application/json",
+    "Content-Length": "7407",
+    "Connection": "close",
+    "Date": "Sat, 03 Oct 2026 03:32:45 GMT",
+    "vary": "Accept-Encoding",
+    "server": "uvicorn",
+    "cache-control": "max-age=120",
+    "x-revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 8730d241d9f0b3a7ee161eabd8b85be0.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "ICN80-P3",
+    "X-Amz-Cf-Id": "oDjPaG7rFHySeZUJJhxCyBaInEYssMJ8MIVS-MA5B32UnohbvsY4pg=="
+  },
+  "data": {
+    "features": [
+      {
+        "feature_idx": 0,
+        "name": "uuid",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 1,
+        "name": "professional_persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 2,
+        "name": "sports_persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 3,
+        "name": "arts_persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 4,
+        "name": "travel_persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 5,
+        "name": "culinary_persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 6,
+        "name": "family_persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 7,
+        "name": "persona",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 8,
+        "name": "cultural_background",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 9,
+        "name": "skills_and_expertise",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 10,
+        "name": "skills_and_expertise_list",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 11,
+        "name": "hobbies_and_interests",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 12,
+        "name": "hobbies_and_interests_list",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 13,
+        "name": "career_goals_and_ambitions",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 14,
+        "name": "sex",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 15,
+        "name": "age",
+        "type": {
+          "dtype": "int64",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 16,
+        "name": "marital_status",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 17,
+        "name": "military_status",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 18,
+        "name": "family_type",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 19,
+        "name": "housing_type",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 20,
+        "name": "education_level",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 21,
+        "name": "bachelors_field",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 22,
+        "name": "occupation",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 23,
+        "name": "district",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 24,
+        "name": "province",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      {
+        "feature_idx": 25,
+        "name": "country",
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "uuid": "03b4f36a18e6469386d0286dddd513c8",
+          "professional_persona": "전기태 씨는 광주 서구의 하역 현장에서 수십 년간 짐을 쌓아 올리며, 지렛대 원리를 이용해 무거운 자재를 효율적으로 옮기는 베테랑의 면모를 보입니다. 동료들 사이에서 가장 빠르고 정확하게 무게 중심을 잡는다는 평을 듣지만, 가끔은 고집스럽게 본인의 옛 방식만을 고수하며 젊은 일꾼들과 투닥거리기도 합니다.",
+          "sports_persona": "전기태 씨는 주말마다 무등산 자락을 느릿느릿 걸으며 땀을 흘리고, 내려오는 길에 단골 목욕탕에서 친구들과 엉켜 앉아 정치 이야기를 나누는 것으로 일주일을 마무리합니다. 무릎 관절이 예전 같지 않아 가끔 절뚝거리면서도 산행만큼은 빼놓지 않는 고집이 있습니다.",
+          "arts_persona": "전기태 씨는 거실 소파에 깊숙이 파묻혀 텔레비전에서 나오는 옛날 가요 프로그램을 보며 젊은 시절의 추억에 젖어드는 시간을 가장 좋아합니다. 가사가 마음에 들면 흥얼거리며 박자를 맞추다가도, 가끔은 세상 돌아가는 이야기에 화가 나 텔레비전 소리를 높이며 투덜거립니다.",
+          "travel_persona": "전기태 씨는 아내와 함께 전국의 역사 유적지를 찾아다니며 옛 조상들의 발취를 느끼는 여행을 즐깁니다. 화려한 관광지보다는 경주나 부여처럼 조용하고 고즈넉한 곳을 걸으며, 아내의 손을 꼭 잡고 천천히 시간을 보내는 것을 소중히 여깁니다.",
+          "culinary_persona": "전기태 씨는 일주일에 한 번 배달 짜장면과 탕수육을 시켜 먹는 날을 손꼽아 기다리며, 2주에 한 번은 아내와 함께 동네 고깃집에서 지글지글 구운 삼겹살에 소주 한 잔을 곁들입니다. 자극적인 중식 맛에 길들여져 가끔은 당 수치가 걱정되지만, 입에 맞는 음식 앞에서는 건강 걱정을 잠시 잊어버립니다.",
+          "family_persona": "전기태 씨는 전·월세 아파트에서 평생의 동반자인 아내와 단출하게 살아가며, 투박한 전라도 사투리로 서로를 챙기는 소박한 애정을 나눕니다. 무뚝뚝한 성격 탓에 다정한 말 한마디는 서툴지만, 아내가 좋아하는 간식을 슬그머니 식탁에 올려두는 방식으로 마음을 표현합니다.",
+          "persona": "전기태 씨는 광주 서구에서 평생 하역 일을 하며 살아온 70대 가장으로, 투박한 손마디에 삶의 흔적이 배어 있는 성실하고 사교적인 인물입니다.",
+          "cultural_background": "광주 서구에서 평생을 보내며 투박하지만 정겨운 전라도 사투리가 몸에 배어 있고, 시장통 사람들과 어울려 왁자지껄하게 이야기 나누는 것을 즐깁니다. 초등학교 졸업 후 곧바로 현장 일에 뛰어들어 몸으로 부딪치며 살아온 세월이 있어, 격식보다는 사람 사이의 의리와 눈치 빠른 태도를 더 중요하게 생각합니다.",
+          "skills_and_expertise": "수십 년간 하역 현장에서 다져진 감각으로 짐의 무게 중심을 한눈에 파악해 가장 효율적으로 쌓아 올리는 요령이 탁월합니다. 무거운 자재를 옮길 때 허리에 무리가 가지 않게 지렛대 원리를 이용하는 자신만의 노하우가 있으며, 현장 동료들 사이에서 짐 쌓기만큼은 가장 빠르고 정확하다는 평가를 받습니다.",
+          "skills_and_expertise_list": "['적재물 무게 중심 파악 및 효율적 배치', '현장 자재 결속 및 고정 기술', '하역 작업 동선 최적화', '현장 인력 간의 갈등 중재 및 분위기 주도']",
+          "hobbies_and_interests": "주말이면 무등산 자락을 천천히 걸으며 땀을 빼고, 내려오는 길에 단골 목욕탕에서 뜨거운 물에 몸을 담그며 동네 친구들과 정치 이야기를 나누는 시간을 가장 아낍니다. 일주일에 한 번쯤은 집으로 짜장면과 탕수육을 시켜 먹으며 텔레비전의 옛날 가요 프로그램을 시청하는 것으로 일주일의 피로를 풉니다.",
+          "hobbies_and_interests_list": "['무등산 둘레길 산책', '동네 대중사우나 이용', '전통시장 맛집 탐방', '트로트 프로그램 시청', '가족과 함께하는 경주나 부여 역사 유적지 여행']",
+          "career_goals_and_ambitions": "큰 욕심 없이 지금처럼 매일 아침 정해진 시간에 출근해 땀 흘려 일하며 건강을 유지하는 것에 만족합니다. 무리하지 않는 선에서 하역 일을 계속하며 아내와 함께 소박하게 생활할 수 있는 생활비를 꾸준히 마련하는 것이 현재의 가장 큰 목표입니다.",
+          "sex": "남자",
+          "age": 74,
+          "marital_status": "배우자있음",
+          "military_status": "비현역",
+          "family_type": "배우자와 거주",
+          "housing_type": "아파트",
+          "education_level": "초등학교",
+          "bachelors_field": "해당없음",
+          "occupation": "하역 및 적재 관련 단순 종사원",
+          "district": "광주-서구",
+          "province": "광주",
+          "country": "대한민국"
+        },
+        "truncated_cells": []
+      }
+    ],
+    "num_rows_total": 1000000,
+    "num_rows_per_page": 100,
+    "partial": false
+  },
+  "completed_at_utc": "2026-10-03T03:32:44.450931+00:00"
+}

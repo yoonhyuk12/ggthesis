@@ -1,0 +1,83 @@
+{
+  "scope": "기존 지적 CH04-V01·CH04-V02의 수정 후 표4-3·표4-4와 주석 및 바로 앞뒤 흐름만 재확인",
+  "source_pdf": "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved.pdf",
+  "source_page_count": 155,
+  "page_numbering": "PDF 물리 쪽은 1부터, 인쇄 쪽번호는 이미지 꼬리말에서 직접 확인",
+  "status": "pass_with_spacing_observation",
+  "previous_findings_resolved": [
+    "CH04-V01",
+    "CH04-V02"
+  ],
+  "checks": [
+    {
+      "table_idx": 18,
+      "label": "표 4-3 변수의 조작적 정의와 측정도구의 구성",
+      "pdf_table_start": 87,
+      "pdf_table_end": 87,
+      "printed_table_page": 75,
+      "pdf_note_pages": [
+        88
+      ],
+      "printed_note_pages": [
+        76
+      ],
+      "prior_issue": "주석과 연결문이 표 앞쪽에 먼저 배치됨",
+      "status": "resolved",
+      "observation": "PDF86은 측정도구 소개 본문으로 끝나고 PDF87에 표 본체가 온전히 배치된다. PDF88에서 출처 열 설명 주석 전체가 먼저 나오고 제4절 연결문이 이어지며, 다음 PDF89에서 제4절이 시작한다. 주석이 표보다 먼저 나오던 순서 역전이 해소되었다.",
+      "last_row_visible": true,
+      "clipping": false,
+      "body_overlap": false,
+      "footer_intrusion": false,
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/followup_layout_page_087.png",
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/followup_layout_page_088.png"
+      ],
+      "nonblocking_observation": "PDF88은 주석·연결문 네 줄만 수록한 뒤 큰 여백이 남는다. 현재 읽기 순서와 가독성은 정상이나 여백 효율은 추가 조판 판단 사항이다."
+    },
+    {
+      "table_idx": 24,
+      "label": "표 4-4 설문지의 최종 구성",
+      "pdf_table_start": 96,
+      "pdf_table_end": 96,
+      "printed_table_page": 84,
+      "pdf_note_pages": [
+        96
+      ],
+      "printed_note_pages": [
+        84
+      ],
+      "prior_issue": "관리용 입력 주석이 표 앞뒤로 분리되며 공변량 낱말도 두 쪽으로 갈라짐",
+      "status": "resolved",
+      "observation": "PDF95의 구성 소개 본문 뒤에 PDF96 표 본체가 놓이고, 같은 PDF96에서 관리용 입력 주석 전체와 제5절 연결문이 표 아래 순서대로 이어진다. 공변량은 정상적인 줄바꿈 범위에서 이어지며 표가 문장 중간에 끼어들지 않는다. PDF97은 제5절로 시작한다.",
+      "last_row_visible": true,
+      "clipping": false,
+      "body_overlap": false,
+      "footer_intrusion": false,
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/followup_layout_page_096.png"
+      ]
+    }
+  ],
+  "method": {
+    "contact_sheets": [
+      "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved_visual/sheet_085.jpg",
+      "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved_visual/sheet_091.jpg",
+      "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved_visual/sheet_097.jpg"
+    ],
+    "enlarged_pages": [
+      87,
+      88,
+      96
+    ],
+    "render_scale": 2,
+    "other_tables_or_figure_rechecked": false,
+    "automatic_checks_repeated": false
+  },
+  "files_written": [
+    "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_followup.json",
+    "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/followup_layout_page_087.png",
+    "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/followup_layout_page_088.png",
+    "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/followup_layout_page_096.png"
+  ],
+  "preservation": "기존 qa_ch04_visual.json과 이전 확대 이미지, MD·HWPX·PDF는 변경하지 않았다."
+}

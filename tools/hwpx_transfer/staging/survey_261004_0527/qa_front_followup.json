@@ -1,0 +1,38 @@
+{
+  "reviewed_file": "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved.pdf",
+  "scope": "표 2-6 시작 쪽·연속표 끝행·주석·바로 뒤 본문의 수정 후 육안 확인만",
+  "resolved_issue": "front_visual_01",
+  "status": "pass",
+  "section": "Contents/section2.xml",
+  "table": 6,
+  "physical_pages": [
+    40,
+    41
+  ],
+  "printed_pages": [
+    28,
+    29
+  ],
+  "previous_page": {
+    "physical": 39,
+    "printed": 27,
+    "observation": "앞 본문만 남고 캡션·머리행이 따로 남지 않는다."
+  },
+  "first_page": {
+    "physical": 40,
+    "printed": 28,
+    "observation": "캡션·머리행과 첫 데이터행이 같은 쪽에서 시작하며 설치·운용 기반, 탐지·제어, 문맥 검증의 3개 데이터행이 모두 보인다."
+  },
+  "continuation_page": {
+    "physical": 41,
+    "printed": 29,
+    "observation": "캡션·머리행 반복 후 마지막 전달 관련 데이터행이 온전히 보인다. 주석, 이어지는 본문, 제2항 제목 및 다음 본문이 표와 겹치지 않으며 꼬리말 침범·잘림이 없다."
+  },
+  "evidence_images": [
+    "qa_front_visual/layout_page_039.png",
+    "qa_front_visual/layout_page_040.png",
+    "qa_front_visual/layout_page_041.png"
+  ],
+  "method": "해당 PDF3쪽을144dpi로 렌더해 눈으로 확인. 다른23표·5그림 및 자동검사는 반복하지 않음.",
+  "remaining_in_this_scope": []
+}

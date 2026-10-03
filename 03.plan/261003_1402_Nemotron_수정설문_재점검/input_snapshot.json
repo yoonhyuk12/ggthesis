@@ -1,0 +1,456 @@
+{
+  "captured_at": "2026-10-03T14:07:01.399051+09:00",
+  "purpose": "원고와 이전 산출물의 변경 전 SHA256 및 파일 목록",
+  "files": [
+    {
+      "path": "01.docs/00_목차.md",
+      "bytes": 11153,
+      "sha256": "72639d86fb3df48dd09b9512d6cf2b1af9868390d4f022b272931232768049fa"
+    },
+    {
+      "path": "01.docs/01_서론.md",
+      "bytes": 12823,
+      "sha256": "79753e233886d2fe5cca3dc001838e9ed9f91bd1d321cfae9f0ea23e25e5b9a1"
+    },
+    {
+      "path": "01.docs/02_이론적배경.md",
+      "bytes": 58778,
+      "sha256": "a80439ee4446135b4092aaacfc4071e23bccd4d764c7f43e6ebca6e9464946be"
+    },
+    {
+      "path": "01.docs/03_시스템개발.md",
+      "bytes": 55847,
+      "sha256": "5af940168518375360cd3d8e9f0d35c3166ab9cb2fa25a070f8b5e194525b8d1"
+    },
+    {
+      "path": "01.docs/04_연구설계.md",
+      "bytes": 55317,
+      "sha256": "a9cdd4cfb7c5c1c265a45ecc2fe8657a431bb8ebdb71ff9f55bbeab71683085e"
+    },
+    {
+      "path": "01.docs/05_실증분석결과.md",
+      "bytes": 47100,
+      "sha256": "76b2175a0017b5a11c91028de929822281b31017518aa9c461d65c0903b1bc3e"
+    },
+    {
+      "path": "01.docs/06_결론.md",
+      "bytes": 7701,
+      "sha256": "72ca831e409ec3c8d8d6374492f1789db93c040d47b41ac2abb0a7de3f857c8d"
+    },
+    {
+      "path": "01.docs/07_참조번호목록.md",
+      "bytes": 60791,
+      "sha256": "90a489f9ef94010c11bfc7f2c41b0b45a78d46de5aee660038648a8cf4649167"
+    },
+    {
+      "path": "01.docs/07_참조번호목록.pdf",
+      "bytes": 249225,
+      "sha256": "07c5e4a9027c38fed68156187ff68a283463f6e15a0cefef42194076eb8981f3"
+    },
+    {
+      "path": "01.docs/figures/evidence/assets/fig_1_1_industry_fatalities_2024.png",
+      "bytes": 134426,
+      "sha256": "4416814d3d3f39be396cb34e30b758f803dd1b272610b6d9ec5fa5c9404fbd0b"
+    },
+    {
+      "path": "01.docs/figures/evidence/assets/fig_1_1_industry_fatalities_2024.svg",
+      "bytes": 12903,
+      "sha256": "0b33c871fe07765a2db1a14c63c6897475eb01bed0f224cb89e0c7a39848f45b"
+    },
+    {
+      "path": "01.docs/figures/evidence/assets/fig_1_2_construction_fatalities_2020_2024.png",
+      "bytes": 128089,
+      "sha256": "3612f138e5aca676ebc63c3b8f64ccc9725b6e3b778909d80e97a89a81a23399"
+    },
+    {
+      "path": "01.docs/figures/evidence/assets/fig_1_2_construction_fatalities_2020_2024.svg",
+      "bytes": 12538,
+      "sha256": "6769ec4bd752239f0b2ee5770139d5b625318b7bce56b37bf77922bf8a927414"
+    },
+    {
+      "path": "01.docs/figures/evidence/assets/fig_3_4_viewer_original.png",
+      "bytes": 2113481,
+      "sha256": "203afb5af50af77801bcd570b2f10d0796db7354bfd14ff189143b5a731bb569"
+    },
+    {
+      "path": "01.docs/figures/evidence/build_figures.py",
+      "bytes": 3879,
+      "sha256": "d5fc8346a8ac749b509d32ee6de5421f23cedaf78e2c51aa5a477535cbcf750b"
+    },
+    {
+      "path": "01.docs/figures/evidence/report.md",
+      "bytes": 8213,
+      "sha256": "5edf7f64d6d6bb55d29f0613140ce7d1889463d21efe882893be77c512233854"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/chart_data.json",
+      "bytes": 1441,
+      "sha256": "4476cefdc0e7637d63f8eb4b0d02f3f4a448b693cf42111e018c114c573d8ad6"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2021.hwp",
+      "bytes": 1450496,
+      "sha256": "3ab19c671a18505f1fc82822c31f64bb82b29f4678db9319d935963805a88d06"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2021.txt",
+      "bytes": 61429,
+      "sha256": "8b8dc40d11d40874f3dd17394f729a12547a13d70d7305db071d29238925107f"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2021_url.txt",
+      "bytes": 179,
+      "sha256": "8225c03814e344b7a73002486efc037b37549a5ef90da8a1eae030cdb2d3bd9d"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2022.hwp",
+      "bytes": 1710592,
+      "sha256": "6c545d62c7e6ad468baaadb07ba7ca8f974c40fcf40a50e08368437601326563"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2022.txt",
+      "bytes": 59974,
+      "sha256": "0f1abeadf498c525fa82149780ac924862c11e6c8038396b255c4f41949c1dd7"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2022_url.txt",
+      "bytes": 179,
+      "sha256": "4a89cb467eb455c32ae026d135002cec39b2b55acda2261bce9416225e87eb98"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2023.hwp",
+      "bytes": 1761792,
+      "sha256": "f17e9015e24a968b101e788338e7e8d7b0a787f3989dd0e5a476aa5d82142624"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2023.txt",
+      "bytes": 61990,
+      "sha256": "0507c5ee71c0eeb9857b5a169e195debcbd621b98b50baa8e4fc6dd6d24c505c"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2023_url.txt",
+      "bytes": 179,
+      "sha256": "eeb2d9942280cb63c6b6307e5a7fd86897424f5f538290956e82bffcc886c112"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2024_pdfpage_27.txt",
+      "bytes": 1603,
+      "sha256": "ffcb7614f98ce0e9e6c652242b547ef9d83878cb0c62694389e7e07d76126e0d"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2024_pdfpage_28.png",
+      "bytes": 153067,
+      "sha256": "eaf7e87bcc9db196e98b46f5b522bdee62f154e96c9950e54e5c99407b639125"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2024_pdfpage_28.txt",
+      "bytes": 1610,
+      "sha256": "ab3529ee597d6f143b917e65bdfb1a9f358e1baa36f25e2ce2fc1a096c8f995e"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/moel_2024_pdfpage_661.txt",
+      "bytes": 279,
+      "sha256": "69f86532927a38bf43c6b91c90c0a55c714259e895f0216cdb9ab34a48c5ca6e"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/verification.json",
+      "bytes": 689,
+      "sha256": "87ddc25a4a0795fa268e34ad281f0edc5a0f953bf35cbd2dbcabcf05ae049c6a"
+    },
+    {
+      "path": "01.docs/figures/evidence/source-data/viewer_candidate.png",
+      "bytes": 2113481,
+      "sha256": "203afb5af50af77801bcd570b2f10d0796db7354bfd14ff189143b5a731bb569"
+    },
+    {
+      "path": "01.docs/figures/README.md",
+      "bytes": 3502,
+      "sha256": "538427e5a59542da3e08038b61fcd83467f97b22605a0542a2f07fd00d7df812"
+    },
+    {
+      "path": "01.docs/figures/research/__pycache__/generate_research_figures.cpython-314.pyc",
+      "bytes": 16373,
+      "sha256": "743e0e778bfa7c4bf481a7a05017960c03657800eb359b0b9cbd701a938b6216"
+    },
+    {
+      "path": "01.docs/figures/research/figure_1-3_research_flow.png",
+      "bytes": 218197,
+      "sha256": "e29a4dedf59c8afddbe2714f51c6a995d90b24091d4ebe4c2754585538e6ef30"
+    },
+    {
+      "path": "01.docs/figures/research/figure_1-3_research_flow.svg",
+      "bytes": 6123,
+      "sha256": "c8f671f4808ffe64a23035f286f19483a0191a0f959dd5f7a88df86f7072d7b5"
+    },
+    {
+      "path": "01.docs/figures/research/figure_4-1_research_model.png",
+      "bytes": 209283,
+      "sha256": "41e5b85f31d2e76dc0c1f5cd209a495d7605c70da9642333854dafee63e095fb"
+    },
+    {
+      "path": "01.docs/figures/research/figure_4-1_research_model.svg",
+      "bytes": 5714,
+      "sha256": "354db847cea042d43bc04cac268aed0400c21bf14c0e33403956ab6b3fc93fd8"
+    },
+    {
+      "path": "01.docs/figures/research/generate_research_figures.py",
+      "bytes": 8081,
+      "sha256": "50fac0af06bf85317a8a59b771b717afb12181067ad8124e938b16f625789dc8"
+    },
+    {
+      "path": "01.docs/figures/research/report.md",
+      "bytes": 6437,
+      "sha256": "d3ae471d944602d73c046f05a919a62584e0f34bfa33efb51afc4961f0be2faa"
+    },
+    {
+      "path": "01.docs/figures/system/fig_3_1_architecture.png",
+      "bytes": 138581,
+      "sha256": "c5054584882f97028462da70f10ac3134ecb1bc520fa7c39fbc5a4b8a6d9b2d2"
+    },
+    {
+      "path": "01.docs/figures/system/fig_3_1_architecture.svg",
+      "bytes": 10401,
+      "sha256": "24383243d61fddc4f6ee31ef4d977575a13c3e9e7e7a41aad63421b6fd762378"
+    },
+    {
+      "path": "01.docs/figures/system/fig_3_2_llm_verification.png",
+      "bytes": 160493,
+      "sha256": "94db0ea5b924ab02e5517eca15dde6a29e2c5abdd8194b4833a10381e68eaf25"
+    },
+    {
+      "path": "01.docs/figures/system/fig_3_2_llm_verification.svg",
+      "bytes": 13940,
+      "sha256": "03d17328ef477bb4a06855ae45f2795f94d7b1293023ea964d22d8bcb5469346"
+    },
+    {
+      "path": "01.docs/figures/system/fig_3_3_rag_correction.png",
+      "bytes": 160724,
+      "sha256": "f6d01ec1369cd4c2ccebc69dd7c41bbc26c78e4a8d67f569915fb000130318b2"
+    },
+    {
+      "path": "01.docs/figures/system/fig_3_3_rag_correction.svg",
+      "bytes": 14814,
+      "sha256": "731fbedde23c92cc2997067925f77ea9452c7dfdac326fca03621b538b7ad474"
+    },
+    {
+      "path": "01.docs/figures/system/generate_system_figures.py",
+      "bytes": 5957,
+      "sha256": "72995ad3cfbef4d76029070b45daf071012d07294caae194016dbaf414022eeb"
+    },
+    {
+      "path": "01.docs/figures/system/render_verification.png",
+      "bytes": 365578,
+      "sha256": "a15b8bc3edc8788327a88b11890dca97bcb5b0878211f82baf883fa0b6b819bf"
+    },
+    {
+      "path": "01.docs/figures/system/report.md",
+      "bytes": 7446,
+      "sha256": "227f35efc78bc68d1373d7b4a9ed8b0dac26b67221006af9135ac1c6f52f05ad"
+    },
+    {
+      "path": "01.docs/부록1_설문지_양식.md",
+      "bytes": 20391,
+      "sha256": "dbd362bff9599f7961cf29940ed2d51b0f106eaa1de5e29f36fa503a467330fa"
+    },
+    {
+      "path": "01.docs/부록2_설문항목_근거매핑.md",
+      "bytes": 35770,
+      "sha256": "38d3164ad881ee650c71c8abf3d80cb71c86550cecdcdd8cf409e3cc6e152a64"
+    },
+    {
+      "path": "01.docs/설문항목_작업이력.md",
+      "bytes": 46279,
+      "sha256": "c343c7c89d255ed4fd355438c02e80809fe874a65bc79391ab30ac78409a30cf"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/architectural_engineer.json",
+      "bytes": 572,
+      "sha256": "b410c5c03a091c19c121885210951b524dca62fbc1c6188903cb4806e3856462"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/build_results.py",
+      "bytes": 62330,
+      "sha256": "5590c1f6f2d2f030cf3b570f7cf00e4db049d385bc22bfe1fd7fc8e4ead3c9f5"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/civil_engineer.json",
+      "bytes": 572,
+      "sha256": "a585494134ea748ef77be079c1cc29a978725d43ba4683e2e3fd09c10ab82347"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/construction_gyeonggi.json",
+      "bytes": 474,
+      "sha256": "13df7420d736cc3255f216f92e338a89fca411443bd37d6fa7d343794df39d02"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/construction_manager.json",
+      "bytes": 738,
+      "sha256": "d72384b1245f13f043838827e69df44e1c114b10e8ace96f0c1fa2d476f54738"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/dataset_metadata.json",
+      "bytes": 8774,
+      "sha256": "fca6c7c06e48c312896f90b4852496d5614978f88c2b68aa2b8ad783f4fbf950"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/fetch_sources.py",
+      "bytes": 4400,
+      "sha256": "cdd3486c97710cf893d770906fcc52c02ed9b8a41a475409975a8d63da6364b5"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/manifest.json",
+      "bytes": 29840,
+      "sha256": "413636cbfe847d1ad948c110ed356387eb0748bded3c789c0f43bf41470ae76c"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_0.json",
+      "bytes": 510333,
+      "sha256": "5b7c5da98af4022f6521e65915e29fe2ae8a03182900a6dd5228be784ef8a375"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_100.json",
+      "bytes": 507939,
+      "sha256": "d3248016ac45f61acdbed895a33673e2aeebe4a3f4c4d8d222ecf797420c1bfe"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1000.json",
+      "bytes": 506122,
+      "sha256": "e8124252eacf7e96df6d790f462a17eda1d6d226810d558a0ca5d03c315609c3"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1100.json",
+      "bytes": 514782,
+      "sha256": "058fd826ee8306e50f02bf038356b140b1be310e7494cd2e6e093ee284812a89"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1200.json",
+      "bytes": 518579,
+      "sha256": "813a86ba1ef3daaf92ec9effbed98122c64c00bc593df91750992d689d7ab2dd"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1300.json",
+      "bytes": 503859,
+      "sha256": "05e65e27d10d12d042ab08957cd6b1008ea35be654a5b4a9f3a2e199ae4a3708"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1400.json",
+      "bytes": 511957,
+      "sha256": "7b40ba67c75185e861017c6433ca9a81e696b38f06704fbb5888e8372b323d5e"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1500.json",
+      "bytes": 514845,
+      "sha256": "d613a7b608beffd0c4fe24c4da5ebae82e2da2edc10bf2daa9a83eb22723f194"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1600.json",
+      "bytes": 508689,
+      "sha256": "e0edd625b04869fe8d3d044a1e4549db7d07a4c477dc43ab92d1333b57905b4f"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1700.json",
+      "bytes": 505570,
+      "sha256": "1782e3c15294717476448845ee613a51b2c381c04bfc3a1b744a5a48babb2551"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1800.json",
+      "bytes": 508575,
+      "sha256": "ab9e3a77b2d8b660c5d5c404315cca46a8fddffc3e1a724dc4135f1677f0c34b"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_1900.json",
+      "bytes": 518995,
+      "sha256": "1f87ea6b2d2e3da1473273770a87d1c0fd4b04175fe373d71c83554c3b4a14fb"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_200.json",
+      "bytes": 510557,
+      "sha256": "51ee774ebe20c61b641abe6c500a566f36c71fd0df3879f4fb9036e80506ade6"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_300.json",
+      "bytes": 507222,
+      "sha256": "faac0c086be2626357b223e2dd585468467a118143258530a2d6bf1339c96bb0"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_400.json",
+      "bytes": 500088,
+      "sha256": "cafda227393690b9c3fcb83d08067f1310d6356f8a32f85d9611e61a09c42337"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_500.json",
+      "bytes": 514731,
+      "sha256": "5160373a789fded1ac7a07ae85713a0ba26a2627926241708d46a5c41e1c202b"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_600.json",
+      "bytes": 515574,
+      "sha256": "254d0a111d87b8134e315dea567eada7cedf3a365ac6d23c1872dd812c473f89"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_700.json",
+      "bytes": 512287,
+      "sha256": "a0a79217f0d911cb955711713ae801fd8ee3a3fd8b152bf4d4af615cd9f27fa1"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_800.json",
+      "bytes": 514401,
+      "sha256": "abdef77c64d583b8632618c69c36a48e8cb04d06294573615ad9c9cde9aa38c9"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/page_900.json",
+      "bytes": 520076,
+      "sha256": "ad674fe613d90abd49f47d0856bcb786fff266d433ffbef4fa2d94abf3f465f0"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/personas.json",
+      "bytes": 32435,
+      "sha256": "0b1c5fd9f9983cbff3b41db3c395b3f03c79b71a921e7eb52339bc41337bd2b1"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/preview_row.json",
+      "bytes": 11017,
+      "sha256": "cd6e6249a51dd371fa283af7ffefe85f5a1c0fdb2b3520235659361c6c12eed0"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/report.html",
+      "bytes": 162696,
+      "sha256": "9a0346d3229e92a0de31c92e851aa985965b25034b497e4cabd48764bdf16178"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/responses.csv",
+      "bytes": 140581,
+      "sha256": "c81f26f365a7edac5070ef872494d9fb3f43a3b1d7c0f123401e93ca5047fe80"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/responses.json",
+      "bytes": 278744,
+      "sha256": "147997377a387f2dc192578a5036e0646d34242327942ff92a611fb8e7755ca5"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/search_1.json",
+      "bytes": 374,
+      "sha256": "0aa1f19f4bad410d457c75222db04cfff89ae000e0855ad9d85d4628e9d087b3"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/search_2.json",
+      "bytes": 383,
+      "sha256": "164016c44d4536cb36fe7164ddea9c01a04296e3a47f1516bcf20ed78cf50749"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/search_3.json",
+      "bytes": 368,
+      "sha256": "cc544fe30baf10d1a1cfd29f1b739c0d45b1cdbcb553d0784c33261b12298b61"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/validate_results.py",
+      "bytes": 11240,
+      "sha256": "ffd162ae64ccdad4728e1383037049cd4045317276d84ce1b5c1f9e78d5a7459"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/validation.json",
+      "bytes": 5835,
+      "sha256": "4e0481e7d25f7732a269baa03cc731e0f32b5a0eb33d105fabd9a54309797e7d"
+    }
+  ]
+}

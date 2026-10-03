@@ -1,0 +1,7 @@
+{
+  "url": "https://datasets-server.huggingface.co/filter?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&where=%22occupation%22%3D%27%EA%B1%B4%EC%84%A4+%EB%B0%8F+%EA%B4%91%EC%97%85+%EA%B4%80%EB%A0%A8+%EA%B4%80%EB%A6%AC%EC%9E%90%27&offset=0&length=16",
+  "requested_at_utc": "2026-10-03T03:33:16.354753+00:00",
+  "error": "HTTPError: HTTP Error 500: Internal Server Error",
+  "error_body": "{\"error\":\"The dataset index is corrupted and being rebuilt: The DuckDB database file is invalid or corrupted: /tmp/duckdb-index/downloads/nvidia-Nemotron-Personas-Korea-be457f41/default/train/index.duckdb. It has been removed and will need to be rebuilt.\"}",
+  "completed_at_utc": "2026-10-03T03:33:17.524962+00:00"
+}

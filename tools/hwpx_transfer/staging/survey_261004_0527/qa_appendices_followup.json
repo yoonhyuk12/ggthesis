@@ -1,0 +1,102 @@
+{
+  "review_type": "manual_visual_followup_of_changed_appendix_layout",
+  "source_pdf": "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved.pdf",
+  "source_qa_read": "tools/hwpx_transfer/staging/survey_261004_0527/layout_saved_qa.json",
+  "previous_report_preserved": "tools/hwpx_transfer/staging/survey_261004_0527/qa_appendices_visual.json",
+  "status": "one_pagination_issue_remaining",
+  "scope": {
+    "pdf_total_pages_reported_by_main": 155,
+    "section": "Contents/section2.xml",
+    "table_indices_reviewed": [45, 46, 47, 50, 51, 52, 53, 54],
+    "physical_pages_opened_at_large_size": [142, 144, 147, 148, 149, 150, 152],
+    "printed_pages_read_on_images": [130, 132, 135, 136, 137, 138, 140],
+    "unchanged_BC": "앞서 통과한 B·C 내용은 재검증하지 않았다.",
+    "not_repeated": "메인의 본문·65표 격자·501마커 PDF 보존 검증은 반복하지 않았다."
+  },
+  "evidence": {
+    "contact_sheets": ["layout_saved_visual/sheet_139.jpg", "layout_saved_visual/sheet_145.jpg", "layout_saved_visual/sheet_151.jpg"],
+    "large_renders": [
+      "qa_appendices_visual/layout_page_142.png",
+      "qa_appendices_visual/layout_page_144.png",
+      "qa_appendices_visual/layout_page_147.png",
+      "qa_appendices_visual/layout_page_148.png",
+      "qa_appendices_visual/layout_page_149.png",
+      "qa_appendices_visual/layout_page_150.png",
+      "qa_appendices_visual/layout_page_152.png"
+    ],
+    "render_method": "layout_saved.pdf 해당 쪽을 PyMuPDF 1.7배로 직접 렌더하고 view_image로 확대 확인"
+  },
+  "tables": [
+    {
+      "table_idx": 45,
+      "name": "도입 표지",
+      "physical_pages": [142],
+      "printed_pages": [130],
+      "verdict": "pass",
+      "observations": "표지 제목·전체 안내·2026년 10월·소속·지도교수·연구자·이메일이 한 쪽에 모두 보인다. 연락처만 다음 쪽으로 밀리던 현상이 해소되었다. 본문·테두리·연락처 사이에 가림이나 잘림이 없고 이메일 아래와 쪽번호 사이에도 여백이 있다. 자발적 세 글자와 학술 연구를 위한 통계 분석에만 구절의 굵게가 정상적으로 보이며 임의 글자 강조 전이가 없다."
+    },
+    {
+      "table_idx": 46,
+      "nested_table_idx": 47,
+      "name": "도입 A 외곽·중첩 제목",
+      "physical_pages": [144],
+      "printed_pages": [132],
+      "verdict": "pass",
+      "observations": "Part A 제목·숫자 입력 안내·회색 중첩 제목·A1∼A6·마지막 총공사비 안내가 같은 쪽에 배치되었다. 마지막 안내의 끝 오.까지 표 안에 보이며 표 하단과 쪽번호 사이에 충분한 여백이 있어 이전 침범이 해소되었다. 중첩 제목은 외곽 표 폭 안에 있고 새 가림이나 겹침이 없다."
+    },
+    {
+      "table_idx": 50,
+      "name": "D",
+      "physical_pages": [148],
+      "printed_pages": [136],
+      "heading_and_guidance_physical_pages": [147],
+      "heading_and_guidance_printed_pages": [135],
+      "verdict": "table_body_pass_but_heading_separation_remains",
+      "observations": "D1∼D8의 문항과 ①∼⑤·비해당 칸, 머리행의 점수 아님 표시, D8 끝 문장과 하단 테두리는 온전히 보이며 쪽번호 여백도 충분하다. 그러나 Part D 제목·경험 안내·척도 문장은 147쪽에만 있고 표는 148쪽으로 분리된다. 이전 제목·안내와 표 분리 지적 중 D는 아직 해소되지 않았다."
+    },
+    {
+      "table_idx": 51,
+      "name": "E",
+      "physical_pages": [149],
+      "printed_pages": [137],
+      "verdict": "pass",
+      "observations": "Part E 제목·전체 비교 안내·척도·E1∼E4·비해당 칸·감사 문장이 같은 쪽에 온전히 표시된다. 마지막 E4와 표 하단, 뒤따르는 감사 문장 사이에 겹침이 없고 꼬리말까지 충분한 여백이 있다."
+    },
+    {
+      "table_idx": 52,
+      "name": "미도입 표지",
+      "physical_pages": [150],
+      "printed_pages": [138],
+      "verdict": "pass",
+      "observations": "제목·전체 안내·날짜·소속·지도교수·연구자·이메일이 한 쪽에 모였다. 연락처 분리와 불필요한 연락처 전용 쪽이 해소되었다. 자발적과 학술 연구를 위한 통계 분석에만의 굵게가 정상이며 임의 글자 강조가 없다. 표 하단·연락처·쪽번호가 서로 겹치지 않는다."
+    },
+    {
+      "table_idx": 53,
+      "nested_table_idx": 54,
+      "name": "미도입 A 외곽·중첩 제목",
+      "physical_pages": [152],
+      "printed_pages": [140],
+      "verdict": "pass",
+      "observations": "Part A 제목·안내와 표 전체가 한 쪽에 배치된다. A6 마지막 안내 끝 오.까지 외곽 테두리 안에 있고 표 아래와 쪽번호 사이에 넓은 여백이 생겨 이전의 쪽번호 끼어듦이 해소되었다. 중첩 제목·문항·보기의 겹침이나 잘림도 없다."
+    }
+  ],
+  "resolved_prior_findings": [
+    {"id": "A_FOOTER_INTRUSION", "resolved": true, "evidence_physical_pages": [144, 152]},
+    {"id": "COVER_CONTACTS_SPLIT", "resolved": true, "evidence_physical_pages": [142, 150]},
+    {"id": "COVER_VOLUNTARY_EMPHASIS", "resolved": true, "evidence_physical_pages": [142, 150]},
+    {"id": "PART_HEADING_SEPARATED_A", "resolved": true, "evidence_physical_pages": [144, 152]}
+  ],
+  "remaining_findings": [
+    {
+      "id": "PART_HEADING_SEPARATED_D",
+      "priority": "medium",
+      "physical_pages": [147, 148],
+      "printed_pages": [135, 136],
+      "table_idx": 50,
+      "finding": "D의 제목·전체 응답 안내와 척도 문장만 147에 남고, 문항표는 148에서 시작한다.",
+      "requested_resolution": "가능한 배치 조정으로 제목·안내와 표 시작을 연결한다. 내용·글자크기를 유지한 채 한 쪽에 함께 배치할 수 없다면 필요한 행 경계 분할과 반복 머리행으로 첫 문항을 안내 아래에서 시작하게 한다.",
+      "limited_impact": "D표 본문 자체의 잘림·끝행 누락·꼬리말 침범은 없다."
+    }
+  ],
+  "completion_boundary": "변경 대상의 문항·끝행과 안전 여백은 통과했으며 D 제목·안내 분리 1건은 남아 있다. 이 보고서만으로 D 배치 수정 또는 전체 최종 PDF 완료를 주장하지 않는다."
+}

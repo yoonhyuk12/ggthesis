@@ -1,0 +1,54 @@
+{
+  "changes": [
+    {
+      "tables": [
+        26,
+        27,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        41,
+        43
+      ],
+      "change": "one-page table flow; widths and text preserved"
+    },
+    {
+      "tables": [
+        18,
+        24
+      ],
+      "change": "inline whole tables keep following notes after the table"
+    },
+    {
+      "table": 6,
+      "change": "start on a fresh page; retain existing row splitting"
+    },
+    {
+      "tables": [
+        46,
+        53
+      ],
+      "change": "150% paragraph spacing, unchanged fonts/text/nested grids; remove empty spacer paragraph and reset obsolete minimum height"
+    },
+    {
+      "tables": [
+        45,
+        52
+      ],
+      "change": "140% disclosure spacing; restore MD voluntary-participation bold; preserve full cover wording and contacts"
+    },
+    {
+      "tables": [
+        50,
+        51
+      ],
+      "change": "140% spacing and content-driven heights; preserve fourteen-column merged grids and all NA labels"
+    }
+  ],
+  "touched_root_paragraphs": 20,
+  "added_paragraph_styles": 14
+}

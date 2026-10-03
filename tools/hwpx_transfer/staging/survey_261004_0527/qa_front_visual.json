@@ -1,0 +1,588 @@
+{
+  "reviewed_file": "tools/hwpx_transfer/staging/survey_261004_0527/reflowed.pdf",
+  "review_type": "PDF 이미지 육안 배치 검토",
+  "scope": "section0 3표·section1 5표·section2 table0~15 및 그림1-1/3-1~3-4",
+  "review_completed": true,
+  "tables_reviewed": 24,
+  "table_pass_count": 23,
+  "table_adjustment_count": 1,
+  "figures_reviewed": 5,
+  "tables": [
+    {
+      "section": "Contents/section0.xml",
+      "table": 0,
+      "title": "표지",
+      "physical_pages": [
+        1
+      ],
+      "printed_pages": [],
+      "context_pages_reviewed": [
+        1
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_001.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section0.xml",
+      "table": 1,
+      "title": "속표지",
+      "physical_pages": [
+        2
+      ],
+      "printed_pages": [],
+      "context_pages_reviewed": [
+        2
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_001.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section0.xml",
+      "table": 2,
+      "title": "인준서",
+      "physical_pages": [
+        3
+      ],
+      "printed_pages": [],
+      "context_pages_reviewed": [
+        3
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_001.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section1.xml",
+      "table": 0,
+      "title": "목차 제목",
+      "physical_pages": [
+        4
+      ],
+      "printed_pages": [
+        "iv"
+      ],
+      "context_pages_reviewed": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_001.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section1.xml",
+      "table": 1,
+      "title": "표 목차 제목",
+      "physical_pages": [
+        8
+      ],
+      "printed_pages": [
+        "viii"
+      ],
+      "context_pages_reviewed": [
+        8,
+        9
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_007.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section1.xml",
+      "table": 2,
+      "title": "그림 목차 제목",
+      "physical_pages": [
+        10
+      ],
+      "printed_pages": [
+        "x"
+      ],
+      "context_pages_reviewed": [
+        10
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_007.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section1.xml",
+      "table": 3,
+      "title": "감사의 글 제목",
+      "physical_pages": [
+        11
+      ],
+      "printed_pages": [
+        "xi"
+      ],
+      "context_pages_reviewed": [
+        11
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_007.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section1.xml",
+      "table": 4,
+      "title": "논문 개요 제목",
+      "physical_pages": [
+        12
+      ],
+      "printed_pages": [],
+      "context_pages_reviewed": [
+        12
+      ],
+      "status": "pass",
+      "observations": "제목·셀 내용의 잘림, 겹침, 꼬리말 침범 없음. 기존 표지·성명·인준란·제목 배치 유지. 목차의 기존 숫자는 갱신 전이므로 이 검토에서 제외.",
+      "evidence_images": [
+        "reflowed_visual/sheet_007.jpg"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 0,
+      "title": "표 1-1",
+      "physical_pages": [
+        14
+      ],
+      "printed_pages": [
+        2
+      ],
+      "context_pages_reviewed": [
+        14,
+        15
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_014.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 1,
+      "title": "표 2-1",
+      "physical_pages": [
+        23
+      ],
+      "printed_pages": [
+        11
+      ],
+      "context_pages_reviewed": [
+        22,
+        23,
+        24
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_023.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 2,
+      "title": "표 2-2",
+      "physical_pages": [
+        26
+      ],
+      "printed_pages": [
+        14
+      ],
+      "context_pages_reviewed": [
+        26,
+        27
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_026.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 3,
+      "title": "표 2-3",
+      "physical_pages": [
+        28
+      ],
+      "printed_pages": [
+        16
+      ],
+      "context_pages_reviewed": [
+        28,
+        29
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_028.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 4,
+      "title": "표 2-4",
+      "physical_pages": [
+        35
+      ],
+      "printed_pages": [
+        23
+      ],
+      "context_pages_reviewed": [
+        35,
+        36
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_035.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 5,
+      "title": "표 2-5",
+      "physical_pages": [
+        38
+      ],
+      "printed_pages": [
+        26
+      ],
+      "context_pages_reviewed": [
+        38,
+        39
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_038.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 6,
+      "title": "표 2-6",
+      "physical_pages": [
+        39,
+        40,
+        41
+      ],
+      "printed_pages": [
+        27,
+        28,
+        29
+      ],
+      "context_pages_reviewed": [
+        39,
+        40,
+        41
+      ],
+      "status": "needs_layout_adjustment",
+      "observations": "PDF39/인쇄27쪽에는 캡션·머리행만 있고 첫 데이터행은 PDF40쪽에 시작한다. PDF40쪽의 3개 데이터행과 PDF41쪽의 마지막 1개 데이터행 및 뒤 본문은 잘림·가림 없이 보인다. 캡션과 머리행은 39·40·41쪽에 반복된다. 시작 배치 수정 권고.",
+      "evidence_images": [
+        "qa_front_visual/page_039.png",
+        "qa_front_visual/page_040.png",
+        "qa_front_visual/page_041.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 7,
+      "title": "표 2-7",
+      "physical_pages": [
+        42,
+        43
+      ],
+      "printed_pages": [
+        30,
+        31
+      ],
+      "context_pages_reviewed": [
+        42,
+        43,
+        44
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음. PDF42쪽 4개 데이터행과 PDF43쪽 6개 데이터행이 연속되며, 43쪽에 캡션·머리행이 반복된다.",
+      "evidence_images": [
+        "qa_front_visual/page_042.png",
+        "qa_front_visual/page_043.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 8,
+      "title": "표 3-1",
+      "physical_pages": [
+        50
+      ],
+      "printed_pages": [
+        38
+      ],
+      "context_pages_reviewed": [
+        49,
+        50,
+        51
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_050.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 9,
+      "title": "표 3-2",
+      "physical_pages": [
+        53
+      ],
+      "printed_pages": [
+        41
+      ],
+      "context_pages_reviewed": [
+        53,
+        54
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_053.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 10,
+      "title": "표 3-3",
+      "physical_pages": [
+        63
+      ],
+      "printed_pages": [
+        51
+      ],
+      "context_pages_reviewed": [
+        62,
+        63,
+        64
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음. likely_pages의62쪽은 표를 언급한 본문이며 실제 표 시작·끝은63쪽 한 장이다.",
+      "evidence_images": [
+        "qa_front_visual/page_063.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 11,
+      "title": "표 3-4",
+      "physical_pages": [
+        67
+      ],
+      "printed_pages": [
+        55
+      ],
+      "context_pages_reviewed": [
+        67,
+        68
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_067.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 12,
+      "title": "표 3-5",
+      "physical_pages": [
+        68
+      ],
+      "printed_pages": [
+        56
+      ],
+      "context_pages_reviewed": [
+        68,
+        69
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_068.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 13,
+      "title": "표 3-6",
+      "physical_pages": [
+        69
+      ],
+      "printed_pages": [
+        57
+      ],
+      "context_pages_reviewed": [
+        69,
+        70
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_069.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 14,
+      "title": "표 3-7",
+      "physical_pages": [
+        70
+      ],
+      "printed_pages": [
+        58
+      ],
+      "context_pages_reviewed": [
+        70,
+        71
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음. likely_pages의8쪽은 표 목차이며 실제 표는70쪽 한 장이다.",
+      "evidence_images": [
+        "qa_front_visual/page_070.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table": 15,
+      "title": "표 3-8",
+      "physical_pages": [
+        72
+      ],
+      "printed_pages": [
+        60
+      ],
+      "context_pages_reviewed": [
+        72,
+        73
+      ],
+      "status": "pass",
+      "observations": "머리행·마지막 행·셀 끝 문장이 모두 표 안에 보이며 잘림과 꼬리말 침범 없음. 뒤따르는 본문과 표의 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_072.png"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "title": "그림 1-1",
+      "physical_pages": [
+        17
+      ],
+      "printed_pages": [
+        5
+      ],
+      "status": "pass",
+      "observations": "수정된 60현장·60명/현장당1명/ANCOVA 흐름도 문구와 연결선이 읽히며, 그림·캡션·다음 본문·꼬리말이 겹치지 않는다.",
+      "evidence_images": [
+        "qa_front_visual/page_017.png"
+      ]
+    },
+    {
+      "title": "그림 3-1",
+      "physical_pages": [
+        52
+      ],
+      "printed_pages": [
+        40
+      ],
+      "status": "pass",
+      "observations": "그림 전체와 캡션·뒤 본문이 보이며 잘림·꼬리말 침범·본문 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_052.png"
+      ]
+    },
+    {
+      "title": "그림 3-2",
+      "physical_pages": [
+        57
+      ],
+      "printed_pages": [
+        45
+      ],
+      "status": "pass",
+      "observations": "그림 전체와 캡션·뒤 본문이 보이며 잘림·꼬리말 침범·본문 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_057.png"
+      ]
+    },
+    {
+      "title": "그림 3-3",
+      "physical_pages": [
+        60
+      ],
+      "printed_pages": [
+        48
+      ],
+      "status": "pass",
+      "observations": "그림 전체와 캡션·뒤 본문이 보이며 잘림·꼬리말 침범·본문 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_060.png"
+      ]
+    },
+    {
+      "title": "그림 3-4",
+      "physical_pages": [
+        64
+      ],
+      "printed_pages": [
+        52
+      ],
+      "status": "pass",
+      "observations": "그림 전체와 캡션·뒤 본문이 보이며 잘림·꼬리말 침범·본문 겹침 없음.",
+      "evidence_images": [
+        "qa_front_visual/page_064.png"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "front_visual_01",
+      "severity": "medium",
+      "section": "Contents/section2.xml",
+      "table": 6,
+      "title": "표 2-6",
+      "physical_page": 39,
+      "printed_page": 27,
+      "finding": "첫 쪽에 캡션과 머리행만 남고 데이터행은 다음 쪽으로 넘어간다.",
+      "recommendation": "표 앵커를 새 쪽에서 시작하거나 캡션·머리행을 첫 데이터행과 함께 유지한다. 이후 반복 머리행과 표 뒤 본문의 재배치를 확인한다.",
+      "evidence": "qa_front_visual/page_039.png"
+    }
+  ],
+  "not_repeated": [
+    "65표 격자 자동검사",
+    "501개 마커 전문/색 검증",
+    "414개 실험전 개수 검증",
+    "재저장 전후 본문 보존 검사"
+  ],
+  "excluded": "목차·표목차·그림목차의 낡은 인쇄 쪽수는 메인의 갱신 대상이다.",
+  "method": "기존 6쪽 contact sheet를 통해 앞부분과 제1~3장의 전 표/주변 본문 위치를 확인한 뒤 표가 있는 19쪽과 그림 5쪽을 144 dpi로 확대 렌더하여 육안 확인했다. PDF 물리 쪽과 인쇄 쪽은 실제 이미지를 보고 각각 기록했다."
+}

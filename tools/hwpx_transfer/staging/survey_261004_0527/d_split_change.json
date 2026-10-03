@@ -1,0 +1,4 @@
+{
+  "table": 50,
+  "change": "TABLE row split; repeat actual merged header; preserve all text, sizes and fourteen-column grid"
+}

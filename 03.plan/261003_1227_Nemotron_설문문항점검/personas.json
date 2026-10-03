@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0",
+  "created_at_kst": "2026-10-03T12:53:58+09:00",
+  "disclosure": "NVIDIA 합성 데이터셋의 원본 레코드 6개이며 실제 조사 참여자가 아니다.",
+  "dataset_attribution": {
+    "creator": "NVIDIA",
+    "title": "Nemotron-Personas-Korea",
+    "url": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "원본 관련 필드를 발췌하고 가상 현장·소속·지식범위·경험 조건을 추가했다. 원본 필드의 문구는 변경하지 않았다."
+  },
+  "selection": {
+    "method": "0~1999행을 확인한 뒤 현직 건설 관리·감리 업무가 명시된 사례를 편의 선택. 경기 사례 우선, 부족분은 강원·충북으로 보완.",
+    "rows_inspected": 2000,
+    "selected": 6,
+    "province_counts": {
+      "경기": 4,
+      "강원": 1,
+      "충청북": 1
+    },
+    "not_claimed": [
+      "확률표본",
+      "인구 대표성",
+      "경기 지역 대표성",
+      "독립 응답자",
+      "실증 증거"
+    ],
+    "rejected_examples": [
+      {
+        "row_index": 419,
+        "reason": "현재 구직중으로 명시되어 현재 현장 재직 설정과 충돌"
+      },
+      {
+        "row_index": 871,
+        "reason": "전직 산업 안전원·현재 구직중이므로 재직자로 바꾸지 않음"
+      },
+      {
+        "row_index": 180,
+        "reason": "건축자재 영업원으로 현장 관리·감독 담당이라는 근거 부족"
+      },
+      {
+        "row_index": 1829,
+        "reason": "현장소장은 장래 목표이며 현재 소장으로 바꾸지 않음"
+      }
+    ]
+  },
+  "scenario_policy": "가상 현장 6곳에 각 1명을 배치했다. 현장과 배치는 모두 시험용이다. 원본 거주지와 가상 현장 위치를 동일시하지 않는다. 성별·연령·학력·가족관계·성격으로 능력이나 기술 수용성을 추정하지 않는다.",
+  "sites": [
+    {
+      "site_id": "S1",
+      "test_condition": "adopted_alerts",
+      "installation_group": "도입",
+      "installed": true,
+      "normal_operation_confirmed": true,
+      "actual_alert_experience": true,
+      "cctv_present": true,
+      "case_ids": [
+        "P1"
+      ],
+      "description": "설치·정상 운용을 확인했고 실제 알림 수신·확인 경험 있음",
+      "construction_amount_krw": null,
+      "location": null,
+      "operation_duration": null
+    },
+    {
+      "site_id": "S2",
+      "test_condition": "adopted_alerts",
+      "installation_group": "도입",
+      "installed": true,
+      "normal_operation_confirmed": true,
+      "actual_alert_experience": true,
+      "cctv_present": true,
+      "case_ids": [
+        "P2"
+      ],
+      "description": "설치·정상 운용을 확인했고 실제 알림 수신·확인 경험 있음",
+      "construction_amount_krw": null,
+      "location": null,
+      "operation_duration": null
+    },
+    {
+      "site_id": "S3",
+      "test_condition": "adopted_no_alerts",
+      "installation_group": "도입",
+      "installed": true,
+      "normal_operation_confirmed": true,
+      "actual_alert_experience": false,
+      "cctv_present": true,
+      "case_ids": [
+        "P3"
+      ],
+      "description": "설치·정상 운용을 확인했으나 실제 알림 수신·확인 경험 없음",
+      "construction_amount_krw": null,
+      "location": null,
+      "operation_duration": null
+    },
+    {
+      "site_id": "S4",
+      "test_condition": "adopted_no_alerts",
+      "installation_group": "도입",
+      "installed": true,
+      "normal_operation_confirmed": true,
+      "actual_alert_experience": false,
+      "cctv_present": true,
+      "case_ids": [
+        "P4"
+      ],
+      "description": "설치·정상 운용을 확인했으나 실제 알림 수신·확인 경험 없음",
+      "construction_amount_krw": null,
+      "location": null,
+      "operation_duration": null
+    },
+    {
+      "site_id": "S5",
+      "test_condition": "not_adopted_no_cctv",
+      "installation_group": "미도입",
+      "installed": false,
+      "normal_operation_confirmed": null,
+      "actual_alert_experience": false,
+      "cctv_present": false,
+      "case_ids": [
+        "P5"
+      ],
+      "description": "미설치·미운용·CCTV 없음; 전화·현장 보고 이용 가능이라는 시험 조건",
+      "construction_amount_krw": null,
+      "location": null,
+      "operation_duration": null
+    },
+    {
+      "site_id": "S6",
+      "test_condition": "not_adopted_no_cctv",
+      "installation_group": "미도입",
+      "installed": false,
+      "normal_operation_confirmed": null,
+      "actual_alert_experience": false,
+      "cctv_present": false,
+      "case_ids": [
+        "P6"
+      ],
+      "description": "미설치·미운용·CCTV 없음; 전화·현장 보고 이용 가능이라는 시험 조건",
+      "construction_amount_krw": null,
+      "location": null,
+      "operation_duration": null
+    }
+  ],
+  "personas": [
+    {
+      "persona_id": "P1",
+      "source_row_index": 1187,
+      "uuid": "3d65081846cb46d5b26d75887ce6ead2",
+      "source_name": "김호",
+      "name_basis": "professional_persona 첫 문장의 이름을 그대로 추출",
+      "source_fields": {
+        "uuid": "3d65081846cb46d5b26d75887ce6ead2",
+        "professional_persona": "김호 씨는 도면의 미세한 오차를 귀신같이 잡아내 현장 인부들과의 기싸움 속에서도 기어코 공기를 맞춰내는 베테랑 토목 관리자입니다. 김호 씨는 대학원에서 배운 이론을 현장의 거친 언어로 빠르게 번역해 적용하며 무사고 완공이라는 실리를 최우선으로 챙깁니다.",
+        "persona": "김호 씨는 하남에 거주하며 전문성을 갖춘 토목 관리자로 일하는, 실리적이고 외향적인 40대 중반의 가장입니다.",
+        "skills_and_expertise": "도면의 미세한 오차를 빠르게 잡아내고 현장 작업자들과의 갈등을 능숙하게 중재하여 정해진 공기 내에 공사를 마치는 능력이 탁월합니다. 복잡한 설계 변경 사항을 실무 수준에서 즉시 해석해 현장에 적용하는 감각이 좋습니다.",
+        "skills_and_expertise_list": "['토목 설계 도면 해석 및 현장 적용', '건설 현장 노무 인력 및 협력 업체 관리', '공정표 기반의 공기 단축 및 자원 배분', '건설 안전 법규 준수 및 현장 안전 점검']",
+        "career_goals_and_ambitions": "대규모 프로젝트의 무사고 완공을 최우선으로 하며, 업계에서 신뢰받는 베테랑 현장 소장으로 완전히 자리 잡기를 원합니다. 자녀들이 성인이 될 때까지 현재의 안정적인 주거 환경과 생활 수준을 유지하는 것에 현실적인 가치를 둡니다.",
+        "sex": "남자",
+        "age": 45,
+        "occupation": "토목 관련 관리자",
+        "province": "경기",
+        "district": "경기-하남시"
+      },
+      "selection_reason": "경기 소재 토목 관리자이며 원본에 현장 안전 점검·협력업체 관리가 명시되어 있다.",
+      "provenance": {
+        "dataset": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+        "config": "default",
+        "split": "train",
+        "source_request_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1100&length=100",
+        "retrieved_at_utc": "2026-10-03T03:34:14.129825+00:00",
+        "viewer_dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "repository_revision_observed": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "raw_response_file": "page_1100.json",
+        "response_body_sha256": "63e10e4757d5aade37d7ec97d83ea2814ccc0b629495dbe1490b7e4507bfc211",
+        "truncated_cells": [],
+        "single_row_locator_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1187&length=1",
+        "locator_note": "위 단일행 URL은 재조회용 위치이며 이번 추출은 source_request_url의 100행 응답에서 수행했다."
+      },
+      "scenario_assumptions": {
+        "site_id": "S1",
+        "test_condition": "adopted_alerts",
+        "affiliation": "시공사",
+        "role": "현장 관리감독자(토목 공정·안전 점검)",
+        "budget_knowledge_scope": "현장 안전관리 예산 편성·집행을 직접 관리하고 관련 문서를 볼 수 있음",
+        "budget_direct_manager": true,
+        "experience": {
+          "equipment_configuration": true,
+          "different_manufacturer_camera_integration": true,
+          "dense_alerts": true,
+          "poor_network": true,
+          "alert_content_compared_with_site": true,
+          "actual_alert_received_and_read": true
+        },
+        "exact_construction_career_years": null,
+        "budget_amounts_and_support_history": null,
+        "site_performance_and_satisfaction": null,
+        "prior_alarm_comparator": null,
+        "note": "소속·보직·예산 정보 접근 범위·설치 및 경험 조건은 가상 시험 설정이다. 관련 문서에 접근할 수 있다는 조건도 예산액이나 충분성을 제공하지는 않는다. 원본에 없는 경력연수·성과·비용·만족도는 미상이다."
+      }
+    },
+    {
+      "persona_id": "P2",
+      "source_row_index": 1213,
+      "uuid": "103c046d76154e7090fc2a4587d335f7",
+      "source_name": "남규수",
+      "name_basis": "professional_persona 첫 문장의 이름을 그대로 추출",
+      "source_fields": {
+        "uuid": "103c046d76154e7090fc2a4587d335f7",
+        "professional_persona": "남규수 씨는 경기 지역 건설 현장에서 전기 도면의 미세한 오차 하나까지 잡아내는 치밀함으로 설비를 감독하는 전기 감리 기술자이며, 복잡한 배선 체계를 실제 시공 가능하도록 최적화하는 실무 능력으로 동료들의 신뢰를 받고 있습니다. 퇴근 후에는 책상 앞에 앉아 전기 분야 기술사 자격증 취득을 위한 전공 서적과 씨름하며, 업계 내 독보적인 전문가로 인정받아 자녀들의 교육비를 든든하게 지원하겠다는 목표를 향해 묵묵히 정진합니다.",
+        "persona": "남규수 씨는 안양에서 전기 감리 기술자로 일하며 전문 기술사 자격증 취득과 자녀 교육이라는 명확한 목표를 향해 묵묵히 걸어가는, 책임감 강하고 치밀한 30대 가장입니다.",
+        "skills_and_expertise": "전기 도면의 미세한 오차까지 잡아내는 치밀함으로 현장 감리를 수행하며, 복잡한 배선 체계를 실제 시공 가능하게끔 최적화하는 실무 능력이 탁월합니다.",
+        "skills_and_expertise_list": "['전기 설비 설계 도면 정밀 검토', '현장 안전 규정 준수 및 감독', 'ICT 기반 전력 제어 시스템 분석', '기술 시방서 작성 및 검수']",
+        "career_goals_and_ambitions": "전기 분야 기술사 자격증을 취득해 전문성을 공인받음으로써, 자녀들의 교육비를 안정적으로 지원할 수 있는 업계 내 독보적인 기술 전문가로 자리 잡고자 합니다.",
+        "sex": "남자",
+        "age": 38,
+        "occupation": "전기 감리 기술자 및 연구원",
+        "province": "경기",
+        "district": "경기-안양시 만안구"
+      },
+      "selection_reason": "경기 건설현장에서 설비 감독과 현장 안전 규정 감독을 수행하는 전기 감리 기술자이다.",
+      "provenance": {
+        "dataset": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+        "config": "default",
+        "split": "train",
+        "source_request_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1200&length=100",
+        "retrieved_at_utc": "2026-10-03T03:34:14.540316+00:00",
+        "viewer_dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "repository_revision_observed": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "raw_response_file": "page_1200.json",
+        "response_body_sha256": "b120d04bdf745890227266fbf433e40482e4088e756bce99669a93f2155a5bc9",
+        "truncated_cells": [],
+        "single_row_locator_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1213&length=1",
+        "locator_note": "위 단일행 URL은 재조회용 위치이며 이번 추출은 source_request_url의 100행 응답에서 수행했다."
+      },
+      "scenario_assumptions": {
+        "site_id": "S2",
+        "test_condition": "adopted_alerts",
+        "affiliation": "발주청 측 감리업무를 맡은 감리기관",
+        "role": "전기 감리원",
+        "budget_knowledge_scope": "담당 공정·감리 업무는 알지만 현장 예산 편성·집행액과 별도 지원 결정은 모름",
+        "budget_direct_manager": false,
+        "experience": {
+          "equipment_configuration": false,
+          "different_manufacturer_camera_integration": false,
+          "dense_alerts": false,
+          "poor_network": false,
+          "alert_content_compared_with_site": true,
+          "actual_alert_received_and_read": true
+        },
+        "exact_construction_career_years": null,
+        "budget_amounts_and_support_history": null,
+        "site_performance_and_satisfaction": null,
+        "prior_alarm_comparator": null,
+        "note": "소속·보직·예산 정보 접근 범위·설치 및 경험 조건은 가상 시험 설정이다. 관련 문서에 접근할 수 있다는 조건도 예산액이나 충분성을 제공하지는 않는다. 원본에 없는 경력연수·성과·비용·만족도는 미상이다."
+      }
+    },
+    {
+      "persona_id": "P3",
+      "source_row_index": 1281,
+      "uuid": "c38363ea2ac540aa910b9b4e6354d3f2",
+      "source_name": "전경철",
+      "name_basis": "professional_persona 첫 문장의 이름을 그대로 추출",
+      "source_fields": {
+        "uuid": "c38363ea2ac540aa910b9b4e6354d3f2",
+        "professional_persona": "전경철 씨는 수십 년간 거친 토목 현장을 누비며 복잡한 설계도면의 미세한 오차를 잡아내고, 현장 노동자들과 발주처 사이의 날 선 이해관계를 능숙하게 조율해 온 베테랑 관리자입니다. 이제는 현장에서의 성취를 뒤로하고 자신이 쌓아온 기술적 노하우를 후배들에게 전수하는 기술 자문역으로 명예롭게 연착륙하기 위해 준비하고 있습니다.",
+        "persona": "전경철 씨는 분당에 거주하며 토목 분야의 전문성을 바탕으로 제2의 인생을 설계하는, 외강내유형의 60대 남성입니다.",
+        "skills_and_expertise": "수십 년간 토목 현장을 누비며 복잡한 설계도면의 오차를 잡아내고, 거친 현장 노동자들과 발주처 사이의 이해관계를 능숙하게 조율하는 현장 관리 능력을 갖췄습니다.",
+        "skills_and_expertise_list": "['토목 설계도면 해석 및 오차 검토', '공정 계획 수립 및 전체 일정 관리', '현장 안전 보건 관리 체계 구축', '하도급 업체 계약 및 공사비 협상']",
+        "career_goals_and_ambitions": "현직에서의 성취를 뒤로하고, 그동안 쌓아온 기술적 노하우를 후배들에게 전수하는 기술 자문역으로 연착륙하여 전문성을 유지하는 삶을 준비합니다.",
+        "sex": "남자",
+        "age": 60,
+        "occupation": "토목 관련 관리자",
+        "province": "경기",
+        "district": "경기-성남시 분당구"
+      },
+      "selection_reason": "경기 토목 관리자이며 현장 안전보건 체계와 공사비 협상 업무가 원본에 있다. 자문역 전환은 목표이므로 현직 관리자 설정과 충돌하지 않는다.",
+      "provenance": {
+        "dataset": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+        "config": "default",
+        "split": "train",
+        "source_request_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1200&length=100",
+        "retrieved_at_utc": "2026-10-03T03:34:14.540316+00:00",
+        "viewer_dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "repository_revision_observed": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "raw_response_file": "page_1200.json",
+        "response_body_sha256": "b120d04bdf745890227266fbf433e40482e4088e756bce99669a93f2155a5bc9",
+        "truncated_cells": [],
+        "single_row_locator_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1281&length=1",
+        "locator_note": "위 단일행 URL은 재조회용 위치이며 이번 추출은 source_request_url의 100행 응답에서 수행했다."
+      },
+      "scenario_assumptions": {
+        "site_id": "S3",
+        "test_condition": "adopted_no_alerts",
+        "affiliation": "시공사",
+        "role": "현장 관리감독자(토목 공정·계약 조정)",
+        "budget_knowledge_scope": "현장 안전관리 예산 편성·집행을 직접 관리하고 관련 문서를 볼 수 있음",
+        "budget_direct_manager": true,
+        "experience": {
+          "equipment_configuration": true,
+          "different_manufacturer_camera_integration": true,
+          "dense_alerts": false,
+          "poor_network": false,
+          "alert_content_compared_with_site": false,
+          "actual_alert_received_and_read": false
+        },
+        "exact_construction_career_years": null,
+        "budget_amounts_and_support_history": null,
+        "site_performance_and_satisfaction": null,
+        "prior_alarm_comparator": null,
+        "note": "소속·보직·예산 정보 접근 범위·설치 및 경험 조건은 가상 시험 설정이다. 관련 문서에 접근할 수 있다는 조건도 예산액이나 충분성을 제공하지는 않는다. 원본에 없는 경력연수·성과·비용·만족도는 미상이다."
+      }
+    },
+    {
+      "persona_id": "P4",
+      "source_row_index": 1479,
+      "uuid": "39b098bb8e364e5b9ec19632ed01cb5b",
+      "source_name": "안정화",
+      "name_basis": "professional_persona 첫 문장의 이름을 그대로 추출",
+      "source_fields": {
+        "uuid": "39b098bb8e364e5b9ec19632ed01cb5b",
+        "professional_persona": "안정화 씨는 화성시 일대의 토목 현장에서 도면과 실제 지형의 오차를 칼같이 잡아내며, 고집불통인 현장 소장과 하청 업체 사이의 갈등을 능숙하게 조율하는 해결사로 통합니다. 실무 경험만으로 쌓아올린 내공이 상당하지만, 정년까지의 고용 안정을 위해 퇴근 후 틈틈이 상위 등급 기술자 자격증 서적을 뒤적이는 치열함을 보입니다.",
+        "persona": "안정화 씨는 거친 토목 현장에서 실력으로 인정받은 베테랑 기술자이자, 자녀들을 위해 강인하게 삶을 일궈가는 책임감 강한 어머니입니다.",
+        "skills_and_expertise": "복잡한 토목 도면을 보고 실제 현장 지형과의 오차를 빠르게 잡아내며, 고집 센 현장 소장과 협력 업체 사이의 갈등을 능숙하게 중재합니다. 실무 경험이 풍부해 예상치 못한 변수가 발생해도 당황하지 않고 즉각적으로 적용 가능한 대안을 찾아냅니다.",
+        "skills_and_expertise_list": "['토목 설계 도면 해석 및 검토', '현장 공정 스케줄 관리', '협력 업체 및 인력 조율', '물량 산출 및 자재 관리']",
+        "career_goals_and_ambitions": "지금의 숙련도에 안주하지 않고 상위 등급의 기술자 자격증을 취득해 정년까지 안정적으로 일할 수 있는 기반을 만들고자 합니다. 자녀들이 사회에 완전히 자리 잡을 때까지 흔들림 없는 경제적 울타리가 되어주는 것이 현재의 가장 큰 목표입니다.",
+        "sex": "여자",
+        "age": 47,
+        "occupation": "그 외 토목 관련 기술자",
+        "province": "경기",
+        "district": "경기-화성시"
+      },
+      "selection_reason": "경기 토목 현장 기술자로 공정 관리와 협력업체 조정 업무가 명시되어 있다. 관리감독자라는 가상 보직은 시험용이며 법정 선임 사실로 보지 않는다.",
+      "provenance": {
+        "dataset": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+        "config": "default",
+        "split": "train",
+        "source_request_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1400&length=100",
+        "retrieved_at_utc": "2026-10-03T03:34:15.568044+00:00",
+        "viewer_dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "repository_revision_observed": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "raw_response_file": "page_1400.json",
+        "response_body_sha256": "e8f288d00cc07944f6dfc4294e03bfc25b4c7cd9f9b635a2b395f4b27b592524",
+        "truncated_cells": [],
+        "single_row_locator_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1479&length=1",
+        "locator_note": "위 단일행 URL은 재조회용 위치이며 이번 추출은 source_request_url의 100행 응답에서 수행했다."
+      },
+      "scenario_assumptions": {
+        "site_id": "S4",
+        "test_condition": "adopted_no_alerts",
+        "affiliation": "시공사",
+        "role": "현장 관리감독자(공정·협력업체 조정)",
+        "budget_knowledge_scope": "담당 공정·감리 업무는 알지만 현장 예산 편성·집행액과 별도 지원 결정은 모름",
+        "budget_direct_manager": false,
+        "experience": {
+          "equipment_configuration": false,
+          "different_manufacturer_camera_integration": false,
+          "dense_alerts": false,
+          "poor_network": false,
+          "alert_content_compared_with_site": false,
+          "actual_alert_received_and_read": false
+        },
+        "exact_construction_career_years": null,
+        "budget_amounts_and_support_history": null,
+        "site_performance_and_satisfaction": null,
+        "prior_alarm_comparator": null,
+        "note": "소속·보직·예산 정보 접근 범위·설치 및 경험 조건은 가상 시험 설정이다. 관련 문서에 접근할 수 있다는 조건도 예산액이나 충분성을 제공하지는 않는다. 원본에 없는 경력연수·성과·비용·만족도는 미상이다."
+      }
+    },
+    {
+      "persona_id": "P5",
+      "source_row_index": 1034,
+      "uuid": "82ffcd9945da443b9ba33734f9b83bc0",
+      "source_name": "박종환",
+      "name_basis": "professional_persona 첫 문장의 이름을 그대로 추출",
+      "source_fields": {
+        "uuid": "82ffcd9945da443b9ba33734f9b83bc0",
+        "professional_persona": "박종환 씨는 강릉의 중소 건설 현장에서 도면의 수치 하나까지 꼼꼼하게 짚어내며 공정을 관리하는 노련한 소장입니다. 박종환 씨는 자재 수급이 꼬여 공기가 지연되는 돌발 상황에서도 당황하지 않고 실무 경험을 살려 빠르게 대안을 제시하며, 후배 관리자들이 현장에서 실수하지 않도록 옆에서 묵묵히 노하우를 전수합니다.",
+        "persona": "박종환 씨는 강릉의 건설 현장을 책임지는 꼼꼼한 관리자이자, 당뇨 관리와 골프, 7080 음악을 통해 삶의 균형을 찾는 성실한 60대 가장입니다.",
+        "skills_and_expertise": "도면의 수치 하나까지 꼼꼼하게 챙기는 현장 관리 능력과 함께, 예상치 못한 공정 지연 상황에서도 당황하지 않고 현실적인 대안을 찾아내는 노련함을 갖췄습니다.",
+        "skills_and_expertise_list": "['현장 공정 스케줄링', '건축 도면 정밀 분석', '안전 관리 감독', '현장 인력 조율']",
+        "career_goals_and_ambitions": "자신의 성과를 내기보다 후배 관리자들이 현장에서 실수하지 않도록 실무 노하우를 전수하며, 맡은 프로젝트를 안전사고 없이 무사히 마무리하는 것에 가치를 둡니다.",
+        "sex": "남자",
+        "age": 65,
+        "occupation": "그 외 건설·전기 및 생산 관련 관리자",
+        "province": "강원",
+        "district": "강원-강릉시"
+      },
+      "selection_reason": "강원 중소 건설현장 소장으로 원본에 안전 관리 감독 업무도 있다. 경기의 확인된 적합 직무가 4개여서 범위를 넓혔다.",
+      "provenance": {
+        "dataset": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+        "config": "default",
+        "split": "train",
+        "source_request_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1000&length=100",
+        "retrieved_at_utc": "2026-10-03T03:34:14.252135+00:00",
+        "viewer_dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "repository_revision_observed": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "raw_response_file": "page_1000.json",
+        "response_body_sha256": "9cecdc7c16dac1fbeccc5c419112174bc378ac8dce34a1e70977e1eb382b619b",
+        "truncated_cells": [],
+        "single_row_locator_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=1034&length=1",
+        "locator_note": "위 단일행 URL은 재조회용 위치이며 이번 추출은 source_request_url의 100행 응답에서 수행했다."
+      },
+      "scenario_assumptions": {
+        "site_id": "S5",
+        "test_condition": "not_adopted_no_cctv",
+        "affiliation": "시공사",
+        "role": "현장소장",
+        "budget_knowledge_scope": "현장 안전관리 예산 편성·집행을 직접 관리하고 관련 문서를 볼 수 있음",
+        "budget_direct_manager": true,
+        "experience": {
+          "equipment_configuration": false,
+          "different_manufacturer_camera_integration": false,
+          "dense_alerts": false,
+          "poor_network": false,
+          "alert_content_compared_with_site": false,
+          "actual_alert_received_and_read": false
+        },
+        "exact_construction_career_years": null,
+        "budget_amounts_and_support_history": null,
+        "site_performance_and_satisfaction": null,
+        "prior_alarm_comparator": null,
+        "note": "소속·보직·예산 정보 접근 범위·설치 및 경험 조건은 가상 시험 설정이다. 관련 문서에 접근할 수 있다는 조건도 예산액이나 충분성을 제공하지는 않는다. 원본에 없는 경력연수·성과·비용·만족도는 미상이다."
+      }
+    },
+    {
+      "persona_id": "P6",
+      "source_row_index": 310,
+      "uuid": "4a13147b4f4d4f8a985e8d08fe55610d",
+      "source_name": "봉민혁",
+      "name_basis": "professional_persona 첫 문장의 이름을 그대로 추출",
+      "source_fields": {
+        "uuid": "4a13147b4f4d4f8a985e8d08fe55610d",
+        "professional_persona": "봉민혁 씨는 청주 인근 토목 현장에서 도면의 작은 오차 하나까지 잡아내는 꼼꼼한 감리 기술자로 통하며, 거친 현장 인부들과 유연하게 소통해 공사 기간을 맞추는 능력이 탁월합니다. 다만 완벽을 기하려는 성격 탓에 작은 변수에도 쉽게 불안해하며, 이제는 몸을 쓰는 현장직을 넘어 토목시공기술사 자격을 취득해 전문적인 판단을 내리는 상급 관리직으로 올라가려 노력합니다.",
+        "persona": "봉민혁 씨는 청주에서 성실하게 근무하는 토목감리 기술자로, 가족에 대한 깊은 애정과 정적인 휴식을 통해 삶의 균형을 맞추며 더 안정적인 미래를 설계하는 30대 가장입니다.",
+        "skills_and_expertise": "복잡한 설계 도면의 오차를 빠르게 잡아내고, 현장 작업자들의 요구사항을 유연하게 조율해 공사 기간을 맞추는 실무 능력이 탁월합니다. 특히 지반 조사 보고서와 실제 지형의 차이를 분석해 시공 오류를 방지하는 현장 감각이 뛰어납니다.",
+        "skills_and_expertise_list": "['설계 도면 및 시방서 검토', '현장 안전 점검 및 리스크 관리', '공정표 분석 및 진도 관리', '토목 시공 오차 교정', '하도급 업체 소통 및 공정 조율']",
+        "career_goals_and_ambitions": "현장 실무 경험을 바탕으로 토목시공기술사 자격증을 취득해, 몸을 쓰는 일보다 전문적인 판단과 검토가 중심이 되는 상급 관리직으로 전환하고자 합니다. 자녀가 성장함에 따라 소득의 안정성을 높여 가족의 교육 환경을 더 탄탄하게 만드는 것에 집중하고 있습니다.",
+        "sex": "남자",
+        "age": 39,
+        "occupation": "토목감리 기술자",
+        "province": "충청북",
+        "district": "충청북-청주시 상당구"
+      },
+      "selection_reason": "충북 토목 감리 기술자로 현장 안전 점검과 공정 조율 업무가 명시되어 있다. 경기 외 보완 사례이다.",
+      "provenance": {
+        "dataset": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+        "config": "default",
+        "split": "train",
+        "source_request_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=300&length=100",
+        "retrieved_at_utc": "2026-10-03T03:33:51.988917+00:00",
+        "viewer_dataset_revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "repository_revision_observed": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+        "raw_response_file": "page_300.json",
+        "response_body_sha256": "70d8d8fff9bc2cdb8118b16349d318015a99162af7f9a09a99f4a86562873c58",
+        "truncated_cells": [],
+        "single_row_locator_url": "https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Personas-Korea&config=default&split=train&offset=310&length=1",
+        "locator_note": "위 단일행 URL은 재조회용 위치이며 이번 추출은 source_request_url의 100행 응답에서 수행했다."
+      },
+      "scenario_assumptions": {
+        "site_id": "S6",
+        "test_condition": "not_adopted_no_cctv",
+        "affiliation": "발주청 측 감리업무를 맡은 감리기관",
+        "role": "토목 감리원",
+        "budget_knowledge_scope": "담당 공정·감리 업무는 알지만 현장 예산 편성·집행액과 별도 지원 결정은 모름",
+        "budget_direct_manager": false,
+        "experience": {
+          "equipment_configuration": false,
+          "different_manufacturer_camera_integration": false,
+          "dense_alerts": false,
+          "poor_network": false,
+          "alert_content_compared_with_site": false,
+          "actual_alert_received_and_read": false
+        },
+        "exact_construction_career_years": null,
+        "budget_amounts_and_support_history": null,
+        "site_performance_and_satisfaction": null,
+        "prior_alarm_comparator": null,
+        "note": "소속·보직·예산 정보 접근 범위·설치 및 경험 조건은 가상 시험 설정이다. 관련 문서에 접근할 수 있다는 조건도 예산액이나 충분성을 제공하지는 않는다. 원본에 없는 경력연수·성과·비용·만족도는 미상이다."
+      }
+    }
+  ]
+}

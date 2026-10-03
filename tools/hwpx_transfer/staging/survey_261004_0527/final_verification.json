@@ -1,0 +1,27 @@
+{
+  "original_unchanged": true,
+  "md_sources_unchanged": true,
+  "body_text_matches_transfer": true,
+  "body_resolved_fonts_and_styles_preserved": true,
+  "pages": 155,
+  "toc_unresolved": [],
+  "toc_entries": 120,
+  "wrong_toc_folios": [],
+  "pdf_changed_pages_after_toc": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "all_body_pages_pixel_identical": true,
+  "table_count": 65,
+  "grid_errors": [],
+  "marker_count": 501,
+  "pending_count": 414,
+  "marker_color_errors": [],
+  "missing_markers": [],
+  "body_text_footer_overlap": [],
+  "ok": true
+}

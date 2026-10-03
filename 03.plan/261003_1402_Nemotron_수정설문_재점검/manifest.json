@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "started_at_kst": "2026-10-03T14:07:01.399051+09:00",
+  "created_at_kst": "2026-10-03T14:25:21+09:00",
+  "purpose": "실제 조사 전 수정 문항의 해석 가능성·자료 공백·입력 경계를 점검한다. 실증 분석에 합치지 않는다.",
+  "scope": {
+    "write_root": "03.plan/261003_1402_Nemotron_수정설문_재점검",
+    "new_review_codes": [
+      "A-3",
+      "A-4",
+      "A-6"
+    ],
+    "new_reviews": 18,
+    "reused_bcde_item_count": 24,
+    "artificial_fixture_count": 17
+  },
+  "generation": {
+    "agent": "Codex",
+    "worker_count": 1,
+    "model_family": "GPT-6",
+    "model_id": "gpt-6-astra",
+    "model_id_evidence": "조정자 msg_df752bf3ec5a: worker-show projection.provider.model 관측, 2026-10-03 14:06 KST",
+    "temperature": null,
+    "seed": null,
+    "detailed_model_build": null,
+    "nvidia_model_executed": false,
+    "separate_persona_sessions": false,
+    "new_model_api_calls": false,
+    "new_dataset_download": false,
+    "code_role": "build_review.py는 워커가 작성한 판단을 직렬화한다. LLM 추론이나 API 호출을 실행하지 않는다."
+  },
+  "dataset": {
+    "creator": "NVIDIA",
+    "title": "Nemotron-Personas-Korea",
+    "url": "https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "revision": "ada0f5b53a38bb5a30cce09358adde883c1ab63a",
+    "source_is_synthetic": true,
+    "changes": "기존 캐시의 원본 필드·출처·가상 조건은 그대로 재사용하고 수정 문항 해석과 인위적 시험값을 새로 작성함",
+    "source_evidence": "03.plan/261003_1227_Nemotron_설문문항점검/personas.json",
+    "official_card_check": "조정자가 공식 카드의 합성 자료·라이선스·revision을 확인했다고 전달함(msg_cbcd13f097a6); 워커는 캐시만 재사용"
+  },
+  "inputs": [
+    {
+      "path": "01.docs/부록1_설문지_양식.md",
+      "bytes": 20391,
+      "sha256": "dbd362bff9599f7961cf29940ed2d51b0f106eaa1de5e29f36fa503a467330fa"
+    },
+    {
+      "path": "01.docs/04_연구설계.md",
+      "bytes": 55317,
+      "sha256": "a9cdd4cfb7c5c1c265a45ecc2fe8657a431bb8ebdb71ff9f55bbeab71683085e"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/personas.json",
+      "bytes": 32435,
+      "sha256": "0b1c5fd9f9983cbff3b41db3c395b3f03c79b71a921e7eb52339bc41337bd2b1"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/responses.json",
+      "bytes": 278744,
+      "sha256": "147997377a387f2dc192578a5036e0646d34242327942ff92a611fb8e7755ca5"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/manifest.json",
+      "bytes": 29840,
+      "sha256": "413636cbfe847d1ad948c110ed356387eb0748bded3c789c0f43bf41470ae76c"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/validation.json",
+      "bytes": 5835,
+      "sha256": "4e0481e7d25f7732a269baa03cc731e0f32b5a0eb33d105fabd9a54309797e7d"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/report.html",
+      "bytes": 162696,
+      "sha256": "9a0346d3229e92a0de31c92e851aa985965b25034b497e4cabd48764bdf16178"
+    },
+    {
+      "path": "03.plan/261003_1227_Nemotron_설문문항점검/dataset_metadata.json",
+      "bytes": 8774,
+      "sha256": "fca6c7c06e48c312896f90b4852496d5614978f88c2b68aa2b8ad783f4fbf950"
+    }
+  ],
+  "protected_inputs": {
+    "snapshot": "03.plan/261003_1402_Nemotron_수정설문_재점검/input_snapshot.json",
+    "file_count": 90,
+    "roots": [
+      "01.docs/",
+      "03.plan/261003_1227_Nemotron_설문문항점검/"
+    ],
+    "sha_algorithm": "SHA256"
+  },
+  "prior_audit": {
+    "report": "03.plan/261003_1227_Nemotron_설문문항점검/report.html",
+    "responses": "03.plan/261003_1227_Nemotron_설문문항점검/responses.json",
+    "manifest": "03.plan/261003_1227_Nemotron_설문문항점검/manifest.json",
+    "validation": "03.plan/261003_1227_Nemotron_설문문항점검/validation.json",
+    "reuse_only": "B/C/D/E 24문항·120건의 기존 판단; 이전 검증을 재실행하지 않음"
+  },
+  "limitations": [
+    "LLM 가상 문항 점검이며 실제 인지면접·설문 응답·타당도 검증이 아니다. 가상 발화는 인터뷰 인용이 아니다.",
+    "한 Codex 워커가 여섯 합성 프로필의 해석을 작성했다. 독립 응답자나 대표 표본이 아니며 사람의 오해 빈도를 추정하지 않는다.",
+    "원본은 이전 점검에서 편의 선택한 여섯 사례다. 가상 현장·소속·보직·정보 접근·경험 조건은 원본 사실과 구분한다.",
+    "source_age는 원본 필드일 뿐 응답일 현재 만 나이가 아니다. 경력·공사비·Likert 응답값을 생성하지 않았다.",
+    "인위적 시험값은 계산 규칙만 확인한다. 실제 응답 편의나 혼란의 발생 여부는 사람을 대상으로 확인해야 한다.",
+    "B/C/D/E는 문구·안내 비교 후 기존 판단을 재사용했다. 이번에 전체 156건을 새로 검토하지 않았다.",
+    "대표성 평가·통계 추정·법적 총공사비 정의 검증을 수행하지 않았다. 브라우저 렌더링이나 시각 검증도 수행하지 않았다."
+  ],
+  "empirical_survey": false,
+  "representative_sample": false,
+  "statistical_estimation": false,
+  "numeric_likert_responses_generated": false,
+  "manuscript_modified": false,
+  "hwpx_modified": false,
+  "validation": {
+    "command": "python -X utf8 \"03.plan/261003_1402_Nemotron_수정설문_재점검/validate_review.py\"",
+    "evidence": "03.plan/261003_1402_Nemotron_수정설문_재점검/validation.json",
+    "policy": "의미 있는 수용 검증 1회; 통과 후 반복하지 않음",
+    "browser_rendering_performed": false
+  },
+  "reproduction": {
+    "build_command": "python -X utf8 \"03.plan/261003_1402_Nemotron_수정설문_재점검/build_review.py\"",
+    "note": "이미 validation.json이 있으면 재생성을 거부한다. 현재 캐시와 입력 해시를 고정한 구조·계산 재현이며 새 인지판단의 독립 재현이 아니다."
+  },
+  "artifact_hashes_evidence": "validation.json의 artifact_hashes에는 검증 파일 자신을 제외한 모든 산출물 해시를 기록한다."
+}

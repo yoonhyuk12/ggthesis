@@ -1,0 +1,203 @@
+{
+  "pdf": "ready.pdf",
+  "scope": "section2 tables26-44",
+  "method": "Page image review of initial and changed result tables; unchanged content carried through layout corrections",
+  "tables": [
+    {
+      "table": 26,
+      "physical_pages": [
+        109
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 27,
+      "physical_pages": [
+        110
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 28,
+      "physical_pages": [
+        112
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 29,
+      "physical_pages": [
+        113
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 30,
+      "physical_pages": [
+        114
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 31,
+      "physical_pages": [
+        115
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 32,
+      "physical_pages": [
+        116
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 33,
+      "physical_pages": [
+        117
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 34,
+      "physical_pages": [
+        118
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 35,
+      "physical_pages": [
+        120
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 36,
+      "physical_pages": [
+        121
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 37,
+      "physical_pages": [
+        121
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 38,
+      "physical_pages": [
+        121
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 39,
+      "physical_pages": [
+        123
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 40,
+      "physical_pages": [
+        123
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 41,
+      "physical_pages": [
+        124
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 42,
+      "physical_pages": [
+        125
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 43,
+      "physical_pages": [
+        125
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    },
+    {
+      "table": 44,
+      "physical_pages": [
+        127
+      ],
+      "last_row_visible": true,
+      "footer_overlap": false,
+      "body_occlusion": false,
+      "header_only_start": false
+    }
+  ],
+  "notes": [
+    "Panels use planned-result markers, with no invented observations or statistical results.",
+    "Small tables were changed to indivisible inline placement after review found isolated headers.",
+    "Table 5-7 retains eleven columns and the original font size; narrow header labels wrap inside their cells."
+  ],
+  "status": "pass"
+}

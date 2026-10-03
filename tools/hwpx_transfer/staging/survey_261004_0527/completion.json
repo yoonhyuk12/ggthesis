@@ -1,0 +1,110 @@
+﻿{
+    "status":  "completed",
+    "completed_at":  "2026-10-04T06:07:40.8381297+09:00",
+    "timezone":  "Asia/Seoul",
+    "task":  "현행 MD의 설문·연구설계 결정을 기존 한글 보고서에 반영",
+    "original":  {
+                     "path":  "00. hwpx/261002_1610_경기공학_건축안전_윤혁_논문_역할교정반영본.hwpx",
+                     "sha256":  "c74dcadef0a0801dd55d453b06cb0852a511d1e8148c6205c29d49d15b7f5950",
+                     "unchanged":  true
+                 },
+    "artifacts":  [
+                      {
+                          "path":  "00. hwpx/261004_0607_경기공학_건축안전_윤혁_논문_설문연구설계반영본.hwpx",
+                          "sha256":  "0ac48035232cf9a68bf1494703d805e94e1ba60038ef7c726ecec0efcde15817",
+                          "verified_copy":  true,
+                          "bytes":  3280566
+                      },
+                      {
+                          "path":  "00. hwpx/261004_0607_경기공학_건축안전_윤혁_논문_설문연구설계반영본.pdf",
+                          "sha256":  "43ff498d6ea82bcf376c6d3ea0b19fd09e0920ca599604e2207505ff25a64270",
+                          "verified_copy":  true,
+                          "bytes":  2067129
+                      }
+                  ],
+    "final_hangeul_com":  {
+                              "registered":  true,
+                              "opened":  true,
+                              "saved":  true,
+                              "reopened":  true,
+                              "pdf_saved":  true,
+                              "pages":  155,
+                              "error":  null,
+                              "input_unchanged":  true
+                          },
+    "verification":  {
+                         "original_unchanged":  true,
+                         "md_sources_unchanged":  true,
+                         "body_text_matches_transfer":  true,
+                         "body_resolved_fonts_and_styles_preserved":  true,
+                         "pages":  155,
+                         "toc_unresolved":  [
+
+                                            ],
+                         "toc_entries":  120,
+                         "wrong_toc_folios":  [
+
+                                              ],
+                         "pdf_changed_pages_after_toc":  [
+                                                             4,
+                                                             5,
+                                                             6,
+                                                             7,
+                                                             8,
+                                                             9
+                                                         ],
+                         "all_body_pages_pixel_identical":  true,
+                         "table_count":  65,
+                         "grid_errors":  [
+
+                                         ],
+                         "marker_count":  501,
+                         "pending_count":  414,
+                         "marker_color_errors":  [
+
+                                                 ],
+                         "missing_markers":  [
+
+                                             ],
+                         "body_text_footer_overlap":  [
+
+                                                      ],
+                         "ok":  true
+                     },
+    "visual_review":  {
+                          "toc":  {
+                                      "physical_pages":  [
+                                                             4,
+                                                             5,
+                                                             6,
+                                                             7,
+                                                             8,
+                                                             9,
+                                                             10
+                                                         ],
+                                      "readable":  true,
+                                      "leaders_and_folios_visible":  true,
+                                      "clipping":  false
+                                  },
+                          "all_tables_passed":  true,
+                          "evidence":  [
+                                           "qa_front_visual.json",
+                                           "qa_front_followup.json",
+                                           "qa_ch04_visual.json",
+                                           "qa_ch04_followup.json",
+                                           "qa_appendices_visual.json",
+                                           "qa_appendices_followup.json",
+                                           "qa_appendices_final_d.json",
+                                           "qa_results_visual.json",
+                                           "ready_visual_delta.json"
+                                       ]
+                      },
+    "preservation":  {
+                         "md_sources_unchanged":  true,
+                         "hwpx_only_user_edits_preserved":  true,
+                         "pending_results_preserved":  true,
+                         "duplicate_submission_permission_not_added_to_thesis":  true,
+                         "google_form_not_created":  true
+                     },
+    "evidence_directory":  "tools/hwpx_transfer/staging/survey_261004_0527"
+}

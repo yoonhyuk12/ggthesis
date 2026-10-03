@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="163.0mm" viewBox="0 0 1500 1630">
+<title>연구 모형: 두 집단 공분산분석</title>
+<rect width="1500" height="100%" fill="white"/>
+<text x="50" y="65" font-family="Malgun Gothic" font-size="42" font-weight="700" fill="#243C55" text-anchor="start">H1  주 분석 · 두 집단 공분산분석(ANCOVA)</text>
+<text x="50" y="122" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">응답자·현장 특성 조정 후 개인 지각 Y의 집단 간 평균 비교</text>
+<rect x="50" y="180" width="530" height="190" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="315" y="232" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#20262D" text-anchor="middle">도입 현장 (D=1)</text>
+<text x="315" y="288" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="middle">설치·1개월 이상</text>
+<text x="315" y="332" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="middle">정상 운용 확인</text>
+<rect x="50" y="420" width="530" height="190" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="315" y="472" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#20262D" text-anchor="middle">미도입 현장 (D=0)</text>
+<text x="315" y="528" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="middle">미설치·미운용 확인</text>
+<polyline points="580,275 650,275 650,515 580,515" fill="none" stroke="#243C55" stroke-width="3"/>
+<polyline points="650,395 825,395" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="825,395 807.0,386.0 807.0,404.0" fill="#243C55"/>
+<text x="736" y="350" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#20262D" text-anchor="middle">비교</text>
+<rect x="825" y="180" width="625" height="430" fill="white" stroke="#243C55" stroke-width="3"/>
+<text x="1137" y="245" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#20262D" text-anchor="middle">안전관리 실효성(Y)</text>
+<text x="1137" y="310" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#20262D" text-anchor="middle">현재 업무 수행 수준의 개인 지각</text>
+<text x="1137" y="375" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#20262D" text-anchor="middle">B 8문항 동일 가중 평균</text>
+<text x="1137" y="440" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#20262D" text-anchor="middle">도입-미도입 조정 평균 차이</text>
+<text x="1137" y="505" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#20262D" text-anchor="middle">추정치와 95% 신뢰구간</text>
+<text x="1137" y="568" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#58616B" text-anchor="middle">다섯 영역 비교는 Holm 보정</text>
+<text x="50" y="670" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">정상 운용 무알림 현장도 도입에 포함 · 알림 경험은 별도 기록</text>
+<rect x="50" y="720" width="1400" height="200" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="85" y="775" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#20262D" text-anchor="start">연속 공변량 2개 + 범주형 통제요인 4개</text>
+<text x="85" y="832" font-family="Malgun Gothic" font-size="35" font-weight="400" fill="#20262D" text-anchor="start">만 나이·건설현장 경력 / 소속·성별·역할·총공사비 구간</text>
+<text x="85" y="888" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#20262D" text-anchor="start">현장당 1명 / 미측정 교란의 제거를 보장하지 않음</text>
+<text x="50" y="990" font-family="Malgun Gothic" font-size="42" font-weight="700" fill="#243C55" text-anchor="start">H2  탐색적 보조 분석</text>
+<rect x="50" y="1035" width="1400" height="365" fill="white" stroke="#243C55" stroke-width="3" stroke-dasharray="14 10"/>
+<text x="90" y="1097" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#20262D" text-anchor="start">조사 시점 개인 지각 예산 제약성(W)을 평균중심화</text>
+<text x="90" y="1150" font-family="Malgun Gothic" font-size="35" font-weight="400" fill="#20262D" text-anchor="start">같은 조정변수에 W 주효과와 집단 × W를 추가</text>
+<rect x="90" y="1195" width="690" height="95" fill="#F2F4F6" stroke="#243C55" stroke-width="3" stroke-dasharray="14 10"/>
+<text x="435" y="1256" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#20262D" text-anchor="middle">집단 × 개인 지각 W</text>
+<polyline points="780,1242 1000,1242" fill="none" stroke="#243C55" stroke-width="3" stroke-dasharray="14 10"/>
+<polygon points="1000,1242 982.0,1233.0 982.0,1251.0" fill="#243C55"/>
+<text x="1220" y="1256" font-family="Malgun Gothic" font-size="34" font-weight="700" fill="#20262D" text-anchor="middle">안전관리 실효성(Y)</text>
+<text x="90" y="1353" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#20262D" text-anchor="start">양 집단 공통 관측범위 내 조건부 차이 · 부호 있는 B와 신뢰구간</text>
+<text x="50" y="1465" font-family="Malgun Gothic" font-size="33" font-weight="400" fill="#20262D" text-anchor="start">분석 관계를 나타낸 도식이며 도입의 인과 효과를 입증하지 않는다.</text>
+<text x="50" y="1530" font-family="Malgun Gothic" font-size="33" font-weight="400" fill="#20262D" text-anchor="start">사후 W는 객관 예산이나 정책 우선배치 기준으로 해석하지 않는다.</text>
+</svg>

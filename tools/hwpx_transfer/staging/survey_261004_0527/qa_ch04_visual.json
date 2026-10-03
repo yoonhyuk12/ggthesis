@@ -1,0 +1,346 @@
+{
+  "scope": "제4장 section2 표16–25 전부 및 그림4-1의 PDF 시각 배치 검토",
+  "source_pdf": "tools/hwpx_transfer/staging/survey_261004_0527/reflowed.pdf",
+  "source_page_count": 157,
+  "page_numbering": "pdf_page는 1부터 세는 PDF 물리 쪽, printed_page는 각 이미지 꼬리말에서 직접 확인한 인쇄 쪽번호",
+  "method": {
+    "type": "visual_only",
+    "contact_sheets_viewed": [
+      "tools/hwpx_transfer/staging/survey_261004_0527/reflowed_visual/sheet_073.jpg",
+      "tools/hwpx_transfer/staging/survey_261004_0527/reflowed_visual/sheet_079.jpg",
+      "tools/hwpx_transfer/staging/survey_261004_0527/reflowed_visual/sheet_085.jpg",
+      "tools/hwpx_transfer/staging/survey_261004_0527/reflowed_visual/sheet_091.jpg",
+      "tools/hwpx_transfer/staging/survey_261004_0527/reflowed_visual/sheet_097.jpg"
+    ],
+    "full_page_renders_viewed": [
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_078.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_079.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_082.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_086.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_087.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_090.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_091.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_092.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_093.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_094.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_095.png",
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_100.png"
+    ],
+    "render_scale": 2,
+    "likely_pages_used_as_locator_only": true,
+    "automatic_checks_repeated": false,
+    "excluded": "메인이 완료한 COM·격자·마커 개수/색·본문 보존 검사를 반복하지 않았으며, 갱신 예정인 목차 숫자도 검토에서 제외했다."
+  },
+  "overall_status": "needs_layout_correction",
+  "summary": "10개 표 본체와 그림4-1에서 잘림·꼬리말 침범·본문 가림은 발견하지 못했다. 표4-3과 표4-4의 주석/연결문 흐름 2곳은 배치 조정이 필요하다.",
+  "tables": [
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 16,
+      "label": "표 4-1 연구변수의 구성",
+      "pdf_start_page": 78,
+      "pdf_end_page": 78,
+      "printed_start_page": 66,
+      "printed_end_page": 66,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "참고 변수 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "마지막 참고 변수 행과 하단 가로선이 모두 보이며 뒤의 연구모형 소개 문단과 떨어져 있다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_078.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 17,
+      "label": "표 4-2 연구 가설 종합",
+      "pdf_start_page": 82,
+      "pdf_end_page": 82,
+      "printed_start_page": 70,
+      "printed_end_page": 70,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "H2 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "H1·H2 두 행과 하단 가로선이 보이고 제3절 연결문이 표 아래에 정상 배치되어 있다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_082.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 18,
+      "label": "표 4-3 변수의 조작적 정의와 측정도구의 구성",
+      "pdf_start_page": 87,
+      "pdf_end_page": 87,
+      "printed_start_page": 75,
+      "printed_end_page": 75,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "needs_correction",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "조정변수 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "마지막 조정변수 행의 숫자형 2개·범주형 4개와 연구자 구성 셀이 온전히 보이며 인쇄 쪽번호 위 여백이 남아 있다.",
+      "issue_ids": [
+        "CH04-V01"
+      ],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_087.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 19,
+      "label": "공통부 A 인구통계학적 특성 6문항",
+      "pdf_start_page": 90,
+      "pdf_end_page": 90,
+      "printed_start_page": 78,
+      "printed_end_page": 78,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "A-6 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "긴 A-6 조사 항목은 셀 안에서 줄바꿈되며 150억 원 이상까지 보인다. 마지막 행과 표 하단선이 한 쪽에 온전히 있다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_090.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 20,
+      "label": "공통부 B 안전관리 실효성 일반형 8문항",
+      "pdf_start_page": 91,
+      "pdf_end_page": 91,
+      "printed_start_page": 79,
+      "printed_end_page": 79,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "B-8 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "B-8 문항·근거와 하단선, 이어지는 B-3 용어 설명 주석이 모두 보이고 쪽번호와 겹치지 않는다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_091.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 21,
+      "label": "공통부 C 안전관리 예산 제약성 4문항",
+      "pdf_start_page": 92,
+      "pdf_end_page": 92,
+      "printed_start_page": 80,
+      "printed_end_page": 80,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "C-4 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "C-4 문항·근거와 하단선이 완전하며 주석은 표 아래 같은 쪽에 배치되어 있다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_092.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 22,
+      "label": "도입 현장 전용부 D 시스템 특성 인식 8문항",
+      "pdf_start_page": 93,
+      "pdf_end_page": 93,
+      "printed_start_page": 81,
+      "printed_end_page": 81,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "D-8 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "D-8의 문항·하위특성·근거가 모두 보이고 D블록 주석과 꼬리말 사이 여백이 있다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_093.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 23,
+      "label": "도입 현장 전용부 E 경보 피로도 완화 인식 4문항",
+      "pdf_start_page": 94,
+      "pdf_end_page": 94,
+      "printed_start_page": 82,
+      "printed_end_page": 82,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "E-4 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "E-4와 표 하단선이 보인다. E 주석 전체가 표 아래에 있고 이어서 제3항 본 설문지의 최종 구성이 시작된다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_094.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 24,
+      "label": "표 4-4 설문지의 최종 구성",
+      "pdf_start_page": 95,
+      "pdf_end_page": 95,
+      "printed_start_page": 83,
+      "printed_end_page": 83,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "needs_correction",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "현행안 합계 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "현행안 합계 행의 미도입 18문항·도입 30문항과 18 또는 30이 모두 보이고 표 하단선이 완전하다.",
+      "issue_ids": [
+        "CH04-V02"
+      ],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_095.png"
+      ]
+    },
+    {
+      "section": "Contents/section2.xml",
+      "table_idx": 25,
+      "label": "표 4-5 자료 수집 개요",
+      "pdf_start_page": 100,
+      "pdf_end_page": 100,
+      "printed_start_page": 88,
+      "printed_end_page": 88,
+      "continues_on_next_page": false,
+      "body_visual_status": "pass",
+      "related_text_flow_status": "pass",
+      "header": "첫 머리행 전체가 보인다.",
+      "repeated_header": "해당 없음: 표 본체가 모두 단일 쪽에 수록되어 이어지는 표 머리행이 없다.",
+      "last_row": "분석 단위 행",
+      "last_row_visible": true,
+      "row_or_cell_clipping": false,
+      "footer_intrusion": false,
+      "body_occlusion": false,
+      "observation": "마지막 분석 단위 행과 하단선이 온전히 보이며 제2항 분석 절차 제목과 본문이 아래에서 시작한다.",
+      "issue_ids": [],
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_100.png"
+      ]
+    }
+  ],
+  "figure": {
+    "label": "그림 4-1 연구 모형",
+    "pdf_start_page": 79,
+    "pdf_end_page": 79,
+    "printed_start_page": 67,
+    "printed_end_page": 67,
+    "visual_status": "pass",
+    "clipping": false,
+    "footer_intrusion": false,
+    "body_occlusion": false,
+    "observation": "H1·H2 도식 제목, 집단 상자, 화살표, 조정변수 상자와 해석 주석이 온전히 보인다. 캡션과 본문 주석이 도식 아래에 있고 꼬리말과 겹치지 않는다. 뒤 본문은 다음 쪽으로 자연스럽게 이어진다.",
+    "evidence": [
+      "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_079.png"
+    ]
+  },
+  "issues": [
+    {
+      "id": "CH04-V01",
+      "priority": "medium",
+      "table_idx": 18,
+      "pdf_pages": [
+        86,
+        87
+      ],
+      "printed_pages": [
+        74,
+        75
+      ],
+      "type": "table_note_and_transition_before_table",
+      "observation": "PDF86 하단에 '주: 출처 열은 조작적 정의의 대표 근거이며...' 주석과 '제4절에서는 측정도구를 확정하기 위한...' 연결문이 먼저 나타난다. 해당 표4-3 본체는 다음 PDF87에서 시작하고 끝난다.",
+      "impact": "표의 출처 열을 설명하는 주석과 다음 절 연결문이 표 앞쪽에 분리되어 읽기 순서가 뒤바뀐다.",
+      "suggestion": "표4-3 본체 뒤에 주석과 연결문이 오도록 메인이 표 앵커/본문 흐름을 조정한다. 문구 삭제나 축약은 필요하지 않다.",
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_086.png",
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_087.png"
+      ]
+    },
+    {
+      "id": "CH04-V02",
+      "priority": "medium",
+      "table_idx": 24,
+      "pdf_pages": [
+        94,
+        95
+      ],
+      "printed_pages": [
+        82,
+        83
+      ],
+      "type": "note_split_around_table",
+      "observation": "PDF94 하단에서 표4-4 주석 '주: 18·30문항은 측정 문항 수이며...'가 시작하여 '점수나 공변'에서 끝난다. 다음 PDF95 상단부터 표4-4 본체가 놓이고, 표 하단선 바로 아래에 주석의 나머지 '량으로 투입하지 않는다.'만 이어진다.",
+      "impact": "주석 한 문장이 표를 사이에 두고 분절되어 '공변량' 낱말까지 두 쪽으로 갈라진다. 표·본문의 물리적 겹침이나 글자 소실은 없지만 문장 읽기 순서를 수정해야 한다.",
+      "suggestion": "표4-4 뒤에 관리용 입력 주석 전체를 한 덩어리로 배치하도록 메인이 표 앵커와 주석의 쪽나눔을 조정한다.",
+      "evidence": [
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_094.png",
+        "tools/hwpx_transfer/staging/survey_261004_0527/qa_ch04_visual/page_095.png"
+      ]
+    }
+  ],
+  "notes": [
+    "qa.tables.likely_pages의 부록·결과장 중복 후보는 실제 제4장 위치로 판정하지 않았다.",
+    "모든 대상 표의 시작·끝·마지막 행을 확대 이미지에서 확인했고, 인접 쪽은 contact sheet에서 확인했다.",
+    "확인된 문제는 메인의 한글 조판 수정 대상으로 보고하며 이 작업에서는 MD·HWPX·PDF를 변경하지 않았다."
+  ]
+}

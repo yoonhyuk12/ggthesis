@@ -1,0 +1,34 @@
+{
+  "source": "00. hwpx\\261002_1610_경기공학_건축안전_윤혁_논문_역할교정반영본.hwpx",
+  "source_sha256": "c74dcadef0a0801dd55d453b06cb0852a511d1e8148c6205c29d49d15b7f5950",
+  "sections": [
+    {
+      "name": "Contents/section0.xml",
+      "paragraphs": 53,
+      "tables": 3
+    },
+    {
+      "name": "Contents/section1.xml",
+      "paragraphs": 160,
+      "tables": 5
+    },
+    {
+      "name": "Contents/section2.xml",
+      "paragraphs": 2678,
+      "tables": 54
+    }
+  ],
+  "md_sha256": {
+    "01.docs\\00_목차.md": "15621a325d3ee2fc4ad60eb0fd470bc4a2c39af20715ea779ec4c4e898d9fa79",
+    "01.docs\\01_서론.md": "67aa6e342d203c407a1080e4a4c00a12cfc4748f69a8b83ed0b8e50568f8b754",
+    "01.docs\\02_이론적배경.md": "a80439ee4446135b4092aaacfc4071e23bccd4d764c7f43e6ebca6e9464946be",
+    "01.docs\\03_시스템개발.md": "5af940168518375360cd3d8e9f0d35c3166ab9cb2fa25a070f8b5e194525b8d1",
+    "01.docs\\04_연구설계.md": "ccea5b8e5a4296ec4fca643a4eaee098d54eb53e7cacc8b2b81f3df651ae67dd",
+    "01.docs\\05_실증분석결과.md": "e3ded651e00e88af95c07290b98560200093b382606b151045bac4c646c789e8",
+    "01.docs\\06_결론.md": "fd524472300a65cb273a69537b1f53c71c6a72bed76b25c96b9b9ad78b434ebc",
+    "01.docs\\07_참조번호목록.md": "90a489f9ef94010c11bfc7f2c41b0b45a78d46de5aee660038648a8cf4649167",
+    "01.docs\\부록1_설문지_양식.md": "2c81b8adec2dbd43b6d01b503f5190564b97d5a45b4300e3845118d5c642a75e",
+    "01.docs\\부록2_설문항목_근거매핑.md": "70270288089484f5a8094d9c10a01ac8bf4abdcf736e9302556edb820abade6a",
+    "01.docs\\설문항목_작업이력.md": "c0bb2b3ccfac1eb5f8e783b17fcc36f92a9f172badc91ab1f04c75e04701245c"
+  }
+}

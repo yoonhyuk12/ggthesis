@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.0",
+  "disclosure": "데이터셋 응답이 아닌 인위적 입력 시험값이며 어느 인물에게도 귀속하지 않는다.",
+  "question_source": {
+    "A-4": "**A-4)** 귀하의 건설현장 근무 경력은? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간)\n&emsp;&emsp;(&emsp;&emsp;&emsp;)년 (&emsp;&emsp;&emsp;)개월\n※ 여러 현장이나 업무의 근무 기간이 겹치면 같은 기간을 중복하여 합산하지 마십시오. 개월은 연수를 제외한 나머지 개월(0∼11)로 적어 주십시오.",
+    "A-6": "**A-6)** 현재 담당 현장의 총공사비 구간은?\n&emsp;&emsp;① 20억 원 미만 &emsp;&emsp;② 20억 원 이상∼50억 원 미만 &emsp;&emsp;③ 50억 원 이상∼120억 원 미만\n&emsp;&emsp;④ 120억 원 이상∼150억 원 미만 &emsp;&emsp;⑤ 150억 원 이상"
+  },
+  "cost_domain": "0원 이상 금액의 구간 분할을 확인한다. 0원은 계산 영역의 하한이며 조사대상 자격이나 법적 금액 정의를 뜻하지 않는다.",
+  "cost_intervals": [
+    {
+      "category": 1,
+      "label": "20억 원 미만",
+      "lower_inclusive_krw": 0,
+      "upper_exclusive_krw": 2000000000
+    },
+    {
+      "category": 2,
+      "label": "20억 원 이상∼50억 원 미만",
+      "lower_inclusive_krw": 2000000000,
+      "upper_exclusive_krw": 5000000000
+    },
+    {
+      "category": 3,
+      "label": "50억 원 이상∼120억 원 미만",
+      "lower_inclusive_krw": 5000000000,
+      "upper_exclusive_krw": 12000000000
+    },
+    {
+      "category": 4,
+      "label": "120억 원 이상∼150억 원 미만",
+      "lower_inclusive_krw": 12000000000,
+      "upper_exclusive_krw": 15000000000
+    },
+    {
+      "category": 5,
+      "label": "150억 원 이상",
+      "lower_inclusive_krw": 15000000000,
+      "upper_exclusive_krw": null
+    }
+  ],
+  "cost_boundary_cases": [
+    {
+      "case_id": "COST-20-BEFORE",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 20,
+      "delta_krw": -1,
+      "input_krw": 1999999999,
+      "expected_category": 1,
+      "expected_label": "20억 원 미만"
+    },
+    {
+      "case_id": "COST-20-EXACT",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 20,
+      "delta_krw": 0,
+      "input_krw": 2000000000,
+      "expected_category": 2,
+      "expected_label": "20억 원 이상∼50억 원 미만"
+    },
+    {
+      "case_id": "COST-20-AFTER",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 20,
+      "delta_krw": 1,
+      "input_krw": 2000000001,
+      "expected_category": 2,
+      "expected_label": "20억 원 이상∼50억 원 미만"
+    },
+    {
+      "case_id": "COST-50-BEFORE",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 50,
+      "delta_krw": -1,
+      "input_krw": 4999999999,
+      "expected_category": 2,
+      "expected_label": "20억 원 이상∼50억 원 미만"
+    },
+    {
+      "case_id": "COST-50-EXACT",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 50,
+      "delta_krw": 0,
+      "input_krw": 5000000000,
+      "expected_category": 3,
+      "expected_label": "50억 원 이상∼120억 원 미만"
+    },
+    {
+      "case_id": "COST-50-AFTER",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 50,
+      "delta_krw": 1,
+      "input_krw": 5000000001,
+      "expected_category": 3,
+      "expected_label": "50억 원 이상∼120억 원 미만"
+    },
+    {
+      "case_id": "COST-120-BEFORE",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 120,
+      "delta_krw": -1,
+      "input_krw": 11999999999,
+      "expected_category": 3,
+      "expected_label": "50억 원 이상∼120억 원 미만"
+    },
+    {
+      "case_id": "COST-120-EXACT",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 120,
+      "delta_krw": 0,
+      "input_krw": 12000000000,
+      "expected_category": 4,
+      "expected_label": "120억 원 이상∼150억 원 미만"
+    },
+    {
+      "case_id": "COST-120-AFTER",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 120,
+      "delta_krw": 1,
+      "input_krw": 12000000001,
+      "expected_category": 4,
+      "expected_label": "120억 원 이상∼150억 원 미만"
+    },
+    {
+      "case_id": "COST-150-BEFORE",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 150,
+      "delta_krw": -1,
+      "input_krw": 14999999999,
+      "expected_category": 4,
+      "expected_label": "120억 원 이상∼150억 원 미만"
+    },
+    {
+      "case_id": "COST-150-EXACT",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 150,
+      "delta_krw": 0,
+      "input_krw": 15000000000,
+      "expected_category": 5,
+      "expected_label": "150억 원 이상"
+    },
+    {
+      "case_id": "COST-150-AFTER",
+      "question_code": "A-6",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "boundary_eok": 150,
+      "delta_krw": 1,
+      "input_krw": 15000000001,
+      "expected_category": 5,
+      "expected_label": "150억 원 이상"
+    }
+  ],
+  "career_input_cases": [
+    {
+      "case_id": "CAREER-0Y6M",
+      "question_code": "A-4",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "input_years": 0,
+      "input_months": 6,
+      "expected_valid": true,
+      "expected_years_fraction": "1/2",
+      "expected_total_months": 6,
+      "correction_candidate": null,
+      "note": "년 + 개월/12 계산만 확인하는 인위적 입력이다."
+    },
+    {
+      "case_id": "CAREER-10Y0M",
+      "question_code": "A-4",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "input_years": 10,
+      "input_months": 0,
+      "expected_valid": true,
+      "expected_years_fraction": "10",
+      "expected_total_months": 120,
+      "correction_candidate": null,
+      "note": "년 + 개월/12 계산만 확인하는 인위적 입력이다."
+    },
+    {
+      "case_id": "CAREER-10Y11M",
+      "question_code": "A-4",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "input_years": 10,
+      "input_months": 11,
+      "expected_valid": true,
+      "expected_years_fraction": "131/12",
+      "expected_total_months": 131,
+      "correction_candidate": null,
+      "note": "년 + 개월/12 계산만 확인하는 인위적 입력이다."
+    },
+    {
+      "case_id": "CAREER-10Y12M",
+      "question_code": "A-4",
+      "persona_id": null,
+      "uuid": null,
+      "origin": "artificial_input_fixture",
+      "input_years": 10,
+      "input_months": 12,
+      "expected_valid": false,
+      "expected_years_fraction": null,
+      "expected_total_months": null,
+      "correction_candidate": {
+        "years": 11,
+        "months": 0,
+        "only_after_response_confirmation": true
+      },
+      "note": "12개월은 형식 위반이다. 원응답을 확인하기 전 자동으로 11년 0개월로 고치지 않는다."
+    }
+  ],
+  "career_overlap_case": {
+    "case_id": "CAREER-OVERLAP",
+    "question_code": "A-4",
+    "persona_id": null,
+    "uuid": null,
+    "origin": "artificial_input_fixture",
+    "intervals": [
+      {
+        "start_inclusive": "2020-01-01",
+        "end_exclusive": "2021-01-01"
+      },
+      {
+        "start_inclusive": "2020-07-01",
+        "end_exclusive": "2021-07-01"
+      }
+    ],
+    "expected_naive_sum_months": 24,
+    "expected_overlap_months": 6,
+    "expected_union_months": 18,
+    "expected_answer": {
+      "years": 1,
+      "months": 6
+    },
+    "expected_years_fraction": "3/2",
+    "note": "월 단위 계산이 분명한 예시를 위해 각 기간은 시작일 포함·종료일 미포함으로 정했다. 실제 날짜의 일수·부분월 반올림 규칙을 제안한 것이 아니다."
+  },
+  "case_count": 17
+}

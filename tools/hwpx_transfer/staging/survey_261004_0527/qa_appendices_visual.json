@@ -1,0 +1,187 @@
+{
+  "review_type": "manual_visual_pdf_review",
+  "source_pdf": "tools/hwpx_transfer/staging/survey_261004_0527/reflowed.pdf",
+  "source_qa_read": "tools/hwpx_transfer/staging/survey_261004_0527/reflowed_qa.json",
+  "status": "needs_layout_revision",
+  "scope": {
+    "section": "Contents/section2.xml",
+    "table_indices": [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56],
+    "physical_pages_reviewed": [140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156],
+    "printed_pages_read_from_page_footers": [128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144],
+    "boundary_context": "PDF 139는 참고문헌 끝, PDF 157은 Abstract 시작으로 부록 밖이다.",
+    "toc_page_numbers": "이번 시각 검토 대상에서 제외: 메인에서 갱신 예정"
+  },
+  "method": {
+    "contact_sheets": ["reflowed_visual/sheet_139.jpg", "reflowed_visual/sheet_145.jpg", "reflowed_visual/sheet_151.jpg"],
+    "rendered_pages": "qa_appendices_visual/page_140.png부터 page_156.png까지 PDF를 1.7배로 직접 렌더",
+    "large_images_opened": [140, 142, 144, 145, 146, 147, 148, 149, 150, 152, 154, 155, 156],
+    "sparse_pages_reviewed_via_contact_sheet_and_text": [141, 143, 151, 153],
+    "targeted_pdf_span_inspection": "두 표지의 자발적/학술 연구를 위한 통계 분석에만 구절에서 PDF 글꼴을 보조 확인",
+    "not_repeated": "메인의 65표 격자, 501마커, 414실험전 PDF 개수·빨강, 재저장 전후 본문 보존 검증은 재실행하지 않았다."
+  },
+  "tables": [
+    {
+      "table_idx": 45,
+      "name": "도입 표지",
+      "physical_pages": [140],
+      "printed_pages": [128],
+      "associated_contact_pages": [140, 141],
+      "verdict": "needs_layout_revision",
+      "observations": "표 안 연구 목적·개인정보 안내·날짜는 온전히 보이며 테두리와 겹치거나 잘린 문장은 없다. 표 밖 소속·지도교수는 140에, 연구자·이메일은 141에 분리되어 연락처만 남은 쪽이 생긴다. 표지의 무기명 삭제 후 임의 글자 강조 전이는 없으나 자발적은 MD의 굵게 강조가 반영되지 않았다.",
+      "evidence": ["qa_appendices_visual/page_140.png", "qa_appendices_visual/page_141.png"]
+    },
+    {
+      "table_idx": 46,
+      "name": "도입 A 외곽 단일 셀 표",
+      "physical_pages": [144],
+      "printed_pages": [132],
+      "verdict": "needs_layout_revision",
+      "observations": "A-1∼A-6과 A3 숫자·A4 년개월·A6 다섯 구간 및 마지막 안내 문장은 모두 보인다. 그러나 표가 Part A 제목·안내가 있는 143에서 다음 쪽으로 밀렸고, 외곽 표 하단이 쪽번호 바로 위까지 내려와 꼬리말과의 여유가 사라졌다. A6 마지막 안내 끝 글자는 표 하단에 매우 가깝다.",
+      "evidence": ["qa_appendices_visual/page_143.png", "qa_appendices_visual/page_144.png"]
+    },
+    {
+      "table_idx": 47,
+      "name": "도입 A 중첩 제목 표",
+      "physical_pages": [144],
+      "printed_pages": [132],
+      "verdict": "pass_as_nested_table",
+      "observations": "A. 실태조사 대상자 개요가 회색 제목 띠 안에 온전히 표시된다. 바깥 표의 폭 안에 들어가며 별도 잘림·겹침은 없다. 부모 표 46의 쪽맞춤 수정 필요는 별도다. 자동 likely_pages의 143은 실제 중첩 제목 시작 쪽이 아니다.",
+      "evidence": ["qa_appendices_visual/page_144.png"]
+    },
+    {
+      "table_idx": 48,
+      "name": "도입 B",
+      "physical_pages": [145],
+      "printed_pages": [133],
+      "verdict": "pass",
+      "observations": "Part 제목·직전 1개월 안내·척도 문장과 B-1∼B-8 전체가 같은 쪽에 있다. B8 마지막 문장과 다섯 선택기호, 표 하단은 완전히 보이고 쪽번호와 충분히 떨어져 있다. 다른 본문 가림이나 다음 쪽 이월은 없다.",
+      "evidence": ["qa_appendices_visual/page_145.png"]
+    },
+    {
+      "table_idx": 49,
+      "name": "도입 C",
+      "physical_pages": [146],
+      "printed_pages": [134],
+      "verdict": "pass",
+      "observations": "제목·안내·C-1∼C-4와 다섯 선택기호가 같은 쪽에 표시된다. C4 마지막 어렵다 문장과 표 하단은 온전히 보이며 꼬리말 여백이 충분하다. 비해당 칸은 없다.",
+      "evidence": ["qa_appendices_visual/page_146.png"]
+    },
+    {
+      "table_idx": 50,
+      "name": "도입 D",
+      "physical_pages": [148],
+      "printed_pages": [136],
+      "guidance_physical_pages": [147],
+      "verdict": "table_pass_with_pagination_issue",
+      "observations": "D-1∼D-8 모든 행과 ①∼⑤·비해당이 보인다. D3·D6 간소화 문구 및 D8 마지막 문장에 잘림은 없다. 문항 영역 머리행 병합이 유지되었고 비해당은 점수 아님으로 별도 표시된다. 좁은 응답 머리행은 보통이다·매우 그렇다·비해당이 여러 줄로 갈라져 세로에 가까우나 글자는 잘리지 않는다. 표 자체는 한 쪽에 들어가지만 Part D 제목과 경험 안내는 앞쪽 147에 홀로 남는다.",
+      "evidence": ["qa_appendices_visual/page_147.png", "qa_appendices_visual/page_148.png"]
+    },
+    {
+      "table_idx": 51,
+      "name": "도입 E",
+      "physical_pages": [149],
+      "printed_pages": [137],
+      "verdict": "pass",
+      "observations": "같은 현장의 도입 전 자동 알림·전반적 경험 비교 안내, 척도, E-1∼E-4 및 비해당 칸이 같은 쪽에 있다. E4와 끝까지 응답해 주셔서 진심으로 감사합니다 문장이 표 아래에 보이며 서로 겹치지 않는다. 표 하단·감사 문장과 쪽번호는 분리된다. D와 동일하게 머리행이 좁게 줄바꿈되지만 잘림은 없다.",
+      "evidence": ["qa_appendices_visual/page_149.png"]
+    },
+    {
+      "table_idx": 52,
+      "name": "미도입 표지",
+      "physical_pages": [150],
+      "printed_pages": [138],
+      "associated_contact_pages": [150, 151],
+      "verdict": "needs_layout_revision",
+      "observations": "표 안 연구 목적·개인정보 안내·날짜는 잘림 없이 보인다. 표 밖 소속만 150에 남고 지도교수·연구자·이메일이 151로 넘어가 표지가 분절된다. 무기명 잔여나 임의 글자 강조 전이는 없으며 학술 연구를 위한 통계 분석에만 구절은 정상 강조된다. 자발적의 MD 굵게 강조는 보통체로 출력된다.",
+      "evidence": ["qa_appendices_visual/page_150.png", "qa_appendices_visual/page_151.png"]
+    },
+    {
+      "table_idx": 53,
+      "name": "미도입 A 외곽 단일 셀 표",
+      "physical_pages": [154],
+      "printed_pages": [142],
+      "verdict": "fail_footer_intrusion",
+      "observations": "A-1∼A-6·입력 칸·A6 다섯 구간의 문자는 보이지만 표는 Part A 제목·안내가 있는 153에서 다음 쪽으로 밀렸다. A6 마지막 안내의 마지막 두 줄과 외곽 테두리가 쪽번호 영역에 내려온다. 쪽번호 - 142 -가 안내 끝 두 줄 사이에 끼어 있으므로 실제 출력 기준으로 수정이 필요하다.",
+      "evidence": ["qa_appendices_visual/page_153.png", "qa_appendices_visual/page_154.png"]
+    },
+    {
+      "table_idx": 54,
+      "name": "미도입 A 중첩 제목 표",
+      "physical_pages": [154],
+      "printed_pages": [142],
+      "verdict": "pass_as_nested_table",
+      "observations": "A. 실태조사 대상자 개요 제목과 회색 띠가 외곽 표 안에 표시된다. 중첩 표 자체에 잘림·가림은 없다. 부모 표 53의 꼬리말 침범은 수정 필요다. 실제 쪽은 동일 문구 자동 검색의 후보 143·144가 아니라 154다.",
+      "evidence": ["qa_appendices_visual/page_154.png"]
+    },
+    {
+      "table_idx": 55,
+      "name": "미도입 B",
+      "physical_pages": [155],
+      "printed_pages": [143],
+      "verdict": "pass",
+      "observations": "도입 B와 같은 안내 및 B-1∼B-8이 한 쪽에 온전히 보인다. B8의 마지막 문장·선택기호·표 하단이 꼬리말 위에서 끝나며 본문 가림이나 문항 이월이 없다.",
+      "evidence": ["qa_appendices_visual/page_155.png"]
+    },
+    {
+      "table_idx": 56,
+      "name": "미도입 C",
+      "physical_pages": [156],
+      "printed_pages": [144],
+      "verdict": "pass",
+      "observations": "C-1∼C-4와 다섯 선택기호가 온전히 보이고, 마지막 C4 문장·표 하단·감사 문장이 차례로 배치된다. 본문이나 꼬리말과 겹치지 않으며 뒤쪽 Abstract와도 분리된다.",
+      "evidence": ["qa_appendices_visual/page_156.png"]
+    }
+  ],
+  "non_table_pages": [
+    {"physical_pages": [142, 152], "printed_pages": [130, 140], "verdict": "pass", "observations": "공통 기간 안내와 관리용 입력은 각각 새 쪽에 동일한 구성으로 배치된다. 배포코드·성명, 측정 문항 수 제외, 필수·비해당·제출 전 중단 안내가 모두 보인다. 가림·잘림·꼬리말 침범이 없다."},
+    {"physical_pages": [141, 151], "printed_pages": [129, 139], "verdict": "pagination_revision_recommended", "observations": "표지에서 밀려난 연락처만 있다. 연락처 자체는 보존되었지만 한 표지의 소속·지도교수·연구자·이메일이 두 쪽에 갈라져 있다."},
+    {"physical_pages": [143, 153], "printed_pages": [131, 141], "verdict": "pagination_revision_required_with_A_tables", "observations": "Part A 제목과 응답 안내만 남고 실제 A 문항표는 다음 쪽으로 넘어간다. A 표의 꼬리말 침범과 함께 쪽맞춤을 조정해야 한다."},
+    {"physical_pages": [147], "printed_pages": [135], "verdict": "pagination_revision_recommended", "observations": "Part D 제목·경험 안내와 척도 문장만 남고 실제 표는 다음 쪽에 있다. 표 자체는 다음 쪽에서 온전히 표시된다."}
+  ],
+  "findings": [
+    {
+      "id": "A_FOOTER_INTRUSION",
+      "priority": "high",
+      "physical_pages": [144, 154],
+      "table_indices": [46, 53],
+      "finding": "A 단일 셀 표가 본문 가용 높이를 넘겨 꼬리말 여유가 사라지거나 실제로 침범한다. 특히 PDF154 쪽번호가 마지막 안내 두 줄 사이에 끼어 있다.",
+      "requested_resolution": "A-1∼A-6·주석·선택기호·글꼴을 보존한 채 문단 간격·여백·배치를 조정하고, 실제 출력에서 해결되지 않으면 안전한 구조 분할을 검토한다. 글자 크기를 임의로 줄이거나 안내를 삭제해서 맞추지 않는다."
+    },
+    {
+      "id": "COVER_CONTACTS_SPLIT",
+      "priority": "medium",
+      "physical_pages": [140, 141, 150, 151],
+      "table_indices": [45, 52],
+      "finding": "두 표지의 연락처 묶음이 다음 쪽으로 밀려 연락처 몇 줄만 있는 쪽이 생긴다.",
+      "requested_resolution": "표지 문구와 연구자 이메일을 유지하면서 표지 표·날짜·소속·지도교수·연구자·이메일이 가능한 한 같은 쪽에 모이도록 조정한다."
+    },
+    {
+      "id": "PART_HEADING_SEPARATED",
+      "priority": "medium",
+      "physical_pages": [143, 144, 147, 148, 153, 154],
+      "table_indices": [46, 50, 53],
+      "finding": "A 두 벌과 D에서 Part 제목·안내만 앞쪽에 남고 표가 통째로 다음 쪽으로 밀렸다.",
+      "requested_resolution": "A 꼬리말 문제와 함께 제목·안내·표 시작을 붙인다. D는 내용·글꼴을 유지한 배치 조정 또는 필요시 행 경계 분할과 머리행 반복으로 읽는 흐름을 개선한다."
+    },
+    {
+      "id": "COVER_VOLUNTARY_EMPHASIS",
+      "priority": "low",
+      "physical_pages": [140, 150],
+      "table_indices": [45, 52],
+      "finding": "무기명 삭제 후 임의 글자에 굵은 강조가 전이되지는 않았다. 다만 현행 MD의 자발적 굵게는 두 표지에서 보통체로 보인다. 학술 연구를 위한 통계 분석에만 구절의 강조는 정상이다.",
+      "requested_resolution": "표지 문구는 유지하고 자발적 세 글자에만 현행 MD의 굵게를 적용한다."
+    }
+  ],
+  "continuity_and_headers": {
+    "all_survey_table_bodies_on_single_page": true,
+    "repeated_headers_needed_in_current_output": false,
+    "note": "현재 D 표를 포함하여 문항 행이 다음 쪽으로 잘려 이어지는 표는 없다. 따라서 머리행 반복을 실제로 판정할 이어진 표 쪽은 없으며, 수정 중 행 분할을 새로 적용하면 그 표의 반복 머리행과 행 연속성을 추가로 확인해야 한다.",
+    "last_rows_visually_seen": ["B-8 도입", "C-4 도입", "D-8", "E-4", "B-8 미도입", "C-4 미도입"],
+    "NA_cells_visually_seen": "D8행·E4행 모두 비해당 열이 보이며 척도 ⑤와 선으로 구분된다."
+  },
+  "limitations": [
+    "이 보고서는 메인 적용·재조판 후 첫 reflowed.pdf에 대한 시각 검토이며, 수정 후 최종 PDF의 완료 확인이 아니다.",
+    "격자·폭·마커·본문 보존의 프로그램 검증은 메인 제공 증거를 사용했고 동일 검증을 반복하지 않았다.",
+    "PDF 내장 글꼴 이름 T1/T4 등과 flags만으로 굵기를 일반화하지 않았으며 확대 이미지의 시각 판단과 해당 문장 글꼴 차이를 함께 참고했다."
+  ]
+}

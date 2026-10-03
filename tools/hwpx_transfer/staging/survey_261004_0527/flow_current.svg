@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="179.0mm" viewBox="0 0 1500 1790">
+<title>연구의 흐름도: 현행 ANCOVA 설계</title>
+<rect width="1500" height="100%" fill="white"/>
+<rect x="45" y="40" width="1410" height="230" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="40" width="1410" height="75" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="91" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제1·2장  연구 배경과 이론적 근거</text>
+<text x="80" y="165" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장 안전관리 문제와 선행연구 검토</text>
+<text x="80" y="217" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">개인의 현재 지각 실효성 비교 필요성</text>
+<polyline points="750,270 750,325" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,325 759.0,307.0 741.0,307.0" fill="#243C55"/>
+<rect x="45" y="325" width="1410" height="230" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="325" width="1410" height="75" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="376" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제3장  시스템 개발 및 조건부 성능 평가</text>
+<text x="80" y="450" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">YOLO 1차 후보에 대한 LLM 2차 필터 평가</text>
+<text x="80" y="502" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">오경보 감소와 실제 위험 추가 차단을 함께 보고</text>
+<polyline points="750,555 750,610" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,610 759.0,592.0 741.0,592.0" fill="#243C55"/>
+<rect x="45" y="610" width="1410" height="280" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="610" width="1410" height="75" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="661" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제4장  도입·미도입 현장 비교 설계</text>
+<text x="80" y="735" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">설치·1개월 이상 정상 운용 기준 집단 구분</text>
+<text x="80" y="787" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">60현장·60명 모집 목표 / 현장당 1명·사후 설문 1회</text>
+<text x="80" y="839" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">집단별 공통 척도 검토 · 채점 및 결측 처리 계획</text>
+<polyline points="750,890 750,945" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,945 759.0,927.0 741.0,927.0" fill="#243C55"/>
+<rect x="45" y="945" width="1410" height="390" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="945" width="1410" height="75" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="996" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제5장  실증분석 결과</text>
+<text x="80" y="1070" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">측정도구 · 결측 · 사전 특성 분포 · 모형 가정 점검</text>
+<text x="80" y="1122" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1: 연속 공변량 2개·범주형 요인 4개의 ANCOVA</text>
+<text x="80" y="1174" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">다섯 영역 ANCOVA 보조 비교: Holm 보정</text>
+<text x="80" y="1226" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H2: 일반선형모형의 집단 × 예산 제약성(W)</text>
+<text x="80" y="1278" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">추정치 · 신뢰구간 · 부분 η² 보고</text>
+<polyline points="750,1335 750,1390" fill="none" stroke="#243C55" stroke-width="3"/>
+<polygon points="750,1390 759.0,1372.0 741.0,1372.0" fill="#243C55"/>
+<rect x="45" y="1390" width="1410" height="215" fill="white" stroke="#243C55" stroke-width="3"/>
+<rect x="45" y="1390" width="1410" height="75" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
+<text x="78" y="1441" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제6장  결론</text>
+<text x="80" y="1515" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">결과와 의의 · 해석의 한계 · 후속 연구</text>
+<text x="80" y="1567" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">전후 변화·인과 효과·정책 우선배치 단정 제한</text>
+<text x="750" y="1680" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 현장당 관리자 1명의 지각 응답</text>
+<text x="750" y="1735" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">모집 목표의 검정력과 실제 분석 결과는 별도 확인</text>
+</svg>
