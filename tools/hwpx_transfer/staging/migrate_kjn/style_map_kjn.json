@@ -1,0 +1,871 @@
+{
+ "_meta": {
+  "source": "00. hwpx/건설현장 안전시설물 설치와 떨어짐 사고위험의 관계-논문전체(김정년) 261002.hwpx (추출본 tools/hwpx_transfer/staging/migrate_kjn/template_extracted/)",
+  "sha256": "9bf1980a60d3a98328758e10a5b3e358dc5fbfd74e6006d3552f8424ba1dfff3",
+  "measured": "2026-10-08",
+  "units": "charPr.height=hu(1/100pt), 길이·폭·여백=HWPUNIT(1/7200 inch, 7200=25.4mm). 모든 ID·수치는 추출 XML 실측값. section:idx는 0부터 세는 직계 문단 번호(덤프 template_kjn_paras.json의 idx와 동일).",
+  "header_counts": {
+   "charPr": 70,
+   "paraPr": 70,
+   "style": 40,
+   "borderFill": 30,
+   "tabPr": 8
+  },
+  "font_note": "본문·제목·표·참고문헌 대표 charPr의 fontRef hangul=6, latin=7 → 둘 다 '한양신명조'(HANGUL 목록 id6, LATIN 목록 id7). style0 '바탕글'의 기본 charPr53은 함초롬바탕 10pt라 스타일만 지정하면 서식이 맞지 않는다 — 문단·run에 아래 paraPr/charPr을 직접 지정해야 한다.",
+  "new_keys": [
+   "front_heading_box",
+   "cover.section0[].tbl_run_idx/tbl_idx",
+   "table.borderFills.header_gray_left_open/header_gray_right_open/table_outer",
+   "table.cell_subList",
+   "h2_section.pageBreak_rule",
+   "h3_item.pageBreak_rule",
+   "figure.pic_attrs",
+   "page.page_numbering.section2.hidePageNum_first",
+   "page.page_numbering.section1.newNum_location"
+  ]
+ },
+ "page": {
+  "width": "53858",
+  "height": "72567",
+  "size_mm": "190.0 x 256.0",
+  "landscape": "WIDELY",
+  "gutterType": "LEFT_ONLY",
+  "margins": {
+   "section0_cover": {
+    "left": "8503",
+    "right": "8503",
+    "top": "8503",
+    "bottom": "7086",
+    "header": "0",
+    "footer": "0",
+    "gutter": "0"
+   },
+   "section1_front": {
+    "left": "8503",
+    "right": "8503",
+    "top": "9921",
+    "bottom": "4251",
+    "header": "0",
+    "footer": "4251",
+    "gutter": "0"
+   },
+   "section2_body": {
+    "left": "7086",
+    "right": "7086",
+    "top": "9921",
+    "bottom": "4251",
+    "header": "0",
+    "footer": "4251",
+    "gutter": "0"
+   }
+  },
+  "margins_mm_note": "7086=25.0mm, 8503=30.0mm, 9921=35.0mm, 4251=15.0mm. 본문 가용 폭: section1 53858-2*8503=36852(130.0mm), section2 53858-2*7086=39686(140.0mm). 가용 높이(section2) 72567-9921-4251-0-4251=54144(191.0mm)",
+  "page_numbering": {
+   "section0": "없음(표지류, pageNum 제어 없음)",
+   "section1": {
+    "pos": "BOTTOM_CENTER",
+    "formatType": "ROMAN_SMALL",
+    "sideChar": "-",
+    "newNum": "1",
+    "newNum_location": "s1:0 문단의 제목 상자 표(2행) 둘째 행 셀 문단 안 <hp:ctrl><hp:newNum num=\"1\" numType=\"PAGE\"/></hp:ctrl> — 직계 run이 아니다"
+   },
+   "section2": {
+    "pos": "BOTTOM_CENTER",
+    "formatType": "DIGIT",
+    "sideChar": "-",
+    "newNum": "1",
+    "hidePageNum_first": "1",
+    "_note": "s2:0 run[1]에 pageNum → pageHiding(hidePageNum=1) → '제 1 장  서  론' 텍스트 → newNum(num=1) 순서. 본문 첫 쪽 숫자를 숨긴다"
+   }
+  },
+  "footnote": {
+   "numFormat": "DIGIT",
+   "suffixChar": ")",
+   "numbering": "CONTINUOUS",
+   "noteLineWidth": "0.12 mm",
+   "_note": "secPr 정의만 있고 본문 각주 개체는 0건(분석 문서 6절)"
+  }
+ },
+ "sections": [
+  {
+   "file": "section0.xml",
+   "role": "표지류: 겉표지·제출지(s0:0 한 문단 안 글자처럼 취급 표 2개)·인준지(s0:1 표 1개). 쪽번호 없음",
+   "paragraphs": 2
+  },
+  {
+   "file": "section1.xml",
+   "role": "앞부분: 목차·표목차·그림목차·감사의 글·논문개요. 쪽번호 로마 소문자, i부터",
+   "paragraphs": 134
+  },
+  {
+   "file": "section2.xml",
+   "role": "본문 제1~5장·참고문헌·부록(설문지)·Abstract. 쪽번호 아라비아, 1부터(첫 쪽 숨김)",
+   "paragraphs": 712
+  }
+ ],
+ "front_ranges": {
+  "목차": [
+   "section1",
+   0,
+   70
+  ],
+  "표목차": [
+   "section1",
+   71,
+   104
+  ],
+  "그림목차": [
+   "section1",
+   105,
+   110
+  ],
+  "감사의글": [
+   "section1",
+   111,
+   124
+  ],
+  "논문개요": [
+   "section1",
+   125,
+   133
+  ],
+  "_detail": "블록 시작은 제목 상자 표 문단: s1:0 '목  차'(pageBreak=0, secPr 포함), s1:71 '표 목 차'(pageBreak=1), s1:105 '그림 목 차'(1), s1:111 '감사의 글'(1), s1:125 '논 문  개 요'(1, styleIDRef=1). s1:70은 목차 끝의 빨간 [작성지침] 안내(제거 대상). 감사의글 s1:112~118 본문, 119~121 빈 문단, 122 '2026 년 12 월'·123 성명(paraPr48 오른쪽정렬), 124 빈 문단. 논문개요 s1:127~133 본문(130은 빨간 [자리표시자]). 감사의글·논문개요의 내용은 전부 김정년 것이므로 윤혁 원고로 교체한다"
+ },
+ "back_ranges": {
+  "참고문헌": [
+   "section2",
+   538,
+   651
+  ],
+  "부록": [
+   "section2",
+   652,
+   693
+  ],
+  "Abstract": [
+   "section2",
+   694,
+   711
+  ],
+  "_detail": "s2:538 '참고문헌'(pageBreak=1), s2:652 '부    록'(1), s2:694 'Abstract'(1). 각 범위 끝은 다음 블록 시작 직전 문단"
+ },
+ "body_range": [
+  "section2",
+  0,
+  537
+ ],
+ "cover": {
+  "section0": [
+   {
+    "para_idx": 0,
+    "tbl_run_idx": 1,
+    "tbl_idx": 0,
+    "role": "겉표지",
+    "slots": [
+     {
+      "path": "tbl/tr[0]/tc[0]/p[0]/run[0]",
+      "current_text": "2026",
+      "role": "연월",
+      "charPrIDRef": "28"
+     },
+     {
+      "path": "tbl/tr[0]/tc[0]/p[0]/run[1]",
+      "current_text": "학년도",
+      "role": "기타",
+      "charPrIDRef": "27"
+     },
+     {
+      "path": "tbl/tr[0]/tc[0]/p[1]/run[0]",
+      "current_text": "석사학위논문",
+      "role": "학위문구",
+      "charPrIDRef": "17"
+     },
+     {
+      "path": "tbl/tr[1]/tc[0]/p[0]/run[1]",
+      "current_text": "건설현장의 안전시설물 설치와",
+      "role": "제목",
+      "charPrIDRef": "45"
+     },
+     {
+      "path": "tbl/tr[1]/tc[0]/p[1]/run[0]",
+      "current_text": "— 근로자의 안전행동 매개효과를 중심으로 —",
+      "role": "부제",
+      "charPrIDRef": "61"
+     },
+     {
+      "path": "tbl/tr[3]/tc[0]/p[0]/run[0]",
+      "current_text": "지도교수 : 박 종 용",
+      "role": "지도교수",
+      "charPrIDRef": "18"
+     },
+     {
+      "path": "tbl/tr[5]/tc[0]/p[0]/run[0]",
+      "current_text": "경기대학교 공학대학원",
+      "role": "대학원",
+      "charPrIDRef": "20"
+     },
+     {
+      "path": "tbl/tr[7]/tc[0]/p[0]/run[0]",
+      "current_text": "건축·안전공학전공",
+      "role": "전공",
+      "charPrIDRef": "19"
+     },
+     {
+      "path": "tbl/tr[9]/tc[0]/p[0]/run[0]",
+      "current_text": "김 정 년",
+      "role": "성명",
+      "charPrIDRef": "21"
+     }
+    ],
+    "_detail": "s0:0 run[1]의 첫 표(10행×1열, 폭36744, tbl bf5·셀 bf10 무테). tr[0] '2026'(charPr28 14pt 자간31%)+'학년도'(charPr27 14pt), p[1] '석사학위논문'(charPr17 14pt 자간-8%); tr[1] p[0] run[0]은 빈 run, run[1] 제목(charPr45 22pt 자간-8%), p[1] 부제(charPr61 18pt 자간-8%); 지도교수 charPr18 16pt; 대학원 charPr20 21pt; 전공 charPr19 15pt; 성명 charPr21 17pt. 빈 행(tr2·4·6·8)은 세로 위치용 간격 행. 성명·지도교수 글자 사이 공백은 실제 공백 문자"
+   },
+   {
+    "para_idx": 0,
+    "tbl_run_idx": 1,
+    "tbl_idx": 1,
+    "role": "제출지",
+    "slots": [
+     {
+      "path": "tbl/tr[1]/tc[0]/p[0]/run[1]",
+      "current_text": "건설현장의 안전시설물 설치와",
+      "role": "제목",
+      "charPrIDRef": "45"
+     },
+     {
+      "path": "tbl/tr[1]/tc[0]/p[1]/run[0]",
+      "current_text": "— 근로자의 안전행동 매개효과를 중심으로 —",
+      "role": "부제",
+      "charPrIDRef": "61"
+     },
+     {
+      "path": "tbl/tr[3]/tc[0]/p[0]/run[0]",
+      "current_text": "이 논문을 석사학위논문으로 제출함",
+      "role": "학위문구",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[4]/tc[0]/p[0]/run[0]",
+      "current_text": "2026년 12월  일",
+      "role": "연월",
+      "charPrIDRef": "23"
+     },
+     {
+      "path": "tbl/tr[6]/tc[0]/p[0]/run[0]",
+      "current_text": "경기대학교 공학대학원",
+      "role": "대학원",
+      "charPrIDRef": "20"
+     },
+     {
+      "path": "tbl/tr[8]/tc[0]/p[0]/run[0]",
+      "current_text": "건축·안전공학전공",
+      "role": "전공",
+      "charPrIDRef": "19"
+     },
+     {
+      "path": "tbl/tr[10]/tc[0]/p[0]/run[0]",
+      "current_text": "김 정 년",
+      "role": "성명",
+      "charPrIDRef": "21"
+     }
+    ],
+    "_detail": "s0:0 run[1]의 둘째 표(11행×1열, 폭36742, outMargin 0, noAdjust=1). 두 표가 같은 run에 글자처럼 연속 배치돼 각 표 높이로 쪽이 갈린다(별도 쪽 나눔 제어 없음). 학위문구 '이 논문을 석사학위논문으로 제출함'(charPr22 16pt), 연월 '2026년 12월  일'(charPr23 17pt)"
+   },
+   {
+    "para_idx": 1,
+    "tbl_run_idx": 0,
+    "tbl_idx": 0,
+    "role": "인준지",
+    "slots": [
+     {
+      "path": "tbl/tr[1]/tc[0]/p[0]/run[0]",
+      "current_text": "김 정 년의 석사학위논문을 인준함",
+      "role": "성명",
+      "charPrIDRef": "26"
+     },
+     {
+      "path": "tbl/tr[3]/tc[1]/p[0]/run[0]",
+      "current_text": "심 사 위 원 장",
+      "role": "기타",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[3]/tc[2]/p[0]/run[0]",
+      "current_text": "                ",
+      "role": "심사위원",
+      "charPrIDRef": "29"
+     },
+     {
+      "path": "tbl/tr[4]/tc[1]/p[0]/run[0]",
+      "current_text": "심 사 위 원",
+      "role": "기타",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[4]/tc[2]/p[0]/run[0]",
+      "current_text": "               ",
+      "role": "심사위원",
+      "charPrIDRef": "29"
+     },
+     {
+      "path": "tbl/tr[5]/tc[1]/p[0]/run[0]",
+      "current_text": "심 사 위 원",
+      "role": "기타",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[5]/tc[2]/p[0]/run[0]",
+      "current_text": "               ",
+      "role": "심사위원",
+      "charPrIDRef": "29"
+     },
+     {
+      "path": "tbl/tr[9]/tc[0]/p[0]/run[0]",
+      "current_text": "2026년 12월  일",
+      "role": "연월",
+      "charPrIDRef": "23"
+     },
+     {
+      "path": "tbl/tr[11]/tc[0]/p[0]/run[0]",
+      "current_text": "경기대학교 공학대학원",
+      "role": "대학원",
+      "charPrIDRef": "24"
+     }
+    ],
+    "_detail": "s0:1 표(13행×4열, 폭36176, 열폭[10415,11636,12491,1634]). tr[1] '김 정 년의 석사학위논문을 인준함'(charPr26 20pt 자간-8%)은 성명+인준문구 한 run — 성명만 바꾸고 '의 석사학위논문을 인준함'은 유지. tr[3~5] tc[1] '심 사 위 원 장'/'심 사 위 원'(charPr22, paraPr29 배분정렬) 라벨, tc[2] 공백 서명란(charPr29), tc[3] '인'. 인준지에는 논문 제목·전공 슬롯이 없다. 2026-10-08 기준 심사위원 성명 미정이면 공백 유지"
+   }
+  ]
+ },
+ "h1_chapter": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "46",
+  "charPrIDRef": "56",
+  "pageBreak": "1",
+  "_detail": "근거 s2:36 '제 2 장  이론적 배경'; s2:259 '제 3 장  연구방법'; s2:361 '제 4 장  연구의 분석 결과'. paraPr46=LEFT 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr56=16pt 한양신명조 굵게 장평100% 자간0% #000000 bf2. 4개 중 제2~5장. 제1장 s2:0은 secPr 문단이라 paraPr23(왼쪽 170%, tabPr3)·pageBreak=0 변형. 제목 문자열 '제 2 장  이론적 배경'(번호 띄어쓰기, 장 뒤 공백 2칸). 다음 문단은 빈 문단(paraPr43/charPr55).",
+  "_variants": {
+   "s2:0": "paraPr23/charPr56 pageBreak=0 (섹션 첫 문단, secPr·pageNum·newNum 포함)",
+   "charPr12": "16pt 굵게 bf3 — 부록 제목·앞부분 제목상자에서 사용, 장 제목과 크기 동일"
+  }
+ },
+ "h2_section": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "60",
+  "pageBreak": "1",
+  "_detail": "근거 s2:2 '제 1 절 연구의 배경 및 필요성'; s2:15 '제 2 절 연구의 목적'; s2:83 '제 2 절 건설현장 떨어짐 사고'. paraPr42=LEFT 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr60=15pt 한양신명조 굵게 장평100% 자간0% #000000 bf2. 17개 중 14개 pageBreak=1(장 제목 직후 첫 절 3개만 0). 직후 빈 문단 1개.",
+  "pageBreak_rule": "장 안 첫 절(장 제목 다음)=0, 나머지 절=1 (양식 실측 14/17)"
+ },
+ "h3_item": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "36",
+  "_detail": "근거 s2:40 '제 1 항 하인리히의 도미노 이론'; s2:63 '제 2 항 레빈의 장이론과 행동법칙'; s2:85 '제 1 항 떨어짐 사고의 개념 및 특성'. paraPr42=LEFT 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr36=14pt 한양신명조 굵게 장평100% 자간0% #000000 bf2. 33개 중 15개 pageBreak=1 — 쪽 채움에 따른 수동 쪽 나눔으로 판단(estimate). 직후 빈 문단 1개.",
+  "pageBreak_rule": "기본 0. 양식의 pageBreak=1(15/33)은 원고 분량에 맞춘 수동 나눔이므로 복제하지 않는다(estimate)"
+ },
+ "h4_sub": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "62",
+  "_detail": "근거 s2:468 '1. 안전시설물 설치가 근로자의 안전행동에 미치는 영향'; s2:476 '2. 아차사고 경험에 대한 매개효과'; s2:500 '1. 가설검증 결과의 종합'. paraPr42=LEFT 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr62=11pt 한양신명조 굵게 장평100% 자간0% #000000 bf8. '1. …' 소제목 6개 전부 11pt 굵게, pageBreak=0. 직후 빈 문단 없이 바로 본문. charPr62는 charPr8과 글자 서명 동일·borderFillIDRef만 8."
+ },
+ "body": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "43",
+  "charPrIDRef": "55",
+  "_detail": "근거 s2:4 '  건설업은 우리나라 산업재해 사망이 가장 많은 업종이'; s2:9 '  건설업 사고사망의 절반 이상은 떨어짐이며, 중·소규'; s2:17 '  본 연구의 목적은 건설현장에서 안전시설물 설치가 떨'. paraPr43=JUSTIFY 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr55=11pt 한양신명조 장평100% 자간0% #000000 bf3. 본문 첫 줄은 실제 공백 2칸(U+0020 U+0020)으로 들여씀(paraPr 들여쓰기 0). top-level (43,55) 316건.",
+  "_variants": {
+   "charPr67": "11pt 장평94% (s2:271 간접효과 설명 1건 — 압축 예외)",
+   "paraPr69/charPr55": "부록 응답 안내 왼쪽정렬 175%"
+  }
+ },
+ "body_bold_charPr": "8",
+ "body_bold_charPr_detail": "본문 직계 run에서 굵은 11pt는 관찰되지 않음(estimate). charPr8=11pt 한양신명조 굵게 bf3 — charPr55와 굵게 외 동일=True. 근거 사용처 s2:653(부록 안내 표). 대안 charPr69(11pt 굵게 bf2, 그림 도식 표 s2:68·72 셀에서 사용)",
+ "table_caption": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "52",
+  "charPrIDRef": "55",
+  "keepWithNext": "1",
+  "_detail": "근거 s2:5 '<표 1-1> 2025년 산업재해 발생 현황의 전체 산'; s2:90 '<표 2-1> 떨어짐 사고의 개념 및 정의'; s2:101 '<표 2-2> 기인물별 떨어짐 재해의 발생빈도와 재해심'. paraPr52=CENTER 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0 keepWithNext=1; charPr55=11pt 한양신명조 장평100% 자간0% #000000 bf3. 표 밖·표 위 독립 문단, 가운데 170%, keepWithNext=1. 형식 '<표 2-1> 제목'(꺾쇠 포함 실제 문자). 표·그림 제목 36건 모두 (52,55)."
+ },
+ "figure_caption": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "52",
+  "charPrIDRef": "55",
+  "keepWithNext": "1",
+  "_detail": "근거 s2:30 '<그림 1-1> 연구 흐름도'; s2:48 '<그림 2-1> 하인리히 도미노 연쇄와 본 연구의 차단'; s2:269 '<그림 3-1> 연구모형'. paraPr52=CENTER 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0 keepWithNext=1; charPr55=11pt 한양신명조 장평100% 자간0% #000000 bf3. 그림 위에 둔다(그림 문단 s2:31 앞). '<그림 1-1> 제목'."
+ },
+ "source_note": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "31",
+  "_detail": "근거 s2:7 '자료: 고용노동부(2026b), 『2025년 산업재해현'; s2:32 '자료: 연구자 작성.'; s2:188 '주) 작업발판·비계 관련 기술지침은 『작업발판 설치 및'. paraPr42=LEFT 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr31=9pt 한양신명조 장평100% 자간0% #000000 bf3. '자료:'·'주)' 9pt 왼쪽 170%. 표·그림 바로 아래. 49건 중 일부는 뒤따르는 빈 문단(같은 42/31, 예 s2:8·33)으로 본문과 띄운다. '주)'가 있으면 '주)'→'자료:' 순서(s2:188→189)."
+ },
+ "toc_entry": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "44",
+  "charPrIDRef": "54",
+  "tabPrIDRef": "7",
+  "_detail": "근거 s1:7 '제 1 장  서  론'; s1:8 ' 제 1 절 연구의 배경 및 필요성'; s1:14 '  제 1 항 하인리히의 도미노 이론'. paraPr44=JUSTIFY 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr7; charPr54=11pt 한양신명조 장평100% 자간0% #000000 bf2. 목차 장·절·항 항목 모두 11pt 보통. 들여쓰기는 문자 공백: 장 0칸, 절 1칸, 항 2칸. 장 묶음 사이 빈 문단(44/54 빈 run, 예 s1:11). 쪽수는 리더 탭 뒤 텍스트로 직접 입력(자동 갱신 아님).",
+  "inline_tab": {
+   "leader": "3",
+   "type": "2",
+   "width_example": "28060",
+   "_detail": "<hp:t>제 1 장  서  론<hp:tab width=\"28060\" leader=\"3\" type=\"2\"/>1</hp:t> — 탭이 hp:t 안에 들어 있다(s1:7). width는 한글이 다시 계산하는 캐시값. tabPr7 = RIGHT pos36852 leader DASH(autoTabRight=1); 36852=section1 본문 폭"
+  }
+ },
+ "toc_lot_entry": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "44",
+  "charPrIDRef": "54",
+  "tabPrIDRef": "7",
+  "_detail": "근거 s1:73 '<표 1-1> 2025년 산업재해 발생 현황의 전체 산'; s1:104 '<표 4-19> 연구가설 검증 결과 종합'; s1:107 '<그림 1-1> 연구 흐름도'. paraPr44=JUSTIFY 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr7; charPr54=11pt 한양신명조 장평100% 자간0% #000000 bf2. 표목차·그림목차 항목도 목차와 같은 paraPr44/charPr54. '<표 1-1> 제목'+리더 탭+쪽수."
+ },
+ "ref_heading": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "4",
+  "charPrIDRef": "56",
+  "pageBreak": "1",
+  "_detail": "근거 s2:538 '참고문헌'. paraPr4=CENTER 줄간격180% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr56=16pt 한양신명조 굵게 장평100% 자간0% #000000 bf2. 가운데 180%, 16pt 굵게. 바로 다음 s2:539는 빈 문단(paraPr11/charPr32)."
+ },
+ "ref_category": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "11",
+  "charPrIDRef": "32",
+  "_detail": "근거 s2:540 '가. 학위논문'; s2:563 '나. 학술지'; s2:632 '사. 국외 학술지'. paraPr11=JUSTIFY 줄간격180% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr32=13pt 한양신명조 굵게 장평100% 자간0% #000000 bf3. '가. 학위논문'~'사. 국외 학술지' 7분류, 13pt 굵게 양쪽 180%. 각 분류 앞에 빈 문단 1개(같은 11/32, 예 s2:562·594)."
+ },
+ "ref_item": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "47",
+  "charPrIDRef": "64",
+  "_detail": "근거 s2:541 '[01] 김상화(2025), “건설현장의 인적오류가 안'; s2:564 '[01] 김대영, 윤성민, 김지명, 이선용, 손기영(2'; s2:633 '[01] Baron, R. M., & Kenny, D.'. paraPr47=JUSTIFY 줄간격180% 들여쓰기-2414(default분기 -4828) 왼0 오른0 앞0 뒤0 tabPr0; charPr64=11pt 한양신명조 장평100% 자간-2% #000000 bf3. '[01] 저자(연도), …' 형식, 분류마다 [01]부터. 내어쓰기: HwpUnitChar case 들여쓰기 -2414, default 분기 -4828(호환 분기 값이 달라 하나로 확정 불가 — 두 분기를 그대로 쓰는 paraPr47을 재사용할 것). 11pt 자간 -2%. 99건."
+ },
+ "appendix_heading": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "58",
+  "charPrIDRef": "12",
+  "pageBreak": "1",
+  "_detail": "근거 s2:652 '부    록'. paraPr58=CENTER 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr4; charPr12=16pt 한양신명조 굵게 장평100% 자간0% #000000 bf3. '부    록'(부와 록 사이 공백 4칸) 가운데 170% 16pt 굵게."
+ },
+ "abstract_heading": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "4",
+  "charPrIDRef": "56",
+  "pageBreak": "1",
+  "_detail": "근거 s2:694 'Abstract'. paraPr4=CENTER 줄간격180% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr56=16pt 한양신명조 굵게 장평100% 자간0% #000000 bf2. 참고문헌 제목과 같은 paraPr4/charPr56. 다음 s2:695 빈 문단(43/55)."
+ },
+ "abstract_meta": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "25",
+  "charPrIDRef": "55",
+  "_detail": "근거 s2:696 'MS.Thesis'; s2:697 'The Relationship between Safet'; s2:700 'Kim Jung Neon'; s2:703 'Kyonggi University'. paraPr25=CENTER 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr55=11pt 한양신명조 장평100% 자간0% #000000 bf3. 학위유형('MS.Thesis')→영문 제목·부제(697·698)→빈 문단(699, 43/55)→성명(700)→학과·대학원·대학교(701~703) 순서, 모두 가운데 170% 11pt. 704 빈 문단 뒤 본문."
+ },
+ "abstract_body": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "43",
+  "charPrIDRef": "55",
+  "_detail": "근거 s2:705 '  The problem that recurs at c'; s2:706 '  Previous studies have not co'; s2:711 '  This study has academic sign'. paraPr43=JUSTIFY 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr55=11pt 한양신명조 장평100% 자간0% #000000 bf3. 국문 본문과 같은 paraPr43/charPr55, 첫 줄 공백 2칸. Keywords 행 없음."
+ },
+ "blank_para": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "43",
+  "charPrIDRef": "55",
+  "_detail": "근거 s2:1 ''; s2:3 ''; s2:37 ''. paraPr43=JUSTIFY 줄간격170% 들여쓰기0(default분기 0) 왼0 오른0 앞0 뒤0 tabPr0; charPr55=11pt 한양신명조 장평100% 자간0% #000000 bf3. 제목 뒤 빈 문단: <hp:run charPrIDRef=\"55\"/> 빈 run. 참고문헌 영역의 빈 문단은 paraPr11/charPr32, 자료 문단 뒤 빈 문단은 paraPr42/charPr31."
+ },
+ "front_heading_box": {
+  "anchor_paraPrIDRef": "25",
+  "anchor_charPrIDRef": "56",
+  "tbl": {
+   "rowCnt": "2",
+   "colCnt": "1",
+   "width": "36284",
+   "borderFillIDRef": "5",
+   "cell_borderFillIDRef": "4",
+   "pageBreak_observed": "CELL(금지 — NONE으로)",
+   "treatAsChar": "1",
+   "horzRelTo": "COLUMN",
+   "inMargin": {
+    "left": "510",
+    "right": "510",
+    "top": "141",
+    "bottom": "141"
+   }
+  },
+  "title_row": {
+   "paraPrIDRef": "10",
+   "charPrIDRef": "12",
+   "cellSz_height": "282",
+   "vertAlign": "CENTER"
+  },
+  "spacer_row": {
+   "paraPrIDRef": "22",
+   "charPrIDRef": "0",
+   "cellSz_height": "5669(목차)/5270(감사의글)/4820(논문개요)"
+  },
+  "titles": {
+   "목차": "목  차",
+   "표목차": "표 목 차",
+   "그림목차": "그 림 목 차",
+   "감사의글": "감사의 글",
+   "논문개요": "논 문  개 요"
+  },
+  "_detail": "앞부분 5개 블록 제목은 테두리 없는 2행×1열 표(셀 bf4=선 NONE)로 만든 제목 상자다. 제목 16pt 굵게 가운데(paraPr10 가운데160%). s1:0 anchor paraPr25 style0 run charPr56 pageBreak=0 표폭36284 제목 '목  차' | s1:71 anchor paraPr24 style0 run charPr56 pageBreak=1 표폭36284 제목 '표 목 차' | s1:105 anchor paraPr25 style0 run charPr56 pageBreak=1 표폭36284 제목 '그 림 목 차' | s1:111 anchor paraPr45 style0 run charPr49 pageBreak=1 표폭36284 제목 '감사의 글' | s1:125 anchor paraPr27 style1 run charPr52 pageBreak=1 표폭36284 제목 '논 문  개 요'. 그림목차 s1:105는 표 뒤 run에 공백 텍스트, 감사의글 s1:111은 paraPr45, 논문개요 s1:125는 paraPr27·styleIDRef=1. s1:0의 둘째 행 셀에는 section1 쪽번호 newNum이 들어 있다 — 제목 상자를 새로 만들 때 이 ctrl을 잃지 않는다"
+ },
+ "table": {
+  "tbl_attrs": {
+   "numberingType": "TABLE",
+   "textWrap": "TOP_AND_BOTTOM",
+   "textFlow": "BOTH_SIDES",
+   "lock": "0",
+   "dropcapstyle": "None",
+   "pageBreak": "NONE",
+   "pageBreak_observed": "CELL",
+   "repeatHeader": "1",
+   "cellSpacing": "0",
+   "borderFillIDRef": "9",
+   "noAdjust": "0",
+   "pos": {
+    "treatAsChar": "1",
+    "affectLSpacing": "0",
+    "flowWithText": "1",
+    "allowOverlap": "0",
+    "holdAnchorAndSO": "0",
+    "vertRelTo": "PARA",
+    "horzRelTo": "PARA",
+    "vertAlign": "TOP",
+    "horzAlign": "LEFT",
+    "vertOffset": "0",
+    "horzOffset": "0"
+   },
+   "outMargin": {
+    "left": "141",
+    "right": "141",
+    "top": "141",
+    "bottom": "141"
+   },
+   "inMargin": {
+    "left": "510",
+    "right": "510",
+    "top": "141",
+    "bottom": "141"
+   },
+   "sz": {
+    "widthRelTo": "ABSOLUTE",
+    "heightRelTo": "ABSOLUTE"
+   },
+   "_override_note": "2026-10-08 Advisor: treatAsChar 0→1. 양식 실측은 0(떠 있는 개체)이나 스모크 PDF에서 캡션·자료 문단과 표의 순서가 어긋나고 표가 다음 쪽으로 밀렸다(<표 1-1>·<표 2-5>·<표 5-7>). 규칙(hwpx-table-layout 4항)대로 글자처럼 취급을 기본으로 하고, 실제로 나뉘지 않는 표만 개별로 0으로 전환한다."
+  },
+  "anchor_para": {
+   "paraPrIDRef": "25",
+   "charPrIDRef": "16",
+   "_detail": "표를 담은 바깥 문단은 paraPr25(가운데170%)/charPr16(10pt), 표 뒤 빈 <hp:t/>. 근거 s2:6·91·102"
+  },
+  "total_width": "39684",
+  "total_width_mm": 140.0,
+  "total_width_appendix": "39491",
+  "total_width_appendix_mm": 139.32,
+  "borderFills": {
+   "header_gray_top04": "30",
+   "header_gray_left_open": "28",
+   "header_gray_right_open": "29",
+   "inner_012": "5",
+   "left_open": "7",
+   "right_open": "6",
+   "none": "4",
+   "table_outer": "9",
+   "30": "머리행 가운데 셀: 사방 실선(좌우·아래 0.12mm, 위 0.4mm) + 배경 #D9D9D9",
+   "28": "머리행 첫 열: 왼쪽 NONE, 오른쪽·아래 0.12mm, 위 0.4mm, #D9D9D9",
+   "29": "머리행 끝 열: 오른쪽 NONE, 왼쪽·아래 0.12mm, 위 0.4mm, #D9D9D9",
+   "5": "본문 가운데 셀: 사방 실선 0.12mm (양식 표·표지 표의 tbl 기본값으로도 쓰임)",
+   "7": "본문 첫 열: 왼쪽 NONE, 나머지 0.12mm",
+   "6": "본문 끝 열: 오른쪽 NONE, 나머지 0.12mm",
+   "9": "본문 표 tbl 자체: 위·아래 0.12mm, 좌우 NONE",
+   "4": "선 전부 NONE(0.12mm 지정) — 앞부분 제목 상자 셀",
+   "10": "선 전부 NONE — 표지류 셀",
+   "1/2/3/8": "선 NONE(0.1mm) — 문단·글자 기본 배경(fill none/없음)",
+   "11": "사방 DOUBLE_SLIM 0.5mm — 부록 안내 표(s2:653)",
+   "13~26": "부록 설문 응답 격자 전용(0.25/0.4mm 혼합, 13은 #BBBBBB) — 본문 표에 쓰지 않는다",
+   "12": "선 NONE + #5D5D5D 배경(부록 머리 셀)",
+   "27": "선 NONE + #FFD966 배경(바탕 노랑, 표에서 미사용 관찰)"
+  },
+  "cell_paraPr": {
+   "header_center": "50",
+   "text_left": "49",
+   "number_right": "51",
+   "text_justify": "49",
+   "_detail": "본문 표 셀 paraPr 집계 {'50': 198, '49': 1040, '51': 1329}: 50=가운데130%, 49=왼쪽130%, 51=오른쪽130%. 양쪽정렬 셀은 본문 표에 없음 — text_justify는 49로 대체(estimate). 부록 안내 표만 JUSTIFY paraPr53/54(110%)"
+  },
+  "cell_charPr": {
+   "normal10": "16",
+   "bold10": "68",
+   "small9": "31",
+   "_detail": "본문 표 셀 charPr 집계 {'16': 2054, '51': 497, '63': 16}: 16=10pt 한양신명조 bf2(머리행·본문 공통). 68=10pt 굵게 bf2(그림 도식 s2:70 'B=f(P, E)'에서 사용, 16과 굵게 외 동일=True) — estimate. small9 31=9pt 보통 bf3(자료 문단용, 셀에서 미사용 — estimate). 51=9pt 장평79%·63=9pt 굵게는 밀도 높은 표(s2:390·413·434)의 예외 — 기본값으로 쓰지 않는다",
+   "_variants": {
+    "51": "9pt 장평79% (dense)",
+    "63": "9pt 굵게 (dense 강조)",
+    "69": "11pt 굵게 bf2 (그림 도식 표)"
+   }
+  },
+  "cell_padding": {
+   "left": "510",
+   "right": "510",
+   "top": "141",
+   "bottom": "141",
+   "_detail": "본문 표 전 셀 cellMargin 510/510/141/141, hasMargin=0(tbl inMargin과 동일). 510=1.8mm, 141=0.5mm"
+  },
+  "cell_subList": {
+   "vertAlign": "CENTER",
+   "textDirection": "HORIZONTAL",
+   "lineWrap": "BREAK"
+  },
+  "header_row": {
+   "header_attr": "1",
+   "fill": "header_gray_top04",
+   "_detail": "본문 표 첫 행 전 셀 tc@header=\"1\", 좌→우 borderFill 28 · 30… · 29. 나머지 행은 7 · 5… · 6"
+  },
+  "caption_outside": true,
+  "_grid": "대표 표 <표 2-2>(s2:102) rowCnt=6 colCnt=5 열폭 [5260, 9056, 7260, 9054, 9054] 합=39684 = sz.width 39684. 본문 번호표 폭 분포 {'39118': 1, '39684': 31} — <표 1-1>(s2:6)만 39118(138.0mm), 나머지 39684(140.0mm). 셀 폭=sum(열폭[colAddr:colAddr+colSpan]). cellSz.height는 최소 높이(참고값)",
+  "_grid_widths": [
+   5260,
+   9056,
+   7260,
+   9054,
+   9054
+  ],
+  "_detail": "본문 번호 표 32개 실측(s2:6~503, tbl borderFillIDRef=9). 전부 pageBreak=CELL·treatAsChar=0·horzRelTo=PARA. CELL은 저장소 규칙상 금지 — NONE으로 두고 넘치면 TABLE+repeatHeader. treatAsChar=0은 양식 실측값(옛 윤혁 양식은 1)이며 textWrap TOP_AND_BOTTOM이라 본문 흐름에서 표가 자리를 차지한다. 부록 설문 표는 treatAsChar=1·horzRelTo=COLUMN·noAdjust=1·폭39491"
+ },
+ "figure": {
+  "anchor_para": {
+   "paraPr": "25",
+   "charPr": "55"
+  },
+  "caption_above": true,
+  "source_note_below": true,
+  "pic_example_path": "snippets/figure_example.xml",
+  "pic_attrs": {
+   "numberingType": "PICTURE",
+   "textWrap": "TOP_AND_BOTTOM",
+   "treatAsChar": "1",
+   "horzRelTo": "COLUMN",
+   "horzAlign": "CENTER",
+   "sz_width": "39684",
+   "binaryItemIDRef": "image1",
+   "manifest": "Contents/content.hpf <opf:item id=\"image1\" href=\"BinData/image1.png\" media-type=\"image/png\" isEmbeded=\"1\"/>"
+  },
+  "_detail": "그림 순서 s2:30 캡션(52/55) → s2:31 그림 문단(paraPr25 가운데/charPr55, hp:pic 폭39684=본문 폭) → s2:32 '자료: 연구자 작성.'(42/31) → s2:33 빈 문단. 실제 이미지 개체는 2개(image1 <그림 1-1>, image2 <그림 3-1> s2:270); <그림 2-1>·<그림 2-2>는 문단·표로 만든 도식(paraPr25/charPr16, s2:49~59·68~75)"
+ },
+ "red_charPr": {
+  "existing": [
+   {
+    "id": "47",
+    "height": 1100,
+    "bold": true,
+    "font": "한양신명조(hangul6/latin7)",
+    "borderFillIDRef": "2",
+    "textColor": "#FF0000",
+    "base_like": "charPr69(11pt 굵게 bf2 검정)와 색만 다름=True; 본문 charPr55와는 굵게·borderFillIDRef(2 vs 3)·색이 다름"
+   }
+  ],
+  "note": "빨간 charPr은 47 하나뿐이며 [작성지침]·[자리표시자]·[미작성] 안내 40+2건(s2 40건, s1:70·130)에 쓰인다. 조립기는 47을 재사용하지 말고 본문 charPr55를 복제해 textColor만 #FF0000으로 바꾼 새 charPr(11pt 보통 bf3)을 추가하고, 표 셀 마커는 charPr16(10pt) 복제본을 만든다. itemCnt 갱신 필수"
+ },
+ "page_number_control": {
+  "section1_first_para_idx": 0,
+  "section2_first_para_idx": 0,
+  "snippets_dir": "tools/hwpx_transfer/staging/migrate_kjn/snippets",
+  "_detail": "s1:0 run[0]=secPr+colPr, run[1]=pageNum(ROMAN_SMALL)+제목상자 표(셀 안 newNum). s2:0 run[0]=colPr+secPr(charPr56), run[1]=pageNum(DIGIT)+pageHiding(hidePageNum=1)+'제 1 장  서  론'+newNum. s0:0 run[0]=secPr+colPr만(쪽번호 없음). 머리말·꼬리말 개체 없음 — 쪽번호는 pageNum ctrl만으로 하단 가운데 '- i -' 형식"
+ },
+ "conventions": {
+  "page_break": "hp:p@pageBreak=\"1\"로 새 쪽(paraPr pageBreakBefore는 전부 0). 대상: 제2~5장 제목, 장 안 둘째 이후 절 제목, 참고문헌·부록·Abstract 제목, 앞부분 표목차·그림목차·감사의글·논문개요 제목 상자. 일부 항 제목·부록 소제목(s2:658·671·685·688·691)은 수동 나눔",
+  "blank_after_heading": "장·절·항 제목 직후 빈 문단 1개(43/55). '1.' 소제목(h4) 뒤에는 없음",
+  "blank_before_section_item": "양식 실측: 절 17개 중 14개·항 33개 중 22개가 직전 본문에 바로 붙음(빈 줄 없음). 저장소 규칙(hwpx-output-verification '절·항 제목 앞 빈 줄')이 우선 — 조립기는 절·항 제목 앞에 빈 문단 1개를 넣되 이미 있거나 pageBreak=1이면 생략",
+  "first_line_two_spaces": "본문·감사의글·논문개요·Abstract 문단 첫머리 U+0020 2칸(s2:4 확인). paraPr 들여쓰기는 0 — 정식 들여쓰기와 겹치지 않게 한다",
+  "caption_keepWithNext": "paraPr52 keepWithNext=1(표·그림 제목). 장·절·항 제목 paraPr에는 keepWithNext 없음",
+  "heading_number_spacing": "제 1 장",
+  "heading_text_patterns": {
+   "chapter": "제 N 장  제목(장 뒤 공백 2칸; '서  론'·'결  론'은 글자 사이 공백 2칸)",
+   "section": "제 N 절 제목",
+   "item": "제 N 항 제목",
+   "sub": "N. 제목"
+  },
+  "toc_indent": "장 0칸·절 1칸·항 2칸 공백",
+  "table_sequence": "표 제목(52/55) → 표 문단(25/16) → [주)] → 자료:(42/31) → 빈 문단(42/31) → 설명 본문"
+ },
+ "template_leftovers_to_strip": {
+  "red_guides": {
+   "count": 42,
+   "paras": [
+    "s1:70",
+    "s1:130",
+    "s2:60",
+    "s2:76",
+    "s2:345",
+    "s2:363",
+    "s2:370",
+    "s2:385",
+    "s2:392",
+    "s2:396",
+    "s2:400",
+    "s2:407",
+    "s2:411",
+    "s2:415",
+    "s2:416",
+    "s2:423",
+    "s2:426",
+    "s2:432",
+    "s2:436",
+    "s2:437",
+    "s2:442",
+    "s2:454",
+    "s2:455",
+    "s2:462",
+    "s2:473",
+    "s2:482",
+    "s2:486",
+    "s2:496",
+    "s2:499",
+    "s2:505",
+    "s2:509",
+    "s2:511",
+    "s2:513",
+    "s2:514",
+    "s2:517",
+    "s2:518",
+    "s2:521",
+    "s2:527",
+    "s2:532",
+    "s2:533",
+    "s2:534",
+    "s2:708"
+   ],
+   "_note": "charPr47 빨간 11pt 굵게 [작성지침]/[자리표시자]/[미작성] 문단 — 문단째 제거(김정년 내용과 함께 전부 교체)"
+  },
+  "input_placeholders": {
+   "count": 73,
+   "paras": [
+    "s1:130",
+    "s1:131",
+    "s1:132",
+    "s2:363",
+    "s2:365",
+    "s2:370",
+    "s2:373",
+    "s2:376",
+    "s2:379",
+    "s2:382",
+    "s2:385",
+    "s2:390",
+    "s2:391",
+    "s2:392",
+    "s2:394",
+    "s2:395",
+    "s2:396",
+    "s2:398",
+    "s2:399",
+    "s2:400",
+    "s2:405",
+    "s2:406",
+    "s2:407",
+    "s2:409",
+    "s2:410",
+    "s2:411",
+    "s2:413",
+    "s2:414",
+    "s2:416",
+    "s2:421",
+    "s2:422",
+    "s2:423",
+    "s2:426",
+    "s2:429",
+    "s2:430",
+    "s2:431",
+    "s2:434",
+    "s2:435",
+    "s2:436",
+    "s2:442",
+    "s2:452",
+    "s2:453",
+    "s2:454",
+    "s2:455",
+    "s2:460",
+    "s2:461",
+    "s2:462",
+    "s2:471",
+    "s2:472",
+    "s2:473",
+    "s2:480",
+    "s2:481",
+    "s2:482",
+    "s2:484",
+    "s2:485",
+    "s2:486",
+    "s2:490",
+    "s2:491",
+    "s2:492",
+    "s2:494",
+    "s2:495",
+    "s2:496",
+    "s2:499",
+    "s2:503",
+    "s2:505",
+    "s2:527",
+    "s2:529",
+    "s2:530",
+    "s2:531",
+    "s2:535",
+    "s2:708",
+    "s2:709",
+    "s2:710"
+   ],
+   "_note": "'[입력' 빈자리 표시가 든 문단(본문·표 포함)"
+  },
+  "dense_tables_9pt79": {
+   "tables_at": [
+    "s2:390",
+    "s2:413",
+    "s2:434"
+   ],
+   "_note": "charPr51(9pt 장평79%)·63(9pt 굵게) 압축 표. 기본 표 서식으로 복제 금지"
+  },
+  "pageBreak_CELL": {
+   "count": 51,
+   "of_tables": 55,
+   "_note": "본문 표 32개·도식 표·앞부분 제목상자·부록 설문 표가 CELL. 새 표는 NONE→열폭 재배분→TABLE 순서(.claude/rules/hwpx-table-layout.md)"
+  },
+  "manual_toc_pages": {
+   "ranges": [
+    "s1:2-69",
+    "s1:73-104",
+    "s1:107-110"
+   ],
+   "_note": "목차 쪽수는 리더 탭 뒤 직접 입력 텍스트. 재조판 후 인쇄 쪽수로 갱신"
+  },
+  "markdown_asterisks_in_refs": {
+   "count": 24,
+   "paras": [
+    "s2:626",
+    "s2:627",
+    "s2:628",
+    "s2:629",
+    "s2:630",
+    "s2:633",
+    "s2:634",
+    "s2:635",
+    "s2:636",
+    "s2:637",
+    "s2:638",
+    "s2:639",
+    "s2:640",
+    "s2:641",
+    "s2:642",
+    "s2:643",
+    "s2:644",
+    "s2:645",
+    "s2:646",
+    "s2:647",
+    "s2:648",
+    "s2:649",
+    "s2:650",
+    "s2:651"
+   ],
+   "_note": "영문 서명의 *…* 문자가 그대로 남은 참고문헌 항목"
+  }
+ }
+}

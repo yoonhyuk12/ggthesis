@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "method": "Only BinData/image1..6.png read from ZIP; XML never read. Current MD read only for caption inventory, never for text comparison."
+  },
+  "old_images": [
+    {
+      "binary_id": "image1",
+      "bytes": 207819,
+      "px": [
+        1772,
+        2114
+      ],
+      "sha256": "ec856c711586a741f05c955911ecb0b30a7b7666073f5e5a66103ed727ff0961",
+      "anchor_section": 2,
+      "anchor_idx": 25,
+      "nearest_caption": "<그림 1-1> 연구의 흐름도",
+      "caption_idx": 26,
+      "extracted_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_1-1.png"
+    },
+    {
+      "binary_id": "image2",
+      "bytes": 138581,
+      "px": [
+        1771,
+        1677
+      ],
+      "sha256": "c5054584882f97028462da70f10ac3134ecb1bc520fa7c39fbc5a4b8a6d9b2d2",
+      "anchor_section": 2,
+      "anchor_idx": 181,
+      "nearest_caption": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+      "caption_idx": 182,
+      "extracted_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-1.png"
+    },
+    {
+      "binary_id": "image3",
+      "bytes": 160493,
+      "px": [
+        1771,
+        2007
+      ],
+      "sha256": "94db0ea5b924ab02e5517eca15dde6a29e2c5abdd8194b4833a10381e68eaf25",
+      "anchor_section": 2,
+      "anchor_idx": 202,
+      "nearest_caption": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "caption_idx": 203,
+      "extracted_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-2.png"
+    },
+    {
+      "binary_id": "image4",
+      "bytes": 160724,
+      "px": [
+        1771,
+        2007
+      ],
+      "sha256": "f6d01ec1369cd4c2ccebc69dd7c41bbc26c78e4a8d67f569915fb000130318b2",
+      "anchor_section": 2,
+      "anchor_idx": 211,
+      "nearest_caption": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "caption_idx": 212,
+      "extracted_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-3.png"
+    },
+    {
+      "binary_id": "image5",
+      "bytes": 2113481,
+      "px": [
+        1919,
+        760
+      ],
+      "sha256": "203afb5af50af77801bcd570b2f10d0796db7354bfd14ff189143b5a731bb569",
+      "anchor_section": 2,
+      "anchor_idx": 233,
+      "nearest_caption": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "caption_idx": 234,
+      "extracted_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-4.png"
+    },
+    {
+      "binary_id": "image6",
+      "bytes": 229487,
+      "px": [
+        1772,
+        1925
+      ],
+      "sha256": "ccba52c2e7c90cfe0633a36df909f37aaf99ea2a7bb267ad0861697072bbab66",
+      "anchor_section": 2,
+      "anchor_idx": 301,
+      "nearest_caption": "<그림 4-1> 연구 모형",
+      "caption_idx": 302,
+      "extracted_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_4-1.png"
+    }
+  ],
+  "mapping": [
+    {
+      "caption_prefix": "<그림 1-1>",
+      "current_caption": {
+        "text": "<그림 1-1> 연구의 흐름도",
+        "file": "01.docs/01_서론.md",
+        "line": 92
+      },
+      "source": "01.docs/figures/research/figure_1-1_research_flow.png",
+      "px": [
+        1772,
+        2492
+      ],
+      "replaces": "old:image1",
+      "old_extract_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_1-1.png"
+    },
+    {
+      "caption_prefix": "<그림 3-1>",
+      "current_caption": {
+        "text": "<그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 아키텍처",
+        "file": "01.docs/03_시스템개발.md",
+        "line": 87
+      },
+      "source": "old:image2",
+      "extract_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-1.png",
+      "px": [
+        1771,
+        1677
+      ]
+    },
+    {
+      "caption_prefix": "<그림 3-2>",
+      "current_caption": {
+        "text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+        "file": "01.docs/03_시스템개발.md",
+        "line": 127
+      },
+      "source": "old:image3",
+      "extract_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-2.png",
+      "px": [
+        1771,
+        2007
+      ]
+    },
+    {
+      "caption_prefix": "<그림 3-3>",
+      "current_caption": {
+        "text": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+        "file": "01.docs/03_시스템개발.md",
+        "line": 145
+      },
+      "source": "old:image4",
+      "extract_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-3.png",
+      "px": [
+        1771,
+        2007
+      ]
+    },
+    {
+      "caption_prefix": "<그림 3-4>",
+      "current_caption": {
+        "text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+        "file": "01.docs/03_시스템개발.md",
+        "line": 185
+      },
+      "source": "old:image5",
+      "extract_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-4.png",
+      "px": [
+        1919,
+        760
+      ]
+    },
+    {
+      "caption_prefix": "<그림 4-1>",
+      "current_caption": {
+        "text": "<그림 4-1> 연구 모형",
+        "file": "01.docs/04_연구설계.md",
+        "line": 44
+      },
+      "source": "01.docs/figures/research/figure_4-1_research_model.png",
+      "px": [
+        1772,
+        1925
+      ],
+      "replaces": "old:image6",
+      "old_extract_to": "tools/hwpx_transfer/staging/migrate_kjn/images/figure_4-1.png"
+    }
+  ],
+  "unmatched": []
+}

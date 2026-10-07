@@ -1,22 +1,26 @@
 # 블록 JSON과 양식 hwpx를 입력받아 서식을 이식한 6장 구조 학위논문 hwpx를 조립하는 스크립트
-"""blocks_to_hwpx.py — blocks JSON → 학위논문 hwpx 조립기.
+"""blocks_to_hwpx.py — blocks JSON → 학위논문 hwpx 조립기(양식 프로파일 주입형).
 
-사용 예:
+사용 예(김정년 양식, 2026-10-08 이관):
     python tools/hwpx_transfer/blocks_to_hwpx.py \
-        --template "공학대학원_건축안전_윤혁_…YOLO-VLM… - 복사본.hwpx" \
-        --style-map tools/hwpx_transfer/staging/style_map.json \
-        --blocks ch01.blocks.json ch02.blocks.json ... apx2.blocks.json \
-        --references tools/hwpx_transfer/staging/references.json \
+        --template "00. hwpx/YYMMDD_HHMM_…김정년양식이관본.hwpx"(양식 기준 원본의 복사본) \
+        --profile tools/hwpx_transfer/staging/migrate_kjn/style_map_kjn.json \
+        --blocks ch01.blocks.json … apx2.blocks.json \
+        --references tools/hwpx_transfer/staging/migrate_kjn/references_kjn.json \
+        --images tools/hwpx_transfer/staging/migrate_kjn/images.json \
+        --transplant <이식 JSON> --toc-pages <쪽수 JSON(3단계 갱신 시)> \
         --output <출력 hwpx>
 
+옛 윤혁 양식: --profile(또는 --style-map) tools/hwpx_transfer/staging/style_map.json — 종전 동작 그대로.
+
 설계 요약.
-  - 양식 hwpx의 ZIP 엔트리 순서·압축 방식을 그대로 유지하고 Contents/section1.xml,
-    Contents/section2.xml을 교체한다. 가이드 마커에 필요한 빨간 charPr가 양식에 없으면
-    Contents/header.xml에 원본 charPr의 색상만 바꾼 복제본을 추가한다.
-  - section1(전면부)은 목차·표목차·그림목차만 재생성하고 제목 상자·감사의 글·논문개요
-    문단은 양식의 XML을 바이트 수준 그대로 옮긴다.
-  - section2(본문)는 blocks 순서대로 새로 만든다. 첫 문단에는 양식 section2 첫 문단의
-    colPr·secPr·pageNum 제어 블록을 그대로 이식해 페이지 설정을 보존한다.
+  - 프로파일 종류로 경로를 고른다. 옛 양식(style_map.json)은 Document(이 파일), 김정년 양식
+    (style_map_kjn.json 스키마)은 kjn_profile.KjnDocument. 프로파일에 필요한 키가 없으면
+    ProfileError로 멈춘다(조용한 기본값 금지).
+  - 옛 양식: section1 목차류만 재생성하고 제목 상자·감사의 글·논문개요는 바이트 보존, 표 캡션은 표 첫 행.
+  - 김정년 양식: section0 표지 슬롯 치환, section1 목차·표목차·그림목차(탭 리더+쪽수)·감사의 글(이식)·
+    논문개요(00_목차.md 골격), section2 본문(표 밖 캡션·내용 기반 열폭·회색 머리행·절항 앞 빈 줄·
+    그림 BinData)·7분류 참고문헌·부록·Abstract. `pageBreak="CELL"`은 생성하지 않고 양식에서 옮긴 것도 NONE으로.
 """
 
 import argparse
@@ -27,53 +31,20 @@ import sys
 import zipfile
 import xml.etree.ElementTree as ET
 
-# ── 양식 실측 상수 ────────────────────────────────────────────────────────────
-# 표 폭. 양식 대표 표(<표 3-1>, section2 p223)의 sz.width 실측값을 그대로 쓴다.
-TABLE_WIDTH = 39142
-# 셀 최소 높이. 양식 최소 셀(cellSz height=1565)을 최소값으로 두고 내용에 따라 자라게 한다.
-ROW_MIN_H = 1565
-# 본문 줄 폭. 양식 linesegarray의 horzsize 실측값.
-LINE_W = 39684
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# style_map.json에 없어 양식 XML에서 직접 실측한 스타일(참고문헌·부록 영역).
-REF_TITLE = {"style": "0", "para": "5", "char": "63"}      # s2 p300 "참고문헌"
-REF_CATEGORY = {"style": "0", "para": "12", "char": "36"}  # s2 p303 "가 . 학위논문"
-REF_ENTRY = {"style": "0", "para": "59", "char": "62"}     # s2 p304 서지 항목
-APPENDIX_TITLE = {"style": "0", "para": "31", "char": "14"}  # s2 p317 "부   록"
-# 본문 볼드 run. charPr 9는 charPr 61(본문)과 같은 11pt·한양신명조·borderFill 2에 bold만 추가된 짝.
-BODY_BOLD_CHAR = "9"
-# 표 셀 볼드 run. charPr 122는 charPr 7(셀 기본)과 같은 10pt·한양신명조·borderFill 3의 bold 짝.
-CELL_BOLD_CHAR = "122"
-# h4(소제목)는 양식에 실측 대응이 없다 — 본문 문단 서식 + 볼드로 대체한다(가정).
-H4_FALLBACK_CHAR = BODY_BOLD_CHAR
-
-# 표 셀 텍스트 변환 대상(parse_report.md 5-1·5-2 인계 목록).
-CELL_LINEBREAK_TOKEN = "<br>"
-EMSP_TOKEN = "&emsp;"
-EMSP_CHAR = " "
-
-# 본문이 아니라 미확정 자리·인용·그림 지시임을 나타내는 마커. 대괄호 전부가 아니라
-# 이 다섯 접두사만 판정하며 콜론·줄표 등 접두사 뒤 구분 문자는 제한하지 않는다.
-# 대괄호 없는 `실험전`은 결과표의 미수집 자리 표기(2026-09-30 사용자 지시)로, 낱말 전체를 빨갛게 한다.
-GUIDE_MARKER_RE = re.compile(
-    r"\[(?:DATA PENDING|확정 필요|CITE_TODO|그림 삽입 예정|UNVERIFIED)[^\]]*\]|실험전"
+import kjn_profile  # noqa: E402
+from kjn_profile import (  # noqa: E402,F401 — 옛 이름 그대로 재수출(테스트·다른 도구 호환)
+    CELL_LINEBREAK_TOKEN, EMSP_CHAR, EMSP_TOKEN, GUIDE_MARKER_RE, XML_PROLOG,
+    IdGen, ProfileError, esc, load_profile, split_paragraphs,
 )
 
-XML_PROLOG = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>'
+# 옛 양식 실측 상수(표 폭 39142·셀 최소 높이·참고문헌 스타일·볼드 짝 charPr 등)는 프로파일로 옮겼다.
+# 옛 style_map.json에 없던 값은 kjn_profile.LEGACY_EXTRAS가 `legacy` 키로 붙는다.
 
 
 # ── XML 조각 생성 ─────────────────────────────────────────────────────────────
-def esc(text):
-    """hp:t에 넣을 텍스트 — &emsp; 토큰을 전각 공백으로 바꾼 뒤 XML 이스케이프한다.
-
-    &emsp;는 부록1 본문 문단(선택지 들여쓰기)에만 남아 있어 문단·셀 구분 없이 여기서 처리한다
-    (parse_report.md 5-2 인계 목록). <br>은 표 셀 안에서만 쓰이므로 cell_paragraphs에서 다룬다.
-    """
-    text = text.replace(EMSP_TOKEN, EMSP_CHAR)
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-
-
-def lineseg(height, horzsize=LINE_W):
+def lineseg(height, horzsize=kjn_profile.LEGACY_EXTRAS["line_width"]):
     """레이아웃 캐시 linesegarray 1줄. 한글이 문서를 열 때 재계산하므로 근사값이면 된다."""
     h = int(height)
     return (
@@ -84,35 +55,25 @@ def lineseg(height, horzsize=LINE_W):
     )
 
 
-class IdGen(object):
-    """문단·표 id 발급기. 양식이 쓰는 값 범위(2147483648~)에서 고유하게 증가시킨다."""
-
-    def __init__(self, start=2147483648):
-        self._n = start
-
-    def next(self):
-        self._n += 1
-        return self._n
-
-
 class Assembler(object):
+    """옛 윤혁 양식(style_map.json) 조립 부품. 상수는 모두 프로파일(`legacy` 보충 키 포함)에서 읽는다."""
+
     def __init__(self, style_map, ids, red_char_pr=None):
-        self.sm = style_map
+        self.pf = load_profile(style_map)
+        self.sm = self.pf.data
         self.ids = ids
         self.red_char_pr = red_char_pr
-        self.char_height = self._char_heights()
+        self.char_height = self.pf.get("legacy", "char_heights")
+        self.table_width = int(self.pf.get("table", "tbl_attrs", "sz", "width"))
+        self.row_min_h = int(self.pf.get("legacy", "row_min_height"))
+        self.line_w = int(self.pf.get("legacy", "line_width"))
 
-    def _char_heights(self):
-        """linesegarray vertsize 계산용 charPr 높이표(양식 실측)."""
-        return {
-            "63": 1600, "42": 1600, "67": 1500, "52": 1500, "41": 1400,
-            "14": 1400, "13": 1200, "36": 1200, "116": 1200,
-            "61": 1100, "62": 1100, "9": 1100, "56": 1100, "57": 1100,
-            "7": 1000, "58": 1000, "122": 1000,
-        }
+    def lx(self, *path):
+        """옛 양식 보충 상수(LEGACY_EXTRAS) 조회."""
+        return self.pf.get("legacy", *path)
 
     def height_of(self, char_pr):
-        return self.char_height.get(str(char_pr), 1100)
+        return self.char_height.get(str(char_pr), self.lx("char_height_default"))
 
     @staticmethod
     def _text_run(char_pr, text):
@@ -139,7 +100,7 @@ class Assembler(object):
         return "".join(parts)
 
     # ── 문단 ──────────────────────────────────────────────────────────────
-    def para(self, para_pr, style, runs_xml, char_for_height, page_break=False, horzsize=LINE_W):
+    def para(self, para_pr, style, runs_xml, char_for_height, page_break=False, horzsize=None):
         return (
             '<hp:p id="%d" paraPrIDRef="%s" styleIDRef="%s" pageBreak="%d" '
             'columnBreak="0" merged="0">%s%s</hp:p>'
@@ -160,41 +121,43 @@ class Assembler(object):
         parts = []
         for i, r in enumerate(runs):
             body = (prefix if i == 0 else "") + r.get("text", "")
-            char = BODY_BOLD_CHAR if r.get("bold") else spec["char"]
+            char = self.lx("body_bold_char") if r.get("bold") else spec["char"]
             parts.append(self.marker_aware_runs(body, char))
         if not parts:
             parts.append('<hp:run charPrIDRef="%s"/>' % spec["char"])
         return self.para(spec["para"], spec["style"], "".join(parts), spec["char"], page_break)
 
-    def blank(self, char="61"):
+    def blank(self, char=None):
+        char = char or self.lx("blank_char")
         run = '<hp:run charPrIDRef="%s"/>' % char
         body = self.sm["body"]
         return self.para(body["paraPrIDRef"], body["styleIDRef"], run, char)
 
     # ── 표 ────────────────────────────────────────────────────────────────
-    @staticmethod
-    def column_widths(ncols):
-        """본문 폭을 열 수로 균등 분할하되 합이 표 폭과 정확히 일치하게 나머지를 마지막 열에 준다."""
-        base = TABLE_WIDTH // ncols
-        widths = [base] * (ncols - 1) + [TABLE_WIDTH - base * (ncols - 1)]
-        assert sum(widths) == TABLE_WIDTH
+    def column_widths(self, ncols):
+        """옛 양식 동작: 표 폭을 열 수로 균등 분할하되 나머지를 마지막 열에 준다(회귀 보존용).
+        김정년 양식은 kjn_profile.KjnAssembler가 내용 기반 열폭(table_layout)을 쓴다."""
+        total = self.table_width
+        base = total // ncols
+        widths = [base] * (ncols - 1) + [total - base * (ncols - 1)]
+        assert sum(widths) == total
         return widths
 
-    @staticmethod
-    def border_fill(col, ncols):
-        """좌우 개방형 테두리: 왼쪽 끝 45, 오른쪽 끝 46, 내부 6."""
+    def border_fill(self, col, ncols):
+        """좌우 개방형 테두리: 왼쪽 끝·오른쪽 끝·내부 borderFill(프로파일 legacy.edge_borders)."""
+        edge = self.lx("edge_borders")
         if ncols == 1:
-            return "6"
+            return edge["single"]
         if col == 0:
-            return "45"
+            return edge["left"]
         if col == ncols - 1:
-            return "46"
-        return "6"
+            return edge["right"]
+        return edge["inner"]
 
     def cell_paragraphs(self, text, para_pr, char_pr, width):
         """셀 텍스트를 문단 XML로. <br>은 셀 안 별도 문단으로 나눈다(&emsp; 변환은 esc가 담당)."""
         lines = text.split(CELL_LINEBREAK_TOKEN)
-        inner = max(width - 1020, 1000)  # 좌우 셀 패딩 510씩을 뺀 실사용 폭
+        inner = max(width - self.lx("cell_hpad"), 1000)  # 좌우 셀 패딩을 뺀 실사용 폭
         out = []
         for line in lines:
             if line:
@@ -205,8 +168,9 @@ class Assembler(object):
         return "".join(out), len(lines)
 
     def cell(self, text, col, row, width, ncols, col_span=1, border=None,
-             para_pr=None, char_pr=None, height=ROW_MIN_H):
+             para_pr=None, char_pr=None, height=None):
         sm_tbl = self.sm["table"]
+        height = self.row_min_h if height is None else height
         para_pr = para_pr or sm_tbl["cell_paraPr"]
         char_pr = char_pr or sm_tbl["cell_charPr"]
         border = border or self.border_fill(col, ncols)
@@ -221,7 +185,7 @@ class Assembler(object):
             '<hp:cellSpan colSpan="%d" rowSpan="1"/>'
             '<hp:cellSz width="%d" height="%d"/>'
             '<hp:cellMargin left="%s" right="%s" top="%s" bottom="%s"/></hp:tc>'
-            % (border, paras, col, row, col_span, width, max(height, ROW_MIN_H * nlines),
+            % (border, paras, col, row, col_span, width, max(height, self.row_min_h * nlines),
                pad["left"], pad["right"], pad["top"], pad["bottom"])
         )
 
@@ -234,10 +198,11 @@ class Assembler(object):
         trs = []
         row_idx = 0
         if caption is not None:
-            # 캡션 행: 전체 열 병합 + borderFill 13(아래만 실선), paraPr 11 · charPr 58 (양식 실측)
+            # 캡션 행: 전체 열 병합 + 아래만 실선 borderFill (프로파일 legacy.caption_row)
+            cap = self.lx("caption_row")
             trs.append("<hp:tr>%s</hp:tr>" % self.cell(
-                caption, 0, row_idx, TABLE_WIDTH, ncols, col_span=ncols, border="13",
-                para_pr="11", char_pr="58"))
+                caption, 0, row_idx, self.table_width, ncols, col_span=ncols, border=cap["border"],
+                para_pr=cap["para"], char_pr=cap["char"]))
             row_idx += 1
         for data_row in [header] + rows:
             cells = []
@@ -261,7 +226,7 @@ class Assembler(object):
                 self.ids.next(), attrs["numberingType"], attrs["textWrap"], attrs["textFlow"],
                 attrs["lock"], attrs["dropcapstyle"], attrs["pageBreak"], attrs["repeatHeader"],
                 row_idx, ncols, attrs["cellSpacing"], attrs["borderFillIDRef"], attrs["noAdjust"],
-                TABLE_WIDTH, ROW_MIN_H * row_idx,
+                self.table_width, self.row_min_h * row_idx,
                 pos["treatAsChar"], pos["flowWithText"], pos["vertRelTo"], pos["horzRelTo"],
                 out_m["left"], out_m["right"], out_m["top"], out_m["bottom"],
                 in_m["left"], in_m["right"], in_m["top"], in_m["bottom"],
@@ -271,25 +236,11 @@ class Assembler(object):
         # 표는 문단 run 안에 treatAsChar=1로 인라인 배치된다(양식 s2 p223: run charPr 67, 표 뒤 빈 hp:t).
         body = self.sm["body"]
         run = '<hp:run charPrIDRef="%s">%s<hp:t/></hp:run>' % (self.sm["h2_section"]["charPrIDRef"], tbl)
-        return self.para(body["paraPrIDRef"], body["styleIDRef"], run, "62", horzsize=LINE_W)
+        return self.para(body["paraPrIDRef"], body["styleIDRef"], run, self.lx("table_anchor_height_char"),
+                         horzsize=self.line_w)
 
 
 # ── 양식 hwpx 해체 ────────────────────────────────────────────────────────────
-def split_paragraphs(xml_text):
-    """최상위 hp:p 요소의 (시작, 끝) 오프셋 목록. 표 안 중첩 문단은 깊이로 걸러낸다."""
-    spans, depth, start = [], 0, None
-    for m in re.finditer(r"<hp:p(?=[\s/>])|</hp:p>", xml_text):
-        if m.group(0).startswith("</"):
-            depth -= 1
-            if depth == 0:
-                spans.append((start, m.end()))
-        else:
-            if depth == 0:
-                start = m.start()
-            depth += 1
-    return spans
-
-
 def set_page_break(para_xml, value="1"):
     return re.sub(r'(<hp:p [^>]*?pageBreak=")\d(")', r"\g<1>%s\g<2>" % value, para_xml, count=1)
 
@@ -312,8 +263,9 @@ def _char_pr_signature(element, root=True):
 class Template(object):
     """양식 hwpx에서 재사용할 XML 조각을 뽑아 둔다."""
 
-    def __init__(self, path):
+    def __init__(self, path, profile):
         self.path = path
+        self.pf = load_profile(profile)
         with zipfile.ZipFile(path) as z:
             self.infos = z.infolist()
             self.raw = {i.filename: z.read(i.filename) for i in self.infos}
@@ -417,15 +369,23 @@ class Template(object):
 
     def _slice_front_matter(self):
         s1, ps = self.s1, self.s1_paras
-        if len(ps) != 112:
-            raise SystemExit("양식 section1 문단 수가 112가 아니다(%d) — 전면부 경계 재확인 필요" % len(ps))
-        self.s1_head = s1[: ps[0][0]]                       # 프롤로그 + <hs:sec …> (secPr는 p0 안에 있음)
-        self.toc_title = self._para(s1, ps, 0)              # 목차 제목 상자(secPr 포함) — 바이트 보존
-        self.lot_title = set_page_break(self._para(s1, ps, 78))   # 표목차 제목 상자
-        self.lof_title = self._para(s1, ps, 82)             # 그림목차 제목 상자(이미 pageBreak=1)
-        self.thanks = s1[ps[85][0]: ps[109][1]]             # 감사의 글 — 사용자 작성분, 바이트 보존
-        self.abstract_kr = s1[ps[110][0]: ps[111][1]]       # 논문개요 — 바이트 보존
-        tail = s1[ps[111][1]:]
+        expected = next((int(sec["paragraphs"]) for sec in self.pf.get("sections")
+                         if sec.get("file") == "section1.xml"), None)
+        if expected is None:
+            raise ProfileError("프로파일 sections에 section1.xml 문단 수가 없다")
+        if len(ps) != expected:
+            raise SystemExit("양식 section1 문단 수가 %d가 아니다(%d) — 전면부 경계 재확인 필요" % (expected, len(ps)))
+        rng = {k: kjn_profile.range_bounds(v, k) for k, v in self.pf.get("front_matter_ranges").items()
+               if not k.startswith("_")}
+        toc, lot, lof = rng["목차"][0], rng["표목차"][0], rng["그림목차"][0]
+        thanks, abstract = rng["감사의글"], rng["논문개요"]
+        self.s1_head = s1[: ps[toc][0]]                     # 프롤로그 + <hs:sec …> (secPr는 p0 안에 있음)
+        self.toc_title = self._para(s1, ps, toc)            # 목차 제목 상자(secPr 포함) — 바이트 보존
+        self.lot_title = set_page_break(self._para(s1, ps, lot))   # 표목차 제목 상자
+        self.lof_title = self._para(s1, ps, lof)            # 그림목차 제목 상자(이미 pageBreak=1)
+        self.thanks = s1[ps[thanks[0]][0]: ps[thanks[1]][1]]        # 감사의 글 — 사용자 작성분, 바이트 보존
+        self.abstract_kr = s1[ps[abstract[0]][0]: ps[abstract[1]][1]]  # 논문개요 — 바이트 보존
+        tail = s1[ps[abstract[1]][1]:]
         if tail.strip() != "</hs:sec>":
             raise SystemExit("양식 section1 말미가 예상과 다르다: %r" % tail[:80])
 
@@ -454,9 +414,12 @@ class Template(object):
 class Document(object):
     def __init__(self, template, style_map):
         self.tpl = template
-        self.sm = style_map
+        self.pf = load_profile(style_map)
+        if self.pf.kind != "legacy":
+            raise ProfileError("Document는 옛 양식 프로파일 전용이다 — 김정년 양식은 kjn_profile.KjnDocument를 쓴다")
+        self.sm = self.pf.data
         self.ids = IdGen()
-        self.asm = Assembler(style_map, self.ids, template.red_char_pr_id)
+        self.asm = Assembler(self.pf, self.ids, template.red_char_pr_id)
         self.body = []          # section2 문단 XML 목록
         self.toc = []           # (level, 제목)
         self.lot = []           # 표 목차 항목
@@ -489,21 +452,21 @@ class Document(object):
                     first_paragraph = False
                 else:
                     self.body.append(self.asm.text_para(self.spec("h1_chapter"), b["text"], page_break=True))
-                self.body.append(self.asm.blank("61"))
+                self.body.append(self.asm.blank())
                 if survey_cover:
                     self.add_survey_cover()
                     survey_cover = False
             elif kind == "h2":
                 self.toc.append((2, b["text"]))
                 self.body.append(self.asm.text_para(self.spec("h2_section"), b["text"]))
-                self.body.append(self.asm.blank("61"))
+                self.body.append(self.asm.blank())
             elif kind == "h3":
                 self.toc.append((3, b["text"]))
                 self.body.append(self.asm.text_para(self.spec("h3_item"), b["text"]))
-                self.body.append(self.asm.blank("61"))
+                self.body.append(self.asm.blank())
             elif kind == "h4":
                 spec = dict(body_spec)
-                spec["char"] = H4_FALLBACK_CHAR
+                spec["char"] = self.asm.lx("h4_char")
                 self.body.append(self.asm.text_para(spec, b["text"]))
             elif kind == "p":
                 runs = b.get("runs", [])
@@ -526,7 +489,7 @@ class Document(object):
 
         if pending_caption is not None:
             self.body.append(self.asm.text_para(cap_spec, pending_caption))
-        self.body.append(self.asm.blank("61"))
+        self.body.append(self.asm.blank())
         return first_paragraph
 
     def _first_paragraph(self, title):
@@ -542,14 +505,15 @@ class Document(object):
 
     def add_references(self, refs):
         self.toc.append((1, "참고문헌"))
-        self.body.append(self.asm.text_para(REF_TITLE, "참고문헌", page_break=True))
-        self.body.append(self.asm.blank("61"))
+        lx = self.asm.lx
+        self.body.append(self.asm.text_para(lx("ref_title"), "참고문헌", page_break=True))
+        self.body.append(self.asm.blank())
         for category, items in refs["categories"].items():
-            self.body.append(self.asm.text_para(REF_CATEGORY, category))
+            self.body.append(self.asm.text_para(lx("ref_category"), category))
             for item in items:
                 self.body.append(self.asm.text_para(
-                    REF_ENTRY, "[%02d] %s" % (item["no"], item["text"])))
-            self.body.append(self.asm.blank("62"))
+                    lx("ref_entry"), "[%02d] %s" % (item["no"], item["text"])))
+            self.body.append(self.asm.blank(lx("ref_blank_char")))
             if not items:
                 self.notes.append("참고문헌 분류 '%s'에 확정 항목이 없어 제목만 생성했다." % category)
         flagged = len(refs.get("flagged", []))
@@ -559,20 +523,21 @@ class Document(object):
     def add_survey_cover(self):
         """부록1 설문지 표지 박스 — 원고 코드펜스를 가운데 정렬 문단으로 재구성한다."""
         center = self.spec("toc_entry")  # paraPr 25 = CENTER
+        cover = self.asm.lx("survey_cover")
         for line in SURVEY_COVER_TITLE:
             self.body.append(self.asm.text_para(
-                {"style": center["style"], "para": center["para"], "char": "41"}, line))
-        self.body.append(self.asm.blank("61"))
+                {"style": center["style"], "para": center["para"], "char": cover["title_char"]}, line))
+        self.body.append(self.asm.blank())
         self.body.append(self.asm.text_para(
-            {"style": center["style"], "para": center["para"], "char": "63"}, SURVEY_COVER_LABEL))
-        self.body.append(self.asm.blank("61"))
+            {"style": center["style"], "para": center["para"], "char": cover["label_char"]}, SURVEY_COVER_LABEL))
+        self.body.append(self.asm.blank())
 
     def add_placeholder_section(self, title):
         self.toc.append((1, title))
-        self.body.append(self.asm.text_para(APPENDIX_TITLE, title, page_break=True))
-        self.body.append(self.asm.blank("61"))
+        self.body.append(self.asm.text_para(self.asm.lx("appendix_title"), title, page_break=True))
+        self.body.append(self.asm.blank())
         self.body.append(self.asm.text_para(self.spec("body"), "[내용 확정 후 작성]", prefix=" "))
-        self.body.append(self.asm.blank("61"))
+        self.body.append(self.asm.blank())
 
     # ── 전면부(section1) ─────────────────────────────────────────────────
     def build_section1(self):
@@ -581,24 +546,25 @@ class Document(object):
         # 쪽번호 없는 재생성 목차는 그대로 가운데 정렬돼 보인다(QA F-2). 표·그림 목차와
         # 같은 JUSTIFY 문단(paraPr)을 쓰고, 쪽번호는 한글 자동 목차로 최종화한다.
         toc_spec = {"style": toc_spec["style"],
-                    "para": self.spec("toc_lot_entry")["para"], "char": "13"}  # 빨강(116) 대신 흑색
+                    "para": self.spec("toc_lot_entry")["para"], "char": self.asm.lx("toc_char")}  # 빨강(116) 대신 흑색
         lot_spec = self.spec("toc_lot_entry")
-        parts = [self.tpl.s1_head, self.tpl.toc_title, self.asm.blank("13")]
+        front_blank = self.asm.lx("front_blank_char")
+        parts = [self.tpl.s1_head, self.tpl.toc_title, self.asm.blank(front_blank)]
         for level, title in self.toc:
             parts.append(self.asm.text_para(toc_spec, title, prefix=" " * (level - 1)))
-        parts.append(self.asm.blank("13"))
+        parts.append(self.asm.blank(front_blank))
 
         parts.append(self.tpl.lot_title)
-        parts.append(self.asm.blank("61"))
+        parts.append(self.asm.blank())
         for text in self.lot:
             parts.append(self.asm.text_para(lot_spec, text))
-        parts.append(self.asm.blank("61"))
+        parts.append(self.asm.blank())
 
         parts.append(self.tpl.lof_title)
-        parts.append(self.asm.blank("61"))
+        parts.append(self.asm.blank())
         for text in self.lof:
             parts.append(self.asm.text_para(lot_spec, text))
-        parts.append(self.asm.blank("61"))
+        parts.append(self.asm.blank())
 
         parts.append(self.tpl.thanks)
         parts.append(self.tpl.abstract_kr)
@@ -674,12 +640,249 @@ def build_report(doc, template, args, output):
     return "\n".join(lines)
 
 
+def _resolve(path, base_dirs):
+    if os.path.isabs(path) and os.path.exists(path):
+        return path
+    for base in base_dirs:
+        cand = os.path.join(base, path)
+        if os.path.exists(cand):
+            return cand
+    raise SystemExit("파일을 찾지 못했다: %s (기준 %s)" % (path, ", ".join(base_dirs)))
+
+
+def load_images_arg(path, repo_root):
+    """--images JSON → {캡션 접두사: PNG 경로}.
+
+    단순 사전 {"<그림 1-1>": "a.png"} 또는 images.json 형식({"mapping": [{caption_prefix, source,
+    extract_to}]})을 받는다. source가 "old:…"(옛 hwpx BinData)이면 추출본 extract_to를 쓴다.
+    """
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    bases = [os.getcwd(), repo_root, os.path.dirname(os.path.abspath(path))]
+    out = {}
+    if isinstance(data, dict) and isinstance(data.get("mapping"), list):
+        for entry in data["mapping"]:
+            src = entry.get("source") or ""
+            if not src or src.startswith("old:"):
+                src = entry.get("extract_to") or entry.get("old_extract_to")
+            if not src:
+                raise SystemExit("images 매핑 %r에 그림 경로가 없다" % entry.get("caption_prefix"))
+            out[entry["caption_prefix"]] = _resolve(src, bases)
+    elif isinstance(data, dict):
+        out = {k: _resolve(v, bases) for k, v in data.items() if not k.startswith("_")}
+    else:
+        raise SystemExit("--images JSON 형식을 해석할 수 없다")
+    return out
+
+
+THANKS_RED_NOTE = "[확정 필요: 감사의 글 완성]"
+
+
+def _esc(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def load_transplants(path, template, ids, profile, repo_root, asm=None):
+    """--transplant JSON → (감사의 글 문단 목록|None, {제목 접두사: 문단 목록}, 부록1 표지 대체 여부, 메모, 대체 목록).
+
+    형식:
+      {"감사의글": {"source_hwpx": …, "section": 1, "range": [127, 151],
+                   "append_red_note": "[확정 필요: 감사의 글 완성]"},          # 생략 시 이 문구, ""면 안 붙임
+       "부록1_설문지": {"source_hwpx": …, "section": 2, "range": [631, 694],
+                      "replace_appendix": "부 록 — 설문지",                    # 이 h1로 시작하는 블록 파일을 대체
+                      "keep_until": "부 록 (도입 현장)"},                      # 이 제목까지 블록으로 조립 후 이식
+       "부록1_PartA_도입": {…, "insert_after_heading": "부 록 (도입 현장)"}}   # 제목 뒤에 끼워 넣기
+    source_hwpx는 hwpx 경로 또는 추출 디렉터리. 감사의 글 외 항목은 replace_appendix 또는
+    insert_after_heading이 필수다. 감사의 글 범위가 옛 제목 상자로 시작하면 양식 상자 대신 그 상자를 쓴다.
+    """
+    with open(path, encoding="utf-8") as f:
+        spec = json.load(f)
+    bases = [os.getcwd(), repo_root, os.path.dirname(os.path.abspath(path))]
+    thanks, after, replace_cover, notes, replaces = None, {}, False, [], {}
+    width_body = int(profile.get("table", "total_width"))
+    width_apx = int(profile.first(("table", "total_width_appendix"), ("table", "total_width")))
+    # 감사의 글 범위의 표는 옛 제목 상자뿐이므로 양식 제목 상자 폭(front_heading_box.tbl.width)에 맞춘다
+    width_front = int(profile.get("front_heading_box", "tbl", "width"))
+    for name, item in spec.items():
+        if name.startswith("_"):
+            continue
+        for need in ("source_hwpx", "section", "range"):
+            if need not in item:
+                raise SystemExit("--transplant '%s'에 '%s'가 없다" % (name, need))
+        raw = kjn_profile.load_source(_resolve(item["source_hwpx"], bases))
+        is_thanks = name.replace(" ", "") in ("감사의글", "감사의_글")
+        width = width_front if is_thanks else width_apx
+        paras, importer = kjn_profile.transplant_paragraphs(
+            raw, item["section"], item["range"], template.header, ids, width)
+        # 이식 원본(옛 hwpx)이 현행 MD보다 오래된 문구를 담고 있으면 MD 기준으로 치환한다(MD 단일 원본).
+        # 각 항목은 {"old","new","count"} — 실제 치환 횟수가 count와 다르면 멈춘다(2026-10-08 설문 A-6 4구간).
+        for rep in item.get("text_replacements", []):
+            old_x, new_x = _esc(rep["old"]), _esc(rep["new"])
+            hits = sum(x.count(old_x) for x in paras)
+            if hits != int(rep.get("count", 1)):
+                raise ValueError("이식 '%s' 치환 '%s…' 출현 %d회 ≠ 기대 %s회"
+                                 % (name, rep["old"][:30], hits, rep.get("count", 1)))
+            paras = [x.replace(old_x, new_x) for x in paras]
+        if item.get("drop_first"):
+            paras = paras[1:]
+        if is_thanks:
+            note = item.get("append_red_note", THANKS_RED_NOTE)
+            if note:
+                if asm is None:
+                    raise SystemExit("감사의 글 빨간 메모를 만들 조립기가 없다")
+                note_para = asm.text_para(profile.spec("abstract_body"), note)
+                # 날짜·성명 뒤(쪽 끝)가 아니라 본문 첫 문단 바로 뒤에 둔다(제목 상자·빈 문단은 건너뛴다).
+                pos = None
+                for i, para_xml in enumerate(paras):
+                    if "<hp:tbl" in para_xml:
+                        continue
+                    if kjn_profile.plain_texts(para_xml).strip():
+                        pos = i
+                        break
+                if pos is None:
+                    paras = paras + [note_para]
+                elif (pos + 1 < len(paras) and "<hp:tbl" not in paras[pos + 1]
+                      and not kjn_profile.plain_texts(paras[pos + 1]).strip()):
+                    # 바로 뒤 빈 문단을 메모로 바꿔 문단 수를 유지한다(옛 감사의 글은 빈 문단으로 날짜·성명을
+                    # 쪽 아래로 밀어 두어, 한 줄만 늘어나도 성명이 다음 쪽으로 넘어간다 — 2026-10-08 스모크).
+                    paras = paras[:pos + 1] + [note_para] + paras[pos + 2:]
+                else:
+                    paras = paras[:pos + 1] + [note_para] + paras[pos + 1:]
+        added = {k: len(v) for k, v in importer.added.items() if v}
+        notes.append("이식 '%s': 문단 %d개, header 추가 %s" % (name, len(paras), added or "없음(전부 재매핑)"))
+        if is_thanks:
+            thanks = paras
+        elif item.get("replace_appendix"):
+            key = re.sub(r"\s+", "", item["replace_appendix"])
+            replaces[key] = {"keep_until": item.get("keep_until"), "paras": paras,
+                             "drop_heading": bool(item.get("drop_heading"))}
+            if paras and 'pageBreak="1"' in paras[-1] and not kjn_profile.plain_texts(paras[-1]).strip():
+                notes.append("이식 '%s'의 마지막 문단이 쪽 나눔 빈 문단이다 — 다음 부록 제목도 새 쪽이라 빈 쪽이 "
+                             "생길 수 있다(범위 끝을 하나 줄이는 것을 검토)." % name)
+        else:
+            anchor = item.get("insert_after_heading")
+            if not anchor:
+                raise SystemExit("--transplant '%s'에 replace_appendix 또는 insert_after_heading이 필요하다" % name)
+            after.setdefault(anchor, []).extend(paras)
+            replace_cover = replace_cover or bool(item.get("replace_survey_cover"))
+    _ = width_body
+    return thanks, after, replace_cover, notes, replaces
+
+
+def write_package(output, entries, date_time):
+    out_dir = os.path.dirname(os.path.abspath(output))
+    if out_dir and not os.path.isdir(out_dir):
+        os.makedirs(out_dir)
+    with zipfile.ZipFile(output, "w") as zout:
+        for name, data, ctype, info in entries:
+            new_info = zipfile.ZipInfo(name, date_time=info.date_time if info is not None else date_time)
+            new_info.compress_type = ctype
+            if info is not None:
+                new_info.external_attr = info.external_attr
+                new_info.internal_attr = info.internal_attr
+                new_info.create_system = info.create_system
+            zout.writestr(new_info, data)
+
+
+def run_kjn(args, profile, here, output, report_path):
+    doc, template, sections, toc_pages = assemble_kjn(args, profile, here)
+    entries = kjn_profile.plan_package(template, sections, template.header.xml, doc.bin_items)
+    first_info = next((info for _n, _c, info in template.infos if info is not None), None)
+    write_package(output, entries, first_info.date_time if first_info else (2026, 1, 1, 0, 0, 0))
+
+    lines = ["# 조립 리포트(김정년 양식 프로파일)", "",
+             "- 양식: `%s`" % args.template, "- 프로파일: `%s`" % args.profile, "- 출력: `%s`" % output,
+             "- 본문 문단 수: %d" % len(doc.body),
+             "- 목차 항목: %d / 표 목차: %d / 그림 목차: %d / 그림 BinData: %d"
+             % (len(doc.toc), len(doc.lot), len(doc.lof), len(doc.bin_items)),
+             "- 목차 쪽수: %s" % ("--toc-pages 반영" if toc_pages else "임시값 0(3단계에서 갱신)"), ""]
+    lines += ["## 표 열폭(HWPUNIT)", ""] + ["- %s: %s" % (cap or "(캡션 없음)", w) for cap, w in doc.table_widths] + [""]
+    if doc.notes:
+        lines += ["## 메모", ""] + ["- %s" % n for n in doc.notes] + [""]
+    report = "\n".join(lines)
+    if report_path:
+        rep_dir = os.path.dirname(os.path.abspath(report_path))
+        if rep_dir and not os.path.isdir(rep_dir):
+            os.makedirs(rep_dir)
+        with open(report_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(report)
+    sys.stdout.write(report)
+    return 0
+
+
+def assemble_kjn(args, profile, here):
+    """김정년 양식 조립(메모리 안). 파일을 쓰지 않는다 — (doc, template, sections, toc_pages)."""
+    repo_root = os.path.dirname(os.path.dirname(here))
+    template = kjn_profile.KjnTemplate(args.template, profile)
+    images = load_images_arg(args.images, repo_root) if args.images else {}
+    toc_pages = {}
+    if args.toc_pages:
+        with open(args.toc_pages, encoding="utf-8") as f:
+            toc_pages = json.load(f)
+    doc = kjn_profile.KjnDocument(template, profile, images=images, toc_pages=toc_pages)
+    thanks, after, replace_cover, t_notes, replaces = (None, {}, False, [], {})
+    if args.transplant:
+        thanks, after, replace_cover, t_notes, replaces = load_transplants(
+            args.transplant, template, doc.ids, profile, repo_root, asm=doc.asm)
+    doc.notes.extend(t_notes)
+
+    files = load_blocks(args.blocks)
+    refs = None
+    if args.references:
+        with open(args.references, encoding="utf-8") as f:
+            refs = json.load(f)
+    first = True
+    refs_done = False
+    for _path, blocks in files:
+        appendix = is_appendix(blocks)
+        if refs is not None and not refs_done and appendix:
+            doc.add_references(refs)
+            refs_done = True
+        is_survey = any(b["type"] == "h1" and "설문지" in b["text"] for b in blocks)
+        first_h1 = next((re.sub(r"\s+", "", b["text"]) for b in blocks if b["type"] == "h1"), "")
+        replace = next((v for k, v in replaces.items() if first_h1.startswith(k)), None)
+        first = doc.add_blocks(blocks, first_paragraph=first, appendix=appendix, transplants_after=after,
+                               survey_cover=is_survey and not replace_cover and replace is None, replace=replace)
+        if replace is not None:
+            replace["used"] = True
+    if refs is not None and not refs_done:
+        doc.add_references(refs)
+    unused = [k for k, v in replaces.items() if not v.get("used")]
+    if unused:
+        raise SystemExit("--transplant replace_appendix와 맞는 블록 파일이 없다: %s" % unused)
+    if not args.no_tail:
+        doc.add_placeholder_appendix("부록 3. 시스템 화면 및 LLM 검증 사례 이미지")
+        doc.add_abstract_en()
+
+    front_md = args.front_md or os.path.join(repo_root, "01.docs", "00_목차.md")
+    with open(front_md, encoding="utf-8") as f:
+        abstract_kr = kjn_profile.parse_abstract_skeleton(f.read())
+
+    s0 = doc.build_section0()
+    s1 = doc.build_section1(thanks_xml=thanks, abstract_kr=abstract_kr)
+    s2 = doc.build_section2()
+    sections = {"Contents/section0.xml": s0, "Contents/section1.xml": s1, "Contents/section2.xml": s2}
+    for name, xml_text in sections.items():
+        if 'pageBreak="CELL"' in xml_text:
+            raise SystemExit('%s에 pageBreak="CELL"이 남았다 — 금지 속성' % name)
+    hits = kjn_profile.leftover_hits([kjn_profile.plain_texts(x) for x in sections.values()], profile)
+    if hits:
+        raise SystemExit("김정년 양식 고유 문구가 남았다(표절 의심 산출물): %r" % hits)
+    return doc, template, sections, toc_pages
+
+
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="blocks JSON → 학위논문 hwpx 조립기")
-    ap.add_argument("--template", required=True, help="양식 hwpx (읽기 전용)")
-    ap.add_argument("--style-map", required=True, help="style_map.json")
+    ap = argparse.ArgumentParser(description="blocks JSON → 학위논문 hwpx 조립기(양식 프로파일 주입형)")
+    ap.add_argument("--template", required=True, help="양식 hwpx (읽기 전용) — 김정년 양식은 추출 디렉터리도 허용")
+    ap.add_argument("--profile", "--style-map", dest="profile", required=True,
+                    help="양식 프로파일 JSON (옛 양식 style_map.json 또는 김정년 양식 style_map_kjn.json)")
     ap.add_argument("--blocks", nargs="+", required=True, help="blocks JSON (본문 순서대로)")
-    ap.add_argument("--references", help="references.json")
+    ap.add_argument("--references", help="참고문헌 JSON {categories:{분류:[{no,text}]}, flagged:[…]}")
+    ap.add_argument("--images", help="그림 매핑 JSON — {캡션 접두사: PNG} 또는 images.json(mapping 목록)")
+    ap.add_argument("--toc-pages", dest="toc_pages",
+                    help="목차 쪽수 JSON {toc:{제목:쪽}, lot:{<표 n-m>:쪽}, lof:{<그림 n-m>:쪽}} — 없으면 0")
+    ap.add_argument("--transplant", help="옛 hwpx 문단 이식 JSON {감사의글:{source_hwpx,section,range}, …}")
+    ap.add_argument("--front-md", dest="front_md", help="논문개요 골격 MD (기본 01.docs/00_목차.md)")
     ap.add_argument("--output", help="출력 hwpx 경로")
     ap.add_argument("--report", help="조립 리포트 MD 경로")
     ap.add_argument("--smoke", action="store_true",
@@ -698,10 +901,15 @@ def main(argv=None):
     if not output:
         ap.error("--output 또는 --smoke 중 하나가 필요하다")
 
-    with open(args.style_map, encoding="utf-8") as f:
-        style_map = json.load(f)
-    template = Template(args.template)
-    doc = Document(template, style_map)
+    profile = load_profile(args.profile)
+    if profile.kind == "kjn":
+        return run_kjn(args, profile, here, output, report_path)
+    for opt in ("images", "toc_pages", "transplant"):
+        if getattr(args, opt):
+            ap.error("--%s는 김정년 양식 프로파일에서만 쓴다" % opt.replace("_", "-"))
+
+    template = Template(args.template, profile)
+    doc = Document(template, profile)
 
     files = load_blocks(args.blocks)
     refs = None

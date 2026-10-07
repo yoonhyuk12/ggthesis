@@ -1,0 +1,534 @@
+{
+ "_meta": {
+  "source": "스텁 — Task H 단위 테스트용. 스키마는 style_map_kjn.json(Task G)과 같고 값은 양식 추출본(template_extracted) 실측과 일치시킨 최소 집합.",
+  "note": "h2_section에 pageBreak를 두지 않아 절 앞 빈 줄 규칙을 시험한다. 실제 조립은 style_map_kjn.json을 쓴다."
+ },
+ "page": {
+  "width": "53858",
+  "height": "72567",
+  "margins": {
+   "section0_cover": {
+    "left": "8503",
+    "right": "8503",
+    "top": "8503",
+    "bottom": "7086",
+    "header": "0",
+    "footer": "0",
+    "gutter": "0"
+   },
+   "section1_front": {
+    "left": "8503",
+    "right": "8503",
+    "top": "9921",
+    "bottom": "4251",
+    "header": "0",
+    "footer": "4251",
+    "gutter": "0"
+   },
+   "section2_body": {
+    "left": "7086",
+    "right": "7086",
+    "top": "9921",
+    "bottom": "4251",
+    "header": "0",
+    "footer": "4251",
+    "gutter": "0"
+   }
+  },
+  "page_numbering": {
+   "section1": {
+    "newNum_location": "s1:0 문단의 제목 상자 표(2행) 둘째 행 셀 문단 안 <hp:ctrl><hp:newNum num=\"1\" numType=\"PAGE\"/></hp:ctrl> — 직계 run이 아니다"
+   },
+   "section2": {
+    "hidePageNum_first": "1"
+   }
+  }
+ },
+ "sections": [
+  {
+   "file": "section0.xml",
+   "role": "표지류: 겉표지·제출지(s0:0 한 문단 안 글자처럼 취급 표 2개)·인준지(s0:1 표 1개). 쪽번호 없음",
+   "paragraphs": 2
+  },
+  {
+   "file": "section1.xml",
+   "role": "앞부분: 목차·표목차·그림목차·감사의 글·논문개요. 쪽번호 로마 소문자, i부터",
+   "paragraphs": 134
+  },
+  {
+   "file": "section2.xml",
+   "role": "본문 제1~5장·참고문헌·부록(설문지)·Abstract. 쪽번호 아라비아, 1부터(첫 쪽 숨김)",
+   "paragraphs": 712
+  }
+ ],
+ "front_ranges": {
+  "목차": [
+   "section1",
+   0,
+   70
+  ],
+  "표목차": [
+   "section1",
+   71,
+   104
+  ],
+  "그림목차": [
+   "section1",
+   105,
+   110
+  ],
+  "감사의글": [
+   "section1",
+   111,
+   124
+  ],
+  "논문개요": [
+   "section1",
+   125,
+   133
+  ],
+  "_detail": "블록 시작은 제목 상자 표 문단: s1:0 '목  차'(pageBreak=0, secPr 포함), s1:71 '표 목 차'(pageBreak=1), s1:105 '그림 목 차'(1), s1:111 '감사의 글'(1), s1:125 '논 문  개 요'(1, styleIDRef=1). s1:70은 목차 끝의 빨간 [작성지침] 안내(제거 대상). 감사의글 s1:112~118 본문, 119~121 빈 문단, 122 '2026 년 12 월'·123 성명(paraPr48 오른쪽정렬), 124 빈 문단. 논문개요 s1:127~133 본문(130은 빨간 [자리표시자]). 감사의글·논문개요의 내용은 전부 김정년 것이므로 윤혁 원고로 교체한다"
+ },
+ "back_ranges": {
+  "참고문헌": [
+   "section2",
+   538,
+   651
+  ],
+  "부록": [
+   "section2",
+   652,
+   693
+  ],
+  "Abstract": [
+   "section2",
+   694,
+   711
+  ],
+  "_detail": "s2:538 '참고문헌'(pageBreak=1), s2:652 '부    록'(1), s2:694 'Abstract'(1). 각 범위 끝은 다음 블록 시작 직전 문단"
+ },
+ "body_range": [
+  "section2",
+  0,
+  537
+ ],
+ "cover": {
+  "section0": [
+   {
+    "para_idx": 0,
+    "role": "겉표지",
+    "slots": [
+     {
+      "path": "tbl/tr[0]/tc[0]/p[0]/run[0]",
+      "current_text": "2026",
+      "role": "연월",
+      "charPrIDRef": "28"
+     },
+     {
+      "path": "tbl/tr[0]/tc[0]/p[0]/run[1]",
+      "current_text": "학년도",
+      "role": "기타",
+      "charPrIDRef": "27"
+     },
+     {
+      "path": "tbl/tr[0]/tc[0]/p[1]/run[0]",
+      "current_text": "석사학위논문",
+      "role": "학위문구",
+      "charPrIDRef": "17"
+     },
+     {
+      "path": "tbl/tr[1]/tc[0]/p[0]/run[1]",
+      "current_text": "건설현장의 안전시설물 설치와",
+      "role": "제목",
+      "charPrIDRef": "45"
+     },
+     {
+      "path": "tbl/tr[1]/tc[0]/p[1]/run[0]",
+      "current_text": "— 근로자의 안전행동 매개효과를 중심으로 —",
+      "role": "부제",
+      "charPrIDRef": "61"
+     },
+     {
+      "path": "tbl/tr[3]/tc[0]/p[0]/run[0]",
+      "current_text": "지도교수 : 박 종 용",
+      "role": "지도교수",
+      "charPrIDRef": "18"
+     },
+     {
+      "path": "tbl/tr[5]/tc[0]/p[0]/run[0]",
+      "current_text": "경기대학교 공학대학원",
+      "role": "대학원",
+      "charPrIDRef": "20"
+     },
+     {
+      "path": "tbl/tr[7]/tc[0]/p[0]/run[0]",
+      "current_text": "건축·안전공학전공",
+      "role": "전공",
+      "charPrIDRef": "19"
+     },
+     {
+      "path": "tbl/tr[9]/tc[0]/p[0]/run[0]",
+      "current_text": "김 정 년",
+      "role": "성명",
+      "charPrIDRef": "21"
+     }
+    ],
+    "tbl_run_idx": 1,
+    "tbl_idx": 0
+   },
+   {
+    "para_idx": 0,
+    "role": "제출지",
+    "slots": [
+     {
+      "path": "tbl/tr[1]/tc[0]/p[0]/run[1]",
+      "current_text": "건설현장의 안전시설물 설치와",
+      "role": "제목",
+      "charPrIDRef": "45"
+     },
+     {
+      "path": "tbl/tr[1]/tc[0]/p[1]/run[0]",
+      "current_text": "— 근로자의 안전행동 매개효과를 중심으로 —",
+      "role": "부제",
+      "charPrIDRef": "61"
+     },
+     {
+      "path": "tbl/tr[3]/tc[0]/p[0]/run[0]",
+      "current_text": "이 논문을 석사학위논문으로 제출함",
+      "role": "학위문구",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[4]/tc[0]/p[0]/run[0]",
+      "current_text": "2026년 12월  일",
+      "role": "연월",
+      "charPrIDRef": "23"
+     },
+     {
+      "path": "tbl/tr[6]/tc[0]/p[0]/run[0]",
+      "current_text": "경기대학교 공학대학원",
+      "role": "대학원",
+      "charPrIDRef": "20"
+     },
+     {
+      "path": "tbl/tr[8]/tc[0]/p[0]/run[0]",
+      "current_text": "건축·안전공학전공",
+      "role": "전공",
+      "charPrIDRef": "19"
+     },
+     {
+      "path": "tbl/tr[10]/tc[0]/p[0]/run[0]",
+      "current_text": "김 정 년",
+      "role": "성명",
+      "charPrIDRef": "21"
+     }
+    ],
+    "tbl_run_idx": 1,
+    "tbl_idx": 1
+   },
+   {
+    "para_idx": 1,
+    "role": "인준지",
+    "slots": [
+     {
+      "path": "tbl/tr[1]/tc[0]/p[0]/run[0]",
+      "current_text": "김 정 년의 석사학위논문을 인준함",
+      "role": "성명",
+      "charPrIDRef": "26"
+     },
+     {
+      "path": "tbl/tr[3]/tc[1]/p[0]/run[0]",
+      "current_text": "심 사 위 원 장",
+      "role": "기타",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[3]/tc[2]/p[0]/run[0]",
+      "current_text": "                ",
+      "role": "심사위원",
+      "charPrIDRef": "29"
+     },
+     {
+      "path": "tbl/tr[4]/tc[1]/p[0]/run[0]",
+      "current_text": "심 사 위 원",
+      "role": "기타",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[4]/tc[2]/p[0]/run[0]",
+      "current_text": "               ",
+      "role": "심사위원",
+      "charPrIDRef": "29"
+     },
+     {
+      "path": "tbl/tr[5]/tc[1]/p[0]/run[0]",
+      "current_text": "심 사 위 원",
+      "role": "기타",
+      "charPrIDRef": "22"
+     },
+     {
+      "path": "tbl/tr[5]/tc[2]/p[0]/run[0]",
+      "current_text": "               ",
+      "role": "심사위원",
+      "charPrIDRef": "29"
+     },
+     {
+      "path": "tbl/tr[9]/tc[0]/p[0]/run[0]",
+      "current_text": "2026년 12월  일",
+      "role": "연월",
+      "charPrIDRef": "23"
+     },
+     {
+      "path": "tbl/tr[11]/tc[0]/p[0]/run[0]",
+      "current_text": "경기대학교 공학대학원",
+      "role": "대학원",
+      "charPrIDRef": "24"
+     }
+    ],
+    "tbl_run_idx": 0,
+    "tbl_idx": 0
+   }
+  ]
+ },
+ "h1_chapter": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "46",
+  "charPrIDRef": "56",
+  "pageBreak": "1"
+ },
+ "h2_section": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "60"
+ },
+ "h3_item": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "36"
+ },
+ "h4_sub": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "62"
+ },
+ "body": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "43",
+  "charPrIDRef": "55"
+ },
+ "table_caption": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "52",
+  "charPrIDRef": "55"
+ },
+ "figure_caption": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "52",
+  "charPrIDRef": "55"
+ },
+ "source_note": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "42",
+  "charPrIDRef": "31"
+ },
+ "toc_entry": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "44",
+  "charPrIDRef": "54",
+  "tab": {
+   "leader": "3",
+   "type": "2"
+  }
+ },
+ "toc_lot_entry": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "44",
+  "charPrIDRef": "54"
+ },
+ "ref_heading": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "4",
+  "charPrIDRef": "56"
+ },
+ "ref_category": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "11",
+  "charPrIDRef": "32"
+ },
+ "ref_item": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "47",
+  "charPrIDRef": "64"
+ },
+ "appendix_heading": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "58",
+  "charPrIDRef": "12"
+ },
+ "abstract_heading": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "4",
+  "charPrIDRef": "56"
+ },
+ "abstract_meta": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "25",
+  "charPrIDRef": "55"
+ },
+ "abstract_body": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "43",
+  "charPrIDRef": "55"
+ },
+ "blank_para": {
+  "styleIDRef": "0",
+  "paraPrIDRef": "43",
+  "charPrIDRef": "55"
+ },
+ "body_bold_charPr": "8",
+ "table": {
+  "tbl_attrs": {
+   "numberingType": "TABLE",
+   "textWrap": "TOP_AND_BOTTOM",
+   "textFlow": "BOTH_SIDES",
+   "lock": "0",
+   "dropcapstyle": "None",
+   "pageBreak": "NONE",
+   "repeatHeader": "1",
+   "cellSpacing": "0",
+   "borderFillIDRef": "9",
+   "noAdjust": "0",
+   "pos": {
+    "treatAsChar": "0",
+    "affectLSpacing": "0",
+    "flowWithText": "1",
+    "allowOverlap": "0",
+    "holdAnchorAndSO": "0",
+    "vertRelTo": "PARA",
+    "horzRelTo": "PARA",
+    "vertAlign": "TOP",
+    "horzAlign": "LEFT",
+    "vertOffset": "0",
+    "horzOffset": "0"
+   },
+   "outMargin": {
+    "left": "141",
+    "right": "141",
+    "top": "141",
+    "bottom": "141"
+   },
+   "inMargin": {
+    "left": "510",
+    "right": "510",
+    "top": "141",
+    "bottom": "141"
+   }
+  },
+  "anchor_para": {
+   "paraPrIDRef": "25",
+   "charPrIDRef": "16",
+   "_detail": "표를 담은 바깥 문단은 paraPr25(가운데170%)/charPr16(10pt), 표 뒤 빈 <hp:t/>. 근거 s2:6·91·102"
+  },
+  "total_width": "39684",
+  "total_width_appendix": "39491",
+  "borderFills": {
+   "header_gray_top04": "30",
+   "header_gray_left_open": "28",
+   "header_gray_right_open": "29",
+   "inner_012": "5",
+   "left_open": "7",
+   "right_open": "6",
+   "none": "4"
+  },
+  "cell_paraPr": {
+   "header_center": "50",
+   "text_left": "49",
+   "number_right": "51",
+   "text_justify": "49",
+   "_detail": "본문 표 셀 paraPr 집계 {'50': 198, '49': 1040, '51': 1329}: 50=가운데130%, 49=왼쪽130%, 51=오른쪽130%. 양쪽정렬 셀은 본문 표에 없음 — text_justify는 49로 대체(estimate). 부록 안내 표만 JUSTIFY paraPr53/54(110%)"
+  },
+  "cell_charPr": {
+   "normal10": "16",
+   "bold10": "68",
+   "small9": "31",
+   "_detail": "본문 표 셀 charPr 집계 {'16': 2054, '51': 497, '63': 16}: 16=10pt 한양신명조 bf2(머리행·본문 공통). 68=10pt 굵게 bf2(그림 도식 s2:70 'B=f(P, E)'에서 사용, 16과 굵게 외 동일=True) — estimate. small9 31=9pt 보통 bf3(자료 문단용, 셀에서 미사용 — estimate). 51=9pt 장평79%·63=9pt 굵게는 밀도 높은 표(s2:390·413·434)의 예외 — 기본값으로 쓰지 않는다",
+   "_variants": {
+    "51": "9pt 장평79% (dense)",
+    "63": "9pt 굵게 (dense 강조)",
+    "69": "11pt 굵게 bf2 (그림 도식 표)"
+   }
+  },
+  "cell_padding": {
+   "left": "510",
+   "right": "510",
+   "top": "141",
+   "bottom": "141",
+   "_detail": "본문 표 전 셀 cellMargin 510/510/141/141, hasMargin=0(tbl inMargin과 동일). 510=1.8mm, 141=0.5mm"
+  },
+  "header_row": {
+   "header_attr": "1",
+   "fill": "header_gray_top04",
+   "_detail": "본문 표 첫 행 전 셀 tc@header=\"1\", 좌→우 borderFill 28 · 30… · 29. 나머지 행은 7 · 5… · 6"
+  },
+  "caption_outside": true,
+  "cell_subList": {
+   "vertAlign": "CENTER",
+   "textDirection": "HORIZONTAL",
+   "lineWrap": "BREAK"
+  }
+ },
+ "figure": {
+  "anchor_para": {
+   "paraPrIDRef": "25",
+   "charPrIDRef": "55"
+  },
+  "caption_above": true,
+  "source_note_below": true,
+  "pic_attrs": {
+   "numberingType": "PICTURE",
+   "textWrap": "TOP_AND_BOTTOM",
+   "treatAsChar": "1",
+   "horzRelTo": "COLUMN",
+   "horzAlign": "CENTER",
+   "sz_width": "39684"
+  }
+ },
+ "red_charPr": {
+  "existing": [
+   {
+    "id": "47"
+   }
+  ]
+ },
+ "page_number_control": {
+  "section1_first_para_idx": 0,
+  "section2_first_para_idx": 0,
+  "snippets_dir": "tools/hwpx_transfer/staging/migrate_kjn/snippets"
+ },
+ "conventions": {
+  "blank_after_heading": [
+   "h1",
+   "h2",
+   "h3"
+  ],
+  "body_indent": "  ",
+  "heading_number_spacing": "제 1 장"
+ },
+ "template_leftovers_to_strip": {
+  "phrases": [
+   "건설현장의 안전시설물 설치와"
+  ]
+ },
+ "front_heading_box": {
+  "tbl": {
+   "width": "36284"
+  },
+  "titles": {
+   "목차": "목  차",
+   "표목차": "표 목 차",
+   "그림목차": "그 림 목 차",
+   "감사의글": "감사의 글",
+   "논문개요": "논 문  개 요"
+  }
+ }
+}

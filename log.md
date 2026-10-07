@@ -1,3 +1,75 @@
+261008_082404 : 03.plan/261008_0655_hwpx_김정년양식_이관_계획.md 수정, 03.plan/README.md 수정, CLAUDE.md 수정, MEMORY.md 수정
+261008_082257 : .claude/skills/hwpx-thesis-editing/scripts/resave-hwpx.ps1 추가 — "# 한글 COM으로 hwpx를 열어 재조판 저장(SaveAs HWPX)하고, 저장본을 다시 열어 PDF를 내…"
+261008_082237 : tools/hwpx_transfer/pdf_table_check.py 추가, tools/hwpx_transfer/toc_pages_from_pdf.py 추가
+261008_082009 : 00. hwpx/261008_0814_경기공학_건축안전_윤혁_논문_김정년양식이관본.hwpx 삭제, 00. hwpx/261008_0819_경기공학_건축안전_윤혁_논문_김정년양식이관본.hwpx 추가
+261008_081924 : tools/hwpx_transfer/staging/migrate_kjn/transplant.json 수정
+261008_081904 : tools/hwpx_transfer/blocks_to_hwpx.py 수정
+261008_081836 : tools/hwpx_transfer/blocks_to_hwpx.py 수정, tools/hwpx_transfer/staging/migrate_kjn/transplant.json 추가
+261008_081753 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_081720 : 00. hwpx/261008_0810_경기공학_건축안전_윤혁_논문_김정년양식이관본.hwpx 삭제
+261008_081438 : 00. hwpx/261008_0814_경기공학_건축안전_윤혁_논문_김정년양식이관본.hwpx 추가
+261008_081333 : 01.docs/00_목차.md 수정, tools/hwpx_transfer/kjn_profile.py 수정
+261008_081052 : 00. hwpx/261008_0810_경기공학_건축안전_윤혁_논문_김정년양식이관본.hwpx 추가
+261008_081015 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_080528 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_080450 : tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_080248 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_080039 : tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/table_layout.py 수정
+261008_075154 : tools/hwpx_transfer/blocks_to_hwpx.py 수정, tools/hwpx_transfer/kjn_profile.py 수정
+261008_075042 : tools/hwpx_transfer/blocks_to_hwpx.py 수정
+261008_074900 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_074841 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_074713 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_074518 : tools/hwpx_transfer/blocks_to_hwpx.py 수정
+261008_074503 : tools/hwpx_transfer/staging/migrate_kjn/style_map_kjn.json 수정
+261008_073954 : tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v3.json 추가, tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v3_report.md 추가
+261008_073656 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_073510 : 01.docs/01_서론.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정 외 4건
+261008_073213 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "# 같은 서명이 양식에 있으면 재사용(본문 셀은 좌우 NONE인 bf 9와 같다), 없으면 추가 self.a…"
+261008_073211 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "boxes = [x for x in paras(s1_out) if "<hp:tbl" in x and "감사의…"
+261008_073151 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_073145 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "# 부록1 설문지 통째 이식(replace_appendix) + 감사의 글(옛 제목 상자·빨간 메모) — l…"
+261008_073122 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "def test_d_blank_before_section_and_item(self): para = {"typ…"
+261008_073106 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_073100 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "def load_stub(): return load_json(STUB) def load_base(): """…"
+261008_073043 : tools/hwpx_transfer/staging/migrate_kjn/stub_profile.json 수정
+261008_073035 : tools/hwpx_transfer/blocks_to_hwpx.py 수정, tools/hwpx_transfer/kjn_profile.py 수정
+261008_072958 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_072702 : tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v2_report.md 수정
+261008_072621 : tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v2.json 추가, tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v2_report.md 추가
+261008_072601 : tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261008_072547 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "self.assertEqual(texts[0], "제 1 장 서론") self.assertIn('pageBr…"
+261008_072545 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "self.assertEqual(len(doc.lot), 30) # 프로파일이 CELL을 요구해도 조립기는 N…"
+261008_072530 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 추가 — "# blocks_to_hwpx.py 양식 프로파일 주입형 확장(김정년 양식)과 옛 양식 회귀를 검증하는 단위…"
+261008_072516 : 03.plan/261008_0655_hwpx_김정년양식_이관_계획.md 수정
+261008_072358 : tools/hwpx_transfer/staging/migrate_kjn/stub_profile.json 추가
+261008_072303 : tools/hwpx_transfer/table_layout.py 수정 — "for c in clipped: raw[c] = float(word[c]) remain -= word[c] …"
+261008_072300 : tools/hwpx_transfer/table_layout.py 수정 — "if sum(word) >= total_width: # 최장 낱말조차 다 못 들어가는 밀집 표 — 낱말 폭에…"
+261008_072238 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_072206 : tools/hwpx_transfer/kjn_profile.py 수정 — "plain = [re.sub(r"<[^>]+>", "\n", t.group(1)) for t in t_ite…"
+261008_072157 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_072134 : tools/hwpx_transfer/blocks_to_hwpx.py 수정
+261008_072127 : tools/hwpx_transfer/blocks_to_hwpx.py 수정 — "def run_kjn(args, profile, here, output, report_path): doc, …"
+261008_072116 : tools/hwpx_transfer/blocks_to_hwpx.py 수정, tools/hwpx_transfer/kjn_profile.py 수정
+261008_072000 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_071955 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_071942 : tools/hwpx_transfer/blocks_to_hwpx.py 수정
+261008_071807 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_071746 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_071729 : tools/hwpx_transfer/kjn_profile.py 수정
+261008_071604 : tools/hwpx_transfer/kjn_profile.py 추가 — "# 양식 프로파일(JSON)을 읽어 옛 윤혁 양식과 김정년 양식 모두에 맞춰 학위논문 hwpx XML을 조립…"
+261008_071329 : tools/hwpx_transfer/staging/migrate_kjn/template_analysis_kjn.md 추가 — "# 김정년 양식 hwpx 내부 XML 실측 노트 - 대상: `00. hwpx/건설현장 안전시설물 설치와 떨어…"
+261008_071322 : tools/hwpx_transfer/staging/migrate_kjn/hwpx_only.json 수정, tools/hwpx_transfer/staging/migrate_kjn/hwpx_only_report.md 추가, tools/hwpx_transfer/staging/migrate_kjn/references_kjn_report.md 수정
+261008_071200 : tools/hwpx_transfer/staging/migrate_kjn/snippets/cover_section0.xml 추가, tools/hwpx_transfer/staging/migrate_kjn/snippets/figure_example.xml 추가, tools/hwpx_transfer/staging/migrate_kjn/snippets/ref_item_example.xml 추가, tools/hwpx_transfer/staging/migrate_kjn/snippets/section1_first_para.xml 추가, tools/hwpx_transfer/staging/migrate_kjn/snippets/section2_first_para.xml 추가, tools/hwpx_transfer/staging/migrate_kjn/snippets/table_example.xml 추가 외 2건
+261008_071152 : tools/hwpx_transfer/staging/migrate_kjn/images.json 추가, tools/hwpx_transfer/staging/migrate_kjn/images/figure_1-1.png 추가, tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-1.png 추가, tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-2.png 추가, tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-3.png 추가, tools/hwpx_transfer/staging/migrate_kjn/images/figure_3-4.png 추가 외 3건
+261008_071047 : tools/hwpx_transfer/table_layout.py 추가 — "# 표 셀 내용의 글리프 폭을 추정해 열폭을 설계하고, 기존 표 열폭을 병합 격자를 보존한 채 비례 재계산하…"
+261008_070844 : tools/hwpx_transfer/staging/migrate_kjn/hwpx_only.json 추가
+261008_070617 : tools/hwpx_transfer/tests/fixtures/legacy_section2_baseline.xml 추가
+261008_070613 : tools/hwpx_transfer/tests/legacy_harness.py 추가 — "# 회귀 테스트용 공용 하네스 — hwpx 양식 파일 없이 본문(section2) 문단 XML을 만들어 비교…"
+261008_070558 : tools/hwpx_transfer/tests/fixtures/legacy_blocks_to_hwpx_pre.py 추가, tools/hwpx_transfer/tests/fixtures/legacy_inputs/apx1.blocks.json 추가, tools/hwpx_transfer/tests/fixtures/legacy_inputs/apx2.blocks.json 추가, tools/hwpx_transfer/tests/fixtures/legacy_inputs/ch01.blocks.json 추가, tools/hwpx_transfer/tests/fixtures/legacy_inputs/ch02.blocks.json 추가, tools/hwpx_transfer/tests/fixtures/legacy_inputs/ch03.blocks.json 추가 외 5건
+261008_070533 : 03.plan/261008_0655_hwpx_김정년양식_이관_계획.md 수정
+261008_070126 : tools/hwpx_transfer/staging/migrate_kjn/md_at_d3b93ab/00_목차.md 추가, tools/hwpx_transfer/staging/migrate_kjn/md_at_d3b93ab/01_서론.md 추가, tools/hwpx_transfer/staging/migrate_kjn/md_at_d3b93ab/02_이론적배경.md 추가, tools/hwpx_transfer/staging/migrate_kjn/md_at_d3b93ab/03_시스템개발.md 추가, tools/hwpx_transfer/staging/migrate_kjn/md_at_d3b93ab/04_연구설계.md 추가, tools/hwpx_transfer/staging/migrate_kjn/md_at_d3b93ab/05_실증분석결과.md 추가 외 4건
+261008_070021 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 16건
 261008_065721 : 03.plan/README.md 수정
 261008_065715 : 03.plan/261008_0655_hwpx_김정년양식_이관_계획.md 추가 — "# HWPX 이관 계획 — 김정년 양식 기준 원본 위에 윤혁 논문 전체 조립 - **작성:** 2026-10…"
 261008_065257 : 00. hwpx/260913_0320_경기공학_건축안전_윤혁_논문_검토수정본.pdf 삭제, 00. hwpx/260930_0738_경기공학_건축안전_윤혁_논문_보완반영본.pdf 삭제, 00. hwpx/260930_0808_경기공학_건축안전_윤혁_논문_보완반영본.pdf 삭제, 00. hwpx/260930_1337_경기공학_건축안전_윤혁_논문_최신반영본.pdf 삭제, 00. hwpx/261001_0357_경기공학_건축안전_윤혁_논문_문장수정반영본.pdf 삭제, 00. hwpx/261001_0511_경기공학_건축안전_윤혁_논문_자연화반영본.pdf 삭제 외 2건

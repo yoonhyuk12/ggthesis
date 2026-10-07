@@ -139,16 +139,20 @@ MD 원고 전체를 hwpx로 다시 조립할 때만 쓴다. 문단 하나를 고
 
 ```bash
 # 1단계 — 인자 없음. 01.docs/*.md 를 읽어 staging/*.blocks.json 과 parse_report.md 생성
-python tools/hwpx_transfer/md_to_blocks.py
+PYTHONIOENCODING=utf-8 python tools/hwpx_transfer/md_to_blocks.py
 
-# 2단계 — 블록 JSON + 양식 hwpx → 학위논문 hwpx 조립
-python tools/hwpx_transfer/blocks_to_hwpx.py \
-  --template "공학대학원_건축안전_윤혁_…YOLO-VLM… - 복사본.hwpx" \
-  --style-map tools/hwpx_transfer/staging/style_map.json \
-  --blocks tools/hwpx_transfer/staging/ch01.blocks.json … apx2.blocks.json \
-  --references tools/hwpx_transfer/staging/references.json \
-  --output "00. hwpx/YYMMDD_HHMM_논문명.hwpx"
+# 2단계 — 김정년 양식(00. hwpx/…(김정년) 261002.hwpx, SHA256 9bf1980a…)을 복사본으로 두고 프로파일 주입 조립
+#   (apx2는 00_목차 '본문 미수록'이라 제외, --no-tail은 부록3 자리표 제거, --transplant는 감사의 글·부록 설문지 두 양식을
+#    옛 hwpx에서 통째 이식 + MD 기준 text_replacements, --toc-pages는 3단계에서 만든 인쇄 쪽수 JSON)
+PYTHONIOENCODING=utf-8 python tools/hwpx_transfer/blocks_to_hwpx.py   --template "<양식 복사본.hwpx>" --profile tools/hwpx_transfer/staging/migrate_kjn/style_map_kjn.json   --blocks tools/hwpx_transfer/staging/ch01.blocks.json … ch06.blocks.json apx1.blocks.json   --references tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v3.json   --images tools/hwpx_transfer/staging/migrate_kjn/images.json   --transplant tools/hwpx_transfer/staging/migrate_kjn/transplant.json --no-tail   [--toc-pages <toc_pages.json>] --output "<조립본.hwpx>" --report "<report.md>"
+
+# 3단계 — 한글 재조판 저장이 산출물. PDF는 스크래치. 쪽수 JSON을 만들어 2단계를 --toc-pages로 한 번 더 돌린 뒤 재저장·재대조
+pwsh -File .claude/skills/hwpx-thesis-editing/scripts/resave-hwpx.ps1 -HwpxIn "<조립본>" -HwpxOut "00. hwpx/YYMMDD_HHMM_논문명.hwpx" -PdfOut "<스크래치>.pdf"
+PYTHONIOENCODING=utf-8 python tools/hwpx_transfer/pdf_table_check.py "<스크래치>.pdf"          # 표 괘선–꼬리말 침범 전수
+PYTHONIOENCODING=utf-8 python tools/hwpx_transfer/toc_pages_from_pdf.py "<조립본>" "<스크래치>.pdf" toc_pages.json
 ```
+
+단위 테스트는 `python -m unittest tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py`(21건). 2026-10-08 이관 실행 기록과 함정은 `03.plan/261008_0655_hwpx_김정년양식_이관_계획.md` 진행 기록 참조.
 
 `--smoke`를 주면 `--output` 없이 `staging/test_out/smoke.hwpx`로 뽑아 확인만 할 수 있다. 표준 라이브러리만 쓰므로 별도 설치는 필요 없다.
 
