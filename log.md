@@ -1,3 +1,6 @@
+261008_065721 : 03.plan/README.md 수정
+261008_065715 : 03.plan/261008_0655_hwpx_김정년양식_이관_계획.md 추가 — "# HWPX 이관 계획 — 김정년 양식 기준 원본 위에 윤혁 논문 전체 조립 - **작성:** 2026-10…"
+261008_065257 : 00. hwpx/260913_0320_경기공학_건축안전_윤혁_논문_검토수정본.pdf 삭제, 00. hwpx/260930_0738_경기공학_건축안전_윤혁_논문_보완반영본.pdf 삭제, 00. hwpx/260930_0808_경기공학_건축안전_윤혁_논문_보완반영본.pdf 삭제, 00. hwpx/260930_1337_경기공학_건축안전_윤혁_논문_최신반영본.pdf 삭제, 00. hwpx/261001_0357_경기공학_건축안전_윤혁_논문_문장수정반영본.pdf 삭제, 00. hwpx/261001_0511_경기공학_건축안전_윤혁_논문_자연화반영본.pdf 삭제 외 2건
 261008_001223 : .claude/rules/cross-chapter-consistency.md 수정, .claude/rules/defense-feedback.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/05_실증분석결과.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정 외 3건
 261008_001014 : 01.docs/00_목차.md 수정, 01.docs/figures/README.md 수정, 01.docs/figures/research/figure_1-1_research_flow.png 추가, 01.docs/figures/research/figure_1-1_research_flow.svg 추가, 01.docs/figures/research/figure_4-1_research_model.png 수정, 01.docs/figures/research/figure_4-1_research_model.svg 수정 외 2건
 261008_000646 : 03.plan/261007_2345_261004지도반영_2차_4장5장6장1장_목차그림.md 수정
