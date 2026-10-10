@@ -42,7 +42,7 @@
 <text x="80" y="1400" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">자료 정제·기술통계·신뢰도·사전 특성 분포·균형 진단</text>
 <text x="80" y="1451" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">공분산분석 가정 점검</text>
 <text x="80" y="1502" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1: 두 집단 공분산분석</text>
-<text x="80" y="1553" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">(ANCOVA, 연속 공변량 2·범주형 요인 4)</text>
+<text x="80" y="1553" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">(ANCOVA, 연속 공변량 2·범주형 통제요인 4)</text>
 <text x="80" y="1604" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H2 상호작용 일반선형모형: 집단 × 예산 제약성</text>
 <polyline points="750,1660 750,1720" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="750,1720 759.0,1702.0 741.0,1702.0" fill="#243C55"/>

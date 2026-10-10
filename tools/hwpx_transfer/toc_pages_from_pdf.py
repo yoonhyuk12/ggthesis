@@ -73,6 +73,17 @@ for kind, title in entries:
                 result["toc"][title] = val
         else:
             result[kind][title] = val
+# 장 제목은 <표 1-2> 같은 본문 표 셀("제2장 이론적 배경")과 글자가 같아 앞쪽에 오매칭될 수 있다(2026-10-09 발견:
+# 제 2 장이 7쪽으로 인쇄됨). 양식 규칙상 장 제목과 그 장의 제 1 절은 같은 쪽에서 시작하므로, 장 항목의 쪽은
+# 바로 다음 항목이 '제 1 절'이면 그 쪽으로 확정한다.
+toc_items = [t for k, t in entries if k == "toc"]
+for i, title in enumerate(toc_items[:-1]):
+    nxt = toc_items[i + 1]
+    if re.match(r"^제\s*\d+\s*장", title) and re.match(r"^제\s*1\s*절", nxt) and nxt in result["toc"]:
+        fixed = result["toc"][nxt]
+        if result["toc"].get(title) != fixed:
+            print("장 쪽수 보정:", title[:20], result["toc"].get(title), "->", fixed)
+            result["toc"][title] = fixed
 json.dump(result, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("entries:", len(entries), "matched:", sum(len(v) for v in result.values()), "unmatched:", unmatched)
 for k in ("toc", "lot", "lof"):

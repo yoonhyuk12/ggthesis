@@ -23,7 +23,7 @@
 <rect x="380" y="735" width="1070" height="175" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
 <text x="415" y="790" font-family="Malgun Gothic" font-size="38" font-weight="700" fill="#243C55" text-anchor="start">공변량 조정</text>
 <text x="415" y="844" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연속 공변량 2: 만 나이 · 건설현장 경력</text>
-<text x="415" y="891" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">범주형 요인 4: 소속 · 성별 · 역할 · 총공사비 구간</text>
+<text x="415" y="891" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">범주형 통제요인 4: 소속 · 성별 · 역할 · 총공사비 구간</text>
 <polyline points="1137,735 1137,610" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="1137,610 1128.0,628.0 1146.0,628.0" fill="#243C55"/>
 <text x="50" y="990" font-family="Malgun Gothic" font-size="42" font-weight="700" fill="#243C55" text-anchor="start">H2  상호작용 일반선형모형</text>
