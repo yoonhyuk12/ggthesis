@@ -18,10 +18,25 @@ SEAMS = [r"다\.[가-힣A-Za-z<(\[]", r"  +", r"\. \.", r"다\. 다\. "]
 
 
 def seams(txt):
-    out = []
+    """이음새 후보를 앞뒤 12자 문맥 스니펫으로 수집(위치가 아니라 문맥으로 전후 비교)."""
+    from collections import Counter
+    out = Counter()
     for pat in SEAMS:
-        out += [m.start() for m in re.finditer(pat, txt)]
-    return set(out)
+        for m in re.finditer(pat, txt):
+            out[txt[max(0, m.start() - 12):m.end() + 12]] += 1
+    return out
+
+
+def new_seam_lines(before, after):
+    b, a = seams(before), seams(after)
+    lines = set()
+    for snip, n in a.items():
+        if n > b.get(snip, 0):
+            pos = after.find(snip)
+            while pos != -1:
+                lines.add(after.count("\n", 0, pos) + 1)
+                pos = after.find(snip, pos + 1)
+    return sorted(lines)
 
 
 def main():
@@ -55,9 +70,7 @@ def main():
         txt = txt.replace(old, new, 1)
         applied.append((it["id"], len(old) - len(new)))
     saved = len(before) - len(txt)
-    new_seams = sorted(seams(txt) - seams(before))
-    # 새 이음새 위치를 행 번호로
-    seam_lines = sorted({txt.count("\n", 0, p) + 1 for p in new_seams})
+    seam_lines = new_seam_lines(before, txt)
     print(f"파일: {j['file']}  줄끝: {'CRLF' if crlf else 'LF'}")
     print(f"적용 {len(applied)}건 / 애매 제외 {len(skipped_amb)}건 / id 제외 {len(skipped_id)}건 / 충돌 {len(conflicts)}건 / 실제 절감 {saved}자")
     if conflicts:
