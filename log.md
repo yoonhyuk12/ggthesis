@@ -1,3 +1,24 @@
+261024_143426 : MEMORY.md 수정
+261024_143351 : 03.plan/README.md 수정
+261024_143342 : 03.plan/261024_1314_원고_분량감축_계획.md 수정 — "- **2026-10-24 14:0x∼14:31 hwpx 전체 재조립(사용자 지시 "커밋하고 hwpx 조립 …"
+261024_143145 : 00. hwpx/261024_1431_경기공학_건축안전_윤혁_논문_분량감축반영본.hwpx 추가
+261024_143045 : 01.docs/03_시스템개발.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정 외 4건
+261024_142951 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "# 2026-10-24 초록의 결과 단락이 실측치로 채워져 [DATA PENDING] 마커가 사라졌다 — 마…"
+261024_142856 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 3건
+261024_142809 : tools/hwpx_transfer/kjn_profile.py 수정 — "@staticmethod def _is_blank_para(item): """`asm.blank()`가 만든…"
+261024_142736 : 01.docs/01_서론.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정
+261024_142454 : tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정 — "# 2026-10-24 국문초록을 1쪽(4문단+주제어)으로 압축했으므로 하한을 6→4로 낮춘다. self.a…"
+261024_142452 : tools/hwpx_transfer/kjn_profile.py 수정 — "# 프로파일에 figure.max_height가 없으면 2026-10-08 조립본 <그림 1-1> 실측 높이…"
+261024_142436 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 3건
+261024_142401 : tools/hwpx_transfer/kjn_profile.py 수정 — "max_h = int(self.pf.first(("figure", "max_height")) or 44315…"
+261024_142358 : tools/hwpx_transfer/kjn_profile.py 수정 — "def picture_para(self, item_id, px_w, px_h, max_width, dpi=3…"
+261024_142353 : 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정
+261024_141824 : 03.plan/261024_1314_분량감축_감사/phase2_fig1-1.md 수정
+261024_141731 : 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/figure_4-1_research_model.png 수정, 01.docs/figures/research/figure_4-1_research_model.svg 수정, 01.docs/figures/research/generate_research_figures.py 수정, 03.plan/261024_1314_분량감축_감사/phase2_fig1-1.md 수정
+261024_141434 : 01.docs/05_실증분석결과.md 수정, 03.plan/261024_1314_분량감축_감사/phase2_fig1-1.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정 외 5건
+261024_141404 : 01.docs/01_서론.md 수정, 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 03.plan/261024_1314_분량감축_감사/phase2_fig1-1.md 추가
+261024_141317 : 01.docs/05_실증분석결과.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정 외 6건
+261024_141213 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 3건
 261024_140143 : 03.plan/261024_1314_원고_분량감축_계획.md 수정 — "- **남은 사항:** (1) 01장 <표 1-2>의 '설문조사(60명 모집 목표)'는 '응답 71명'으로 …"
 261024_140141 : 01.docs/01_서론.md 수정
 261024_140129 : 03.plan/261024_1314_원고_분량감축_계획.md 수정 — "## 4. 진행 기록 - 2026-10-24 13:14 1단계 감사 완료(워커 5명 release, recl…"

@@ -38,5 +38,5 @@
 <text x="90" y="1355" font-family="Malgun Gothic" font-size="35" font-weight="400" fill="#20262D" text-anchor="start">검정력 제약을 고려하여 방향·효과크기·신뢰구간 중심 해석</text>
 <text x="50" y="1465" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">실선: 주 분석 및 공변량 조정 / 점선: W 상호작용 분석</text>
 <text x="50" y="1520" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">화살표는 분석 관계를 표시하며 인과관계의 입증을 뜻하지 않는다.</text>
-<text x="50" y="1575" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">사후 설문 1회의 횡단 비교 · 현장당 1명·총 60명 모집 목표</text>
+<text x="50" y="1575" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#20262D" text-anchor="start">사후 설문 1회의 횡단 비교 · 현장당 1명·응답 71명(도입 32개소·미도입 39개소)</text>
 </svg>

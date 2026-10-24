@@ -112,7 +112,7 @@ for var in ("A3_age", "A4_exp"):
     need("05", f"5-4A {var}", f"| {f2(r['mean_diff'])} | {f2(r['smd'])} | {fn(r['common_lo'])}∼{fn(r['common_hi'])}")
 for var in FAC:
     r = T54["panel_B"][var]
-    need("05", f"5-4B {var}", f"{f2(r['smd_yang_dalton'])}(범주별 최대 |d| {f2(r['max_abs_cat_smd'])})")
+    need("05", f"5-4B {var}", f"{f2(r['smd_yang_dalton'])}(범주별 최대 절대 d {f2(r['max_abs_cat_smd'])})")
 need("05", "나이–경력 r", f"r={f2(T54['age_exp_r'])}")
 # ---- <표 5-5>
 d5 = R["table_5_5"]

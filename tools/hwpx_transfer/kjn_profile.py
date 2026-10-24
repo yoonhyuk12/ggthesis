@@ -893,7 +893,7 @@ class KjnAssembler(object):
         return {"style": str(a.get("styleIDRef", "0")), "para": str(para), "char": str(char)}
 
     # ── 그림 ────────────────────────────────────────────────────────────
-    def picture_para(self, item_id, px_w, px_h, max_width, dpi=300, name=""):
+    def picture_para(self, item_id, px_w, px_h, max_width, dpi=300, name="", max_height=None):
         nat_w = int(round(px_w * 7200.0 / dpi))
         nat_h = int(round(px_h * 7200.0 / dpi))
         if nat_w > max_width:
@@ -901,6 +901,11 @@ class KjnAssembler(object):
             h = int(round(nat_h * float(max_width) / nat_w))
         else:
             w, h = nat_w, nat_h
+        # 높이 상한(2026-10-24): 세로로 긴 그림(예: <그림 1-1> 1772×2492px)이 본문 폭 기준 55,808 HWPUNIT이 되면
+        # 캡션·그림·출처가 세 쪽으로 흩어진다. 캡션+출처와 같은 쪽에 들어가도록 비율을 유지한 채 줄인다.
+        if max_height and h > int(max_height):
+            w = int(round(w * float(max_height) / h))
+            h = int(max_height)
         dim_w, dim_h = px_w * 75, px_h * 75  # 양식 실측: imgDim = 픽셀 × 75 (96dpi 기준 HWPUNIT)
         pid = self.ids.next()
         pa = self.pf.get("figure", "pic_attrs")
@@ -1193,7 +1198,9 @@ class KjnDocument(object):
             self.bin_items.append((item_id, "BinData/%s.png" % item_id, data))
             max_w = int(self.pf.first(("figure", "max_width"), ("figure", "pic_attrs", "sz_width"),
                                       ("table", "total_width")))
-            xml_text, _size = self.asm.picture_para(item_id, px_w, px_h, max_w, name=os.path.basename(src))
+            # 프로파일에 figure.max_height가 없으면 2026-10-08 조립본 <그림 1-1> 실측 높이(44,315)를 상한으로 쓴다.
+            max_h = int(self.pf.get("figure", "max_height")) if self.pf.has("figure", "max_height") else 44315
+            xml_text, _size = self.asm.picture_para(item_id, px_w, px_h, max_w, name=os.path.basename(src), max_height=max_h)
             self._add(xml_text)
         else:
             label = caption or (fig["image_md"][0] if fig.get("image_md") else "그림")
@@ -1380,8 +1387,33 @@ class KjnDocument(object):
         parts.append("</hs:sec>")
         return "".join(parts)
 
+    @staticmethod
+    def _is_blank_para(item):
+        """`asm.blank()`가 만든 단일 빈 문단인지(run에 텍스트·개체·구역 속성이 전혀 없음)."""
+        s = item.strip()
+        if s.count("<hp:p") != 1 or not s.startswith("<hp:p") or not s.endswith("</hp:p>"):
+            return False
+        if any(k in s for k in ("<hp:tbl", "<hp:pic", "secPr", "colPr", "<hp:ctrl", "<hp:t>")):
+            return False
+        return re.sub(r"<hp:t\s*/>|<hp:t>\s*</hp:t>", "", re.sub(r"<[^>]+>", "", s)).strip() == ""
+
+    def _drop_blank_before_page_break(self, items):
+        """쪽 나눔 제목(pageBreak="1") 바로 앞의 빈 문단을 뺀다(2026-10-24).
+        직전 본문이 쪽 끝에 정확히 닿으면 그 빈 문단만 다음 쪽으로 넘어가 빈 쪽이 생긴다(3장 끝·4장 제4절 끝 실측).
+        새 쪽에서 시작하는 제목은 앞 빈 줄이 필요 없으므로 시각적 차이도 없다."""
+        out = []
+        dropped = 0
+        for item in items:
+            if re.match(r'\s*<hp:p\b[^>]*\bpageBreak="1"', item):
+                while out and self._is_blank_para(out[-1]):
+                    out.pop(); dropped += 1
+            out.append(item)
+        if dropped:
+            self.notes.append("쪽 나눔 제목 앞 빈 문단 %d개를 제거했다(빈 쪽 방지)." % dropped)
+        return out
+
     def build_section2(self):
-        return self.tpl.s2_head + "".join(self.body) + "</hs:sec>"
+        return self.tpl.s2_head + "".join(self._drop_blank_before_page_break(self.body)) + "</hs:sec>"
 
     def build_section0(self):
         return replace_cover(self.tpl.s0, self.pf.get("cover"), self.asm)

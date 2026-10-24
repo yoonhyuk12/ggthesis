@@ -31,8 +31,8 @@
 <text x="78" y="993" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제4장  도입·미도입 현장 비교 조사 설계</text>
 <text x="1360" y="993" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">How</text>
 <text x="80" y="1070" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">문항 구성 → 전문가 내용타당도 검증 → 예비조사</text>
-<text x="80" y="1121" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">도입 30개소·미도입 30개소, 사후 설문 1회</text>
-<text x="80" y="1172" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장당 1명·총 60명 모집 목표 / 공변량·분석 절차 설정</text>
+<text x="80" y="1121" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">도입 32개소·미도입 39개소, 응답 71명(모집 목표 60명):</text>
+<text x="80" y="1172" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장당 1명·사후 설문 1회 / 공변량·분석 절차 설정</text>
 <polyline points="750,1210 750,1270" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="750,1270 759.0,1252.0 741.0,1252.0" fill="#243C55"/>
 <rect x="45" y="1270" width="1410" height="390" fill="white" stroke="#243C55" stroke-width="3"/>
@@ -52,6 +52,6 @@
 <text x="1360" y="1773" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">의미</text>
 <text x="80" y="1850" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연구 결과 요약 및 학술적·실무적·정책적 시사점</text>
 <text x="80" y="1901" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연구의 한계와 향후 연구 방향</text>
-<text x="750" y="2010" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 개인 응답 분석 · jamovi 사용</text>
+<text x="750" y="2010" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 개인 응답 분석 · Python statsmodels 사용</text>
 <text x="750" y="2065" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">조정된 집단 차이를 해석하며 인과 효과를 단정하지 않는다.</text>
 </svg>

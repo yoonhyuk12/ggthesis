@@ -399,8 +399,10 @@ class KjnAssemblyTests(unittest.TestCase):
         if not os.path.exists(md):
             self.skipTest("00_목차.md 없음")
         out = kjn_profile.parse_abstract_skeleton(read_text(md))
-        self.assertGreaterEqual(len(out), 6)
-        self.assertTrue(any(t.startswith("[DATA PENDING") for t in out))
+        # 2026-10-24 국문초록을 1쪽(4문단+주제어)으로 압축했으므로 하한을 6→4로 낮춘다.
+        self.assertGreaterEqual(len(out), 4)
+        # 2026-10-24 초록의 결과 단락이 실측치로 채워져 [DATA PENDING] 마커가 사라졌다 — 마커 존재 대신 빈 문단이 없음을 확인한다.
+        self.assertTrue(all(t.strip() for t in out))
         self.assertTrue(out[-1].startswith("주제어"))
 
     # 이식: 스타일 재매핑·복제, itemCnt, 표 폭 재계산(병합 보존), CELL·linesegarray 제거

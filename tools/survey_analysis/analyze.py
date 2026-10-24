@@ -809,7 +809,7 @@ def main():
                            "; ".join(f"{cd.CAT_LABELS[key][c]} {int((a == c).sum())}({fpct(p1[i])})" for i, c in enumerate(codes)),
                            "; ".join(f"{cd.CAT_LABELS[key][c]} {int((b == c).sum())}({fpct(p0[i])})" for i, c in enumerate(codes)),
                            "; ".join(f"{cd.CAT_LABELS[key][c]} {100 * (p1[i] - p0[i]):+.1f}%p" for i, c in enumerate(codes)),
-                           f"{f2(yd)} (범주별 최대 |d| {f2(t54['panel_B'][var]['max_abs_cat_smd'])})",
+                           f"{f2(yd)} (범주별 최대 절대 d {f2(t54['panel_B'][var]['max_abs_cat_smd'])})",
                            ("빈 칸: " + ", ".join(empty) + "; " if empty else "") + ("n<5: " + ", ".join(sparse) if sparse else "희소범주 없음")])
         md.append("### 패널 B — 범주형 통제요인의 분포\n")
         md.append(md_table(["사전 특성", "집계 단위", "도입 범주별 n(%)", "미도입 범주별 n(%)", "범주별 비율 차이", "표준화 차이", "공통 관측범위·희소범주"],
