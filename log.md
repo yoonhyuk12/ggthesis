@@ -1,3 +1,31 @@
+261024_153659 : 03.plan/261024_1519_사용자편집본_기준_조립_계획.md 수정, 03.plan/README.md 수정
+261024_153646 : CLAUDE.md 수정 — "MD 원고 전체를 hwpx로 다시 조립할 때만 쓴다. 문단 하나를 고치는 부분 수정은 이 파이프라인이 아니라…"
+261024_153635 : 00. hwpx/261024_1536_경기공학_건축안전_윤혁_논문_사용자편집기준본.hwpx 추가
+261024_153309 : tools/hwpx_transfer/tests/test_patch_from_fresh.py 수정
+261024_153254 : tools/hwpx_transfer/tests/test_patch_from_fresh.py 추가 — "# patch_from_fresh.py(사용자 편집 hwpx에 MD 조립본 변경분만 반입)의 표 병합 판정·…"
+261024_153126 : tools/hwpx_transfer/patch_from_fresh.py 수정 — ""header 추가 항목: %s" % json.dumps(self.importer.added, ensure_…"
+261024_153119 : tools/hwpx_transfer/patch_from_fresh.py 수정
+261024_153114 : tools/hwpx_transfer/patch_from_fresh.py 수정
+261024_153037 : tools/hwpx_transfer/patch_from_fresh.py 수정 — "self.stats = {"equal": 0, "insert": 0, "replace_fresh": 0, "…"
+261024_153009 : tools/hwpx_transfer/patch_from_fresh.py 수정 — "if protected and is_tbl: key = "TBL:" + caption elif is_tbl:…"
+261024_153000 : tools/hwpx_transfer/patch_from_fresh.py 수정 — "import sys import zipfile import xml.etree.ElementTree as ET"
+261024_152959 : tools/hwpx_transfer/patch_from_fresh.py 수정 — "return nows("".join(_t_text(t) for t in root.iter(HP + "t") …"
+261024_152957 : tools/hwpx_transfer/patch_from_fresh.py 수정 — "def _t_text(t): """hp:t 글자 — 탭·줄바꿈 같은 자식 태그 뒤 글자(tail)까지 문서 …"
+261024_152948 : tools/hwpx_transfer/patch_from_fresh.py 수정 — "FIG_CAPTION_RE = re.compile(r"^<(그림|표)\s*\d+\s*-\s*\d+>") HP…"
+261024_152558 : 03.plan/261024_1535_patch_from_fresh_보강_워커브리프.md 추가 — "# 워커 브리프 — patch_from_fresh.py 보강·검증 (계획: 261024_1519_사용자편집본…"
+261024_152526 : 03.plan/261024_1519_사용자편집본_기준_조립_계획.md 수정
+261024_152445 : 01.docs/00_목차.md 수정 — "경보 피로도"
+261024_151950 : 03.plan/README.md 수정 — "| [261024_1519_사용자편집본_기준_조립_계획.md](261024_1519_사용자편집본_기준_조립_…"
+261024_151947 : 03.plan/261024_1519_사용자편집본_기준_조립_계획.md 추가 — "# 사용자 편집본(261024_1443)을 조립 기준으로 삼는 계획 - 작성: 2026-10-24 15:19…"
+261024_150359 : .claude/settings.json 수정, .gitignore 수정, .mcp.json 수정
+261024_150337 : .claude/kordoc/ 수정
+261024_150255 : .claude/kordoc/ 추가, 00. hwpx/261024_1443_경기공학_건축안전_윤혁_논문_분량감축_11월반영본.hwpx 수정
+261024_144430 : 03.plan/README.md 수정
+261024_144422 : 03.plan/261024_1314_원고_분량감축_계획.md 수정 — "- 더 줄이려면: 절 새 쪽 규칙 해제(약 10쪽, 양식 이탈이라 사용자 결정), 5장 표 패널 통합, '애…"
+261024_144400 : 00. hwpx/261024_1443_경기공학_건축안전_윤혁_논문_분량감축_11월반영본.hwpx 추가, tools/hwpx_transfer/staging/migrate_kjn/transplant.json 수정
+261024_144304 : tools/hwpx_transfer/kjn_profile.py 수정 — "# 연월은 COVER_TEXT["date"](MD 표지 골격과 동일)로 확정 — 2026-10-24까지는 "…"
+261024_144300 : tools/hwpx_transfer/kjn_profile.py 수정 — ""author": "윤 혁", # 2026-10-08 사용자 확정("연구자 이름은 윤 혁"), 00_목차.m…"
+261024_144155 : 00. hwpx/261024_1431_경기공학_건축안전_윤혁_논문_분량감축반영본.hwpx 수정
 261024_143426 : MEMORY.md 수정
 261024_143351 : 03.plan/README.md 수정
 261024_143342 : 03.plan/261024_1314_원고_분량감축_계획.md 수정 — "- **2026-10-24 14:0x∼14:31 hwpx 전체 재조립(사용자 지시 "커밋하고 hwpx 조립 …"

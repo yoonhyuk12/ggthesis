@@ -139,7 +139,12 @@
       "mcp__rhwp__hwp_doc_replace_text",
       "mcp__rhwp__hwp_doc_set_cell",
       "mcp__rhwp__hwp_doc_fill_fields",
-      "mcp__rhwp__hwp_doc_save"
+      "mcp__rhwp__hwp_doc_save",
+      "mcp__kordoc__fill_form",
+      "mcp__kordoc__place_seal",
+      "mcp__kordoc__patch_document",
+      "mcp__kordoc__redact_document",
+      "mcp__kordoc__generate_document"
     ]
   }
 }

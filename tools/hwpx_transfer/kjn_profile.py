@@ -530,6 +530,7 @@ COVER_TEXT = {
     "graduate_school": "경기대학교 공학대학원",
     "major": "건축·안전공학전공",
     "author": "윤  혁",  # 2026-10-08 사용자 확정("연구자 이름은 윤  혁"), 00_목차.md 표지 골격과 동일
+    "date": "2026년 11월",  # 제출·인준 연월. 00_목차.md 표지 골격(2026년 11월, 2026-10-09 인준서 기입)·2026-10-24 사용자 재지시 "일자는 11월"
 }
 COVER_ROLE_ALIASES = {
     "title": "title", "thesis_title": "title", "main_title": "title", "제목": "title",
@@ -1439,9 +1440,11 @@ def _cover_new_text(role, current):
     if canon == "date":
         if re.fullmatch(r"\s*\d{4}\s*", current):
             return None  # "2026학년도"의 연도 조각 — 학년도는 확정값이므로 유지
+        # 연월은 COVER_TEXT["date"](MD 표지 골격과 동일)로 확정 — 2026-10-24까지는 "[확정 필요: 월]" 자리표였다.
+        month = re.search(r"(\d+\s*월)", COVER_TEXT["date"]).group(1)
         if re.search(r"\d+\s*월", current):
-            return re.sub(r"\d+\s*월", "[확정 필요: 월]", current, count=1)
-        return "2026년 [확정 필요: 월]"
+            return re.sub(r"\d+\s*월", month, current, count=1)  # 양식의 "  일" 등 뒤 꼬리는 유지
+        return COVER_TEXT["date"]
     if canon == "author" and "인준" in current:
         canon = "approval"
     if canon == "approval":

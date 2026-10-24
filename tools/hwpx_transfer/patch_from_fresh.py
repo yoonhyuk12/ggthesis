@@ -30,6 +30,7 @@ import os
 import re
 import sys
 import zipfile
+import xml.etree.ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kjn_profile  # noqa: E402
@@ -41,12 +42,114 @@ CAPTION_RE = re.compile(r"^<표\s*\d+\s*-\s*\d+>")
 ID_RE = re.compile(r'<hp:(p|tbl|pic|container|rect|line|ellipse|arc|polygon|curve|connectLine|ole|equation) id="(\d+)"')
 
 
+FIG_CAPTION_RE = re.compile(r"^<(그림|표)\s*\d+\s*-\s*\d+>")
+HP_NS = kjn_profile.NS["hp"]
+HP = "{%s}" % HP_NS
+
+
 def norm(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+def nows(text):
+    """공백을 모두 지운 비교용 텍스트('합계'와 '합  계'를 같게 본다)."""
+    return re.sub(r"\s+", "", text)
+
+
 def esc(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+# ── 표 내용 비교(셀 병합 표 자동 판정) ──
+def _wrap(xml_text):
+    """조각 XML을 ElementTree로 읽게 hp 등 이름공간을 선언한 루트로 감싼다."""
+    decl = " ".join('xmlns:%s="%s"' % (k, v) for k, v in kjn_profile.NS.items())
+    return ET.fromstring("<wrap %s>%s</wrap>" % (decl, xml_text))
+
+
+def _t_text(t):
+    """hp:t 글자 — 탭·줄바꿈 같은 자식 태그 뒤 글자(tail)까지 문서 순서대로 잇는다."""
+    return (t.text or "") + "".join(c.tail or "" for c in t)
+
+
+def _cell_text(tc):
+    # 셀 안 중첩 표가 있어도 셀 전체 글자를 모은다(중첩 표 구조 자체는 바깥 셀 단위로만 비교)
+    return "".join(_t_text(t) for t in tc.iter(HP + "t"))
+
+
+def table_grid(tbl):
+    """최상위 셀만 {(row, col): (rowSpan, colSpan, 공백 제거 텍스트)}로 돌려준다."""
+    cells = {}
+    for tc in tbl.findall(HP + "tr/" + HP + "tc"):
+        a, s = tc.find(HP + "cellAddr"), tc.find(HP + "cellSpan")
+        rs = int(s.get("rowSpan", "1")) if s is not None else 1
+        cs = int(s.get("colSpan", "1")) if s is not None else 1
+        cells[(int(a.get("rowAddr")), int(a.get("colAddr")))] = (rs, cs, nows(_cell_text(tc)))
+    return cells
+
+
+def _outside_text(root):
+    """표 바깥(문단 자체 run)의 텍스트 — 표 문단에 글이 함께 있으면 그것도 비교한다."""
+    inner = set()
+    for tbl in root.iter(HP + "tbl"):
+        for t in tbl.iter(HP + "t"):
+            inner.add(id(t))
+    return nows("".join(_t_text(t) for t in root.iter(HP + "t") if id(t) not in inner))
+
+
+def _top_tables(root):
+    """중첩 표를 뺀 최상위 표 목록."""
+    nested = set()
+    for tbl in root.iter(HP + "tbl"):
+        for sub in tbl.iter(HP + "tbl"):
+            if sub is not tbl:
+                nested.add(id(sub))
+    return [t for t in root.iter(HP + "tbl") if id(t) not in nested]
+
+
+def compare_tables(base_xml, fresh_xml):
+    """표 문단 두 개를 셀 단위로 비교한다.
+
+    돌려주는 값: (same, merge_diff, detail)
+      same       — base 각 셀 텍스트(공백 무시)가 fresh의 같은 (rowAddr, colAddr) 셀과 같고, base에서 병합으로 덮인
+                   fresh 셀이 빈칸이거나 덮은 셀과 같은 텍스트이면 True(내용 동일 → base XML 유지).
+      merge_diff — base와 fresh의 병합 구조(셀 시작 위치·rowSpan·colSpan)가 다르면 True(사용자 병합 표).
+      detail     — 처음 발견한 차이 설명(보고서용).
+    """
+    rb, rf = _wrap(base_xml), _wrap(fresh_xml)
+    tb, tf = _top_tables(rb), _top_tables(rf)
+    if len(tb) != len(tf):
+        return False, True, "표 개수 %d≠%d" % (len(tb), len(tf))
+    same, merge_diff, detail = True, False, ""
+    if _outside_text(rb) != _outside_text(rf):
+        same, detail = False, "표 바깥 문단 텍스트가 다름"
+    for k, (b, f) in enumerate(zip(tb, tf)):
+        gb, gf = table_grid(b), table_grid(f)
+        if {p: v[:2] for p, v in gb.items()} != {p: v[:2] for p, v in gf.items()}:
+            merge_diff = True
+        cover = {}  # base 병합 셀이 덮는 칸 → 덮는 셀 위치
+        for (r, c), (rs, cs, _) in gb.items():
+            for dr in range(rs):
+                for dc in range(cs):
+                    cover[(r + dr, c + dc)] = (r, c)
+        for pos, (_, _, btxt) in gb.items():
+            if pos not in gf or gf[pos][2] != btxt:
+                if same:
+                    detail = "표%d 셀%s base '%s' ≠ fresh '%s'" % (k, pos, btxt[:20], gf[pos][2][:20] if pos in gf else None)
+                same = False
+        for pos, (_, _, ftxt) in gf.items():
+            if pos in gb:
+                continue
+            owner = cover.get(pos)
+            if owner is None:
+                if same:
+                    detail = "표%d fresh 셀%s가 base 격자 밖" % (k, pos)
+                same = False
+            elif ftxt and ftxt != gb[owner][2]:
+                if same:
+                    detail = "표%d base 병합 셀%s가 덮는 fresh 셀%s에 글 '%s'" % (k, owner, pos, ftxt[:20])
+                same = False
+    return same, merge_diff, detail
 
 
 class Units(object):
@@ -69,7 +172,14 @@ class Units(object):
                 protected = is_tbl and caption in protect
             if not is_tbl and any(text.startswith(k) for k in keep_prefix):
                 protected = True  # 사용자 직접 수정 문단: base 유지
-            key = ("TBL:" + caption) if (protected and is_tbl) else text
+            if protected and is_tbl:
+                key = "TBL:" + caption
+            elif is_tbl:
+                # 표는 공백을 지운 글자로 정렬한다. 사용자가 병합하며 지운 빈 셀·셀 안 문단 나눔·'합  계' 같은 공백 차이에
+                # 흔들리지 않게 하려는 것이다. 정렬 뒤 compare_tables로 셀 단위 동일성을 다시 확인한다.
+                key = "TBLTXT:" + nows(text)
+            else:
+                key = text
             self.items.append({"xml": p, "text": text, "key": key, "tbl": is_tbl, "cap": caption, "protected": protected})
         self.head = xml_text[: self.spans[0][0]] if self.spans else xml_text
         self.tail = xml_text[self.spans[-1][1]:] if self.spans else ""
@@ -97,7 +207,58 @@ class Patcher(object):
         fresh_s2 = self.fresh_raw["Contents/section2.xml"].decode("utf-8")
         self.next_id = max([int(i) for _, i in ID_RE.findall(self.s2 + self.s1 + fresh_s2)] + [2147483648]) + 1
         self.fresh_s2 = fresh_s2
-        self.stats = {"equal": 0, "insert": 0, "replace_fresh": 0, "replace_kept": 0, "delete_kept": 0, "manual": 0}
+        self.stats = {"equal": 0, "insert": 0, "replace_fresh": 0, "replace_kept": 0, "delete_kept": 0, "manual": 0,
+                      "table_same_kept": 0, "caption_split": 0}
+        self.manual = []  # '수동 재적용 필요' 목록(보고서 별도 절)
+
+    def _manual(self, what):
+        self.stats["manual"] += 1
+        self.manual.append(what)
+        self.log.append("MANUAL | " + what)
+
+    # ── 표 쌍 처리 ──
+    def _table_pair(self, bu, fu):
+        """짝지어진 표 문단 한 쌍 → 출력 XML. 내용이 같으면 base, 병합 표 내용이 다르면 base + 수동 목록, 그 밖은 fresh."""
+        if bu["protected"]:
+            self.stats["replace_kept"] += 1
+            self.log.append("KEEP(protected) | %s" % bu["cap"])
+            return bu["xml"]
+        same, merge_diff, detail = compare_tables(bu["xml"], fu["xml"])
+        if same:
+            self.stats["table_same_kept"] += 1
+            self.log.append("KEEP(table same content%s) | %s" % (", merged" if merge_diff else "", bu["cap"]))
+            return bu["xml"]
+        if merge_diff:
+            self.stats["replace_kept"] += 1
+            self._manual("%s 병합 표 내용 변경 — base 유지, MD 변경분 수동 재적용 필요 (%s)" % (bu["cap"], detail))
+            return bu["xml"]
+        self.stats["replace_fresh"] += 1
+        self.log.append("REPLACE(table) | %s (%s)" % (bu["cap"], detail))
+        return self.take_fresh(fu["xml"])
+
+    # ── 본문+캡션이 한 문단으로 합쳐진 경우(사용자가 문단 경계를 지움) ──
+    def _split_merged_caption(self, bblock, fblock):
+        """base 1문단 = fresh 본문 문단 + fresh 캡션 문단이면, base 문단에서 캡션 글자만 떼고 fresh 캡션 문단을 뒤에 둔다.
+        본문 문단은 base의 paraPr·charPr을 그대로 쓴다. 맞지 않으면 None."""
+        if len(bblock) != 1 or len(fblock) != 2 or bblock[0]["tbl"] or any(f["tbl"] for f in fblock):
+            return None
+        bu, f0, f1 = bblock[0], fblock[0], fblock[1]
+        if not FIG_CAPTION_RE.match(f1["text"]) or nows(bu["text"]) != nows(f0["text"]) + nows(f1["text"]):
+            return None
+        if "<hp:pic" in bu["xml"] or "<hp:tbl" in bu["xml"]:
+            return None
+        cap_plain = kjn_profile.plain_texts(f1["xml"])
+        cap_xml = esc(cap_plain)
+        pos = bu["xml"].rfind(cap_xml + "</hp:t>")
+        if pos < 0:
+            return None
+        body = bu["xml"][:pos] + bu["xml"][pos + len(cap_xml):]
+        if nows(kjn_profile.plain_texts(body)) != nows(f0["text"]):
+            return None
+        body = LINESEG_RE.sub("", body)
+        self.stats["caption_split"] += 1
+        self.log.append("SPLIT(merged caption) | base 본문 서식 유지 + fresh 캡션: %s" % f1["text"][:50])
+        return [body, self.take_fresh(f1["xml"])]
 
     # ── 공통 ──
     def renumber(self, xml_text):
@@ -112,6 +273,22 @@ class Patcher(object):
         return self.renumber(x)
 
     # ── 본문 정렬 패치 ──
+    def _equal_units(self, bunits, funits):
+        """키가 같은 구간. 표는 공백 무시 글자만 같을 수 있으므로 셀 단위로 한 번 더 확인한다."""
+        out = []
+        for bu, fu in zip(bunits, funits):
+            if bu["tbl"] and fu["tbl"] and not bu["protected"] and bu["xml"] != fu["xml"]:
+                same, merge_diff, detail = compare_tables(bu["xml"], fu["xml"])
+                if not same:
+                    out.append(self._table_pair(bu, fu))
+                    continue
+                if bu["text"] != fu["text"] or merge_diff:
+                    self.stats["table_same_kept"] += 1
+                    self.log.append("KEEP(table same content%s) | %s" % (", merged" if merge_diff else "", bu["cap"]))
+            out.append(bu["xml"])
+            self.stats["equal"] += 1
+        return out
+
     def patch_body(self):
         base = Units(self.s2, self.protect, self.allow_tables, self.keep_prefix)
         fresh = Units(self.fresh_s2, self.protect, self.allow_tables, self.keep_prefix)
@@ -122,8 +299,7 @@ class Patcher(object):
         sm = difflib.SequenceMatcher(None, bkeys, fkeys, autojunk=False)
         for tag, i1, i2, j1, j2 in sm.get_opcodes():
             if tag == "equal":
-                out.extend(u["xml"] for u in base.items[i1:i2])
-                self.stats["equal"] += i2 - i1
+                out.extend(self._equal_units(base.items[i1:i2], fresh.items[j1:j2]))
             elif tag == "insert":
                 for u in fresh.items[j1:j2]:
                     if not u["text"] and not u["tbl"]:
@@ -151,19 +327,25 @@ class Patcher(object):
             self.stats["replace_kept"] += len(bblock)
             self.log.append("KEEP(blank-only diff) | %s" % next((u["text"][:50] for u in bblock if u["text"]), ""))
             return out
-        if len(bblock) == len(fblock):
+        split = self._split_merged_caption(bblock, fblock)
+        if split is not None:
+            return split
+        if len(bblock) == len(fblock) and all(bu["tbl"] == fu["tbl"] for bu, fu in zip(bblock, fblock)):
             for bu, fu in zip(bblock, fblock):
-                if bu["protected"]:
+                if bu["tbl"]:
+                    out.append(self._table_pair(bu, fu))
+                elif bu["protected"]:
                     out.append(bu["xml"])
                     self.stats["replace_kept"] += 1
-                    self.log.append("KEEP(protected) | %s" % (bu["cap"] if bu["tbl"] else bu["text"][:50]))
+                    self.log.append("KEEP(protected) | %s" % bu["text"][:50])
                 else:
                     out.append(self.take_fresh(fu["xml"]))
                     self.stats["replace_fresh"] += 1
                     self.log.append("REPLACE | %s  ->  %s" % (bu["text"][:40], fu["text"][:40]))
             return out
-        if not any(u["protected"] for u in bblock) and depth == 0:
-            # 보호 표가 없으면 블록째 fresh로(문단 분리·합침·사이 삽입을 한 번에 처리)
+        if not any(u["protected"] or u["tbl"] for u in bblock) and depth == 0:
+            # base 쪽에 표·보호 문단이 없으면 블록째 fresh로(문단 분리·합침·사이 삽입을 한 번에 처리).
+            # base 표가 섞인 블록은 사용자 병합·열폭 편집을 잃지 않도록 아래 안쪽 정렬로 넘긴다.
             for bu in bblock:
                 self.log.append("DROP(base, replaced by block) | %s" % bu["text"][:60])
             for fu in fblock:
@@ -171,11 +353,11 @@ class Patcher(object):
                 self.stats["replace_fresh"] += 1
                 self.log.append("REPLACE(block) | %s" % fu["text"][:60])
             return out
-        # 보호 표가 섞인 블록: 안쪽에서 한 번 더 정렬(텍스트 기준), 그래도 못 짝지으면 base 유지 + fresh 삽입
+        # 표·보호 문단이 섞인 블록: 안쪽에서 한 번 더 정렬(키 기준), 그래도 못 짝지으면 base 유지 + 수동 목록
         sm = difflib.SequenceMatcher(None, [u["key"] for u in bblock], [u["key"] for u in fblock], autojunk=False)
         for tag, i1, i2, j1, j2 in sm.get_opcodes():
             if tag == "equal":
-                out.extend(u["xml"] for u in bblock[i1:i2])
+                out.extend(self._equal_units(bblock[i1:i2], fblock[j1:j2]))
             elif tag == "insert":
                 for fu in fblock[j1:j2]:
                     out.append(self.take_fresh(fu["xml"]))
@@ -185,13 +367,14 @@ class Patcher(object):
                 for bu in bblock[i1:i2]:
                     out.append(bu["xml"])
                     self.stats["delete_kept"] += 1
-            elif (i2 - i1) == (j2 - j1):
+                    self.log.append("KEEP(base only, inner) | %s" % bu["text"][:60])
+            elif depth == 0 and ((i2 - i1) == (j2 - j1) or not any(u["protected"] or u["tbl"] for u in bblock[i1:i2])):
                 out.extend(self._replace(bblock[i1:i2], fblock[j1:j2], depth + 1))
             else:
                 for bu in bblock[i1:i2]:
                     out.append(bu["xml"])
-                self.stats["manual"] += 1
-                self.log.append("MANUAL | base %d vs fresh %d units near %s" % (i2 - i1, j2 - j1, bblock[i1]["text"][:50]))
+                self._manual("base %d vs fresh %d 문단을 짝짓지 못해 base 유지: %s" % (
+                    i2 - i1, j2 - j1, next((u["text"][:50] for u in bblock[i1:i2] if u["text"]), "(빈 문단)")))
         return out
 
     # ── 텍스트 치환(section2) ──
@@ -304,7 +487,10 @@ class Patcher(object):
 
     def summary(self):
         lines = ["# patch_from_fresh 보고", "", "통계: %s" % json.dumps(self.stats, ensure_ascii=False),
-                 "header 추가 항목: %s" % json.dumps(self.importer.added, ensure_ascii=False), "", "## 로그"]
+                 "header 추가 항목: %s" % json.dumps(self.importer.added, ensure_ascii=False), "",
+                 "## 수동 재적용 필요"]
+        lines += ["- " + m for m in self.manual] or ["- 없음"]
+        lines += ["", "## 로그"]
         lines += ["- " + l for l in self.log]
         return "\n".join(lines)
 

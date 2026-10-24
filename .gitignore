@@ -20,5 +20,8 @@ log.md.tmp
 # rhwp v0.8.6 윈도우 바이너리(읽기 전용 MCP 서버) — 추적 대상이 아니다. 재설치: github.com/edwardkim/rhwp/releases
 .claude/rhwp/
 
+# kordoc MCP 서버 본체(외부 클론 + node_modules + dist) — 추적 대상이 아니다. 재설치: github.com/chrisryugj/kordoc → npm install && npm run build
+.claude/kordoc/
+
 # 성주의 박사 논문 검토 자료(외부 검토용) — 추적 대상이 아니다
 260930_성주의 박사 논문 검토/

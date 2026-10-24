@@ -21,6 +21,12 @@
       "args": [
         "mcp-serve"
       ]
+    },
+    "kordoc": {
+      "command": "node",
+      "args": [
+        ".claude/kordoc/dist/mcp.js"
+      ]
     }
   }
 }
