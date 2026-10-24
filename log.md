@@ -1,3 +1,168 @@
+261024_133012 : tools/manuscript_trim/verify_trim.py 추가 — "# -*- coding: utf-8 -*- """감축 전후 보존 항목 대조. 기준은 git HEAD 판본(감…"
+261024_132953 : tools/manuscript_trim/apply_trim.py 추가 — "# -*- coding: utf-8 -*- """분량 감축 1단계 감사 JSON(03.plan/261024_…"
+261024_131736 : 03.plan/README.md 수정
+261024_131623 : 03.plan/261024_1314_분량감축_감사/00.json 추가, 03.plan/261024_1314_분량감축_감사/00.md 추가, 03.plan/261024_1314_분량감축_감사/01.json 추가, 03.plan/261024_1314_분량감축_감사/01.md 추가, 03.plan/261024_1314_분량감축_감사/02.json 추가, 03.plan/261024_1314_분량감축_감사/02.md 추가 외 12건
+261024_131615 : 03.plan/261024_1314_원고_분량감축_계획.md 추가 — "# 원고 분량 감축 계획 (2026-10-24 13:14) ## 0. 배경과 목표 - 2026-10-10 1…"
+261024_124422 : 01.docs/06_결론.md 수정
+261024_124405 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정, 03.plan/README.md 수정
+261024_124331 : 01.docs/03_시스템개발.md 수정, 01.docs/05_실증분석결과.md 수정
+261024_124249 : 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정
+261024_124040 : 01.docs/01_서론.md 수정
+261024_123956 : tools/survey_analysis/check_manuscript.py 수정 — "("04장 실제 표본 32·39개소", f"도입 현장 {meta['n_include_adopt']}개소와 미…"
+261024_123953 : tools/survey_analysis/check_manuscript.py 수정 — "need("05", "W 평균", f"W 평균 {H2['W_mean']:.3f}") # ---- <표 5-8…"
+261024_123946 : tools/survey_analysis/check_manuscript.py 수정 — "# 2026-10-24 Task J: 범위 밖 파급 정리(01장 도구 표기, 03장 명부 기록 계획, 부록1…"
+261024_123943 : tools/survey_analysis/check_manuscript.py 수정 — "EXTRA = {"04": ROOT / "01.docs/04_연구설계.md", "부록1": ROOT / "0…"
+261024_123925 : 01.docs/04_연구설계.md 수정
+261024_123906 : 01.docs/07_참조번호목록.md 수정
+261024_123743 : 01.docs/부록1_설문지_양식.md 수정
+261024_123703 : 01.docs/01_서론.md 수정, 01.docs/03_시스템개발.md 수정
+261024_123645 : 01.docs/05_실증분석결과.md 수정
+261024_123559 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_123548 : tools/survey_analysis/analyze.py 수정 — "f"p={fp(v['p'])}(정규 근사 {fp(v['p_normal'])})" for t, v in hc[…"
+261024_123546 : tools/survey_analysis/analyze.py 수정 — "for t in ("D", "W_c", "D:W_c")}) h2["hc3"]["conditional_diff…"
+261024_123521 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_123505 : tools/survey_analysis/analyze.py 수정 — "2.80×{f2(h2['mde80']['se_base'])} = {f2(h2['mde80']['value']…"
+261024_123502 : tools/survey_analysis/analyze.py 수정 — "formula="MDE(80% 검정력, 양측 α=.05) = (1.96 + 0.84) × SE(D×W_c)"…"
+261024_123402 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_123235 : CLAUDE.md 수정
+261024_123034 : 01.docs/05_실증분석결과.md 수정
+261024_122957 : 01.docs/00_목차.md 수정
+261024_122941 : tools/survey_analysis/check_manuscript.py 수정
+261024_122908 : 01.docs/07_참조번호목록.md 수정
+261024_122858 : 01.docs/07_참조번호목록.md 수정
+261024_122841 : 01.docs/04_연구설계.md 수정
+261024_122734 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/06_결론.md 수정, 01.docs/부록1_설문지_양식.md 수정
+261024_122656 : 01.docs/05_실증분석결과.md 수정
+261024_121831 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_121213 : tools/survey_analysis/check_manuscript.py 수정
+261024_121157 : tools/survey_analysis/check_manuscript.py 수정
+261024_121108 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_121103 : 01.docs/00_목차.md 수정, 01.docs/05_실증분석결과.md 수정, 01.docs/06_결론.md 수정
+261024_114439 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_114432 : 01.docs/06_결론.md 수정
+261024_114351 : tools/survey_analysis/check_manuscript.py 수정 — "need("06", "결론 sys_path", f"응답자가 {T51['sys_path']['sys_path_…"
+261024_114320 : 01.docs/00_목차.md 수정, 01.docs/05_실증분석결과.md 수정, 01.docs/06_결론.md 수정
+261024_114245 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_114234 : tools/survey_analysis/analyze.py 수정 — "md.append(f"\n주: 검출 가능 최소 상호작용(80% 검정력, 양측 α=.05) = (1.96+0.…"
+261024_114224 : tools/survey_analysis/analyze.py 수정
+261024_114200 : tools/survey_analysis/analyze.py 수정
+261024_114123 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_113619 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_113610 : 01.docs/05_실증분석결과.md 수정
+261024_113448 : 01.docs/05_실증분석결과.md 수정, tools/survey_analysis/check_manuscript.py 수정
+261024_113421 : 01.docs/05_실증분석결과.md 수정
+261024_113320 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 5건
+261024_113258 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_113249 : tools/survey_analysis/analyze.py 수정 — ""A-7 ⑤(기타) 2건은 판정 기준 `[확정 필요]` 상태에서 미작동으로 제외됐다.\n") ps = s_[…"
+261024_113234 : tools/survey_analysis/analyze.py 수정
+261024_113215 : tools/survey_analysis/analyze.py 수정 — "def group_coef(m, d: pd.DataFrame, base_ids, test: str = "t"…"
+261024_113201 : 01.docs/설문결과/~$261024_0850_설문응답_정리본.xlsx 삭제, tools/survey_analysis/analyze.py 수정
+261024_113121 : 01.docs/설문결과/~$261024_0850_설문응답_정리본.xlsx 추가
+261024_113108 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_111900 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_111848 : 01.docs/05_실증분석결과.md 수정
+261024_104048 : 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정, 01.docs/06_결론.md 수정, 01.docs/부록1_설문지_양식.md 수정
+261024_104029 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_103450 : 01.docs/05_실증분석결과.md 수정, 01.docs/06_결론.md 수정
+261024_103415 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_093205 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정, 03.plan/README.md 수정
+261024_093126 : 01.docs/설문결과/analysis/261024_원고반영_보고.md 수정
+261024_093110 : tools/survey_analysis/check_manuscript.py 수정 — "need("05", f"5-8B 동일 가중 {lab}", f"{lab} {f2(c['adopt']['est'…"
+261024_093105 : 01.docs/05_실증분석결과.md 수정 — "도입·미도입 조정 평균은 만 나이·경력을 H2 완전사례 평균에, 범주형 통제요인을 관측 분포(비례 가중)에,…"
+261024_093104 : 01.docs/05_실증분석결과.md 수정 — "| 평균+1SD | W=4.51(W_c=+1.08), 공통범위 안 | 3.93 | 3.37 | 0.56 |"
+261024_093102 : 01.docs/05_실증분석결과.md 수정 — "| 평균 | W=3.42(W_c=+0.00), 공통범위 안 | 3.94 | 3.56 | 0.38 |"
+261024_093101 : 01.docs/05_실증분석결과.md 수정 — "| 평균−1SD | W=2.34(W_c=-1.08), 공통범위 안 | 3.95 | 3.75 | 0.20 |"
+261024_093053 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_093042 : tools/survey_analysis/analyze.py 수정 — ""조정 평균은 H1과 같은 공변량 기준값·범주형 동일 가중. 비례 가중(관측 분포) 조정 평균 도입/미도입:…"
+261024_093036 : tools/survey_analysis/analyze.py 수정 — "rec["check_diff_equals_bD_plus_bDW_w"] = abs(rec["diff"]["es…"
+261024_092929 : 01.docs/06_결론.md 수정
+261024_092918 : 01.docs/설문결과/analysis/261024_원고반영_보고.md 추가 — "# 설문 분석 결과 원고 반영 보고 (Task C) - 작성: 2026-10-24 (Asia/Seoul) -…"
+261024_092801 : tools/survey_analysis/check_manuscript.py 수정 — "cells = [c.strip() for c in r.strip("|").split("|")] if len(…"
+261024_092800 : tools/survey_analysis/check_manuscript.py 수정 — "for m in re.finditer(r"\[(DATA\s*PEND\w*|확정\s*필요|CITE[ _-]?T…"
+261024_092743 : tools/survey_analysis/check_manuscript.py 추가 — """"원고(05장·06장·00_목차)에 반영한 설문 분석 수치가 results.json과 일치하는지 점검한다…"
+261024_092618 : 01.docs/06_결론.md 수정 — "탈락 가정을 반영한 검정력 또는 검출가능 효과 산정 결과 미확보] 분석 결과에서 드러난 한계도 있다. 첫째,…"
+261024_092614 : 01.docs/06_결론.md 수정 — "표본에도 한계가 있다. 유효 응답 71명(도입 32명·미도입 39명)은 특정 기관·지역의 표본이므로 결과를 …"
+261024_092611 : 01.docs/06_결론.md 수정 — "같은 기관 산하 도입·미도입 현장 관리자를 공통 척도로 비교하고 사전에 지정한 응답자·현장 특성을 조정한 결…"
+261024_092608 : 01.docs/06_결론.md 수정 — "하위요인 가운데 차이가 확인된 영역은 시정·작업중지 등 통제 조치의 시행과 관련된 위험 통제력이므로, 도입 …"
+261024_092603 : 01.docs/06_결론.md 수정 — "도입 집단이 높게 나타난 방향은 스마트 건설기술 활용과 안전성과의 관련성을 보고한 황병복(2026), 적용 …"
+261024_092600 : 01.docs/06_결론.md 수정 — "분석 결과, 여섯 특성을 조정한 뒤 도입 집단의 안전관리 실효성은 미도입 집단보다 0.42점 높게 나타나 H…"
+261024_092555 : 01.docs/06_결론.md 수정 — "공분산분석과 상호작용 일반선형모형으로 비교하였다. 응답 73건 가운데 시험 응답 2건을 제외한 유효 71명(…"
+261024_092538 : 01.docs/00_목차.md 수정 — "**제5장** - 수록 그림 없음(결과는 <표 5-1>∼<표 5-9>로 보고)"
+261024_092537 : 01.docs/00_목차.md 수정 — "> 주: 표 번호는 보존하며 제목은 현행 본문의 분석·보고 범위에 맞춘다. 제5장 표 제목은 본문 <표 5-…"
+261024_092535 : 01.docs/00_목차.md 수정 — "**제5장** - <표 5-1>"
+261024_092534 : 01.docs/00_목차.md 수정 — "총 60명을 모집 목표로 설정(실제 유효 응답 71명, 검정력 충분성 미검증)"
+261024_092532 : 01.docs/00_목차.md 수정 — "- 저비용 YOLO-LLM 시스템 도입 현장의 관리자가 지각한 안전관리 실효성은 미도입 현장보다 조정 후에도…"
+261024_092529 : 01.docs/00_목차.md 수정 — "- 실증 결과: 응답 73건 중 시험 응답 2건을 제외한 유효 71명(도입 32·미도입 39, 집단은 조사 …"
+261024_092454 : 01.docs/05_실증분석결과.md 수정 — "|:---|:---:|:---:|---:|---:|---:|---:|---:|---:|"
+261024_092437 : 01.docs/05_실증분석결과.md 수정 — "차이가 가장 뚜렷한 위험 통제력은 황병복(2026)과 류정·박인선(2025)이 다룬 안전성과·재해율과 같은 …"
+261024_092435 : 01.docs/05_실증분석결과.md 수정 — "W는 두 집단 모두 넓은 범위(도입 1.50∼5.00, 미도입 1.00∼5.00)에 퍼져 분산이 부족하지 않…"
+261024_092426 : 01.docs/05_실증분석결과.md 수정 — "H2 결과의 의미는 현재 자료로는 저비용 구성이 예산 제약이 큰 현장에서 더 큰 차이와 관련된다는 적용 조건…"
+261024_092423 : 01.docs/05_실증분석결과.md 수정 — "추정 방향은 자원이 부족한 조건에서 저비용 구성의 상대적 이점이 클 수 있다는 이들 논의와 어긋나지 않지만,…"
+261024_092418 : 01.docs/05_실증분석결과.md 수정 — "H2의 상호작용은 B=0.16(95% CI [-0.26, 0.59])으로 예상과 같은 양(+)의 방향이었으나…"
+261024_092415 : 01.docs/05_실증분석결과.md 수정 — "원격 파악과 순찰부담 경감의 차이는 원격 모니터링이 관리자의 원격 위험 인지와 순찰 의존도 경감을 지원한다는…"
+261024_092410 : 01.docs/05_실증분석결과.md 수정 — "다섯 하위요인에서는 모두 도입 집단의 조정 평균이 높게 나타났으나, Holm 보정 후 유의한 영역은 위험 통…"
+261024_092407 : 01.docs/05_실증분석결과.md 수정 — "학술적으로는 같은 기관 산하 도입·미도입 현장 관리자를 공통 척도로 비교하여, 사전에 지정한 여섯 특성을 조…"
+261024_092401 : 01.docs/05_실증분석결과.md 수정 — "본 결과는 스마트 건설기술 활용과 안전성과의 관련성을 보고한 황병복(2026), 적용 현장의 사고예방 가능성…"
+261024_092353 : 01.docs/05_실증분석결과.md 수정 — "H1의 집단 간 조정 평균 차이는 도입 집단이 미도입 집단보다 0.42점 높은 것으로 나타나(95% CI […"
+261024_092351 : 01.docs/05_실증분석결과.md 수정 — "H1과 H2는 각각 결과 요약, 선행연구와의 비교, 차이가 나타난 이유, 결과의 의미, 대책·제언의 순서로 …"
+261024_092307 : 01.docs/05_실증분석결과.md 수정 — "제4장 제5절 제2항에 따라 미도입 현장의 대체 알림 수단과 측정 편향 가능성을 먼저 논의한다. 본 자료에서…"
+261024_092304 : 01.docs/05_실증분석결과.md 수정 — "A-9의 집단 차이는 ‘없음’이다. 두 집단의 보기별 분포가 비슷하고(Fisher 정확검정 p=.702), …"
+261024_092300 : 01.docs/05_실증분석결과.md 수정 — "연구 결과는 H1의 차이와 CI, 다섯 영역의 보정 결과, H2의 상호작용 방향과 불확실성 순으로 요약한다.…"
+261024_092252 : 01.docs/05_실증분석결과.md 수정 — "상호작용은 B=0.16, 95% CI=[-0.26, 0.59](F(1, 56)=0.61, p=.437)이며,…"
+261024_092248 : 01.docs/05_실증분석결과.md 수정 — "주: W의 집단별 범위는 도입 1.50∼5.00, 미도입 1.00∼5.00이고 공통 관측범위는 1.50∼5.…"
+261024_092245 : 01.docs/05_실증분석결과.md 수정 — "주: 절편과 더미 계수를 각각 별도 행으로 제시하였으며, 행 이름의 괄호 안이 기준범주이다. 집단 계수는 W…"
+261024_092243 : 01.docs/05_실증분석결과.md 수정 — "이 W를 H2 완전사례 전체(70명)의 W 평균 3.425로 평균중심화하였다."
+261024_092241 : 01.docs/05_실증분석결과.md 수정 — "순찰부담 경감(0.42점)은 신뢰구간 하한이 -0.04로 0을 근소하게 포함하였고,"
+261024_092237 : 01.docs/05_실증분석결과.md 수정 — "하위요인별로 보면, 위험 통제력에서 도입 집단이 미도입 집단보다 0.53점 높게 나타났고(95% CI [0.…"
+261024_092233 : 01.docs/05_실증분석결과.md 수정 — "분석 실패가 있으면 원인과 함께 해당 영역을 추론할 수 없음을 보고하며, 다섯 검정으로 이루어진 검정군을 임…"
+261024_092228 : 01.docs/05_실증분석결과.md 수정 — "원평균 차이(0.55점)보다 줄어든 것은 여섯 특성에서 두 집단의 구성 차이를 조정한 결과이며, 개별 통제변…"
+261024_092220 : 01.docs/05_실증분석결과.md 수정 — "도입−미도입 차이는 0.42점, SE=0.18, 95% CI=[0.06, 0.77], F=5.47, df=(…"
+261024_092211 : 01.docs/05_실증분석결과.md 수정 — "모집 목표만으로 계산한 예상 자유도를 관측 결과로 기입하지 않는다. 유효 71명 가운데 역할 결측 1명이 빠…"
+261024_092209 : 01.docs/05_실증분석결과.md 수정 — "| 도입−미도입 | 해당 없음 | 0.55 | 해당 없음 | 0.42 | 0.18 | [0.06, 0.77]…"
+261024_092156 : 01.docs/05_실증분석결과.md 수정 — "주: 각 더미를 별도 행으로 펼쳤으며, 행 이름의 괄호 안이 기준범주이다. 기준범주는 소속=시공사, 성별=남…"
+261024_092153 : 01.docs/05_실증분석결과.md 수정 — "H1 모형에서는 선형성, 회귀기울기 동질성, 잔차 정규성, 등분산성에서 뚜렷한 위반 신호가 나타나지 않았고,…"
+261024_092140 : 01.docs/05_실증분석결과.md 수정 — "집단 간 분포 차이가 큰 특성은 성별과 총공사비 구간이다. 성별의 표준화 차이는 0.60으로 가장 크며, 여…"
+261024_092133 : 01.docs/05_실증분석결과.md 수정 — "주: 변수별 분모와 결측 수를 함께 기록한다(역할만 미도입 38명, 결측 1). 현장당 1명이므로 개인 수와…"
+261024_092123 : 01.docs/05_실증분석결과.md 수정 — "도입 집단의 경보 피로도 완화 인식은 평균 3.63점, 표준편차 0.97, 왜도 -0.11, 첨도 -0.85…"
+261024_092121 : 01.docs/05_실증분석결과.md 수정 — "안전관리 실효성의 원평균은 도입 집단 4.02점, 미도입 집단 3.48점이었으며, 다섯 하위요인 가운데 집단…"
+261024_092116 : 01.docs/05_실증분석결과.md 수정 — "주: 각 행의 상태별 수 합계는 전용부 응답 대상 도입 개인 수 32명과 대조한다."
+261024_092114 : 01.docs/05_실증분석결과.md 수정 — "Y 8문항과 W 4문항은 전체와 두 집단 모두에서 높은 내적 일관성을 보였다. Y의 α는 전체 0.934, …"
+261024_092110 : 01.docs/05_실증분석결과.md 수정 — "안전관리 예산 제약성은 분석 척도로 검토하고, 경보 피로도 완화 인식은 기술통계만 보고하므로 요인분석 대상에…"
+261024_092106 : 01.docs/05_실증분석결과.md 수정 — "[확정 필요: 탐색적 요인분석을 포함할 경우 아래 패널 B를 유지하고, 포함하지 않을 경우 삭제한다]. 아래…"
+261024_092104 : 01.docs/05_실증분석결과.md 수정 — "도입 집단은 전원 남성이며, 발주청 소속 비율이 절반에 가깝고 총공사비 50억∼120억 원 구간이 가장 많다…"
+261024_092050 : 01.docs/05_실증분석결과.md 수정 — "Fisher 정확검정의 p는 참고값으로만 제시한다(A-7 p=.002, A-8 p=.016, A-9 p=.7…"
+261024_092046 : 01.docs/05_실증분석결과.md 수정 — "두 변수 모두 결측은 0건이다."
+261024_092045 : 01.docs/05_실증분석결과.md 수정 — "항목별 결측은 역할 1건(미도입)뿐이며, 분모는 역할만 미도입 38명·전체 70명이고 나머지 항목은 도입 3…"
+261024_092032 : 01.docs/05_실증분석결과.md 수정 — "결측은 거의 없다. 제외 2건은 모두 도입 분기의 시험 응답이고, 유효 표본의 문항 결측은 미도입 응답자 1…"
+261024_092028 : 01.docs/05_실증분석결과.md 수정 — "링크 안내 인원은 실험전 명이며, 제출 응답은 73건, 제외는 2건, 분석은 71건이다. 제외한 2건은 조사…"
+261024_092023 : 01.docs/05_실증분석결과.md 수정 — "탈락과 관심 효과크기를 반영한 검정력 또는 검출가능 효과 산정 결과 미확보] 실제 유효 표본은 71명으로 모…"
+261024_092021 : 01.docs/05_실증분석결과.md 수정 — "> **작성 상태:** 설문 응답 73건을 수집하여 시험 응답 2건을 제외한 유효 71명(도입 32명·미도입…"
+261024_091949 : 01.docs/05_실증분석결과.md 수정 — "| 관측의 독립성 | 현장당 1명 여부·현장 ID와 담당자 중복·현장 간 업무 공유 확인 | 현장 명부와 대…"
+261024_091846 : 01.docs/05_실증분석결과.md 수정
+261024_091520 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 수정
+261024_091339 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_091325 : tools/survey_analysis/analyze.py 수정
+261024_091324 : tools/survey_analysis/analyze.py 수정 — "|r|>3 {len(dg['rstud_flag'])}건{('(' + ', '.join(f'{i} {v:.2f…"
+261024_091322 : tools/survey_analysis/analyze.py 수정 — "order1 = ["Intercept", "D", "A3_age", "A4_exp"] coefs1 = sor…"
+261024_091319 : tools/survey_analysis/analyze.py 수정 — ""동일 가중은 표본에 없는 구성(성별 남·여 각 50%, 총공사비 4구간 각 25% 등)을 기준으로 삼기 때…"
+261024_091306 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_091247 : 01.docs/설문결과/analysis/261024_분석결과.md 수정, 01.docs/설문결과/analysis/analyze_log.txt 수정, 01.docs/설문결과/analysis/figs/qq_Y_total.png 수정, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 수정, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 수정, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 수정 외 4건
+261024_091213 : 01.docs/설문결과/analysis/261024_분석결과.md 추가, 01.docs/설문결과/analysis/analyze_log.txt 추가, 01.docs/설문결과/analysis/figs/qq_Y_total.png 추가, 01.docs/설문결과/analysis/figs/resid_fitted_Y_total.png 추가, 01.docs/설문결과/analysis/figs/scatter_W_Y_by_group.png 추가, 01.docs/설문결과/analysis/figs/scatter_age_Y_by_group.png 추가 외 4건
+261024_091158 : tools/survey_analysis/analyze.py 추가 — """"설문 자료 통계 분석 — 05장 <표 5-1>∼<표 5-9>에 1:1 대응하는 결과 산출. 분석 설계의…"
+261024_090351 : 01.docs/설문결과/261024_0850_설문응답_정리본.xlsx 수정, 01.docs/설문결과/analysis/coded_data.csv 수정, 01.docs/설문결과/analysis/workbook_verification.json 수정, tools/survey_analysis/build_workbook.py 수정
+261024_090326 : 01.docs/설문결과/261024_0850_설문응답_정리본.xlsx 수정, 01.docs/설문결과/analysis/coded_data.csv 수정, 01.docs/설문결과/analysis/workbook_verification.json 수정
+261024_090309 : 01.docs/설문결과/261024_0850_설문응답_정리본.xlsx 수정, 01.docs/설문결과/analysis/workbook_verification.json 추가
+261024_090306 : 01.docs/설문결과/261024_0850_설문응답_정리본.xlsx 수정, 01.docs/설문결과/analysis/coded_data.csv 수정
+261024_090258 : tools/survey_analysis/build_workbook.py 수정
+261024_090111 : 01.docs/설문결과/261024_0850_설문응답_정리본.xlsx 추가, 01.docs/설문결과/analysis/coded_data.csv 추가, tools/survey_analysis/build_workbook.py 수정
+261024_090024 : tools/survey_analysis/build_workbook.py 추가 — """"설문 응답 정리본 엑셀(01.docs/설문결과/261024_0850_설문응답_정리본.xlsx)과 cod…"
+261024_085725 : tools/survey_analysis/recalc_excel.ps1 추가 — "# Excel COM으로 통합문서의 모든 수식을 다시 계산(CalculateFullRebuild)한 뒤 같은…"
+261024_085530 : tools/survey_analysis/__init__.py 추가
+261024_085523 : tools/survey_analysis/coding.py 추가 — """"설문 응답 원본(Google Forms xlsx) → 통합 원자료·코딩 DataFrame. 원본은 읽기…"
+261024_085242 : 03.plan/README.md 수정
+261024_085206 : 03.plan/261024_0850_설문응답_정리_분석_원고반영_계획.md 추가 — "# 설문 응답 정리(엑셀) → 통계 분석 → 5장 원고 반영 — 계획 및 Worker 브리프 - 작성: 20…"
+261024_083944 : 01.docs/설문결과/중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 추가
+261015_065229 : 00. hwpx/설문지/261014_1010_설문지_CCTV_YOLO-LLM_도입현장용.hwpx 추가, 00. hwpx/설문지/261014_1010_설문지_CCTV_YOLO-LLM_미도입현장용.hwpx 추가, 01.docs/04_연구설계.md 수정, 01.docs/05_실증분석결과.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정 외 115건
 261010_103511 : 00. hwpx/261010_1025_경기공학_건축안전_윤혁.pdf 추가, 00. hwpx/261010_1025_경기공학_건축안전_윤혁_논문.hwpx 추가, 00. hwpx/261010_1025_경기공학_건축안전_윤혁_논문_A4경력_연단위_반영본.hwpx 삭제
 261010_102546 : 00. hwpx/261010_1004_경기공학_건축안전_윤혁_논문_전체감사반영본.hwpx 수정, 03.plan/261010_0935_감사후속_AB급_일괄수정_브리프.md 수정
 261010_102530 : 00. hwpx/261010_1025_경기공학_건축안전_윤혁_논문_A4경력_연단위_반영본.hwpx 추가

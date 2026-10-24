@@ -1,0 +1,104 @@
+{
+ "md_tables": 24,
+ "json_top_keys": [
+  "meta",
+  "table_5_1",
+  "table_5_2",
+  "table_5_3",
+  "table_5_4",
+  "table_5_6",
+  "table_5_7",
+  "table_5_8",
+  "a9_judgement",
+  "table_5_5",
+  "table_5_9",
+  "unfillable",
+  "checks",
+  "warnings"
+ ],
+ "json_leaf_values": 3570,
+ "figs": [
+  "qq_Y_total.png",
+  "resid_fitted_Y_total.png",
+  "scatter_W_Y_by_group.png",
+  "scatter_age_Y_by_group.png",
+  "scatter_exp_Y_by_group.png",
+  "scree_W_C1-C4.png",
+  "scree_Y_B1-B8.png"
+ ],
+ "warnings": 0,
+ "checks": {
+  "y_total_raw_mean_matches_excel": {
+   "excel": {
+    "도입": 4.01953125,
+    "미도입": 3.483974358974359
+   },
+   "python": {
+    "도입": 4.01953125,
+    "미도입": 3.483974358974359
+   },
+   "match": true
+  },
+  "emm_diff_equals_B": {
+   "H1": true,
+   "Y1": true,
+   "Y2": true,
+   "Y3": true,
+   "Y4": true,
+   "Y5": true,
+   "sensitivity": true
+  },
+  "F_equals_t2": {
+   "H1": true,
+   "Y1": true,
+   "Y2": true,
+   "Y3": true,
+   "Y4": true,
+   "Y5": true
+  },
+  "holm_ge_raw_all": true,
+  "partial_eta2_in_0_1": true,
+  "full_rank": {
+   "H1": true,
+   "H2": true,
+   "sensitivity": true,
+   "Y1": true,
+   "Y2": true,
+   "Y3": true,
+   "Y4": true,
+   "Y5": true
+  },
+  "conditional_diff_formula": true,
+  "fisher_2x2_crosscheck": {
+   "table": [
+    [
+     32,
+     0
+    ],
+    [
+     33,
+     6
+    ]
+   ],
+   "mine": 0.029107974703831887,
+   "scipy": 0.029107974703831023,
+   "match": true
+  }
+ },
+ "H1": {
+  "n": 70,
+  "B": 0.4150584908288903,
+  "p": 0.022836087350356027,
+  "eta2": 0.086154591026102,
+  "rank": 12,
+  "n_coef": 12
+ },
+ "H2": {
+  "n": 70,
+  "B": 0.16484393722170015,
+  "p": 0.43704094774914043,
+  "rank": 14,
+  "n_coef": 14
+ }
+}
+

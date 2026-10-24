@@ -1,0 +1,166 @@
+{
+  "generated": "2026-10-24 09:03 (Asia/Seoul)",
+  "sha256_before": "e81a9f6fb5e2557024bdade531bd467a6701944a6d458699334ce94d34f68027",
+  "sheets": {
+    "README": {
+      "max_row": 24,
+      "max_col": 2
+    },
+    "원자료_통합": {
+      "max_row": 74,
+      "max_col": 42
+    },
+    "코딩자료": {
+      "max_row": 74,
+      "max_col": 54
+    },
+    "분석자료": {
+      "max_row": 74,
+      "max_col": 53
+    },
+    "코드북": {
+      "max_row": 54,
+      "max_col": 8
+    },
+    "빈도_기술통계": {
+      "max_row": 147,
+      "max_col": 12
+    },
+    "검토메모": {
+      "max_row": 24,
+      "max_col": 7
+    }
+  },
+  "errors": [],
+  "forbidden": [],
+  "formula_cells": 1613,
+  "formula_cells_empty_result": 273,
+  "coded_derived_vs_python": {
+    "Y_total": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "Y1": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "Y2": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "Y3": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "Y4": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "Y5": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "W": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 73,
+      "nonempty_match_include1": 71,
+      "mismatch": []
+    },
+    "D_sub1": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    },
+    "D_sub2": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    },
+    "D_sub3": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    },
+    "D_sub4": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    },
+    "D_total": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    },
+    "E_total": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    },
+    "sys_path": {
+      "match": 73,
+      "of": 73,
+      "nonempty_match": 34,
+      "nonempty_match_include1": 32,
+      "mismatch": []
+    }
+  },
+  "stats_vs_python": {
+    "cells": 591,
+    "match": 591,
+    "mismatch": []
+  },
+  "analysis_sheet_csv_python": {
+    "cells": 3869,
+    "mismatch": 0,
+    "csv_shape": [
+      73,
+      53
+    ],
+    "csv_columns_equal": true
+  },
+  "sha256_after": "e81a9f6fb5e2557024bdade531bd467a6701944a6d458699334ce94d34f68027",
+  "sha256_unchanged": true,
+  "counts": {
+    "rows": 73,
+    "adopt": 34,
+    "nonadopt": 39,
+    "include1": 71,
+    "include1_adopt": 32,
+    "include1_nonadopt": 39
+  },
+  "cross_fill_violations": 0,
+  "likert_failures": [],
+  "category_failures": [],
+  "review_memo_items": 23
+}
