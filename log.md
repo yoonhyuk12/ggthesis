@@ -1,3 +1,9 @@
+261025_183016 : 01.docs/05_논의및결론.md 수정
+261025_183000 : 01.docs/05_논의및결론.md 수정
+261025_182857 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261025_182845 : 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/generate_research_figures.py 수정
+261025_182820 : 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/generate_research_figures.py 수정
+261025_181023 : 01.docs/05_실증분석결과.md 삭제, 01.docs/설문결과/~$중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 삭제
 261025_180954 : 03.plan/README.md 수정, 05. 교수님 지도/261024_1700 논문지도 핵심요약 및 수정과제.md 수정, MEMORY.md 수정
 261025_180846 : 01.docs/00_목차.md 수정, 01.docs/설문항목_작업이력.md 수정
 261025_180826 : 01.docs/07_참조번호목록.md 수정, 01.docs/부록1_설문지_양식.md 수정
