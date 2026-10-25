@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "changes": [
+    "GROUP.options",
+    "GROUP.go_to keys",
+    "source_sha256 (source label synchronization)"
+  ],
+  "choices": [
+    "CCTV YOLO-LLM 안전알림 도입 현장",
+    "CCTV YOLO-LLM 안전알림 미도입 현장"
+  ],
+  "routing": {
+    "CCTV YOLO-LLM 안전알림 도입 현장": "ADOPTED_A",
+    "CCTV YOLO-LLM 안전알림 미도입 현장": "NONADOPTED_A"
+  },
+  "route_destinations_unchanged": true,
+  "all_other_spec_fields_exact_equal": true,
+  "measurement_instances_unchanged": 54,
+  "measurement_unique_unchanged": 33,
+  "first_question_title_help_unchanged": true,
+  "name_help_still_empty": true,
+  "browser_status": "Main applies live option-label changes separately."
+}

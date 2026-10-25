@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "canonical_changes": [
+    "ADOPTED_E E-1 through E-4: sixth choice removed",
+    "ADOPTED_E description: two nonapplicable instruction sentences removed",
+    "analysis note: D/E five points only; nonadopted D/E structurally inapplicable",
+    "source_sha256"
+  ],
+  "all_other_canonical_fields_exact_equal": true,
+  "d_section_exact_equal": true,
+  "e_four_questions_preserved": true,
+  "e_required_unchanged": true,
+  "e_choices_each": 5,
+  "all_question_prompts_titles_and_first_five_choices_unchanged": true,
+  "routes_metadata_counts_unchanged": true,
+  "historical_evidence_and_original_script_preserved": true,
+  "browser_status": "Main updates and verifies live form separately."
+}

@@ -131,6 +131,7 @@
   "enabledMcpjsonServers": [
     "hwpx",
     "korean-law",
-    "rhwp"
+    "rhwp",
+    "kordoc"
   ]
 }

@@ -1,0 +1,42 @@
+[
+ {
+  "page": 4,
+  "footer": "- 4 -",
+  "footer_y": 672.0,
+  "table_top": 255.3,
+  "table_bottom": 504.8,
+  "body_bottom": 502.9,
+  "page_h": 725.0,
+  "overlap": false
+ },
+ {
+  "page": 5,
+  "footer": "- 5 -",
+  "footer_y": 672.6,
+  "table_top": 217.8,
+  "table_bottom": 393.0,
+  "body_bottom": 390.9,
+  "page_h": 725.0,
+  "overlap": false
+ },
+ {
+  "page": 6,
+  "footer": "- 6 -",
+  "footer_y": 672.6,
+  "table_top": 292.7,
+  "table_bottom": 557.0,
+  "body_bottom": 555.1,
+  "page_h": 725.0,
+  "overlap": false
+ },
+ {
+  "page": 7,
+  "footer": "- 7 -",
+  "footer_y": 672.6,
+  "table_top": 274.0,
+  "table_bottom": 413.2,
+  "body_bottom": 455.3,
+  "page_h": 725.0,
+  "overlap": false
+ }
+]

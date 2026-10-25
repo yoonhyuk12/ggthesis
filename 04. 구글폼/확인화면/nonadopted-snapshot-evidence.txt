@@ -1,0 +1,616 @@
+START s2
+- title: "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [url=https://docs.google.com/forms/d/1niBWDpkH31C7o9fWJf0uKhSTEXccIWtqmLfM6EsJ5Gw/preview]
+- button "미리보기 닫기 및 수정" [ref=e1]
+- heading "미리보기 모드" [level=1]
+- text: "게시됨"
+- button "응답자 링크 복사" [ref=e2]
+- button "설문지 수정" [ref=e3]
+- form:
+  - heading "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [level=1]
+  - text: "안녕하십니까?경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.본 설문은 건설현장의 안전관리 실태와 여건을 조사하여, AI 안전관제 시스템을 운용하는 현장과 운용하지 않는 현장의 안전관리 실효성 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다. 연구자는 비교 대상 시스템을 개발하였습니다. 안내받은 Google Forms 설문에서 직접 응답을 입력하거나 선택한 뒤 제출해 주십시오.응답에는 정답이 없으며, 귀하가 담당하시는 현장의 현재 안전관리 업무 수행 수준과 여건을 기준으로 느끼신 그대로 응답해 주시면 됩니다. 설문 참여는 자발적이며, 원하지 않으시면 참여하지 않으시거나 제출 전 언제든지 응답을 중단하실 수 있습니다. 현장 명부 연결과 중복 제출 확인을 위해 배포코드와 성명을 수집하며, Google 계정 로그인은 요구하지 않으며 응답자 이메일은 수집하지 않습니다. 이름이 포함된 원응답과 현장 명부는 연구자 본인만 열람합니다. 명부 대조 후 통계분석용 사본에서는 성명을 제거하고 코드로 관리하며, 코드·성명 대응표와 현장 명부는 이 사본과 분리하여 보관·관리합니다. 개별 응답은 소속 기관이나 현장 관계자에게 공개하지 않으며, 학술 연구를 위한 통계 분석에만 사용하고 결과는 전체를 집계한 형태로 보고합니다.다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다.2026년 10월 소     속 : 경기대학교 공학대학원 건축·안전공학전공 지도교수 : 박 종 용 연 구 자 : 윤    혁 이 메 일 :"
+  - link "yoonhyeok1@gmail.com" [ref=e4]
+  - list:
+    - listitem:
+      - heading "현장 구분 및 조사 안내" [level=2]
+      - text: "※ Part A는 각 문항에 적힌 기준시점과 기간에 따라 응답해 주십시오. Part B·C는 도입·미도입 두 집단 모두 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 안전관리 업무 수행 수준과 여건을 기준으로 응답해 주십시오.※ 본 설문조사는 2026년 10월에 실시할 계획입니다.배포코드와 성명은 현장 명부 연결과 중복 제출 확인에 사용하며, A∼E의 측정 문항 수(21문항 또는 33문항)에 포함하지 않습니다."
+    - listitem:
+      - heading "필수 질문" [level=3]: "귀하가 담당하시는 현장은 도입현장입니까, 미도입현장입니까? *"
+      - text: "연구자로부터 안내받은 현장 구분에 따라 선택해 주십시오. 도입현장은 본 시스템을 설치하여 응답일 현재 3개월 이상 정상 운용이 확인된 현장, 미도입현장은 본 시스템을 설치·운용하지 않는 현장입니다. 이 선택은 해당 설문 문항으로 이동하기 위한 것으로, 분석용 집단 구분은 연구자가 확인한 현장 명부를 기준으로 합니다."
+      - radiogroup "귀하가 담당하시는 현장은 도입현장입니까, 미도입현장입니까?필수 질문":
+        - label:
+          - radio "도입현장" [ref=e5]
+          - text: "도입현장"
+        - label:
+          - radio "미도입현장" [ref=e6]
+          - text: "미도입현장"
+    - listitem:
+      - heading "필수 질문" [level=3]: "배포코드 *"
+      - text: "배포코드와 성명은 현장 명부 연결과 중복 제출 확인에 사용하며, A∼E의 측정 문항 수(21문항 또는 33문항)에 포함하지 않습니다."
+      - textbox "배포코드필수 질문" [ref=e7]
+    - listitem:
+      - heading "필수 질문" [level=3]: "성명 *"
+      - text: "배포코드와 성명은 현장 명부 연결과 중복 제출 확인에 사용하며, A∼E의 측정 문항 수(21문항 또는 33문항)에 포함하지 않습니다."
+      - textbox "성명필수 질문" [ref=e8]
+  - button "다음" [ref=e9]
+  - progressbar "1/9페이지"
+  - button "양식 지우기" [ref=e10]
+  - text: "Google Forms를 통해 비밀번호를 제출하지 마세요."
+- text: "이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.  -"
+- button "양식 소유자에게 문의" [ref=e11]
+- text: "-"
+- link "서비스 약관" [ref=e12]
+- text: "-"
+- link "개인정보처리방침" [ref=e13]
+- paragraph:
+  - text: "양식이 의심스러운가요?"
+  - link "보고서" [ref=e14]
+- link "Google" [ref=e15]:
+  - image "Google"
+  - text: "설문지"
+- button "고객센터" [ref=e16]
+
+A s5
+- title: "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [url=https://docs.google.com/forms/d/1niBWDpkH31C7o9fWJf0uKhSTEXccIWtqmLfM6EsJ5Gw/previewResponse]
+- button "미리보기 닫기 및 수정" [ref=e1]
+- heading "미리보기 모드" [level=1]
+- text: "게시됨"
+- button "응답자 링크 복사" [ref=e2]
+- button "설문지 수정" [ref=e3]
+- form:
+  - heading "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [level=1]
+  - list:
+    - listitem:
+      - heading [level=2]: "미도입현장 · Part A. 인구통계학적 특성 및 현장 운영 특성"
+      - text: "※ 다음은 응답자의 일반적 사항과 현장 운영 특성에 관한 질문입니다. A-3·A-4는 숫자를 입력하고, 나머지 문항은 해당하는 보기를 선택해 주십시오."
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-1) 귀하의 소속 구분은? *"
+      - radiogroup "A-1) 귀하의 소속 구분은?필수 질문":
+        - label:
+          - radio "시공사" [ref=e4]
+          - text: "시공사"
+        - label:
+          - radio "발주청(공사감독·감리원 포함)" [ref=e5]
+          - text: "발주청(공사감독·감리원 포함)"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-2) 귀하의 성별은? *"
+      - radiogroup "A-2) 귀하의 성별은?필수 질문":
+        - label:
+          - radio "남성" [ref=e6]
+          - text: "남성"
+        - label:
+          - radio "여성" [ref=e7]
+          - text: "여성"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-3) 응답일 현재 귀하의 만 나이는? *"
+      - text: "만 나이(세)를 숫자로 입력해 주십시오."
+      - textbox "A-3) 응답일 현재 귀하의 만 나이는?필수 질문" [ref=e8]
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-4) 귀하의 건설현장 근무 경력은 약 몇 년입니까? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간) *"
+      - text: "경력(년)을 숫자로 입력해 주십시오.※ 1년 미만은 0으로, 6개월 이상은 1년으로 올려 적어 주십시오. 여러 현장이나 업무의 근무 기간이 겹치면 같은 기간을 중복하여 합산하지 마십시오."
+      - textbox "A-4) 귀하의 건설현장 근무 경력은 약 몇 년입니까? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간)필수 질문" [ref=e9]
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-5) 현장에서 귀하가 맡고 있는 역할은? *"
+      - radiogroup "A-5) 현장에서 귀하가 맡고 있는 역할은?필수 질문":
+        - label:
+          - radio "공사감독" [ref=e10]
+          - text: "공사감독"
+        - label:
+          - radio "안전관리자" [ref=e11]
+          - text: "안전관리자"
+        - label:
+          - radio "현장소장" [ref=e12]
+          - text: "현장소장"
+        - label:
+          - radio [ref=e13]
+          - text: "기타:"
+        - textbox "기타 응답" [ref=e14]
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-6) 현재 담당 현장의 총공사비 구간은? *"
+      - text: "※ 총공사비는 조사 대상으로 정한 현장 전체의 응답일 현재 최신 확정 금액(부가가치세와 관급자재비 포함)을 기준으로 응답해 주십시오. 확정된 변경 사항은 반영하고, 아직 확정되지 않은 추정액은 사용하지 마십시오."
+      - radiogroup "A-6) 현재 담당 현장의 총공사비 구간은?필수 질문":
+        - label:
+          - radio "20억 원 미만" [ref=e15]
+          - text: "20억 원 미만"
+        - label:
+          - radio "20억 원 이상∼50억 원 미만" [ref=e16]
+          - text: "20억 원 이상∼50억 원 미만"
+        - label:
+          - radio "50억 원 이상∼120억 원 미만" [ref=e17]
+          - text: "50억 원 이상∼120억 원 미만"
+        - label:
+          - radio "120억 원 이상" [ref=e18]
+          - text: "120억 원 이상"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-7) 안전관리 담당자가 현장에 없을 때(이동·사무실 업무·야간 등) 위험 상황을 알게 되는 주된 경로는 무엇입니까? *"
+      - text: "※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오.※ A-7의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다."
+      - radiogroup "A-7) 안전관리 담당자가 현장에 없을 때(이동·사무실 업무·야간 등) 위험 상황을 알게 되는 주된 경로는 무엇입니까?필수 질문":
+        - label:
+          - radio "알게 될 방법이 없다" [ref=e19]
+          - text: "알게 될 방법이 없다"
+        - label:
+          - radio "작업자나 반장의 전화·보고" [ref=e20]
+          - text: "작업자나 반장의 전화·보고"
+        - label:
+          - radio "사무실 등에서 CCTV 화면을 직접 본다" [ref=e21]
+          - text: "사무실 등에서 CCTV 화면을 직접 본다"
+        - label:
+          - radio "자동 알림(문자·메신저·앱)을 받는다" [ref=e22]
+          - text: "자동 알림(문자·메신저·앱)을 받는다"
+        - label:
+          - radio [ref=e23]
+          - text: "기타:"
+        - textbox "기타 응답" [ref=e24]
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-8) 순찰과 순찰 사이에 생긴 위험 상황은 보통 언제 알게 됩니까? *"
+      - text: "※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오."
+      - radiogroup "A-8) 순찰과 순찰 사이에 생긴 위험 상황은 보통 언제 알게 됩니까?필수 질문":
+        - label:
+          - radio "다음 순찰 때" [ref=e25]
+          - text: "다음 순찰 때"
+        - label:
+          - radio "누군가 알려줄 때" [ref=e26]
+          - text: "누군가 알려줄 때"
+        - label:
+          - radio "발생 직후 알림으로" [ref=e27]
+          - text: "발생 직후 알림으로"
+        - label:
+          - radio "모르고 지나가는 경우가 많다" [ref=e28]
+          - text: "모르고 지나가는 경우가 많다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-9) 위험 상황을 알고 난 뒤 현장에 조치 지시가 전달되기까지 보통 얼마나 걸립니까? *"
+      - text: "※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오."
+      - radiogroup "A-9) 위험 상황을 알고 난 뒤 현장에 조치 지시가 전달되기까지 보통 얼마나 걸립니까?필수 질문":
+        - label:
+          - radio "즉시∼5분" [ref=e29]
+          - text: "즉시∼5분"
+        - label:
+          - radio "5분 초과∼30분" [ref=e30]
+          - text: "5분 초과∼30분"
+        - label:
+          - radio "30분 초과∼1시간" [ref=e31]
+          - text: "30분 초과∼1시간"
+        - label:
+          - radio "1시간 초과 또는 다음 순찰 때" [ref=e32]
+          - text: "1시간 초과 또는 다음 순찰 때"
+  - button "뒤로" [ref=e33]
+  - button "다음" [ref=e34]
+  - progressbar "7/9페이지"
+  - button "양식 지우기" [ref=e35]
+  - text: "Google Forms를 통해 비밀번호를 제출하지 마세요."
+- text: "이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.  -"
+- button "양식 소유자에게 문의" [ref=e36]
+- text: "-"
+- link "서비스 약관" [ref=e37]
+- text: "-"
+- link "개인정보처리방침" [ref=e38]
+- paragraph:
+  - text: "양식이 의심스러운가요?"
+  - link "보고서" [ref=e39]
+- link "Google" [ref=e40]:
+  - image "Google"
+  - text: "설문지"
+- button "고객센터" [ref=e41]
+
+A invalid s11
+- title: "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [url=https://docs.google.com/forms/d/1niBWDpkH31C7o9fWJf0uKhSTEXccIWtqmLfM6EsJ5Gw/previewResponse]
+- button "미리보기 닫기 및 수정" [ref=e1]
+- heading "미리보기 모드" [level=1]
+- text: "게시됨"
+- button "응답자 링크 복사" [ref=e2]
+- button "설문지 수정" [ref=e3]
+- form:
+  - heading "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [level=1]
+  - list:
+    - listitem:
+      - heading [level=2]: "미도입현장 · Part A. 인구통계학적 특성 및 현장 운영 특성"
+      - text: "※ 다음은 응답자의 일반적 사항과 현장 운영 특성에 관한 질문입니다. A-3·A-4는 숫자를 입력하고, 나머지 문항은 해당하는 보기를 선택해 주십시오."
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-1) 귀하의 소속 구분은? *"
+      - radiogroup "A-1) 귀하의 소속 구분은?필수 질문":
+        - label:
+          - radio "시공사" [ref=e4] [checked]
+          - text: "시공사"
+        - label:
+          - radio "발주청(공사감독·감리원 포함)" [ref=e5]
+          - text: "발주청(공사감독·감리원 포함)"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-2) 귀하의 성별은? *"
+      - radiogroup "A-2) 귀하의 성별은?필수 질문":
+        - label:
+          - radio "남성" [ref=e6] [checked]
+          - text: "남성"
+        - label:
+          - radio "여성" [ref=e7]
+          - text: "여성"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-3) 응답일 현재 귀하의 만 나이는? *"
+      - text: "만 나이(세)를 숫자로 입력해 주십시오."
+      - textbox "A-3) 응답일 현재 귀하의 만 나이는?필수 질문" [ref=e8] [focused]: "invalid"
+      - alert: "0 이상의 정수를 입력해 주십시오."
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-4) 귀하의 건설현장 근무 경력은 약 몇 년입니까? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간) *"
+      - text: "경력(년)을 숫자로 입력해 주십시오.※ 1년 미만은 0으로, 6개월 이상은 1년으로 올려 적어 주십시오. 여러 현장이나 업무의 근무 기간이 겹치면 같은 기간을 중복하여 합산하지 마십시오."
+      - textbox "A-4) 귀하의 건설현장 근무 경력은 약 몇 년입니까? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간)필수 질문" [ref=e9]: "invalid"
+      - alert: "0 이상의 정수를 입력해 주십시오."
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-5) 현장에서 귀하가 맡고 있는 역할은? *"
+      - radiogroup "A-5) 현장에서 귀하가 맡고 있는 역할은?필수 질문":
+        - label:
+          - radio "공사감독" [ref=e10] [checked]
+          - text: "공사감독"
+        - label:
+          - radio "안전관리자" [ref=e11]
+          - text: "안전관리자"
+        - label:
+          - radio "현장소장" [ref=e12]
+          - text: "현장소장"
+        - label:
+          - radio [ref=e13]
+          - text: "기타:"
+        - textbox "기타 응답" [ref=e14]
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-6) 현재 담당 현장의 총공사비 구간은? *"
+      - text: "※ 총공사비는 조사 대상으로 정한 현장 전체의 응답일 현재 최신 확정 금액(부가가치세와 관급자재비 포함)을 기준으로 응답해 주십시오. 확정된 변경 사항은 반영하고, 아직 확정되지 않은 추정액은 사용하지 마십시오."
+      - radiogroup "A-6) 현재 담당 현장의 총공사비 구간은?필수 질문":
+        - label:
+          - radio "20억 원 미만" [ref=e15] [checked]
+          - text: "20억 원 미만"
+        - label:
+          - radio "20억 원 이상∼50억 원 미만" [ref=e16]
+          - text: "20억 원 이상∼50억 원 미만"
+        - label:
+          - radio "50억 원 이상∼120억 원 미만" [ref=e17]
+          - text: "50억 원 이상∼120억 원 미만"
+        - label:
+          - radio "120억 원 이상" [ref=e18]
+          - text: "120억 원 이상"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-7) 안전관리 담당자가 현장에 없을 때(이동·사무실 업무·야간 등) 위험 상황을 알게 되는 주된 경로는 무엇입니까? *"
+      - text: "※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오.※ A-7의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다."
+      - radiogroup "A-7) 안전관리 담당자가 현장에 없을 때(이동·사무실 업무·야간 등) 위험 상황을 알게 되는 주된 경로는 무엇입니까?필수 질문":
+        - label:
+          - radio "알게 될 방법이 없다" [ref=e19] [checked]
+          - text: "알게 될 방법이 없다"
+        - label:
+          - radio "작업자나 반장의 전화·보고" [ref=e20]
+          - text: "작업자나 반장의 전화·보고"
+        - label:
+          - radio "사무실 등에서 CCTV 화면을 직접 본다" [ref=e21]
+          - text: "사무실 등에서 CCTV 화면을 직접 본다"
+        - label:
+          - radio "자동 알림(문자·메신저·앱)을 받는다" [ref=e22]
+          - text: "자동 알림(문자·메신저·앱)을 받는다"
+        - label:
+          - radio [ref=e23]
+          - text: "기타:"
+        - textbox "기타 응답" [ref=e24]
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-8) 순찰과 순찰 사이에 생긴 위험 상황은 보통 언제 알게 됩니까? *"
+      - text: "※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오."
+      - radiogroup "A-8) 순찰과 순찰 사이에 생긴 위험 상황은 보통 언제 알게 됩니까?필수 질문":
+        - label:
+          - radio "다음 순찰 때" [ref=e25] [checked]
+          - text: "다음 순찰 때"
+        - label:
+          - radio "누군가 알려줄 때" [ref=e26]
+          - text: "누군가 알려줄 때"
+        - label:
+          - radio "발생 직후 알림으로" [ref=e27]
+          - text: "발생 직후 알림으로"
+        - label:
+          - radio "모르고 지나가는 경우가 많다" [ref=e28]
+          - text: "모르고 지나가는 경우가 많다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "A-9) 위험 상황을 알고 난 뒤 현장에 조치 지시가 전달되기까지 보통 얼마나 걸립니까? *"
+      - text: "※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오."
+      - radiogroup "A-9) 위험 상황을 알고 난 뒤 현장에 조치 지시가 전달되기까지 보통 얼마나 걸립니까?필수 질문":
+        - label:
+          - radio "즉시∼5분" [ref=e29] [checked]
+          - text: "즉시∼5분"
+        - label:
+          - radio "5분 초과∼30분" [ref=e30]
+          - text: "5분 초과∼30분"
+        - label:
+          - radio "30분 초과∼1시간" [ref=e31]
+          - text: "30분 초과∼1시간"
+        - label:
+          - radio "1시간 초과 또는 다음 순찰 때" [ref=e32]
+          - text: "1시간 초과 또는 다음 순찰 때"
+  - button "뒤로" [ref=e33]
+  - button "다음" [ref=e34]
+  - progressbar "7/9페이지"
+  - button "양식 지우기" [ref=e35]
+  - text: "Google Forms를 통해 비밀번호를 제출하지 마세요."
+- text: "이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.  -"
+- button "양식 소유자에게 문의" [ref=e36]
+- text: "-"
+- link "서비스 약관" [ref=e37]
+- text: "-"
+- link "개인정보처리방침" [ref=e38]
+- paragraph:
+  - text: "양식이 의심스러운가요?"
+  - link "보고서" [ref=e39]
+- link "Google" [ref=e40]:
+  - image "Google"
+  - text: "설문지"
+- button "고객센터" [ref=e41]
+
+B s13
+- title: "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [url=https://docs.google.com/forms/d/1niBWDpkH31C7o9fWJf0uKhSTEXccIWtqmLfM6EsJ5Gw/previewResponse]
+- button "미리보기 닫기 및 수정" [ref=e1]
+- heading "미리보기 모드" [level=1]
+- text: "게시됨"
+- button "응답자 링크 복사" [ref=e2]
+- button "설문지 수정" [ref=e3]
+- form:
+  - heading "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [level=1]
+  - list:
+    - listitem:
+      - heading [level=2]: "미도입현장 · Part B. 안전관리 실효성"
+      - text: "※ 다음 Part B의 모든 문항은 리커트 5점 척도입니다. 설문 응답일 직전 1개월을 기준으로, 순찰과 순찰 사이나 안전관리 담당자가 현장에 없는 시간대에 생긴 위험 상황까지 포함하여 각 문항을 읽고 귀하의 생각과 가장 가까운 보기를 선택해 주십시오. B-3의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다. (① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다)"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-1) 우리 현장에서는 위험 상황을 조기에 인지한다. *"
+      - radiogroup "B-1) 우리 현장에서는 위험 상황을 조기에 인지한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e4]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e5]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e6] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e7]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e8]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-2) 우리 현장에서는 위험 상황을 인지하면 초동 대응을 빠르게 지시한다. *"
+      - radiogroup "B-2) 우리 현장에서는 위험 상황을 인지하면 초동 대응을 빠르게 지시한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e9]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e10]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e11] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e12]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e13]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-3) 우리 현장에서는 안전관리 담당자가 현장 밖에서도 위험 상황을 신속하게 파악한다. *"
+      - radiogroup "B-3) 우리 현장에서는 안전관리 담당자가 현장 밖에서도 위험 상황을 신속하게 파악한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e14]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e15]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e16] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e17]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e18]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-4) 우리 현장에서는 멀리 떨어진 곳에서도 위험 정보와 조치 필요사항을 원활하게 공유한다. *"
+      - radiogroup "B-4) 우리 현장에서는 멀리 떨어진 곳에서도 위험 정보와 조치 필요사항을 원활하게 공유한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e19]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e20]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e21] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e22]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e23]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-5) 우리 현장에서는 제한된 인력으로도 현장 순찰과 위험 확인 업무를 효율적으로 수행한다. *"
+      - radiogroup "B-5) 우리 현장에서는 제한된 인력으로도 현장 순찰과 위험 확인 업무를 효율적으로 수행한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e24]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e25]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e26] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e27]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e28]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-6) 우리 현장에서는 불필요한 확인 업무에 쫓기지 않고 실제 위험 대응에 집중한다. *"
+      - radiogroup "B-6) 우리 현장에서는 불필요한 확인 업무에 쫓기지 않고 실제 위험 대응에 집중한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e29]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e30]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e31] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e32]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e33]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-7) 우리 현장에서는 필요한 경우 시정·작업중지 등 통제 조치를 신속하게 시행한다. *"
+      - radiogroup "B-7) 우리 현장에서는 필요한 경우 시정·작업중지 등 통제 조치를 신속하게 시행한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e34]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e35]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e36] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e37]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e38]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "B-8) 우리 현장에서는 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다. *"
+      - radiogroup "B-8) 우리 현장에서는 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e39]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e40]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e41] [checked] [focused]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e42]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e43]
+          - text: "⑤ 매우 그렇다"
+  - button "뒤로" [ref=e44]
+  - button "다음" [ref=e45]
+  - progressbar "8/9페이지"
+  - button "양식 지우기" [ref=e46]
+  - text: "Google Forms를 통해 비밀번호를 제출하지 마세요."
+- text: "이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.  -"
+- button "양식 소유자에게 문의" [ref=e47]
+- text: "-"
+- link "서비스 약관" [ref=e48]
+- text: "-"
+- link "개인정보처리방침" [ref=e49]
+- paragraph:
+  - text: "양식이 의심스러운가요?"
+  - link "보고서" [ref=e50]
+- link "Google" [ref=e51]:
+  - image "Google"
+  - text: "설문지"
+- button "고객센터" [ref=e52]
+
+C s16
+- title: "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [url=https://docs.google.com/forms/d/1niBWDpkH31C7o9fWJf0uKhSTEXccIWtqmLfM6EsJ5Gw/previewResponse]
+- button "미리보기 닫기 및 수정" [ref=e1]
+- heading "미리보기 모드" [level=1]
+- text: "게시됨"
+- button "응답자 링크 복사" [ref=e2]
+- button "설문지 수정" [ref=e3]
+- form:
+  - heading "중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로" [level=1]
+  - list:
+    - listitem:
+      - heading [level=2]: "미도입현장 · Part C. 안전관리 예산 제약성"
+      - text: "※ 다음 Part C의 모든 문항은 리커트 5점 척도입니다. 설문 응답일 직전 1개월을 기준으로 각 문항을 읽고 귀하의 생각과 가장 가까운 보기를 선택해 주십시오. (① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다)"
+    - listitem:
+      - heading "필수 질문" [level=3]: "C-1) 우리 현장은 고가의 스마트 안전장비를 도입하기에는 예산이 부족하다. *"
+      - radiogroup "C-1) 우리 현장은 고가의 스마트 안전장비를 도입하기에는 예산이 부족하다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e4]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e5]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e6] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e7]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e8]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "C-2) 우리 현장은 스마트 안전장비나 관제 시스템 도입에 쓸 안전관리 예산이 부족하게 편성되어 있다. *"
+      - radiogroup "C-2) 우리 현장은 스마트 안전장비나 관제 시스템 도입에 쓸 안전관리 예산이 부족하게 편성되어 있다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e9]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e10]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e11] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e12]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e13]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "C-3) 우리 현장은 산업안전보건관리비 계상 기준만으로는 스마트 안전장비나 관제 시스템을 도입하기 어렵다. *"
+      - radiogroup "C-3) 우리 현장은 산업안전보건관리비 계상 기준만으로는 스마트 안전장비나 관제 시스템을 도입하기 어렵다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e14]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e15]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e16] [checked]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e17]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e18]
+          - text: "⑤ 매우 그렇다"
+    - listitem:
+      - heading "필수 질문" [level=3]: "C-4) 우리 현장은 소속 기관인 본사나 발주청으로부터 스마트 안전장비나 관제 시스템 도입 예산을 별도로 지원받기 어렵다. *"
+      - radiogroup "C-4) 우리 현장은 소속 기관인 본사나 발주청으로부터 스마트 안전장비나 관제 시스템 도입 예산을 별도로 지원받기 어렵다.필수 질문":
+        - label:
+          - radio "① 전혀 그렇지 않다" [ref=e19]
+          - text: "① 전혀 그렇지 않다"
+        - label:
+          - radio "② 그렇지 않다" [ref=e20]
+          - text: "② 그렇지 않다"
+        - label:
+          - radio "③ 보통이다" [ref=e21] [checked] [focused]
+          - text: "③ 보통이다"
+        - label:
+          - radio "④ 그렇다" [ref=e22]
+          - text: "④ 그렇다"
+        - label:
+          - radio "⑤ 매우 그렇다" [ref=e23]
+          - text: "⑤ 매우 그렇다"
+  - button "뒤로" [ref=e24]
+  - button "미리보기 모드에서는 양식을 제출할 수 없습니다." [ref=e25] [disabled]: "제출"
+  - progressbar "9/9페이지"
+  - button "양식 지우기" [ref=e26]
+  - text: "Google Forms를 통해 비밀번호를 제출하지 마세요."
+- text: "이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.  -"
+- button "양식 소유자에게 문의" [ref=e27]
+- text: "-"
+- link "서비스 약관" [ref=e28]
+- text: "-"
+- link "개인정보처리방침" [ref=e29]
+- paragraph:
+  - text: "양식이 의심스러운가요?"
+  - link "보고서" [ref=e30]
+- link "Google" [ref=e31]:
+  - image "Google"
+  - text: "설문지"
+- button "고객센터" [ref=e32]

@@ -1,0 +1,193 @@
+{
+  "hwpx": "tools\\hwpx_transfer\\staging\\survey_standalone_261014\\adopted_saved_v3.hwpx",
+  "pdf": "tools\\hwpx_transfer\\staging\\survey_standalone_261014\\adopted_v3.pdf",
+  "measurement_count": 33,
+  "tables": [
+    {
+      "rows": 9,
+      "columns": 7,
+      "width_hu": 39684,
+      "column_widths_hu": {
+        "0": 3280,
+        "1": 24304,
+        "2": 2420,
+        "3": 2420,
+        "4": 2420,
+        "5": 2420,
+        "6": 2420
+      },
+      "break": "NONE"
+    },
+    {
+      "rows": 5,
+      "columns": 7,
+      "width_hu": 39684,
+      "column_widths_hu": {
+        "0": 3280,
+        "1": 24304,
+        "2": 2420,
+        "3": 2420,
+        "4": 2420,
+        "5": 2420,
+        "6": 2420
+      },
+      "break": "NONE"
+    },
+    {
+      "rows": 9,
+      "columns": 7,
+      "width_hu": 39684,
+      "column_widths_hu": {
+        "0": 3280,
+        "1": 24304,
+        "2": 2420,
+        "3": 2420,
+        "4": 2420,
+        "5": 2420,
+        "6": 2420
+      },
+      "break": "NONE"
+    },
+    {
+      "rows": 5,
+      "columns": 7,
+      "width_hu": 39684,
+      "column_widths_hu": {
+        "0": 3280,
+        "1": 24304,
+        "2": 2420,
+        "3": 2420,
+        "4": 2420,
+        "5": 2420,
+        "6": 2420
+      },
+      "break": "NONE"
+    }
+  ],
+  "hwpx_text_occurrences_checked": 57,
+  "pdf_question_pages": {
+    "B-1": [
+      4
+    ],
+    "B-2": [
+      4
+    ],
+    "B-3": [
+      4
+    ],
+    "B-4": [
+      4
+    ],
+    "B-5": [
+      4
+    ],
+    "B-6": [
+      4
+    ],
+    "B-7": [
+      4
+    ],
+    "B-8": [
+      4
+    ],
+    "C-1": [
+      5
+    ],
+    "C-2": [
+      5
+    ],
+    "C-3": [
+      5
+    ],
+    "C-4": [
+      5
+    ],
+    "D-1": [
+      6
+    ],
+    "D-2": [
+      6
+    ],
+    "D-3": [
+      6
+    ],
+    "D-4": [
+      6
+    ],
+    "D-5": [
+      6
+    ],
+    "D-6": [
+      6
+    ],
+    "D-7": [
+      6
+    ],
+    "D-8": [
+      6
+    ],
+    "E-1": [
+      7
+    ],
+    "E-2": [
+      7
+    ],
+    "E-3": [
+      7
+    ],
+    "E-4": [
+      7
+    ]
+  },
+  "pdf_pages": [
+    {
+      "page": 1,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    },
+    {
+      "page": 2,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    },
+    {
+      "page": 3,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    },
+    {
+      "page": 4,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    },
+    {
+      "page": 5,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    },
+    {
+      "page": 6,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    },
+    {
+      "page": 7,
+      "width_pt": 538.0,
+      "height_pt": 725.0,
+      "out_of_page": []
+    }
+  ],
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "Main must visually inspect every table page for row/cell clipping and footer overlap; geometry is not visual proof."
+  ],
+  "template_sha256_expected": "9bf1980a60d3a98328758e10a5b3e358dc5fbfd74e6006d3552f8424ba1dfff3",
+  "stage": "Read-only static/PDF checks; Hancom open/resave and visual proof are separate"
+}

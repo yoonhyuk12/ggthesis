@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "canonical_changes": [
+    "ADOPTED_D D-1 through D-8: sixth choice removed",
+    "ADOPTED_D description: nonapplicable instruction sentence removed",
+    "analysis note: nonapplicable scoring applies to E only",
+    "source_sha256"
+  ],
+  "all_other_canonical_fields_exact_equal": true,
+  "e_section_exact_equal": true,
+  "d_required_unchanged": true,
+  "d_choices_each": 5,
+  "e_choices_each": 6,
+  "all_prompt_title_and_first_five_choices_unchanged": true,
+  "routes_and_metadata_unchanged": true,
+  "original_script_and_historical_evidence_preserved": true,
+  "source_notes": [
+    "D table no nonapplicable column; E table unchanged",
+    "Current methodology distinguishes D 5-point-only and E nonapplicable",
+    "Results D experience-nonapplicable cells shown as dash, not collected zero"
+  ],
+  "browser_status": "Main updates and verifies live form separately."
+}

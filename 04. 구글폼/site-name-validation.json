@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "old_measurement_sha256": "515ed47c4f195bb24776d1a5e0958b0f02207775ff4ea69ddbc0e66e96d3e5e6",
+  "new_measurement_sha256": "515ed47c4f195bb24776d1a5e0958b0f02207775ff4ea69ddbc0e66e96d3e5e6",
+  "group_unchanged": true,
+  "metadata_ids": [
+    "GROUP",
+    "SITE_NAME",
+    "NAME"
+  ],
+  "metadata_count": 3,
+  "description_removes_both_identifiers": true
+}

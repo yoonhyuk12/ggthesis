@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-12T16:36:51.599798+09:00",
+  "result": "PASS",
+  "scope": "Local source and implementation specification only; no external Google Form creation or browser verification asserted.",
+  "source_sha256": "26e301a97adfe1beddcccfec657eaef625c02ac414142cd09cb8c60826b7db50",
+  "routes": {
+    "CCTV YOLO-LLM 안전알림 도입 현장": {
+      "sections": [
+        "ADOPTED_A",
+        "ADOPTED_B",
+        "ADOPTED_C",
+        "ADOPTED_D",
+        "ADOPTED_E"
+      ],
+      "measurement_questions": 33,
+      "total_with_management": 36,
+      "ends_at": "SUBMIT"
+    },
+    "CCTV YOLO-LLM 안전알림 미도입 현장": {
+      "sections": [
+        "NONADOPTED_A",
+        "NONADOPTED_B",
+        "NONADOPTED_C"
+      ],
+      "measurement_questions": 21,
+      "total_with_management": 24,
+      "ends_at": "SUBMIT"
+    }
+  },
+  "checks": [
+    "33 exact unique source prompts / 54 exact route-specific source prompts",
+    "A/B/C/D/E = 9/8/4/8/4",
+    "All 57 editor questions required; route totals 36/24 including management",
+    "A/B/C duplicated routes have identical question content and descriptions",
+    "A choices exact source substrings; native Other only A-5 and A-7",
+    "A-3/A-4 nonnegative integer validation accepts 0/1/35/100 and rejects negative/decimal/text/blank/unit text",
+    "B/C/D/E five choices; no nonapplicable response option",
+    "First question routes to intended path and both paths terminate at submit",
+    "Source hash current"
+  ]
+}

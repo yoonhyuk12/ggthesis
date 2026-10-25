@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "changes": [
+    "ADOPTED_A/A-8.title",
+    "ADOPTED_A/A-8.prompt",
+    "NONADOPTED_A/A-8.title",
+    "NONADOPTED_A/A-8.prompt",
+    "source_sha256"
+  ],
+  "old_title": "A-8) 순찰과 순찰 사이에 생긴 위험 상황은 보통 언제 알게 됩니까?",
+  "new_title": "A-8) 비점검 시간에 생긴 위험 상황은 보통 언제 알게 됩니까?",
+  "all_other_spec_fields_exact_equal": true,
+  "question_counts_unchanged": {
+    "unique_measurement_questions": 33,
+    "adopted_measurement_questions": 33,
+    "nonadopted_measurement_questions": 21,
+    "management_questions": 3,
+    "adopted_total_questions": 36,
+    "nonadopted_total_questions": 24,
+    "editor_total_questions": 57,
+    "sections": 9
+  },
+  "options_and_help_unchanged": true,
+  "part_b_guidance_unchanged": true,
+  "first_group_and_metadata_unchanged": true,
+  "active_gs_change": "Only the single shared A-8 question title literal changed; used by both paths.",
+  "source_changes": [
+    "부록1 A-8 prompt only",
+    "부록2 A-8 summary only",
+    "New dated work-history entry, existing records preserved"
+  ],
+  "browser_status": "Main applies and verifies live two-route change separately."
+}

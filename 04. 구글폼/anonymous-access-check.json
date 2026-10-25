@@ -1,0 +1,9 @@
+{
+  "url": "https://docs.google.com/forms/d/e/1FAIpQLSd7-QfFQaiD74If7-ypt-QQx871KcagRgzQg321rGqZY-MU2g/viewform",
+  "http_status": 200,
+  "request_auth": "none; urllib request without cookies or authorization",
+  "first_question_visible": true,
+  "adopted_choice_visible": true,
+  "nonadopted_choice_visible": true,
+  "distribution_code_visible": true
+}

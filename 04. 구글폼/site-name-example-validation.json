@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "source_first": true,
+  "changes": [
+    "SITE_NAME.help",
+    "source_sha256"
+  ],
+  "old_help": "현재 담당하시는 현장명을 적어 주십시오.",
+  "new_help": "현재 담당하시는 현장명을 적어 주십시오.\n예시 : 00지구 수리시설개보수사업",
+  "all_other_spec_fields_exact_equal": true,
+  "name_help_still_empty": true,
+  "group_options_and_routes_unchanged": true,
+  "measurement_sections_unchanged": true,
+  "browser_status": "Main updates existing live field separately."
+}

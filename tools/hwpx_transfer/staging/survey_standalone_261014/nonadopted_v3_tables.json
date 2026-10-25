@@ -1,0 +1,22 @@
+[
+ {
+  "page": 4,
+  "footer": "- 4 -",
+  "footer_y": 672.0,
+  "table_top": 255.3,
+  "table_bottom": 504.8,
+  "body_bottom": 502.9,
+  "page_h": 725.0,
+  "overlap": false
+ },
+ {
+  "page": 5,
+  "footer": "- 5 -",
+  "footer_y": 672.6,
+  "table_top": 217.8,
+  "table_bottom": 393.0,
+  "body_bottom": 435.2,
+  "page_h": 725.0,
+  "overlap": false
+ }
+]

@@ -1,0 +1,29 @@
+{
+  "template_unchanged": true,
+  "visual_review": "All pages in both PDFs reviewed; every table and last row visible; no footer overlap; cover contact block and A6 guidance kept on page.",
+  "format_note": "Original 190x256mm page and font sizes retained; A response paragraphs and cover contact lines 130% spacing.",
+  "documents": [
+    {
+      "file": "00. hwpx\\설문지\\261014_1010_설문지_CCTV_YOLO-LLM_도입현장용.hwpx",
+      "pages": 7,
+      "measurement_questions": 33,
+      "sha256": "84627e946604eb089536ed0c07fa5f09f8323ce2b00e219dd09f8d66b57b50dd",
+      "hancom_open": true,
+      "hancom_saveas": true,
+      "hancom_reopen_saved": true,
+      "pdf_export": true,
+      "content_and_grid_qa": true
+    },
+    {
+      "file": "00. hwpx\\설문지\\261014_1010_설문지_CCTV_YOLO-LLM_미도입현장용.hwpx",
+      "pages": 5,
+      "measurement_questions": 21,
+      "sha256": "98c31c3a596830478a7dbd5ff0bb8d14fdda887192d7128cea578033a166dc3f",
+      "hancom_open": true,
+      "hancom_saveas": true,
+      "hancom_reopen_saved": true,
+      "pdf_export": true,
+      "content_and_grid_qa": true
+    }
+  ]
+}

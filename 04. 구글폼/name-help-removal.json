@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "scope": "Only NAME help changed to empty; all other canonical fields exact equal.",
+  "name_title": "성명",
+  "name_required": true,
+  "old_help": "현장명과 성명은 현장 명부 연결과 중복 제출 확인에 사용하며, A∼E의 측정 문항 수(21문항 또는 33문항)에 포함하지 않습니다.",
+  "new_help": "",
+  "all_other_spec_fields_unchanged": true,
+  "intro_and_start_description_unchanged": true,
+  "measurement_sections_unchanged": true,
+  "browser_status": "Main agent applies and verifies live form separately."
+}
