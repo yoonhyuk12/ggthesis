@@ -13,9 +13,8 @@ FILES = [
     ("01_서론.md", "ch01.blocks.json"),
     ("02_이론적배경.md", "ch02.blocks.json"),
     ("03_시스템개발.md", "ch03.blocks.json"),
-    ("04_연구설계.md", "ch04.blocks.json"),
-    ("05_실증분석결과.md", "ch05.blocks.json"),
-    ("06_결론.md", "ch06.blocks.json"),
+    ("04_연구설계및실증분석.md", "ch04.blocks.json"),
+    ("05_논의및결론.md", "ch05.blocks.json"),
     ("부록1_설문지_양식.md", "apx1.blocks.json"),
     ("부록2_설문항목_근거매핑.md", "apx2.blocks.json"),
 ]

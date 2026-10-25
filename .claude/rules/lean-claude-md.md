@@ -30,7 +30,7 @@ paths:
 
 ## What Does NOT Belong in CLAUDE.md
 
-- 연구모형·가설·측정도구 상세 → `01.docs/04_연구설계.md`
+- 연구모형·가설·측정도구 상세 → `01.docs/04_연구설계및실증분석.md`
 - 장·절 구성표 → `01.docs/00_목차.md`
 - 시스템 기술 명세 → `01.docs/03_시스템개발.md`, `프로그램 기술분석서.md`
 - 문헌 노트·참조자료 상세 → `.claude/reference/05-참조자료.md`
@@ -44,7 +44,7 @@ When the material exists elsewhere, use a one-line summary + link — 내용을 
 ```markdown
 ## 분석 설계
 
-도입/미도입 두 집단 ANCOVA. 단일 원본은 [`01.docs/04_연구설계.md`](01.docs/04_연구설계.md) 제5절.
+도입/미도입 두 집단 ANCOVA. 단일 원본은 [`01.docs/04_연구설계및실증분석.md`](01.docs/04_연구설계및실증분석.md) 제5절.
 ```
 
 ## Thresholds
