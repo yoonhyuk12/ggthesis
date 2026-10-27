@@ -8,7 +8,7 @@
 """
 import sys, re, json, zipfile
 sys.stdout.reconfigure(encoding="utf-8")
-from pypdf import PdfReader
+import pymupdf  # 2026-10-26: pypdf 6.x가 쪽 텍스트를 한 줄로 뭉쳐 제목 줄 매칭이 깨져 PyMuPDF 줄 추출로 교체
 hwpx, pdf, out = sys.argv[1:4]
 s1 = zipfile.ZipFile(hwpx).read("Contents/section1.xml").decode("utf-8")
 entries = []  # (kind, title)
@@ -22,11 +22,11 @@ for p in re.findall(r"<hp:p\b.*?</hp:p>", s1, flags=re.S):
     kind = "lot" if title.startswith("<표") else "lof" if title.startswith("<그림") else "toc"
     entries.append((kind, title))
 norm = lambda t: re.sub(r"\s+", "", t)
-r = PdfReader(pdf)
+r = pymupdf.open(pdf)
 pn_re = re.compile(r"^-\s*([0-9]+|[ivxlcdm]+)\s*-$")
 pages = []
-for i, pg in enumerate(r.pages):
-    lines = [l.strip() for l in (pg.extract_text() or "").splitlines() if l.strip()]
+for i, pg in enumerate(r):
+    lines = [l.strip() for l in (pg.get_text() or "").splitlines() if l.strip()]
     pns = [pn_re.match(l).group(1) for l in lines if pn_re.match(l)]
     pages.append({"pdf": i + 1, "printed": pns[0] if pns else None, "lines": [norm(l) for l in lines]})
 # 본문 쪽(숫자 쪽번호)만 — 인쇄 쪽수는 pdf 인덱스 - 고정 오프셋이 아니라 쪽마다 추출한 값을 쓴다

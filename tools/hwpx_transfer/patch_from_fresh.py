@@ -192,7 +192,7 @@ class Units(object):
 
 
 class Patcher(object):
-    def __init__(self, base_path, fresh_path, protect, report, allow_tables=None, keep_prefix=()):
+    def __init__(self, base_path, fresh_path, protect, report, allow_tables=None, keep_prefix=(), force_fresh=()):
         self.base_infos, self.base_raw = kjn_profile.read_package(base_path)
         _, self.fresh_raw = kjn_profile.read_package(fresh_path)
         self.header = kjn_profile.HeaderEditor(self.base_raw["Contents/header.xml"].decode("utf-8"))
@@ -200,11 +200,14 @@ class Patcher(object):
         self.protect = set(p.replace(" ", "") for p in protect)
         self.allow_tables = None if allow_tables is None else set(p.replace(" ", "") for p in allow_tables)
         self.keep_prefix = tuple(keep_prefix)
+        # 2026-10-26: 사용자가 병합한 표라도 MD 내용이 바뀌었으면 fresh로 바꾸게 하는 캡션 목록(병합·서식은 잃고 보고서에 남긴다)
+        self.force_fresh = set(p.replace(" ", "") for p in force_fresh)
         self.report = report
         self.log = []
         self.s2 = self.base_raw["Contents/section2.xml"].decode("utf-8")
         self.s1 = self.base_raw["Contents/section1.xml"].decode("utf-8")
         fresh_s2 = self.fresh_raw["Contents/section2.xml"].decode("utf-8")
+        self.fresh_s1 = self.fresh_raw["Contents/section1.xml"].decode("utf-8")
         self.next_id = max([int(i) for _, i in ID_RE.findall(self.s2 + self.s1 + fresh_s2)] + [2147483648]) + 1
         self.fresh_s2 = fresh_s2
         self.stats = {"equal": 0, "insert": 0, "replace_fresh": 0, "replace_kept": 0, "delete_kept": 0, "manual": 0,
@@ -228,6 +231,11 @@ class Patcher(object):
             self.stats["table_same_kept"] += 1
             self.log.append("KEEP(table same content%s) | %s" % (", merged" if merge_diff else "", bu["cap"]))
             return bu["xml"]
+        if merge_diff and bu["cap"] in self.force_fresh:
+            self.stats["replace_fresh"] += 1
+            self.log.append("REPLACE(table, force-fresh: 사용자 병합·서식 소실) | %s (%s)" % (bu["cap"], detail))
+            self.manual.append("%s 사용자 병합 표를 fresh로 교체했다 — 병합·열폭·정렬을 한글에서 다시 적용 (%s)" % (bu["cap"], detail))
+            return self.take_fresh(fu["xml"])
         if merge_diff:
             self.stats["replace_kept"] += 1
             self._manual("%s 병합 표 내용 변경 — base 유지, MD 변경분 수동 재적용 필요 (%s)" % (bu["cap"], detail))
@@ -442,6 +450,19 @@ class Patcher(object):
             self.s2 = self.s2[:anchor_end] + "".join(new) + self.s2[anchor_end:]
             self.log.append("APPENDIX +%d paras after '%s' @%d" % (len(new), spec["anchor_startswith"], h))
 
+    # ── 목차·개요 섹션(section1)을 조립본에서 통째로 가져온다 ──
+    def toc_from_fresh(self):
+        """장 구성이 바뀌어 목차 항목의 삭제·대량 교체가 필요할 때 쓴다(--toc-lines는 삭제를 지원하지 않는다).
+        fresh section1의 본문을 base header에 맞게 재대응하고 linesegarray를 지워 한글이 재조판하게 한다.
+        base section1의 사용자 서식(목차 제목 run 압축 등)은 사라지므로 보고서에 남긴다."""
+        m = re.search(r"(<hp:p .*</hp:p>)", self.fresh_s1, flags=re.S)
+        head, body, tail = self.fresh_s1[: m.start()], m.group(1), self.fresh_s1[m.end():]
+        body = self.renumber(LINESEG_RE.sub("", self.importer.remap_body(body)))
+        self.s1 = head + body + tail
+        n = len(re.findall(r"<hp:p ", body))
+        self.log.append("TOC(section1) from fresh | 문단 %d개, base section1 서식은 버림" % n)
+        self.manual.append("section1(목차·감사의 글·논문 개요)을 조립본으로 교체 — base의 목차 run 압축(장평·자간) 등 사용자 서식은 재적용 필요")
+
     # ── 목차 문단(section1) ──
     def toc_lines(self, spec):
         """spec: {"replace": [{"old": "제목", "new": "제목"}], "insert_after": [{"after": "<표 4-5>", "text": "<표 4-6> …", "page": "0"}]}"""
@@ -506,6 +527,8 @@ def main():
     ap.add_argument("--text-replace", dest="text_replace")
     ap.add_argument("--appendix")
     ap.add_argument("--toc-lines", dest="toc_lines")
+    ap.add_argument("--force-fresh", dest="force_fresh", default="", help="사용자 병합 표라도 fresh로 바꿀 캡션(쉼표 구분) — 병합·서식 소실, 보고서에 기록")
+    ap.add_argument("--toc-from-fresh", dest="toc_from_fresh", action="store_true", help="section1(목차·감사의 글·개요)을 조립본으로 통째 교체(장 구성 변경 시)")
     ap.add_argument("--report")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
@@ -518,8 +541,11 @@ def main():
                 keep = tuple(json.load(f))
         else:
             keep = tuple(k for k in a.keep_prefix.split("|") if k)
-    pt = Patcher(a.base, a.fresh, protect, a.report, allow_tables=allow, keep_prefix=keep)
+    force = [p.strip() for p in a.force_fresh.split(",") if p.strip()]
+    pt = Patcher(a.base, a.fresh, protect, a.report, allow_tables=allow, keep_prefix=keep, force_fresh=force)
     pt.patch_body()
+    if a.toc_from_fresh:
+        pt.toc_from_fresh()
     if a.text_replace:
         with open(a.text_replace, encoding="utf-8") as f:
             pt.text_replace(json.load(f))
