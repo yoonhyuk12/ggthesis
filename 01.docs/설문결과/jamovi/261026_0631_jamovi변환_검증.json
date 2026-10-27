@@ -1,0 +1,15 @@
+{
+  "source_sha_before": "3b7430575fdb3a1354074d32e87dd951f18125754bf2e9eae2a54c96f817190f",
+  "source_sha_after": "3b7430575fdb3a1354074d32e87dd951f18125754bf2e9eae2a54c96f817190f",
+  "validation": [
+    {
+      "file": "261026_0631_jamovi용_설문응답_73건.xlsx",
+      "rows": 73,
+      "columns": 49,
+      "first_sheet": "data",
+      "all_numeric_except_id": true,
+      "missing_preserved": true,
+      "roundtrip_exact": true
+    }
+  ]
+}

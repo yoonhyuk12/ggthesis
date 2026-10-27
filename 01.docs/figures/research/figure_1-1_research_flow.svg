@@ -31,7 +31,7 @@
 <text x="78" y="993" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제4장  연구설계 및 실증분석</text>
 <text x="1310" y="993" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">How·What</text>
 <text x="80" y="1070" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">문항 구성 → 전문가 내용타당도 검증 → 예비조사</text>
-<text x="80" y="1121" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">도입 32개소·미도입 39개소, 응답 71명(모집 목표 60명):</text>
+<text x="80" y="1121" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">도입 34개소·미도입 39개소, 응답 73명(모집 목표 60명):</text>
 <text x="80" y="1172" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">현장당 1명·사후 설문 1회 / 공변량·분석 절차 설정</text>
 <text x="80" y="1223" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">제6절  자료 정제·기술통계·신뢰도·사전 특성 분포·균형 진단</text>
 <text x="80" y="1274" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">제7절  가정 점검 → H1 두 집단 공분산분석</text>
@@ -45,6 +45,6 @@
 <text x="1360" y="1553" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">의미</text>
 <text x="80" y="1630" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">결과의 의미 논의: 선행연구·과정 지표(A-7∼A-9)와 대조</text>
 <text x="80" y="1681" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연구 요약, 학술적·실무적 시사점, 한계와 향후 연구 방향</text>
-<text x="750" y="1790" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 개인 응답 분석 · Python statsmodels 사용</text>
+<text x="750" y="1790" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 개인 응답 분석 · jamovi 사용</text>
 <text x="750" y="1845" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">조정된 집단 차이를 해석하며 인과 효과를 단정하지 않는다.</text>
 </svg>
