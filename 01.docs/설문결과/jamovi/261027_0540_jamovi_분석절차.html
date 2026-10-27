@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jamovi 분석 절차 매뉴얼 — 4장 표 4-7~4-15 재현용</title>
+<style>
+@page { size: A4; margin: 20mm 18mm 20mm 18mm; }
+:root { --ink:#1f2328; --muted:#59636e; --line:#d0d7de; --soft:#f6f8fa; --accent:#0b57a4; --trap:#b42318; --trapbg:#fff4f2; --check:#116329; --checkbg:#f1fbf3; }
+html { font-size: 10.5pt; }
+body { font-family: "Malgun Gothic","맑은 고딕","Noto Sans KR","Apple SD Gothic Neo",sans-serif; color:var(--ink); line-height:1.65; margin:0; word-break:keep-all; overflow-wrap:anywhere; }
+main { max-width: 180mm; margin: 0 auto; padding: 0 0 20mm; }
+@media screen { body{background:#e9ecef;} main{background:#fff; padding:20mm 18mm; margin:16px auto; box-shadow:0 2px 12px rgba(0,0,0,.12);} }
+h1,h2,h3,h4 { line-height:1.3; letter-spacing:-0.01em; break-after:avoid; }
+h1 { font-size:20pt; margin:0 0 .5em; color:var(--accent); }
+h2 { font-size:15pt; margin:0 0 .7em; padding:.35em 0 .3em; border-bottom:2px solid var(--accent); color:var(--accent); break-before:page; }
+h3 { font-size:12pt; margin:1.4em 0 .5em; padding-left:.5em; border-left:4px solid var(--accent); }
+h4 { font-size:10.5pt; margin:1.1em 0 .4em; color:var(--muted); }
+h3.trap, h4.trap { border-left-color:var(--trap); color:var(--trap); }
+h3.check, h4.check { border-left-color:var(--check); color:var(--check); }
+h3.trap + ul, h4.trap + ul { background:var(--trapbg); border:1px solid #f4c7c1; border-radius:6px; padding:.6em 1em .6em 2em; margin-top:.3em; }
+p { margin:.5em 0 .8em; }
+p.step { margin-top:1.1em; }
+p.step > strong { color:var(--accent); font-size:1.03em; }
+ul, ol { padding-left:1.6em; margin:.4em 0 .9em; }
+li { margin:.18em 0; }
+li > ol, li > ul { margin:.2em 0; }
+strong { font-weight:700; }
+code { font-family: Consolas,"D2Coding","Nanum Gothic Coding",monospace; font-size:.9em; background:var(--soft); border:1px solid var(--line); border-radius:4px; padding:0 .3em; color:#24292f; }
+table { border-collapse:collapse; width:100%; margin:.6em 0 1.2em; font-size:9.3pt; line-height:1.45; break-inside:auto; }
+thead { display:table-header-group; }
+tr { break-inside:avoid; }
+th, td { border:1px solid var(--line); padding:.35em .55em; vertical-align:top; text-align:left; }
+th { background:#e8eef6; font-weight:700; }
+tbody tr:nth-child(even) td { background:#fafbfc; }
+td code, th code { font-size:.92em; }
+blockquote { margin:.8em 0; padding:.5em 1em; border-left:4px solid #d4a72c; background:#fff8e1; color:#4a3b00; }
+blockquote p { margin:.2em 0; }
+hr { display:none; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+header.cover { text-align:left; padding-bottom:1em; }
+header.cover h1 { font-size:22pt; margin-bottom:.4em; }
+header.cover > p { color:var(--muted); font-size:10pt; }
+header.cover table { font-size:9.5pt; }
+header.cover th { width:18%; white-space:nowrap; }
+nav.toc h2 { break-before:page; }
+nav.toc ul { list-style:none; padding-left:0; columns:1; }
+nav.toc > ul > li { margin:.25em 0; font-weight:600; }
+nav.toc > ul > li > ul { padding-left:1.4em; font-weight:400; }
+nav.toc li a { color:var(--ink); }
+.gen { color:var(--muted); font-size:8.5pt; margin-top:.5em; }
+/* 쉬운 설명 절의 단계 설명 단락: 굵은 제목줄 뒤 본문 */
+#각-단계는-무엇을-알아보려는-것인가--쉬운-설명 ~ p > strong:first-child { color:var(--accent); }
+@media print { main { max-width:none; } a { color:inherit; } nav.toc li a { color:inherit; } }
+</style></head>
+<body><main>
+<header class="cover"><h1 id="jamovi-분석-절차-매뉴얼--4장-표-4-74-15-재현용">jamovi 분석 절차 매뉴얼 — 4장 표 4-7~4-15 재현용</h1><p>이 문서는 2026-10-26~27에 jamovi로 직접 수행한 석사논문 제4장 통계 분석을 처음부터 다시 돌려 같은 결과를 얻기 위한 조작 절차서다. 각 단계는 "무엇을 클릭하는가 → 확인값 → 함정" 순서로 적었다. 재현할 때는 단계를 순서대로 따라가고, 각 단계 끝의 확인값과 화면 수치를 대조한다. 확인값이 다르면 그 단계의 "함정"부터 점검한다.</p><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작성일</td>
+<td>2026-10-27</td>
+</tr>
+<tr>
+<td>프로그램</td>
+<td>jamovi 2.7.41 (결과창 References: The jamovi project (2025) Version 2.7; R Core Team (2025) R 4.5; Revelle (2025) psych; Fox &amp; Weisberg (2024) car)</td>
+</tr>
+<tr>
+<td>계산 엔진</td>
+<td>R 4.5</td>
+</tr>
+<tr>
+<td>입력 파일</td>
+<td><code>01.docs/설문결과/jamovi/261026_0631_jamovi용_설문응답_73건.xlsx</code> 의 <code>data</code> 시트(73행 50열). 변수 뜻·측정수준·값 라벨은 같은 파일의 <code>codebook</code> 시트</td>
+</tr>
+<tr>
+<td>저장 파일</td>
+<td><code>01.docs/설문결과/jamovi/1027 ancova result.omv</code></td>
+</tr>
+<tr>
+<td>표본</td>
+<td>73명 전부. 도입 현장 <code>D(도입여부)</code>=1 34명, 미도입 <code>D(도입여부)</code>=0 39명</td>
+</tr>
+<tr>
+<td>필터</td>
+<td><strong>최종 분석에서는 필터를 쓰지 않는다</strong>(아래 0단계 참조)</td>
+</tr>
+</tbody>
+</table></header>
+<nav class="toc"><h2 id="목차">목차</h2><ul>
+<li><a href="#각-단계는-무엇을-알아보려는-것인가--쉬운-설명">각 단계는 무엇을 알아보려는 것인가 — 쉬운 설명</a></li>
+<li><a href="#0단계-파일-열기와-변수-설정">0단계. 파일 열기와 변수 설정</a></li>
+<li><a href="#1단계-표-4-7-표본-특성">1단계. 표 4-7 표본 특성</a></li>
+<li><a href="#2단계-표-4-8-신뢰도요인구조">2단계. 표 4-8 신뢰도·요인구조</a></li>
+<li><a href="#3단계-표-4-9-기술통계">3단계. 표 4-9 기술통계</a></li>
+<li><a href="#4단계-표-4-10-균형-진단">4단계. 표 4-10 균형 진단</a></li>
+<li><a href="#5단계-표-4-11-가정-점검">5단계. 표 4-11 가정 점검</a></li>
+<li><a href="#6단계-표-4-12-h1-본-분석">6단계. 표 4-12 H1 본 분석</a></li>
+<li><a href="#7단계-표-4-13-하위요인별-ancova와-holm-보정">7단계. 표 4-13 하위요인별 ANCOVA와 Holm 보정</a></li>
+<li><a href="#8단계-표-4-14-h2-상호작용">8단계. 표 4-14 H2 상호작용</a></li>
+<li><a href="#9단계-표-4-15-가설-검증-종합">9단계. 표 4-15 가설 검증 종합</a></li>
+<li><a href="#10단계-이후--2026-10-27-추가-분석">10단계 이후 — 2026-10-27 추가 분석</a></li>
+<li><a href="#10-1-시스템-경로-작동-여부별-실효성">10-1. 시스템 경로 작동 여부별 실효성</a></li>
+<li><a href="#10-2-전체-73명-기술통계">10-2. 전체 73명 기술통계</a></li>
+<li><a href="#10-3-efa-고유값-기준-재실행">10-3. EFA 고유값 기준 재실행</a></li>
+<li><a href="#10-4-문항-제거-시-α수정-문항총점-상관">10-4. 문항 제거 시 α·수정 문항–총점 상관</a></li>
+<li><a href="#10-5-선형성-산점도">10-5. 선형성 산점도</a></li>
+<li><a href="#10-6-cooks-d-저장초과-건수사례-id">10-6. Cook's D 저장·초과 건수·사례 ID</a></li>
+<li><a href="#10-7-공변량-없는-단순-비교">10-7. 공변량 없는 단순 비교</a></li>
+<li><a href="#10-8-사전-지정-민감도-분석시스템-경로-부분집단">10-8. 사전 지정 민감도 분석(시스템 경로 부분집단)</a></li>
+<li><a href="#10-9-h2-조건부-조정-평균w-수준별">10-9. H2 조건부 조정 평균(W 수준별)</a></li>
+<li><a href="#10-10-사후-강건성필터별-h1-회귀">10-10. 사후 강건성(필터별 H1 회귀)</a></li>
+<li><a href="#10-11-집단별-상관천장효과">10-11. 집단별 상관·천장효과</a></li>
+<li><a href="#10-12-화면-겹침">10-12. 화면 겹침</a></li>
+<li><a href="#공통-함정">공통 함정</a></li>
+<li><a href="#부록-a-holm-보정-손계산법">부록 A. Holm 보정 손계산법</a></li>
+<li><a href="#부록-b-전체-결과-요약표">부록 B. 전체 결과 요약표</a></li>
+</ul></nav>
+<h3 id="표본에-관한-사전-결정">표본에 관한 사전 결정</h3>
+<ul>
+<li>R001·R002는 시험 응답이다(현장명 "테스트", 성명이 연구자 본인). 그러나 사용자 결정으로 <strong>분석에 포함</strong>한다.</li>
+<li><code>role(역할)</code>은 재연락으로 보완한 뒤 1 공사감독·2 안전관리자·3 현장소장의 3범주다(각 31·19·23명). '기타'(코드 4)는 없다.</li>
+</ul>
+<hr />
+<h2 id="각-단계는-무엇을-알아보려는-것인가--쉬운-설명">각 단계는 무엇을 알아보려는 것인가 — 쉬운 설명</h2>
+<p>이 절은 통계를 배우지 않은 사람도 아래 단계들이 "왜 필요한지"를 알 수 있게 쓴 안내다. 조작 방법과 정확한 수치는 각 단계 본문을 본다.</p>
+<h3 id="먼저-이-연구가-묻는-것">먼저, 이 연구가 묻는 것</h3>
+<p>건설현장 73곳의 안전 담당자가 설문에 답했다. 그중 34명은 AI CCTV 안전관제 시스템(YOLO-LLM)을 <strong>도입한 현장</strong> 사람이고, 39명은 <strong>도입하지 않은 현장</strong> 사람이다. 모든 분석은 결국 두 질문으로 모인다.</p>
+<ul>
+<li><strong>질문 1(H1):</strong> 도입 현장 사람들이 느끼는 "안전관리 실효성" 점수(1~5점)가 미도입 현장보다 높은가?</li>
+<li><strong>질문 2(H2):</strong> 예산이 빡빡한 현장과 여유 있는 현장 사이에서, 도입 현장과 미도입 현장의 점수 차이가 달라지는가?</li>
+</ul>
+<p>한 번 설문해서 두 집단을 나란히 비교한 연구이므로, "도입해서 좋아졌다"가 아니라 "도입 현장이 더 높게 나타났다"까지만 말할 수 있다.</p>
+<h3 id="자주-나오는-말-여섯-가지">자주 나오는 말 여섯 가지</h3>
+<table>
+<thead>
+<tr>
+<th>말</th>
+<th>쉬운 뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평균(M)·표준편차(SD)</td>
+<td>평균은 점수의 가운데, 표준편차는 점수가 평균에서 얼마나 흩어져 있는지다. SD가 작으면 사람들 답이 비슷하다</td>
+</tr>
+<tr>
+<td>p값</td>
+<td>"실제로는 차이가 없는데도 이만한 차이가 우연히 나올 확률". 0.05보다 작으면 우연이라 보기 어렵다고 판정한다</td>
+</tr>
+<tr>
+<td>효과크기(η²p, d, V)</td>
+<td>p값은 "차이가 있는지"만 알려 준다. 효과크기는 그 차이가 <strong>얼마나 큰지</strong>를 알려 준다</td>
+</tr>
+<tr>
+<td>통제변수·공변량</td>
+<td>나이, 경력, 소속, 성별, 역할, 공사비. 두 집단이 이런 점에서 애초에 다르면 비교가 불공정하므로 수학적으로 맞춰 놓는 변수다</td>
+</tr>
+<tr>
+<td>ANCOVA(공분산분석)</td>
+<td>통제변수를 맞춰 놓은 뒤 두 집단의 평균을 비교하는 방법. 달리기 기록을 비교하기 전에 출발선을 같게 맞추는 것과 같다. 이렇게 맞춘 평균을 <strong>조정 평균</strong>이라 부른다</td>
+</tr>
+<tr>
+<td>필터</td>
+<td>jamovi에서 특정 사람만 남기고 계산하는 기능. 켜 두면 결과창의 모든 표가 그 사람들 값으로 바뀌므로 매뉴얼 곳곳에서 "필터를 끄라"고 반복한다</td>
+</tr>
+</tbody>
+</table>
+<h3 id="단계별-설명">단계별 설명</h3>
+<p class="step"><strong>0단계. 파일 열기와 변수 설정 — 컴퓨터에게 숫자의 종류를 알려 준다</strong><br>엑셀에는 나이(연속된 숫자)와 성별(1=남, 2=여 같은 이름표)이 둘 다 숫자로 들어 있다. 컴퓨터가 성별 코드를 평균 내면 "1.08"처럼 뜻 없는 값이 나온다. 그래서 어떤 열이 진짜 숫자(연속형)이고 어떤 열이 이름표(명목형)인지 먼저 정해 준다. 이 단계가 틀리면 뒤의 모든 분석이 틀린다.</p>
+<p class="step"><strong>1단계. 표 4-7 표본 특성 — 응답자가 누구인지 소개한다</strong><br>두 집단 사람들의 나이, 경력, 소속, 성별, 역할, 공사비 규모를 세어 보여 준다. 덧붙여 "위험을 어떤 경로로 알게 됐는가(A7)", "언제 알게 됐는가(A8)", "지시가 전달되기까지 얼마나 걸렸는가(A9)"가 두 집단에서 다른지 교차분석으로 본다. 결과는 인지 경로와 시점은 집단에 따라 뚜렷히 다르고, 전달 소요시간은 차이가 없었다. 이 "차이 없음"은 9단계 종합표에 그대로 들어간다.</p>
+<p class="step"><strong>2단계. 표 4-8 신뢰도·요인구조 — 설문지 자체가 믿을 만한지 확인한다</strong><br>실효성을 묻는 8문항이 정말 같은 것을 재고 있다면, 1번에 높게 답한 사람은 8번에도 높게 답해야 한다. 그 일관성을 숫자 하나로 나타낸 것이 Cronbach's α다(1에 가까울수록 좋고, 여기서는 0.937). 문항이 2개뿐인 영역은 α 대신 두 문항의 상관으로 본다. 요인분석(EFA)은 8문항이 하나의 덩어리로 묶이는지, 아니면 둘셋으로 갈라지는지를 본다. 결과는 실효성 8문항과 예산제약성 4문항이 각각 하나의 덩어리였다.</p>
+<p class="step"><strong>3단계. 표 4-9 기술통계 — 점수를 집단별로 요약한다</strong><br>실효성 전체 점수와 다섯 하위 영역, 예산제약성의 평균·표준편차를 집단별로 구한다. 왜도·첨도는 점수가 한쪽으로 심하게 몰려 있는지 보는 값이다. 시스템 특성·경보 피로도 문항은 도입 현장만 답했으므로 34명 값만 나온다.</p>
+<p class="step"><strong>4단계. 표 4-10 균형 진단 — 두 집단이 애초에 비슷한 사람들인지 본다</strong><br>도입 현장 사람들이 원래 경력이 훨씬 많다면, 점수 차이가 시스템 때문인지 경력 때문인지 알 수 없다. 그래서 통제변수마다 두 집단이 얼마나 다른지 잰다. 나이·경력은 비슷했고, 성별만 달랐다(도입 현장은 전원 남성). 이렇게 발견한 차이는 5~6단계에서 통제변수로 넣어 맞춘다.</p>
+<p class="step"><strong>5단계. 표 4-11 가정 점검 — ANCOVA를 써도 되는 조건인지 확인한다</strong><br>ANCOVA는 몇 가지 전제가 맞을 때만 믿을 수 있다. 두 집단의 점수 퍼짐이 비슷한가(등분산), 점수가 종 모양으로 분포하는가(정규성), 나이가 점수에 미치는 영향이 두 집단에서 같은가(회귀기울기 동질성), 통제변수끼리 너무 겹치지 않는가(다중공선성, VIF), 혼자서 결과를 크게 흔드는 응답자가 있는가(영향점, Cook's D)를 차례로 본다. 여기서 만든 ANCOVA 모형이 6단계의 본 분석 모형이 된다.</p>
+<p class="step"><strong>6단계. 표 4-12 H1 본 분석 — 질문 1의 답</strong><br>통제변수를 맞춘 뒤 비교한 조정 평균은 미도입 3.29, 도입 3.83으로 차이 0.54점이다. 이 차이가 우연일 확률 p=.005로 매우 낮으므로 H1을 지지한다. 효과크기 η²p=0.121은 "점수 차이 중 약 12%를 도입 여부로 설명한다"는 뜻이다.</p>
+<p class="step"><strong>7단계. 표 4-13 하위요인별 ANCOVA와 Holm 보정 — 다섯 영역 중 어디서 차이가 나는지 본다</strong><br>실효성을 조기인지·대응신속성·원격파악·순찰부담경감·위험통제력 다섯으로 쪼개 같은 비교를 다섯 번 한다. 검정을 여러 번 하면 그중 하나는 우연히 "차이 있음"으로 나올 가능성이 커지므로, Holm 보정으로 기준을 더 엄격하게 만든다(계산법은 부록 A). 보정 후에도 조기인지·원격파악·위험통제력은 차이가 남고, 대응신속성과 순찰부담경감은 남지 않았다.</p>
+<p class="step"><strong>8단계. 표 4-14 H2 상호작용 — 질문 2의 답</strong><br>"예산이 빡빡할수록 도입 현장과 미도입 현장의 차이가 커지는가(또는 작아지는가)"를 본다. 이렇게 한 변수가 다른 변수의 효과를 바꾸는 것을 상호작용이라 한다. 예산제약성 점수를 평균이 0이 되게 옮기는 평균중심화는 계산 결과를 읽기 쉽게 하는 준비 작업이다. 상호작용의 p=.131로 기준 .05를 넘어 H2는 기각한다. ANCOVA와 회귀분석 두 방법으로 같은 값이 나오는지도 확인한다.</p>
+<p class="step"><strong>9단계. 표 4-15 가설 검증 종합 — 새 계산 없이 결과를 한 표에 모은다</strong><br>6단계(H1 지지), 8단계(H2 기각), 1단계의 전달 소요시간(집단 차이 없음)을 한 표로 정리한다. 신뢰구간 하나만 손으로 계산한다.</p>
+<h3 id="10단계-이후-추가-분석은-무엇을-보충하는가">10단계 이후 추가 분석은 무엇을 보충하는가</h3>
+<p>0~9단계가 본 논문의 표를 만드는 뼈대라면, 아래는 "그 결론이 정말 단단한가"를 여러 각도에서 흔들어 보고 빈칸을 채우는 작업이다.</p>
+<ul>
+<li><strong>10-1 시스템 경로 작동 여부별 실효성:</strong> 도입 현장 34명 안에서도 시스템이 실제로 위험을 알려 준 경험이 있는 15명과 없는 19명을 나눠 보니, 있는 쪽 점수가 더 높았다. 5장 논의의 근거다.</li>
+<li><strong>10-2 전체 73명 기술통계:</strong> 집단을 나누지 않은 전체 평균. 표의 '전체' 행을 채운다.</li>
+<li><strong>10-3 EFA 고유값 기준 재실행:</strong> 2단계 요인분석의 "덩어리 수를 정하는 기준"을 원고에 미리 적어 둔 기준으로 바꿔 다시 돌렸다. 결과는 같다. 이쪽이 표준 절차다.</li>
+<li><strong>10-4 문항 제거 시 α:</strong> 문항 하나를 빼면 신뢰도가 오르는지 본다. 오르는 문항이 없으므로 뺄 문항이 없다.</li>
+<li><strong>10-5 선형성 산점도:</strong> 나이·경력과 점수의 관계가 직선에 가까운지 그림으로 본다. ANCOVA의 또 하나의 전제다.</li>
+<li><strong>10-6 Cook's D 초과 사례:</strong> 5단계에서 "혼자 결과를 흔드는 응답자"가 몇 명이고 누구인지 찍어 낸다. 5명이 기준을 넘었지만 삭제하지 않고, 10-10에서 빼고도 결론이 유지되는지 본다.</li>
+<li><strong>10-7 공변량 없는 단순 비교:</strong> 출발선을 맞추지 않고 그냥 두 집단 평균을 비교하면 차이는 0.63점이다. 맞춘 뒤의 0.54점과 나란히 보여 "통제변수를 넣어도 차이가 사라지지 않는다"를 보인다.</li>
+<li><strong>10-8 사전 지정 민감도 분석:</strong> 시스템이 실제로 작동한 도입 15명과 미도입 39명만으로 다시 비교한다. 차이가 더 커진다(0.78점). 연구 시작 전에 하겠다고 미리 적어 둔 분석이다.</li>
+<li><strong>10-9 H2 조건부 조정 평균:</strong> 예산제약성이 낮을 때·평균일 때·높을 때 각각 두 집단 차이가 얼마인지(0.16, 0.50, 0.83) 구한다. 커지는 방향은 보이지만 8단계에서 통계적으로 확인되지 않았으므로 참고 자료다.</li>
+<li><strong>10-10 사후 강건성:</strong> 영향점 5명을 빼도, 여성 6명을 빼도, 소규모 공사를 빼도, 모든 문항에 같은 점수만 찍은 3명을 빼도 H1의 결론이 유지되는지 네 번 확인한다. 네 조건 모두 유지됐다.</li>
+<li><strong>10-11 집단별 상관·천장효과:</strong> 예산과 실효성의 관계가 두 집단에서 다른지, 그리고 도입 현장의 대응신속성 점수가 5점 만점에 몰려 있는지(천장효과) 본다. 7단계에서 대응신속성에 차이가 안 나온 이유를 설명하는 데 쓴다.</li>
+<li><strong>10-12 화면 겹침:</strong> 통계가 아니라 작업 중 창이 가려지는 문제의 메모다.</li>
+</ul>
+<h3 id="각-단계의-함정은-무엇인가" class="trap">각 단계의 "함정"은 무엇인가</h3>
+<p>매뉴얼의 각 단계 끝에 있는 "함정"은 실제 분석 중 한 번 이상 틀렸던 지점이다. 가장 많이 반복되는 것은 두 가지다. 첫째, <strong>필터를 끄지 않은 채</strong> 다음 분석을 만들어 일부 사람의 값이 전체 값인 줄 알았던 것. 둘째, 통제변수를 여러 개 넣으면 jamovi가 <strong>상호작용 항을 자동으로 잔뜩 추가</strong>해 본 모형이 깨지는 것. 재현 중 확인값이 안 맞으면 이 둘부터 의심한다.</p>
+<hr />
+<h2 id="0단계-파일-열기와-변수-설정">0단계. 파일 열기와 변수 설정</h2>
+<p>먼저 데이터를 열고 변수의 측정 수준을 바로잡는다. 엑셀 파일은 측정 수준 정보가 없어서 jamovi가 모든 열을 Nominal(명목)로 읽기 때문이다.</p>
+<h3 id="파일-열기">파일 열기</h3>
+<ol>
+<li>왼쪽 위 <code>☰</code>(메뉴)를 누른다.</li>
+<li><code>Open(열기)</code> → <code>This PC(이 PC)</code> → <code>Browse(찾아보기)</code>를 누른다.</li>
+<li>위 입력 파일(xlsx)을 선택한다. 시트는 <code>data</code>다.</li>
+<li>데이터 창의 행 수가 73인지 확인한다.</li>
+</ol>
+<h3 id="측정-수준-설정">측정 수준 설정</h3>
+<ol>
+<li>상단 <code>Data(데이터)</code> 탭을 누른다.</li>
+<li>바꿀 열의 머리글을 더블클릭해 <code>Setup(설정)</code> 창을 연다.</li>
+<li><code>age(만 나이)</code>의 측정 수준을 <strong>Continuous(연속형)</strong>로 바꾼다.</li>
+<li><code>experience(경력)</code>의 측정 수준을 <strong>Continuous(연속형)</strong>로 바꾼다.</li>
+<li>다음 변수가 Continuous(연속형)인지 확인한다. 소수 값이라 대개 자동으로 연속형이다: <code>Y_total(안전관리 실효성 전체)</code>, <code>Y1(조기인지)</code>~<code>Y5(위험통제력)</code>, <code>W_mean(예산제약성)</code>, <code>D_sub1~D_sub4(시스템 특성 하위요인 평균)</code>, <code>D_total(시스템 특성 전체)</code>, <code>E_total(경보 피로도 완화 전체)</code>.</li>
+<li>다음 변수는 <strong>Nominal(명목형)</strong>로 그대로 둔다: <code>D(도입여부)</code>, <code>affiliation(소속)</code>, <code>sex(성별)</code>, <code>role(역할)</code>, <code>cost(총공사비)</code>, <code>A7(위험 인지 경로)</code>, <code>A8(위험 인지 시점)</code>, <code>A9(지시 전달 소요시간)</code>.</li>
+</ol>
+<blockquote>
+<p>codebook 시트는 <code>cost(총공사비)</code>·<code>A9(지시 전달 소요시간)</code>를 Ordinal(서열형)로 적었다. 그러나 빈도표와 ANCOVA 요인으로 쓰려면 Nominal(명목형)이 맞으므로 Nominal로 둔다.</p>
+</blockquote>
+<h3 id="필터-처리">필터 처리</h3>
+<ol>
+<li>처음에는 <code>Data(데이터)</code> → <code>Filters(필터)</code> → <code>+</code>에 <code>include == 1</code>을 입력해 <code>include(분석 포함 플래그)</code>가 1인 71명만 남겼다.</li>
+<li>이후 사용자 결정으로 <strong>필터를 끄고 73명 전체로 진행</strong>했다. 재현할 때는 필터를 만들지 않거나, 만들었다면 <code>active(활성)</code> 토글을 끈다.</li>
+<li>필터 수식은 입력 후 <strong>Enter를 눌러야 적용</strong>된다. 하단 상태표시줄의 <code>Filtered N</code>으로 적용 여부를 확인한다.</li>
+</ol>
+<h3 id="확인값" class="check">확인값</h3>
+<ul>
+<li>행 수 73, 열 수 50.</li>
+<li><code>include == 1</code> 필터를 켜면 71명(최종 분석에서는 쓰지 않음).</li>
+</ul>
+<h3 id="함정" class="trap">함정</h3>
+<ul>
+<li>Enter를 누르지 않으면 수식이 입력란에 보여도 적용되지 않는다(상태표시줄 <code>Filtered 0</code>).</li>
+<li>필터는 데이터셋 전체에 걸린다. 결과창에 이미 만든 <strong>모든 분석이 동시에 재계산</strong>된다.</li>
+<li>집단별 값이 필요한 분석(신뢰도 등)은 필터로 <code>D == 1</code>과 <code>D == 0</code>을 번갈아 건다. 끝나면 반드시 필터를 끈다.</li>
+<li>집단 변수 이름이 <code>D(도입여부)</code>라서 문항 <code>D1~D8(시스템 특성 인식 문항)</code>과 혼동하기 쉽다. 필터 수식 <code>D == 1</code>의 <code>D</code>는 집단 변수다.</li>
+</ul>
+<hr />
+<h2 id="1단계-표-4-7-표본-특성">1단계. 표 4-7 표본 특성</h2>
+<p>두 집단의 인구통계 특성과 과정 지표(<code>A7</code>·<code>A8</code>·<code>A9</code>)의 분포를 구한다.</p>
+<h3 id="인구통계-기술통계">인구통계 기술통계</h3>
+<ol>
+<li><code>Exploration(탐색)</code> → <code>Descriptives(기술통계)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>affiliation(소속)</code>, <code>sex(성별)</code>, <code>role(역할)</code>, <code>cost(총공사비)</code>, <code>age(만 나이)</code>, <code>experience(경력)</code>을 넣는다.</li>
+<li><code>Split by(집단 분리)</code>에 <code>D(도입여부)</code>를 넣는다.</li>
+<li><code>Frequency tables(빈도표)</code>를 체크한다.</li>
+<li>Statistics(통계량)에서 <code>N(사례 수)</code>, <code>Missing(결측)</code>, <code>Mean(평균)</code>, <code>Median(중위수)</code>, <code>Std. deviation(표준편차)</code>, <code>Minimum(최솟값)</code>, <code>Maximum(최댓값)</code>을 체크한다.</li>
+</ol>
+<h3 id="과정-지표-교차분석">과정 지표 교차분석</h3>
+<ol>
+<li><code>Frequencies(빈도)</code> → <code>Independent Samples(독립표본, χ² test of association 연관성 검정)</code>을 누른다.</li>
+<li><code>Rows(행)</code>에 <code>A7(위험 인지 경로)</code>, <code>Columns(열)</code>에 <code>D(도입여부)</code>를 넣는다.</li>
+<li>Statistics(통계량)에서 <code>χ²(카이제곱)</code>과 <code>Fisher's exact test(피셔 정확 검정)</code>를 체크한다.</li>
+<li>Cells(셀)에서 <code>Column percentages(열 백분율)</code>를 체크한다.</li>
+<li>결과 상자 제목을 우클릭 → <code>Duplicate(복제)</code>를 누른다.</li>
+<li>복제본의 <code>Rows(행)</code>만 <code>A8(위험 인지 시점)</code>로 바꾼다.</li>
+<li>한 번 더 복제해 <code>Rows(행)</code>를 <code>A9(지시 전달 소요시간)</code>로 바꾼다.</li>
+</ol>
+<h3 id="확인값_1" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>범주·통계</th>
+<th>미도입(D=0)</th>
+<th>도입(D=1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td></td>
+<td>39</td>
+<td>34</td>
+</tr>
+<tr>
+<td><code>age(만 나이)</code></td>
+<td>M(SD)</td>
+<td>46.9(12.0)</td>
+<td>46.4(11.1)</td>
+</tr>
+<tr>
+<td><code>experience(경력)</code></td>
+<td>M(SD)</td>
+<td>17.5(12.4)</td>
+<td>14.2(10.8)</td>
+</tr>
+<tr>
+<td><code>affiliation(소속)</code></td>
+<td>시공사 / 발주청</td>
+<td>27 / 12</td>
+<td>17 / 17</td>
+</tr>
+<tr>
+<td><code>sex(성별)</code></td>
+<td>남 / 여</td>
+<td>33 / 6</td>
+<td>34 / 0 (도입 전원 남성)</td>
+</tr>
+<tr>
+<td><code>role(역할)</code></td>
+<td>공사감독 / 안전관리자 / 현장소장</td>
+<td>15 / 12 / 12</td>
+<td>16 / 7 / 11</td>
+</tr>
+<tr>
+<td><code>cost(총공사비)</code></td>
+<td>범주 1~4 순</td>
+<td>5 / 9 / 9 / 16</td>
+<td>3 / 6 / 16 / 9</td>
+</tr>
+<tr>
+<td><code>A7(위험 인지 경로)</code></td>
+<td>보기 ①~⑤</td>
+<td>2 / 27 / 7 / 0 / 3</td>
+<td>0 / 10 / 7 / 17 / 0</td>
+</tr>
+<tr>
+<td><code>A8(위험 인지 시점)</code></td>
+<td>보기별 인원</td>
+<td>미기록</td>
+<td>미기록</td>
+</tr>
+<tr>
+<td><code>A9(지시 전달 소요시간)</code></td>
+<td>보기 ①~④</td>
+<td>15 / 15 / 7 / 2</td>
+<td>11 / 18 / 4 / 1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>교차분석</th>
+<th>χ²</th>
+<th>df</th>
+<th>χ² p</th>
+<th>Fisher p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A7(위험 인지 경로)</code> × <code>D(도입여부)</code></td>
+<td>29.6</td>
+<td>4</td>
+<td>미기록</td>
+<td>&lt; .001</td>
+</tr>
+<tr>
+<td><code>A8(위험 인지 시점)</code> × <code>D(도입여부)</code></td>
+<td>19.0</td>
+<td>3</td>
+<td>미기록</td>
+<td>&lt; .001</td>
+</tr>
+<tr>
+<td><code>A9(지시 전달 소요시간)</code> × <code>D(도입여부)</code></td>
+<td>1.71</td>
+<td>3</td>
+<td>.636</td>
+<td><strong>.663</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="함정_1" class="trap">함정</h3>
+<ul>
+<li>범주형 변수의 Mean(평균)·Median(중위수)은 코드값의 평균이라 의미가 없다. 범주형은 Frequencies(빈도) 표만 쓴다.</li>
+<li><code>Duplicate(복제)</code>는 결과 상자의 <strong>제목</strong>을 우클릭해야 나온다.</li>
+</ul>
+<hr />
+<h2 id="2단계-표-4-8-신뢰도요인구조">2단계. 표 4-8 신뢰도·요인구조</h2>
+<p>측정 도구의 내적 일관성(Cronbach's α), 2문항 하위요인의 문항 간 상관, 탐색적 요인분석(EFA)을 구한다.</p>
+<h3 id="신뢰도">신뢰도</h3>
+<ol>
+<li><code>Factor(요인)</code> → <code>Reliability Analysis(신뢰도 분석)</code>를 누른다.</li>
+<li>Items(문항)에 <code>B1~B8(실효성 문항)</code>을 넣는다.</li>
+<li><code>Cronbach's α(크론바흐 알파)</code>를 체크한다. 필터 없이 전체 α를 기록한다.</li>
+<li><code>Data(데이터)</code> → <code>Filters(필터)</code>에 <code>D == 1</code>을 입력하고 Enter → 도입 집단 α를 기록한다.</li>
+<li>필터 수식을 <code>D == 0</code>으로 바꾸고 Enter → 미도입 집단 α를 기록한다.</li>
+<li>필터를 끈다.</li>
+<li>Items(문항)를 <code>C1~C4(예산제약성 문항)</code>로 바꾸고 3~6을 반복한다.</li>
+</ol>
+<h3 id="2문항-하위요인-상관">2문항 하위요인 상관</h3>
+<ol>
+<li>필터가 꺼져 있는지 상태표시줄로 먼저 확인한다.</li>
+<li><code>Regression(회귀)</code> → <code>Correlation Matrix(상관행렬)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>B3</code>·<code>B4</code>(<code>Y3(원격파악)</code> 문항)를 넣는다.</li>
+<li><code>Pearson(피어슨)</code>과 <code>Report significance(유의확률 표시)</code>를 체크한다.</li>
+<li>결과 상자를 <code>Duplicate(복제)</code>해 변수를 <code>B5</code>·<code>B6</code>(<code>Y4(순찰부담경감)</code> 문항)으로 바꾼다.</li>
+<li>한 번 더 복제해 <code>B7</code>·<code>B8</code>(<code>Y5(위험통제력)</code> 문항)으로 바꾼다.</li>
+</ol>
+<h3 id="탐색적-요인분석">탐색적 요인분석</h3>
+<ol>
+<li><code>Factor(요인)</code> → <code>Exploratory Factor Analysis(탐색적 요인분석)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>B1~B8(실효성 문항)</code>을 넣는다.</li>
+<li><code>Extraction(추출)</code>을 <code>Principal axis(주축 요인추출)</code>로 한다.</li>
+<li><code>Rotation(회전)</code>을 <code>Oblimin(사각 회전)</code>으로 한다.</li>
+<li><code>Number of factors(요인 수)</code>를 <code>Based on parallel analysis(평행분석 기준)</code>로 한다.</li>
+<li><code>Assumption Checks(가정 점검)</code>에서 <code>Bartlett's test of sphericity(바틀렛 구형성 검정)</code>와 <code>KMO measure of sampling adequacy(KMO 표본 적절성)</code>를 체크한다.</li>
+<li>Variables(변수)를 <code>C1~C4(예산제약성 문항)</code>로 바꿔 한 번 더 실행한다.</li>
+</ol>
+<h3 id="확인값_2" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>척도</th>
+<th>α 전체</th>
+<th>α 도입</th>
+<th>α 미도입</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Y(<code>B1~B8</code>)</td>
+<td>0.937</td>
+<td>0.906</td>
+<td>0.937(10:0x 필터 <code>D == 0</code>으로 재확인)</td>
+</tr>
+<tr>
+<td>W(<code>C1~C4</code>)</td>
+<td>0.926</td>
+<td>0.885</td>
+<td>0.957(동일)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>문항 쌍</th>
+<th>r</th>
+<th>df</th>
+<th>p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B3</code>·<code>B4</code>(<code>Y3(원격파악)</code>)</td>
+<td>0.721</td>
+<td>71</td>
+<td>&lt; .001</td>
+</tr>
+<tr>
+<td><code>B5</code>·<code>B6</code>(<code>Y4(순찰부담경감)</code>)</td>
+<td>0.631</td>
+<td>71</td>
+<td>&lt; .001</td>
+</tr>
+<tr>
+<td><code>B7</code>·<code>B8</code>(<code>Y5(위험통제력)</code>)</td>
+<td>0.741</td>
+<td>71</td>
+<td>&lt; .001</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>EFA</th>
+<th>요인 수</th>
+<th>부하량</th>
+<th>KMO</th>
+<th>Bartlett</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Y(<code>B1~B8</code>)</td>
+<td>1</td>
+<td>B1 .793, B2 .773, B3 .807, B4 .842, B5 .727, B6 .810, B7 .888, B8 .875</td>
+<td>0.911</td>
+<td>χ²=456, df 28, p &lt; .001</td>
+</tr>
+<tr>
+<td>W(<code>C1~C4</code>)</td>
+<td>1</td>
+<td>C1 .922, C2 .955, C3 .826, C4 .784</td>
+<td>0.836</td>
+<td>χ²=240, df 6, p &lt; .001</td>
+</tr>
+</tbody>
+</table>
+<h3 id="함정_2" class="trap">함정</h3>
+<ul>
+<li>Reliability(신뢰도)·Correlation(상관)·EFA(요인분석)에는 <code>Split by(집단 분리)</code>가 없다. 집단별 값은 필터로 나눠 구한다.</li>
+<li>필터를 켠 채 다음 분석을 만들면 그 분석도 부분집단 값이 된다. 실제로 <code>B3</code>·<code>B4</code> 상관이 도입 34명 값 r=0.501로 한 번 잘못 나와, 필터를 끄고 다시 구했다. df가 71이 아니면 필터가 켜져 있는 것이다.</li>
+<li>1문항 하위요인(<code>Y1(조기인지)</code>·<code>Y2(대응신속성)</code>)은 α를 산출할 수 없다. 2문항 하위요인은 α 대신 문항 간 상관으로 보고한다.</li>
+<li><strong>요인 수 기준 정정(2026-10-27):</strong> 처음 실행은 <code>Based on parallel analysis(평행분석 기준)</code>였으나, 원고 제5절의 사전 지정(고유값 1 이상·스크리 도표)과 맞추기 위해 <code>Number of Factors(요인 수)</code>를 <code>Based on eigenvalue(고유값 기준)</code>(1)로 <strong>재실행</strong>했다. 결과는 동일하게 1요인이다(<a href="#10-3-efa-고유값-기준-재실행">10-3</a> 참조). 이 매뉴얼의 표준 절차는 고유값 기준이다.</li>
+</ul>
+<hr />
+<h2 id="3단계-표-4-9-기술통계">3단계. 표 4-9 기술통계</h2>
+<p>종속변수·조절변수의 집단별 기술통계와, 도입 집단만 응답한 시스템 특성·경보 피로도 문항의 기술통계를 구한다.</p>
+<h3 id="종속변수조절변수">종속변수·조절변수</h3>
+<ol>
+<li><code>Exploration(탐색)</code> → <code>Descriptives(기술통계)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>Y_total(안전관리 실효성 전체)</code>, <code>Y1(조기인지)</code>~<code>Y5(위험통제력)</code>, <code>W_mean(예산제약성)</code>을 넣는다.</li>
+<li><code>Split by(집단 분리)</code>에 <code>D(도입여부)</code>를 넣는다.</li>
+<li><code>Mean(평균)</code>, <code>Median(중위수)</code>, <code>Std. deviation(표준편차)</code>, <code>Minimum(최솟값)</code>, <code>Maximum(최댓값)</code>, <strong><code>Skewness(왜도)</code>, <code>Kurtosis(첨도)</code></strong>를 체크한다.</li>
+</ol>
+<h3 id="도입-집단-전용-문항">도입 집단 전용 문항</h3>
+<ol>
+<li><code>Descriptives(기술통계)</code>를 새로 하나 더 만든다.</li>
+<li>Variables(변수)에 <code>D1~D8(시스템 특성 인식 문항)</code>, <code>E1~E4(경보 피로도 완화 문항)</code>, <code>E_total(경보 피로도 완화 전체)</code>, <code>D_sub1~D_sub4(시스템 특성 하위요인 평균)</code>, <code>D_total(시스템 특성 전체)</code>을 넣는다.</li>
+<li><code>Split by(집단 분리)</code>는 비워 둔다. 미도입 집단은 이 문항이 결측이라 필터 없이도 도입 34명만 집계된다.</li>
+</ol>
+<h3 id="확인값_3" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>미도입 M(SD)</th>
+<th>도입 M(SD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Y_total(안전관리 실효성 전체)</code></td>
+<td>3.48(0.81)</td>
+<td>4.11(0.61)</td>
+</tr>
+<tr>
+<td><code>Y1(조기인지)</code></td>
+<td>3.51(0.82)</td>
+<td>4.18(0.76)</td>
+</tr>
+<tr>
+<td><code>Y2(대응신속성)</code></td>
+<td>3.87(0.83)</td>
+<td>4.24(0.70)</td>
+</tr>
+<tr>
+<td><code>Y3(원격파악)</code></td>
+<td>3.32(1.00)</td>
+<td>4.12(0.71)</td>
+</tr>
+<tr>
+<td><code>Y4(순찰부담경감)</code></td>
+<td>3.26(1.01)</td>
+<td>3.88(0.76)</td>
+</tr>
+<tr>
+<td><code>Y5(위험통제력)</code></td>
+<td>3.67(0.81)</td>
+<td>4.25(0.63)</td>
+</tr>
+<tr>
+<td><code>W_mean(예산제약성)</code></td>
+<td>3.57(1.11)</td>
+<td>3.31(1.04)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>왜도·첨도: 모두 절댓값 1.25 이하.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>도입 34명 문항</th>
+<th>M(SD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 / D2 / D3 / D4</td>
+<td>3.71(1.00) / 3.71(0.97) / 3.94(0.69) / 3.53(0.99)</td>
+</tr>
+<tr>
+<td>D5 / D6 / D7 / D8</td>
+<td>3.56(0.96) / 3.47(0.96) / 4.12(0.77) / 3.85(0.86)</td>
+</tr>
+<tr>
+<td>E1 / E2 / E3 / E4</td>
+<td>3.53 / 3.59 / 3.91 / 3.59 (SD 미기록)</td>
+</tr>
+<tr>
+<td><code>E_total(경보 피로도 완화 전체)</code></td>
+<td>3.65 (SD 미기록)</td>
+</tr>
+<tr>
+<td><code>D_sub1</code> / <code>D_sub2</code> / <code>D_sub3</code> / <code>D_sub4</code></td>
+<td>3.71 / 3.74 / 3.51 / 3.99 (SD 미기록)</td>
+</tr>
+<tr>
+<td><code>D_total(시스템 특성 전체)</code></td>
+<td>3.74 (SD 미기록)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="함정_3" class="trap">함정</h3>
+<ul>
+<li>두 번째 Descriptives(기술통계)의 N이 34가 아니면 필터가 켜져 있거나 결측 처리가 다른 것이다.</li>
+</ul>
+<hr />
+<h2 id="4단계-표-4-10-균형-진단">4단계. 표 4-10 균형 진단</h2>
+<p>두 집단이 통제변수에서 얼마나 다른지 본다. 표준화 차이(SMD) 대신 jamovi 기본 기능의 Cohen's d(연속형)와 Cramér's V(범주형)를 대체 지표로 쓴다.</p>
+<h3 id="연속형-통제변수">연속형 통제변수</h3>
+<ol>
+<li><code>T-Tests(t 검정)</code> → <code>Independent Samples T-Test(독립표본 t 검정)</code>를 누른다.</li>
+<li><code>Dependent Variables(종속변수)</code>에 <code>age(만 나이)</code>, <code>experience(경력)</code>을 넣는다.</li>
+<li><code>Grouping Variable(집단 변수)</code>에 <code>D(도입여부)</code>를 넣는다.</li>
+<li><code>Additional Statistics(추가 통계량)</code>에서 <strong><code>Effect size(효과크기, Cohen's d)</code></strong>와 <code>Confidence interval(신뢰구간)</code>을 체크한다.</li>
+</ol>
+<h3 id="범주형-통제변수">범주형 통제변수</h3>
+<ol>
+<li><code>Frequencies(빈도)</code> → <code>Independent Samples(독립표본)</code>를 누른다.</li>
+<li><code>Rows(행)</code>에 <code>affiliation(소속)</code>, <code>Columns(열)</code>에 <code>D(도입여부)</code>를 넣는다.</li>
+<li>Statistics(통계량)에서 <code>Fisher's exact test(피셔 정확 검정)</code>를 체크한다.</li>
+<li><code>Nominal(명목)</code> 항목에서 <strong><code>Phi and Cramer's V(파이 및 크라메르 V)</code></strong>를 체크한다.</li>
+<li>결과 상자를 <code>Duplicate(복제)</code>해 <code>Rows(행)</code>를 <code>sex(성별)</code>로 바꾼다.</li>
+<li>같은 방식으로 <code>role(역할)</code>, <code>cost(총공사비)</code>를 만든다.</li>
+</ol>
+<h3 id="확인값_4" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>검정</th>
+<th>p</th>
+<th>Fisher p</th>
+<th>효과크기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>age(만 나이)</code></td>
+<td>t(71)=0.200</td>
+<td>.842</td>
+<td>—</td>
+<td>d=0.047</td>
+</tr>
+<tr>
+<td><code>experience(경력)</code></td>
+<td>t(71)=1.214</td>
+<td>.229</td>
+<td>—</td>
+<td>d=0.285</td>
+</tr>
+<tr>
+<td><code>affiliation(소속)</code></td>
+<td>χ²=2.81</td>
+<td>.094</td>
+<td>.150</td>
+<td>V=0.196</td>
+</tr>
+<tr>
+<td><code>sex(성별)</code></td>
+<td>χ²=5.70</td>
+<td>.017</td>
+<td>.027</td>
+<td>V=0.279 (유일한 유의)</td>
+</tr>
+<tr>
+<td><code>role(역할)</code></td>
+<td>χ²=1.05, df 2</td>
+<td>.590</td>
+<td>.631</td>
+<td>V=0.120 (Phi는 NaN)</td>
+</tr>
+<tr>
+<td><code>cost(총공사비)</code></td>
+<td>χ²=4.70, df 3</td>
+<td>.195</td>
+<td>.201</td>
+<td>V=0.254</td>
+</tr>
+</tbody>
+</table>
+<h3 id="함정_4" class="trap">함정</h3>
+<ul>
+<li><code>Grouping Variable(집단 변수)</code>을 비워 두면 결과가 점(.)으로만 나온다.</li>
+<li><code>Effect size(효과크기)</code> 체크박스는 <code>Additional Statistics(추가 통계량)</code> 안에 있다.</li>
+<li><code>role(역할)</code>의 Phi가 NaN으로 나오는 것은 정상이다. Phi는 2×2 표에만 정의되고 <code>role(역할)</code>은 3×2 표다. Cramér's V를 쓴다.</li>
+</ul>
+<hr />
+<h2 id="5단계-표-4-11-가정-점검">5단계. 표 4-11 가정 점검</h2>
+<p>ANCOVA 본 모형을 만들고 등분산·정규성·회귀기울기 동질성·다중공선성·영향점을 점검한다. 이 단계에서 만든 ANCOVA가 6단계 본 분석의 모형이 된다.</p>
+<h3 id="ancova-모형-만들기">ANCOVA 모형 만들기</h3>
+<ol>
+<li><code>ANOVA(분산분석)</code> → <code>ANCOVA(공분산분석)</code>를 누른다.</li>
+<li><code>Dependent Variable(종속변수)</code>에 <code>Y_total(안전관리 실효성 전체)</code>을 넣는다.</li>
+<li><code>Fixed Factors(고정 요인)</code>에 <code>D(도입여부)</code>, <code>affiliation(소속)</code>, <code>sex(성별)</code>, <code>role(역할)</code>, <code>cost(총공사비)</code>를 넣는다.</li>
+<li><code>Covariates(공변량)</code>에 <code>age(만 나이)</code>, <code>experience(경력)</code>을 넣는다.</li>
+<li><code>Model(모형)</code>을 펼친다. <code>Model Terms(모형 항)</code> 목록에서 <code>D * affiliation</code>부터 맨 아래 5원 상호작용 항까지 Shift+클릭으로 전부 선택한다.</li>
+<li><code>←</code> 버튼으로 선택한 상호작용 항을 모두 제거한다. <strong>주효과 7개(<code>D</code>, <code>affiliation</code>, <code>sex</code>, <code>role</code>, <code>cost</code>, <code>age</code>, <code>experience</code>)만</strong> 남긴다.</li>
+<li><code>Sum of squares(제곱합)</code>를 <code>Type 3(제3유형)</code>으로 한다.</li>
+<li>결과 표의 잔차(Residuals) df가 62인지 확인한다.</li>
+<li><code>Assumption Checks(가정 점검)</code>에서 <code>Homogeneity test(등분산 검정)</code>, <code>Normality test(정규성 검정)</code>, <code>Q-Q Plot(Q-Q 도표)</code>을 체크한다.</li>
+</ol>
+<h3 id="회귀기울기-동질성진단용-임시-모형">회귀기울기 동질성(진단용 임시 모형)</h3>
+<ol>
+<li><code>Model(모형)</code> → <code>Components(구성 요소)</code> 목록에서 <code>D</code>와 <code>age</code>를 Ctrl+클릭으로 함께 선택한다.</li>
+<li><code>→</code> 옆 드롭다운에서 <code>Interaction(상호작용)</code>을 골라 <code>D*age</code> 항을 추가한다.</li>
+<li>같은 방식으로 <code>D</code>와 <code>experience</code>를 골라 <code>D*experience</code> 항을 추가한다.</li>
+<li>두 상호작용 항의 F·p를 기록한다.</li>
+<li><strong><code>Model Terms(모형 항)</code>에서 <code>D*age</code>, <code>D*experience</code>를 다시 제거</strong>한다. 잔차 df가 62로 돌아왔는지 확인한다.</li>
+</ol>
+<h3 id="다중공선성영향점회귀분석">다중공선성·영향점(회귀분석)</h3>
+<ol>
+<li><code>Regression(회귀)</code> → <code>Linear Regression(선형회귀)</code>을 누른다.</li>
+<li><code>Dependent Variable(종속변수)</code>에 <code>Y_total(안전관리 실효성 전체)</code>을 넣는다.</li>
+<li><code>Covariates(공변량)</code>에 <code>age(만 나이)</code>, <code>experience(경력)</code>을 넣는다.</li>
+<li><code>Factors(요인)</code>에 <code>D(도입여부)</code>, <code>affiliation(소속)</code>, <code>sex(성별)</code>, <code>role(역할)</code>, <code>cost(총공사비)</code>를 넣는다.</li>
+<li><code>Assumption Checks(가정 점검)</code>에서 <code>Collinearity statistics(공선성 통계량, VIF)</code>와 <code>Residual plots(잔차 도표)</code>를 체크한다.</li>
+<li><code>Data Summary(데이터 요약)</code>에서 <code>Cook's distance(쿡의 거리)</code>를 체크한다.</li>
+</ol>
+<h3 id="확인값_5" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>점검</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Levene 등분산</td>
+<td>F(26, 46)=1.26, p=.245</td>
+</tr>
+<tr>
+<td>Shapiro-Wilk 정규성</td>
+<td>W=0.974, p=.128</td>
+</tr>
+<tr>
+<td>D×age</td>
+<td>F=1.50, p=.226</td>
+</tr>
+<tr>
+<td>D×experience</td>
+<td>F=0.55, p=.461</td>
+</tr>
+<tr>
+<td>VIF</td>
+<td>age 1.60, experience 1.65, D 1.12, affiliation 2.41, sex 1.17, role 1.75, cost 1.11</td>
+</tr>
+<tr>
+<td>Cook's D</td>
+<td>평균 0.0172, 중위 0.00508, 최대 0.139 (4/n=0.055 초과 5건 — 10-6 참조)</td>
+</tr>
+<tr>
+<td>회귀 D 계수</td>
+<td>B=0.539, SE=0.185, t=2.92, p=.005</td>
+</tr>
+<tr>
+<td>회귀 R²</td>
+<td>0.318</td>
+</tr>
+</tbody>
+</table>
+<h3 id="함정_5" class="trap">함정</h3>
+<ul>
+<li><strong>가장 큰 함정:</strong> <code>Fixed Factors(고정 요인)</code>를 여러 개 넣으면 jamovi가 <code>Model Terms(모형 항)</code>에 2원~5원 상호작용을 전부 자동으로 넣는다. 그대로 두면 <code>Singular fit encountered(특이 적합 발생)</code> 경고가 뜨고, <code>D</code> 행의 F·p가 비며 df가 0으로 찍힌다. 반드시 주효과 7개만 남긴다. 잔차 df 62가 정상의 신호다.</li>
+<li>회귀기울기 동질성 모형은 진단용 임시 모형이다. 본 모형에 넣지 않는다. 이 임시 모형에서 나온 <code>D</code>의 p=.557은 보고하지 않는다.</li>
+<li>상호작용 항을 지우지 않고 6단계로 넘어가면 H1 결과가 달라진다. 6단계 시작 전에 잔차 df 62를 다시 확인한다.</li>
+</ul>
+<hr />
+<h2 id="6단계-표-4-12-h1-본-분석">6단계. 표 4-12 H1 본 분석</h2>
+<p>5단계의 주효과 7개 ANCOVA에서 효과크기와 조정 평균을 추가로 뽑는다. 새 분석을 만들지 않는다.</p>
+<ol>
+<li>5단계 ANCOVA 결과 상자를 클릭해 설정 창을 연다. 잔차 df가 62인지 확인한다.</li>
+<li><code>Effect Size(효과크기)</code>에서 <strong><code>partial η²(부분 에타제곱)</code></strong>를 체크한다. <code>η²(에타제곱)</code>가 아니다.</li>
+<li><code>Estimated Marginal Means(추정 주변 평균)</code>를 펼친다.</li>
+<li>왼쪽 목록에서 <code>D(도입여부)</code>를 선택하고 <code>→</code>로 <code>Term 1(항 1)</code> 칸에 넣는다.</li>
+<li><code>Term 1</code> 칸에 "drag variables here"라는 문구가 남아 있지 않은지 확인한다.</li>
+<li><code>Output(출력)</code>에서 <code>Marginal means tables(주변 평균 표)</code>를 체크한다.</li>
+<li><code>General Options(일반 옵션)</code>의 <code>Equal cell weights(동일 셀 가중)</code>를 기본값(체크) 그대로 둔다.</li>
+</ol>
+<h3 id="확인값_6" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D(도입여부)</code></td>
+<td>F(1, 62)=8.5385, p=.005, η²p=0.121</td>
+</tr>
+<tr>
+<td>제곱합</td>
+<td>D의 SS 4.1734, 잔차 SS 30.3038(df 62)</td>
+</tr>
+<tr>
+<td>조정 평균 미도입</td>
+<td>3.29 (SE 0.196, 95% CI 2.90~3.69)</td>
+</tr>
+<tr>
+<td>조정 평균 도입</td>
+<td>3.83 (SE 0.225, 95% CI 3.38~4.28)</td>
+</tr>
+<tr>
+<td>조정 평균 차이</td>
+<td>0.54</td>
+</tr>
+<tr>
+<td>다른 항 p</td>
+<td>affiliation .731, sex .137, role .782, cost .349, age .850, experience .820</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>판정 규칙: 조정 평균 차이가 양수이고 p &lt; .05이면 <strong>H1 지지</strong>. 효과크기는 판정 근거가 아니다.</li>
+</ul>
+<h3 id="함정_6" class="trap">함정</h3>
+<ul>
+<li><code>η²(에타제곱)</code>와 <code>partial η²(부분 에타제곱)</code>는 값이 다르다. 이 모형에서 η²는 0.111, partial η²는 0.121이다. 0.111이 보이면 체크박스를 잘못 고른 것이다.</li>
+<li><code>D(도입여부)</code>가 <code>Term 1</code>에 실제로 들어가지 않으면 주변 평균 표가 나오지 않는다. "drag variables here"가 남아 있으면 다시 넣는다.</li>
+</ul>
+<hr />
+<h2 id="7단계-표-4-13-하위요인별-ancova와-holm-보정">7단계. 표 4-13 하위요인별 ANCOVA와 Holm 보정</h2>
+<p>6단계 모형을 그대로 복제해 종속변수만 <code>Y1(조기인지)</code>~<code>Y5(위험통제력)</code>로 바꾼다. 이후 다섯 p값에 Holm 보정을 손으로 적용한다.</p>
+<ol>
+<li>6단계 ANCOVA 결과 상자 제목을 우클릭 → <code>Duplicate(복제)</code>를 누른다.</li>
+<li>복제본의 <code>Dependent Variable(종속변수)</code>만 <code>Y1(조기인지)</code>로 바꾼다.</li>
+<li>다시 복제해 <code>Y2(대응신속성)</code>로 바꾼다.</li>
+<li>다시 복제해 <code>Y3(원격파악)</code>로 바꾼다.</li>
+<li>다시 복제해 <code>Y4(순찰부담경감)</code>로 바꾼다.</li>
+<li>다시 복제해 <code>Y5(위험통제력)</code>로 바꾼다.</li>
+<li>각 복제본에서 잔차 df 62, <code>partial η²(부분 에타제곱)</code> 체크, EMM <code>Term 1</code>의 <code>D(도입여부)</code>가 유지됐는지 확인한다.</li>
+<li>다섯 p값을 <a href="#부록-a-holm-보정-손계산법">부록 A</a>의 방법으로 Holm 보정한다.</li>
+</ol>
+<h3 id="확인값_7" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>종속변수</th>
+<th>미도입 조정 평균</th>
+<th>도입 조정 평균</th>
+<th>차이</th>
+<th>F(1, 62)</th>
+<th>p</th>
+<th>η²p</th>
+<th>Holm p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Y1(조기인지)</code></td>
+<td>3.32</td>
+<td>3.94</td>
+<td>0.62</td>
+<td>10.50</td>
+<td>.002</td>
+<td>0.145</td>
+<td>.010</td>
+</tr>
+<tr>
+<td><code>Y2(대응신속성)</code></td>
+<td>3.69</td>
+<td>3.82</td>
+<td>0.13</td>
+<td>0.46</td>
+<td>.502</td>
+<td>0.007</td>
+<td>.502</td>
+</tr>
+<tr>
+<td><code>Y3(원격파악)</code></td>
+<td>3.13</td>
+<td>3.85</td>
+<td>0.72</td>
+<td>9.36</td>
+<td>.003</td>
+<td>0.131</td>
+<td>.012</td>
+</tr>
+<tr>
+<td><code>Y4(순찰부담경감)</code></td>
+<td>3.13</td>
+<td>3.65</td>
+<td>0.52</td>
+<td>4.86</td>
+<td>.031</td>
+<td>0.073</td>
+<td>.062</td>
+</tr>
+<tr>
+<td><code>Y5(위험통제력)</code></td>
+<td>3.41</td>
+<td>3.95</td>
+<td>0.54</td>
+<td>8.74</td>
+<td>.004</td>
+<td>0.124</td>
+<td>.012</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Holm 보정 후 유의: <code>Y1(조기인지)</code>, <code>Y3(원격파악)</code>, <code>Y5(위험통제력)</code>.</li>
+<li><code>Y5(위험통제력)</code> 모형의 Shapiro-Wilk p=.036(경계).</li>
+</ul>
+<h3 id="함정_7" class="trap">함정</h3>
+<ul>
+<li>jamovi는 여러 ANCOVA의 p값을 묶어 Holm 보정해 주지 않는다. 손계산한다.</li>
+<li>복제 후 종속변수만 바꾸면 모형 항·효과크기·EMM 설정이 따라온다. 반대로 새 ANCOVA를 처음부터 만들면 5단계의 상호작용 자동 추가 함정이 다시 생긴다.</li>
+</ul>
+<hr />
+<h2 id="8단계-표-4-14-h2-상호작용">8단계. 표 4-14 H2 상호작용</h2>
+<p>예산제약성을 평균중심화한 뒤 <code>D(도입여부)</code>와의 상호작용을 ANCOVA와 회귀로 각각 검정한다.</p>
+<h3 id="평균중심화-변수-만들기">평균중심화 변수 만들기</h3>
+<ol>
+<li><code>Data(데이터)</code> → <code>Compute(계산)</code>를 누른다.</li>
+<li>새 변수 이름을 <code>W_c</code>로 입력한다.</li>
+<li>수식 칸에 <code>W_mean - VMEAN(W_mean)</code>을 입력한다. 결과 변수는 <code>W_c(평균중심화 예산제약성)</code>다.
+   - 주의: <code>VMEAN</code>은 그 시점에 <strong>필터를 통과한 행만</strong>으로 평균을 낸다. 이번 분석은 필터를 끈 73명 기준으로 계산했으므로(하단 <code>Filters 0</code> 확인), 필터가 켜진 채 만들면 중심점이 달라진다.</li>
+</ol>
+<h3 id="ancova-상호작용">ANCOVA 상호작용</h3>
+<ol>
+<li>6단계 ANCOVA를 <code>Duplicate(복제)</code>한다(또는 5단계 방식으로 새로 만들고 상호작용 항을 지운다).</li>
+<li><code>Covariates(공변량)</code>에 <code>W_c(평균중심화 예산제약성)</code>를 추가한다. 공변량은 <code>age(만 나이)</code>, <code>experience(경력)</code>, <code>W_c</code> 세 개가 된다.</li>
+<li><code>Model(모형)</code> → <code>Components(구성 요소)</code>에서 <code>D</code>와 <code>W_c</code>를 Ctrl+클릭으로 함께 선택한다.</li>
+<li><code>→</code> 옆 드롭다운에서 <code>Interaction(상호작용)</code>을 골라 <code>D*W_c</code> 항을 추가한다.</li>
+<li><code>partial η²(부분 에타제곱)</code>가 체크돼 있는지 확인한다.</li>
+<li>잔차 df가 60인지 확인한다.</li>
+</ol>
+<h3 id="회귀-상호작용">회귀 상호작용</h3>
+<ol>
+<li><code>Regression(회귀)</code> → <code>Linear Regression(선형회귀)</code>을 새로 만든다.</li>
+<li><code>Dependent Variable(종속변수)</code>에 <code>Y_total(안전관리 실효성 전체)</code>을 넣는다.</li>
+<li><code>Covariates(공변량)</code>에 <code>age(만 나이)</code>, <code>experience(경력)</code>, <code>W_c(평균중심화 예산제약성)</code>를 넣는다.</li>
+<li><code>Factors(요인)</code>에 <code>D(도입여부)</code>, <code>affiliation(소속)</code>, <code>sex(성별)</code>, <code>role(역할)</code>, <code>cost(총공사비)</code>를 넣는다.</li>
+<li><code>Model Builder(모형 구성)</code> → <code>Predictors(예측변수)</code>에서 <code>D</code>와 <code>W_c</code>를 Ctrl+클릭으로 함께 선택한다.</li>
+<li><code>Interaction(상호작용)</code>을 골라 <code>Blocks(블록)</code>에 <code>D*W_c</code>를 추가한다.</li>
+<li><code>Model Coefficients(모형 계수)</code> → <code>Estimate(추정치)</code> → <strong><code>Confidence interval(신뢰구간)</code></strong>을 체크한다.</li>
+</ol>
+<h3 id="확인값_8" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANCOVA D×W_c</td>
+<td>F(1, 60)=2.3467, p=.131, η²p=0.038</td>
+</tr>
+<tr>
+<td>제곱합</td>
+<td>D×W_c의 SS 1.1197, 잔차 SS 28.6292(df 60)</td>
+</tr>
+<tr>
+<td>같은 모형의 다른 항</td>
+<td>D p=.008, W_c p=.519</td>
+</tr>
+<tr>
+<td>같은 모형의 가정</td>
+<td>Levene p=.372, Shapiro-Wilk p=.726</td>
+</tr>
+<tr>
+<td>회귀 D×W_c</td>
+<td>B=0.30858, SE=0.2014, 95% CI [−0.0944, 0.7115], t=1.532, p=.131</td>
+</tr>
+<tr>
+<td>일치 확인</td>
+<td>회귀 t²(1.532² ≈ 2.347) = ANCOVA F(2.3467)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>판정: 상호작용 p=.131 ≥ .05 → <strong>H2 기각</strong>.</li>
+<li>W 평균·±1SD 조건에서의 조건부 집단 차이는 10-9에서 Linear Regression의 EMM으로 산출했다(ANCOVA 메뉴 EMM에는 공변량을 넣을 수 없다).</li>
+</ul>
+<h3 id="함정_8" class="trap">함정</h3>
+<ul>
+<li><code>W_c</code>를 공변량에 넣지 않고 상호작용만 추가하려 하면 <code>Components(구성 요소)</code> 목록에 <code>W_c</code>가 나타나지 않는다. 공변량 추가가 먼저다.</li>
+<li>회귀의 신뢰구간 체크박스는 <code>Model Coefficients(모형 계수)</code> 안의 <code>Estimate(추정치)</code> 아래에 있다.</li>
+<li><strong>W_c 생성 시점(2026-10-27 정정):</strong> <code>VMEAN(W_mean)</code>은 <strong>필터를 통과한 행만</strong>으로 평균을 낸다. 따라서 <code>W_c</code>는 반드시 필터를 끈 73명 상태에서 만든다. 필터를 건 채 만들면 <code>W_c</code> 값과 H2·EMM 결과가 함께 바뀐다.</li>
+<li><strong>조건부 조정 평균(2026-10-27 정정):</strong> <code>ANCOVA(공분산분석)</code> 메뉴의 <code>Estimated Marginal Means(추정 주변 평균)</code>에는 공변량을 넣을 수 없다. W 수준별 조정 평균은 <strong>Linear Regression의 Estimated Marginal Means</strong>에서 구한다(<a href="#10-9-h2-조건부-조정-평균w-수준별">10-9</a> 참조).</li>
+</ul>
+<hr />
+<h2 id="9단계-표-4-15-가설-검증-종합">9단계. 표 4-15 가설 검증 종합</h2>
+<p>새 분석은 없다. 6·8단계 결과와 1단계의 <code>A9(지시 전달 소요시간)</code> 결과를 한 표로 모은다.</p>
+<ol>
+<li>H1 행: 6단계 ANCOVA의 F·p·η²p와 5단계 회귀의 D 계수를 옮긴다.</li>
+<li>H1의 95% 신뢰구간은 회귀 D 계수에서 t(62) 임계값으로 손계산한다: B ± t(.975, 62) × SE.</li>
+<li>H2 행: 8단계 ANCOVA의 F·p와 회귀의 B·95% CI를 옮긴다.</li>
+<li>과정 지표 행: 1단계 <code>A9(지시 전달 소요시간)</code>의 Fisher p를 옮긴다.</li>
+</ol>
+<h3 id="확인값_9" class="check">확인값</h3>
+<table>
+<thead>
+<tr>
+<th>가설·지표</th>
+<th>통계량</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>F(1, 62)=8.54, p=.005, B=0.54, 95% CI <a href="t(62)로 손계산">0.17, 0.91</a>, η²p=0.121</td>
+<td>지지</td>
+</tr>
+<tr>
+<td>H2</td>
+<td>F(1, 60)=2.35, p=.131, B=0.309, 95% CI [−0.09, 0.71]</td>
+<td>기각</td>
+</tr>
+<tr>
+<td><code>A9(지시 전달 소요시간)</code></td>
+<td>Fisher p=.663</td>
+<td>집단 차이 없음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>해석 조합: 과정 지표(<code>A9</code>) 차이 '없음' × H1 결과 차이 '있음'.</li>
+</ul>
+<h3 id="함정_9" class="trap">함정</h3>
+<ul>
+<li>H1의 신뢰구간은 jamovi가 바로 출력한 값이 아니라 회귀 SE로 손계산한 값이다. 5단계 회귀에서 <code>Confidence interval(신뢰구간)</code>을 체크하면 직접 대조할 수 있다.</li>
+</ul>
+<hr />
+<h2 id="10단계-이후--2026-10-27-추가-분석">10단계 이후 — 2026-10-27 추가 분석</h2>
+<p>0~9단계로 표 4-7~4-15의 본 값을 구한 뒤, 2026-10-27 오전에 원고의 빈칸과 5장 논의에 필요한 값을 추가로 구했다. 이 장의 분석은 대부분 <strong>필터를 바꿔 가며</strong> 같은 회귀분석을 다시 읽는 방식이라 필터 관리가 핵심이다. 각 항목이 끝나면 하단 상태표시줄이 <code>Filtered 0</code>인지 확인하고 다음 항목으로 넘어간다.</p>
+<h3 id="10-1-시스템-경로-작동-여부별-실효성">10-1. 시스템 경로 작동 여부별 실효성</h3>
+<p>5장 논의용으로, 도입 집단 안에서 시스템 인지경로가 실제로 작동한 응답자와 그렇지 않은 응답자의 실효성을 비교한다.</p>
+<ol>
+<li><code>Data(데이터)</code> → <code>Filters(필터)</code>에 <code>D == 1</code>을 입력하고 Enter를 누른다. 상태표시줄에서 도입 34명만 남았는지 확인한다.</li>
+<li><code>Exploration(탐색)</code> → <code>Descriptives(기술통계)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>Y_total(안전관리 실효성 전체)</code>을 넣는다.</li>
+<li><code>Split by(집단 분리)</code>에 <code>sys_path(시스템 인지경로 충족)</code>를 넣는다.</li>
+<li><code>N(사례 수)</code>, <code>Mean(평균)</code>, <code>Median(중위수)</code>, <code>Std. deviation(표준편차)</code>을 체크한다.</li>
+<li>값을 기록한 뒤 필터를 끈다.</li>
+</ol>
+<h4 id="확인값_10" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th><code>sys_path(시스템 인지경로 충족)</code></th>
+<th>n</th>
+<th>M</th>
+<th>SD</th>
+<th>Mdn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0(미충족)</td>
+<td>19</td>
+<td>4.00</td>
+<td>0.640</td>
+<td>3.88</td>
+</tr>
+<tr>
+<td>1(충족)</td>
+<td>15</td>
+<td>4.26</td>
+<td>0.548</td>
+<td>4.13</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>작동 현장(충족)이 더 높다. 충족 15명은 <code>A7(위험 인지 경로)</code> ③④이면서 <code>A8(위험 인지 시점)</code> ③인 도입 응답자다.</li>
+</ul>
+<h4 id="함정_10" class="trap">함정</h4>
+<ul>
+<li>필터를 끄지 않으면 결과창의 모든 분석이 도입 34명 값으로 바뀐다. 끝나면 반드시 <code>Filtered 0</code>을 확인한다.</li>
+</ul>
+<h3 id="10-2-전체-73명-기술통계">10-2. 전체 73명 기술통계</h3>
+<p>표 4-7·4-9의 '전체' 행을 채운다.</p>
+<ol>
+<li>필터가 꺼져 있는지 확인한다.</li>
+<li><code>Exploration(탐색)</code> → <code>Descriptives(기술통계)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>age(만 나이)</code>, <code>experience(경력)</code>, <code>Y_total(안전관리 실효성 전체)</code>을 넣는다. <code>Split by(집단 분리)</code>는 비워 둔다.</li>
+<li><code>Mean(평균)</code>, <code>Median(중위수)</code>, <code>Std. deviation(표준편차)</code>, <code>Minimum(최솟값)</code>, <code>Maximum(최댓값)</code>을 체크한다.</li>
+</ol>
+<h4 id="확인값_11" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>변수</th>
+<th>M</th>
+<th>SD</th>
+<th>Mdn</th>
+<th>최소~최대</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>age(만 나이)</code></td>
+<td>46.6</td>
+<td>11.5</td>
+<td>48</td>
+<td>24~67</td>
+</tr>
+<tr>
+<td><code>experience(경력)</code></td>
+<td>16.0</td>
+<td>11.7</td>
+<td>13</td>
+<td>1~45</td>
+</tr>
+<tr>
+<td><code>Y_total(안전관리 실효성 전체)</code></td>
+<td>3.78</td>
+<td>0.785</td>
+<td>3.88</td>
+<td>1.38~5.00</td>
+</tr>
+</tbody>
+</table>
+<h4 id="함정_11" class="trap">함정</h4>
+<ul>
+<li>N이 73이 아니면 필터가 켜져 있다.</li>
+</ul>
+<h3 id="10-3-efa-고유값-기준-재실행">10-3. EFA 고유값 기준 재실행</h3>
+<p>원고 제5절이 사전에 지정한 요인 수 결정 기준(고유값 1 이상·스크리 도표)으로 2단계 EFA를 다시 돌린다. <strong>이 절차가 표준이다.</strong></p>
+<ol>
+<li><code>Factor(요인)</code> → <code>Exploratory Factor Analysis(탐색적 요인분석)</code>를 누른다.</li>
+<li>Variables(변수)에 <code>B1~B8(실효성 문항)</code>을 넣는다.</li>
+<li><code>Extraction(추출)</code>을 <code>Principal axis(주축 요인추출)</code>로 한다.</li>
+<li><code>Rotation(회전)</code>을 <code>Oblimin(사각 회전)</code>으로 한다.</li>
+<li><code>Number of Factors(요인 수)</code>를 <code>Based on eigenvalue(고유값 기준)</code>로 하고 값은 1로 둔다.</li>
+<li><code>Assumption Checks(가정 점검)</code>에서 <code>Bartlett's test of sphericity(바틀렛 구형성 검정)</code>와 <code>KMO measure of sampling adequacy(KMO 표본 적절성)</code>를 체크한다.</li>
+<li><code>Additional Output(추가 출력)</code>에서 <code>Factor summary(요인 요약)</code>와 <code>Scree plot(스크리 도표)</code>을 체크한다.</li>
+<li>결과 상자를 <code>Duplicate(복제)</code>해 Variables(변수)를 <code>C1~C4(예산제약성 문항)</code>로 바꾼다.</li>
+</ol>
+<h4 id="확인값_12" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>척도</th>
+<th>요인 수</th>
+<th>SS loadings</th>
+<th>설명분산</th>
+<th>KMO</th>
+<th>Bartlett</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Y(<code>B1~B8</code>)</td>
+<td>1</td>
+<td>5.33</td>
+<td>66.6%</td>
+<td>0.911</td>
+<td>χ²=456, df 28, p &lt; .001</td>
+</tr>
+<tr>
+<td>W(<code>C1~C4</code>)</td>
+<td>1</td>
+<td>3.06</td>
+<td>76.5%</td>
+<td>0.836</td>
+<td>χ²=240, df 6, p &lt; .001</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>스크리 도표: 두 척도 모두 첫 고유값만 1을 넘는다. 요인 수는 2단계(병렬분석)와 같다.</li>
+</ul>
+<h4 id="함정_12" class="trap">함정</h4>
+<ul>
+<li>2단계의 <code>Based on parallel analysis(평행분석 기준)</code>는 원고의 사전 지정 기준과 다르다. 결과는 같지만 보고는 고유값 기준으로 한다.</li>
+</ul>
+<h3 id="10-4-문항-제거-시-α수정-문항총점-상관">10-4. 문항 제거 시 α·수정 문항–총점 상관</h3>
+<ol>
+<li>필터가 꺼져 있는지 확인한다.</li>
+<li><code>Factor(요인)</code> → <code>Reliability Analysis(신뢰도 분석)</code>를 누른다(2단계 상자를 클릭해 옵션만 추가해도 된다).</li>
+<li>Items(문항)에 <code>B1~B8(실효성 문항)</code>을 넣는다.</li>
+<li><code>Item Statistics(문항 통계량)</code>에서 <code>Cronbach's α (if item is dropped)(문항 제거 시 α)</code>와 <code>Item-rest correlation(수정 문항–총점 상관)</code>을 체크한다.</li>
+<li>결과 상자를 <code>Duplicate(복제)</code>해 Items(문항)를 <code>C1~C4(예산제약성 문항)</code>로 바꾼다.</li>
+</ol>
+<h4 id="확인값_13" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>척도</th>
+<th>전체 α</th>
+<th>문항 제거 시 α</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Y(<code>B1~B8</code>)</td>
+<td>0.937</td>
+<td>B1 .930 · B2 .932 · B3 .929 · B4 .926 · B5 .934 · B6 .930 · B7 .924 · B8 .925</td>
+</tr>
+<tr>
+<td>W(<code>C1~C4</code>)</td>
+<td>0.926</td>
+<td>C1 .890 · C2 .880 · C3 .916 · C4 .927</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Y는 어느 문항을 빼도 전체 α 0.937보다 낮다. W는 C4를 빼면 0.927로 사실상 같아 제거 근거가 없다.</li>
+<li><code>Item-rest correlation(수정 문항–총점 상관)</code> 값은 B1 .765 B2 .746 B3 .779 B4 .811 B5 .707 B6 .776 B7 .857 B8 .844 / C1 .870 C2 .897 C3 .792 C4 .756(필터 해제 73명, 09:00 저장본).</li>
+</ul>
+<h4 id="함정_13" class="trap">함정</h4>
+<ul>
+<li>2문항 영역(<code>Y3(원격파악)</code>·<code>Y4(순찰부담경감)</code>·<code>Y5(위험통제력)</code>)은 α 대신 문항 간 상관으로 보고하며, 1문항 영역(<code>Y1(조기인지)</code>·<code>Y2(대응신속성)</code>)은 신뢰도 지표가 없다.</li>
+</ul>
+<h3 id="10-5-선형성-산점도">10-5. 선형성 산점도</h3>
+<p>공변량과 종속변수의 관계가 직선인지 본다(표 4-11 선형성 행).</p>
+<ol>
+<li><code>Exploration(탐색)</code> → <code>Scatterplot(산점도)</code>을 누른다.</li>
+<li><code>X-Axis(X축)</code>에 <code>age(만 나이)</code>, <code>Y-Axis(Y축)</code>에 <code>Y_total(안전관리 실효성 전체)</code>을 넣는다.</li>
+<li><code>Regression Line(회귀선)</code>에서 <code>Show line(선 표시)</code>을 고르고 <code>Method(방법)</code>를 <code>Linear(선형)</code>로, <code>Confidence interval(신뢰구간)</code>을 체크한다.</li>
+<li>결과 상자를 <code>Duplicate(복제)</code>해 <code>X-Axis(X축)</code>를 <code>experience(경력)</code>로 바꾼다.</li>
+</ol>
+<h4 id="확인값_14" class="check">확인값</h4>
+<ul>
+<li>두 그림 모두 거의 수평인 직선 주변에 곡률 없이 흩어진다 → 위반 신호 없음.</li>
+<li>그림은 원고에 싣지 않고 .omv에 보관한다. 표 4-11에는 문장으로 보고한다.</li>
+</ul>
+<h4 id="함정_14" class="trap">함정</h4>
+<ul>
+<li>산점도는 수치가 나오지 않는 육안 판정이다. 판정 근거를 원고에 문장으로 남긴다.</li>
+</ul>
+<h3 id="10-6-cooks-d-저장초과-건수사례-id">10-6. Cook's D 저장·초과 건수·사례 ID</h3>
+<p>5단계에서 미기록이던 4/n 초과 건수와 해당 사례를 찾는다.</p>
+<ol>
+<li><strong>필터가 꺼져 있는지 먼저 확인한다</strong>(<code>Filtered 0</code>).</li>
+<li>H1 <code>Linear Regression(선형회귀)</code>(종속 <code>Y_total</code>, Covariates <code>age(만 나이)</code>·<code>experience(경력)</code>, Factors <code>D(도입여부)</code>·<code>affiliation(소속)</code>·<code>sex(성별)</code>·<code>role(역할)</code>·<code>cost(총공사비)</code>)을 연다.</li>
+<li><code>Save(저장)</code>에서 <code>Cook's distance(쿡의 거리)</code>를 체크한다. 데이터 창 끝에 새 열이 생긴다.</li>
+<li>새 열 머리글을 더블클릭해 이름을 <code>cook2</code>로 바꾼다.</li>
+<li><code>Data(데이터)</code> → <code>Compute(계산)</code>로 새 변수 <code>cook_hi2</code>를 만들고 수식 <code>IF(cook2 &gt; 0.0548, 1, 0)</code>을 입력한다(0.0548 = 4/73).</li>
+<li><code>Descriptives(기술통계)</code>에 <code>cook_hi2</code>를 넣고 <code>Frequency tables(빈도표)</code>를 체크한다.</li>
+<li>필터 <code>cook_hi2 == 1</code>을 걸어 데이터 창에서 사례 ID를 확인한 뒤 필터를 끈다.</li>
+</ol>
+<h4 id="확인값_15" class="check">확인값</h4>
+<ul>
+<li>초과 5건(6.8%): R002(도입)·R027·R030·R038·R056(미도입). 사례는 삭제하지 않는다.</li>
+<li>Cook's D 평균 0.0172, 최대 0.139.</li>
+</ul>
+<h4 id="함정_15" class="trap">함정</h4>
+<ul>
+<li><strong>실제 발생:</strong> 필터가 켜진 채 Save하면 필터를 통과한 행에만 값이 저장되고 나머지는 빈칸이 된다. 그러면 이후 <code>cook_hi == 0</code> 필터가 빈칸 행까지 제외한다(<code>Filtered 29</code>가 나왔다). 필터를 끄고 다시 저장한 열이 <code>cook2</code>·<code>cook_hi2</code>다.</li>
+<li>저장 열은 분석의 <strong>현재 표본으로 재계산</strong>된다. 다른 필터를 걸면 값과 초과 건수가 바뀐다. 영향점 판정은 73명 상태의 값만 쓴다.</li>
+<li><code>Save(저장)</code> 체크를 끄면 저장 열이 사라진다.</li>
+</ul>
+<h3 id="10-7-공변량-없는-단순-비교">10-7. 공변량 없는 단순 비교</h3>
+<p>공변량 보정 전 두 집단의 원 차이를 본다.</p>
+<ol>
+<li>필터가 꺼져 있는지 확인한다.</li>
+<li><code>T-Tests(t 검정)</code> → <code>Independent Samples T-Test(독립표본 t 검정)</code>를 누른다.</li>
+<li><code>Dependent Variables(종속변수)</code>에 <code>Y_total(안전관리 실효성 전체)</code>, <code>Grouping Variable(집단 변수)</code>에 <code>D(도입여부)</code>를 넣는다.</li>
+<li><code>Tests(검정)</code>에서 <code>Student's(스튜던트)</code>와 <code>Mann-Whitney U(만-휘트니 U)</code>를 체크한다.</li>
+<li><code>Additional Statistics(추가 통계량)</code>에서 <code>Mean difference(평균 차이)</code>와 <code>Confidence interval(신뢰구간)</code>을 체크한다.</li>
+</ol>
+<h4 id="확인값_16" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>검정</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student's t</td>
+<td>t(71)=−3.71, p &lt; .001, 차이 도입−미도입 0.63, SE 0.170, 95% CI [0.29, 0.97]</td>
+</tr>
+<tr>
+<td>Mann–Whitney U</td>
+<td>U=354, p &lt; .001, Hodges–Lehmann 위치 차이 0.63</td>
+</tr>
+</tbody>
+</table>
+<h4 id="함정_16" class="trap">함정</h4>
+<ul>
+<li>jamovi는 <code>D</code> 코드 순서대로 0−1(미도입−도입)로 계산하므로 t와 차이의 부호가 음수로 나온다. 원고에는 도입−미도입 방향(+0.63)으로 옮긴다.</li>
+<li>Mann–Whitney U 옆의 차이는 두 집단 중위수의 차가 아니라 Hodges–Lehmann 추정치다.</li>
+</ul>
+<h3 id="10-8-사전-지정-민감도-분석시스템-경로-부분집단">10-8. 사전 지정 민감도 분석(시스템 경로 부분집단)</h3>
+<p>미도입 39명과 시스템 경로가 작동한 도입 15명만으로 H1을 다시 추정한다.</p>
+<ol>
+<li>필터에 <code>D == 0 or sys_path == 1</code>을 입력하고 Enter를 누른다. 상태표시줄에서 54명이 남았는지 확인한다.</li>
+<li>H1 <code>Linear Regression(선형회귀)</code>(W_c 없는 주효과 모형)의 <code>D: 1 – 0</code> 행을 읽는다.</li>
+<li>값을 기록한 뒤 필터를 끈다.</li>
+</ol>
+<h4 id="확인값_17" class="check">확인값</h4>
+<ul>
+<li>n=54: B=0.776, SE 0.235, 95% CI [0.303, 1.249], t 3.31, p=.002, R² 0.364.</li>
+</ul>
+<h4 id="함정_17" class="trap">함정</h4>
+<ul>
+<li><strong>실제 발생:</strong> H2용 회귀분석을 만들 때 H1 회귀에 <code>W_c</code>를 추가해 버리면 H1 전용 회귀가 사라진다. H1(W_c 없음)과 H2(<code>W_c</code>·<code>D*W_c</code> 있음) 회귀분석은 <strong>별도 상자</strong>로 둔다. H1 회귀가 없으면 5단계 방식으로 새로 만든다.</li>
+<li>필터가 걸리면 결과창의 모든 분석(H2·T-test·EFA 등)이 54명 값으로 재계산된다. 이 상태에서 그 값들은 읽지 않는다.</li>
+</ul>
+<h3 id="10-9-h2-조건부-조정-평균w-수준별">10-9. H2 조건부 조정 평균(W 수준별)</h3>
+<p>8단계에서 미실행이던 W 평균·±1SD 수준별 집단 차이를 구한다.</p>
+<ol>
+<li>필터가 꺼져 있는지 확인한다.</li>
+<li><code>Regression(회귀)</code> → <code>Linear Regression(선형회귀)</code>을 연다. <code>Dependent Variable(종속변수)</code> <code>Y_total(안전관리 실효성 전체)</code>, Covariates <code>age(만 나이)</code>·<code>experience(경력)</code>·<code>W_c(평균중심화 예산제약성)</code>, Factors <code>D(도입여부)</code>·<code>affiliation(소속)</code>·<code>sex(성별)</code>·<code>role(역할)</code>·<code>cost(총공사비)</code>.</li>
+<li><code>Model Builder(모형 구성)</code>에서 <code>D</code>와 <code>W_c</code>를 Ctrl+클릭으로 함께 선택하고 <code>Interaction(상호작용)</code>으로 <code>D*W_c</code>를 추가한다(8단계 회귀 상자를 그대로 써도 된다).</li>
+<li><code>Estimated Marginal Means(추정 주변 평균)</code>를 펼치고 <code>Add New Term(새 항 추가)</code>을 누른다.</li>
+<li><code>Term 1(항 1)</code>에 <code>D</code>와 <code>W_c</code>를 둘 다 넣는다.</li>
+<li><code>Marginal means tables(주변 평균 표)</code>, <code>Equal cell weights(동일 셀 가중)</code>, <code>Confidence interval(신뢰구간)</code>을 체크한다.</li>
+</ol>
+<h4 id="확인값_18" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>W_c 수준</th>
+<th>미도입 조정 평균 [95% CI]</th>
+<th>도입 조정 평균 [95% CI]</th>
+<th>차이</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>−1.08(평균 −1SD)</td>
+<td>3.58 [3.08, 4.07]</td>
+<td>3.74 [3.18, 4.31]</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>0(평균)</td>
+<td>3.35 [2.96, 3.74]</td>
+<td>3.85 [3.40, 4.30]</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>+1.08(평균 +1SD)</td>
+<td>3.13 [2.70, 3.55]</td>
+<td>3.96 [3.43, 4.49]</td>
+<td>0.83</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>W_c=0의 차이 0.50은 같은 회귀의 D 계수와 같다: B=0.501, SE 0.184, 95% CI [0.134, 0.868], t 2.73, p=.008.</li>
+<li>D×W_c는 8단계와 동일하다: B=0.309, SE 0.201, 95% CI [−0.094, 0.712], p=.131.</li>
+</ul>
+<h4 id="함정_18" class="trap">함정</h4>
+<ul>
+<li><code>ANCOVA(공분산분석)</code> 메뉴의 EMM 목록에는 공변량이 나타나지 않는다. W 수준별 조정 평균은 <strong>Linear Regression의 EMM</strong>에서 구한다.</li>
+<li>±1SD 수준 차이(0.16·0.83)의 SE·CI·p는 이 화면에 나오지 않는다. W를 해당 수준으로 재중심화한 회귀가 필요하다(미실행).</li>
+</ul>
+<h3 id="10-10-사후-강건성필터별-h1-회귀">10-10. 사후 강건성(필터별 H1 회귀)</h3>
+<p>공통 절차는 필터 수식만 바꾸고, H1 <code>Linear Regression(선형회귀)</code>의 <code>D: 1 – 0</code> 행과 N을 읽는 것이다. 각 조건이 끝나면 필터를 끈다.</p>
+<ol>
+<li><strong>영향점 제외:</strong> 필터 <code>cook_hi2 == 0</code>(10-6에서 만든 열) → n=68.</li>
+<li><strong>여성 제외:</strong> 필터 <code>sex == 1</code> → n=67. <code>sex(성별)</code>가 단일 수준이 되어 원 회귀는 점(.)만 표시한다. H1 회귀 상자를 <code>Duplicate(복제)</code>하고 복제본의 Factors에서 <code>sex</code>를 빼서 추정한다.</li>
+<li><strong>총공사비 20억 미만 제외:</strong> 필터 <code>cost != 1</code> → n=65. 원 H1 회귀를 그대로 쓴다.</li>
+<li><strong>일렬응답 제외:</strong></li>
+<li>필터를 끈 상태에서 <code>Data(데이터)</code> → <code>Compute(계산)</code>로 새 변수 <code>straight</code>를 만들고 수식 <code>IF(MAX(B1,B2,B3,B4,B5,B6,B7,B8,C1,C2,C3,C4) == MIN(B1,B2,B3,B4,B5,B6,B7,B8,C1,C2,C3,C4), 1, 0)</code>을 입력한다.</li>
+<li><code>Descriptives(기술통계)</code>에 <code>straight</code>를 넣고 <code>Frequency tables(빈도표)</code>로 1의 건수를 확인한다.</li>
+<li>필터 <code>straight == 0</code> → n=70. 원 H1 회귀를 그대로 쓴다.</li>
+</ol>
+<h4 id="확인값_19" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>필터</th>
+<th>n</th>
+<th>B</th>
+<th>SE</th>
+<th>95% CI</th>
+<th>t</th>
+<th>p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영향점 제외</td>
+<td><code>cook_hi2 == 0</code></td>
+<td>68</td>
+<td>0.490</td>
+<td>0.170</td>
+<td>[0.150, 0.830]</td>
+<td>2.88</td>
+<td>.006</td>
+</tr>
+<tr>
+<td>여성 제외</td>
+<td><code>sex == 1</code></td>
+<td>67</td>
+<td>0.531</td>
+<td>0.184</td>
+<td>[0.163, 0.900]</td>
+<td>2.89</td>
+<td>.006</td>
+</tr>
+<tr>
+<td>20억 미만 제외</td>
+<td><code>cost != 1</code></td>
+<td>65</td>
+<td>0.442</td>
+<td>0.177</td>
+<td>[0.088, 0.796]</td>
+<td>2.50</td>
+<td>.015</td>
+</tr>
+<tr>
+<td>일렬응답 제외</td>
+<td><code>straight == 0</code></td>
+<td>70</td>
+<td>0.513</td>
+<td>0.181</td>
+<td>[0.151, 0.875]</td>
+<td>2.84</td>
+<td>.006</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>일렬응답 3명: R002·R030·R050.</li>
+<li>R²: 여성 제외 0.239, 20억 미만 제외 0.244, 일렬응답 제외 0.371. 영향점 제외 R²는 미기록.</li>
+<li>10-8을 포함한 모든 조건에서 D 계수가 양(+)이다(B 0.44~0.78, p .002~.015).</li>
+</ul>
+<h4 id="함정_19" class="trap">함정</h4>
+<ul>
+<li><code>cost != 1</code>을 걸면 jamovi가 "reference level not found… defaulting" 경고를 내며 <code>cost(총공사비)</code>의 기준범주를 2로 바꾼다. 집단(<code>D</code>) 계수에는 영향이 없다.</li>
+<li>행 단위 수식(<code>IF</code>·<code>MAX</code>·<code>MIN</code>)은 필터와 무관하게 전 행에 계산된다. 그러나 건수 세기와 제외 분석은 필터를 바꿔야 한다. 각 조건이 끝나면 반드시 필터를 끈다.</li>
+</ul>
+<h3 id="10-11-집단별-상관천장효과">10-11. 집단별 상관·천장효과</h3>
+<p>집단마다 Y–W 관계와 2문항 상관이 다른지, 도입 집단 <code>Y2(대응신속성)</code>에 천장효과가 있는지 본다.</p>
+<ol>
+<li>필터 <code>D == 0</code>을 입력하고 Enter를 누른다.</li>
+<li><code>Regression(회귀)</code> → <code>Correlation Matrix(상관행렬)</code>를 누르고 Variables(변수)에 <code>Y_total(안전관리 실효성 전체)</code>, <code>W_mean(예산제약성)</code>, <code>B3</code>~<code>B8</code>을 넣는다. <code>Pearson(피어슨)</code>과 <code>Report significance(유의확률 표시)</code>를 체크한다.</li>
+<li>필터 수식을 <code>D == 1</code>로 바꾸고 Enter를 누른다. 같은 상관행렬이 도입 집단 값으로 재계산된다.</li>
+<li><code>D == 1</code> 상태에서 <code>Descriptives(기술통계)</code>에 <code>Y2(대응신속성)</code>를 넣고 <code>Frequency tables(빈도표)</code>를 체크한다.</li>
+<li>필터를 끄고 <code>☰</code> → <code>Save(저장)</code>를 누른다.</li>
+</ol>
+<h4 id="확인값_20" class="check">확인값</h4>
+<table>
+<thead>
+<tr>
+<th>집단(df)</th>
+<th>Y–W</th>
+<th>B3·B4</th>
+<th>B5·B6</th>
+<th>B7·B8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미도입(df 37)</td>
+<td>r=−0.355, p=.026</td>
+<td>0.783</td>
+<td>0.647</td>
+<td>0.704</td>
+</tr>
+<tr>
+<td>도입(df 32)</td>
+<td>r=0.100, p=.572</td>
+<td>0.501, p=.003</td>
+<td>0.507, p=.002</td>
+<td>0.709, p &lt; .001</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>미도입 2문항 상관 세 쌍은 모두 p &lt; .001.</li>
+<li>도입 <code>Y2(대응신속성)</code> 빈도: 3점 5명(14.7%) · 4점 16명(47.1%) · 5점 13명(38.2%) → 천장효과 38.2%.</li>
+</ul>
+<h4 id="함정_20" class="trap">함정</h4>
+<ul>
+<li>한 집단만 남은 상태에서는 회귀·ANCOVA가 "Factor 'D' needs to have at least 2 levels" 오류를 낸다. 정상이다. 필터를 끄면 사라진다.</li>
+</ul>
+<h3 id="10-12-화면-겹침">10-12. 화면 겹침</h3>
+<ol>
+<li>결과 캡처를 한글(hwpx) 문서에 붙여 넣는 동안 한글 창이 jamovi 위에 올라오면 결과를 읽을 수 없다.</li>
+<li>jamovi 창을 클릭해 앞으로 가져온 뒤 읽는다.</li>
+</ol>
+<hr />
+<h2 id="공통-함정">공통 함정</h2>
+<ul>
+<li><code>Duplicate(복제)</code> 뒤 <code>Dependent Variable(종속변수)</code>만 바꾸면 EMM·효과크기·모형 항 설정이 그대로 유지된다. 새로 만드는 것보다 복제가 안전하다.</li>
+<li>결과창은 길어진다. 각 분석 상자의 제목으로 찾는다. 표를 우클릭 → <code>Copy(복사)</code>로 표를 복사할 수 있다.</li>
+<li>저장은 <code>☰</code> → <code>Save As(다른 이름으로 저장)</code>로 .omv 파일을 만든다. 파일명에 <code>YYMMDD_HHMM_</code> 날짜·시각 접두를 붙이기를 권장한다.</li>
+<li>jamovi의 Estimated Marginal Means(추정 주변 평균)는 동일 가중이다. 비례 가중 조정 평균은 기본 ANCOVA가 내지 않는다.</li>
+<li>다범주 표준화 차이(Yang &amp; Dalton 방식)와 HC3 강건 표준오차는 jamovi 기본 기능에 없다. 표준화 차이는 Cohen's d·Cramér's V로 대체했고, HC3는 쓰지 않았다.</li>
+<li>필터는 결과창의 모든 분석을 동시에 바꾼다. 집단별 값을 구한 뒤에는 반드시 필터를 끄고, 상태표시줄로 확인한다.</li>
+</ul>
+<hr />
+<h2 id="부록-a-holm-보정-손계산법">부록 A. Holm 보정 손계산법</h2>
+<p>Holm 보정은 여러 검정을 동시에 할 때 1종 오류를 통제하는 순차적 방법이다. 검정이 m개이면 다음 순서로 계산한다.</p>
+<ol>
+<li>다섯 p값을 작은 것부터 오름차순으로 정렬한다.</li>
+<li>순위 i(1부터 시작)의 p값에 (m − i + 1)을 곱한다. m=5이므로 곱하는 수는 5, 4, 3, 2, 1이다.</li>
+<li>앞 순위부터 누적 최댓값을 적용한다. 어떤 순위의 보정값이 바로 앞 순위 값보다 작으면 앞 순위 값으로 올린다.</li>
+<li>1을 넘는 값은 1로 둔다.</li>
+<li>보정 p &lt; .05인 항목을 유의로 판정한다.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>순위 i</th>
+<th>하위요인</th>
+<th>원 p</th>
+<th>곱하는 수(5−i+1)</th>
+<th>곱한 값</th>
+<th>누적 최댓값 = Holm p</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>Y1(조기인지)</code></td>
+<td>.002</td>
+<td>5</td>
+<td>.010</td>
+<td>.010</td>
+<td>유의</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>Y3(원격파악)</code></td>
+<td>.003</td>
+<td>4</td>
+<td>.012</td>
+<td>.012</td>
+<td>유의</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>Y5(위험통제력)</code></td>
+<td>.004</td>
+<td>3</td>
+<td>.012</td>
+<td>.012</td>
+<td>유의</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>Y4(순찰부담경감)</code></td>
+<td>.031</td>
+<td>2</td>
+<td>.062</td>
+<td>.062</td>
+<td>비유의</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>Y2(대응신속성)</code></td>
+<td>.502</td>
+<td>1</td>
+<td>.502</td>
+<td>.502</td>
+<td>비유의</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>손계산은 jamovi 화면에 표시된 반올림 p값(소수 셋째 자리)으로 한 것이다. 소수 자리를 더 늘려 계산하면 끝자리가 약간 다를 수 있다.</p>
+</blockquote>
+<hr />
+<h2 id="부록-b-전체-결과-요약표">부록 B. 전체 결과 요약표</h2>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>원고 표</th>
+<th>분석</th>
+<th>핵심 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>표 4-7</td>
+<td>표본 특성·과정 지표 교차분석</td>
+<td>N 39/34. A7 χ²=29.6(df 4), Fisher p&lt;.001. A8 χ²=19.0(df 3), Fisher p&lt;.001. A9 χ²=1.71(df 3), p=.636, Fisher p=.663</td>
+</tr>
+<tr>
+<td>2</td>
+<td>표 4-8</td>
+<td>신뢰도·상관·EFA</td>
+<td>Y α 0.937(도입 0.906), W α 0.926(도입 0.885). 2문항 상관 0.721·0.631·0.741. EFA Y·W 모두 1요인, KMO 0.911·0.836</td>
+</tr>
+<tr>
+<td>3</td>
+<td>표 4-9</td>
+<td>기술통계</td>
+<td>Y_total 3.48(0.81)/4.11(0.61), W_mean 3.57(1.11)/3.31(1.04). 왜도·첨도 절댓값 ≤ 1.25</td>
+</tr>
+<tr>
+<td>4</td>
+<td>표 4-10</td>
+<td>균형 진단</td>
+<td>age d=0.047, experience d=0.285. Cramér's V: affiliation 0.196, sex 0.279(p=.017, 유일한 유의), role 0.120, cost 0.254</td>
+</tr>
+<tr>
+<td>5</td>
+<td>표 4-11</td>
+<td>가정 점검</td>
+<td>Levene p=.245, Shapiro p=.128, D×age p=.226, D×experience p=.461, VIF 최대 2.41, Cook's D 최대 0.139</td>
+</tr>
+<tr>
+<td>6</td>
+<td>표 4-12</td>
+<td>H1 ANCOVA</td>
+<td>F(1, 62)=8.5385, p=.005, η²p=0.121. 조정 평균 3.29 → 3.83(차이 0.54)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>표 4-13</td>
+<td>하위요인 ANCOVA + Holm</td>
+<td>Holm p: Y1 .010, Y3 .012, Y5 .012 유의 / Y4 .062, Y2 .502 비유의</td>
+</tr>
+<tr>
+<td>8</td>
+<td>표 4-14</td>
+<td>H2 상호작용</td>
+<td>F(1, 60)=2.3467, p=.131, η²p=0.038. 회귀 B=0.30858, 95% CI [−0.0944, 0.7115]</td>
+</tr>
+<tr>
+<td>9</td>
+<td>표 4-15</td>
+<td>종합</td>
+<td>H1 지지, H2 기각, A9 집단 차이 없음</td>
+</tr>
+<tr>
+<td>10-1</td>
+<td>5장 논의</td>
+<td>시스템 경로 작동 여부별 Y_total(도입 34명)</td>
+<td>미충족 n=19 M=4.00(SD 0.640, Mdn 3.88) / 충족 n=15 M=4.26(SD 0.548, Mdn 4.13)</td>
+</tr>
+<tr>
+<td>10-2</td>
+<td>표 4-7·4-9</td>
+<td>전체 73명 기술통계</td>
+<td>나이 46.6(11.5), Mdn 48, 24~67 / 경력 16.0(11.7), Mdn 13, 1~45 / Y_total 3.78(0.785), Mdn 3.88, 1.38~5.00</td>
+</tr>
+<tr>
+<td>10-3</td>
+<td>표 4-8</td>
+<td>EFA 고유값 기준 재실행</td>
+<td>Y 1요인, SS 5.33, 66.6%, KMO .911 / W 1요인, SS 3.06, 76.5%, KMO .836. 스크리: 첫 고유값만 1 초과</td>
+</tr>
+<tr>
+<td>10-4</td>
+<td>표 4-8</td>
+<td>문항 제거 시 α</td>
+<td>Y B1~B8 .924~.934(모두 전체 .937 미만) / W C1 .890 C2 .880 C3 .916 C4 .927(전체 .926). Item-rest 미기록</td>
+</tr>
+<tr>
+<td>10-5</td>
+<td>표 4-11</td>
+<td>선형성 산점도</td>
+<td>age·experience 모두 위반 신호 없음(그림 미수록)</td>
+</tr>
+<tr>
+<td>10-6</td>
+<td>표 4-11</td>
+<td>Cook's D 4/n 초과</td>
+<td>5건(6.8%): R002(도입)·R027·R030·R038·R056(미도입). 평균 .0172, 최대 .139</td>
+</tr>
+<tr>
+<td>10-7</td>
+<td>표 4-12</td>
+<td>공변량 없는 단순 비교</td>
+<td>t(71)=−3.71, p&lt;.001, 차이 0.63, SE .170, 95% CI [0.29, 0.97]; Mann–Whitney U=354, p&lt;.001</td>
+</tr>
+<tr>
+<td>10-8</td>
+<td>표 4-12</td>
+<td>사전 지정 민감도(n=54)</td>
+<td>B=0.776, SE .235, 95% CI [.303, 1.249], t 3.31, p=.002, R² .364</td>
+</tr>
+<tr>
+<td>10-9</td>
+<td>표 4-14</td>
+<td>H2 W 수준별 조정 평균</td>
+<td>차이 −1SD 0.16 / 평균 0.50(B .501, p=.008) / +1SD 0.83. ±1SD 차이의 SE·CI·p 미실행</td>
+</tr>
+<tr>
+<td>10-10</td>
+<td>표 4-12</td>
+<td>사후 강건성</td>
+<td>영향점 제외 n=68 B .490 p=.006 / 여성 제외 n=67 B .531 p=.006 / 20억 미만 제외 n=65 B .442 p=.015 / 일렬응답 제외 n=70 B .513 p=.006</td>
+</tr>
+<tr>
+<td>10-11</td>
+<td>표 4-8·5장</td>
+<td>집단별 상관·천장효과</td>
+<td>Y–W 미도입 r=−.355(p=.026), 도입 r=.100(p=.572). 도입 Y2 5점 38.2%</td>
+</tr>
+</tbody>
+</table>
+<p class="gen">원본: 261027_0540_jamovi_분석절차.md · HTML 생성 2026-10-27 14:42</p>
+</main></body></html>
