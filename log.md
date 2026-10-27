@@ -1,3 +1,84 @@
+261027_103935 : 00. hwpx/261027_1039_경기공학_건축안전_윤혁_논문_jamovi결과반영_표4-7복원본.hwpx 추가
+261027_093025 : 00. hwpx/261027_0930_경기공학_건축안전_윤혁_논문_jamovi결과반영본.hwpx 추가
+261027_092315 : 03.plan/README.md 수정
+261027_092236 : 03.plan/261027_0921_jamovi결과_hwpx_반영_계획.md 추가, 03.plan/README.md 수정, tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v4.json 추가
+261027_092113 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정, tools/hwpx_transfer/staging/ch05.blocks.json 수정 외 1건
+261027_090227 : 01.docs/04_연구설계및실증분석.md 수정
+261027_090159 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_090137 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/설문결과/jamovi/261027_0540_jamovi_분석절차.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_090053 : 01.docs/설문결과/jamovi/1027 ancova result.omv 수정
+261027_090017 : 01.docs/설문결과/jamovi/261027_0540_jamovi_분석절차.md 수정
+261027_085544 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_085351 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_081835 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_081532 : 01.docs/04_연구설계및실증분석.md 수정
+261027_081511 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_081243 : 01.docs/설문결과/jamovi/1027 ancova result.omv 수정
+261027_075440 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_074641 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_074021 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_073331 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_072717 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_072452 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_071537 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_071421 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_070952 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_064710 : 01.docs/04_연구설계및실증분석.md 수정
+261027_064641 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_064427 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_064404 : 01.docs/설문결과/jamovi/1027 ancova result.omv 수정
+261027_064059 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_063446 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_063147 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_062446 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정
+261027_062401 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_062204 : 01.docs/04_연구설계및실증분석.md 수정
+261027_062130 : 01.docs/04_연구설계및실증분석.md 수정
+261027_061700 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/figures/research/generate_research_figures.py 수정
+261027_061625 : 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/figure_4-1_research_model.png 수정, 01.docs/figures/research/figure_4-1_research_model.svg 수정
+261027_061619 : 01.docs/07_참조번호목록.md 수정
+261027_061556 : 01.docs/05_논의및결론.md 수정
+261027_061518 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/figures/research/generate_research_figures.py 수정
+261027_061451 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_061330 : .claude/reference/09-디펜스논리.md 수정, AGENTS.md 수정, CLAUDE.md 수정
+261027_061044 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_060916 : 01.docs/설문결과/jamovi/1027 ancova result.omv 수정
+261027_060618 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_060558 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_060324 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_055925 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_055856 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 수정
+261027_054714 : 01.docs/설문결과/jamovi/261027_0540_jamovi_분석절차.md 수정
+261027_054627 : 01.docs/설문결과/jamovi/261027_0540_jamovi_분석절차.md 추가 — "# jamovi 분석 절차 매뉴얼 — 4장 표 4-7~4-15 재현용 이 문서는 2026-10-26~27에 …"
+261027_054242 : 03.plan/README.md 수정
+261027_054229 : 03.plan/README.md 수정
+261027_054217 : 03.plan/261027_0540_jamovi_결과_04장_반영_계획.md 추가 — "# jamovi 분석 결과(2026-10-27) → 04장 제6·7절 반영 계획 - 작성: 2026-10-2…"
+261027_054055 : 01.docs/설문결과/jamovi/자모비 결과.hwpx 수정
+261027_050610 : 01.docs/설문결과/jamovi/자모비 결과.hwpx 수정
+261027_044447 : 01.docs/설문결과/jamovi/1027 ancova result.omv 수정
+261027_042526 : 01.docs/설문결과/jamovi/자모비 결과.hwpx 수정
+261027_033830 : 01.docs/설문결과/jamovi/1027 ancova result.omv 추가
+261027_032353 : 01.docs/설문결과/jamovi/261025_2102_jamovi용_설문응답_분석71명.xlsx 삭제, 01.docs/설문결과/jamovi/261025_2102_jamovi용_설문응답_전체73건.xlsx 삭제, 01.docs/설문결과/jamovi/자모비 결과.hwpx 추가
+261026_063455 : 03.plan/261026_0607_04장_결과칸_jamovi_입력용_비우기.md 수정, AGENTS.md 수정, CLAUDE.md 수정
+261026_063442 : 03.plan/261026_0607_04장_결과칸_jamovi_입력용_비우기.md 수정, 03.plan/README.md 수정
+261026_063413 : 00. hwpx/261026_0634_경기공학_건축안전_윤혁_논문_5장구조_jamovi입력용_결과칸비움본.hwpx 추가
+261026_063207 : tools/hwpx_transfer/toc_pages_from_pdf.py 수정
+261026_063120 : 01.docs/설문결과/jamovi/261026_0627_jamovi_export.py 삭제, 01.docs/설문결과/jamovi/261026_0627_jamovi변환_검증.json 삭제, 01.docs/설문결과/jamovi/261026_0627_jamovi용_설문응답_분석용.xlsx 삭제, 01.docs/설문결과/jamovi/261026_0627_jamovi용_설문응답_전체73건.xlsx 삭제, 01.docs/설문결과/jamovi/261026_0631_jamovi_export.py 추가, 01.docs/설문결과/jamovi/261026_0631_jamovi변환_검증.json 추가 외 1건
+261026_062934 : tools/hwpx_transfer/patch_from_fresh.py 수정
+261026_062819 : 01.docs/설문결과/jamovi/261026_0627_jamovi_export.py 추가, 01.docs/설문결과/jamovi/261026_0627_jamovi변환_검증.json 추가, 01.docs/설문결과/jamovi/261026_0627_jamovi용_설문응답_분석용.xlsx 추가, 01.docs/설문결과/jamovi/261026_0627_jamovi용_설문응답_전체73건.xlsx 추가
+261026_062812 : tools/hwpx_transfer/patch_from_fresh.py 수정
+261026_062549 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정, tools/hwpx_transfer/staging/ch05.blocks.json 수정 외 1건
+261026_062457 : 01.docs/설문결과/중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 수정
+261026_061742 : 03.plan/261026_0607_04장_결과칸_jamovi_입력용_비우기.md 수정, 03.plan/README.md 수정
+261026_061507 : 01.docs/04_연구설계및실증분석.md 수정
+261026_060934 : 03.plan/README.md 수정
+261026_060920 : 03.plan/261026_0607_04장_결과칸_jamovi_입력용_비우기.md 추가 — "# 04장 제6·7절 결과 칸 비우기 (jamovi 직접 입력용) - 작성: 2026-10-26 06:07 …"
+261026_055939 : 01.docs/설문결과/jamovi/261025_2102_jamovi용_설문응답_전체73건.xlsx 수정, 01.docs/설문결과/중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 수정
+261025_221017 : 01.docs/설문결과/261023_원응답_재연락전_보존본.xlsx 삭제, 01.docs/설문결과/analysis/261025_2042_재분석/H1_coefficients.csv 추가, 01.docs/설문결과/analysis/261025_2042_재분석/H2_coefficients.csv 추가, 01.docs/설문결과/analysis/261025_2042_재분석/analyze_snapshot.py 추가, 01.docs/설문결과/analysis/261025_2042_재분석/build_report.py 추가, 01.docs/설문결과/analysis/261025_2042_재분석/changes_vs_previous.csv 추가 외 1392건
+261025_203616 : 01.docs/설문결과/261023_원응답_재연락전_보존본.xlsx 추가
+261025_203442 : 01.docs/설문결과/261024_0850_설문응답_정리본.xlsx 삭제, 01.docs/설문결과/261024_1753_설문응답_리커트숫자변환.xlsx 삭제, 01.docs/설문결과/261024_1758_설문응답_jamovi.xlsx 삭제
+261025_203351 : 01.docs/설문결과/~$중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 삭제, 01.docs/설문결과/중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 수정
+261025_195945 : 01.docs/설문결과/~$중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 추가
 261025_184711 : 05. 교수님 지도/261024_1700 논문지도 핵심요약 및 수정과제.md 수정
 261025_184659 : 01.docs/05_논의및결론.md 수정
 261025_183016 : 01.docs/05_논의및결론.md 수정

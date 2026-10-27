@@ -1,0 +1,25 @@
+{
+  "source_sha_before": "19bc4b8ddd0cd0bd7521fb68b0a14a937a54deb9bc4aaf1929361e79e2f3d2be",
+  "source_sha_after": "19bc4b8ddd0cd0bd7521fb68b0a14a937a54deb9bc4aaf1929361e79e2f3d2be",
+  "matches_previous_reanalysis_coding": true,
+  "validation": [
+    {
+      "file": "261025_2102_jamovi용_설문응답_분석71명.xlsx",
+      "rows": 71,
+      "columns": 50,
+      "first_sheet": "data",
+      "all_numeric_except_id": true,
+      "missing_preserved": true,
+      "roundtrip_exact": true
+    },
+    {
+      "file": "261025_2102_jamovi용_설문응답_전체73건.xlsx",
+      "rows": 73,
+      "columns": 50,
+      "first_sheet": "data",
+      "all_numeric_except_id": true,
+      "missing_preserved": true,
+      "roundtrip_exact": true
+    }
+  ]
+}
