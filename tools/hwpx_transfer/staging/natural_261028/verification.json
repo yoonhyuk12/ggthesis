@@ -1,0 +1,410 @@
+{
+  "section_paragraph_text_equal": [
+    true,
+    true,
+    true
+  ],
+  "chapter5_paragraphs": {
+    "expected": 11,
+    "present": 11
+  },
+  "required_text": {
+    "두 집단에 같은 비중을 둔 W의 주효과는 유의하지 않았다(p=.519). 미도입 집단에서의 W 기울기는 −0.208": true,
+    "본 장에서는 연구 모형·가설·측정도구·분석 절차를 설계하고": true,
+    "LLM 검증 기능만의 기여는 따로 가리지 않는다": true
+  },
+  "old_text_counts": {
+    "미도입 집단의 W 기울기(W_c)는 유의하지 않았다(p=.519)": 0,
+    "분리하지 못하며": 0,
+    "시사점은 세 가지이다": 0
+  },
+  "foreign_text_counts": {
+    "김정년": 0,
+    "안전시설물": 0,
+    "떨어짐 사고위험": 0,
+    "건설현장 안전시설물 설치와 떨어짐 사고위험의 관계": 0
+  },
+  "markers_base": {
+    "red_runs": 28,
+    "red_prefix_runs": {
+      "[확정 필요": 13,
+      "[CITE_TODO": 9,
+      "[UNVERIFIED": 4,
+      "[DATA PENDING": 0,
+      "[그림 삽입 예정": 0,
+      "실험전": 0
+    },
+    "nonred_markers": []
+  },
+  "markers_final": {
+    "red_runs": 28,
+    "red_prefix_runs": {
+      "[확정 필요": 13,
+      "[CITE_TODO": 9,
+      "[UNVERIFIED": 4,
+      "[DATA PENDING": 0,
+      "[그림 삽입 예정": 0,
+      "실험전": 0
+    },
+    "nonred_markers": []
+  },
+  "table_count": [
+    55,
+    55
+  ],
+  "table_grid_width_equal": [
+    {
+      "index": 0,
+      "caption": "<표 1-1>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 1,
+      "caption": "<표 1-2>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 2,
+      "caption": "<표 2-1>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 3,
+      "caption": "<표 2-2>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 4,
+      "caption": "<표 2-3>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 5,
+      "caption": "<표 2-4>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 6,
+      "caption": "<표 2-5>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 7,
+      "caption": "<표 3-1>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 8,
+      "caption": "<표 3-2>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 9,
+      "caption": "<표 3-3>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 10,
+      "caption": "<표 3-4>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 11,
+      "caption": "<표 3-5>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 12,
+      "caption": "<표 3-6>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 13,
+      "caption": "<표 3-7>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 14,
+      "caption": "<표 3-8>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 15,
+      "caption": "<표 3-9>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 16,
+      "caption": "<표 4-1>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 17,
+      "caption": "<표 4-2>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 18,
+      "caption": "<표 4-3>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 19,
+      "caption": "<표 4-4>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 20,
+      "caption": "<표 4-5>",
+      "equal": true,
+      "text_equal": false
+    },
+    {
+      "index": 21,
+      "caption": "<표 4-6>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 22,
+      "caption": "<표 4-7>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 23,
+      "caption": "<표 4-7>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 24,
+      "caption": "<표 4-7>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 25,
+      "caption": "<표 4-8>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 26,
+      "caption": "<표 4-8>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 27,
+      "caption": "<표 4-9>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 28,
+      "caption": "<표 4-9>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 29,
+      "caption": "<표 4-10>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 30,
+      "caption": "<표 4-10>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 31,
+      "caption": "<표 4-11>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 32,
+      "caption": "<표 4-12>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 33,
+      "caption": "<표 4-12>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 34,
+      "caption": "<표 4-12>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 35,
+      "caption": "<표 4-12>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 36,
+      "caption": "<표 4-12>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 37,
+      "caption": "<표 4-13>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 38,
+      "caption": "<표 4-13>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 39,
+      "caption": "<표 4-14>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 40,
+      "caption": "<표 4-14>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 41,
+      "caption": "<표 4-14>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 42,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 43,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 44,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 45,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 46,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 47,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 48,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 49,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 50,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 51,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 52,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 53,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    },
+    {
+      "index": 54,
+      "caption": "<표 4-15>",
+      "equal": true,
+      "text_equal": true
+    }
+  ],
+  "table45_base_fresh_equal": true,
+  "hashes": {
+    "00. hwpx\\261028_0544_경기공학_건축안전_윤혁_논문_표4-11_4-13_4-14_미입력값반영본.hwpx": "2b00512634526fc6c466e9909376bdb1ff6332e96f574dff9954faecff535965",
+    "tools\\hwpx_transfer\\staging\\natural_261028\\template_kjn.hwpx": "9bf1980a60d3a98328758e10a5b3e358dc5fbfd74e6006d3552f8424ba1dfff3",
+    "00. hwpx\\261028_0644_경기공학_건축안전_윤혁_논문_자연화반영본.hwpx": "eddab53be59038e36822640f7bfc6c3a1f1f5674b45ddbf614c3d66bb3130f18"
+  },
+  "cell_pagebreak_count": 0,
+  "pdf_pages": 141,
+  "chapter5_pdf_pages": [
+    {
+      "pdf": 118,
+      "footer": [
+        "105"
+      ]
+    },
+    {
+      "pdf": 121,
+      "footer": [
+        "108"
+      ]
+    }
+  ],
+  "pass": true
+}
