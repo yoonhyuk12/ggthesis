@@ -9,7 +9,7 @@
 | 1-1 | 산업별 업무상사고 사망재해 분포도 | [PNG](evidence/assets/fig_1_1_industry_fatalities_2024.png) | [SVG](evidence/assets/fig_1_1_industry_fatalities_2024.svg) |
 | 1-2 | 연도별 업무상사고 사망재해 추이(2020–2024) | [PNG](evidence/assets/fig_1_2_construction_fatalities_2020_2024.png) | [SVG](evidence/assets/fig_1_2_construction_fatalities_2020_2024.svg) |
 | 1-1 | 연구의 흐름도 | [PNG](research/figure_1-1_research_flow.png) | [SVG](research/figure_1-1_research_flow.svg) |
-| 3-1 | YOLO-LLM 이중 캐스케이드 시스템 아키텍처 | [PNG](system/fig_3_1_architecture.png) | [SVG](system/fig_3_1_architecture.svg) |
+| 3-1 | YOLO-LLM 안전관제 시스템의 이중 검사 구조 | [PNG](system/fig_3_1_architecture.png) | [SVG](system/fig_3_1_architecture.svg) |
 | 3-2 | LLM 2차 검증 입출력 구조와 판정 흐름 | [PNG](system/fig_3_2_llm_verification.png) | [SVG](system/fig_3_2_llm_verification.svg) |
 | 3-3 | RAG 기반 Few-shot 교정 절차 | [PNG](system/fig_3_3_rag_correction.png) | [SVG](system/fig_3_3_rag_correction.svg) |
 | 3-4 | 시스템 운영 화면(AI CCTV Viewer) | [실제 화면 PNG](evidence/assets/fig_3_4_viewer_original.png) | 해당 없음 |

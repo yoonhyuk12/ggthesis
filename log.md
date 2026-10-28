@@ -1,3 +1,39 @@
+261029_081207 : AGENTS.md 수정, CLAUDE.md 수정
+261029_081151 : AGENTS.md 수정, CLAUDE.md 수정
+261029_081003 : AGENTS.md 수정, CLAUDE.md 수정
+261029_080943 : AGENTS.md 수정, CLAUDE.md 수정
+261029_080936 : AGENTS.md 수정, CLAUDE.md 수정
+261029_080813 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/figures/research/figure_4-1_research_model_261029.png 추가, MEMORY.md 수정
+261029_072437 : 01.docs/04_연구설계및실증분석.md 수정
+261029_072421 : 01.docs/04_연구설계및실증분석.md 수정
+261029_071455 : 01.docs/00_목차.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261029_071407 : 01.docs/04_연구설계및실증분석.md 수정
+261029_071401 : 01.docs/04_연구설계및실증분석.md 수정
+261029_071345 : 01.docs/04_연구설계및실증분석.md 수정
+261029_071336 : 01.docs/04_연구설계및실증분석.md 수정
+261029_071039 : 01.docs/04_연구설계및실증분석.md 수정
+261029_070759 : 01.docs/01_서론.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/부록1_설문지_양식.md 수정
+261029_070342 : 01.docs/04_연구설계및실증분석.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정 외 3건
+261029_070328 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 2건
+261029_070315 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정
+261029_070246 : 01.docs/00_목차.md 수정
+261029_070239 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/설문항목_작업이력.md 수정
+261029_070024 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/설문항목_작업이력.md 수정
+261029_065949 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정 외 4건
+261029_065852 : 01.docs/00_목차.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정
+261029_065826 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정
+261029_065804 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정 외 3건
+261029_065459 : 01.docs/01_서론.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+261029_065420 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/부록1_설문지_양식.md 수정 외 1건
+261029_065302 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록1_설문지_양식.md 수정, 01.docs/설문항목_작업이력.md 수정
+261029_064215 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/부록1_설문지_양식.md 수정
+261029_064118 : 01.docs/00_목차.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/figures/README.md 수정
+261029_063541 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정
+261029_063329 : 01.docs/부록1_설문지_양식.md 수정
+261029_063153 : AGENTS.md 수정, CLAUDE.md 수정
+261029_063123 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, AGENTS.md 수정, CLAUDE.md 수정
+261029_063108 : 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+261029_062851 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정
 261028_145107 : 00. hwpx/261027_1444_경기공학_건축안전_윤혁_논문_5장감축반영본.hwpx 삭제
 261028_145008 : 00. hwpx/261028_0757_경기공학_건축안전_윤혁_논문.hwpx 추가, 00. hwpx/261028_0757_경기공학_건축안전_윤혁_논문_부록1문단정리본.hwpx 삭제
 261028_075810 : 03.plan/261028_0713_MD변경분_hwpx반입_및_부록설문지_MD동기화_codex워커_브리프.md 수정, AGENTS.md 수정, CLAUDE.md 수정
