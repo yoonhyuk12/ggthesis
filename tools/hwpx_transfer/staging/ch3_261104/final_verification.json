@@ -1,0 +1,20 @@
+{
+  "pdf_pages": 158,
+  "changed_pdf_pages": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "body_pages_15_onward_identical": true,
+  "toc_entries_verified": 147,
+  "base_sha256_unchanged": "a91601c77a0eca8398120b6130959a25c2600b079e2af0ba3fe9a37c6887eb98",
+  "final_sha256": "bb2fb46dbf25bf0c848f4dd4ef925bcbb8d3d02ed827a6bd360c0d9f2f6c9527",
+  "contact_sheets_reviewed": 14,
+  "contact_pages_reviewed": 158,
+  "visual_observation": "No overlap, footer intrusion or hidden tables observed; table3-2 continuation header present."
+}

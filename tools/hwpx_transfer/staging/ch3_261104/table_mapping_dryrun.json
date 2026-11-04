@@ -1,0 +1,72 @@
+[
+  {
+    "caption": "<표3-1>",
+    "mapped_cells": 35,
+    "changed_cells": 4,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-2>",
+    "mapped_cells": 96,
+    "changed_cells": 0,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-3>",
+    "mapped_cells": 24,
+    "changed_cells": 13,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-4>",
+    "mapped_cells": 24,
+    "changed_cells": 19,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-5>",
+    "mapped_cells": 9,
+    "changed_cells": 0,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-6>",
+    "mapped_cells": 21,
+    "changed_cells": 2,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-7>",
+    "mapped_cells": 40,
+    "changed_cells": 0,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-8>",
+    "mapped_cells": 45,
+    "changed_cells": 0,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-9>",
+    "mode": "new applicability table"
+  },
+  {
+    "caption": "<표3-10>",
+    "mapped_cells": 21,
+    "changed_cells": 7,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-11>",
+    "mapped_cells": 57,
+    "changed_cells": 18,
+    "original_grid_preserved": true
+  },
+  {
+    "caption": "<표3-12>",
+    "mapped_cells": 60,
+    "changed_cells": 0,
+    "original_grid_preserved": true
+  }
+]

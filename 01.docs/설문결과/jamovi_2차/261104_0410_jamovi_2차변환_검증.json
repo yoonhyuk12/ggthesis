@@ -1,0 +1,700 @@
+{
+  "base_file": "01.docs/설문결과/jamovi/261031_1046_jamovi용_설문응답_73건_한글헤더.xlsx",
+  "base_sha256_before": "2183b13c6ea1f00edeb26a4b9292f6ff98219239c1544a027fec043176657e06",
+  "base_sha256_after": "2183b13c6ea1f00edeb26a4b9292f6ff98219239c1544a027fec043176657e06",
+  "source_file": "01.docs/설문결과/중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx",
+  "source_sha256": "3b7430575fdb3a1354074d32e87dd951f18125754bf2e9eae2a54c96f817190f",
+  "output_file": "261104_0410_jamovi용_설문응답_73건_2차_PartC삭제.xlsx",
+  "output_sha256": "75b4cad75464ef103a9f95b9bf4c0fc2e209822a09e03b1fc31c6f0ff61c2172",
+  "dropped": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "W_예산제약성"
+  ],
+  "renamed": {
+    "D1": "C1",
+    "D2": "C2",
+    "D3": "C3",
+    "D4": "C4",
+    "D5": "C5",
+    "D6": "C6",
+    "D7": "C7",
+    "D8": "C8",
+    "E1": "D1",
+    "E2": "D2",
+    "E3": "D3",
+    "E4": "D4",
+    "Dsub1_인프라범용성": "Csub1_인프라범용성",
+    "Dsub2_탐지제어안정성": "Csub2_탐지제어안정성",
+    "Dsub3_오탐필터링": "Csub3_오탐필터링",
+    "Dsub4_알림전파즉각성": "Csub4_알림전파즉각성",
+    "D_시스템특성": "C_시스템특성",
+    "E_경보피로완화": "D_경보피로완화"
+  },
+  "validation": {
+    "rows": 73,
+    "columns": 44,
+    "first_sheet": "data",
+    "header_exact": true,
+    "kept_cells_identical_to_base": true,
+    "nonadopter_blank_in_adopt_only": true,
+    "derived_means_recomputed_from_renamed_items": true,
+    "no_W_or_E_prefixed_columns": true,
+    "group_counts": {
+      "adopt": 34,
+      "nonadopt": 39
+    }
+  },
+  "legacy_261024_comparison": {
+    "legacy_file": "261024_1753_리커트숫자변환.xlsx",
+    "legacy_sha256": "39da4ce88017c0869ee312dc9bc594df8484086b3ac5f41ce7c64fd4324a9069",
+    "legacy_sheet": "분석자료",
+    "legacy_rows": 73,
+    "cells_compared": 3212,
+    "cells_different": 89,
+    "different_by_variable": {
+      "B1": 10,
+      "Y_실효성": 14,
+      "Y1_조기인지": 10,
+      "A7_인지경로": 9,
+      "A8_인지시점": 9,
+      "sys_path_시스템경로": 9,
+      "B3": 7,
+      "Y3_원격파악": 7,
+      "B5": 4,
+      "Y4_순찰부담경감": 4,
+      "역할": 6
+    },
+    "differences": [
+      {
+        "respondent_id": "R001",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R001",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 3.125,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R001",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R002",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R002",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R002",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4,
+        "legacy": 3.75
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 4.5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R006",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 4,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "B5",
+        "legacy_variable": "B5",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 3.625,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 4,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R010",
+        "variable": "Y4_순찰부담경감",
+        "legacy_variable": "Y4",
+        "new": 3.5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R013",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R013",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R013",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R013",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.875,
+        "legacy": 4.75
+      },
+      {
+        "respondent_id": "R013",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R013",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R017",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R017",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4,
+        "legacy": 3.875
+      },
+      {
+        "respondent_id": "R017",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R021",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R021",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R021",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R021",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.75,
+        "legacy": 4.625
+      },
+      {
+        "respondent_id": "R021",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 4.5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R021",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R024",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 5
+      },
+      {
+        "respondent_id": "R028",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R028",
+        "variable": "B5",
+        "legacy_variable": "B5",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R028",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4,
+        "legacy": 3.875
+      },
+      {
+        "respondent_id": "R028",
+        "variable": "Y4_순찰부담경감",
+        "legacy_variable": "Y4",
+        "new": 3.5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R028",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R030",
+        "variable": "역할",
+        "legacy_variable": "A5_role",
+        "new": 1,
+        "legacy": null
+      },
+      {
+        "respondent_id": "R031",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R031",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.125,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R031",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 4.5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R033",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 5
+      },
+      {
+        "respondent_id": "R033",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R033",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R033",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.125,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R033",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R033",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R034",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R034",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.125,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R034",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R037",
+        "variable": "역할",
+        "legacy_variable": "A5_role",
+        "new": 1,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R037",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R037",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R037",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.625,
+        "legacy": 4.125
+      },
+      {
+        "respondent_id": "R037",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R037",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R039",
+        "variable": "역할",
+        "legacy_variable": "A5_role",
+        "new": 1,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R053",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R053",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 1
+      },
+      {
+        "respondent_id": "R053",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R055",
+        "variable": "역할",
+        "legacy_variable": "A5_role",
+        "new": 1,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "B5",
+        "legacy_variable": "B5",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4,
+        "legacy": 3.75
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "Y4_순찰부담경감",
+        "legacy_variable": "Y4",
+        "new": 4,
+        "legacy": 3.5
+      },
+      {
+        "respondent_id": "R058",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "A7_인지경로",
+        "legacy_variable": "A7_path",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "A8_인지시점",
+        "legacy_variable": "A8_when",
+        "new": 3,
+        "legacy": 2
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "B1",
+        "legacy_variable": "B1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "B5",
+        "legacy_variable": "B5",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 3.875,
+        "legacy": 3.375
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "Y1_조기인지",
+        "legacy_variable": "Y1",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 4,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "Y4_순찰부담경감",
+        "legacy_variable": "Y4",
+        "new": 3.5,
+        "legacy": 3
+      },
+      {
+        "respondent_id": "R065",
+        "variable": "sys_path_시스템경로",
+        "legacy_variable": "sys_path",
+        "new": 1,
+        "legacy": 0
+      },
+      {
+        "respondent_id": "R071",
+        "variable": "B3",
+        "legacy_variable": "B3",
+        "new": 5,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R071",
+        "variable": "Y_실효성",
+        "legacy_variable": "Y_total",
+        "new": 4.875,
+        "legacy": 4.75
+      },
+      {
+        "respondent_id": "R071",
+        "variable": "Y3_원격파악",
+        "legacy_variable": "Y3",
+        "new": 5,
+        "legacy": 4.5
+      },
+      {
+        "respondent_id": "R072",
+        "variable": "역할",
+        "legacy_variable": "A5_role",
+        "new": 3,
+        "legacy": 4
+      },
+      {
+        "respondent_id": "R073",
+        "variable": "역할",
+        "legacy_variable": "A5_role",
+        "new": 1,
+        "legacy": 4
+      }
+    ],
+    "legacy_include_0_ids": [
+      "R001",
+      "R002"
+    ]
+  }
+}

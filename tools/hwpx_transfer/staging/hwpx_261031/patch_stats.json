@@ -1,0 +1,10 @@
+{
+  "equal": 229,
+  "insert": 99,
+  "replace_fresh": 274,
+  "replace_kept": 0,
+  "delete_kept": 0,
+  "manual": 23,
+  "table_same_kept": 14,
+  "caption_split": 0
+}

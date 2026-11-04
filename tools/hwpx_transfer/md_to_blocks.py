@@ -1,9 +1,15 @@
 # 논문 MD 원고를 한 글자도 바꾸지 않고 구조화 블록 JSON으로 변환하는 결정적(비-LLM) 파서 — hwpx 조립기(T3) 입력 생성용
 # 사용법: python tools/hwpx_transfer/md_to_blocks.py  (저장소 루트 기준, 표준 라이브러리만 사용)
 import json
+import argparse
 import re
 import sys
 from pathlib import Path
+
+try:
+    from . import table_merges
+except ImportError:
+    import table_merges
 
 REPO = Path(__file__).resolve().parents[2]
 SRC_DIR = REPO / "01.docs"
@@ -30,7 +36,7 @@ LIST_MARKER_RE = re.compile(r"^\s*(?:-\s+|\d+\.\s+)")
 DIV_TAG_RE = re.compile(r"^\s*</?div[^>]*>\s*$")
 COMMENT_ONE_RE = re.compile(r"^\s*<!--.*-->\s*$")
 FENCE_RE = re.compile(r"^```")
-CAPTION_TABLE_RE = re.compile(r"^<표\s")
+CAPTION_TABLE_RE = re.compile(r"^<(?:부표|표)\s")
 CAPTION_FIG_RE = re.compile(r"^<그림\s")
 FIG_PLACEHOLDER_RE = re.compile(r"^\[그림 삽입 예정")
 # "본문 아님"·"내부 관리용" 명시 h2 섹션은 코디네이터 승인에 따라 통째로 excluded 처리한다
@@ -145,6 +151,7 @@ def parse_file(fname):
     excl_meta = []  # (reason, start_ln, end_ln, text) — 리포트용 행 범위 기록
     assign = [None] * (n + 1)  # 1-based: 각 행이 어디로 갔는지
     ev = []  # (kind, ln, detail)
+    pending_layout = None
 
     def add_excl(reason, start, end, text):
         entry = {"reason": reason, "text": text}
@@ -157,6 +164,18 @@ def parse_file(fname):
     while i < n:
         line = lines[i]
         ln = i + 1
+        layout = table_merges.directive(line)
+        if layout is not None:
+            if pending_layout is not None or not blocks or blocks[-1]["type"] != "table_caption":
+                raise ValueError("Table layout must immediately follow its caption")
+            if not blocks[-1]["text"].startswith(layout["caption"]):
+                raise ValueError("Table layout caption mismatch")
+            pending_layout = layout
+            add_excl("html_comment", ln, ln, line)
+            i += 1
+            continue
+        if pending_layout is not None and line.strip() and not TABLE_LINE_RE.match(line):
+            raise ValueError("Table layout must be followed by a Markdown table")
         if FENCE_RE.match(line):
             j = i + 1
             while j < n and not FENCE_RE.match(lines[j]):
@@ -238,6 +257,20 @@ def parse_file(fname):
                     ev.append(("row_len_mismatch", rln, "%d칸(헤더 %d칸)" % (len(row), len(header))))
                 block["rows"].append(row)
                 assign[rln] = ("text", "".join(row))
+            if pending_layout is not None:
+                block["layout"] = pending_layout
+                table_merges.validate_block(block)
+                pending_layout = None
+            # Preserve verbatim cells for coverage; structured image metadata is
+            # additional and only activates for image grids with empty headers.
+            if any("![" in c for row in block["rows"] for c in row):
+                try:
+                    from . import image_grid
+                except ImportError:
+                    import image_grid
+                previous = blocks[-1] if blocks else {}
+                heading = "".join(r["text"] for r in previous.get("runs", [])) if previous.get("type") == "p" else None
+                block["image_grid"] = image_grid.parse_cells(block, SRC_DIR / fname, heading)
             blocks.append(block)
             i = j
             continue
@@ -274,6 +307,8 @@ def parse_file(fname):
         assign[ln] = ("text", "".join(r["text"] for r in runs))
         i += 1
 
+    if pending_layout is not None:
+        raise ValueError("Unconsumed table layout directive")
     # 조립기 처리 대상(<br>, &emsp;) 위치 집계 — 블록에 남은 verbatim 텍스트 기준
     for ln0, line in enumerate(lines, 1):
         a = assign[ln0]
@@ -352,13 +387,17 @@ REASON_LABEL = {
 }
 
 
-def main():
+def main(argv=None):
+    global OUT_DIR
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out-dir", type=Path, default=OUT_DIR)
+    OUT_DIR = ap.parse_args(argv).out_dir
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     report = []
     report.append("# MD → blocks 변환 리포트 (T2)")
     report.append("")
-    report.append("`python tools/hwpx_transfer/md_to_blocks.py` 실행 산출물이다. 8개 원고 MD를 verbatim 블록 JSON으로 변환하고, "
-                  "모든 비어있지 않은 원본 행이 블록 텍스트 또는 excluded에 존재하는지 자기검증한 결과를 담는다.")
+    report.append("`python tools/hwpx_transfer/md_to_blocks.py` 실행 산출물이다. %d개 원고 MD를 verbatim 블록 JSON으로 변환하고, "
+                  "모든 비어있지 않은 원본 행이 블록 텍스트 또는 excluded에 존재하는지 자기검증한 결과를 담는다." % len(FILES))
     report.append("")
     report.append("처리 방침(코디네이터 승인, 2026-07-25): 코드펜스 ASCII 다이어그램 3곳과 \"본문 아님\"/\"내부 관리용\" 명시 h2 섹션 2곳은 "
                   "excluded(원문 전문 보존), 부록2 h6 제목은 h1로 매핑, `<div>` 단독 행은 excluded(html_tag), "
@@ -411,7 +450,7 @@ def main():
         for src, ln, line, why in all_missing:
             report.append("- %s:%d — %s — `%s`" % (src, ln, why, line))
     else:
-        report.append("**누락 0 — 8개 파일 전체에서 커버리지 목표를 충족했다.**")
+        report.append("**누락 0 — %d개 파일 전체에서 커버리지 목표를 충족했다.**" % len(FILES))
     report.append("")
 
     # 3. 제외 블록 전체 목록

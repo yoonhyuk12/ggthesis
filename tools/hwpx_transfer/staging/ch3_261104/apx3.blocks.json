@@ -1,0 +1,656 @@
+{
+  "source": "부록3_jamovi_원출력.md",
+  "blocks": [
+    {
+      "type": "h1",
+      "text": "부록 3. jamovi 분석 원출력"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "본 부록은 제4장 제6·7절 표의 근거가 된 jamovi 2.7.41 출력 가운데 한 쪽을 넘어 본문에 싣지 않은 표의 원출력을 옮긴 것이다. 한 쪽 이내의 원출력은 본문의 해당 표 아래에 함께 실었다. 각 표의 수치를 담은 하위 표만 원형 그대로 옮겼으며, 출력의 행과 수치는 편집하지 않았고 변수명은 분석 파일의 이름을 그대로 두었다. 모든 출력은 같은 배율로 실었다.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "type": "table_caption",
+      "text": "<부표 3-1> 조사 대상의 범주형 인구통계학적 특성 jamovi 출력"
+    },
+    {
+      "type": "table",
+      "header": [
+        ""
+      ],
+      "rows": [
+        [
+          "(가) 소속×현장 도입 여부 교차표<br>![소속×현장 도입 여부 교차표](설문결과/자모비캡쳐/부표/부표3-1_01.png)"
+        ],
+        [
+          "(나) 성별×현장 도입 여부 교차표<br>![성별×현장 도입 여부 교차표](설문결과/자모비캡쳐/부표/부표3-1_02.png)"
+        ],
+        [
+          "(다) 역할×현장 도입 여부 교차표<br>![역할×현장 도입 여부 교차표](설문결과/자모비캡쳐/부표/부표3-1_03.png)"
+        ],
+        [
+          "(라) 총공사비×현장 도입 여부 교차표<br>![총공사비×현장 도입 여부 교차표](설문결과/자모비캡쳐/부표/부표3-1_04.png)"
+        ]
+      ],
+      "image_grid": {
+        "rows": [
+          [
+            {
+              "label": "(가) 소속×현장 도입 여부 교차표",
+              "alt": "소속×현장 도입 여부 교차표",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_01.png",
+              "width_mm": 86.2,
+              "height_mm": 59.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(나) 성별×현장 도입 여부 교차표",
+              "alt": "성별×현장 도입 여부 교차표",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_02.png",
+              "width_mm": 86.2,
+              "height_mm": 59.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(다) 역할×현장 도입 여부 교차표",
+              "alt": "역할×현장 도입 여부 교차표",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_03.png",
+              "width_mm": 86.2,
+              "height_mm": 72.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(라) 총공사비×현장 도입 여부 교차표",
+              "alt": "총공사비×현장 도입 여부 교차표",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_04.png",
+              "width_mm": 91.8,
+              "height_mm": 85.2,
+              "fits_width": true
+            }
+          ]
+        ],
+        "cols": 1
+      }
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "주: <표 4-6>의 근거 출력이다. 현장 도입 여부 0=미도입·1=도입. 소속 1=시공사·2=발주청(공사감독·감리원 포함), 성별 1=남성·2=여성, 역할 1=공사감독·2=안전관리자·3=현장소장(관리감독자), 총공사비 1=20억 원 미만·2=20억 원 이상∼50억 원 미만·3=50억 원 이상∼120억 원 미만·4=120억 원 이상.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "type": "table_caption",
+      "text": "<부표 3-2> 측정도구의 탐색적 요인분석 jamovi 출력"
+    },
+    {
+      "type": "table",
+      "header": [
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "(가) 실효성(B-1∼B-8) Factor Loadings<br>![실효성(B-1∼B-8) Factor Loadings](설문결과/자모비캡쳐/부표/부표3-2_01.png)",
+          ""
+        ],
+        [
+          "(나) 실효성(B-1∼B-8) Summary<br>![실효성(B-1∼B-8) Summary](설문결과/자모비캡쳐/부표/부표3-2_02.png)",
+          "(다) 실효성(B-1∼B-8) Bartlett's Test of Sphericity<br>![실효성(B-1∼B-8) Bartlett's Test of Sphericity](설문결과/자모비캡쳐/부표/부표3-2_03.png)"
+        ],
+        [
+          "(라) 실효성(B-1∼B-8) KMO Measure of Sampling Adequacy<br>![실효성(B-1∼B-8) KMO Measure of Sampling Adequacy](설문결과/자모비캡쳐/부표/부표3-2_04.png)",
+          ""
+        ],
+        [
+          "(마) 예산 제약성(C-1∼C-4) Factor Loadings<br>![예산 제약성(C-1∼C-4) Factor Loadings](설문결과/자모비캡쳐/부표/부표3-2_05.png)",
+          ""
+        ],
+        [
+          "(바) 예산 제약성(C-1∼C-4) Summary<br>![예산 제약성(C-1∼C-4) Summary](설문결과/자모비캡쳐/부표/부표3-2_06.png)",
+          "(사) 예산 제약성(C-1∼C-4) Bartlett's Test of Sphericity<br>![예산 제약성(C-1∼C-4) Bartlett's Test of Sphericity](설문결과/자모비캡쳐/부표/부표3-2_07.png)"
+        ],
+        [
+          "(아) 예산 제약성(C-1∼C-4) KMO Measure of Sampling Adequacy<br>![예산 제약성(C-1∼C-4) KMO Measure of Sampling Adequacy](설문결과/자모비캡쳐/부표/부표3-2_08.png)",
+          ""
+        ]
+      ],
+      "image_grid": {
+        "rows": [
+          [
+            {
+              "label": "(가) 실효성(B-1∼B-8) Factor Loadings",
+              "alt": "실효성(B-1∼B-8) Factor Loadings",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_01.png",
+              "width_mm": 134.2,
+              "height_mm": 86.2,
+              "fits_width": true
+            },
+            null
+          ],
+          [
+            {
+              "label": "(나) 실효성(B-1∼B-8) Summary",
+              "alt": "실효성(B-1∼B-8) Summary",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_02.png",
+              "width_mm": 76.2,
+              "height_mm": 21.0,
+              "fits_width": true
+            },
+            {
+              "label": "(다) 실효성(B-1∼B-8) Bartlett's Test of Sphericity",
+              "alt": "실효성(B-1∼B-8) Bartlett's Test of Sphericity",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_03.png",
+              "width_mm": 37.0,
+              "height_mm": 21.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(라) 실효성(B-1∼B-8) KMO Measure of Sampling Adequacy",
+              "alt": "실효성(B-1∼B-8) KMO Measure of Sampling Adequacy",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_04.png",
+              "width_mm": 51.8,
+              "height_mm": 69.0,
+              "fits_width": true
+            },
+            null
+          ],
+          [
+            {
+              "label": "(마) 예산 제약성(C-1∼C-4) Factor Loadings",
+              "alt": "예산 제약성(C-1∼C-4) Factor Loadings",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_05.png",
+              "width_mm": 134.2,
+              "height_mm": 62.2,
+              "fits_width": true
+            },
+            null
+          ],
+          [
+            {
+              "label": "(바) 예산 제약성(C-1∼C-4) Summary",
+              "alt": "예산 제약성(C-1∼C-4) Summary",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_06.png",
+              "width_mm": 76.2,
+              "height_mm": 21.0,
+              "fits_width": true
+            },
+            {
+              "label": "(사) 예산 제약성(C-1∼C-4) Bartlett's Test of Sphericity",
+              "alt": "예산 제약성(C-1∼C-4) Bartlett's Test of Sphericity",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_07.png",
+              "width_mm": 37.0,
+              "height_mm": 21.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(아) 예산 제약성(C-1∼C-4) KMO Measure of Sampling Adequacy",
+              "alt": "예산 제약성(C-1∼C-4) KMO Measure of Sampling Adequacy",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_08.png",
+              "width_mm": 51.8,
+              "height_mm": 45.0,
+              "fits_width": true
+            },
+            null
+          ]
+        ],
+        "cols": 2
+      }
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "주: <표 4-8>의 근거 출력이다. 주축요인추출, 고유값 1 이상 기준, oblimin 회전 설정이며 두 척도 모두 1요인이 추출되어 회전은 적용되지 않았다.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "type": "table_caption",
+      "text": "<부표 3-3> 측정도구의 내적 일관성 검증 jamovi 출력"
+    },
+    {
+      "type": "table",
+      "header": [
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "(가) 실효성 Scale Reliability Statistics(전체)<br>![실효성 Scale Reliability Statistics(전체)](설문결과/자모비캡쳐/부표/부표3-3_01.png)",
+          "(나) 실효성 Item Reliability Statistics(전체)<br>![실효성 Item Reliability Statistics(전체)](설문결과/자모비캡쳐/부표/부표3-3_02.png)",
+          ""
+        ],
+        [
+          "(다) 예산 제약성 Scale Reliability Statistics(전체)<br>![예산 제약성 Scale Reliability Statistics(전체)](설문결과/자모비캡쳐/부표/부표3-3_03.png)",
+          "(라) 예산 제약성 Item Reliability Statistics(전체)<br>![예산 제약성 Item Reliability Statistics(전체)](설문결과/자모비캡쳐/부표/부표3-3_04.png)",
+          ""
+        ],
+        [
+          "(마) 원격 파악 문항 간 상관(전체)<br>![원격 파악 문항 간 상관(전체)](설문결과/자모비캡쳐/부표/부표3-3_05.png)",
+          "(바) 순찰부담 경감 문항 간 상관(전체)<br>![순찰부담 경감 문항 간 상관(전체)](설문결과/자모비캡쳐/부표/부표3-3_06.png)",
+          ""
+        ],
+        [
+          "(사) 위험 통제력 문항 간 상관(전체)<br>![위험 통제력 문항 간 상관(전체)](설문결과/자모비캡쳐/부표/부표3-3_07.png)",
+          "(아) 실효성 α(도입 현장)<br>![실효성 α(도입 현장)](설문결과/자모비캡쳐/부표/부표3-3_08.png)",
+          "(자) 예산 제약성 α(도입 현장)<br>![예산 제약성 α(도입 현장)](설문결과/자모비캡쳐/부표/부표3-3_09.png)"
+        ],
+        [
+          "(차) 실효성 α(미도입 현장)<br>![실효성 α(미도입 현장)](설문결과/자모비캡쳐/부표/부표3-3_10.png)",
+          "(카) 예산 제약성 α(미도입 현장)<br>![예산 제약성 α(미도입 현장)](설문결과/자모비캡쳐/부표/부표3-3_11.png)",
+          ""
+        ]
+      ],
+      "image_grid": {
+        "rows": [
+          [
+            {
+              "label": "(가) 실효성 Scale Reliability Statistics(전체)",
+              "alt": "실효성 Scale Reliability Statistics(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_01.png",
+              "width_mm": 34.8,
+              "height_mm": 27.0,
+              "fits_width": true
+            },
+            {
+              "label": "(나) 실효성 Item Reliability Statistics(전체)",
+              "alt": "실효성 Item Reliability Statistics(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_02.png",
+              "width_mm": 63.2,
+              "height_mm": 69.2,
+              "fits_width": true
+            },
+            null
+          ],
+          [
+            {
+              "label": "(다) 예산 제약성 Scale Reliability Statistics(전체)",
+              "alt": "예산 제약성 Scale Reliability Statistics(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_03.png",
+              "width_mm": 34.8,
+              "height_mm": 27.0,
+              "fits_width": true
+            },
+            {
+              "label": "(라) 예산 제약성 Item Reliability Statistics(전체)",
+              "alt": "예산 제약성 Item Reliability Statistics(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_04.png",
+              "width_mm": 63.5,
+              "height_mm": 45.2,
+              "fits_width": true
+            },
+            null
+          ],
+          [
+            {
+              "label": "(마) 원격 파악 문항 간 상관(전체)",
+              "alt": "원격 파악 문항 간 상관(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_05.png",
+              "width_mm": 50.2,
+              "height_mm": 52.0,
+              "fits_width": true
+            },
+            {
+              "label": "(바) 순찰부담 경감 문항 간 상관(전체)",
+              "alt": "순찰부담 경감 문항 간 상관(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_06.png",
+              "width_mm": 50.2,
+              "height_mm": 52.0,
+              "fits_width": true
+            },
+            null
+          ],
+          [
+            {
+              "label": "(사) 위험 통제력 문항 간 상관(전체)",
+              "alt": "위험 통제력 문항 간 상관(전체)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_07.png",
+              "width_mm": 50.2,
+              "height_mm": 52.0,
+              "fits_width": true
+            },
+            {
+              "label": "(아) 실효성 α(도입 현장)",
+              "alt": "실효성 α(도입 현장)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_08.png",
+              "width_mm": 34.8,
+              "height_mm": 27.0,
+              "fits_width": true
+            },
+            {
+              "label": "(자) 예산 제약성 α(도입 현장)",
+              "alt": "예산 제약성 α(도입 현장)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_09.png",
+              "width_mm": 34.8,
+              "height_mm": 27.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(차) 실효성 α(미도입 현장)",
+              "alt": "실효성 α(미도입 현장)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_10.png",
+              "width_mm": 34.8,
+              "height_mm": 27.0,
+              "fits_width": true
+            },
+            {
+              "label": "(카) 예산 제약성 α(미도입 현장)",
+              "alt": "예산 제약성 α(미도입 현장)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_11.png",
+              "width_mm": 34.8,
+              "height_mm": 27.0,
+              "fits_width": true
+            },
+            null
+          ]
+        ],
+        "cols": 3
+      }
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "주: <표 4-9>의 근거 출력이다. (가)∼(사)는 전체 73명, (아)·(자)는 도입 현장 34명, (차)·(카)는 미도입 현장 39명을 jamovi 행 필터로 나누어 산출하였다.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "type": "table_caption",
+      "text": "<부표 3-4> 하위요인별 공분산분석 jamovi 출력"
+    },
+    {
+      "type": "table",
+      "header": [
+        ""
+      ],
+      "rows": [
+        [
+          "(가) 조기인지 공분산분석<br>![조기인지 공분산분석](설문결과/자모비캡쳐/부표/부표3-4_01.png)"
+        ],
+        [
+          "(나) 조기인지 조정 평균<br>![조기인지 조정 평균](설문결과/자모비캡쳐/부표/부표3-4_02.png)"
+        ],
+        [
+          "(다) 대응 신속성 공분산분석<br>![대응 신속성 공분산분석](설문결과/자모비캡쳐/부표/부표3-4_03.png)"
+        ],
+        [
+          "(라) 대응 신속성 조정 평균<br>![대응 신속성 조정 평균](설문결과/자모비캡쳐/부표/부표3-4_04.png)"
+        ],
+        [
+          "(마) 원격 파악 공분산분석<br>![원격 파악 공분산분석](설문결과/자모비캡쳐/부표/부표3-4_05.png)"
+        ],
+        [
+          "(바) 원격 파악 조정 평균<br>![원격 파악 조정 평균](설문결과/자모비캡쳐/부표/부표3-4_06.png)"
+        ],
+        [
+          "(사) 순찰부담 경감 공분산분석<br>![순찰부담 경감 공분산분석](설문결과/자모비캡쳐/부표/부표3-4_07.png)"
+        ],
+        [
+          "(아) 순찰부담 경감 조정 평균<br>![순찰부담 경감 조정 평균](설문결과/자모비캡쳐/부표/부표3-4_08.png)"
+        ],
+        [
+          "(자) 위험 통제력 공분산분석<br>![위험 통제력 공분산분석](설문결과/자모비캡쳐/부표/부표3-4_09.png)"
+        ],
+        [
+          "(차) 위험 통제력 조정 평균<br>![위험 통제력 조정 평균](설문결과/자모비캡쳐/부표/부표3-4_10.png)"
+        ]
+      ],
+      "image_grid": {
+        "rows": [
+          [
+            {
+              "label": "(가) 조기인지 공분산분석",
+              "alt": "조기인지 공분산분석",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_01.png",
+              "width_mm": 118.2,
+              "height_mm": 70.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(나) 조기인지 조정 평균",
+              "alt": "조기인지 조정 평균",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_02.png",
+              "width_mm": 82.2,
+              "height_mm": 33.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(다) 대응 신속성 공분산분석",
+              "alt": "대응 신속성 공분산분석",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_03.png",
+              "width_mm": 116.8,
+              "height_mm": 70.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(라) 대응 신속성 조정 평균",
+              "alt": "대응 신속성 조정 평균",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_04.png",
+              "width_mm": 82.2,
+              "height_mm": 33.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(마) 원격 파악 공분산분석",
+              "alt": "원격 파악 공분산분석",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_05.png",
+              "width_mm": 118.2,
+              "height_mm": 70.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(바) 원격 파악 조정 평균",
+              "alt": "원격 파악 조정 평균",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_06.png",
+              "width_mm": 82.2,
+              "height_mm": 33.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(사) 순찰부담 경감 공분산분석",
+              "alt": "순찰부담 경감 공분산분석",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_07.png",
+              "width_mm": 118.2,
+              "height_mm": 70.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(아) 순찰부담 경감 조정 평균",
+              "alt": "순찰부담 경감 조정 평균",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_08.png",
+              "width_mm": 82.2,
+              "height_mm": 33.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(자) 위험 통제력 공분산분석",
+              "alt": "위험 통제력 공분산분석",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_09.png",
+              "width_mm": 118.2,
+              "height_mm": 70.0,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(차) 위험 통제력 조정 평균",
+              "alt": "위험 통제력 조정 평균",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_10.png",
+              "width_mm": 82.2,
+              "height_mm": 33.2,
+              "fits_width": true
+            }
+          ]
+        ],
+        "cols": 1
+      }
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "주: <표 4-15>의 근거 출력이다. 통제변수는 소속·성별·역할·총공사비(고정 요인)와 만 나이·경력(공변량)이며 제3유형 제곱합이다. 조정 평균 0=미도입·1=도입. Holm 보정 p와 차이의 95% CI는 이 출력의 p·평균 차이·표준오차로 별도 산출하였으므로 출력에 나타나지 않는다.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "type": "table_caption",
+      "text": "<부표 3-5> 현장 도입 여부와 안전관리 예산 제약성의 상호작용 jamovi 출력"
+    },
+    {
+      "type": "table",
+      "header": [
+        ""
+      ],
+      "rows": [
+        [
+          "(가) 회귀 계수(X×W_c 포함)<br>![회귀 계수(X×W_c 포함)](설문결과/자모비캡쳐/부표/부표3-5_01.png)"
+        ],
+        [
+          "(나) 공분산분석(X×W_c 포함)<br>![공분산분석(X×W_c 포함)](설문결과/자모비캡쳐/부표/부표3-5_02.png)"
+        ]
+      ],
+      "image_grid": {
+        "rows": [
+          [
+            {
+              "label": "(가) 회귀 계수(X×W_c 포함)",
+              "alt": "회귀 계수(X×W_c 포함)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-5_01.png",
+              "width_mm": 130.2,
+              "height_mm": 141.2,
+              "fits_width": true
+            }
+          ],
+          [
+            {
+              "label": "(나) 공분산분석(X×W_c 포함)",
+              "alt": "공분산분석(X×W_c 포함)",
+              "path": "01.docs/설문결과/자모비캡쳐/부표/부표3-5_02.png",
+              "width_mm": 128.0,
+              "height_mm": 82.0,
+              "fits_width": true
+            }
+          ]
+        ],
+        "cols": 1
+      }
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "주: <표 4-16>의 근거 출력이다. W_c는 안전관리 예산 제약성을 전체 73명 평균(3.449)으로 중심화한 값이다. 회귀 계수의 D_도입여부 1–0은 <표 4-16>의 X, (1–0)✻W_c는 X×W_c이다.",
+          "bold": false
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    },
+    {
+      "reason": "blank",
+      "text": ""
+    }
+  ]
+}

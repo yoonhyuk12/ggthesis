@@ -1,0 +1,212 @@
+# 00. 목차(표지·국문초록·목차·표 목차·그림 목차)
+
+> **동기화 기준:** 현행 `01.docs/` 본문에 맞춘 5장 구성. 연구설계의 단일 원본은 `04_연구설계및실증분석.md`이며 국문·영문초록의 실증 결과는 현행 제3·4장의 보고값을 따른다.
+
+---
+
+## 1. 표지(골격)
+
+```
+                        석 사 학 위 논 문
+
+
+           건설현장 YOLO-LLM 안전관제 시스템
+                       개발 및 실증 연구
+      : 도입 현장과 미도입 현장의 안전관리 실효성 비교를
+                          중심으로
+
+
+                  지도교수  박  종  용
+
+
+                경기대학교 공학대학원
+                   건축·안전공학전공
+
+
+                        윤  혁
+
+
+                      2026년  11월
+```
+
+- 속표지·인준서(심사위원 서명란)는 대학원 서식에 따라 별도 작성한다.
+- 제출 연월은 2026년 11월(사용자가 2026-10-09 한글 인준서에 직접 기입, MD 역동기화). 연구자 성명은 '윤  혁'으로 확정(2026-10-08 지시).
+
+---
+
+## 2. 국문초록
+
+본 연구는 중소규모 건설현장의 인력·예산 제약과 불필요한 경보에 따른 확인 부담에 대응하기 위해 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 검토하였다. 기존 ONVIF 카메라와 범용 PC를 활용하여 YOLO가 위험 후보를 탐지하고 LLM이 문맥을 검증한 뒤 관리자에게 알림을 전달하도록 설계하였다.
+
+시스템의 경보 품질은 운영 로그로 평가하였다. 현장 실효성은 A공사 경기지역본부 산하 73개 현장의 관리자 73명(도입 34명·미도입 39명)을 대상으로 조사하였다. 안전관리 실효성은 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 8문항으로 측정하였다. jamovi 2.7.41을 사용한 공분산분석에서 만 나이·경력·소속·성별·역할·총공사비 구간을 조정하여 집단 간 평균 차이를 비교하였다.
+
+1차 탐지 후보 878건에 대한 LLM 검증은 오경보를 834건에서 13건으로 줄였으나, 실제 위험 44건 중 5건의 경보도 차단하였다. 교정 사례를 활용한 비교에서도 오경보 감소와 실제 위험 경보 손실이 함께 나타났다. 설문 분석에서는 도입 현장의 안전관리 실효성이 미도입 현장보다 조정 후 0.54점 높아 연구가설 (1-1)이 지지되었다(95% 신뢰구간 [0.17, 0.91], p=.005, 부분 η²=0.121). 하위요인 중 조기인지·원격 파악·위험 통제력의 차이는 Holm 보정 후에도 유의하였으나, 대응 신속성과 순찰부담 경감의 차이는 유의하지 않았다. 위험 인지 후 지시 전달 소요시간에서도 유의한 집단 차이를 확인하지 못하였다(p=.663).
+
+이 결과는 기술적 경보 품질과 관리자가 지각한 업무 실효성을 구분하여 평가할 필요성을 보여준다. 현장에서는 오경보뿐 아니라 위험 경보 손실을 점검하고, 알림 수신부터 확인·조치까지의 절차를 관리해야 한다. 다만 기술 평가는 1차 후보에 대한 조건부 성능이며, 현장 비교는 단일 기관의 횡단적 자기보고 조사이므로 도입 전후의 변화나 인과효과로 해석할 수 없다.
+
+**주제어(Keywords):** 건설현장 안전관리, YOLO, 거대언어모델(LLM), 안전관리 실효성, 공분산분석(ANCOVA), 경보 피로도
+
+---
+
+## 3. 목차
+
+### 제1장 서론
+- 제1절 연구의 배경 및 필요성
+- 제2절 연구의 목적
+- 제3절 연구의 범위 및 방법
+
+### 제2장 이론적 배경
+- 제1절 건설산업 스마트 안전관리와 AI 영상관제 기술
+  - 제1항 개념 및 정의
+  - 제2항 오경보와 경보 피로도
+- 제2절 YOLO-LLM 안전관제 시스템의 기술 특성
+  - 제1항 시스템 인프라 범용성(A1)
+  - 제2항 1차 탐지(YOLO) 및 제어 안정성(A2)
+  - 제3항 2차 검증(LLM) 오탐 필터링(A3)
+  - 제4항 알림 전파 즉각성(A4)
+- 제3절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성
+  - 제1항 조기인지
+  - 제2항 대응 신속성
+  - 제3항 원격 파악
+  - 제4항 순찰부담 경감
+  - 제5항 위험 통제력
+- 제4절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)
+- 제5절 소결
+
+### 제3장 YOLO-LLM 안전관제 시스템 개발
+- 제1절 시스템 개발 방향 및 요구사항
+  - 제1항 시스템 개발 개요
+  - 제2항 현장 요구사항
+  - 제3항 관련 기술 선행연구
+- 제2절 시스템 설계
+  - 제1항 전체 시스템 구조
+  - 제2항 YOLO 탐지 및 제어
+  - 제3항 LLM 문맥 검증 및 현장 적응
+  - 제4항 경보 전파
+- 제3절 시스템 구현
+  - 제1항 실행 환경 및 기술 스택
+  - 제2항 주요 기능 및 운영 안정성
+  - 제3항 현장 배포 및 운용 구성
+- 제4절 시스템 개발의 효과 분석
+  - 제1항 검증 데이터셋 구축 및 평가 지표
+  - 제2항 LLM 검증의 오경보 감소와 실제 위험 경보 손실
+  - 제3항 RAG 기반 Few-shot 교정의 성능 실험
+  - 제4항 적용 타당성
+  - 제5항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식
+  - 제6항 현장 운영 특성
+- 제5절 소결
+
+### 제4장 연구설계 및 실증분석
+- 제1절 연구 모형 설계
+- 제2절 연구 문제 및 연구가설
+- 제3절 변수의 조작적 정의 및 측정도구 구성
+- 제4절 설문조사
+  - 제1항 설문조사의 개요 및 절차
+  - 제2항 설문지의 구성
+- 제5절 자료 수집과 분석 절차
+  - 제1항 자료 수집 및 표본
+  - 제2항 분석 절차
+- 제6절 조사 대상 특성과 기초통계 분석
+  - 제1항 인구통계학적 빈도분석
+  - 제2항 타당도 분석
+  - 제3항 신뢰도 분석
+  - 제4항 기술통계 분석
+  - 제5항 상관관계 분석
+- 제7절 가설 검증
+  - 제1항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)
+  - 제2항 가설 검증 결과 종합
+- 제8절 분석결과 및 논의
+
+### 제5장 결론
+
+### 참고문헌
+
+### 부록
+- 부 록 (도입 현장) — 설문지 (공통부 Part A·B + 도입 현장 전용부 Part C·D)
+- 부 록 (미도입 현장) — 설문지 (공통부 Part A·B)
+
+> 부록은 두 설문 양식뿐이며 단일 원본은 `부록1_설문지_양식.md`이다. 설문 문항 근거 대조표(`부록2_설문항목_근거매핑.md`)와 부록용 화면·사례 이미지 모음은 지도교수와 근거를 논의할 때 쓰는 자료로 `01.docs/`에 보존하며, 논문 본문에는 수록하지도 언급하지도 않는다(2026-11-04 사용자 결정: 대조표는 따로 출력해 간다). 실증분석 상세 결과와 jamovi 원출력 부록은 2026-11-04 지도교수 지시로 싣지 않기로 하여 원고에서 삭제하였다.
+
+### Abstract (영문초록)
+
+---
+
+## 4. 표 목차
+
+**제1장**
+- <표 1-1> 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)
+- <표 1-2> 연구의 방법과 장별 구성
+
+**제2장**
+- <표 2-1> 시스템 기술 특성 관련 선행연구 요약
+- <표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 하위요인 연결
+- <표 2-3> 안전관리 실효성 하위요인과 관련 선행연구
+- <표 2-4> 선행연구와 본 연구의 차별성
+- <표 2-5> 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합
+
+**제3장**
+- <표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항
+- <표 3-2> 관련 기술 선행연구 정리
+- <표 3-3> 시스템 모듈 구성과 역할
+- <표 3-4> 시스템 구현 기술 스택
+- <표 3-5> 정·오탐 라벨링 기준(혼동행렬 정의; 이기수, 2024)
+- <표 3-6> 성능 평가 지표 정의와 측정 목적
+- <표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)
+- <표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)
+- <표 3-9> 시스템 적용 타당성의 평가 범위
+- <표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의
+- <표 3-11> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 기술통계(n=34)
+- <표 3-12> 현장 운영 특성(A-7∼A-9)의 분포(도입·미도입 현장별)
+
+**제4장**
+- <표 4-1> 연구변수의 구성
+- <표 4-2> 연구가설 종합
+- <표 4-3> 변수의 조작적 정의와 측정도구의 구성
+- <표 4-4> 설문지의 최종 구성
+- <표 4-5> 자료 수집 개요
+- <표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)
+- <표 4-7> 만 나이와 건설현장 경력의 기술통계 및 집단 비교
+- <표 4-8> 안전관리 실효성 문항의 탐색적 요인분석 결과
+- <표 4-9> 측정도구의 신뢰도 분석 결과
+- <표 4-10> 주요 변수의 기술통계(도입·미도입 현장별)
+- <표 4-11> 주요 변수 간 상관관계
+- <표 4-12> 안전관리 실효성의 조정 평균과 집단 간 차이
+- <표 4-13> 안전관리 실효성의 도입·미도입 현장 간 차이 검정과 효과크기
+- <표 4-14> 하위요인별 공분산분석 결과(조정 차이·Holm 보정 포함)
+- <표 4-15> 연구가설 검증 결과 종합
+
+> 주: 표 번호와 제목은 현행 본문의 캡션과 일치시킨다. 제4장 제7절의 결과는 <표 4-12>∼<표 4-15>에 제시한다. jamovi 원출력 캡처는 본문과 부록 어디에도 싣지 않는다.
+
+---
+
+## 5. 그림 목차
+
+**제1장**
+- <그림 1-1> 연구의 흐름도
+
+**제3장**
+- <그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조
+- <그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름
+- <그림 3-3> RAG 기반 Few-shot 교정 절차
+- <그림 3-4> 시스템 운영 화면(AI CCTV Viewer)
+
+**제4장**
+- <그림 4-1> 연구 모형
+- <그림 4-2> 안전관리 실효성의 조정 평균과 95% 신뢰구간
+
+
+---
+
+## 6. Abstract
+
+**Development and Empirical Evaluation of a YOLO–LLM Safety Monitoring System for Construction Sites: A Comparison of Safety Management Effectiveness between Adopting and Non-Adopting Sites**
+
+This study developed a YOLO–LLM safety monitoring system to address staffing and budget constraints and unnecessary alarm burdens at small and medium-sized construction sites. The system uses existing ONVIF cameras and a general-purpose PC. YOLO detects potential hazards, and an LLM evaluates their context before notifications are sent to managers.
+
+Alarm performance was assessed using operational logs. Perceived safety management effectiveness was examined through a survey of 73 managers, one per site, under the Gyeonggi Regional Headquarters of a public corporation: 34 adopting sites and 39 non-adopting sites. Eight items covered early hazard recognition, response promptness, remote situational awareness, reduced patrol burden, and hazard control. Analysis of covariance in jamovi 2.7.41 compared the groups while adjusting for age, construction experience, affiliation, gender, role, and project cost category.
+
+Among 878 first-stage detection candidates, LLM verification reduced false alarms from 834 to 13 but also suppressed 5 of 44 genuine hazard alerts. A comparison using correction examples likewise revealed a trade-off between fewer false alarms and missed hazard alerts. In the survey analysis, adopting sites scored 0.54 points higher in adjusted safety management effectiveness (95% CI [0.17, 0.91], p=.005, partial η²=0.121), supporting Hypothesis (1-1). After Holm correction, differences were significant for early hazard recognition, remote situational awareness, and hazard control, but not for response promptness or reduced patrol burden. No significant group difference was found in the reported time from hazard recognition to instruction delivery (p=.663).
+
+The findings indicate the need to assess both alarm performance and managers' perceived work effectiveness. Practical operation requires monitoring missed hazard alerts as well as false alarms and establishing procedures for notification receipt, verification, and corrective action. Technical results are conditional on first-stage candidates, and the cross-sectional, self-reported comparison within one organization does not establish changes over time or causal effects of adoption.
+
+**Keywords:** construction safety management; YOLO; large language model; safety management effectiveness; analysis of covariance; alarm fatigue

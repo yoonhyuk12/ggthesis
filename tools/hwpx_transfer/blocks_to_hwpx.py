@@ -34,6 +34,7 @@ import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import kjn_profile  # noqa: E402
+import table_merges  # noqa: E402
 from kjn_profile import (  # noqa: E402,F401 — 옛 이름 그대로 재수출(테스트·다른 도구 호환)
     CELL_LINEBREAK_TOKEN, EMSP_CHAR, EMSP_TOKEN, GUIDE_MARKER_RE, XML_PROLOG,
     IdGen, ProfileError, esc, load_profile, split_paragraphs,
@@ -476,7 +477,10 @@ class Document(object):
                 self.lot.append(b["text"])
                 pending_caption = b["text"]
             elif kind == "table":
-                self.body.append(self.asm.table_xml(b["header"], b["rows"], caption=pending_caption))
+                table_xml = self.asm.table_xml(b["header"], b["rows"], caption=pending_caption)
+                if b.get("layout"):
+                    table_xml = table_merges.apply_layout(table_xml, b, row_offset=int(pending_caption is not None))
+                self.body.append(table_xml)
                 pending_caption = None
             elif kind == "figure_caption":
                 self.lof.append(b["text"])

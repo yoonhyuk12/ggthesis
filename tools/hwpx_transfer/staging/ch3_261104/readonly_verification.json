@@ -1,0 +1,30 @@
+{
+  "zip_xml": "PASS",
+  "other_chapters_exact": true,
+  "ch3_order_text_matches_fresh": true,
+  "original_table_grids_widths_preserved": [
+    "<표3-1>",
+    "<표3-2>",
+    "<표3-3>",
+    "<표3-4>",
+    "<표3-5>",
+    "<표3-6>",
+    "<표3-7>",
+    "<표3-8>",
+    "<표3-10>",
+    "<표3-11>",
+    "<표3-12>"
+  ],
+  "image_references": 53,
+  "all_image_references_resolved": true,
+  "unused_images": [
+    "BinData/image2.png",
+    "BinData/image3.png",
+    "BinData/image4.png"
+  ],
+  "red_markers": 19,
+  "bad_red_markers": [],
+  "pdf_pages": 158,
+  "table_cell_tails": 1826,
+  "missing_cell_tails": []
+}

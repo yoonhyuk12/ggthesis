@@ -1,0 +1,22 @@
+{
+  "zip_xml": "PASS",
+  "chapter_text_matches_current_MD": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "removed_appendices_absent": true,
+  "surveys": 2,
+  "english_abstract": true,
+  "original_table_grids_widths_preserved": [],
+  "image_references": 7,
+  "all_image_references_resolved": true,
+  "unused_images": [],
+  "red_markers": 3,
+  "bad_red_markers": [],
+  "pdf_pages": 130,
+  "table_cell_tails": 1440,
+  "missing_cell_tails": []
+}

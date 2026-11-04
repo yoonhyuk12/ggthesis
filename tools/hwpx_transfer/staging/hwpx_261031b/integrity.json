@@ -1,0 +1,597 @@
+{
+  "zip_integrity": "PASS",
+  "xml_parsed": [
+    "version.xml",
+    "Contents/header.xml",
+    "Contents/section0.xml",
+    "Contents/section1.xml",
+    "Contents/section2.xml",
+    "settings.xml",
+    "Contents/content.hpf",
+    "META-INF/container.xml",
+    "META-INF/manifest.xml"
+  ],
+  "zip_entries": 66,
+  "sha256": "b69ff600fcdafa2103ef5547e21b569f3440f40eab9971c93b60dfa8b0aa4b46",
+  "images": {
+    "bins": 53,
+    "registered": 53,
+    "references": 53,
+    "unused": 0,
+    "body_grid_images": 12,
+    "appendix_grid_images": 35,
+    "original_figures": 6
+  },
+  "all_53_base_image_payloads_exact": true,
+  "jamovi_png_byte_matches": 47,
+  "pageBreak_CELL": 0,
+  "full_section2_text_matches_current_assembly": true,
+  "cover_survey_appendix2_exact": true,
+  "all_main_tables_exact_XML": 36,
+  "remaining_appendix_grids_exact_XML": 5,
+  "main_paragraphs_exact_except_7_notes_8_insertions": true,
+  "main_exact_paragraphs": 650,
+  "section1_unrelated_XML_and_surviving_pages_exact": true,
+  "toc_table_captions_match_MD": 47,
+  "section_style_references": "PASS",
+  "red_markers_verified": 25,
+  "black_brackets_verified": 102,
+  "grids": [
+    {
+      "caption": "<표 4-7> 아래 번호 없는 격자",
+      "body": true,
+      "rows": 1,
+      "cols": 2,
+      "column_widths": [
+        22790,
+        16894
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "NONE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 22790,
+          "image_width_mm": 73.2013,
+          "image_height_mm": 105.0006,
+          "file": "표4-7_01.png"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "colSpan": 1,
+          "width": 16894,
+          "image_width_mm": 53.9996,
+          "image_height_mm": 57.0017,
+          "file": "표4-7_02.png"
+        }
+      ]
+    },
+    {
+      "caption": "<표 4-10> 아래 번호 없는 격자",
+      "body": true,
+      "rows": 1,
+      "cols": 1,
+      "column_widths": [
+        39684
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "NONE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 139.9961,
+          "image_height_mm": 108.7118,
+          "file": "표4-10_01.png"
+        }
+      ]
+    },
+    {
+      "caption": "<표 4-11> 아래 번호 없는 격자",
+      "body": true,
+      "rows": 1,
+      "cols": 1,
+      "column_widths": [
+        39684
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "NONE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 101.9985,
+          "image_height_mm": 40.0014,
+          "file": "표4-11_01.png"
+        }
+      ]
+    },
+    {
+      "caption": "<표 4-12> 아래 번호 없는 격자",
+      "body": true,
+      "rows": 4,
+      "cols": 2,
+      "column_widths": [
+        24554,
+        15130
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "NONE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 24554,
+          "image_width_mm": 60.9987,
+          "image_height_mm": 32.9988,
+          "file": "표4-12_01.png"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "colSpan": 1,
+          "width": 15130,
+          "image_width_mm": 37.2004,
+          "image_height_mm": 27.0016,
+          "file": "표4-12_02.png"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "colSpan": 1,
+          "width": 24554,
+          "image_width_mm": 60.9987,
+          "image_height_mm": 32.9988,
+          "file": "표4-12_03.png"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "colSpan": 1,
+          "width": 15130,
+          "image_width_mm": 37.2004,
+          "image_height_mm": 27.0016,
+          "file": "표4-12_04.png"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "colSpan": 1,
+          "width": 24554,
+          "image_width_mm": 60.9987,
+          "image_height_mm": 32.9988,
+          "file": "표4-12_05.png"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "colSpan": 1,
+          "width": 15130,
+          "image_width_mm": 37.2004,
+          "image_height_mm": 27.0016,
+          "file": "표4-12_06.png"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "colSpan": 1,
+          "width": 24554,
+          "image_width_mm": 60.9987,
+          "image_height_mm": 32.9988,
+          "file": "표4-12_07.png"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "colSpan": 1,
+          "width": 15130,
+          "image_width_mm": 37.2004,
+          "image_height_mm": 27.0016,
+          "file": "표4-12_08.png"
+        }
+      ]
+    },
+    {
+      "caption": "<부표 3-1> 조사 대상의 범주형 인구통계학적 특성 jamovi 출력",
+      "body": false,
+      "rows": 4,
+      "cols": 1,
+      "column_widths": [
+        39684
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "TABLE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 86.2011,
+          "image_height_mm": 59.1995,
+          "file": "부표3-1_01.png"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 86.2011,
+          "image_height_mm": 59.1995,
+          "file": "부표3-1_02.png"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 86.2011,
+          "image_height_mm": 72.1994,
+          "file": "부표3-1_03.png"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 91.7997,
+          "image_height_mm": 85.1992,
+          "file": "부표3-1_04.png"
+        }
+      ]
+    },
+    {
+      "caption": "<부표 3-2> 측정도구의 탐색적 요인분석 jamovi 출력",
+      "body": false,
+      "rows": 6,
+      "cols": 2,
+      "column_widths": [
+        22660,
+        17024
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "TABLE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 2,
+          "width": 39684,
+          "image_width_mm": 134.2,
+          "image_height_mm": 86.2011,
+          "file": "부표3-2_01.png"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "colSpan": 1,
+          "width": 22660,
+          "image_width_mm": 76.1999,
+          "image_height_mm": 21.0008,
+          "file": "부표3-2_02.png"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "colSpan": 1,
+          "width": 17024,
+          "image_width_mm": 36.9993,
+          "image_height_mm": 21.0008,
+          "file": "부표3-2_03.png"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "colSpan": 2,
+          "width": 39684,
+          "image_width_mm": 51.7983,
+          "image_height_mm": 68.9997,
+          "file": "부표3-2_04.png"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "colSpan": 2,
+          "width": 39684,
+          "image_width_mm": 134.2,
+          "image_height_mm": 62.2017,
+          "file": "부표3-2_05.png"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "colSpan": 1,
+          "width": 22660,
+          "image_width_mm": 76.1999,
+          "image_height_mm": 21.0008,
+          "file": "부표3-2_06.png"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "colSpan": 1,
+          "width": 17024,
+          "image_width_mm": 36.9993,
+          "image_height_mm": 21.0008,
+          "file": "부표3-2_07.png"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "colSpan": 2,
+          "width": 39684,
+          "image_width_mm": 51.7983,
+          "image_height_mm": 45.0003,
+          "file": "부표3-2_08.png"
+        }
+      ]
+    },
+    {
+      "caption": "<부표 3-3> 측정도구의 내적 일관성 검증 jamovi 출력",
+      "body": false,
+      "rows": 5,
+      "cols": 3,
+      "column_widths": [
+        16545,
+        11569,
+        11570
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "TABLE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 16545,
+          "image_width_mm": 34.8015,
+          "image_height_mm": 27.0016,
+          "file": "부표3-3_01.png"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "colSpan": 2,
+          "width": 23139,
+          "image_width_mm": 63.2,
+          "image_height_mm": 69.2008,
+          "file": "부표3-3_02.png"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "colSpan": 1,
+          "width": 16545,
+          "image_width_mm": 34.8015,
+          "image_height_mm": 27.0016,
+          "file": "부표3-3_03.png"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "colSpan": 2,
+          "width": 23139,
+          "image_width_mm": 63.4999,
+          "image_height_mm": 45.2013,
+          "file": "부표3-3_04.png"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "colSpan": 1,
+          "width": 16545,
+          "image_width_mm": 50.2002,
+          "image_height_mm": 51.9994,
+          "file": "부표3-3_05.png"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "colSpan": 2,
+          "width": 23139,
+          "image_width_mm": 50.2002,
+          "image_height_mm": 51.9994,
+          "file": "부표3-3_06.png"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "colSpan": 1,
+          "width": 16545,
+          "image_width_mm": 50.2002,
+          "image_height_mm": 51.9994,
+          "file": "부표3-3_07.png"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "colSpan": 1,
+          "width": 11569,
+          "image_width_mm": 34.8015,
+          "image_height_mm": 27.0016,
+          "file": "부표3-3_08.png"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "colSpan": 1,
+          "width": 11570,
+          "image_width_mm": 34.8015,
+          "image_height_mm": 27.0016,
+          "file": "부표3-3_09.png"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "colSpan": 1,
+          "width": 16545,
+          "image_width_mm": 34.8015,
+          "image_height_mm": 27.0016,
+          "file": "부표3-3_10.png"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "colSpan": 2,
+          "width": 23139,
+          "image_width_mm": 34.8015,
+          "image_height_mm": 27.0016,
+          "file": "부표3-3_11.png"
+        }
+      ]
+    },
+    {
+      "caption": "<부표 3-4> 하위요인별 공분산분석 jamovi 출력",
+      "body": false,
+      "rows": 10,
+      "cols": 1,
+      "column_widths": [
+        39684
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "TABLE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 118.2015,
+          "image_height_mm": 70.0016,
+          "file": "부표3-4_01.png"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 82.2006,
+          "image_height_mm": 33.1999,
+          "file": "부표3-4_02.png"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 116.801,
+          "image_height_mm": 70.0016,
+          "file": "부표3-4_03.png"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 82.2006,
+          "image_height_mm": 33.1999,
+          "file": "부표3-4_04.png"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 118.2015,
+          "image_height_mm": 70.0016,
+          "file": "부표3-4_05.png"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 82.2006,
+          "image_height_mm": 33.1999,
+          "file": "부표3-4_06.png"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 118.2015,
+          "image_height_mm": 70.0016,
+          "file": "부표3-4_07.png"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 82.2006,
+          "image_height_mm": 33.1999,
+          "file": "부표3-4_08.png"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 118.2015,
+          "image_height_mm": 70.0016,
+          "file": "부표3-4_09.png"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 82.2006,
+          "image_height_mm": 33.1999,
+          "file": "부표3-4_10.png"
+        }
+      ]
+    },
+    {
+      "caption": "<부표 3-5> 현장 도입 여부와 안전관리 예산 제약성의 상호작용 jamovi 출력",
+      "body": false,
+      "rows": 2,
+      "cols": 1,
+      "column_widths": [
+        39684
+      ],
+      "total_width": 39684,
+      "all_row_width_sums": 39684,
+      "pageBreak": "TABLE",
+      "cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 130.1995,
+          "image_height_mm": 141.1991,
+          "file": "부표3-5_01.png"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "colSpan": 1,
+          "width": 39684,
+          "image_width_mm": 128.0017,
+          "image_height_mm": 81.9995,
+          "file": "부표3-5_02.png"
+        }
+      ]
+    }
+  ],
+  "base_sha256_before": "d9ffcc9f26fd6c07d63a62f9df84ac388b72ca2330eeeccb450ed554f0e4e94e",
+  "base_sha256_after": "d9ffcc9f26fd6c07d63a62f9df84ac388b72ca2330eeeccb450ed554f0e4e94e"
+}

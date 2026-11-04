@@ -1,0 +1,2 @@
+PASS: ZIP/XML/style refs; 53 image payloads/manifest refs; 47 unchanged jamovi PNGs; 9 grids; current MD text/TOC; red/black markers; original SHA256
+markers 25 black brackets 102 tables preserved 14

@@ -1,0 +1,352 @@
+[
+ {
+  "bupyo": "<부표 3-1>",
+  "for": "<표 4-6>",
+  "title": "조사 대상의 범주형 인구통계학적 특성 jamovi 출력",
+  "cells": [
+   {
+    "file": "부표3-1_01.png",
+    "label": "소속×현장 도입 여부 교차표",
+    "source": "full:S01_T1.png",
+    "caption": "Contingency Tables",
+    "width_mm": 86.2,
+    "height_mm": 59.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-1_02.png",
+    "label": "성별×현장 도입 여부 교차표",
+    "source": "full:S02_T1.png",
+    "caption": "Contingency Tables",
+    "width_mm": 86.2,
+    "height_mm": 59.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-1_03.png",
+    "label": "역할×현장 도입 여부 교차표",
+    "source": "full:S03_T1.png",
+    "caption": "Contingency Tables",
+    "width_mm": 86.2,
+    "height_mm": 72.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-1_04.png",
+    "label": "총공사비×현장 도입 여부 교차표",
+    "source": "full:S04_T1.png",
+    "caption": "Contingency Tables",
+    "width_mm": 91.8,
+    "height_mm": 85.2,
+    "fits_width": true
+   }
+  ]
+ },
+ {
+  "bupyo": "<부표 3-2>",
+  "for": "<표 4-8>",
+  "title": "측정도구의 탐색적 요인분석 jamovi 출력",
+  "cells": [
+   {
+    "file": "부표3-2_01.png",
+    "label": "실효성(B-1∼B-8) Factor Loadings",
+    "source": "full:S07_T1.png",
+    "caption": "Factor Loadings",
+    "width_mm": 134.2,
+    "height_mm": 86.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_02.png",
+    "label": "실효성(B-1∼B-8) Summary",
+    "source": "full:S07_T2.png",
+    "caption": "Summary",
+    "width_mm": 76.2,
+    "height_mm": 21.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_03.png",
+    "label": "실효성(B-1∼B-8) Bartlett's Test of Sphericity",
+    "source": "full:S07_T3.png",
+    "caption": "Bartlett's Test of Sphericity",
+    "width_mm": 37.0,
+    "height_mm": 21.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_04.png",
+    "label": "실효성(B-1∼B-8) KMO Measure of Sampling Adequacy",
+    "source": "full:S07_T4.png",
+    "caption": "KMO Measure of Sampling Adequacy",
+    "width_mm": 51.8,
+    "height_mm": 69.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_05.png",
+    "label": "예산 제약성(C-1∼C-4) Factor Loadings",
+    "source": "full:S08_T1.png",
+    "caption": "Factor Loadings",
+    "width_mm": 134.2,
+    "height_mm": 62.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_06.png",
+    "label": "예산 제약성(C-1∼C-4) Summary",
+    "source": "full:S08_T2.png",
+    "caption": "Summary",
+    "width_mm": 76.2,
+    "height_mm": 21.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_07.png",
+    "label": "예산 제약성(C-1∼C-4) Bartlett's Test of Sphericity",
+    "source": "full:S08_T3.png",
+    "caption": "Bartlett's Test of Sphericity",
+    "width_mm": 37.0,
+    "height_mm": 21.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-2_08.png",
+    "label": "예산 제약성(C-1∼C-4) KMO Measure of Sampling Adequacy",
+    "source": "full:S08_T4.png",
+    "caption": "KMO Measure of Sampling Adequacy",
+    "width_mm": 51.8,
+    "height_mm": 45.0,
+    "fits_width": true
+   }
+  ]
+ },
+ {
+  "bupyo": "<부표 3-3>",
+  "for": "<표 4-9>",
+  "title": "측정도구의 내적 일관성 검증 jamovi 출력",
+  "cells": [
+   {
+    "file": "부표3-3_01.png",
+    "label": "실효성 Scale Reliability Statistics(전체)",
+    "source": "full:S09_T1.png",
+    "caption": "Scale Reliability Statistics",
+    "width_mm": 34.8,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_02.png",
+    "label": "실효성 Item Reliability Statistics(전체)",
+    "source": "full:S09_T2.png",
+    "caption": "Item Reliability Statistics",
+    "width_mm": 63.2,
+    "height_mm": 69.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_03.png",
+    "label": "예산 제약성 Scale Reliability Statistics(전체)",
+    "source": "full:S10_T1.png",
+    "caption": "Scale Reliability Statistics",
+    "width_mm": 34.8,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_04.png",
+    "label": "예산 제약성 Item Reliability Statistics(전체)",
+    "source": "full:S10_T2.png",
+    "caption": "Item Reliability Statistics",
+    "width_mm": 63.5,
+    "height_mm": 45.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_05.png",
+    "label": "원격 파악 문항 간 상관(전체)",
+    "source": "full:S11_T1.png",
+    "caption": "Correlation Matrix",
+    "width_mm": 50.2,
+    "height_mm": 52.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_06.png",
+    "label": "순찰부담 경감 문항 간 상관(전체)",
+    "source": "full:S12_T1.png",
+    "caption": "Correlation Matrix",
+    "width_mm": 50.2,
+    "height_mm": 52.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_07.png",
+    "label": "위험 통제력 문항 간 상관(전체)",
+    "source": "full:S13_T1.png",
+    "caption": "Correlation Matrix",
+    "width_mm": 50.2,
+    "height_mm": 52.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_08.png",
+    "label": "실효성 α(도입 현장)",
+    "source": "intro:S09_T1.png",
+    "caption": "Scale Reliability Statistics",
+    "width_mm": 34.8,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_09.png",
+    "label": "예산 제약성 α(도입 현장)",
+    "source": "intro:S10_T1.png",
+    "caption": "Scale Reliability Statistics",
+    "width_mm": 34.8,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_10.png",
+    "label": "실효성 α(미도입 현장)",
+    "source": "nonintro:S09_T1.png",
+    "caption": "Scale Reliability Statistics",
+    "width_mm": 34.8,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-3_11.png",
+    "label": "예산 제약성 α(미도입 현장)",
+    "source": "nonintro:S10_T1.png",
+    "caption": "Scale Reliability Statistics",
+    "width_mm": 34.8,
+    "height_mm": 27.0,
+    "fits_width": true
+   }
+  ]
+ },
+ {
+  "bupyo": "<부표 3-4>",
+  "for": "<표 4-15>",
+  "title": "하위요인별 공분산분석 jamovi 출력",
+  "cells": [
+   {
+    "file": "부표3-4_01.png",
+    "label": "조기인지 공분산분석",
+    "source": "full:S17_T1.png",
+    "caption": "ANCOVA - Y1_조기인지",
+    "width_mm": 118.2,
+    "height_mm": 70.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_02.png",
+    "label": "조기인지 조정 평균",
+    "source": "full:S17_T5.png",
+    "caption": "Estimated Marginal Means - D_도입여부",
+    "width_mm": 82.2,
+    "height_mm": 33.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_03.png",
+    "label": "대응 신속성 공분산분석",
+    "source": "full:S19_T1.png",
+    "caption": "ANCOVA - Y2_대응신속성",
+    "width_mm": 116.8,
+    "height_mm": 70.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_04.png",
+    "label": "대응 신속성 조정 평균",
+    "source": "full:S19_T5.png",
+    "caption": "Estimated Marginal Means - D_도입여부",
+    "width_mm": 82.2,
+    "height_mm": 33.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_05.png",
+    "label": "원격 파악 공분산분석",
+    "source": "full:S20_T1.png",
+    "caption": "ANCOVA - Y3_원격파악",
+    "width_mm": 118.2,
+    "height_mm": 70.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_06.png",
+    "label": "원격 파악 조정 평균",
+    "source": "full:S20_T5.png",
+    "caption": "Estimated Marginal Means - D_도입여부",
+    "width_mm": 82.2,
+    "height_mm": 33.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_07.png",
+    "label": "순찰부담 경감 공분산분석",
+    "source": "full:S21_T1.png",
+    "caption": "ANCOVA - Y4_순찰부담경감",
+    "width_mm": 118.2,
+    "height_mm": 70.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_08.png",
+    "label": "순찰부담 경감 조정 평균",
+    "source": "full:S21_T5.png",
+    "caption": "Estimated Marginal Means - D_도입여부",
+    "width_mm": 82.2,
+    "height_mm": 33.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_09.png",
+    "label": "위험 통제력 공분산분석",
+    "source": "full:S22_T1.png",
+    "caption": "ANCOVA - Y5_위험통제력",
+    "width_mm": 118.2,
+    "height_mm": 70.0,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-4_10.png",
+    "label": "위험 통제력 조정 평균",
+    "source": "full:S22_T5.png",
+    "caption": "Estimated Marginal Means - D_도입여부",
+    "width_mm": 82.2,
+    "height_mm": 33.2,
+    "fits_width": true
+   }
+  ]
+ },
+ {
+  "bupyo": "<부표 3-5>",
+  "for": "<표 4-16>",
+  "title": "현장 도입 여부와 안전관리 예산 제약성의 상호작용 jamovi 출력",
+  "cells": [
+   {
+    "file": "부표3-5_01.png",
+    "label": "회귀 계수(X×W_c 포함)",
+    "source": "full:S23_T2.png",
+    "caption": "Model Coefficients - Y_실효성",
+    "width_mm": 130.2,
+    "height_mm": 141.2,
+    "fits_width": true
+   },
+   {
+    "file": "부표3-5_02.png",
+    "label": "공분산분석(X×W_c 포함)",
+    "source": "full:S18_T1.png",
+    "caption": "ANCOVA - Y_실효성",
+    "width_mm": 128.0,
+    "height_mm": 82.0,
+    "fits_width": true
+   }
+  ]
+ }
+]

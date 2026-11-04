@@ -1,0 +1,20 @@
+{
+  "keys": 171,
+  "mapped_paragraphs": 161,
+  "actual_changed_paragraphs": 161,
+  "unexpected_changed": [],
+  "expected_not_changed": [],
+  "key_counts_not_one": [],
+  "cross_style_keys": [],
+  "simulation_errors": [],
+  "intentional_marker_deletions": [
+    {
+      "section": "Contents/section2.xml",
+      "idx": 345,
+      "marker": "UNVERIFIED EN 50136-1:2012"
+    }
+  ],
+  "hwpx_file_access": false,
+  "ready_for_main_preflight": true,
+  "remaining_unresolved": 0
+}

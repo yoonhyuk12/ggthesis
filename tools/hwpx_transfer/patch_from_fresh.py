@@ -25,20 +25,23 @@
 import argparse
 import difflib
 import html
+import hashlib
 import json
 import os
 import re
 import sys
 import zipfile
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kjn_profile  # noqa: E402
+import table_merges  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 
 LINESEG_RE = re.compile(r"<hp:linesegarray>.*?</hp:linesegarray>", re.S)
-CAPTION_RE = re.compile(r"^<표\s*\d+\s*-\s*\d+>")
+CAPTION_RE = re.compile(r"^<(?:부표|표)\s*\d+\s*-\s*\d+>")
 ID_RE = re.compile(r'<hp:(p|tbl|pic|container|rect|line|ellipse|arc|polygon|curve|connectLine|ole|equation) id="(\d+)"')
 
 
@@ -54,6 +57,33 @@ def norm(text):
 def nows(text):
     """공백을 모두 지운 비교용 텍스트('합계'와 '합  계'를 같게 본다)."""
     return re.sub(r"\s+", "", text)
+
+
+def replace_literal_text(xml_text, old, new, count):
+    """Target a known literal and invalidate only changed/ancestor paragraphs.
+
+    Mark every containing paragraph (including table anchors), but keep caches
+    in untouched sibling cells. XML escaping is done before matching.
+    """
+    old_x, new_x = esc(old), esc(new)
+    if xml_text.count(old_x) != count:
+        raise ValueError("Target count mismatch for %r: %d != %d" % (old, xml_text.count(old_x), count))
+    pattern = re.compile(r'<hp:p\b[^>]*>|</hp:p>|<hp:linesegarray>.*?</hp:linesegarray>|' + re.escape(old_x), re.S)
+    stack, affected, segs = [], set(), []
+    for m in pattern.finditer(xml_text):
+        token = m.group(0)
+        if token.startswith('<hp:p '):
+            stack.append(m.start())
+        elif token == '</hp:p>':
+            stack.pop()
+        elif token.startswith('<hp:linesegarray>'):
+            segs.append((m.start(),m.end(),stack[-1] if stack else None))
+        else:
+            affected.update(stack)
+    for a,b,owner in reversed(segs):
+        if owner in affected:
+            xml_text = xml_text[:a] + xml_text[b:]
+    return xml_text.replace(old_x, new_x)
 
 
 def esc(text):
@@ -213,6 +243,8 @@ class Patcher(object):
         self.stats = {"equal": 0, "insert": 0, "replace_fresh": 0, "replace_kept": 0, "delete_kept": 0, "manual": 0,
                       "table_same_kept": 0, "caption_split": 0}
         self.manual = []  # '수동 재적용 필요' 목록(보고서 별도 절)
+        self.bin_imports = {}
+        self.bin_id_map = {}
 
     def _manual(self, what):
         self.stats["manual"] += 1
@@ -277,10 +309,112 @@ class Patcher(object):
 
     def take_fresh(self, xml_text):
         x = self.importer.remap_body(xml_text)
+        x = self._import_binaries(x)
         x = LINESEG_RE.sub("", x)
         return self.renumber(x)
 
+    def _import_binaries(self, xml_text):
+        """Copy referenced fresh payloads with collision-safe IDs and hrefs.
+
+        Preserve every original base asset; reuse identical bytes only. IDs in
+        an independently assembled package do not identify the same images.
+        """
+        def entries(raw):
+            root = ET.fromstring(raw.get("Contents/content.hpf", b'<package/>'))
+            return {e.get("id"): e for e in root.iter() if e.tag.endswith("}item")}
+        fresh = entries(self.fresh_raw)
+        base = entries(self.base_raw)
+        for item_id in set(re.findall(r'\bbinaryItemIDRef="([^"]+)"', xml_text)):
+            if item_id in self.bin_id_map:
+                continue
+            item = fresh.get(item_id)
+            if item is None or item.get("href") not in self.fresh_raw:
+                raise ValueError("Missing fresh image payload: " + item_id)
+            data = self.fresh_raw[item.get("href")]
+            digest = hashlib.sha256(data).digest()
+            match = next((key for key, b in base.items() if b.get("href", "").startswith("BinData/")
+                          and b.get("href") in self.base_raw
+                          and hashlib.sha256(self.base_raw[b.get("href")]).digest() == digest), None)
+            # Distinct fresh image items stay distinct even when two jamovi
+            # tables happen to have identical PNG bytes (one asset per cell).
+            if match is None:
+                n = 1
+                while "patch_image%d" % n in base or "patch_image%d" % n in self.bin_imports:
+                    n += 1
+                match = "patch_image%d" % n
+                suffix = Path(item.get("href")).suffix
+                href = "BinData/" + match + suffix
+                self.bin_imports[match] = (href, data, item.get("media-type", "image/png"))
+            self.bin_id_map[item_id] = match
+        return re.sub(r'\bbinaryItemIDRef="([^"]+)"',
+                      lambda m: 'binaryItemIDRef="%s"' % self.bin_id_map[m.group(1)], xml_text)
+
+    def append_new_appendices(self):
+        """Append numbered appendices absent from base, leaving its survey intact."""
+        fresh = Units(self.fresh_s2, set())
+        heading = re.compile(r"^부\s*록\s*(\d+)\s*[.．]")
+        starts = [(i, heading.match(u["text"]).group(1)) for i, u in enumerate(fresh.items)
+                  if not u["tbl"] and heading.match(u["text"])]
+        existing = {heading.match(u["text"]).group(1) for u in Units(self.s2, set()).items
+                    if not u["tbl"] and heading.match(u["text"])}
+        additions = []
+        for index, (start, number) in enumerate(starts):
+            if number in existing:
+                continue
+            end = starts[index + 1][0] if index + 1 < len(starts) else len(fresh.items)
+            additions.extend(self.take_fresh(u["xml"]) for u in fresh.items[start:end])
+            self.log.append("APPEND(new appendix %s) | %d top-level paragraphs" % (number, end - start))
+            self.stats["insert"] += end - start
+        if additions:
+            end = self.s2.rfind("</hs:sec>")
+            if end < 0:
+                raise ValueError("section2 closing tag not found")
+            self.s2 = self.s2[:end] + "".join(additions) + self.s2[end:]
+
     # ── 본문 정렬 패치 ──
+    def _declared_table_layouts(self):
+        """Apply explicit MD layouts to base cells before content alignment.
+
+        Only declared aliases/merges are changed; other user edits survive.
+        Explicit --protect/--allow-tables restrictions always take precedence.
+        """
+        import md_to_blocks
+        source = Path(__file__).resolve().parents[2] / "01.docs"
+        layouts = {}
+        for path in sorted(source.glob("*.md")):
+            if table_merges.PREFIX not in path.read_text(encoding="utf-8-sig"):
+                continue
+            for block in md_to_blocks.parse_file(path)[1]:
+                if block.get("layout"):
+                    caption = block["layout"]["caption"].replace(" ", "")
+                    if caption in layouts:
+                        raise ValueError("Duplicate declared table caption: " + caption)
+                    layouts[caption] = block
+        base = Units(self.s2, self.protect, self.allow_tables, self.keep_prefix)
+        fresh = Units(self.fresh_s2, self.protect, self.allow_tables, self.keep_prefix)
+        for caption, block in layouts.items():
+            fs = [u for u in fresh.items if u["tbl"] and u["cap"] == caption]
+            bs = [u for u in base.items if u["tbl"] and u["cap"] == caption]
+            if not fs and not bs:
+                continue  # partial input not containing this table
+            if len(fs) != 1 or len(bs) > 1:
+                raise ValueError("Declared table missing/ambiguous in fresh/base: " + caption)
+            if fs[0]["protected"] or (bs and bs[0]["protected"]):
+                self._manual(caption + " 명시 보호 옵션으로 자동 병합 생략")
+                continue
+            table_merges.assert_fresh_matches(fs[0]["xml"], block)
+            if not bs:
+                continue  # newly inserted fresh table is already merged
+            changed = table_merges.apply_layout(bs[0]["xml"], block, aliases=True)
+            self.s2 = self.s2.replace(bs[0]["xml"], changed, 1)
+            self.log.append("LAYOUT(MD, base 서식 보존) | " + caption)
+            same, _, detail = compare_tables(changed, fs[0]["xml"])
+            if not same:
+                self._manual(caption + " 선언된 명칭·병합만 반영; 그 밖의 내용 차이는 base 보존: " + detail)
+            # Prevent a subsequent broad replacement from discarding base styles.
+            self.protect.add(caption)
+            self._layout_protected.add(caption)
+
     def _equal_units(self, bunits, funits):
         """키가 같은 구간. 표는 공백 무시 글자만 같을 수 있으므로 셀 단위로 한 번 더 확인한다."""
         out = []
@@ -298,8 +432,17 @@ class Patcher(object):
         return out
 
     def patch_body(self):
+        self._layout_protected = set()
+        self._declared_table_layouts()
         base = Units(self.s2, self.protect, self.allow_tables, self.keep_prefix)
         fresh = Units(self.fresh_s2, self.protect, self.allow_tables, self.keep_prefix)
+        # --allow-tables normally supersedes protect; explicit layouts still need
+        # their already patched base XML retained after the permission check above.
+        for units in (base, fresh):
+            for unit in units.items:
+                if unit["tbl"] and unit["cap"] in self._layout_protected:
+                    unit["protected"] = True
+                    unit["key"] = "TBL:" + unit["cap"]
         nb, nf = base.appendix_start(), fresh.appendix_start()
         bkeys = [u["key"] for u in base.items[:nb]]
         fkeys = [u["key"] for u in fresh.items[:nf]]
@@ -325,6 +468,86 @@ class Patcher(object):
                 out.extend(self._replace(base.items[i1:i2], fresh.items[j1:j2]))
         out.extend(u["xml"] for u in base.items[nb:])  # 부록은 base 유지
         self.s2 = base.head + "".join(out) + base.tail
+
+    def patch_verified_body(self, previous_xml):
+        """Reorder/replace MD-owned content only after proving base provenance.
+
+        A structural rewrite cannot safely align changed table numbers. This
+        opt-in path first requires every nonempty base main-body unit (tables
+        included) to exist verbatim, modulo whitespace, in the supplied prior
+        MD assembly. Any unmatched user text aborts; it is never deleted.
+        Unchanged units retain their exact base XML and preceding blank lines,
+        including merged tables moved to another caption number or appendix.
+        """
+        base = Units(self.s2, self.protect, self.allow_tables, self.keep_prefix)
+        fresh = Units(self.fresh_s2, self.protect, self.allow_tables, self.keep_prefix)
+        previous = Units(previous_xml, set())
+        old_text = {nows(u["text"]) for u in previous.items if u["text"]}
+        ref_start = next((i for i,u in enumerate(base.items) if u["text"] == "참고문헌"), base.appendix_start())
+        unknown = [u for u in base.items[:ref_start] if u["text"] and nows(u["text"]) not in old_text]
+        if unknown:
+            raise ValueError("Prior-MD provenance failed; preserve user text: " + repr([u["text"][:80] for u in unknown]))
+        self.log.append("VERIFIED(previous MD) | %d nonempty main-body units; unmatched user text 0" %
+                        sum(bool(u["text"]) for u in base.items[:ref_start]))
+        def key(u, raw):
+            if u["tbl"]:
+                return "T:" + nows(u["text"])
+            ids = re.findall(r'\bbinaryItemIDRef="([^"]+)"', u["xml"])
+            if ids:
+                manifest = ET.fromstring(raw["Contents/content.hpf"])
+                items = {e.get("id"): e.get("href") for e in manifest.iter() if e.tag.endswith("}item")}
+                return "I:" + ":".join(hashlib.sha256(raw[items[i]]).hexdigest() for i in ids)
+            return "P:" + nows(u["text"])
+        def bundles(units, stop, raw):
+            result, blanks = [], []
+            for u in units.items[:stop]:
+                if not u["text"] and not u["tbl"] and "<hp:pic" not in u["xml"]:
+                    blanks.append(u["xml"])
+                    continue
+                result.append((key(u, raw), u, blanks))
+                blanks = []
+            return result
+        nb, nf = base.appendix_start(), fresh.appendix_start()
+        base_groups = bundles(base, nb, self.base_raw)
+        available = {}
+        for i,(identity,u,blanks) in enumerate(base_groups):
+            available.setdefault(identity, []).append((i,u,blanks))
+        used, output = set(), []
+        changed_tables = []
+        for identity, fu, fblanks in bundles(fresh, nf, self.fresh_raw):
+            candidates = available.get(identity, [])
+            match = None
+            for candidate in candidates:
+                i,bu,bblanks = candidate
+                if i not in used and (not fu["tbl"] or compare_tables(bu["xml"], fu["xml"])[0]):
+                    match = candidate
+                    break
+            if match:
+                i,bu,bblanks = match
+                used.add(i)
+                output.extend(bblanks)
+                output.append(bu["xml"])
+                self.stats["equal"] += 1
+                if fu["tbl"]:
+                    self.stats["table_same_kept"] += 1
+                    self.log.append("KEEP(exact base table XML) | %s -> %s" % (bu["cap"], fu["cap"]))
+            else:
+                output.extend(self.take_fresh(x) for x in fblanks)
+                output.append(self.take_fresh(fu["xml"]))
+                self.stats["replace_fresh"] += 1
+                self.log.append("IMPORT(verified MD revision) | " + fu["text"][:80])
+                if fu["tbl"]:
+                    changed_tables.append(fu["cap"])
+        protected_lost = [u for i,(_,u,_) in enumerate(base_groups) if i not in used and u["protected"]]
+        if protected_lost:
+            raise ValueError("Structural revision intersects explicitly protected units")
+        retired = [(u["cap"],u["text"]) for i,(_,u,_) in enumerate(base_groups) if i not in used]
+        self.log.extend("RETIRE(verified previous MD) | " + text[:80] for _,text in retired)
+        self.log.append("STRUCTURAL | kept %d; imported %d; retired previous-MD units %d" %
+                        (len(used), self.stats["replace_fresh"], len(retired)))
+        for cap in changed_tables:
+            self.manual.append("%s 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용" % cap)
+        self.s2 = base.head + "".join(output) + "".join(u["xml"] for u in base.items[nb:]) + base.tail
 
     def _replace(self, bblock, fblock, depth=0):
         out = []
@@ -388,23 +611,11 @@ class Patcher(object):
     # ── 텍스트 치환(section2) ──
     def text_replace(self, spec):
         for rep in spec:
-            old, new = esc(rep["old"]), esc(rep["new"])
-            cnt = self.s2.count(old)
+            cnt = self.s2.count(esc(rep["old"]))
             want = int(rep.get("count", 1))
             if cnt != want:
                 raise SystemExit("text-replace 출현 %d ≠ 기대 %d: %s" % (cnt, want, rep["old"][:50]))
-            # 바뀐 문단의 linesegarray 제거
-            pos = 0
-            while True:
-                i = self.s2.find(old, pos)
-                if i < 0:
-                    break
-                ps = self.s2.rfind("<hp:p ", 0, i)
-                pe = self.s2.find("</hp:p>", i) + len("</hp:p>")
-                para = self.s2[ps:pe].replace(old, new)
-                para = LINESEG_RE.sub("", para)
-                self.s2 = self.s2[:ps] + para + self.s2[pe:]
-                pos = ps + len(para)
+            self.s2 = replace_literal_text(self.s2, rep["old"], rep["new"], want)
             self.log.append("TEXT x%d | %s -> %s" % (cnt, rep["old"][:40], rep["new"][:40]))
 
     # ── 부록 문항 복제 삽입 ──
@@ -498,6 +709,14 @@ class Patcher(object):
         raw["Contents/section2.xml"] = self.s2.encode("utf-8")
         raw["Contents/section1.xml"] = self.s1.encode("utf-8")
         raw["Contents/header.xml"] = self.header.xml.encode("utf-8")
+        if self.bin_imports:
+            hpf = raw["Contents/content.hpf"].decode("utf-8")
+            new_items = []
+            for item_id, (href, data, media) in self.bin_imports.items():
+                raw[href] = data
+                new_items.append('<opf:item id="%s" href="%s" media-type="%s" isEmbeded="1"/>' %
+                                 (item_id, href, media))
+            raw["Contents/content.hpf"] = hpf.replace("</opf:manifest>", "".join(new_items) + "</opf:manifest>").encode("utf-8")
         with zipfile.ZipFile(out_path, "w") as zout:
             for name, ctype, info in self.base_infos:
                 zi = zipfile.ZipInfo(name, date_time=info.date_time if info is not None else (1980, 1, 1, 0, 0, 0))
@@ -505,8 +724,11 @@ class Patcher(object):
                 if info is not None:
                     zi.external_attr = info.external_attr
                 zout.writestr(zi, raw[name])
+            for href, data, _ in self.bin_imports.values():
+                zout.writestr(href, data, compress_type=zipfile.ZIP_DEFLATED)
 
     def summary(self):
+        self.stats["manual"] = len(self.manual)
         lines = ["# patch_from_fresh 보고", "", "통계: %s" % json.dumps(self.stats, ensure_ascii=False),
                  "header 추가 항목: %s" % json.dumps(self.importer.added, ensure_ascii=False), "",
                  "## 수동 재적용 필요"]
@@ -529,6 +751,8 @@ def main():
     ap.add_argument("--toc-lines", dest="toc_lines")
     ap.add_argument("--force-fresh", dest="force_fresh", default="", help="사용자 병합 표라도 fresh로 바꿀 캡션(쉼표 구분) — 병합·서식 소실, 보고서에 기록")
     ap.add_argument("--toc-from-fresh", dest="toc_from_fresh", action="store_true", help="section1(목차·감사의 글·개요)을 조립본으로 통째 교체(장 구성 변경 시)")
+    ap.add_argument("--append-new-appendices", action="store_true", help="기준본에 없는 번호 부록을 뒤에 추가; 기존 설문지 보존")
+    ap.add_argument("--previous-body-xml", help="과거 MD 조립 본문 XML; base 원문 전수 일치 검증 후 구조 재배열(불일치 시 중단)")
     ap.add_argument("--report")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
@@ -543,7 +767,12 @@ def main():
             keep = tuple(k for k in a.keep_prefix.split("|") if k)
     force = [p.strip() for p in a.force_fresh.split(",") if p.strip()]
     pt = Patcher(a.base, a.fresh, protect, a.report, allow_tables=allow, keep_prefix=keep, force_fresh=force)
-    pt.patch_body()
+    if a.previous_body_xml:
+        pt.patch_verified_body(Path(a.previous_body_xml).read_text(encoding="utf-8"))
+    else:
+        pt.patch_body()
+    if a.append_new_appendices:
+        pt.append_new_appendices()
     if a.toc_from_fresh:
         pt.toc_from_fresh()
     if a.text_replace:

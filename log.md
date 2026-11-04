@@ -1,3 +1,424 @@
+261104_133539 : 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정
+261104_132937 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/figures/research/figure_4-1_research_model_261029.png 삭제, 01.docs/figures/research/figure_4-1_research_model_261103.png 삭제
+261104_132845 : 01.docs/figures/research/figure_1-3_research_flow.png 삭제, 01.docs/figures/research/figure_1-3_research_flow.svg 삭제
+261104_132728 : 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/figure_4-1_research_model.png 수정, 01.docs/figures/research/figure_4-1_research_model.svg 수정, 01.docs/figures/research/figure_4-2_adjusted_means_ci.png 수정, 01.docs/figures/research/figure_4-2_adjusted_means_ci.svg 수정 외 1건
+261104_132523 : .claude/rules/hwpx-output-verification.md 수정, 00. hwpx/261104_1146_경기공학_건축안전_윤혁_논문.hwpx 추가, 00. hwpx/261104_1321_경기공학_건축안전_윤혁_논문.hwpx 추가, 03.plan/261104_1105_GPT_Fable대조_쉬운문장수정_브리프.md 수정, 03.plan/261104_1134_쉬운문장_hwpx반영.md 추가, 03.plan/README.md 수정 외 61건
+261104_113159 : 01.docs/01_서론.md 수정 — "이 구성은 위험을 알아차린 것이 담당자의 확인과 조치까지 끊기지 않고 이어지는가를 중심에 두고 설계하였다. …"
+261104_113159 : 01.docs/04_연구설계및실증분석.md 수정 — "다른 요인의 영향을 구분해 살펴야 한다(독립변수 통제)."
+261104_113158 : 01.docs/02_이론적배경.md 수정 — "| YOLO가 먼저 잡은 후보만 대상, 개발자 1인의 비눈가림 라벨, 실제 위험 경보 손실 포함 |"
+261104_113158 : 01.docs/02_이론적배경.md 수정 — "YOLOv8n의 mAP50(mean Average Precision; 탐지 상자와 정답 상자가 차지한 전체 …"
+261104_113157 : 01.docs/05_논의및결론.md 수정 — "연구방법에서는 같은 현장을 도입 전과 후에 반복해 조사하여 무엇이 달라졌는지 비교하고(종단 설계),"
+261104_113157 : 01.docs/05_논의및결론.md 수정 — "연구방법에서는 도입 현장과 미도입 현장을 한 번만 조사해 비교하다 보니, 도입 전부터 차이가 있었는지와 도입…"
+261104_112625 : 01.docs/04_연구설계및실증분석.md 수정 — "제7절 제2항에서 지시 전달 시간에는 도입·미도입 현장 간 유의한 차이를 확인하지 못하였고 실효성[연구가설 …"
+261104_112624 : 01.docs/04_연구설계및실증분석.md 수정 — "지시 전달 시간에서는 유의한 차이를 확인하지 못한 반면 지각 실효성[연구가설 (1-1)]에서는 차이를 확인한…"
+261104_112434 : 01.docs/04_연구설계및실증분석.md 수정 — "그 이유로는 문항이 하나뿐이었다는 점, 지시 전달 시간(A-9)의 분포가 도입·미도입 현장에서 비슷했다는 점…"
+261104_112433 : 01.docs/04_연구설계및실증분석.md 수정 — "시스템 알림이 위험 인지 수단이 되지 못한 19곳도 미도입 현장의 원평균(3.48점)보다 높았다. 이는 도입…"
+261104_112433 : 01.docs/04_연구설계및실증분석.md 수정 — "연구가설 (1-1)의 차이를 해석할 때는 탐지·검증·알림으로 이어지는 시스템의 전달 경로가 일부 도입 현장에…"
+261104_112432 : 01.docs/04_연구설계및실증분석.md 수정 — "은 지지되었지만, 차이의 크기는 이 표본에서 통계적으로 '차이 있음'이라고 말할 수 있는 최소 크기(검출 가…"
+261104_112432 : 01.docs/04_연구설계및실증분석.md 수정 — "이 절에서는 제3장에서 다룬 시스템 경보의 정확도와 관리자가 지각한 안전관리 실효성을 구분해 논의하였다."
+261104_112431 : 01.docs/04_연구설계및실증분석.md 수정 — "제5절 제2항에서 정한 대로 두 결과를 나란히 놓으면, 지시 전달 시간에서는 유의한 차이를 확인하지 못한 반…"
+261104_112431 : 01.docs/04_연구설계및실증분석.md 수정 — "필요한 응답자 수를 미리 계산하지 않고(사전 검정력 산정 없음) 모집한 표본이라는 점을 고려하여 추정치의 신…"
+261104_112430 : 01.docs/04_연구설계및실증분석.md 수정 — "위험 통제력 모형의 잔차 정규성 문제와, 조기인지·대응 신속성은 문항이 하나뿐이어서 점수가 1∼5의 다섯 값…"
+261104_112430 : 01.docs/04_연구설계및실증분석.md 수정 — "한편, 주 분석과 별도로 미리 정해 둔 추가 분석(민감도 분석)으로, 시스템 알림이 실제로 관리자의 위험 인…"
+261104_112430 : 01.docs/04_연구설계및실증분석.md 수정 — "부분 η²는 모형에서 집단 항의 제곱합을 집단 항과 오차 제곱합의 합으로 나눈 값이다. 쉽게 말해 통제변수로…"
+261104_112429 : 01.docs/04_연구설계및실증분석.md 수정 — "결과에 유난히 크게 영향을 주는 응답(영향점)을 가리는 Cook's D 기준(4/n=0.055)을 넘은 5건…"
+261104_112429 : 01.docs/04_연구설계및실증분석.md 수정 — "나이·경력이 점수에 미치는 영향이 두 집단에서 다른지를 보는 집단과 만 나이·경력의 상호작용도 유의하지 않았…"
+261104_112428 : 01.docs/04_연구설계및실증분석.md 수정 — "만 나이와 건설현장 경력의 상관은 0.721로 유의하였으나(p<.001), 두 변수가 서로 겹치는 정보여서 …"
+261104_112428 : 01.docs/04_연구설계및실증분석.md 수정 — "전체 점수는 하위요인 점수를 합쳐 만든 것이므로, 같은 문항이 전체 점수와 하위요인 점수에 함께 들어 있어 …"
+261104_112427 : 01.docs/04_연구설계및실증분석.md 수정 — "현장별 문항 간 상관은 도입 현장에서 원격 파악 0.501(p=.003), 순찰부담 경감 0.507(p=.0…"
+261104_112427 : 01.docs/04_연구설계및실증분석.md 수정 — "고유값이 1을 넘은 요인은 첫 요인(5.33) 하나뿐이어서 1요인이 추출되었고, 회전은 적용되지 않았다. 즉…"
+261104_112426 : 01.docs/04_연구설계및실증분석.md 수정 — "독립표본 t검정은 서로 다른 두 집단의 평균이 같은지를 검정하는 방법이고, Cohen's d는 두 평균의 차…"
+261104_112426 : 01.docs/04_연구설계및실증분석.md 수정 — "공분산분석은 두 집단의 나이·경력을 같은 값에 맞춘 조정 평균으로 비교하는 방법인데, 두 집단의 나이·경력 …"
+261104_112425 : 01.docs/04_연구설계및실증분석.md 수정 — "Cramér's V는 현장 도입 여부와 범주형 변수의 교차표에서 두 변수가 관련된 정도, 즉 두 집단의 구성…"
+261104_112425 : 01.docs/04_연구설계및실증분석.md 수정 — "범주형 통제변수의 어느 범주에 한 집단의 응답자가 거의 없으면(예컨대 한 집단에 여성 응답자가 없으면), 그…"
+261104_112424 : 01.docs/04_연구설계및실증분석.md 수정 — "본 절부터는 제1∼5절에서 정한 설계, 즉 시스템 설치 후 한 시점에 한 번 조사하여 도입·미도입 현장을 비…"
+261104_112424 : 01.docs/04_연구설계및실증분석.md 수정 — "그래서 두 문항은 안전관리 실효성의 근거로도, 연구가설 (1-1) 결과와 나란히 놓고 보는 비교에도 쓰지 않…"
+261104_112424 : 01.docs/04_연구설계및실증분석.md 수정 — "현장 운영 특성(A-7∼A-9)을 통제변수로 투입하지 않은 이유는 다음과 같다. 위험을 어떤 경로로 언제 알…"
+261104_112423 : 01.docs/04_연구설계및실증분석.md 수정 — "도입 현장 응답자가 A-7에서 ③ 또는 ④(CCTV 화면 직접 확인 또는 자동 알림)를 고르고 A-8에서 ③…"
+261104_112423 : 01.docs/04_연구설계및실증분석.md 수정 — "다섯 하위요인에는 같은 모형을 적용하고 Holm 보정을 하였으며, 시스템 알림이 실제로 관리자의 위험 인지 …"
+261104_112422 : 01.docs/04_연구설계및실증분석.md 수정 — "여섯째, 가설 검정에는 공분산분석을 사용하였다. 쉽게 말해, 두 집단 응답자의 나이·경력·소속·성별·역할·총…"
+261104_112422 : 01.docs/04_연구설계및실증분석.md 수정 — "안전관리 실효성 점수(Y)는 8문항 점수를 같은 비중으로 평균한 값이다. 하위요인별 문항 수가 1·1·2·2…"
+261104_112421 : 01.docs/04_연구설계및실증분석.md 수정 — "안전관리 실효성 B-1∼B-8은 원래 시스템의 기능을 전제로 평가하던 8문항을, 시스템이 없는 현장의 관리자…"
+261104_112421 : 01.docs/04_연구설계및실증분석.md 수정 — "본 설문조사는 도입 현장과 미도입 현장의 안전관리 실효성을 한 시점에 한 번, 같은 기준으로 재는 횡단 조사…"
+261104_112420 : 01.docs/04_연구설계및실증분석.md 수정 — "연구 모형은 YOLO-LLM 안전관제시스템 도입 여부(X)에 따라 안전관리 실효성(Y)의 조정 평균, 즉 통…"
+261104_112420 : 01.docs/04_연구설계및실증분석.md 수정 — "원인과 결과를 말하려면 세 가지 조건이 필요하다. 원인이 다르면 결과도 달라야 하고(공변성), 원인이 결과보…"
+261104_112420 : 01.docs/04_연구설계및실증분석.md 수정 — "도입·미도입 현장의 비교는 시스템 설치 후 한 시점에 설문을 한 번 하고, 시스템을 운용하는 현장과 운용하지…"
+261104_112419 : 01.docs/04_연구설계및실증분석.md 수정 — "설계의 목적은 도입·미도입 현장의 안전관리 실효성 차이를, 응답자·현장 특성이 서로 달라서 생기는 부분을 분…"
+261104_112048 : 01.docs/03_시스템개발.md 수정 — "본 장은 중소규모 건설현장의 제약에 대응하는 YOLO-LLM 안전관제 시스템을 설계·구현하고, 실제 운영 중…"
+261104_112048 : 01.docs/03_시스템개발.md 수정 — "도입 현장에서 A-7이 ③ 또는 ④이고 A-8이 ③이면 시스템 알림이 실제로 관리자의 위험 인지 수단이 된 …"
+261104_112047 : 01.docs/03_시스템개발.md 수정 — "p는 Fisher 정확검정으로, 행과 열의 합계를 그대로 둔 채 나올 수 있는 모든 응답 분포(2×k 교차표…"
+261104_112047 : 01.docs/03_시스템개발.md 수정 — "A-7·A-8은 시스템이 실제로 쓰이고 있는지 확인하는 운용 실태 확인 지표이다. 자동 알림은 도입 현장에만…"
+261104_112046 : 01.docs/03_시스템개발.md 수정 — "D는 응답자가 같은 현장에서 도입 전에 받던 자동 알림과 현재 본 시스템의 알림을 기억을 떠올려 비교한 회고…"
+261104_112046 : 01.docs/03_시스템개발.md 수정 — "이 표본은 202건 중 실제 위험이 24건뿐인 불균형 표본이어서, 모든 사건을 BLOCK해도 정확도가 0.8…"
+261104_112045 : 01.docs/03_시스템개발.md 수정 — "RAG 기반 교정은 기존 6개 카메라의 사례를 되짚어 비교하는 회고적 방식으로 평가하였다. 교정에 쓴 사례와…"
+261104_112045 : 01.docs/03_시스템개발.md 수정 — "FAR의 98.44% 감소는 같은 시스템 누적 운영시간 196.8시간을 분모로 두고 LLM 검증 전후의 오경…"
+261104_112045 : 01.docs/03_시스템개발.md 수정 — "YOLO가 먼저 잡은 실제 위험 44건 가운데 LLM이 경보로 보낸 비율, 즉 조건부 재현율은 0.886이다…"
+261104_112044 : 01.docs/03_시스템개발.md 수정 — "여기서 '1차 단독' 열은 LLM 검증 없이 878건 전체를 그대로 경보로 보냈다고 가정한 비교 기준(bas…"
+261104_112044 : 01.docs/03_시스템개발.md 수정 — "YOLO 신뢰도가 높을수록 SEND 비율도 꾸준히 높아져, 0.30∼0.40 구간의 1.99%에서 0.70 …"
+261104_112043 : 01.docs/03_시스템개발.md 수정 — "<표 3-7>의 2단계 정밀도·재현율·정확도·특이도 옆의 대괄호는 95% 신뢰구간(Wilson, 1927)이…"
+261104_112043 : 01.docs/03_시스템개발.md 수정 — "정답(실제 위험 여부) 라벨은 개발자 1인이 판정하였으며, 독립된 다른 평가자의 검증을 거치지 않았다."
+261104_112042 : 01.docs/03_시스템개발.md 수정 — "두 표본은 877건이 겹친다. 정답을 매긴 878건 가운데 SEND 1건은 신뢰도 기록이 없어 1,074건에…"
+261104_112042 : 01.docs/03_시스템개발.md 수정 — "본 절은 협력 현장에서 실제 운영 중에 쌓인 기록과 교정 사례 비교 결과로 시스템의 적용 범위를 검토하고, …"
+261104_112041 : 01.docs/03_시스템개발.md 수정 — "운영 화면인 <그림 3-4>는 여러 카메라 영상을 격자로 배치한 화면 위에 알림 전송 내역 창과 LLM 판정…"
+261104_112041 : 01.docs/03_시스템개발.md 수정 — "운영 화면은 여러 카메라 영상을 격자 모양으로 나란히 배치하고 각 영상 위에 감지 결과를 겹쳐 보여 주며, …"
+261104_112040 : 01.docs/03_시스템개발.md 수정 — "확정된 경보는 미리 정해 둔 여러 담당자에게 자동으로 나뉘어 동시에 전송되었다(다중 수신자 라우팅)."
+261104_112040 : 01.docs/03_시스템개발.md 수정 — "같은 상황의 교정만 골라 보여 주는 방식은 엉뚱한 교정이 끼어드는 것을 줄이려는 장치일 뿐, 시간이 갈수록 …"
+261104_112039 : 01.docs/03_시스템개발.md 수정 — "같은 맥락의 교정이 없으면 교정 사례를 덧붙이지 않고 프롬프트와 원본 프레임만으로 판정하였다(미주입 fall…"
+261104_112039 : 01.docs/03_시스템개발.md 수정 — "본 시스템은 이 부작용을 방지하기 위해 현재 알림과 같은 상황으로 분류된 교정만 찾아서 함께 보여 주는 방식…"
+261104_112038 : 01.docs/03_시스템개발.md 수정 — "다만 쌓인 교정 사례를 매번 모두 LLM에 함께 보여 주는 방식은 부작용을 낳는다."
+261104_112038 : 01.docs/03_시스템개발.md 수정 — "LLM 서비스에 장애가 나도 시스템이 멈추지 않도록 하는 대비책(폴백, fallback)도 판정 로직에 포함…"
+261104_112038 : 01.docs/03_시스템개발.md 수정 — "이미지와 글을 함께 읽는 멀티모달 LLM이 YOLO가 잡은 장면을 다시 보고 실제 위험인지 아닌지를 재판정하…"
+261104_112037 : 01.docs/03_시스템개발.md 수정 — "따라서 'YOLO가 처음 잡은 1차 후보', '확인 필터를 통과한 경고', 'LLM이 발송하기로 한 검증 경…"
+261104_112036 : 01.docs/03_시스템개발.md 수정 — "판정 로직은 한 번만 잠깐 잡힌 오탐을 거르는 확인 필터, 장면의 상황을 판단하는 LLM 검증, 같은 경보가…"
+261104_112036 : 01.docs/03_시스템개발.md 수정 — "기준값을 낮추면 오탐이 늘어나지만, 그 오탐은 2차 LLM 검증이 걸러낸다는 전제로 1차를 일부러 민감하게 …"
+261104_112035 : 01.docs/03_시스템개발.md 수정 — "기존 YOLO 기반 건설안전 연구는 오탐을 우려하여, YOLO가 어느 정도 확신할 때 위험으로 잡을지 정하는…"
+261104_112035 : 01.docs/03_시스템개발.md 수정 — "| 지속성·감사부 | 공통 | 운영 기록 보존 | 알림 이력, 설정값, 감사 기록(audit log) 저장 …"
+261104_112035 : 01.docs/03_시스템개발.md 수정 — "1차 검출은 영상이 들어오는 대로 바로 처리하는 반면, 시간과 비용이 많이 드는 2차 LLM 검증은 1차가 …"
+261104_112034 : 01.docs/03_시스템개발.md 수정 — "각 요구사항을 충족하였는지는 근거의 종류가 서로 다르다. R1∼R3은 기능을 구현하고 구성하였다는 설명으로,…"
+261104_112034 : 01.docs/03_시스템개발.md 수정 — "따라서 본 연구의 알림 10초 이내는 안전이 보장된다고 검증된 기준값이 아니다. 상태형 위반에서 오탐을 줄이…"
+261104_112033 : 01.docs/03_시스템개발.md 수정 — "개인보호구 착용 상태를 판정한 Pisu et al.(2024)은 영상을 1.41∼6.40초 동안 지켜본 뒤 …"
+261104_112033 : 01.docs/03_시스템개발.md 수정 — "이 가운데 실시간성(R5)은 처리 속도가 빠르다는 뜻이 아니라, 위험에 대응할 수 있는 시간(reaction…"
+261104_112032 : 01.docs/03_시스템개발.md 수정 — "현장마다 라벨 데이터를 구축하고 모델을 미세조정(fine-tuning)하는 대신, LLM에 판단 지침(프롬프…"
+261104_112032 : 01.docs/03_시스템개발.md 수정 — "다만 1차를 통과한 후보만 2차에서 거르는 구조(직렬 필터)에서는 2차가 실제 위험까지 걸러 버릴 수 있다.…"
+261104_112031 : 01.docs/03_시스템개발.md 수정 — "일반 사무용 PC 한 대와 기존 ONVIF 카메라, 그리고 인터넷으로 호출해 쓰는 상용 거대언어모델(LLM)…"
+261104_112031 : 01.docs/02_이론적배경.md 수정 — "다음 제3장에서는 이 이론적 근거에 대응하는 시스템 요구사항과 관련 기술 선행연구, 구조와 구현, 그리고 실…"
+261104_112030 : 01.docs/02_이론적배경.md 수정 — "이에 따라 본 연구는 현장당 관리자 1명을 조사하였다. 분석에서는 만 나이·건설현장 경력(숫자 그대로)과 소…"
+261104_112030 : 01.docs/02_이론적배경.md 수정 — "국외 연구(Igbaria & Tan, 1997; Chong et al., 2023)는 기술을 받아들이려는 마…"
+261104_112029 : 01.docs/02_이론적배경.md 수정 — "본 연구는 같은 기관 산하 도입·미도입 현장에 같은 설문을 적용하고, 조사한 응답자·현장 특성의 차이를 분석…"
+261104_112029 : 01.docs/02_이론적배경.md 수정 — "본 연구는 이 '대책을 실행하고 효과를 확인한다'는 관점을 현장 관리자가 스스로 평가하는 문항으로 바꾸어(조…"
+261104_112028 : 01.docs/02_이론적배경.md 수정 — "순찰부담 경감은 원격 확인 등을 활용하여 반복 순찰과 불필요한 확인에 드는 시간과 노력을 아끼면서 순찰·확인…"
+261104_112028 : 01.docs/02_이론적배경.md 수정 — "본 연구는 이 '위험을 미리 알아차린다'는 관점을 관리자가 자기 현장을 스스로 평가하는 문항으로 바꾸어 측정…"
+261104_112027 : 01.docs/02_이론적배경.md 수정 — "기술 자료는 YOLO가 먼저 잡아낸 후보에 대한 탐지·문맥 검증 성능, 즉 1차가 놓친 위험을 제외한 조건부…"
+261104_112027 : 01.docs/02_이론적배경.md 수정 — "A-7·A-8은 시스템이 실제로 관리자의 위험 인지 수단으로 쓰이고 있는지 확인하는 운용 실태 확인 지표이며…"
+261104_112026 : 01.docs/02_이론적배경.md 수정 — "| YOLO가 먼저 잡은 후보만 대상, 정답 라벨은 개발자 1인이 가림 없이 판정(비눈가림), 실제 위험 경…"
+261104_112026 : 01.docs/02_이론적배경.md 수정 — "현장 작동성은 위험 신호가 담당자의 확인·판단·조치로 실제로 이어지는지를 통해 안전관리 실효성을 설명하는 관…"
+261104_112025 : 01.docs/02_이론적배경.md 수정 — "본 연구는 안전관리 실효성을 '업무 성과'의 하나로 구성하였다. 이때 기술이 일에 도움이 된다는 믿음(TAM…"
+261104_112025 : 01.docs/02_이론적배경.md 수정 — "본 연구는 이를 현장 관리자가 보기에 자기 현장의 안전관리 업무가 현재 실제로 어느 정도 이루어지고 있는가,…"
+261104_112024 : 01.docs/02_이론적배경.md 수정 — "이 특성은 어떤 메신저를 쓰느냐와 관계없이 '경보가 담당자에게 바로 가 닿는가'에 관한 것으로, 전달 단계의…"
+261104_112024 : 01.docs/02_이론적배경.md 수정 — "안전인지 프레임워크 연구는 영상의 상황을 이해하는 기능과, LLM이 사실과 다른 내용을 지어내는 일(할루시네…"
+261104_112023 : 01.docs/02_이론적배경.md 수정 — "Wu et al.(2025)의 MonitorVLM에서 보고된 정밀도 22.01%와 재현율 34.22%의 개선…"
+261104_112023 : 01.docs/02_이론적배경.md 수정 — "박종학(2025)은 YOLO 모델별 비교에서 YOLOv8n의 mAP50(mean Average Precisi…"
+261104_112022 : 01.docs/02_이론적배경.md 수정 — "1차 탐지 및 제어 안정성은 두 가지로 정의하였다. 하나는 YOLO 모델이 위험한 물체·행동을 놓치지 않도록…"
+261104_112022 : 01.docs/02_이론적배경.md 수정 — "이 특성은 도입의 문턱을 낮추어 기술을 받아들이기 쉽게 하므로, 쓰기 쉬운 쪽(PEOU)의 시스템 속성에 해…"
+261104_112022 : 01.docs/02_이론적배경.md 수정 — "Green과 Swets(1966)는 실제 위험(신호)과 위험이 아닌 상황(잡음)이 서로 비슷해 보여 구별이 …"
+261104_112021 : 01.docs/02_이론적배경.md 수정 — "이 틀에 따라 본 연구는 인프라 범용성(A1)과 알림 전파 즉각성(A4)을 '쓰기 쉬운 쪽'인 도입·사용의 …"
+261104_112021 : 01.docs/02_이론적배경.md 수정 — "Davis(1989)는 사용자가 새 기술을 받아들이는지가 '이 기술이 내 일에 도움이 된다'는 믿음(지각된 …"
+261104_112020 : 01.docs/02_이론적배경.md 수정 — "Cvach(2012)는 짧은 지연, 여러 신호를 함께 보고 울리는 스마트 알람(다중 매개변수 기반), 신호 …"
+261104_112020 : 01.docs/02_이론적배경.md 수정 — "신호감지이론도 놓치는 위험(미탐)과 잘못된 경보(오경보)를 동시에 줄이기는 어렵다는 점을 설명한다(Green…"
+261104_112019 : 01.docs/02_이론적배경.md 수정 — "경보가 너무 많으면 사용자가 지치고 무뎌져 결국 경보에 반응하지 않게 된다고 정리하였다. 이 과정은 Cry …"
+261104_112019 : 01.docs/02_이론적배경.md 수정 — "본 논문에서 AI 영상관제 기술은 YOLO-LLM 안전관제 시스템으로 한정하였다. 이 시스템은 기존 CCTV…"
+261104_112018 : 01.docs/02_이론적배경.md 수정 — "이 모델은 감지된 장면이 어떤 상황인지를 말로 풀어 판단하므로, 모양만 보고 물체를 찾는 객체 감지 모델과 …"
+261104_112018 : 01.docs/02_이론적배경.md 수정 — "객체 감지의 대표 모델인 YOLO(You Only Look Once)는 입력 영상을 한 번 훑어 물체의 위치…"
+261104_111228 : 01.docs/01_서론.md 수정 — "설문 자료는 jamovi 2.7.41로 산출한 공분산분석(ANCOVA)으로 분석하였으며, 여섯 통제변수(C)…"
+261104_111227 : 01.docs/01_서론.md 수정 — "응답자·현장 특성의 차이를 분석에서 감안하기 위해 여섯 통제변수(C)를 두었다. 만 나이와 건설현장 경력(년…"
+261104_111227 : 01.docs/01_서론.md 수정 — "**시간적 범위.** 조사는 시스템을 설치한 뒤인 2026년 10월 12일부터 10월 23일까지 설문으로 1…"
+261104_111226 : 01.docs/01_서론.md 수정 — "도입 현장과 미도입 현장은 응답자의 나이·경력·소속·성별·역할과 현장의 총공사비 구간이 서로 다를 수 있으므…"
+261104_111226 : 01.docs/01_서론.md 수정 — "이 구성은 위험을 알아차린 것이 담당자의 확인과 조치까지 끊기지 않고 이어지는가를 중심에 두고 설계하였다. …"
+261104_111225 : 01.docs/01_서론.md 수정 — "시스템을 적용한 현장과 일반 현장을 비교한 사례도 일부 있으나, 도입 현장과 미도입 현장에 같은 설문을 적용…"
+261104_111225 : 01.docs/01_서론.md 수정 — "같은 자료의 공사금액별 사망만인율(근로자 1만 명당 사망자 수)도 3억 원 미만 현장이 4.92‱로 1,00…"
+261104_111224 : 01.docs/00_목차.md 수정 — "이 결과는 시스템 경보가 얼마나 정확한지와 관리자가 평가한 안전관리 업무의 실효성을 구분하여 평가할 필요성을…"
+261104_111224 : 01.docs/00_목차.md 수정 — "관리자가 바로잡아 준 판정 사례를 LLM에 참고시킨 비교에서도 오경보 감소와 실제 위험 경보 손실이 함께 나…"
+261104_111223 : 01.docs/00_목차.md 수정 — "jamovi 2.7.41을 사용한 공분산분석으로 두 집단의 만 나이·경력·소속·성별·역할·총공사비 구간 차이…"
+261104_111223 : 01.docs/00_목차.md 수정 — "시스템이 보낸 경보가 얼마나 정확한지는 실제 운영 중에 쌓인 경보 기록으로 평가하였다. 현장 실효성은"
+261104_111222 : 01.docs/00_목차.md 수정 — "기존 ONVIF 카메라와 범용 PC를 활용하여, YOLO가 위험해 보이는 장면을 먼저 잡아내고 LLM이 그 …"
+261104_111110 : 01.docs/05_논의및결론.md 수정 — "향후 연구는 다음 방향으로 보완할 필요가 있다. 연구대상에서는 다른 기관과 공종으로 표본을 넓히고, 필요한 …"
+261104_111110 : 01.docs/05_논의및결론.md 수정 — "본 연구의 한계는 연구방법과 연구대상에 있다. 연구방법에서는 도입 현장과 미도입 현장을 한 시점에 한 번만 …"
+261104_111109 : 01.docs/05_논의및결론.md 수정 — "둘째, 학술적으로는 직접 개발한 시스템이 얼마나 정확히 걸러내는지(운영 기록 평가)와 관리자가 보기에 현장의…"
+261104_111109 : 01.docs/05_논의및결론.md 수정 — "운영 기록에서 오경보가 크게 줄면서 실제 위험 경보 일부도 함께 차단되었으므로, 현장은 실제 위험인데도 경보…"
+261104_111108 : 01.docs/05_논의및결론.md 수정 — "이러한 결과는 스마트 건설기술을 활용하는 것이 안전성과와 관련이 있다고 보고한 황병복(2026), 중소규모 …"
+261104_111108 : 01.docs/05_논의및결론.md 수정 — "개발한 시스템의 현장 실효성, 즉 도입 현장의 안전관리가 미도입 현장보다 잘 이루어진다고 관리자가 평가하는지…"
+261104_111107 : 01.docs/05_논의및결론.md 수정 — "이를 위해 범용 PC와 현장에 이미 있는 ONVIF 카메라로 운용하는 데스크톱 안전관제 시스템을 설계·구현하…"
+261104_111107 : 01.docs/05_논의및결론.md 수정 — "본 연구는 이러한 문제의식에 따라 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 관…"
+261104_110739 : 03.plan/261104_1105_GPT_Fable대조_쉬운문장수정_브리프.md 추가, 03.plan/README.md 수정
+261104_093925 : 01.docs/03_시스템개발.md 수정, 01.docs/05_논의및결론.md 수정
+261104_093723 : 01.docs/03_시스템개발.md 수정
+261104_093507 : .claude/reference/05-참조자료.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/07_참조번호목록.md 수정, 03.plan/README.md 수정, CLAUDE.md 수정
+261104_092327 : 01.docs/02_이론적배경.md 수정
+261104_092245 : 01.docs/04_연구설계및실증분석.md 수정, 02.reference/96. KISA 지능형CCTV 성능시험 영상정보 분석 성능시험 제도 안내서 2026.pdf 추가, 03.plan/261104_0917_R5근거_E2_KISA_코덱스보고.md 추가, 03.plan/261104_0918_방어서술정리_MD만.md 수정
+261104_092146 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정 외 2건
+261104_091954 : .claude/reference/05-참조자료.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/07_참조번호목록.md 수정, 03.plan/README.md 수정
+261104_091917 : 03.plan/261104_0917_R5근거_E2_KISA_브리프.md 추가 — "# R5 근거 확보 E2 — 한국인터넷진흥원(KISA) 지능형 CCTV·영상정보 분석 성능시험 기준 (Cod…"
+261104_091901 : 03.plan/261104_0917_R5근거_E1_NIST_브리프.md 추가, 03.plan/261104_0918_방어서술정리_MD만.md 추가, 03.plan/README.md 수정
+261104_091748 : 00. hwpx/261104_0914_경기공학_건축안전_윤혁_논문.hwpx 추가, 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/generate_research_figures.py 수정, 03.plan/261104_0913_방어서술점검_3장4장설문.md 추가, 03.plan/261104_0913_방어서술점검_초록1장2장5장.md 추가 외 17건
+261104_090719 : .claude/reference/05-참조자료.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/07_참조번호목록.md 수정, 03.plan/README.md 수정, CLAUDE.md 수정
+261104_090323 : 00. hwpx/261104_0903_경기공학_건축안전_윤혁_논문.hwpx 추가
+261104_090316 : 03.plan/261104_0854_대체탐색_D3_Igbaria_코덱스보고.md 추가, tools/hwpx_transfer/staging/remove_credits_261104/check_020.png 추가, tools/hwpx_transfer/staging/remove_credits_261104/check_051.png 추가, tools/hwpx_transfer/staging/remove_credits_261104/check_052.png 추가, tools/hwpx_transfer/staging/remove_credits_261104/check_053.png 추가, tools/hwpx_transfer/staging/remove_credits_261104/check_054.png 추가 외 10건
+261104_090216 : tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/staging/remove_credits_261104/resaved.pdf 수정, tools/hwpx_transfer/tests/test_blocks_to_hwpx_kjn.py 수정
+261104_090211 : 02.reference/83. The role of perceived usefulness in the relationship between.pdf 추가, 02.reference/84. The effect of use task technology-fit user satisfaction.pdf 추가, 03.plan/261104_0854_대체탐색_D6_EN50136_코덱스보고.md 추가, tools/hwpx_transfer/staging/remove_credits_261104/base_units.json 추가, tools/hwpx_transfer/staging/remove_credits_261104/patched.hwpx 추가, tools/hwpx_transfer/staging/remove_credits_261104/report.json 추가 외 2건
+261104_090113 : 02.reference/89. A guide to improve your causal inferences from observational.pdf 추가, 02.reference/90. Methodology Series Module 3 Cross-sectional Studies.pdf 추가, 02.reference/92. Alarm Transmission Systems K21030-04.pdf 추가, 02.reference/93. Transmission des alarmes automatiques issues installations.pdf 추가, 03.plan/261104_0847_전체구성동기화계획.md 수정, 03.plan/261104_0854_대체탐색_D5_Shadish_코덱스보고.md 추가 외 3건
+261104_085829 : tools/hwpx_transfer/staging/fullsync_261104/final.pdf 수정
+261104_085825 : 00. hwpx/261104_0858_경기공학_건축안전_윤혁_논문.hwpx 추가, 02.reference/77. Decision-making and response strategies in interaction (author manuscript).pdf 추가, 03.plan/261104_0854_대체탐색_D1_Dixon_코덱스보고.md 추가, tools/hwpx_transfer/staging/fullsync_261104/final.pdf 추가, tools/hwpx_transfer/staging/fullsync_261104/toc_patched.hwpx 추가
+261104_085803 : 02.reference/86. Utilizing Signal Detection Theory.pdf 추가, 02.reference/87. Calculation of signal detection theory measures.pdf 추가, 03.plan/261104_0854_대체탐색_D4_GreenSwets_코덱스보고.md 추가, tools/hwpx_transfer/staging/fullsync_261104/toc_pages3.json 추가, tools/hwpx_transfer/staging/fullsync_261104/toc_pages3_completed.json 추가
+261104_085720 : 02.reference/80. Perceived Usefulness, Perceived Ease of Use, and User.pdf 추가, 03.plan/261104_0854_대체탐색_D2_Davis_코덱스보고.md 추가, tools/hwpx_transfer/staging/fullsync_261104/cell_tail_pdf.json 수정, tools/hwpx_transfer/staging/fullsync_261104/finalfix.py 추가, tools/hwpx_transfer/staging/fullsync_261104/fixes.hwpx 추가, tools/hwpx_transfer/staging/fullsync_261104/focus_11.png 추가 외 23건
+261104_085554 : 01.docs/01_서론.md 수정
+261104_085546 : 03.plan/261104_0854_대체탐색_D1_Dixon_브리프.md 추가, 03.plan/261104_0854_대체탐색_D2_Davis_브리프.md 추가, 03.plan/261104_0854_대체탐색_D3_Igbaria_브리프.md 추가, 03.plan/261104_0854_대체탐색_D4_GreenSwets_브리프.md 추가, 03.plan/261104_0854_대체탐색_D5_Shadish_브리프.md 추가, 03.plan/261104_0854_대체탐색_D6_EN50136_브리프.md 추가 외 14건
+261104_085355 : tools/hwpx_transfer/staging/fullsync_261104/assembled.hwpx 수정, tools/hwpx_transfer/staging/fullsync_261104/cell_tail_pdf.json 추가, tools/hwpx_transfer/staging/fullsync_261104/ch01.blocks.json 수정, tools/hwpx_transfer/staging/fullsync_261104/ch02.blocks.json 수정, tools/hwpx_transfer/staging/fullsync_261104/ch03.blocks.json 수정, tools/hwpx_transfer/staging/fullsync_261104/ch04.blocks.json 수정 외 28건
+261104_085008 : 03.plan/README.md 수정
+261104_084952 : .claude/rules/hwpx-output-verification.md 수정, 01.docs/부록1_설문지_양식.md 수정, 03.plan/261104_0847_미확보문헌_대체탐색_코덱스브리프.md 추가, 03.plan/261104_0847_전체구성동기화계획.md 추가, 03.plan/README.md 수정, CLAUDE.md 수정 외 15건
+261104_084748 : tools/hwpx_transfer/staging/ch4_261104/image_manifest.json 추가, tools/hwpx_transfer/staging/fullsync_261104/base_info.json 추가, tools/hwpx_transfer/staging/fullsync_261104/content.hpf 추가, tools/hwpx_transfer/staging/fullsync_261104/header.xml 추가, tools/hwpx_transfer/staging/fullsync_261104/section0.xml 추가, tools/hwpx_transfer/staging/fullsync_261104/section0_units.json 추가 외 4건
+261104_084513 : .claude/reference/05-참조자료.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/07_참조번호목록.md 수정, 03.plan/README.md 수정, CLAUDE.md 수정
+261104_084505 : tools/hwpx_transfer/staging/ch4_261104/latest_units.json 추가 — "import re, io, sys REPORT = "03.plan/261104_0828_참고문헌_원문확보_코…"
+261104_084249 : 01.docs/04_연구설계및실증분석.md 수정
+261104_083950 : 00. hwpx/261104_0830_경기공학_건축안전_윤혁_논문.hwpx 추가, 02.reference/71. Are large pre-trained vision language models effective.pdf 추가, 02.reference/72. Making sense of Cronbachs alpha.pdf 추가, 02.reference/73. Probable Inference the Law of Succession (scan).pdf 추가, 02.reference/74. Effects of Demographic Characteristics on Safety Climate.pdf 추가, 02.reference/75. Best practices in exploratory factor analysis.pdf 추가 외 10건
+261104_082936 : 03.plan/261104_0823_4장_표앞설명_hwpx반영.md 수정, 03.plan/261104_0828_참고문헌_원문확보_코덱스브리프.md 추가, 03.plan/README.md 수정, tools/hwpx_transfer/staging/ch4_261104/fix_toc_layout.py 추가, tools/hwpx_transfer/staging/ch4_261104/fixes.hwpx 추가, tools/hwpx_transfer/staging/ch4_261104/patch_ch4.py 수정 외 4건
+261104_082748 : tools/hwpx_transfer/staging/ch4_261104/cell_tail_pdf.json 추가, tools/hwpx_transfer/staging/ch4_261104/readonly_verification.json 추가, tools/hwpx_transfer/staging/ch4_261104/resaved_tables.json 추가, tools/hwpx_transfer/staging/ch4_261104/tables_contact_01.png 추가, tools/hwpx_transfer/staging/ch4_261104/tables_contact_02.png 추가, tools/hwpx_transfer/staging/ch4_261104/tables_contact_03.png 추가 외 11건
+261104_082702 : .claude/rules/defense-feedback.md 수정, .claude/rules/hwpx-table-layout.md 수정, 00. hwpx/261104_0817_경기공학_건축안전_윤혁_논문.hwpx 추가, 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261104_0812_3장_hwpx_반영.md 수정, 03.plan/261104_0823_4장_표앞설명_hwpx반영.md 추가 외 32건
+261104_081647 : tools/hwpx_transfer/staging/ch3_261104/final_verification.json 추가
+261104_081632 : tools/hwpx_transfer/staging/ch3_261104/final.pdf 수정
+261104_081601 : tools/hwpx_transfer/staging/ch3_261104/final.pdf 수정
+261104_081600 : tools/hwpx_transfer/staging/ch3_261104/final.pdf 추가
+261104_081544 : 00. hwpx/261104_0815_경기공학_건축안전_윤혁_논문.hwpx 추가
+261104_081538 : tools/hwpx_transfer/staging/ch3_261104/toc_cleanup_report.json 수정, tools/hwpx_transfer/staging/ch3_261104/toc_patched.hwpx 수정, tools/hwpx_transfer/staging/ch3_261104/toc_ready.hwpx 수정
+261104_081512 : tools/hwpx_transfer/staging/ch3_261104/final_toc_prepare.py 수정
+261104_081501 : 01.docs/03_시스템개발.md 수정, 01.docs/figures/system/fig_3_1_architecture.png 수정, 01.docs/figures/system/fig_3_1_architecture.svg 수정, 01.docs/figures/system/fig_3_2_llm_verification.png 수정, 01.docs/figures/system/fig_3_2_llm_verification.svg 수정, 01.docs/figures/system/fig_3_3_rag_correction.png 수정 외 59건
+261104_074048 : 01.docs/감사의_글.md 추가 — "# 감사의 글 > 위치: 그림 목차 뒤, 논문개요 앞(김정년 양식, 로마숫자 쪽). 조립 파이프라인은 감사의…"
+261104_073716 : 03.plan/README.md 수정
+261104_073711 : 03.plan/261104_0735_제출전_미작성_미반입_점검.md 추가 — "# 제출 전 미작성·미반입 점검 (2026-11-04 07:35) > 대상: `01.docs/` MD 원고 …"
+261104_073216 : hwpx_paras.json 추가
+261104_073133 : 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/07_참조번호목록.md 수정, 02.reference/70. 윤영석_논문.pdf 추가, 03.plan/261104_0727_윤영석논문연도_사용자확정반영.md 추가 외 1건
+261104_072313 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/figures/research/figure_4-2_jamovi_emm_plot.png 추가, 01.docs/figures/research/report.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정, 03.plan/261104_0717_잔여문헌과서지_확인.md 수정 외 2건
+261104_072051 : 01.docs/figures/research/report.md 수정 — "2026-11-04: 그림 4-2(안전관리 실효성의 조정 평균과 95% 신뢰구간)를 `means_ci()`로…"
+261104_072038 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정, 03.plan/261104_0717_잔여문헌과서지_확인.md 수정
+261104_072027 : 01.docs/figures/research/figure_4-2_adjusted_means_ci.png 수정, 01.docs/figures/research/figure_4-2_adjusted_means_ci.svg 수정, 01.docs/figures/research/generate_research_figures.py 수정
+261104_072013 : 01.docs/figures/research/figure_4-2_adjusted_means_ci.png 추가, 01.docs/figures/research/figure_4-2_adjusted_means_ci.svg 추가
+261104_072008 : 01.docs/figures/research/generate_research_figures.py 수정 — "f.line([(780,560),(780,390)],arrow=True) f.save() # <그림 4-2>…"
+261104_072000 : 01.docs/figures/research/generate_research_figures.py 수정 — "def circle(self, x, y, r, fill): self.svg.append(f'<circle c…"
+261104_071846 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261104_0717_잔여문헌과서지_확인.md 추가
+261104_071406 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261104_0713_FAR운영시간_확정반영.md 추가, 03.plan/README.md 수정
+261104_071310 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정 외 3건
+261104_070321 : MEMORY.md 수정
+261104_070247 : 01.docs/04_연구설계및실증분석.md 수정
+261104_070158 : 01.docs/04_연구설계및실증분석.md 수정
+261104_070143 : 01.docs/04_연구설계및실증분석.md 수정
+261104_070027 : 01.docs/04_연구설계및실증분석.md 수정
+261104_070005 : 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 수정
+261104_065925 : 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 수정
+261104_065616 : 01.docs/04_연구설계및실증분석.md 수정
+261104_065554 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정, 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 수정
+261104_065350 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정, 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 수정
+261104_065241 : 01.docs/00_목차.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 수정
+261104_065138 : 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 수정
+261104_064748 : 03.plan/261104_0646_미완성근거_조사반영_계획및증거.md 추가, 03.plan/README.md 수정
+261104_064443 : 01.docs/설문결과/jamovi_2차/261104_0646_jamovi_2차_검증기록.md 추가
+261104_064400 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/본문_2차/CookD플래그(화면표시불가·omv열로확인)/S35_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/본문_2차/manifest_최종.json 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/본문_2차/results_full_최종_064157.pdf 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/본문_2차/tables_최종.json 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/본문_2차/가정점검_회귀기울기동질성(진단용)/S24_ANCOVA_I01_36_assump_qq.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/본문_2차/가정점검_회귀기울기동질성(진단용)/S24_ANCOVA_I02_36_emm_1_emmPlot.png 추가 외 137건
+261104_064330 : 01.docs/04_연구설계및실증분석.md 수정
+261104_064247 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/10_최종_필터해제_064157/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/10_최종_필터해제_064157/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/10_최종_필터해제_064157/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/10_최종_필터해제_064157/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/10_최종_필터해제_064157/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/10_최종_필터해제_064157/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 138건
+261104_064210 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 138건
+261104_064136 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 146건
+261104_064028 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_I01_4_undefined.png 추가 외 145건
+261104_063957 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 127건
+261104_063834 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_I01_4_undefined.png 추가 외 126건
+261104_063808 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 114건
+261104_063602 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 113건
+261104_063537 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정
+261104_063346 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 136건
+261104_063249 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 135건
+261104_063225 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 130건
+261104_063124 : 01.docs/설문결과/jamovi_2차/261104_0450_capture_omv.py 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 수정 외 130건
+261104_063044 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 수정 외 94건
+261104_063016 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 94건
+261104_062929 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 130건
+261104_062755 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 129건
+261104_062731 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 130건
+261104_062541 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 수정 외 130건
+261104_062003 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/08_필터없는분석전체_061911/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/08_필터없는분석전체_061911/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/08_필터없는분석전체_061911/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/08_필터없는분석전체_061911/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/08_필터없는분석전체_061911/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/08_필터없는분석전체_061911/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 127건
+261104_061921 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 127건
+261104_061847 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 85건
+261104_052731 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/07_하위요인ANCOVA까지_052558/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/07_하위요인ANCOVA까지_052558/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/07_하위요인ANCOVA까지_052558/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/07_하위요인ANCOVA까지_052558/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/07_하위요인ANCOVA까지_052558/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_보관/07_하위요인ANCOVA까지_052558/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 84건
+261104_052609 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 84건
+261104_052549 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 55건
+261104_052357 : 01.docs/04_연구설계및실증분석.md 수정
+261104_052253 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 수정 외 55건
+261104_051848 : 01.docs/04_연구설계및실증분석.md 수정 — "미도입 현장 46.9세이며, 차이는 −0.5세로 유의하지 않았고"
+261104_051829 : 01.docs/04_연구설계및실증분석.md 수정
+261104_051650 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S10_ExploratoryFactorAnalysi_I01_18_eigen_screePlot.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S11_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S12_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S13_IndependentSamplesT-Test_T01_IndependentSamplesT-Test.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S14_ContingencyTables_T01_ContingencyTables.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S14_ContingencyTables_T02_χ²Tests.png 추가 외 12건
+261104_051647 : 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S03_ContingencyTables_T01_ContingencyTables.png 추가 외 16건
+261104_051644 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 삭제, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 삭제 외 22건
+261104_051631 : 03.plan/README.md 수정
+261104_051618 : 03.plan/261104_0515_4장_표앞_정비_orca워커_브리프.md 추가 — "# 4장 표 앞 why→how→what 정비와 '주:' 본문 이관 — Orca 워커 브리프 - 작성: 202…"
+261104_051239 : 03.plan/261104_0510_4장_표앞_why-how-what_정비_초안.md 추가, 03.plan/README.md 수정
+261104_045848 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 수정 외 22건
+261104_045715 : 01.docs/08_자모비 결과 넣을부분.md 수정
+261104_045640 : 01.docs/08_자모비 결과 넣을부분.md 수정, 03.plan/261104_0426_4장_제3절_조작적정의_선배대조_압축계획.md 수정, 03.plan/README.md 수정
+261104_045550 : 01.docs/08_자모비 결과 넣을부분.md 수정
+261104_045525 : 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+261104_045411 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 수정 외 20건
+261104_045017 : 01.docs/04_연구설계및실증분석.md 수정
+261104_044930 : 01.docs/04_연구설계및실증분석.md 수정
+261104_044857 : 01.docs/04_연구설계및실증분석.md 수정
+261104_044816 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T01_Descriptives.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T02_Frequenciesof소속.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T03_Frequenciesof성별.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T04_Frequenciesof역할.png 추가, 01.docs/설문결과/jamovi_2차/자모비캡쳐/캡처_최신/S02_Descriptives_T05_Frequenciesof총공사비.png 추가 외 10건
+261104_044607 : 01.docs/설문결과/jamovi_2차/261104_0450_capture_omv.py 추가 — """"jamovi .omv 결과를 표·그림 단위 PNG로 캡처한다. jamovi는 저장 시 결과창 전체를 `…"
+261104_044446 : 01.docs/05_논의및결론.md 수정
+261104_044437 : 01.docs/05_논의및결론.md 수정
+261104_044404 : 01.docs/00_목차.md 수정
+261104_044349 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 수정
+261104_044314 : 03.plan/README.md 수정
+261104_044308 : 03.plan/261104_0434_5장_한계문단_운용여건_이관_opus워커_브리프.md 추가 — "# 05_논의및결론 — 한계 문단에 4장에서 옮겨 오는 '현장별 운용 여건' 한계 통합 — opus 워커 브…"
+261104_044242 : 03.plan/261104_0434_목차_4장3절_항삭제_opus워커_브리프.md 추가 — "# 00_목차 — 4장 제3절 항 삭제와 4장 목차·표 목차 정합 점검 — opus 워커 브리프 - 작성: …"
+261104_044226 : 01.docs/설문결과/jamovi_2차/jamovi 2차.omv 추가, 03.plan/261104_0434_4장_선배분량_압축_opus워커_브리프.md 추가
+261104_043059 : 03.plan/261104_0426_4장_제3절_조작적정의_선배대조_압축계획.md 수정, 03.plan/README.md 수정
+261104_043016 : 01.docs/설문결과/jamovi_2차/jmvproto/README.md 삭제, 01.docs/설문결과/jamovi_2차/jmvproto/jamovi.proto 삭제, 01.docs/설문결과/jamovi_2차/jmvproto/jamovi_pb2.py 삭제
+261104_042933 : 01.docs/설문결과/jamovi_2차/jmvproto/README.md 추가, 01.docs/설문결과/jamovi_2차/jmvproto/jamovi.proto 추가, 01.docs/설문결과/jamovi_2차/jmvproto/jamovi_pb2.py 추가
+261104_042647 : 03.plan/261104_0426_4장_제3절_조작적정의_선배대조_압축계획.md 수정
+261104_042639 : 03.plan/261104_0426_4장_제3절_조작적정의_선배대조_압축계획.md 추가, 03.plan/README.md 수정
+261104_042237 : 기타/윤영석 선배 논문/윤영석_중소규모_건설현장_안전관리자_인건비_직접공사비_계상과_안전관리_작동성_제본_kordoc추출.md 추가
+261104_041807 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/설문항목_작업이력.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정 외 5건
+261104_041405 : 01.docs/설문항목_작업이력.md 수정, CLAUDE.md 수정
+261104_041347 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정, tools/hwpx_transfer/staging/ch03.blocks.json 수정, tools/hwpx_transfer/staging/ch04.blocks.json 수정 외 2건
+261104_041334 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정, 01.docs/부록2_실증분석_상세결과.md 삭제, 01.docs/부록3_jamovi_원출력.md 삭제, tools/hwpx_transfer/md_to_blocks.py 수정 외 2건
+261104_041213 : 01.docs/설문결과/jamovi_2차/261104_0410_jamovi_2차변환_검증.json 추가, 01.docs/설문결과/jamovi_2차/261104_0410_jamovi용_설문응답_73건_2차_PartC삭제.xlsx 추가
+261104_041205 : 01.docs/설문결과/jamovi_2차/261104_0410_jamovi_2차_export.py 추가 — """"2026-11-04 jamovi 2차 입력본 생성. 2026-11-03 사용자 결정(연구가설 (2-1)…"
+261103_105443 : 03.plan/261103_1035_4장_1-6절_선배형식_재정비_opus워커_브리프.md 수정, 03.plan/README.md 수정
+261103_105425 : 01.docs/04_연구설계및실증분석.md 수정
+261103_105357 : 01.docs/01_서론.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록2_실증분석_상세결과.md 수정, 01.docs/설문항목_작업이력.md 수정, 03.plan/261103_0120_4장_1-6절_윤영석논문_형식대조_codex워커_브리프.md 삭제, 03.plan/261103_0135_4장_1-6절_선배형식_재정비_opus워커_브리프.md 삭제 외 4건
+261103_105310 : 01.docs/05_논의및결론.md 수정
+261103_105107 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정
+261103_105035 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/apx2r.blocks.json 수정, tools/hwpx_transfer/staging/apx3.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정 외 4건
+261103_105027 : 01.docs/설문항목_작업이력.md 수정
+261103_105018 : 01.docs/설문항목_작업이력.md 수정
+261103_104950 : 01.docs/08_자모비 결과 넣을부분.md 수정
+261103_104923 : 01.docs/07_참조번호목록.md 수정
+261103_104915 : 01.docs/부록3_jamovi_원출력.md 수정
+261103_104853 : 01.docs/00_목차.md 수정
+261103_104812 : tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정, tools/hwpx_transfer/staging/apx2r.blocks.json 수정, tools/hwpx_transfer/staging/apx3.blocks.json 수정, tools/hwpx_transfer/staging/ch01.blocks.json 수정, tools/hwpx_transfer/staging/ch02.blocks.json 수정 외 4건
+261103_104802 : 01.docs/04_연구설계및실증분석.md 수정
+261103_104439 : 01.docs/05_논의및결론.md 수정, CLAUDE.md 수정
+261103_104340 : .claude/rules/defense-feedback.md 수정, 01.docs/00_목차.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정, CLAUDE.md 수정
+261103_104006 : 01.docs/04_연구설계및실증분석.md 수정
+261103_103940 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정
+261103_103907 : MEMORY.md 수정
+261103_103810 : 03.plan/261103_0120_4장_1-6절_윤영석논문_형식대조_codex워커_브리프.md 수정, 03.plan/README.md 수정
+261103_103714 : 03.plan/261103_0135_4장_1-6절_선배형식_재정비_opus워커_브리프.md 추가 — "# 4장 제1∼6절 — 선배(윤영석) 논문 형식으로 재정비: 계획 겸 집필 워커 브리프 - 작성: 2026-…"
+261103_103409 : .claude/reference/09-디펜스논리.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/설문항목_작업이력.md 수정
+261103_102925 : tools/hwpx_transfer/staging/ch4_format_261103/report.md 추가
+261103_102709 : 01.docs/05_논의및결론.md 수정
+261103_102452 : 01.docs/05_논의및결론.md 수정
+261103_102005 : 03.plan/README.md 수정
+261103_102001 : 03.plan/261103_0120_4장_1-6절_윤영석논문_형식대조_codex워커_브리프.md 추가 — "# 4장 제1∼6절 — 윤영석 선배 논문 형식 대조·정비안 작성 워커 브리프 - 작성: 2026-11-03 …"
+261103_101828 : tools/hwpx_transfer/staging/ch4_format_261103/yys_ch3_ch4_text.txt 추가, tools/hwpx_transfer/staging/ch4_format_261103/yys_p081.png 추가, tools/hwpx_transfer/staging/ch4_format_261103/yys_p082.png 추가, tools/hwpx_transfer/staging/ch4_format_261103/yys_p086.png 추가, tools/hwpx_transfer/staging/ch4_format_261103/yys_p090.png 추가
+261103_101607 : MEMORY.md 수정
+261103_101549 : CLAUDE.md 수정
+261103_101541 : 01.docs/07_참조번호목록.md 수정, tools/hwpx_transfer/staging/migrate_kjn/references_kjn_v3.json 수정
+261103_101517 : .claude/rules/defense-feedback.md 수정, 03.plan/README.md 수정, CLAUDE.md 수정
+261103_101224 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정, 01.docs/부록2_실증분석_상세결과.md 수정, CLAUDE.md 수정, tools/hwpx_transfer/staging/apx1.blocks.json 수정, tools/hwpx_transfer/staging/apx2.blocks.json 수정 외 9건
+261103_100114 : .claude/reference/09-디펜스논리.md 수정, 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정 외 9건
+261103_094624 : 01.docs/설문결과/자모비캡쳐/본문/manifest.json 수정
+261103_094552 : 01.docs/figures/research/figure_1-1_research_flow.png 수정, 01.docs/figures/research/figure_1-1_research_flow.svg 수정, 01.docs/figures/research/figure_4-1_research_model.png 수정, 01.docs/figures/research/figure_4-1_research_model.svg 수정, 01.docs/figures/research/figure_4-1_research_model_261103.png 추가, 01.docs/figures/research/generate_research_figures.py 수정 외 17건
+261103_093956 : 03.plan/README.md 수정
+261103_093945 : 03.plan/261103_0040_가설2-1_삭제_그림_캡처_워커_브리프.md 추가 — "# 가설 2-1 삭제 — 그림·jamovi 캡처 워커 브리프 - 작성: 2026-11-03 00:40 (As…"
+261103_093854 : 03.plan/261103_0040_가설2-1_예산제약성_삭제_텍스트워커_브리프.md 추가 — "# 가설 2-1(안전관리 예산 제약성 조절) 삭제 — 텍스트 워커 브리프 - 작성: 2026-11-03 00…"
+261103_091459 : 00. hwpx/261031_1237_경기공학_건축안전_윤혁_논문.hwpx 수정, 05. 교수님 지도/오전 923 2026-11-01_교수님 지도.txt 추가
+261031_123856 : 03.plan/261031_1222_jamovi격자_본문분리_hwpx반입_codex워커_브리프.md 수정, 03.plan/README.md 수정
+261031_123826 : 00. hwpx/261031_1237_경기공학_건축안전_윤혁_논문.hwpx 추가
+261031_123643 : 00. hwpx/261031_1235_경기공학_건축안전_윤혁_논문.hwpx 추가
+261031_123405 : 00. hwpx/261031_1232_경기공학_건축안전_윤혁_논문.hwpx 추가
+261031_123202 : 00. hwpx/261031_1230_경기공학_건축안전_윤혁_논문.hwpx 추가
+261031_123025 : tools/hwpx_transfer/image_grid.py 수정, tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/md_to_blocks.py 수정, tools/hwpx_transfer/staging/hwpx_261031b/apx1.blocks.json 추가, tools/hwpx_transfer/staging/hwpx_261031b/apx2.blocks.json 추가, tools/hwpx_transfer/staging/hwpx_261031b/apx2r.blocks.json 추가 외 32건
+261031_122252 : 03.plan/README.md 수정
+261031_122236 : 03.plan/261031_1222_jamovi격자_본문분리_hwpx반입_codex워커_브리프.md 추가 — "# jamovi 격자표 본문·부록 분리 hwpx 반입 — codex 워커 브리프 (2차) - 작성: 2026…"
+261031_121957 : 01.docs/00_목차.md 수정
+261031_121945 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/부록3_jamovi_원출력.md 수정, 01.docs/설문결과/자모비캡쳐/본문/manifest.json 추가, 01.docs/설문결과/자모비캡쳐/본문/표4-10_01.png 추가, 01.docs/설문결과/자모비캡쳐/본문/표4-11_01.png 추가, 01.docs/설문결과/자모비캡쳐/본문/표4-12_01.png 추가 외 67건
+261031_120811 : 03.plan/261031_1143_hwpx_반입_부록3_jamovi원출력_codex워커_브리프.md 수정, 03.plan/README.md 수정
+261031_120719 : 00. hwpx/261031_1206_경기공학_건축안전_윤혁_논문.hwpx 추가
+261031_120509 : 00. hwpx/261031_1204_경기공학_건축안전_윤혁_논문.hwpx 추가
+261031_120411 : tools/hwpx_transfer/staging/hwpx_261031/apx1.blocks.json 수정, tools/hwpx_transfer/staging/hwpx_261031/apx2.blocks.json 수정, tools/hwpx_transfer/staging/hwpx_261031/apx2r.blocks.json 수정, tools/hwpx_transfer/staging/hwpx_261031/apx3.blocks.json 수정, tools/hwpx_transfer/staging/hwpx_261031/assembled.hwpx 수정, tools/hwpx_transfer/staging/hwpx_261031/base_sha256_after.txt 수정 외 16건
+261031_120402 : 01.docs/부록3_jamovi_원출력.md 수정 — "모든 출력은 같은 배율로 실었으며, 편집 폭을 넘는 <부표 3-5>만 폭에 맞추어 비례 축소하였다."
+261031_120345 : tools/hwpx_transfer/staging/hwpx_261031/make_report.py 추가, tools/hwpx_transfer/staging/hwpx_261031/parse_report.md 수정, tools/hwpx_transfer/staging/hwpx_261031/worker_changes.diff 추가, tools/hwpx_transfer/staging/hwpx_261031/worker_report.md 추가
+261031_120044 : tools/hwpx_transfer/md_to_blocks.py 수정, tools/hwpx_transfer/patch_from_fresh.py 수정, tools/hwpx_transfer/staging/hwpx_261031/assemble.py 추가, tools/hwpx_transfer/staging/hwpx_261031/assembled.hwpx 추가, tools/hwpx_transfer/staging/hwpx_261031/base_paragraphs.json 추가, tools/hwpx_transfer/staging/hwpx_261031/base_sha256_after.txt 추가 외 28건
+261031_114859 : tools/hwpx_transfer/image_grid.py 추가, tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/md_to_blocks.py 수정, tools/hwpx_transfer/patch_from_fresh.py 수정, tools/hwpx_transfer/staging/hwpx_261031/apx1.blocks.json 추가, tools/hwpx_transfer/staging/hwpx_261031/apx2.blocks.json 추가 외 16건
+261031_114425 : 03.plan/261031_1143_hwpx_반입_부록3_jamovi원출력_codex워커_브리프.md 수정, 03.plan/README.md 수정
+261031_114418 : 03.plan/261031_1143_hwpx_반입_부록3_jamovi원출력_codex워커_브리프.md 추가 — "# hwpx 반입: 미반입 MD 변경 전체 + 부록 3 jamovi 원출력 격자 표 — codex 워커 브리…"
+261031_114319 : 01.docs/00_목차.md 수정 — "- <부표 2-6> 상호작용 검정과 연구가설 (2-1)의 분석 규모·모형 식별 상태 **부록 3** - <부…"
+261031_114314 : 01.docs/00_목차.md 수정 — "- 부록 2. 실증분석 상세 결과 - 부록 3. jamovi 분석 원출력 > 실증분석 상세 결과는 `부록2_…"
+261031_114307 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/부록3_jamovi_원출력.md 추가, 01.docs/설문결과/자모비캡쳐/부표/manifest.json 추가, 01.docs/설문결과/자모비캡쳐/부표/부표3-1_01.png 추가, 01.docs/설문결과/자모비캡쳐/부표/부표3-1_02.png 추가, 01.docs/설문결과/자모비캡쳐/부표/부표3-1_03.png 추가 외 106건
+261031_114258 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_114055 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정 — "# 'Variables across rows'로 바꾼 집단별 표는 첫 열에 변수명이 온다 [(pick('fu…"
+261031_114040 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_113917 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_112902 : 01.docs/04_연구설계및실증분석.md 수정 — "개별 비교의 비보정 구간이며 판정은 Holm 보정 p를 기준으로 하였다. jamovi 출력(<표 4-15> …"
+261031_112855 : 01.docs/설문결과/자모비캡쳐/표4-15_1_ANCOVA_조기인지Y1.png 수정, 01.docs/설문결과/자모비캡쳐/표4-15_2_ANCOVA_대응신속성Y2.png 추가, 01.docs/설문결과/자모비캡쳐/표4-15_3_ANCOVA_원격파악Y3.png 추가, 01.docs/설문결과/자모비캡쳐/표4-15_4_ANCOVA_순찰부담경감Y4.png 추가, 01.docs/설문결과/자모비캡쳐/표4-15_5_ANCOVA_위험통제력Y5.png 추가
+261031_112846 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_112820 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_112641 : 01.docs/설문결과/자모비캡쳐/표4-15_1_ANCOVA_조기인지Y1.png 추가
+261031_112634 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_112301 : 01.docs/04_연구설계및실증분석.md 수정 — "공통 관측범위는 도입·미도입 현장 관측범위의 교집합이다. jamovi 출력(<표 4-12> 원자료). 범주별…"
+261031_112259 : 01.docs/04_연구설계및실증분석.md 수정 — "| 1∼37(범위 밖 도입 0·미도입 1명) | jamovi 출력(<표 4-11> 원자료). 도입·미도입 현…"
+261031_112252 : 01.docs/설문결과/자모비캡쳐/표4-11_t검정_나이경력.png 추가
+261031_112245 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_112134 : 01.docs/설문결과/자모비캡쳐/표4-10_1_실효성예산제약성_기술통계_집단별.png 수정, 01.docs/설문결과/자모비캡쳐/표4-10_2_실효성예산제약성_기술통계_전체.png 수정
+261031_112129 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_112036 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_111947 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_111906 : 01.docs/04_연구설계및실증분석.md 수정 — "하위요인은 해당 영역 전 문항 응답 기준이다. jamovi 출력(<표 4-10> 원자료). 현장 도입 여부 …"
+261031_111902 : 01.docs/설문결과/자모비캡쳐/표4-10_1_실효성예산제약성_기술통계_집단별.png 추가, 01.docs/설문결과/자모비캡쳐/표4-10_2_실효성예산제약성_기술통계_전체.png 추가
+261031_111841 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_111723 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_111508 : 01.docs/04_연구설계및실증분석.md 수정 — "![jamovi 출력: 위험 통제력 문항(B-7·B-8) 상관(도입 현장)](설문결과/자모비캡쳐/표4-9_1…"
+261031_111505 : 01.docs/설문결과/자모비캡쳐/표4-9_11_신뢰도_실효성B1-B8_미도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_12_신뢰도_예산제약성C1-C4_미도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_13_상관_원격파악B3-B4_미도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_14_상관_순찰부담경감B5-B6_미도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_15_상관_위험통제력B7-B8_미도입.png 추가
+261031_111458 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_111247 : 01.docs/04_연구설계및실증분석.md 수정 — "![jamovi 출력: 위험 통제력 문항(B-7·B-8) 상관(전체)](설문결과/자모비캡쳐/표4-9_5_상관…"
+261031_111243 : 01.docs/설문결과/자모비캡쳐/표4-9_10_상관_위험통제력B7-B8_도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_6_신뢰도_실효성B1-B8_도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_7_신뢰도_예산제약성C1-C4_도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_8_상관_원격파악B3-B4_도입.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_9_상관_순찰부담경감B5-B6_도입.png 추가
+261031_111236 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_111136 : 01.docs/04_연구설계및실증분석.md 수정 — "구분하였다. D·E의 기술통계는 제3장 제4절 제5항에 보고하였다. jamovi 출력(<표 4-9> 원자료,…"
+261031_111130 : 01.docs/설문결과/자모비캡쳐/표4-9_1_신뢰도_실효성B1-B8_전체.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_2_신뢰도_예산제약성C1-C4_전체.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_3_상관_원격파악B3-B4_전체.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_4_상관_순찰부담경감B5-B6_전체.png 추가, 01.docs/설문결과/자모비캡쳐/표4-9_5_상관_위험통제력B7-B8_전체.png 추가
+261031_111121 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_110836 : 01.docs/04_연구설계및실증분석.md 수정 — "C-3 0.826, C-4 0.784이며, 적재값 범위는 그 최솟값과 최댓값이다. jamovi 출력(<표 4…"
+261031_110832 : 01.docs/설문결과/자모비캡쳐/표4-6_1_소속.png 수정, 01.docs/설문결과/자모비캡쳐/표4-6_2_성별.png 수정, 01.docs/설문결과/자모비캡쳐/표4-6_3_역할.png 수정, 01.docs/설문결과/자모비캡쳐/표4-6_4_총공사비.png 수정, 01.docs/설문결과/자모비캡쳐/표4-7_1_나이경력_집단별.png 수정, 01.docs/설문결과/자모비캡쳐/표4-7_2_나이경력_전체.png 수정
+261031_110824 : 01.docs/설문결과/자모비캡쳐/표4-8_1_요인분석_실효성B1-B8.png 추가, 01.docs/설문결과/자모비캡쳐/표4-8_2_요인분석_예산제약성C1-C4.png 추가
+261031_110804 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_110700 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_110434 : 01.docs/04_연구설계및실증분석.md 수정 — "구간 코드나 구간 중간값으로 대체하지 않았다. 두 변수 모두 결측은 0건이다. jamovi 출력(<표 4-7…"
+261031_110431 : 01.docs/04_연구설계및실증분석.md 수정 — "역할은 ‘기타’ 응답을 응답자에게 재확인하여 세 범주로 재분류한 값이다. jamovi 출력(<표 4-6> 원…"
+261031_110425 : 01.docs/설문결과/자모비캡쳐/표4-6_1_소속.png 추가, 01.docs/설문결과/자모비캡쳐/표4-6_2_성별.png 추가, 01.docs/설문결과/자모비캡쳐/표4-6_3_역할.png 추가, 01.docs/설문결과/자모비캡쳐/표4-6_4_총공사비.png 추가, 01.docs/설문결과/자모비캡쳐/표4-7_1_나이경력_집단별.png 추가, 01.docs/설문결과/자모비캡쳐/표4-7_2_나이경력_전체.png 추가
+261031_110405 : 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 수정
+261031_105523 : 01.docs/설문결과/jamovi/261031_1046_jamovi용_설문응답_73건_한글헤더.omv 추가, 01.docs/설문결과/자모비캡쳐/자모비 캡쳐용.omv 추가
+261031_104715 : 01.docs/설문결과/jamovi/261031_1046_jamovi용_설문응답_73건_한글헤더.xlsx 추가
+261031_104108 : .claude/reference/09-디펜스논리.md 수정
+261031_104100 : 01.docs/05_논의및결론.md 수정 — "상호작용 추정치는 양(+)이었으나 유의하지 않았다(B=0.309, 95% CI [−0.09, 0.71], p…"
+261031_104057 : 01.docs/04_연구설계및실증분석.md 수정 — "도입 현장에서는 이 관계가 약하였다(r=0.10, p=.572). 이 양상은 본 연구의 조사 조건과 측정 내…"
+261031_103944 : .claude/reference/09-디펜스논리.md 수정 — "### 연구가설 (2-1) 기각 대응 (2026-10-31 갱신) > 옛 항목 "H2는 왜 탐색적입니까?"는…"
+261031_103915 : 01.docs/05_논의및결론.md 수정 — "그러나 그 설계가 관찰된 차이의 원인임을 입증한 것은 아니다. 예산 제약성을 크게 지각할수록 도입·미도입 현…"
+261031_103832 : 01.docs/05_논의및결론.md 수정 — "그러나 그 설계가 관찰된 차이의 원인임을 입증한 것은 아니다. 이 결과는"
+261031_103825 : 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정
+261031_103740 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정, 01.docs/부록2_실증분석_상세결과.md 추가, 01.docs/부록3_실증분석_상세결과.md 삭제, 03.plan/261031_1013_제7절_결과서술_간소화.md 수정 외 1건
+261031_101715 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 수정, 01.docs/부록3_실증분석_상세결과.md 추가
+261031_101452 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/07_참조번호목록.md 수정 외 5건
+261031_095613 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 05. 교수님 지도/따님 분석 결과/ANCOVA_참고논문_서술수준_분석.md 추가
+261031_095531 : 03.plan/261031_0952_제7절_ANCOVA_항통합_가정점검표_서술전환.md 추가, 03.plan/README.md 수정
+261031_095503 : 01.docs/04_연구설계및실증분석.md 수정 — "조정 평균은 <표 4-13>과 같은"
+261031_095446 : 01.docs/00_목차.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/07_참조번호목록.md 수정
+261031_095415 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261031_095221 : 05. 교수님 지도/따님 분석 결과/KakaoTalk_20261031_095112479.jpg 추가, 05. 교수님 지도/따님 분석 결과/KakaoTalk_20261031_095112479_01.jpg 추가, 05. 교수님 지도/따님 분석 결과/KakaoTalk_20261031_095112479_02.jpg 추가, 05. 교수님 지도/따님 분석 결과/KakaoTalk_20261031_095112479_03.jpg 추가, 05. 교수님 지도/따님 분석 결과/KakaoTalk_20261031_095112479_04.jpg 추가
+261031_095040 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/08_자모비 결과 넣을부분.md 추가
+261031_093416 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정
+261031_093324 : 01.docs/00_목차.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/07_참조번호목록.md 수정
+261031_092640 : 01.docs/04_연구설계및실증분석.md 수정
+261031_092610 : 01.docs/00_목차.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/07_참조번호목록.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+261031_092533 : 01.docs/03_시스템개발.md 수정
+261031_092422 : MEMORY.md 수정
+261031_092354 : 03.plan/README.md 수정
+261031_092331 : 03.plan/261031_0922_연구자_자기지칭_표현_정리.md 추가 — "# '연구자가 …하였다' 자기지칭 표현 정리 (MD만) - 작성: 2026-10-31 09:22 (Asia/…"
+261031_092243 : 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261031_092213 : 01.docs/03_시스템개발.md 수정 — "# -*- coding: utf-8 -*- """01.docs 본문의 '연구자가/연구자는/연구자의' 자기지칭…"
+261031_092016 : 01.docs/03_시스템개발.md 수정, tools/hwpx_transfer/TABLE_LAYOUT_DIRECTIVES.md 추가, tools/hwpx_transfer/table_merges.py 수정, tools/hwpx_transfer/tests/test_table_merges.py 수정
+261031_091519 : 01.docs/04_연구설계및실증분석.md 수정, tools/hwpx_transfer/tests/test_table_merges.py 추가
+261031_091416 : 01.docs/04_연구설계및실증분석.md 수정, tools/hwpx_transfer/blocks_to_hwpx.py 수정, tools/hwpx_transfer/kjn_profile.py 수정, tools/hwpx_transfer/md_to_blocks.py 수정, tools/hwpx_transfer/patch_from_fresh.py 수정, tools/hwpx_transfer/table_merges.py 추가
+261031_091059 : 03.plan/README.md 수정
+261031_091039 : 03.plan/README.md 수정
+261031_091022 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261031_091012 : 01.docs/04_연구설계및실증분석.md 수정, 01.docs/부록1_설문지_양식.md 수정
+261031_090902 : 01.docs/00_목차.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261031_090856 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/03_시스템개발.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261031_090644 : 03.plan/261031_0905_DE이동_opus워커_브리프.md 추가 — "# Worker 브리프: D·E 참고 변수를 4장에서 3장 제4절 제5항으로 이동 (MD만) - 작성: 20…"
+261031_090350 : 03.plan/README.md 수정
+261031_090234 : 03.plan/261031_0900_DE참고변수_4장에서_3장개발효과로_이동_계획.md 추가 — "# D·E 참고 변수(시스템 특성 인식·경보 피로도 완화 인식) 4장 → 3장 개발효과 이동 계획 - 작성:…"
+261031_085852 : 01.docs/01_서론.md 수정, 01.docs/07_참조번호목록.md 수정
+261031_085725 : 01.docs/04_연구설계및실증분석.md 수정
+261031_085111 : 01.docs/00_목차.md 수정, 01.docs/01_서론.md 수정, 01.docs/02_이론적배경.md 수정, 01.docs/04_연구설계및실증분석.md 수정, 01.docs/05_논의및결론.md 수정, 01.docs/부록2_설문항목_근거매핑.md 수정
+261031_084523 : 01.docs/01_서론.md 수정, 01.docs/04_연구설계및실증분석.md 수정
+261031_084454 : 01.docs/04_연구설계및실증분석.md 수정
+261031_084015 : 01.docs/04_연구설계및실증분석.md 수정
+261031_083207 : 01.docs/04_연구설계및실증분석.md 수정
 261029_081207 : AGENTS.md 수정, CLAUDE.md 수정
 261029_081151 : AGENTS.md 수정, CLAUDE.md 수정
 261029_081003 : AGENTS.md 수정, CLAUDE.md 수정
@@ -296,6 +717,7 @@
 261025_174059 : 01.docs/설문결과/~$중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구(응답).xlsx 추가
 261025_173111 : .agents/reference 수정, .agents/rules 수정, 260930_성주희 박사 논문 검토/00. 논문(원본)/01_도심지 주상복합아파트 설계단계 위험요인과 안전관리성과와의 관계 연구_20260930.hwpx 삭제, 260930_성주희 박사 논문 검토/00. 논문(원본)/02_설문지_A안_100문항_20261001.hwpx 삭제, 260930_성주희 박사 논문 검토/00. 논문(원본)/03_설문지_B안_조절변수5문항_20261001.hwpx 삭제, 260930_성주희 박사 논문 검토/01. md변환/01. 설문A안(md)/02_설문지_A안_100문항_20261001.md 삭제 외 3건
 261025_173125 : .agents/reference 수정, AGENTS.md 수정
+261025_172649 : 260930_성주희 박사 논문 검토/01. md변환/00. 논문(md)/00_국문초록.md 삭제, 260930_성주희 박사 논문 검토/01. md변환/00. 논문(md)/00_전면부.md 삭제, 260930_성주희 박사 논문 검토/01. md변환/01. 설문(md)/02_설문지_70문항.md 삭제, 260930_성주희 박사 논문 검토/01. md변환/01. 설문(md)/README.md 삭제
 261025_172516 : .claude/settings.local.json 수정
 261024_181731 : 01.docs/설문결과/jamovi/ancova result.omv 추가
 261024_180114 : 01.docs/설문결과/~$261024_1758_설문응답_jamovi.xlsx 추가

@@ -233,17 +233,6 @@
     ],
     "라. 관련법": [
       {
-        "original_text": "고용노동부, 「건설업 산업안전보건관리비 계상 및 사용기준」, 고용노동부고시 제2025-11호, 2025. 제2조제1항제2호·제4조. https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20250200610 (제2장 내주: 고용노동부, 2025; 2026-09-30 공식 첨부 원문 대조)",
-        "source_section": "1. 국내문헌(저자 가나다순)",
-        "source_line": 256,
-        "text": "고용노동부, 「건설업 산업안전보건관리비 계상 및 사용기준」, 고용노동부고시 제2025-11호, 2025. 제2조제1항제2호·제4조. https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20250200610",
-        "removed_notes": [
-          "(제2장 내주: 고용노동부, 2025; 2026-09-30 공식 첨부 원문 대조)"
-        ],
-        "year_moved": false,
-        "no": 1
-      },
-      {
         "original_text": "「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정]. — 03장 제2절 제4항 경보 수신자의 법적 직무 근거. https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451 ; https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1029371815",
         "source_section": "3. 법령(국가법령정보센터)",
         "source_line": 324,
@@ -279,15 +268,6 @@
       }
     ],
     "마. 기타": [
-      {
-        "original_text": "Bhatti, Y. A., What is Frugal, What is Innovation? Towards a Theory of Frugal Innovation, SSRN working paper, 2012. DOI 10.2139/ssrn.2005910.",
-        "source_section": "2. 국외문헌(제1저자 알파벳순)",
-        "source_line": 286,
-        "text": "Bhatti, Y. A.(2012), What is Frugal, What is Innovation? Towards a Theory of Frugal Innovation, SSRN working paper. DOI 10.2139/ssrn.2005910.",
-        "removed_notes": [],
-        "year_moved": true,
-        "no": 1
-      },
       {
         "original_text": "Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html (ref 08; Kim et al.(2025))",
         "source_section": "2. 국외문헌(제1저자 알파벳순)",
@@ -452,15 +432,6 @@
         "no": 5
       },
       {
-        "original_text": "Radjou, N., Prabhu, J., & Ahuja, S., Jugaad Innovation: Think Frugal, Be Flexible, Generate Breakthrough Growth, Wiley, 2012. ISBN 9781118249741.",
-        "source_section": "2. 국외문헌(제1저자 알파벳순)",
-        "source_line": 306,
-        "text": "Radjou, N., Prabhu, J., & Ahuja, S.(2012), Jugaad Innovation: Think Frugal, Be Flexible, Generate Breakthrough Growth, Wiley. ISBN 9781118249741.",
-        "removed_notes": [],
-        "year_moved": true,
-        "no": 6
-      },
-      {
         "original_text": "Shadish, W. R., Cook, T. D., & Campbell, D. T., Experimental and Quasi-Experimental Designs for Generalized Causal Inference, Houghton Mifflin, 2002. (존재 검증: 2026-07-12 웹 대조 완료 — 04장 인과 3조건 인용)",
         "source_section": "2. 국외문헌(제1저자 알파벳순)",
         "source_line": 307,
@@ -612,26 +583,6 @@
         "removed_notes": [],
         "year_moved": true,
         "no": 14
-      },
-      {
-        "original_text": "Zeschky, M., Widenmayer, B., & Gassmann, O., \"Frugal innovation in emerging markets\", Research-Technology Management, Vol. 54, No. 4, 2011, pp.38–45. DOI 10.5437/08956308X5404007.",
-        "source_section": "2. 국외문헌(제1저자 알파벳순)",
-        "source_line": 313,
-        "text": "Zeschky, M., Widenmayer, B., & Gassmann, O.(2011), \"Frugal innovation in emerging markets\", Research-Technology Management, Vol. 54, No. 4, pp.38–45. DOI 10.5437/08956308X5404007.",
-        "removed_notes": [],
-        "year_moved": true,
-        "no": 15
-      },
-      {
-        "original_text": "Zhou, Z.-C., Su, Y.-K., Zheng, Z.-Z., & Wang, Y.-L., \"Analysis of factors of willingness to adopt intelligent construction technology in highway construction enterprises\", Scientific Reports, Vol. 13, 2023, 19339. DOI 10.1038/s41598-023-46241-6. (ref 40)",
-        "source_section": "2. 국외문헌(제1저자 알파벳순)",
-        "source_line": 314,
-        "text": "Zhou, Z.-C., Su, Y.-K., Zheng, Z.-Z., & Wang, Y.-L.(2023), \"Analysis of factors of willingness to adopt intelligent construction technology in highway construction enterprises\", Scientific Reports, Vol. 13, 19339. DOI 10.1038/s41598-023-46241-6.",
-        "removed_notes": [
-          "(ref 40)"
-        ],
-        "year_moved": true,
-        "no": 16
       }
     ]
   },

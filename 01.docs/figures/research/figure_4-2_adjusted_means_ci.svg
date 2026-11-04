@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="90.0mm" viewBox="0 0 1500 900">
+<title>안전관리 실효성의 조정 평균과 95% 신뢰구간</title>
+<rect width="1500" height="100%" fill="white"/>
+<rect x="200" y="356.8" width="1240" height="86.80000000000001" fill="#F2F4F6"/>
+<text x="1061.3933333333334" y="409.20000000000005" font-family="Malgun Gothic" font-size="26" font-weight="400" fill="#58616B" text-anchor="start">두 CI가 겹치는 범위(3.38∼3.69)</text>
+<text x="60" y="72" font-family="Malgun Gothic" font-size="32" font-weight="700" fill="#000000" text-anchor="start">안전관리 실효성 조정 평균(점)</text>
+<polyline points="200,130 200,690 1440,690" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="188,690.0 200,690.0" fill="none" stroke="#000000" stroke-width="3"/>
+<text x="145" y="701.0" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="middle">2.5</text>
+<polyline points="188,550.0 200,550.0" fill="none" stroke="#000000" stroke-width="3"/>
+<text x="145" y="561.0" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="middle">3.0</text>
+<polyline points="188,410.0 200,410.0" fill="none" stroke="#000000" stroke-width="3"/>
+<text x="145" y="421.0" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="middle">3.5</text>
+<polyline points="188,270.0 200,270.0" fill="none" stroke="#000000" stroke-width="3"/>
+<text x="145" y="281.0" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="middle">4.0</text>
+<polyline points="188,130.0 200,130.0" fill="none" stroke="#000000" stroke-width="3"/>
+<text x="145" y="141.0" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="middle">4.5</text>
+<polyline points="500,690 500,702" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="500,356.8 500,578.0" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="485,578.0 515,578.0" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="485,356.8 515,356.8" fill="none" stroke="#000000" stroke-width="3"/>
+<circle cx="500" cy="468.79999999999995" r="12" fill="#000000" stroke="#000000" stroke-width="3"/>
+<text x="530" y="479.79999999999995" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="start">3.29</text>
+<text x="500" y="748" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">미도입 현장(n=39)</text>
+<text x="500" y="792" font-family="Malgun Gothic" font-size="30" font-weight="400" fill="#000000" text-anchor="middle">[2.90, 3.69]</text>
+<polyline points="1000,690 1000,702" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="1000,191.5999999999999 1000,443.6" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="985,443.6 1015,443.6" fill="none" stroke="#000000" stroke-width="3"/>
+<polyline points="985,191.5999999999999 1015,191.5999999999999" fill="none" stroke="#000000" stroke-width="3"/>
+<circle cx="1000" cy="317.59999999999997" r="12" fill="#000000" stroke="#000000" stroke-width="3"/>
+<text x="1030" y="328.59999999999997" font-family="Malgun Gothic" font-size="32" font-weight="400" fill="#000000" text-anchor="start">3.83</text>
+<text x="1000" y="748" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">도입 현장(n=34)</text>
+<text x="1000" y="792" font-family="Malgun Gothic" font-size="30" font-weight="400" fill="#000000" text-anchor="middle">[3.38, 4.28]</text>
+<text x="750" y="868" font-family="Malgun Gothic" font-size="28" font-weight="400" fill="#000000" text-anchor="middle">점: 조정 평균, 선: 95% 신뢰구간(CI) · 도입–미도입 차이 0.54점 [0.17, 0.91]</text>
+</svg>

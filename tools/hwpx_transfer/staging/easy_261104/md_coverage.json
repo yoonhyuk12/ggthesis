@@ -1,0 +1,37 @@
+{
+  "01_서론.md": {
+    "checked": 26,
+    "missing": [
+      "![연구의 흐름도](figures/research/figure_1-1_research_flow.png)"
+    ],
+    "outoforder": []
+  },
+  "02_이론적배경.md": {
+    "checked": 73,
+    "missing": [],
+    "outoforder": []
+  },
+  "03_시스템개발.md": {
+    "checked": 126,
+    "missing": [
+      "![YOLO-LLM 안전관제 시스템의 이중 검사 구조](figures/system/fig_3_1_architecture.png)",
+      "![LLM 2차 검증 입출력 구조와 판정 흐름](figures/system/fig_3_2_llm_verification.png)",
+      "![RAG 기반 Few-shot 교정 절차](figures/system/fig_3_3_rag_correction.png)",
+      "![시스템 운영 화면(AI CCTV Viewer)](figures/evidence/assets/fig_3_4_viewer_original.png)"
+    ],
+    "outoforder": []
+  },
+  "04_연구설계및실증분석.md": {
+    "checked": 133,
+    "missing": [
+      "![연구 모형: YOLO-LLM 안전관제시스템 도입 여부(X), 안전관리 실효성(Y), 통제변수(C)](figures/research/figure_4-1_research_model_261103.png)",
+      "![jamovi 추정 주변 평균 그림: 가로축 0=미도입 현장, 1=도입 현장, 세로축 안전관리 실효성 점수, 점은 조정 평균, 선은 95% 신뢰구간](figures/research/figure_4-2_jamovi_emm_plot.png)"
+    ],
+    "outoforder": []
+  },
+  "05_논의및결론.md": {
+    "checked": 9,
+    "missing": [],
+    "outoforder": []
+  }
+}

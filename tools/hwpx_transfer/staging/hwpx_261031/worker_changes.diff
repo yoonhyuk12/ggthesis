@@ -1,0 +1,775 @@
+--- before-worker/md_to_blocks.py
++++ tools/hwpx_transfer/md_to_blocks.py
+@@ -1,6 +1,7 @@
+ # 논문 MD 원고를 한 글자도 바꾸지 않고 구조화 블록 JSON으로 변환하는 결정적(비-LLM) 파서 — hwpx 조립기(T3) 입력 생성용
+ # 사용법: python tools/hwpx_transfer/md_to_blocks.py  (저장소 루트 기준, 표준 라이브러리만 사용)
+ import json
++import argparse
+ import re
+ import sys
+ from pathlib import Path
+@@ -22,6 +23,8 @@
+     ("05_논의및결론.md", "ch05.blocks.json"),
+     ("부록1_설문지_양식.md", "apx1.blocks.json"),
+     ("부록2_설문항목_근거매핑.md", "apx2.blocks.json"),
++    ("부록2_실증분석_상세결과.md", "apx2r.blocks.json"),
++    ("부록3_jamovi_원출력.md", "apx3.blocks.json"),
+ ]
+ 
+ HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
+@@ -35,7 +38,7 @@
+ DIV_TAG_RE = re.compile(r"^\s*</?div[^>]*>\s*$")
+ COMMENT_ONE_RE = re.compile(r"^\s*<!--.*-->\s*$")
+ FENCE_RE = re.compile(r"^```")
+-CAPTION_TABLE_RE = re.compile(r"^<표\s")
++CAPTION_TABLE_RE = re.compile(r"^<(?:부표|표)\s")
+ CAPTION_FIG_RE = re.compile(r"^<그림\s")
+ FIG_PLACEHOLDER_RE = re.compile(r"^\[그림 삽입 예정")
+ # "본문 아님"·"내부 관리용" 명시 h2 섹션은 코디네이터 승인에 따라 통째로 excluded 처리한다
+@@ -260,6 +263,14 @@
+                 block["layout"] = pending_layout
+                 table_merges.validate_block(block)
+                 pending_layout = None
++            # Preserve verbatim cells for coverage; structured image metadata is
++            # additional and only activates for image grids with empty headers.
++            if any("![" in c for row in block["rows"] for c in row):
++                try:
++                    from . import image_grid
++                except ImportError:
++                    import image_grid
++                block["image_grid"] = image_grid.parse_cells(block, SRC_DIR / fname)
+             blocks.append(block)
+             i = j
+             continue
+@@ -376,13 +387,17 @@
+ }
+ 
+ 
+-def main():
++def main(argv=None):
++    global OUT_DIR
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--out-dir", type=Path, default=OUT_DIR)
++    OUT_DIR = ap.parse_args(argv).out_dir
+     OUT_DIR.mkdir(parents=True, exist_ok=True)
+     report = []
+     report.append("# MD → blocks 변환 리포트 (T2)")
+     report.append("")
+-    report.append("`python tools/hwpx_transfer/md_to_blocks.py` 실행 산출물이다. 8개 원고 MD를 verbatim 블록 JSON으로 변환하고, "
+-                  "모든 비어있지 않은 원본 행이 블록 텍스트 또는 excluded에 존재하는지 자기검증한 결과를 담는다.")
++    report.append("`python tools/hwpx_transfer/md_to_blocks.py` 실행 산출물이다. %d개 원고 MD를 verbatim 블록 JSON으로 변환하고, "
++                  "모든 비어있지 않은 원본 행이 블록 텍스트 또는 excluded에 존재하는지 자기검증한 결과를 담는다." % len(FILES))
+     report.append("")
+     report.append("처리 방침(코디네이터 승인, 2026-07-25): 코드펜스 ASCII 다이어그램 3곳과 \"본문 아님\"/\"내부 관리용\" 명시 h2 섹션 2곳은 "
+                   "excluded(원문 전문 보존), 부록2 h6 제목은 h1로 매핑, `<div>` 단독 행은 excluded(html_tag), "
+@@ -435,7 +450,7 @@
+         for src, ln, line, why in all_missing:
+             report.append("- %s:%d — %s — `%s`" % (src, ln, why, line))
+     else:
+-        report.append("**누락 0 — 8개 파일 전체에서 커버리지 목표를 충족했다.**")
++        report.append("**누락 0 — %d개 파일 전체에서 커버리지 목표를 충족했다.**" % len(FILES))
+     report.append("")
+ 
+     # 3. 제외 블록 전체 목록
+--- before-worker/kjn_profile.py
++++ tools/hwpx_transfer/kjn_profile.py
+@@ -497,7 +497,7 @@
+ 
+ 
+ # ── 김정년 양식 조립 ───────────────────────────────────────────────────────────
+-CAPTION_RE = re.compile(r"^<표\s*\d+\s*-\s*\d+>\s+\S")
++CAPTION_RE = re.compile(r"^<(?:부표|표)\s*\d+\s*-\s*\d+>\s+\S")
+ FIGURE_CAPTION_RE = re.compile(r"^<그림\s*\d+\s*-\s*\d+>")
+ SOURCE_NOTE_RE = re.compile(r"^\s*(?:자료\s*[:：]|주\s*[:：)]|주\))")
+ IMAGE_MD_RE = re.compile(r"^\s*!\[([^\]]*)\]\(([^)]+)\)\s*$")
+@@ -895,7 +895,7 @@
+         return {"style": str(a.get("styleIDRef", "0")), "para": str(para), "char": str(char)}
+ 
+     # ── 그림 ────────────────────────────────────────────────────────────
+-    def picture_para(self, item_id, px_w, px_h, max_width, dpi=300, name="", max_height=None):
++    def picture_para(self, item_id, px_w, px_h, max_width, dpi=300, name="", max_height=None, display_size=None):
+         nat_w = int(round(px_w * 7200.0 / dpi))
+         nat_h = int(round(px_h * 7200.0 / dpi))
+         if nat_w > max_width:
+@@ -903,6 +903,10 @@
+             h = int(round(nat_h * float(max_width) / nat_w))
+         else:
+             w, h = nat_w, nat_h
++        if display_size is not None:
++            w, h = map(int, display_size)
++            if min(w, h) <= 0 or w > max_width:
++                raise ValueError("Invalid explicit picture size")
+         # 높이 상한(2026-10-24): 세로로 긴 그림(예: <그림 1-1> 1772×2492px)이 본문 폭 기준 55,808 HWPUNIT이 되면
+         # 캡션·그림·출처가 세 쪽으로 흩어진다. 캡션+출처와 같은 쪽에 들어가도록 비율을 유지한 채 줄인다.
+         if max_height and h > int(max_height):
+@@ -955,6 +959,7 @@
+         self.notes = []
+         self.bin_items = []        # (item_id, href, bytes)
+         self.table_widths = []     # (캡션, 열폭 배열) — 보고·검증용
++        self.image_grid_evidence = []
+         self.blank_after = self._blank_after()
+         self._first_section_pending = True
+         # 장 안 첫 절 예외는 h2_section.pageBreak_rule("장 안 첫 절(장 제목 다음)=0, 나머지 절=1")을 따른다.
+@@ -1122,7 +1127,12 @@
+                     self.notes.append("캡션 형식이 아닌 table_caption을 본문 문단으로 넣었다: %s" % b["text"][:40])
+                     self._add(self.asm.text_para(self.spec("body"), self.body_indent + b["text"]))
+             elif kind == "table":
+-                xml_text, widths = self.asm.table_xml(b["header"], b["rows"])
++                if b.get("image_grid"):
++                    import image_grid
++                    xml_text, widths, evidence = image_grid.assemble(self, b["image_grid"])
++                    self.image_grid_evidence.append({"caption": self.lot[-1], "widths": widths, "cells": evidence})
++                else:
++                    xml_text, widths = self.asm.table_xml(b["header"], b["rows"])
+                 if b.get("layout"):
+                     xml_text = table_merges.apply_layout(xml_text, b)
+                 self.table_widths.append((self.lot[-1] if self.lot else "", widths))
+--- before-worker/patch_from_fresh.py
++++ tools/hwpx_transfer/patch_from_fresh.py
+@@ -25,6 +25,7 @@
+ import argparse
+ import difflib
+ import html
++import hashlib
+ import json
+ import os
+ import re
+@@ -40,7 +41,7 @@
+ sys.stdout.reconfigure(encoding="utf-8")
+ 
+ LINESEG_RE = re.compile(r"<hp:linesegarray>.*?</hp:linesegarray>", re.S)
+-CAPTION_RE = re.compile(r"^<표\s*\d+\s*-\s*\d+>")
++CAPTION_RE = re.compile(r"^<(?:부표|표)\s*\d+\s*-\s*\d+>")
+ ID_RE = re.compile(r'<hp:(p|tbl|pic|container|rect|line|ellipse|arc|polygon|curve|connectLine|ole|equation) id="(\d+)"')
+ 
+ 
+@@ -56,6 +57,33 @@
+ def nows(text):
+     """공백을 모두 지운 비교용 텍스트('합계'와 '합  계'를 같게 본다)."""
+     return re.sub(r"\s+", "", text)
++
++
++def replace_literal_text(xml_text, old, new, count):
++    """Target a known literal and invalidate only changed/ancestor paragraphs.
++
++    Mark every containing paragraph (including table anchors), but keep caches
++    in untouched sibling cells. XML escaping is done before matching.
++    """
++    old_x, new_x = esc(old), esc(new)
++    if xml_text.count(old_x) != count:
++        raise ValueError("Target count mismatch for %r: %d != %d" % (old, xml_text.count(old_x), count))
++    pattern = re.compile(r'<hp:p\b[^>]*>|</hp:p>|<hp:linesegarray>.*?</hp:linesegarray>|' + re.escape(old_x), re.S)
++    stack, affected, segs = [], set(), []
++    for m in pattern.finditer(xml_text):
++        token = m.group(0)
++        if token.startswith('<hp:p '):
++            stack.append(m.start())
++        elif token == '</hp:p>':
++            stack.pop()
++        elif token.startswith('<hp:linesegarray>'):
++            segs.append((m.start(),m.end(),stack[-1] if stack else None))
++        else:
++            affected.update(stack)
++    for a,b,owner in reversed(segs):
++        if owner in affected:
++            xml_text = xml_text[:a] + xml_text[b:]
++    return xml_text.replace(old_x, new_x)
+ 
+ 
+ def esc(text):
+@@ -215,6 +243,8 @@
+         self.stats = {"equal": 0, "insert": 0, "replace_fresh": 0, "replace_kept": 0, "delete_kept": 0, "manual": 0,
+                       "table_same_kept": 0, "caption_split": 0}
+         self.manual = []  # '수동 재적용 필요' 목록(보고서 별도 절)
++        self.bin_imports = {}
++        self.bin_id_map = {}
+ 
+     def _manual(self, what):
+         self.stats["manual"] += 1
+@@ -279,8 +309,67 @@
+ 
+     def take_fresh(self, xml_text):
+         x = self.importer.remap_body(xml_text)
++        x = self._import_binaries(x)
+         x = LINESEG_RE.sub("", x)
+         return self.renumber(x)
++
++    def _import_binaries(self, xml_text):
++        """Copy referenced fresh payloads with collision-safe IDs and hrefs.
++
++        Preserve every original base asset; reuse identical bytes only. IDs in
++        an independently assembled package do not identify the same images.
++        """
++        def entries(raw):
++            root = ET.fromstring(raw.get("Contents/content.hpf", b'<package/>'))
++            return {e.get("id"): e for e in root.iter() if e.tag.endswith("}item")}
++        fresh = entries(self.fresh_raw)
++        base = entries(self.base_raw)
++        for item_id in set(re.findall(r'\bbinaryItemIDRef="([^"]+)"', xml_text)):
++            if item_id in self.bin_id_map:
++                continue
++            item = fresh.get(item_id)
++            if item is None or item.get("href") not in self.fresh_raw:
++                raise ValueError("Missing fresh image payload: " + item_id)
++            data = self.fresh_raw[item.get("href")]
++            digest = hashlib.sha256(data).digest()
++            match = next((key for key, b in base.items() if b.get("href", "").startswith("BinData/")
++                          and b.get("href") in self.base_raw
++                          and hashlib.sha256(self.base_raw[b.get("href")]).digest() == digest), None)
++            # Distinct fresh image items stay distinct even when two jamovi
++            # tables happen to have identical PNG bytes (one asset per cell).
++            if match is None:
++                n = 1
++                while "patch_image%d" % n in base or "patch_image%d" % n in self.bin_imports:
++                    n += 1
++                match = "patch_image%d" % n
++                suffix = Path(item.get("href")).suffix
++                href = "BinData/" + match + suffix
++                self.bin_imports[match] = (href, data, item.get("media-type", "image/png"))
++            self.bin_id_map[item_id] = match
++        return re.sub(r'\bbinaryItemIDRef="([^"]+)"',
++                      lambda m: 'binaryItemIDRef="%s"' % self.bin_id_map[m.group(1)], xml_text)
++
++    def append_new_appendices(self):
++        """Append numbered appendices absent from base, leaving its survey intact."""
++        fresh = Units(self.fresh_s2, set())
++        heading = re.compile(r"^부\s*록\s*(\d+)\s*[.．]")
++        starts = [(i, heading.match(u["text"]).group(1)) for i, u in enumerate(fresh.items)
++                  if not u["tbl"] and heading.match(u["text"])]
++        existing = {heading.match(u["text"]).group(1) for u in Units(self.s2, set()).items
++                    if not u["tbl"] and heading.match(u["text"])}
++        additions = []
++        for index, (start, number) in enumerate(starts):
++            if number in existing:
++                continue
++            end = starts[index + 1][0] if index + 1 < len(starts) else len(fresh.items)
++            additions.extend(self.take_fresh(u["xml"]) for u in fresh.items[start:end])
++            self.log.append("APPEND(new appendix %s) | %d top-level paragraphs" % (number, end - start))
++            self.stats["insert"] += end - start
++        if additions:
++            end = self.s2.rfind("</hs:sec>")
++            if end < 0:
++                raise ValueError("section2 closing tag not found")
++            self.s2 = self.s2[:end] + "".join(additions) + self.s2[end:]
+ 
+     # ── 본문 정렬 패치 ──
+     def _declared_table_layouts(self):
+@@ -379,6 +468,86 @@
+                 out.extend(self._replace(base.items[i1:i2], fresh.items[j1:j2]))
+         out.extend(u["xml"] for u in base.items[nb:])  # 부록은 base 유지
+         self.s2 = base.head + "".join(out) + base.tail
++
++    def patch_verified_body(self, previous_xml):
++        """Reorder/replace MD-owned content only after proving base provenance.
++
++        A structural rewrite cannot safely align changed table numbers. This
++        opt-in path first requires every nonempty base main-body unit (tables
++        included) to exist verbatim, modulo whitespace, in the supplied prior
++        MD assembly. Any unmatched user text aborts; it is never deleted.
++        Unchanged units retain their exact base XML and preceding blank lines,
++        including merged tables moved to another caption number or appendix.
++        """
++        base = Units(self.s2, self.protect, self.allow_tables, self.keep_prefix)
++        fresh = Units(self.fresh_s2, self.protect, self.allow_tables, self.keep_prefix)
++        previous = Units(previous_xml, set())
++        old_text = {nows(u["text"]) for u in previous.items if u["text"]}
++        ref_start = next((i for i,u in enumerate(base.items) if u["text"] == "참고문헌"), base.appendix_start())
++        unknown = [u for u in base.items[:ref_start] if u["text"] and nows(u["text"]) not in old_text]
++        if unknown:
++            raise ValueError("Prior-MD provenance failed; preserve user text: " + repr([u["text"][:80] for u in unknown]))
++        self.log.append("VERIFIED(previous MD) | %d nonempty main-body units; unmatched user text 0" %
++                        sum(bool(u["text"]) for u in base.items[:ref_start]))
++        def key(u, raw):
++            if u["tbl"]:
++                return "T:" + nows(u["text"])
++            ids = re.findall(r'\bbinaryItemIDRef="([^"]+)"', u["xml"])
++            if ids:
++                manifest = ET.fromstring(raw["Contents/content.hpf"])
++                items = {e.get("id"): e.get("href") for e in manifest.iter() if e.tag.endswith("}item")}
++                return "I:" + ":".join(hashlib.sha256(raw[items[i]]).hexdigest() for i in ids)
++            return "P:" + nows(u["text"])
++        def bundles(units, stop, raw):
++            result, blanks = [], []
++            for u in units.items[:stop]:
++                if not u["text"] and not u["tbl"] and "<hp:pic" not in u["xml"]:
++                    blanks.append(u["xml"])
++                    continue
++                result.append((key(u, raw), u, blanks))
++                blanks = []
++            return result
++        nb, nf = base.appendix_start(), fresh.appendix_start()
++        base_groups = bundles(base, nb, self.base_raw)
++        available = {}
++        for i,(identity,u,blanks) in enumerate(base_groups):
++            available.setdefault(identity, []).append((i,u,blanks))
++        used, output = set(), []
++        changed_tables = []
++        for identity, fu, fblanks in bundles(fresh, nf, self.fresh_raw):
++            candidates = available.get(identity, [])
++            match = None
++            for candidate in candidates:
++                i,bu,bblanks = candidate
++                if i not in used and (not fu["tbl"] or compare_tables(bu["xml"], fu["xml"])[0]):
++                    match = candidate
++                    break
++            if match:
++                i,bu,bblanks = match
++                used.add(i)
++                output.extend(bblanks)
++                output.append(bu["xml"])
++                self.stats["equal"] += 1
++                if fu["tbl"]:
++                    self.stats["table_same_kept"] += 1
++                    self.log.append("KEEP(exact base table XML) | %s -> %s" % (bu["cap"], fu["cap"]))
++            else:
++                output.extend(self.take_fresh(x) for x in fblanks)
++                output.append(self.take_fresh(fu["xml"]))
++                self.stats["replace_fresh"] += 1
++                self.log.append("IMPORT(verified MD revision) | " + fu["text"][:80])
++                if fu["tbl"]:
++                    changed_tables.append(fu["cap"])
++        protected_lost = [u for i,(_,u,_) in enumerate(base_groups) if i not in used and u["protected"]]
++        if protected_lost:
++            raise ValueError("Structural revision intersects explicitly protected units")
++        retired = [(u["cap"],u["text"]) for i,(_,u,_) in enumerate(base_groups) if i not in used]
++        self.log.extend("RETIRE(verified previous MD) | " + text[:80] for _,text in retired)
++        self.log.append("STRUCTURAL | kept %d; imported %d; retired previous-MD units %d" %
++                        (len(used), self.stats["replace_fresh"], len(retired)))
++        for cap in changed_tables:
++            self.manual.append("%s 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용" % cap)
++        self.s2 = base.head + "".join(output) + "".join(u["xml"] for u in base.items[nb:]) + base.tail
+ 
+     def _replace(self, bblock, fblock, depth=0):
+         out = []
+@@ -442,23 +611,11 @@
+     # ── 텍스트 치환(section2) ──
+     def text_replace(self, spec):
+         for rep in spec:
+-            old, new = esc(rep["old"]), esc(rep["new"])
+-            cnt = self.s2.count(old)
++            cnt = self.s2.count(esc(rep["old"]))
+             want = int(rep.get("count", 1))
+             if cnt != want:
+                 raise SystemExit("text-replace 출현 %d ≠ 기대 %d: %s" % (cnt, want, rep["old"][:50]))
+-            # 바뀐 문단의 linesegarray 제거
+-            pos = 0
+-            while True:
+-                i = self.s2.find(old, pos)
+-                if i < 0:
+-                    break
+-                ps = self.s2.rfind("<hp:p ", 0, i)
+-                pe = self.s2.find("</hp:p>", i) + len("</hp:p>")
+-                para = self.s2[ps:pe].replace(old, new)
+-                para = LINESEG_RE.sub("", para)
+-                self.s2 = self.s2[:ps] + para + self.s2[pe:]
+-                pos = ps + len(para)
++            self.s2 = replace_literal_text(self.s2, rep["old"], rep["new"], want)
+             self.log.append("TEXT x%d | %s -> %s" % (cnt, rep["old"][:40], rep["new"][:40]))
+ 
+     # ── 부록 문항 복제 삽입 ──
+@@ -552,6 +709,14 @@
+         raw["Contents/section2.xml"] = self.s2.encode("utf-8")
+         raw["Contents/section1.xml"] = self.s1.encode("utf-8")
+         raw["Contents/header.xml"] = self.header.xml.encode("utf-8")
++        if self.bin_imports:
++            hpf = raw["Contents/content.hpf"].decode("utf-8")
++            new_items = []
++            for item_id, (href, data, media) in self.bin_imports.items():
++                raw[href] = data
++                new_items.append('<opf:item id="%s" href="%s" media-type="%s" isEmbeded="1"/>' %
++                                 (item_id, href, media))
++            raw["Contents/content.hpf"] = hpf.replace("</opf:manifest>", "".join(new_items) + "</opf:manifest>").encode("utf-8")
+         with zipfile.ZipFile(out_path, "w") as zout:
+             for name, ctype, info in self.base_infos:
+                 zi = zipfile.ZipInfo(name, date_time=info.date_time if info is not None else (1980, 1, 1, 0, 0, 0))
+@@ -559,8 +724,11 @@
+                 if info is not None:
+                     zi.external_attr = info.external_attr
+                 zout.writestr(zi, raw[name])
++            for href, data, _ in self.bin_imports.values():
++                zout.writestr(href, data, compress_type=zipfile.ZIP_DEFLATED)
+ 
+     def summary(self):
++        self.stats["manual"] = len(self.manual)
+         lines = ["# patch_from_fresh 보고", "", "통계: %s" % json.dumps(self.stats, ensure_ascii=False),
+                  "header 추가 항목: %s" % json.dumps(self.importer.added, ensure_ascii=False), "",
+                  "## 수동 재적용 필요"]
+@@ -583,6 +751,8 @@
+     ap.add_argument("--toc-lines", dest="toc_lines")
+     ap.add_argument("--force-fresh", dest="force_fresh", default="", help="사용자 병합 표라도 fresh로 바꿀 캡션(쉼표 구분) — 병합·서식 소실, 보고서에 기록")
+     ap.add_argument("--toc-from-fresh", dest="toc_from_fresh", action="store_true", help="section1(목차·감사의 글·개요)을 조립본으로 통째 교체(장 구성 변경 시)")
++    ap.add_argument("--append-new-appendices", action="store_true", help="기준본에 없는 번호 부록을 뒤에 추가; 기존 설문지 보존")
++    ap.add_argument("--previous-body-xml", help="과거 MD 조립 본문 XML; base 원문 전수 일치 검증 후 구조 재배열(불일치 시 중단)")
+     ap.add_argument("--report")
+     ap.add_argument("--dry-run", action="store_true")
+     a = ap.parse_args()
+@@ -597,7 +767,12 @@
+             keep = tuple(k for k in a.keep_prefix.split("|") if k)
+     force = [p.strip() for p in a.force_fresh.split(",") if p.strip()]
+     pt = Patcher(a.base, a.fresh, protect, a.report, allow_tables=allow, keep_prefix=keep, force_fresh=force)
+-    pt.patch_body()
++    if a.previous_body_xml:
++        pt.patch_verified_body(Path(a.previous_body_xml).read_text(encoding="utf-8"))
++    else:
++        pt.patch_body()
++    if a.append_new_appendices:
++        pt.append_new_appendices()
+     if a.toc_from_fresh:
+         pt.toc_from_fresh()
+     if a.text_replace:
+--- before-worker/image_grid.py
++++ tools/hwpx_transfer/image_grid.py
+@@ -0,0 +1,205 @@
++"""Manifest-sized PNGs in appendix table cells; no raster content is modified."""
++import json
++import math
++import os
++from pathlib import Path
++import re
++import xml.etree.ElementTree as ET
++
++MM = 283.465
++CELL_IMAGE = re.compile(r"^(.*?)<br\s*/?>\s*!\[([^\]]*)\]\(([^)]+)\)\s*$", re.S)
++
++
++def parse_cells(block, source):
++    if any(block["header"]):
++        raise ValueError("Image grids require an empty Markdown header")
++    source = Path(source)
++    rows = []
++    manifests = {}
++    for row in block["rows"]:
++        if len(row) != len(block["header"]):
++            raise ValueError("Ragged image grid")
++        cells = []
++        for raw in row:
++            if not raw.strip():
++                cells.append(None)
++                continue
++            match = CELL_IMAGE.fullmatch(raw.strip())
++            if not match:
++                raise ValueError("Expected label + image in grid cell: " + raw)
++            label, alt, path = match.groups()
++            img = source.parent / path
++            mf = img.parent / "manifest.json"
++            if mf not in manifests:
++                manifests[mf] = {c["file"]: c for group in json.loads(mf.read_text(encoding="utf-8"))
++                                 for c in group["cells"]}
++            meta = manifests[mf][img.name]
++            # Paths stay portable and relative to the repository.
++            cells.append(dict(label=label.strip(), alt=alt, path=img.relative_to(
++                Path(__file__).resolve().parents[2]).as_posix(),
++                width_mm=meta["width_mm"], height_mm=meta["height_mm"],
++                fits_width=meta["fits_width"]))
++        rows.append(cells)
++    return {"rows": rows, "cols": len(block["header"])}
++
++
++def plan(grid, total_width):
++    """Blank trailing cells extend the preceding cell, preserving image scale.
++
++    First satisfy single-column image widths, then merged spans. This permits
++    the 134.2 mm loading table and the three-column reliability layout without
++    arbitrarily shrinking every PNG or changing their row order.
++    """
++    ncols = grid["cols"]
++    rows = []
++    widths = [1] * ncols
++    for row in grid["rows"]:
++        active = [i for i, c in enumerate(row) if c is not None]
++        if not active or active[0] != 0:
++            raise ValueError("Image rows must start in the first cell")
++        cells = []
++        for j, col in enumerate(active):
++            c = dict(row[col])
++            span = (active[j + 1] if j + 1 < len(active) else ncols) - col
++            w = round(c["width_mm"] * MM)
++            h = round(c["height_mm"] * MM)
++            pad = round(.5 * MM)
++            if not c["fits_width"]:
++                w = min(round(140 * MM), total_width)
++                h = round(c["height_mm"] * w / c["width_mm"])
++                pad = 0  # 140 mm image itself fills the 140 mm body width.
++            c.update(col=col, span=span, width=w, height=h, pad=pad)
++            cells.append(c)
++            if span == 1:
++                widths[col] = max(widths[col], w + 2 * pad)
++        rows.append(cells)
++    for row in rows:
++        for c in row:
++            a, b = c["col"], c["col"] + c["span"]
++            shortage = c["width"] + 2 * c["pad"] - sum(widths[a:b])
++            if shortage > 0:
++                widths[b - 1] += shortage
++    if sum(widths) > total_width:
++        raise ValueError("Image grid cannot preserve requested scale: %s > %s" % (widths, total_width))
++    remainder = total_width - sum(widths)
++    weight = sum(widths)
++    extra = [int(remainder * w / weight) for w in widths]
++    extra[-1] += remainder - sum(extra)
++    widths = [a + b for a, b in zip(widths, extra)]
++    return rows, widths
++
++
++def label_measure(text):
++    """GDI width at 9 pt; name reports a font substitute if GDI uses one."""
++    if os.name == "nt":
++        import ctypes
++        from ctypes import wintypes
++        g = ctypes.WinDLL("gdi32")
++        g.CreateCompatibleDC.restype = wintypes.HDC
++        g.CreateFontW.argtypes = [ctypes.c_int] * 5 + [wintypes.DWORD] * 8 + [wintypes.LPCWSTR]
++        g.CreateFontW.restype = wintypes.HANDLE
++        g.SelectObject.argtypes = [wintypes.HDC, wintypes.HANDLE]
++        g.SelectObject.restype = wintypes.HANDLE
++        g.GetTextExtentPoint32W.argtypes = [wintypes.HDC, wintypes.LPCWSTR, ctypes.c_int, ctypes.c_void_p]
++        g.GetTextFaceW.argtypes = [wintypes.HDC, ctypes.c_int, wintypes.LPWSTR]
++        g.DeleteObject.argtypes = [wintypes.HANDLE]
++        g.DeleteDC.argtypes = [wintypes.HDC]
++        dc = g.CreateCompatibleDC(None)
++        font = g.CreateFontW(-90, 0, 0, 0, 400, 0, 0, 0, 1, 0, 0, 0, 0, "한양신명조")
++        old = g.SelectObject(dc, font)
++        size = wintypes.SIZE()
++        name = ctypes.create_unicode_buffer(128)
++        try:
++            if not g.GetTextExtentPoint32W(dc, text, len(text), ctypes.byref(size)):
++                raise ValueError("GDI label measurement failed")
++            g.GetTextFaceW(dc, 128, name)
++            return size.cx * 10, name.value
++        finally:
++            g.SelectObject(dc, old)
++            g.DeleteObject(font)
++            g.DeleteDC(dc)
++    import table_layout
++    return table_layout.text_width(text, 9), "estimated (GDI unavailable)"
++
++
++def assemble(doc, grid):
++    import kjn_profile as kp
++    asm = doc.asm
++    rows, widths = plan(grid, asm.total_width)
++    hp = "{" + kp.NS["hp"] + "}"
++    # Reuse known-valid table attributes, then replace the dummy text cells.
++    xml, _ = asm.table_xml([""] * grid["cols"], [])
++    wrapper = ET.fromstring(kp._wrap(xml))
++    table = next(wrapper.iter(hp + "tbl"))
++    for child in list(table):
++        if child.tag == hp + "tr":
++            table.remove(child)
++    cp = str(asm.pf.get("table", "cell_charPr", "small9"))
++    pp = str(asm.pf.get("table", "cell_paraPr", "text_left"))
++    spec = {"para": pp, "char": cp, "style": "0"}
++    # Clear table borders; the jamovi raster already has horizontal rules.
++    border = asm.header.item_xml("borderFill", asm.pf.get("table", "borderFills", "inner_012"))
++    border = re.sub(r'(<hh:(?:left|right|top|bottom|diagonal)Border\b[^>]*\btype=")[^"]+', r'\g<1>NONE', border)
++    border_id = asm.header.find_same("borderFill", border) or asm.header.add("borderFill", border)
++    total_height = 0
++    evidence = []
++    for row_index, row in enumerate(rows):
++        tr = ET.SubElement(table, hp + "tr")
++        row_height = 0
++        row_cells = []
++        for c in row:
++            width = sum(widths[c["col"]:c["col"] + c["span"]])
++            data = (Path(__file__).resolve().parents[2] / c["path"]).read_bytes()
++            pw, ph = kp.png_size(data)
++            if abs(pw / ph - c["width_mm"] / c["height_mm"]) > .01:
++                raise ValueError("Manifest/PNG aspect ratio mismatch: " + c["path"])
++            item = doc._next_bin_id()
++            doc.bin_items.append((item, "BinData/" + item + ".png", data))
++            picture, _ = asm.picture_para(item, pw, ph, c["width"], name=Path(c["path"]).name,
++                                          display_size=(c["width"], c["height"]))
++            p = ET.fromstring(kp._wrap(picture))[0]
++            p.set("paraPrIDRef", pp)
++            p.set("styleIDRef", "0")
++            for run in p.findall(hp + "run"):
++                run.set("charPrIDRef", cp)
++            pic = p.find(".//" + hp + "pic")
++            pic.find(hp + "pos").set("treatAsChar", "1")
++            pic.find(hp + "pos").set("horzAlign", "LEFT")
++            tc = ET.fromstring(kp._wrap(asm.cell("", row_index, c["col"], width, grid["cols"], False)))[0]
++            tc.set("hasMargin", "1")
++            tc.set("borderFillIDRef", border_id)
++            tc.find(hp + "cellSpan").set("colSpan", str(c["span"]))
++            sub = tc.find(hp + "subList")
++            sub.set("vertAlign", "TOP")
++            for child in list(sub):
++                sub.remove(child)
++            sub.append(ET.fromstring(kp._wrap(asm.text_para(spec, c["label"])))[0])
++            sub.append(p)
++            margins = tc.find(hp + "cellMargin")
++            margins.attrib.update(left=str(c["pad"]), right=str(c["pad"]), top="142", bottom="142")
++            tw, font = label_measure(c["label"])
++            lines = max(1, math.ceil(tw / (width - 2 * c["pad"])))
++            height = c["height"] + lines * 1500 + 600
++            row_height = max(row_height, height)
++            tr.append(tc)
++            row_cells.append(tc)
++            evidence.append(dict(row=row_index, col=c["col"], span=c["span"], cell_width=width,
++                                 picture_width=c["width"], picture_height=c["height"], file=c["path"],
++                                 label_font_measured=font, estimated_label_lines=lines))
++        if asm.avail_height and row_height > asm.avail_height:
++            raise ValueError("Single image-grid row exceeds body height")
++        for tc in row_cells:
++            tc.find(hp + "cellSz").set("height", str(row_height))
++        total_height += row_height
++    table.set("rowCnt", str(len(rows)))
++    table.set("repeatHeader", "0")  # Markdown's empty header is structural, not printed.
++    split = bool(asm.avail_height and total_height > asm.avail_height)
++    table.set("pageBreak", "TABLE" if split else "NONE")
++    table.find(hp + "sz").attrib.update(width=str(sum(widths)), height=str(total_height))
++    table.find(hp + "pos").set("treatAsChar", "0" if split else "1")
++    table.find(hp + "pos").set("horzRelTo", "COLUMN")
++    table.find(hp + "inMargin").attrib.update(left="0", right="0", top="0", bottom="0")
++    if split:
++        asm._z_order += 1
++        table.set("zOrder", str(asm._z_order))
++    return kp._unwrap(wrapper), widths, evidence
+--- before-worker/tests/test_image_grid.py
++++ tools/hwpx_transfer/tests/test_image_grid.py
+@@ -0,0 +1,145 @@
++"""Image-grid geometry, complete PNG payloads and patch-package integration."""
++import json
++from pathlib import Path
++import sys
++import tempfile
++import unittest
++import xml.etree.ElementTree as ET
++import zipfile
++
++HERE = Path(__file__).resolve().parent
++sys.path[:0] = [str(HERE.parent), str(HERE)]
++import image_grid
++import kjn_profile as kp
++import md_to_blocks
++import patch_from_fresh as pf
++import test_blocks_to_hwpx_kjn as fixture
++import test_patch_from_fresh as patch_fixture
++
++HP = "{" + kp.NS["hp"] + "}"
++HC = "{" + kp.NS["hc"] + "}"
++
++
++class ImageGridTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.blocks = md_to_blocks.parse_file("부록3_jamovi_원출력.md")[1]
++
++    def test_parser_47_cells_nine_captions(self):
++        grids = [b["image_grid"] for b in self.blocks if b["type"] == "table"]
++        self.assertEqual(len(grids), 9)
++        self.assertEqual(sum(c is not None for g in grids for r in g["rows"] for c in r), 47)
++        self.assertEqual(sum(b["type"] == "table_caption" for b in self.blocks), 9)
++
++    def test_all_grids_preserve_sizes_and_complete_occupancy(self):
++        doc, tpl, _ = fixture.make_doc()
++        doc.add_blocks(self.blocks, appendix=True)
++        self.assertEqual(len(doc.bin_items), 47)
++        self.assertEqual(len(doc.lot), 9)
++        root = ET.fromstring(kp._wrap("".join(doc.body)))
++        tables = list(root.iter(HP + "tbl"))
++        for tbl, evidence in zip(tables, doc.image_grid_evidence):
++            widths = evidence["widths"]
++            self.assertEqual(sum(widths), int(tbl.find(HP + "sz").get("width")))
++            self.assertEqual(tbl.get("repeatHeader"), "0")
++            self.assertNotIn("linesegarray", ET.tostring(tbl, encoding="unicode"))
++            self.assertNotEqual(tbl.get("pageBreak"), "CELL")
++            for ri, tr in enumerate(tbl.findall(HP + "tr")):
++                occupied = set()
++                for tc in tr.findall(HP + "tc"):
++                    a, sp = tc.find(HP + "cellAddr"), tc.find(HP + "cellSpan")
++                    col, span = int(a.get("colAddr")), int(sp.get("colSpan"))
++                    self.assertEqual(int(a.get("rowAddr")), ri)
++                    columns = set(range(col, col + span))
++                    self.assertFalse(occupied & columns)
++                    occupied |= columns
++                    width = int(tc.find(HP + "cellSz").get("width"))
++                    self.assertEqual(width, sum(widths[col:col + span]))
++                    pic = tc.find(".//" + HP + "pic")
++                    self.assertEqual(pic.find(HP + "pos").get("treatAsChar"), "1")
++                    margin = tc.find(HP + "cellMargin")
++                    self.assertLessEqual(int(pic.find(HP + "sz").get("width")),
++                                         width - int(margin.get("left")) - int(margin.get("right")))
++                self.assertEqual(occupied, set(range(int(tbl.get("colCnt")))))
++        for e in doc.image_grid_evidence:
++            for c in e["cells"]:
++                expected = next(m for b in self.blocks if b.get("image_grid")
++                                for row in b["image_grid"]["rows"] for m in row
++                                if m and m["path"] == c["file"])
++                self.assertEqual(c["picture_width"], min(doc.asm.total_width, round(min(expected["width_mm"], 140) * image_grid.MM)))
++
++    def test_patch_imports_assets_manifest_and_new_appendix(self):
++        doc, tpl, _ = fixture.make_doc()
++        subset = self.blocks  # includes two distinct cells with identical PNG bytes
++        doc.add_blocks(subset, appendix=True)
++        fresh_s2 = doc.build_section2()
++        entries = kp.plan_package(tpl, {"Contents/section2.xml": fresh_s2}, tpl.header.xml, doc.bin_items)
++        with tempfile.TemporaryDirectory() as tmp:
++            tmp = Path(tmp)
++            fresh = tmp / "fresh.hwpx"
++            base = tmp / "base.hwpx"
++            out = tmp / "patched.hwpx"
++            fixture.blocks_to_hwpx.write_package(str(fresh), entries, (2026, 1, 1, 0, 0, 0))
++            # The original template has assets whose numeric IDs can collide.
++            with zipfile.ZipFile(base, "w") as z:
++                for name, raw in tpl.raw.items():
++                    if name == "Contents/section2.xml":
++                        raw = (tpl.s2_head + doc.asm.text_para(doc.spec("appendix_heading"),
++                                "부 록 (도입 현장)") + "</hs:sec>").encode()
++                    z.writestr(name, raw)
++            patch = pf.Patcher(str(base), str(fresh), [], None)
++            patch.append_new_appendices()
++            patch.write(str(out))
++            with zipfile.ZipFile(out) as z:
++                self.assertIsNone(z.testzip())
++                manifest = ET.fromstring(z.read("Contents/content.hpf"))
++                items = {e.get("id"): e.get("href") for e in manifest.iter() if e.tag.endswith("}item")}
++                root = ET.fromstring(z.read("Contents/section2.xml"))
++                for img, (_, _, original) in zip(root.iter(HC + "img"), doc.bin_items):
++                    self.assertEqual(z.read(items[img.get("binaryItemIDRef")]), original)
++                for name, raw in tpl.raw.items():
++                    if name.startswith("BinData/"):
++                        self.assertEqual(z.read(name), raw)
++                self.assertEqual(len(list(root.iter(HC + "img"))), 47)
++                self.assertEqual(len(patch.bin_imports),47)
++
++
++class StructuralPatchTests(unittest.TestCase):
++    setUp = patch_fixture.PatchFromFreshTest.setUp
++    tearDown = patch_fixture.PatchFromFreshTest.tearDown
++    _pkg = patch_fixture.PatchFromFreshTest._pkg
++
++    def test_verified_structure_reorders_and_keeps_merged_table_xml(self):
++        f=patch_fixture
++        table=f.table(f.MERGED_ROWS,3)
++        base=[f.para('old paragraph'),f.para('<표 4-2> old caption'),table,f.para('keep paragraph')]
++        fresh=[f.para('keep paragraph'),f.para('new paragraph'),f.para('<표 4-5> new caption'),f.table(f.PLAIN_ROWS,3)]
++        pt=pf.Patcher(self._pkg('base',base),self._pkg('fresh',fresh),[],None)
++        pt.patch_verified_body(f.SEC_HEAD+''.join(base)+f.SEC_TAIL)
++        self.assertIn(table,pt.s2)
++        self.assertNotIn('old paragraph',pt.s2)
++        self.assertLess(pt.s2.index('keep paragraph'),pt.s2.index('new paragraph'))
++        self.assertIn(base[-1],pt.s2)
++
++    def test_unknown_user_text_blocks_structural_replacement(self):
++        f=patch_fixture
++        pt=pf.Patcher(self._pkg('base',[f.para('user addition')]),self._pkg('fresh',[f.para('new MD')]),[],None)
++        before=pt.s2
++        with self.assertRaisesRegex(ValueError,'provenance failed'):
++            pt.patch_verified_body(f.SEC_HEAD+f.para('old MD')+f.SEC_TAIL)
++        self.assertEqual(pt.s2,before)
++
++    def test_target_change_clears_ancestor_cache_only(self):
++        f=patch_fixture
++        changed=f.para('old target')
++        untouched=f.para('keep sibling')
++        outer=f.para('anchor')
++        xml=outer.replace('</hp:run>',changed+untouched+'</hp:run>',1)
++        new=pf.replace_literal_text(xml,'old target','new target',1)
++        self.assertIn(untouched,new)
++        self.assertEqual(new.count('<hp:linesegarray>'),1)
++        self.assertIn('new target',new)
++
++
++if __name__ == "__main__":
++    unittest.main()

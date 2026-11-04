@@ -1,0 +1,207 @@
+{
+  "replace": [
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1794,
+      "old": "[19] 한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026. (번호가 중복된 30번 VLM 학위논문; 전체 파일명으로 식별)",
+      "new": "[20] 한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026. (번호가 중복된 30번 VLM 학위논문; 전체 파일명으로 식별)",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1795,
+      "old": "[20] 황병복, 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문, 2026.",
+      "new": "[21] 황병복, 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문, 2026.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1805,
+      "old": "[08] Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201.",
+      "new": "[07] Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1806,
+      "old": "[09] He, C., Hu, Z., Shen, Y., & Wu, C., \"Effects of Demographic Characteristics on Safety Climate and Construction Worker Safety Behavior\", Sustainability, Vol. 15, No. 14, 2023, 10985. DOI 10.3390/su151410985.",
+      "new": "[08] He, C., Hu, Z., Shen, Y., & Wu, C., \"Effects of Demographic Characteristics on Safety Climate and Construction Worker Safety Behavior\", Sustainability, Vol. 15, No. 14, 2023, 10985. DOI 10.3390/su151410985.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1807,
+      "old": "[10] Igbaria, M., & Tan, M., \"The consequences of information technology acceptance on subsequent individual performance\", Information & Management, Vol. 32, No. 3, 1997, pp.113–121. DOI 10.1016/S0378-7206(97)00006-2.",
+      "new": "[09] Igbaria, M., & Tan, M., \"The consequences of information technology acceptance on subsequent individual performance\", Information & Management, Vol. 32, No. 3, 1997, pp.113–121. DOI 10.1016/S0378-7206(97)00006-2.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1808,
+      "old": "[11] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html",
+      "new": "[10] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1809,
+      "old": "[12] Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025.",
+      "new": "[13] Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1810,
+      "old": "[13] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285.",
+      "new": "[14] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1811,
+      "old": "[14] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
+      "new": "[15] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1813,
+      "old": "[16] Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp.53–55. DOI 10.5116/ijme.4dfb.8dfd.",
+      "new": "[17] Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp.53–55. DOI 10.5116/ijme.4dfb.8dfd.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1814,
+      "old": "[17] Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp.191–199. DOI 10.22260/ISARC2016/0024.",
+      "new": "[18] Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp.191–199. DOI 10.22260/ISARC2016/0024.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1815,
+      "old": "[18] The jamovi project, jamovi (Version 2.7) [Computer Software], 2025. https://www.jamovi.org",
+      "new": "[19] The jamovi project, jamovi (Version 2.7) [Computer Software], 2025. https://www.jamovi.org",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1816,
+      "old": "[19] Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209-212. DOI 10.1080/01621459.1927.10502953",
+      "new": "[20] Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209-212. DOI 10.1080/01621459.1927.10502953",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1817,
+      "old": "[20] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1",
+      "new": "[21] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1818,
+      "old": "[21] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp.40167–40175. DOI 10.1609/aaai.v40i47.41452.",
+      "new": "[22] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp.40167–40175. DOI 10.1609/aaai.v40i47.41452.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1828,
+      "old": "[02] Bosch Security Systems, Alarm Verification for Alarm Management, Application note F01U411472, V02, 2024.",
+      "new": "[01] Bosch Security Systems, Alarm Verification for Alarm Management, Application note F01U411472, V02, 2024.",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1829,
+      "old": "[03] Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention .",
+      "new": "[02] Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention .",
+      "reason": "reference numbering or whitespace synchronization"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1830,
+      "old": "[04] Ultralytics YOLO (Version 8.4.23) [Computer software], 2026.",
+      "new": "[03] Ultralytics YOLO (Version 8.4.23) [Computer software], 2026.",
+      "reason": "reference numbering or whitespace synchronization"
+    }
+  ],
+  "delete": [
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1804,
+      "old": "[07] Dixon, S. R., Wickens, C. D., & McCarley, J. S., \"On the independence of compliance and reliance: Are automation false alarms worse than misses?\", Human Factors, Vol. 49, No. 4, 2007, pp.564–572. DOI 10.1518/001872007X215656.",
+      "reason": "absent from current references; moved to noncited history after user-approved citation changes"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1812,
+      "old": "[15] Shadish, W. R., Cook, T. D., & Campbell, D. T., Experimental and Quasi-Experimental Designs for Generalized Causal Inference, Houghton Mifflin, 2002.",
+      "reason": "absent from current references; moved to noncited history after user-approved citation changes"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1827,
+      "old": "[01] EN 50136-1:2012, Alarm systems — Alarm transmission systems and equipment — Part 1: General requirements for alarm transmission systems. [UNVERIFIED — Table 2의 등급별 평균·상한과 측정 경계, A1:2018 변경 여부 정본 대조 필요].",
+      "reason": "absent from current references; moved to noncited history after user-approved citation changes"
+    }
+  ],
+  "insert_after": [
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1793,
+      "text": "[19] 한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do",
+      "order": 1,
+      "category": "1. 국내문헌",
+      "template_idx": 1776,
+      "reason": "new reference in confirmed current MD list"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1808,
+      "text": "[11] Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp.1663–1673. DOI 10.1177/0956797614541991.",
+      "order": 1,
+      "category": "2. 국외문헌",
+      "template_idx": 1798,
+      "reason": "new reference in confirmed current MD list"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1808,
+      "text": "[12] Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp.1833–1855. DOI 10.1080/00140139.2014.957732.",
+      "order": 2,
+      "category": "2. 국외문헌",
+      "template_idx": 1798,
+      "reason": "new reference in confirmed current MD list"
+    },
+    {
+      "section": "Contents/section2.xml",
+      "idx": 1811,
+      "text": "[16] Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp.137–149. DOI 10.3758/BF03207704.",
+      "order": 1,
+      "category": "2. 국외문헌",
+      "template_idx": 1798,
+      "reason": "new reference in confirmed current MD list"
+    }
+  ],
+  "unresolved": [],
+  "category_counts": {
+    "1. 국내문헌": {
+      "old": 20,
+      "new": 21
+    },
+    "2. 국외문헌": {
+      "old": 21,
+      "new": 22
+    },
+    "3. 법령": {
+      "old": 4,
+      "new": 4
+    },
+    "4. 표준·기술자료": {
+      "old": 4,
+      "new": 3
+    }
+  }
+}

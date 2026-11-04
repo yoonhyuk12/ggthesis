@@ -1,0 +1,52 @@
+test_a_caption_outside_before_table (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_a_caption_outside_before_table) ... ok
+test_abstract_skeleton_parse (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_abstract_skeleton_parse) ... ok
+test_b_header_row_border_fill (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_b_header_row_border_fill) ... ok
+test_c_column_widths_content_based (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_c_column_widths_content_based) ... ok
+test_d_blank_before_section_and_item (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_d_blank_before_section_and_item) ... ok
+test_e_marker_runs_and_black_brackets (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_e_marker_runs_and_black_brackets) ... ok
+test_f_no_cell_page_break (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_f_no_cell_page_break) ... ok
+test_figure_caption_above_and_bindata (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_figure_caption_above_and_bindata) ... ok
+test_full_assembly_with_task_g_profile (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_full_assembly_with_task_g_profile) ... ok
+test_h_missing_profile_key_raises (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_h_missing_profile_key_raises) ... ok
+test_i_cover_has_no_kjn_strings (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_i_cover_has_no_kjn_strings) ... ok
+test_j_references_seven_categories (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_j_references_seven_categories) ... ok
+test_single_column_table_open_sides (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_single_column_table_open_sides) ... ok
+test_toc_tab_and_pages (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_toc_tab_and_pages) ... ok
+test_transplant_remap_and_rescale (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_transplant_remap_and_rescale) ... ok
+test_transplant_replace_appendix_and_thanks (test_blocks_to_hwpx_kjn.KjnAssemblyTests.test_transplant_replace_appendix_and_thanks) ... ok
+test_g_baseline_is_from_pre_change_code (test_blocks_to_hwpx_kjn.LegacyRegressionTests.test_g_baseline_is_from_pre_change_code) ... ok
+test_g_legacy_section2_identical (test_blocks_to_hwpx_kjn.LegacyRegressionTests.test_g_legacy_section2_identical) ... ok
+test_legacy_profile_extras_explicit (test_blocks_to_hwpx_kjn.LegacyRegressionTests.test_legacy_profile_extras_explicit) ... ok
+test_short_table_whole (test_blocks_to_hwpx_kjn.TableSplitTests.test_short_table_whole) ... ok
+test_tall_table_row_split (test_blocks_to_hwpx_kjn.TableSplitTests.test_tall_table_row_split) ... ok
+test_all_grids_preserve_sizes_and_complete_occupancy (test_image_grid.ImageGridTests.test_all_grids_preserve_sizes_and_complete_occupancy) ... ok
+test_body_grids_unnumbered_and_manifest_targeted (test_image_grid.ImageGridTests.test_body_grids_unnumbered_and_manifest_targeted) ... ok
+test_parser_35_cells_five_captions (test_image_grid.ImageGridTests.test_parser_35_cells_five_captions) ... ok
+test_patch_imports_assets_manifest_and_new_appendix (test_image_grid.ImageGridTests.test_patch_imports_assets_manifest_and_new_appendix) ... ok
+test_target_change_clears_ancestor_cache_only (test_image_grid.StructuralPatchTests.test_target_change_clears_ancestor_cache_only) ... ok
+test_unknown_user_text_blocks_structural_replacement (test_image_grid.StructuralPatchTests.test_unknown_user_text_blocks_structural_replacement) ... ok
+test_verified_structure_reorders_and_keeps_merged_table_xml (test_image_grid.StructuralPatchTests.test_verified_structure_reorders_and_keeps_merged_table_xml) ... ok
+test_changed_paragraph_taken_from_fresh_with_id_remap (test_patch_from_fresh.PatchFromFreshTest.test_changed_paragraph_taken_from_fresh_with_id_remap) ... ok
+test_merged_body_and_caption_split (test_patch_from_fresh.PatchFromFreshTest.test_merged_body_and_caption_split) ... ok
+test_merged_cell_covering_text_in_fresh_differs (test_patch_from_fresh.PatchFromFreshTest.test_merged_cell_covering_text_in_fresh_differs) ... ok
+test_merged_table_changed_content_keeps_base_and_reports (test_patch_from_fresh.PatchFromFreshTest.test_merged_table_changed_content_keeps_base_and_reports) ... ok
+test_merged_table_same_content_keeps_base (test_patch_from_fresh.PatchFromFreshTest.test_merged_table_same_content_keeps_base) ... ok
+test_invalid_or_orphan_directive_refused (test_table_merges.DeclaredMergesTest.test_invalid_or_orphan_directive_refused) ... ok
+test_legacy_caption_row_offset (test_table_merges.DeclaredMergesTest.test_legacy_caption_row_offset) ... ok
+test_minimal_preservation_and_idempotence (test_table_merges.DeclaredMergesTest.test_minimal_preservation_and_idempotence) ... ok
+test_nonempty_covered_cell_refused (test_table_merges.DeclaredMergesTest.test_nonempty_covered_cell_refused) ... ok
+test_real_markdown_assembly_and_grid (test_table_merges.DeclaredMergesTest.test_real_markdown_assembly_and_grid) ... ok
+test_width_mismatch_refused (test_table_merges.DeclaredMergesTest.test_width_mismatch_refused) ... ok
+test_allow_tables_exclusion_wins (test_table_merges.PatchDeclaredMergesTest.test_allow_tables_exclusion_wins) ... ok
+test_allow_tables_still_preserves_layout_result (test_table_merges.PatchDeclaredMergesTest.test_allow_tables_still_preserves_layout_result) ... ok
+test_explicit_protection_wins (test_table_merges.PatchDeclaredMergesTest.test_explicit_protection_wins) ... ok
+test_fresh_without_merges_refused (test_table_merges.PatchDeclaredMergesTest.test_fresh_without_merges_refused) ... ok
+test_legacy_labels_merge_and_preserve_user_format (test_table_merges.PatchDeclaredMergesTest.test_legacy_labels_merge_and_preserve_user_format) ... ok
+test_same_content_still_merges (test_table_merges.PatchDeclaredMergesTest.test_same_content_still_merges) ... ok
+test_stale_fresh_refused (test_table_merges.PatchDeclaredMergesTest.test_stale_fresh_refused) ... ok
+test_unexpected_legacy_label_refused (test_table_merges.PatchDeclaredMergesTest.test_unexpected_legacy_label_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 5.317s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "equal": 802,
+  "insert": 8,
+  "replace_fresh": 1,
+  "replace_kept": 0,
+  "delete_kept": 0,
+  "manual": 0,
+  "table_same_kept": 57,
+  "caption_split": 0,
+  "body_notes_targeted": 7,
+  "appendix_exact_kept": 18,
+  "appendix_captions_targeted": 4,
+  "appendix_retired": 17,
+  "toc_titles_targeted": 4,
+  "toc_removed": 4,
+  "section1_exact_kept": 191
+}

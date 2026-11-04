@@ -1,0 +1,59 @@
+{
+  "감사의글": {
+    "source_hwpx": "tools/hwpx_transfer/staging/hwpx_261031/base.hwpx",
+    "section": 1,
+    "range": [
+      138,
+      162
+    ],
+    "append_red_note": ""
+  },
+  "부록1_설문지": {
+    "source_hwpx": "tools/hwpx_transfer/staging/hwpx_261031/base.hwpx",
+    "section": 2,
+    "range": [
+      684,
+      757
+    ],
+    "replace_appendix": "부 록 — 설문지",
+    "keep_until": "부 록 — 설문지",
+    "drop_heading": true,
+    "text_replacements": [
+      {
+        "old": "중소규모 건설현장을 위한 YOLO-LLM",
+        "new": "건설현장 YOLO-LLM",
+        "count": 2
+      },
+      {
+        "old": "현장소장",
+        "new": "현장소장(관리감독자)",
+        "count": 2
+      },
+      {
+        "old": "도입·미도입 두 집단 모두",
+        "new": "도입·미도입 현장 모두",
+        "count": 2
+      },
+      {
+        "old": "CCTV YOLO-LLM 안전알림 시스템",
+        "new": "YOLO-LLM 안전관제 시스템",
+        "count": 2
+      },
+      {
+        "old": "CCTV YOLO-LLM 안전알림",
+        "new": "YOLO-LLM 안전관제 시스템",
+        "count": 8
+      },
+      {
+        "old": "분석용 집단은",
+        "new": "분석용 현장 도입 여부는",
+        "count": 2
+      },
+      {
+        "old": "해당 집단의 적용 문항",
+        "new": "해당 현장의 적용 문항",
+        "count": 2
+      }
+    ]
+  }
+}

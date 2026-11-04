@@ -344,7 +344,7 @@ class KjnAssemblyTests(unittest.TestCase):
         red = tpl.header.red_char_pr_id(pf.spec("ref_item")["char"])
         self.assertIn('<hp:run charPrIDRef="%s"><hp:t>[확정 필요: 권호 결손]</hp:t>' % red, "".join(doc.body))
 
-    # 그림: 캡션 위·BinData·자료 아래, 매핑 없으면 빨간 자리표시
+    # 그림: 캡션 위·BinData·명시한 자료만 아래, 매핑 없으면 빨간 자리표시
     def test_figure_caption_above_and_bindata(self):
         tmp = tempfile.mkdtemp()
         try:
@@ -354,12 +354,14 @@ class KjnAssemblyTests(unittest.TestCase):
             doc, tpl, pf = make_doc(images={"<그림 3-1>": png})
             doc.add_blocks([{"type": "p", "runs": [{"text": "![아키텍처](figures/a.png)", "bold": False}]},
                             {"type": "figure_caption", "text": "<그림 3-1> 아키텍처"},
-                            {"type": "figure_caption", "text": "<그림 3-2> 매핑 없음"}])
+                            {"type": "figure_caption", "text": "<그림 3-2> 매핑 없음"},
+                            {"type": "p", "runs": [{"text": "자료: 실제 모니터링 화면을 직접 캡처.", "bold": False}]}])
             ps = paras("".join(doc.body))
             texts = [kjn_profile.plain_texts(p) for p in ps]
             i = texts.index("<그림 3-1> 아키텍처")
             self.assertIn("<hp:pic", ps[i + 1])
-            self.assertEqual(texts[i + 2], kjn_profile.DEFAULT_FIGURE_SOURCE)
+            self.assertNotIn("자료: 연구자 작성.", texts)
+            self.assertIn("자료: 실제 모니터링 화면을 직접 캡처.", texts)
             pic = next(ET.fromstring(kjn_profile._wrap(ps[i + 1])).iter(HP + "pic"))
             self.assertLessEqual(int(pic.find(HP + "sz").get("width")), int(pf.get("table", "total_width")))
             self.assertEqual(len(doc.bin_items), 1)

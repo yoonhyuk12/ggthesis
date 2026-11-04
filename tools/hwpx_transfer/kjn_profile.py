@@ -22,6 +22,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 import table_layout
+import table_merges
 
 # ── 공용 XML 부품 ──────────────────────────────────────────────────────────────
 CELL_LINEBREAK_TOKEN = "<br>"
@@ -496,12 +497,11 @@ def png_size(data):
 
 
 # ── 김정년 양식 조립 ───────────────────────────────────────────────────────────
-CAPTION_RE = re.compile(r"^<표\s*\d+\s*-\s*\d+>\s+\S")
+CAPTION_RE = re.compile(r"^<(?:부표|표)\s*\d+\s*-\s*\d+>\s+\S")
 FIGURE_CAPTION_RE = re.compile(r"^<그림\s*\d+\s*-\s*\d+>")
 SOURCE_NOTE_RE = re.compile(r"^\s*(?:자료\s*[:：]|주\s*[:：)]|주\))")
 IMAGE_MD_RE = re.compile(r"^\s*!\[([^\]]*)\]\(([^)]+)\)\s*$")
 HEADING_NUM_RE = re.compile(r"^제\s*(\d+)\s*(장|절|항)\s*")
-DEFAULT_FIGURE_SOURCE = "자료: 연구자 작성."
 
 # 김정년 고유 문구 — 조립 결과에 한 건이라도 남으면 표절 의심 산출물이다(CLAUDE.md 🟦).
 KJN_FORBIDDEN = (
@@ -894,7 +894,7 @@ class KjnAssembler(object):
         return {"style": str(a.get("styleIDRef", "0")), "para": str(para), "char": str(char)}
 
     # ── 그림 ────────────────────────────────────────────────────────────
-    def picture_para(self, item_id, px_w, px_h, max_width, dpi=300, name="", max_height=None):
+    def picture_para(self, item_id, px_w, px_h, max_width, dpi=300, name="", max_height=None, display_size=None):
         nat_w = int(round(px_w * 7200.0 / dpi))
         nat_h = int(round(px_h * 7200.0 / dpi))
         if nat_w > max_width:
@@ -902,6 +902,10 @@ class KjnAssembler(object):
             h = int(round(nat_h * float(max_width) / nat_w))
         else:
             w, h = nat_w, nat_h
+        if display_size is not None:
+            w, h = map(int, display_size)
+            if min(w, h) <= 0 or w > max_width:
+                raise ValueError("Invalid explicit picture size")
         # 높이 상한(2026-10-24): 세로로 긴 그림(예: <그림 1-1> 1772×2492px)이 본문 폭 기준 55,808 HWPUNIT이 되면
         # 캡션·그림·출처가 세 쪽으로 흩어진다. 캡션+출처와 같은 쪽에 들어가도록 비율을 유지한 채 줄인다.
         if max_height and h > int(max_height):
@@ -954,6 +958,7 @@ class KjnDocument(object):
         self.notes = []
         self.bin_items = []        # (item_id, href, bytes)
         self.table_widths = []     # (캡션, 열폭 배열) — 보고·검증용
+        self.image_grid_evidence = []
         self.blank_after = self._blank_after()
         self._first_section_pending = True
         # 장 안 첫 절 예외는 h2_section.pageBreak_rule("장 안 첫 절(장 제목 다음)=0, 나머지 절=1")을 따른다.
@@ -1121,8 +1126,20 @@ class KjnDocument(object):
                     self.notes.append("캡션 형식이 아닌 table_caption을 본문 문단으로 넣었다: %s" % b["text"][:40])
                     self._add(self.asm.text_para(self.spec("body"), self.body_indent + b["text"]))
             elif kind == "table":
-                xml_text, widths = self.asm.table_xml(b["header"], b["rows"])
-                self.table_widths.append((self.lot[-1] if self.lot else "", widths))
+                table_label = self.lot[-1] if self.lot else ""
+                if b.get("image_grid"):
+                    import image_grid
+                    xml_text, widths, evidence = image_grid.assemble(self, b["image_grid"])
+                    unnumbered = b["image_grid"].get("unnumbered", False)
+                    table_label = b["image_grid"].get("heading", table_label)
+                    self.image_grid_evidence.append({"caption": None if unnumbered else table_label,
+                        "target": b["image_grid"].get("target"), "unnumbered": unnumbered,
+                        "widths": widths, "cells": evidence})
+                else:
+                    xml_text, widths = self.asm.table_xml(b["header"], b["rows"])
+                if b.get("layout"):
+                    xml_text = table_merges.apply_layout(xml_text, b)
+                self.table_widths.append((table_label, widths))
                 self._add(xml_text)
                 if not (nxt is not None and is_source_note(nxt)):
                     self._blank()
@@ -1208,8 +1225,6 @@ class KjnDocument(object):
             self.notes.append("그림 이미지 매핑 없음 — 빨간 자리표시로 넣었다: %s" % label)
             self._add(self.asm.text_para(self.asm.anchor_spec("figure"), "[그림 삽입 예정: %s]" % label))
         notes = fig.get("notes") or []
-        if not any(runs_text(n).strip().startswith("자료") for n in notes):
-            self._add(self.asm.text_para(self.spec("source_note"), DEFAULT_FIGURE_SOURCE))
         for n in notes:
             self._add(self.asm.text_para(self.spec("source_note"), runs_text(n).strip()))
         self._blank()

@@ -1,0 +1,596 @@
+[
+  {
+    "caption": "<부표 3-1> 조사 대상의 범주형 인구통계학적 특성 jamovi 출력",
+    "widths": [
+      39684
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 24435,
+        "picture_height": 16781,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 24435,
+        "picture_height": 16781,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 24435,
+        "picture_height": 20466,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_03.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 26022,
+        "picture_height": 24151,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-1_04.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-2> 조사 대상의 만 나이와 건설현장 경력 기술통계 jamovi 출력",
+    "widths": [
+      22790,
+      16894
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 22790,
+        "picture_width": 20750,
+        "picture_height": 29764,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "span": 1,
+        "cell_width": 16894,
+        "picture_width": 15307,
+        "picture_height": 16158,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-2_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-3> 측정도구의 탐색적 요인분석 jamovi 출력",
+    "widths": [
+      22660,
+      17024
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 2,
+        "cell_width": 39684,
+        "picture_width": 38041,
+        "picture_height": 24435,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "span": 1,
+        "cell_width": 22660,
+        "picture_width": 21600,
+        "picture_height": 5953,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "span": 1,
+        "cell_width": 17024,
+        "picture_width": 10488,
+        "picture_height": 5953,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_03.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 2
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "span": 2,
+        "cell_width": 39684,
+        "picture_width": 14683,
+        "picture_height": 19559,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_04.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "span": 2,
+        "cell_width": 39684,
+        "picture_width": 38041,
+        "picture_height": 17632,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_05.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 4,
+        "col": 0,
+        "span": 1,
+        "cell_width": 22660,
+        "picture_width": 21600,
+        "picture_height": 5953,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_06.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 4,
+        "col": 1,
+        "span": 1,
+        "cell_width": 17024,
+        "picture_width": 10488,
+        "picture_height": 5953,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_07.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 2
+      },
+      {
+        "row": 5,
+        "col": 0,
+        "span": 2,
+        "cell_width": 39684,
+        "picture_width": 14683,
+        "picture_height": 12756,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-3_08.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-4> 측정도구의 내적 일관성 검증 jamovi 출력",
+    "widths": [
+      16545,
+      11569,
+      11570
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 16545,
+        "picture_width": 9865,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 2
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "span": 2,
+        "cell_width": 23139,
+        "picture_width": 17915,
+        "picture_height": 19616,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "span": 1,
+        "cell_width": 16545,
+        "picture_width": 9865,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_03.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 2
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "span": 2,
+        "cell_width": 23139,
+        "picture_width": 18000,
+        "picture_height": 12813,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_04.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "span": 1,
+        "cell_width": 16545,
+        "picture_width": 14230,
+        "picture_height": 14740,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_05.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "span": 2,
+        "cell_width": 23139,
+        "picture_width": 14230,
+        "picture_height": 14740,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_06.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "span": 1,
+        "cell_width": 16545,
+        "picture_width": 14230,
+        "picture_height": 14740,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_07.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "span": 1,
+        "cell_width": 11569,
+        "picture_width": 9865,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_08.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "span": 1,
+        "cell_width": 11570,
+        "picture_width": 9865,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_09.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 2
+      },
+      {
+        "row": 4,
+        "col": 0,
+        "span": 1,
+        "cell_width": 16545,
+        "picture_width": 9865,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_10.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 4,
+        "col": 1,
+        "span": 2,
+        "cell_width": 23139,
+        "picture_width": 9865,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-4_11.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-5> 안전관리 실효성과 안전관리 예산 제약성의 기술통계 jamovi 출력",
+    "widths": [
+      39684
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 39684,
+        "picture_height": 30816,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-5_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-6> 연속형 통제변수의 균형 진단 jamovi 출력",
+    "widths": [
+      39684
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 28913,
+        "picture_height": 11339,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-6_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-7> 범주형 통제변수의 균형 진단 jamovi 출력",
+    "widths": [
+      24554,
+      15130
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 24554,
+        "picture_width": 17291,
+        "picture_height": 9354,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "span": 1,
+        "cell_width": 15130,
+        "picture_width": 10545,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "span": 1,
+        "cell_width": 24554,
+        "picture_width": 17291,
+        "picture_height": 9354,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_03.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "span": 1,
+        "cell_width": 15130,
+        "picture_width": 10545,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_04.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "span": 1,
+        "cell_width": 24554,
+        "picture_width": 17291,
+        "picture_height": 9354,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_05.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "span": 1,
+        "cell_width": 15130,
+        "picture_width": 10545,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_06.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "span": 1,
+        "cell_width": 24554,
+        "picture_width": 17291,
+        "picture_height": 9354,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_07.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "span": 1,
+        "cell_width": 15130,
+        "picture_width": 10545,
+        "picture_height": 7654,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-7_08.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-8> 하위요인별 공분산분석 jamovi 출력",
+    "widths": [
+      39684
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 33506,
+        "picture_height": 19843,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 23301,
+        "picture_height": 9411,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 33109,
+        "picture_height": 19843,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_03.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 23301,
+        "picture_height": 9411,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_04.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 4,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 33506,
+        "picture_height": 19843,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_05.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 5,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 23301,
+        "picture_height": 9411,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_06.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 6,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 33506,
+        "picture_height": 19843,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_07.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 7,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 23301,
+        "picture_height": 9411,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_08.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 8,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 33506,
+        "picture_height": 19843,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_09.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 9,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 23301,
+        "picture_height": 9411,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-8_10.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  },
+  {
+    "caption": "<부표 3-9> 현장 도입 여부와 안전관리 예산 제약성의 상호작용 jamovi 출력",
+    "widths": [
+      39684
+    ],
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 36907,
+        "picture_height": 40025,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-9_01.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "span": 1,
+        "cell_width": 39684,
+        "picture_width": 36284,
+        "picture_height": 23244,
+        "file": "01.docs/설문결과/자모비캡쳐/부표/부표3-9_02.png",
+        "label_font_measured": "굴림",
+        "estimated_label_lines": 1
+      }
+    ]
+  }
+]

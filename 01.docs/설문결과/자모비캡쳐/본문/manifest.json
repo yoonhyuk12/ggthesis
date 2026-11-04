@@ -1,0 +1,138 @@
+[
+ {
+  "bupyo": null,
+  "for": "<표 4-12>",
+  "title": "범주형 통제변수의 균형 진단 jamovi 출력",
+  "cells": [
+   {
+    "file": "표4-12_01.png",
+    "label": "소속 χ² Tests",
+    "source": "full:S01_T2.png",
+    "caption": "χ² Tests",
+    "width_mm": 61.0,
+    "height_mm": 33.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_02.png",
+    "label": "소속 Nominal",
+    "source": "full:S01_T3.png",
+    "caption": "Nominal",
+    "width_mm": 37.2,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_03.png",
+    "label": "성별 χ² Tests",
+    "source": "full:S02_T2.png",
+    "caption": "χ² Tests",
+    "width_mm": 61.0,
+    "height_mm": 33.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_04.png",
+    "label": "성별 Nominal",
+    "source": "full:S02_T3.png",
+    "caption": "Nominal",
+    "width_mm": 37.2,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_05.png",
+    "label": "역할 χ² Tests",
+    "source": "full:S03_T2.png",
+    "caption": "χ² Tests",
+    "width_mm": 61.0,
+    "height_mm": 33.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_06.png",
+    "label": "역할 Nominal",
+    "source": "full:S03_T3.png",
+    "caption": "Nominal",
+    "width_mm": 37.2,
+    "height_mm": 27.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_07.png",
+    "label": "총공사비 χ² Tests",
+    "source": "full:S04_T2.png",
+    "caption": "χ² Tests",
+    "width_mm": 61.0,
+    "height_mm": 33.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-12_08.png",
+    "label": "총공사비 Nominal",
+    "source": "full:S04_T3.png",
+    "caption": "Nominal",
+    "width_mm": 37.2,
+    "height_mm": 27.0,
+    "fits_width": true
+   }
+  ]
+ },
+ {
+  "bupyo": null,
+  "for": "<표 4-11>",
+  "title": "연속형 통제변수의 균형 진단 jamovi 출력",
+  "cells": [
+   {
+    "file": "표4-11_01.png",
+    "label": "만 나이·건설현장 경력 독립표본 t검정",
+    "source": "full:S16_T1.png",
+    "caption": "Independent Samples T-Test",
+    "width_mm": 102.0,
+    "height_mm": 40.0,
+    "fits_width": true
+   }
+  ]
+ },
+ {
+  "bupyo": null,
+  "for": "<표 4-10>",
+  "title": "안전관리 실효성의 기술통계 jamovi 출력",
+  "cells": [
+   {
+    "file": "표4-10_01.png",
+    "label": "현장 도입 여부별",
+    "source": "full:S14_T1.png",
+    "caption": "Descriptives",
+    "width_mm": 143.2,
+    "height_mm": 98.4,
+    "fits_width": false
+   }
+  ]
+ },
+ {
+  "bupyo": null,
+  "for": "<표 4-7>",
+  "title": "조사 대상의 만 나이와 건설현장 경력 기술통계 jamovi 출력",
+  "cells": [
+   {
+    "file": "표4-7_01.png",
+    "label": "현장 도입 여부별",
+    "source": "full:S05_T1.png",
+    "caption": "Descriptives",
+    "width_mm": 73.2,
+    "height_mm": 105.0,
+    "fits_width": true
+   },
+   {
+    "file": "표4-7_02.png",
+    "label": "전체",
+    "source": "full:S06_T1.png",
+    "caption": "Descriptives",
+    "width_mm": 54.0,
+    "height_mm": 57.0,
+    "fits_width": true
+   }
+  ]
+ }
+]

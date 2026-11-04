@@ -1,0 +1,41 @@
+{
+  "zip_xml": "PASS",
+  "other_chapters_exact": true,
+  "ch4_order_text_matches_fresh": true,
+  "original_table_grids_widths_preserved": [
+    "<표4-12>",
+    "<표4-14>"
+  ],
+  "image_references": 42,
+  "all_image_references_resolved": true,
+  "unused_images": [
+    "BinData/image10.png",
+    "BinData/image11.png",
+    "BinData/image12.png",
+    "BinData/image13.png",
+    "BinData/image14.png",
+    "BinData/image15.png",
+    "BinData/image16.png",
+    "BinData/image17.png",
+    "BinData/image18.png",
+    "BinData/image6.png",
+    "BinData/image7.png",
+    "BinData/image8.png",
+    "BinData/image9.png"
+  ],
+  "red_markers": 17,
+  "bad_red_markers": [],
+  "pdf_pages": 156,
+  "table_cell_tails": 1777,
+  "missing_cell_tails": [],
+  "visual_review": {
+    "contact_sheets": 13,
+    "pages": 156,
+    "issues": [
+      "chapter4 TOC included two nonheading paragraphs; fix_toc_layout.py prepared",
+      "table4-4 first page had header only; explicit new page prepared"
+    ],
+    "other_table_overlap_or_clipping": false,
+    "chapter4_table_introductions": "present before all 15 tables in current PDF; text order matches MD-derived fresh"
+  }
+}

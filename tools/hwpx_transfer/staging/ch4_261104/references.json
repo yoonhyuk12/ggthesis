@@ -1,0 +1,221 @@
+{
+  "categories": {
+    "가. 학위논문": [
+      {
+        "text": "김석기(2026), 「소규모 건설현장 사망사고의 시스템적 원인 규명을 위한 BERTopic-LLM과 AcciMap 통합 분석 프레임워크 개발」, 충북대학교 박사학위논문."
+      },
+      {
+        "text": "김용선(2022), 「중·소규모 건설현장 재해예방을 위한 스마트 건설안전기술 활용 방안」, 인천대학교 일반대학원 안전공학과 박사학위논문."
+      },
+      {
+        "text": "김태헌(2026), 「건설현장 위험상황 이해 및 대응을 위한 인공지능 안전인지 프레임워크 연구」, 성균관대학교 일반대학원 글로벌스마트시티융합전공 박사학위논문."
+      },
+      {
+        "text": "김현수(2026), 「통합관제센터 운영을 위한 Vision AI–VLM 비교 및 하이브리드 연구」, 중앙대학교 대학원 ICT안전학과 석사학위논문."
+      },
+      {
+        "text": "류수영(2023), 「CCTV 기반 산업안전 관제 시스템에 관한 연구」, 배재대학교 대학원 컴퓨터공학과 박사학위논문."
+      },
+      {
+        "text": "박종학(2025), 「YOLO(You Only Look Once) 모델별 건설 현장 위험 상태 및 객체 인식 성능 비교」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문."
+      },
+      {
+        "text": "이동건(2024), 「통합기술수용모델(UTAUT)을 활용한 건설근로자들의 스마트안전장비 수용에 영향을 미치는 요인에 관한 연구」, 인하대학교 공학대학원 건축토목공간정보공학과 석사학위논문."
+      },
+      {
+        "text": "이기수(2024), 「건설현장의 안전 확보를 위한 딥러닝 기반의 시스템비계 설치 이상감지 연구」, 명지대학교 박사학위논문."
+      },
+      {
+        "text": "이준호(2024), 「건설현장 중대재해 감소를 위한 스마트 안전장비의 지원방법 개선에 관한 연구」, 한양대학교 융합산업대학원 석사학위논문."
+      },
+      {
+        "text": "이창남(2025), 「스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구」, 경기대학교 대학원 건설안전학과 박사학위논문."
+      },
+      {
+        "text": "이형도(2024), 「객체탐지 알고리즘을 이용한 건설현장 근로자 안전모 실시간 모니터링 기술 활성화 방안 연구」, 경기대학교 대학원 건설안전학과 박사학위논문."
+      },
+      {
+        "text": "조도빈(2026), 「국내 소규모 민간 건설프로젝트의 산업안전보건관리비 준수 실태 분석 및 개선방안 제시연구」, 울산대학교 대학원 건축학과 공학박사학위논문."
+      },
+      {
+        "text": "한소은(2026), 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문."
+      },
+      {
+        "text": "황병복(2026), 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문."
+      },
+      {
+        "text": "Mi, Y.(2025), Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University."
+      }
+    ],
+    "나. 학술지": [
+      {
+        "text": "노희상·박종용·정상윤(2026), 「건설산업 ESG 안전·보건 정책과 건설안전 성과와의 관계 연구」, 『안전문화연구』, 제51호, pp.89–112. DOI 10.52902/kjsc.2026.51.89."
+      },
+      {
+        "text": "류정·박인선(2025), 「건설현장의 스마트 안전장비 성능과 도입 효과 분석」, 『Crisisonomy』, 제21권 제6호, pp.125–135. DOI 10.14251/crisisonomy.2025.21.6.125."
+      },
+      {
+        "text": "이석희·고대식·송석일(2025), 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, pp.279–282. DOI 10.14801/jkiit.2025.23.11.279."
+      }
+    ],
+    "다. 보고서": [
+      {
+        "text": "고용노동부(2025), 『2024 산업재해 현황분석』, 고용노동부."
+      },
+      {
+        "text": "국토교통부·국토안전관리원(2024.03), 『스마트 안전장비 활용 가이드라인』, CS-24-E6-002."
+      },
+      {
+        "text": "김민기·박성호(2026), 『서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안』, 서울연구원. (서울연 2024-BR-14)"
+      }
+    ],
+    "라. 관련법": [
+      {
+        "text": "고용노동부, 「건설업 산업안전보건관리비 계상 및 사용기준」, 고용노동부고시 제2025-11호, 2025. 제2조제1항제2호·제4조. https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20250200610"
+      },
+      {
+        "text": "「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정] . https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451 ; https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1029371815"
+      },
+      {
+        "text": "「건설산업기본법」 제40조(건설기술인의 배치), [시행 2025. 11. 27.] [법률 제21034호]. https://www.law.go.kr/법령/건설산업기본법/제40조"
+      },
+      {
+        "text": "「산업안전보건법」 제15조(안전보건관리책임자)·제17조(안전관리자), [시행 2026. 6. 1.] [법률 제21374호, 2026. 2. 19., 일부개정]. https://www.law.go.kr/법령/산업안전보건법"
+      },
+      {
+        "no": 5,
+        "text": "「산업안전보건법 시행령」 제16조(안전관리자의 선임 등) 제2항, [시행 2026. 8. 1.] [대통령령, 2026. 7. 28. 공포]."
+      }
+    ],
+    "마. 기타": [
+      {
+        "text": "Bhatti, Y. A.(2012), What is Frugal, What is Innovation? Towards a Theory of Frugal Innovation, SSRN working paper. DOI 10.2139/ssrn.2005910."
+      },
+      {
+        "text": "Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G.(2025), \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html"
+      },
+      {
+        "text": "Teizer, J.(2016), \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), pp.191–199. DOI 10.22260/ISARC2016/0024."
+      },
+      {
+        "text": "Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J.(2025), \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1. https://arxiv.org/abs/2510.03666v1"
+      },
+      {
+        "text": "Yao, S., Rahimi Ardabili, B., Danesh Pazho, A., Alinezhad Noghre, G., Neff, C., Bourque, L., & Tabkhi, H.(2025), \"From Lab to Field: Real-World Evaluation of an AI-Driven Smart Video Solution to Enhance Community Safety\", arXiv:2312.02078v3. https://arxiv.org/abs/2312.02078v3"
+      },
+      {
+        "text": "Ultralytics(2025), [Computer Software]."
+      },
+      {
+        "text": "The jamovi project(2025), jamovi (Version 2.7) [Computer Software]. https://www.jamovi.org"
+      },
+      {
+        "text": "jamovi, ANCOVA (ancova) [공식 문서], 연도 미상. https://docs.jamovi.org/jmv/jmv_ancova.html (열람일 2026.10.3)."
+      },
+      {
+        "text": "jamovi, Linear Regression (linReg) [공식 문서], 연도 미상. https://docs.jamovi.org/jmv/jmv_linReg.html (열람일 2026.10.3)."
+      },
+      {
+        "text": "김정아(2021.5.4), 「도시안전정보센터, 지능형 CCTV 선별관제시스템 구축」, 김포신문. https://www.igimpo.com/news/articleView.html?idxno=63694 (검색일 2026.9.12)."
+      },
+      {
+        "text": "손형주(2024.5.24), 「부산 강서구, 271억원 들여 지능형 CCTV 관제 시스템 도입」, 연합뉴스. https://www.yna.co.kr/view/AKR20240524079100051 (검색일 2026.9.12)."
+      },
+      {
+        "text": "Bosch Security Systems(2024), Alarm Verification for Alarm Management, Application note F01U411472, V02."
+      }
+    ],
+    "바. 국외 단행본": [
+      {
+        "text": "Aiken, L. S., & West, S. G.(1991), Multiple Regression: Testing and Interpreting Interactions, Sage."
+      },
+      {
+        "text": "Cohen, J.(1988), Statistical Power Analysis for the Behavioral Sciences (2nd ed.), Lawrence Erlbaum."
+      },
+      {
+        "text": "Green, D. M., & Swets, J. A.(1966), Signal Detection Theory and Psychophysics, Wiley. ISBN 9780471324201."
+      },
+      {
+        "text": "Huitema, B. E.(2011), The Analysis of Covariance and Alternatives (2nd ed.), Wiley."
+      },
+      {
+        "text": "Kish, L.(1965), Survey Sampling, John Wiley & Sons."
+      },
+      {
+        "text": "Radjou, N., Prabhu, J., & Ahuja, S.(2012), Jugaad Innovation: Think Frugal, Be Flexible, Generate Breakthrough Growth, Wiley. ISBN 9781118249741."
+      },
+      {
+        "text": "Shadish, W. R., Cook, T. D., & Campbell, D. T.(2002), Experimental and Quasi-Experimental Designs for Generalized Causal Inference, Houghton Mifflin."
+      }
+    ],
+    "사. 국외 학술지": [
+      {
+        "text": "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., & Amodei, D.(2020), \"Language Models are Few-Shot Learners\", Advances in Neural Information Processing Systems, Vol. 33, Curran Associates, pp.1877–1901. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html"
+      },
+      {
+        "text": "Chong, H.-Y., Xu, Y., Lun, C., & Chi, M.(2023), \"The Adoption Intentions of Wearable Technology for Construction Safety\", Buildings, Vol. 13, No. 11, 2747. DOI 10.3390/buildings13112747."
+      },
+      {
+        "text": "Cvach, M.(2012), \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, pp. 268-277."
+      },
+      {
+        "text": "Davis, F. D.(1989), \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, pp. 319-340."
+      },
+      {
+        "text": "Dixon, S. R., Wickens, C. D., & McCarley, J. S.(2007), \"On the independence of compliance and reliance: Are automation false alarms worse than misses?\", Human Factors, Vol. 49, No. 4, pp.564–572. DOI 10.1518/001872007X215656."
+      },
+      {
+        "text": "Faul, F., Erdfelder, E., Lang, A.-G., & Buchner, A.(2007), \"G*Power 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences\", Behavior Research Methods, Vol. 39, No. 2, pp. 175-191."
+      },
+      {
+        "text": "Faul, F., Erdfelder, E., Buchner, A., & Lang, A.-G.(2009), \"Statistical power analyses using G*Power 3.1: Tests for correlation and regression analyses\", Behavior Research Methods, Vol. 41, No. 4, pp. 1149-1160."
+      },
+      {
+        "text": "Green, S. B.(1991), \"How many subjects does it take to do a regression analysis?\", Multivariate Behavioral Research, Vol. 26, No. 3, pp. 499-510."
+      },
+      {
+        "text": "Igbaria, M., & Tan, M.(1997), \"The consequences of information technology acceptance on subsequent individual performance\", Information & Management, Vol. 32, No. 3, pp.113–121. DOI 10.1016/S0378-7206(97)00006-2."
+      },
+      {
+        "text": "Lawshe, C. H.(1975), \"A quantitative approach to content validity\", Personnel Psychology, Vol. 28, No. 4, pp. 563-575."
+      },
+      {
+        "text": "Massoz, Q., Verly, J. G., & Van Droogenbroeck, M.(2018), \"Multi-Timescale Drowsiness Characterization Based on a Video of a Driver's Face\", Sensors, Vol. 18, No. 9, 2801."
+      },
+      {
+        "text": "Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S.(2024), \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 122285."
+      },
+      {
+        "text": "Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P.(2003), \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, pp. 879-903."
+      },
+      {
+        "text": "Wilson, E. B.(1927), \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, pp. 209-212. DOI 10.1080/01621459.1927.10502953"
+      },
+      {
+        "text": "Zeschky, M., Widenmayer, B., & Gassmann, O.(2011), \"Frugal innovation in emerging markets\", Research-Technology Management, Vol. 54, No. 4, pp.38–45. DOI 10.5437/08956308X5404007."
+      },
+      {
+        "text": "Zhou, Z.-C., Su, Y.-K., Zheng, Z.-Z., & Wang, Y.-L.(2023), \"Analysis of factors of willingness to adopt intelligent construction technology in highway construction enterprises\", Scientific Reports, Vol. 13, 19339. DOI 10.1038/s41598-023-46241-6."
+      },
+      {
+        "text": "[확정 필요: 분류 미정 서지]"
+      },
+      {
+        "text": "왕인국, 「건설현장 위험요인 식별을 위한 RAG와 Fine-tuning 기반 LLM 성능향상에 관한 연구」, 광운대학교 대학원 건축공학과 석사학위논문, 2025(잠정). [확정 필요: 발행·학위수여 연도; 원문 제출 2024.12 확인]"
+      },
+      {
+        "text": "윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2025(제출연도에 따른 잠정 표기). [확정 필요: 발행·학위수여 연도; 원문 제출 2025.12 확인]"
+      },
+      {
+        "text": "The jamovi project, jamovi [Computer Software]. https://www.jamovi.org [확정 필요: 실제 사용 버전·해당 공식 인용문과 연도; 과거 Version 2.7 인용 기록은 위 서지관리번호 #6에 보존]"
+      },
+      {
+        "text": "「중대재해 처벌 등에 관한 법률」 [시행 2022. 1. 27.] [법률 제17907호, 2021. 1. 26., 제정] [확정 필요: 인용 조항]"
+      },
+      {
+        "text": "EN 50136-1, Alarm systems — Alarm transmission systems and equipment — Part 1: General requirements for alarm transmission systems. [UNVERIFIED — 정본 Table 2 대조 필요] 최고등급 전송 지연 평균 10초. 측정 구간이 전송에 한정되며 경보 장치 내부 처리를 제외한다. [확정 필요: [UNVERIFIED — 정본 Table 2 대조 필요] ]"
+      }
+    ]
+  },
+  "flagged": []
+}

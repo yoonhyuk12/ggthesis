@@ -1,0 +1,32 @@
+{
+  "mapping": [
+    {
+      "caption_prefix": "<그림 1-1>",
+      "source": "01.docs/figures/research/figure_1-1_research_flow.png"
+    },
+    {
+      "caption_prefix": "<그림 3-1>",
+      "source": "01.docs/figures/system/fig_3_1_architecture.png"
+    },
+    {
+      "caption_prefix": "<그림 3-2>",
+      "source": "01.docs/figures/system/fig_3_2_llm_verification.png"
+    },
+    {
+      "caption_prefix": "<그림 3-3>",
+      "source": "01.docs/figures/system/fig_3_3_rag_correction.png"
+    },
+    {
+      "caption_prefix": "<그림 3-4>",
+      "source": "01.docs/figures/evidence/assets/fig_3_4_viewer_original.png"
+    },
+    {
+      "caption_prefix": "<그림 4-1>",
+      "source": "01.docs/figures/research/figure_4-1_research_model_261103.png"
+    },
+    {
+      "caption_prefix": "<그림 4-2>",
+      "source": "01.docs/figures/research/figure_4-2_jamovi_emm_plot.png"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+PASS: ZIP/XML/style refs; 53 images, unused 0; body grids 4/12 PNGs, appendix grids 5/35 PNGs; all current MD text; targeted notes and LOT; red/black markers; base SHA256
+Main tables retained: 36; appendix grids retained: 5; main exact paragraphs: 650

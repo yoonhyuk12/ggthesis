@@ -1,0 +1,12 @@
+{
+  "all_paragraph_text_equals_approved_map": true,
+  "changed_paragraphs": 161,
+  "all_changed_lineseg_removed": true,
+  "intentional_UNVERIFIED_deletion": {
+    "section": "Contents/section2.xml",
+    "idx": 345,
+    "reason": "EN basis replaced by MD confirmed KISA basis"
+  },
+  "verify_replace_1_to_7_passed": true,
+  "verify_replace_8_difference_explained": true
+}

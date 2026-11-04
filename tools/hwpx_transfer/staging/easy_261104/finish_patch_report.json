@@ -1,0 +1,15 @@
+{
+  "reference_replace": 18,
+  "reference_delete": 3,
+  "reference_insert": 4,
+  "affected_tables_caches_cleared": [
+    2,
+    3,
+    4,
+    7,
+    9,
+    15
+  ],
+  "paragraph_delta": 1,
+  "intentional_deleted_UNVERIFIED_total": 2
+}

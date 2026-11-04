@@ -1,0 +1,632 @@
+# patch_from_fresh 보고
+
+통계: {"equal": 229, "insert": 99, "replace_fresh": 274, "replace_kept": 0, "delete_kept": 0, "manual": 23, "table_same_kept": 14, "caption_split": 0}
+header 추가 항목: {"charPr": ["87"], "paraPr": ["83"], "borderFill": ["28"], "tabPr": ["6"], "font": []}
+
+## 수동 재적용 필요
+- <표1-2> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표2-2> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표2-4> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표2-5> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표3-2> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표3-10> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표3-11> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-1> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-2> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-3> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-4> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-5> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-6> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-7> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-9> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-10> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-12> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-13> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-14> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-15> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-16> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- <표4-17> 내용·구조 변경으로 fresh 표 반입 — 기존 사용자 열폭·병합·정렬과 새 내용의 적합성을 한글에서 확인·필요 시 재적용
+- section1(목차·감사의 글·논문 개요)을 조립본으로 교체 — base의 목차 run 압축(장평·자간) 등 사용자 서식은 재적용 필요
+
+## 로그
+- VERIFIED(previous MD) | 447 nonempty main-body units; unmatched user text 0
+- IMPORT(verified MD revision) | 중소규모 건설현장 안전관리의 핵심 문제는 위험을 알아차리는 일과 이를 현장 조치로 옮기는 일 사이의 간극에 있다. 현장의 위험은 공정과 장비 이
+- IMPORT(verified MD revision) | 본 연구에서 중소규모 건설현장은 「산업안전보건법 시행령」 제16조 제2항에 따라 안전관리자 전담 선임 의무가 적용되는 총공사비 120억 원(토목
+- KEEP(exact base table XML) | <표1-1> -> <표1-1>
+- IMPORT(verified MD revision) | 주: 1) 산재보상 승인자료 기준이며, 분류불능은 건설기계관리사업 등 공사금액이 없는 경우이다(원표 주). 2) 비율과 누적 비율은 원표의 사망
+- IMPORT(verified MD revision) | 또한 기술의 탐지 성능만으로는 현장의 안전관리 실효성을 판단하기 어렵다. 지금까지의 연구는 주로 위험 객체·행동을 얼마나 정확히 탐지하는지, 관
+- IMPORT(verified MD revision) | 이에 본 연구는 별도 관제 설비를 갖추기 어려운 현장의 비용 부담을 낮추기 위해 범용 PC와 기존 카메라로 운용하는 YOLO-LLM 안전관제 시
+- IMPORT(verified MD revision) | 본 연구는 중소규모 현장의 비용과 경보 정확도라는 두 제약을 함께 다루기 위해 YOLO와 LLM을 단계적으로 결합한 구조를 택하였다. YOLO만
+- IMPORT(verified MD revision) | 본 연구는 먼저 이 시스템을 설계·구현하고, YOLO 1차 후보에 대한 LLM 2차 검증의 오경보 감소와 실제 위험 경보 손실을 현장 운영 로그
+- IMPORT(verified MD revision) | 첫째 연구 문제는 YOLO-LLM 안전관제 시스템 도입 현장과 미도입 현장의 관리자가 지각한 현재 안전관리 실효성이 여섯 통제변수(C)를 조정한
+- IMPORT(verified MD revision) | 둘째 연구 문제는 도입·미도입 현장 간 안전관리 실효성 차이가 응답자가 조사 시점에 지각한 안전관리 예산 제약성 수준에 따라 달라지는가이다. 이
+- IMPORT(verified MD revision) | 본 연구의 목적은 건설현장 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 실증적으로 검증하는 데
+- IMPORT(verified MD revision) | 공간적 범위. 본 연구의 공간적 범위는 A공사 경기지역본부 산하 건설현장이다. 시스템 도입 현장 30개소 이상과 미도입 현장 30개소 이상, 총
+- IMPORT(verified MD revision) | 시간적 범위. 조사는 2026년 10월 12일부터 10월 23일까지 사후 설문으로 1회 실시하였다. 도입 현장은 설치 후 응답일 현재 3개월 이
+- IMPORT(verified MD revision) | 내용적 범위. 내용적 범위는 제2절의 두 연구 문제이다. 안전관리 실효성은 5개 하위요인으로 측정하며, 도입 현장 관리자의 시스템 특성 인식과 
+- IMPORT(verified MD revision) | 연구 방법. 연구는 문헌 고찰로 변수와 가설의 근거를 정리하고, 현장 운영 로그로 LLM 2차 검증의 성능을 평가한 뒤, 도입·미도입 현장에 같
+- IMPORT(verified MD revision) | 장 내용 방법·자료 제1장 서론 연구의 배경과 필요성(문제 제기), 연구의 목적, 연구의 범위와 방법 재해 통계 검토 제2장 이론적 배경 개념 
+- IMPORT(verified MD revision) | 본 연구는 무작위 배정과 사전 측정이 없는 횡단 비교이므로 선정 편향과 시간적 우선성의 한계가 남는다. 비교는 본 시스템 전체를 운용하는 현장과
+- IMPORT(verified MD revision) | 
+- IMPORT(verified MD revision) | 제2장에서는 스마트 안전관리와 AI 영상관제 기술, 시스템 기술 특성, 안전관리 실효성, 예산 제약성의 선행연구를 고찰해 이론적 근거를 정리하였
+- IMPORT(verified MD revision) | 본 논문에서 AI 영상관제 기술이란 기존 CCTV 영상에서 YOLO가 위험 후보를 1차로 탐지하고 LLM이 그 후보의 문맥을 2차로 검증한 뒤 
+- IMPORT(verified MD revision) | 본 연구에서 경보 피로도는 가설 검정 변수가 아니라 2차 검증(LLM) 오탐 필터링의 이론적 배경이다. 2차 문맥 검증이 자연 배경이나 정상 작
+- IMPORT(verified MD revision) | 본 절은 YOLO-LLM 안전관제 시스템의 네 기술 특성을 고찰하며, 그 선정 근거는 두 이론이다. 첫째는 기술수용모델(Technology Ac
+- IMPORT(verified MD revision) | 둘째는 신호감지이론(Signal Detection Theory, 이하 SDT)이다. Green과 Swets(1966)는 신호와 잡음이 부분적으로
+- IMPORT(verified MD revision) | 제 1 항 시스템 인프라 범용성(A1)
+- IMPORT(verified MD revision) | 본 연구는 시스템 인프라 범용성을 고가의 AI 전용 서버 없이 일반 PC에서 구동되고, 제조사가 다른 기존 ONVIF 표준 호환 IP 카메라 및
+- IMPORT(verified MD revision) | 제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)
+- IMPORT(verified MD revision) | 1차 탐지 및 제어 안정성은 YOLO 모델이 위험 객체·행동의 누락을 줄이도록 감지하고, 반복 경보 억제 등의 제어 장치로 알람 폭주와 통신 불
+- IMPORT(verified MD revision) | 제 3 항 2차 검증(LLM) 오탐 필터링(A3)
+- IMPORT(verified MD revision) | 2차 검증 오탐 필터링은 LLM이 1차 감지 프레임 이미지에 나타난 맥락—자연 배경(나뭇가지·그림자·반사), 정상 작업 동작 등—을 추론하여 가
+- IMPORT(verified MD revision) | 선행연구는 시각-언어 모델을 결합한 탐지 성능 개선과 후단 검증의 오탐 감소를 서로 다른 구조에서 보고하였다. Kim et al.(2025)은 
+- IMPORT(verified MD revision) | 국내에서는 통합관제센터 실험 연구가 YOLO 1차 감지를 VLM(시각-언어 모델)이 2차 검증하는 Trigger-Validator 구조로 오탐을
+- IMPORT(verified MD revision) | 제 4 항 알림 전파 즉각성(A4)
+- IMPORT(verified MD revision) | 알림 전파 즉각성은 위험 상황의 자연어 요약과 감지 이미지가 위험 확정 시점부터 짧은 지연으로 관리자의 모바일 기기에 능동적으로 전달되어, 별도
+- IMPORT(verified MD revision) | 기술 수용 관점에서 본 연구는 사용 수월성이 스마트 안전장비 수용과 관련된다는 연구(이동건, 2024; Chong et al., 2023)를 담
+- KEEP(exact base table XML) | <표2-1> -> <표2-1>
+- IMPORT(verified MD revision) | 주: 표는 각 기술 특성의 개념을 뒷받침하는 선행연구만 요약하였다. 네 특성에 대한 기술 측면 선행연구의 연결 매트릭스는 제3장 제1절 제3항의
+- IMPORT(verified MD revision) | 제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성
+- IMPORT(verified MD revision) | 안전관리 실효성은 건설현장이 위험을 적시에 파악하고 신속하게 대응하여 현장의 위험을 통제하는 능력이 실제 안전관리 업무에서 발휘되는 정도를 말한
+- IMPORT(verified MD revision) | 본 연구는 TAM의 지각된 유용성이 다루는 직무 성과에 대한 기대와 정보기술 활용·개인 수행도 연구를 참고하여 안전관리 실효성을 직무 성과 개념
+- IMPORT(verified MD revision) | 현장 작동성은 위험 신호가 담당자의 확인·판단·조치로 이어지는 과정을 통해 안전관리 실효성을 설명하는 관점이며, 별도의 잠재변수나 추가 설문 척
+- IMPORT(verified MD revision) | 시스템 기능(기술 특성) 담당자의 확인·판단·조치 관련 B문항 (하위요인) 확인 자료 (기술·설문) 본 연구의 검증 범위 설치·운용 기반(기존 
+- IMPORT(verified MD revision) | 주: B문항은 특정 시스템을 묻지 않는 도입·미도입 현장 공통 일반형 문항이며, 표의 연결은 문항 자체가 해당 기능을 측정한다는 뜻이 아니다. 
+- IMPORT(verified MD revision) | 표에서 보듯 기술 자료가 직접 확인하는 범위는 후보 탐지와 문맥 검증의 조건부 성능, 응답시간 로그에 머문다. 이 연결표는 제4장 제8절에서 하
+- IMPORT(verified MD revision) | 조기인지는 위험 징후를 사고로 이어지기 전에 발견하는 능력이다. 본 연구에서는 현장 관리자가 지각한 자기 현장의 위험 상황 조기 인지 수준으로 
+- IMPORT(verified MD revision) | 김현수(2026)가 보고한 사건 검토 시간 평균 43% 단축은 관리자가 위험 후보를 더 일찍 확인할 여건과 관련되므로, 본 연구는 이를 조기인지
+- IMPORT(verified MD revision) | 대응 신속성은 위험을 확인한 뒤 현장 지시와 조치를 빠르게 수행하는 능력이다. 본 연구에서는 위험 상황을 인지한 뒤 초동 대응을 지시하기까지의 
+- IMPORT(verified MD revision) | 위험 통제력은 확인한 위험에 시정·작업중지 등 적절한 조치를 내려 사고로 이어질 수 있는 위험요인을 실질적으로 관리하는 능력이다. 본 연구에서는
+- KEEP(exact base table XML) | <표2-3> -> <표2-3>
+- IMPORT(verified MD revision) | 안전관리 예산 제약성은 건설현장이 스마트 안전기술을 도입·운영하는 데 필요한 예산과 자원이 부족한 정도를 말한다. 본 연구는 이 개념을 조사 시
+- IMPORT(verified MD revision) | 예산 제약의 크기는 상용 AI 영상관제 대안의 도입 비용과 대비해 가늠할 수 있다. 국토교통부·국토안전관리원(2024)의 가이드라인은 AI 기능
+- IMPORT(verified MD revision) | 건설 분야의 선행연구는 예산과 비용을 기술 도입의 주요 제약으로 다루었다. 중소 건설현장 연구는 스마트 안전장비 도입이 정부 보조에 의존하고 인
+- IMPORT(verified MD revision) | 예산 제약과 도입·미도입 현장 간 안전관리 실효성 차이의 관계는 제5절 제2항에서 정리하였다.
+- IMPORT(verified MD revision) | 본 절은 현장에서 스마트 안전기술을 활용한 결과를 다룬 선행연구를 검토하여 제4장 연구가설의 도출 근거를 정리하였다.
+- IMPORT(verified MD revision) | 본 연구의 차별성은 탐지 기술의 새로움에만 있지 않고, 중소규모 현장의 위험 신호가 확인과 대응으로 이어지는 현장 작동성의 관점에서 시스템 개발
+- IMPORT(verified MD revision) | 구분 기존 선행연구 본 연구 기술과 운용 단일 탐지·개별 장비 및 일부 YOLO-LLM/VLM 하이브리드 연구 기존 인프라에서 후보 탐지·문맥 
+- IMPORT(verified MD revision) | 국외 연구(Igbaria & Tan, 1997; Chong et al., 2023)는 기술수용과 실제 직무 수행이 구별된다는 점에서 도입 현장 
+- IMPORT(verified MD revision) | 선행연구(연구자, 연도) 연구 대상·관점 주요 결과 본 연구에 대한 시사점 황병복(2026) 철도 건설현장의 스마트 건설기술 활용 기술 활용과 
+- IMPORT(verified MD revision) | 이들 연구는 도입 조건, 관제 업무와 관리 성과를 서로 다른 수준에서 설명하였다. 이에 따라 본 연구는 현장당 1명을 조사하고 만 나이·건설현장
+- IMPORT(verified MD revision) | 예산 제약성은 저비용 구성이 갖는 상대적 효용을 설명하는 조건이다. 국내 연구는 중소 건설현장의 비용·지원 제약을 제시하였고(이준호, 2024;
+- IMPORT(verified MD revision) | YOLO-LLM 안전관제 시스템은 일반 PC와 기존 카메라 등을 활용해 추가 구매 부담을 낮추려는 구성이다. 유지보수·API·교정 인건비를 포함
+- IMPORT(verified MD revision) | 이상의 근거에 따라 본 연구는 조사 시점에 안전관리 예산 제약성을 크게 지각하는 응답자일수록 YOLO-LLM 안전관제 시스템 도입·미도입 현장 
+- IMPORT(verified MD revision) | 본 장은 YOLO-LLM 안전관제 시스템, 안전관리 실효성, 안전관리 예산 제약성의 개념과 선행연구를 정리하였다. 제1절은 본 논문의 AI 영상
+- IMPORT(verified MD revision) | 제5절은 현장에서 스마트 안전기술을 활용한 결과를 다룬 선행연구를 검토하였다. 선행연구는 기술 활용과 안전성과·직무 수행의 관련성을 제시하지만,
+- IMPORT(verified MD revision) | 다음 제3장에서는 이 이론적 근거에 대응하는 시스템 요구사항과 관련 기술 선행연구, 구조와 구현, 운영 로그의 조건부 성능 평가를 제시하였다. 
+- IMPORT(verified MD revision) | 제 3 장 YOLO-LLM 안전관제 시스템 개발
+- IMPORT(verified MD revision) | 본 연구가 개발한 시스템은 저비용 범용 PC 위에서 구동되는 YOLO-LLM 안전관제 시스템이다. 전담 안전관리자와 예산·데이터를 갖추기 어려운
+- IMPORT(verified MD revision) | 개발의 방향은 "많이 잡되 정확히 거른다"는 두 단계 분업으로 요약할 수 있다. 단일 인공지능 모델은 위험에 민감하게 설정하면 오탐(실제 위험이
+- IMPORT(verified MD revision) | 개발 전략은 세 가지 원칙으로 구체화하였다. 첫째, 저비용 원칙이다. 본 시스템은 상용 AI 관제가 전제하는 전용 카메라와 고성능 GPU 서버 
+- IMPORT(verified MD revision) | 본 연구는 중소규모 건설현장의 구조적 제약을 다음 네 가지로 보고, 이에 근거하여 시스템 요구사항을 도출하였다. 첫째, 전담 안전관리자가 상시 
+- IMPORT(verified MD revision) | 이 가운데 실시간성(R5)은 순간적 처리 속도가 아니라, 위험에 대응할 수 있는 시간 창(reaction window) 안에서 경보가 도달하는 
+- IMPORT(verified MD revision) | 다만 이러한 설계 대상과 달리 제4절의 정량 평가 표본은 중장비 접근과 차량 접근의 두 경고 유형에 한정되며, 두 유형은 설계에서 제외한 충돌·
+- KEEP(exact base table XML) | <표3-1> -> <표3-1>
+- IMPORT(verified MD revision) | 이상의 요구사항은 서로 독립적이지 않고 하나의 설계 원리로 수렴하였다. 저비용(R1·R2)과 무학습 적응(R3)에는 범용 하드웨어와 LLM 기반
+- IMPORT(verified MD revision) | 본 항은 요구사항 R1∼R5의 근거가 된 관련 기술 선행연구를 정리하였다. 의료·일반 관제 연구는 오류와 대응 부담을 설명하는 보조 근거로 사용
+- IMPORT(verified MD revision) | 기술 측면 선행연구를 네 기술 특성에 따라 정리하면 <표 3-2>와 같다. 이 정리에서 인프라 범용성(A1) 연구군은 범용 PC 구동과 기존 카
+- IMPORT(verified MD revision) | 선행연구(연구자, 연도) 연구 맥락 인프라 범용성 (A1) 탐지·제어 안정성 (A2) 오탐 필터링 (A3) 알림 즉각성 (A4) 류수영(2023
+- IMPORT(verified MD revision) | 주: ○는 해당 연구의 논의를 관련 특성에 연결한 본 연구의 분류이다. Kim et al.(2025)을 오탐 필터링(A3)과 연결한 것은 동적 
+- IMPORT(verified MD revision) | 표에서 보듯 각 선행연구는 주로 하나 또는 두 특성에 걸친 기능의 성능이나 수용 조건을 다루었다. 이에 본 연구는 네 특성(A1∼A4)을 범용 
+- IMPORT(verified MD revision) | 본 시스템의 구조는 SDT의 민감도-특이도 분리 원칙을 이중 검사 구조로 구현한 것이다. 전체 처리는 영상 수신, 1차 고민감도 검출, 2차 문
+- IMPORT(verified MD revision) | <그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조
+- KEEP(exact base table XML) | <표3-3> -> <표3-3>
+- IMPORT(verified MD revision) | 데이터 흐름으로 보면 이 구조는 "실시간 경로"와 "사후 검증 경로"를 분리하였다. 1차 검출은 영상 프레임과 함께 실시간으로 흐르는 반면, 계
+- IMPORT(verified MD revision) | 본 모듈은 SDT의 민감도-특이도 분리 원칙에 따라 1차 단계에서 재현율 극대화를 목표로 신뢰도 임계값을 0.3으로 하향하였다. 이 임계값 하향
+- IMPORT(verified MD revision) | 1차 검출 모델은 Ultralytics YOLO26m을 기반으로 자체 구축한 건설현장 데이터셋에서 재학습한 가중치를 사용하였다. 검출 클래스는 
+- IMPORT(verified MD revision) | 이 재학습 가중치는 본 시스템 개발 과정에서 건설현장 공통 라벨 체계로 한 번 구축한 기반 가중치이며, 현장마다 그 현장의 특성에 맞춘 라벨을 
+- IMPORT(verified MD revision) | 판정 로직은 단발성 오탐을 거르는 확인 필터, 문맥을 판단하는 LLM 검증, 반복 알림을 제한하는 쿨다운으로 구성되었다. 확인 필터는 일정 시간
+- IMPORT(verified MD revision) | 2차 검증 모듈은 본 연구의 핵심 기여에 해당한다. 멀티모달 LLM은 영상과 텍스트를 통합 추론하여 정탐과 오탐을 재판정하였다. 목표는 시각-언
+- IMPORT(verified MD revision) | LLM은 1차 검출 결과의 알람 메타데이터(카메라명·warning_key·warning_message), 원본 프레임 이미지, 카메라별 사용자 
+- IMPORT(verified MD revision) | 2차 검증의 정확도는 프롬프트 설계에 크게 좌우된다. 이에 본 시스템은 건설안전 검토자 페르소나를 부여한 구조화된 시스템 프롬프트를 사용하였다.
+- IMPORT(verified MD revision) | 가용성 확보를 위한 안전 폴백(fallback)도 판정 로직에 포함하였다. LLM API 장애 시에는 1차 결과만 발송하되 "LLM 검증 실패"
+- IMPORT(verified MD revision) | 본 시스템은 미세조정 없이 현장에 적응하기 위해 건설 현장용 시스템 프롬프트와 카메라별 사용자 교정 샘플을 결합하였다. 이는 소수의 예시만으로 
+- IMPORT(verified MD revision) | 다만 누적된 교정을 매 호출에 무차별 주입하는 방식은 부작용을 낳는다. 관련 없는 교정이 끼어들어 새로운 오판을 유발하거나, 동일 방향의 교정이
+- IMPORT(verified MD revision) | 경보 전파 모듈은 2차 검증을 통과한 확정 경보를 관련 담당자에게 즉시 전달하는 마지막 단계를 맡으며, 제2장 제2절 제4항의 알림 전파 즉각성
+- IMPORT(verified MD revision) | 확정된 경보는 다중 수신자에게 자동 분류 라우팅되어 동시에 전파되었다. 수신자가 알림만으로도 상황을 직관적으로 파악할 수 있도록, 전파 메시지에
+- IMPORT(verified MD revision) | 경보 수신자는 법령상 업무·책임 주체를 참고하여 본 연구에서 정하였다. 「건설산업기본법」 제40조의 현장배치 건설기술인, 「산업안전보건법」 제1
+- IMPORT(verified MD revision) | 모바일 메신저 기반 즉시 전송을 구현하기 위해 텔레그램을 알림 채널로 채택하였다. 텔레그램은 별도 관제 전용 앱 개발이나 전용 서버 구축 없이 
+- KEEP(exact base table XML) | <표3-4> -> <표3-4>
+- IMPORT(verified MD revision) | 이 가운데 영상 수신은 ONVIF 프로토콜과 RTSP 디코딩으로, 2차 검증은 다중 프로바이더 LLM API로 구성하여 기존 카메라와 범용 PC
+- IMPORT(verified MD revision) | 운영 안정성과 데이터 지속성을 위한 보호 기능도 구현하였다. 운영 데이터는 원자적 쓰기와 잠금으로 보호하고, 감사 로그는 SQLite(WAL 모
+- IMPORT(verified MD revision) | 자료: 본 연구 대상 시스템의 실제 모니터링·판정 교정 화면을 직접 캡처.
+- IMPORT(verified MD revision) | 운영 화면인 <그림 3-4>는 다중 카메라 그리드 위에 알림 전송 내역 창과 LLM 판정 교정 창을 함께 띄운 모습이다. 알림 이력에는 알림 일
+- IMPORT(verified MD revision) | 본 시스템의 배포 형태는 범용 PC에 설치하는 단일 Windows 데스크톱 애플리케이션이다. 이 애플리케이션은 기존 ONVIF 카메라의 영상 수
+- IMPORT(verified MD revision) | 본 연구의 도입 현장에는 시스템을 현장 부담 없이 제공하였다. 프로그램 사용료와 외부 LLM API 호출 비용, 설치 PC를 현장 안전관리 예산
+- IMPORT(verified MD revision) | 본 절은 협력 현장의 기존 운영 로그와 교정 비교 결과로 시스템의 적용 범위를 검토하고, 도입 현장 관리자가 경험한 시스템 특성과 경보 피로도 
+- IMPORT(verified MD revision) | 검증 데이터는 A공사 경기지역본부 산하 중소규모 건설현장에서 2026년 5월 19일부터 27일까지 수집한 ONVIF 카메라의 후보 알림 로그다.
+- IMPORT(verified MD revision) | 본 시스템은 현장마다 활성 탐지 클래스, 검증 모델, 프롬프트, 교정 주입 방식(RAG 사용 여부)과 쿨다운을 달리 설정할 수 있는 구조이며, 
+- IMPORT(verified MD revision) | 라벨은 시스템 개발자 1인이 단일 평가자로서 모델 판정과 사유에 노출된 상태에서 판정의 정·오를 판단하여 부여하였다. 사람의 판정에도 모델 설명
+- IMPORT(verified MD revision) | 이 한계를 보완하기 위해 독립 평가자의 눈가림 재판정과 평가자 간 일치도 산출, 제외 217건의 사유별 재검토, 실험 고정본과 카메라별 실가동 
+- IMPORT(verified MD revision) | 정·오탐 라벨링은 사람 라벨링과 LLM 판정을 비교하는 혼동행렬(confusion matrix) 방식으로 정의하였다(이기수, 2024). 사람이
+- KEEP(exact base table XML) | <표3-5> -> <표3-5>
+- IMPORT(verified MD revision) | 평가 지표는 정밀도, 재현율, F1, 시간당 오경보 빈도(FAR), 특이도, 정확도다. 정밀도와 FAR을 중심으로 오경보 억제를 평가하되 실제 
+- KEEP(exact base table XML) | <표3-6> -> <표3-6>
+- IMPORT(verified MD revision) | 재현율의 분모가 1차 후보 내 실제 위험이므로, 1차 단계에서 검출되지 않은 위험은 이 표의 지표에 반영되지 않았다.
+- KEEP(exact base table XML) | <표3-7> -> <표3-7>
+- IMPORT(verified MD revision) | RAG 기반 교정은 기존 6개 카메라의 회고적 사례 비교로 평가하였다. 교정 사례와 평가 사례가 16×16 평균 이미지 해시의 Hamming 거
+- KEEP(exact base table XML) | <표3-8> -> <표3-8>
+- IMPORT(verified MD revision) | 6개 카메라를 A∼F로 표기하면 등록 카드 수는 순서대로 5·4·5·1·3·5개이므로 최대 k개 조건은 매번 정확히 k개를 주입한 조건이 아니다
+- IMPORT(verified MD revision) | RAG 조건의 재현율 0.250(<표 3-8>)과 2단계 재현율 0.886(<표 3-7>)은 카메라 범위와 호출 방식(운영 기록과 회고적 재호출
+- IMPORT(verified MD revision) | 기존에 제시한 종단 간 지연 약 6초는 YOLO 추론 45밀리초, 확인 창 1.5초, 당시 가정한 LLM 응답 4.2초와 후처리·전송 약 350
+- IMPORT(verified MD revision) | 도입 비용의 대안별 구성은 국토교통부·국토안전관리원(2024)의 가이드라인(인쇄 22∼23쪽)에 제시된 개별 단가와 본 연구의 구성 가정을 바탕
+- KEEP(exact base table XML) | <표3-9> -> <표3-9>
+- IMPORT(verified MD revision) | 주: 대안 A·B는 서로 다른 구성이므로 합산하지 않으며, 행별 확인 범위가 달라 열 합계를 내지 않았다.
+- IMPORT(verified MD revision) | 제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식
+- IMPORT(verified MD revision) | 본 항은 시스템을 3개월 이상 정상 운용한 도입 현장의 관리자가 네 기술 특성과 경보 피로도 완화를 어떻게 경험했는지를 설문으로 확인하였다. 앞
+- IMPORT(verified MD revision) | 측정에는 도입 현장 전용부 D·E 12문항을 썼다. D는 제2장 제2절의 네 기술 특성(A1∼A4)을 특성별 두 문항으로 묻는 8문항이고, E는
+- IMPORT(verified MD revision) | <표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의
+- IMPORT(verified MD revision) | 변수 하위요인 조작적 정의 측정 문항 시스템 특성 인식(D) 인프라 범용성(A1) 일반 사무용 PC와 기존 카메라로 구동되어 별도 장비 투자 부
+- IMPORT(verified MD revision) | 문항은 본 연구에서 수정·개발하였다. D-1∼D-8은 구 설계의 시스템 특성 16문항에서 하위특성별 대표 2문항을 골랐고, E-1∼E-4는 구 
+- IMPORT(verified MD revision) | 응답 결과는 <표 3-11>과 같다. 34명 모두 12문항에 빠짐없이 응답하였다.
+- IMPORT(verified MD revision) | <표 3-11> 도입 현장의 시스템 특성 인식(D)·경보 피로도 완화 인식(E) 기술통계(n=34)
+- IMPORT(verified MD revision) | 문항·묶음 평균 (M) 표준편차 (SD) D-1 3.71 1.00 D-2 3.71 0.97 D-3 3.94 0.69 D-4 3.53 0.99 D
+- IMPORT(verified MD revision) | 주: 도입 현장 관리자 34명의 1∼5점 응답이며 결측은 없다. A1∼A4 묶음과 D·E 전체는 해당 문항의 평균점수이다. 미도입 현장은 응답 
+- IMPORT(verified MD revision) | 도입 현장 관리자는 시스템의 네 특성 중 위험 알림을 빠르게 전달하는 기능을 가장 높게 평가하였다(5점 만점에 3.99점). 위험하지 않은 상황
+- IMPORT(verified MD revision) | 경보를 확인하면서 느끼는 부담이 줄었다는 평가도 평균 3.65점으로 ‘보통이다’보다 높았다. 세부적으로는 ‘알림을 무시하기보다 바로 확인하게 되
+- IMPORT(verified MD revision) | 이 설문은 시스템을 사용한 관리자 34명이 자신의 경험을 평가한 결과이다. 미도입 현장과 비교하거나 도입 전후를 각각 조사한 결과가 아니므로, 
+- IMPORT(verified MD revision) | 제 6 항 현장 운영 특성
+- IMPORT(verified MD revision) | 도입·미도입 현장의 위험 인지 경로와 시점, 인지 후 지시 전달 소요시간은 <표 3-12>와 같다.
+- IMPORT(verified MD revision) | <표 3-12> 현장 운영 특성(A-7∼A-9)의 분포(도입·미도입 현장별)
+- KEEP(exact base table XML) | <표4-7> -> <표3-12>
+- IMPORT(verified MD revision) | 주: A-7∼A-9는 응답일 직전 1개월의 실제 상황을 묻는 사실 문항이며 Y·W·통제변수에 투입하지 않았다. A-7·A-8은 운용 실태 확인 
+- IMPORT(verified MD revision) | 현장 운영 특성에서 도입 현장은 담당자 부재 시 자동 알림으로 위험을 아는 비율(50.0%)과 위험을 ‘발생 직후 알림으로’ 아는 비율(44.1
+- IMPORT(verified MD revision) | 본 장은 중소규모 건설현장의 제약에 대응하는 YOLO-LLM 안전관제 시스템을 설계·구현하고, 운영 후보 로그로 2차 필터 성능을 평가하였다. 
+- IMPORT(verified MD revision) | 네 가지 기술 특성은 이 장의 검증으로 새로 도출한 것이 아니라 제2장 제2절에서 선정한 것이며, 본 장은 각 특성에 대응하는 구현과 평가 범위
+- IMPORT(verified MD revision) | 현장 작동성은 요구사항, 구현 기능과 운영 제약을 연결하여 시스템이 현장에서 어떻게 작동하는지 살펴보는 설명 관점이며(제2장 제3절 참조), 별
+- IMPORT(verified MD revision) | 본 장에서는 연구 모형·가설·측정도구·분석 절차를 설계하고, 그에 따른 가설 검증 결과를 제시하였다. 설계의 목적은 도입 현장과 미도입 현장의 
+- IMPORT(verified MD revision) | 도입·미도입 현장의 비교에는 사후 설문 1회를 이용하는 횡단적 준실험 설계를 적용하였다. 도입 현장은 A공사 경기지역본부 산하 조사대상 건설현장
+- IMPORT(verified MD revision) | 조사 표본에는 총공사비 120억 원 이상 현장도 들어 있으며, 공사비 상한은 두지 않았다.
+- IMPORT(verified MD revision) | 가설의 방향은 기술수용 연구와 안전관리 업무 지원 기제를 연결하여 설정하였다. 기술수용모델(Davis, 1989)과 스마트 안전기술의 수용·채택
+- IMPORT(verified MD revision) | 인과관계의 세 조건인 공변성, 시간적 우선성, 독립변수 통제에 대응하는 설계는 다음과 같다(Shadish, Cook, & Campbell, 20
+- IMPORT(verified MD revision) | 독립변수를 통제하기 위해 여섯 통제변수(C)를 조정하고 사전 특성의 분포·균형을 진단하였다. 만 나이와 건설현장 경력은 연속형 통제변수(공변량)
+- IMPORT(verified MD revision) | 변수 구분 변수 및 하위요인 구성과 역할 독립변수(X) YOLO-LLM 안전관제 시스템 도입 설치·3개월 이상 정상 운용 확인 도입=1, 미설치
+- IMPORT(verified MD revision) | 연구 모형은 YOLO-LLM 안전관제시스템 도입 여부(X)에 따른 안전관리 실효성(Y)의 조정 평균 차이와 안전관리 예산 제약성(W)의 조절 관
+- IMPORT(verified MD revision) | 
+- IMPORT(verified MD revision) | 주 분석은 <그림 4-1>의 비교 모형으로 수행하며, 주 결론은 연구가설 (1-1)의 도입·미도입 현장 간 조정 평균 차이로 도출하였다. 모집 
+- IMPORT(verified MD revision) | 제1절의 연구 모형에 따라 연구 문제 두 개와 그에 대응하는 연구가설을 세웠다. 각 가설의 이론적 근거와 선행연구는 제2장 제5절 제1항[연구가
+- IMPORT(verified MD revision) | 연구 문제 1. YOLO-LLM 안전관제 시스템 도입 현장과 미도입 현장의 관리자가 지각한 현재 안전관리 실효성은 여섯 통제변수(C)를 조정한 
+- IMPORT(verified MD revision) | 연구가설 (1-1). YOLO-LLM 안전관제 시스템 도입 현장의 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)를 조정한 후에도 미도입 
+- IMPORT(verified MD revision) | 연구가설 (1-1)은 안전관리 실효성 8문항 평균점수의 조정 평균 차이로 검정하였다. 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력
+- IMPORT(verified MD revision) | 연구 문제 2. 도입·미도입 현장 간 안전관리 실효성 차이는 응답자가 조사 시점에 지각한 안전관리 예산 제약성 수준에 따라 달라지는가.
+- IMPORT(verified MD revision) | 연구가설 (2-1). 도입·미도입 현장 간 안전관리 실효성 차이는 조사 시점에 안전관리 예산 제약성을 크게 지각하는 응답자일수록 더 클 것이다.
+- IMPORT(verified MD revision) | 연구가설 (2-1)은 연구가설 (1-1)과 동일한 통제변수를 조정한 일반선형모형으로 현장 도입 여부와 안전관리 예산 제약성의 상호작용 효과를 검
+- IMPORT(verified MD revision) | 가설 가설 내용 분석 관계 연구가설 (1-1) YOLO-LLM 안전관제 시스템 도입 현장의 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)
+- IMPORT(verified MD revision) | 변수명 하위요인 조작적 정의 측정방법 독립변수: YOLO-LLM 안전관제 시스템 도입(X) — 시스템 설치와 응답일 현재 3개월 이상 정상 운용
+- IMPORT(verified MD revision) | 주: 안전관리 실효성 하위요인의 정의는 제2장 제3절 제1∼5항을 따랐다. 문항별 근거는 별도의 근거 대조표로 관리하며 문항 전문은 부록(도입 
+- IMPORT(verified MD revision) | 종속변수는 특정 시스템의 기능이나 만족도가 아니라 현장 일반의 업무 수준으로 정의하였다. 미도입 현장 관리자도 같은 기준으로 응답해야 도입·미도
+- IMPORT(verified MD revision) | YOLO-LLM 안전관제 시스템 도입(X)은 정상 운용 중 알림이 없었던 현장도 1로 코딩하였다. 실제 알림 수신과 응답자의 확인 경험은 설문의
+- IMPORT(verified MD revision) | 안전관리 실효성(Y)과 안전관리 예산 제약성(W)은 도입·미도입 현장 모두 설문 응답일 직전 1개월을 기준으로 응답하였다. W는 점수가 높을수록
+- IMPORT(verified MD revision) | 채점안은 안전관리 실효성 점수(Y)를 8문항의 동일 가중 평균으로 산출하였다. 하위요인별 문항 수가 1·1·2·2·2개이므로 2문항 하위요인은 
+- IMPORT(verified MD revision) | 시스템 개발의 효과와 관련된 도입 현장 전용부 D(시스템 특성 인식)·E(경보 피로도 완화 인식)의 설문 결과는 앞선 제3장 제4절 제5항에서 
+- IMPORT(verified MD revision) | 현장 운영 특성(A-7∼A-9)은 Y·W에 넣지 않고 통제변수로도 투입하지 않았다. 위험 인지 경로·시점·소요시간은 도입이 안전관리 실효성과 관
+- IMPORT(verified MD revision) | 세 문항은 역할이 다르다. A-7(담당자 부재 시 위험 인지 경로)과 A-8(순찰 간 위험 인지 시점)은 도입 현장에서는 시스템이 관리자의 위험
+- IMPORT(verified MD revision) | 운용 실태 확인은 결과를 보기 전에 정한 다음 규칙을 따랐다. 본 시스템은 PC용 데스크톱 뷰어와 모바일 메신저 알림으로 위험 정보를 전달하므로
+- IMPORT(verified MD revision) | 통제변수 가운데 만 나이와 건설현장 경력은 구간으로 바꾸지 않고 연속값으로 투입하였다. 경력은 안전관리·공사감독·시공관리 등 건설현장 업무 경력
+- IMPORT(verified MD revision) | 이 변수들을 투입하는 까닭은 업무·책임 범위, 위험 판단과 업무 경험, 자원·관리 여건에서 도입·미도입 현장의 구성이 다를 수 있기 때문이며, 
+- IMPORT(verified MD revision) | 측정도구는 본 연구에서 수정·개발한 척도이다. 표준화된 기존 척도를 그대로 쓰지 않고, 선행연구의 개념을 근거로 작성했던 구 설계 문항을 새 비
+- IMPORT(verified MD revision) | 안전관리 실효성 문항은 다섯 하위요인에 관한 연구에 근거한다(김민기·박성호, 2026; 김용선, 2022; 김태헌, 2026; 김현수, 2026
+- IMPORT(verified MD revision) | 리커트 문항은 모두 1점 ‘전혀 그렇지 않다’부터 5점 ‘매우 그렇다’까지의 5점 척도로 측정하였다.
+- IMPORT(verified MD revision) | 본 설문조사는 도입 현장과 미도입 현장의 안전관리 실효성을 같은 기준으로 재는 횡단 조사이다. 도입·미도입 현장 모두 B·C는 설문 응답일 직전
+- IMPORT(verified MD revision) | 측정도구는 선행연구 고찰을 통한 초기 문항 구성과 국내 관계 법령·건설 실무 지표 대조의 두 단계로 개발하였다. 먼저 제2장의 이론적 배경과 제
+- IMPORT(verified MD revision) | 개발한 문항은 지도교수 검토와 조사 전 표현 점검(2026-09-30)을 거쳐 2026-10-14 배포본으로 확정하였다. 다만 전문가 내용타당도
+- IMPORT(verified MD revision) | 본 설문지는 공통부 21문항과 도입 현장 전용부 12문항으로 구성하며, 문항 전문은 부록에 수록하였다. 미도입 현장 관리자는 공통부 21문항에 
+- IMPORT(verified MD revision) | 구분 변수명 내용 응답 대상 문항수 문항번호 통제변수(C) 인구통계학적 특성 및 현장 운영 특성 소속·성별·만 나이(세)·건설현장 경력(년)·역
+- IMPORT(verified MD revision) | 주: 21·33문항은 측정 문항 수이며, 조사 관리용 현장 구분·현장명·성명 3개 입력 항목은 제외하였다. A-7∼A-9는 리커트 척도가 아닌 
+- IMPORT(verified MD revision) | 조사대상은 A공사 경기지역본부 산하 건설현장에서 안전관리 업무를 맡은 현장 관리자이다. 응답자는 도입·미도입 현장 모두 시공사 측 현장소장(관리
+- IMPORT(verified MD revision) | 모집 목표는 도입 현장 30개소 이상과 미도입 현장 30개소 이상, 총 60개소 이상이며 현장당 1명씩 총 60명 이상이다. 현장은 같은 관할 
+- IMPORT(verified MD revision) | 도입 현장의 후보 명부는 경기지역본부 안전관제 시스템의 카메라 등록 백업 자료로 파악한 등록 90개소·108대이다. 이 수는 모집 목표나 분석 
+- IMPORT(verified MD revision) | 자료는 2026년 10월 12일부터 10월 23일까지 자기응답 설문으로 수집하였다. 설치·운용 상태를 파악한 현장의 응답자에게 설문을 안내하였고
+- IMPORT(verified MD revision) | 비교 대상 시스템을 개발하고 현장 관리에도 관여한 연구자와의 관계를 응답자가 의식하여 응답할 수 있다. 이를 줄이려고 안내문에 연구자의 역할, 
+- IMPORT(verified MD revision) | 구분 내용 조사대상 A공사 경기지역본부 산하 조사대상 건설현장의 현장 관리자·안전관리자, 총공사비 120억 원 이상도 포함 비교 현장 모집 목표
+- IMPORT(verified MD revision) | 분석은 jamovi 2.7.41(The jamovi project, 2025)로 수행하였으며, 자료 정제와 채점, 측정도구 점검, 사전 특성 균
+- IMPORT(verified MD revision) | 연구가설 (1-1)은 현장 도입 여부(도입=1, 미도입=0)에 만 나이·건설현장 경력을 공변량으로, 소속·성별·역할·총공사비 구간을 고정요인으로
+- IMPORT(verified MD revision) | 본 절부터는 제1∼5절의 사후 횡단 비교 설계에 따라 결과를 제시하였다. 연구가설 (1-1)은 사전에 지정한 여섯 통제변수(C)를 조정한 개인 
+- IMPORT(verified MD revision) | 실제 유효 표본은 73명(도입 34명·미도입 39명)으로 모집 목표인 집단별 30개소 이상을 충족하였다. 두 집단의 표본 수는 같지 않으며 사전
+- IMPORT(verified MD revision) | 도입 표본의 선정은 제5절 제1항의 등록 현장 90개소에서 출발하였다. 본 연구에서는 설치·운용 상태를 파악한 현장 가운데 응답일 현재 3개월 
+- IMPORT(verified MD revision) | 설문은 2026년 10월 12일부터 10월 23일까지 설치·운용 상태를 파악한 현장에 안내하여 받았다. 자료 정제와 채점은 제3절 제1항과 제5
+- IMPORT(verified MD revision) | 불성실 응답 판정은 제5절 제2항의 규칙을 따랐다. 유효 표본 73명의 문항 결측은 0건이다. B·C 전 문항, 도입 현장의 D·E 전 문항과 
+- IMPORT(verified MD revision) | <표 4-6> 조사 대상의 범주형 인구통계학적 특성(도입·미도입 현장별)
+- IMPORT(verified MD revision) | 구분 항목 도입 빈도 (명) 도입 비율 (%) 미도입 빈도 (명) 미도입 비율 (%) 전체 빈도 (명) 전체 비율 (%) 소속 구분 시공사 17
+- IMPORT(verified MD revision) | 주: 도입 분류는 설치 및 응답일 현재 3개월 이상 정상 운용 요건에 근거하며, 알림 수신·확인 경험과 중단·장애 이력은 별도로 기록하지 않았다
+- IMPORT(verified MD revision) | <표 4-7> 조사 대상의 만 나이와 건설현장 경력 기술통계(도입·미도입 현장별)
+- IMPORT(verified MD revision) | 연속 특성 단위 현장 도입 여부 n 평균 (M) 표준편차 (SD) 중위값 최솟값 최댓값 만 나이 세 도입 34 46.4 11.1 47.0 30 
+- IMPORT(verified MD revision) | 주: 경력은 연 단위 정수로 수집하며(1년 미만은 0, 6개월 이상은 올림) 그대로 연속값으로 사용하였다. 만 나이와 경력은 분석에서도 연속값으
+- IMPORT(verified MD revision) | 도입 현장 응답자는 전원 남성이며, 시공사와 발주청 소속이 절반씩이고 총공사비 50억∼120억 원 구간이 가장 많다. 미도입 현장 응답자는 시공
+- IMPORT(verified MD revision) | 현장 운영 특성(A-7∼A-9)의 분포는 제3장 제4절 제6항의 <표 3-12>에 제시하였다.
+- IMPORT(verified MD revision) | 제 2 항 측정도구의 타당도 및 신뢰도 검증
+- IMPORT(verified MD revision) | Y는 현재 안전관리 업무의 실질적 수행 수준에 대한 개인 지각이며 B 8문항의 동일 가중 평균을 사용하였다. 다섯 영역의 문항 수는 1·1·2·
+- IMPORT(verified MD revision) | 측정도구의 내용타당도를 확인하는 전문가 필수성 평정(CVR)과 도입·미도입 현장 인지면접·예비조사는 실시하지 않았다(제4절 제1항). 따라서 본
+- IMPORT(verified MD revision) | <표 4-8> 측정도구의 탐색적 요인분석 결과
+- KEEP(exact base table XML) | <표4-8> -> <표4-8>
+- IMPORT(verified MD revision) | 주: 탐색적 요인분석은 표본 적절성(KMO), 구형성 검정(Bartlett), 추출 요인 수, 적재 양상, 설명분산과 문항 제거 여부를 보고하였
+- IMPORT(verified MD revision) | <표 4-9> 측정도구의 내적 일관성 검증 결과(전체 및 도입·미도입 현장별)
+- IMPORT(verified MD revision) | 측정변수 문항 수 분석 개인 수(전체/도입/미도입) Cronbach's α(전체/도입/미도입) 문항 간 관련성·점검 결과 안전관리 실효성 전체 
+- IMPORT(verified MD revision) | 주: 단일 문항 두 영역에는 α를 산출하지 않았다. 2문항 세 영역은 α 대신 전체 표본의 문항 간 상관(Pearson r)을 보고하고 8문항 
+- IMPORT(verified MD revision) | 탐색적 요인분석에서 Y와 W는 각각 1요인으로 묶였다(적재값 Y 0.727∼0.888, W 0.784∼0.955). 이 요인 구조 위에서 Y 8
+- IMPORT(verified MD revision) | 본 항은 도입·미도입 현장의 안전관리 실효성과 안전관리 예산 제약성의 분포를 확인하였다.
+- IMPORT(verified MD revision) | <표 4-10> 안전관리 실효성과 안전관리 예산 제약성의 기술통계(도입·미도입 현장별)
+- IMPORT(verified MD revision) | 변수 현장 도입 여부 n 평균 (M) 표준편차 (SD) 안전관리 실효성 전체 도입 34 4.11 0.61 미도입 39 3.48 0.81 전체 7
+- IMPORT(verified MD revision) | 주: B·C의 n은 해당 척도 전 문항 응답자 수이며, 결측이 없어 제7절의 가설 검정 표본과 같다. 왜도와 첨도는 모든 척도와 도입·미도입 현
+- IMPORT(verified MD revision) | 안전관리 실효성의 원평균은 도입 현장 4.11점, 미도입 현장 3.48점이었다. 다섯 하위요인 가운데 도입·미도입 현장 간 원평균 차이는 원격 
+- IMPORT(verified MD revision) | 제 4 항 도입·미도입 현장의 사전 특성 분포·균형 진단
+- IMPORT(verified MD revision) | 본 항은 연속 특성 2개와 범주형 특성 4개의 도입·미도입 현장별 분포 및 공통 관측범위를 확인하였다.
+- IMPORT(verified MD revision) | <표 4-11> 연속형 통제변수의 분포와 균형 진단 결과(도입·미도입 현장별)
+- KEEP(exact base table XML) | <표4-10> -> <표4-11>
+- IMPORT(verified MD revision) | <표 4-12> 범주형 통제변수의 분포와 균형 진단 결과(도입·미도입 현장별)
+- IMPORT(verified MD revision) | 사전 특성 집계 단위 도입 범주별 n (%) 미도입 범주별 n (%) 범주별 비율 차이(도입−미도입) 효과크기(연속 Cohen's d, 범주 C
+- IMPORT(verified MD revision) | 주: 모든 특성에 결측이 없으며 분모는 도입 34명·미도입 39명이다. 현장당 1명이므로 개인 수와 현장 수는 같지만 각 특성의 측정 단위는 구
+- IMPORT(verified MD revision) | 두 집단은 나이와 경력의 범위가 대부분 겹치지만, 성별과 총공사비 등 구성에는 차이가 있다. 특히 도입 현장에는 여성 응답자가 없고 총공사비 2
+- IMPORT(verified MD revision) | 현장별 운용 여건의 차이는 분석에서 충분히 반영하지 못하였다. 다른 스마트 안전장비는 모든 현장에 없었지만, 미도입 현장에는 일반 CCTV도 운
+- IMPORT(verified MD revision) | 제 1 항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)
+- IMPORT(verified MD revision) | 1. 공분산분석의 적용 근거와 분석 방법
+- IMPORT(verified MD revision) | 연구가설 (1-1)은 도입·미도입 현장의 응답자와 현장 특성 차이를 조정한 뒤 안전관리 실효성을 비교하기 위해 공분산분석(ANCOVA)으로 검정
+- IMPORT(verified MD revision) | 분석에는 안전관리 실효성 8문항 평균을 종속변수로, 현장 도입 여부를 집단 변수로 사용하였다. 만 나이·건설현장 경력은 공변량으로, 소속·성별·
+- IMPORT(verified MD revision) | 분석은 가정 점검, 조정 평균 차이 검정, 민감도·강건성 점검, 하위요인별 분석 순서로 진행하였다. 모형식과 전체 계수, 상세 진단 및 보조 분
+- IMPORT(verified MD revision) | 2. 공분산분석 가정 점검
+- IMPORT(verified MD revision) | 제5절 제2항에서 정한 절차에 따라 관측 독립성, 선형성, 회귀기울기 동질성, 잔차의 정규성·등분산성과 영향점을 점검하였다. 현장당 1명만 조사
+- IMPORT(verified MD revision) | 전체 실효성 모형은 잔차 정규성(Shapiro–Wilk p=.128)과 등분산성(Levene p=.245)에서 뚜렷한 위반 신호가 없었다. Co
+- IMPORT(verified MD revision) | 하위요인 중 위험 통제력은 잔차 정규성 검정에서 p=.036으로 나타나 해석에 주의가 필요하였다. 조기인지·대응 신속성은 단일 5점 문항이며, 
+- IMPORT(verified MD revision) | 3. 안전관리 실효성의 조정 평균 차이
+- IMPORT(verified MD revision) | 조정 평균은 통제변수를 같은 조건에 맞춘 집단별 예측 평균이다. 비표준화 계수 B는 1∼5점 척도에서의 도입−미도입 차이이며, 95% 신뢰구간은
+- IMPORT(verified MD revision) | <표 4-13> 안전관리 실효성의 조정 평균과 집단 간 차이
+- IMPORT(verified MD revision) | 현장 도입 여부 n (명·개소) 조정 평균·차이 SE 95% CI 도입 34 3.83 0.225 [3.38, 4.28] 미도입 39 3.29 0
+- IMPORT(verified MD revision) | 주: 결측이 없는 73명을 분석하였으며 현장당 1명이므로 개인 수와 현장 수는 같다. 조정 평균은 본 항의 산출 기준을 적용한 값이며 원평균은 
+- IMPORT(verified MD revision) | 도입 현장의 조정 평균은 미도입 현장보다 0.54점 높았다. 원평균 차이(0.63점)보다 조정 차이가 작아졌으나, 차이의 방향은 같았다. 개별 
+- IMPORT(verified MD revision) | <표 4-14> 안전관리 실효성의 도입·미도입 현장 간 차이 검정과 효과크기
+- IMPORT(verified MD revision) | 검정 항 F 분자 df 분모 df p 부분 η² 현장 도입 여부(도입=1·미도입=0) 8.54 1 62 .005 0.121
+- IMPORT(verified MD revision) | 주: 부분 η²는 모형에서 집단 차이의 크기를 나타내는 효과크기이며 인과효과를 의미하지 않는다.
+- IMPORT(verified MD revision) | 통제변수를 조정한 집단 차이는 유의하여 연구가설 (1-1)은 지지되었다. 다만 신뢰구간이 0.17∼0.91점으로 차이의 크기에는 불확실성이 있다
+- IMPORT(verified MD revision) | 사전에 정한 민감도 분석에서 시스템 경로가 작동한 도입 현장과 미도입 현장만 비교한 결과(n=54), 조정 차이는 0.78점으로 같은 방향이었다
+- IMPORT(verified MD revision) | 4. 하위요인별 공분산분석
+- IMPORT(verified MD revision) | 안전관리 실효성의 어느 영역에서 집단 차이가 나타나는지 확인하기 위해 다섯 하위요인에 같은 모형을 적용하였다. 조기인지=B-1, 대응 신속성=B
+- IMPORT(verified MD revision) | <표 4-15> 하위요인별 공분산분석 결과(조정 차이·Holm 보정 포함)
+- IMPORT(verified MD revision) | 하위요인 도입 조정 평균 미도입 조정 평균 차이 B 차이 95% CI F Holm 보정 p 부분 η² 판정 조기인지 3.94 3.32 0.62 
+- IMPORT(verified MD revision) | 주: 모든 분석은 도입 34명·미도입 39명이며 F의 자유도는 (1, 62)이다. 조정 평균의 기준은 <표 4-13>과 같다. Holm 보정은 
+- IMPORT(verified MD revision) | Holm 보정 후 조기인지·원격 파악·위험 통제력에서 도입 현장이 유의하게 높았다. 순찰부담 경감은 보정 전에는 유의했으나(p=.031) 보정 
+- IMPORT(verified MD revision) | 제 2 항 연구가설 (2-1)에 대한 상호작용 분석
+- IMPORT(verified MD revision) | 예산 제약성에 따라 도입·미도입 현장의 실효성 차이가 달라지는지 확인하기 위해 제1항의 모형에 예산 제약성과 집단×예산 제약성 상호작용을 추가하
+- IMPORT(verified MD revision) | 이 모형의 잔차 정규성(Shapiro–Wilk p=.726)과 등분산성(Levene p=.372)에서는 뚜렷한 위반 신호가 없었다. Cook's
+- IMPORT(verified MD revision) | <표 4-16> 현장 도입 여부와 안전관리 예산 제약성의 상호작용 분석 결과
+- IMPORT(verified MD revision) | 모형 항 B SE 95% CI t p 현장 도입 여부 X(도입=1·미도입=0) 0.501 0.184 [0.134, 0.868] 2.73 .008
+- IMPORT(verified MD revision) | 주: n=73, 잔차 df=60이다. 상호작용 검정은 F(1, 60)=2.35, p=.131, 부분 η²=0.038이다. X 계수는 예산 제약성
+- IMPORT(verified MD revision) | 상호작용 계수는 양수였으나 신뢰구간이 0을 포함하고 유의하지 않아 연구가설 (2-1)은 기각되었다. 따라서 예산 제약성을 크게 지각할수록 도입·
+- IMPORT(verified MD revision) | 제 3 항 가설 검증 결과 종합
+- IMPORT(verified MD revision) | <표 4-17> 연구가설 검증 결과 종합
+- IMPORT(verified MD revision) | 가설 검정 내용 핵심 추정·95% CI 검정통계량·p 검정결과 연구가설 (1-1) 통제변수 조정 후 도입 현장의 안전관리 실효성이 미도입 현장보
+- IMPORT(verified MD revision) | 통제변수를 조정한 뒤에도 도입 현장의 지각 실효성은 미도입 현장보다 높았으나, 예산 제약성에 따라 그 차이가 달라진다는 근거는 확인하지 못하였다
+- IMPORT(verified MD revision) | 과정 지표인 지시 전달 소요시간(A-9)에서는 유의한 집단 차이를 확인하지 못하였다(Fisher 정확검정 p=.663). 제5절 제2항의 기준에
+- IMPORT(verified MD revision) | 다음 제8절에서는 이 결과가 선행연구 및 과정 지표와 어떤 관계에 있는지 논의하였다.
+- IMPORT(verified MD revision) | 제 8 절 분석결과 및 논의
+- IMPORT(verified MD revision) | 이 절에서는 제3장에서 다룬 기술적 경보 품질과 관리자가 지각한 안전관리 실효성을 구분해 논의하였다. 담당자가 자리를 비웠을 때 위험을 어떤 경
+- IMPORT(verified MD revision) | 연구가설 (1-1)("도입 현장 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)를 조정한 뒤에도 미도입 현장보다 높을 것이다")은 지지되었
+- IMPORT(verified MD revision) | 연구가설 (1-1)의 차이를 해석할 때는 탐지·검증·알림으로 이어지는 시스템 경로가 일부 도입 현장에서만 설계 의도대로 운용되었다는 점을 함께 
+- IMPORT(verified MD revision) | 하위요인 가운데 조기인지·원격 파악·위험 통제력의 차이는 Holm 보정 후에도 유의하였다. 차이는 각각 0.62점·0.72점·0.54점이었고, 
+- IMPORT(verified MD revision) | 연구가설 (2-1)("안전관리 예산 제약을 크게 느끼는 관리자일수록 도입·미도입 현장의 실효성 차이가 더 클 것이다")은 지지되지 않았다. 현장
+- IMPORT(verified MD revision) | 이 양상은 본 연구의 조사 조건과 측정 내용으로 설명할 수 있다. 도입 현장은 시스템을 현장 부담 없이 제공받았고(제3장 제3절 제3항), 조사
+- IMPORT(verified MD revision) | 다음 제5장에서는 이 논의를 바탕으로 연구 결과를 요약하고, 시사점과 한계, 향후 연구 방향을 제시하였다.
+- IMPORT(verified MD revision) | 제 5 장 결론
+- IMPORT(verified MD revision) | 제 1 절 결론
+- IMPORT(verified MD revision) | 본 연구는 인력과 예산이 제한된 건설현장에서 위험을 지속적으로 파악하고 관리자에게 전달할 수 있는 안전관제 수단을 마련하기 위해 수행하였다. 중
+- IMPORT(verified MD revision) | 이를 위해 범용 PC와 기존 ONVIF 카메라를 활용하는 데스크톱 안전관제 시스템을 설계·구현하였다. YOLO가 영상에서 위험 후보를 탐지하면 
+- IMPORT(verified MD revision) | 개발한 시스템의 현장 실효성은 A공사 경기지역본부 산하 도입 현장 34명과 미도입 현장 39명, 총 73명의 관리자 응답으로 검증하였다. 여섯 
+- IMPORT(verified MD revision) | 본 연구의 시사점은 시스템의 기술적 경보 품질과 현장에서의 운용을 함께 평가해야 한다는 데 있다. 실무적으로는 경보 수를 줄이는 데 그치지 않고
+- IMPORT(verified MD revision) | [05] 「산업안전보건법 시행령」 제16조(안전관리자의 선임 등) 제2항, [시행 2026. 8. 1.] [대통령령, 2026. 7. 28. 공
+- IMPORT(verified MD revision) | [17] [확정 필요: 분류 미정 서지]
+- IMPORT(verified MD revision) | [18] 왕인국, 「건설현장 위험요인 식별을 위한 RAG와 Fine-tuning 기반 LLM 성능향상에 관한 연구」, 광운대학교 대학원 건축공학
+- IMPORT(verified MD revision) | [19] 윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전
+- IMPORT(verified MD revision) | [20] The jamovi project, jamovi [Computer Software]. https://www.jamovi.org [확정 
+- IMPORT(verified MD revision) | [21] 「중대재해 처벌 등에 관한 법률」 [시행 2022. 1. 27.] [법률 제17907호, 2021. 1. 26., 제정] [확정 필요:
+- IMPORT(verified MD revision) | [22] EN 50136-1, Alarm systems — Alarm transmission systems and equipment — Part
+- RETIRE(verified previous MD) | 중소규모 건설현장 안전관리의 핵심 문제는 위험을 알아차리는 일과 이를 현장 조치로 옮기는 일 사이의 간극에 있다. 현장의 위험은 공정과 장비 이
+- RETIRE(verified previous MD) | 주: 1) 산재보상 승인자료 기준이며, 분류불능은 건설기계관리사업 등 공사금액이 없는 경우이다(원표 주). 2) 비율과 누적 비율은 원표의 사망
+- RETIRE(verified previous MD) | 또한 기술의 탐지 성능만으로는 현장의 안전관리 실효성을 판단하기 어렵다. 지금까지의 연구는 주로 위험 객체·행동을 얼마나 정확히 탐지하는지, 관
+- RETIRE(verified previous MD) | 이에 본 연구는 별도 관제 설비를 갖추기 어려운 현장의 비용 부담을 낮추기 위해 범용 PC와 기존 카메라로 운용하는 YOLO-LLM 안전관제 시
+- RETIRE(verified previous MD) | 본 연구는 중소규모 현장의 비용과 경보 정확도라는 두 제약을 함께 다루기 위해 YOLO와 LLM을 결합한 하이브리드 구조를 택하였다. YOLO만
+- RETIRE(verified previous MD) | 본 연구는 먼저 이 시스템을 설계·구현하고, YOLO 1차 후보에 대한 LLM 2차 검증의 오경보 감소와 실제 위험 경보 손실을 현장 운영 로그
+- RETIRE(verified previous MD) | 첫째 연구 문제는 두 집단, 곧 YOLO-LLM 안전관제 시스템 도입집단과 미도입집단의 관리자가 지각한 현재 안전관리 실효성이 응답자·현장 특성
+- RETIRE(verified previous MD) | 둘째 연구 문제는 두 집단 간 안전관리 실효성 차이가 응답자가 조사 시점에 지각한 안전관리 예산 제약성 수준에 따라 달라지는가이다. 이에 대하여
+- RETIRE(verified previous MD) | 본 연구의 목적은 중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 실증적
+- RETIRE(verified previous MD) | 공간적 범위. 본 연구의 공간적 범위는 A공사 경기지역본부 산하 건설현장이다. 시스템 도입 현장 30개소 이상과 미도입 현장 30개소 이상, 총
+- RETIRE(verified previous MD) | 시간적 범위. 조사는 2026년 10월 12일부터 10월 23일까지 사후 설문으로 1회 실시한다. 도입 집단은 설치 후 응답일 현재 3개월 이상
+- RETIRE(verified previous MD) | 내용적 범위. 내용적 범위는 제2절의 두 연구 문제이다. 안전관리 실효성은 5개 하위요인으로 측정하며, 경보 피로도 완화 인식은 도입 집단에만 
+- RETIRE(verified previous MD) | 연구 방법. 연구는 문헌 고찰로 변수와 가설의 근거를 정리하고, 현장 운영 로그로 LLM 2차 검증의 성능을 평가한 뒤, 두 집단에 같은 척도를
+- RETIRE(verified previous MD) | 장 내용 방법·자료 제1장 서론 연구의 배경과 필요성(문제 제기), 연구의 목적, 연구의 범위와 방법 재해 통계 검토 제2장 이론적 배경 개념 
+- RETIRE(verified previous MD) | 본 연구는 무작위 배정과 사전 측정이 없는 횡단 비교이므로 선정 편향과 시간적 우선성의 한계가 남는다. 비교는 본 시스템 전체를 운용하는 현장과
+- RETIRE(verified previous MD) | 
+- RETIRE(verified previous MD) | 제2장에서는 스마트 안전관리와 AI 영상관제 기술, 시스템 기술 특성, 안전관리 실효성, 예산 제약성의 선행연구를 고찰해 이론적 근거를 정리한다
+- RETIRE(verified previous MD) | 본 논문에서 AI 영상관제 기술이란 기존 CCTV 영상에서 YOLO가 위험 후보를 1차로 탐지하고 LLM이 그 후보의 문맥을 2차로 검증한 뒤 
+- RETIRE(verified previous MD) | 본 연구에서 경보 피로도는 가설 검정 변수가 아니라 2차 검증(LLM) 오탐 필터링의 이론적 배경이다. 2차 문맥 검증이 자연 배경이나 정상 작
+- RETIRE(verified previous MD) | 본 절은 YOLO-LLM 안전관제 시스템의 네 기술 특성을 고찰하며, 그 선정 근거는 두 이론이다. 첫째는 기술수용모델(Technology Ac
+- RETIRE(verified previous MD) | 둘째는 신호감지이론(Signal Detection Theory, 이하 SDT)이다. Green과 Swets(1966)는 신호와 잡음이 부분적으로
+- RETIRE(verified previous MD) | 제 1 항 시스템 인프라 범용성
+- RETIRE(verified previous MD) | 본 연구는 시스템 인프라 범용성을 고가의 AI 전용 서버 없이 일반 PC에서 구동되고, 제조사가 다른 기존 ONVIF 표준 호환 IP 카메라 및
+- RETIRE(verified previous MD) | 제 2 항 1차 탐지(YOLO) 및 제어 안정성
+- RETIRE(verified previous MD) | 1차 탐지 및 제어 안정성은 YOLO 모델이 위험 객체·행동의 누락을 줄이도록 감지하고, 반복 경보 억제 등의 제어 장치로 알람 폭주와 통신 불
+- RETIRE(verified previous MD) | 제 3 항 2차 검증(LLM) 오탐 필터링
+- RETIRE(verified previous MD) | 2차 검증 오탐 필터링은 LLM이 1차 감지 프레임 이미지에 나타난 맥락—자연 배경(나뭇가지·그림자·반사), 정상 작업 동작 등—을 추론하여 가
+- RETIRE(verified previous MD) | 선행연구는 시각-언어 모델을 결합한 탐지 성능 개선과 후단 검증의 오탐 감소를 서로 다른 구조에서 보고하였다. Kim et al.(2025)은 
+- RETIRE(verified previous MD) | 국내에서는 통합관제센터 실험 연구가 YOLO 1차 감지를 VLM(시각-언어 모델)이 2차 검증하는 Trigger-Validator 구조로 오탐을
+- RETIRE(verified previous MD) | 제 4 항 알림 전파 즉각성
+- RETIRE(verified previous MD) | 알림 전파 즉각성은 위험 상황의 자연어 요약과 감지 이미지가 위험 확정 시점부터 짧은 지연으로 관리자의 모바일 기기에 능동적으로 전달되어, 별도
+- RETIRE(verified previous MD) | 기술 수용 관점에서 본 연구는 사용 수월성이 스마트 안전장비 수용과 관련된다는 연구(이동건, 2024; Chong et al., 2023)를 담
+- RETIRE(verified previous MD) | 주: 표는 각 기술 특성의 개념을 뒷받침하는 선행연구만 요약하였다. 네 특성에 대한 기술 측면 선행연구의 연결 매트릭스는 제3장 제1절 제3항의
+- RETIRE(verified previous MD) | 제 3 절 YOLO-LLM 하이브리드 시스템 도입의 안전관리 실효성
+- RETIRE(verified previous MD) | 안전관리 실효성은 건설현장이 위험을 적시에 파악하고 신속하게 대응하여 현장의 위험을 통제하는 능력이 실제 안전관리 업무에서 발휘되는 정도를 말한
+- RETIRE(verified previous MD) | 본 연구는 TAM의 지각된 유용성이 다루는 직무 성과에 대한 기대와 정보기술 활용·개인 수행도 연구를 참고하여 안전관리 실효성을 직무 성과 개념
+- RETIRE(verified previous MD) | 현장 작동성은 위험 신호가 담당자의 확인·판단·조치로 이어지는 과정을 통해 안전관리 실효성을 설명하는 관점이며, 별도의 잠재변수나 추가 설문 척
+- RETIRE(verified previous MD) | 시스템 기능(기술 특성) 담당자의 확인·판단·조치 관련 B문항 (하위요인) 확인 자료 (기술·설문) 본 연구의 검증 범위 설치·운용 기반(기존 
+- RETIRE(verified previous MD) | 주: B문항은 특정 시스템을 묻지 않는 두 집단 공통 일반형 문항이며, 표의 연결은 문항 자체가 해당 기능을 측정한다는 뜻이 아니다. Part 
+- RETIRE(verified previous MD) | 표에서 보듯 기술 자료가 직접 확인하는 범위는 후보 탐지와 문맥 검증의 조건부 성능, 응답시간 로그에 머문다. 이 연결표는 제5장에서 하위요인별
+- RETIRE(verified previous MD) | 조기인지는 위험 징후를 사고로 이어지기 전에 발견하는 능력이다. 본 연구에서는 현장 관리자가 지각한 자기 현장의 위험 상황 조기 인지 수준으로 
+- RETIRE(verified previous MD) | 김현수(2026)가 보고한 사건 검토 시간 평균 43% 단축은 관리자가 위험 후보를 더 일찍 확인할 여건과 관련되므로, 본 연구는 이를 조기인지
+- RETIRE(verified previous MD) | 대응 신속성은 위험을 확인한 뒤 현장 지시와 조치를 빠르게 수행하는 능력이다. 본 연구에서는 위험 상황을 인지한 뒤 초동 대응을 지시하기까지의 
+- RETIRE(verified previous MD) | 위험 통제력은 확인한 위험에 시정·작업중지 등 적절한 조치를 내려 사고로 이어질 수 있는 위험요인을 실질적으로 관리하는 능력이다. 본 연구에서는
+- RETIRE(verified previous MD) | 안전관리 예산 제약성은 건설현장이 스마트 안전기술을 도입·운영하는 데 필요한 예산과 자원이 부족한 정도를 말한다. 본 연구는 이 개념을 조사 시
+- RETIRE(verified previous MD) | 예산 제약의 크기는 상용 AI 영상관제 대안의 도입 비용과 대비해 가늠할 수 있다. 국토교통부·국토안전관리원(2024)의 가이드라인은 AI 기능
+- RETIRE(verified previous MD) | 건설 분야의 선행연구는 예산과 비용을 기술 도입의 주요 제약으로 다룬다. 중소 건설현장 연구는 스마트 안전장비 도입이 정부 보조에 의존하고 인력
+- RETIRE(verified previous MD) | 예산 제약과 집단 간 안전관리 실효성 차이의 관계는 제5절 제2항에서 정리한다.
+- RETIRE(verified previous MD) | 본 절은 현장에서 스마트 안전기술을 활용한 결과를 다룬 선행연구를 검토하여 제4장 연구 가설의 도출 근거를 정리한다.
+- RETIRE(verified previous MD) | 본 연구의 차별성은 탐지 기술의 새로움에만 있지 않고, 중소규모 현장의 위험 신호가 확인과 대응으로 이어지는 현장 작동성의 관점에서 시스템 개발
+- RETIRE(verified previous MD) | 구분 기존 선행연구 본 연구 기술과 운용 단일 탐지·개별 장비 및 일부 YOLO-LLM/VLM 하이브리드 연구 기존 인프라에서 후보 탐지·문맥 
+- RETIRE(verified previous MD) | 국외 연구(Igbaria & Tan, 1997; Chong et al., 2023)는 기술수용과 실제 직무 수행이 구별된다는 점에서 도입 현장 
+- RETIRE(verified previous MD) | 선행연구(연구자, 연도) 연구 대상·관점 주요 결과 본 연구에 대한 시사점 황병복(2026) 철도 건설현장의 스마트 건설기술 활용 기술 활용과 
+- RETIRE(verified previous MD) | 이들 연구는 도입 조건, 관제 업무와 관리 성과를 서로 다른 수준에서 설명한다. 이에 따라 본 연구는 현장당 1명을 조사하고 만 나이·건설현장 
+- RETIRE(verified previous MD) | 예산 제약성은 저비용 구성이 갖는 상대적 효용을 설명하는 조건이다. 국내 연구는 중소 건설현장의 비용·지원 제약을 제시하였고(이준호, 2024;
+- RETIRE(verified previous MD) | YOLO-LLM 안전관제 시스템은 일반 PC와 기존 카메라 등을 활용해 추가 구매 부담을 낮추려는 구성이다. 유지보수·API·교정 인건비를 포함
+- RETIRE(verified previous MD) | 이상의 근거에 따라 본 연구는 조사 시점에 안전관리 예산 제약성을 크게 지각하는 응답자일수록 YOLO-LLM 안전관제 시스템 도입·미도입 집단 
+- RETIRE(verified previous MD) | 본 장은 YOLO-LLM 안전관제 시스템, 안전관리 실효성, 안전관리 예산 제약성의 개념과 선행연구를 정리하였다. 제1절은 본 논문의 AI 영상
+- RETIRE(verified previous MD) | 제5절은 현장에서 스마트 안전기술을 활용한 결과를 다룬 선행연구를 검토하였다. 선행연구는 기술 활용과 안전성과·직무 수행의 관련성을 제시하지만,
+- RETIRE(verified previous MD) | 다음 제3장에서는 이 이론적 근거에 대응하는 시스템 요구사항과 관련 기술 선행연구, 구조와 구현, 운영 로그의 조건부 성능 평가를 제시한다. 제
+- RETIRE(verified previous MD) | 제 3 장 YOLO-LLM 하이브리드 안전관제 시스템 개발
+- RETIRE(verified previous MD) | 본 연구가 개발한 시스템은 저비용 범용 PC 위에서 구동되는 YOLO-LLM 하이브리드 안전관제 시스템이다. 전담 안전관리자와 예산·데이터를 갖
+- RETIRE(verified previous MD) | 개발의 방향은 "많이 잡되 정확히 거른다"는 두 단계 분업으로 요약할 수 있다. 단일 인공지능 모델은 위험에 민감하게 설정하면 오탐(실제 위험이
+- RETIRE(verified previous MD) | 개발 전략은 세 가지 원칙으로 구체화하였다. 첫째, 저비용 원칙이다. 본 시스템은 상용 AI 관제가 전제하는 전용 카메라와 고성능 GPU 서버 
+- RETIRE(verified previous MD) | 본 연구는 중소규모 건설현장의 구조적 제약을 다음 네 가지로 보고, 이에 근거하여 시스템 요구사항을 도출하였다. 첫째, 전담 안전관리자가 상시 
+- RETIRE(verified previous MD) | 이 가운데 실시간성(R5)은 순간적 처리 속도가 아니라, 위험에 대응할 수 있는 시간 창(reaction window) 안에서 경보가 도달하는 
+- RETIRE(verified previous MD) | 다만 이러한 설계 대상과 달리 제4절의 정량 평가 표본은 중장비 접근과 차량 접근의 두 경고 유형에 한정되며, 두 유형은 설계에서 제외한 충돌·
+- RETIRE(verified previous MD) | 이상의 요구사항은 서로 독립적이지 않고 하나의 설계 원리로 수렴한다. 저비용(R1·R2)과 무학습 적응(R3)에는 범용 하드웨어와 LLM 기반 
+- RETIRE(verified previous MD) | 본 항은 요구사항 R1∼R5의 근거가 된 관련 기술 선행연구를 정리한다. 의료·일반 관제 연구는 오류와 대응 부담을 설명하는 보조 근거로 사용하
+- RETIRE(verified previous MD) | 기술 측면 선행연구를 네 기술 특성에 따라 정리하면 <표 3-2>와 같다. 이 정리에서 인프라 범용성 연구군은 범용 PC 구동과 기존 카메라 처
+- RETIRE(verified previous MD) | 선행연구(연구자, 연도) 연구 맥락 인프라 범용성 탐지·제어 안정성 오탐 필터링 알림 즉각성 류수영(2023) CCTV 기반 산업안전 관제(YO
+- RETIRE(verified previous MD) | 주: ○는 해당 연구의 논의를 관련 특성에 연결한 연구자의 분류이다. Kim et al.(2025)을 오탐 필터링과 연결한 것은 동적 임계값 조
+- RETIRE(verified previous MD) | 표에서 보듯 각 선행연구는 주로 하나 또는 두 특성에 걸친 기능의 성능이나 수용 조건을 다루었다. 이에 본 연구는 네 특성을 범용 PC 기반의 
+- RETIRE(verified previous MD) | 본 시스템의 구조는 SDT의 민감도-특이도 분리 원칙을 이중 캐스케이드(dual-cascade) 구조로 구현한 것이다. 전체 처리는 영상 수신,
+- RETIRE(verified previous MD) | <그림 3-1> YOLO-LLM 이중 캐스케이드 시스템 구조
+- RETIRE(verified previous MD) | 데이터 흐름으로 보면 이 구조는 "실시간 경로"와 "사후 검증 경로"를 분리한다. 1차 검출은 영상 프레임과 함께 실시간으로 흐르는 반면, 계산
+- RETIRE(verified previous MD) | 본 모듈은 SDT의 민감도-특이도 분리 원칙에 따라 1차 단계에서 재현율 극대화를 목표로 신뢰도 임계값을 0.3으로 하향한다. 이 임계값 하향은
+- RETIRE(verified previous MD) | 1차 검출 모델은 Ultralytics YOLO26m을 기반으로 자체 구축한 건설현장 데이터셋에서 재학습한 가중치를 사용한다. 검출 클래스는 작
+- RETIRE(verified previous MD) | 이 재학습 가중치는 연구자가 건설현장 공통 라벨 체계로 한 번 구축한 기반 가중치이며, 현장마다 그 현장의 특성에 맞춘 라벨을 만들어 다시 학습
+- RETIRE(verified previous MD) | 판정 로직은 단발성 오탐을 거르는 확인 필터, 문맥을 판단하는 LLM 검증, 반복 알림을 제한하는 쿨다운으로 구성된다. 확인 필터는 일정 시간 
+- RETIRE(verified previous MD) | 2차 검증 모듈은 본 연구의 핵심 기여에 해당한다. 멀티모달 LLM은 영상과 텍스트를 통합 추론하여 정탐과 오탐을 재판정한다. 목표는 시각-언어
+- RETIRE(verified previous MD) | LLM은 1차 검출 결과의 알람 메타데이터(카메라명·warning_key·warning_message), 원본 프레임 이미지, 카메라별 사용자 
+- RETIRE(verified previous MD) | 2차 검증의 정확도는 프롬프트 설계에 크게 좌우된다. 이에 본 시스템은 건설안전 검토자 페르소나를 부여한 구조화된 시스템 프롬프트를 사용한다. 
+- RETIRE(verified previous MD) | 가용성 확보를 위한 안전 폴백(fallback)도 판정 로직에 포함하였다. LLM API 장애 시에는 1차 결과만 발송하되 "LLM 검증 실패"
+- RETIRE(verified previous MD) | 본 시스템은 미세조정 없이 현장에 적응하기 위해 건설 현장용 시스템 프롬프트와 카메라별 사용자 교정 샘플을 결합한다. 이는 소수의 예시만으로 과
+- RETIRE(verified previous MD) | 다만 누적된 교정을 매 호출에 무차별 주입하는 방식은 부작용을 낳는다. 관련 없는 교정이 끼어들어 새로운 오판을 유발하거나, 동일 방향의 교정이
+- RETIRE(verified previous MD) | 경보 전파 모듈은 2차 검증을 통과한 확정 경보를 관련 담당자에게 즉시 전달하는 마지막 단계를 맡으며, 제2장 제2절 제4항의 알림 전파 즉각성
+- RETIRE(verified previous MD) | 확정된 경보는 다중 수신자에게 자동 분류 라우팅되어 동시에 전파된다. 수신자가 알림만으로도 상황을 직관적으로 파악할 수 있도록, 전파 메시지에는
+- RETIRE(verified previous MD) | 경보 수신자는 법령상 업무·책임 주체를 참고하여 연구자가 정하였다. 「건설산업기본법」 제40조의 현장배치 건설기술인, 「산업안전보건법」 제15조
+- RETIRE(verified previous MD) | 모바일 메신저 기반 즉시 전송을 구현하기 위해 텔레그램을 알림 채널로 채택하였다. 텔레그램은 별도 관제 전용 앱 개발이나 전용 서버 구축 없이 
+- RETIRE(verified previous MD) | 이 가운데 영상 수신은 ONVIF 프로토콜과 RTSP 디코딩으로, 2차 검증은 다중 프로바이더 LLM API로 구성하여 기존 카메라와 범용 PC
+- RETIRE(verified previous MD) | 운영 안정성과 데이터 지속성을 위한 보호 기능도 구현하였다. 운영 데이터는 원자적 쓰기와 잠금으로 보호하고, 감사 로그는 SQLite(WAL 모
+- RETIRE(verified previous MD) | 자료: 본 연구 대상 시스템의 실제 모니터링·판정 교정 화면(연구자 캡처).
+- RETIRE(verified previous MD) | 운영 화면인 <그림 3-4>는 다중 카메라 그리드 위에 알림 전송 내역 창과 LLM 판정 교정 창을 함께 띄운 모습이다. 알림 이력에는 알림 일
+- RETIRE(verified previous MD) | 본 시스템의 배포 형태는 범용 PC에 설치하는 단일 Windows 데스크톱 애플리케이션이다. 이 애플리케이션은 기존 ONVIF 카메라의 영상 수
+- RETIRE(verified previous MD) | 본 절은 협력 현장의 기존 운영 로그와 교정 비교 결과로 시스템의 적용 범위를 검토한다. 운영 후보 로그와 교정 비교에서 관찰한 기술 지표의 차
+- RETIRE(verified previous MD) | 검증 데이터는 A공사 경기지역본부 산하 중소규모 건설현장에서 2026년 5월 19일부터 27일까지 수집한 ONVIF 카메라의 후보 알림 로그다.
+- RETIRE(verified previous MD) | 본 시스템은 현장마다 활성 탐지 클래스, 검증 모델, 프롬프트, 교정 주입 방식(RAG 사용 여부)과 쿨다운을 달리 설정할 수 있는 구조이며, 
+- RETIRE(verified previous MD) | 라벨은 연구자 1인이 모델 판정과 사유에 노출된 상태에서 판정의 정·오를 판단하여 부여하였다. 사람의 판정에도 모델 설명이 영향을 주었을 가능성
+- RETIRE(verified previous MD) | 이 한계를 보완하기 위해 독립 평가자의 눈가림 재판정과 평가자 간 일치도 산출, 제외 217건의 사유별 재검토, 실험 고정본과 카메라별 실가동 
+- RETIRE(verified previous MD) | 정·오탐 라벨링은 사람 라벨링과 LLM 판정을 비교하는 혼동행렬(confusion matrix) 방식으로 정의하였다(이기수, 2024). 사람이
+- RETIRE(verified previous MD) | 평가 지표는 정밀도, 재현율, F1, 시간당 오경보 빈도(FAR), 특이도, 정확도다. 정밀도와 FAR을 중심으로 오경보 억제를 평가하되 실제 
+- RETIRE(verified previous MD) | 재현율의 분모가 1차 후보 내 실제 위험이므로, 1차 단계에서 검출되지 않은 위험은 이 표의 지표에 반영되지 않는다.
+- RETIRE(verified previous MD) | RAG 기반 교정은 기존 6개 카메라의 회고적 사례 비교로 평가하였다. 교정 사례와 평가 사례가 16×16 평균 이미지 해시의 Hamming 거
+- RETIRE(verified previous MD) | 6개 카메라를 A∼F로 표기하면 등록 카드 수는 순서대로 5·4·5·1·3·5개이므로 최대 k개 조건은 매번 정확히 k개를 주입한 조건이 아니다
+- RETIRE(verified previous MD) | RAG 조건의 재현율 0.250(<표 3-8>)과 2단계 재현율 0.886(<표 3-7>)은 카메라 범위와 호출 방식(운영 기록과 회고적 재호출
+- RETIRE(verified previous MD) | 기존에 제시한 종단 간 지연 약 6초는 YOLO 추론 45밀리초, 확인 창 1.5초, 당시 가정한 LLM 응답 4.2초와 후처리·전송 약 350
+- RETIRE(verified previous MD) | 도입 비용의 대안별 구성은 국토교통부·국토안전관리원(2024)의 가이드라인(인쇄 22∼23쪽)에 제시된 개별 단가와 연구자의 구성 가정을 바탕으
+- RETIRE(verified previous MD) | 주: 대안 A·B는 서로 다른 구성이므로 합산하지 않으며, 행별 확인 범위가 달라 열 합계를 내지 않는다.
+- RETIRE(verified previous MD) | 본 장은 중소규모 건설현장의 제약에 대응하는 YOLO-LLM 안전관제 시스템을 설계·구현하고, 운영 후보 로그로 2차 필터 성능을 평가하였다. 
+- RETIRE(verified previous MD) | 네 가지 기술 특성은 이 장의 검증으로 새로 도출한 것이 아니라 제2장 제2절에서 선정한 것이며, 본 장은 각 특성에 대응하는 구현과 평가 범위
+- RETIRE(verified previous MD) | 현장 작동성은 요구사항, 구현 기능과 운영 제약을 연결하여 시스템이 현장에서 어떻게 작동하는지 살펴보는 설명 관점이며(제2장 제3절 참조), 별
+- RETIRE(verified previous MD) | 본 장에서는 연구 모형·가설·측정도구·분석 절차를 설계하고, 그에 따른 가설 검증 결과를 제시한다. 설계의 목적은 도입 현장과 미도입 현장의 안
+- RETIRE(verified previous MD) | 두 집단의 비교에는 사후 설문 1회를 이용하는 횡단적 준실험 설계를 적용한다. 도입 집단은 A공사 경기지역본부 산하 조사대상 건설현장 가운데 시
+- RETIRE(verified previous MD) | 시스템 개발은 안전관리 자원이 부족한 중소규모 현장을 지향하지만, 조사 표본에는 총공사비 120억 원 이상 현장도 들어 있다. 따라서 개발 대상
+- RETIRE(verified previous MD) | 가설의 방향은 기술수용 연구와 안전관리 업무 지원 기제를 연결하여 설정한다. 기술수용모델(Davis, 1989)과 스마트 안전기술의 수용·채택 
+- RETIRE(verified previous MD) | 인과관계의 세 조건인 공변성, 시간적 우선성, 외생변수 통제는 각각 어디까지 충족하는지 나누어 밝힌다(Shadish, Cook, & Campbe
+- RETIRE(verified previous MD) | 외생변수를 통제하기 위해 여섯 특성을 조정하고 사전 특성의 분포·균형을 진단한다. 만 나이와 건설현장 경력은 연속 공변량으로, 소속 구분·성별·
+- RETIRE(verified previous MD) | 비교 조건의 범위도 미리 한정한다. 미도입 집단에는 CCTV를 운용하는 현장과 운용하지 않는 현장이 섞여 있다. 따라서 주 비교는 본 시스템을 
+- RETIRE(verified previous MD) | 변수 구분 변수 및 하위요인 구성과 역할 독립변수 YOLO-LLM 안전관제 시스템 도입 설치·3개월 이상 정상 운용 확인 도입=1, 미설치·미운
+- RETIRE(verified previous MD) | 연구 모형은 도입 집단 구분(D)에 따른 두 집단의 안전관리 실효성 조정 평균을 비교하는 단순 모형으로 설정하였다.
+- RETIRE(verified previous MD) | 
+- RETIRE(verified previous MD) | 주: 화살표는 모형의 분석 관계이며 인과관계 입증을 뜻하지 않는다.
+- RETIRE(verified previous MD) | 주 분석은 <그림 4-1>의 비교 모형으로 수행하며, 주 결론은 H1의 집단 간 조정 평균 차이로 도출한다. 모집 목표와 검정력은 제5절 제1항
+- RETIRE(verified previous MD) | 제1절의 연구 모형에 따라 연구 문제 두 개와 그에 대응하는 연구 가설을 세운다. 각 가설의 이론적 근거와 선행연구는 제2장 제5절 제1항(H1
+- RETIRE(verified previous MD) | 연구 문제 1. 두 집단(YOLO-LLM 안전관제 시스템 도입집단, 미도입집단)의 관리자가 지각한 현재 안전관리 실효성은 응답자·현장 특성(공변
+- RETIRE(verified previous MD) | 연구 가설 1(H1). 두 집단(YOLO-LLM 안전관제 시스템 도입집단, 미도입집단) 중 도입집단의 관리자가 지각한 안전관리 실효성은 응답자·
+- RETIRE(verified previous MD) | H1은 안전관리 실효성 8문항 평균점수의 조정 평균 차이로 검정한다. 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 하위요인별 차
+- RETIRE(verified previous MD) | 연구 문제 2. 두 집단 간 안전관리 실효성 차이는 응답자가 조사 시점에 지각한 안전관리 예산 제약성 수준에 따라 달라지는가.
+- RETIRE(verified previous MD) | 연구 가설 2(H2). 두 집단 간 안전관리 실효성 차이는 조사 시점에 안전관리 예산 제약성을 크게 지각하는 응답자일수록 더 클 것이다.
+- RETIRE(verified previous MD) | H2는 H1과 같은 조정변수에 W와 집단의 상호작용항을 더한 일반선형모형으로 검정한다.
+- RETIRE(verified previous MD) | 가설 가설 내용 분석 관계 H1 두 집단(YOLO-LLM 안전관제 시스템 도입집단, 미도입집단) 중 도입집단의 관리자가 지각한 안전관리 실효성은
+- RETIRE(verified previous MD) | 변수명 하위요인 조작적 정의 측정방법 독립변수: YOLO-LLM 안전관제 시스템 도입(D) — 시스템 설치와 응답일 현재 3개월 이상 정상 운용
+- RETIRE(verified previous MD) | 주: 안전관리 실효성 하위요인의 정의는 제2장 제3절 제1∼5항을 따른다. 문항별 근거는 별도의 근거 대조표로 관리하며 문항 전문은 부록(도입 
+- RETIRE(verified previous MD) | 종속변수는 특정 시스템의 기능이나 만족도가 아니라 현장 일반의 업무 수준으로 정의하였다. 미도입 현장 관리자도 같은 기준으로 응답해야 두 집단을
+- RETIRE(verified previous MD) | YOLO-LLM 안전관제 시스템 도입(D)은 정상 운용 중 알림이 없었던 현장도 1로 코딩한다. 실제 알림 수신과 응답자의 확인 경험은 설문의 
+- RETIRE(verified previous MD) | 안전관리 실효성(Y)과 안전관리 예산 제약성(W)은 두 집단 모두 설문 응답일 직전 1개월을 기준으로 응답한다. W는 점수가 높을수록 예산 제약
+- RETIRE(verified previous MD) | 채점안은 안전관리 실효성 점수(Y)를 8문항의 동일 가중 평균으로 산출한다. 하위요인별 문항 수가 1·1·2·2·2개이므로 2문항 하위요인은 1
+- RETIRE(verified previous MD) | 시스템 특성 인식(D)과 경보 피로도 완화 인식(E)은 도입 집단만 응답할 수 있으므로 가설 검정에 투입하지 않고 도입 집단의 기술통계만 보고하
+- RETIRE(verified previous MD) | 현장 운영 특성(A-7∼A-9)은 Y·W에 넣지 않고 공변량이나 범주형 통제요인으로도 투입하지 않는다. 위험 인지 경로·시점·소요시간은 도입이 
+- RETIRE(verified previous MD) | 세 문항은 역할이 다르다. A-7(담당자 부재 시 위험 인지 경로)과 A-8(순찰 간 위험 인지 시점)은 도입 현장에서는 시스템이 관리자의 위험
+- RETIRE(verified previous MD) | 운용 실태 확인은 결과를 보기 전에 정한 다음 규칙을 따른다. 본 시스템은 PC용 데스크톱 뷰어와 모바일 메신저 알림으로 위험 정보를 전달하므로
+- RETIRE(verified previous MD) | 조정변수 가운데 만 나이와 건설현장 경력은 구간으로 바꾸지 않고 연속값으로 투입한다. 경력은 안전관리·공사감독·시공관리 등 건설현장 업무 경력을
+- RETIRE(verified previous MD) | 이 변수들을 투입하는 까닭은 업무·책임 범위, 위험 판단과 업무 경험, 자원·관리 여건에서 두 집단의 구성이 다를 수 있기 때문이며, 성별 자체
+- RETIRE(verified previous MD) | 측정도구는 연구자가 수정·개발한 척도이다. 표준화된 기존 척도를 그대로 쓰지 않고, 선행연구의 개념을 근거로 연구자가 작성했던 구 설계 문항을 
+- RETIRE(verified previous MD) | 안전관리 실효성 문항은 다섯 하위요인에 관한 연구에 근거한다(김민기·박성호, 2026; 김용선, 2022; 김태헌, 2026; 김현수, 2026
+- RETIRE(verified previous MD) | 리커트 문항은 모두 1점 ‘전혀 그렇지 않다’부터 5점 ‘매우 그렇다’까지의 5점 척도로 측정한다.
+- RETIRE(verified previous MD) | 본 설문조사는 도입 현장과 미도입 현장의 안전관리 실효성을 같은 기준으로 재는 횡단 조사이다. 두 집단 모두 B·C는 설문 응답일 직전 1개월의
+- RETIRE(verified previous MD) | 측정도구는 4단계 절차로 설계하였다. 두 집단에 같이 쓰는 일반형 안전관리 실효성 문항의 내용타당도와 집단 간 해석 가능성을 조사 전에 확보하려
+- RETIRE(verified previous MD) | 3단계 전문가 필수성 평정과 4단계 인지면접·예비조사는 실시하지 않았다. 계획한 절차는 양 집단 실무를 대표하는 전문가가 리커트 24문항과 사실
+- RETIRE(verified previous MD) | 본 설문지는 공통부 21문항과 도입 현장 전용부 12문항으로 구성하며, 문항 전문은 부록에 수록하였다. 미도입 집단은 공통부 21문항에 응답하고
+- RETIRE(verified previous MD) | 구분 변수명 내용 응답 대상 문항수 문항번호 공통부 A 인구통계학적 특성 및 현장 운영 특성 소속·성별·만 나이(세)·건설현장 경력(년)·역할·
+- RETIRE(verified previous MD) | 주: 21·33문항은 측정 문항 수이며, 조사 관리용 현장 구분·현장명·성명 3개 입력 항목은 제외한다. A-7∼A-9는 리커트 척도가 아닌 보
+- RETIRE(verified previous MD) | 조사대상은 A공사 경기지역본부 산하 건설현장에서 안전관리 업무를 맡은 현장 관리자이다. 응답자는 두 집단 모두 시공사 측 현장소장·안전관리자·관
+- RETIRE(verified previous MD) | 모집 목표는 도입 현장 30개소 이상과 미도입 현장 30개소 이상, 총 60개소 이상이며 현장당 1명씩 총 60명 이상이다. 현장은 같은 관할 
+- RETIRE(verified previous MD) | 도입 현장의 후보 명부는 경기지역본부 안전관제 시스템의 카메라 등록 백업 자료로 파악한 등록 90개소·108대이다. 이 수는 모집 목표나 분석 
+- RETIRE(verified previous MD) | 자료는 2026년 10월 12일부터 10월 23일까지 자기응답 설문으로 수집하였다. 연구자가 설치·운용 상태를 아는 현장의 응답자에게 설문을 안
+- RETIRE(verified previous MD) | 연구자는 비교 대상 시스템을 개발하였고 현장 관리에도 관여하므로, 응답자가 연구자와의 관계를 의식하여 응답할 수 있다. 이를 줄이려고 안내문에 
+- RETIRE(verified previous MD) | 구분 내용 조사대상 A공사 경기지역본부 산하 조사대상 건설현장의 현장 관리자·안전관리자, 총공사비 120억 원 이상도 포함 비교 집단 모집 목표
+- RETIRE(verified previous MD) | 분석은 본 조사, 자료 정제·채점, 기술통계와 측정도구 점검, 사전 특성 분포·균형 진단, 공분산분석 가정 점검, 가설 검정 순으로 진행한다. 
+- RETIRE(verified previous MD) | 1. 자료 정제, 주요 변수 기술통계와 측정도구 점검. Y와 W는 제3절 제1항의 채점 규칙에 따라 산출하며, H1은 Y·집단·여섯 조정변수가 
+- RETIRE(verified previous MD) | 2. 사전 특성 진단과 가정 점검. 만 나이와 건설현장 경력은 집단별 평균·표준편차와 효과크기 Cohen's d(독립표본 t검정)로, 범주형 특
+- RETIRE(verified previous MD) | 가정 점검 항목은 두 연속 공변량과 Y의 선형 관계, D×나이·D×경력에 대한 회귀기울기 동질성, 잔차 정규성과 등분산성, 영향점, 공선성과 희
+- RETIRE(verified previous MD) | 3. H1의 공분산분석과 하위요인별 분석. H1은 응답자 i에 대해 다음의 일반선형모형으로 검정한다.
+- RETIRE(verified previous MD) | Y_i = β₀ + β_D D_i + β_A Age_i + β_E Exp_i + Σ γ_k Z_ki + ε_i
+- RETIRE(verified previous MD) | D_i는 도입=1·미도입=0, Age_i는 만 나이(세), Exp_i는 건설현장 경력(년), Z_ki는 소속·성별·역할·총공사비 구간의 더미, 
+- RETIRE(verified previous MD) | 하위요인별 분석은 다섯 하위요인 점수에 H1과 같은 모형을 각각 적용하고, 다섯 집단 효과의 p값을 하나의 검정군으로 묶어 Holm 보정을 적용
+- RETIRE(verified previous MD) | 4. H2의 상호작용 분석. H2는 H2 완전사례 전체의 평균으로 W를 평균중심화한 W_c와 D×W_c를 H1 모형에 더한 일반선형모형으로 검정
+- RETIRE(verified previous MD) | 5. 결과 해석 순서(사전 지정). H1 결과는 과정 지표인 지시 전달 소요시간(A-9)의 집단 차이와 짝지어 해석하며, 조합별 해석 순서는 결
+- RETIRE(verified previous MD) | <표 4-6> H1 결과와 과정 지표의 조합별 해석 순서
+- RETIRE(verified previous MD) | 지시 전달 소요시간(A-9) 집단 차이 H1(Y 조정 평균) 집단 차이 해석 순서 있음 있음 대응 과정(지시 전달 소요시간)과 결과(지각 실효성
+- RETIRE(verified previous MD) | 주: A-7·A-8의 집단 차이는 설계상 예상되므로 이 표의 조합 판정에 쓰지 않는다. 해석 순서는 대안 설명을 논의하는 순서이며, 각 설명은 
+- RETIRE(verified previous MD) | 이 설계에 따라 제6절에서는 표본 특성, 측정도구 점검, 기술통계와 사전 특성 균형을 제시하고, 제7절에서 가설 검증 결과를 <표 4-6>의 순
+- RETIRE(verified previous MD) | 본 절부터는 제1∼5절의 사후 횡단 비교 설계에 따라 결과를 제시한다. H1은 사전에 지정한 여섯 특성을 조정한 개인 지각 안전관리 실효성의 집
+- RETIRE(verified previous MD) | 실제 유효 표본은 73명(도입 34명·미도입 39명)이다. 모집 목표(도입·미도입 각 30개소 이상, 사전 검정력 산정 없음)는 충족했으나 두 
+- RETIRE(verified previous MD) | 도입 표본의 선정은 제5절 제1항의 등록 현장 90개소에서 출발한다. 연구자는 설치·운용 상태를 아는 현장 가운데 응답일 현재 3개월 이상 정상
+- RETIRE(verified previous MD) | 설문은 2026년 10월 12일부터 10월 23일까지 받았다. 연구자가 설치·운용 상태를 아는 현장에 설문을 안내하였다. 자료 정제와 채점은 제
+- RETIRE(verified previous MD) | 불성실 응답 판정은 제5절 제2항의 규칙을 따랐다. 유효 표본 73명의 문항 결측은 0건이다. B·C 전 문항, 도입 집단의 D·E 전 문항과 
+- RETIRE(verified previous MD) | <표 4-7> 조사 대상의 인구통계학적 특성과 현장 운영 특성(집단별)
+- RETIRE(verified previous MD) | 패널 A는 범주형 특성의 빈도와 비율이다.
+- RETIRE(verified previous MD) | 구분 항목 도입 빈도 (명) 도입 비율 (%) 미도입 빈도 (명) 미도입 비율 (%) 전체 빈도 (명) 전체 비율 (%) 소속 구분 시공사 17
+- RETIRE(verified previous MD) | 주: 도입 분류는 설치 및 응답일 현재 3개월 이상 정상 운용 요건에 근거하며, 알림 수신·확인 경험과 중단·장애 이력은 별도로 기록하지 않았다
+- RETIRE(verified previous MD) | 패널 B는 숫자로 수집한 만 나이와 건설현장 경력의 기술통계이다.
+- RETIRE(verified previous MD) | 연속 특성 단위 집단 n 평균 (M) 표준편차 (SD) 중위값 최솟값 최댓값 만 나이 세 도입 34 46.4 11.1 47.0 30 66 세 미
+- RETIRE(verified previous MD) | 주: 경력은 연 단위 정수로 수집하며(1년 미만은 0, 6개월 이상은 올림) 그대로 연속값으로 사용한다. 만 나이와 경력은 분석에서도 연속값으로
+- RETIRE(verified previous MD) | 패널 C는 현장 운영 특성(A-7∼A-9)의 집단별 분포이다.
+- RETIRE(verified previous MD) | 주: A-7∼A-9는 응답일 직전 1개월의 실제 상황을 묻는 사실 문항이며 Y·W·공변량에 투입하지 않는다. A-7·A-8은 운용 실태 확인 지
+- RETIRE(verified previous MD) | 도입 집단은 전원 남성이며, 시공사와 발주청 소속이 절반씩이고 총공사비 50억∼120억 원 구간이 가장 많다. 미도입 집단은 시공사 소속이 약 
+- RETIRE(verified previous MD) | 제 2 항 측정도구의 신뢰도 및 타당도 검증
+- RETIRE(verified previous MD) | Y는 현재 안전관리 업무의 실질적 수행 수준에 대한 개인 지각이며 B 8문항의 동일 가중 평균을 사용한다. 다섯 영역의 문항 수는 1·1·2·2
+- RETIRE(verified previous MD) | 측정도구의 내용타당도를 확인하는 전문가 필수성 평정(CVR)과 두 집단 인지면접·예비조사는 실시하지 않았다(제4절 제1항). 따라서 본 항에서는
+- RETIRE(verified previous MD) | <표 4-8> 측정도구의 신뢰도 검증 결과
+- RETIRE(verified previous MD) | 패널 A는 전체 및 집단별 내적 일관성 정보이다.
+- RETIRE(verified previous MD) | 측정변수 문항 수 분석 개인 수(전체/도입/미도입) Cronbach's α(전체/도입/미도입) 문항 간 관련성·점검 결과 안전관리 실효성 전체 
+- RETIRE(verified previous MD) | 주: 단일 문항 두 영역에는 α를 산출하지 않는다. 2문항 세 영역은 α 대신 전체 표본의 문항 간 상관(Pearson r)을 보고하고 8문항 
+- RETIRE(verified previous MD) | 패널 B는 탐색적 요인분석 결과이다.
+- RETIRE(verified previous MD) | 주: 탐색적 요인분석은 표본 적절성(KMO), 구형성 검정(Bartlett), 추출 요인 수, 적재 양상, 설명분산과 문항 제거 여부를 보고한다
+- RETIRE(verified previous MD) | Y 8문항과 W 4문항은 전체와 두 집단 모두에서 높은 내적 일관성을 보였다(Y α 0.906∼0.937, W α 0.885∼0.957). 2문
+- RETIRE(verified previous MD) | 본 항은 두 집단의 안전관리 실효성 분포와 상호작용·참고 변수의 분포를 확인한다.
+- RETIRE(verified previous MD) | <표 4-9> 주요 변수의 기술통계(집단별)
+- RETIRE(verified previous MD) | 패널 A는 공통 척도와 E 완전응답 평균점수의 분포이다.
+- RETIRE(verified previous MD) | 변수 집단 n 평균 (M) 표준편차 (SD) 안전관리 실효성 전체 도입 34 4.11 0.61 미도입 39 3.48 0.81 전체 73 3.78
+- RETIRE(verified previous MD) | 주: B·C의 n은 해당 척도 전 문항 응답자 수이며, 결측이 없어 <표 4-12>·<표 4-14>의 분석 표본과 같다. 왜도와 첨도는 모든 척
+- RETIRE(verified previous MD) | 패널 B는 도입 집단 전용 D·E의 문항별 응답 상태와 기술통계이다.
+- RETIRE(verified previous MD) | 문항 유효 응답 수 경험 부재 비해당 수 일반 무응답 수 평균 (M) 표준편차 (SD) D-1 34 — 0 3.71 1.00 D-2 34 — 0
+- RETIRE(verified previous MD) | 주: 각 행의 상태별 수 합계는 전용부 응답 대상 도입 개인 수 34명과 대조한다. D·E에는 비해당 선택지가 없으므로 경험 부재 비해당 칸을 
+- RETIRE(verified previous MD) | 안전관리 실효성의 원평균은 도입 집단 4.11점, 미도입 집단 3.48점이었다. 다섯 하위요인 가운데 집단 간 원평균 차이는 원격 파악에서 가장
+- RETIRE(verified previous MD) | 도입 집단의 경보 피로도 완화 인식은 평균 3.65점(표준편차 0.97)이었다. 시스템 특성 인식(D) 전체 평균은 3.74점이며, 네 특성 가
+- RETIRE(verified previous MD) | 제 4 항 두 집단의 사전 특성 분포·균형 진단
+- RETIRE(verified previous MD) | 본 항은 연속 특성 2개와 범주형 특성 4개의 집단별 분포 및 공통 관측범위를 확인한다.
+- RETIRE(verified previous MD) | <표 4-10> 두 집단의 사전 특성 분포·균형 진단 결과
+- RETIRE(verified previous MD) | 패널 A는 연속 공변량의 분포이다.
+- RETIRE(verified previous MD) | 패널 B는 범주형 통제요인의 분포이다.
+- RETIRE(verified previous MD) | 사전 특성 집계 단위 도입 범주별 n (%) 미도입 범주별 n (%) 범주별 비율 차이(도입−미도입) 효과크기(연속 Cohen's d, 범주 C
+- RETIRE(verified previous MD) | 주: 모든 특성에 결측이 없으며 분모는 도입 34명·미도입 39명이다. 현장당 1명이므로 개인 수와 현장 수는 같지만 각 특성의 측정 단위는 구
+- RETIRE(verified previous MD) | 집단 간 분포 차이가 가장 큰 특성은 성별이다. 성별의 Cramér's V는 0.279로 네 범주형 특성 가운데 가장 크고 Fisher 정확검정
+- RETIRE(verified previous MD) | 비교 조건의 차이는 여섯 특성과 별도로 현장 단위로 기술한다. 미도입 집단에는 CCTV를 운용하지 않는 현장이 포함된다. 본 시스템 외의 다른 
+- RETIRE(verified previous MD) | 제 1 항 공분산분석 가정 점검
+- RETIRE(verified previous MD) | 제5절 제2항에 정한 공분산분석의 가정(관측 독립성, 선형성, 회귀기울기 동질성, 잔차 정규성·등분산성, 영향점)을 점검한다.
+- RETIRE(verified previous MD) | <표 4-11> 공분산분석 가정 점검 결과
+- RETIRE(verified previous MD) | 점검 항목 진단 자료·방법 결과 추론에 대한 판단·후속 처리 관측의 독립성 현장당 1명 여부·현장 간 업무 공유 확인 현장당 1명에게만 설문을 
+- RETIRE(verified previous MD) | 주: 각 진단은 H1·다섯 영역·H2별로 기록한다. 회귀기울기 동질성 진단에서 D×만 나이와 D×경력을 점검하되 이를 H2의 D×W_c와 구분한
+- RETIRE(verified previous MD) | H1 모형은 회귀기울기 동질성, 잔차 정규성, 등분산성에서 뚜렷한 위반 신호가 없었고, 설계행렬이 완전 순위여서 추정에도 문제가 없었다. 선형성
+- RETIRE(verified previous MD) | 제 2 항 안전관리 실효성에 대한 공분산분석
+- RETIRE(verified previous MD) | 본 항은 B 8문항 평균 Y를 종속변수로, 도입 D를 집단 요인으로 하는 공분산분석을 적용한다. 만 나이 Age와 건설현장 경력 Exp는 연속 
+- RETIRE(verified previous MD) | 유의수준은 α=.05이며 양측 95% 신뢰구간을 보고한다. 제곱합은 Type III를 사용하고, 만 나이·경력의 조정 평균 기준값은 해당 분석의
+- RETIRE(verified previous MD) | 비표준화 B는 원래의 1∼5점 척도에서 본 도입−미도입 차이이고, 95% 신뢰구간은 그 추정이 얼마나 불확실한지를 보여 준다. 부분 η²는 모형
+- RETIRE(verified previous MD) | <표 4-12> 안전관리 실효성의 공분산분석 결과(조정 평균·집단 차이·효과크기)
+- RETIRE(verified previous MD) | 패널 A는 H1 완전사례에서의 원평균과 조정 평균이다.
+- RETIRE(verified previous MD) | 집단 n (명·개소) 원평균 (M) 원표준편차 (SD) 조정 평균·차이 SE 95% CI 도입 34 4.11 0.61 3.83 0.225 [3.
+- RETIRE(verified previous MD) | 주: 원평균·원표준편차는 H1 완전사례(73명) 기준이며 <표 4-9>와 같다. 조정 평균은 만 나이·경력을 H1 완전사례 평균에 두고 범주형 
+- RETIRE(verified previous MD) | 조정 차이(0.54점)가 원평균 차이(0.63점)보다 작은 것은 여섯 특성에서 두 집단의 구성 차이를 조정한 결과이며, 개별 통제변수의 기여는 
+- RETIRE(verified previous MD) | 패널 B는 집단 차이와 조정변수의 비표준화 계수이다.
+- RETIRE(verified previous MD) | 모형 항 B SE 95% CI t df p 절편 3.326 0.664 [1.999, 4.652] 5.01 62 <.001 도입(1)−미도입(0)
+- RETIRE(verified previous MD) | 주: 각 더미를 별도 행으로 펼쳤으며, 행 이름의 괄호 안이 기준범주이다. 기준범주는 소속=시공사, 성별=남성, 역할=공사감독, 총공사비=20억
+- RETIRE(verified previous MD) | 패널 C는 H1 집단 차이의 검정과 효과크기이다.
+- RETIRE(verified previous MD) | 검정 항 F 분자 df 분모 df p 부분 η² 집단(도입=1·미도입=0) 8.54 1 62 .005 0.121
+- RETIRE(verified previous MD) | 패널 D는 분석 규모와 모형 식별 상태이다.
+- RETIRE(verified previous MD) | n(도입/미도입/전체) 실제 계수 수 설계행렬 순위 rank (X) 잔차 df 가정 위반·추정 가능 여부 34/39/73 11 11 62 완전 
+- RETIRE(verified previous MD) | 주: 현장당 1명이므로 각 집단의 분석 개인 수와 현장 수는 같다. 잔차 자유도는 실제 완전사례 수 n에서 설계행렬의 순위 rank(X)를 뺀 
+- RETIRE(verified previous MD) | 도입−미도입 차이는 0.54점(B=0.539), SE=0.185, 95% CI [0.17, 0.91], F(1, 62)=8.54, p=.005,
+- RETIRE(verified previous MD) | 실제 표본의 표준오차로 역산한 검출 가능 최소 효과(80% 검정력, 양측 α=.05)는 (1.96+0.84)×SE=2.80×0.185=0.52점
+- RETIRE(verified previous MD) | 제5절 제2항에서 미리 정한 민감도 분석은 운용 실태 확인에서 시스템 경로가 작동하지 않은 도입 응답자 19명을 빼고, 시스템 경로 충족 도입 
+- RETIRE(verified previous MD) | 사전 지정 민감도 분석과 별도로, 영향점·응답 품질·희소범주가 H1 추정에 미치는 영향을 사후 점검으로 확인한다.
+- RETIRE(verified previous MD) | 패널 E는 H1 집단 차이의 사후 강건성 점검 결과이다.
+- RETIRE(verified previous MD) | 점검 조건 n 조정 차이 B SE 95% CI p 기본 모형(원고 보고값) 73 0.539 0.185 [0.170, 0.908] .005 Coo
+- RETIRE(verified previous MD) | 주: 결과를 확인한 뒤 수행한 사후 점검이며 사례·변수 선택에 사용하지 않았다. 각 조건은 전체 표본에 필터를 적용해 H1 모형을 다시 적합한 
+- RETIRE(verified previous MD) | 패널 E에서 공변량을 조정한 모든 점검 조건은 기본 모형과 같은 양(+)의 방향으로 0.44∼0.53점의 차이를 보였다(p=.006∼.015).
+- RETIRE(verified previous MD) | 제 3 항 안전관리 실효성 하위요인별 공분산분석
+- RETIRE(verified previous MD) | 다섯 영역은 조기인지=B-1, 대응 신속성=B-2, 원격 파악=(B-3+B-4)/2, 순찰부담 경감=(B-5+B-6)/2, 위험 통제력=(B-7
+- RETIRE(verified previous MD) | <표 4-13> 하위요인별 공분산분석 결과(Holm 보정 포함)
+- RETIRE(verified previous MD) | 패널 A는 영역별 조정 차이와 추론값이다.
+- RETIRE(verified previous MD) | 하위요인 n(도입/미도입) 도입 조정 평균 미도입 조정 평균 차이 B 차이 95% CI F 분자·분모 df 비보정 p Holm 보정 p 부분 η
+- RETIRE(verified previous MD) | 주: 다섯 영역의 집단 차이에 대한 p 전체를 하나의 검정군으로 하여 Holm 보정을 적용한다. 하나의 종속변수 안에서 두 집단의 사후비교만 보
+- RETIRE(verified previous MD) | 패널 B는 영역별 모형 식별 상태와 가정 점검 요약이다.
+- RETIRE(verified previous MD) | 하위요인 실제 계수 수 설계행렬 순위 rank (X) 잔차 df 가정 위반·추정 가능 여부 조기인지 11 11 62 완전 순위로 추정 가능. L
+- RETIRE(verified previous MD) | 하위요인별로 보면, 다섯 영역 모두 도입 집단의 조정 평균이 미도입 집단보다 높게 나타났다. 차이는 원격 파악에서 0.72점(Holm 보정 p=
+- RETIRE(verified previous MD) | 제 4 항 집단과 안전관리 예산 제약성의 상호작용 분석
+- RETIRE(verified previous MD) | 본 항은 응답자가 조사 시점에 지각한 예산 제약성 W에 따라 도입·미도입 집단의 차이가 달라지는지를 분석한다. 분석에는 제2항의 공분산분석 모형
+- RETIRE(verified previous MD) | W는 C 4문항의 평균이며, 점수가 높을수록 조사 시점에 예산 제약을 크게 지각함을 뜻한다. 이 W를 H2 완전사례 전체(73명)의 W 평균 3
+- RETIRE(verified previous MD) | <표 4-14> 집단과 안전관리 예산 제약성의 상호작용 분석 결과
+- RETIRE(verified previous MD) | 패널 A는 모형 항의 부호 있는 계수와 신뢰구간이다.
+- RETIRE(verified previous MD) | 모형 항 B SE 95% CI t df p 집단 D(도입=1·미도입=0) 0.501 0.184 [0.134, 0.868] 2.73 60 .008
+- RETIRE(verified previous MD) | 주: 집단 계수는 W가 중심화 평균일 때의 차이이다. W_c 계수는 미도입 집단의 W 기울기이고, 도입 집단의 W 기울기는 W_c와 D×W_c의
+- RETIRE(verified previous MD) | 패널 B는 양 집단의 공통 관측범위 안에서 산출한 조건부 집단 차이이다.
+- RETIRE(verified previous MD) | 예산 제약성 수준 실제 W값·공통범위 포함 여부 도입 조정 평균 미도입 조정 평균 조건부 차이 B SE 95% CI t df p 평균−1SD W
+- RETIRE(verified previous MD) | 주: W의 집단별 범위는 도입 1.50∼5.00, 미도입 1.00∼5.00이고 공통 관측범위는 1.50∼5.00이며, H2 완전사례 전체의 W 
+- RETIRE(verified previous MD) | 패널 C는 상호작용 검정과 H2의 분석 규모·식별 상태이다.
+- RETIRE(verified previous MD) | D×W_c의 F 분자·분모 df p n(도입/미도입/전체) 실제 계수 수 rank (X) 잔차 df 가정 위반·추정 가능 여부 2.35 1, 6
+- RETIRE(verified previous MD) | 주: 분석 개인 수와 현장 수는 같으며 H2에 사용한 실제 완전사례에서 잔차 df=n−rank(X)를 확인한다. F는 부호를 나타내지 않으므로 
+- RETIRE(verified previous MD) | 상호작용은 B=0.309, SE=0.201, 95% CI [−0.09, 0.71](F(1, 60)=2.35, p=.131, 부분 η²=0.038
+- RETIRE(verified previous MD) | 제 5 항 가설 검증 결과 종합
+- RETIRE(verified previous MD) | <표 4-15> 연구 가설 검증 결과 종합
+- RETIRE(verified previous MD) | 가설 연구 가설 분석방법 핵심 추정·불확실성 검정통계량·자유도·p 검정결과 H1 두 집단(YOLO-LLM 안전관제 시스템 도입집단, 미도입집단)
+- RETIRE(verified previous MD) | 주: 분석 개인 수와 현장 수, 실제 계수 수·설계행렬 순위·잔차 자유도와 가정 점검 결과는 각 모형 표에 보고한다. 사전 검정력 산정은 하지 
+- RETIRE(verified previous MD) | 첫째, 여섯 특성을 조정한 뒤에도 도입 집단의 안전관리 실효성은 미도입 집단보다 0.54점 높게 나타나 H1은 지지되었다(95% CI [0.17
+- RETIRE(verified previous MD) | H1 결과는 과정 지표인 지시 전달 소요시간(A-9)의 집단 차이와 짝지어 <표 4-6>의 조합으로 판정한다. A-9의 집단 차이는 ‘없음’으로
+- RETIRE(verified previous MD) | 제5장에서는 이 결과가 선행연구 및 과정 지표와 어떤 관계에 있는지 논의하고, 연구의 결론과 시사점, 한계를 제시한다.
+- RETIRE(verified previous MD) | 제 5 장 논의 및 결론
+- RETIRE(verified previous MD) | 제 1 절 연구 결과 논의
+- RETIRE(verified previous MD) | 이 절에서는 제3장에서 다룬 기술적 경보 품질과 관리자가 지각한 안전관리 실효성을 구분해 논의한다. 담당자가 자리를 비웠을 때 위험을 어떤 경로
+- RETIRE(verified previous MD) | H1("도입 현장 관리자가 지각한 안전관리 실효성은 응답자·현장 특성을 통제한 뒤에도 미도입 현장보다 높을 것이다")은 지지되었지만, 차이의 크
+- RETIRE(verified previous MD) | H1의 차이를 해석할 때는 탐지·검증·알림으로 이어지는 시스템 경로가 일부 도입 현장에서만 설계 의도대로 운용되었다는 점을 함께 보아야 한다. 
+- RETIRE(verified previous MD) | 하위요인 가운데 조기인지·원격 파악·위험 통제력의 차이는 Holm 보정 후에도 유의하였다. 차이는 각각 0.62점·0.72점·0.54점이었고, 
+- RETIRE(verified previous MD) | H2("안전관리 예산 제약을 크게 느끼는 관리자일수록 두 집단의 실효성 차이가 더 클 것이다")는 지지되지 않았다. 집단과 예산 제약성의 상호작
+- RETIRE(verified previous MD) | 다음 제2절에서는 이 논의를 바탕으로 연구 결과를 요약하고, 시사점과 한계, 향후 연구 방향을 제시한다.
+- RETIRE(verified previous MD) | 제 2 절 결론
+- RETIRE(verified previous MD) | 본 연구는 YOLO 1차 탐지와 LLM 2차 검증을 결합한 안전관제 시스템을 개발하고, A공사 경기지역본부 산하 도입·미도입 현장 관리자 73명
+- RETIRE(verified previous MD) | 이 결과에서 논의할 점은 다음과 같다. 도입 집단의 우위는 YOLO 1차 탐지, LLM 2차 검증, 관리자 알림으로 이어지는 본 시스템의 설계가
+- RETIRE(verified previous MD) | 이 논의에서 실무와 학술 양쪽의 시사점을 끌어낼 수 있다. 실무에서는 중소규모 현장이 본 시스템을 도입할 때 탐지·검증·알림의 시스템 경로가 관
+- RETIRE(verified previous MD) | 본 연구의 한계는 설계에서 비롯된다. 무작위 배정과 사전 측정이 없는 횡단 비교이므로 시간적 우선성을 확인할 수 없고 선정 편향이 남는다(Sha
+- RETIRE(verified previous MD) | 향후 연구는 다른 기관·공종으로 표본을 넓히고, 집단 매칭과 도입 전후 반복 측정으로 선정 편향과 시간적 선후관계를 보완할 필요가 있다. 본 연
+- RETIRE(verified previous MD) | [확정 필요: 분류 미정 서지]
+- RETIRE(verified previous MD) | [01] 왕인국, 「건설현장 위험요인 식별을 위한 RAG와 Fine-tuning 기반 LLM 성능향상에 관한 연구」, 광운대학교 대학원 건축공학
+- RETIRE(verified previous MD) | [02] 윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전
+- RETIRE(verified previous MD) | [03] The jamovi project, jamovi [Computer Software]. https://www.jamovi.org [확정 
+- RETIRE(verified previous MD) | [04] 「중대재해 처벌 등에 관한 법률」 [시행 2022. 1. 27.] [법률 제17907호, 2021. 1. 26., 제정] [확정 필요:
+- RETIRE(verified previous MD) | [05] EN 50136-1, Alarm systems — Alarm transmission systems and equipment — Part
+- STRUCTURAL | kept 229; imported 274; retired previous-MD units 298
+- SURVEY TARGET x2 | 중소규모 건설현장을 위한 YOLO-LLM -> 건설현장 YOLO-LLM
+- SURVEY TARGET x2 | 현장소장 -> 현장소장(관리감독자)
+- SURVEY TARGET x2 | 도입·미도입 두 집단 모두 -> 도입·미도입 현장 모두
+- SURVEY TARGET x2 | CCTV YOLO-LLM 안전알림 시스템 -> YOLO-LLM 안전관제 시스템
+- SURVEY TARGET x8 | CCTV YOLO-LLM 안전알림 -> YOLO-LLM 안전관제 시스템
+- SURVEY TARGET x2 | 분석용 집단은 -> 분석용 현장 도입 여부는
+- SURVEY TARGET x2 | 해당 집단의 적용 문항 -> 해당 현장의 적용 문항
+- COVER TARGET x2 | 중소규모 건설현장을 위한 YOLO-LLM 안전관제 시스템 개발 및 실증 연구 -> 건설현장 YOLO-LLM 안전관제 시스템 개발 및 실증 연구
+- APPEND(new appendix 2) | 60 top-level paragraphs
+- APPEND(new appendix 3) | 39 top-level paragraphs
+- TOC(section1) from fresh | 문단 209개, base section1 서식은 버림
+- IMAGE UPDATE | <그림 1-1> -> BinData/image1.png (images.json explicit replaces mapping)
+- IMAGE UPDATE | <그림 4-1> -> BinData/image6.png (images.json explicit replaces mapping)

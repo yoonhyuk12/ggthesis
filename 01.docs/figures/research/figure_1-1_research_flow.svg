@@ -15,7 +15,7 @@
 <text x="78" y="433" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제2장  이론적 배경과 가설 도출 근거</text>
 <text x="1360" y="433" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">Why</text>
 <text x="80" y="510" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">이론적 배경과 선행연구 고찰</text>
-<text x="80" y="561" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1·H2 가설 도출 근거</text>
+<text x="80" y="561" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">H1 가설 도출 근거</text>
 <polyline points="750,600 750,660" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="750,660 759.0,642.0 741.0,642.0" fill="#243C55"/>
 <rect x="45" y="660" width="1410" height="220" fill="white" stroke="#243C55" stroke-width="3"/>
@@ -36,15 +36,14 @@
 <text x="80" y="1223" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">제6절  자료 정제·기술통계·신뢰도·사전 특성 분포·균형 진단</text>
 <text x="80" y="1274" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">제7절  가정 점검 → H1 두 집단 공분산분석</text>
 <text x="80" y="1325" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">(ANCOVA, 연속 공변량 2·범주형 통제요인 4) → 하위요인 Holm 보정</text>
-<text x="80" y="1376" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">→ H2 상호작용 일반선형모형(집단 × 예산 제약성) → 채택·기각 판정</text>
+<text x="80" y="1376" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">→ 지지·기각 판정</text>
 <polyline points="750,1440 750,1500" fill="none" stroke="#243C55" stroke-width="3"/>
 <polygon points="750,1500 759.0,1482.0 741.0,1482.0" fill="#243C55"/>
 <rect x="45" y="1500" width="1410" height="220" fill="white" stroke="#243C55" stroke-width="3"/>
 <rect x="45" y="1500" width="1410" height="78" fill="#F2F4F6" stroke="#243C55" stroke-width="3"/>
-<text x="78" y="1553" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제5장  논의 및 결론</text>
+<text x="78" y="1553" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#243C55" text-anchor="start">제5장  결론</text>
 <text x="1360" y="1553" font-family="Malgun Gothic" font-size="36" font-weight="700" fill="#58616B" text-anchor="middle">의미</text>
 <text x="80" y="1630" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">결과의 의미 논의: 선행연구·과정 지표(A-7∼A-9)와 대조</text>
 <text x="80" y="1681" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="start">연구 요약, 학술적·실무적 시사점, 한계와 향후 연구 방향</text>
-<text x="750" y="1790" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">횡단적 두 집단 비교 · 개인 응답 분석 · jamovi 사용</text>
-<text x="750" y="1845" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">조정된 집단 차이를 해석하며 인과 효과를 단정하지 않는다.</text>
+<text x="750" y="1790" font-family="Malgun Gothic" font-size="36" font-weight="400" fill="#20262D" text-anchor="middle">사후 1회 조사로 도입·미도입 현장 비교 · 관리자 개인 응답 단위 분석 · jamovi 사용</text>
 </svg>
