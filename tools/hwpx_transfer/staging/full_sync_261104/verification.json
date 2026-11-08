@@ -1,0 +1,14 @@
+{
+  "zip_xml": "PASS",
+  "full_section2_text_order_matches_MD_assembly": true,
+  "front_abstract_thanks_and_toc_titles_match": true,
+  "structure_items": 113,
+  "table_geometry_preserved": 52,
+  "BinData_preserved": true,
+  "pageBreak_CELL": 0,
+  "markers_expected": [],
+  "markers_actual": [],
+  "base_unchanged": true,
+  "MD_unchanged": true,
+  "manual_reapply": []
+}

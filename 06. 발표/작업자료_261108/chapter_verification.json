@@ -1,0 +1,179 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1425_윤혁_석사학위논문_심의발표_스토리재구성.pptx",
+  "source_sha256": "23fc5061bdc7d83379797ca8a874893e025e5c509c540cd6b1fe3d42dfe4766d",
+  "source": "00. hwpx/261108_1359_경기공학_건축안전_윤혁_논문.hwpx",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1430_윤혁_석사학위논문_심의발표_논문목차순.pptx",
+  "output_pdf": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1430_윤혁_석사학위논문_심의발표_논문목차순.pdf",
+  "slide_count": 26,
+  "main_slides": 22,
+  "appendix_slides": 4,
+  "chapter_ranges": [
+    [
+      3,
+      4,
+      "제1장",
+      "서론"
+    ],
+    [
+      5,
+      6,
+      "제2장",
+      "이론적 배경"
+    ],
+    [
+      7,
+      13,
+      "제3장",
+      "YOLO-LLM 안전관제 시스템 개발"
+    ],
+    [
+      14,
+      19,
+      "제4장",
+      "연구설계 및 실증분석"
+    ],
+    [
+      20,
+      22,
+      "제5장",
+      "결론"
+    ],
+    [
+      23,
+      26,
+      "부록",
+      "질의응답 참고"
+    ]
+  ],
+  "checks": [
+    {
+      "chapter_titles_verified_in_thesis_dump": [
+        63,
+        68,
+        86,
+        109,
+        130
+      ]
+    },
+    {
+      "explicit_why_how_what_removed": true
+    },
+    {
+      "a9_removed": true
+    },
+    {
+      "powerpoint_open_slides": 26
+    },
+    {
+      "powerpoint_text_height_overflow": []
+    },
+    {
+      "pdf_export": "success"
+    },
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "slide_numbers_continuous": "2–26"
+    },
+    {
+      "chapter_order_and_labels_match_thesis": true
+    },
+    {
+      "shape_boundary_overflow": []
+    },
+    {
+      "a9_and_explicit_why_how_what_absent": true
+    },
+    {
+      "major_values_crosschecked_against_thesis": [
+        "878",
+        "834",
+        "13",
+        "44",
+        "39",
+        "98.4",
+        "6.55",
+        "7.3",
+        "73",
+        "34",
+        "3.83",
+        "3.29",
+        "0.54",
+        "0.17",
+        "0.91",
+        "0.78",
+        "3.99",
+        "3.65"
+      ]
+    },
+    {
+      "visual_review": "26장 접촉시트 및 최종5장 확대 검토, 잘림·겹침 없음"
+    },
+    {
+      "story_review": "story_review 워커 장순서·장별 논리 승인, 필수 추가수정 없음"
+    }
+  ],
+  "figure_usage": [
+    {
+      "slide": 7,
+      "source": "그림3-4",
+      "type": "original"
+    },
+    {
+      "slide": 8,
+      "source": "그림3-1",
+      "type": "original"
+    },
+    {
+      "slide": 12,
+      "source": "그림3-6",
+      "type": "original"
+    },
+    {
+      "slide": 14,
+      "source": "그림4-1",
+      "type": "original"
+    },
+    {
+      "slide": 6,
+      "source": "표2-4",
+      "type": "presentation table"
+    },
+    {
+      "slide": 10,
+      "source": "표3-7",
+      "type": "presentation chart"
+    },
+    {
+      "slide": 18,
+      "source": "표4-12",
+      "type": "presentation chart"
+    },
+    {
+      "slide": 19,
+      "source": "표4-13",
+      "type": "presentation table"
+    }
+  ],
+  "theory_source_idxs": [
+    297,
+    298,
+    299,
+    303,
+    304,
+    370,
+    371,
+    468,
+    469,
+    475,
+    476,
+    478,
+    479,
+    481,
+    482,
+    484,
+    485
+  ],
+  "limitations": []
+}

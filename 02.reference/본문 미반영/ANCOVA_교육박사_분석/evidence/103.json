@@ -1,0 +1,421 @@
+{
+  "id": "103",
+  "bibliography": {
+    "author": "이영숙",
+    "year": 2012,
+    "title": "사회극놀이와 연계한 다문화교육활동이 유아의 자아존중감 및 사회적 능력에 미치는 효과",
+    "university": "대구대학교 대학원 유아교육학과",
+    "degree": "박사",
+    "file": "02.reference/103. 이영숙(2012)_사회극놀이와 연계한 다문화교육활동이 유아의 자아존중감 및 사회적 능력에 미치는 효과.pdf"
+  },
+  "extraction": {
+    "tool": "Kordoc",
+    "version": "4.24.2",
+    "command": "node .claude/kordoc/dist/cli.js \"02.reference/103. 이영숙(2012)_사회극놀이와 연계한 다문화교육활동이 유아의 자아존중감 및 사회적 능력에 미치는 효과.pdf\" --no-images --script-tags -o \"02.reference/ANCOVA_교육박사_분석/kordoc/103.md\"",
+    "files": [
+      "kordoc/103.md",
+      "kordoc/103.log"
+    ],
+    "warnings": [
+      "CLI 전체 페이지 OK; 통계표는 Kordoc 추출 후 PDF 텍스트 및 렌더로 교차 확인",
+      "문서 전역 키워드 검색은 미보고를 확정하지 않으므로 검토 범위에서 보고 확인 못함으로 표현"
+    ]
+  },
+  "design": {
+    "type": "비동등 통제집단 사전-사후 준실험; 개인 무작위배정하지 않음 명시",
+    "intervention": "사회극놀이 연계 다문화교육 vs 교사중심 이야기나누기 다문화교육",
+    "timing": "2010년 5월9일–7월22일 11주32회; 사전4월25–29일, 사후8월1–5일",
+    "analysis": "종속변수별 사전점수를 공변량으로 사후 ANCOVA",
+    "note": "연구설계 절은 혼합요인설계·상호작용 언급하나 결과는 ANCOVA 중심. 혼합 ANOVA를 실제 실시했다고 단정하지 않음",
+    "pdf_page": [
+      104,
+      105,
+      107
+    ],
+    "printed_page": [
+      93,
+      94,
+      96
+    ]
+  },
+  "sample": {
+    "n": 120,
+    "population": "부산 소재 만5세 유아로 기술",
+    "kindergartens": 20,
+    "mean_age_months": {
+      "experimental": 79.4,
+      "comparison": 80.25
+    },
+    "pdf_page": 79,
+    "printed_page": 68,
+    "note": "만5세 설명과 평균월령 간 차이는 원문 그대로 기록, 재분류 안 함"
+  },
+  "groups": [
+    {
+      "name": "실험",
+      "n": 60,
+      "kindergartens": 10,
+      "일반가정": 50,
+      "다문화가정": 10
+    },
+    {
+      "name": "비교",
+      "n": 60,
+      "kindergartens": 10,
+      "일반가정": 50,
+      "다문화가정": 10
+    }
+  ],
+  "outcomes": [
+    "전체 자아존중감",
+    "인지적 능력",
+    "동료수용",
+    "신체적 능력",
+    "어머니 수용",
+    "자기수용",
+    "전체 사회적 능력",
+    "사회적 적응능력",
+    "사회적 순응능력"
+  ],
+  "covariates": [
+    "각 종속변수의 사전점수"
+  ],
+  "software": {
+    "name": "SPSS",
+    "version": "18.0",
+    "pdf_page": 107,
+    "printed_page": 96
+  },
+  "assumptions": [
+    {
+      "item": "회귀기울기 동질성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p93–96 및 결과 p97–115 검토; 관련 키워드 전체 검색 병행",
+      "pdf_page": [
+        104,
+        107,
+        108,
+        126
+      ],
+      "printed_page": [
+        93,
+        96,
+        97,
+        115
+      ]
+    },
+    {
+      "item": "선형성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p93–96 및 결과 p97–115 검토; 관련 키워드 전체 검색 병행",
+      "pdf_page": [
+        104,
+        107,
+        108,
+        126
+      ],
+      "printed_page": [
+        93,
+        96,
+        97,
+        115
+      ]
+    },
+    {
+      "item": "잔차 정규성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p93–96 및 결과 p97–115 검토; 관련 키워드 전체 검색 병행",
+      "pdf_page": [
+        104,
+        107,
+        108,
+        126
+      ],
+      "printed_page": [
+        93,
+        96,
+        97,
+        115
+      ]
+    },
+    {
+      "item": "등분산성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p93–96 및 결과 p97–115 검토; 관련 키워드 전체 검색 병행",
+      "pdf_page": [
+        104,
+        107,
+        108,
+        126
+      ],
+      "printed_page": [
+        93,
+        96,
+        97,
+        115
+      ]
+    },
+    {
+      "item": "영향점",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p93–96 및 결과 p97–115 검토; 관련 키워드 전체 검색 병행",
+      "pdf_page": [
+        104,
+        107,
+        108,
+        126
+      ],
+      "printed_page": [
+        93,
+        96,
+        97,
+        115
+      ]
+    },
+    {
+      "item": "기관/학급 군집 보정",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p93–96 및 결과 p97–115 검토; 관련 키워드 전체 검색 병행",
+      "pdf_page": [
+        104,
+        107,
+        108,
+        126
+      ],
+      "printed_page": [
+        93,
+        96,
+        97,
+        115
+      ]
+    },
+    {
+      "item": "사전 집단 동질성",
+      "status": "보고하나 서술 주의",
+      "evidence": "표Ⅳ-1 자아존중감 t7.13,p<.01; 사회적능력 t−2.48을 비유의로 설명. 정확 p/df 부재. 전자 평균의 방향은 본문과 반대",
+      "pdf_page": 108,
+      "printed_page": 97
+    }
+  ],
+  "tables": [
+    {
+      "number": "Ⅳ-1",
+      "title": "실험집단과 비교집단 유아의 동질성 검사",
+      "columns": [
+        "변인",
+        "실험 M/SD",
+        "비교 M/SD",
+        "t"
+      ],
+      "pdf_page": 108,
+      "printed_page": 97,
+      "key_values": {
+        "자아존중감": {
+          "exp_mean": 91.65,
+          "comp_mean": 105.25,
+          "t_as_printed": 7.13
+        },
+        "사회적능력_t": -2.48
+      }
+    },
+    {
+      "number": "Ⅳ-2",
+      "title": "전체 자아존중감에 관한 사전·사후 검사",
+      "columns": [
+        "집단",
+        "N",
+        "사전 M/SD",
+        "사후 M/SD",
+        "조정된 사후 M/SD(원문표기)"
+      ],
+      "pdf_page": 109,
+      "printed_page": 98,
+      "key_values": {
+        "exp": {
+          "n": 60,
+          "pre": 91.65,
+          "post": 105.97,
+          "adjusted_post": 110.69,
+          "adjusted_spread_label": "SD",
+          "adjusted_spread": 1.67
+        },
+        "comp": {
+          "n": 60,
+          "pre": 105.25,
+          "post": 110.18,
+          "adjusted_post": 106.49,
+          "adjusted_spread": 1.59
+        }
+      }
+    },
+    {
+      "number": "Ⅳ-3",
+      "title": "전체 자아존중감에 관한 공분산분석",
+      "columns": [
+        "Source",
+        "SS",
+        "df",
+        "MS",
+        "F(별표유의수준)"
+      ],
+      "pdf_page": 110,
+      "printed_page": 99,
+      "key_values": {
+        "group_SS": 1040.28,
+        "group_df": 1,
+        "F": 12.37,
+        "p": "<.001",
+        "error_SS": 9673.93,
+        "error_df": 117,
+        "error_MS": 84.12
+      }
+    },
+    {
+      "number": "Ⅳ-14",
+      "title": "전체 사회적 능력에 관한 사전·사후 검사",
+      "columns": [
+        "집단",
+        "N",
+        "사전 M/SD",
+        "사후 M/SD",
+        "조정된 사후 M/SD(원문표기)"
+      ],
+      "pdf_page": 121,
+      "printed_page": 110,
+      "key_values": {
+        "exp": {
+          "pre": 3.81,
+          "post": 4.09,
+          "adjusted_post": 4.01,
+          "adjusted_spread": 0.08
+        },
+        "comp": {
+          "pre": 3.96,
+          "post": 3.59,
+          "adjusted_post": 3.83,
+          "adjusted_spread": 0.08
+        }
+      }
+    },
+    {
+      "number": "Ⅳ-15",
+      "title": "전체 사회적 능력에 관한 공분산분석",
+      "columns": [
+        "Source",
+        "SS",
+        "df",
+        "MS",
+        "F(별표유의수준)"
+      ],
+      "pdf_page": 122,
+      "printed_page": 111,
+      "key_values": {
+        "group_SS": 0.79,
+        "group_df": 1,
+        "F": 4.26,
+        "p": "<.05",
+        "error_SS": 21.39,
+        "error_df": 117,
+        "error_MS": 0.19
+      }
+    }
+  ],
+  "results": [
+    "원문 보고: 전체 자아존중감 F(1,117)=12.37,p<.001, 조정평균 실험110.69/비교106.49",
+    "원문 보고: 전체 사회적능력 F(1,117)=4.26,p<.05, 조정평균 실험4.01/비교3.83",
+    "사회적적응능력 F124.11,p<.001(p113/PDF124), 사회적순응능력 F88.91,p<.001(p115/PDF126); 위 값은 원문 보고이며 수치 검증된 재분석 결과가 아님"
+  ],
+  "reporting_strengths": [
+    "원평균 사전/사후와 조정 사후평균을 같은 표에 제시하여 조정 전후 구분",
+    "조정평균표 다음에 공변량/집단/오차 ANCOVA 표를 배치하는 읽기 쉬운 구조",
+    "개인 무작위 배정하지 않은 설계를 명시"
+  ],
+  "limitations": [
+    {
+      "type": "분석 보고",
+      "detail": "부분η², CI, TypeIII, 다중검정 보정, 가정검정은 검토 범위에서 보고 확인 못함"
+    },
+    {
+      "type": "표기",
+      "detail": "조정평균 옆 변산값을 SD라고 인쇄. SE라고 바꾸거나 추정하지 말 것; 원출력 없으므로 정확한 지표 확인 불가",
+      "pdf_page": [
+        109,
+        121
+      ],
+      "printed_page": [
+        98,
+        110
+      ]
+    },
+    {
+      "type": "원문 서술 불일치(시각확인)",
+      "detail": "p97은 실험 자아존중감이 더 높다고 설명하나 표 평균은91.65<105.25. 방향이 반대",
+      "pdf_page": 108,
+      "printed_page": 97
+    },
+    {
+      "type": "원문 수치 불일치(시각확인)",
+      "detail": "표Ⅳ-3 오차 SS9673.93/df117≈82.683이나 MS84.12로 인쇄. F12.37은1040.28/84.12와 가까움. 원자료 없으므로 어떤 수치 오류인지 확정 불가",
+      "pdf_page": 110,
+      "printed_page": 99
+    },
+    {
+      "type": "설계",
+      "detail": "유치원20곳에서 각6명 표집, 개인 단위df117 사용; 군집 상관 보정은 검토 범위에서 보고 확인 못함"
+    }
+  ],
+  "applicability_to_ch4": {
+    "priority": "조정 전후 평균표의 배치 구조만 보조 참고; 통계 보고의 모범사례 우선순위는 낮음",
+    "adopt": [
+      "원평균과 조정평균의 차이를 드러내는 제시 순서",
+      "조정평균표와 검정표를 나누는 구성"
+    ],
+    "do_not_adopt": [
+      "사후변화를 횡단비교에 전용",
+      "조정평균 옆 SD 표기",
+      "별표 p만 제시하고 CI·효과크기 생략",
+      "사전 비유의=동질성 확정 논리"
+    ],
+    "current_manuscript": "현재4장 제5·7절 EMM의 SE/95%CI 및 차이CI, 부분η², Holm, 가정검정과 강건성 점검 유지. 학위논문에 ANCOVA가 있다는 이유만으로 같은 분석의 타당성이 보증되지 않음"
+  },
+  "verification": {
+    "pdf_pages": 314,
+    "pdf_page_basis": "1-based",
+    "mapping": "본문 PDF쪽 = 인쇄쪽 + 11",
+    "sha256": "2045b2f6710c7d86692f9833227357f6a65ddede9097281964fee676f516b17f",
+    "method": "Kordoc 주 추출; PyMuPDF는 쪽번호·대표 수치 대조와 렌더 보조만 사용",
+    "keyword_search": [
+      "기울기",
+      "Levene",
+      "Shapiro",
+      "등분산",
+      "정규성",
+      "선형성",
+      "Holm",
+      "Bonferroni",
+      "신뢰구간"
+    ],
+    "keyword_search_result": "양 논문에서 위 키워드 0회; 방법·결과 절 직접 독해 병행",
+    "visual_checked": [
+      "103_pdf108.png",
+      "103_pdf109.png",
+      "103_pdf110.png",
+      "103_pdf121.png",
+      "103_pdf122.png"
+    ],
+    "anchor_pages": [
+      {
+        "pdf": 79,
+        "printed": 68
+      },
+      {
+        "pdf": 108,
+        "printed": 97
+      },
+      {
+        "pdf": 122,
+        "printed": 111
+      }
+    ]
+  }
+}

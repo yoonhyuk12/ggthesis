@@ -1,0 +1,36 @@
+[
+  {
+    "table": "<표3-6>",
+    "widths": [
+      8500,
+      8500,
+      14684,
+      8000
+    ]
+  },
+  {
+    "table": "<표3-7>",
+    "widths": [
+      10400,
+      6000,
+      10065,
+      6200,
+      7019
+    ]
+  },
+  {
+    "table": "<표4-13>",
+    "widths": [
+      9200,
+      5700,
+      2800,
+      6800,
+      3700,
+      8000,
+      3484
+    ]
+  },
+  {
+    "section8_pagebreak": "removed to avoid isolated preceding transition"
+  }
+]

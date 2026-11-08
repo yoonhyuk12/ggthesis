@@ -1,0 +1,4759 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- ie 호환성 --> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+
+		JAMS3.0 - 논문검색
+	  </title>
+
+
+
+<title>JAMS</title>
+
+
+
+<link rel="stylesheet" href="/jams30/css/font.css">
+<script type="text/javascript" src="/jams30/js/jquery-3.4.1.js"></script>
+
+
+
+<link rel="stylesheet" href="/jams30/css/jquery-ui.css">
+<link rel="stylesheet" href="/jams30/css/default.css">
+
+<link rel="stylesheet" href="/jams30/css/popup.css">
+<link rel="stylesheet" href="/jams30/css/layout.css">
+<link rel="stylesheet" href="/jams30/css/style.css">
+<link rel="stylesheet" href="/jams30/css/jams.css">
+<link rel="stylesheet" href="/jams30/css/reset.css">
+
+<script type="text/javascript" src="/jams30/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/jams30/js/script.js"></script>
+<script type="text/javascript" src="/jams30/js/jquery-printme.js"></script>
+<script type="text/javascript" src="/jams30/js/jams.js"></script>
+<script type="text/javascript" src="/jams30/js/jquery-ui/jquery.ui.datepicker-ko.js"></script>
+
+<link rel="icon" type="image/png" href="/jams30/css/images/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/jams30/css/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/jams30/css/images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/jams30/css/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/jams30/css/images/favicon-128.png" sizes="128x128" />
+ 
+
+<meta name="application-name" content="JAMS PORTAL"/>
+<meta name="msapplication-TileColor" content="#3C67A6" />
+<meta name="msapplication-TileImage" content="/jams30/css/images/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/jams30/css/images/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/jams30/css/images/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/jams30/css/images/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/jams30/css/images/mstile-310x310.png" />
+<!-- 20231016 정재영선생님 요청으로 테스트 학회 웹검색에서 제외_손용휘 -->
+
+
+
+
+<!-- <script type="text/javascript" src="/res/js/jquery/jquery-1.9.1.js"></script> -->
+<!-- <script type="text/javascript" src="/res/js/jquery/jquery-migrate-1.2.1.js"></script> -->
+<!-- <script type="text/javascript" src="/res/js/jquery/jquery.dbNaviTwoDepthSwap.js"></script> -->
+<!-- <script type="text/javascript" src="/res/js/jquery/jquery.side.js"></script> -->
+<script type="text/javascript" src="/res/js/jquery/jquery.form.js"></script>
+<script type="text/javascript" src="/res/js/jquery/json2.js"></script>
+
+
+
+<!-- <script type="text/javascript" src="/res/js/jquery/jquery.print-preview-sub.js"></script> -->
+<!-- <script type="text/javascript" src="/res/js/analytics.js"></script> -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153772846-1"></script> -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153772846-1');
+  
+  function googleAnalystic() {
+		$.ajax({
+			type: "POST",
+			url : "/auth/googleAnalystic",
+			async: true,
+			dataType: 'json',
+			cache: false,
+			timeout: 600000,
+			success : function(data) {
+				hideLoadingBar();
+				window.location.replace(data.googleUrl);
+
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				alert(jqXHR.responseText);
+			}
+		});
+	}
+</script>
+
+
+
+
+<script type="text/javascript" src="/res/js/rowspan.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/res/css/print/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/res/css/print/print-preview.css" media="screen">
+
+
+<!-- 공통스크립트 추가 (2013-10-22 RYO) -->
+<script type="text/javaScript" src="/res/js/jams_common.js"></script>
+
+<script type="text/javaScript" language="javascript" defer="defer">
+
+function toDatepicker(objId) {
+	$('#'+objId).datepicker({
+		changeMonth: true,
+		changeYear: true,
+		dateFormat:'yy-mm-dd',
+//		yearRange: '2000:'+(new Date()).getFullYear()
+// 		yearRange: 'c-100:c+5'
+		yearRange: '-100:+5'
+	});
+}
+
+function openDatepicker(objId)
+{
+	$('#'+objId).focus();
+	toDatepicker(objId);
+}
+
+</script>
+
+<!-- TUI Editor -->
+<link rel="stylesheet" href="/editor/tui/toastui-editor.min.css">
+<script type="text/javascript" src="/editor/tui/toastui-editor-all.min.js"></script>
+<!-- TUI Editor 커스텀-->
+<link rel="stylesheet" href="/editor/tui/tui-editor-view.css">
+<script type="text/javascript" src="/editor/tui/tui-editor-common.js"></script>
+
+
+<script type="text/javascript">
+	/* history.pushState(null, null, '#noback');
+	
+	window.onhashchange = function(){
+		
+		history.pushState(null, null, '#noback');
+	} */
+
+	window.addEventListener('popstate', function(e) {
+
+		var state = e.state;
+		if (state !== null) {
+
+			history.pushState(null, null, window.location.pathname);
+		}
+	})
+	
+	function chkFile(obj){
+		var file_name = $(obj).val().replace(/.*(\/|\\)/, '');
+		var file_id = $(obj).attr("name");
+// 		$("label[for="+file_id+"]").text(file_name);
+		$(obj).siblings('.upload-name').val(file_name);
+	}
+	
+	
+	function showLoadingBar() { 
+		var maskHeight = $(document).height(); 
+		var maskWidth = window.document.body.clientWidth; 
+		var mask = "<div id='mask' style='position:absolute; z-index:9000; background-color:#000000; display:none; left:0; top:0;'></div>"; 
+		var loadingImg = ''; loadingImg += "<div id='loadingImg' style='position:absolute; left:50%; top:40%; display:none; z-index:10000;'>"; 
+		loadingImg += " <img src='"+window.document.location.origin+"/images/loading.gif'/>"; loadingImg += "</div>"; $('body').append(mask).append(loadingImg); 
+		$('#mask').css({ 'width' : maskWidth , 'height': maskHeight , 'opacity' : '0.3' }); 
+		$('#mask').show(); $('#loadingImg').show(); 
+	}
+	function showLoadingBar2() { 
+		var maskHeight = $(document).height(); 
+		var maskWidth = window.document.body.clientWidth; 
+		var mask = "<div id='mask' style='position:absolute; z-index:9000; background-color:#000000; display:none; left:0; top:0;'></div>"; 
+		var loadingImg = ''; loadingImg += "<div id='loadingImg' style='position:absolute; left:50%; top:40%; display:none; z-index:10000;'>"; 
+		loadingImg += " <img src='"+window.document.location.origin+"/images/loading2.gif'/>"; loadingImg += "</div>"; $('body').append(mask).append(loadingImg); 
+		$('#mask').css({ 'width' : maskWidth , 'height': maskHeight , 'opacity' : '0.3' }); 
+		$('#mask').show(); $('#loadingImg').show(); 
+	}
+	
+	function hideLoadingBar() {
+		$('#mask, #loadingImg').hide();
+		$('#mask, #loadingImg').remove(); 
+	}
+	
+</script>
+
+<script type="text/javascript" language="javascript" defer="defer">
+	$(document).ready(function() {
+		$("#login_id").keyup(function (event) {
+		    regexp = /[\ㄱ-ㅎㅏ-ㅣ가-힣]/g;
+		    v = $(this).val();
+		    if (regexp.test(v)) {
+		        $(this).val(v.replace(regexp, ''));
+		        /* alert("한글은 입력이 불가능합니다."); */
+		        return;
+		    }
+		});
+		
+		//숫자, 영문만 입력
+		//ex) <input type="text" id="userId" name="userId" required="required" class="onlyIntEng"> class 생성 후 onlyIntEng 입력하면 완료
+		$(document).on('keyup focusout', '.onlyIntEng', function() {
+			$(this).val($(this).val().replace(/[^|a-z|A-Z|0-9|\*]/g,""));
+		});
+		//숫자,영문,한글만 입력
+		$(document).on('keyup focusout', '.onlyIntEngKor', function() {
+			$(this).val($(this).val().replace(/[^|ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|\*]/g,""));
+		});
+
+		//이메일
+		$(document).on('keyup focusout', '.onlyEmail', function() {
+			$(this).val($(this).val().replace(/[^|a-z|A-Z|0-9|@.\-_]/g,""));
+		});
+
+		//영문만 입력
+		$(document).on('keyup focusout', '.onlyEng', function() {
+			$(this).val($(this).val().replace(/[^|a-z|A-Z|\*]/g,""));
+		});
+
+		//한글만 입력
+		$(document).on('keyup focusout', '.onlyKor', function() {
+			$(this).val($(this).val().replace(/[^|가-힣|\*]/g,""));
+		});
+
+		//숫자만
+		$(document).on('keyup focusout', '.onlyInteger', function() {
+			$(this).val($(this).val().replace(/[^0-9]/g,""));
+		});
+
+		//숫자 180~-180까지 입력
+		$(document).on('keyup focusout', '.onlyLot', function() {
+			if( $(this).val() != null && $(this).val() != '' ) {
+				if($(this).val() == '-' || $(this).val() == '+'){
+					return;
+				}
+				var num = Number($(this).val());
+				if (typeof num === 'number' && num <= 180 && num >= -180){
+					return;
+				}
+				else{
+					$(this).val('');
+				}
+			}
+		});
+
+		//숫자 90~-90까지 입력
+		$(document).on('keyup focusout', '.onlyLat', function() {
+			if( $(this).val() != null && $(this).val() != '' ) {
+				if($(this).val() == '-' || $(this).val() == '+'){
+					return;
+				}
+				var num = Number($(this).val());
+				if (typeof num === 'number' && num <= 90 && num >= -90){
+					return;
+				}
+				else{
+					$(this).val('');
+				}
+			}
+		});
+
+		//실수만 입력
+		$(document).on('keyup focusout', '.onlyFloat', function() {
+			if( $(this).val() != null && $(this).val() != '' ) {
+				var tmps = $(this).val().replace(/[^\.|^0(0)+|^0-9\.]/g, '');
+
+				// 소수점은 하나만 입력되도록
+				var arr = tmps.split(".");
+				if(arr.length > 2) {
+					tmps = arr[0] + '.' + arr[1];
+				}
+				$(this).val(tmps);
+			}
+		});
+
+		//maxLength에 의거해서 byte(3byte) 체크
+		$(document).on('keyup focusout', '.checkByte', function() {
+			var s = $(this).val();
+			var limit = $(this).attr('maxlength');
+
+			if(s != undefined && s != "") {
+				var b = getByteLength(s);
+				if(b > limit){
+			        while(b > limit){
+						s = s.slice(0,-1);
+						//3byte 체크 함수
+			            b = getByteLength(s);
+			        }
+					$(this).val(s);
+				}
+
+			}
+		});
+		
+		//뒤로가기 동작 제한
+		//	 history.pushState(null, null, location.href);  // push 
+		//	 window.onpopstate = function(event) {
+		// 	 history.go(1);
+		// 	};
+		var fullMenuNm = 'e-Journal>논문검색';
+		
+		if('MENU-000000000051000' == 'MENU-000000000030000'){
+			fullMenuNm = '학술대회 > 학술대회 목록';
+		}
+		var menuNmSplit = fullMenuNm.split('>');
+		
+		for(var i in menuNmSplit){
+			$('#loca').append('<li>'+menuNmSplit[i]+'</li>');
+		}
+		
+		
+		var lang = 'KO';
+		var text_can = "취소";
+		if(lang != 'KO') text_can = 'Cancel';
+		
+		$("#loginBox").dialog({
+			autoOpen : false,
+			width : 800,
+			enableModal: true, 
+			close:function(event){
+				$("#dialogFilm").css("display", "none");
+				$("#loginBox").dialog("close");
+			}
+		});
+		
+		$("#joinBox").dialog({
+			autoOpen : false,
+			width : 1200,
+			enableModal: true, 
+			close:function(event){
+				$("#dialogFilm").css("display", "none");
+				$("#joinBox").dialog("close");
+			}
+		});
+// 		$( "#dialog" ).dialog({
+// 			autoOpen: false,
+// 			width: 800,
+// 			overlay:{ opacity: 0., background: '#000000'},
+// 			buttons: [
+// 				{
+// 					text: "Ok",
+// 					click: function() {
+// 						$( this ).dialog( "close" );
+// 					}
+// 				},
+// 				{
+// 					text: "Cancel",
+// 					click: function() {
+// 						$( this ).dialog( "close" );
+// 					}
+// 				}
+// 			]
+// 		});
+
+		// Link to open the dialog
+// 		$( "#dialog-link" ).click(function( event ) {
+// 			$( "#dialog" ).dialog( "open" );
+// 			event.preventDefault();
+// 		});
+		
+// 		console.log($('.menu_d1 .on').offset().left);
+		
+// 		var left = ($('.menu_d1 .on').offset().left/$(window).width()*100)-15;
+// 		console.log("left : "+left);
+		
+// 		$(".menu_d2").css({
+// 			"position" : "absolute",
+// 			"left" : left+"%"
+// 		});
+		
+	});
+	
+
+	// 로그인 다이얼로그 팝업
+	function login() {
+	    $("#dialogFilm").css("display", "block"); //부모창이 입력 안되게 하는 백그라운드 설정
+		$("#loginBox").dialog("open");
+		
+	    //로그인시 대시보드 이동
+		$("#dashMove").val("DASH");
+	} 
+
+	/* 
+	function showHelp() {
+		if ($("#helpMenuId").length > 0) {
+			var helpMenuId = $("#helpMenuId").val();
+
+			$.ajax({
+				url : "/co/helpMsg/ajaxGetHelpMsg.kci",
+				type : "POST",
+				dataType : "json",
+				data : {
+					"helpMenuId" : helpMenuId
+				},
+				success : function(data) {
+					var vo = data.dataSet;
+					$("#helpClob").html(vo.contentText);
+				}
+			});
+			$("#helpMessage").toggle();
+		} else {
+			$("#helpMessage").toggle();
+		}
+	}
+	 */
+	
+	function showHelp() {
+		var helpMenuId = $("#helpMenuId").val();
+		var sMenuId = 'MENU-000000000051000';
+		var helpTxt = "";
+		
+		if(helpMenuId == undefined){
+			helpMenuId = sMenuId;
+		}
+		
+		$('.help_box .tooltip').children().remove();
+		
+		$.ajax({
+			url : "/co/helpMsg/ajaxGetHelpMsg.kci",
+			type : "POST",
+			dataType : "json",
+			data : {
+				"helpMenuId" : helpMenuId
+			},
+			success : function(data) {
+ 				if(data.dataSet != null){
+ 					helpTxt = "<p>" + data.dataSet.contentText + "</p>";
+ 					$('.help_box .tooltip').append(helpTxt);
+ 				} else {
+ 					// 도움말 없을 시 안보이게 처리
+ 					$('.help_box').css('display','none');
+ 					$('.help_box .tooltip').css('display','none');
+ 				}
+			}
+		});
+		
+		
+	}
+	
+	window.onload = function(){
+		
+// 		if(localStorage.getItem("menuDept2")==null){
+			$.ajax({
+				url : "/co/com/menuListDep2.kci",
+				type : "POST",
+	// 			data : {"upMenuId" : selMenuId},
+				dataType : "json",
+				async : true,
+				success : function(data){
+					if(data.resultList.length > 0){
+						
+						var arr = new Array();
+						
+						$.each(data.resultList, function(i, item){
+							
+							var map = newMap();
+							map.put("LVL", item.LVL);
+							map.put("MENU_ID", item.MENU_ID);
+							map.put("PATH", item.PATH);
+							map.put("UPPER_MENU_ID", item.UPPER_MENU_ID);
+							map.put("MENU_NM", item.MENU_NM);
+							map.put("MENU_ENG_NM", item.MENU_ENG_NM);
+							map.put("MENU_ETC_NM", item.MENU_ETC_NM);
+							map.put("PROGRM_ID", item.PROGRM_ID);
+							map.put("MENU_DC", item.MENU_DC);
+							map.put("MENU_ORDR", item.MENU_ORDR);
+							map.put("USE_AT", item.USE_AT);
+							map.put("PROGRM_NM", item.PROGRM_NM);
+							map.put("FILE_PATH", item.FILE_PATH);
+							map.put("FILE_URL", item.FILE_URL);
+							
+							arr.push(map);
+						});
+						
+						localStorage.setItem("langCd", data.langCd);
+						localStorage.setItem("accnId", data.accnId);
+						localStorage.setItem("menuDept2", JSON.stringify(arr));
+					}
+				},
+				error: function (request, status, error) { 
+					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+					hideLoadingBar();
+				}
+				
+			});
+// 		}
+		
+		if($("#helpMenuId").val() == undefined){
+			$('.help_box').hide();
+		}else{
+			$('.help_box').show();
+		}
+		
+		// 도움말
+		showHelp();
+	}
+	
+	function newMap() {
+		var map = {};
+		map.value = {};
+		map.getKey = function(id) {
+		return id;
+		};
+		map.put = function(id, value) {
+		var key = map.getKey(id);
+		map.value[key] = value;
+		};
+		map.contains = function(id) {
+		var key = map.getKey(id);
+		if(map.value[key]) {
+			return true;
+		} else {
+			return false;
+		}
+		};
+		map.get = function(id) {
+		var key = map.getKey(id);
+		if(map.value[key]) {
+			return map.value[key];
+		}
+		return null;
+		};
+		map.remove = function(id) {
+		var key = map.getKey(id);
+		if(map.contains(id)){
+			map.value[key] = undefined;
+		}
+		};
+	 
+		return map;
+	}
+	
+	
+	// 회원가입 다이얼로그 팝업
+	function selectMembType() {
+	    $("#dialogFilm").css("display", "block"); //부모창이 입력 안되게 하는 백그라운드 설정
+		$("#joinBox").dialog("open");
+		
+	}
+	
+	function joinMove(membType) {
+		var joinType = '';
+		if (membType == "M") {
+			joinType = '00';
+		} else if (membType == "G") {
+			joinType = '01';
+		} else if (membType == "F") {
+			joinType = '02';
+		}
+	
+		var dynamicForm = "";
+		dynamicForm = document.createElement("form");
+		dynamicForm.setAttribute("method","post");
+		dynamicForm.setAttribute("action","/co/com/EgovMenu.kci");
+		
+		var soceId = document.createElement("input");
+		soceId.setAttribute("id", "soceId");
+		soceId.setAttribute("name", "soceId");
+		soceId.setAttribute("type", "hidden");
+		soceId.setAttribute("value", "INS000062477");
+		dynamicForm.appendChild(soceId);
+		
+		var s_url = document.createElement("input");
+		s_url.setAttribute("id", "s_url");
+		s_url.setAttribute("name", "s_url");
+		s_url.setAttribute("type", "hidden");
+		s_url.setAttribute("value", "/sj/config/membMana/sjMembAgreement.kci");
+		dynamicForm.appendChild(s_url);
+		
+		var s_MenuId = document.createElement("input");
+		s_MenuId.setAttribute("id", "s_MenuId");
+		s_MenuId.setAttribute("name", "s_MenuId");
+		s_MenuId.setAttribute("type", "hidden");
+		s_MenuId.setAttribute("value", "MENU-000000000072003"); 
+		dynamicForm.appendChild(s_MenuId);
+
+		var joinTypeInput = document.createElement("input");
+		joinTypeInput.setAttribute("id", "joinType");
+		joinTypeInput.setAttribute("name", "joinType");
+		joinTypeInput.setAttribute("type", "hidden");
+		joinTypeInput.setAttribute("value", joinType); 
+		dynamicForm.appendChild(joinTypeInput);
+		
+		document.body.appendChild(dynamicForm);
+		dynamicForm.submit();
+	}
+	
+	function searchIdPwd(searchType) {
+		var theURL = "/co/login/jams/searchIDPWD.kci?searchType="+searchType;
+	    var popWidth  = "650";
+	    var popHeight = "550";
+		
+		var winHeight = document.body.clientHeight;	// 현재창의 높이 
+		var winWidth  = document.body.clientWidth;	// 현재창의 너비 
+		var winX = window.screenX || window.screenLeft || 0;// 현재창의 x좌표  
+		var winY = window.screenY || window.screenTop || 0;	// 현재창의 y좌표  
+
+		var popX = winX + (winWidth  - popWidth) /2; 
+		var popY = winY + (winHeight - popHeight)/2; 
+		
+		window.open(theURL,"SearchIdPwd","width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX);
+	}
+	
+</script>
+
+</head>
+<body>
+<div id="dialogFilm"></div>
+	<!--top-->
+	<div class="wrap">
+		
+
+
+
+
+
+
+
+
+<script>
+
+	
+	// 로그인 처리
+	function jmLogin() {
+		if ($("#login_id").val() == "") {
+			alert('논문제목');
+			$("#login_id").focus();
+			return;
+		} else if ($("#login_pw").val() == "") {
+			alert('저자명');
+			$("#login_pw").focus();
+			return;
+	     } else if ($("#loginAuthKey").val() == "") {
+	            alert('인증키를 입력해주세요.');
+	            $("#loginAuthKey").focus();
+	        return;
+		} else {
+			var dynamicForm = "";
+			dynamicForm = document.createElement("form");
+			dynamicForm.setAttribute("method","post");
+			dynamicForm.setAttribute("action","/co/login/jams/jmLogin.kci");
+			
+			var mberId = document.createElement("input");
+			mberId.setAttribute("id", "mberId");
+			mberId.setAttribute("name", "mberId");
+			mberId.setAttribute("type", "hidden");
+			mberId.setAttribute("value", $('#login_id').val());
+			dynamicForm.appendChild(mberId);
+			
+			var password = document.createElement("input");
+			password.setAttribute("id", "password");
+			password.setAttribute("name", "password");
+			password.setAttribute("type", "hidden");
+			password.setAttribute("value", $('#login_pw').val());
+			dynamicForm.appendChild(password);
+			
+			var redirect_uri = document.createElement("input");
+			redirect_uri.setAttribute("id", "redirect_uri");
+			redirect_uri.setAttribute("name", "redirect_uri");
+			redirect_uri.setAttribute("type", "hidden");
+			redirect_uri.setAttribute("value", $("#dashMove").val());
+			dynamicForm.appendChild(redirect_uri);
+			
+			var authKey = document.createElement("input");
+			authKey.setAttribute("id", "authKey");
+			authKey.setAttribute("name", "authKey");
+			authKey.setAttribute("type", "hidden");
+			authKey.setAttribute("value", $("#loginAuthKey").val().trim());
+			dynamicForm.appendChild(authKey);
+			
+			document.body.appendChild(dynamicForm);
+			dynamicForm.submit();
+		}
+	}
+
+	function jmlogout() {
+		var dynamicForm = "";
+		dynamicForm = document.createElement("form");
+		dynamicForm.setAttribute("method","post");
+		dynamicForm.setAttribute("action","/co/login/jams/jmLogout.kci");
+		document.body.appendChild(dynamicForm);
+		dynamicForm.submit();
+	}
+
+	function selectMemberJoin() {
+		resetJoinGuidance();
+		/*
+		$("#joinGuidance").dialog({
+			width : 980,
+			height : 680,
+			modal : true,
+			resizable : false,
+			position : {
+				my : "center center",
+				at : "center top",
+				of : wrapper
+			}
+		});
+		*/
+		selectMembType();
+	}
+
+/* 	$.ajax({
+		url : "/co/common/paperCnt1.kci",
+		type : "POST",
+		dataType : "json",
+		data : {},
+		success : function(data) {
+			var cnt = data.dataSet;
+			$("#cnt1").text(cnt);
+		}
+	});
+
+	$.ajax({
+		url : "/co/common/paperCnt2.kci",
+		type : "POST",
+		dataType : "json",
+		data : {},
+		success : function(data) {
+			var cnt = data.dataSet;
+			$("#cnt2").text(cnt);
+		}
+	});
+
+	$.ajax({
+		url : "/co/common/paperCnt3.kci",
+		type : "POST",
+		dataType : "json",
+		data : {},
+		success : function(data) {
+			var menuId = data.menuId;
+			var cnt = data.dataSet;
+
+			$("#servicePaper")
+					.attr(
+							"href",
+							"/co/com/EgovMenu.kci?s_url=/sj/eljoPubs/authorPubsArtiCorrectList.kci&s_MenuId="
+									+ menuId);
+			$("#cnt3").text(cnt);
+		}
+	}); */
+
+// 	var setTime = 5400;
+// 	var check = true;
+
+// 	function fnTimeExtension() {
+// 		setTime = 5400;
+// 		check = true;
+// 		$.ajax({
+// 			url : "/co/login/jams/sessionTimeExtension.kci",
+// 			type : "POST",
+// 			success : function(data) {
+// 				if (data.dataset == "fail") {
+// 					alert("사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요.");/*사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요.*/
+// 					window.location.href = "/co/main/jmMain.kci";
+// 				}
+// 			}
+// 		});
+// 	}
+
+// 	function msg_time() {
+// 		// 남은시간 계산
+// 		m = ("0" + Math.floor(setTime / 60)).slice(-2) + ":"
+// 				+ ("0" + (setTime % 60)).slice(-2);
+// 		var msg = m;
+
+// 		// 5분 남기고 로그인연장 모달창
+// 		if (setTime < 300 && check) {
+// 			$("#dialog-confirm").dialog({
+// 				width : 400,
+// 				height : "auto",
+// 				modal : true,
+// 				resizable : false,
+// 				buttons : {
+// 					"Yes" : function() {
+// 						$(this).dialog("close");
+// 						fnTimeExtension();
+// 					},
+// 					"No" : function() {
+// 						$(this).dialog("close");
+// 						check = false;
+// 					}
+// 				},
+// 				position : {
+// 					my : "center",
+// 					at : "center",
+// 					of : container
+// 				}
+// 			});
+// 		}
+
+// 		if (setTime < 0) {
+// 			clearInterval(timer);
+// 			/* alert("사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요."); *//*사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요.*/
+// 			logout();
+// 		} else {
+// 			document.getElementById('viewTimer').innerHTML = msg;
+// 			setTime--;
+// 		}
+// 	}
+
+// 	
+
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			$('#timer').stop();
+			/* $('#timer').animate({"top": $(window).scrollTop() - 215 }); */
+			$('#timer').animate({
+				"top" : $(window).scrollTop()
+			});
+		});
+
+         
+
+	});
+	
+	function chg_dep2(selMenuId,index){
+		dep2_menu = "";
+		
+		var localStorageVal = localStorage.getItem('menuDept2');
+		var langCd = localStorage.getItem('langCd');
+		var accnId = localStorage.getItem('accnId');
+		var resultList = JSON.parse(localStorageVal);
+		$("ul.menu_d1 > li > a").removeClass('on');
+		$.each(resultList, function(i){
+			if(resultList[i].value.UPPER_MENU_ID == selMenuId){
+				dep2_menu += "<li>"
+				dep2_menu += "<a href=\"/co/com/EgovMenu.kci?s_url=" + resultList[i].value.FILE_URL + "&s_MenuId=" + resultList[i].value.MENU_ID + "&accnId=" + accnId + "\">";
+					if(langCd == 'EN'){
+						dep2_menu += resultList[i].value.MENU_ENG_NM;
+					} else if(langCd == 'ETC'){
+						dep2_menu += resultList[i].value.MENU_ETC_NM;
+					} else{
+						dep2_menu += resultList[i].value.MENU_NM;
+					}
+				dep2_menu += "	</a>"
+				dep2_menu += "</li>";
+			}
+		});
+		$('#menu_d2'+index).html('');
+		$('#menu_d2'+index).append(dep2_menu);
+		$('#menu_d1'+index).addClass('on');
+		
+// 		showLoadingBar();
+// 		$.ajax({
+// 			url : "/co/com/menuListDep2.kci",
+// 			type : "POST",
+// 			data : {"upMenuId" : selMenuId},
+// 			dataType : "json",
+// 			async : true,
+// 			success : function(data){
+// 				if(data.resultList.length > 0){
+// 					$('.menu_d2').children().remove();
+					
+// 					var langCd = data.langCd;
+// 					var accnId = data.accnId;
+// 					$("ul.menu_d1 > li > a").removeClass('on');
+// 					$.each(data.resultList, function(i, item){
+// 						dep2_menu += "<li>"
+// 						dep2_menu += "<a href=\"/co/com/EgovMenu.kci?s_url=" + item.FILE_URL + "&s_MenuId=" + item.MENU_ID + "&accnId=" + accnId + "\">";
+// 							if(langCd == 'EN'){
+// 								dep2_menu += item.MENU_ENG_NM;
+// 							} else if(langCd == 'ETC'){
+// 								dep2_menu += item.MENU_ETC_NM;
+// 							} else{
+// 								dep2_menu += item.MENU_NM;
+// 							}
+// 						dep2_menu += "	</a>"
+// 						dep2_menu += "</li>";
+// 					});
+// // 					$('.menu_d2').append(dep2_menu);
+// 					$('#menu_d2'+index).append(dep2_menu);
+// 					$('#menu_d1'+index).addClass('on');
+// 				}
+// // 				hideLoadingBar();
+// // 				var left = ($('.menu_d1 .on').offset().left/$(window).width()*100)-15;
+// // 				$(".menu_d2").css({
+// // 					"position" : "absolute",
+// // 					"left" : left+"%"
+// // 				});
+// 			},
+// 			error: function (request, status, error) { 
+// 				console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+// 				hideLoadingBar();
+// 			}
+			
+// 		});
+	}
+	
+	function changeLang(obj){
+ 		var val = "/co/locale.kci?lang="+obj.value;
+ 		window.location.href=val;
+ 	}
+	
+	function selectLoginHistory(){
+		var insiId = "INS000062477";
+		var membId = "";
+		
+		if(membId == null || membId == "") 
+		{
+			alert("회원정보가 없습니다.");
+			return;
+		}
+		
+		if(insiId == null || insiId == "") 
+		{
+			alert("학회정보가 없습니다.");
+			return;
+		}
+		
+		var theURL  = "/co/main/selectLoginHistory.kci";
+  		var myform = document.loginHistoryPopForm;
+   		var myWin = window.open("","dpopup", 'width=800, height=600, top = 100 left=350 scrollbars=yes, resizable=no, status=yes, noopener, noreferrer');
+    	myform.method="post";
+    	myform.action = theURL;
+		myform.target="dpopup";
+		myWin.focus();
+		myform.submit();
+ 	}
+	
+	function accessIpListPop(){
+		var url = "/sj/config/membMana/selectAccessIpView.kci";
+		win = window.open(url, "accessIpPopup", 'width=1000, height=900, top=30 left=350 scrollbars=yes, resizable=no, status=yes, noopener, noreferrer');
+	}
+	
+/* 	   function myInsiListPop(){
+	        var url = "/sj/config/membMana/selectMyInsiView.kci";
+	        win = window.open(url, "myInsiListPopup", 'width=1000, height=900, top=30 left=350 scrollbars=yes, resizable=no, status=yes, noopener, noreferrer');
+	    } */
+</script>
+
+<header>
+	<div class="container">
+		
+			
+			
+				<!-- 로그아웃상태 -->
+				<script>window.isLoggedIn=false;</script>
+				<div class="high_top logout">
+					<div class="ht_left">
+						<ul class="hd_top_ul">
+							
+								
+									<li><a href="javascript:login();">로그인</a></li>
+									<li><a href="javascript:selectMemberJoin();">회원가입</a></li>
+								
+								
+							
+						</ul>
+					</div>
+			
+		
+			<div class="ht_right">
+				
+		 		
+				
+				
+				<select name="" id="" class="select_lng" onchange="changeLang(this)" style="margin-top: -4px">
+					<option value="KO" selected >한국어</option>
+					<option value="EN"  >ENG</option>
+					
+				</select>
+				<div style="padding: 0px 5px 0px 5px; border: 1px solid #ccc; font-family: inherit;  border-radius: 0px;    -webkit-appearance: none; -moz-appearance: none;appearance: none; min-width: auto; display: inline-block; height: 32px;font-size: 14px;  color: #666;  line-height: 30px;  margin-top: 7px;">
+					<a href="https://portal.jams.or.kr/community/institute/instituteList.kci" target="_blank" rel="noopener">다른학회 둘러보기</a>
+					
+					
+				</div>
+				<div style="padding: 0px 5px 0px 5px; border: 1px solid #ccc; font-family: inherit;  border-radius: 0px;    -webkit-appearance: none; -moz-appearance: none;appearance: none; min-width: auto; display: inline-block; height: 32px;font-size: 14px;  color: #666;  line-height: 30px;  margin-top: 7px;">
+					<a href="https://portal.jams.or.kr/community/notice/noticeView.kci?noticeType=00&notiSeq=000000033625" target="_blank" rel="noopener">통합회원 안내</a>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="top">
+			<h1>
+				<a href="/co/main/jmMain.kci">
+					
+						
+
+							
+							
+
+							
+								
+									
+								
+								
+							
+								
+								
+							
+
+							
+								
+									<img src="/res/homepage/INS000062477/logo_IMG000016889.png"
+										alt="학회이미지입니다." style="height: 60px; min-width: 100%;"/>
+								
+								
+							
+							
+							
+						
+						
+					
+				</a>
+			</h1>
+			
+			<form name="loginHistoryPopForm" method="POST"></form>
+			
+			<!-- 메뉴 임포트 -->
+			﻿
+﻿﻿
+
+
+
+
+<script type="text/javascript">
+
+function goMainSearch() {
+	var keyword = document.getElementById("mainKwd");
+	
+	if (keyword.value == "" || keyword.value == null){
+		alert('검색어를 입력해 주세요.');			
+		keyword.focus();
+		return false;
+	} else {	
+		if(keyword.value != "검색어를 입력하세요.") {
+			document.searchFrm.kwd.value = keyword.value;
+			document.searchFrm.preKeyword.value = keyword.value;
+			document.searchFrm.action = "/co/com/EgovMenu.kci?s_url=/po/search/poArtiSear.kci&s_MenuId=MENU-000000000051000";
+			document.searchFrm.submit();
+		} else {
+			alert('검색어를 입력해 주세요.');			
+			keyword.focus();
+			return false;				
+		}
+	}
+}
+
+</script>
+<style>
+ul.menu_d1 li a .newico {
+position: absolute;
+top: 5px;
+right: -20px;
+height: 16px;
+line-height: 16px;
+padding: 0 10px;
+background-color: #ed1c25;
+color: #fff;
+font-size: 10px;
+font-weight: bold;
+border-radius: 8px;
+}
+</style>
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+		
+		
+		<nav>
+			<ul class="menu_d1">
+				
+					
+					
+						<li>
+							
+								
+								
+								
+									<a href="#안전문화연구" id="menu_d10" onmouseover="chg_dep2('MENU-000000000010000','0');"  >
+								
+							
+								
+									
+									
+									
+										안전문화연구
+									
+								
+								
+								
+							</a>
+							<ul class='menu_d2' id="menu_d20">
+							</ul>
+						</li>
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+						<li>
+							
+								
+								
+								
+									<a href="#학술지" id="menu_d111" onmouseover="chg_dep2('MENU-000000000020000','11');"  >
+								
+							
+								
+									
+									
+									
+										학술지
+									
+								
+								
+								
+							</a>
+							<ul class='menu_d2' id="menu_d211">
+							</ul>
+						</li>
+					
+				
+					
+					
+				
+					
+					
+						<li>
+							
+								
+								
+								
+									<a href="#e-Journal" id="menu_d113" onmouseover="chg_dep2('MENU-000000000050000','13');"  class="on">
+								
+							
+								
+									
+									
+									
+										e-Journal
+									
+								
+								
+								
+							</a>
+							<ul class='menu_d2' id="menu_d213">
+							</ul>
+						</li>
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+						<li>
+							
+								
+								
+								
+									<a href="#알림마당" id="menu_d117" onmouseover="chg_dep2('MENU-000000000060000','17');"  >
+								
+							
+								
+									
+									
+									
+										알림마당
+									
+								
+								
+								
+							</a>
+							<ul class='menu_d2' id="menu_d217">
+							</ul>
+						</li>
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+					
+					
+				
+			</ul>
+		</nav>
+		
+		<div class="btn_set">
+			<button class="btn_search">검색</button>
+			<button class="btn_menu_all">메뉴펼치기</button>
+		</div>
+	</div>
+</div>
+<form name="searchFrm" method="post">
+	<input type="hidden" id="printCondition" name="printCondition" value="text_idx" >
+	<input type="hidden" id="kwd" name="kwd" >
+	<input type="hidden" id="preKeyword" name="preKeyword">			
+	<div class="area_search">
+		<div class="area_search_wrap">
+			<div class="container">
+				<p>SEARCH</p>
+				<div class="search_wrap">
+					<input type="text" class="search_top" id="subKwd" onclick="this.value='';" onkeydown="javascript:if(event.keyCode==13) subGoSearch();">
+					<button onclick="subGoSearch();">검색</button>
+				</div>
+				<a href="#" class="search_close"><span>닫기</span></a>
+			</div>
+		</div>
+	</div>
+</form>
+<div class="area_allmenu">
+	<div class="allmenu_top">
+		<div class="container">
+			<p>전체메뉴</p>
+			<a href="#" class="allmenu_close">닫기</a>
+		</div>
+	</div>
+	
+	<div class="allmenu_box_wrap">
+		<div class="container">
+			
+				
+					<div class="allmenu_box">
+						
+							
+							
+							
+								<span class="dep01">안전문화연구</span>
+							
+						
+						<ul class="dep02_ul">
+							
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000010000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000010000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/sj/config/soceHomePgConf/guide/sjGuidEssiontialView.kci?guidDivCd=01&s_MenuId=MENU-000000000011000&accnId=AC0000000001">
+											
+												
+												
+												
+													학회소개
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						</ul>
+					</div>
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+				
+					<div class="allmenu_box">
+						
+							
+							
+							
+								<span class="dep01">학술지</span>
+							
+						
+						<ul class="dep02_ul">
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000020000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000020000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/sj/series/sereIntro/sjRetrieveNewSereList.kci&s_MenuId=MENU-000000000021000&accnId=AC0000000001">
+											
+												
+												
+												
+													학술지소개
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						</ul>
+					</div>
+					
+			
+					
+			
+				
+					<div class="allmenu_box">
+						
+							
+							
+							
+								<span class="dep01">e-Journal</span>
+							
+						
+						<ul class="dep02_ul">
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000050000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000050000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/search/poArtiSear.kci&s_MenuId=MENU-000000000051000&accnId=AC0000000001">
+											
+												
+												
+												
+													논문검색
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000050000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000050000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/search/prePrinting.kci&s_MenuId=MENU-000000000052000&accnId=AC0000000001">
+											
+												
+												
+												
+													Pre-Printing
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000050000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000050000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&accnId=AC0000000001">
+											
+												
+												
+												
+													학술지
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						</ul>
+					</div>
+					
+			
+					
+			
+					
+			
+					
+			
+				
+					<div class="allmenu_box">
+						
+							
+							
+							
+								<span class="dep01">알림마당</span>
+							
+						
+						<ul class="dep02_ul">
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000006138&s_MenuId=MENU-900000000036440&accnId=AC0000000001">
+											
+												
+												
+												
+													학술대회발표자료
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000006139&s_MenuId=MENU-900000000036441&accnId=AC0000000001">
+											
+												
+												
+												
+													안전문화소식
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000006118&s_MenuId=MENU-900000000036450&accnId=AC0000000001">
+											
+												
+												
+												
+													연간행사소식
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000006146&s_MenuId=MENU-900000000036452&accnId=AC0000000001">
+											
+												
+												
+												
+													후원(금)공개
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000006147&s_MenuId=MENU-900000000036453&accnId=AC0000000001">
+											
+												
+												
+												
+													안전문화연구통권
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000006148&s_MenuId=MENU-900000000036454&accnId=AC0000000001">
+											
+												
+												
+												
+													KSCS 역대 회장
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+								
+
+								
+									<input type="hidden" id="upMenuId1" value = "MENU-000000000060000" />
+									<input type="hidden" id="upMenuId2" value = "MENU-000000000060000" />
+									
+									<li>
+										 
+										
+										<a href="/co/com/EgovMenu.kci?s_url=/po/community/freeBoard/boardList.kci?boarSequ=000000007899&s_MenuId=MENU-900000000036617&accnId=AC0000000001">
+											
+												
+												
+												
+													각종규정양식
+												
+											
+										</a>
+									
+									</li>
+								
+								
+							
+						</ul>
+					</div>
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+		</div>
+	</div>
+</div>
+
+
+
+			
+</header>
+			<section>
+			<div class="cont_top">
+				<div class="container">
+					<div class="cont_top_left">
+						<a href="/" class="btn_home">홈으로</a>
+						<ul class="loca" id="loca"></ul>
+						<!--<button class="btn_help">HELP</button>-->
+						<div class="help_box" style="display: none">
+							<button class="btn_help">HELP</button>
+							<div class="tooltip">
+								<p>HELP</p>
+							</div>
+						</div>
+					</div>
+					<ul class="cont_top_right" style="display: none">
+						<li><button class="btn_share">공유하기</button></li>
+						<li><button class="btn_print">인쇄하기</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cont container">
+				<article>
+					
+
+	
+	
+	
+	
+
+<script type="text/javaScript" language="javascript" defer="defer">
+
+
+function fnTest(id){
+ 
+		if(id == "tab01"){
+			$("#tab0 > a").attr("class", "on");
+		}else{
+			$("#tab01 > a").removeAttr("class");
+		}
+	
+}
+
+$(document).ready(function($) {
+	console.log("menu-id : " + "MENU-000000000051000");
+	
+	console.log("aaaaaaaa : "+"");
+	var s_url = '/po/search/poArtiSear.kci';
+	var s_urlSplit = s_url.split('?');
+	for (var i in s_urlSplit) {
+		if (i == 0) {
+			var s_urlKci = s_urlSplit[i];
+		}
+	}
+	var s_tabId="";
+	if("" == ""){
+		s_tabId="1";
+	}
+	
+	
+	
+	
+});
+</script>
+	
+		
+		
+	
+	
+	<!--학술지>접수/심사위원선정,논문심사 메뉴에서만 학술지명 선택 selectbox include -->
+	
+	
+	
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var langType = 'KO';
+	
+	$(document).ready(function(){
+		
+		toDatepicker('pubiStYr');
+		toDatepicker('pubiEndYr');
+		
+	// 정렬
+	if(langType != 'KO'){
+		if($("#sortName").val() != "") {
+			var sortName = $("#sortName").val();
+			var sortDir  = $("#sortDir").val();
+			var imgBasrSrc =  "/res/images/common/";
+			
+			if(sortName == "accuracy") {
+				if(sortDir == "asc") {
+					$("#accuracy").attr("src", imgBasrSrc+"s_en_up01.gif");
+				} else {
+					$("#accuracy").attr("src", imgBasrSrc+"s_en_down01.gif");
+				}				
+			} else if(sortName == "title") {
+				if(sortDir == "asc") {
+					$("#title").attr("src", imgBasrSrc+"s_en_up02.gif");
+				} else {
+					$("#title").attr("src", imgBasrSrc+"s_en_down02.gif");
+				}				
+			}  else if(sortName == "author") {
+				if(sortDir == "asc") {
+					$("#author").attr("src", imgBasrSrc+"s_en_up03.gif");
+				} else {
+					$("#author").attr("src", imgBasrSrc+"s_en_down03.gif");
+				}				
+			}  else if(sortName == "journal") {
+				if(sortDir == "asc") {
+					$("#journal").attr("src", imgBasrSrc+"s_en_up04.gif");
+				} else {
+					$("#journal").attr("src", imgBasrSrc+"s_en_down04.gif");
+				}				
+			} else{
+				if(sortDir == "asc") {
+					$("#date").attr("src", imgBasrSrc+"s_en_up05.gif");
+				} else {
+					$("#date").attr("src", imgBasrSrc+"s_en_down05.gif");
+				}				
+			}
+			
+		}
+	}
+	else if(langType == 'KO'){
+		if($("#sortName").val() != "") {
+			var sortName = $("#sortName").val();
+			var sortDir  = $("#sortDir").val();
+			var imgBasrSrc =  "/res/images/common/";
+			
+			if(sortName == "accuracy") {
+				if(sortDir == "asc") {
+					$("#accuracy").attr("src", imgBasrSrc+"s_01_up.gif");
+				} else {
+					$("#accuracy").attr("src", imgBasrSrc+"s_01_down.gif");
+				}				
+			} else if(sortName == "title") {
+				if(sortDir == "asc") {
+					$("#title").attr("src", imgBasrSrc+"s_02_up.gif");
+				} else {
+					$("#title").attr("src", imgBasrSrc+"s_02_down.gif");
+				}				
+			}  else if(sortName == "author") {
+				if(sortDir == "asc") {
+					$("#author").attr("src", imgBasrSrc+"s_03_up.gif");
+				} else {
+					$("#author").attr("src", imgBasrSrc+"s_03_down.gif");
+				}				
+			}  else if(sortName == "journal") {
+				if(sortDir == "asc") {
+					$("#journal").attr("src", imgBasrSrc+"s_04_up.gif");
+				} else {
+					$("#journal").attr("src", imgBasrSrc+"s_04_down.gif");
+				}				
+			} else{
+				if(sortDir == "asc") {
+					$("#date").attr("src", imgBasrSrc+"s_05_up.gif");
+				} else {
+					$("#date").attr("src", imgBasrSrc+"s_05_down.gif");
+				}				
+			}
+			
+		}	
+	}
+		
+	});
+	
+	function selectTabMenu(itemTypeCd) {
+		$("#itemTypeCd").val(itemTypeCd);
+		goSearchPage(1);
+	}
+	
+	function goSearch() {
+
+		/* var keyword = document.poSearchForm.kwd;
+		
+		if (keyword.value == ""){
+			alert('검색어를 입력해 주세요.');			
+			keyword.focus();
+			return false;
+		} */
+		document.poSearchForm.action="/po/search/poArtiSearList.kci";
+		document.poSearchForm.submit();
+	}
+	
+	function checkNumber(){
+		var key = event.keyCode;
+		if(!(key==8||key==9||key==13||key==144||(key>=48&&key<=57)||key==110||key==190)){
+		   event.returnValue = false;
+		}
+	}	
+
+	function goSort(sortName) {
+		
+		if(sortName == "accuracy") {
+			$("#sortName").val("accuracy");
+		} else if(sortName == "title") {
+			$("#sortName").val("title");
+		} else if(sortName == "author") {
+			$("#sortName").val("author");
+		} else if(sortName == "journal") {
+			$("#sortName").val("journal");
+		} else {
+			$("#sortName").val("date");		
+		}
+		
+		if($("#sortDir").val() == "asc") {
+			$("#sortDir").val("desc");
+		} else {
+			$("#sortDir").val("asc");
+		}
+		
+		if(sortName == "accuracy") {
+			$("#sortDir").val("desc");
+		}
+		goSearchPage(1);
+	}
+	
+	function goSearchPage(pagenum)
+	{
+		var frm = document.listForm;
+		frm.startPg.value = pagenum;
+		frm.action="/po/search/poArtiSearList.kci";
+		frm.submit();
+	}
+	
+	// 논문상세
+	/*
+	function fncGoList(insiId, artiId, sereId, submCnt) {
+	    var re_top  = Math.floor((screen.height/2)-(250/2));
+	    var re_left = Math.floor((screen.width/2)-(600/2));
+	    var urls = "/po/volisse/sjPubsArtiPopView.kci?soceId="+insiId+"&artiId="+artiId+"&sereId="+sereId+"&submCnt="+submCnt;
+	    var options = "toolbar=no, location=no, directories=no, menubar=no, resizable=no, scrollbars=1,status=0, width=800, height=550, top="+re_top+", left="+re_left;
+	    window.open(urls, "openSereRetrievPop", options);		
+
+	}	*/
+	function fncGoList(insiId, artiId, sereId, submCnt) {
+	    var urls = "/po/volisse/sjPubsArtiPopView.kci?soceId=" + insiId + 
+	               "&artiId=" + artiId + 
+	               "&sereId=" + sereId + 
+	               "&submCnt=" + submCnt;
+	    
+	    window.location.href = urls;
+	}
+	// 학술대회 상세
+	function openPopAccnArtiView(accnId, annoApplSeq, accnArtiId, aumbCnt) {
+// 	    var re_top  = Math.floor((screen.height/2)-(250/2));
+// 	    var re_left = Math.floor((screen.width/2)-(600/2));
+	    var urls = "/po/volisse/acAccnArtiView.kci?accnId="+accnId+"&annoApplSeq="+annoApplSeq+"&accnArtiId="+accnArtiId+"&aumbCnt="+aumbCnt;;
+// 	    var options = "toolbar=no, location=no, directories=no, menubar=no, resizable=no, scrollbars=1,status=0, width=800, height=550, top="+re_top+", left="+re_left;
+// 	    window.open(urls, "openSereRetrievPop", options);		
+
+	    window.location.href = urls;
+
+	}	
+	
+	function openPopfncSereRetriev(sInsiId, sSereId){
+		if(sInsiId == "" || sSereId == "" ) {
+		  alert("정보가 부족합니다."+sInsiId+"/"+sSereId);
+		} else {
+		    var re_top  = Math.floor((screen.height/2)-(250/2));
+		    var re_left = Math.floor((screen.width/2)-(600/2));
+		    var urls = "/sj/search/sjSereView.kci?soceId="+sInsiId+"&sereId="+sSereId;
+		    var options = "toolbar=no, location=no, directories=no, menubar=no, resizable=no, scrollbars=1,status=0, width=800, height=550, top="+re_top+", left="+re_left;
+		    window.open(urls, "openSereRetrievPop", options);
+		}
+	}
+	
+	function fncFileIframe(orteFileId){
+	    ifrmFile.location.href="/co/download/popup/poDownload.kci?orteFileId="+orteFileId;
+	}
+	function fncFileIdChk(insiId, artiId, sereId, submCnt) {
+		$.ajax({ 
+			  url: "/ac/volisse/getOrteFileId.kci",
+			  type:"POST",
+			  dataType:"json",
+			  data:{"soceId":insiId,"artiId":artiId,"accnId":sereId,"aumbCnt":submCnt},
+			  success: 
+				  function(data) {
+				  console.log(data);
+				    ifrmFile.location.href="/co/download/popup/poDownload.kci?orteFileId="+data.orteFileId;
+				  },
+				    error : function(xhr, status) {
+				    	  console.log(xhr + " : " + status);
+				    	  }
+				    });
+	    }
+
+		// 파일 다운로드 (pdf X) - 학술대회
+	function fncAccnFileIdChk(insiId, accnArtiId, annoApplSeq, aumbCnt) {
+		$.ajax({ 
+			url: "/ac/volisse/getAccnOrteFileId.kci",
+		    type:"POST",
+		    dataType:"json",
+		    data:{"soceId":insiId,"accnId":accnArtiId,"annoApplSeq":annoApplSeq,"aumbCnt":aumbCnt},
+		    success: 
+		    	function(data) {
+		    	  ifrmFile.location.href="/co/download/popup/poDownload.kci?orteFileId="+data.orteFileId;
+		    	},
+		     error : function(xhr, status) {
+		    	  console.log(xhr + " : " + status);
+		    	  }
+		        });
+		}
+	function reset() {
+		
+		$("input[name=keywordList]").val('');
+		$("input[name=pubiStYr]").val('');
+		$("input[name=pubiEndYr]").val('');
+		
+		$("select[name=fieldList]").val("text_idx").prop("selected", true);
+		$("select[name=operationList]").val("AND").prop("selected", true);
+		
+	}
+</script>
+  
+<link rel="stylesheet" href="/jams30/css/newDesignCss/fontawesome-free-6.7.2-web/css/all.css">
+<link rel="stylesheet" href="/jams30/css/newDesignCss/new-search.css">
+<div class="tit-box-1">
+	<div class="row">
+		<div class="col">
+			<p class="txt1">
+				
+			    	논문검색
+			    
+				
+			</p>
+		</div>
+		
+	</div>
+</div>
+<!-- 서브 타이틀 시작 -->
+<div id="subTitle">
+
+	<div id="content" class="">
+		<!-- 검색 시작 search_fold-->
+		<div class=" ">
+			<form id="poSearchVo" name="poSearchForm" action="/co/com/EgovMenu.kci?s_url=/po/search/poArtiSear.kci&amp;s_MenuId=MENU-000000000051000&amp;accnId=AC0000000001" method="POST">
+				<input type="hidden" name="startPg" value="1" />
+				<input type="hidden" name="itemTypeCd" value="" />
+				<div class="sub-box-1 ">
+					<div class="box">
+					
+						<div class="box-lev-1" id="searchbox">
+							<div class="row">
+								<div class="col" style="flex-basis: 150px; max-width: 150px;">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<select name="fieldList" title="fieldList">
+												<option value="text_idx"
+													selected="selected">전체</option>
+												<option value="title_idx"
+													>논문제목</option>
+												<option value="author_idx"
+													>저자명</option>
+												<option value="institution_idx"
+													>원문파일</option>
+												<option value="abstract_idx"
+													>초록</option>
+												<option value="issn_idx"
+													>ISSN</option>
+											</select>
+
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<input type="text" name="keywordList" class="keyword_long"
+												title="검색어"
+												value="스마트 안전 장비" />
+										</div>
+									</div>
+								</div>
+								<div class="col" style="flex-basis: 150px; max-width: 150px;">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<select name="operationList" title="AND OR">
+												<option value="AND"
+													selected="selected">AND</option>
+												<option value="OR"
+													>OR</option>
+											</select>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="row" style="display: none;">
+								<div class="col" style="flex-basis: 150px; max-width: 150px;">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<select name="fieldList" title="fieldList">
+												<option value="text_idx"
+													>전체</option>
+												<option value="title_idx"
+													>논문제목</option>
+												<option value="author_idx"
+													>저자명</option>
+												<option value="institution_idx"
+													>원문파일</option>
+												<option value="abstract_idx"
+													>초록</option>
+												<option value="issn_idx"
+													>ISSN</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<input type="text" name="keywordList" class="keyword_long"
+												title="검색어"
+												value="" />
+										</div>
+									</div>
+
+								</div>
+								<div class="col" style="flex-basis: 150px; max-width: 150px;">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<select name="operationList" title="AND OR">
+												<option value="AND"
+													>AND</option>
+												<option value="OR"
+													>OR</option>
+											</select>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="row" style="display: none;">
+								<div class="col" style="flex-basis: 150px; max-width: 150px;">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<select name="fieldList" title="fieldList">
+												<option value="text_idx"
+													>전체</option>
+												<option value="title_idx"
+													>논문제목</option>
+												<option value="author_idx"
+													>저자명</option>
+												<option value="institution_idx"
+													>원문파일</option>
+												<option value="abstract_idx"
+													>초록</option>
+												<option value="issn_idx"
+													>ISSN</option>
+											</select>
+
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-area-box1">
+										<div class="ele-icon-box">
+											<input type="text" name="keywordList" class="keyword_long" title="검색어" value="" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col" style="flex-basis: 150px; max-width: 150px;">
+								<p class="txt1"style=" margin: 0;  align-items: center;  height: 100%; font-size:16px; font-weight:500;" >
+									발행일자
+								</p>
+								</div>
+								<div class="col">
+									<div class="form-area-box1" style="width: 450px;">
+										<div class="day">
+											<div class="row">
+												<div class="col">
+													<div class="ele-icon-box">
+														<input type="text" name="pubiStYr" id="pubiStYr"
+															value="" maxlength="10" title="날짜조회"
+															readonly="readonly"> <a
+															href="javascript:openDatepicker('pubiStYr');"
+															class="cal fa-calendar-check fas">
+																<span style="font-size:0;">날짜조회</span>
+															</a>
+													</div>
+												</div>
+												<div class="col wave">~</div>
+												<div class="col">
+													<div class="ele-icon-box">
+														<input type="text" name="pubiEndYr" id="pubiEndYr"
+															value="" maxlength="10" title="날짜조회"
+															readonly="readonly"> <a
+															href="javascript:openDatepicker('pubiEndYr');"
+															class="cal fa-calendar-check fas" title="날짜조회">
+															<span style="font-size:0;">날짜조회</span>
+															</a>
+	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="plusBtnBox">
+									<div id="moreBtn" class="plusBtn fas fa-plus"
+										onclick="moreSearch(1)"></div>
+										<div id="lessBtn" class="plusBtn fa-minus fas "
+										onclick="moreSearch(-1)" style="display:none;"></div>
+							</div>
+						</div>
+						
+						<script>
+						  let i = 1; // 처음에 1개는 기본 노출이라고 가정
+						
+						  function moreSearch(num) {
+						    const children = document.querySelector('#searchbox').children;
+						    const total = children.length - 2;
+							
+						    if (num > 0 && i < total) {
+						      // 더 보기: 다음 항목 보여주기
+						      children[i].style.display = 'flex';
+						      i++;
+						    } else if (num < 0 && i > 1) {
+						      // 줄이기: 마지막 보인 항목 숨기기
+						      i--;
+						      children[i].style.display = 'none';
+						    }
+						
+						    // 버튼 상태 업데이트
+						    document.querySelector('#moreBtn').style.display = (i >= total) ? 'none' : 'inline-block';
+						    document.querySelector('#lessBtn').style.display = (i > 1) ? 'inline-block' : 'none';
+						
+						    console.log('현재 표시된 항목 수:'+i );
+						  
+						  }
+						</script>
+					</div>
+
+
+				
+				</div>
+
+			</form>
+		</div>
+		<!-- 버튼 시작 -->
+
+		<div class="bottom-box-btn my-16px">
+			<div class="row">
+				 
+				<div class="col">
+					<button  class="btn-combi-3 w-100 bs-l" onclick="reset();"><i class="fa-rotate fas"></i>초기화</button>
+<!-- 					<button  type="res" class="btn-combi-3 w-100 bs-l" ><i class="fa-rotate fas"></i>초기화</button> -->
+				</div>
+			
+				<div class="col">
+					<button class="btn-primary w-100 bs-l"
+						onclick="javascript:goSearch(); return false;">
+						<i class="fa-search fas"></i>
+						검색
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- 버튼 끝 -->
+	</div>
+</div>
+<!-- 서브 타이틀 끝 -->
+
+
+
+<div class="tit-box-2 mb-16px">
+	<div class="row">
+	
+		<div class="col title">
+			
+			<p class="txt1">
+				
+				<span>논문 검색결과 총 </span><em>10 건</em>
+				
+			</p>
+		</div>
+		<div class="col" style="flex-grow: 0;white-space: nowrap;  display: flex;  align-items: center;">
+			<div class="row mx-0"style="  flex-wrap: nowrap; margin:0; justify-content: end;">
+				<div	class="col" style="padding:0 4px;flex-grow: 0;white-space: nowrap;">
+					<div class="check-radio-box">
+						<input id="radio3" name='type' type="radio" checked/>
+						<label for='radio3'style="padding-right:0;"><a href="javascript:selectTabMenu('');"  class="on">전체</a></label>
+					</div>
+					
+				</div>
+
+				<div class="col" style="padding:0 4px;flex-grow: 0;white-space: nowrap;">
+					<div class="check-radio-box">
+						<input id="radio2" name='type' type="radio" />
+						<label for='radio2'style="padding-right:0;"><a href="javascript:selectTabMenu('13');" >학술지논문</a></label>
+					</div>
+					
+				</div>
+				<div class="col" style="padding:0 4px;flex-grow: 0;white-space: nowrap;">
+					<div class="check-radio-box">
+						<input id="radio1" name='type' type="radio"/>
+						<label for='radio1' style="padding-right:0;"><a href="javascript:selectTabMenu('14');" >학술대회논문</a></label>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-12 suport" style=" justify-content: end;">
+				
+						
+						
+							<a href="javascript:goSort('accuracy');" title="Click하여 검색결과를 오름차순 또는 내림차순으로 정렬합니다."><img id="accuracy" src="/res/images/common/s_01.gif" alt="정확도"/><span><i class="fas"></i>정확도</span></a>
+							<a href="javascript:goSort('title');" title="Click하여 검색결과를 오름차순 또는 내림차순으로 정렬합니다."><img id="title" src="/res/images/common/s_02.gif" alt="제목"/><span><i class="fas"></i>제목</span></a>
+							<a href="javascript:goSort('author');" title="Click하여 검색결과를 오름차순 또는 내림차순으로 정렬합니다."><img id="author" src="/res/images/common/s_03.gif" alt="저자"/><span><i class="fas"></i>저자</span></a>
+							<a href="javascript:goSort('date');" title="Click하여 검색결과를 오름차순 또는 내림차순으로 정렬합니다."><img id="date" src="/res/images/common/s_06.gif" alt="발행일"/><span><i class="fas"></i>발행일</span></a>
+						
+					
+					
+			
+		</div>
+	
+	
+	</div>
+</div>
+
+<form name="listForm" method="post">
+   		<input type="hidden" name="startPg" value="1"/>
+		<input type="hidden" name="sereId" value=""/>
+		<input type="hidden" name="sortName" id="sortName" value=""/>
+		<input type="hidden" name="sortDir" id="sortDir" value=""/>
+		<input type="hidden" name="itemTypeCd" id="itemTypeCd" value=""/>
+		<input type="hidden" name="pubiStYr" value=""/>
+		<input type="hidden" name="pubiEndYr" value=""/>
+		
+			<input type="hidden" name="fieldList" value="text_idx"/>
+		
+		
+			<input type="hidden" name="keywordList" value="스마트 안전 장비"/>
+		
+		
+			<input type="hidden" name="operationList" value="AND"/>
+		
+   	
+
+		
+			<div class="shadow-box-1 p-24px">
+				<div class="one-list">
+					<div class="row">
+
+						
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000149','SER000000001','3');" class="tit">
+												1.
+												
+													건설 현장 <em>스마트</em> <em>안전</em> <em>장비</em> 도입에 따른 실효성 제고 방안 연구
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																맹인영 ((주)한진중공업)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2021&volIsseId=000000000006&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2021&volIsseId=000000000006&vol=" class="test" >
+																		
+																			 권
+																			14 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.47~63( 16 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2021.12
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000149','SER000000001','3');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000921','SER000000001','1');" class="tit">
+												2.
+												
+													건설현장의 <em>스마트</em> <em>안전</em>보건활동 요소에 관한 중요도 분석
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																최영 (숭실대학교) || 이준원 (숭실대학교) || 이윤호 (숭실대학교) || 이길성 (숭실대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000027&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000027&vol=" class="test" >
+																		
+																			 권
+																			32 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.15~26( 11 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2024.07
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000921','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000662','SER000000001','1');" class="tit">
+												3.
+												
+													건설업 <em>안전</em>관리자 인식도 조사를 통한 <em>스마트</em><em>안전</em>기술 활성화 방안
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																소한섭 (대전보건대학교) || 박종근 (대전보건대학교) || 최명기 (고용노동부)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2023&volIsseId=000000000020&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2023&volIsseId=000000000020&vol=" class="test" >
+																		
+																			 권
+																			25 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.195~213( 18 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2023.11
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000662','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000001188','SER000000001','1');" class="tit">
+												4.
+												
+													건설업 <em>스마트</em> <em>안전</em>의 도입 활성화를 위한 <em>안전</em>관리비 계상 명확화와  법·제도 간 상호인정 유연성에 관한 연구
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																이솔희 (동아대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2025&volIsseId=000000000034&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2025&volIsseId=000000000034&vol=" class="test" >
+																		
+																			 권
+																			39 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.33~49( 16 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2025.02
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000001188','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000586','SER000000001','1');" class="tit">
+												5.
+												
+													RTO 사고 예방을 위한 메타버스 기반 <em>안전</em> 서비스 플랫폼 - 메타버스 기반 RTO 원거리 모니터링을 통한 <em>안전</em> 서비스 기술 -
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																윤종화 (㈜더퀘스트) || 박훈민 ((주)이엠솔루션) || 윤달환 (세명대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2023&volIsseId=000000000019&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2023&volIsseId=000000000019&vol=" class="test" >
+																		
+																			 권
+																			24 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.1~16( 15 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2023.09
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000586','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000727','SER000000001','1');" class="tit">
+												6.
+												
+													대심도 Shield TBM 터널의 IoT <em>스마트</em> <em>안전</em>관리시스템 구축에 관한 연구
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																김범수 (숭실대학교) || 박교식 (숭실대학교) || 전진우 (숭실대학교) || 이양우 (숭실대학교) || 유희복 (숭실대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000021&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000021&vol=" class="test" >
+																		
+																			 권
+																			26 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.139~156( 17 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2024.01
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000727','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000002538','SER000000001','1');" class="tit">
+												7.
+												
+													제조업 고위험공정AI <em>안전</em> 기술의 현장 정착에 관한 연구 - 정착 마찰과 수용 기반 체계를 중심으로 -
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																박영재 (숭실대학교) || 어원석 (숭실대학교) || 김순철 (숭실대학교) || 주재강 (숭실대학교) || 서호준 (숭실대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2026&volIsseId=000000000053&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2026&volIsseId=000000000053&vol=" class="test" >
+																		
+																			 권
+																			58 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.559~575( 16 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2026.09
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000002538','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000925','SER000000001','1');" class="tit">
+												8.
+												
+													분석기반 <em>안전</em>보건관리체계 구축을 위한 건설업 <em>스마트</em><em>안전</em>기술의 연구동향 고찰
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																권용화 (숭실대학교) || 이준원 (숭실대학교) || 어원석 (숭실대학교) || 윤현웅 (숭실대학교) || 황윤준 (숭실대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000027&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000027&vol=" class="test" >
+																		
+																			 권
+																			32 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.85~99( 14 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2024.07
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000925','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000002222','SER000000001','1');" class="tit">
+												9.
+												
+													건설근로자 특성에 따른 건설<em>안전</em>교육 개선 요구도 차이 분석
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																강경하 (한국폴리텍 V 대학 광주캠퍼스) || 최희재 (한국폴리텍 V 대학 광주캠퍼스)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2026&volIsseId=000000000050&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2026&volIsseId=000000000050&vol=" class="test" >
+																		
+																			 권
+																			55 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.97~108( 11 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2026.06
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000002222','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="box">
+								<div class="row">
+									<div class="col">
+										
+											<a href="javascript:fncGoList('INS000062477','SJ0000000965','SER000000001','1');" class="tit">
+												10.
+												
+													해양 사고 <em>안전</em>을 위한 면상발열체 기반의 위치추적 복합기를 구비한 융합 웨어러블슈트 구현  - 저체온과 저온 화상 방지를 위한 융합 웨어러블 슈트 -
+												
+												
+											</a>
+										
+										
+										<div class="info-2">
+											<div class="row">
+												<div class="col">
+													<p>
+														<em>
+															저자
+														</em>
+														<span>
+														
+															
+															
+																윤종화 (계원예술대학교) || 김승호 (국제사이버대학교)
+															
+														
+														
+														</span>
+													</p>
+													
+												</div>
+
+												<div class="col">
+													<p>
+														<em>
+															학술지
+														</em>
+														<span>
+														
+<!-- 																	20250527 재단에서 내부회의에서 삭제하기로함 --><!-- 	202500605 재단에서 수정 요청함 -->
+															<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000028&vol=" class="test" >
+																
+																	안전문화연구
+																
+																
+															</a>
+														
+														
+														
+														
+															
+																
+																	<a href="/co/com/EgovMenu.kci?s_url=/sj/search/sjSereClasList.kci&s_MenuId=MENU-000000000053000&soceId=INS000062477&sereId=SER000000001&pubiYr=2024&volIsseId=000000000028&vol=" class="test" >
+																		
+																			 권
+																			33 호
+																		
+																		
+																	</a>
+																
+																
+															
+															
+														
+														
+														
+														pp.145~158( 13 pages)
+														</span>
+													</p>
+													
+												</div>
+												<div class="col">
+													<p class="">
+														<em>
+															발행년월
+														</em>
+														<span>
+														2024.08
+<!-- 														20250710 CCL 주석 -->
+														
+														
+													</span>
+													<p>
+												</div>
+													
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									
+									
+										
+
+										<div class="col iconbox ">
+											<a href="http://dx.doi.org/" class="imgs" target="_blank">
+											
+											Doi
+											</a>
+										</div>
+
+									
+									<!-- 다운로드 버튼 처리 -->
+									
+										
+											<!-- 익명 사용자 파일 다운로드 허용 -->
+											
+
+													<div class="col iconbox ">
+														<a class="active fa-download fas" href="javascript:fncFileIdChk('INS000062477','SJ0000000965','SER000000001','1');" title="논문다운로드">
+															 
+															
+														</a>
+													</div>
+
+											
+											<!-- 학술대회 -->
+											
+										
+										
+									
+								</div>
+							</div>
+						</div>
+						
+ 
+						
+					</div>
+				</div>
+			</div>
+					
+   	</form>
+
+<!--  페이징 -->
+
+
+   
+
+
+
+	
+<iframe id="fileDownAll" name="ifrmFile" src="" width="0"  height="0" frameborder="0" marginheight="0" marginwidth="0" style="background-color:#FFFFFF;"></iframe>
+					
+
+
+
+				</article>
+				
+
+
+
+
+
+
+
+
+<script type="text/javascript" language="javascript" defer="defer">
+	
+	/* function selectMemberJoin() {
+		
+		resetJoinGuidance();
+		$("#joinGuidance").dialog({width: 980, height: 680, modal: true, resizable: false, position: {my: "center center", at: "center top", of: wrapper}});
+	} */
+	
+/* 	$.ajax({ url: "/co/common/paperCnt1.kci",
+	   type:"POST",
+	   dataType:"json",
+	   data:{},
+	   success: function(data) {
+		  var cnt = data.dataSet;
+			$("#cnt1").text(cnt);
+	   }
+	});
+	
+	$.ajax({ url: "/co/common/paperCnt2.kci",
+	   type:"POST",
+	   dataType:"json",
+	   data:{},
+	   success: function(data) {
+		  var cnt = data.dataSet;
+			$("#cnt2").text(cnt);
+	   }
+	});
+	
+	$.ajax({ url: "/co/common/paperCnt3.kci",
+	   type:"POST",
+	   dataType:"json",
+	   data:{},
+	   success: function(data) {
+	   	var menuId = data.menuId;
+		  var cnt = data.dataSet;
+		  
+		  $("#servicePaper").attr("href", "/co/com/EgovMenu.kci?s_url=/sj/eljoPubs/authorPubsArtiCorrectList.kci&s_MenuId=" + menuId);
+			$("#cnt3").text(cnt);
+	   }
+	}); */
+	
+  
+	var setTime = 5400;
+	var check = true;
+
+	function fnTimeExtension() {
+		setTime = 5400;
+		check = true;
+		$.ajax( {
+			url: "/co/login/jams/sessionTimeExtension.kci",
+			type:"POST",
+			success: function(data) {
+//				console.log($("#dialog-confirm"));
+				if(data.dataset == "fail") {
+					console.log("사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요.");/*사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요.*/
+// 					window.location.href = "/co/main/jmMain.kci";
+				} else {
+					// 연장하고 다이얼로그 닫기
+					parent.$("#dialog-confirm").remove();
+				}
+			}
+		});
+	}
+
+	function msg_time() {
+	m = ("0" + Math.floor(setTime / 60)).slice(-2) + ":" + ("0" + (setTime % 60)).slice(-2); // 남은시간 계산
+	var msg = " <font color='red'>" + m + "</font> ";
+	
+	// 5분 남기고 로그인연장 모달창
+	if (setTime < 300 && check) {
+		/* $("#dialog-confirm").dialog({
+			autoOpen : false,
+			width: 400, 
+	// 		height: "auto", 
+	// 		modal: true, 
+	// 		resizable: false,
+			buttons: {
+				"Yes": function() {
+					$( this ).dialog( "close" );
+					fnTimeExtension();
+				},
+				"No": function() {
+					$( this ).dialog( "close" );
+					check = false;
+				}
+			}
+			,position: {my: "center", at:"center", of: "body"}
+		}); */
+		$("#dialog-confirm").show();
+	}
+   
+	if (setTime == 0 ) {
+		clearInterval(timer);
+		/* alert("사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요."); *//*사용자 세션이 만료되었습니다.\n다시 로그인 해 주세요.*/
+		logout();
+	} else {
+		document.getElementById('viewTimer').innerHTML = msg;
+		setTime--;
+	}
+  }
+
+		
+
+// 	$(document).ready(function(){
+// 		 $(window).scroll(function(){ 
+// 		   $('#timer').stop();
+// 		   /* $('#timer').animate({"top": $(window).scrollTop() - 215 }); */ 
+// 		   $('#timer').animate({"top": $(window).scrollTop()  }); 
+// 		 });  
+// 	  });
+	
+	//2022.11.17 학술대회 나의할일 학술대회별 결제취소신청건수 변경
+	/* function fncGetStatus() {
+		
+		var s_menuId = 'MENU-000000000051000';
+		
+		//학술대회일때
+		if(s_menuId == 'MENU-000000000030000'){
+			//학술대회 > 참가자관리 > 접수현황조회 > 취소요청 목록으로 보내줌
+			tempUrl ="/ac/conference/forwRecl/acForwResiStauInquList.kci";
+			stab = "MENU-000000000032220&s_tabId=2&accnId=";
+			condition = "&searchPaymStauCd=R";
+			
+			$.ajax({
+				url: "/co/main/newMyTaskListAll.kci",
+				type:"POST",
+				dataType:"json",
+				data:{"gubun": "1"},
+				async:true,
+				success: function(data){
+					var option = "";
+					var vo = data.dataSet;
+					console.log(vo.length);
+					if(vo != null){
+						for(var i=0; i< vo.length; i++){
+							option = "<li><a href=\"javascript:fnc_goUrl2('"+tempUrl+"', '"+stab+vo[i].accnid+condition +"');\">" + vo[i].accnname + " 결제취소신청</a><span>(" + vo[i].cnt + ")</span><li>"
+							$("#taskBox ul").append(option);
+						}
+					}else{
+						option = "<div>수행대기업무가 없습니다.</div>";
+						$("#taskBox").append(option);
+					}
+				},
+				error: function(e){},
+				complete: function(){
+//	 				$("#statusLoading").attr("style", "display:none;"); $("#loadingLi").attr("style", "display:none;");
+					$('#loadingLi').remove();
+				}
+			});
+		}else{
+			$.ajax({
+				url: "/co/main/statusList.kci",
+				type:"POST",
+				dataType:"json",
+				data:{"gubun": "1"},
+				async:true,
+				success: function(data){
+					var option = "";
+					var vo = data.dataSet;
+					if(vo != null){
+						if($("#statusListPermission").val() == "true"){
+							for(var i=0; i<vo.length; i++) {
+								//상위 메뉴를 찾을 수 없어서 처리
+								switch(vo[i].menuid){
+									case "MENU-000000000013120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//가입승인대기
+									case "MENU-000000000014120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&paymStau=R"; break;//학술지 무통장승인대기
+									case "MENU-000000000035300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3&searchKey=W"; break;//학술대회 무통장승인대기
+									case "MENU-000000000014140" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&searchCondition=R"; break;//학술지 결제취소신청
+									case "MENU-000000000035400" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=4&searchPaymStauCd=R"; break;//학술대회 결제취소신청
+									case "MENU-000000000022240" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//외부심사위원승인대기
+									case "MENU-000000000024100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//논문접수대기
+									case "MENU-000000000024200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//편집위원선정(추천)
+									case "MENU-000000000024400" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=4"; break;//편집위원선정(총평)
+									case "MENU-000000000024300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//심사위원추천
+									case "MENU-000000000024500" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=5"; break;//심사위원선정
+									case "MENU-000000000025200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//논문총평등록
+									case "MENU-000000000025300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//편집위원장결재
+									case "MENU-000000000025000" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//심사의견등록
+									case "MENU-000000000023100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//신규논문투고대기
+									case "MENU-000000000023200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//수정논문투고대기
+									case "MENU-000000000023300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//최종논문투고대기
+								}
+								tempUrl = vo[i].statusurl;
+								option = "<li><a href=\"javascript:fnc_goUrl('" + tempUrl + "', '" + stab + "');\">" + vo[i].status + "</a><span>(" + vo[i].cnt + ")</span><li>";
+								$("#taskBox ul").append(option);
+							}
+						}else{
+							for(var i=0; i<vo.length; i++) {
+								//상위 메뉴를 찾을 수 없어서 처리
+								switch(vo[i].menuid){
+									case "MENU-000000000013120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//가입승인대기
+									case "MENU-000000000014120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&paymStau=R"; break;//학술지 무통장승인대기
+									case "MENU-000000000014140" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&searchCondition=R"; break;//학술지 결제취소신청
+									case "MENU-000000000022240" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//외부심사위원승인대기
+									case "MENU-000000000024100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//논문접수대기
+									case "MENU-000000000024200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//편집위원선정(추천)
+									case "MENU-000000000024400" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=4"; break;//편집위원선정(총평)
+									case "MENU-000000000024300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//심사위원추천
+									case "MENU-000000000024500" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=5"; break;//심사위원선정
+									case "MENU-000000000025200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//논문총평등록
+									case "MENU-000000000025300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//편집위원장결재
+									case "MENU-000000000025000" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//심사의견등록
+									case "MENU-000000000023100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//신규논문투고대기
+									case "MENU-000000000023200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//수정논문투고대기
+									case "MENU-000000000023300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//최종논문투고대기
+									default : stab = "";  break;
+								}
+								if (stab != "") {
+								tempUrl = vo[i].statusurl;
+								option = "<li><a href=\"javascript:fnc_goUrl('" + tempUrl + "', '" + stab + "');\">" + vo[i].status + "</a><span>(" + vo[i].cnt + ")</span><li>";
+								$("#taskBox ul").append(option);
+								}
+							}
+						}
+							
+					}else{
+						option = "<div>수행대기업무가 없습니다.</div>";
+						$("#taskBox").append(option);
+					}
+				},
+				error: function(e){},
+				complete: function(){
+//	 				$("#statusLoading").attr("style", "display:none;"); $("#loadingLi").attr("style", "display:none;");
+					$('#loadingLi').remove();
+				}
+			});
+		}
+	} */
+		
+	function fncGetStatus() {
+		var s_menuId = 'MENU-000000000051000';
+		//학술대회일때
+		if(s_menuId == 'MENU-000000000030000'){
+			$.ajax({
+				url: "/co/main/newMyTaskListAll.kci",
+				type:"POST",
+				dataType:"json",
+				data:{"gubun": "1"},
+				async:true,
+				success: function(data){
+					var option = "";
+					var vo = data.dataSet;
+					if(vo != null){
+						for(var i=0; i< vo.length; i++){
+							option = "<li>" + vo[i].status + "(" + vo[i].cnt + ")</a></li>";
+							$("#taskBox > ul").append(option);
+						}
+					}else{
+						option = "<div>수행대기업무가 없습니다.</div>";
+						$("#taskBox").append(option);
+					}
+				},
+				error: function(e){},
+				complete: function(){
+//	 				$("#statusLoading").attr("style", "display:none;"); $("#loadingLi").attr("style", "display:none;");
+					$('#loadingLi').remove();
+				}
+			});
+		}else{
+			$.ajax({
+				url: "/co/main/statusList.kci",
+				type:"POST",
+				dataType:"json",
+				data:{"gubun": "1"},
+				async:true,
+				success: function(data){
+					var option = "";
+					var vo = data.dataSet;
+					if(vo != null){
+						if($("#statusListPermission").val() == "true"){
+							for(var i=0; i<vo.length; i++) {
+								//상위 메뉴를 찾을 수 없어서 처리
+								switch(vo[i].menuid){
+									case "MENU-000000000013120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//가입승인대기
+									case "MENU-000000000014120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&paymStau=R"; break;//학술지 무통장승인대기
+									case "MENU-000000000035300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3&searchKey=W"; break;//학술대회 무통장승인대기
+									case "MENU-000000000014140" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&searchCondition=R"; break;//학술지 결제취소신청
+									case "MENU-000000000035400" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=4&searchPaymStauCd=R"; break;//학술대회 결제취소신청
+									case "MENU-000000000022240" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//외부심사위원승인대기
+									case "MENU-000000000024100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//논문접수대기
+									case "MENU-000000000024200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//편집위원선정(추천)
+									case "MENU-000000000024400" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=4"; break;//편집위원선정(총평)
+									case "MENU-000000000024300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//심사위원추천
+									case "MENU-000000000024500" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=5"; break;//심사위원선정
+									case "MENU-000000000025200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//논문총평등록
+									case "MENU-000000000025300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//편집위원장결재
+									case "MENU-000000000025000" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//심사의견등록
+									case "MENU-000000000023100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//신규논문투고대기
+									case "MENU-000000000023200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//수정논문투고대기
+									case "MENU-000000000023300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//최종논문투고대기
+								}
+								
+								//학술대회 무통장 승인대기, 학술대회 결제취소신청을 학술대회를 제외한 나의 할일에서 숨김 - 2022.12.09
+								if(vo[i].menuid != "MENU-000000000035300" && vo[i].menuid != "MENU-000000000035400"){
+									tempUrl = vo[i].statusurl;
+									option = "<li><a href=\"javascript:fnc_goUrl('" + tempUrl + "', '" + stab + "');\">" + vo[i].status + "</a><span>(" + vo[i].cnt + ")</span><li>";
+									$("#taskBox ul").append(option);
+								}
+							}
+						}else{
+							for(var i=0; i<vo.length; i++) {
+								//상위 메뉴를 찾을 수 없어서 처리
+								switch(vo[i].menuid){
+									case "MENU-000000000013120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//가입승인대기
+									case "MENU-000000000014120" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&paymStau=R"; break;//학술지 무통장승인대기
+									case "MENU-000000000014140" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1&searchCondition=R"; break;//학술지 결제취소신청
+									case "MENU-000000000022240" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//외부심사위원승인대기
+									case "MENU-000000000024100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//논문접수대기
+									case "MENU-000000000024200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//편집위원선정(추천)
+									case "MENU-000000000024400" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=4"; break;//편집위원선정(총평)
+									case "MENU-000000000024300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//심사위원추천
+									case "MENU-000000000024500" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=5"; break;//심사위원선정
+									case "MENU-000000000025200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//논문총평등록
+									case "MENU-000000000025300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//편집위원장결재
+									case "MENU-000000000025000" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//심사의견등록
+									case "MENU-000000000023100" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=1"; break;//신규논문투고대기
+									case "MENU-000000000023200" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=2"; break;//수정논문투고대기
+									case "MENU-000000000023300" : stab = vo[i].menuid.substr(0,17)+"000&s_tabId=3"; break;//최종논문투고대기
+									default : stab = "";  break;
+								}
+								if (stab != "") {
+								tempUrl = vo[i].statusurl;
+								option = "<li><a href=\"javascript:fnc_goUrl('" + tempUrl + "', '" + stab + "');\">" + vo[i].status + "</a><span>(" + vo[i].cnt + ")</span><li>";
+								$("#taskBox ul").append(option);
+								}
+							}
+						}
+							
+					}else{
+						option = "<div>수행대기업무가 없습니다.</div>";
+						$("#taskBox").append(option);
+					}
+				},
+				error: function(e){},
+				complete: function(){
+//	 				$("#statusLoading").attr("style", "display:none;"); $("#loadingLi").attr("style", "display:none;");
+					$('#loadingLi').remove();
+				}
+			});
+		}
+	}
+	
+	//수행대기업무 페이기로 분기하기
+	function fnc_goUrl(url, menuId){
+		if(url==""){return;}
+		if(url.indexOf("ac")>-1){
+			alert("학술대회 관련 업무 건수는 전체 학술대회 건수를 나타냅니다.\r\n각 학술대회로 이동하셔서 확인 부탁드립니다.");
+			return;
+		}
+		location.href="/co/com/EgovMenu.kci?s_url="+url+"&s_MenuId="+menuId+"";
+	}
+	
+	function fnc_goUrl2(url, menuId){
+		location.href="/co/com/EgovMenu.kci?s_url="+url+"&s_MenuId="+menuId+"";
+	}
+	
+	function fncMainPaperSimilarity(type) {
+		if(type == 1){
+
+            window.open('https://check.kci.go.kr','_blank');
+		}else{
+			document.mainPaperSimilarity.target = "_blank";
+			document.mainPaperSimilarity.action = "/paperSimilarity/loginCopyKiller.jsp";
+			document.mainPaperSimilarity.submit();
+		}
+		
+	}
+	
+	function fncExternalPaperSimilarity(){
+		
+		var login = '';
+		var externalYn = '';
+		
+		login = document.mainPaperSimilarity.loginCheck.value;
+		externalYn = document.mainPaperSimilarity.externalYn.value;
+		
+		if(login != null && externalYn == 'Y'){
+			fncMainPaperSimilarity(2);
+		}
+	}
+	
+	function logout() {
+		document.loginForm_.action = "/co/login/jams/jmLogout.kci";
+		document.loginForm_.submit();
+	}
+	
+	/* function selectMemberJoin() {
+		
+		resetJoinGuidance();
+		$("#joinGuidance").dialog({width: 980, height: 680, modal: true, resizable: false, position: {my: "center center", at: "center top", of: wrapper}});
+	} */
+	
+	/* $.ajax({ url: "/co/common/paperCnt1.kci",
+		type:"POST",
+		dataType:"json",
+		data:{},
+		success: function(data) {
+			var cnt = data.dataSet;
+			$("#cnt1").text(cnt);
+		}
+	});
+	
+	$.ajax({ url: "/co/common/paperCnt2.kci",
+		type:"POST",
+		dataType:"json",
+		data:{},
+		success: function(data) {
+			var cnt = data.dataSet;
+			$("#cnt2").text(cnt);
+		}
+	});
+	
+	$.ajax({ url: "/co/common/paperCnt3.kci",
+		type:"POST",
+		dataType:"json",
+		data:{},
+		success: function(data) {
+			var menuId = data.menuId;
+			var cnt = data.dataSet;
+			
+			$("#servicePaper").attr("href", "/co/com/EgovMenu.kci?s_url=/sj/eljoPubs/authorPubsArtiCorrectList.kci&s_MenuId=" + menuId);
+			$("#cnt3").text(cnt);
+		}
+	}); */
+	
+	$(document).ready(function(){
+		
+			$('#taskArea').css('display','none');
+		
+		
+		
+		// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+		var floatPosition = parseInt($("#dialog-confirm").css('top'));
+		// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+
+		$(window).scroll(function() {
+			// 현재 스크롤 위치를 가져온다.
+			var scrollTop = $(window).scrollTop();
+			var newPosition = scrollTop + floatPosition + "px";
+
+			/* 애니메이션 없이 바로 따라감
+			 $("#floatMenu").css('top', newPosition);
+			 */
+
+			$("#dialog-confirm").stop().animate({
+// 				"top" : newPosition
+				"top" : scrollTop+200
+			}, {
+				'duration' : 500,
+				'easing' : 'easeInOutCubic',
+				'complete' : function() {
+					console.log('이동 완료하였습니다.');
+				}
+			});
+
+		}).scroll();
+		
+	});
+	
+	function loginPopupClose(){
+		$('.popup_div').hide();
+	}
+</script>
+	
+
+
+	
+	
+
+
+<input type="hidden" id="statusListPermission" value="false">
+	
+<form name="loginForm_" action="/co/login/jams/jmLogin.kci" method="post">
+
+
+		
+</form>
+<!-- 논문유사도 검색(로그인 한 경우만 적용) -->
+
+
+<script>
+function bannerImageChg(){
+	$.each($('a[id*=lv]'),function(i){
+		
+		var imgUrl = "";
+	
+		if(i == 0){
+			 if('lv1'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link1.png'; }
+			 if('lv2'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link2.png'; }
+			 if('lv4'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link4.png';}	
+			 if('lv5'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link5.png'; }
+			 if('lv8'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link8.png'; }
+			 if('lv9'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link9.png'; }
+			 if('lv10'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link10.png';}	
+			 if('lv11'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link11.png';}	
+			 if('lv12'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link12.png';}	
+			 if('lv13'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link13.png';}
+			 
+			 $('a[id*=lv]').eq(i).css('background-image','url('+imgUrl+')');
+			 
+		}
+		if(i == 1){
+			 if('lv1'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link1.png'; }
+			 if('lv2'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link2.png'; }
+			 if('lv4'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link4.png';}	
+			 if('lv5'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link5.png'; }
+			 if('lv8'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link8.png'; }
+			 if('lv9'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link9.png'; }
+			 if('lv10'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link10.png';}	
+			 if('lv11'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link11.png';}	
+			 if('lv12'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link12.png';}	
+			 if('lv13'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link13.png';}
+// 			$('a[id*=lv]'.eq(i).css('background','url('+imgUrl+') no-repeat center 15px #daf0ff');
+			 $('a[id*=lv]').eq(i).css('background-image','url('+imgUrl+')');
+		}
+		if(i == 2){
+			 if('lv1'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link1.png'; }
+			 if('lv2'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link2.png'; }
+			 if('lv4'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link4.png';}	
+			 if('lv5'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link5.png'; }
+			 if('lv8'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link8.png'; }
+			 if('lv9'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link9.png'; }
+			 if('lv10'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link10.png';}	
+			 if('lv11'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link11.png';}	
+			 if('lv12'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link12.png';}	
+			 if('lv13'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link13.png';}
+// 			$('a[id*=lv]'.eq(i).css('background','url('+imgUrl+') no-repeat center 35px 20px #daf0ff');
+			 $('a[id*=lv]').eq(i).css('background-image','url('+imgUrl+')');
+		}
+		if(i == 3){
+			 if('lv1'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link1.png'; }
+			 if('lv2'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link2.png'; }
+			 if('lv4'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link4.png';}	
+			 if('lv5'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link5.png'; }
+			 if('lv8'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link8.png'; }
+			 if('lv9'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link9.png'; }
+			 if('lv10'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link10.png';}	
+			 if('lv11'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link11.png';}	
+			 if('lv12'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link12.png';}	
+			 if('lv13'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link13.png';}
+// 			$('a[id*=lv]'.eq(i).css('background','url('+imgUrl+') no-repeat center 33px 20px #daf0ff');
+			 $('a[id*=lv]').eq(i).css('background-image','url('+imgUrl+')');
+		}
+		if(i == 4){
+			 if('lv1'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link1.png'; }
+			 if('lv2'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link2.png'; }
+			 if('lv4'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link4.png';}	
+			 if('lv5'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link5.png'; }
+			 if('lv8'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link8.png'; }
+			 if('lv9'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link9.png'; }
+			 if('lv10'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link10.png';}	
+			 if('lv11'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link11.png';}	
+			 if('lv12'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link12.png';}	
+			 if('lv13'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link13.png';}
+// 			$('a[id*=lv]'.eq(i).css('background','url('+imgUrl+') no-repeat center 15px #daf0ff');
+			 $('a[id*=lv]').eq(i).css('background-image','url('+imgUrl+')');
+		}
+		if(i == 5){
+			 if('lv1'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link1.png'; }
+			 if('lv2'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link2.png'; }
+			 if('lv4'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link4.png';}	
+			 if('lv5'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link5.png'; }
+			 if('lv8'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link8.png'; }
+			 if('lv9'==  $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link9.png'; }
+			 if('lv10'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link10.png';}	
+			 if('lv11'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link11.png';}	
+			 if('lv12'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link12.png';}	
+			 if('lv13'== $('a[id*=lv]').eq(i).attr('id')){imgUrl='/res/images/main/main_link13.png';}
+// 			$('a[id*=lv]'.eq(i).css('background','url('+imgUrl+') no-repeat center 13px #daf0ff');
+			 $('a[id*=lv]').eq(i).css('background-image','url('+imgUrl+')');
+		}
+		
+	});
+}
+/* function accessIpListPop(){
+	var url = "/sj/config/membMana/selectAccessIpView.kci";
+	win = window.open(url, "accessIpPopup", 'width=1000, height=900, top=30 left=350 scrollbars=yes, resizable=no, status=yes');
+}
+
+function accessImageChg(){
+	$("#accessIp").css('padding-top','76px');
+	$("#accessIp").css('background','url(/images/icon_side06.png) no-repeat 45px 20px #daf0ff');
+} */
+$(document).ready(function(){
+	bannerImageChg();
+	//accessImageChg();
+});
+
+$(document).ready(function(){
+	  var currentPosition = parseInt($(".chatbot_side").css("top"));
+	  $(window).scroll(function() {
+	    var position = $(window).scrollTop(); 
+	    $(".chatbot_side").stop().animate({"top":position+currentPosition+"px"},1000);
+	  });
+});
+</script>
+
+<style type="text/css">
+	.chatbot_side{
+ 		position: absolute; 
+		width: 100px;
+		height: 100px;
+ 		float: right;
+ 		padding-left: 260px;
+ 		z-index: 1;
+	}
+</style>
+
+<!-- 논문유사도 검색(로그인 한 경우만 적용) -->
+
+	
+	
+
+	<aside>
+	
+	 <div class="side_btns" style="margin-top: 0px; margin-bottom: 28px; z-index: 2; position: relative;">
+	 <ul>
+	 	
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+	 		
+	 			
+ 			
+ 		
+ 		
+ 		
+		
+		
+
+ 	</ul>
+    </div>
+<!-- 	<div class="myduty"  id ="taskArea" style="z-index: 2; position: relative;"> -->
+<!-- 		20221104 손용휘  디자인유형설정 1,2 에서 초기화면의 [나의할일]을 서브화면과 동일용어로 수정 -->
+<!-- 		<span class="myduty_tit">수행대기업무</span> -->
+<!-- 		<span class="myduty_tit">나의할일</span> -->
+<!-- 		<div class="taskBox" id="taskBox"> -->
+<!-- 			<ul> -->
+
+<!-- 			</ul> -->
+<!-- 		</div> -->
+<!-- 	</div> -->
+	<div class="myduty"  id ="taskArea" style="z-index: 2; position: relative;">
+<!-- 		20221104 손용휘  디자인유형설정 1,2 에서 초기화면의 [나의할일]을 서브화면과 동일용어로 수정 -->
+<!-- 		<span class="myduty_tit">수행대기업무</span> -->
+		<span class="myduty_tit">나의할일</span>
+		<div class="taskBox" id="taskBox">
+			<ul>
+				<li id = "loadingLi" style="padding-left: 85px !important; padding-top:50px;"><img id="statusLoading" src="/res/images/common/loading_img.gif" alt="로딩중" style="display: block;"/></li>
+			</ul>
+		</div>
+	</div>
+	  
+</aside>
+
+			</div>
+			</section>
+		<!--footer-->
+
+		
+
+
+
+
+<footer>
+	<div class="ft_top">
+		<div class="container">
+			<dl class="info">
+				<dt>기관명</dt>
+				<dd>한국안전문화학회</dd>
+				<dt>대표자</dt>
+				<dd>공정식</dd>
+				<dt>사업자등록번호</dt>
+				<dd>612-82-08951</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="container">
+		<div class="ft_left">
+			<a href="/co/main/jmMain.kci"> 
+				
+					
+
+						
+						
+
+						
+							
+							
+						
+							
+								
+							
+							
+						
+
+						
+							
+								<img src="/res/homepage/INS000062477/logo_IMG000016890.png"
+									alt="한국안전문화학회" style="height: 60px; min-width: 100%;"/>
+							
+							
+						
+						
+					
+					
+				
+			</a>
+		</div>
+		<div class="ft_right">
+			<ul>
+				<li>
+					<a href="/loginPolicy.html" target="_blank">
+						
+							
+								개인정보처리방침
+							
+							
+						
+					</a>
+				</li>
+				<li class="clear">
+					<address>16213 경기도 수원시 장안구 창훈로46번길 45-4, 101호 (연무동)</address>
+					<p><span>Tel.</span> 031-253-7776</p>
+					<p><span>Fax.</span> 031-253-7706</p>
+					<p><a href="mailto://fpss0824@daum.net" title="email"><span>Email.</span> fpss0824@daum.net</a></p>
+					
+				</li>
+				<li>Copyright &copy;2021 NRF. All right reserved</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+	</div>
+	
+	<div id="downloadAllStat" style="display: none; background: white; margin: 0 auto;">
+		파일 다운로드를 준비중 입니다. 잠시만 기다려 주세요.
+		<img id="statusLoading" src="/res/images/common/loading.gif" alt="로딩중.." style="width: 80px; height: 20px; float: left; display: block;">
+	</div>
+	
+	
+	
+	
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+	
+
+	<div class="popup" id="loginBox" title="로그인" style="display: none">
+		<div class="pop_cont">
+			<div class="pop_top_area">
+				<div class="pop_sec">
+					<div class="login_box">
+						<h2>로그인</h2>
+						<ul class="login_ul">
+							<li class="login_id"><input type="text" id="login_id" placeholder="아이디"></li>
+							<li class="login_pw"><input type="password" id="login_pw" placeholder="비밀번호">
+							<a href = "#" onclick = "javascript:sendLoginAuthKey('KO');" class="btn btn_login_cert btn_mb10">인증키 발송</a>
+							</li>
+							   <li class="login_email">
+                                <input type="text" id="loginAuthKey" placeholder="인증키" disabled>
+                                <a href = "#" class="btn btn_login_cert btn_mt10" id="loginAuthKeyBtn">인증완료</a>
+                                </li>
+							<input type="hidden" id="dashMove" value="">
+						</ul>
+						<div class="login_opt">
+						
+							<div class="right">
+								<a href="#" onclick="searchIdPwd('ID')" class="find_id">아이디 찾기</a> 
+								<a href="#" onclick="searchIdPwd('PW')" class="find_pw">비밀번호 찾기</a>
+							</div>
+						</div>
+						<ul class="login_btns">
+							<li><a href="#" class="btn btn_blue" id="loginBtn">로그인</a></li>
+							<li><a href="#" onclick="javascript:selectMemberJoin();" class="btn">회원가입</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popup" id="joinBox" title="회원가입">
+		<div class="pop_cont">
+			<div class="pop_top_area">
+				<div class="pop_sec">
+					<div class="pt10 pl10 pr10 pb10 mb30">
+						<div class="signin_info">
+							<p>원활한 회원가입을 위하여 아래의 질문내용에 따라 순서대로 답변을 진행해주세요.</p>
+							<span>선택한 답변에 따라 회원가입 절차가 일부 다르기 때문에 본인이 해당하는 경우를 선택해 주시기 바랍니다.</span>
+						</div>
+						<div class="signin_sel">
+							<span>ⓘ 단체회원 및 외국인 선택 시 각각 JAMS의 단체회원, 외국인 회원가입 화면으로 바로 전환됩니다.</span>
+							<ul class="signin_sel_ul">
+								<li><span>개인회원</span> <a href="javascript:joinMove('M');" class="btn btn_blue">가입하기</a></li>
+								<li><span>단체회원</span> <a href="javascript:joinMove('G');" class="btn btn_blue">가입하기</a></li>
+								<li><span>Foreigner</span> <a href="javascript:joinMove('F');" class="btn btn_blue">가입하기</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

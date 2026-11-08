@@ -1,0 +1,11 @@
+입력: C:\Users\User\Documents\2026 개발관련\03. 경기대 논문\tools\hwpx_transfer\staging\factcheck_hwpx_261104b\ready.hwpx
+SHA256(in): A6695F3AFA9EC7381F62CBF8DA90DDAE1286F56DAC44A72F7FFD84F99256DB3D
+RegisterModule=True
+Open=True
+SaveAs(HWPX)=True -> C:\Users\User\Documents\2026 개발관련\03. 경기대 논문\tools\hwpx_transfer\staging\factcheck_hwpx_261104b\final.hwpx
+Reopen(saved)=True
+SaveAs(PDF)=True -> C:\Users\User\Documents\2026 개발관련\03. 경기대 논문\tools\hwpx_transfer\staging\factcheck_hwpx_261104b\final.pdf
+SHA256(out): 33B35FE107E6EC309B91C68BEDEA1368CF0DFF9B4334E229512D956B9E0F611E  size=2183070
+산출물 잠금 없음
+PDF size=1727360
+RESULT: OK

@@ -1,0 +1,2048 @@
+{
+  "ok": true,
+  "errors": [],
+  "input": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\tools\\hwpx_transfer\\staging\\sync_261106_1052\\resaved.pdf",
+  "final_mode": false,
+  "extractor_exit": 0,
+  "extractor_stdout": "entries: 112 matched: 106 unmatched: ['논문개요', '부 록 (도입 현장)', '부 록 (미도입 현장)']\ntoc [('표 목 차', 'v'), ('그림목차', 'vii'), ('감사의 글', 'viii'), ('제 1 장 서론', 1)] ... [('Part D. 경보 피로도 완화', 96), ('Abstract', 101)]\nlot [('<표 1-1> 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)', 2), ('<표 1-2> 연구의 방법과 장별 구성', 5), ('<표 2-1> 시스템 기술 특성 관련 선행연구 요약', 14), ('<표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 측정문항 연결', 17)] ... [('<표 4-13> 강건성 점검 결과', 79), ('<표 4-14> 연구가설 검증 결과 종합', 80)]\nlof [('<그림 1-1> 연구의 흐름도', 6), ('<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조', 33), ('<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름', 37), ('<그림 3-3> RAG 기반 Few-shot 교정 절차', 39)] ... [('<그림 3-6> 현장 운영 특성(A-7∼A-9)의 응답 비율(도입·미도입 현장별)', 55), ('<그림 4-1> 연구 모형', 58)]\n",
+  "page_count": 115,
+  "blank_pages": [],
+  "split_heading_evidence": [
+    {
+      "title": "논문개요",
+      "physical": 12,
+      "printed": "ix"
+    },
+    {
+      "title": "부 록 (도입 현장)",
+      "physical": 104,
+      "printed": "91"
+    },
+    {
+      "title": "부 록 (미도입 현장)",
+      "physical": 110,
+      "printed": "97"
+    }
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "body_characters": 100,
+      "images": 0
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "body_characters": 100,
+      "images": 0
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "body_characters": 48,
+      "images": 0
+    },
+    {
+      "physical": 4,
+      "printed": "i",
+      "body_characters": 1622,
+      "images": 0
+    },
+    {
+      "physical": 5,
+      "printed": "ii",
+      "body_characters": 2053,
+      "images": 0
+    },
+    {
+      "physical": 6,
+      "printed": "iii",
+      "body_characters": 2335,
+      "images": 0
+    },
+    {
+      "physical": 7,
+      "printed": "iv",
+      "body_characters": 385,
+      "images": 0
+    },
+    {
+      "physical": 8,
+      "printed": "v",
+      "body_characters": 1522,
+      "images": 0
+    },
+    {
+      "physical": 9,
+      "printed": "vi",
+      "body_characters": 528,
+      "images": 0
+    },
+    {
+      "physical": 10,
+      "printed": "vii",
+      "body_characters": 545,
+      "images": 0
+    },
+    {
+      "physical": 11,
+      "printed": "viii",
+      "body_characters": 562,
+      "images": 0
+    },
+    {
+      "physical": 12,
+      "printed": "ix",
+      "body_characters": 742,
+      "images": 0
+    },
+    {
+      "physical": 13,
+      "printed": "x",
+      "body_characters": 208,
+      "images": 0
+    },
+    {
+      "physical": 14,
+      "printed": null,
+      "body_characters": 741,
+      "images": 0
+    },
+    {
+      "physical": 15,
+      "printed": "2",
+      "body_characters": 896,
+      "images": 0
+    },
+    {
+      "physical": 16,
+      "printed": "3",
+      "body_characters": 715,
+      "images": 0
+    },
+    {
+      "physical": 17,
+      "printed": "4",
+      "body_characters": 860,
+      "images": 0
+    },
+    {
+      "physical": 18,
+      "printed": "5",
+      "body_characters": 654,
+      "images": 0
+    },
+    {
+      "physical": 19,
+      "printed": "6",
+      "body_characters": 76,
+      "images": 1
+    },
+    {
+      "physical": 20,
+      "printed": "7",
+      "body_characters": 822,
+      "images": 0
+    },
+    {
+      "physical": 21,
+      "printed": "8",
+      "body_characters": 890,
+      "images": 0
+    },
+    {
+      "physical": 22,
+      "printed": "9",
+      "body_characters": 384,
+      "images": 0
+    },
+    {
+      "physical": 23,
+      "printed": "10",
+      "body_characters": 943,
+      "images": 0
+    },
+    {
+      "physical": 24,
+      "printed": "11",
+      "body_characters": 808,
+      "images": 0
+    },
+    {
+      "physical": 25,
+      "printed": "12",
+      "body_characters": 914,
+      "images": 0
+    },
+    {
+      "physical": 26,
+      "printed": "13",
+      "body_characters": 624,
+      "images": 0
+    },
+    {
+      "physical": 27,
+      "printed": "14",
+      "body_characters": 751,
+      "images": 0
+    },
+    {
+      "physical": 28,
+      "printed": "15",
+      "body_characters": 815,
+      "images": 0
+    },
+    {
+      "physical": 29,
+      "printed": "16",
+      "body_characters": 153,
+      "images": 0
+    },
+    {
+      "physical": 30,
+      "printed": "17",
+      "body_characters": 647,
+      "images": 0
+    },
+    {
+      "physical": 31,
+      "printed": "18",
+      "body_characters": 869,
+      "images": 0
+    },
+    {
+      "physical": 32,
+      "printed": "19",
+      "body_characters": 626,
+      "images": 0
+    },
+    {
+      "physical": 33,
+      "printed": "20",
+      "body_characters": 775,
+      "images": 0
+    },
+    {
+      "physical": 34,
+      "printed": "21",
+      "body_characters": 734,
+      "images": 0
+    },
+    {
+      "physical": 35,
+      "printed": "22",
+      "body_characters": 745,
+      "images": 0
+    },
+    {
+      "physical": 36,
+      "printed": "23",
+      "body_characters": 669,
+      "images": 0
+    },
+    {
+      "physical": 37,
+      "printed": "24",
+      "body_characters": 490,
+      "images": 0
+    },
+    {
+      "physical": 38,
+      "printed": "25",
+      "body_characters": 813,
+      "images": 0
+    },
+    {
+      "physical": 39,
+      "printed": "26",
+      "body_characters": 926,
+      "images": 0
+    },
+    {
+      "physical": 40,
+      "printed": "27",
+      "body_characters": 967,
+      "images": 0
+    },
+    {
+      "physical": 41,
+      "printed": "28",
+      "body_characters": 601,
+      "images": 0
+    },
+    {
+      "physical": 42,
+      "printed": "29",
+      "body_characters": 1059,
+      "images": 0
+    },
+    {
+      "physical": 43,
+      "printed": "30",
+      "body_characters": 637,
+      "images": 0
+    },
+    {
+      "physical": 44,
+      "printed": "31",
+      "body_characters": 84,
+      "images": 0
+    },
+    {
+      "physical": 45,
+      "printed": "32",
+      "body_characters": 371,
+      "images": 0
+    },
+    {
+      "physical": 46,
+      "printed": "33",
+      "body_characters": 251,
+      "images": 1
+    },
+    {
+      "physical": 47,
+      "printed": "34",
+      "body_characters": 719,
+      "images": 0
+    },
+    {
+      "physical": 48,
+      "printed": "35",
+      "body_characters": 957,
+      "images": 0
+    },
+    {
+      "physical": 49,
+      "printed": "36",
+      "body_characters": 682,
+      "images": 0
+    },
+    {
+      "physical": 50,
+      "printed": "37",
+      "body_characters": 172,
+      "images": 1
+    },
+    {
+      "physical": 51,
+      "printed": "38",
+      "body_characters": 701,
+      "images": 0
+    },
+    {
+      "physical": 52,
+      "printed": "39",
+      "body_characters": 122,
+      "images": 1
+    },
+    {
+      "physical": 53,
+      "printed": "40",
+      "body_characters": 598,
+      "images": 0
+    },
+    {
+      "physical": 54,
+      "printed": "41",
+      "body_characters": 633,
+      "images": 0
+    },
+    {
+      "physical": 55,
+      "printed": "42",
+      "body_characters": 519,
+      "images": 1
+    },
+    {
+      "physical": 56,
+      "printed": "43",
+      "body_characters": 119,
+      "images": 0
+    },
+    {
+      "physical": 57,
+      "printed": "44",
+      "body_characters": 796,
+      "images": 0
+    },
+    {
+      "physical": 58,
+      "printed": "45",
+      "body_characters": 895,
+      "images": 0
+    },
+    {
+      "physical": 59,
+      "printed": "46",
+      "body_characters": 821,
+      "images": 0
+    },
+    {
+      "physical": 60,
+      "printed": "47",
+      "body_characters": 707,
+      "images": 0
+    },
+    {
+      "physical": 61,
+      "printed": "48",
+      "body_characters": 907,
+      "images": 0
+    },
+    {
+      "physical": 62,
+      "printed": "49",
+      "body_characters": 783,
+      "images": 0
+    },
+    {
+      "physical": 63,
+      "printed": "50",
+      "body_characters": 735,
+      "images": 0
+    },
+    {
+      "physical": 64,
+      "printed": "51",
+      "body_characters": 965,
+      "images": 0
+    },
+    {
+      "physical": 65,
+      "printed": "52",
+      "body_characters": 484,
+      "images": 0
+    },
+    {
+      "physical": 66,
+      "printed": "53",
+      "body_characters": 44,
+      "images": 1
+    },
+    {
+      "physical": 67,
+      "printed": "54",
+      "body_characters": 929,
+      "images": 0
+    },
+    {
+      "physical": 68,
+      "printed": "55",
+      "body_characters": 53,
+      "images": 1
+    },
+    {
+      "physical": 69,
+      "printed": "56",
+      "body_characters": 856,
+      "images": 0
+    },
+    {
+      "physical": 70,
+      "printed": "57",
+      "body_characters": 795,
+      "images": 0
+    },
+    {
+      "physical": 71,
+      "printed": "58",
+      "body_characters": 378,
+      "images": 1
+    },
+    {
+      "physical": 72,
+      "printed": "59",
+      "body_characters": 386,
+      "images": 0
+    },
+    {
+      "physical": 73,
+      "printed": "60",
+      "body_characters": 882,
+      "images": 0
+    },
+    {
+      "physical": 74,
+      "printed": "61",
+      "body_characters": 419,
+      "images": 0
+    },
+    {
+      "physical": 75,
+      "printed": "62",
+      "body_characters": 751,
+      "images": 0
+    },
+    {
+      "physical": 76,
+      "printed": "63",
+      "body_characters": 485,
+      "images": 0
+    },
+    {
+      "physical": 77,
+      "printed": "64",
+      "body_characters": 29,
+      "images": 0
+    },
+    {
+      "physical": 78,
+      "printed": "65",
+      "body_characters": 799,
+      "images": 0
+    },
+    {
+      "physical": 79,
+      "printed": "66",
+      "body_characters": 867,
+      "images": 0
+    },
+    {
+      "physical": 80,
+      "printed": "67",
+      "body_characters": 559,
+      "images": 0
+    },
+    {
+      "physical": 81,
+      "printed": "68",
+      "body_characters": 674,
+      "images": 0
+    },
+    {
+      "physical": 82,
+      "printed": "69",
+      "body_characters": 698,
+      "images": 0
+    },
+    {
+      "physical": 83,
+      "printed": "70",
+      "body_characters": 614,
+      "images": 0
+    },
+    {
+      "physical": 84,
+      "printed": "71",
+      "body_characters": 850,
+      "images": 0
+    },
+    {
+      "physical": 85,
+      "printed": "72",
+      "body_characters": 157,
+      "images": 0
+    },
+    {
+      "physical": 86,
+      "printed": "73",
+      "body_characters": 619,
+      "images": 0
+    },
+    {
+      "physical": 87,
+      "printed": "74",
+      "body_characters": 1037,
+      "images": 0
+    },
+    {
+      "physical": 88,
+      "printed": "75",
+      "body_characters": 775,
+      "images": 0
+    },
+    {
+      "physical": 89,
+      "printed": "76",
+      "body_characters": 864,
+      "images": 0
+    },
+    {
+      "physical": 90,
+      "printed": "77",
+      "body_characters": 798,
+      "images": 0
+    },
+    {
+      "physical": 91,
+      "printed": "78",
+      "body_characters": 920,
+      "images": 0
+    },
+    {
+      "physical": 92,
+      "printed": "79",
+      "body_characters": 767,
+      "images": 0
+    },
+    {
+      "physical": 93,
+      "printed": "80",
+      "body_characters": 820,
+      "images": 0
+    },
+    {
+      "physical": 94,
+      "printed": "81",
+      "body_characters": 959,
+      "images": 0
+    },
+    {
+      "physical": 95,
+      "printed": "82",
+      "body_characters": 63,
+      "images": 0
+    },
+    {
+      "physical": 96,
+      "printed": "83",
+      "body_characters": 852,
+      "images": 0
+    },
+    {
+      "physical": 97,
+      "printed": "84",
+      "body_characters": 838,
+      "images": 0
+    },
+    {
+      "physical": 98,
+      "printed": "85",
+      "body_characters": 797,
+      "images": 0
+    },
+    {
+      "physical": 99,
+      "printed": "86",
+      "body_characters": 918,
+      "images": 0
+    },
+    {
+      "physical": 100,
+      "printed": "87",
+      "body_characters": 1524,
+      "images": 0
+    },
+    {
+      "physical": 101,
+      "printed": "88",
+      "body_characters": 1513,
+      "images": 0
+    },
+    {
+      "physical": 102,
+      "printed": "89",
+      "body_characters": 1477,
+      "images": 0
+    },
+    {
+      "physical": 103,
+      "printed": "90",
+      "body_characters": 1094,
+      "images": 0
+    },
+    {
+      "physical": 104,
+      "printed": "91",
+      "body_characters": 700,
+      "images": 0
+    },
+    {
+      "physical": 105,
+      "printed": "92",
+      "body_characters": 687,
+      "images": 0
+    },
+    {
+      "physical": 106,
+      "printed": "93",
+      "body_characters": 265,
+      "images": 0
+    },
+    {
+      "physical": 107,
+      "printed": "94",
+      "body_characters": 575,
+      "images": 0
+    },
+    {
+      "physical": 108,
+      "printed": "95",
+      "body_characters": 632,
+      "images": 0
+    },
+    {
+      "physical": 109,
+      "printed": "96",
+      "body_characters": 422,
+      "images": 0
+    },
+    {
+      "physical": 110,
+      "printed": "97",
+      "body_characters": 701,
+      "images": 0
+    },
+    {
+      "physical": 111,
+      "printed": "98",
+      "body_characters": 687,
+      "images": 0
+    },
+    {
+      "physical": 112,
+      "printed": "99",
+      "body_characters": 265,
+      "images": 0
+    },
+    {
+      "physical": 113,
+      "printed": "100",
+      "body_characters": 594,
+      "images": 0
+    },
+    {
+      "physical": 114,
+      "printed": "101",
+      "body_characters": 1691,
+      "images": 0
+    },
+    {
+      "physical": 115,
+      "printed": "102",
+      "body_characters": 1025,
+      "images": 0
+    }
+  ],
+  "completed_map": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\tools\\hwpx_transfer\\staging\\sync_261106_1052\\resaved_toc_completed.json",
+  "toc_entries": [
+    {
+      "title": "표 목 차",
+      "actual": "v",
+      "occurrence": 1,
+      "expected": "v",
+      "match": true
+    },
+    {
+      "title": "그림목차",
+      "actual": "vii",
+      "occurrence": 1,
+      "expected": "vii",
+      "match": true
+    },
+    {
+      "title": "감사의 글",
+      "actual": "viii",
+      "occurrence": 1,
+      "expected": "viii",
+      "match": true
+    },
+    {
+      "title": "논문개요",
+      "actual": "ix",
+      "occurrence": 1,
+      "expected": "ix",
+      "match": true
+    },
+    {
+      "title": "제 1 장 서론",
+      "actual": "1",
+      "occurrence": 1,
+      "expected": "1",
+      "match": true
+    },
+    {
+      "title": "제 1 절 연구의 배경 및 필요성",
+      "actual": "1",
+      "occurrence": 1,
+      "expected": "1",
+      "match": true
+    },
+    {
+      "title": "제 2 절 연구의 목적",
+      "actual": "3",
+      "occurrence": 1,
+      "expected": "3",
+      "match": true
+    },
+    {
+      "title": "제 3 절 연구의 범위 및 방법",
+      "actual": "4",
+      "occurrence": 1,
+      "expected": "4",
+      "match": true
+    },
+    {
+      "title": "제 2 장 이론적 배경",
+      "actual": "7",
+      "occurrence": 1,
+      "expected": "7",
+      "match": true
+    },
+    {
+      "title": "제 1 절 건설산업 스마트 안전관리와 AI 영상관제 기술",
+      "actual": "7",
+      "occurrence": 1,
+      "expected": "7",
+      "match": true
+    },
+    {
+      "title": "제 1 항 개념 및 정의",
+      "actual": "7",
+      "occurrence": 1,
+      "expected": "7",
+      "match": true
+    },
+    {
+      "title": "제 2 항 오경보와 경보 피로도",
+      "actual": "8",
+      "occurrence": 1,
+      "expected": "8",
+      "match": true
+    },
+    {
+      "title": "제 2 절 YOLO-LLM 안전관제 시스템의 기술 특성",
+      "actual": "10",
+      "occurrence": 1,
+      "expected": "10",
+      "match": true
+    },
+    {
+      "title": "제 1 항 시스템 인프라 범용성(A1)",
+      "actual": "11",
+      "occurrence": 1,
+      "expected": "11",
+      "match": true
+    },
+    {
+      "title": "제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)",
+      "actual": "11",
+      "occurrence": 1,
+      "expected": "11",
+      "match": true
+    },
+    {
+      "title": "제 3 항 2차 검증(LLM) 오탐 필터링(A3)",
+      "actual": "12",
+      "occurrence": 1,
+      "expected": "12",
+      "match": true
+    },
+    {
+      "title": "제 4 항 알림 전파 즉각성(A4)",
+      "actual": "13",
+      "occurrence": 1,
+      "expected": "13",
+      "match": true
+    },
+    {
+      "title": "제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성",
+      "actual": "15",
+      "occurrence": 1,
+      "expected": "15",
+      "match": true
+    },
+    {
+      "title": "제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)",
+      "actual": "22",
+      "occurrence": 1,
+      "expected": "22",
+      "match": true
+    },
+    {
+      "title": "제 5 절 소결",
+      "actual": "24",
+      "occurrence": 1,
+      "expected": "24",
+      "match": true
+    },
+    {
+      "title": "제 3 장 YOLO-LLM 안전관제 시스템 개발",
+      "actual": "25",
+      "occurrence": 1,
+      "expected": "25",
+      "match": true
+    },
+    {
+      "title": "제 1 절 시스템 개발 방향 및 요구사항",
+      "actual": "25",
+      "occurrence": 1,
+      "expected": "25",
+      "match": true
+    },
+    {
+      "title": "제 1 항 시스템 개발 개요",
+      "actual": "25",
+      "occurrence": 1,
+      "expected": "25",
+      "match": true
+    },
+    {
+      "title": "제 2 항 현장 요구사항",
+      "actual": "26",
+      "occurrence": 1,
+      "expected": "26",
+      "match": true
+    },
+    {
+      "title": "제 3 항 관련 기술 선행연구",
+      "actual": "28",
+      "occurrence": 1,
+      "expected": "28",
+      "match": true
+    },
+    {
+      "title": "제 2 절 시스템 설계",
+      "actual": "31",
+      "occurrence": 1,
+      "expected": "32",
+      "match": false
+    },
+    {
+      "title": "제 1 항 전체 시스템 구조",
+      "actual": "31",
+      "occurrence": 1,
+      "expected": "32",
+      "match": false
+    },
+    {
+      "title": "제 2 항 YOLO 탐지 및 제어",
+      "actual": "32",
+      "occurrence": 1,
+      "expected": "34",
+      "match": false
+    },
+    {
+      "title": "제 3 항 LLM 문맥 검증 및 현장 적응",
+      "actual": "34",
+      "occurrence": 1,
+      "expected": "36",
+      "match": false
+    },
+    {
+      "title": "제 4 항 경보 전파",
+      "actual": "38",
+      "occurrence": 1,
+      "expected": "40",
+      "match": false
+    },
+    {
+      "title": "제 3 절 시스템 구현",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "제 1 항 실행 환경 및 기술 스택",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "제 2 항 주요 기능 및 운영 안정성",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "제 3 항 현장 배포 및 운용 구성",
+      "actual": "40",
+      "occurrence": 1,
+      "expected": "42",
+      "match": false
+    },
+    {
+      "title": "제 4 절 시스템 개발의 효과 분석",
+      "actual": "41",
+      "occurrence": 1,
+      "expected": "44",
+      "match": false
+    },
+    {
+      "title": "제 1 항 검증 데이터셋 구축 및 평가 지표",
+      "actual": "41",
+      "occurrence": 1,
+      "expected": "44",
+      "match": false
+    },
+    {
+      "title": "제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+      "actual": "43",
+      "occurrence": 1,
+      "expected": "46",
+      "match": false
+    },
+    {
+      "title": "제 3 항 RAG 기반 Few-shot 교정의 성능 실험",
+      "actual": "45",
+      "occurrence": 1,
+      "expected": "48",
+      "match": false
+    },
+    {
+      "title": "제 4 항 적용 타당성",
+      "actual": "46",
+      "occurrence": 1,
+      "expected": "49",
+      "match": false
+    },
+    {
+      "title": "제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식",
+      "actual": "47",
+      "occurrence": 1,
+      "expected": "50",
+      "match": false
+    },
+    {
+      "title": "제 6 항 현장 운영 특성",
+      "actual": "50",
+      "occurrence": 1,
+      "expected": "54",
+      "match": false
+    },
+    {
+      "title": "제 5 절 소결",
+      "actual": "52",
+      "occurrence": 2,
+      "expected": "56",
+      "match": false
+    },
+    {
+      "title": "제 4 장 연구설계 및 실증분석",
+      "actual": "53",
+      "occurrence": 1,
+      "expected": "57",
+      "match": false
+    },
+    {
+      "title": "제 1 절 연구 모형 설계",
+      "actual": "53",
+      "occurrence": 1,
+      "expected": "57",
+      "match": false
+    },
+    {
+      "title": "제 2 절 연구 문제 및 연구가설",
+      "actual": "55",
+      "occurrence": 1,
+      "expected": "59",
+      "match": false
+    },
+    {
+      "title": "제 3 절 변수의 조작적 정의 및 측정도구 구성",
+      "actual": "56",
+      "occurrence": 1,
+      "expected": "60",
+      "match": false
+    },
+    {
+      "title": "제 4 절 설문조사",
+      "actual": "58",
+      "occurrence": 1,
+      "expected": "62",
+      "match": false
+    },
+    {
+      "title": "제 1 항 설문조사의 개요 및 절차",
+      "actual": "58",
+      "occurrence": 1,
+      "expected": "62",
+      "match": false
+    },
+    {
+      "title": "제 2 항 설문지의 구성",
+      "actual": "58",
+      "occurrence": 1,
+      "expected": "62",
+      "match": false
+    },
+    {
+      "title": "제 5 절 자료 수집과 분석 절차",
+      "actual": "60",
+      "occurrence": 1,
+      "expected": "65",
+      "match": false
+    },
+    {
+      "title": "제 1 항 자료 수집 및 표본",
+      "actual": "60",
+      "occurrence": 1,
+      "expected": "65",
+      "match": false
+    },
+    {
+      "title": "제 2 항 분석 절차",
+      "actual": "61",
+      "occurrence": 1,
+      "expected": "66",
+      "match": false
+    },
+    {
+      "title": "제 6 절 조사 대상 특성과 기초통계 분석",
+      "actual": "63",
+      "occurrence": 1,
+      "expected": "68",
+      "match": false
+    },
+    {
+      "title": "제 1 항 인구통계학적 빈도분석",
+      "actual": "63",
+      "occurrence": 1,
+      "expected": "68",
+      "match": false
+    },
+    {
+      "title": "제 2 항 타당도 분석",
+      "actual": "65",
+      "occurrence": 1,
+      "expected": "70",
+      "match": false
+    },
+    {
+      "title": "제 3 항 신뢰도 분석",
+      "actual": "66",
+      "occurrence": 1,
+      "expected": "71",
+      "match": false
+    },
+    {
+      "title": "제 4 항 기술통계 분석",
+      "actual": "68",
+      "occurrence": 1,
+      "expected": "73",
+      "match": false
+    },
+    {
+      "title": "제 5 항 집단 동질성 검정",
+      "actual": "69",
+      "occurrence": 1,
+      "expected": "74",
+      "match": false
+    },
+    {
+      "title": "제 7 절 가설 검증",
+      "actual": "70",
+      "occurrence": 1,
+      "expected": "75",
+      "match": false
+    },
+    {
+      "title": "제 1 항 YOLO-LLM 안전관제 시스템 도입 현장의 안전관리 실효성 검증",
+      "actual": "70",
+      "occurrence": 1,
+      "expected": "75",
+      "match": false
+    },
+    {
+      "title": "제 2 항 가설 검증 결과 종합",
+      "actual": "74",
+      "occurrence": 1,
+      "expected": "79",
+      "match": false
+    },
+    {
+      "title": "제 8 절 분석결과 및 논의",
+      "actual": "75",
+      "occurrence": 1,
+      "expected": "80",
+      "match": false
+    },
+    {
+      "title": "제 5 장 결론",
+      "actual": "77",
+      "occurrence": 1,
+      "expected": "83",
+      "match": false
+    },
+    {
+      "title": "참고문헌",
+      "actual": "79",
+      "occurrence": 1,
+      "expected": "85",
+      "match": false
+    },
+    {
+      "title": "부 록 (도입 현장)",
+      "actual": "86",
+      "occurrence": 1,
+      "expected": "91",
+      "match": false
+    },
+    {
+      "title": "Part A. 인구통계학적 특성 및 현장 운영 특성",
+      "actual": "87",
+      "occurrence": 1,
+      "expected": "92",
+      "match": false
+    },
+    {
+      "title": "Part B. 안전관리 실효성",
+      "actual": "89",
+      "occurrence": 1,
+      "expected": "94",
+      "match": false
+    },
+    {
+      "title": "Part C. 시스템 특성 인식",
+      "actual": "90",
+      "occurrence": 1,
+      "expected": "95",
+      "match": false
+    },
+    {
+      "title": "Part D. 경보 피로도 완화",
+      "actual": "91",
+      "occurrence": 1,
+      "expected": "96",
+      "match": false
+    },
+    {
+      "title": "부 록 (미도입 현장)",
+      "actual": "92",
+      "occurrence": 1,
+      "expected": "97",
+      "match": false
+    },
+    {
+      "title": "Part A. 인구통계학적 특성 및 현장 운영 특성",
+      "actual": "93",
+      "occurrence": 2,
+      "expected": "98",
+      "match": false
+    },
+    {
+      "title": "Part B. 안전관리 실효성",
+      "actual": "95",
+      "occurrence": 2,
+      "expected": "100",
+      "match": false
+    },
+    {
+      "title": "Abstract",
+      "actual": "96",
+      "occurrence": 1,
+      "expected": "101",
+      "match": false
+    },
+    {
+      "title": "<표 1-1> 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)",
+      "actual": "2",
+      "occurrence": 1,
+      "expected": "2",
+      "match": true
+    },
+    {
+      "title": "<표 1-2> 연구의 방법과 장별 구성",
+      "actual": "5",
+      "occurrence": 1,
+      "expected": "5",
+      "match": true
+    },
+    {
+      "title": "<표 2-1> 시스템 기술 특성 관련 선행연구 요약",
+      "actual": "14",
+      "occurrence": 1,
+      "expected": "14",
+      "match": true
+    },
+    {
+      "title": "<표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 측정문항 연결",
+      "actual": "17",
+      "occurrence": 1,
+      "expected": "17",
+      "match": true
+    },
+    {
+      "title": "<표 2-3> 안전관리 실효성 측정문항의 내용과 관련 선행연구",
+      "actual": "21",
+      "occurrence": 1,
+      "expected": "21",
+      "match": true
+    },
+    {
+      "title": "<표 2-4> 선행연구와 본 연구의 차별성",
+      "actual": "22",
+      "occurrence": 1,
+      "expected": "22",
+      "match": true
+    },
+    {
+      "title": "<표 2-5> 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합",
+      "actual": "23",
+      "occurrence": 1,
+      "expected": "23",
+      "match": true
+    },
+    {
+      "title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+      "actual": "28",
+      "occurrence": 1,
+      "expected": "28",
+      "match": true
+    },
+    {
+      "title": "<표 3-2> 관련 기술 선행연구 정리",
+      "actual": "30",
+      "occurrence": 1,
+      "expected": "30",
+      "match": true
+    },
+    {
+      "title": "<표 3-3> 시스템 모듈 구성과 역할",
+      "actual": "32",
+      "occurrence": 1,
+      "expected": "34",
+      "match": false
+    },
+    {
+      "title": "<표 3-4> 시스템 구현 기술 스택",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "<표 3-5> 정·오탐 라벨링 기준",
+      "actual": "42",
+      "occurrence": 1,
+      "expected": "45",
+      "match": false
+    },
+    {
+      "title": "<표 3-6> 성능 평가 지표 정의와 측정 목적",
+      "actual": "43",
+      "occurrence": 1,
+      "expected": "46",
+      "match": false
+    },
+    {
+      "title": "<표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "actual": "44",
+      "occurrence": 1,
+      "expected": "48",
+      "match": false
+    },
+    {
+      "title": "<표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "actual": "46",
+      "occurrence": 1,
+      "expected": "49",
+      "match": false
+    },
+    {
+      "title": "<표 3-9> 시스템 적용 타당성의 평가 범위",
+      "actual": "46",
+      "occurrence": 1,
+      "expected": "50",
+      "match": false
+    },
+    {
+      "title": "<표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의",
+      "actual": "48",
+      "occurrence": 1,
+      "expected": "51",
+      "match": false
+    },
+    {
+      "title": "<표 4-1> 연구변수의 구성",
+      "actual": "54",
+      "occurrence": 1,
+      "expected": "58",
+      "match": false
+    },
+    {
+      "title": "<표 4-2> 연구가설 종합",
+      "actual": "55",
+      "occurrence": 1,
+      "expected": "59",
+      "match": false
+    },
+    {
+      "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "actual": "57",
+      "occurrence": 1,
+      "expected": "61",
+      "match": false
+    },
+    {
+      "title": "<표 4-4> 설문지의 최종 구성",
+      "actual": "59",
+      "occurrence": 1,
+      "expected": "63",
+      "match": false
+    },
+    {
+      "title": "<표 4-5> 자료 수집 개요",
+      "actual": "61",
+      "occurrence": 1,
+      "expected": "66",
+      "match": false
+    },
+    {
+      "title": "<표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)",
+      "actual": "64",
+      "occurrence": 1,
+      "expected": "69",
+      "match": false
+    },
+    {
+      "title": "<표 4-7> 안전관리 실효성 문항의 탐색적 요인분석 결과",
+      "actual": "66",
+      "occurrence": 1,
+      "expected": "71",
+      "match": false
+    },
+    {
+      "title": "<표 4-8> 측정도구의 신뢰도 분석 결과",
+      "actual": "67",
+      "occurrence": 1,
+      "expected": "72",
+      "match": false
+    },
+    {
+      "title": "<표 4-9> 안전관리 실효성의 기술통계(도입·미도입 현장별)",
+      "actual": "68",
+      "occurrence": 1,
+      "expected": "73",
+      "match": false
+    },
+    {
+      "title": "<표 4-10> 도입·미도입 현장의 집단 동질성 검정 결과",
+      "actual": "69",
+      "occurrence": 1,
+      "expected": "74",
+      "match": false
+    },
+    {
+      "title": "<표 4-11> 공분산분석 가정 점검 결과",
+      "actual": "72",
+      "occurrence": 1,
+      "expected": "77",
+      "match": false
+    },
+    {
+      "title": "<표 4-12> 안전관리 실효성에 대한 공분산분석 결과",
+      "actual": "73",
+      "occurrence": 1,
+      "expected": "78",
+      "match": false
+    },
+    {
+      "title": "<표 4-13> 강건성 점검 결과",
+      "actual": "74",
+      "occurrence": 1,
+      "expected": "79",
+      "match": false
+    },
+    {
+      "title": "<표 4-14> 연구가설 검증 결과 종합",
+      "actual": "74",
+      "occurrence": 1,
+      "expected": "80",
+      "match": false
+    },
+    {
+      "title": "<그림 1-1> 연구의 흐름도",
+      "actual": "6",
+      "occurrence": 1,
+      "expected": "6",
+      "match": true
+    },
+    {
+      "title": "<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조",
+      "actual": "31",
+      "occurrence": 1,
+      "expected": "33",
+      "match": false
+    },
+    {
+      "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "actual": "35",
+      "occurrence": 1,
+      "expected": "37",
+      "match": false
+    },
+    {
+      "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "actual": "37",
+      "occurrence": 1,
+      "expected": "39",
+      "match": false
+    },
+    {
+      "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "actual": "40",
+      "occurrence": 1,
+      "expected": "42",
+      "match": false
+    },
+    {
+      "title": "<그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(n=34)",
+      "actual": "49",
+      "occurrence": 1,
+      "expected": "53",
+      "match": false
+    },
+    {
+      "title": "<그림 3-6> 현장 운영 특성(A-7∼A-9)의 응답 비율(도입·미도입 현장별)",
+      "actual": "51",
+      "occurrence": 1,
+      "expected": "55",
+      "match": false
+    },
+    {
+      "title": "<그림 4-1> 연구 모형",
+      "actual": "54",
+      "occurrence": 1,
+      "expected": "58",
+      "match": false
+    }
+  ],
+  "toc_mismatches": [
+    {
+      "title": "제 2 절 시스템 설계",
+      "actual": "31",
+      "occurrence": 1,
+      "expected": "32",
+      "match": false
+    },
+    {
+      "title": "제 1 항 전체 시스템 구조",
+      "actual": "31",
+      "occurrence": 1,
+      "expected": "32",
+      "match": false
+    },
+    {
+      "title": "제 2 항 YOLO 탐지 및 제어",
+      "actual": "32",
+      "occurrence": 1,
+      "expected": "34",
+      "match": false
+    },
+    {
+      "title": "제 3 항 LLM 문맥 검증 및 현장 적응",
+      "actual": "34",
+      "occurrence": 1,
+      "expected": "36",
+      "match": false
+    },
+    {
+      "title": "제 4 항 경보 전파",
+      "actual": "38",
+      "occurrence": 1,
+      "expected": "40",
+      "match": false
+    },
+    {
+      "title": "제 3 절 시스템 구현",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "제 1 항 실행 환경 및 기술 스택",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "제 2 항 주요 기능 및 운영 안정성",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "제 3 항 현장 배포 및 운용 구성",
+      "actual": "40",
+      "occurrence": 1,
+      "expected": "42",
+      "match": false
+    },
+    {
+      "title": "제 4 절 시스템 개발의 효과 분석",
+      "actual": "41",
+      "occurrence": 1,
+      "expected": "44",
+      "match": false
+    },
+    {
+      "title": "제 1 항 검증 데이터셋 구축 및 평가 지표",
+      "actual": "41",
+      "occurrence": 1,
+      "expected": "44",
+      "match": false
+    },
+    {
+      "title": "제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+      "actual": "43",
+      "occurrence": 1,
+      "expected": "46",
+      "match": false
+    },
+    {
+      "title": "제 3 항 RAG 기반 Few-shot 교정의 성능 실험",
+      "actual": "45",
+      "occurrence": 1,
+      "expected": "48",
+      "match": false
+    },
+    {
+      "title": "제 4 항 적용 타당성",
+      "actual": "46",
+      "occurrence": 1,
+      "expected": "49",
+      "match": false
+    },
+    {
+      "title": "제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식",
+      "actual": "47",
+      "occurrence": 1,
+      "expected": "50",
+      "match": false
+    },
+    {
+      "title": "제 6 항 현장 운영 특성",
+      "actual": "50",
+      "occurrence": 1,
+      "expected": "54",
+      "match": false
+    },
+    {
+      "title": "제 5 절 소결",
+      "actual": "52",
+      "occurrence": 2,
+      "expected": "56",
+      "match": false
+    },
+    {
+      "title": "제 4 장 연구설계 및 실증분석",
+      "actual": "53",
+      "occurrence": 1,
+      "expected": "57",
+      "match": false
+    },
+    {
+      "title": "제 1 절 연구 모형 설계",
+      "actual": "53",
+      "occurrence": 1,
+      "expected": "57",
+      "match": false
+    },
+    {
+      "title": "제 2 절 연구 문제 및 연구가설",
+      "actual": "55",
+      "occurrence": 1,
+      "expected": "59",
+      "match": false
+    },
+    {
+      "title": "제 3 절 변수의 조작적 정의 및 측정도구 구성",
+      "actual": "56",
+      "occurrence": 1,
+      "expected": "60",
+      "match": false
+    },
+    {
+      "title": "제 4 절 설문조사",
+      "actual": "58",
+      "occurrence": 1,
+      "expected": "62",
+      "match": false
+    },
+    {
+      "title": "제 1 항 설문조사의 개요 및 절차",
+      "actual": "58",
+      "occurrence": 1,
+      "expected": "62",
+      "match": false
+    },
+    {
+      "title": "제 2 항 설문지의 구성",
+      "actual": "58",
+      "occurrence": 1,
+      "expected": "62",
+      "match": false
+    },
+    {
+      "title": "제 5 절 자료 수집과 분석 절차",
+      "actual": "60",
+      "occurrence": 1,
+      "expected": "65",
+      "match": false
+    },
+    {
+      "title": "제 1 항 자료 수집 및 표본",
+      "actual": "60",
+      "occurrence": 1,
+      "expected": "65",
+      "match": false
+    },
+    {
+      "title": "제 2 항 분석 절차",
+      "actual": "61",
+      "occurrence": 1,
+      "expected": "66",
+      "match": false
+    },
+    {
+      "title": "제 6 절 조사 대상 특성과 기초통계 분석",
+      "actual": "63",
+      "occurrence": 1,
+      "expected": "68",
+      "match": false
+    },
+    {
+      "title": "제 1 항 인구통계학적 빈도분석",
+      "actual": "63",
+      "occurrence": 1,
+      "expected": "68",
+      "match": false
+    },
+    {
+      "title": "제 2 항 타당도 분석",
+      "actual": "65",
+      "occurrence": 1,
+      "expected": "70",
+      "match": false
+    },
+    {
+      "title": "제 3 항 신뢰도 분석",
+      "actual": "66",
+      "occurrence": 1,
+      "expected": "71",
+      "match": false
+    },
+    {
+      "title": "제 4 항 기술통계 분석",
+      "actual": "68",
+      "occurrence": 1,
+      "expected": "73",
+      "match": false
+    },
+    {
+      "title": "제 5 항 집단 동질성 검정",
+      "actual": "69",
+      "occurrence": 1,
+      "expected": "74",
+      "match": false
+    },
+    {
+      "title": "제 7 절 가설 검증",
+      "actual": "70",
+      "occurrence": 1,
+      "expected": "75",
+      "match": false
+    },
+    {
+      "title": "제 1 항 YOLO-LLM 안전관제 시스템 도입 현장의 안전관리 실효성 검증",
+      "actual": "70",
+      "occurrence": 1,
+      "expected": "75",
+      "match": false
+    },
+    {
+      "title": "제 2 항 가설 검증 결과 종합",
+      "actual": "74",
+      "occurrence": 1,
+      "expected": "79",
+      "match": false
+    },
+    {
+      "title": "제 8 절 분석결과 및 논의",
+      "actual": "75",
+      "occurrence": 1,
+      "expected": "80",
+      "match": false
+    },
+    {
+      "title": "제 5 장 결론",
+      "actual": "77",
+      "occurrence": 1,
+      "expected": "83",
+      "match": false
+    },
+    {
+      "title": "참고문헌",
+      "actual": "79",
+      "occurrence": 1,
+      "expected": "85",
+      "match": false
+    },
+    {
+      "title": "부 록 (도입 현장)",
+      "actual": "86",
+      "occurrence": 1,
+      "expected": "91",
+      "match": false
+    },
+    {
+      "title": "Part A. 인구통계학적 특성 및 현장 운영 특성",
+      "actual": "87",
+      "occurrence": 1,
+      "expected": "92",
+      "match": false
+    },
+    {
+      "title": "Part B. 안전관리 실효성",
+      "actual": "89",
+      "occurrence": 1,
+      "expected": "94",
+      "match": false
+    },
+    {
+      "title": "Part C. 시스템 특성 인식",
+      "actual": "90",
+      "occurrence": 1,
+      "expected": "95",
+      "match": false
+    },
+    {
+      "title": "Part D. 경보 피로도 완화",
+      "actual": "91",
+      "occurrence": 1,
+      "expected": "96",
+      "match": false
+    },
+    {
+      "title": "부 록 (미도입 현장)",
+      "actual": "92",
+      "occurrence": 1,
+      "expected": "97",
+      "match": false
+    },
+    {
+      "title": "Part A. 인구통계학적 특성 및 현장 운영 특성",
+      "actual": "93",
+      "occurrence": 2,
+      "expected": "98",
+      "match": false
+    },
+    {
+      "title": "Part B. 안전관리 실효성",
+      "actual": "95",
+      "occurrence": 2,
+      "expected": "100",
+      "match": false
+    },
+    {
+      "title": "Abstract",
+      "actual": "96",
+      "occurrence": 1,
+      "expected": "101",
+      "match": false
+    },
+    {
+      "title": "<표 3-3> 시스템 모듈 구성과 역할",
+      "actual": "32",
+      "occurrence": 1,
+      "expected": "34",
+      "match": false
+    },
+    {
+      "title": "<표 3-4> 시스템 구현 기술 스택",
+      "actual": "39",
+      "occurrence": 1,
+      "expected": "41",
+      "match": false
+    },
+    {
+      "title": "<표 3-5> 정·오탐 라벨링 기준",
+      "actual": "42",
+      "occurrence": 1,
+      "expected": "45",
+      "match": false
+    },
+    {
+      "title": "<표 3-6> 성능 평가 지표 정의와 측정 목적",
+      "actual": "43",
+      "occurrence": 1,
+      "expected": "46",
+      "match": false
+    },
+    {
+      "title": "<표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+      "actual": "44",
+      "occurrence": 1,
+      "expected": "48",
+      "match": false
+    },
+    {
+      "title": "<표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+      "actual": "46",
+      "occurrence": 1,
+      "expected": "49",
+      "match": false
+    },
+    {
+      "title": "<표 3-9> 시스템 적용 타당성의 평가 범위",
+      "actual": "46",
+      "occurrence": 1,
+      "expected": "50",
+      "match": false
+    },
+    {
+      "title": "<표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의",
+      "actual": "48",
+      "occurrence": 1,
+      "expected": "51",
+      "match": false
+    },
+    {
+      "title": "<표 4-1> 연구변수의 구성",
+      "actual": "54",
+      "occurrence": 1,
+      "expected": "58",
+      "match": false
+    },
+    {
+      "title": "<표 4-2> 연구가설 종합",
+      "actual": "55",
+      "occurrence": 1,
+      "expected": "59",
+      "match": false
+    },
+    {
+      "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+      "actual": "57",
+      "occurrence": 1,
+      "expected": "61",
+      "match": false
+    },
+    {
+      "title": "<표 4-4> 설문지의 최종 구성",
+      "actual": "59",
+      "occurrence": 1,
+      "expected": "63",
+      "match": false
+    },
+    {
+      "title": "<표 4-5> 자료 수집 개요",
+      "actual": "61",
+      "occurrence": 1,
+      "expected": "66",
+      "match": false
+    },
+    {
+      "title": "<표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)",
+      "actual": "64",
+      "occurrence": 1,
+      "expected": "69",
+      "match": false
+    },
+    {
+      "title": "<표 4-7> 안전관리 실효성 문항의 탐색적 요인분석 결과",
+      "actual": "66",
+      "occurrence": 1,
+      "expected": "71",
+      "match": false
+    },
+    {
+      "title": "<표 4-8> 측정도구의 신뢰도 분석 결과",
+      "actual": "67",
+      "occurrence": 1,
+      "expected": "72",
+      "match": false
+    },
+    {
+      "title": "<표 4-9> 안전관리 실효성의 기술통계(도입·미도입 현장별)",
+      "actual": "68",
+      "occurrence": 1,
+      "expected": "73",
+      "match": false
+    },
+    {
+      "title": "<표 4-10> 도입·미도입 현장의 집단 동질성 검정 결과",
+      "actual": "69",
+      "occurrence": 1,
+      "expected": "74",
+      "match": false
+    },
+    {
+      "title": "<표 4-11> 공분산분석 가정 점검 결과",
+      "actual": "72",
+      "occurrence": 1,
+      "expected": "77",
+      "match": false
+    },
+    {
+      "title": "<표 4-12> 안전관리 실효성에 대한 공분산분석 결과",
+      "actual": "73",
+      "occurrence": 1,
+      "expected": "78",
+      "match": false
+    },
+    {
+      "title": "<표 4-13> 강건성 점검 결과",
+      "actual": "74",
+      "occurrence": 1,
+      "expected": "79",
+      "match": false
+    },
+    {
+      "title": "<표 4-14> 연구가설 검증 결과 종합",
+      "actual": "74",
+      "occurrence": 1,
+      "expected": "80",
+      "match": false
+    },
+    {
+      "title": "<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조",
+      "actual": "31",
+      "occurrence": 1,
+      "expected": "33",
+      "match": false
+    },
+    {
+      "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+      "actual": "35",
+      "occurrence": 1,
+      "expected": "37",
+      "match": false
+    },
+    {
+      "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+      "actual": "37",
+      "occurrence": 1,
+      "expected": "39",
+      "match": false
+    },
+    {
+      "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+      "actual": "40",
+      "occurrence": 1,
+      "expected": "42",
+      "match": false
+    },
+    {
+      "title": "<그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(n=34)",
+      "actual": "49",
+      "occurrence": 1,
+      "expected": "53",
+      "match": false
+    },
+    {
+      "title": "<그림 3-6> 현장 운영 특성(A-7∼A-9)의 응답 비율(도입·미도입 현장별)",
+      "actual": "51",
+      "occurrence": 1,
+      "expected": "55",
+      "match": false
+    },
+    {
+      "title": "<그림 4-1> 연구 모형",
+      "actual": "54",
+      "occurrence": 1,
+      "expected": "58",
+      "match": false
+    }
+  ],
+  "toc_occurrence_errors": {}
+}

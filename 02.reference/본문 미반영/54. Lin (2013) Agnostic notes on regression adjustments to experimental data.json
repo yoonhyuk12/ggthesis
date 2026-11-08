@@ -1,0 +1,36 @@
+{
+  "title": "Agnostic Notes on Regression Adjustments to Experimental Data: Reexamining Freedman’s Critique",
+  "author": "Winston Lin",
+  "year": 2013,
+  "journal": "The Annals of Applied Statistics",
+  "volume": 7,
+  "issue": 1,
+  "pages": "295–318",
+  "doi": "10.1214/12-AOAS583",
+  "source_url": "https://www.stat.berkeley.edu/~winston/agnostic.pdf",
+  "retrieved_at": "2026-11-06T02:40:35.263247+09:00",
+  "local_path": "02.reference/105. Lin (2013) Agnostic notes on regression adjustments to experimental data.pdf",
+  "full_text_pdf_secured": true,
+  "pdf_pages": 24,
+  "bytes": 238231,
+  "sha256": "81e6b5cd2131bc519e73465561132d14087e4d116213ca5b9d202ed6ada3eab6",
+  "verification": {
+    "pdf_magic": true,
+    "first_page_bibliography_verified": true,
+    "Cochran_1969_in_text": {
+      "printed_page": 298,
+      "pdf_page": 4,
+      "location": "footnote 4",
+      "context": "Peters–Belson/Oaxaca–Blinder estimator"
+    },
+    "Cochran_1969_reference": {
+      "printed_page": 315,
+      "pdf_page": 21,
+      "title": "The use of covariance in observational studies",
+      "journal": "J. R. Stat. Soc. Ser. C. Appl. Stat.",
+      "volume": 18,
+      "pages": "270–275"
+    }
+  },
+  "citation_status": "Acquired as follow-up evidence; no manuscript or bibliography edits."
+}

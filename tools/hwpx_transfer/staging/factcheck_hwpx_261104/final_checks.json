@@ -1,0 +1,53 @@
+{
+  "text_changes_count": 26,
+  "paragraph_counts_base_patched_final": [
+    2215,
+    2210,
+    2210
+  ],
+  "body_text_sequence_preserved_after_COM": true,
+  "guide_marker_text_color_preserved": true,
+  "images_sha256_preserved": true,
+  "all_replacements_present": true,
+  "Igbaria_remaining": 0,
+  "Ryu2023_remaining": 0,
+  "pageBreak_CELL_count": 0,
+  "target_table_grid": [
+    "7",
+    "4"
+  ],
+  "target_widths": [
+    "5871",
+    "8521",
+    "11765",
+    "13527"
+  ],
+  "박종학 citations before/after": [
+    [
+      "박종학, 2025",
+      "박종학(2025",
+      "박종학(2025",
+      "박종학(2025",
+      "박종학(2025",
+      "박종학, 2025"
+    ],
+    [
+      "박종학, 2025",
+      "박종학(2025",
+      "박종학(2025",
+      "박종학(2025",
+      "박종학(2025",
+      "박종학(2025"
+    ]
+  ],
+  "이형도 citations before/after": [
+    [
+      "이형도(2024",
+      "이형도(2024"
+    ],
+    [
+      "이형도(2024",
+      "이형도(2024"
+    ]
+  ]
+}

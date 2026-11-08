@@ -1,0 +1,13 @@
+{
+  "body_text_preserved": true,
+  "images_preserved": true,
+  "table_cells_preserved": true,
+  "headings_same_page": 76,
+  "pages": 125,
+  "toc_only_diff_pages": [
+    4,
+    5,
+    7
+  ],
+  "base_sha256": "1f07ef5d8cc72a8af3b35606af49b71eea1f27b150c3dea69ad51cd88b9f1e44"
+}

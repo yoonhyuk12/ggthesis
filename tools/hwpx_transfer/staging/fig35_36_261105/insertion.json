@@ -1,0 +1,17 @@
+[
+  {
+    "existing_image_bytes_identical": true
+  },
+  {
+    "figure": "3-5",
+    "width": 42520,
+    "height": 27778,
+    "source": "01.docs\\figures\\system\\fig_3_11_chart_v6.png"
+  },
+  {
+    "figure": "3-6",
+    "width": 42520,
+    "height": 32316,
+    "source": "01.docs\\figures\\system\\fig_3_6_field_operation_butterfly.png"
+  }
+]

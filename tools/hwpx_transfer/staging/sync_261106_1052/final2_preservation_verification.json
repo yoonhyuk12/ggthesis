@@ -1,0 +1,11 @@
+{
+  "scope": "candidate to final2 all text and order, excluding dotted TOC page numbers; source hashes",
+  "text_differences": {
+    "0": [],
+    "1": [],
+    "2": []
+  },
+  "base_sha256_unchanged": true,
+  "md_hash_changes": [],
+  "ok": true
+}

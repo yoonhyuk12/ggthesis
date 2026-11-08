@@ -1,0 +1,18 @@
+{
+  "tables": 44,
+  "table_geometry_equal": true,
+  "text_order_equal": true,
+  "resolved_run_styles_equal": true,
+  "images_equal": true,
+  "reference_counts": [
+    21,
+    21,
+    4,
+    3
+  ],
+  "reference_gaps": 0,
+  "reference_duplicates_within_groups": 0,
+  "changed_paragraph_caches_removed": true,
+  "base_sha256": "7ee64d55246b5f5838b2b5244e6b23b4924975c6da36e200f104bd3c00d343ba",
+  "final_sha256": "33b35fe107e6ec309b91c68bedea1368cf0dff9b4334e229512d956b9e0f611e"
+}

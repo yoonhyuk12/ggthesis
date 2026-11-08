@@ -1,0 +1,15 @@
+{
+  "same_page_count": true,
+  "changed_pages": [
+    4,
+    5,
+    43,
+    44,
+    52,
+    76,
+    77,
+    94,
+    95
+  ],
+  "comparison": "RGB pixel comparison at 0.75 scale"
+}

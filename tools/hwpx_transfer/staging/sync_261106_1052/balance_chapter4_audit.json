@@ -1,0 +1,21 @@
+{
+  "section": 2,
+  "unit_index": 480,
+  "paragraph_id": "3000006370",
+  "old_paraPrIDRef": "39",
+  "new_paraPrIDRef": "92",
+  "changes": {
+    "keepLines": [
+      "0",
+      "1"
+    ],
+    "keepWithNext": [
+      "0",
+      "1"
+    ]
+  },
+  "font_size_spacing_margin_text_unchanged": true,
+  "new_charPr": null,
+  "output": "C:/Users/User/Documents/2026 개발관련/03. 경기대 논문/tools/hwpx_transfer/staging/sync_261106_1052/balanced.hwpx",
+  "requires_reflow_PDF": true
+}

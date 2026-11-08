@@ -1,0 +1,15 @@
+{
+  "text_changes_expected_only": true,
+  "reflow_text_identical": true,
+  "tables_geometry_preserved": 52,
+  "images_identical": true,
+  "reference_groups": [
+    20,
+    21,
+    4,
+    3
+  ],
+  "reference_gaps": 0,
+  "reference_duplicates": 0,
+  "base_sha256": "fb073d89de645a9a528939d404e4d39a23e3a8f009fe60ad8838a9afe0dfc102"
+}

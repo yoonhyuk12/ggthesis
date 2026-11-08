@@ -1,0 +1,80 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1430_윤혁_석사학위논문_심의발표_논문목차순.pptx",
+  "source_sha256": "3bcc47f9efc13f17897d453e33336029ed00166fcabafc842589ddee27c6c9f6",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1436_윤혁_석사학위논문_심의발표_장구분추가.pptx",
+  "output_pdf": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1436_윤혁_석사학위논문_심의발표_장구분추가.pdf",
+  "slide_count": 31,
+  "main_slides": 27,
+  "appendix_slides": 4,
+  "divider_slides": [
+    3,
+    6,
+    9,
+    17,
+    24
+  ],
+  "old_to_new": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 5,
+    "5": 7,
+    "6": 8,
+    "7": 10,
+    "8": 11,
+    "9": 12,
+    "10": 13,
+    "11": 14,
+    "12": 15,
+    "13": 16,
+    "14": 18,
+    "15": 19,
+    "16": 20,
+    "17": 21,
+    "18": 22,
+    "19": 23,
+    "20": 25,
+    "21": 26,
+    "22": 27,
+    "23": 28,
+    "24": 29,
+    "25": 30,
+    "26": 31
+  },
+  "checks": [
+    {
+      "existing_slide_content_notes_images_preserved": true
+    },
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "powerpoint_open_slides": 31
+    },
+    {
+      "pdf_pages": 31
+    },
+    {
+      "new_divider_text_overflow": []
+    },
+    {
+      "page_numbers_continuous": "2–31"
+    },
+    {
+      "chapter_divider_order": [
+        "제1장",
+        "제2장",
+        "제3장",
+        "제4장",
+        "제5장"
+      ]
+    },
+    {
+      "excluded_terms_absent": true
+    },
+    {
+      "new_dividers_visual_review": "5개 구분슬라이드 시각확인 완료: 제목·장번호 정확, 잘림·겹침 없음"
+    }
+  ],
+  "limitations": []
+}

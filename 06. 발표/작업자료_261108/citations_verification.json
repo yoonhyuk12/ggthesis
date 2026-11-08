@@ -1,0 +1,49 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1508_윤혁_석사학위논문_심의발표_마무리추가.pptx",
+  "source_sha256": "a58aedaff5d1fa6ba7e133599c0d3b6cef71b41a16d09c3a6046aa9746eb6290",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1512_윤혁_석사학위논문_심의발표_이론출처표기.pptx",
+  "slide_count": 34,
+  "citations": [
+    {
+      "theory": "경보 피로도",
+      "citation": "(Cvach, 2012)",
+      "idx": 297,
+      "x": 0.83
+    },
+    {
+      "theory": "신호감지이론",
+      "citation": "(Green & Swets, 1966)",
+      "idx": 304,
+      "x": 3.83
+    },
+    {
+      "theory": "기술수용모델",
+      "citation": "(Davis, 1989)",
+      "idx": 303,
+      "x": 6.83
+    }
+  ],
+  "checks": [
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "other_33_slides_notes_xml_identical": true
+    },
+    {
+      "powerpoint_open_slides": 34
+    },
+    {
+      "slide9_height_overflow": []
+    },
+    {
+      "pdf_created": false
+    },
+    {
+      "direct_png_export": true
+    },
+    {
+      "slide9_visual_review": "이론 제목 바로 아래 인용 3개 배치 확인; 겹침·잘림 없음"
+    }
+  ]
+}

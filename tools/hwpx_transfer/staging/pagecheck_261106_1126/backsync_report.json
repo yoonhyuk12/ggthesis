@@ -1,0 +1,287 @@
+{
+  "changes": [
+    {
+      "file": "01.docs/02_이론적배경.md",
+      "old": "| 기술 특성 | 선행연구(연구자, 연도) | 핵심 결과 |",
+      "new": "| 기술 특성 | 선행연구<br>(연구자, 연도) | 핵심 결과 |",
+      "reason": "표2-1 머리행 셀 문단 나눔을 사용자 편집 그대로 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/02_이론적배경.md",
+      "old": "| 선행연구(연구자, 연도) | 연구 대상·관점 | 주요 결과 | 본 연구에 대한 시사점 |",
+      "new": "| 선행연구<br>(연구자, 연도) | 연구 대상·관점 | 주요 결과 | 본 연구에 대한 시사점 |",
+      "reason": "표2-5 머리행 셀 문단 나눔을 사용자 편집 그대로 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/03_시스템개발.md",
+      "old": "제2∼3절의 기능 설명은 원고 정리 시점에 확인한 구현을 기준으로 하며, 제4절의 정량 결과는 해당 평가기간의 기록과 운용 조건에 한정하였다.",
+      "new": "",
+      "reason": "사용자가 HWPX에서 삭제한 제3장 제2절 첫 문단을 MD에도 그대로 삭제",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/03_시스템개발.md",
+      "old": "| 조건 | Precision | Recall | F1 | Accuracy | TP | FP | TN | FN |",
+      "new": "| 조건 | 정밀도<br>(Precision) | 재현율<br>(Recall) | F1 | 정확도<br>(Accuracy) | TP | FP | TN | FN |",
+      "reason": "표3-8 사용자 한글 라벨 추가 및 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| 통제변수<br>(C) | 인구통계학적 특성 | 전체 | 6 | A-1∼A-6 | - |",
+      "new": "| 통제<br>변수<br>(C) | 인구통계학적 특성 | 전체 | 6 | A-1<br>∼A-6 | - |",
+      "reason": "표4-4 통제변수·문항번호 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| 운영 특성<br>(투입 안 함) | 현장 운영 특성 | 전체 | 3 | A-7∼A-9 | - |",
+      "new": "| 운영 특성 | 현장 운영 특성 | 전체 | 3 | A-7<br>∼A-9 | - |",
+      "reason": "표4-4 사용자가 삭제한 투입 안 함 라벨 및 문항번호 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| 종속변수<br>(Y) | 안전관리 실효성 | 전체 | 8 | B-1∼B-8 | 김민기·박성호(2026); 김용선(2022); 김태헌(2026); 김현수(2026); 이동건(2024); 이창남(2025); 황병복(2026);<br>Chong et al.(2023); Cvach(2012);<br>Wu et al.(2025) |",
+      "new": "| 종속<br>변수<br>(Y) | 안전관리 실효성 | 전체 | 8 | B-1<br>∼B-8 | 김민기·박성호(2026); 김용선(2022); 김태헌(2026); 김현수(2026); 이동건(2024); 이창남(2025); 황병복(2026);<br>Chong et al.(2023); Cvach(2012);<br>Wu et al.(2025) |",
+      "reason": "표4-4 종속변수·문항번호 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| 시스템<br>특성 | 시스템 특성 인식 | 도입<br>현장 | 8 | C-1∼C-8 | 제3장 제4절 제5항(<표 3-10>) 참조 |",
+      "new": "| 시스템<br>특성 | 시스템 특성 인식 | 도입<br>현장 | 8 | C-1<br>∼C-8 | 제3장 제4절 제5항(<표 3-10>) 참조 |",
+      "reason": "표4-4 전용부 문항번호 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| | 경보 피로도 완화 인식 | 도입<br>현장 | 4 | D-1∼D-4 | |",
+      "new": "| | 경보 피로도 완화 인식 | 도입<br>현장 | 4 | D-1<br>∼D-4 | |",
+      "reason": "표4-4 전용부 문항번호 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| 구분 | n<br>(명·개소) | 조정 평균<br>(1∼5점) | SE | 95% 신뢰구간 | F(1, 62) | p | 부분 η² |",
+      "new": "| 구분 | n<br>(명·개소) | 조정 평균<br>(1∼5점) | SE | 95% 신뢰구간 | F<br>(1, 62) | p | 부분 η² |",
+      "reason": "표4-12 F통계량 머리행 셀 문단 나눔 보존",
+      "occurrences": 1
+    },
+    {
+      "file": "01.docs/04_연구설계및실증분석.md",
+      "old": "| 조정 차이 B=0.54 |",
+      "new": "| 조정차이 B=0.54 |",
+      "reason": "표4-14 셀 띄어쓰기를 사용자 문구 그대로 반영",
+      "occurrences": 1
+    }
+  ],
+  "ignored": [
+    {
+      "diff_block": 5,
+      "reason": "본문 문단 첫 공백만 변경: 조판 전용이므로 MD 불변",
+      "paragraphs": 1
+    },
+    {
+      "diff_block": 14,
+      "reason": "본문 문단 첫 공백만 변경: 조판 전용이므로 MD 불변",
+      "paragraphs": 1
+    },
+    {
+      "diff_block": 15,
+      "reason": "본문 문단 첫 공백만 변경: 조판 전용이므로 MD 불변",
+      "paragraphs": 2
+    },
+    {
+      "diff_block": 16,
+      "reason": "본문 문단 첫 공백만 변경: 조판 전용이므로 MD 불변",
+      "paragraphs": 2
+    },
+    {
+      "diff_block": 17,
+      "reason": "본문 문단 첫 공백만 변경: 조판 전용이므로 MD 불변",
+      "paragraphs": 1
+    }
+  ],
+  "verified": true,
+  "verification": {
+    "changed_files": 3,
+    "exact_replacements": 11,
+    "concurrent_change_guard": "PASS",
+    "saved_text_equals_intended": "PASS",
+    "hashes": {
+      "01.docs/02_이론적배경.md": {
+        "before": "fa9a7ddfb9cd6d1a7a05ef9c3fa69dcb2dbdd19c452855163354f691931fc5c8",
+        "after": "0e9a1454424bd46ef6f0fcc0d723b41fcd30aef2ad1fc631c637dd703540a47a"
+      },
+      "01.docs/03_시스템개발.md": {
+        "before": "747d054daa0b69a2f115a980f12550c2fe1a385e9b9d217b3e53365bf7d441ae",
+        "after": "7ac25a35a0bb99ec3e16cdda6cfc09a1ffcd3ebe822a574bb078445ff3b9bffa"
+      },
+      "01.docs/04_연구설계및실증분석.md": {
+        "before": "cc12421ade436c66f3d37dcd4d1131a6525e2aa26046ce07a280cce09b2658be",
+        "after": "25ccf7735ed516390604bf74e181cc096fd4ffac236632ccc9d124be8d01e9ba"
+      }
+    },
+    "user_HWPX_cell_paragraph_match": [
+      {
+        "caption": "<표2-1>",
+        "row": 0,
+        "col": 1,
+        "paragraphs": [
+          "선행연구",
+          "(연구자, 연도)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표2-5>",
+        "row": 0,
+        "col": 0,
+        "paragraphs": [
+          "선행연구",
+          "(연구자, 연도)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표3-8>",
+        "row": 0,
+        "col": 1,
+        "paragraphs": [
+          "정밀도",
+          "(Precision)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표3-8>",
+        "row": 0,
+        "col": 2,
+        "paragraphs": [
+          "재현율",
+          "(Recall)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표3-8>",
+        "row": 0,
+        "col": 4,
+        "paragraphs": [
+          "정확도",
+          "(Accuracy)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 1,
+        "col": 0,
+        "paragraphs": [
+          "통제",
+          "변수",
+          "(C)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 1,
+        "col": 4,
+        "paragraphs": [
+          "A-1",
+          "∼A-6"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 2,
+        "col": 0,
+        "paragraphs": [
+          "운영 특성"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 2,
+        "col": 4,
+        "paragraphs": [
+          "A-7",
+          "∼A-9"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 3,
+        "col": 0,
+        "paragraphs": [
+          "종속",
+          "변수",
+          "(Y)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 3,
+        "col": 4,
+        "paragraphs": [
+          "B-1",
+          "∼B-8"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 5,
+        "col": 4,
+        "paragraphs": [
+          "C-1",
+          "∼C-8"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-4>",
+        "row": 6,
+        "col": 4,
+        "paragraphs": [
+          "D-1",
+          "∼D-4"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-12>",
+        "row": 0,
+        "col": 5,
+        "paragraphs": [
+          "F",
+          "(1, 62)"
+        ],
+        "match": true
+      },
+      {
+        "caption": "<표4-14>",
+        "row": 1,
+        "col": 2,
+        "paragraphs": [
+          "조정차이 B=0.54"
+        ],
+        "match": true
+      }
+    ]
+  },
+  "notes": [
+    "HWPX·COM·MCP·git 쓰기 없음. 표2-1/2-5,3-8,4-4/4-12/4-14의 사용자 셀 분할은 MD <br>로 반영.",
+    "본문 삭제의 의미를 재해석하거나 다른 장을 추정 수정하지 않았다. 통계수치·가설·장절·표그림 번호 및 설문문항 자체 변경 없음.",
+    "역동기화한 원문과 현재 사용자 HWPX 셀 문단을 대조했다. 문단 첫 공백만 달라진7문단은 MD에 반영하지 않았다.",
+    "장간 파급: 숫자·변수명·가설·표제목 변화가 없고 삭제문장의 동일 반복문구도 다른 본문에 없어 추가 변경 대상 없음. 셀 안 줄 나눔은 해당 표만 반영."
+  ]
+}

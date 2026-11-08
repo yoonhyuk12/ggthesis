@@ -1,0 +1,351 @@
+{
+  "id": 99,
+  "bibliography": {
+    "file": "02.reference/99. 서정연(2020)_보육교사 직무동기 증진 프로그램 개발 및 효과 연구.pdf",
+    "author": "서정연",
+    "year": 2020,
+    "title": "보육교사 직무동기 증진 프로그램 개발 및 효과 연구: 직무특성이론을 중심으로",
+    "university": "고려대학교 대학원",
+    "department": "가정학과 아동학전공",
+    "degree": "박사"
+  },
+  "extraction": {
+    "tool": "Kordoc",
+    "version": "4.24.2",
+    "command": "node .claude/kordoc/dist/cli.js \"02.reference/99. 서정연(2020)_보육교사 직무동기 증진 프로그램 개발 및 효과 연구.pdf\" --no-images --script-tags -o \"02.reference/ANCOVA_교육박사_분석/kordoc/99.md\"",
+    "files": [
+      "kordoc/99.md",
+      "kordoc/99.log"
+    ],
+    "warnings": [
+      "--no-images에도 MD의 이미지 참조 표기가 남아 있으나 이미지 파일을 생성하지 않음. 수치 검증에는 원본 PDF를 사용."
+    ]
+  },
+  "verification": {
+    "page_count": 161,
+    "sha256": "6e380321916493da802545a092e4e1144c0005ef2580c54c8f7ced8b539550a4",
+    "method": "Kordoc 전체 추출 후 연구방법·자료분석·결과를 읽고 PyMuPDF 원본 텍스트로 페이지와 대표 수치 대조. 의심 표기 원본 렌더 시각 확인.",
+    "page_number_convention": "pdf_page는 1-based",
+    "read_ch4": "01.docs/04_연구설계및실증분석.md 제5절 및 제7절을 직접 읽음",
+    "printed_offset": 12,
+    "anchors": [
+      {
+        "pdf_page": 60,
+        "printed_page": 48
+      },
+      {
+        "pdf_page": 101,
+        "printed_page": 89
+      },
+      {
+        "pdf_page": 102,
+        "printed_page": 90
+      }
+    ],
+    "visual_evidence": [
+      "99_pdf101.png",
+      "99_pdf102.png"
+    ],
+    "kordoc_completion": "161/161 OK"
+  },
+  "design": {
+    "type": "비동질 통제집단 사전·사후검사설계(저자 명명)",
+    "allocation": "8개 직장어린이집을 실험/통제에 무선할당. 개인 무작위배정이 아니라 기관 단위 배정.",
+    "intervention": "실험군 8회×2시간 총16시간, 통제군 무처치",
+    "pdf_page": 60,
+    "printed_page": 48,
+    "evidence": "연구대상 및 실험설계; 실험 일정 p54~55"
+  },
+  "sample": {
+    "n": 119,
+    "population": "서울 소재 동일 재단 직장어린이집 8개소의 3년차 이상 여성 보육교사, 교육 참여 희망자",
+    "clusters": 8,
+    "pdf_page": 60,
+    "printed_page": 48,
+    "evidence": "표10: 실험4개소57명, 통제4개소62명"
+  },
+  "groups": [
+    {
+      "name": "실험",
+      "n": 57,
+      "clusters": 4
+    },
+    {
+      "name": "통제",
+      "n": 62,
+      "clusters": 4
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "직무동기",
+      "items": 9,
+      "scale": "5점 응답, 결과표에서는 문항평균 수준",
+      "analysis": "단변량 ANCOVA"
+    },
+    {
+      "name": "직무특성 인식",
+      "subscales": [
+        "기술 다양성",
+        "업무 정체성",
+        "업무 중요성",
+        "자율성",
+        "피드백"
+      ],
+      "items": 14,
+      "analysis": "MANCOVA 및 후속 판별분석"
+    }
+  ],
+  "covariates": {
+    "ANCOVA": "사전 직무동기 점수 1개",
+    "MANCOVA": "사전 직무특성 하위요인 점수들",
+    "other_controls": "검토 범위에서 보고 확인 못함",
+    "pdf_page": 68,
+    "printed_page": 56,
+    "evidence": "자료분석에서 사전검사 점수 공변량 통제 명시"
+  },
+  "software": {
+    "name": "검토 범위에서 보고 확인 못함",
+    "version": "검토 범위에서 보고 확인 못함",
+    "note": "자료분석 p55~56에 프로그램명/버전 미명시. 본문 전체 SPSS 검색은 참고문헌 도서명만 확인하여 SPSS 사용으로 단정하지 않음."
+  },
+  "assumptions": [
+    {
+      "item": "회귀기울기 동질성/집단×공변량 상호작용",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p55~56 및 결과 p84~90 확인",
+      "pdf_page": [
+        67,
+        68,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "printed_page": "55~56,84~90"
+    },
+    {
+      "item": "선형성·잔차 정규성·등분산성·영향점",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "전체 추출문 키워드 탐색 및 방법/결과 확인",
+      "pdf_page": [
+        67,
+        68,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "printed_page": "55~56,86~90"
+    },
+    {
+      "item": "다변량 종속변수 상관",
+      "status": "보고",
+      "evidence": "Bartlett 구형성 χ²=395.88,p<.001; 이는 회귀기울기/등분산 검정의 대체가 아님",
+      "pdf_page": 98,
+      "printed_page": 86
+    },
+    {
+      "item": "관측독립성/기관 군집",
+      "status": "군집 보정 검토 범위에서 보고 확인 못함",
+      "evidence": "기관8개를 배정하고 교사119명 단위 ANCOVA df오차116 사용",
+      "pdf_page": [
+        60,
+        102
+      ],
+      "printed_page": "48,90"
+    },
+    {
+      "item": "사전집단 비교",
+      "status": "보고",
+      "evidence": "배경변수 χ², 결과변수 사전검사 차이 표19 제시. ANCOVA 가정 검증과 구별해야 함",
+      "pdf_page": [
+        97,
+        98
+      ],
+      "printed_page": "85~86"
+    }
+  ],
+  "tables": [
+    {
+      "number": 20,
+      "title": "직무특성 사전·사후검사의 집단별 평균과 표준편차",
+      "columns": [
+        "하위요인",
+        "집단별 사전 M/SD",
+        "사후 M/SD",
+        "교정된 사후점수"
+      ],
+      "pdf_page": 99,
+      "printed_page": 87,
+      "key_values": {
+        "기술다양성_교정평균": [
+          4.39,
+          3.63
+        ],
+        "업무정체성_교정평균": [
+          4.53,
+          3.9
+        ]
+      }
+    },
+    {
+      "number": 21,
+      "title": "보육교사 직무특성 하위요인의 다변량공분산분석",
+      "columns": [
+        "효과",
+        "하위요인",
+        "Wilks Lambda",
+        "SS",
+        "df",
+        "MS",
+        "F",
+        "partial eta squared"
+      ],
+      "pdf_page": 100,
+      "printed_page": 88,
+      "key_values": {
+        "Wilks_Lambda": 0.38,
+        "multivariate_F": 35.3,
+        "p": "<.001",
+        "하위집단F": [
+          41.88,
+          35.37,
+          134.65,
+          97.13,
+          121.76
+        ],
+        "partial_eta_squared": [
+          0.27,
+          0.24,
+          0.55,
+          0.46,
+          0.52
+        ],
+        "note": "분모 df는 이 표에서 보고 확인 못함"
+      }
+    },
+    {
+      "number": 23,
+      "title": "교사교육 프로그램 집단별 직무동기 사전·사후검사의 평균과 표준편차",
+      "columns": [
+        "집단",
+        "사전 M/SD",
+        "사후 M/SD",
+        "교정된 사후점수 M/SD(원문표기)"
+      ],
+      "pdf_page": 101,
+      "printed_page": 89,
+      "key_values": {
+        "실험": {
+          "n": 57,
+          "pre_M": 3.49,
+          "pre_SD": 0.48,
+          "post_M": 4.43,
+          "post_SD": 0.44,
+          "adjusted_M": 4.46,
+          "adjusted_variability_as_labeled_SD": 0.06
+        },
+        "통제": {
+          "n": 62,
+          "pre_M": 3.6,
+          "pre_SD": 0.63,
+          "post_M": 3.75,
+          "post_SD": 0.58,
+          "adjusted_M": 3.72,
+          "adjusted_variability_as_labeled_SD": 0.06
+        }
+      }
+    },
+    {
+      "number": 24,
+      "title": "보육교사의 직무동기의 공분산분석",
+      "columns": [
+        "Source",
+        "SS",
+        "df",
+        "SS(원문; 내용은 MS로 추정)",
+        "F"
+      ],
+      "pdf_page": 102,
+      "printed_page": 90,
+      "key_values": {
+        "group": {
+          "SS": 15.77,
+          "df": 1,
+          "F": 82.68,
+          "p": "<.001"
+        },
+        "covariate": {
+          "SS": 9.25,
+          "df": 1,
+          "F": 48.51,
+          "p": "<.001"
+        },
+        "error": {
+          "SS": 22.12,
+          "df": 116,
+          "MS": 0.19
+        },
+        "corrected_model": {
+          "SS": 22.82,
+          "df": 2,
+          "MS": 11.41,
+          "F": 59.84
+        },
+        "R_squared": 0.51,
+        "adjusted_R_squared": 0.5
+      }
+    }
+  ],
+  "results": {
+    "primary": "직무동기 조정평균 실험4.46/통제3.72, 집단F(1,116)=82.68,p<.001. 차이 .74는 표시 평균의 단순 차로 재계산한 값이며 저자 별도 CI는 보고 확인 못함.",
+    "effect_size": "직무특성 MANCOVA 하위요인 partial η² 보고, 직무동기 ANCOVA 집단 partial η²는 표24에 없음. R²=.51은 모형 전체 설명력으로 집단 효과크기와 구별.",
+    "CI": "검토 범위에서 보고 확인 못함",
+    "sum_of_squares_type": "검토 범위에서 보고 확인 못함",
+    "multiplicity": "직무특성 MANCOVA로 1종 오류 통제 의도 명시, Holm 등 p보정 검토 범위에서 보고 확인 못함"
+  },
+  "reporting_strengths": [
+    "원평균·사후평균·교정평균을 한 표에서 비교 가능",
+    "사전점수·집단·오차와 자유도를 ANCOVA 표에 명시",
+    "다변량 결과에 부분 η² 포함"
+  ],
+  "limitations": [
+    {
+      "type": "reporting",
+      "text": "기울기 동질성 등 핵심 ANCOVA 가정 검증, CI, 기관 군집 보정은 검토 범위에서 보고 확인 못함."
+    },
+    {
+      "type": "source_typography_confirmed",
+      "text": "표24의 네 번째 열 제목이 실제 PDF에서도 SS로 중복. 22.82/2=11.41과 오차22.12/116≈.19이므로 내용은 MS로 보이나 원문 표기는 임의 수정하지 않음.",
+      "pdf_page": 102,
+      "printed_page": 90
+    },
+    {
+      "type": "source_ambiguity_confirmed",
+      "text": "표23 교정점수의 .06을 SD 행에 기재. SE일 가능성이 있으나 원문에 해명 없어 SD/SE를 확정하지 않음.",
+      "pdf_page": 101,
+      "printed_page": 89
+    },
+    {
+      "type": "design",
+      "text": "기관 단위 배정·개인 단위 분석으로 군집 의존 가능성. 개인 무작위 실험으로 소개하면 안 됨."
+    }
+  ],
+  "applicability_to_ch4": {
+    "use": [
+      "표23의 원평균과 교정평균 병렬 구조",
+      "표24에서 공변량과 집단항을 구별해 보고하는 방식"
+    ],
+    "do_not_copy": [
+      "사전·사후 교육효과라는 인과 해석: 현행 연구는 한 시점 도입·미도입 비교",
+      "SD/SE 모호 표기 및 SS 중복 헤더",
+      "모형 R²를 집단 partial η²로 해석"
+    ],
+    "current_manuscript_comparison": "현행 제4장은 jamovi2.7.41, n73(34/39), 나이·경력+범주고정요인4개, TypeIII, EMM/차이95%CI, 부분η², Holm, 가정/민감도 검토를 이미 명시하여 이 논문보다 결과 보고가 상세함. MANCOVA로 바꿀 근거는 아님."
+  }
+}

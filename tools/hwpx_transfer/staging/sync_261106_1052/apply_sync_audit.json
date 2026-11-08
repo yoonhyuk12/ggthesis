@@ -1,0 +1,531 @@
+{
+  "changes": [
+    {
+      "section": 1,
+      "unit_index": 143,
+      "kind": "paragraph"
+    },
+    {
+      "section": 1,
+      "unit_index": 144,
+      "kind": "paragraph"
+    },
+    {
+      "section": 1,
+      "unit_index": 145,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 6,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 14,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 25,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 41,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 81,
+      "kind": "table"
+    },
+    {
+      "section": 2,
+      "unit_index": 110,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 131,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 134,
+      "kind": "table"
+    },
+    {
+      "section": 2,
+      "unit_index": 141,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 171,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 179,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 192,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 196,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 203,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 209,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 212,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 220,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 221,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 223,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 236,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 254,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 255,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 296,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 304,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 310,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 312,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 327,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 328,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 333,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 344,
+      "kind": "table"
+    },
+    {
+      "section": 2,
+      "unit_index": 356,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 365,
+      "kind": "table"
+    },
+    {
+      "section": 2,
+      "unit_index": 371,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 380,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 381,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 385,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 394,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 396,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 403,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 406,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 414,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 419,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 421,
+      "kind": "table"
+    },
+    {
+      "section": 2,
+      "unit_index": 422,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 430,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 437,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 438,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 443,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 444,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 447,
+      "kind": "table"
+    },
+    {
+      "section": 2,
+      "unit_index": 448,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 451,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 452,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 455,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 462,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 476,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 477,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 483,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 484,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 485,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 486,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 509,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 512,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 516,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 517,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 518,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 519,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 520,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 521,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 522,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 523,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 524,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 525,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 526,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 527,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 528,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 529,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 535,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 548,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 550,
+      "kind": "nested_paragraphs"
+    },
+    {
+      "section": 2,
+      "unit_index": 558,
+      "kind": "nested_paragraphs"
+    },
+    {
+      "section": 2,
+      "unit_index": 572,
+      "kind": "nested_paragraphs"
+    },
+    {
+      "section": 2,
+      "unit_index": 577,
+      "kind": "nested_paragraphs"
+    },
+    {
+      "section": 2,
+      "unit_index": 584,
+      "kind": "nested_paragraphs"
+    },
+    {
+      "section": 2,
+      "unit_index": 593,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 594,
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 595,
+      "kind": "paragraph"
+    }
+  ],
+  "insertions": [
+    {
+      "section": 2,
+      "after_unit_index": 175,
+      "new": "제2∼3절의 기능 설명은 원고 정리 시점에 확인한 구현을 기준으로 하며, 제4절의 정량 결과는 해당 평가기간의 기록과 운용 조건에 한정하였다.",
+      "kind": "paragraph",
+      "md_source": "01.docs/03_시스템개발.md",
+      "block": {
+        "type": "p",
+        "runs": [
+          {
+            "text": "제2∼3절의 기능 설명은 원고 정리 시점에 확인한 구현을 기준으로 하며, 제4절의 정량 결과는 해당 평가기간의 기록과 운용 조건에 한정하였다.",
+            "bold": false
+          }
+        ]
+      },
+      "md_block_index": 27
+    },
+    {
+      "section": 2,
+      "after_unit_index": 236,
+      "new": "설정과 운영 이력을 저장·보호하고, 이력에서 발생 시각·카메라·판정 결과·판단 사유·스냅샷을 조회할 수 있도록 구현하였다. 사용자는 해당 이미지와 사유를 확인하여 오판 사례를 교정할 수 있다. 이력은 사건의 판정과 발송 정보를 확인하는 자료이며 담당자의 열람이나 시정 완료를 나타내는 기록과는 구별하였다. 시스템의 실제 운영 화면은 <그림 3-4>와 같다.",
+      "kind": "paragraph",
+      "md_source": "01.docs/03_시스템개발.md",
+      "block": {
+        "type": "p",
+        "runs": [
+          {
+            "text": "설정과 운영 이력을 저장·보호하고, 이력에서 발생 시각·카메라·판정 결과·판단 사유·스냅샷을 조회할 수 있도록 구현하였다. 사용자는 해당 이미지와 사유를 확인하여 오판 사례를 교정할 수 있다. 이력은 사건의 판정과 발송 정보를 확인하는 자료이며 담당자의 열람이나 시정 완료를 나타내는 기록과는 구별하였다. 시스템의 실제 운영 화면은 <그림 3-4>와 같다.",
+            "bold": false
+          }
+        ]
+      },
+      "md_block_index": 74
+    },
+    {
+      "section": 2,
+      "after_unit_index": 469,
+      "new": "주: 이 표본에서 검출할 수 있는 최소 효과는 0.52점이다(집단 차이의 표준오차 0.185×2.80, 양측 5%·검정력 80% 기준으로 분석 뒤 역산한 참고값; Bloom, 1995, p. 550). B=0.54는 이 기준을 넘는다.",
+      "kind": "paragraph",
+      "md_source": "01.docs/04_연구설계및실증분석.md",
+      "block": {
+        "type": "p",
+        "runs": [
+          {
+            "text": "주: 이 표본에서 검출할 수 있는 최소 효과는 0.52점이다(집단 차이의 표준오차 0.185×2.80, 양측 5%·검정력 80% 기준으로 분석 뒤 역산한 참고값; Bloom, 1995, p. 550). B=0.54는 이 기준을 넘는다.",
+            "bold": false
+          }
+        ]
+      },
+      "md_block_index": 116
+    },
+    {
+      "section": 2,
+      "after_unit_index": 515,
+      "new": "[01] Bloom, H. S., \"Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs\", Evaluation Review, Vol. 19, No. 5, 1995, pp. 547–556. DOI 10.1177/0193841X9501900504.",
+      "kind": "paragraph",
+      "md_source": "01.docs/07_참조번호목록.md",
+      "clone_unit_index": 516
+    }
+  ],
+  "deletions": [
+    {
+      "section": 2,
+      "unit_index": 439,
+      "old": "분석은 가정 점검, 공분산분석, 강건성 점검 순으로 진행하였다. 집단별 조정 평균은 만 나이·경력을 전체 분석 표본의 평균에 두고, 범주형 통제변수의 각 수준에 같은 비중을 주어 산출한 예측 평균이다. 기준범주와 Type III 제곱합 등 분석 조건은 제5절 제2항을 따랐으며, 도입−미도입 조정 평균 차이가 양수이고 양측 p<.05이면 연구가설을 지지하는 것으로 판단하였다.",
+      "kind": "paragraph"
+    },
+    {
+      "section": 2,
+      "unit_index": 530,
+      "old": "[15] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
+      "kind": "reference",
+      "md_source": "01.docs/07_참조번호목록.md"
+    }
+  ],
+  "output": "C:/Users/User/Documents/2026 개발관련/03. 경기대 논문/tools/hwpx_transfer/staging/sync_261106_1052/patched.hwpx"
+}

@@ -1,0 +1,41 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1512_윤혁_석사학위논문_심의발표_이론출처표기.pptx",
+  "source_sha256": "0ec8ad5bdb8429d3a68a28f16277d9e64565b3e4b86158871278ec367b538787",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1517_윤혁_석사학위논문_심의발표_이론설명수정.pptx",
+  "slide_count": 34,
+  "changed_slide": 9,
+  "agreed_signal_detection": "위험 판단 기준에 따라 미탐과 오탐 사이에 상충관계가 생기므로, 두 오류를 함께 평가해야 한다.",
+  "checks": [
+    {
+      "other33_slides_notes_xml_identical": true
+    },
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "citations_preserved": [
+        "(Cvach, 2012)",
+        "(Green & Swets, 1966)",
+        "(Davis, 1989)"
+      ]
+    },
+    {
+      "powerpoint_open": true
+    },
+    {
+      "height_overflow": []
+    },
+    {
+      "direct_png_export": true
+    },
+    {
+      "pdf_created": false
+    },
+    {
+      "slide9_visual_review": "원카드디자인·출처 유지, 합의문구와 쉬운설명 배치 확인, 잘림·겹침 없음"
+    },
+    {
+      "agreed_sentence_preserved_with_readable_linebreaks": true
+    }
+  ]
+}

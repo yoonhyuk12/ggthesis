@@ -1,0 +1,592 @@
+[
+  {
+    "text": "제 1 절 연구의 배경 및 필요성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 절 연구의 목적",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 절 연구의 범위 및 방법",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 절 건설산업 스마트 안전관리와 AI 영상관제 기술",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 개념 및 정의",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 오경보와 경보 피로도",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 절 YOLO-LLM 안전관제 시스템의 기술 특성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 시스템 인프라 범용성(A1)",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 2차 검증(LLM) 오탐 필터링(A3)",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 항 알림 전파 즉각성(A4)",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 조기인지 문항의 근거",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 대응 신속성 문항의 근거",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 원격 파악 문항의 근거",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 항 순찰부담 경감 문항의 근거",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 5 항 위험 통제력 문항의 근거",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)",
+    "old_paraPr": "80",
+    "new_paraPr": "91"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 5 절 소결",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 절 시스템 개발 방향 및 요구사항",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 시스템 개발 개요",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 현장 요구사항",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 관련 기술 선행연구",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 절 시스템 설계",
+    "old_paraPr": "77",
+    "new_paraPr": "92"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 전체 시스템 구조",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 YOLO 탐지 및 제어",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 LLM 문맥 검증 및 현장 적응",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 항 경보 전파",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 절 시스템 구현",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 실행 환경 및 기술 스택",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 주요 기능 및 운영 안정성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 현장 배포 및 운용 구성",
+    "old_paraPr": "76",
+    "new_paraPr": "93"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 절 시스템 개발의 효과 분석",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 검증 데이터셋 구축 및 평가 지표",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 RAG 기반 Few-shot 교정의 성능 실험",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 항 적용 타당성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 6 항 현장 운영 특성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 5 절 소결",
+    "old_paraPr": "78",
+    "new_paraPr": "94"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 절 연구 모형 설계",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 절 연구 문제 및 연구가설",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 절 변수의 조작적 정의 및 측정도구 구성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 절 설문조사",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 설문조사의 개요 및 절차",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 설문지의 구성",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 5 절 자료 수집과 분석 절차",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 자료 수집 및 표본",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 분석 절차",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 6 절 조사 대상 특성과 기초통계 분석",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 인구통계학적 빈도분석",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 타당도 분석",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 3 항 신뢰도 분석",
+    "old_paraPr": "87",
+    "new_paraPr": "95"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 4 항 기술통계 분석",
+    "old_paraPr": "87",
+    "new_paraPr": "95"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 5 항 집단 동질성 검정",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 7 절 가설 검증",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 1 항 YOLO-LLM 안전관제 시스템 도입 현장의 안전관리 실효성 검증",
+    "old_paraPr": "38",
+    "new_paraPr": "90"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 2 항 가설 검증 결과 종합",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  },
+  {
+    "text": "제 8 절 분석결과 및 논의",
+    "old_paraPr": "75",
+    "new_paraPr": "88"
+  },
+  {
+    "text": "[blank]",
+    "old_paraPr": "39",
+    "new_paraPr": "89"
+  }
+]

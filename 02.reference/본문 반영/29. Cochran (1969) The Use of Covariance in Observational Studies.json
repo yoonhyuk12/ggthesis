@@ -1,0 +1,41 @@
+{
+  "title": "The Use of Covariance in Observational Studies",
+  "author": "W. G. Cochran",
+  "year": 1969,
+  "journal": "Applied Statistics",
+  "volume": "18",
+  "issue": "3",
+  "pages": "270-275",
+  "doi": "10.2307/2346587",
+  "crossref_verified": true,
+  "crossref_url": "https://api.crossref.org/works/10.2307/2346587",
+  "publisher_url": "https://academic.oup.com/jrsssc/article/18/3/270/6882473",
+  "full_text_pdf_secured": false,
+  "local_pdf": null,
+  "sha256": null,
+  "verified_at": "2026-11-06T02:30:07.800163+09:00",
+  "verification_note": "Crossref confirms title, author, year, volume, issue and starting page 270. Publisher record confirms pages 270-275. Publisher abstract supports regression adjustment of differences between nonrandomized groups. Page 270 PDF was not locally verified.",
+  "access_attempts": [
+    {
+      "source": "Stanford Stat209 reading list",
+      "result": "Links to JSTOR only"
+    },
+    {
+      "source": "OUP article requests",
+      "result": "HTTP403"
+    },
+    {
+      "source": "JSTOR PDF",
+      "result": "HTTP420"
+    },
+    {
+      "source": "Silverchair without token",
+      "result": "HTTP400 token required"
+    },
+    {
+      "source": "Silverchair URL returned by public web search",
+      "result": "HTTP400 session expired"
+    }
+  ],
+  "citation_status": "Cited in chapter 4 ANCOVA rationale and added to the current bibliography on 2026-11-06; publisher abstract and Crossref verified; local full-text PDF remains unsecured."
+}

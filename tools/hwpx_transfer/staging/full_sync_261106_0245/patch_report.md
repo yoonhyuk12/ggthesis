@@ -1,0 +1,136 @@
+# patch_from_fresh 보고
+
+통계: {"equal": 436, "insert": 2, "replace_fresh": 67, "replace_kept": 2, "delete_kept": 5, "manual": 12, "table_same_kept": 2, "caption_split": 0}
+header 추가 항목: {"charPr": [], "paraPr": [], "borderFill": [], "tabPr": [], "font": []}
+
+## 수동 재적용 필요
+- base 7 vs fresh 5 문단을 짝짓지 못해 base 유지: 본 연구는 안전관리 실효성을 '업무 성과'의 하나로 구성하였다. 이때 기술이 일에 도움이 
+- base 5 vs fresh 3 문단을 짝짓지 못해 base 유지: 이상의 하위요인별 정의와 선행연구를 정리하면 <표 2-3>과 같다.
+- <표4-3> 병합 표 내용 변경 — base 유지, MD 변경분 수동 재적용 필요 (표0 셀(0, 1) base '하위요인' ≠ fresh '구분')
+- base 4 vs fresh 1 문단을 짝짓지 못해 base 유지: 만 나이와 건설현장 경력은 제7절 공분산분석의 공변량이므로, 두 집단의 분포가 얼마나 다른
+- base 3 vs fresh 4 문단을 짝짓지 못해 base 유지: 그 결과 KMO 값은 0.911이고 Bartlett 검정도 유의하여(χ²(28)=456, 
+- base 4 vs fresh 5 문단을 짝짓지 못해 base 유지: 신뢰도 분석은 같은 개념을 재는 문항들이 얼마나 일관된 응답을 내는지 확인하는 절차이다. 
+- <표4-10> 사용자 병합 표를 fresh로 교체했다 — 병합·열폭·정렬을 한글에서 다시 적용 (표0 셀(4, 0) base '조기인지' ≠ fresh 'None')
+- base 5 vs fresh 4 문단을 짝짓지 못해 base 유지: 상관관계 분석은 주요 변수 사이에 나타나는 선형 관계의 방향과 크기를 확인하기 위해 실시하
+- base 6 vs fresh 5 문단을 짝짓지 못해 base 유지: 3. 안전관리 실효성의 조정 평균 차이
+- base 17 vs fresh 5 문단을 짝짓지 못해 base 유지: 두 집단의 조정 평균과 신뢰구간(CI)을 (jamovi가 출력) 그림으로 보면 <그림 4-
+- <표4-15> 병합 표 내용 변경 — base 유지, MD 변경분 수동 재적용 필요 (표0 셀(0, 2) base '핵심추정·95%신뢰구간(CI)' ≠ fresh '핵심추정')
+- section1(목차·감사의 글·논문 개요)을 조립본으로 교체 — base의 목차 run 압축(장평·자간) 등 사용자 서식은 재적용 필요
+
+## 로그
+- REPLACE | 내용적 범위. 내용적 범위는 제2절의 연구 문제이다. 안전관리 실효성은   ->  내용적 범위. 내용적 범위는 제2절의 연구 문제이다. 안전관리 실효성은 
+- REPLACE(table) | <표1-2> (표0 셀(2, 1) base '개념정의,시스템의기술특성,안전관리실효' ≠ fresh '개념정의,시스템의기술특성,안전관리실효')
+- SKIP(blank insert)
+- KEEP(table same content, merged) | <표2-1>
+- MANUAL | base 7 vs fresh 5 문단을 짝짓지 못해 base 유지: 본 연구는 안전관리 실효성을 '업무 성과'의 하나로 구성하였다. 이때 기술이 일에 도움이 
+- REPLACE | 국내 선행연구는 스마트 안전기술 활용과 안전관리 성과의 관련성을 서로 다  ->  국내 선행연구는 스마트 안전기술 활용과 안전관리 성과의 관련성을 서로 다
+- REPLACE | 제 1 항 조기인지  ->  제 1 항 조기인지 문항의 근거
+- REPLACE | 제 2 항 대응 신속성  ->  제 2 항 대응 신속성 문항의 근거
+- REPLACE | 제 3 항 원격 파악  ->  제 3 항 원격 파악 문항의 근거
+- REPLACE | 제 4 항 순찰부담 경감  ->  제 4 항 순찰부담 경감 문항의 근거
+- REPLACE | 순찰부담 경감은 원격 확인 등을 활용하여 반복 순찰과 불필요한 확인에 드  ->  순찰부담 경감은 원격 확인 등을 활용하여 반복 순찰과 불필요한 확인에 드
+- DROP(base, replaced by block) | 제 5 항 위험 통제력
+- REPLACE(block) | 제 5 항 위험 통제력 문항의 근거
+- REPLACE(block) | 
+- MANUAL | base 5 vs fresh 3 문단을 짝짓지 못해 base 유지: 이상의 하위요인별 정의와 선행연구를 정리하면 <표 2-3>과 같다.
+- REPLACE(table) | <표2-5> (표0 셀(2, 3) base '원격파악·순찰부담경감하위요인의근거[연' ≠ fresh '원격파악·순찰부담경감을묻는실효성문항의')
+- REPLACE | 본 장은 YOLO-LLM 안전관제 시스템과 안전관리 실효성의 개념과 선행  ->  본 장은 YOLO-LLM 안전관제 시스템과 안전관리 실효성의 개념과 선행
+- REPLACE | 평가 지표는 정밀도, 재현율, F1, 시간당 오경보 빈도(FAR), 특이  ->  평가 지표는 정밀도, 재현율, F1, 시간당 오경보 빈도(FAR), 특이
+- KEEP(table same content, merged) | <표3-10>
+- INSERT  | <그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(n=34)
+- REPLACE | <그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인  ->  
+- INSERT  | <그림 3-6> 현장 운영 특성(A-7∼A-9)의 응답 비율(도입·미도입 현장별)
+- KEEP(base only) | <그림 3-6> 현장 운영 특성(A-7∼A-9)의 응답 비율(도입·미도입 현장별)
+- REPLACE | 독립변수를 통제하기 위해 여섯 통제변수(C)를 분석에 넣어 그 차이를 감  ->  독립변수를 통제하기 위해 여섯 통제변수(C)를 분석에 넣어 그 차이를 감
+- REPLACE(table) | <표4-1> (표0 셀(0, 1) base '변수및하위요인' ≠ fresh '변수')
+- KEEP(base only) | 
+- KEEP(base only) | 
+- REPLACE | 연구가설 (1-1)은 안전관리 실효성 8문항 평균점수의 조정 평균 차이로  ->  연구가설 (1-1)은 안전관리 실효성 8문항 평균점수의 조정 평균 차이로
+- KEEP(base only) | 
+- REPLACE | 조작적 정의는 추상적인 개념을 측정할 수 있는 문항과 기준으로 바꾸는 절  ->  조작적 정의는 추상적인 개념을 측정할 수 있는 문항과 기준으로 바꾸는 절
+- MANUAL | <표4-3> 병합 표 내용 변경 — base 유지, MD 변경분 수동 재적용 필요 (표0 셀(0, 1) base '하위요인' ≠ fresh '구분')
+- KEEP(base only) | 
+- REPLACE | 분석은 jamovi 2.7.41(2026)로 수행하였다. 안전관리 실효성  ->  분석은 jamovi 2.7.41(2026)로 수행하였다. 안전관리 실효성
+- REPLACE | 분석은 빈도분석과 두 집단의 사전 특성 비교, 탐색적 요인분석, 신뢰도   ->  분석은 빈도분석, 탐색적 요인분석, 신뢰도 분석, 기술통계, 집단 동질성
+- DROP(base, replaced by block) | 두 집단의 범주별 분포 차이는 Fisher 정확검정으로 확인하고, 그 크기는 Cramér's V로 나타냈다.
+- DROP(base, replaced by block) | 그 결과 성별만 유의한 차이를 보였는데(V=0.279, p=.027), 여성 6명이 모두 미도입 현장 응답자
+- REPLACE(block) | 역할의 ‘기타’ 응답은 응답자에게 다시 확인하여 세 범주로 나누었다. 소속은 미도입 현장에서 시공사가 더 많
+- MANUAL | base 4 vs fresh 1 문단을 짝짓지 못해 base 유지: 만 나이와 건설현장 경력은 제7절 공분산분석의 공변량이므로, 두 집단의 분포가 얼마나 다른
+- MANUAL | base 3 vs fresh 4 문단을 짝짓지 못해 base 유지: 그 결과 KMO 값은 0.911이고 Bartlett 검정도 유의하여(χ²(28)=456, 
+- MANUAL | base 4 vs fresh 5 문단을 짝짓지 못해 base 유지: 신뢰도 분석은 같은 개념을 재는 문항들이 얼마나 일관된 응답을 내는지 확인하는 절차이다. 
+- REPLACE | 기술통계 분석은 타당도와 신뢰도를 확인한 문항으로 산출한 점수의 분포를   ->  기술통계 분석은 타당도와 신뢰도를 확인한 문항으로 산출한 점수의 분포를 
+- REPLACE | 안전관리 실효성의 원평균은 도입 현장 4.11점, 미도입 현장 3.48점  ->  안전관리 실효성의 원평균은 도입 현장 4.11점, 미도입 현장 3.48점
+- REPLACE | <표 4-10> 주요 변수의 기술통계(도입·미도입 현장별)  ->  <표 4-9> 안전관리 실효성의 기술통계(도입·미도입 현장별)
+- REPLACE(table, force-fresh: 사용자 병합·서식 소실) | <표4-10> (표0 셀(4, 0) base '조기인지' ≠ fresh 'None')
+- REPLACE | 제 5 항 상관관계 분석  ->  제 5 항 집단 동질성 검정
+- MANUAL | base 5 vs fresh 4 문단을 짝짓지 못해 base 유지: 상관관계 분석은 주요 변수 사이에 나타나는 선형 관계의 방향과 크기를 확인하기 위해 실시하
+- REPLACE | 제 1 항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)  ->  제 1 항 YOLO-LLM 안전관제 시스템 도입 현장의 안전관리 실효성 
+- DROP(base, replaced by block) | 연구가설 (1-1)은 공분산분석(ANCOVA)으로 검정하였다. 공분산분석은 두 집단의 평균을 비교하되, 점수
+- DROP(base, replaced by block) | 이 방법을 택한 것은 현장을 무작위로 나누어 시스템을 설치할 수 없었기 때문이다. 무작위로 배정하면 두 집단
+- DROP(base, replaced by block) | 모형은 제5절 제2항에서 정한 대로 안전관리 실효성 8문항 평균을 종속변수로, 현장 도입 여부를 집단 변수로
+- DROP(base, replaced by block) | 분석은 가정 점검, 조정 평균 차이 검정, 민감도·강건성 점검, 하위요인별 분석 순서로 진행하였다.
+- REPLACE(block) | 본 연구는 응답자와 현장의 특성을 조정한 뒤에도 도입·미도입 현장 간 안전관리 실효성에 차이가 있는지 확인하
+- REPLACE(block) | 분석은 jamovi 2.7.41로 수행하였다. 제5절 제2항에서 정한 대로 안전관리 실효성 8문항 평균을 종
+- REPLACE(block) | 분석은 가정 점검, 공분산분석, 강건성 점검 순으로 진행하였다. 집단별 조정 평균은 만 나이·경력을 전체 분
+- DROP(base, replaced by block) | 제5절 제2항에서 정한 절차에 따라 관측 독립성, 선형성, 회귀기울기 동질성, 잔차의 정규성·등분산성과 영향
+- DROP(base, replaced by block) | 전체 실효성 모형은 잔차 정규성(Shapiro–Wilk p=.128)과 등분산성(Levene p=.245)에
+- DROP(base, replaced by block) | 하위요인 중 위험 통제력은 잔차 정규성 검정에서 p=.036으로 나타나 해석에 주의가 필요하였다. 조기인지·
+- REPLACE(block) | 공분산분석의 결과는 몇 가지 전제(가정)가 자료에 맞을 때 믿을 수 있다. 그래서 조정 평균을 비교하기 전에
+- REPLACE(block) | 관측 독립성은 한 사람의 응답이 다른 사람의 응답에 영향을 받지 않아야 한다는 전제이다. 본 연구는 현장당 
+- REPLACE(block) | 잔차 정규성은 모형으로 설명하고 남은 차이(잔차)가 정규분포를 따르는지를 뜻하며 Shapiro–Wilk 검정
+- REPLACE(block) | 검정의 p가 .05보다 크다는 것은 위반을 시사하는 결과가 나타나지 않았다는 뜻이며 가정이 성립함을 입증했다
+- REPLACE(block) | <표 4-11> 공분산분석 가정 점검 결과
+- REPLACE(block) | 점검 항목 확인 방법 결과 판단 관측 독립성 표본 설계(현장당 1명, 담당 현장 사전 지정) 현장 내 중복 
+- MANUAL | base 6 vs fresh 5 문단을 짝짓지 못해 base 유지: 3. 안전관리 실효성의 조정 평균 차이
+- MANUAL | base 17 vs fresh 5 문단을 짝짓지 못해 base 유지: 두 집단의 조정 평균과 신뢰구간(CI)을 (jamovi가 출력) 그림으로 보면 <그림 4-
+- REPLACE | 제1항의 결과를 제5절 제2항에서 정한 판정 기준(도입−미도입 조정 차이  ->  제1항의 결과를 제5절 제2항에서 정한 판정 기준(도입−미도입 조정 차이
+- REPLACE | 과정 지표인 지시 전달 소요시간(A-9)에서는 유의한 집단 차이를 확인하  ->  과정 지표인 지시 전달 소요시간(A-9)에서는 유의한 집단 차이를 확인하
+- REPLACE | <표 4-15> 연구가설 검증 결과 종합  ->  <표 4-14> 연구가설 검증 결과 종합
+- MANUAL | <표4-15> 병합 표 내용 변경 — base 유지, MD 변경분 수동 재적용 필요 (표0 셀(0, 2) base '핵심추정·95%신뢰구간(CI)' ≠ fresh '핵심추정')
+- REPLACE | 연구가설 (1-1)("도입 현장 관리자가 지각한 안전관리 실효성은 여섯   ->  연구가설 (1-1)("도입 현장 관리자가 지각한 안전관리 실효성은 여섯 
+- REPLACE | 하위요인 가운데 조기인지·원격 파악·위험 통제력의 차이는 Holm 보정   ->  <표 2-2>는 시스템 기능, 관리자의 업무, 안전관리 실효성 문항을 서
+- REPLACE | 시스템은 범용 PC와 현장의 기존 ONVIF 카메라로 운용하며, YOLO  ->  이번 연구를 통해 개발한 YOLO-LLM 안전관제 시스템은 범용 PC와 
+- REPLACE | 실효성은 A공사 경기지역본부 산하 도입 현장 34명과 미도입 현장 39명  ->  이러한 개발 효과가 현장의 안전관리로 이어지는지 확인하기 위해 도입 현장
+- REPLACE | 이 결과는 스마트 건설기술 활용과 안전성과의 관련을 보고한 황병복(202  ->  시스템 개발 면에서 본 연구는 YOLO 모델 하나의 기준값을 조정하는 데
+- REPLACE | 연구 결과에 따른 시사점은 다음과 같다. 첫째, 실무적으로 안전관제 시스  ->  연구 결과에 따른 시사점은 다음과 같다. 첫째, 실무적으로 현장의 기존 
+- REPLACE | 둘째, 학술적으로는 시스템의 선별 성능과 관리자가 평가한 안전관리 실효성  ->  둘째, 학술적으로는 시스템의 선별 성능과 관리자가 평가한 안전관리 실효성
+- REPLACE | 본 연구의 한계는 다음과 같다. 연구방법에서는 한 번만 조사한 횡단 설계  ->  본 연구의 한계는 같은 현장을 도입 전과 후로 비교하지 못했다는 점이다.
+- DROP(base, replaced by block) | [04] Costello, A. B., & Osborne, J. W., "Best practices in e
+- DROP(base, replaced by block) | [05] Cvach, M., "Monitor alarm fatigue: An integrative revie
+- DROP(base, replaced by block) | [06] Davis, F. D., "Perceived usefulness, perceived ease of 
+- DROP(base, replaced by block) | [07] Green, D. M., & Swets, J. A., Signal Detection Theory a
+- DROP(base, replaced by block) | [08] He, C., Hu, Z., Shen, Y., & Wu, C., "Effects of Demogra
+- DROP(base, replaced by block) | [09] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., "An In
+- DROP(base, replaced by block) | [10] Lynn, S. K., & Barrett, L. F., "“Utilizing” signal dete
+- DROP(base, replaced by block) | [11] Manzey, D., Gérard, N., & Wiczorek, R., "Decision-makin
+- DROP(base, replaced by block) | [12] Mi, Y., Deep Learning-Based Safety Analysis for High-Al
+- DROP(base, replaced by block) | [13] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva
+- DROP(base, replaced by block) | [14] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsa
+- DROP(base, replaced by block) | [15] Stanislaw, H., & Todorov, N., "Calculation of signal de
+- DROP(base, replaced by block) | [16] Tavakol, M., & Dennick, R., "Making sense of Cronbach’s
+- DROP(base, replaced by block) | [17] Teizer, J., "The Role of Automation in Right-time Const
+- DROP(base, replaced by block) | [18] The jamovi project, jamovi (Version 2.7) [Computer Soft
+- DROP(base, replaced by block) | [19] Wilson, E. B., "Probable Inference, the Law of Successi
+- DROP(base, replaced by block) | [20] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Du
+- DROP(base, replaced by block) | [21] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & W
+- REPLACE(block) | [04] Cochran, W. G., "The Use of Covariance in Observational
+- REPLACE(block) | [05] Costello, A. B., & Osborne, J. W., "Best practices in e
+- REPLACE(block) | [06] Cvach, M., "Monitor alarm fatigue: An integrative revie
+- REPLACE(block) | [07] Davis, F. D., "Perceived usefulness, perceived ease of 
+- REPLACE(block) | [08] Green, D. M., & Swets, J. A., Signal Detection Theory a
+- REPLACE(block) | [09] He, C., Hu, Z., Shen, Y., & Wu, C., "Effects of Demogra
+- REPLACE(block) | [10] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., "An In
+- REPLACE(block) | [11] Lynn, S. K., & Barrett, L. F., "“Utilizing” signal dete
+- REPLACE(block) | [12] Manzey, D., Gérard, N., & Wiczorek, R., "Decision-makin
+- REPLACE(block) | [13] Mi, Y., Deep Learning-Based Safety Analysis for High-Al
+- REPLACE(block) | [14] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva
+- REPLACE(block) | [15] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsa
+- REPLACE(block) | [16] Stanislaw, H., & Todorov, N., "Calculation of signal de
+- REPLACE(block) | [17] Tavakol, M., & Dennick, R., "Making sense of Cronbach’s
+- REPLACE(block) | [18] Teizer, J., "The Role of Automation in Right-time Const
+- REPLACE(block) | [19] The jamovi project, jamovi (Version 2.7) [Computer Soft
+- REPLACE(block) | [20] Wilson, E. B., "Probable Inference, the Law of Successi
+- REPLACE(block) | [21] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Du
+- REPLACE(block) | [22] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & W
+- REPLACE | [01] 「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(  ->  [01] 「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(
+- TOC(section1) from fresh | 문단 157개, base section1 서식은 버림

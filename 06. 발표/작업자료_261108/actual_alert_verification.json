@@ -1,0 +1,24 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1517_윤혁_석사학위논문_심의발표_이론설명수정.pptx",
+  "source_hashes": {
+    "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1517_윤혁_석사학위논문_심의발표_이론설명수정.pptx": "e70f2df6f809c568a3210480c5f82f3230dc97e60e018a62273b9914d1b08ce2",
+    "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\02.reference\\KakaoTalk_20261108_152245822.jpg": "54b58d8e8209a750be911c2ff2df734d3b7e829578dc286b058197ea0bba943e"
+  },
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1526_윤혁_석사학위논문_심의발표_실제알림추가.pptx",
+  "slide_count": 35,
+  "inserted_slide": 14,
+  "checks": {
+    "powerpoint_open": true,
+    "original_slides_design_text_notes_preserved_except_numbers": true,
+    "continuous_numbers": "2–35",
+    "source_pptx_and_image_unchanged": true,
+    "overflow": [],
+    "png_direct_export": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\작업자료_261108\\actual_alert_slide14.png",
+    "pdf_created": false,
+    "visual_review": "새 14장 PNG 확인: 담당자 이름 2곳 및 전화번호 2줄이 가려짐, 위험 장면·판정 사유 가독성 확인, 텍스트 잘림과 겹침 없음"
+  },
+  "limitations": [
+    "가림은 PPT 불투명 도형을 통한 발표 화면상 표시이며 원본 이미지의 개인정보 픽셀은 PPT 내부 미디어에 남아 있음.",
+    "실제 운영 예시 1건으로 기술평가 표본이나 독립 정답 검증 자료가 아님."
+  ]
+}

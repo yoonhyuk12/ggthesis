@@ -1,0 +1,22 @@
+{
+  "감사의글": {
+    "source_hwpx": "00. hwpx/261104_1946_경기공학_건축안전_윤혁_논문.hwpx",
+    "section": 1,
+    "range": [
+      125,
+      132
+    ],
+    "append_red_note": ""
+  },
+  "부록1_설문지": {
+    "source_hwpx": "00. hwpx/261104_1946_경기공학_건축안전_윤혁_논문.hwpx",
+    "section": 2,
+    "range": [
+      576,
+      639
+    ],
+    "replace_appendix": "부 록 — 설문지",
+    "keep_until": "부 록 — 설문지",
+    "drop_heading": true
+  }
+}

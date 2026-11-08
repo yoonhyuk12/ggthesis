@@ -1,0 +1,216 @@
+{
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261106_1209_윤혁_석사학위논문_심의발표.pptx",
+  "output_pdf": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261106_1209_윤혁_석사학위논문_심의발표.pdf",
+  "source_pdf": "00. hwpx/261106_1132_경기공학_건축안전_윤혁_논문.pdf",
+  "slide_count": 27,
+  "changes": [
+    {
+      "slide": 2,
+      "shape": 29,
+      "before": "조정평균 차이 · 하위요인 · 실제 운용",
+      "after": "조정평균 차이 · 가설 검증 · 실제 운용"
+    },
+    {
+      "slide": 5,
+      "shape": 29,
+      "before": "이미지·판단사유\n모바일 알림",
+      "after": "이미지·판단사유\n지정 담당자 알림"
+    },
+    {
+      "slide": 7,
+      "shape": 19,
+      "before": "같은 맥락의 교정 최대 3건 선택",
+      "after": "현재 알림과 같은 맥락의 교정 선택"
+    },
+    {
+      "slide": 7,
+      "change": "최신 PDF p.37 그림3-3 교체, 근거에 없는 최대3건 삭제"
+    },
+    {
+      "slide": 12,
+      "shape": 15,
+      "before": "집단 구분 (X)",
+      "after": "시스템 도입 (X)"
+    },
+    {
+      "slide": 12,
+      "shape": 20,
+      "before": "관리자가 지각한 현재 업무수준",
+      "after": "공통 B 8문항의 평균점수"
+    },
+    {
+      "slide": 12,
+      "shape": 21,
+      "before": "조정 변수  만 나이 · 경력 · 소속 · 성별 · 역할 · 총공사비 구간",
+      "after": "공변량: 만 나이·경력 | 고정요인: 소속·성별·역할·총공사비 구간"
+    },
+    {
+      "slide": 14,
+      "shape": 12,
+      "before": "논문 제4장 측정도구 구성",
+      "after": "논문 <표 4-3>·<표 4-4> · 제4장 제5절 제2항"
+    },
+    {
+      "slide": 14,
+      "shape": 14,
+      "before": "안전관리 실효성 = 5점 척도 8문항의 합성평균",
+      "after": "단일 종속변수 Y = B 8문항의 동일 가중 평균"
+    },
+    {
+      "slide": 14,
+      "shape": 17,
+      "before": "시스템 만족도를 비교한 것이 아니라, 공통 업무수준의 차이를 비교",
+      "after": "업무 내용의 구분은 문항 설명용이며, 각각 별도 점수를 산출하지 않음"
+    },
+    {
+      "slide": 14,
+      "change": "5개 하위요인 표현을 문항 업무내용으로 변경; Y 단일평균 명시"
+    },
+    {
+      "slide": 15,
+      "shape": 12,
+      "before": "논문 <표 4-7>·<표 4-9> · 제4장 제5절",
+      "after": "논문 <표 4-7>·<표 4-8> · 제4장 제5절"
+    },
+    {
+      "slide": 15,
+      "shape": 16,
+      "before": "공변량\n만 나이 · 건설현장 경력\n\n범주형 통제변수\n소속 · 성별 · 역할 · 공사비 구간",
+      "after": "연속형 통제변수 (공변량)\n만 나이 · 건설현장 경력\n\n범주형 통제변수 (고정요인)\n소속 · 성별 · 역할 · 총공사비 구간"
+    },
+    {
+      "slide": 16,
+      "shape": 12,
+      "before": "논문 <표 4-12>·<표 4-13> | 5점 척도·95% CI",
+      "after": "논문 <표 4-12> | B 8문항 평균 · 5점 척도 · 95% CI"
+    },
+    {
+      "slide": 17,
+      "change": "삭제된 하위요인/Holm 결과 대신 최신 표4-14와 A-9 해석"
+    },
+    {
+      "slide": 19,
+      "shape": 11,
+      "before": "위험 인지 경로는 달라도 지시 시간은 비슷",
+      "after": "위험 인지 경로의 차이와 지시 시간을 함께 확인"
+    },
+    {
+      "slide": 20,
+      "shape": 12,
+      "before": "논문 제4장 제7절 제1항 민감도·강건성 점검",
+      "after": "논문 <표 4-13> · 제4장 제7절 제1항 강건성 점검"
+    },
+    {
+      "slide": 20,
+      "shape": 14,
+      "before": "전체 73명의 주분석을 유지하고, 제한표본·사후 점검으로 보완",
+      "after": "사전계획 민감도분석과 사후 강건성 점검을 구분"
+    },
+    {
+      "slide": 20,
+      "shape": 18,
+      "before": "사후 점검은 결과의 민감도를 보여주는 자료이며, 주분석을 대체하지 않음",
+      "after": "사전계획·사후 보완분석 모두 주분석(전체 73명)을 대체하지 않음"
+    },
+    {
+      "slide": 21,
+      "shape": 11,
+      "before": "인지·파악의 차이와 대응의 비유의를 함께 해석",
+      "after": "전체 실효성의 차이를 운용실태와 함께 해석"
+    },
+    {
+      "slide": 21,
+      "change": "개별 하위요인 해석 삭제, 전체 실효성·운용경로·A-9 논의로 갱신"
+    },
+    {
+      "slide": 25,
+      "shape": 12,
+      "before": "논문 제4장 제6절 상관분석 · 제7절 ANCOVA 가정 점검",
+      "after": "논문 <표 4-10>·<표 4-11> · 제4장 제7절 제1항"
+    },
+    {
+      "slide": 26,
+      "change": "삭제된 하위요인 보충표를 단일 Y 측정·분석범위 참고자료로 교체"
+    },
+    {
+      "slide": 6,
+      "change": "지정 최신 PDF의 해당 그림을 직접 추출해 삽입"
+    },
+    {
+      "slide": 11,
+      "change": "지정 최신 PDF의 해당 그림을 직접 추출해 삽입"
+    },
+    {
+      "slide": 19,
+      "change": "지정 최신 PDF의 해당 그림을 직접 추출해 삽입"
+    },
+    {
+      "slide": [
+        15,
+        17,
+        21,
+        26
+      ],
+      "change": "줄바꿈 및 신규 표 머리행 높이 개선"
+    }
+  ],
+  "checks": [
+    {
+      "powerpoint_open_slides": 27
+    },
+    {
+      "powerpoint_text_height_overflow": []
+    },
+    {
+      "pdf_export": "success"
+    },
+    {
+      "powerpoint_open_slides": 27
+    },
+    {
+      "powerpoint_text_height_overflow": []
+    },
+    {
+      "pdf_export": "success"
+    },
+    {
+      "shape_bounds_violations": [],
+      "obsolete_analysis_terms": [],
+      "pdf_page_count": 27,
+      "visual_review": "All 27 slides reviewed in contact sheets; revised 15/17/21/26 reviewed after layout correction. No clipping or overlap."
+    },
+    {
+      "numeric_source_checks": {
+        "PDF74_ANCOVA": "B .54; CI .17-.91; p .005; F(1,62) 8.54; partial eta2 .121; means3.83/3.29",
+        "PDF75_robustness": "n54 B.78 CI.30-1.25 p.002; other B.44-.53 p.006-.015",
+        "PDF76_hypothesis": "single Y; supported; A9 Fisher p.663",
+        "PDF67_68_measurement": "alpha .937; KMO .911; variance66.6%; loadings .727-.888",
+        "PDF73_assumptions": "p.226/.461/.128/.245; VIF2.41; Cook5",
+        "PDF46_47_technical": "TP39 FN5 FP13 TN821; precision .750 recall .886; RAG .462/.250/.324 FN18"
+      },
+      "images_from_source_pdf": {
+        "slide6": "PDF53, printed40, figure3-4",
+        "slide7": "PDF50, printed37, figure3-3",
+        "slide11": "PDF64, printed51, figure3-5",
+        "slide19": "PDF66, printed53, figure3-6"
+      }
+    },
+    {
+      "powerpoint_open_slides": 27
+    },
+    {
+      "powerpoint_text_height_overflow": []
+    },
+    {
+      "pdf_export": "success"
+    },
+    {
+      "final_slide15": "Both continuous covariates and four categorical factors present; final rendered slide reviewed; text overflow 0"
+    }
+  ],
+  "limitations": [],
+  "sha256": {
+    "261106_1209_윤혁_석사학위논문_심의발표.pptx": "1fccb286b70cb6581492817dec0f415665e9010da4bb2f0f01c753d06fed9970",
+    "261106_1209_윤혁_석사학위논문_심의발표.pdf": "f5564b04124fe48a7a6f3955c163d3904a014c953666eed6df60904fc11fd935"
+  }
+}

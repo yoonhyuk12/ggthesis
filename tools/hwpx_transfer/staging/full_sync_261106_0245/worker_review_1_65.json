@@ -1,0 +1,101 @@
+{
+  "reviewed_pdf": "resaved.pdf",
+  "scope": "physical pages 1..65: all detected table and figure pages plus following table pages",
+  "table_pages": [
+    3,
+    15,
+    18,
+    28,
+    31,
+    35,
+    36,
+    37,
+    42,
+    44,
+    46,
+    53,
+    56,
+    57,
+    58,
+    60,
+    62
+  ],
+  "figure_pages": [
+    19,
+    45,
+    49,
+    51,
+    54,
+    63,
+    65
+  ],
+  "rendered_reviewed_pages": [
+    3,
+    4,
+    15,
+    16,
+    18,
+    19,
+    28,
+    29,
+    31,
+    32,
+    35,
+    36,
+    37,
+    38,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    51,
+    53,
+    54,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65
+  ],
+  "evidence": [
+    "worker_review_00.png",
+    "worker_review_01.png",
+    "worker_review_02.png",
+    "worker_review_03.png",
+    "worker_review_04.png",
+    "worker_review_05.png",
+    "worker_review_06.png",
+    "worker_review_07.png",
+    "worker_review_08.png"
+  ],
+  "table_findings": {
+    "clipping": false,
+    "overflow": false,
+    "split_rows": false,
+    "orphan_captions": false,
+    "footer_overlap": false
+  },
+  "findings": [
+    {
+      "page": 31,
+      "kind": "orphan_subheading",
+      "text": "국내·외 선행연구",
+      "resolution": "compress_toc.py sets keepWithNext and keepLines; main must execute and resave/recheck"
+    },
+    {
+      "page": 19,
+      "kind": "source_image_content_limitation",
+      "figure": "1-1",
+      "text": "하위요인 Holm 보정",
+      "resolution": "Parent verified source MD image pixels match. No substantive image edit in this transfer."
+    }
+  ],
+  "note": "Dense narrow-column wrapping in table2-2 is bounded within cells. No table geometry correction identified."
+}

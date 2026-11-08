@@ -25,3 +25,10 @@ log.md.tmp
 
 # 성주의 박사 논문 검토 자료(외부 검토용) — 추적 대상이 아니다
 260930_성주의 박사 논문 검토/
+
+# humanize-korean 스킬(.claude/skills/humanize-korean)의 run_id별 런타임 산출물 — 추적 대상이 아니다
+_workspace/
+_workspace_prev/
+
+# hwpx 산출물 스냅샷(사용자 직접 편집분 MD 역동기화 기준, .claude/rules/hwpx-user-edit-backsync.md)
+tools/hwpx_transfer/staging/hwpx_snapshots/

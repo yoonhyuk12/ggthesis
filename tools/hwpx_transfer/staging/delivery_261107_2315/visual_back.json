@@ -1,0 +1,208 @@
+{
+  "pages": {
+    "pdf": "tools/hwpx_transfer/staging/delivery_261107_2315/resaved.pdf",
+    "sha256": "e6c6a2edf89705178427a6ae24aa2a64ac4bbb031d048ba1939de3a23bf2daa0",
+    "total_physical_pages": 120,
+    "reviewed_physical_pages": [
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "printed_pages": "54–107 (각 쪽 꼬리말 직접 확인)",
+    "contact_sheets": [
+      "review_09.png",
+      "review_10.png",
+      "review_11.png",
+      "review_12.png",
+      "review_13.png",
+      "review_14.png",
+      "review_15.png",
+      "review_16.png"
+    ],
+    "extra_sheets": [
+      "back_extra_0.png",
+      "back_extra_6.png"
+    ],
+    "zoom_pages": [
+      79,
+      88,
+      92,
+      94,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      110,
+      112,
+      116,
+      118
+    ]
+  },
+  "findings": [
+    {
+      "id": "B01",
+      "severity": "layout_fix",
+      "physical_pages": [
+        94
+      ],
+      "printed_pages": [
+        81
+      ],
+      "identifier": "표 4-13 강건성 점검 결과",
+      "evidence": "B 열 머리글이 실효/성/조정/평균/차이/B(도/입−/미도/입,/점)처럼 약 10줄로 갈라져 머리행이 자료행 전체 높이에 가깝다; 글자 유실이나 충돌은 없지만 가독성이 나쁨",
+      "image": "back_zoom_94.png",
+      "recommendation": "전체 표 폭·내용·글자 크기를 유지하며 긴 B 머리글 열에 폭을 재배분하고 머리글 의미 단위 줄바꿈을 조정"
+    },
+    {
+      "id": "B02",
+      "severity": "layout_fix",
+      "physical_pages": [
+        95,
+        96,
+        97
+      ],
+      "printed_pages": [
+        82,
+        83,
+        84
+      ],
+      "identifier": "표 4-14 뒤 제8절 연결 문장",
+      "evidence": "물리96쪽에는 다음 제8절에서는…논의하였다 한 문장 두 줄만 있고 나머지 본문 영역이 비어 있으며 다음 절은 97쪽에서 시작함",
+      "image": "back_extra_0.png",
+      "recommendation": "연결 문장과 앞 표/다음 절의 문단 쪽나눔·앞뒤 간격을 조정해 한 문장만 차지하는 쪽을 해소; 문구는 보존"
+    },
+    {
+      "id": "B03",
+      "severity": "layout_fix",
+      "physical_pages": [
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "printed_pages": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "identifier": "참고문헌 국내[11], 국외[03]·[11]·[19]",
+      "evidence": "국내[11] 류정·박인선의 DOI가 103쪽 첫 줄에 단독으로 넘어감; 국외[03] Chen의 권·연도·논문번호·DOI가 105쪽 첫 줄로 넘어감; 국외[11] Kim URL이 106쪽 첫 줄에 단독으로 넘어감; 국외[19] jamovi URL이 107쪽 첫 줄에 단독으로 넘어감; 문자는 모두 보존됨",
+      "images": [
+        "back_zoom_102.png",
+        "back_zoom_103.png",
+        "back_zoom_104.png",
+        "back_zoom_105.png",
+        "back_zoom_106.png",
+        "back_zoom_107.png"
+      ],
+      "recommendation": "항목별 문단 나눔 방지/문단 연결로 서지 한 항목을 같은 쪽에 배치하고 재조판 후 번호·목차 확인"
+    },
+    {
+      "id": "B04",
+      "severity": "minor",
+      "physical_pages": [
+        102,
+        104,
+        107,
+        108
+      ],
+      "printed_pages": [
+        89,
+        91,
+        94,
+        95
+      ],
+      "identifier": "참고문헌 긴 URL 앞 행·날짜 및 법령 서지",
+      "evidence": "양쪽 맞춤과 긴 URL 줄바꿈으로 2026/3/31, 2026/9, 타법개정 닫는 괄호·마침표 등이 행 전체 폭에 흩어져 보임; 고용노동부 URL 끝의 0이 다음 줄에 단독 배치됨; URL 자체는 누락 없음",
+      "images": [
+        "back_zoom_102.png",
+        "back_zoom_104.png",
+        "back_zoom_107.png",
+        "back_zoom_108.png"
+      ],
+      "recommendation": "서지 문단 정렬과 URL 앞 줄바꿈·날짜 묶음 처리를 검토하되 원문 문자·열람일·글씨 크기는 보존"
+    }
+  ],
+  "verdict": {
+    "status": "layout_corrections_recommended",
+    "content_preservation": "PASS",
+    "references": {
+      "count": 53,
+      "category_counts": [
+        24,
+        22,
+        3,
+        4
+      ],
+      "numbering": "각 분류에서 [01]부터 연속: 24/22/3/4건, 내부 ref번호 아님",
+      "sorting": "국내 가나다순·국외 알파벳순 일치",
+      "full_text_match": "references.json 53개 text 전부 PDF102–108쪽에서 공백·대시·따옴표만 정규화하여 전체 문자열 일치: 누락 0건",
+      "doi_url": "전건 보존, 글자 잘림 없음, 단독 행/쪽 분리 문제는 B03·B04",
+      "internal_memos": "ref번호·서지관리번호·원전미보유·검증이력 검색 및 이미지 대조 결과 인쇄 없음",
+      "access_dates": "한국인터넷진흥원·OSHA 2026.11.4, YOLO26 2026.11.7 확인"
+    },
+    "tables_appendix": "표3-10, 표4-1~4-14 및 부록109~118쪽의 마지막 행·머리행·꼬리말·뒤 본문 순서 검토: 겹침·잘림·문항 유실·꼬리말 침범 없음; A 양식은 110→111,116→117에서 A-7 뒤 A-8로 이어지고 머리행 반복 정상; 118쪽 Part B 제목·안내문은 최신 PDF 확대 이미지에서 정상 확인",
+    "blank_pages": "완전 빈쪽 없음; 96쪽은 연결 문장 두 줄만 남은 사실상 빈쪽(B02)",
+    "isolated_captions": "표/그림 캡션 단독 고립 없음",
+    "scope_limits": "목차 쪽수는 메인 갱신 범위로 제외; HWPX/COM/원고 수정 없음; 전반부 1~66쪽은 본 검토 대상 아님"
+  }
+}

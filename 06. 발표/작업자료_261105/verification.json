@@ -1,0 +1,89 @@
+{
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261105_1550_윤혁_석사학위논문_심의발표.pptx",
+  "output_pdf": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261105_1550_윤혁_석사학위논문_심의발표.pdf",
+  "slide_count": 27,
+  "changes": [
+    {
+      "original_slide": 7,
+      "change": "실제 논문 RAG 절차 그림과 설명 배치",
+      "source_idxs": [
+        775,
+        776
+      ],
+      "slide": 7
+    },
+    {
+      "original_slide": 9,
+      "change": "혼동행렬을 건수·비율 막대도표로 시각화",
+      "source_idxs": [
+        886,
+        892
+      ],
+      "slide": 9
+    },
+    {
+      "original_slide": 16,
+      "change": "조정차이·신뢰구간 점도표 및 Holm p 병기",
+      "source_idxs": [
+        1782,
+        1783,
+        1785
+      ],
+      "slide": 17
+    },
+    {
+      "slide": 11,
+      "change": "최종 논문 그림3-5 원본 삽입",
+      "source_idxs": [
+        1017,
+        1018,
+        1045,
+        1046,
+        1047,
+        1048,
+        1050
+      ]
+    },
+    {
+      "slide": 19,
+      "change": "최종 논문 그림3-6 원본 삽입 및 해석 구분",
+      "source_idxs": [
+        1053,
+        1054,
+        1055,
+        1056,
+        1058
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "shape_bounds_violations": []
+    },
+    {
+      "obsolete_page_references": 0
+    },
+    {
+      "powerpoint_open_slides": 27
+    },
+    {
+      "powerpoint_text_height_overflow": []
+    },
+    {
+      "pdf_export": "success"
+    },
+    {
+      "visual_review": "all 27 slides reviewed in rendered contact sheets; no clipping or overlap",
+      "changed_slides_final_overflow": []
+    },
+    {
+      "source_image_mapping": {
+        "slide11": "HWPX BinData/image6.png = 그림3-5",
+        "slide19": "HWPX BinData/image7.png = 그림3-6",
+        "slide7": "HWPX BinData/image4.png = 그림3-3"
+      },
+      "numeric_check": "main B=0.54 CI[0.17,0.91], p=.005; subgroup B/CI/Holm p match idx1785; TP39 FN5 FP13 TN821 match idx892; callouts match idx1046,1047,1056"
+    }
+  ],
+  "limitations": []
+}

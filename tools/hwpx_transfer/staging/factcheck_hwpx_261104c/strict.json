@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "raw_llm_suspect": false,
+  "raw_signals": {
+    "body_chars": 80177,
+    "preview_chars": 642,
+    "linesegarray": 2414,
+    "preview_reflects_body": false
+  },
+  "char_border_bug": false,
+  "char_border_signals": {
+    "bug": false,
+    "bordered_charpr": 0,
+    "total_charpr": 84
+  },
+  "vertical_misconvert": false,
+  "vertical_signals": {
+    "suspect": false,
+    "vertical": 0,
+    "horizontal": 1540
+  },
+  "file": "tools/hwpx_transfer/staging/factcheck_hwpx_261104c/final.hwpx"
+}

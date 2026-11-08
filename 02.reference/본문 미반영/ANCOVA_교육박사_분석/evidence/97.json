@@ -1,0 +1,255 @@
+{
+  "id": "97",
+  "bibliography": {
+    "author": "박정하",
+    "year": 2018,
+    "title": "긍정적 탐색(AI) 기반 유아교사 교육프로그램 개발 및 적용 효과: 행동문제 지도를 중심으로",
+    "university": "경기대학교 대학원 유아교육학과",
+    "degree": "박사",
+    "file": "02.reference/97. 박정하(2018)_긍정적 탐색(AI) 기반 유아교사 교육프로그램 개발 및 적용 효과_행동문제 지도를 중심으로.pdf"
+  },
+  "extraction": {
+    "tool": "Kordoc",
+    "version": "4.24.2",
+    "command": "node .claude/kordoc/dist/cli.js \"02.reference/97. 박정하(2018)_긍정적 탐색(AI) 기반 유아교사 교육프로그램 개발 및 적용 효과_행동문제 지도를 중심으로.pdf\" --no-images --script-tags -o \"02.reference/ANCOVA_교육박사_분석/kordoc/97.md\"",
+    "files": [
+      "kordoc/97.md",
+      "kordoc/97.log"
+    ],
+    "warnings": [
+      "표 병합 셀과 가로 괘선이 텍스트/취소선으로 추출될 수 있어 대표 표는 PDF 렌더링과 대조함"
+    ]
+  },
+  "verification": {
+    "total_pdf_pages": 162,
+    "pdf_page_numbering": "1-based",
+    "printed_to_pdf_offset": 13,
+    "method": "Kordoc 전체 추출→관련 절 독해·전체 키워드 검색→PyMuPDF로 인쇄쪽/PDF쪽 및 대표 표 수치 교차대조→PNG 시각검사",
+    "review_scope": "연구설계·대상 pp.64–65, 자료분석 pp.78–79, 결과 pp.80–90; 전체 추출문 가정·보정 키워드 검색",
+    "chapter4_compared": "01.docs/04_연구설계및실증분석.md 제5절 및 제7절 직접 읽음",
+    "original_errors": [
+      {
+        "status": "PDF에서 확인한 원문 내부 불일치",
+        "printed_page": 84,
+        "pdf_page": 97,
+        "detail": "표21 교사효능감 전체 공변량 SS203.85, df1, MS503.85로 SS/df=MS가 맞지 않음. 정확한 값은 원자료 없이 확정 불가."
+      },
+      {
+        "status": "PDF에서 확인한 표-본문 불일치",
+        "printed_page": [
+          89,
+          90
+        ],
+        "pdf_page": [
+          102,
+          103
+        ],
+        "detail": "직무만족도 전체 집단 F 표41.54, 본문41.55. 보고에서는 표 값 유지."
+      }
+    ],
+    "rendered_evidence": [
+      "evidence/97_p81.png",
+      "evidence/97_p84.png",
+      "evidence/97_p89.png"
+    ]
+  },
+  "design": {
+    "type": "비동등 집단 사전·사후 비교",
+    "intervention": "긍정적 탐색 기반 교사교육 10주 10회기",
+    "allocation": "6개 기관 중 동의를 얻은 3개 기관 교사30 실험, 나머지3개 기관 교사30 비교로 임의배정",
+    "printed_page": 65,
+    "pdf_page": 78
+  },
+  "sample": {
+    "total": 60,
+    "unit": "유아교사",
+    "note": "초록의 프로그램 적용 30명은 실험집단. 전체는 60명"
+  },
+  "groups": [
+    {
+      "name": "실험",
+      "n": 30
+    },
+    {
+      "name": "비교",
+      "n": 30
+    }
+  ],
+  "outcomes": [
+    "유아에 대한 태도",
+    "교사효능감(유능감·자신감·소명)",
+    "직무만족도(5개 하위요인)"
+  ],
+  "covariates": {
+    "continuous": [
+      "각 종속변인의 사전검사 점수"
+    ],
+    "categorical_controls": [],
+    "selection": "교사효능감 사전 집단차이를 근거로 사전점수 조정 필요성 설명; 세 종속변인 모두 ANCOVA 적용"
+  },
+  "software": "SPSS 20.0 (인쇄 p.78/PDF91)",
+  "assumptions": [
+    {
+      "item": "사전 점수 집단차이",
+      "status": "보고됨: ANCOVA 회귀기울기 가정검정과 별개",
+      "evidence": "표17 교사효능감 t=2.55,p<.05; 다른 두 총점 비유의",
+      "pdf_page": 92,
+      "printed_page": 79
+    },
+    {
+      "item": "회귀기울기 동질성(집단×공변량)",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 91,
+      "printed_page": 78
+    },
+    {
+      "item": "선형성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 91,
+      "printed_page": 78
+    },
+    {
+      "item": "잔차 정규성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 91,
+      "printed_page": 78
+    },
+    {
+      "item": "잔차 등분산성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 91,
+      "printed_page": 78
+    },
+    {
+      "item": "영향점 진단",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 91,
+      "printed_page": 78
+    },
+    {
+      "item": "다중검정 보정",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 91,
+      "printed_page": 78
+    }
+  ],
+  "tables": [
+    {
+      "number": "18",
+      "title": "유아에 대한 태도 사전·사후검사의 평균, 표준편차 및 조정된 사후 점수",
+      "columns": [
+        "집단(N)",
+        "사전 M,SD",
+        "사후 M,SD",
+        "조정 사후 M,SE"
+      ],
+      "pdf_page": 93,
+      "printed_page": 80,
+      "key_values": {
+        "실험_조정M": 49.74,
+        "비교_조정M": 45.63,
+        "각_SE": 1.25
+      }
+    },
+    {
+      "number": "19",
+      "title": "집단 간 유아에 대한 태도 총점 공분산분석",
+      "columns": [
+        "변량원",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F(유의표시)"
+      ],
+      "pdf_page": 94,
+      "printed_page": 81,
+      "key_values": {
+        "집단_F": 5.38,
+        "df": [
+          1,
+          57
+        ],
+        "p": "<.05",
+        "집단_SS": 252.44,
+        "오차_SS": 2674.07
+      }
+    },
+    {
+      "number": "21",
+      "title": "집단 간 교사효능감 총점 공분산분석",
+      "columns": [
+        "변인",
+        "변량원",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F"
+      ],
+      "pdf_page": 97,
+      "printed_page": 84,
+      "key_values": {
+        "총점_집단_F": 32.99,
+        "df": [
+          1,
+          57
+        ],
+        "p": "<.001"
+      }
+    },
+    {
+      "number": "23",
+      "title": "집단 간 직무만족도 총점 공분산분석",
+      "columns": [
+        "변인",
+        "변량원",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F"
+      ],
+      "pdf_page": 102,
+      "printed_page": 89,
+      "key_values": {
+        "총점_집단_F_표": 41.54,
+        "df": [
+          1,
+          57
+        ],
+        "p": "<.001",
+        "본문_p90_F": 41.55
+      }
+    }
+  ],
+  "results": [
+    "유아태도 조정평균 실험49.74/비교45.63, F(1,57)=5.38,p<.05.",
+    "교사효능감 전체 F(1,57)=32.99,p<.001; 직무만족도 전체 표의 F(1,57)=41.54,p<.001."
+  ],
+  "reporting_strengths": [
+    "원점수 M·SD와 조정 M·SE를 구분한 표가 명확함",
+    "평균표→ANCOVA 검정표→결과 문장 순서가 읽기 쉬움",
+    "경기대 교육분야 박사논문이라는 형식적 참고 가치"
+  ],
+  "limitations": [
+    "검토한 결과 절에서 조정 차이의 CI·부분 η² 보고 확인 못함",
+    "가정검정·다중검정 보정 보고 확인 못함",
+    "기관별 배정인데 기관 내 교사 응답의 군집성 조정 보고 확인 못함",
+    "사전점수 조정이 기관·연령 등의 모든 차이를 제거하지는 않음"
+  ],
+  "applicability_to_ch4": {
+    "adopt": [
+      "원평균과 조정평균의 구분",
+      "효과별 평균표와 검정표의 연결 문장"
+    ],
+    "do_not_adopt": [
+      "사용자 횡단자료에는 사전·사후 변화 표나 향상 인과문장 사용 불가",
+      "현재 CI·부분η²·Holm·가정검정을 이 논문의 단순 표에 맞춰 삭제하면 안 됨"
+    ],
+    "assessment": "표 구성 참고용. 설계의 직접 근거로는 제한적."
+  }
+}

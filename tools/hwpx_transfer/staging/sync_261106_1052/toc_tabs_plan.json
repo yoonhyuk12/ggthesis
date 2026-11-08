@@ -1,0 +1,46 @@
+{
+  "base_already_missing": true,
+  "scope": "section1 before thanks heading; all 132 units inspected",
+  "targets": [
+    {
+      "unit_index": 22,
+      "old_text": "제 1 항 조기인지19",
+      "title": "제 1 항 조기인지",
+      "page": "19"
+    },
+    {
+      "unit_index": 23,
+      "old_text": "제 2 항 대응 신속성20",
+      "title": "제 2 항 대응 신속성",
+      "page": "20"
+    },
+    {
+      "unit_index": 24,
+      "old_text": "제 3 항 원격 파악20",
+      "title": "제 3 항 원격 파악",
+      "page": "20"
+    },
+    {
+      "unit_index": 25,
+      "old_text": "제 4 항 순찰부담 경감21",
+      "title": "제 4 항 순찰부담 경감",
+      "page": "21"
+    },
+    {
+      "unit_index": 26,
+      "old_text": "제 5 항 위험 통제력21",
+      "title": "제 5 항 위험 통제력",
+      "page": "21"
+    }
+  ],
+  "normal_reference_unit": 14,
+  "same_paraPrIDRef": "40",
+  "same_charPrIDRef": "48",
+  "tabPrIDRef": "5",
+  "tab_stop": {
+    "pos": 36852,
+    "type": "RIGHT",
+    "leader": "DASH"
+  },
+  "method": "insert hp:tab leader=3 type=2 between title and terminal page digits; remove only changed paragraph cache; preserve every other byte"
+}

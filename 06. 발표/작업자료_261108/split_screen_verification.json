@@ -1,0 +1,42 @@
+{
+  "source": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1526_윤혁_석사학위논문_심의발표_실제알림추가.pptx",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1534_윤혁_석사학위논문_심의발표_멀티뷰교정분리.pptx",
+  "slide_count": 36,
+  "source_hashes": {
+    "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1526_윤혁_석사학위논문_심의발표_실제알림추가.pptx": "233402f97053c8ec87d8de11b43a676effae688947311afb1cdaab751bf4ea62",
+    "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\00. hwpx\\261108_1359_경기공학_건축안전_윤혁_논문.hwpx": "42b57d82b191f77fcf726c80d2e81cd197d90dd44f6bce8036169139e79a248f"
+  },
+  "changes": [
+    {
+      "slide": 12,
+      "source": "그림 3-5 / BinData image6",
+      "source_idxs": [
+        818,
+        822
+      ],
+      "description": "실제 멀티뷰 전체 화면"
+    },
+    {
+      "slide": 13,
+      "source": "그림 3-4 / BinData image5",
+      "source_idxs": [
+        809,
+        811,
+        814
+      ],
+      "description": "중앙 LLM 판정 교정 창 확대"
+    }
+  ],
+  "checks": {
+    "powerpoint_open": true,
+    "overflow": [],
+    "other_slide_content_design_notes_preserved": true,
+    "continuous_numbers": "2–36",
+    "source_hashes_unchanged": true,
+    "pdf_created": false,
+    "visual_review": "12장 멀티뷰·13장 교정창 PNG 직접 검토: 그림·출처 겹침 없음, 교정 판정·사유·저장 UI 표시 확인, 담당자 이름 가림 확인"
+  },
+  "limitations": [
+    "담당자 이름 가림은 PPT 도형에 의한 화면상 가림이며 원본 이미지 픽셀은 PPT 내부에 남아 있음."
+  ]
+}

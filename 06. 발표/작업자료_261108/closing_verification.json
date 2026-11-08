@@ -1,0 +1,34 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1457_윤혁_석사학위논문_심의발표_결론성과보강.pptx",
+  "source_sha256": "688ac8065f587d232b95098258a38cfcdd16572c73b4b816d0ae9e03ace54372",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1508_윤혁_석사학위논문_심의발표_마무리추가.pptx",
+  "slide_count": 34,
+  "closing_slide": 30,
+  "appendix_start": 31,
+  "checks": [
+    {
+      "original_slide_content_design_notes_preserved_except_page_numbers": true
+    },
+    {
+      "powerpoint_open": 34
+    },
+    {
+      "closing_slide_overflow": []
+    },
+    {
+      "continuous_page_numbers": "2–34"
+    },
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "png_direct_export": true
+    },
+    {
+      "pdf_created": false
+    },
+    {
+      "visual_review": "감사합니다. 큰제목·질의응답 부제 중앙 배치 확인, 잘림·겹침 없음"
+    }
+  ]
+}

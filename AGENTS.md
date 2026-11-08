@@ -121,7 +121,7 @@ Worker에게 위임하는 일:
 | `MEMORY.md` | 누적 교정·결정 기록 (`[LEARN]` 태그, 형식은 `recording-learnings` 스킬) | ✅ 학습 기록 |
 | `log.md` | 프로젝트 파일 변경 자동 기록 (`YYMMDD_HHMMSS : 수정내용`, 최신 항목이 맨 위). 도구 호출마다 훅이 갱신하고, 세션 시작 시 최근 25건이 컨텍스트에 자동으로 들어온다 | 🤖 훅 자동 기록 (직접 편집하지 않는다) |
 | `.claude/rules/` | 작업 규칙 | 지시 시에만 |
-| `.claude/skills/` | 프로젝트 스킬 10종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills, humanizer-kr, thesis-ai-naturalizer, clean-user-facing-text, remove-ai-marks) | 지시 시에만 |
+| `.claude/skills/` | 프로젝트 스킬 11종 (hwpx-thesis-editing, recording-learnings, verifying-citation-pages, write-academic-report, agent-browser, find-skills, remove-ai-marks, humanize-korean·humanize·humanize-scan·humanize-redo). 한글 AI 티 윤문은 `humanize-korean` 계열(epoko77-ai/im-not-ai 복사 설치, 서브에이전트 4종은 `.claude/agents/`, 설치 기록 `03.plan/261104_1419_im-not-ai_스킬설치.md`) | 지시 시에만 |
 | `.claude/reference/` | 원고에 없는 참고 자료 5종(위 인덱스) + 하네스 자료 (`커맨드_및_스킬_정리.md`, awesome-agent-skills 카탈로그, hwpx-writing-kit 원본 아카이브) | 읽기 전용 |
 | `.claude/hooks/` | 훅 2종. `log_change.py`(PostToolUse)는 `git status` 스냅샷을 대조해 바뀐 파일을 `log.md`에 적고, `session_brief.py`(SessionStart)는 `log.md` 최근 25건을 세션 시작 컨텍스트에 넣는다. 등록은 `.claude/settings.json` | 지시 시에만 |
 | `02.reference/` | 선행연구 자료 69건(01~69번, 이 중 PDF 68개). 전건이 `.claude/reference/05-참조자료.md`에 분류돼 있다. 기사·웹자료는 하위 폴더 `02.reference/기사_및_웹자료/`로 분리했으며, 그 안의 `37. 기사_및_웹자료.md`가 비용 비교 논거 핵심 자료다 | 읽기 전용 |

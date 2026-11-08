@@ -4,18 +4,13 @@
 <rect x="40" y="250" width="520" height="270" fill="white" stroke="#000000" stroke-width="3"/>
 <polyline points="40,330 560,330" fill="none" stroke="#000000" stroke-width="3"/>
 <text x="300.0" y="305" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#000000" text-anchor="middle">독립변수(X)</text>
-<text x="300" y="382" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">YOLO-LLM 안전관제시스템</text>
+<text x="300" y="382" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">YOLO-LLM 안전관제 시스템</text>
 <text x="300" y="437" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">도입 여부</text>
 <text x="300" y="492" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">(도입 / 미도입)</text>
-<rect x="1040" y="150" width="420" height="470" fill="white" stroke="#000000" stroke-width="3"/>
-<polyline points="1040,230 1460,230" fill="none" stroke="#000000" stroke-width="3"/>
-<text x="1250.0" y="205" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#000000" text-anchor="middle">종속변수(Y)</text>
-<text x="1250" y="285" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">안전관리 실효성</text>
-<text x="1090" y="345" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="start">y1. 조기인지</text>
-<text x="1090" y="398" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="start">y2. 대응 신속성</text>
-<text x="1090" y="451" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="start">y3. 원격 파악</text>
-<text x="1090" y="504" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="start">y4. 순찰부담 경감</text>
-<text x="1090" y="557" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="start">y5. 위험 통제력</text>
+<rect x="1040" y="250" width="420" height="270" fill="white" stroke="#000000" stroke-width="3"/>
+<polyline points="1040,330 1460,330" fill="none" stroke="#000000" stroke-width="3"/>
+<text x="1250.0" y="305" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#000000" text-anchor="middle">종속변수(Y)</text>
+<text x="1250" y="400" font-family="Malgun Gothic" font-size="34" font-weight="400" fill="#000000" text-anchor="middle">안전관리 실효성</text>
 <rect x="500" y="560" width="510" height="200" fill="white" stroke="#000000" stroke-width="3"/>
 <polyline points="500,640 1010,640" fill="none" stroke="#000000" stroke-width="3"/>
 <text x="755.0" y="615" font-family="Malgun Gothic" font-size="40" font-weight="700" fill="#000000" text-anchor="middle">통제변수(C)</text>

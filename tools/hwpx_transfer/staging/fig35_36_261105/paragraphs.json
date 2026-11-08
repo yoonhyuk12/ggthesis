@@ -1,0 +1,3727 @@
+[
+  {
+    "section": "Contents/section1.xml",
+    "index": 0,
+    "text": "목  차"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 1,
+    "text": ""
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 2,
+    "text": "표 목 차iv"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 3,
+    "text": "그림목차vi"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 4,
+    "text": "감사의 글vii"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 5,
+    "text": "논문개요viii"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 6,
+    "text": "제 1 장 서론1"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 7,
+    "text": " 제 1 절 연구의 배경 및 필요성1"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 8,
+    "text": " 제 2 절 연구의 목적3"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 9,
+    "text": " 제 3 절 연구의 범위 및 방법4"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 10,
+    "text": "제 2 장 이론적 배경7"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 11,
+    "text": " 제 1 절 건설산업 스마트 안전관리와 AI 영상관제 기술7"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 12,
+    "text": "  제 1 항 개념 및 정의7"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 13,
+    "text": "  제 2 항 오경보와 경보 피로도8"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 14,
+    "text": " 제 2 절 YOLO-LLM 안전관제 시스템의 기술 특성10"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 15,
+    "text": "  제 1 항 시스템 인프라 범용성(A1)11"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 16,
+    "text": "  제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)11"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 17,
+    "text": "  제 3 항 2차 검증(LLM) 오탐 필터링(A3)12"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 18,
+    "text": "  제 4 항 알림 전파 즉각성(A4)13"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 19,
+    "text": " 제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성15"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 20,
+    "text": "  제 1 항 조기인지18"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 21,
+    "text": "  제 2 항 대응 신속성18"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 22,
+    "text": "  제 3 항 원격 파악19"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 23,
+    "text": "  제 4 항 순찰부담 경감19"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 24,
+    "text": "  제 5 항 위험 통제력20"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 25,
+    "text": " 제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)22"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 26,
+    "text": " 제 5 절 소결24"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 27,
+    "text": "제 3 장 YOLO-LLM 안전관제 시스템 개발25"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 28,
+    "text": " 제 1 절 시스템 개발 방향 및 요구사항25"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 29,
+    "text": "  제 1 항 시스템 개발 개요25"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 30,
+    "text": "  제 2 항 현장 요구사항26"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 31,
+    "text": "  제 3 항 관련 기술 선행연구28"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 32,
+    "text": " 제 2 절 시스템 설계31"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 33,
+    "text": "  제 1 항 전체 시스템 구조31"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 34,
+    "text": "  제 2 항 YOLO 탐지 및 제어32"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 35,
+    "text": "  제 3 항 LLM 문맥 검증 및 현장 적응34"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 36,
+    "text": "  제 4 항 경보 전파38"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 37,
+    "text": " 제 3 절 시스템 구현39"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 38,
+    "text": "  제 1 항 실행 환경 및 기술 스택39"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 39,
+    "text": "  제 2 항 주요 기능 및 운영 안정성39"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 40,
+    "text": "  제 3 항 현장 배포 및 운용 구성40"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 41,
+    "text": " 제 4 절 시스템 개발의 효과 분석41"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 42,
+    "text": "  제 1 항 검증 데이터셋 구축 및 평가 지표41"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 43,
+    "text": "  제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실43"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 44,
+    "text": "  제 3 항 RAG 기반 Few-shot 교정의 성능 실험45"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 45,
+    "text": "  제 4 항 적용 타당성46"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 46,
+    "text": "  제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식47"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 47,
+    "text": "  제 6 항 현장 운영 특성50"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 48,
+    "text": " 제 5 절 소결52"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 49,
+    "text": "제 4 장 연구설계 및 실증분석53"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 50,
+    "text": " 제 1 절 연구 모형 설계53"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 51,
+    "text": " 제 2 절 연구 문제 및 연구가설55"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 52,
+    "text": " 제 3 절 변수의 조작적 정의 및 측정도구 구성56"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 53,
+    "text": "  제 4 절 설문조사58"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 54,
+    "text": "  제 1 항 설문조사의 개요 및 절차58"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 55,
+    "text": " 제 2 항 설문지의 구성58"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 56,
+    "text": "  제 5 절 자료 수집과 분석 절차61"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 57,
+    "text": "  제 1 항 자료 수집 및 표본61"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 58,
+    "text": " 제 2 항 분석 절차62"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 59,
+    "text": "  제 6 절 조사 대상 특성과 기초통계 분석64"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 60,
+    "text": "  제 1 항 인구통계학적 빈도분석64"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 61,
+    "text": " 제 2 항 타당도 분석66"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 62,
+    "text": "  제 3 항 신뢰도 분석67"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 63,
+    "text": "  제 4 항 기술통계 분석68"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 64,
+    "text": "  제 5 항 상관관계 분석69"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 65,
+    "text": "  제 7 절 가설 검증71"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 66,
+    "text": " 제 1 항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)71"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 67,
+    "text": "  제 2 항 가설 검증 결과 종합76"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 68,
+    "text": "  제 8 절 분석결과 및 논의77"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 69,
+    "text": "제 5 장 결론79"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 70,
+    "text": "참고문헌81"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 71,
+    "text": "부 록 (도입 현장)87"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 72,
+    "text": " Part A. 인구통계학적 특성 및 현장 운영 특성88"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 73,
+    "text": " Part B. 안전관리 실효성90"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 74,
+    "text": " Part C. 시스템 특성 인식91"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 75,
+    "text": " Part D. 경보 피로도 완화92"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 76,
+    "text": "부 록 (미도입 현장)93"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 77,
+    "text": " Part A. 인구통계학적 특성 및 현장 운영 특성94"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 78,
+    "text": " Part B. 안전관리 실효성96"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 79,
+    "text": " Abstract97"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 80,
+    "text": "표 목 차"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 81,
+    "text": ""
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 82,
+    "text": "<표 1-1> 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)2"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 83,
+    "text": "<표 1-2> 연구의 방법과 장별 구성5"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 84,
+    "text": "<표 2-1> 시스템 기술 특성 관련 선행연구 요약14"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 85,
+    "text": "<표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 하위요인 연결16"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 86,
+    "text": "<표 2-3> 안전관리 실효성 하위요인과 관련 선행연구21"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 87,
+    "text": "<표 2-4> 선행연구와 본 연구의 차별성22"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 88,
+    "text": "<표 2-5> 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합23"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 89,
+    "text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항28"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 90,
+    "text": "<표 3-2> 관련 기술 선행연구 정리30"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 91,
+    "text": "<표 3-3> 시스템 모듈 구성과 역할32"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 92,
+    "text": "<표 3-4> 시스템 구현 기술 스택39"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 93,
+    "text": "<표 3-5> 정·오탐 라벨링 기준42"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 94,
+    "text": "<표 3-6> 성능 평가 지표 정의와 측정 목적43"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 95,
+    "text": "<표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)45"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 96,
+    "text": "<표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)46"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 97,
+    "text": "<표 3-9> 시스템 적용 타당성의 평가 범위47"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 98,
+    "text": "<표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의48"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 99,
+    "text": "<표 3-11> 현장 운영 특성(A-7∼A-9)의 분포(도입·미도입 현장별)51"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 100,
+    "text": "<표 4-1> 연구변수의 구성54"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 101,
+    "text": "<표 4-2> 연구가설 종합55"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 102,
+    "text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성57"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 103,
+    "text": "<표 4-4> 설문지의 최종 구성60"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 104,
+    "text": "<표 4-5> 자료 수집 개요62"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 105,
+    "text": "<표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)65"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 106,
+    "text": "<표 4-7> 만 나이와 건설현장 경력의 기술통계 및 집단 비교66"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 107,
+    "text": "<표 4-8> 안전관리 실효성 문항의 탐색적 요인분석 결과67"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 108,
+    "text": "<표 4-9> 측정도구의 신뢰도 분석 결과68"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 109,
+    "text": "<표 4-10> 주요 변수의 기술통계(도입·미도입 현장별)69"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 110,
+    "text": "<표 4-11> 주요 변수 간 상관관계70"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 111,
+    "text": "<표 4-12> 안전관리 실효성의 조정 평균과 집단 간 차이73"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 112,
+    "text": "<표 4-13> 안전관리 실효성의 도입·미도입 현장 간 차이 검정과 효과크기74"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 113,
+    "text": "<표 4-14> 하위요인별 공분산분석 결과(조정 차이·Holm 보정 포함)75"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 114,
+    "text": "<표 4-15> 연구가설 검증 결과 종합76"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 115,
+    "text": "그 림 목 차 "
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 116,
+    "text": ""
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 117,
+    "text": "<그림 1-1> 연구의 흐름도6"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 118,
+    "text": "<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조31"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 119,
+    "text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름35"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 120,
+    "text": "<그림 3-3> RAG 기반 Few-shot 교정 절차37"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 121,
+    "text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)40"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 122,
+    "text": "<그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(n=34)49"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 123,
+    "text": "<그림 4-1> 연구 모형54"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 124,
+    "text": "<그림 4-2> 안전관리 실효성의 조정 평균과 95% 신뢰구간73"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 125,
+    "text": "감사의 글 "
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 126,
+    "text": "2025년 3월 대학원에 진학한 지 어느덧 두 해 가까이 지나 졸업 논문을 마무리하게 되었습니다. 현장에서 늘 마음에 걸리던 문제, 카메라는 있는데 사람이 모자라 위험을 제때 보지 못하는 상황을 연구 주제로 삼아 여기까지 오는 동안 많은 분의 도움을 받았습니다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 127,
+    "text": "먼저 지도교수 박종용 교수님께 깊이 감사드립니다. 논문을 쓰는 순서와 문단 세우는 법부터 가설을 어디까지 주장하고 어디서 멈출지까지 하나하나 짚어 주시고, 설문 문항을 함께 검토하며 현장에서 통하는 말로 고쳐 주신 덕분에 논문이 지금의 모양을 갖추었습니다. 심사를 맡아 주신 교수님들께도 감사드립니다. 심사에서 주신 지적은 설계의 빈 곳을 메우는 기준이 되었고, 한계를 숨기지 않고 쓰는 태도를 배우게 해 주셨습니다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 128,
+    "text": "설문 문항을 검토해 주신 건설안전 분야 박사님과, 바쁜 공정 중에도 설문에 응답해 주신 현장 관리자분들께 감사드립니다. 시스템을 설치하고 석 달 넘게 운용하도록 허락해 주신 덕분에 이 연구의 실증이 가능했습니다. 알림이 울릴 때마다 확인해 주신 수고가 이 논문의 표와 그림마다 들어 있습니다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 129,
+    "text": "함께 공부한 대학원 동기들께도 고마움을 전합니다. 같은 시기에 각자의 논문을 붙들고 함께 버틴 시간이 큰 힘이 되었습니다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 130,
+    "text": "끝으로 논문에 매달린 시간을 함께 견뎌 준 가족에게 감사합니다. 이 논문이 작은 현장에서 일하는 분들의 안전에 조금이라도 보탬이 되도록, 배운 것을 현장에서 이어가겠습니다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 131,
+    "text": "2026년 11월"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 132,
+    "text": "윤  혁"
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 133,
+    "text": "논 문  개 요     "
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 134,
+    "text": ""
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 135,
+    "text": "  본 연구는 중소규모 건설현장의 인력·예산 제약과 불필요한 경보에 따른 확인 부담에 대응하기 위해 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 검토하였다. 기존 ONVIF 카메라와 범용 PC를 활용하여, YOLO가 위험해 보이는 장면을 먼저 잡아내고 LLM이 그 장면이 실제 위험한 상황인지 다시 판단한 뒤 관리자에게 알림을 전달하도록 설계하였다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 136,
+    "text": "  시스템이 보낸 경보가 얼마나 정확한지는 실제 운영 중에 쌓인 경보 기록으로 평가하였다. 현장 실효성은 A공사 경기지역본부 산하 73개 현장의 관리자 73명(도입 34명·미도입 39명)을 대상으로 조사하였다. 안전관리 실효성은 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 8문항으로 측정하였다. jamovi 2.7.41을 사용한 공분산분석으로 두 집단의 만 나이·경력·소속·성별·역할·총공사비 구간 차이를 분석에서 감안한 뒤 집단 간 평균 차이를 비교하였다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 137,
+    "text": "  1차 탐지 후보 878건에 대한 LLM 검증은 오경보를 834건에서 13건으로 줄였으나, 실제 위험 44건 중 5건의 경보도 차단하였다. 관리자가 바로잡아 준 판정 사례를 LLM에 참고시킨 비교에서도 오경보 감소와 실제 위험 경보 손실이 함께 나타났다. 설문 분석에서는 위 조건 차이를 감안한 뒤 도입 현장의 안전관리 실효성이 미도입 현장보다 0.54점 높아 연구가설 (1-1)이 지지되었다(95% 신뢰구간 [0.17, 0.91], p=.005, 부분 η²=0.121). 하위요인 중 조기인지·원격 파악·위험 통제력의 차이는 여러 번 검정한 점을 감안한 Holm 보정 후에도 유의하였으나, 대응 신속성과 순찰부담 경감의 차이는 유의하지 않았다. 위험 인지 후 지시 전달 소요시간에서도 유의한 집단 차이를 확인하지 못하였다(p=.663)."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 138,
+    "text": "  이 결과는 시스템 경보가 얼마나 정확한지와 관리자가 평가한 안전관리 업무의 실효성을 구분하여 평가할 필요성을 보여준다. 현장에서는 오경보뿐 아니라 실제 위험인데도 경보가 오지 않은 경우를 점검하고, 알림 수신부터 확인·조치까지의 절차를 관리해야 한다. 기술 평가는 YOLO가 먼저 잡아낸 장면만을 대상으로 LLM이 얼마나 잘 걸렀는지를 제시한 것이고, 현장 조사는 한 기관 산하 현장의 관리자가 한 시점에 스스로 답한 설문에서 관찰한 집단 간 차이를 제시한 것이다."
+  },
+  {
+    "section": "Contents/section1.xml",
+    "index": 139,
+    "text": "  주제어(Keywords): 건설현장 안전관리, YOLO, 거대언어모델(LLM), 안전관리 실효성, 공분산분석(ANCOVA), 경보 피로도"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 0,
+    "text": "제 1 장 서론"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 1,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 2,
+    "text": "제 1 절 연구의 배경 및 필요성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 3,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 4,
+    "text": "  중소규모 건설현장 안전관리의 핵심 문제는 위험을 알아차리는 일과 이를 현장 조치로 옮기는 일 사이의 간극에 있다. 현장의 위험은 공정과 장비 이동에 따라 수시로 바뀌지만, 소수의 관리자가 넓은 현장을 직접 순찰하며 이를 모두 확인하기는 어렵다. 위험을 늦게 알아차리면 조치도 늦어지고, 알아차리더라도 담당자에게 제때 전달되지 않으면 조치로 이어지지 않았다. 따라서 중소규모 현장에 필요한 것은 예방이 중요하다는 원칙의 재확인이 아니라, 위험 신호가 담당자의 확인과 조치로 끊기지 않고 이어지도록 돕는 수단이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 5,
+    "text": "  본 연구에서 중소규모 건설현장은 「산업안전보건법 시행령」 제16조 제2항에 따라 안전관리자 전담 선임 의무가 적용되는 총공사비 120억 원(토목공사업은 150억 원) 미만의 현장을 뜻한다. 이 기준은 전담 안전관리자가 없는 현장을 중·소규모로 본 선행연구와 같다(김용선, 2022)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 6,
+    "text": "  이러한 판단은 재해 통계로 뒷받침된다. 고용노동부(2025)의 2024년 산업재해 통계에서 건설업은 업무상사고 사망자가 328명으로 전 산업 가운데 가장 많은 업종이다. 건설업 안에서도 사망자는 규모가 작은 현장에 몰려 있다. <표 1-1>과 같이 공사금액 120억 원 미만 현장의 사망자는 235명으로 전체의 71.6%를 차지하며, 3억 원 미만 현장만으로도 34.8%에 이른다. 같은 자료의 공사금액별 사망만인율(근로자 1만 명당 사망자 수)도 3억 원 미만 현장이 4.92‱로 1,000억 원 이상 현장(0.80‱)의 약 6배였다. 다만 이 만인율은 업무상사고 사망자만이 아니라 전체 사망자를 기준으로 계산한 값이므로, 업무상사고 사망자만 집계한 <표 1-1>과는 집계 기준(분모)이 다르다. 두 지표 모두 사망재해 예방의 성과가 중소규모 현장의 안전관리 수준에 크게 달려 있음을 보여준다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 7,
+    "text": "<표 1-1> 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 8,
+    "text": "공사금액 구간사망자(명)비율(%)누적(%)3억 원 미만11434.834.83억 원 이상∼20억 원 미만6218.953.720억 원 이상∼50억 원 미만3611.064.650억 원 이상∼120억 원 미만237.071.6120억 원 이상∼300억 원 미만195.877.4300억 원 이상6319.296.6분류불능113.4100.0계328100.0—"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 9,
+    "text": "자료: 고용노동부(2025), 『2024 산업재해 현황분석』, p. 336(연구자 재구성)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 10,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 11,
+    "text": "  사망자가 몰린 중소규모 현장은 안전관리 여건의 제약도 크다. 안전관리 인력과 예산이 적고, 위험을 계속 확인할 전문역량도 부족하다(김용선, 2022). 영상관제나 스마트 안전장비는 도입 비용이 부담이 되고(이준호, 2024), 도입 뒤에도 불필요한 경보가 반복되면 무시될 수 있다. 따라서 비용 부담을 낮추면서 경보 정확도를 함께 확보하는 기술이 필요하다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 12,
+    "text": "  또한 기술의 탐지 성능만으로는 현장의 안전관리 실효성을 판단하기 어렵다. 지금까지의 연구는 주로 탐지 정확도와 기술 수용 의향에 초점을 두었으나, 탐지 정확도가 높더라도 관리자가 위험을 더 빨리 알아차리고 대응하는지는 별개의 질문이다. 도입·미도입 현장에 같은 설문을 적용하고 응답자·현장의 조건 차이를 감안하여 관리자가 평가한 안전관리 실효성을 비교한 근거는 아직 부족하다. 관련 선행연구와 한계는 제2장과 제3장 제1절 제3항에서 고찰하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 13,
+    "text": "  이에 본 연구는 범용 PC와 기존 카메라로 운용해 비용 부담을 낮춘 YOLO-LLM 안전관제 시스템을 개발하였다. 시스템은 YOLO가 위험 후보를 1차로 탐지하고 LLM이 프레임 이미지의 문맥을 2차로 검증한 뒤 확정된 경보를 담당자에게 즉시 전달하였다. 본 연구에서 '현장 작동성'은 이처럼 위험 신호가 담당자의 확인과 조치로 끊기지 않고 이어지는지를 보는 관점을 뜻한다. 나아가 도입·미도입 현장의 안전관리 실효성을 비교하여, 기술 성능만으로는 알 수 없는 안전관리 수행 수준의 차이를 확인하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 14,
+    "text": "제 2 절 연구의 목적"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 15,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 16,
+    "text": "  본 연구는 중소규모 현장의 비용과 경보 정확도라는 두 제약을 함께 다루기 위해 YOLO와 LLM을 단계적으로 결합한 구조를 택하였다. YOLO만으로는 오경보가 남고 LLM에 모든 영상을 맡기면 처리 비용과 지연이 커지므로, YOLO가 고른 위험 후보만 LLM이 검증하도록 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 17,
+    "text": "  본 연구는 먼저 이 시스템을 설계·구현하고, YOLO 1차 후보에 대한 LLM 2차 검증의 오경보 감소와 실제 위험 경보 손실을 현장 운영 로그로 평가하였다. 이어서 A공사(공공기관) 경기지역본부 산하 도입 현장과 미도입 현장의 관리자에게 설문을 실시하여, 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력으로 구성한 안전관리 실효성을 측정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 18,
+    "text": "  도입 현장과 미도입 현장은 응답자의 나이·경력·소속·성별·역할과 현장의 총공사비 구간이 서로 다를 수 있으므로, 이 여섯 가지 조건 차이에서 생기는 점수 차이를 분석에서 감안한 뒤 두 집단을 비교하였다. 본 연구에서는 이 여섯 가지를 통제변수(C)라 부르고, 이를 감안하는 것을 '조정'이라 하였다. 연구 문제는 YOLO-LLM 안전관제 시스템 도입 현장과 미도입 현장의 관리자가 지각한 현재 안전관리 실효성이 여섯 통제변수(C)를 조정한 후에도 차이가 있는가이다. 이에 대하여 도입 현장의 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)를 조정한 후에도 미도입 현장보다 높을 것이라는 연구가설 (1-1)을 설정하였다. 가설의 근거는 제2장 제4절에, 분석 절차는 제4장에 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 19,
+    "text": "  본 연구의 목적은 건설현장 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 실증적으로 검증하는 데 있다. 연구 결과가 뒷받침하는 범위에서 시스템의 도입·운용과 후속 연구에 필요한 기초 자료를 제공하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 20,
+    "text": "제 3 절 연구의 범위 및 방법"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 21,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 22,
+    "text": "  공간적 범위. 본 연구의 공간적 범위는 A공사 경기지역본부 산하 건설현장이다. 시스템 도입 현장 30개소 이상과 미도입 현장 30개소 이상, 총 60개소 이상을 조사 대상으로 하며, 현장당 1명씩 총 60명 이상을 모집 목표로 하였다. 실제 분석 표본은 응답 73명(도입 34개소·미도입 39개소, 현장당 1명)이다. 응답자는 도입·미도입 현장 모두 시공사 측 현장소장(관리감독자)·안전관리자와 발주청 측 공사감독·감리원 가운데 담당 현장의 안전관리 업무를 맡은 관리자로 정하였다. 한 기관의 관리 체계 아래 있는 현장끼리 비교하여 발주기관의 관리 방식에서 오는 차이를 줄이고자 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 23,
+    "text": "  시간적 범위. 조사는 시스템을 설치한 뒤인 2026년 10월 12일부터 10월 23일까지 설문으로 1회 실시하였으며, 도입 전에는 조사하지 않았다. 도입 현장은 설치 후 응답일 현재 3개월 이상 정상 운용을 확인한 현장이다. 도입·미도입 현장 모두 안전관리 실효성 문항은 설문 응답일 직전 1개월을 기준으로 평가하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 24,
+    "text": "  내용적 범위. 내용적 범위는 제2절의 연구 문제이다. 안전관리 실효성은 5개 하위요인으로 측정하며, 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식은 제3장에서 시스템 개발의 효과로 보고하였다. 응답자·현장 특성의 차이를 분석에서 감안하기 위해 여섯 통제변수(C)를 두었다. 만 나이와 건설현장 경력(년)은 숫자 그대로 넣는 연속형 통제변수(공변량)이고, 소속·성별·역할·총공사비 4구간은 구분으로 넣는 범주형 통제변수(고정요인)이다. 현장 운영 특성(A-7∼A-9)은 위험을 어떤 경로로 언제 알게 되는지와 지시 전달에 걸리는 시간을 묻는 문항이다. 이 문항은 시스템이 실제로 쓰이고 있는지 확인하고 연구가설 (1-1)의 결과를 해석하는 데 참고하는 과정 지표로 함께 조사하였다. 조사에는 총공사비 120억 원 이상 현장도 포함하였다. 비교 조건 가운데 본 시스템 외의 다른 스마트 안전장비는 조사 대상 전 현장에 없음을 확인하였고, 도입 현장의 운용 설정은 전 현장에 동일하다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 25,
+    "text": "  연구 방법. 연구는 문헌 고찰로 변수와 가설의 근거를 정리하고, 현장 운영 로그로 LLM 2차 검증의 성능을 평가한 뒤, 도입·미도입 현장에 같은 척도를 적용한 자기응답 설문을 통계 분석하는 순서로 진행하였다. 설문 자료는 jamovi 2.7.41로 산출한 공분산분석(ANCOVA)으로 분석하였으며, 여섯 통제변수(C)의 차이를 감안하여 두 집단의 조건을 같게 맞춘 평균(조정 평균)을 도입·미도입 현장 사이에 비교하였다[연구가설 (1-1)]. 척도 검토·결측 처리·가정 점검의 세부 기준은 제4장을 따랐다. 장별 구성은 <표 1-2>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 26,
+    "text": "<표 1-2> 연구의 방법과 장별 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 27,
+    "text": "장내용방법·자료제1장 서론연구의 배경과 필요성(문제 제기), 연구의 목적, 연구의 범위와 방법재해 통계 검토제2장 이론적 배경개념 정의, 시스템의 기술 특성, 안전관리 실효성의 하위요인, 선행연구와 가설 도출 근거문헌 고찰제3장 시스템 개발요구사항, 설계, 구현, 시스템 개발의 효과 분석시스템 개발, 운영 로그 평가, 도입 현장 관리자 인식 조사제4장 연구설계 및 실증분석연구 모형, 가설, 조작적 정의, 설문 설계, 표본, 분석 절차, 조사 대상 특성·기초통계 분석, 가설 검증 결과, 분석결과 및 논의도입·미도입 현장 비교 ANCOVA 설계·분석(jamovi), 설문조사(응답 73명)제5장 결론연구 요약, 시사점, 한계, 향후 연구 방향결과 종합"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 28,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 29,
+    "text": "  본 연구는 본 시스템 전체를 운용하는 현장과 통상 방식으로 안전관리를 하는 현장을 비교하였다. 전체 연구 절차는 <그림 1-1>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 30,
+    "text": "<그림 1-1> 연구의 흐름도"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 31,
+    "text": "그림입니다.\n원본 그림의 이름: figure_1-1_research_flow.png\n원본 그림의 크기: 가로 1772pixel, 세로 2232pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 32,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 33,
+    "text": "  제2장에서는 스마트 안전관리와 AI 영상관제 기술, 시스템 기술 특성, 안전관리 실효성의 선행연구를 고찰해 이론적 근거를 정리하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 34,
+    "text": "제 2 장 이론적 배경"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 35,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 36,
+    "text": "제 1 절 건설산업 스마트 안전관리와 AI 영상관제 기술"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 37,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 38,
+    "text": "제 1 항 개념 및 정의"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 39,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 40,
+    "text": "  스마트 건설 안전관리는 정보통신기술(ICT)과 인공지능(AI)을 건설현장의 위험 감시·통제 업무에 접목하여 재해를 예방하는 관리 방식이다. 이 방식은 안전관리자의 순찰과 육안 점검에 의존하던 종래 방식과 달리, CCTV 영상, 센서, 무선통신을 결합하여 위험 상황을 상시적·자동적으로 감시한다. 국토교통부·국토안전관리원(2024)의 가이드라인은 스마트 안전장비를 「전파법」상 무선설비와 통신이 융합된 복합 시스템으로 정의하고, 개별 무선 안전장비를 안전관리 시스템과 연동하는 통합 안전관리 활용 방안을 제시하였다. 중소규모 현장 테스트베드 연구는 도입 효과와 한계를 함께 분석하였다(김용선, 2022)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 41,
+    "text": "  AI 영상관제는 스마트 건설 안전관리의 한 갈래로, CCTV 등 영상 장비가 수집한 영상을 인공지능이 분석하여 위험 상황을 자동으로 판별하고 관리자에게 알리는 기술이다. 이 기술은 일반적으로 영상 속 객체의 위치와 종류를 찾는 객체 감지와, 감지 결과가 어떤 상황을 뜻하는지 해석하는 문맥 추론으로 구성된다. 객체 감지의 대표 모델인 YOLO(You Only Look Once)는 입력 영상을 한 번 훑어 물체의 위치와 종류를 동시에 알아내는 방식(단일 단계, one-stage 감지 모델)이며, 처리 속도가 빨라 여러 대의 CCTV를 동시에 관제하는 데 적합하다. 문맥 추론에는 이미지 입력을 지원하는 거대언어모델(Large Language Model, 이하 LLM) 등 시각-언어 모델을 결합하는 연구가 보고되고 있다(김현수, 2026; Kim et al., 2025; Wu et al., 2025). 이 모델은 감지된 장면이 어떤 상황인지를 말로 풀어 판단하므로, 모양만 보고 물체를 찾는 객체 감지 모델과 달리, 예를 들어 화면 속 형체가 나무 그림자인지 쓰러진 작업자인지와 같은 문맥적 판별을 가능하게 한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 42,
+    "text": "  산업안전 분야에서 AI 영상관제는 보호구 미착용, 위험구역 내 작업자 체류, 이동 객체 충돌 위험 감지(류수영, 2024)와 건설현장의 추락 관련 위험 객체 탐지(박종학, 2025) 등에 적용되어 왔다. 국내 연구는 주로 YOLO 기반 감지 성능과 관제 시스템 구현을 다루었고, 감지 결과를 문맥으로 다시 검증하는 구조는 관제센터 실험 연구(김현수, 2026) 등에서 다루기 시작하였다. 이처럼 AI 영상관제의 적용 범위는 넓지만, 고가 장비와 전담 인력을 전제하는 구성은 인력·예산이 부족한 중소규모 현장에 그대로 옮기기 어렵다(김용선, 2022)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 43,
+    "text": "  본 논문에서 AI 영상관제 기술은 YOLO-LLM 안전관제 시스템으로 한정하였다. 이 시스템은 기존 CCTV 영상에서 YOLO가 위험해 보이는 장면을 1차로 잡아내고, LLM이 그 장면이 실제 위험한 상황인지 2차로 판단한 뒤 담당자에게 알린다. 실행 환경은 고가의 전용 서버가 아닌 범용 PC이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 44,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 45,
+    "text": "제 2 항 오경보와 경보 피로도"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 46,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 47,
+    "text": "  경보 피로도(alarm fatigue)는 과도하거나 부정확한 경보가 반복될 때 사용자가 경보에 둔감해져 중요한 경보에도 대응을 늦추는 현상이다. Cvach(2012)는 의료 모니터링 알람에 관한 72편의 연구를 검토하여, 경보가 너무 많으면 사용자가 지치고 무뎌져 결국 경보에 반응하지 않게 된다고 정리하였다. 이 과정은 Cry Wolf 효과(양치기 소년 효과)로 설명된다. 허위 경보가 반복되면 경보 시스템에 대한 신뢰가 낮아져 실제 위험 경보도 무시하기 쉽다. Manzey et al.(2014)은 경보 가운데 실제 위험이 차지하는 비율이 낮은 조건에서 참가자 35명 중 16명이 경보의 90% 이상에 응답하지 않았다고 보고하여, 오경보가 잦은 경보 시스템에서 사용자가 경보를 무시하는 행동을 실험으로 확인하였다. 신호감지이론도 놓치는 위험(미탐)과 잘못된 경보(오경보)를 동시에 줄이기는 어렵다는 점을 설명한다(Green & Swets, 1966; Lynn & Barrett, 2014). 따라서 오경보는 단순한 불편이 아니라 경보 신뢰와 실제 대응을 약화하는 안전관리상의 위험 요인이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 48,
+    "text": "  선행연구는 경보 품질을 높여 이 부담을 줄이는 방안을 제시하였다. Cvach(2012)는 짧은 지연, 여러 신호를 함께 보고 울리는 스마트 알람(다중 매개변수 기반), 신호 필터링 등이 허위 경보를 줄일 수 있다고 종합하고, 사용자가 인식한 알람 신뢰도가 대응률과 연결된다고 보았다. 국내에서는 김현수(2026)가 통합관제센터 실험에서 YOLO-VLM 하이브리드 구조 적용 후 오탐이 35∼40% 감소하였고, 관제요원 정성 분석에서 \"오탐이 줄어 경보 스트레스가 감소했다\"는 피드백을 얻었다고 보고하였다. 다만 의료·관제센터 연구의 결과를 건설현장에 그대로 일반화할 수는 없으며, 건설현장 관리자의 경보 피로도 완화와 안전관리 실효성의 관계를 직접 검증한 연구도 충분하지 않다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 49,
+    "text": "  본 연구는 경보 피로도를 2차 검증(LLM) 오탐 필터링의 이론적 배경으로 삼았다. 2차 문맥 검증이 자연 배경이나 정상 작업에서 생긴 오탐을 걸러 불필요한 확인을 줄이면, 담당자가 실제 위험 경보에 집중할 수 있다는 설명이 여기서 나온다. 경보 피로도 문항은 도입 현장 관리자의 인식 조사로 제3장 제4절 제5항에서 보고하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 50,
+    "text": "제 2 절 YOLO-LLM 안전관제 시스템의 기술 특성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 51,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 52,
+    "text": "  본 절은 YOLO-LLM 안전관제 시스템의 네 기술 특성을 고찰하며, 그 선정 근거는 두 이론이다. 첫째는 기술수용모델(Technology Acceptance Model, 이하 TAM)이다. Davis(1989)는 사용자가 새 기술을 받아들이는지가 '이 기술이 내 일에 도움이 된다'는 믿음(지각된 유용성, Perceived Usefulness, 이하 PU)과 '이 기술은 쓰기 쉽다'는 믿음(지각된 사용 용이성, Perceived Ease of Use, 이하 PEOU) 두 가지로 정해진다고 보았다. PU는 \"특정 시스템의 사용이 자신의 직무 성과를 향상시킬 것이라고 믿는 정도\", PEOU는 \"특정 시스템을 사용하는 데 노력이 들지 않을 것이라고 믿는 정도\"로 정의된다(Davis, 1989). 이 틀에 따라 본 연구는 인프라 범용성(A1)과 알림 전파 즉각성(A4)을 도입·사용의 수월성(PEOU)에, 탐지·제어 안정성(A2)과 오탐 필터링(A3)을 직무 성과 기여(PU)에 대응시켰다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 53,
+    "text": "  둘째는 신호감지이론(Signal Detection Theory, 이하 SDT)이다. Green과 Swets(1966)는 실제 위험(신호)과 위험이 아닌 상황(잡음)의 구별이 어려울 때, 관찰자가 '어디서부터 위험으로 볼 것인가'라는 판단 기준을 어디에 두느냐에 따라 위험을 맞히는 비율(적중률)과 잘못 경보하는 비율(오경보율)이 함께 정해진다고 설명하였다. Stanislaw와 Todorov(1999)는 이를 두 분포 그래프로 정리하였는데, 신호·잡음 분포에서 판단 기준을 넘는 면적이 각각 적중률과 오경보율이다. 기준을 엄격하게 옮기면 오경보는 줄지만 놓치는 위험(미탐)이 늘고, 느슨하게 옮기면 그 반대가 된다. 이 상충 때문에 AI 영상관제의 1차 탐지와 2차 검증의 오류를 각각 평가할 필요가 있다. 또한 탐지·검증 결과가 관리자에게 도달하지 못하면 관제 효과가 없으므로 전달과 설치·운용 기반도 함께 검토하였다. 네 영역은 관련 연구에서 대표적으로 다루는지, 현장 관리자가 이해할 수 있는지, 기능 설명이 겹치지 않는지, 중소규모 건설현장에 적합한지를 기준으로 정하였다. 네 특성은 제3장의 구현 설명과 도입 현장용 시스템 경험 척도(제4장 Part C)의 근거로 사용하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 54,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 55,
+    "text": "제 1 항 시스템 인프라 범용성(A1)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 56,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 57,
+    "text": "  본 연구는 시스템 인프라 범용성을 고가의 AI 전용 서버 없이 일반 PC에서 구동되고, 제조사가 다른 기존 ONVIF 표준 호환 IP 카메라·통신망과 연동되는 특성으로 정의하였다. 이 특성은 도입 문턱을 낮추어 기술을 받아들이기 쉽게 하므로 쓰기 쉬운 쪽(PEOU)의 속성에 해당한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 58,
+    "text": "  선행연구는 기존 인프라 재활용과 저비용 구동을 중소규모 현장 도입의 주요 조건으로 다루었다. 류수영(2024)은 사업장에 이미 설치된 CCTV 영상을 객체 탐지 학습 자료로 활용하였으며, 관제 시스템 구현에는 카메라를 추가로 설치하였다. 국토교통부·국토안전관리원(2024)의 가이드라인은 LTE·저용량(LoRa) 등 일반 통신망의 월간 통신비를 참고 단가로 제시하였다. 중소 건설현장의 비용·지원 제약과 고가 인프라 부담 완화는 스마트 건설안전기술 확산의 선결 과제로 제시되었다(김용선, 2022; 이준호, 2024)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 59,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 60,
+    "text": "제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 61,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 62,
+    "text": "  1차 탐지 및 제어 안정성은 두 가지로 정의하였다. 하나는 YOLO 모델이 위험한 물체·행동을 놓치지 않도록 감지하는 것이고, 다른 하나는 같은 경보의 반복을 억제하는 장치 등을 두어 알림이 한꺼번에 몰리거나 통신 상태가 나쁠 때에도 시스템이 멈추지 않고 동작하는 것이다. 이 특성은 관제의 기본 성능을 좌우하므로 일에 도움이 되는 쪽(PU)의 속성에 해당한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 63,
+    "text": "  선행연구는 탐지 성능과 관제 시스템의 처리 구조를 다루었다. 박종학(2025)은 YOLO 모델별 비교에서 YOLOv8n의 mAP50(mean Average Precision; 탐지 상자와 정답 상자의 겹친 영역 비율(IoU)이 0.5 이상이면 맞은 탐지로 보아 계산한 평균 정밀도) 0.906과 주요 객체 탐지 정확도 0.9 이상으로 실시간 경고에 적합한 탐지 신뢰도를 보고하였다. 류수영(2024)은 겹친 영역 비율 기준을 0.25로 낮추고(IoU 0.25) 자료를 여러 번 나누어 검증한(K-fold 교차검증) 조건에서 객체 검출 성능 99%와 시나리오별 상황인식 성능 65.61∼100%를 보고하고, 객체 검출·관제 처리에 멀티프로세싱을 구현하였다. 이 수치는 평가 조건이 달라 mAP50과 직접 비교할 수 없다. Mi(2025)는 개인보호구(PPE) 탐지·작업 자세 인식 모델에서 PPE 탐지 mAP50=0.980을 보고하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 64,
+    "text": "  제어 안정성의 개념적 근거는 제1절 제2항의 Cvach(2012) 경보 지연 기법이며, 불필요한 경보를 사전 지연으로 줄이는 관점을 반복 통지 제어에 참고하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 65,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 66,
+    "text": "제 3 항 2차 검증(LLM) 오탐 필터링(A3)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 67,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 68,
+    "text": "  2차 검증 오탐 필터링은 LLM이 1차 감지 프레임 이미지의 맥락(나뭇가지·그림자·반사 같은 자연 배경, 정상 작업 동작 등)을 추론하여 가짜 위험을 걸러내는 특성으로 정의하였으며, 경보 품질을 좌우하는 핵심 요소이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 69,
+    "text": "  선행연구는 시각-언어 모델을 결합한 탐지 성능 개선과 후단 검증의 오탐 감소를 서로 다른 구조에서 보고하였다. Kim et al.(2025)은 Florence2의 맥락 검증으로 YOLO의 신뢰도 임계값을 조정하는 구조로 YOLOv8s 단독(F1=0.863) 대비 통합 구조(F1=0.8895)의 성능 향상을 보고하였고, 본 연구는 이를 문맥 검증의 간접 근거로 참고하였다. Wu et al.(2025)의 MonitorVLM이 보고한 정밀도 22.01%·재현율 34.22% 개선은 범용 기초모델(72B)을 광산 안전 자료로 추가 학습(도메인 파인튜닝)시킨 모델이 기초모델보다 나아진 비율(상대증가율)이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 70,
+    "text": "  국내에서는 YOLO 1차 감지를 VLM(시각-언어 모델)이 2차 검증하는 Trigger-Validator 구조로 오탐을 35∼40% 줄인 통합관제센터 실험이 보고되었고(김현수, 2026), 안전인지 프레임워크 연구는 영상 상황 이해 기능과 LLM의 할루시네이션(사실과 다른 내용을 지어내는 일)을 줄이는 RAG(관련 자료를 찾아 함께 보여 주는 기법)를 결합해 YOLO 단일 탐지의 한계를 보완하는 설계를 제시하였다(김태헌, 2026). 한편 2차 검증은 실제 위험 후보도 차단할 수 있으므로 오경보 감소와 위험 경보 손실을 함께 평가해야 하며, 이 조건부 성능(YOLO가 먼저 잡아낸 후보 기준)은 제3장에서 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 71,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 72,
+    "text": "제 4 항 알림 전파 즉각성(A4)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 73,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 74,
+    "text": "  알림 전파 즉각성은 위험 상황의 자연어 요약과 감지 이미지가 위험 확정 시점부터 짧은 지연으로 관리자의 모바일 기기에 능동적으로 전달되어, 별도 관제 화면 없이도 상황 파악과 초동 지시가 가능하도록 하는 특성으로 정의하였다. 이 특성은 어떤 메신저를 쓰느냐와 관계없이 '경보가 담당자에게 바로 가 닿는가'에 관한 것으로, 전달 단계의 속성이다. 감지하고 검증한 정보를 실제 대응 행동으로 이어 주는 마지막 고리이며 시스템을 쓰기 쉽게 만드는 요소이므로, 쓰기 쉬운 쪽(PEOU)의 시스템 속성에 해당한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 75,
+    "text": "  선행연구는 모바일 즉시 알림과 자연어 전달의 효용을 제시하였다. 이창남(2025)은 드론·AIoT 융합 안전관리 모니터링 시스템(CSMMS)에서 가상펜스 침입·화재·안전모 미착용 등의 이벤트를 스마트폰 화면으로 즉시 송출하는 구조를 구축하였다. 비디오 캡셔닝 연구는 위험 단서·작업자·도구의 관계를 담은 한국어 캡션을 실시간으로 자동 생성하였다(이석희 외, 2025). 또한 VLM이 위험 상황과 관련 법규를 요약한 보고서를 관리자에게 자동 전송하는 구조도 제시되었다(김태헌, 2026)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 76,
+    "text": "  기술 수용 관점에서 본 연구는 사용 수월성이 스마트 안전장비 수용과 관련된다는 연구(이동건, 2024; Chong et al., 2023)를 담당자가 평소 쓰는 모바일 단말로 경보를 받는 전달 방식의 근거로 응용하였다. 해당 연구는 휴대·착용 기기의 사용 수월성과 수용의 관계를 다루었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 77,
+    "text": "  이상에서 고찰한 기술 특성별 선행연구를 요약하면 <표 2-1>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 78,
+    "text": "<표 2-1> 시스템 기술 특성 관련 선행연구 요약"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 79,
+    "text": "기술 특성선행연구(연구자, 연도)핵심 결과시스템 인프라 범용성류수영(2024)기설치 CCTV 영상을 학습에 활용, 추가 카메라로 관제 시스템 구현국토교통부·국토안전관리원(2024)일반 통신망(LTE·LoRa) 월간 통신비 참고 단가이준호(2024); 김용선(2022)중소 건설현장의 비용·지원 제약과 저비용 장비 도입 필요성1차 탐지·제어 안정성박종학(2025)YOLOv8n mAP50=0.906, F1=0.91, 실시간 경고 적합성류수영(2024)IoU 0.25·K-fold 조건의 검출 성능 99%, 객체 검출·관제 멀티프로세싱 구현Mi(2025)PPE 탐지 모델 mAP50=0.980(자세 인식 정확도와 구별)Cvach(2012)의료 경보의 짧은 사전 지연으로 불필요한 경보 감소2차 검증 오탐 필터링의 관련·간접 근거Kim et al.(2025)VLM 기반 동적 임계값 조정으로 F1 0.863→0.8895(오경보는 증가)Wu et al.(2025)72B 기초모델의 도메인 파인튜닝: 정밀도 73.33→89.47%, 재현율 61.11→82.02%김현수(2026); 김태헌(2026)Trigger-Validator 구조로 오탐 35∼40% 감소; 문맥 이해·할루시네이션 억제 설계알림 전파 즉각성이창남(2025)스마트폰 즉시 송출 모니터링 구조 구축이석희 외(2025)위험 상황 한국어 캡션 실시간 자동 생성(평균 79.5ms)이동건(2024); Chong et al.(2023)노력기대·PEOU와 수용의도 관련성; Chong의 스마트 안전모 PEOU는 비유의"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 80,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 81,
+    "text": "  표에서 보듯 네 특성의 근거는 탐지 성능, 경보 품질, 전달 방식, 수용 조건의 서로 다른 연구군에서 나온다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 82,
+    "text": "제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 83,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 84,
+    "text": "  개념 및 정의"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 85,
+    "text": "  안전관리 실효성은 건설현장이 위험을 적시에 파악하고 신속하게 대응하여 현장의 위험을 통제하는 능력이 실제 안전관리 업무에서 발휘되는 정도를 말한다. 본 연구는 안전관리 실효성을 종속변수로 설정하여 YOLO-LLM 안전관제 시스템 도입 현장과 미도입 현장의 차이를 검증하였다. 본 연구는 이를 현장 관리자가 보기에 자기 현장의 안전관리 업무가 현재 실제로 어느 정도 이루어지고 있는가, 즉 관리자가 지각한 현재 안전관리 업무의 실질적 수행 수준으로 정의하였다. 도입·미도입 현장을 비교하기 위해 이 수준은 특정 시스템의 사용 경험과 무관하게 정의하며, 도입·미도입 현장 관리자 모두 자기 현장을 같은 기준으로 평가하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 86,
+    "text": "  본 연구는 안전관리 실효성을 '업무 성과'의 하나로 구성하였다. 이때 기술이 일에 도움이 된다는 믿음(TAM의 지각된 유용성)이 다루는 업무 성과 기대를 참고하였다(Davis, 1989). 안전관리 실효성은 조기인지, 대응 신속성, 원격 파악, 순찰부담 경감, 위험 통제력의 다섯 하위요인으로 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 87,
+    "text": "  현장 작동성은 위험 신호가 담당자의 확인·판단·조치로 실제로 이어지는지를 통해 안전관리 실효성을 설명하는 관점이다(제1장 제1절). YOLO-LLM 안전관제 시스템은 문맥 검증을 거친 위험 정보를 담당자에게 전달하여 조기인지와 원격 파악을 지원하고, 불필요한 확인 부담(제1절 제2항)을 줄여 대응과 위험 통제에 집중하도록 도울 수 있다. 알림 전달 이후에는 담당자가 현장 여건에 따라 위험을 확인하고 판단하여 조치를 수행한다. 이 과정의 위험 인지 경로·시점과 지시 소요시간은 사실 문항 A-7∼A-9로 도입·미도입 현장에서 함께 확인하였다(제4장 제3절). 각 시스템 기능과 하위요인의 대응 관계는 <표 2-2>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 88,
+    "text": "<표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 하위요인 연결"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 89,
+    "text": "시스템 기능(기술 특성)담당자의 확인·판단·조치관련 B문항(하위요인)확인 자료(기술·설문)본 연구의 검증 범위설치·운용 기반(기존 카메라·범용 PC 재사용)영상 수신·알림 가동 상태 확인, 중단·장애 시 복구 요청직접 대응 문항 없음(아래 기능의 전제)시스템 설치·운용 구성 설명, C-1·C-2(도입 현장 참고)기존 카메라·범용 PC의 연결과 운용 구성 설명탐지·제어(YOLO 후보 탐지, 확인 필터·반복 알림 억제)위험 후보 경보의 인지, 반복 경보의 동일 사건 여부 판단B-1(조기인지)제3장 후보 알림 로그와 탐지·반복 알림 억제 구성 설명, C-3·C-4접근 위험 2종의 1차 탐지 후보 로그 평가문맥 검증(LLM 발송·차단, 교정 샘플)발송된 경보 위주의 위험 판단, 불필요한 확인의 감소, 오판 교정 등록B-6(순찰부담 경감)<표 3-7>·<표 3-8>의 조건부 필터 성능, C-5·C-6, 경보 피로도 문항(참고)YOLO가 먼저 잡은 후보만 대상, 개발자 1인의 비눈가림 라벨, 실제 위험 경보 손실 포함전달(이미지·요약 모바일 알림, 수신자 라우팅)현장 부재 중 상황 파악과 공유, 초동 지시, 시정·작업중지 조치B-3·B-4(원격 파악), B-5(순찰부담 경감), B-2(대응 신속성), B-7·B-8(위험 통제력)경보 전달 구조와 응답자의 확인 경험, C-7·C-8, A-7∼A-9(위험 인지 경로·시점·지시 소요시간)B문항 총점의 도입·미도입 현장 간 차이는 제4장 제7절 연구가설 (1-1) 분석, 다섯 하위요인별 차이는 제4장 제7절 하위요인별 분석에서 비교"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 90,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 91,
+    "text": "  "
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 92,
+    "text": "기술 자료는 YOLO가 먼저 잡아낸 후보에 대한 탐지·문맥 검증 성능, 즉 1차가 놓친 위험을 제외한 조건부 성능을 제시한다. 이 연결표는 제4장 제8절에서 하위요인별 결과를 해석할 때 어떤 기능과 자료를 함께 검토해야 하는지 정하는 기준으로 사용하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 93,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 94,
+    "text": "  국내·외 선행연구"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 95,
+    "text": "  국내 선행연구는 스마트 안전기술 활용과 안전관리 성과의 관련성을 서로 다른 수준에서 보고하였다. 개인·조직 성과 수준에서 황병복(2026)은 철도 건설현장 종사자를 대상으로 스마트 건설기술의 특성과 활용이 안전성과로 이어지는 경로를 분석하였으며, 조직 안전성 0.881과 개인 안전성 0.814의 설명력을 보고하였다. 관제 업무 수준에서는 김현수(2026)가 YOLO-VLM 하이브리드 관제 구조를 적용한 뒤 사건 검토 시간이 평균 43% 단축되고 잘못된 경보에 따른 출동이나 조치가 약 40% 감소한 결과를 제시하였다. 현장 비교 수준에서는 스마트 안전장비의 성능과 도입 효과를 분석한 연구가 13개 중소규모 현장의 적용 결과와 일반 현장의 재해율을 비교하여 적용 현장의 사고예방 가능성을 보고하였다(류정·박인선, 2025). 국외 연구는 건설안전 웨어러블 기기의 채택 의도를 다루었다(Chong et al., 2023). 다만 이들 연구는 기술 성능, 채택 의도, 조직 성과에 집중하였으며, 도입 현장과 미도입 현장의 안전관리 실효성을 하위요인별 공통 척도로 비교하지는 않았다. 이러한 결과에 비추어 안전관리 실효성은 단일 기술 성능이 아니라 인지·대응·원격 관리·업무 부담·통제를 포괄하는 직무 성과로 측정할 필요가 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 96,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 97,
+    "text": "제 1 항 조기인지"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 98,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 99,
+    "text": "  조기인지는 위험 징후를 사고로 이어지기 전에 발견하는 능력이다. 본 연구에서는 현장 관리자가 지각한 자기 현장의 위험 상황 조기 인지 수준으로 한정하며, 특정 시스템의 탐지 성능과 구별하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 100,
+    "text": "  김현수(2026)가 보고한 사건 검토 시간 평균 43% 단축은 관리자가 위험 후보를 더 일찍 확인할 여건과 관련되므로, 본 연구는 이를 조기인지의 근거로 해석하였다. 국외의 시각-언어 결합 검증 연구(Kim et al., 2025; Wu et al., 2025)는 그 기술적 조건을 제시하였다. 본 연구는 관제센터와 화재·광산 영역에서 보고한 기술 지표를 위험 후보 확인의 기술적 근거로 참고하였다. 건설안전의 적시성 틀에서 Teizer(2016, 제3.2절)는 피해를 예방하는 데 필요한 시점에 위험 정보를 확보하는 것을 강조하였다. 본 연구는 이 '위험을 미리 알아차린다'는 관점을 관리자가 자기 현장을 스스로 평가하는 문항으로 바꾸어 측정하였다(조작화)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 101,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 102,
+    "text": "제 2 항 대응 신속성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 103,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 104,
+    "text": "  대응 신속성은 위험을 확인한 뒤 현장 지시와 조치를 빠르게 수행하는 능력이다. 본 연구에서는 위험 상황을 인지한 뒤 초동 대응을 지시하기까지의 신속성으로 한정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 105,
+    "text": "  김현수(2026)의 잘못된 경보에 따른 출동이나 조치 약 40% 감소는 실제 위험 대응에 시간을 배분할 여건과, 이창남(2025)의 스마트폰 즉시 송출은 인지에서 지시로 넘어가는 시간을 줄이는 전달 조건과 관련된다. 국외에서는 Teizer(2016, 제3.2절)가 안전관리 선행지표에 문제를 처리하는 데 걸리는 시간을 포함하였다. 본 연구는 대응의 시간적 측면을 참고하여 초동 지시 신속성을 묻는 자기보고 문항 B-2를 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 106,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 107,
+    "text": "제 3 항 원격 파악"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 108,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 109,
+    "text": "  원격 파악은 관리자가 현장에 직접 가지 않고도 위험 상황을 확인하고, 위험 정보와 조치 필요사항을 공유하는 능력이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 110,
+    "text": "  드론·AIoT 모니터링의 원격 위험 인지 가능성(이창남, 2025)과 CCTV 다중 카메라 영상의 실시간 모니터링(류수영, 2024)는 원격 파악의 근거가 된다. 국외의 ConstructAI는 카메라·드론 영상을 클라우드에서 분석하여 위험 위치와 시정 요구를 보고하는 구조를 제시하였다(Zhang et al., 2026, pp. 40170–40171). 이러한 자료는 현장 영상으로 위험을 파악하고 조치 정보를 전달할 수 있다는 기술적 근거이다. 본 연구는 이 영상·보고 구조를 관리자가 지각한 원격 파악의 문항 구성에 참고하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 111,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 112,
+    "text": "제 4 항 순찰부담 경감"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 113,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 114,
+    "text": "  순찰부담 경감은 원격 확인 등을 활용하여 반복 순찰과 불필요한 확인에 드는 시간과 노력을 아끼면서 순찰·확인 업무를 효율적으로 수행한다고 관리자가 평가하는 수준이다. 이 하위요인은 제한된 인력으로 순찰·확인 업무를 수행하는 측면과, 불필요한 확인 업무에 쫓기지 않고 실제 위험 대응에 집중하는 측면을 함께 포함한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 115,
+    "text": "  원격 모니터링은 관리자의 직접 순찰 의존도와 시간·체력 부담을 줄일 수 있고(이창남, 2025), 중소규모 현장의 인력 부족은 이 부담을 키운다(김용선, 2022). 불필요한 확인 부담은 제1절 제2항의 경보 피로도와 연결되며, 오탐·불필요 출동 감소(김현수, 2026)와 허위 경보 감소 기법(Cvach, 2012)은 오탐 억제가 확인 업무의 부담을 줄일 수 있음을 시사한다. 국외의 Zhang et al.(2026, p. 40172, Table 1)은 건설현장 AI 관제 도입 전후의 점검 노동시간과 점검 범위를 비교하여 보고하였다. 본 연구는 이 점검 업무 자원 변화의 관점을 참고하여 관리자가 지각한 순찰·확인 부담을 문항으로 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 116,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 117,
+    "text": "제 5 항 위험 통제력"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 118,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 119,
+    "text": "  위험 통제력은 확인한 위험에 시정·작업중지 등 적절한 조치를 내려 사고로 이어질 수 있는 위험요인을 실질적으로 관리하는 능력이다. 본 연구에서는 현장이 필요한 통제 조치를 신속하게 시행하고 위험요인을 실질적으로 통제한다고 관리자가 지각하는 수준으로 한정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 120,
+    "text": "  황병복(2026)의 조직·개인 안전성과와 류정·박인선(2025)의 적용·일반 현장 재해율 대비는 위험 통제의 결과 측면을 보여주는 간접 근거이다. 미국 산업안전보건청(OSHA, 연도 미상)은 위험 통제를 대책의 선정·실행과 효과 확인으로 구체화하고, 실행 권한이 있는 담당자와 완료 기한을 정하도록 제시한다. 본 연구는 이 '대책을 실행하고 효과를 확인한다'는 관점을 현장 관리자가 스스로 평가하는 문항으로 바꾸어(조작화) 위험 통제력 문항을 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 121,
+    "text": "  이상의 하위요인별 정의와 선행연구를 정리하면 <표 2-3>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 122,
+    "text": "<표 2-3> 안전관리 실효성 하위요인과 관련 선행연구"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 123,
+    "text": "하위요인본 연구의 정의관련 선행연구문항 구성에 활용한 근거조기인지위험 징후를 사고 전에 발견한다고 지각하는 수준김현수(2026); Kim et al.(2025); Wu et al.(2025)적시 위험 인지의 개념적 근거(Teizer, 2016)와 기술적 간접 근거대응 신속성위험 인지 후 초동 대응을 빠르게 지시한다고 지각하는 수준김현수(2026); 이창남(2025)문제 처리 시간의 개념적 근거(Teizer, 2016)원격 파악현장 밖에서도 위험 상황을 파악·공유한다고 지각하는 수준이창남(2025); 류수영(2024)국내 모니터링 연구와 국외 ConstructAI의 영상·보고 구조(Zhang et al., 2026)순찰부담 경감순찰·확인 업무를 효율적으로 수행하고 실제 위험에 집중한다고 지각하는 수준이창남(2025); 김용선(2022); 김현수(2026); Cvach(2012)국외 점검 노동시간 비교(Zhang et al., 2026) 및 의료 경보 연구의 간접 근거위험 통제력통제 조치를 시행해 위험요인을 실질적으로 통제한다고 지각하는 수준황병복(2026); 류정·박인선(2025)위험 대책의 실행·효과 확인(OSHA, 연도 미상)과 결과 지표의 간접 근거"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 124,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 125,
+    "text": "  표에서 보듯 다섯 하위요인의 근거는 대부분 관제 기술이나 모니터링 체계를 다룬 간접 근거이며, 관리자가 지각한 업무 수준을 하위요인별로 직접 측정한 선행연구는 부족하다. 이 공백은 본 연구가 도입 현장과 미도입 현장의 하위요인을 공통 척도로 비교하는 이유이면서, 직접 개발한 측정도구의 타당성을 별도로 검증해야 하는 이유이기도 하다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 126,
+    "text": "제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 127,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 128,
+    "text": "  본 절은 현장에서 스마트 안전기술을 활용한 결과를 다룬 선행연구를 검토하여 제4장 연구가설의 도출 근거를 정리하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 129,
+    "text": "  본 연구의 차별성은 탐지 기술의 새로움에만 있지 않고, 중소규모 현장의 위험 신호가 확인과 대응으로 이어지는 현장 작동성의 관점에서 시스템 개발과 안전관리 실효성 비교를 연결하는 데 있다. 본 연구는 같은 기관 산하 도입·미도입 현장에 같은 설문을 적용하고, 조사한 응답자·현장 특성의 차이를 분석에서 감안하였다(<표 2-4>)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 130,
+    "text": "<표 2-4> 선행연구와 본 연구의 차별성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 131,
+    "text": "구분기존 선행연구본 연구기술과 운용단일 탐지·개별 장비 및 일부 YOLO-LLM/VLM 하이브리드 연구기존 인프라에서 후보 탐지·문맥 검증·담당자 전달을 연결비교와 측정탐지 정확도·채택 의도·관제 효율 및 일부 적용·일반 현장 비교동일 기관 산하 도입·미도입 현장의 현재 지각된 안전관리 실효성을 공통 8문항으로 측정분석과 해석기술 성능 평가·수용 관계 분석 및 현장 비교여섯 통제변수(C)를 조정한 ANCOVA 도입·미도입 현장 비교"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 132,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 133,
+    "text": "  제3절에서 검토한 국내 연구는 기술 활용이 안전관리 업무와 관련될 가능성을 제시하여 현장 비교의 필요성을 뒷받침한다(황병복, 2026; 이창남, 2025; 김현수, 2026; 류정·박인선, 2025). 본 연구는 이러한 관련성을 현장 관리자가 지각한 안전관리 실효성의 집단 간 비교로 구체화하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 134,
+    "text": "  국외 연구는 주로 기술을 받아들이려는 의도를 다루었다(Chong et al., 2023). 그러나 기술을 받아들이려는 마음이 곧 실제로 일이 더 잘 되는 것을 뜻하지는 않는다. 그래서 본 연구는 도입 현장 관리자가 위험을 더 일찍 파악하고 대응할 여건을 갖추었는지를 두 집단에 같은 설문으로 비교할 필요가 있다고 보았다. 선행연구와 가설의 연결은 <표 2-5>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 135,
+    "text": "<표 2-5> 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 136,
+    "text": "선행연구(연구자, 연도)연구 대상·관점주요 결과본 연구에 대한 시사점황병복(2026)철도 건설현장의 스마트 건설기술 활용기술 활용과 조직·개인 안전성과의 관계 확인현장 도입 여부와 현재 지각된 안전관리 실효성의 비교 근거[연구가설 (1-1)]이창남(2025)드론·AIoT 원격 모니터링원격 위험 확인과 순찰 부담 경감 가능성 제시원격 파악·순찰부담 경감 하위요인의 근거[연구가설 (1-1)]김현수(2026)YOLO-VLM 하이브리드 관제 실험오탐 감소, 검토 시간 단축, 불필요 출동 감소조기인지·대응 신속성의 근거[연구가설 (1-1)]류정·박인선(2025)13개 중소규모 적용 현장일반 현장과 대비한 사고예방 가능성 보고도입·미도입 비교 필요성[연구가설 (1-1)]이동건(2024)건설근로자의 스마트 안전장비 수용성과기대·노력기대 등과 수용의도의 관계 확인기술 수용의도 형성 근거(실제 관리성과와 구별)Chong et al.(2023)건설안전 웨어러블 기기 채택기기별 PU·PEOU 등과 채택 의도의 관계 분석기술 활용의 수용 기반 근거"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 137,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 138,
+    "text": "  이들 연구는 도입 조건, 관제 업무와 관리 성과를 서로 다른 수준에서 설명하였다. 이에 따라 본 연구는 현장당 관리자 1명을 조사하였다. 분석에서는 만 나이·건설현장 경력(숫자 그대로)과 소속·성별·역할·총공사비 구간의 차이를 감안하였다. 그 뒤 YOLO-LLM 안전관제 시스템 도입 현장 관리자가 지각한 현재 안전관리 실효성이 미도입 현장 관리자가 지각한 실효성보다 높은지를 제4장의 연구가설 (1-1)로 설정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 139,
+    "text": "제 5 절 소결"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 140,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 141,
+    "text": "  본 장은 YOLO-LLM 안전관제 시스템과 안전관리 실효성의 개념과 선행연구를 정리하였다. 제1절은 본 논문의 AI 영상관제를 범용 PC 기반 YOLO-LLM 안전관제 시스템으로 한정하고 경보 피로도를 2차 검증의 이론적 배경으로 두었으며, 제2절은 TAM과 SDT를 해석 근거로 네 기술 특성(A1∼A4)을 고찰하였다. 제3절은 종속변수인 안전관리 실효성을 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 다섯 하위요인으로 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 142,
+    "text": "  제4절은 현장에서 스마트 안전기술을 활용한 결과를 다룬 선행연구를 검토하였다. 선행연구는 기술 활용과 안전성과·직무 수행의 관련성을 제시하지만, 탐지 정확도나 수용의도만으로 안전관리 실효성을 판단하기는 어렵다. 이에 연구가설 (1-1)은 도입·미도입 현장의 현재 지각된 안전관리 실효성을 공통 척도로 비교하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 143,
+    "text": "  다음 제3장에서는 이 이론적 근거에 대응하는 시스템 요구사항과 관련 기술 선행연구, 구조와 구현, 그리고 실제 운영 기록으로 YOLO가 먼저 잡아낸 장면에 대한 LLM 필터 성능을 평가한 결과를 제시하였다. 제4장에서는 현장 도입 여부, 공통 측정도구 검토와 공분산분석 절차를 구체화하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 144,
+    "text": "제 3 장 YOLO-LLM 안전관제 시스템 개발"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 145,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 146,
+    "text": "제 1 절 시스템 개발 방향 및 요구사항"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 147,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 148,
+    "text": "제 1 항 시스템 개발 개요"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 149,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 150,
+    "text": "  본 연구가 개발한 시스템은 범용 PC 위에서 구동되는 YOLO-LLM 안전관제 시스템이다. 전담 안전관리자와 예산·데이터를 갖추기 어려운 중소규모 건설현장이 이미 설치된 CCTV 인프라만으로 실시간 위험을 감지하고 신뢰할 수 있는 경보를 받도록 하는 것이 개발의 궁극적 목적이다. 이를 위해 본 연구에서는 고가의 전용 AI 서버나 현장별 재학습을 요구하지 않고, 일반 사무용 PC 한 대와 기존 ONVIF 카메라, 그리고 인터넷으로 호출해 쓰는 상용 거대언어모델(LLM) 서비스(API)만으로 동작하는 데스크톱 응용 프로그램을 설계하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 151,
+    "text": "  개발의 방향은 \"많이 잡되 정확히 거른다\"는 두 단계 분업으로 요약할 수 있다. 단일 인공지능 모델은 위험에 민감하게 설정하면 오탐(실제 위험이 아닌데 경보한 것, false positive)이 폭증하고, 오탐을 줄이려 둔감하게 설정하면 미탐(실제 위험을 놓친 것, false negative)이 늘어난다. 단일 모델은 이 상쇄(trade-off) 관계에서 벗어나지 못하므로, 본 시스템은 서로 다른 기준을 가진 두 단계를 결합하여 이 관계의 개선을 목표로 하였다. 1차 단계는 놓침을 최소화하도록 민감도(sensitivity)를 극대화하고, 2차 단계는 잘못된 경보를 걸러내도록 특이도(specificity)를 극대화하였다. 이러한 역할 분리는 결정 기준값(criterion)의 위치에 따라 적중(hit)과 오경보(false alarm)가 상쇄된다는 신호감지이론(SDT)에 근거한다(제2장 제2절 참조). 다만 1차를 통과한 후보만 2차에서 거르는 구조(직렬 필터)에서는 2차가 실제 위험까지 걸러 버릴 수 있다. 따라서 SDT에 근거해 설계하였다는 사실만으로 위험을 놓치지 않으면서(민감도) 오경보도 줄인다고(특이도) 볼 수는 없다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 152,
+    "text": "  개발 전략은 세 가지 원칙으로 구체화하였다. 첫째, 저비용 원칙이다. 본 시스템은 기존 ONVIF 카메라와 범용 PC를 재활용하여 추가 장비 도입 부담을 줄이는 것을 목표로 하였다. 둘째, 무학습 적응 원칙이다. 현장마다 라벨 데이터를 구축하고 모델을 미세조정(fine-tuning)하는 대신, LLM에 판단 지침(프롬프트)과 사용자가 바로잡아 준 사례 몇 건을 함께 보여 주는 것만으로 현장에 맞추었다. 이는 LLM이 예시 몇 개만 보고도 그에 맞추어 판단하는 능력(맥락 내 학습, In-context Learning)을 활용한 것이다. 셋째, 사용자 검증 가능성 원칙이다. 현장 사용자가 판정의 타당성을 직접 확인하고 교정할 수 있도록 2차 검증 결과와 한국어 자연어 사유를 함께 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 153,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 154,
+    "text": "제 2 항 현장 요구사항"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 155,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 156,
+    "text": "  본 연구는 중소규모 건설현장의 구조적 제약을 다음 네 가지로 보고, 이에 근거하여 시스템 요구사항을 도출하였다. 첫째, 전담 안전관리자를 두기 어렵다(김석기, 2026; 윤영석, 2026). 둘째, 안전 예산이 제한되어 고가 장비를 도입하기 어렵다. 셋째, 이미 설치된 CCTV가 노후 ONVIF 카메라 수준에 머물러 있다. 넷째, 현장별 위험 상황의 학습용 라벨 데이터 확보가 제약될 수 있다. Chen과 Zou(2026)는 건설안전 점검용 VLM을 평가·미세조정할 공개 데이터셋의 부족을 지적하고 건설현장 이미지 데이터셋을 구축하였다. 이 연구에서 제시한 건설안전 영상의 데이터 확보 문제를 참고하여, 예산·인력과 현장별 라벨 데이터 확보 여건을 함께 고려한 시스템 요구사항을 설정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 157,
+    "text": "  본 연구는 이러한 제약에 대응할 다섯 가지 핵심 요구사항을 설정하였다. 요구사항은 일반 사무용 PC에서 구동될 것(R1), 기존 ONVIF IP 카메라의 RTSP 스트림을 처리할 것(R2), 현장별 재학습 없이 현장 적응이 가능할 것(R3), 위험 누락을 함께 점검하면서 후보 오경보를 줄일 것(R4), 프레임 처리와 경보 전달의 적시성을 확보할 것(R5)이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 158,
+    "text": "  이 가운데 실시간성(R5)은 처리 속도가 빠르다는 뜻이 아니라, 위험에 대응할 수 있는 시간(reaction window) 안에 경보가 도착한다는 뜻의 적시성(right-time)으로 정의하였다(Teizer, 2016). 이때 시간 창은 위험 유형에 따라 달라진다. 본 연구는 충돌·협착·추락과 같은 순간형 위험을 설계 대상에서 제외하였다. 본 시스템은 안전모 미착용이나 위험구역 체류처럼 위반이 지속되는 동안 개입할 수 있는 상태형 위반을 대상으로 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 159,
+    "text": "  상태형 위반에서는 판정을 신중히 할수록 오탐은 줄지만 경보는 늦어진다. 신호 기반 보호구 착용 판정 연구에서도 관찰 시간을 늘릴수록 정밀도가 높아지고 지연이 늘었다(Pisu et al., 2024). 본 시스템도 LLM 2차 검증을 거치는 만큼 알림이 지연되므로, 오탐 억제와 알림 지연 사이에서 허용할 시간 상한을 정해야 한다. 본 연구는 이 상한을 알림 10초 이내로 정하였으며, 이는 한국인터넷진흥원의 영상정보 분석 성능시험이 일반분야 침입·쓰러짐 등의 정상검출 시각을 이벤트 시작 시각 이전 2초부터 이후 10초 이내로 정한 시험 기준을 참고한 것이다(한국인터넷진흥원, 2026, p. 12). 이 기준은 이벤트 발생부터 검출까지의 시각 범위이고, 본 연구의 10초는 위험 검출부터 담당자 단말의 알림 전달까지를 합한 시간이다. 따라서 본 연구의 알림 10초 이내는 안전이 보장된다고 검증된 기준값이 아니라, 위 시험 기준을 참조하여 정한 R5의 공학적 설계 목표치다. 벤더 운영 자료(Bosch Security Systems, 2024, p. 8)는 추가 검증 단계의 지연 상한을 10초로 두지만, 이는 운영 설정이며 본 연구의 검출부터 알림 전달까지 합한 시간이나 안전 허용시간과 같지 않다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 160,
+    "text": "  제4절의 정량 평가 표본은 중장비 접근과 차량 접근의 두 경고 유형으로 구성하였다. 이 유형은 충돌·협착 위험과 관련되어 앞서 정한 상태형 위반의 설계 대상과 차이가 있으며, 스냅샷을 기준으로 평가하였다. 이러한 평가 대상과 시간적 범위를 요구사항별 평가 범위와 함께 <표 3-1>에 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 161,
+    "text": "  이상의 요구사항은 서로 독립적이지 않고 하나의 설계 원리로 수렴하였다. 저비용(R1·R2)과 무학습 적응(R3)에는 범용 하드웨어와 LLM 기반 무학습 검증으로, 저오탐(R4)과 적시성(R5)에는 민감도·특이도의 역할을 분담한 이중 단계 구조로 대응하였다. 각 요구사항을 충족하였는지는 근거의 종류가 서로 다르다. R1∼R3은 기능을 구현하고 구성하였다는 설명으로, R4는 YOLO가 먼저 잡아낸 후보에 대한 LLM 필터의 성능 평가로, R5는 처리 구조를 구현한 범위로 한정하여 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 162,
+    "text": "  중소현장의 구조적 제약과 이로부터 도출한 요구사항의 대응 관계는 기능 요구사항과 비기능 요구사항으로 나누어 <표 3-1>에 정리하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 163,
+    "text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 164,
+    "text": "현장 제약도출 요구사항구분설계 반영본 연구의 평가 범위(제4절)전담 안전관리자 부재자동 위험 감지·경보 전파(R2·R5)기능24시간 무인 자동 관제, 다중 수신자 라우팅전파 구성의 구현 설명, 담당자의 확인·조치는 미평가예산 제약범용 PC 구동·기존 카메라 재활용(R1·R2)비기능사무용 PC 데스크톱 앱, ONVIF/RTSP 표준범용 PC·기존 카메라 활용 구성(<표 3-9>)노후 CCTV 인프라ONVIF 호환 스트림 처리(R2)기능ONVIF 기반 카메라 검색·영상 수신협력 현장 카메라의 후보 로그 수집, 기종별 호환 시험 결과는 미제시학습용 라벨 데이터 확보 제약(건설안전 VLM 연구의 일반적 한계)무학습 현장 적응(R3)비기능Few-shot 프롬프트·사용자 교정 샘플6개 카메라 202건의 회고적 교정 조건 비교(<표 3-8>)오탐에 의한 경보 피로위험 누락과 함께 오경보 감소 평가(R4)비기능2차 LLM 문맥 검증으로 오탐 필터링접근 위험 2종의 1차 후보 878건에 대한 조건부 필터 평가(<표 3-7>)위험 대응 적시성검출부터 알림까지 합한 시간 10초 이내(R5)비기능1차 실시간·2차 사후 검증 분리 설계검출·검증·알림 처리 구조 제시, 10초 목표 달성은 미검증"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 165,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 166,
+    "text": "제 3 항 관련 기술 선행연구"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 167,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 168,
+    "text": "  본 항은 요구사항 R1∼R5의 근거가 된 관련 기술 선행연구를 정리하였다. 의료·일반 관제 연구는 오류와 대응 부담을 설명하는 보조 근거로 사용하고, 그 결과를 건설현장에 그대로 일반화하지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 169,
+    "text": "  국내 선행연구는 YOLO 기반 감지 성능과 관제 시스템 구현을 다루어 왔다(제2장 제2절). 박종학(2025)은 YOLOv8n 기준 mAP50=0.906, F1=0.91을, 이형도(2024)는 안전모 실시간 모니터링에서 30 FPS 이상의 검출 성능을 보고하였다. 류수영(2024)은 CCTV 기반 YOLOv4 관제 시스템에서 IoU 0.25·K-fold 조건의 검출 성능 99%를, 김현수(2026)는 하이브리드 Trigger-Validator 구조가 오탐과 미탐을 모두 감소시킴을 보고하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 170,
+    "text": "  수용과 전달 측면에서는 이동건(2024)이 노력기대와 스마트 안전장비 수용의도의 정(+) 관계를, 이준호(2024)가 중소 건설현장의 저비용·효율형 장비 도입 합리성을 제시하였고, 김태헌(2026)과 이석희 외(2025)는 감지 결과를 자연어로 요약·전달하는 계층의 효용을 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 171,
+    "text": "  국외에서는 Kim et al.(2025)이 YOLOv8s와 Florence2를 통합한 화재감지에서 VLM 판단으로 신뢰도 임계값을 동적으로 조절하여 F1=0.8895를, Wu et al.(2025)이 광산 안전 MonitorVLM의 도메인 파인튜닝으로 정밀도 73.33%→89.47%, 재현율 61.11%→82.02%를 보고하였다. Cvach(2012)는 경보를 잠깐 늦추거나 여러 신호를 함께 보고 울리는 방식이 의료 현장의 불필요한 경보를 줄일 수 있다고 정리하였고, Chong et al.(2023)은 TAM·TPB 통합 모형으로 건설안전 웨어러블의 수용 요인(PU·PEOU 등)을 분석하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 172,
+    "text": "  선행연구를 기술 특성별로 구분하면 인프라 범용성(A1) 연구군은 범용 PC 구동과 기존 카메라 처리(R1·R2)의, 탐지·제어(A2)와 오탐 필터링(A3) 연구군은 위험 누락을 함께 점검하는 오경보 감소(R4)의, 전달(A4) 연구군은 경보 전달의 적시성(R5)의 근거가 된다. 무학습 현장 적응(R3)은 문헌보다 제2항의 데이터 확보 제약에서 도출한 요구사항이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 173,
+    "text": "  표의 ○ 표시는 해당 연구의 논의를 관련 특성에 연결한 본 연구의 분류를 뜻한다. Kim et al.(2025)의 동적 임계값 조정은 탐지 보완의 설계 근거로 오탐 필터링(A3)에 연결하였다. 수용의도 연구는 도입·사용 조건을 검토하는 근거로 활용하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 174,
+    "text": "  각 선행연구는 주로 하나 또는 두 특성에 걸친 기능의 성능이나 수용 조건을 다루었다. 이에 본 연구는 네 특성(A1∼A4)을 범용 PC 기반의 한 운용 구조 안에서 함께 구현하는 것을 요구사항 R1∼R5의 공통 목표로 삼았다. 기술 측면 선행연구를 네 기술 특성에 따라 정리하면 <표 3-2>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 175,
+    "text": "<표 3-2> 관련 기술 선행연구 정리"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 176,
+    "text": "선행연구(연구자, 연도)연구 맥락인프라 범용성(A1)탐지·제어 안정성(A2)오탐 필터링(A3)알림 즉각성(A4)류수영(2024)CCTV 기반 산업안전 관제(YOLOv4)○○○—박종학(2025)YOLO 모델별 건설현장 성능 비교—○○—이형도(2024)안전모 착용 실시간 모니터링(객체탐지)—○——Kim et al.(2025)YOLO+VLM 통합 화재감지——○—Wu et al.(2025)광산 안전 시각-언어 프레임워크——○—Cvach(2012)의료 모니터 알람 통합 문헌고찰—○○—김현수(2026)관제센터 하이브리드 구조 실험——○—김태헌(2026)건설현장 위험상황 이해·대응——○○이석희 외(2025)장면그래프 기반 한국어 위험 캡션——○○이창남(2025)Drone·AIoT 융합 안전관리 모니터링———○이동건(2024)UTAUT 기반 스마트 안전장비 수용○——○Chong et al.(2023)건설안전 웨어러블 수용(TAM+TPB)———○이준호(2024)스마트 안전장비 경제적 효율성○———국토교통부·국토안전관리원(2024)스마트 안전장비 활용 가이드라인○○——김용선(2022)중소현장 테스트베드 구축·운영○○——"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 177,
+    "text": "제 2 절 시스템 설계"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 178,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 179,
+    "text": "제 1 항 전체 시스템 구조"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 180,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 181,
+    "text": "  본 시스템의 구조는 SDT의 민감도-특이도 분리 원칙을 이중 검사 구조로 구현한 것이다. 전체 처리는 영상 수신, 1차 고민감도 검출, 2차 문맥 검증, 경보 전파의 네 단계 파이프라인으로 구성되었다. YOLO 1차 검출 모듈은 ONVIF 카메라의 RTSP 스트림을 입력받았다. 검출 결과는 LLM 2차 검증 모듈을 거치며, 확정된 경보만 알림 앱으로 전파되었다. 이러한 이중 선별은 스마트 알람으로 경보 피로를 낮추는 원리와 같은 발상이다(제2장 제1절 제2항 참조). 이 이중 검사 구조의 전체 구성은 <그림 3-1>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 182,
+    "text": "<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 183,
+    "text": "그림입니다.\n원본 그림의 이름: fig_3_1_architecture.png\n원본 그림의 크기: 가로 1771pixel, 세로 1677pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 184,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 185,
+    "text": "  영상 처리의 지연을 줄이기 위해 영상 수신·탐지와 검증·알림 처리를 분리하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 186,
+    "text": "  데이터 흐름으로 보면 이 구조는 \"실시간 경로\"와 \"사후 검증 경로\"를 분리하였다. 1차 검출은 영상이 들어오는 대로 바로 처리하는 반면, 시간과 비용이 많이 드는 2차 LLM 검증은 1차가 위험 후보로 걸러낸 장면에만 적용하였다. 이때 LLM의 답을 기다리느라 영상 처리가 멈추지 않도록, LLM 검증은 영상 처리와 별도로 뒤에서 따로 돌아가게(비동기) 연결하였다. 주요 모듈의 구성과 역할은 <표 3-3>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 187,
+    "text": "<표 3-3> 시스템 모듈 구성과 역할"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 188,
+    "text": "모듈처리 단계핵심 역할처리 내용스트림 수신부① 영상 수신기존 카메라 연결카메라 검색과 영상 수신1차 검출부② 고민감도 검출위험 후보 탐지YOLO 객체 탐지(Conf 0.3)와 경고 확인2차 검증부③ 문맥 검증후보의 위험 여부 재판정영상 문맥과 교정 사례를 활용한 LLM 검증경보 전파부④ 경보 전파담당자에게 경보 전달판단 사유와 이미지를 다중 수신자에게 전송지속성·감사부공통운영 기록 보존알림 이력, 설정값, 감사 기록(audit log) 저장"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 189,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 190,
+    "text": "제 2 항 YOLO 탐지 및 제어"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 191,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 192,
+    "text": "  1차 검출 모듈은 위험을 놓치지 않는 것을 최우선으로 하는 고민감도 객체 탐지기다. 박종학(2025)은 건설현장에 YOLO를 적용할 때 위험으로 판정하는 기준값(신뢰도 임계값, confidence threshold)을 0.4∼0.5로 두기를 권장하였다. 다만 같은 연구에서 비계 등 일부 위험 종류는 임계값이 높아질수록 실제 위험 중 잡아낸 비율(재현율, recall)이 크게 떨어져 미탐(false negative)이 늘었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 193,
+    "text": "  본 모듈은 SDT의 민감도-특이도 분리 원칙에 따라 1차 단계에서 재현율 극대화를 목표로 신뢰도 임계값을 이 권장 범위보다 낮은 0.3으로 설정하였다. 기준값을 낮추면 오탐이 늘어나지만, 그 오탐은 2차 LLM 검증이 걸러낸다는 전제로 1차를 일부러 민감하게 잡도록 한 것이다. 따라서 이 설정은 그 자체로 완결되는 것이 아니다. 관련 사례로 Kim et al.(2025)은 VLM이 화재·연기를 감지하면 τ_mod=0.3, 그렇지 않으면 초기 임계값을 적용하는 동적 임계값 방식을 사용하였다(성능은 제1절 제3항 참조). 이는 임계값 조정과 VLM 결합의 유사 설계 사례이며, 본 연구의 고정 임계값 0.3의 최적성을 직접 입증하는 근거는 아니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 194,
+    "text": "  1차 검출 모델은 Ultralytics YOLO26m을 기반으로 자체 구축한 건설현장 데이터셋에서 재학습한 가중치를 사용하였다. 검출 클래스는 작업자, 쓰러진 사람, 안전모 착용·미착용, 안전대 착용·미착용, 비계, 사다리, 라바콘, 중장비, 차량의 11종이다. 학습은 COCO 사전학습 가중치를 초기값으로 입력 크기 640픽셀, 배치 20, 100 에포크로 수행하였으며(Ultralytics 8.4.23, 2026년 9월), 학습 데이터셋은 훈련 48,071장과 검증 12,604장으로 구성하였다. 검증셋 기준 성능은 정밀도 0.882, 재현율 0.765, mAP50 0.845, mAP50-95 0.661이다(최고 성능 에포크 91). 이 값은 학습 데이터셋의 검증 분할에서 측정한 내부 평가값이며, 독립된 현장 영상에 대한 성능이나 제4절의 2차 필터 평가와 구별하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 195,
+    "text": "  이 재학습 가중치는 본 시스템 개발 과정에서 건설현장 공통 라벨 체계로 한 번 구축한 기반 가중치이며, 현장마다 그 현장의 특성에 맞춘 라벨을 만들어 다시 학습하는 것이 아니다. 본 연구에서 무학습 적응은 해당 현장에 맞춘 추가 미세조정 없이 프롬프트와 교정 사례를 활용한다는 의미로 한정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 196,
+    "text": "  본 시스템은 2026년 3월부터 현장 카메라에 연결해 운용하였고, 1차 검출 가중치는 운용 중 갱신하였다. 운용 초기 가중치는 공개 데이터셋으로 학습한 YOLO26m이었으며, 2026년 9월에 자체 구축 데이터셋으로 재학습한 가중치로 교체하였다. 낙상 감지는 객체 탐지와 자세 정보를 함께 활용하도록 설계하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 197,
+    "text": "  제4절은 접근 위험 2종의 1차 후보에 대한 2차 필터 성능을 평가하며, 전체 클래스의 1차 검출 성능을 검증한 것은 아니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 198,
+    "text": "  판정 로직은 한 번만 잠깐 잡힌 오탐을 거르는 확인 필터, 장면의 상황을 판단하는 LLM 검증, 같은 경보가 반복해 울리지 않도록 일정 시간 쉬게 하는 쿨다운으로 구성되었다. 확인 필터는 일정 시간 창 내 재감지 또는 연속 프레임 감지를 요구하고, LLM은 SEND/BLOCK을 출력하였다. 모바일 경로는 경고 확인, 경고음 처리, 텔레그램 쿨다운, LLM 호출, 전송의 순서로 처리되었다. 쿨다운은 동일 사건 식별이 아니라 같은 카메라의 같은 경고 유형을 기준으로 하므로, 같은 유형의 다른 위험도 억제될 수 있다. 경고음 300초와 모바일 알림 600초는 구현 설정값이다. 따라서 'YOLO가 처음 잡은 1차 후보', '확인 필터를 통과한 경고', 'LLM이 발송하기로 한 검증 경보', '담당자 단말에 실제로 도착한 경보'는 서로 다른 수로 구별하며, 모바일 알림이 줄었다고 해서 PC 화면의 경고음·팝업까지 줄어든 것으로 해석하지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 199,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 200,
+    "text": "제 3 항 LLM 문맥 검증 및 현장 적응"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 201,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 202,
+    "text": "  2차 검증 모듈은 본 연구의 핵심 기여에 해당한다. 이미지와 글을 함께 읽는 멀티모달 LLM이 YOLO가 잡은 장면을 다시 보고 실제 위험인지 아닌지를 재판정하였다. LLM은 그림과 말을 함께 이해하고, 규칙을 미리 정해 주지 않아도 일반적인 산업안전 상식을 적용하며, 판단 이유를 한국어로 써 줄 수 있다. 이 능력으로, 물체만 찾는 YOLO가 다룰 수 없는 '사람과 장비의 관계'나 '지금 어떤 작업 중인가' 같은 상황 문맥을 보완하여 후보 오경보를 줄이는 것이 목표다. 이를 위해 이 모듈은 두 축으로 구성하였다. 하나는 장면의 상황을 읽어 잘못된 경보를 걸러 내는 것이고, 다른 하나는 별도 학습 없이 예시만으로 현장에 맞추는 무학습 현장 적응이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 203,
+    "text": "  가. 검증 필요성과 입출력 구조"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 204,
+    "text": "  1차 YOLO 검출에서는 네 가지 유형의 구조적 오탐이 발생한다. 나뭇가지를 사다리로 보는 자연 배경 오인식, 줄무늬를 안전조끼로 보는 작업복 패턴 오인식, 쪼그려 앉기를 낙상으로 보는 정상 자세 오인식, 그리고 문맥과 무관한 오인식이다. 임계값 상향만으로 이 오탐들을 해결하려 하면 미탐이 증가하므로 별도의 검증 단계가 필요하다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 205,
+    "text": "  LLM은 1차 검출의 위험 후보 정보, 원본 프레임 이미지, 카메라별 사용자 교정 샘플을 입력받아 위험 여부를 재판정하였다. 판정 결과는 발송(SEND) 또는 차단(BLOCK)으로 구분하고, 한국어 판단 사유를 함께 제공하였다. 판단 사유는 담당자가 경보 내용을 이해할 수 있도록 알림 메시지에 포함하였다. 이 입출력 구조와 판정 흐름은 <그림 3-2>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 206,
+    "text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 207,
+    "text": "그림입니다.\n원본 그림의 이름: fig_3_2_llm_verification.png\n원본 그림의 크기: 가로 1771pixel, 세로 2007pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 208,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 209,
+    "text": "  나. 프롬프트 엔지니어링과 검증 폴백"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 210,
+    "text": "  본 시스템은 건설안전 검토 역할과 위험 판단 기준을 반영한 구조화된 프롬프트를 사용하였다. 이를 통해 LLM이 영상의 작업 상황을 검토하고 일관된 기준에 따라 경보 발송 여부와 판단 사유를 제시하도록 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 211,
+    "text": "  LLM 서비스에 장애가 나도 시스템이 멈추지 않도록 하는 대비책(폴백, fallback)도 판정 로직에 포함하였다. LLM 서비스(API)에 장애가 나면 1차 검출 결과만 발송하되 \"LLM 검증 실패\" 표시를 붙여, 사용자가 그 경보는 2차 검증을 거치지 않았음을 알 수 있게 하였다. 또한 한 회사의 LLM 서비스가 안 되면 다른 회사의 상용 멀티모달 모델로 자동 전환하는 구조(다중 프로바이더 폴백)를 두어, 특정 서비스의 장애가 시스템 전체의 중단으로 이어지지 않도록 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 212,
+    "text": "  다. RAG 기반 Few-shot 현장 적응"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 213,
+    "text": "  본 시스템은 미세조정 없이 현장에 적응하기 위해 건설 현장용 시스템 프롬프트와 카메라별 사용자 교정 샘플을 결합하였다. 이는 소수의 예시만으로 과제 수행을 학습하는 Few-shot 학습의 맥락 내 학습 능력(Brown et al., 2020)을 현장 적응에 응용한 것으로, 현장별 대규모 추가학습용 라벨 구축 부담을 줄였다. 사용자는 오판 사례의 이미지와 교정 사유를 확인하여 카메라별 교정 샘플로 등록하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 214,
+    "text": "  다만 쌓인 교정 사례를 매번 모두 LLM에 함께 보여 주는 방식은 부작용을 낳는다. 관련 없는 교정이 끼어들어 새로운 오판을 유발하거나, 동일 방향의 교정이 과다하게 쌓여 판정이 한쪽으로 쏠리는 과교정(over-correction)이 발생한다. 본 시스템은 이 부작용을 방지하기 위해 현재 알림과 같은 상황으로 분류된 교정만 찾아서 함께 보여 주는 방식(RAG, Retrieval-Augmented Generation)을 채택하였다. 교정을 등록할 때는 해당 알림의 맥락을 분류하여 함께 저장하였다. 새 알림이 발생하면 같은 맥락으로 분류된 교정만 최대 3건까지 검색하여 검증 LLM의 프롬프트에 원본 프레임과 함께 주입하였다. 같은 맥락의 교정이 없으면 교정 사례를 덧붙이지 않고 프롬프트와 원본 프레임만으로 판정하였다(미주입 fallback). 이러한 RAG 기반 Few-shot 교정 절차는 <그림 3-3>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 215,
+    "text": "<그림 3-3> RAG 기반 Few-shot 교정 절차"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 216,
+    "text": "그림입니다.\n원본 그림의 이름: fig_3_3_rag_correction.png\n원본 그림의 크기: 가로 1771pixel, 세로 2007pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 217,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 218,
+    "text": "  같은 상황의 교정만 골라 보여 주는 방식은 엉뚱한 교정이 끼어드는 것을 줄이려는 장치일 뿐, 시간이 갈수록 정확해진다거나 판정이 한쪽으로 치우치는 과교정을 막아 준다고 보장하지는 않으며, 사용자 교정에는 이미지 확인과 사유 작성에 드는 운영 인건비도 발생한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 219,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 220,
+    "text": "제 4 항 경보 전파"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 221,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 222,
+    "text": "  경보 전파 모듈은 2차 검증을 통과한 확정 경보를 관련 담당자에게 즉시 전달하는 마지막 단계를 맡으며, 제2장 제2절 제4항의 알림 전파 즉각성을 구현하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 223,
+    "text": "  확정된 경보는 미리 정해 둔 여러 담당자에게 자동으로 나뉘어 동시에 전송되었다(다중 수신자 라우팅). 수신자가 알림만으로도 상황을 직관적으로 파악할 수 있도록, 전파 메시지에는 LLM이 출력한 한국어 판단 사유와 검출 프레임 이미지를 함께 담았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 224,
+    "text": "  경보 수신자는 법령상 업무·책임 주체를 참고하여 본 연구에서 정하였다. 「건설산업기본법」 제40조의 현장배치 건설기술인, 「산업안전보건법」 제15조의 안전보건관리책임자와 제17조의 안전관리자, 「건설기술 진흥법」 제39조·제49조의 건설사업관리 또는 공사감독 업무를 맡은 담당자를 현장의 실제 지정·배치에 따라 수신자로 설정하였다. 해당 조항에 규정된 배치·업무 범위를 참고하여 현장별 경보 수신 담당자를 정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 225,
+    "text": "  모바일 메신저 기반 즉시 전송을 구현하기 위해 텔레그램을 알림 채널로 채택하였다. 텔레그램은 별도 관제 전용 앱 개발이나 전용 서버 구축 없이 다중 수신자 그룹 전파와 이미지 첨부를 지원하므로, 저비용 요구사항(R1)에 부합하는 전파 수단이다. 실증에서 다루는 기술 특성은 특정 메신저가 아니라 \"위험 확정 시 담당자에게 즉시·능동적으로 경보가 도달하는가\"라는 전파 즉각성 자체이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 226,
+    "text": "제 3 절 시스템 구현"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 227,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 228,
+    "text": "제 1 항 실행 환경 및 기술 스택"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 229,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 230,
+    "text": "  본 시스템은 Python 기반의 Windows 데스크톱 애플리케이션으로 구현하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 231,
+    "text": "  영상 수신은 ONVIF 프로토콜과 RTSP 디코딩으로, 2차 검증은 다중 프로바이더 LLM API로 구성하여 기존 카메라와 범용 PC에서 구동하려는 요구사항(R1·R2)에 대응하였다. 주요 기술 스택은 <표 3-4>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 232,
+    "text": "<표 3-4> 시스템 구현 기술 스택"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 233,
+    "text": "계층기술역할사용자 인터페이스데스크톱 그래픽 인터페이스다중 영상 표시, 카메라 제어, 제한구역 설정영상 처리RTSP 스트림 처리기존 카메라 영상 수신·표시1차 AI 추론YOLO 기반 객체 탐지·자세 추정위험 후보 감지실행 환경 대응가용 하드웨어에 따른 추론 경로 선택다양한 PC 환경에서 추론 실행카메라 연동ONVIF 표준카메라 검색·제어·영상 확인위험구역 설정영상 내 구역 설정위험구역 생성·관리2차 검증멀티모달 LLM API영상 문맥을 활용한 위험 여부 재판정"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 234,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 235,
+    "text": "제 2 항 주요 기능 및 운영 안정성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 236,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 237,
+    "text": "  범용 하드웨어 요구사항(R1)에 대응하기 위해, 본 시스템은 PC의 가용 하드웨어에 따라 AI 추론 경로를 선택하도록 구현하였다. 고성능 GPU가 없는 환경에서는 CPU를 활용할 수 있도록 구성하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 238,
+    "text": "  운영 안정성을 위해 설정과 운영 이력을 저장·보호하는 기능을 구현하였다. 운영 화면은 여러 카메라 영상을 격자 모양으로 나란히 배치하고 각 영상 위에 감지 결과를 겹쳐 보여 주며, 확인 필터를 통과한 경고가 생기면 팝업과 경고음으로 관제자에게 즉시 알렸다. 시스템의 실제 운영 화면은 <그림 3-4>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 239,
+    "text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 240,
+    "text": "그림입니다.\n원본 그림의 이름: fig_3_4_viewer_original.png\n원본 그림의 크기: 가로 1919pixel, 세로 760pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 241,
+    "text": "자료: 본 연구 대상 시스템의 실제 모니터링·판정 교정 화면을 직접 캡처."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 242,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 243,
+    "text": "  운영 화면인 <그림 3-4>는 여러 카메라 영상을 격자로 배치한 화면 위에 알림 전송 내역 창과 LLM 판정 교정 창을 함께 띄운 모습이다. 사용자는 알림 이력을 조회하고, 검출 영상과 판정 사유를 확인하여 오판 사례를 교정할 수 있다. 이 화면은 제2절 제3항의 카메라별 사용자 교정 샘플 등록 절차를 구현한 모습이며, 화면의 카메라명은 비공개 처리하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 244,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 245,
+    "text": "제 3 항 현장 배포 및 운용 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 246,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 247,
+    "text": "  본 시스템의 배포 형태는 범용 PC에 설치하는 단일 Windows 데스크톱 애플리케이션이다. 이 애플리케이션은 기존 ONVIF 카메라의 영상 수신, 로컬 YOLO 추론, 외부 LLM API 검증과 텔레그램 전송을 연계하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 248,
+    "text": "  본 연구의 도입 현장에는 시스템을 현장 부담 없이 제공하였다. 영상은 현장의 기존 카메라에서 수신하였다. 따라서 도입 현장의 시스템 확보와 운용은 현장의 안전관리 예산 편성과 연결되지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 249,
+    "text": "제 4 절 시스템 개발의 효과 분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 250,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 251,
+    "text": "  본 절은 협력 현장에서 실제 운영 중에 쌓인 기록과 교정 사례 비교 결과로 시스템의 적용 범위를 검토하고, 도입 현장 관리자가 경험한 시스템 특성과 경보 피로도 완화 인식을 설문으로 확인하였다. 이 절에서 말하는 '시스템 개발의 효과'는 두 가지다. 하나는 실제 운영 기록과 교정 사례 비교에서 관찰한 경보 정확도 지표의 변화이고, 다른 하나는 도입 현장 관리자가 시스템을 써 본 경험에 대한 인식이다. 이는 제4장에서 도입·미도입 현장에 같은 기준으로 묻는 '관리자가 지각한 안전관리 실효성'과는 다른 내용이다. 수치로 제시한 성능은 YOLO가 먼저 잡아낸 1차 후보 가운데 사람이 정답을 매길 수 있었던 것만을 대상으로, LLM 2차 필터가 얼마나 잘 걸렀는지를 평가한 결과이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 252,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 253,
+    "text": "제 1 항 검증 데이터셋 구축 및 평가 지표"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 254,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 255,
+    "text": "  검증 데이터는 A공사 경기지역본부 산하 중소규모 건설현장에서 2026년 5월 19일부터 27일까지 수집한 ONVIF 카메라의 후보 알림 로그다. 이 기간의 1차 검출은 재학습 이전의 운용 초기 가중치(공개 데이터셋으로 학습한 YOLO26m)로 수행하였으므로, 본 절의 결과는 1차 후보에 대한 2차 필터의 성능이며 제2절 제2항의 재학습 가중치 성능과 구별하였다. 전체 1,095건에서 신뢰도가 기록된 1,074건(SEND 51건, BLOCK 1,023건)을 운영 분포 분석에 사용하였다. 별도로 스냅샷 라벨링이 가능한 878건(38대 카메라, 중장비 접근 610건·차량 접근 268건)을 성능 평가에 사용하였다. 두 표본은 877건이 겹친다. 정답을 매긴 878건 가운데 SEND 1건은 신뢰도 기록이 없어 1,074건에는 들어 있지 않으므로, 라벨 표본의 SEND는 52건이다. 따라서 878건이 1,074건 안에 모두 포함되는 것은 아니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 256,
+    "text": "  라벨 표본 878건에는 gemini-3.1-flash-lite 865건과 gemini-2.5-flash 13건이 포함되고, 프롬프트도 공통 639건·교정1 119건·교정2 119건·교정3 1건이 혼합되어 있다. 평가는 이러한 모델·프롬프트 판본이 혼합된 운용 조건을 대상으로 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 257,
+    "text": "  본 시스템은 현장마다 활성 탐지 클래스, 검증 모델, 프롬프트, 교정 주입 방식(RAG 사용 여부)과 쿨다운을 달리 설정할 수 있는 구조이며, 이 설정에 따라 기술 성능의 해석과 제4장에서 비교하는 도입 현장의 운용 조건이 달라질 수 있다. 본 연구의 도입 현장 34개소는 활성 탐지 클래스, 2차 검증 모델, 프롬프트, RAG 사용 여부, 쿨다운, 알림 채널을 전 현장에 동일하게 운용하였다. 다만 운용 기간 중 1차 검출 가중치와 2차 검증 모델·프롬프트 판본이 갱신되었고 일부 카메라에는 교정 카드가 적용되었으므로(위 라벨 표본의 모델·프롬프트 혼합 참조), 설정은 현장 간에는 같았으나 기간에 따라 판본이 달랐다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 258,
+    "text": "  정답(실제 위험 여부) 라벨은 개발자 1인이 판정하였으며, 독립된 다른 평가자의 검증을 거치지 않았다. 스냅샷 중심의 평가이므로 접근 속도나 행동 전후를 판단하는 데에도 한계가 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 259,
+    "text": "  정·오탐 라벨링은 TP·FP·FN 지표 정의(이기수, 2024)를 참고해, 사람 라벨링과 LLM 판정을 비교하는 혼동행렬(confusion matrix) 방식으로 정의하였다. 사람이 판단한 실제 위험 여부와 LLM의 SEND/BLOCK 판정을 교차하여, 진양성(TP)·위양성(FP)·진음성(TN)·위음성(FN)의 네 사건으로 분류하였다. 라벨링 기준은 <표 3-5>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 260,
+    "text": "<표 3-5> 정·오탐 라벨링 기준"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 261,
+    "text": "구 분사람: 정탐(실제 위험)사람: 오탐(실제 안전)LLM: 발송(SEND)TP — 진양성(위험 알림 성공)FP — 위양성(오경보)LLM: 차단(BLOCK)FN — 위음성(위험 누락)TN — 진음성(안전 차단 성공)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 262,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 263,
+    "text": "  평가 지표는 정밀도, 재현율, F1, 시간당 오경보 빈도(FAR), 특이도, 정확도다. 정밀도와 FAR을 중심으로 오경보 억제를 평가하되 실제 위험 경보 손실을 드러내기 위해 재현율과 FN을 함께 보고하였다. <표 3-7>의 2단계 정밀도·재현율·정확도·특이도 옆의 대괄호는 95% 신뢰구간(Wilson, 1927)이다. 이는 표본에 따른 오차를 고려해 실제 비율을 추정한 범위이며, 후보 사건들이 서로 독립이라고 가정하여 계산하였다. 같은 카메라에서 반복해 잡힌 사건들이 서로 닮았을 수 있다는 점은 이 구간에 반영되지 않았다. F1, 조건 간 차이 및 <표 3-8>은 점추정으로 제시하였다. FAR의 분모는 2026년 5월 19일부터 27일까지 9일간의 조사기간 중 시스템 누적 운영시간인 196.8시간이다. 이는 연구자가 확인한 시스템 단위 운영시간이다. FAR은 평가표본의 FP를 이 공통 시스템 운영시간으로 나눈 빈도이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 264,
+    "text": "  재현율의 분모가 1차 후보 내 실제 위험이므로, 1차 단계에서 검출되지 않은 위험은 평가 지표에 반영되지 않았다. 각 지표의 정의와 측정 목적은 <표 3-6>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 265,
+    "text": "<표 3-6> 성능 평가 지표 정의와 측정 목적"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 266,
+    "text": "지표정의측정 목적정밀도(Precision)TP/(TP+FP)SEND 알림 중 실제 위험의 비율, 알림 신뢰도와 경보 피로 감소 효과재현율(Recall)TP/(TP+FN)1차 후보 내 실제 위험 중 SEND된 비율, 2차 필터의 위험 보존 정도F1 점수2·P·R/(P+R)정밀도·재현율의 조화평균, 상쇄 관계 속 균형 성능후보 로그 기반 시간당 오경보 빈도(FAR)평가표본의 FP/시스템 누적 운영시간조사기간 중 시스템 누적 운영시간 196.8시간당 평가표본의 FP를 시간당 빈도로 환산특이도(Specificity)TN/(TN+FP)실제 안전 상황 중 BLOCK된 비율, 오탐 차단 능력정확도(Accuracy)(TP+TN)/N전체 판정의 정확률, 종합 신뢰성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 267,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 268,
+    "text": "제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 269,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 270,
+    "text": "  신뢰도 유효 표본 1,074건의 LLM 판정은 SEND 51건(4.75%), BLOCK 1,023건(95.25%)이다. 이는 후보 알림을 SEND와 BLOCK으로 분류한 비율이다. YOLO 신뢰도가 높을수록 SEND 비율도 꾸준히 높아져, 0.30∼0.40 구간의 1.99%에서 0.70 이상 구간의 8.38%에 이르렀다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 271,
+    "text": "  조건부 필터 성능은 라벨 표본 878건으로 평가하였다. 사람 라벨링으로 정탐 44건과 오탐 834건을 확인하고, 1차 단독(Conf 0.3, 전 검출 통과)과 2단계(YOLO+LLM)의 성능을 비교하였다. 여기서 '1차 단독' 열은 LLM 검증 없이 878건 전체를 그대로 경보로 보냈다고 가정한 비교 기준(baseline)의 값이다. 이 가정에서는 놓친 위험(FN)과 걸러낸 안전 상황(TN)이 모두 0이므로 재현율은 1.000, 특이도는 0.000으로 계산된다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 272,
+    "text": "  평가 결과 오경보는 834건에서 13건으로 감소했지만, 1차 후보의 실제 위험 44건 중 5건의 경보도 함께 차단되는 손실이 나타났다. 이 위음성 5건은 안전상 중요한 손실이다. YOLO가 먼저 잡은 실제 위험 44건 가운데 LLM이 경보로 보낸 비율, 즉 조건부 재현율은 0.886이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 273,
+    "text": "  FAR의 98.44% 감소는 같은 시스템 누적 운영시간 196.8시간을 분모로 두고 LLM 검증 전후의 오경보 수를 비교한 값이다. 38대 카메라에서 확보한 라벨 후보에 이 공통 운영시간을 적용하였으며, 기록에서 제외된 로그와 확인 필터·쿨다운에서 이미 걸러진 사건은 평가 범위 밖이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 274,
+    "text": "  본 연구는 제1절 제3항의 오경보 필터링 연구(김태헌, 2026; 김현수, 2026), VLM 결합 탐지 보완 연구(Kim et al., 2025) 및 VLM으로 건설현장 일일 위험성 평가서를 자동 생성한 한소은(2026)과 개선 방향을 공유하지만, 과제·지표·분모가 달라 수치의 우열을 비교할 수 없다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 275,
+    "text": "  조건부 필터 성능 비교는 <표 3-7>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 276,
+    "text": "<표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 277,
+    "text": "지표1차 단독(Conf 0.3)2단계(0.3+LLM)변화총 경보 건수87852−94.1%진경보(TP) / 오경보(FP)44 / 83439 / 13—진음성(TN) / 위음성(FN)0 / 0821 / 5—후보 로그 기반 시간당 오경보 빈도(FAR, 건/시간)4.2380.066−98.44%정밀도(Precision)0.0500.750 [0.618, 0.848]+0.700재현율(Recall)1.0000.886 [0.760, 0.950]−0.114F1 점수0.0950.813+0.717정확도(Accuracy)0.0500.979 [0.968, 0.987]+0.929특이도(Specificity)0.0000.984 [0.974, 0.991]+0.984"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 278,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 279,
+    "text": "제 3 항 RAG 기반 Few-shot 교정의 성능 실험"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 280,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 281,
+    "text": "  RAG 기반 교정은 기존 6개 카메라의 사례를 되짚어 비교하는 회고적 방식으로 평가하였다. 교정에 쓴 사례와 평가에 쓴 사례가 사실상 같은 장면이면 중복으로 보아 제외하였다. 중복 기준은 16×16 평균 이미지 해시의 Hamming 거리 4 이하이면서 정규화한 사유의 앞 18자가 같은 경우로 두었다. 그 결과 5건을 제외하고 202건을 비교하였다. 이 절차는 직접 중복을 줄이지만, 바로 앞뒤 장면이나 배경만 비슷한 장면, 같은 이미지에 사유만 다른 경우처럼 유사 사례가 교정 자료와 평가 자료에 함께 들어 있을 가능성(잔여 누수)까지 배제하지는 않았다. 기존 실험에서는 조건마다 1회씩 순차 호출하였고, 제로샷 조건에는 별도로 수행한 k값 변화 실험(k-sweep)의 결과를 합산하였다. 이 호출 방식에는 반복성과 순서 효과의 평가에 제약이 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 282,
+    "text": "  6개 카메라를 A∼F로 표기하면 등록 카드 수는 순서대로 5·4·5·1·3·5개이므로 최대 k개 조건은 매번 정확히 k개를 주입한 조건이 아니다. 카메라 D 16건에는 두 조건 모두 1개, 카메라 E 30건에는 모두 3개, 카메라 B 101건의 최대 5개 조건에는 4개가 사용되었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 283,
+    "text": "  RAG는 제로샷보다 FP를 17건에서 7건으로 줄이고 정밀도를 높였으나 TP도 8건에서 6건으로 줄였다. 실제 위험 24건 중 18건을 차단하여 재현율은 0.333에서 0.250으로, F1은 0.327에서 0.324로 낮아졌다. 이 표본은 202건 중 실제 위험이 24건뿐인 불균형 표본이어서, 모든 사건을 BLOCK해도 정확도가 0.881이 나온다. RAG 정확도 0.876은 이 기준보다 낮았으며, 카메라별로 성능이 악화된 사례도 나타났다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 284,
+    "text": "  최대 3개와 5개의 FP 차이는 1건이며, 호출 변동과 설정·시간 차이가 함께 작용한 조건에서 관찰되었다. 본 비교는 오경보 억제와 위험 검출 손실의 상쇄를 보여주는 사례로 해석하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 285,
+    "text": "  RAG 조건의 재현율 0.250(<표 3-8>)과 2단계 재현율 0.886(<표 3-7>)은 카메라 범위와 호출 방식(운영 기록과 회고적 재호출), 실제 위험 비율이 다른 값이므로 직접 비교하지 않았다. 운영 로그에서는 사건별 RAG 적용 여부도 확인되지 않아 두 표로 RAG의 운영 효과를 판단할 수 없다. 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교는 <표 3-8>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 286,
+    "text": "<표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 287,
+    "text": "조건Precision(정밀도)Recall(재현율)F1Accuracy(정확도)TPFPTNFN제로샷(교정 미사용)0.3200.3330.3270.83781716116등록순 최대 3개(가용 수만큼)0.3890.2920.3330.86171116717등록순 최대 5개(가용 수만큼)0.3680.2920.3260.85671216617RAG 동적선택(제안)0.4620.2500.3240.8766717118"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 288,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 289,
+    "text": "제 4 항 적용 타당성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 290,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 291,
+    "text": "  본 연구의 적용 타당성은 범용 PC와 기존 카메라를 연결한 구현 구성, 후보 로그의 필터 성능과 교정 사례 비교를 중심으로 검토하였다. 처리 속도·알림 시간 목표와 경제성은 후속 평가 항목으로 남아 있다. 요구사항별 평가 범위는 <표 3-9>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 292,
+    "text": "<표 3-9> 시스템 적용 타당성의 평가 범위"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 293,
+    "text": "요구사항본 연구에서 제시한 근거해석 범위범용 PC·기존 카메라 활용(R1·R2)데스크톱 구현과 ONVIF 영상 수신 구성기능 구현의 범위현장별 추가 재학습 없는 적응(R3)프롬프트·교정 사례 활용과 회고적 비교교정의 보편적 성능 우위는 확인하지 못함위험 누락을 고려한 오경보 감소(R4)878건 후보의 조건부 필터 평가1차가 놓친 위험을 포함한 전체 탐지 성능은 아님위험 대응 적시성(R5)검출·검증·알림을 연결한 처리 구조알림 10초 목표 달성은 검증하지 않음"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 294,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 295,
+    "text": "제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 296,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 297,
+    "text": "  본 항은 시스템을 3개월 이상 정상 운용한 도입 현장의 관리자가 네 기술 특성과 경보 피로도 완화를 어떻게 경험했는지를 설문으로 확인하였다. 앞의 제1∼4항이 기술 지표와 적용 범위를 다루었다면, 이 항은 같은 시스템을 쓰는 관리자의 경험을 보고한다. 응답자는 제4장 조사(2026년 10월 12일∼23일)의 도입 현장 관리자 34명이며, 미도입 현장 관리자에게는 묻지 않았다. 조사 절차와 설문지 구성은 제4장 제4절에, 문항 전문은 부록에 두었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 298,
+    "text": "  측정에는 도입 현장 전용부 C·D 12문항을 썼다. C는 제2장 제2절의 네 기술 특성(A1∼A4)을 특성별 두 문항으로 묻는 8문항이고, D는 오탐 필터링으로 잦은 경보 확인에 따른 스트레스·둔감화와 불필요한 확인 부담이 줄었다고 느끼는 정도를 묻는 4문항이다. D는 응답자가 같은 현장에서 도입 전에 받던 자동 알림과 현재 본 시스템의 알림을 기억을 떠올려 비교한 회고적 인식이며, 비교 기간의 길이는 따로 정하지 않았다. 모든 문항은 1점 ‘전혀 그렇지 않다’부터 5점 ‘매우 그렇다’까지의 5점 리커트척도이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 299,
+    "text": "  문항은 본 연구에서 수정·개발하였다. C-1∼C-8은 구 설계의 시스템 특성 16문항에서 하위특성별 대표 2문항을 골랐고, D-1∼D-4는 구 경보 피로도 4문항을 도입 현장 전용부로 옮겨 표현을 수정하였다. 시스템 특성 인식 문항은 네 기술 특성에 관한 연구와 가이드라인의 개념을 참고하였으며(국토교통부·국토안전관리원, 2024; 김민기·박성호, 2026; 김용선, 2022; 김태헌, 2026; 김현수, 2026; 류수영, 2024; 이동건, 2024; 이준호, 2024; 이창남, 2025; Chong et al., 2023; Cvach, 2012; Kim et al., 2025; Wu et al., 2025), 경보 피로도 완화 인식 문항은 알람 피로 이론과 하이브리드 관제 연구를 참고하였다(김현수, 2026; Cvach, 2012). C-6은 LLM이 입력받는 원본 프레임에 나타난 작업 상황을 범위로 하였다. 변수별 조작적 정의는 <표 3-10>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 300,
+    "text": "<표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 301,
+    "text": "변수하위요인조작적 정의측정 문항시스템 특성 인식(C)인프라 범용성(A1)일반 사무용 PC와 기존 카메라로 구동되어 별도 장비 투자 부담이 적다고 경험한 정도C-1·C-2탐지·제어 안정성(A2)알림이 몰리거나 통신 상태가 좋지 않아도 안정적으로 작동한다고 경험한 정도C-3·C-4오탐 필터링(A3)배경이나 정상 작업을 위험으로 잘못 알리는 일이 드물다고 경험한 정도C-5·C-6알림 전파 즉각성(A4)위험 요약과 이미지가 모바일 메신저로 신속하게 전달되고 이를 통해 현장 상황을 파악한다고 경험한 정도C-7·C-8경보 피로도 완화 인식(D)—오탐 필터링으로 잦은 경보 확인에 따른 스트레스·둔감화와 불필요한 확인 부담이 줄었다고 회고적으로 지각하는 정도D-1∼D-4"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 302,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 303,
+    "text": "  도입 현장 관리자 34명 모두 12문항에 빠짐없이 응답하였다. 기술통계는 이들 34명의 1∼5점 응답으로 산출하였다. A1∼A4 묶음과 C·D 전체는 해당 문항의 평균점수이다. 이 통계는 도입 현장 관리자의 경험 인식을 나타낸다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 304,
+    "text": "  도입 현장 관리자는 시스템의 네 특성 중 위험 알림을 빠르게 전달하는 기능을 가장 높게 평가하였다(5점 만점에 3.99점). 위험하지 않은 상황을 잘못 알리는 일을 줄이는 기능은 3.51점으로 상대적으로 낮게 평가하였다. 두 평가 모두 ‘보통이다’인 3점보다 높았지만, 관리자는 잘못된 경보를 걸러내는 기능보다 알림을 빠르게 받는 기능에 더 높은 점수를 주었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 305,
+    "text": "  경보를 확인하면서 느끼는 부담이 줄었다는 평가도 평균 3.65점으로 ‘보통이다’보다 높았다. 세부적으로는 ‘알림을 무시하기보다 바로 확인하게 되었다’는 문항이 3.91점으로 가장 높았고, ‘잦은 알림 확인에 따른 스트레스가 줄었다’는 문항은 3.53점으로 가장 낮았다. 즉, 알림을 확인하는 태도가 달라졌다는 인식이 스트레스가 줄었다는 인식보다 높았다. 다만 D 문항의 표준편차가 0.97∼1.28로 C 문항(0.69∼1.00)보다 커서, 경보 부담이 줄었다고 느끼는 정도는 관리자마다 달랐다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 306,
+    "text": "  이 설문은 시스템을 사용한 관리자 34명이 자신의 경험을 평가한 결과이다. 제4장에서는 이 응답을 분석 결과가 나온 이유를 검토하는 참고자료로 활용하였다(제4장 제7절 제2항). 그림에서 막대는 묶음 평균이고, 막대 위의 점은 그 묶음을 이루는 문항의 평균이다. 점선은 척도의 가운데인 ‘보통이다’(3점), 파선은 시스템 특성 인식 전체 평균(3.74점)이다. 묶음별 평균과 문항별 평균은 <그림 3-5>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 307,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 308,
+    "text": "<그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(n=34)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 309,
+    "text": "그림입니다.\n원본 그림의 이름: fig_3_11_chart_v6.png\n원본 그림의 크기: 가로 1771pixel, 세로 1157pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 310,
+    "text": "제 6 항 현장 운영 특성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 311,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 312,
+    "text": "  A-7∼A-9는 응답일 직전 1개월의 실제 상황을 묻는 사실 문항이며 Y·통제변수에 투입하지 않았다. A-7·A-8은 시스템이 실제로 쓰이고 있는지 확인하는 운용 실태 확인 지표이다. 자동 알림은 도입 현장에만 있으므로 두 집단의 차이는 설계상 당연히 나오며, 이를 안전관리 실효성의 근거나 연구가설 (1-1) 결과와 함께 보는 비교에 쓰지 않았다. A-9는 위험을 안 뒤 지시가 전달되기까지의 과정을 나타내는 과정 지표로, 제4장 제7절 제2항에서 지시 전달 시간의 차이 유무와 실효성의 차이 유무를 함께 보는 데 사용하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 313,
+    "text": "  비율은 문항별 유효 응답을 분모로 하며, 도입·미도입 현장 간 분포 차이에 대한 Fisher 정확검정의 p는 A-7·A-8에서는 참고값으로만 제시하였다(A-7 p<.001, A-8 p<.001, A-9 p=.663). p는 Fisher 정확검정으로, 행과 열의 합계를 그대로 둔 채 나올 수 있는 모든 응답 분포(2×k 교차표)를 열거하여 정확하게 계산하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 314,
+    "text": "  도입 현장에서 A-7이 ③ 또는 ④이고 A-8이 ③이면 시스템 알림이 실제로 관리자의 위험 인지 수단이 된 것(시스템 경로 작동)으로 보고, A-7이 ①·②·⑤이거나 A-8이 ③이 아닌 응답은 시스템이 인지 경로가 되지 못한 현장으로 따로 집계하였다(19건). 시스템 경로가 작동한 도입 응답은 15건이며, A-7 ⑤(기타)를 고른 도입 응답은 없다(제4장 제5절 제2항). 이 집계는 정상 운용 확인 결과와 함께 읽으며 미도입으로 재분류하지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 315,
+    "text": "  현장 운영 특성에서 도입 현장은 담당자 부재 시 자동 알림으로 위험을 아는 비율(50.0%)과 위험을 ‘발생 직후 알림으로’ 아는 비율(44.1%)이 높고, 미도입 현장은 작업자·반장의 전화·보고(69.2%)와 ‘누군가 알려줄 때’(74.4%)에 몰렸다. 반면 지시 전달 소요시간(A-9)은 도입·미도입 현장의 분포가 비슷하여(Fisher 정확검정 p=.663), ‘30분 이내’ 응답이 도입 85.3%, 미도입 76.9%였다. 미도입 응답 가운데 2건은 위험을 ‘발생 직후 알림으로’ 안다고 답하였다. 이 응답이 다른 알림 수단을 뜻하는지, 문항을 다르게 해석한 것인지는 확정하지 않았다. 도입·미도입 현장의 위험 인지 경로와 시점, 인지 후 지시 전달 소요시간은 <표 3-11>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 316,
+    "text": "<표 3-11> 현장 운영 특성(A-7∼A-9)의 분포(도입·미도입 현장별)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 317,
+    "text": "문항보기도입 n(%)미도입 n(%)전체 n(%)A-7 담당자 부재 시 위험 인지 경로① 알게 될 방법이 없다0 (0.0)2 (5.1)2 (2.7)② 작업자나 반장의 전화·보고10 (29.4)27 (69.2)37 (50.7)③ 사무실 등에서 CCTV 화면을 직접 본다7 (20.6)7 (17.9)14 (19.2)④ 자동 알림(문자·메신저·앱)을 받는다17 (50.0)0 (0.0)17 (23.3)⑤ 기타0 (0.0)3 (7.7)3 (4.1)A-8 순찰 간 위험 인지 시점① 다음 순찰 때6 (17.6)5 (12.8)11 (15.1)② 누군가 알려줄 때10 (29.4)29 (74.4)39 (53.4)③ 발생 직후 알림으로15 (44.1)2 (5.1)17 (23.3)④ 모르고 지나가는 경우가 많다3 (8.8)3 (7.7)6 (8.2)A-9 인지 후 지시 전달 소요시간① 즉시∼5분11 (32.4)15 (38.5)26 (35.6)② 5분 초과∼30분18 (52.9)15 (38.5)33 (45.2)③ 30분 초과∼1시간4 (11.8)7 (17.9)11 (15.1)④ 1시간 초과 또는 다음 순찰 때1 (2.9)2 (5.1)3 (4.1)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 318,
+    "text": "제 5 절 소결"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 319,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 320,
+    "text": "  본 장은 중소규모 건설현장의 제약에 대응하는 YOLO-LLM 안전관제 시스템을 설계·구현하고, 실제 운영 중에 쌓인 후보 기록으로 YOLO가 먼저 잡아낸 장면에 대한 LLM 2차 필터의 성능을 평가하였다. 정답을 매긴 후보에서 오경보는 834건에서 13건으로 줄었으나 실제 위험 44건 중 5건의 경보도 함께 차단되었고(<표 3-7>), RAG 교정은 오경보(FP)와 함께 실제 위험 경보(TP)도 줄였다(<표 3-8>). 정량 평가는 접근 위험 2종의 후보를 대상으로 하였다. 도입 현장 관리자 34명의 설문에서는 네 기술 특성 가운데 알림 전파(3.99점)를 가장 높게, 오탐 필터링(3.51점)을 가장 낮게 평가하였고 경보 피로도 완화 인식은 평균 3.65점이었다(제4절 제5항)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 321,
+    "text": "  본 장은 제2장 제2절에서 선정한 네 가지 기술 특성에 대응하는 구현과 평가 범위를 제시하였다. 시스템 인프라 범용성(A1)은 요구사항 R1·R2(제1절 제2항), 가용 하드웨어에 따른 추론 실행(제3절 제2항)과 적용 범위 검토(제4절 제4항)에 대응하고, 1차 탐지(YOLO) 및 제어 안정성(A2)은 검출 설계와 판정 로직(제2절 제2항)에 대응하였다. 2차 검증(LLM) 오탐 필터링(A3)은 검증 모듈 설계(제2절 제3항)와 오경보 감소·실제 위험 경보 손실 평가(제4절 제2항)에, 알림 전파 즉각성(A4)은 경보 전파 설계(제2절 제4항)에 대응하였다. 이 가운데 정량 자료로 제시한 것은 오경보 필터링의 후보 로그 평가와 1차 탐지의 검증셋 내부 평가값이며, 나머지는 구현·구성의 범위에서 설명하였다. 네 특성은 도입 현장 관리자가 시스템 경험을 응답한 인식 조사(제4절 제5항)의 측정 근거로 썼다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 322,
+    "text": "  현장 작동성은 요구사항, 구현 기능과 운영 제약을 연결하여 시스템이 현장에서 어떻게 작동하는지 살펴보는 설명 관점이다(제2장 제3절 참조). 제4장의 실증 분석에서는 도입 현장과 미도입 현장의 관리자가 지각한 현재 안전관리 업무의 실질적 수행 수준을 비교하였다. 이어지는 제4장에서는 연구 모형과 가설, 조작적 정의, 조사·분석 절차를 제시한 뒤 도입·미도입 현장의 차이를 검증하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 323,
+    "text": "제 4 장 연구설계 및 실증분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 324,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 325,
+    "text": "제 1 절 연구 모형 설계"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 326,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 327,
+    "text": "  본 장에서는 연구 모형·가설·측정도구·분석 절차를 설계하고 가설 검증 결과를 제시하였다. 설계의 목적은 도입·미도입 현장의 안전관리 실효성 차이를, 응답자·현장 특성이 서로 달라서 생기는 부분을 분석에서 감안한 뒤의 평균 차이(조정 평균 차이)로 추정하는 데 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 328,
+    "text": "  도입·미도입 현장의 비교는 시스템 설치 후 한 시점에 설문을 한 번 하고, 시스템을 운용하는 현장과 운용하지 않는 현장을 견주는 방식으로 하였다. 어느 현장에 시스템을 둘지 연구자가 무작위로 정하지는 않았으므로, 이 설계는 사후 설문 1회의 횡단적 준실험 설계에 해당한다. 도입 현장은 A공사 경기지역본부 산하 건설현장 가운데 시스템 설치와 응답일 현재 3개월 이상 정상 운용이 확인된 현장이고, 미도입 현장은 같은 관할에서 미설치·미운용이 확인된 현장이다. 독립변수는 현장 단위의 YOLO-LLM 안전관제 시스템 도입이며, 종속변수는 관리자가 지각한 현재 안전관리 업무의 실질적 수행 수준이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 329,
+    "text": "  원인과 결과를 말하려면 세 가지 조건이 필요하다. 원인이 다르면 결과도 달라야 하고(공변성), 원인이 결과보다 먼저 있어야 하며(시간적 우선성), 다른 요인의 영향을 구분해 살펴야 한다(독립변수 통제). 본 연구에서 공변성은 응답자와 현장 특성의 차이를 분석에서 감안한 뒤 도입·미도입 현장별 평균을 비교하는 공분산분석(ANCOVA)으로 확인하였다. 시간적 우선성을 위해서는 시스템을 3개월 이상 운용한 뒤에 설문하여 시스템 운용이 설문 측정보다 앞서도록 하였다. 다만 도입 전에 점수를 재 두지 않았으므로, 두 집단의 차이가 도입 전부터 있었는지는 이 설계로 확인할 수 없다(제5장)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 330,
+    "text": "  독립변수를 통제하기 위해 여섯 통제변수(C)를 분석에 넣어 그 차이를 감안하였고, 두 집단의 응답자·현장 구성이 얼마나 비슷한지를 분석 전에 먼저 확인하였다. 만 나이와 건설현장 경력은 연속형 통제변수(공변량)로, 소속 구분·성별·역할·총공사비 구간은 범주형 통제변수(고정요인)로 투입하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 331,
+    "text": "  이상의 설계를 토대로 연구변수를 구성하면 <표 4-1>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 332,
+    "text": "<표 4-1> 연구변수의 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 333,
+    "text": "변수 구분변수 및 하위요인구성과 역할독립변수(X)YOLO-LLM 안전관제 시스템 도입설치·3개월 이상 정상 운용 확인 도입=1, 미설치·미운용 확인 미도입=0종속변수(Y)안전관리 실효성관리자 개인이 지각한 현재 안전관리 업무 수준. 조기인지, 대응 신속성, 원격 파악, 순찰부담 경감, 위험 통제력의 5개 하위요인통제변수(C)응답자·현장 특성연속형 통제변수(공변량): 만 나이·건설현장 경력; 범주형 통제변수(고정요인): 소속 구분·성별·역할·총공사비 구간"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 334,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 335,
+    "text": "  연구 모형은 도입 여부(X)에 따라 안전관리 실효성(Y)의 조정 평균이 다른지를 검토하는 <그림 4-1>의 비교 모형이며, 주 결론은 연구가설 (1-1)의 도입·미도입 현장 간 조정 평균 차이로 도출하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 336,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 337,
+    "text": "<그림 4-1> 연구 모형"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 338,
+    "text": "그림입니다.\n원본 그림의 이름: figure_4-1_research_model_261103.png\n원본 그림의 크기: 가로 1772pixel, 세로 921pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 339,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 340,
+    "text": "제 2 절 연구 문제 및 연구가설"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 341,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 342,
+    "text": "  제1절의 연구 모형에 따라 연구 문제와 그에 대응하는 연구가설을 세웠다. 가설의 이론적 근거와 선행연구는 제2장 제4절에서 고찰하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 343,
+    "text": "  연구 문제 1. YOLO-LLM 안전관제 시스템 도입 현장과 미도입 현장의 관리자가 지각한 현재 안전관리 실효성은 여섯 통제변수(C)를 조정한 후에도 차이가 있는가."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 344,
+    "text": "  연구가설 (1-1). YOLO-LLM 안전관제 시스템 도입 현장의 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)를 조정한 후에도 미도입 현장보다 높을 것이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 345,
+    "text": "  연구가설 (1-1)은 안전관리 실효성 8문항 평균점수의 조정 평균 차이로 검정하였다. 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 하위요인별 차이는 연구가설 (1-1)의 해석을 보완하는 분석으로 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 346,
+    "text": "  이상의 연구가설을 종합하면 <표 4-2>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 347,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 348,
+    "text": "<표 4-2> 연구가설 종합"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 349,
+    "text": "가설가설 내용분석 관계연구가설 (1-1)YOLO-LLM 안전관제 시스템 도입 현장의 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)를 조정한 후에도 미도입 현장보다 높을 것이다.현장 도입 여부 → Y"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 350,
+    "text": "제 3 절 변수의 조작적 정의 및 측정도구 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 351,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 352,
+    "text": "  조작적 정의는 추상적인 개념을 측정할 수 있는 문항과 기준으로 바꾸는 절차이다. 변수는 제2장의 개념을 토대로 정의하였고, 안전관리 실효성 하위요인의 정의는 제2장 제3절 제1∼5항을 따랐다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 353,
+    "text": "  독립변수인 YOLO-LLM 안전관제 시스템 도입(X)은 응답일 현재 3개월 이상 정상 운용이 확인된 현장을 1, 미설치·미운용 현장을 0으로 두었다. 3개월 요건은 B 문항의 기준기간(응답일 직전 1개월)이 안정된 운용 기간에 들게 하려는 것이다. 종속변수인 안전관리 실효성(Y)은 미도입 현장 관리자도 같은 기준으로 답할 수 있도록 특정 시스템의 기능이 아니라 현장 일반의 업무 수준으로 정의하였다. 현장 운영 특성(A-7∼A-9)은 위험 인지 경로·시점과 지시 전달 소요시간을 묻는 참고 변수로, Y와 통제변수 어디에도 넣지 않았다(제5절 제2항)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 354,
+    "text": "  통제변수는 두 집단의 응답자·현장 구성 차이를 조정하기 위해 이론적 근거로 선정하였다. 만 나이와 건설현장 경력은 연속값으로 넣었으며, 경력은 건설현장 업무 경력을 중복 없이 더한 연 단위 값이다. 연령과 업무 경력은 건설안전 웨어러블 수용 연구에서도 통제변수로 쓰였다(Chong et al., 2023, p. 7). 소속과 역할은 법령상 안전관리 의무의 주체와 범위가 달라, 위험 정보를 접하는 경로와 실효성을 보는 관점도 다를 수 있으므로 넣었다. 시공사는 안전조치를 직접 이행하고(「산업안전보건법」 제63조), 발주청은 안전보건대장을 확인하고 공사감독자를 두어 감독하며(같은 법 제67조; 「건설기술 진흥법」 제49조), 안전관리자와 현장소장(관리감독자)의 직무도 서로 다르다(「산업안전보건법」 제16조·제17조). 총공사비 구간은 응답일 현재 확정 금액을 조사용으로 나눈 네 구간(법적 규모 분류 아님)으로, 규모에 따른 관리 자원 차이의 대리 지표이다(김용선, 2022, pp.100–101). 성별은 응답자 구성 차이를 조정하기 위해 넣었으며, 성별에 따른 동료 안전인식 차이를 보고한 He et al.(2023, 제4.1–4.3절)을 보조 근거로 삼았다. 변수별 조작적 정의와 측정방법은 <표 4-3>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 355,
+    "text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 356,
+    "text": "변수명하위요인조작적 정의측정방법독립변수: YOLO-LLM 안전관제 시스템 도입(X)—시스템 설치와 응답일 현재 3개월 이상 정상 운용이 확인된 현장(도입=1)과 미설치·미운용이 확인된 현장(미도입=0)의 구분. 알림 경험은 별도 기록본 연구에서 설치·운용 상태를 파악한 현장에 설문을 안내하고 응답자가 첫 질문에서 선택한 이분형 현장 구분종속변수: 안전관리 실효성(Y)조기인지현장 관리자가 자기 현장에서 위험 징후를 사고로 이어지기 전에 발견한다고 지각하는 수준5점 리커트척도(B-1)대응 신속성위험 상황을 인지한 뒤 초동 대응을 빠르게 지시한다고 지각하는 수준5점 리커트척도(B-2)원격 파악현장에 직접 가지 않고도 위험 상황을 파악하고 위험 정보와 조치 필요사항을 공유한다고 지각하는 수준5점 리커트척도(B-3·B-4)순찰부담 경감제한된 인력으로 순찰·확인 업무를 효율적으로 수행하고 불필요한 확인보다 실제 위험 대응에 집중한다고 지각하는 수준5점 리커트척도(B-5·B-6)위험 통제력시정·작업중지 등 통제 조치를 신속하게 시행하여 위험요인을 실질적으로 통제한다고 지각하는 수준5점 리커트척도(B-7·B-8)통제변수(C): 응답자·현장 특성연속형 통제변수(공변량)만 나이(세), 건설현장 경력(년)숫자 기입(A-3·A-4)범주형 통제변수(고정요인)소속 구분, 성별, 역할, 총공사비 구간(4구간)명목척도(A-1·A-2·A-5·A-6)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 357,
+    "text": "제 4 절 설문조사"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 358,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 359,
+    "text": "제 1 항 설문조사의 개요 및 절차"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 360,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 361,
+    "text": "  본 설문조사는 도입 현장과 미도입 현장의 안전관리 실효성을 한 시점에 한 번, 같은 기준으로 재는 횡단 조사이다. 도입·미도입 현장 모두 B는 설문 응답일 직전 1개월의 현장 안전관리 실태·여건을 평가하도록 안내를 통일하였다. B의 안내에는 순찰과 순찰 사이나 안전관리 담당자가 현장에 없는 시간대에 생긴 위험 상황까지 평가에 넣도록 상황을 고정하는 문장을 두 양식에 똑같이 두었다. 한쪽 양식에만 시스템을 소개하면 응답을 유도할 수 있으므로 시스템 이름과 기능은 언급하지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 362,
+    "text": "  측정도구는 표준화된 기존 척도를 그대로 쓰지 않고 본 연구에서 수정·개발한 척도로, 선행연구 고찰을 통한 초기 문항 구성과 국내 관계 법령·건설 실무 지표 대조의 두 단계로 개발하였다. 먼저 제2장의 이론적 배경과 제3절의 조작적 정의를 토대로 변수별 초기 문항 풀을 구성하였다. 이어서 초기 문항을 산업안전보건법령의 산업안전보건관리비 기준과 스마트 안전장비 활용 가이드라인 등 국내 제도·실무 지표와 대조하여 현장 용어에 맞게 정비하였다(국토교통부·국토안전관리원, 2024). 문항별 출처는 <표 4-4>에 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 363,
+    "text": "  개발한 문항은 지도교수와 건설안전 분야 박사 1인의 전문가 검토를 거쳐 표현과 현장 적합성을 점검한 뒤 2026-10-11 배포본으로 확정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 364,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 365,
+    "text": "제 2 항 설문지의 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 366,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 367,
+    "text": "  본 설문지는 공통부와 도입 현장 전용부로 구성하였다. 공통부는 인구통계학적 특성과 현장 운영 특성을 묻는 A 9문항과 안전관리 실효성을 묻는 B 8문항이며, 도입 현장 전용부는 시스템 특성 인식을 묻는 C 8문항과 경보 피로도 완화 인식을 묻는 D 4문항이다. 미도입 현장 관리자는 공통부 17문항에, 도입 현장 관리자는 공통부와 전용부를 합한 29문항에 응답하였으며, 문항 전문은 부록에 수록하였다. 리커트 문항은 모두 1점 ‘전혀 그렇지 않다’부터 5점 ‘매우 그렇다’까지의 5점 척도로 측정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 368,
+    "text": "  현장 구분·현장명·성명 입력 항목은 문항 이동과 중복 제출 확인에만 사용하여 문항 수와 분석에서 제외하였다. 전용부 C·D의 결과는 제3장 제4절 제5항에서 서술하였다. <표 4-4>의 출처는 문항을 구성할 때 개념을 참고한 문헌이다. 설문지의 구성을 요약하면 <표 4-4>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 369,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 370,
+    "text": "<표 4-4> 설문지의 최종 구성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 371,
+    "text": "구분변수명응답 대상문항수문항번호출처통제변수(C)인구통계학적 특성 및 현장 운영 특성전체9A-1∼A-9-종속변수(Y)안전관리 실효성전체8B-1∼B-8김민기·박성호(2026); 김용선(2022); 김태헌(2026); 김현수(2026); 이동건(2024); 이창남(2025); 황병복(2026);Chong et al.(2023); Cvach(2012);Wu et al.(2025)소  계17시스템특성시스템 특성 인식도입현장8C-1∼C-8제3장 제4절 제5항(<표 3-10>) 참조경보 피로도 완화 인식도입현장4D-1∼D-4소  계12합  계미도입17도입29"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 372,
+    "text": "제 5 절 자료 수집과 분석 절차"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 373,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 374,
+    "text": "제 1 항 자료 수집 및 표본"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 375,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 376,
+    "text": "  조사대상은 A공사 경기지역본부 산하 건설현장에서 안전관리 업무를 맡은 현장 관리자이다. 응답자는 시공사 측 현장소장(관리감독자)·안전관리자와 발주청 측 공사감독·감리원 가운데 담당 현장의 안전관리를 맡은 사람으로 정하였으며, 같은 사람이 두 번 응답하지 않도록 현장당 1명씩 담당 현장을 미리 지정하였다. 총공사비 상한은 두지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 377,
+    "text": "  도입 현장은 경기지역본부 안전관제 시스템에 카메라가 등록된 90개소 가운데 응답일 현재 설치 후 3개월 이상 정상 운용이 확인된 현장으로, 미도입 현장은 시스템을 설치·운용하지 않은 현장으로 정하였다. 조사 대상 현장에는 다른 스마트 안전장비가 없었다. 현장은 같은 관할에서 공사금액 규모와 주요 특성이 비슷한 곳을 먼저 확보하였으나 무작위로 배정하지는 않았다. 도입·미도입 각 30개소 이상을 목표로 하였고, 실제로 도입 34개소와 미도입 39개소에서 현장당 1명씩 총 73명이 응답하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 378,
+    "text": "  자료는 2026년 10월 12일부터 10월 23일까지 전자 설문(자기기입식)으로 수집하였다. 응답자가 첫 질문에서 현장 구분을 고르면 도입 현장은 29문항, 미도입 현장은 17문항으로 넘어가도록 하였다. 중복 제출은 응답 내용과 제출시각으로 점검하였고, 결측·이상값을 검토한 뒤 73부 전부를 분석하였다. 분석에는 성명과 현장명을 지운 사본을 썼으며, 식별 정보가 담긴 원자료는 공개하지 않고 따로 보관하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 379,
+    "text": "  비교 대상 시스템을 개발하고 현장 관리에도 관여한 연구자와의 관계를 응답자가 의식하여 응답할 수 있다. 이를 줄이려고 안내문에 연구자의 역할, 자발적 참여와 중단 가능성, 개별 응답의 비공개를 밝혔다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 380,
+    "text": "  이상의 자료 수집 절차를 요약하면 <표 4-5>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 381,
+    "text": "<표 4-5> 자료 수집 개요"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 382,
+    "text": "구분내용조사대상A공사 경기지역본부 산하 조사대상 건설현장의 현장 관리자·안전관리자, 총공사비 120억 원 이상도 포함비교 현장모집 목표는 설치·3개월 이상 정상 운용 확인 도입 30현장과 미설치·미운용 확인 미도입 30현장(총 60현장), 실제 응답은 도입 34현장·미도입 39현장(총 73현장)정상 운용 확인카메라 등록 90개소·108대(1대 77개소, 2대 8개소, 3대 5개소) 가운데 설치·3개월 이상 정상 운용 요건 충족을 확인응답자 기준도입·미도입 현장 동일 직무 범위의 안전관리 업무 담당자, 현장당 1명·담당 현장 사전 지정으로 개인 중복 응답 방지, 알림 경험은 A-7·A-8 응답으로 확인조사 설계사후 설문 1회의 횡단적 도입·미도입 현장 비교 준실험 설계조사 시기·기준기간2026년 10월 12일∼10월 23일 실시, 공통 B는 도입·미도입 현장 모두 설문 응답일 직전 1개월, 도입 현장은 응답일 현재 3개월 이상 정상 운용 확인목표 표본·분석 단위현장당 1명, 도입·미도입 현장별 응답 30건 이상, 총 60부 이상. 실제 응답 73명(도입 34·미도입 39) 전원 분석. 분석 단위는 개인 응답자(현장당 1명)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 383,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 384,
+    "text": "제 2 항 분석 절차"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 385,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 386,
+    "text": "  분석은 jamovi 2.7.41(2026)로 수행하였다. 안전관리 실효성 점수(Y)는 B 8문항의 평균이다. 하위요인의 문항 수가 1·1·2·2·2개로 달라 2문항 하위요인의 비중이 두 배이므로, Y는 단일 개념이 검증된 점수가 아니라 다섯 하위요인을 합친 합성점수이다. Y는 전 문항에 응답한 경우에만 산출하고 결측을 다른 값으로 채우지 않았으며, 일렬응답이라는 이유만으로 제외하지 않았다. 이 채점 규칙은 결과를 보기 전에 고정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 387,
+    "text": "  분석은 빈도분석과 두 집단의 사전 특성 비교, 탐색적 요인분석, 신뢰도 분석, 기술통계, 상관분석, 공분산분석 순으로 진행하였다. 연구가설 (1-1)은 현장 도입 여부(도입=1, 미도입=0)에 만 나이·경력을 공변량으로, 소속·성별·역할·총공사비 구간을 고정요인으로 넣은 공분산분석으로 검정하였다. 통제변수는 이론적 근거로 미리 정하였고 유의확률에 따라 넣거나 빼지 않았다. 기준범주는 시공사·남성·공사감독·20억 원 미만이며, 집단 효과는 Type III 제곱합으로 산출하였다. 가정(선형성·회귀기울기 동질성·정규성·등분산성·영향점)을 점검하되 영향점은 삭제하지 않았다. 조정 평균 차이(B)가 양수이고 양측 p<.05이면 가설을 지지하는 것으로 판단하였고, 효과크기는 참고값으로만 제시하였다. 다섯 하위요인에는 같은 모형과 Holm 보정을 적용하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 388,
+    "text": "  현장 운영 특성(A-7∼A-9)은 시스템 도입이 실효성과 관련되는 통로일 수 있어 통제변수로 넣지 않았다. 넣으면 알아보려는 집단 차이까지 지우는 과잉통제가 되기 때문이다. 대신 도입 현장에서 A-7이 ③ 또는 ④이고 A-8이 ③이면 시스템 알림이 관리자의 위험 인지 수단이 된 것(시스템 경로 작동)으로 기록하고, 그 밖의 응답은 작동하지 않은 것으로 분류하되 미도입으로 재분류하지 않았다. 이 현장만으로 다시 추정하는 민감도 분석도 미리 정하였다. 또 지시 전달 소요시간(A-9)의 집단 차이를 연구가설 (1-1) 결과와 나란히 놓고 해석하기로 정하였으며, 이 비교는 가설 판정을 바꾸지 않는다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 389,
+    "text": "제 6 절 조사 대상 특성과 기초통계 분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 390,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 391,
+    "text": "  본 절부터는 제1∼5절에서 정한 설계, 즉 시스템 설치 후 한 시점에 한 번 조사하여 도입·미도입 현장을 비교하는 설계에 따라 결과를 제시하였다. 연구가설 (1-1)은 미리 정한 여섯 통제변수(C)의 차이를 분석에서 감안한 뒤, 관리자 개인이 지각한 안전관리 실효성이 도입·미도입 현장 사이에 다른지로 검정하였다. 현장 도입 여부와 기준기간, 여섯 통제변수(C)의 투입 방식은 제5절 제2항의 규칙을 따르며, 현장당 1명의 응답을 공분산분석(ANCOVA)으로 분석하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 392,
+    "text": "  실제 유효 표본은 73명(도입 34명·미도입 39명)으로 모집 목표인 집단별 30개소 이상을 충족하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 393,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 394,
+    "text": "제 1 항 인구통계학적 빈도분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 395,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 396,
+    "text": "  인구통계학적 빈도분석은 응답자와 현장의 구성, 그리고 통제변수로 넣을 소속·성별·역할·총공사비 구간의 분포를 확인하기 위해 실시하였다. 응답자는 담당 현장의 안전관리 업무를 직접 맡은 공사감독·감리원·현장소장(관리감독자)·안전관리자로 한정하였고(제5절 제1항), 현장당 1명이므로 응답자 수와 현장 수는 같다. 유효 표본 73명의 문항 결측은 0건이어서 73명 전원을 분석에 사용하였으며, 일렬응답도 제5절 제2항의 규칙에 따라 포함하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 397,
+    "text": "  두 집단의 범주별 분포 차이는 Fisher 정확검정으로 확인하고, 그 크기는 Cramér's V로 나타냈다. V는 두 집단의 구성이 얼마나 다른지를 0(같음)에서 1(완전히 다름) 사이의 값으로 나타낸다. 역할의 ‘기타’ 응답은 응답자에게 다시 확인하여 세 범주로 나누었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 398,
+    "text": "  그 결과 성별만 유의한 차이를 보였는데(V=0.279, p=.027), 여성 6명이 모두 미도입 현장 응답자였기 때문이다. 소속(V=0.196, p=.150), 역할(V=0.120, p=.631), 총공사비 구간(V=0.254, p=.201)은 유의한 차이가 없었다. 다만 도입 현장에는 여성 응답자가 없고 총공사비 20억 원 미만 응답자도 3명뿐이다. 이런 범주의 비교는 실제 자료보다 통계 모형의 가정에 기대게 되므로 제7절에서 주의하여 해석하였다. 조사 대상의 인구통계학적 특성은 <표 4-6>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 399,
+    "text": "<표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 400,
+    "text": "구분항목도입 n(%)미도입 n(%)전체 n(%)소속 구분시공사17 (50.0)27 (69.2)44 (60.3)발주청(공사감독·감리원 포함)17 (50.0)12 (30.8)29 (39.7)성별남성34 (100.0)33 (84.6)67 (91.8)여성0 (0.0)6 (15.4)6 (8.2)역할공사감독16 (47.1)15 (38.5)31 (42.5)안전관리자7 (20.6)12 (30.8)19 (26.0)현장소장(관리감독자)11 (32.4)12 (30.8)23 (31.5)총공사비 구간20억 원 미만3 (8.8)5 (12.8)8 (11.0)20억 원 이상∼50억 원 미만6 (17.6)9 (23.1)15 (20.5)50억 원 이상∼120억 원 미만16 (47.1)9 (23.1)25 (34.2)120억 원 이상9 (26.5)16 (41.0)25 (34.2)합계34 (100.0)39 (100.0)73 (100.0)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 401,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 402,
+    "text": "  만 나이와 건설현장 경력은 제7절 공분산분석의 공변량이므로, 두 집단의 분포가 얼마나 다른지를 사전에 진단하였다. 무작위 배정이 없는 횡단 비교에서는 두 집단의 연령·경력 구성이 다를 수 있다. 공분산분석은 두 집단의 나이·경력을 같은 값으로 맞춘 상태에서 점수를 비교하는데, 예컨대 한 집단에는 30대만, 다른 집단에는 50대만 있다면 같은 나이에서 비교할 실제 응답이 없어 그 비교는 통계 모형의 추정에 기대게 된다. 두 변수는 연속값 그대로 사용하였고(결측 0건), 독립표본 t검정과 효과크기 Cohen's d(평균 차이를 표준편차 단위로 나타낸 값)로 비교하였다. t의 부호는 도입−미도입 기준이다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 403,
+    "text": "  그 결과 만 나이는 두 집단이 거의 같았고(t(71)=−0.20, p=.842, d=0.047), 경력은 미도입 현장이 3.3년 길었으나 유의하지 않았다(t(71)=−1.21, p=.229). 다만 경력 차이의 크기(d=0.285)가 나이보다 커서 두 집단의 경력이 같다고 보지는 않았다. 두 집단의 응답은 나이 30∼66세, 경력 1∼37년에서 겹치고 이를 벗어난 응답자는 미도입 현장의 나이 4명과 경력 1명뿐이어서, 조정은 대부분 실제 자료 범위 안에서 이루어진다. 두 변수는 이 결과와 관계없이 제5절 제2항에서 정한 대로 공변량으로 통제하였다. 기술통계와 집단 비교 결과는 <표 4-7>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 404,
+    "text": "<표 4-7> 만 나이와 건설현장 경력의 기술통계 및 집단 비교"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 405,
+    "text": "변수현장 도입 여부NMeanSDt(71)p만 나이(세)도입3446.411.1−0.20.842미도입3946.912.0건설현장 경력(년)도입3414.210.8−1.21.229미도입3917.512.4"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 406,
+    "text": "  현장 운영 특성(A-7∼A-9)의 분포는 제3장 제4절 제6항의 <표 3-11>에 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 407,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 408,
+    "text": "제 2 항 타당도 분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 409,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 410,
+    "text": "  타당도 분석은 측정도구가 재려는 개념을 제대로 재는지 확인하는 절차이다. 안전관리 실효성 척도는 본 연구에서 수정·개발한 척도이므로(제4절 제1항), B 8문항이 하나의 개념으로 묶이는지 탐색적 요인분석으로 확인하였다. 문항 내용의 적합성은 앞서 전문가 검토로 점검하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 411,
+    "text": "  요인분석은 유효 73명 전체를 대상으로 주축요인추출(PAF)을 적용하였다. 요인 수는 고유값 1 이상 기준으로 정하되, 이 기준은 요인 수를 실제보다 많이 잡을 수 있어 스크리 도표를 함께 보았다(Costello & Osborne, 2005). 자료가 요인분석에 적합한지는 KMO 값과 Bartlett 구형성 검정으로 확인하였다. 도입 현장 전용부 C·D는 기술통계로만 보고하므로(제3장 제4절 제5항) 분석에서 제외하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 412,
+    "text": "  그 결과 KMO 값은 0.911이고 Bartlett 검정도 유의하여(χ²(28)=456, p<.001) 요인분석에 적합한 자료였다. 고유값이 1을 넘은 요인은 하나뿐이어서(5.33) 8문항은 한 요인으로 묶였으며, 요인이 하나이므로 회전은 하지 않았다. 이 요인은 문항 응답 차이의 66.6%를 설명하였고, 문항별 요인적재값은 0.727∼0.888로 모두 기준인 .50을 넘었다(Costello & Osborne, 2005, p. 4). 다만 한 요인으로 묶였다고 해서 8문항이 한 가지 개념만 잰다고 단정할 수는 없다. 요인분석 결과는 <표 4-8>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 413,
+    "text": "<표 4-8> 안전관리 실효성 문항의 탐색적 요인분석 결과"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 414,
+    "text": "문항하위요인Factor(요인적재값)Uniqueness(고유분산)B-1조기인지0.7930.371B-2대응 신속성0.7730.402B-3원격 파악0.8070.348B-40.8420.291B-5순찰부담 경감0.7270.471B-60.8100.344B-7위험 통제력0.8880.212B-80.8750.234고유값(SS Loadings) 5.33, 설명분산 66.6%, KMO = 0.911, Bartlett χ²(28) = 456 (p < .001)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 415,
+    "text": "제 3 항 신뢰도 분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 416,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 417,
+    "text": "  신뢰도 분석은 같은 개념을 재는 문항들이 얼마나 일관된 응답을 내는지 확인하는 절차이다. 본 연구에서는 Cronbach's α로 문항 간 내적 일관성을 확인하였으며, α 0.70 이상을 내적 일관성의 수용 기준으로 적용하였다(Tavakol & Dennick, 2011, p. 54). 다만 이 기준의 충족만으로 척도의 타당성이나 단일차원성을 확정하지 않았다. 단일 문항 영역인 조기인지와 대응 신속성에는 α를 산출하지 않았고, 2문항 영역인 원격 파악·순찰부담 경감·위험 통제력은 α 대신 문항 간 Pearson 상관계수(r)로 보고하였다. α와 문항 간 상관은 전체와 도입·미도입 현장별로 각각 산출하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 418,
+    "text": "  안전관리 실효성 8문항의 α는 전체 0.937, 도입 현장 0.906, 미도입 현장 0.937이었다. 문항 제거 시 α는 0.924∼0.934로 전체 α를 넘는 문항이 없었고, 수정 문항–총점 상관은 0.707(B-5)∼0.857(B-7)이었다. 2문항 영역의 문항 간 상관은 원격 파악 0.721, 순찰부담 경감 0.631, 위험 통제력 0.741로 모두 유의하였다(p<.001). 현장별 문항 간 상관은 도입 현장에서 원격 파악 0.501(p=.003), 순찰부담 경감 0.507(p=.002), 위험 통제력 0.709(p<.001)였고, 미도입 현장에서는 같은 순서로 0.783·0.647·0.704(모두 p<.001)였다. 모두 유의하였으나, 원격 파악과 순찰부담 경감은 도입 현장에서 낮았다. 도입 현장에서는 이 두 영역의 두 문항이 서로 다른 측면을 짚었을 가능성이 있으며, 이 점은 제8절의 하위요인 해석에서 함께 고려하였다. 높은 α가 단일차원성을 뜻하지는 않는다. 표의 평균과 표준편차는 전체 73명 기준이며, 마지막 열에는 8문항 척도의 α와 2문항 영역의 문항 간 r을 함께 적었다. 신뢰도 분석 결과는 <표 4-9>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 419,
+    "text": "<표 4-9> 측정도구의 신뢰도 분석 결과"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 420,
+    "text": "측정변수문항 수MeanSDCronbach's α(2문항은 r)안전관리 실효성(전체)83.780.7850.937조기인지13.820.855—대응 신속성14.040.789—원격 파악23.690.9560.721순찰부담 경감23.550.9470.631위험 통제력23.940.7860.741"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 421,
+    "text": "제 4 항 기술통계 분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 422,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 423,
+    "text": "  기술통계 분석은 타당도와 신뢰도를 확인한 문항으로 산출한 점수의 분포를 집단별로 확인하기 위해 실시하였다. 안전관리 실효성은 8문항 평균으로, 하위요인은 해당 영역 전 문항 응답의 평균으로 산출하였으며 채점 규칙은 제5절 제2항을 따랐다. 결측이 없으므로 각 변수의 n은 제7절의 가설 검정 표본과 같다. 분포는 평균·표준편차와 함께 왜도·첨도로 확인하였다. 왜도는 분포가 좌우로 치우친 정도를, 첨도는 분포의 봉우리와 꼬리가 정규분포와 다른 정도를 나타낸다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 424,
+    "text": "  안전관리 실효성의 원평균은 도입 현장 4.11점, 미도입 현장 3.48점이었다. 다섯 하위요인 모두 도입 현장의 원평균이 높았으며, 그 차이는 원격 파악에서 가장 컸고(0.80점) 대응 신속성에서 가장 작았다(0.37점). 표준편차는 모든 변수에서 미도입 현장이 더 커서 미도입 현장 사이의 편차가 더 큰 것으로 보였다. 왜도의 절댓값은 최대 0.756, 첨도는 최대 1.252로 극단적인 비대칭이나 꼬리는 없었으므로, 원점수를 변환하지 않고 그대로 썼다. 원평균 차이는 통제변수를 조정하지 않은 값이므로 도입·미도입 현장 비교의 판정은 제7절의 조정 결과로 하였다. 주요 변수의 기술통계는 <표 4-10>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 425,
+    "text": "<표 4-10> 주요 변수의 기술통계(도입·미도입 현장별)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 426,
+    "text": "변수도입 여부NMeanSDSkewnessKurtosis안전관리 실효성도입344.110.606−0.251−0.322미도입393.480.812−0.1460.349전체733.780.785−0.4140.235조기인지도입344.180.758−0.7560.639미도입393.510.823−0.6401.252전체733.820.855−0.6030.651대응 신속성도입344.240.699−0.360−0.834미도입393.870.833−0.326−0.375전체734.040.789−0.422−0.373원격 파악도입344.120.708−0.308−0.690미도입393.320.997−0.314−0.335전체733.690.956−0.5700.001순찰부담 경감도입343.880.759−0.237−0.148미도입393.261.006−0.040−0.355전체733.550.947−0.318−0.213위험 통제력도입344.250.631−0.289−0.649미도입393.670.814−0.3420.385전체733.940.786−0.4970.314"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 427,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 428,
+    "text": "제 5 항 상관관계 분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 429,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 430,
+    "text": "  상관관계 분석은 주요 변수 사이에 나타나는 선형 관계의 방향과 크기를 확인하기 위해 실시하였다. 하위요인이 서로, 그리고 전체 점수와 어떻게 묶이는지는 하위요인별 공분산분석의 결과를 해석하는 데 참고가 된다. 공변량인 만 나이·건설현장 경력이 종속변수와 관련되는지는 공분산분석에 투입한 공변량의 역할을 해석하는 데 참고가 된다. 전체 점수는 하위요인 점수를 합쳐 만든 것이므로, 같은 문항이 전체 점수와 하위요인 점수에 함께 들어 있어 둘 사이의 상관은 그만큼 높게 나오는 부분–전체 관계가 포함된다. 범주형 통제변수는 Pearson 상관에 넣지 않았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 431,
+    "text": "  상관분석은 전체 73명을 대상으로 Pearson 상관계수와 양측 검정을 사용하였다. 하위요인 사이의 상관은 0.566∼0.834로 모두 유의하였고(p<.001), 전체 점수와 하위요인의 상관은 0.799∼0.949였다. 만 나이·건설현장 경력과 안전관리 실효성 및 하위요인의 상관은 0.010∼0.226으로 모두 유의하지 않았으며, 가장 작은 p는 대응 신속성과 만 나이의 상관(p=.055)이었다. 만 나이와 건설현장 경력의 상관은 0.721로 유의하였으나(p<.001), 두 변수가 서로 겹치는 정보여서 분석이 불안정해지는 정도를 나타내는 공분산분석 모형의 분산팽창지수(VIF)는 최대 2.41이었다. 주요 변수 간 상관계수는 <표 4-11>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 432,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 433,
+    "text": "<표 4-11> 주요 변수 간 상관관계"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 434,
+    "text": "변수안전관리실효성조기인지대응 신속성원격 파악순찰부담경감위험 통제력만 나이경력안전관리 실효성1조기인지0.819***1대응 신속성0.799***0.566***1원격 파악0.918***0.790***0.652***1순찰부담경감0.900***0.611***0.685***0.726***1위험 통제력0.949***0.748***0.765***0.820***0.834***1만 나이0.1520.1330.2260.0360.1660.1771경력0.0730.1730.0940.0100.0430.0870.721***1* p < .05, ** p < .01, *** p < .001 (N = 73)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 435,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 436,
+    "text": "  다음 제7절에서는 공분산분석으로 연구가설 (1-1)을 검정하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 437,
+    "text": "제 7 절 가설 검증"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 438,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 439,
+    "text": "제 1 항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 440,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 441,
+    "text": "1. 공분산분석의 적용 근거와 분석 방법"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 442,
+    "text": "  연구가설 (1-1)은 공분산분석(ANCOVA)으로 검정하였다. 현장을 무작위로 배정하지 않은 횡단 비교에서는 원평균 차이에 응답자·현장의 구성 차이가 함께 반영될 수 있으므로(제1절), 이 특성을 같은 조건에 맞춘 조정 평균으로 집단을 비교하였다. 본 자료에서도 성별과 총공사비 구간의 구성 차이가 확인되었다(<표 4-6>)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 443,
+    "text": "  모형은 제5절 제2항에서 정한 대로 안전관리 실효성 8문항 평균을 종속변수로, 현장 도입 여부를 집단 변수로, 만 나이·건설현장 경력을 공변량으로, 소속·성별·역할·총공사비 구간을 범주형 통제변수로 투입하였다. 기준범주·제곱합·유의수준·판정 기준도 같은 항을 따랐으며, 분석 도구는 jamovi 2.7.41이다. 조정 평균은 만 나이·경력을 전체 분석 표본의 평균에 두고 범주형 통제변수의 각 수준에 같은 비중을 주어 산출하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 444,
+    "text": "  분석은 가정 점검, 조정 평균 차이 검정, 민감도·강건성 점검, 하위요인별 분석 순서로 진행하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 445,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 446,
+    "text": "2. 공분산분석 가정 점검"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 447,
+    "text": "  제5절 제2항에서 정한 절차에 따라 관측 독립성, 선형성, 회귀기울기 동질성, 잔차의 정규성·등분산성과 영향점을 점검하였다. 현장당 1명만 조사하여 현장 내 응답 중복을 막았으며, 만 나이·경력과 실효성의 산점도 및 잔차에서 뚜렷한 비선형 양상은 관찰되지 않았다. 나이·경력이 점수에 미치는 영향이 두 집단에서 다른지를 보는 집단과 만 나이·경력의 상호작용도 유의하지 않았다(각각 p=.226, .461)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 448,
+    "text": "  전체 실효성 모형은 잔차 정규성(Shapiro–Wilk p=.128)과 등분산성(Levene p=.245)에서 뚜렷한 위반 신호가 없었다. 결과에 유난히 크게 영향을 주는 응답(영향점)을 가리는 Cook's D 기준(4/n=0.055)을 넘은 5건은 삭제하지 않고 주 분석에 포함하였으며, 이 사례를 제외해도 결과가 달라지지 않는지는 사후 점검(강건성 점검)으로 확인하였다. 여성 응답자 6명이 모두 미도입 현장에 있고 총공사비 20억 원 미만의 도입 응답자는 3명이므로, 해당 범주의 비교는 모형의 가정에 의존한다는 한계가 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 449,
+    "text": "  하위요인 중 위험 통제력은 잔차 정규성 검정에서 p=.036으로 나타나 해석에 주의가 필요하였다. 조기인지·대응 신속성은 단일 5점 문항이며, 대응 신속성의 도입 응답자 중 38.2%가 만점을 선택하여 천장효과 가능성도 있었다. 주 분석에는 사전에 정한 변수와 전체 사례를 사용하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 450,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 451,
+    "text": "3. 안전관리 실효성의 조정 평균 차이"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 452,
+    "text": "  조정 평균은 통제변수를 같은 조건에 맞춘 집단별 예측 평균이며, 연구가설 (1-1)은 이 조정 평균의 도입−미도입 차이로 판정하였다. 비표준화 계수 B는 1∼5점 척도에서 도입 현장이 미도입 현장보다 몇 점 높은지를 나타낸다. 이 값은 73명의 표본에서 구한 것이므로 실제 차이와 꼭 같지는 않다. 95% 신뢰구간(CI)은 실제 차이가 들어 있을 것으로 보는 범위로, 같은 조사를 100번 되풀이하면 그중 95번은 이 범위가 실제 차이를 담는다는 뜻이다. 범위가 좁을수록 추정이 정확하고, 범위 안에 0이 들어 있지 않으면 두 집단에 차이가 있다고 본다(양측 p<.05와 같은 판정). 이하 표에서는 CI로 줄여 적었다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 453,
+    "text": "  도입 현장의 조정 평균은 미도입 현장보다 0.54점 높았다. 통제변수를 조정하지 않은 원평균 차이(0.63점, <표 4-10>)보다 조정 차이가 작아졌으나, 차이의 방향은 같았다. 결과는 통제변수를 조정한 도입·미도입 현장 간 차이를 중심으로 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 454,
+    "text": "  조정 평균과 집단 간 차이를 제시한 <표 4-12>의 CI는 실제 값이 들어 있을 것으로 보는 범위이다. 두 집단에 차이가 있는지는 셋째 줄의 도입−미도입 범위로 본다. 이 범위는 0.17∼0.91점으로 0을 지나지 않으므로, 도입 현장이 더 높다고 말할 수 있다. 다만 차이가 0.17점일 수도 있고 0.91점일 수도 있어, 차이가 있다고는 말할 수 있어도 얼마나 큰지는 잘라 말하기 어렵다. 범위가 이렇게 넓은 것은 응답자가 73명으로 적기 때문이다. 안전관리 실효성의 조정 평균과 집단 간 차이는 <표 4-12>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 455,
+    "text": "<표 4-12> 안전관리 실효성의 조정 평균과 집단 간 차이(Estimated Marginal Means)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 456,
+    "text": "도입 여부n(명·개소)MeanSE95% Confidence intervalLowerUpper도입343.830.2253.384.28미도입393.290.1962.903.69도입−미도입(B)해당 없음0.540.1850.170.91"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 457,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 458,
+    "text": "  두 집단의 조정 평균과 CI를 jamovi가 출력한 추정 주변 평균 그림으로 보면 <그림 4-2>와 같다. 가로축의 0은 미도입 현장, 1은 도입 현장이고, 세로축은 안전관리 실효성 점수이다. 점은 조정 평균, 위아래 선은 CI이다. 도입 현장의 점이 더 높고, 두 선이 3.38∼3.69점에서 일부 겹친다. 집단별 범위가 겹친다고 해서 두 집단이 같다고 보지는 않으며, 차이의 판단은 앞서 본 도입−미도입 범위로 한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 459,
+    "text": "<그림 4-2> 안전관리 실효성의 조정 평균과 95% 신뢰구간"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 460,
+    "text": "그림입니다.\n원본 그림의 이름: figure_4-2_jamovi_emm_plot.png\n원본 그림의 크기: 가로 600pixel, 세로 525pixel"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 461,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 462,
+    "text": "  집단 차이의 검정은 Type III 제곱합에 따른 F검정으로 하고, 차이의 크기는 부분 η²로 나타냈다. 부분 η²는 모형에서 집단 항의 제곱합을 집단 항과 오차 제곱합의 합으로 나눈 값이다. 쉽게 말해 통제변수로 설명되는 부분을 뺀 나머지 점수 변동 가운데 도입 여부로 설명되는 비율이며, 다른 변수를 조정한 집단 차이의 크기를 나타낸다. 표에는 jamovi 출력의 통제변수 항도 함께 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 463,
+    "text": "  한편, 주 분석과 별도로 미리 정해 둔 추가 분석(민감도 분석)으로, 시스템 알림이 실제로 관리자의 위험 인지 수단이 된 도입 현장과 미도입 현장만 비교한 결과(n=54), 조정 차이는 0.78점으로 같은 방향이었다(95% CI [0.30, 1.25], p=.002). 이 분석의 도입 사례는 15명으로, 전체 표본에 대한 주 분석을 보완하는 결과로 제시하였다. 또한 결과가 특정 응답에 흔들리지 않는지 보는 사후 점검(강건성 점검)으로, 결과에 유난히 크게 영향을 준 응답(영향점)과 응답자가 거의 없는 범주(희소범주)를 각각 제외하고 다시 분석하였다. 이때의 조정 차이는 0.44∼0.53점으로 유의하였다(p=.006∼.015)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 464,
+    "text": "  통제변수를 조정한 집단 차이는 유의하여 연구가설 (1-1)은 지지되었다. 이 결과는 같은 시점에 조사한 관리자의 지각 점수에서 나타난 조정된 집단 차이이다. 도입·미도입 현장 간 차이 검정과 효과크기는 <표 4-13>과 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 465,
+    "text": "<표 4-13> 안전관리 실효성의 도입·미도입 현장 간 차이 검정과 효과크기"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 466,
+    "text": "검정 항F분자 df분모 dfp부분 η²현장 도입 여부(도입=1·미도입=0)8.54162.0050.121소속 구분0.12162.7310.002성별2.27162.1370.035역할0.25262.7820.008총공사비 구간1.12362.3490.051만 나이0.04162.8500.001건설현장 경력0.05162.8200.001"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 467,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 468,
+    "text": "4. 하위요인별 공분산분석"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 469,
+    "text": "  안전관리 실효성의 어느 영역에서 집단 차이가 나타나는지 확인하기 위해 다섯 하위요인에 같은 모형을 적용하였다. 조기인지=B-1, 대응 신속성=B-2, 원격 파악=(B-3+B-4)/2, 순찰부담 경감=(B-5+B-6)/2, 위험 통제력=(B-7+B-8)/2로 채점하였다. 표본(도입 34명·미도입 39명)과 통제변수가 전체 점수 모형과 같으므로 F의 자유도는 모두 (1, 62)이고, 조정 평균의 기준도 <표 4-12>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 470,
+    "text": "  다섯 검정에는 Holm 보정을 적용하였다. Holm 보정은 여러 검정을 수행할 때 실제로 차이가 없는데도 우연히 유의한 차이가 있다고 판단할 가능성을 줄이기 위해 p값을 조정하는 방법이다. 보정은 다섯 하위요인의 집단 차이 검정을 하나의 검정군으로 묶어 적용하였고, 연구가설 (1-1)의 검정은 이 검정군에 넣지 않았다. 차이의 95% 신뢰구간은 개별 비교의 비보정 구간이며, 유의 여부의 판정은 Holm 보정 p를 기준으로 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 471,
+    "text": "  Holm 보정 후 조기인지·원격 파악·위험 통제력에서 도입 현장이 유의하게 높았다. 순찰부담 경감은 보정 전에는 유의했으나(p=.031) 보정 후에는 유의하지 않았고, 대응 신속성도 유의한 차이를 확인하지 못하였다. 위험 통제력 모형의 잔차 정규성 문제와, 조기인지·대응 신속성은 문항이 하나뿐이어서 점수가 1∼5의 다섯 값으로만 나온다는 점을 고려하여 검정 결과를 해석할 필요가 있다. 하위요인별 공분산분석 결과는 <표 4-14>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 472,
+    "text": "<표 4-14> 하위요인별 공분산분석 결과(조정 차이·Holm 보정 포함)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 473,
+    "text": "하위요인도입 조정 평균미도입 조정 평균차이 B차이 95% CIFHolm 보정 p부분 η²판정조기인지3.943.320.62[0.24, 1.01]10.50.0100.145유의대응 신속성3.823.690.13[−0.25, 0.51]0.46.5020.007비유의원격 파악3.853.130.72[0.25, 1.19]9.36.0120.131유의순찰부담 경감3.653.130.52[0.05, 0.99]4.86.0620.073비유의위험 통제력3.953.410.54[0.18, 0.91]8.74.0120.124유의"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 474,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 475,
+    "text": "제 2 항 가설 검증 결과 종합"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 476,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 477,
+    "text": "  제1항의 결과를 제5절 제2항에서 정한 판정 기준(도입−미도입 조정 차이가 양수이고 양측 p<.05)에 따라 종합하였다. 통제변수를 조정한 뒤에도 도입 현장의 지각 실효성은 미도입 현장보다 높았다. 하위요인에서는 조기인지·원격 파악·위험 통제력의 차이가 Holm 보정 후에도 유의하였다. 필요한 응답자 수를 미리 계산하지 않고(사전 검정력 산정 없음) 모집한 표본이라는 점을 고려하여 추정치의 신뢰구간과 함께 결과를 해석하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 478,
+    "text": "  과정 지표인 지시 전달 소요시간(A-9)에서는 유의한 집단 차이를 확인하지 못하였다(Fisher 정확검정 p=.663). 제5절 제2항에서 정한 대로 두 결과를 나란히 놓으면, 지시 전달 시간에서는 유의한 차이를 확인하지 못한 반면 지각 실효성[연구가설 (1-1)]에서는 차이를 확인한 경우에 해당한다. 이 비교는 가설 판정 자체를 바꾸지 않으며, 지각 점수 차이를 해석할 때 주의할 사항으로 운용 실태와 함께 제8절에서 논의하였다. 연구가설 검증 결과를 종합하면 <표 4-15>와 같다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 479,
+    "text": "<표 4-15> 연구가설 검증 결과 종합"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 480,
+    "text": "가설검정 내용핵심 추정·95% CI검정통계량·p검정결과연구가설 (1-1)통제변수 조정 후 도입 현장의 안전관리 실효성이 미도입 현장보다 높은가조정 차이 B=0.54, [0.17, 0.91]F(1, 62)=8.54, p=.005지지"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 481,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 482,
+    "text": "  다음 제8절에서는 이 결과가 선행연구 및 과정 지표와 어떤 관계에 있는지 논의하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 483,
+    "text": "제 8 절 분석결과 및 논의"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 484,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 485,
+    "text": "  이 절에서는 제3장에서 다룬 시스템 경보의 정확도와 관리자가 지각한 안전관리 실효성을 구분해 논의하였다. 담당자가 자리를 비웠을 때 위험을 어떤 경로로 인지하는지(A-7)와 순찰과 순찰 사이에 위험을 언제 인지하는지(A-8)를 물은 문항은 운용 실태를 보여주는 자료로, 관리자가 위험을 인지한 뒤 작업자에게 지시를 전달하기까지 걸린 시간(A-9)은 과정 지표로 함께 살펴보았다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 486,
+    "text": "  연구가설 (1-1)(\"도입 현장 관리자가 지각한 안전관리 실효성은 여섯 통제변수(C)를 조정한 뒤에도 미도입 현장보다 높을 것이다\")은 지지되었지만, 차이의 크기는 이 표본에서 통계적으로 '차이 있음'이라고 말할 수 있는 최소 크기(검출 가능 최소 효과)에 가까웠다. 여섯 통제변수(C)를 조정한 뒤 도입 현장의 안전관리 실효성은 미도입 현장보다 0.54점 높았고(95% CI [0.17, 0.91]), 이 표본에서 검출할 수 있는 최소 효과는 0.52점이었다. 차이의 방향은 스마트 건설기술 활용이 안전성과와 관련이 있다고 보고한 황병복(2026), 중소규모 적용 현장의 사고예방 가능성을 보고한 류정·박인선(2025)의 결과와 같다. 다만 두 연구는 대상과 변수(안전성과·재해율)가 달라서 본 연구의 개인 지각 점수와 바로 견주기는 어렵다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 487,
+    "text": "  연구가설 (1-1)의 차이를 해석할 때는 탐지·검증·알림으로 이어지는 시스템의 전달 경로가 일부 도입 현장에서만 설계 의도대로, 즉 관리자가 실제로 자동 알림으로 위험을 아는 수단으로 운용되었다는 점을 함께 보아야 한다. 도입 응답자 34명 가운데 담당자 부재 시 자동 알림으로 위험을 발생 직후 인지한다고 답한 사람은 15명(약 44%)이었고, 나머지는 전화·보고나 순찰에 기대고 있었다. 이 15곳의 실효성 평균은 4.26점(SD 0.55)으로 나머지 19곳의 4.00점(SD 0.64)보다 높았다. 도입·미도입 현장 간 차이가 시스템 경로의 운용과 같은 방향으로 나타난 것이다. 시스템 알림이 위험 인지 수단이 되지 못한 19곳도 미도입 현장의 원평균(3.48점)보다 높았다. 이는 도입 집단 안의 운용 차이와 함께 관찰된 지각 점수의 차이이며, 시스템 도입 자체가 영향을 준 것인지, 연구자가 개발한 시스템을 쓰는 현장이라 응답자가 좋게 답한 것(호의 응답)인지는 가려낼 수 없다. 제7절 제2항에서 지시 전달 시간에는 도입·미도입 현장 간 유의한 차이를 확인하지 못하였고 실효성[연구가설 (1-1)]에는 차이를 확인한 것은, 시스템이 작업자에게 직접 지시를 전달하는 수단을 두지 않은 설계 범위와 함께 해석할 수 있다. 따라서 지각 실효성의 집단 차이와, 지시 전달 시간에서 유의한 차이를 확인하지 못한 결과를 함께 고려하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 488,
+    "text": "  하위요인 가운데 조기인지·원격 파악·위험 통제력의 차이는 Holm 보정 후에도 유의하였다. 차이는 각각 0.62점·0.72점·0.54점이었고, 대응 신속성(0.13점)과 순찰부담 경감(0.52점)의 차이는 유의하지 않았다. 원격 파악의 차이는 원격 모니터링이 관리자의 원격 위험 인지를 돕는다고 본 이창남(2025)과 방향이 같다. 다만 원격 파악의 두 문항은 도입 현장에서 상관이 0.50으로 미도입 현장(0.78)보다 낮아 서로 다른 측면을 반영했을 수 있으므로, 이 영역의 차이는 측정 일관성과 함께 해석해야 한다. 본 연구에서 대응 신속성의 차이는 작았다. 김현수(2026)의 검토 시간 단축은 경보 뒤 확인 시간이어서 본 연구의 초동 지시와는 지표가 다르다. 또한 문항이 하나뿐이었고, 지시 전달 시간(A-9)이 두 집단에서 비슷했으며, 미도입 현장의 평균(3.87점)이 다섯 하위요인 중 가장 높았다. 이 결과는 <표 2-2>에서 시스템 기능, 관리자의 업무, 실효성 하위요인을 서로 대응시킨 연결에 비추어 검토할 수 있다. 다만 그 연결은 해석의 틀일 뿐이며, 실효성 문항(B문항)이 시스템 기능 자체를 측정하였다는 뜻은 아니다. 또한 관리자가 스스로 답한 점수만으로 시스템이 인력을 대체할 수 있다고 주장할 수도 없다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 489,
+    "text": "  다음 제5장에서는 이 논의를 바탕으로 연구 결과를 요약하고, 시사점과 한계, 향후 연구 방향을 제시하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 490,
+    "text": "제 5 장 결론"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 491,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 492,
+    "text": "  본 연구는 인력과 예산이 제한된 건설현장에서 위험을 상시 파악해 관리자에게 전달하는 안전관제 수단을 마련하고, 그 수단이 현장의 안전관리 실효성과 관련되는지 확인하기 위해 수행하였다. 이를 위해 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 관리자가 평가한 안전관리 실효성을 비교하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 493,
+    "text": "  시스템은 범용 PC와 현장의 기존 ONVIF 카메라로 운용하며, YOLO가 위험 후보 장면을 잡아내면 LLM이 실제 위험인지 다시 판단해 그 이유와 함께 한국어로 알리도록 구성하였다. 현장마다 다시 학습시키지 않도록 판단 지침(프롬프트)과 관리자가 바로잡은 판정 사례를 LLM에 함께 제시하는 기능도 구현하였다. 운영 중 쌓인 중장비·차량 접근 경보 후보 878건을 전수 확인한 결과, LLM 검증을 거친 오경보는 834건에서 13건으로 줄었으나 실제 위험 44건 중 5건의 경보도 함께 차단되었다. 이 평가는 YOLO가 먼저 잡아낸 장면만을 대상으로 하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 494,
+    "text": "  실효성은 A공사 경기지역본부 산하 도입 현장 34명과 미도입 현장 39명, 총 73명의 응답으로 검증하였다. 여섯 통제변수(만 나이·경력·소속·성별·역할·총공사비 구간)를 투입한 공분산분석 결과, 도입 현장의 안전관리 실효성은 미도입 현장보다 0.54점 높아 연구가설 (1-1)은 지지되었다(95% CI [0.17, 0.91], p=.005). 하위요인 가운데 조기인지·원격 파악·위험 통제력은 여러 번 검정한 점을 보정한(Holm) 뒤에도 차이가 유의하였으나, 대응 신속성·순찰부담 경감과 지시 전달 시간(A-9)에서는 차이를 확인하지 못하였다. 이는 시스템의 역할이 검증한 위험을 관리자에게 알리는 데까지이고 작업자 지시는 관리자가 맡는다는 점과 함께 해석할 수 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 495,
+    "text": "  이 결과는 스마트 건설기술 활용과 안전성과의 관련을 보고한 황병복(2026), 중소규모 적용 현장의 사고예방 가능성을 보고한 류정·박인선(2025)과 방향이 같고, 원격 파악의 차이는 원격 모니터링의 효용을 본 이창남(2025)과 맥을 같이한다. 반면 대응 신속성의 차이는 작았다. 김현수(2026)와는 재는 지표가 다르고, 미도입 현장의 점수도 이미 높았다. 기존 연구가 주로 탐지 정확도, 기술 수용 의향, 재해율을 다룬 데 비해, 본 연구는 직접 개발한 시스템의 운영 기록 평가와 같은 기관 산하 도입·미도입 현장의 동일 설문 비교를 함께 제시하였다는 점에서 다르다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 496,
+    "text": "  연구 결과에 따른 시사점은 다음과 같다. 첫째, 실무적으로 안전관제 시스템은 경보 수가 줄었다는 것만으로 평가할 수 없다. 오경보가 크게 줄면서 실제 위험 경보 일부도 차단되었으므로, 현장은 경보가 오지 않은 실제 위험이 없는지 함께 점검하고 알림 담당자와 부재 시 확인자를 미리 정해야 한다. 또한 알림을 받은 뒤 실제로 시정이나 작업중지를 하였는지 따로 기록할 필요가 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 497,
+    "text": "  둘째, 학술적으로는 시스템의 선별 성능과 관리자가 평가한 안전관리 실효성을 따로 재어 함께 제시함으로써, 탐지 성능과 관리 수준을 구분해 살펴볼 근거를 마련하였다. 하위요인에 따라 결과가 갈렸으므로 안전관리 실효성은 하나의 점수보다 하위요인별로 측정하고 해석할 필요가 있다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 498,
+    "text": "  본 연구의 한계는 다음과 같다. 연구방법에서는 한 번만 조사한 횡단 설계이므로 도입 전부터 차이가 있었는지와 도입 후 무엇이 달라졌는지는 확인하지 못하였다(시간적 우선성 미확보). 현장을 무작위로 정하지 않았으므로 통제변수를 투입하였어도 선정 편향과 미측정 교란의 가능성이 남는다. 기술 평가는 YOLO가 처음부터 놓친 위험을 포함하지 않으며, 알림 도착 시간과 경제성도 평가하지 않았다. 연구대상에서는 한 기관 산하 현장의 관리자 자기보고에 의존하였으므로 실제보다 좋게 답하였을 가능성이 있다(Podsakoff et al., 2003). 미도입 현장의 CCTV 운용 여건, 현장별 운용 기간, 운용 중 인공지능 모델과 프롬프트의 판본 갱신(제3장 제2절∼제4절)도 통제하지 못하였다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 499,
+    "text": "  향후 연구는 필요한 표본 수를 미리 산정한 뒤 다른 기관과 공종으로 표본을 넓히고, CCTV 운용 조건이 비슷한 미도입 현장을 비교 대상으로 삼되 현장 선정 기준을 기록해야 한다. 또한 같은 현장을 도입 전후로 반복 조사하는 종단 설계와, 알림 기록을 실제 시정·작업중지 조치 및 재해 기록에 연결한 분석이 필요하다. 시스템 측면에서는 YOLO가 놓친 위험까지 포함한 전체 탐지 성능을 평가하고, 조건을 맞춘 상용 AI 관제 솔루션과 성능·비용을 비교해야 한다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 500,
+    "text": "참고문헌"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 501,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 502,
+    "text": "1. 국내문헌"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 503,
+    "text": "[01] 고용노동부, 『2024 산업재해 현황분석』, 고용노동부, 2025."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 504,
+    "text": "[02] 국토교통부·국토안전관리원, 『스마트 안전장비 활용 가이드라인』, 2024.03, CS-24-E6-002."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 505,
+    "text": "[03] 김민기·박성호, 『서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안』, 서울연구원, 2026. (서울연 2024-BR-14)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 506,
+    "text": "[04] 김석기, 「소규모 건설현장 사망사고의 시스템적 원인 규명을 위한 BERTopic-LLM과 AcciMap 통합 분석 프레임워크 개발」, 충북대학교 박사학위논문, 2026."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 507,
+    "text": "[05] 김용선, 「중·소규모 건설현장 재해예방을 위한 스마트 건설안전기술 활용 방안」, 인천대학교 일반대학원 안전공학과 박사학위논문, 2022."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 508,
+    "text": "[06] 김태헌, 「건설현장 위험상황 이해 및 대응을 위한 인공지능 안전인지 프레임워크 연구」, 성균관대학교 일반대학원 글로벌스마트시티융합전공 박사학위논문, 2026."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 509,
+    "text": "[07] 김현수, 「통합관제센터 운영을 위한 Vision AI–VLM 비교 및 하이브리드 연구」, 중앙대학교 대학원 ICT안전학과 석사학위논문, 2026."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 510,
+    "text": "[08] 류수영, 「CCTV 기반 산업안전 관제 시스템에 관한 연구」, 배재대학교 대학원 컴퓨터공학과 박사학위논문, 2024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 511,
+    "text": "[09] 류정·박인선, 「건설현장의 스마트 안전장비 성능과 도입 효과 분석」, 『Crisisonomy』, 제21권 제6호, 2025, pp.125–135. DOI 10.14251/crisisonomy.2025.21.6.125."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 512,
+    "text": "[10] 박종학, 「YOLO(You Only Look Once) 모델별 건설 현장 위험 상태 및 객체 인식 성능 비교」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2025."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 513,
+    "text": "[11] 윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2026."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 514,
+    "text": "[12] 이기수, 「건설현장의 안전 확보를 위한 딥러닝 기반의 시스템비계 설치 이상감지 연구」, 명지대학교 박사학위논문, 2024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 515,
+    "text": "[13] 이동건, 「통합기술수용모델(UTAUT)을 활용한 건설근로자들의 스마트안전장비 수용에 영향을 미치는 요인에 관한 연구」, 인하대학교 공학대학원 건축토목공간정보공학과 석사학위논문, 2024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 516,
+    "text": "[14] 이석희·고대식·송석일, 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, 2025, pp.279–282. DOI 10.14801/jkiit.2025.23.11.279."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 517,
+    "text": "[15] 이준호, 「건설현장 중대재해 감소를 위한 스마트 안전장비의 지원방법 개선에 관한 연구」, 한양대학교 융합산업대학원 석사학위논문, 2024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 518,
+    "text": "[16] 이창남, 「스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2025. (대표 ref 06; ref 18 중복)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 519,
+    "text": "[17] 이형도, 「객체탐지 알고리즘을 이용한 건설현장 근로자 안전모 실시간 모니터링 기술 활성화 방안 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 520,
+    "text": "[18] 한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 521,
+    "text": "[19] 한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026. (번호가 중복된 30번 VLM 학위논문; 전체 파일명으로 식별)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 522,
+    "text": "[20] 황병복, 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문, 2026."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 523,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 524,
+    "text": "2. 국외문헌"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 525,
+    "text": "[01] Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., & Amodei, D., \"Language Models are Few-Shot Learners\", Advances in Neural Information Processing Systems, Vol. 33, Curran Associates, 2020, pp.1877–1901. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 526,
+    "text": "[02] Chen, X., & Zou, Z., \"Are large pre-trained vision language models effective construction safety inspectors\", Data-Centric Engineering, Vol. 7, 2026, e11. DOI 10.1017/dce.2026.10044."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 527,
+    "text": "[03] Chong, H.-Y., Xu, Y., Lun, C., & Chi, M., \"The Adoption Intentions of Wearable Technology for Construction Safety\", Buildings, Vol. 13, No. 11, 2023, 2747. DOI 10.3390/buildings13112747."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 528,
+    "text": "[04] Costello, A. B., & Osborne, J. W., \"Best practices in exploratory factor analysis: Four recommendations for getting the most from your analysis\", Practical Assessment, Research, and Evaluation, Vol. 10, No. 7, 2005, pp. 1-9. DOI 10.7275/jyj1-4868."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 529,
+    "text": "[05] Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268-277."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 530,
+    "text": "[06] Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319-340."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 531,
+    "text": "[07] Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 532,
+    "text": "[08] He, C., Hu, Z., Shen, Y., & Wu, C., \"Effects of Demographic Characteristics on Safety Climate and Construction Worker Safety Behavior\", Sustainability, Vol. 15, No. 14, 2023, 10985. DOI 10.3390/su151410985."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 533,
+    "text": "[09] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 534,
+    "text": "[10] Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp.1663–1673. DOI 10.1177/0956797614541991."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 535,
+    "text": "[11] Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp.1833–1855. DOI 10.1080/00140139.2014.957732."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 536,
+    "text": "[12] Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 537,
+    "text": "[13] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 538,
+    "text": "[14] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 539,
+    "text": "[15] Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp.137–149. DOI 10.3758/BF03207704."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 540,
+    "text": "[16] Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp.53–55. DOI 10.5116/ijme.4dfb.8dfd."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 541,
+    "text": "[17] Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp.191–199. DOI 10.22260/ISARC2016/0024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 542,
+    "text": "[18] The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 543,
+    "text": "[19] Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209-212. DOI 10.1080/01621459.1927.10502953"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 544,
+    "text": "[20] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 545,
+    "text": "[21] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp.40167–40175. DOI 10.1609/aaai.v40i47.41452."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 546,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 547,
+    "text": "3. 법령"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 548,
+    "text": "[01] 「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정]. https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 549,
+    "text": "[02] 「건설산업기본법」 제40조(건설기술인의 배치), [시행 2025. 11. 27.] [법률 제21034호]. https://www.law.go.kr/법령/건설산업기본법/제40조"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 550,
+    "text": "[03] 「산업안전보건법」 제15조(안전보건관리책임자)·제16조(관리감독자)·제17조(안전관리자)·제63조(도급인의 안전조치 및 보건조치)·제67조(건설공사발주자의 산업재해 예방 조치), [시행 2026. 10. 27.] [법률 제22122호, 2026. 10. 27., 일부개정]. https://www.law.go.kr/법령/산업안전보건법"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 551,
+    "text": "[04] 「산업안전보건법 시행령」 제16조(안전관리자의 선임 등) 제2항, [시행 2026. 8. 1.] [대통령령, 2026. 7. 28. 공포]. https://www.law.go.kr/법령/산업안전보건법시행령/제16조"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 552,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 553,
+    "text": "4. 표준·기술자료"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 554,
+    "text": "[01] Bosch Security Systems, Alarm Verification for Alarm Management, Application note F01U411472, V02, 2024."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 555,
+    "text": "[02] Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention ."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 556,
+    "text": "[03] Ultralytics YOLO (Version 8.4.23) [Computer software], 2026."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 557,
+    "text": "부   록 (도입 현장)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 558,
+    "text": "건설현장 YOLO-LLM안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로안녕하십니까?경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.본 설문은 건설현장의 안전관리 실태와 여건을 조사하여, AI 안전관제 시스템을 운용하는 현장과 운용하지 않는 현장의 안전관리 실효성 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다. 연구자는 비교 대상 시스템을 개발하였습니다. 안내받은 Google Forms 설문에서 직접 응답을 입력하거나 선택한 뒤 제출해 주십시오.응답에는 정답이 없으며, 귀하가 담당하시는 현장의 현재 안전관리 업무 수행 수준과 여건을 기준으로 느끼신 그대로 응답해 주시면 됩니다. 설문 참여는 자발적이며, 원하지 않으시면 참여하지 않으시거나 제출 전 언제든지 응답을 중단하실 수 있습니다. 현장 명부 연결과 중복 제출 확인을 위해 현장명과 성명을 수집하며, Google 계정 로그인은 요구하지 않으며 응답자 이메일은 수집하지 않습니다. 성명과 현장명이 포함된 원응답과 현장 명부는 연구자 본인만 열람합니다. 명부 대조 후 통계분석용 사본에서는 성명과 현장명을 제거하고 코드로 관리하며, 코드·성명·현장명 대응표와 현장 명부는 이 사본과 분리하여 보관·관리합니다. 개별 응답은 소속 기관이나 현장 관계자에게 공개하지 않으며, 학술 연구를 위한 통계 분석에만 사용하고 결과는 전체를 집계한 형태로 보고합니다. 다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다.2026년 10월"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 559,
+    "text": "                      소    속 : 경기대학교 공학대학원 건축·안전공학전공"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 560,
+    "text": "                      지도교수 : 박 종 용"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 561,
+    "text": "                      연 구 자 : 윤    혁"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 562,
+    "text": "                      이 메 일 : 0mailto:yoonhyeok1@gmail.com;2;0;0mailto:yoonhyeok1@gmail.comHWPHYPERLINK_TYPE_EMAILHWPHYPERLINK_TARGET_BOOKMARKHWPHYPERLINK_JUMP_CURRENTTAByoonhyeok1@gmail.com"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 563,
+    "text": "Part A. 인구통계학적 특성 및 현장 운영 특성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 564,
+    "text": "※ 다음은 응답자의 일반적 사항과 현장 운영 특성에 관한 질문입니다. A-3·A-4는 숫자를 입력하고, 나머지 문항은 해당하는 보기를 선택해 주십시오."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 565,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 566,
+    "text": "A. 실태조사 대상자 개요 A-1) 귀하의 소속 구분은?   ① 시공사   ② 발주청(공사감독·감리원 포함) A-2) 귀하의 성별은?   ① 남성   ② 여성 A-3) 응답일 현재 귀하의 만 나이는? 만 (   )세A-4) 귀하의 건설현장 근무 경력은 약 몇 년입니까? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간) 만 (   )년※ 1년 미만은 0으로, 6개월 이상은 1년으로 올려 적어 주십시오. 여러 현장이나 업무의 근무 기간이 겹치면 같은 기간을 중복하여 합산하지 마십시오. A-5) 현장에서 귀하가 맡고 있는 역할은?   ① 공사감독   ② 안전관리자   ③ 현장소장(관리감독자)   ④ 기타(    ) A-6) 현재 담당 현장의 총공사비 구간은? ① 20억 원 미만   ② 20억 원 이상∼50억 원 미만 ③ 50억 원 이상∼120억 원 미만 ④ 120억 원 이상※ 총공사비는 조사 대상으로 정한 현장 전체의 응답일 현재 최신 확정 금액(부가가치세와 관급자재비 포함)을 기준으로 응답해 주십시오. 확정된 변경 사항은 반영하고, 아직 확정되지 않은 추정액은 사용하지 마십시오.A-7) 안전관리 담당자가 현장에 없을 때(이동·사무실 업무·야간 등) 위험 상황을 알게 되는 주된 경로는 무엇입니까?① 알게 될 방법이 없다   ② 작업자나 반장의 전화·보고③ 사무실 등에서 CCTV 화면을 직접 본다④ 자동 알림(문자·메신저·앱)을 받는다   ⑤ 기타(    )A-8) 비점검 시간에 생긴 위험 상황은 보통 언제 알게 됩니까?① 다음 순찰 때   ② 누군가 알려줄 때   ③ 발생 직후 알림으로④ 모르고 지나가는 경우가 많다A-9) 위험 상황을 알고 난 뒤 현장에 조치 지시가 전달되기까지 보통 얼마나 걸립니까?① 즉시∼5분   ② 5분 초과∼30분   ③ 30분 초과∼1시간④ 1시간 초과 또는 다음 순찰 때※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오.※ A-7의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 567,
+    "text": "Part B. 안전관리 실효성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 568,
+    "text": "※ 다음 Part B의 모든 문항은 리커트 5점 척도입니다. 설문 응답일 직전 1개월을 기준으로, 순찰과 순찰 사이나 안전관리 담당자가 현장에 없는 시간대에 생긴 위험 상황까지 포함하여 각 문항을 읽고 귀하의 생각과 가장 가까운 보기를 선택해 주십시오. B-3의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 569,
+    "text": "  (① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 570,
+    "text": "안전관리 실효성전혀그렇지않다그렇지 않다보통이다그렇다매우그렇다B-1우리 현장에서는 위험 상황을 조기에 인지한다.①②③④⑤B-2우리 현장에서는 위험 상황을 인지하면 초동 대응을 빠르게 지시한다.①②③④⑤B-3우리 현장에서는 안전관리 담당자가 현장 밖에서도 위험 상황을 신속하게 파악한다.①②③④⑤B-4우리 현장에서는 멀리 떨어진 곳에서도 위험 정보와 조치 필요사항을 원활하게 공유한다.①②③④⑤B-5우리 현장에서는 제한된 인력으로도 현장 순찰과 위험 확인 업무를 효율적으로 수행한다.①②③④⑤B-6우리 현장에서는 불필요한 확인 업무에 쫓기지 않고 실제 위험 대응에 집중한다.①②③④⑤B-7우리 현장에서는 필요한 경우 시정·작업중지 등 통제 조치를 신속하게 시행한다.①②③④⑤B-8우리 현장에서는 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다.①②③④⑤"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 571,
+    "text": "도입 현장 전용부"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 572,
+    "text": "Part C. 시스템 특성 인식"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 573,
+    "text": "다음은 YOLO-LLM 안전관제 시스템을 사용한 경험에 관한 질문입니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 574,
+    "text": "※ Part C는 귀하가 직접 경험하신 내용을 바탕으로 리커트 5점 척도에 응답해 주십시오. C-1·C-2는 장비 구성·호환 경험, C-3은 알림이 짧은 시간에 몰린 상황, C-4는 통신 상태가 좋지 않은 상황, C-5·C-6은 알림 내용이 실제 위험과 맞는지 확인한 경험, C-7·C-8은 실제 알림 수신·활용 경험을 기준으로 응답해 주십시오."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 575,
+    "text": "  (① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 576,
+    "text": "시스템 특성 인식전혀그렇지않다그렇지 않다보통이다그렇다매우그렇다C-1본 시스템은 일반 사무용 PC로 구동되어 고가 AI 서버 등 별도 장비에 대한 투자 부담이 적다.①②③④⑤C-2본 시스템은 제조사가 다른 기존 현장 카메라와도 호환되어 카메라를 교체하지 않고 도입할 수 있다.①②③④⑤C-3본 시스템은 짧은 시간에 알림이 몰려도 느려지거나 멈추지 않고 안정적으로 작동한다.①②③④⑤C-4본 시스템은 통신 상태가 좋지 않은 현장에서도 위험 여부를 가려내는 기능이 안정적으로 작동한다.①②③④⑤C-5본 시스템은 현장의 나무나 그림자 같은 배경을 사람이나 위험 요소로 잘못 알리는 일이 드물다.①②③④⑤C-6본 시스템은 정상 작업을 위험으로 잘못 알리는 일이 드물다.①②③④⑤C-7위험 상황이 발생하면 위험 요약과 이미지가 모바일 메신저로 신속하게 전달된다.①②③④⑤C-8모바일 메신저로 받은 알림만으로도 현장 상황을 쉽게 파악할 수 있다.①②③④⑤"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 577,
+    "text": "Part D. 경보 피로도 완화"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 578,
+    "text": "다음은 YOLO-LLM 안전관제 시스템을 사용한 경험에 관한 질문입니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 579,
+    "text": ""
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 580,
+    "text": "※ Part D에서는 비교 기간의 길이를 따로 정하지 않습니다. 현재 담당 현장에서 본 시스템 도입 전에 귀하가 직접 확인했던 자동 알림과 본 시스템을 사용하며 직접 확인한 알림에 대한 전반적인 경험을 비교하여 리커트 5점 척도에 응답해 주십시오."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 581,
+    "text": "  (① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 582,
+    "text": "경보 피로도 완화전혀그렇지않다그렇지 않다보통이다그렇다매우그렇다D-1본 시스템이 위험이 아닌 상황을 걸러 주어 잦은 알림 확인에 따른 스트레스가 줄었다.①②③④⑤D-2불필요한 알림을 확인하는 시간이 줄어 핵심 업무에 더 집중하게 되었다.①②③④⑤D-3알림이 오면 ‘또 잘못 온 알림’으로 여겨 무시하기보다 바로 확인하는 경우가 늘었다.①②③④⑤D-4본 시스템 도입 이후 알림으로 인한 피로감이 줄었다.①②③④⑤"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 583,
+    "text": " 끝까지 응답해 주셔서 진심으로 감사합니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 584,
+    "text": "부   록 (미도입 현장)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 585,
+    "text": "건설현장 YOLO-LLM안전관제 시스템 개발 및 실증 연구: 도입 현장과 미도입 현장의 안전관리 실효성 비교를 중심으로안녕하십니까?경기대학교 공학대학원 건축·안전공학전공 석사과정에 재학 중인 윤혁입니다.먼저 건설현장의 안전관리를 위해 각자의 자리에서 애써 주시는 여러분께 깊은 감사의 말씀을 드립니다.본 설문은 건설현장의 안전관리 실태와 여건을 조사하여, AI 안전관제 시스템을 운용하는 현장과 운용하지 않는 현장의 안전관리 실효성 차이를 비교·분석하기 위한 학술 연구 자료를 수집하는 데 목적이 있습니다. 연구자는 비교 대상 시스템을 개발하였습니다. 안내받은 Google Forms 설문에서 직접 응답을 입력하거나 선택한 뒤 제출해 주십시오.응답에는 정답이 없으며, 귀하가 담당하시는 현장의 현재 안전관리 업무 수행 수준과 여건을 기준으로 느끼신 그대로 응답해 주시면 됩니다. 설문 참여는 자발적이며, 원하지 않으시면 참여하지 않으시거나 제출 전 언제든지 응답을 중단하실 수 있습니다. 현장 명부 연결과 중복 제출 확인을 위해 현장명과 성명을 수집하며, Google 계정 로그인은 요구하지 않으며 응답자 이메일은 수집하지 않습니다. 성명과 현장명이 포함된 원응답과 현장 명부는 연구자 본인만 열람합니다. 명부 대조 후 통계분석용 사본에서는 성명과 현장명을 제거하고 코드로 관리하며, 코드·성명·현장명 대응표와 현장 명부는 이 사본과 분리하여 보관·관리합니다. 개별 응답은 소속 기관이나 현장 관계자에게 공개하지 않으며, 학술 연구를 위한 통계 분석에만 사용하고 결과는 전체를 집계한 형태로 보고합니다. 다소 번거로우시더라도 성실하게 응답해 주시면 본 연구에 큰 도움이 되겠습니다.2026년 10월"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 586,
+    "text": "                      소    속 : 경기대학교 공학대학원 건축·안전공학전공"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 587,
+    "text": "                      지도교수 : 박 종 용"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 588,
+    "text": "                      연 구 자 : 윤    혁"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 589,
+    "text": "                      이 메 일 : 0mailto:yoonhyeok1@gmail.com;2;0;0mailto:yoonhyeok1@gmail.comHWPHYPERLINK_TYPE_EMAILHWPHYPERLINK_TARGET_BOOKMARKHWPHYPERLINK_JUMP_CURRENTTAByoonhyeok1@gmail.com "
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 590,
+    "text": "Part A. 인구통계학적 특성 및 현장 운영 특성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 591,
+    "text": "※ 다음은 응답자의 일반적 사항과 현장 운영 특성에 관한 질문입니다. A-3·A-4는 숫자를 입력하고, 나머지 문항은 해당하는 보기를 선택해 주십시오."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 592,
+    "text": "A. 실태조사 대상자 개요 A-1) 귀하의 소속 구분은?   ① 시공사   ② 발주청(공사감독·감리원 포함) A-2) 귀하의 성별은?   ① 남성   ② 여성 A-3) 응답일 현재 귀하의 만 나이는? 만 (   )세A-4) 귀하의 건설현장 근무 경력은 약 몇 년입니까? (응답일까지 안전관리·공사감독·시공관리 등 현장 업무에 종사한 전체 기간) 만 (   )년※ 1년 미만은 0으로, 6개월 이상은 1년으로 올려 적어 주십시오. 여러 현장이나 업무의 근무 기간이 겹치면 같은 기간을 중복하여 합산하지 마십시오. A-5) 현장에서 귀하가 맡고 있는 역할은?   ① 공사감독   ② 안전관리자   ③ 현장소장(관리감독자)   ④ 기타(    ) A-6) 현재 담당 현장의 총공사비 구간은? ① 20억 원 미만   ② 20억 원 이상∼50억 원 미만 ③ 50억 원 이상∼120억 원 미만 ④ 120억 원 이상※ 총공사비는 조사 대상으로 정한 현장 전체의 응답일 현재 최신 확정 금액(부가가치세와 관급자재비 포함)을 기준으로 응답해 주십시오. 확정된 변경 사항은 반영하고, 아직 확정되지 않은 추정액은 사용하지 마십시오.A-7) 안전관리 담당자가 현장에 없을 때(이동·사무실 업무·야간 등) 위험 상황을 알게 되는 주된 경로는 무엇입니까?① 알게 될 방법이 없다   ② 작업자나 반장의 전화·보고③ 사무실 등에서 CCTV 화면을 직접 본다④ 자동 알림(문자·메신저·앱)을 받는다   ⑤ 기타(    )A-8) 비점검 시간에 생긴 위험 상황은 보통 언제 알게 됩니까?① 다음 순찰 때   ② 누군가 알려줄 때   ③ 발생 직후 알림으로④ 모르고 지나가는 경우가 많다A-9) 위험 상황을 알고 난 뒤 현장에 조치 지시가 전달되기까지 보통 얼마나 걸립니까?① 즉시∼5분   ② 5분 초과∼30분   ③ 30분 초과∼1시간④ 1시간 초과 또는 다음 순찰 때※ A-7∼A-9는 설문 응답일 직전 1개월 동안 귀하가 담당하시는 현장의 실제 상황을 기준으로 응답해 주십시오.※ A-7의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 593,
+    "text": "Part B. 안전관리 실효성"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 594,
+    "text": "※ 다음 Part B의 모든 문항은 리커트 5점 척도입니다. 설문 응답일 직전 1개월을 기준으로, 순찰과 순찰 사이나 안전관리 담당자가 현장에 없는 시간대에 생긴 위험 상황까지 포함하여 각 문항을 읽고 귀하의 생각과 가장 가까운 보기를 선택해 주십시오. B-3의 ‘안전관리 담당자’는 선임된 안전관리자뿐 아니라, 전담 안전관리자가 없는 현장에서 안전관리 업무를 맡는 분을 포함합니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 595,
+    "text": "  (① 전혀 그렇지 않다 — ② 그렇지 않다 — ③ 보통이다 — ④ 그렇다 — ⑤ 매우 그렇다)"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 596,
+    "text": "안전관리 실효성전혀그렇지않다그렇지 않다보통이다그렇다매우그렇다B-1우리 현장에서는 위험 상황을 조기에 인지한다.①②③④⑤B-2우리 현장에서는 위험 상황을 인지하면 초동 대응을 빠르게 지시한다.①②③④⑤B-3우리 현장에서는 안전관리 담당자가 현장 밖에서도 위험 상황을 신속하게 파악한다.①②③④⑤B-4우리 현장에서는 멀리 떨어진 곳에서도 위험 정보와 조치 필요사항을 원활하게 공유한다.①②③④⑤B-5우리 현장에서는 제한된 인력으로도 현장 순찰과 위험 확인 업무를 효율적으로 수행한다.①②③④⑤B-6우리 현장에서는 불필요한 확인 업무에 쫓기지 않고 실제 위험 대응에 집중한다.①②③④⑤B-7우리 현장에서는 필요한 경우 시정·작업중지 등 통제 조치를 신속하게 시행한다.①②③④⑤B-8우리 현장에서는 사고로 이어질 수 있는 위험요인을 실질적으로 통제한다.①②③④⑤"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 597,
+    "text": " 끝까지 응답해 주셔서 진심으로 감사합니다."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 598,
+    "text": "Abstract"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 599,
+    "text": "Development and Empirical Evaluation of a YOLO–LLM Safety Monitoring System for Construction Sites: A Comparison of Safety Management Effectiveness between Adopting and Non-Adopting Sites"
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 600,
+    "text": "This study developed a YOLO–LLM safety monitoring system to address staffing and budget constraints and unnecessary alarm burdens at small and medium-sized construction sites. The system uses existing ONVIF cameras and a general-purpose PC. YOLO detects potential hazards, and an LLM evaluates their context before notifications are sent to managers."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 601,
+    "text": "Alarm performance was assessed using operational logs. Perceived safety management effectiveness was examined through a survey of 73 managers, one per site, under the Gyeonggi Regional Headquarters of a public corporation: 34 adopting sites and 39 non-adopting sites. Eight items covered early hazard recognition, response promptness, remote situational awareness, reduced patrol burden, and hazard control. Analysis of covariance in jamovi 2.7.41 compared the groups while adjusting for age, construction experience, affiliation, gender, role, and project cost category."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 602,
+    "text": "Among 878 first-stage detection candidates, LLM verification reduced false alarms from 834 to 13 but also suppressed 5 of 44 genuine hazard alerts. A comparison using correction examples likewise revealed a trade-off between fewer false alarms and missed hazard alerts. In the survey analysis, adopting sites scored 0.54 points higher in adjusted safety management effectiveness (95% CI [0.17, 0.91], p=.005, partial η²=0.121), supporting Hypothesis (1-1). After Holm correction, differences were significant for early hazard recognition, remote situational awareness, and hazard control, but not for response promptness or reduced patrol burden. No significant group difference was found in the reported time from hazard recognition to instruction delivery (p=.663)."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 603,
+    "text": "The findings indicate the need to assess both alarm performance and managers' perceived work effectiveness. Practical operation requires monitoring missed hazard alerts as well as false alarms and establishing procedures for notification receipt, verification, and corrective action. The technical evaluation reports conditional performance among first-stage candidates, while the field survey reports group differences observed in cross-sectional, self-reported data from one organization."
+  },
+  {
+    "section": "Contents/section2.xml",
+    "index": 604,
+    "text": "Keywords: construction safety management; YOLO; large language model; safety management effectiveness; analysis of covariance; alarm fatigue"
+  }
+]

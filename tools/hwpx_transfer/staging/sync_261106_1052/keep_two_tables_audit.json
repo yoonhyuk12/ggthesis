@@ -1,0 +1,29 @@
+{
+  "changes": [
+    {
+      "caption": "<표3-2>",
+      "table_id": "1234908531",
+      "input_unit_index": 174,
+      "pageBreak": [
+        "TABLE",
+        "NONE"
+      ],
+      "width_grid_text_font_unchanged": true,
+      "removed_lineseg_arrays": 101
+    },
+    {
+      "caption": "<표4-4>",
+      "table_id": "1238233566",
+      "input_unit_index": 367,
+      "pageBreak": [
+        "TABLE",
+        "NONE"
+      ],
+      "width_grid_text_font_unchanged": true,
+      "removed_lineseg_arrays": 0
+    }
+  ],
+  "scope": "Only table3-2 and4-4 pageBreak plus their paragraph caches; caption keepWithNext preserved",
+  "output": "C:/Users/User/Documents/2026 개발관련/03. 경기대 논문/tools/hwpx_transfer/staging/sync_261106_1052/layout_ready.hwpx",
+  "needs_Hancom_PDF_verification": true
+}

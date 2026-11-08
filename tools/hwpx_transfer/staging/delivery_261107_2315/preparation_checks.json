@@ -1,0 +1,134 @@
+{
+  "compiled": [
+    "prepare_inputs.py",
+    "assemble.py",
+    "resolve_patch.py",
+    "verify_current.py"
+  ],
+  "text_only_tables": [
+    {
+      "caption": "<표1-2>",
+      "changed_cells": 1,
+      "geometry_preserved": true
+    },
+    {
+      "caption": "<표3-1>",
+      "changed_cells": 3,
+      "geometry_preserved": true
+    },
+    {
+      "caption": "<표3-9>",
+      "changed_cells": 2,
+      "geometry_preserved": true
+    },
+    {
+      "caption": "<표4-13>",
+      "changed_cells": 2,
+      "geometry_preserved": true
+    }
+  ],
+  "appendix_question_counts": [
+    {
+      "question": "B-1",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-2",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-3",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-4",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-5",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-6",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-7",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "B-8",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "question": "C-1",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-2",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-3",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-4",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-5",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-6",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-7",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "C-8",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "D-1",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "D-2",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "D-3",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "question": "D-4",
+      "expected": 1,
+      "actual": 1
+    }
+  ],
+  "scope": "dump XML and Python syntax only; no HWPX opened or written",
+  "ok": true
+}

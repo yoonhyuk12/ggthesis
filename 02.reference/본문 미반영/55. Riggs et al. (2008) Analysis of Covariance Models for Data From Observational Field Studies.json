@@ -1,0 +1,46 @@
+{
+  "title": "Analysis of Covariance Models for Data From Observational Field Studies",
+  "authors": [
+    "Michael R. Riggs",
+    "Kurt J. Haroldson",
+    "Mark A. Hanson"
+  ],
+  "year": 2008,
+  "journal": "The Journal of Wildlife Management",
+  "volume": "72",
+  "issue": "1",
+  "pages": "34-43",
+  "doi": "10.2193/2007-315",
+  "verified_at": "2026-11-06T02:41:22.636955+09:00",
+  "metadata_sources": [
+    "https://api.crossref.org/works/10.2193/2007-315",
+    "https://wildlife.onlinelibrary.wiley.com/doi/10.2193/2007-315"
+  ],
+  "full_text_pdf_secured": false,
+  "pdf_path": null,
+  "sha256": null,
+  "cochran_citation": {
+    "verified_in": "Publisher HTML Literature Cited",
+    "reference": "Cochran, W. G. 1969. The use of covariance in observational studies. Applied Statistics 18: 270–275.",
+    "body_citation_page": null
+  },
+  "access_attempts": [
+    {
+      "source": "https://wildlife.onlinelibrary.wiley.com/doi/pdf/10.2193/2007-315",
+      "result": "HTTP 403; HTML, not PDF"
+    },
+    {
+      "source": "https://bioone.org/journals/journal-of-wildlife-management/volume-72/issue-1/2007-315/Analysis-of-Covariance-Models-for-Data-From-Observational-Field-Studies/10.2193/2007-315.pdf",
+      "result": "HTTP 200 but text/html (1165 bytes), not PDF"
+    },
+    {
+      "source": "https://api.openalex.org/works/https://doi.org/10.2193/2007-315",
+      "result": "is_oa false; oa_status closed; any_repository_has_fulltext false; no pdf_url"
+    },
+    {
+      "source": "Public web searches; Minnesota DNR research publication lists",
+      "result": "Publication listings and citing papers found; no legally public full-text PDF located"
+    }
+  ],
+  "citation_status": "Acquisition request only; no manuscript or bibliography modifications. Publisher bibliography confirms citation of Cochran (1969)."
+}

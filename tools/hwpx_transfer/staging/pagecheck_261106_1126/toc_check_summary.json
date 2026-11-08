@@ -1,0 +1,676 @@
+{
+  "page_count": 111,
+  "previous_page_count": 115,
+  "page_count_change": -4,
+  "blank_pages": [],
+  "total_toc_entries": 117,
+  "matched_toc_entries": 23,
+  "mismatch_count": 94,
+  "mismatch_groups": {
+    "본문 목차": [
+      {
+        "title": "제 1 항 조기인지",
+        "actual": "18",
+        "occurrence": 1,
+        "expected": "17",
+        "match": false
+      },
+      {
+        "title": "제 2 항 대응 신속성",
+        "actual": "19",
+        "occurrence": 1,
+        "expected": "18",
+        "match": false
+      },
+      {
+        "title": "제 3 항 원격 파악",
+        "actual": "19",
+        "occurrence": 1,
+        "expected": "18",
+        "match": false
+      },
+      {
+        "title": "제 4 항 순찰부담 경감",
+        "actual": "20",
+        "occurrence": 1,
+        "expected": "19",
+        "match": false
+      },
+      {
+        "title": "제 5 항 위험 통제력",
+        "actual": "20",
+        "occurrence": 1,
+        "expected": "19",
+        "match": false
+      },
+      {
+        "title": "제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)",
+        "actual": "22",
+        "occurrence": 1,
+        "expected": "21",
+        "match": false
+      },
+      {
+        "title": "제 5 절 소결",
+        "actual": "24",
+        "occurrence": 1,
+        "expected": "23",
+        "match": false
+      },
+      {
+        "title": "제 3 장 YOLO-LLM 안전관제 시스템 개발",
+        "actual": "25",
+        "occurrence": 1,
+        "expected": "24",
+        "match": false
+      },
+      {
+        "title": "제 1 절 시스템 개발 방향 및 요구사항",
+        "actual": "25",
+        "occurrence": 1,
+        "expected": "24",
+        "match": false
+      },
+      {
+        "title": "제 1 항 시스템 개발 개요",
+        "actual": "25",
+        "occurrence": 1,
+        "expected": "24",
+        "match": false
+      },
+      {
+        "title": "제 2 항 현장 요구사항",
+        "actual": "26",
+        "occurrence": 1,
+        "expected": "25",
+        "match": false
+      },
+      {
+        "title": "제 2 절 시스템 설계",
+        "actual": "32",
+        "occurrence": 1,
+        "expected": "31",
+        "match": false
+      },
+      {
+        "title": "제 1 항 전체 시스템 구조",
+        "actual": "32",
+        "occurrence": 1,
+        "expected": "31",
+        "match": false
+      },
+      {
+        "title": "제 2 항 YOLO 탐지 및 제어",
+        "actual": "34",
+        "occurrence": 1,
+        "expected": "32",
+        "match": false
+      },
+      {
+        "title": "제 3 항 LLM 문맥 검증 및 현장 적응",
+        "actual": "36",
+        "occurrence": 1,
+        "expected": "34",
+        "match": false
+      },
+      {
+        "title": "제 4 항 경보 전파",
+        "actual": "40",
+        "occurrence": 1,
+        "expected": "38",
+        "match": false
+      },
+      {
+        "title": "제 3 절 시스템 구현",
+        "actual": "41",
+        "occurrence": 1,
+        "expected": "39",
+        "match": false
+      },
+      {
+        "title": "제 1 항 실행 환경 및 기술 스택",
+        "actual": "41",
+        "occurrence": 1,
+        "expected": "39",
+        "match": false
+      },
+      {
+        "title": "제 2 항 주요 기능 및 운영 안정성",
+        "actual": "41",
+        "occurrence": 1,
+        "expected": "39",
+        "match": false
+      },
+      {
+        "title": "제 3 항 현장 배포 및 운용 구성",
+        "actual": "42",
+        "occurrence": 1,
+        "expected": "41",
+        "match": false
+      },
+      {
+        "title": "제 4 절 시스템 개발의 효과 분석",
+        "actual": "44",
+        "occurrence": 1,
+        "expected": "42",
+        "match": false
+      },
+      {
+        "title": "제 1 항 검증 데이터셋 구축 및 평가 지표",
+        "actual": "44",
+        "occurrence": 1,
+        "expected": "42",
+        "match": false
+      },
+      {
+        "title": "제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실",
+        "actual": "46",
+        "occurrence": 1,
+        "expected": "44",
+        "match": false
+      },
+      {
+        "title": "제 3 항 RAG 기반 Few-shot 교정의 성능 실험",
+        "actual": "48",
+        "occurrence": 1,
+        "expected": "46",
+        "match": false
+      },
+      {
+        "title": "제 4 항 적용 타당성",
+        "actual": "49",
+        "occurrence": 1,
+        "expected": "48",
+        "match": false
+      },
+      {
+        "title": "제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식",
+        "actual": "50",
+        "occurrence": 1,
+        "expected": "48",
+        "match": false
+      },
+      {
+        "title": "제 6 항 현장 운영 특성",
+        "actual": "54",
+        "occurrence": 1,
+        "expected": "52",
+        "match": false
+      },
+      {
+        "title": "제 5 절 소결",
+        "actual": "56",
+        "occurrence": 2,
+        "expected": "54",
+        "match": false
+      },
+      {
+        "title": "제 4 장 연구설계 및 실증분석",
+        "actual": "57",
+        "occurrence": 1,
+        "expected": "55",
+        "match": false
+      },
+      {
+        "title": "제 1 절 연구 모형 설계",
+        "actual": "57",
+        "occurrence": 1,
+        "expected": "55",
+        "match": false
+      },
+      {
+        "title": "제 2 절 연구 문제 및 연구가설",
+        "actual": "59",
+        "occurrence": 1,
+        "expected": "57",
+        "match": false
+      },
+      {
+        "title": "제 3 절 변수의 조작적 정의 및 측정도구 구성",
+        "actual": "60",
+        "occurrence": 1,
+        "expected": "58",
+        "match": false
+      },
+      {
+        "title": "제 4 절 설문조사",
+        "actual": "62",
+        "occurrence": 1,
+        "expected": "60",
+        "match": false
+      },
+      {
+        "title": "제 1 항 설문조사의 개요 및 절차",
+        "actual": "62",
+        "occurrence": 1,
+        "expected": "60",
+        "match": false
+      },
+      {
+        "title": "제 2 항 설문지의 구성",
+        "actual": "62",
+        "occurrence": 1,
+        "expected": "60",
+        "match": false
+      },
+      {
+        "title": "제 5 절 자료 수집과 분석 절차",
+        "actual": "65",
+        "occurrence": 1,
+        "expected": "62",
+        "match": false
+      },
+      {
+        "title": "제 1 항 자료 수집 및 표본",
+        "actual": "65",
+        "occurrence": 1,
+        "expected": "62",
+        "match": false
+      },
+      {
+        "title": "제 2 항 분석 절차",
+        "actual": "66",
+        "occurrence": 1,
+        "expected": "63",
+        "match": false
+      },
+      {
+        "title": "제 6 절 조사 대상 특성과 기초통계 분석",
+        "actual": "68",
+        "occurrence": 1,
+        "expected": "65",
+        "match": false
+      },
+      {
+        "title": "제 1 항 인구통계학적 빈도분석",
+        "actual": "68",
+        "occurrence": 1,
+        "expected": "65",
+        "match": false
+      },
+      {
+        "title": "제 2 항 타당도 분석",
+        "actual": "70",
+        "occurrence": 1,
+        "expected": "67",
+        "match": false
+      },
+      {
+        "title": "제 3 항 신뢰도 분석",
+        "actual": "71",
+        "occurrence": 1,
+        "expected": "68",
+        "match": false
+      },
+      {
+        "title": "제 4 항 기술통계 분석",
+        "actual": "73",
+        "occurrence": 1,
+        "expected": "69",
+        "match": false
+      },
+      {
+        "title": "제 5 항 집단 동질성 검정",
+        "actual": "74",
+        "occurrence": 1,
+        "expected": "70",
+        "match": false
+      },
+      {
+        "title": "제 7 절 가설 검증",
+        "actual": "75",
+        "occurrence": 1,
+        "expected": "71",
+        "match": false
+      },
+      {
+        "title": "제 1 항 YOLO-LLM 안전관제 시스템 도입 현장의 안전관리 실효성 검증",
+        "actual": "75",
+        "occurrence": 1,
+        "expected": "71",
+        "match": false
+      },
+      {
+        "title": "제 2 항 가설 검증 결과 종합",
+        "actual": "79",
+        "occurrence": 1,
+        "expected": "76",
+        "match": false
+      },
+      {
+        "title": "제 8 절 분석결과 및 논의",
+        "actual": "80",
+        "occurrence": 1,
+        "expected": "77",
+        "match": false
+      },
+      {
+        "title": "제 5 장 결론",
+        "actual": "83",
+        "occurrence": 1,
+        "expected": "79",
+        "match": false
+      },
+      {
+        "title": "참고문헌",
+        "actual": "85",
+        "occurrence": 1,
+        "expected": "81",
+        "match": false
+      },
+      {
+        "title": "부 록 (도입 현장)",
+        "actual": "91",
+        "occurrence": 1,
+        "expected": "87",
+        "match": false
+      },
+      {
+        "title": "Part A. 인구통계학적 특성 및 현장 운영 특성",
+        "actual": "92",
+        "occurrence": 1,
+        "expected": "88",
+        "match": false
+      },
+      {
+        "title": "Part B. 안전관리 실효성",
+        "actual": "94",
+        "occurrence": 1,
+        "expected": "90",
+        "match": false
+      },
+      {
+        "title": "Part C. 시스템 특성 인식",
+        "actual": "95",
+        "occurrence": 1,
+        "expected": "91",
+        "match": false
+      },
+      {
+        "title": "Part D. 경보 피로도 완화",
+        "actual": "96",
+        "occurrence": 1,
+        "expected": "92",
+        "match": false
+      },
+      {
+        "title": "부 록 (미도입 현장)",
+        "actual": "97",
+        "occurrence": 1,
+        "expected": "93",
+        "match": false
+      },
+      {
+        "title": "Part A. 인구통계학적 특성 및 현장 운영 특성",
+        "actual": "98",
+        "occurrence": 2,
+        "expected": "94",
+        "match": false
+      },
+      {
+        "title": "Part B. 안전관리 실효성",
+        "actual": "100",
+        "occurrence": 2,
+        "expected": "96",
+        "match": false
+      },
+      {
+        "title": "Abstract",
+        "actual": "101",
+        "occurrence": 1,
+        "expected": "97",
+        "match": false
+      }
+    ],
+    "표 목차": [
+      {
+        "title": "<표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 측정문항 연결",
+        "actual": "17",
+        "occurrence": 1,
+        "expected": "16",
+        "match": false
+      },
+      {
+        "title": "<표 2-3> 안전관리 실효성 측정문항의 내용과 관련 선행연구",
+        "actual": "21",
+        "occurrence": 1,
+        "expected": "20",
+        "match": false
+      },
+      {
+        "title": "<표 2-4> 선행연구와 본 연구의 차별성",
+        "actual": "22",
+        "occurrence": 1,
+        "expected": "21",
+        "match": false
+      },
+      {
+        "title": "<표 2-5> 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합",
+        "actual": "23",
+        "occurrence": 1,
+        "expected": "22",
+        "match": false
+      },
+      {
+        "title": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항",
+        "actual": "28",
+        "occurrence": 1,
+        "expected": "27",
+        "match": false
+      },
+      {
+        "title": "<표 3-2> 관련 기술 선행연구 정리",
+        "actual": "31",
+        "occurrence": 1,
+        "expected": "30",
+        "match": false
+      },
+      {
+        "title": "<표 3-3> 시스템 모듈 구성과 역할",
+        "actual": "34",
+        "occurrence": 1,
+        "expected": "32",
+        "match": false
+      },
+      {
+        "title": "<표 3-4> 시스템 구현 기술 스택",
+        "actual": "41",
+        "occurrence": 1,
+        "expected": "39",
+        "match": false
+      },
+      {
+        "title": "<표 3-5> 정·오탐 라벨링 기준",
+        "actual": "45",
+        "occurrence": 1,
+        "expected": "43",
+        "match": false
+      },
+      {
+        "title": "<표 3-6> 성능 평가 지표 정의와 측정 목적",
+        "actual": "46",
+        "occurrence": 1,
+        "expected": "44",
+        "match": false
+      },
+      {
+        "title": "<표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)",
+        "actual": "48",
+        "occurrence": 1,
+        "expected": "46",
+        "match": false
+      },
+      {
+        "title": "<표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)",
+        "actual": "49",
+        "occurrence": 1,
+        "expected": "47",
+        "match": false
+      },
+      {
+        "title": "<표 3-9> 시스템 적용 타당성의 평가 범위",
+        "actual": "50",
+        "occurrence": 1,
+        "expected": "48",
+        "match": false
+      },
+      {
+        "title": "<표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의",
+        "actual": "51",
+        "occurrence": 1,
+        "expected": "49",
+        "match": false
+      },
+      {
+        "title": "<표 4-1> 연구변수의 구성",
+        "actual": "58",
+        "occurrence": 1,
+        "expected": "56",
+        "match": false
+      },
+      {
+        "title": "<표 4-2> 연구가설 종합",
+        "actual": "59",
+        "occurrence": 1,
+        "expected": "57",
+        "match": false
+      },
+      {
+        "title": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성",
+        "actual": "61",
+        "occurrence": 1,
+        "expected": "59",
+        "match": false
+      },
+      {
+        "title": "<표 4-4> 설문지의 최종 구성",
+        "actual": "64",
+        "occurrence": 1,
+        "expected": "61",
+        "match": false
+      },
+      {
+        "title": "<표 4-5> 자료 수집 개요",
+        "actual": "66",
+        "occurrence": 1,
+        "expected": "63",
+        "match": false
+      },
+      {
+        "title": "<표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)",
+        "actual": "69",
+        "occurrence": 1,
+        "expected": "66",
+        "match": false
+      },
+      {
+        "title": "<표 4-7> 안전관리 실효성 문항의 탐색적 요인분석 결과",
+        "actual": "71",
+        "occurrence": 1,
+        "expected": "67",
+        "match": false
+      },
+      {
+        "title": "<표 4-8> 측정도구의 신뢰도 분석 결과",
+        "actual": "72",
+        "occurrence": 1,
+        "expected": "68",
+        "match": false
+      },
+      {
+        "title": "<표 4-9> 안전관리 실효성의 기술통계(도입·미도입 현장별)",
+        "actual": "73",
+        "occurrence": 1,
+        "expected": "69",
+        "match": false
+      },
+      {
+        "title": "<표 4-10> 도입·미도입 현장의 집단 동질성 검정 결과",
+        "actual": "74",
+        "occurrence": 1,
+        "expected": "70",
+        "match": false
+      },
+      {
+        "title": "<표 4-11> 공분산분석 가정 점검 결과",
+        "actual": "77",
+        "occurrence": 1,
+        "expected": "73",
+        "match": false
+      },
+      {
+        "title": "<표 4-12> 안전관리 실효성에 대한 공분산분석 결과",
+        "actual": "78",
+        "occurrence": 1,
+        "expected": "74",
+        "match": false
+      },
+      {
+        "title": "<표 4-13> 강건성 점검 결과",
+        "actual": "79",
+        "occurrence": 1,
+        "expected": "75",
+        "match": false
+      },
+      {
+        "title": "<표 4-14> 연구가설 검증 결과 종합",
+        "actual": "80",
+        "occurrence": 1,
+        "expected": "76",
+        "match": false
+      }
+    ],
+    "그림 목차": [
+      {
+        "title": "<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조",
+        "actual": "33",
+        "occurrence": 1,
+        "expected": "31",
+        "match": false
+      },
+      {
+        "title": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름",
+        "actual": "37",
+        "occurrence": 1,
+        "expected": "35",
+        "match": false
+      },
+      {
+        "title": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+        "actual": "39",
+        "occurrence": 1,
+        "expected": "37",
+        "match": false
+      },
+      {
+        "title": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)",
+        "actual": "42",
+        "occurrence": 1,
+        "expected": "40",
+        "match": false
+      },
+      {
+        "title": "<그림 3-5> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(n=34)",
+        "actual": "53",
+        "occurrence": 1,
+        "expected": "51",
+        "match": false
+      },
+      {
+        "title": "<그림 3-6> 현장 운영 특성(A-7∼A-9)의 응답 비율(도입·미도입 현장별)",
+        "actual": "55",
+        "occurrence": 1,
+        "expected": "53",
+        "match": false
+      },
+      {
+        "title": "<그림 4-1> 연구 모형",
+        "actual": "58",
+        "occurrence": 1,
+        "expected": "56",
+        "match": false
+      }
+    ]
+  },
+  "mapping_errors": {}
+}

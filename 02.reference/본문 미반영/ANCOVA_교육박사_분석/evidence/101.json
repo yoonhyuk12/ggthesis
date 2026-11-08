@@ -1,0 +1,263 @@
+{
+  "id": "101",
+  "bibliography": {
+    "author": "황성용",
+    "year": 2013,
+    "title": "자기성장 창의성 프로그램이 성인학습자의 창의성과 창의적 리더십에 미치는 효과",
+    "university": "숭실대학교 대학원 평생교육학과",
+    "degree": "박사",
+    "file": "02.reference/101. 황성용(2013)_자기성장 창의성 프로그램이 성인학습자의 창의성과 창의적 리더십에 미치는 효과.pdf"
+  },
+  "extraction": {
+    "tool": "Kordoc",
+    "version": "4.24.2",
+    "command": "node .claude/kordoc/dist/cli.js \"02.reference/101. 황성용(2013)_자기성장 창의성 프로그램이 성인학습자의 창의성과 창의적 리더십에 미치는 효과.pdf\" --no-images --script-tags -o \"02.reference/ANCOVA_교육박사_분석/kordoc/101.md\"",
+    "files": [
+      "kordoc/101.md",
+      "kordoc/101.log"
+    ],
+    "warnings": [
+      "표 병합 셀과 가로 괘선이 텍스트/취소선으로 추출될 수 있어 대표 표는 PDF 렌더링과 대조함"
+    ]
+  },
+  "verification": {
+    "total_pdf_pages": 232,
+    "pdf_page_numbering": "1-based",
+    "printed_to_pdf_offset": 25,
+    "method": "Kordoc 전체 추출→관련 절 독해·전체 키워드 검색→PyMuPDF로 인쇄쪽/PDF쪽 및 대표 표 수치 교차대조→PNG 시각검사",
+    "review_scope": "연구설계·대상 pp.92–94, 자료처리 pp.102–104, 주요 ANCOVA pp.107–112 및 이원 ANCOVA 관련 절; 전체 추출문 가정·보정·도구 검색",
+    "chapter4_compared": "01.docs/04_연구설계및실증분석.md 제5절 및 제7절 직접 읽음",
+    "original_errors": [
+      {
+        "status": "PDF에서 확인한 보고 불일치",
+        "printed_page": [
+          93,
+          94
+        ],
+        "pdf_page": [
+          118,
+          119
+        ],
+        "detail": "집단별 모집 경로 설명과 무선배치 주장이 함께 있음. 무작위시험으로 확정 불가; 33–65세 설명과 통제집단30세미만5명도 함께 존재."
+      },
+      {
+        "status": "원문 표기 확인, 오류 여부 미확정",
+        "printed_page": [
+          107,
+          110
+        ],
+        "pdf_page": [
+          132,
+          135
+        ],
+        "detail": "표 헤더는 type I SS, 교정 M(SD). 분석 설정 및 괄호값 의미는 원출력 없이는 단정 불가."
+      }
+    ],
+    "rendered_evidence": [
+      "evidence/101_p107.png",
+      "evidence/101_p110.png"
+    ]
+  },
+  "design": {
+    "type": "사전·사후 통제집단 설계",
+    "intervention": "5주 10회기 총40시간 자기성장 창의성 프로그램",
+    "allocation": "p94 무선배치라고 기술하지만 p93은 자원수강자 실험집단/학점은행제 수강생 통제집단으로 설명하여 배정의 일관성 불명확",
+    "printed_page": [
+      92,
+      93,
+      94
+    ],
+    "pdf_page": [
+      117,
+      118,
+      119
+    ]
+  },
+  "sample": {
+    "total": 70,
+    "unit": "성인학습자",
+    "note": "33–65세 모집 설명과 달리 표3-2는 통제집단 30세미만5명 포함. 전원33–65세로 단정 금지"
+  },
+  "groups": [
+    {
+      "name": "실험",
+      "n": 35
+    },
+    {
+      "name": "통제",
+      "n": 35
+    }
+  ],
+  "outcomes": [
+    "창의성 합계·창의적 능력·창의적 성향",
+    "창의적 리더십 합계·문제해결·개인적·사회적 리더십"
+  ],
+  "covariates": {
+    "continuous": [
+      "각 결과의 사전점수"
+    ],
+    "additional_factors": "추가 이원 ANCOVA에서 집단과 성격기능·성별·연령·학력·직업을 각각 비교하며 상호작용 분석",
+    "note": "이 요인들을 주모형에 모두 동시에 통제한 연구로 읽으면 안 됨"
+  },
+  "software": "검토 범위에서 보고 확인 못함 (전체 추출문 SPSS 검색 0건, 자료처리 pp102–104에도 프로그램명 확인 못함)",
+  "assumptions": [
+    {
+      "item": "회귀기울기 동질성(집단×공변량)",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 128,
+      "printed_page": 103
+    },
+    {
+      "item": "선형성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 128,
+      "printed_page": 103
+    },
+    {
+      "item": "잔차 정규성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 128,
+      "printed_page": 103
+    },
+    {
+      "item": "잔차 등분산성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 128,
+      "printed_page": 103
+    },
+    {
+      "item": "영향점 진단",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 128,
+      "printed_page": 103
+    },
+    {
+      "item": "다중검정 보정",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체 검색 및 연구방법·ANCOVA 결과 절 검토. 보고를 찾지 못한 것이며 실제 미실시로 단정하지 않음.",
+      "pdf_page": 128,
+      "printed_page": 103
+    }
+  ],
+  "tables": [
+    {
+      "number": "4-2",
+      "title": "창의성합계의 평균 및 표준편차",
+      "columns": [
+        "집단",
+        "N",
+        "사전 M(SD)",
+        "사후 M(SD)",
+        "교정 M(SD)"
+      ],
+      "pdf_page": 132,
+      "printed_page": 107,
+      "key_values": {
+        "실험_교정": 12.63,
+        "통제_교정": 10.19,
+        "괄호값": ".27",
+        "주의": "원문은 교정 M(SD)라고 표기. SE라고 임의 변환하지 않음"
+      }
+    },
+    {
+      "number": "4-3",
+      "title": "창의성 합계에 대한 공분산분석",
+      "columns": [
+        "Source",
+        "type I SS",
+        "df",
+        "MS",
+        "F",
+        "p"
+      ],
+      "pdf_page": 132,
+      "printed_page": 107,
+      "key_values": {
+        "집단_F": 39.664,
+        "df": [
+          1,
+          67
+        ],
+        "집단_SS": 97.498,
+        "오차_MS": 2.458,
+        "p_원문": ".000",
+        "p_보고": "<.001"
+      }
+    },
+    {
+      "number": "4-6",
+      "title": "창의적 리더십의 평균 및 표준편차",
+      "columns": [
+        "집단",
+        "N",
+        "사전 M(SD)",
+        "사후 M(SD)",
+        "교정 M(SD)"
+      ],
+      "pdf_page": 135,
+      "printed_page": 110,
+      "key_values": {
+        "실험_교정": 31.48,
+        "통제_교정": 27.83,
+        "괄호값": ".50"
+      }
+    },
+    {
+      "number": "4-7",
+      "title": "창의적 리더십에 대한 공분산분석",
+      "columns": [
+        "Source",
+        "type I SS",
+        "df",
+        "MS",
+        "F",
+        "p"
+      ],
+      "pdf_page": 135,
+      "printed_page": 110,
+      "key_values": {
+        "집단_F": 25.48,
+        "df": [
+          1,
+          67
+        ],
+        "집단_SS": 215.548,
+        "오차_MS": 8.459,
+        "p_원문": ".000",
+        "p_보고": "<.001"
+      }
+    }
+  ],
+  "results": [
+    "창의성 교정평균 실험12.63/통제10.19; F(1,67)=39.664,p<.001(원문 .000).",
+    "창의적 리더십 교정평균31.48/27.83; F(1,67)=25.480,p<.001(원문 .000)."
+  ],
+  "reporting_strengths": [
+    "사전·사후 원평균과 교정평균을 나란히 제시",
+    "주효과 분석과 추가 이원 ANCOVA 목적을 구분",
+    "검정표에 오차 df·MS와 정확한 F를 제시"
+  ],
+  "limitations": [
+    "검토 범위에서 잔차 가정점검·CI·부분η²·다중검정 보정 보고 확인 못함",
+    "표의 교정 M(SD) 표기는 SD/SE 의미 확인이 필요함",
+    "표제는 type I SS이므로 현 원고 Type III와 같다고 볼 수 없음",
+    "배정설명과 표본 연령 설명이 일관되지 않음"
+  ],
+  "applicability_to_ch4": {
+    "adopt": [
+      "원평균과 조정평균을 구분하여 제시하는 비교 구조",
+      "전체 결과와 하위영역 결과 분리"
+    ],
+    "do_not_adopt": [
+      "사전점수 조정이나 시간적 향상 해석을 횡단자료에 차용",
+      "Type I 표를 Type III로 간주",
+      "교정평균 괄호값을 확인 없이 SE로 호칭"
+    ],
+    "assessment": "성인교육 프로그램 효과보고의 형식 참고. 현재 횡단 설계/사전지정 통제·CI·부분η²·Holm의 대체 근거는 아님."
+  }
+}

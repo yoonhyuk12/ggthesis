@@ -1,0 +1,702 @@
+[
+  {
+    "index": 0,
+    "text": "목 차",
+    "xml": "<hp:p id=\"3000004531\" paraPrIDRef=\"23\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"50\"><hp:ctrl><hp:colPr id=\"\" type=\"NEWSPAPER\" layout=\"LEFT\" colCount=\"1\" sameSz=\"1\" sameGap=\"0\"/></hp:ctrl><hp:secPr id=\"\" textDirection=\"HORIZONTAL\" spaceColumns=\"1134\" tabStop=\"8000\" tabStopVal=\"4000\" tabStopUnit=\"HWPUNIT\" outlineShapeIDRef=\"2\" memoShapeIDRef=\"0\" textVerticalWidthHead=\"0\" masterPageCnt=\"0\"><hp:grid lineGrid=\"0\" charGrid=\"0\" wonggojiFormat=\"0\"/><hp:startNum pageStartsOn=\"BOTH\" page=\"0\" pic=\"0\" tbl=\"0\" equation=\"0\"/><hp:visibility hideFirstHeader=\"0\" hideFirstFooter=\"0\" hideFirstMasterPage=\"0\" border=\"SHOW_ALL\" fill=\"SHOW_ALL\" hideFirstPageNum=\"0\" hideFirstEmptyLine=\"0\" showLineNumber=\"0\"/><hp:lineNumberShape restartType=\"0\" countBy=\"0\" distance=\"0\" startNumber=\"0\"/><hp:pagePr landscape=\"WIDELY\" width=\"53858\" height=\"72567\" gutterType=\"LEFT_ONLY\"><hp:margin header=\"0\" footer=\"4251\" gutter=\"0\" left=\"8503\" right=\"8503\" top=\"9921\" bottom=\"4251\"/></hp:pagePr><hp:footNotePr><hp:autoNumFormat type=\"DIGIT\" userChar=\"\" prefixChar=\"\" suffixChar=\")\" supscript=\"0\"/><hp:noteLine length=\"-1\" type=\"SOLID\" width=\"0.12 mm\" color=\"#000000\"/><hp:noteSpacing betweenNotes=\"283\" belowLine=\"567\" aboveLine=\"850\"/><hp:numbering type=\"CONTINUOUS\" newNum=\"1\"/><hp:placement place=\"EACH_COLUMN\" beneathText=\"0\"/></hp:footNotePr><hp:endNotePr><hp:autoNumFormat type=\"DIGIT\" userChar=\"\" prefixChar=\"\" suffixChar=\")\" supscript=\"0\"/><hp:noteLine length=\"14692344\" type=\"SOLID\" width=\"0.12 mm\" color=\"#000000\"/><hp:noteSpacing betweenNotes=\"0\" belowLine=\"567\" aboveLine=\"850\"/><hp:numbering type=\"CONTINUOUS\" newNum=\"1\"/><hp:placement place=\"END_OF_DOCUMENT\" beneathText=\"0\"/></hp:endNotePr><hp:pageBorderFill type=\"BOTH\" borderFillIDRef=\"1\" textBorder=\"PAPER\" headerInside=\"0\" footerInside=\"0\" fillArea=\"PAPER\"><hp:offset left=\"1417\" right=\"1417\" top=\"1417\" bottom=\"1417\"/></hp:pageBorderFill><hp:pageBorderFill type=\"EVEN\" borderFillIDRef=\"1\" textBorder=\"PAPER\" headerInside=\"0\" footerInside=\"0\" fillArea=\"PAPER\"><hp:offset left=\"1417\" right=\"1417\" top=\"1417\" bottom=\"1417\"/></hp:pageBorderFill><hp:pageBorderFill type=\"ODD\" borderFillIDRef=\"1\" textBorder=\"PAPER\" headerInside=\"0\" footerInside=\"0\" fillArea=\"PAPER\"><hp:offset left=\"1417\" right=\"1417\" top=\"1417\" bottom=\"1417\"/></hp:pageBorderFill></hp:secPr></hp:run><hp:run charPrIDRef=\"50\"><hp:ctrl><hp:pageNum pos=\"BOTTOM_CENTER\" formatType=\"ROMAN_SMALL\" sideChar=\"-\"/></hp:ctrl><hp:tbl id=\"1234908520\" zOrder=\"2\" numberingType=\"TABLE\" textWrap=\"TOP_AND_BOTTOM\" textFlow=\"BOTH_SIDES\" lock=\"0\" dropcapstyle=\"None\" pageBreak=\"NONE\" repeatHeader=\"1\" rowCnt=\"2\" colCnt=\"1\" cellSpacing=\"0\" borderFillIDRef=\"5\" noAdjust=\"0\"><hp:sz width=\"36284\" widthRelTo=\"ABSOLUTE\" height=\"7551\" heightRelTo=\"ABSOLUTE\" protect=\"0\"/><hp:pos treatAsChar=\"1\" affectLSpacing=\"0\" flowWithText=\"1\" allowOverlap=\"0\" holdAnchorAndSO=\"0\" vertRelTo=\"PARA\" horzRelTo=\"COLUMN\" vertAlign=\"TOP\" horzAlign=\"LEFT\" vertOffset=\"0\" horzOffset=\"0\"/><hp:outMargin left=\"141\" right=\"141\" top=\"141\" bottom=\"141\"/><hp:inMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004533\" paraPrIDRef=\"10\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"12\"><hp:t>목  차</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1600\" textheight=\"1600\" baseline=\"1360\" spacing=\"960\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"0\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"282\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004534\" paraPrIDRef=\"21\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"0\"><hp:ctrl><hp:newNum num=\"1\" numType=\"PAGE\"/></hp:ctrl><hp:t/></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1000\" textheight=\"1000\" baseline=\"850\" spacing=\"0\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"1\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"5669\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr></hp:tbl><hp:t/></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"7833\" textheight=\"7833\" baseline=\"6658\" spacing=\"1120\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 1,
+    "text": "",
+    "xml": "<hp:p id=\"3000004535\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"8953\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 2,
+    "text": "표 목 차iv",
+    "xml": "<hp:p id=\"3000005710\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>표 목 차<hp:tab width=\"31512\" leader=\"3\" type=\"2\"/>iv</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"10825\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 3,
+    "text": "그림목차vi",
+    "xml": "<hp:p id=\"3000005711\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>그림목차<hp:tab width=\"31508\" leader=\"3\" type=\"2\"/>vi</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"12697\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 4,
+    "text": "감사의 글vii",
+    "xml": "<hp:p id=\"3000005712\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>감사의 글<hp:tab width=\"30656\" leader=\"3\" type=\"2\"/>vii</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"14569\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 5,
+    "text": "논문개요viii",
+    "xml": "<hp:p id=\"3000005713\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>논문개요<hp:tab width=\"30900\" leader=\"3\" type=\"2\"/>viii</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16441\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 6,
+    "text": "제 1 장 서론1",
+    "xml": "<hp:p id=\"3000005714\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>제 1 장 서론<hp:tab width=\"29704\" leader=\"3\" type=\"2\"/>1</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"18313\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 7,
+    "text": "제 1 절 연구의 배경 및 필요성1",
+    "xml": "<hp:p id=\"3000005715\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 1 절 연구의 배경 및 필요성<hp:tab width=\"19812\" leader=\"3\" type=\"2\"/>1</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"20185\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 8,
+    "text": "제 2 절 연구의 목적3",
+    "xml": "<hp:p id=\"3000005716\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 절 연구의 목적<hp:tab width=\"25308\" leader=\"3\" type=\"2\"/>3</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"22057\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 9,
+    "text": "제 3 절 연구의 범위 및 방법4",
+    "xml": "<hp:p id=\"3000005717\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 3 절 연구의 범위 및 방법<hp:tab width=\"20912\" leader=\"3\" type=\"2\"/>4</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"23929\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 10,
+    "text": "제 2 장 이론적 배경7",
+    "xml": "<hp:p id=\"3000005718\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>제 2 장 이론적 배경<hp:tab width=\"25856\" leader=\"3\" type=\"2\"/>7</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"25801\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 11,
+    "text": "제 1 절 건설산업 스마트 안전관리와 AI 영상관제 기술7",
+    "xml": "<hp:p id=\"3000005719\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 1 절 건설산업 스마트 안전관리와 AI 영상관제 기술<hp:tab width=\"7572\" leader=\"3\" type=\"2\"/>7</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"27673\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 12,
+    "text": "제 1 항 개념 및 정의7",
+    "xml": "<hp:p id=\"3000005720\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 개념 및 정의<hp:tab width=\"24212\" leader=\"3\" type=\"2\"/>7</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"29545\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 13,
+    "text": "제 2 항 오경보와 경보 피로도8",
+    "xml": "<hp:p id=\"3000005721\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 오경보와 경보 피로도<hp:tab width=\"19812\" leader=\"3\" type=\"2\"/>8</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"31417\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 14,
+    "text": "제 2 절 YOLO-LLM 안전관제 시스템의 기술 특성10",
+    "xml": "<hp:p id=\"3000005722\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 절 YOLO-LLM 안전관제 시스템의 기술 특성<hp:tab width=\"9112\" leader=\"3\" type=\"2\"/>10</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"33289\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 15,
+    "text": "제 1 항 시스템 인프라 범용성(A1)11",
+    "xml": "<hp:p id=\"3000005723\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 시스템 인프라 범용성(A1)<hp:tab width=\"16988\" leader=\"3\" type=\"2\"/>11</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"35161\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 16,
+    "text": "제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)11",
+    "xml": "<hp:p id=\"3000005724\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 1차 탐지(YOLO) 및 제어 안정성(A2)<hp:tab width=\"11292\" leader=\"3\" type=\"2\"/>11</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"37033\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 17,
+    "text": "제 3 항 2차 검증(LLM) 오탐 필터링(A3)12",
+    "xml": "<hp:p id=\"3000005725\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 2차 검증(LLM) 오탐 필터링(A3)<hp:tab width=\"13668\" leader=\"3\" type=\"2\"/>12</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"38905\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 18,
+    "text": "제 4 항 알림 전파 즉각성(A4)13",
+    "xml": "<hp:p id=\"3000005726\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 4 항 알림 전파 즉각성(A4)<hp:tab width=\"19188\" leader=\"3\" type=\"2\"/>13</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"40777\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 19,
+    "text": "제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성15",
+    "xml": "<hp:p id=\"3000005727\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 3 절 YOLO-LLM 안전관제 시스템 도입의 안전관리 실효성<hp:tab width=\"3064\" leader=\"3\" type=\"2\"/>15</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"42649\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 20,
+    "text": "제 1 항 조기인지18",
+    "xml": "<hp:p id=\"3000005728\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 조기인지<hp:tab width=\"25856\" leader=\"3\" type=\"2\"/>18</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"44521\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 21,
+    "text": "제 2 항 대응 신속성18",
+    "xml": "<hp:p id=\"3000005729\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 대응 신속성<hp:tab width=\"24208\" leader=\"3\" type=\"2\"/>18</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"46393\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 22,
+    "text": "제 3 항 원격 파악19",
+    "xml": "<hp:p id=\"3000005730\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 원격 파악<hp:tab width=\"25308\" leader=\"3\" type=\"2\"/>19</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"48265\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 23,
+    "text": "제 4 항 순찰부담 경감19",
+    "xml": "<hp:p id=\"3000005731\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 4 항 순찰부담 경감<hp:tab width=\"23108\" leader=\"3\" type=\"2\"/>19</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"50137\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 24,
+    "text": "제 5 항 위험 통제력20",
+    "xml": "<hp:p id=\"3000005732\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 5 항 위험 통제력<hp:tab width=\"24208\" leader=\"3\" type=\"2\"/>20</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"52009\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 25,
+    "text": "제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)22",
+    "xml": "<hp:p id=\"3000005733\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"78\"><hp:t> 제 4 절 스마트 안전기술 활용과 안전관리 실효성에 관한 선행연구(연구가설 도출 근거)<hp:tab width=\"3036\" leader=\"3\" type=\"2\"/>22</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 26,
+    "text": "제 5 절 소결24",
+    "xml": "<hp:p id=\"3000005734\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 5 절 소결<hp:tab width=\"28604\" leader=\"3\" type=\"2\"/>24</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"1872\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 27,
+    "text": "제 3 장 YOLO-LLM 안전관제 시스템 개발25",
+    "xml": "<hp:p id=\"3000005735\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>제 3 장 YOLO-LLM 안전관제 시스템 개발<hp:tab width=\"13508\" leader=\"3\" type=\"2\"/>25</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"3744\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 28,
+    "text": "제 1 절 시스템 개발 방향 및 요구사항25",
+    "xml": "<hp:p id=\"3000005736\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 1 절 시스템 개발 방향 및 요구사항<hp:tab width=\"15412\" leader=\"3\" type=\"2\"/>25</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"5616\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 29,
+    "text": "제 1 항 시스템 개발 개요25",
+    "xml": "<hp:p id=\"3000005737\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 시스템 개발 개요<hp:tab width=\"21460\" leader=\"3\" type=\"2\"/>25</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"7488\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 30,
+    "text": "제 2 항 현장 요구사항26",
+    "xml": "<hp:p id=\"3000005738\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 현장 요구사항<hp:tab width=\"23108\" leader=\"3\" type=\"2\"/>26</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"9360\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 31,
+    "text": "제 3 항 관련 기술 선행연구28",
+    "xml": "<hp:p id=\"3000005739\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 관련 기술 선행연구<hp:tab width=\"20360\" leader=\"3\" type=\"2\"/>28</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"11232\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 32,
+    "text": "제 2 절 시스템 설계31",
+    "xml": "<hp:p id=\"3000005740\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 절 시스템 설계<hp:tab width=\"24756\" leader=\"3\" type=\"2\"/>31</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"13104\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 33,
+    "text": "제 1 항 전체 시스템 구조31",
+    "xml": "<hp:p id=\"3000005741\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 전체 시스템 구조<hp:tab width=\"21460\" leader=\"3\" type=\"2\"/>31</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"14976\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 34,
+    "text": "제 2 항 YOLO 탐지 및 제어32",
+    "xml": "<hp:p id=\"3000005742\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 YOLO 탐지 및 제어<hp:tab width=\"19912\" leader=\"3\" type=\"2\"/>32</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16848\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 35,
+    "text": "제 3 항 LLM 문맥 검증 및 현장 적응34",
+    "xml": "<hp:p id=\"3000005743\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 LLM 문맥 검증 및 현장 적응<hp:tab width=\"15144\" leader=\"3\" type=\"2\"/>34</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"18720\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 36,
+    "text": "제 4 항 경보 전파38",
+    "xml": "<hp:p id=\"3000005744\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 4 항 경보 전파<hp:tab width=\"25308\" leader=\"3\" type=\"2\"/>38</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"20592\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 37,
+    "text": "제 3 절 시스템 구현39",
+    "xml": "<hp:p id=\"3000005745\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 3 절 시스템 구현<hp:tab width=\"24756\" leader=\"3\" type=\"2\"/>39</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"22464\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 38,
+    "text": "제 1 항 실행 환경 및 기술 스택39",
+    "xml": "<hp:p id=\"3000005746\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 실행 환경 및 기술 스택<hp:tab width=\"18164\" leader=\"3\" type=\"2\"/>39</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"24336\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 39,
+    "text": "제 2 항 주요 기능 및 운영 안정성39",
+    "xml": "<hp:p id=\"3000005747\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 주요 기능 및 운영 안정성<hp:tab width=\"17064\" leader=\"3\" type=\"2\"/>39</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"26208\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 40,
+    "text": "제 3 항 현장 배포 및 운용 구성40",
+    "xml": "<hp:p id=\"3000005748\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 현장 배포 및 운용 구성<hp:tab width=\"18164\" leader=\"3\" type=\"2\"/>40</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"28080\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 41,
+    "text": "제 4 절 시스템 개발의 효과 분석41",
+    "xml": "<hp:p id=\"3000005749\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 4 절 시스템 개발의 효과 분석<hp:tab width=\"18160\" leader=\"3\" type=\"2\"/>41</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"29952\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 42,
+    "text": "제 1 항 검증 데이터셋 구축 및 평가 지표41",
+    "xml": "<hp:p id=\"3000005750\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 검증 데이터셋 구축 및 평가 지표<hp:tab width=\"13216\" leader=\"3\" type=\"2\"/>41</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"31824\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 43,
+    "text": "제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실43",
+    "xml": "<hp:p id=\"3000005751\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 LLM 검증의 오경보 감소와 실제 위험 경보 손실<hp:tab width=\"5248\" leader=\"3\" type=\"2\"/>43</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"33696\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 44,
+    "text": "제 3 항 RAG 기반 Few-shot 교정의 성능 실험45",
+    "xml": "<hp:p id=\"3000005752\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 RAG 기반 Few-shot 교정의 성능 실험<hp:tab width=\"10244\" leader=\"3\" type=\"2\"/>45</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"35568\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 45,
+    "text": "제 4 항 적용 타당성46",
+    "xml": "<hp:p id=\"3000005753\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 4 항 적용 타당성<hp:tab width=\"24208\" leader=\"3\" type=\"2\"/>46</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"37440\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 46,
+    "text": "제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식47",
+    "xml": "<hp:p id=\"3000005754\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"79\"><hp:t>  제 5 항 도입 현장 관리자의 시스템 특성 인식과 경보 피로도 완화 인식<hp:tab width=\"2840\" leader=\"3\" type=\"2\"/>47</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"39312\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 47,
+    "text": "제 6 항 현장 운영 특성50",
+    "xml": "<hp:p id=\"3000005755\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 6 항 현장 운영 특성<hp:tab width=\"22560\" leader=\"3\" type=\"2\"/>50</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"41184\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 48,
+    "text": "제 5 절 소결52",
+    "xml": "<hp:p id=\"3000005756\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 5 절 소결<hp:tab width=\"28604\" leader=\"3\" type=\"2\"/>52</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"43056\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 49,
+    "text": "제 4 장 연구설계 및 실증분석53",
+    "xml": "<hp:p id=\"3000005757\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>제 4 장 연구설계 및 실증분석<hp:tab width=\"20356\" leader=\"3\" type=\"2\"/>53</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"44928\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 50,
+    "text": "제 1 절 연구 모형 설계53",
+    "xml": "<hp:p id=\"3000005758\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 1 절 연구 모형 설계<hp:tab width=\"23108\" leader=\"3\" type=\"2\"/>53</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"46800\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 51,
+    "text": "제 2 절 연구 문제 및 연구 가설55",
+    "xml": "<hp:p id=\"3000005759\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 절 연구 문제 및 연구 가설<hp:tab width=\"18712\" leader=\"3\" type=\"2\"/>55</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"48672\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 52,
+    "text": "제 3 절 변수의 조작적 정의 및 측정도구 구성56",
+    "xml": "<hp:p id=\"3000005760\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 3 절 변수의 조작적 정의 및 측정도구 구성<hp:tab width=\"11564\" leader=\"3\" type=\"2\"/>56</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"50544\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 53,
+    "text": "제 4 절 설문조사59",
+    "xml": "<hp:p id=\"3000005761\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 4 절 설문조사<hp:tab width=\"25856\" leader=\"3\" type=\"2\"/>59</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"52416\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 54,
+    "text": "제 1 항 설문조사의 개요 및 절차59",
+    "xml": "<hp:p id=\"3000005762\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 설문조사의 개요 및 절차<hp:tab width=\"17612\" leader=\"3\" type=\"2\"/>59</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 55,
+    "text": "제 2 항 설문지의 구성60",
+    "xml": "<hp:p id=\"3000005763\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 항 설문지의 구성<hp:tab width=\"23656\" leader=\"3\" type=\"2\"/>60</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"1872\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 56,
+    "text": "제 5 절 자료 수집과 분석 절차63",
+    "xml": "<hp:p id=\"3000005764\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 5 절 자료 수집과 분석 절차<hp:tab width=\"18712\" leader=\"3\" type=\"2\"/>63</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"3744\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 57,
+    "text": "제 1 항 자료 수집 및 표본63",
+    "xml": "<hp:p id=\"3000005765\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 자료 수집 및 표본<hp:tab width=\"20912\" leader=\"3\" type=\"2\"/>63</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"5616\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 58,
+    "text": "제 2 항 분석 절차65",
+    "xml": "<hp:p id=\"3000005766\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 항 분석 절차<hp:tab width=\"25856\" leader=\"3\" type=\"2\"/>65</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"7488\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 59,
+    "text": "제 6 절 조사 대상 특성과 기초통계 분석69",
+    "xml": "<hp:p id=\"3000005767\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 6 절 조사 대상 특성과 기초통계 분석<hp:tab width=\"13764\" leader=\"3\" type=\"2\"/>69</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"9360\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 60,
+    "text": "제 1 항 인구통계학적 빈도분석69",
+    "xml": "<hp:p id=\"3000005768\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 1 항 인구통계학적 빈도분석<hp:tab width=\"18708\" leader=\"3\" type=\"2\"/>69</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"11232\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 61,
+    "text": "제 2 항 타당도 분석73",
+    "xml": "<hp:p id=\"3000005769\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 2 항 타당도 분석<hp:tab width=\"24756\" leader=\"3\" type=\"2\"/>73</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"13104\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 62,
+    "text": "제 3 항 신뢰도 분석74",
+    "xml": "<hp:p id=\"3000005770\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 3 항 신뢰도 분석<hp:tab width=\"24208\" leader=\"3\" type=\"2\"/>74</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"14976\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 63,
+    "text": "제 4 항 기술통계 분석75",
+    "xml": "<hp:p id=\"3000005771\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 4 항 기술통계 분석<hp:tab width=\"23108\" leader=\"3\" type=\"2\"/>75</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16848\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 64,
+    "text": "제 5 항 상관관계 분석76",
+    "xml": "<hp:p id=\"3000005772\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 5 항 상관관계 분석<hp:tab width=\"23108\" leader=\"3\" type=\"2\"/>76</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"18720\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 65,
+    "text": "제 7 절 가설 검증78",
+    "xml": "<hp:p id=\"3000005773\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 7 절 가설 검증<hp:tab width=\"25308\" leader=\"3\" type=\"2\"/>78</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"20592\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 66,
+    "text": "제 1 항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)78",
+    "xml": "<hp:p id=\"3000005774\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> 제 1 항 연구가설 (1-1)에 대한 공분산분석(ANCOVA)<hp:tab width=\"7488\" leader=\"3\" type=\"2\"/>78</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"22464\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 67,
+    "text": "제 2 항 가설 검증 결과 종합82",
+    "xml": "<hp:p id=\"3000005775\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 2 항 가설 검증 결과 종합<hp:tab width=\"19812\" leader=\"3\" type=\"2\"/>82</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"24336\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 68,
+    "text": "제 8 절 분석결과 및 논의84",
+    "xml": "<hp:p id=\"3000005776\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>  제 8 절 분석결과 및 논의<hp:tab width=\"21460\" leader=\"3\" type=\"2\"/>84</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"26208\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 69,
+    "text": "제 5 장 결론86",
+    "xml": "<hp:p id=\"3000005777\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>제 5 장 결론<hp:tab width=\"29152\" leader=\"3\" type=\"2\"/>86</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"28080\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 70,
+    "text": "참고문헌90",
+    "xml": "<hp:p id=\"3000005778\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>참고문헌<hp:tab width=\"31348\" leader=\"3\" type=\"2\"/>90</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"29952\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 71,
+    "text": "부 록 (도입 현장)96",
+    "xml": "<hp:p id=\"3000005779\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>부 록 (도입 현장)<hp:tab width=\"26656\" leader=\"3\" type=\"2\"/>96</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"31824\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 72,
+    "text": "Part A. 인구통계학적 특성 및 현장 운영 특성98",
+    "xml": "<hp:p id=\"3000005780\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> Part A. 인구통계학적 특성 및 현장 운영 특성<hp:tab width=\"11640\" leader=\"3\" type=\"2\"/>98</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"33696\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 73,
+    "text": "Part B. 안전관리 실효성100",
+    "xml": "<hp:p id=\"3000005781\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> Part B. 안전관리 실효성<hp:tab width=\"22176\" leader=\"3\" type=\"2\"/>100</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"35568\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 74,
+    "text": "Part C. 시스템 특성 인식102",
+    "xml": "<hp:p id=\"3000005782\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>Part C. 시스템 특성 인식<hp:tab width=\"22192\" leader=\"3\" type=\"2\"/>102</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"37440\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 75,
+    "text": "Part D. 경보 피로도 완화103",
+    "xml": "<hp:p id=\"3000005783\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> Part D. 경보 피로도 완화<hp:tab width=\"21580\" leader=\"3\" type=\"2\"/>103</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"39312\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 76,
+    "text": "부 록 (미도입 현장)104",
+    "xml": "<hp:p id=\"3000005784\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>부 록 (미도입 현장)<hp:tab width=\"25004\" leader=\"3\" type=\"2\"/>104</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"41184\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 77,
+    "text": "Part A. 인구통계학적 특성 및 현장 운영 특성106",
+    "xml": "<hp:p id=\"3000005785\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> Part A. 인구통계학적 특성 및 현장 운영 특성<hp:tab width=\"11088\" leader=\"3\" type=\"2\"/>106</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"43056\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 78,
+    "text": "Part B. 안전관리 실효성108",
+    "xml": "<hp:p id=\"3000005786\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> Part B. 안전관리 실효성<hp:tab width=\"22176\" leader=\"3\" type=\"2\"/>108</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"44928\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 79,
+    "text": "Abstract110",
+    "xml": "<hp:p id=\"3000005787\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t> Abstract<hp:tab width=\"30316\" leader=\"3\" type=\"2\"/>110</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"46800\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 80,
+    "text": "표 목 차",
+    "xml": "<hp:p id=\"3000004640\" paraPrIDRef=\"22\" styleIDRef=\"0\" pageBreak=\"1\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"50\"><hp:tbl id=\"1234908521\" zOrder=\"42\" numberingType=\"TABLE\" textWrap=\"TOP_AND_BOTTOM\" textFlow=\"BOTH_SIDES\" lock=\"0\" dropcapstyle=\"None\" pageBreak=\"NONE\" repeatHeader=\"1\" rowCnt=\"2\" colCnt=\"1\" cellSpacing=\"0\" borderFillIDRef=\"5\" noAdjust=\"0\"><hp:sz width=\"36284\" widthRelTo=\"ABSOLUTE\" height=\"7551\" heightRelTo=\"ABSOLUTE\" protect=\"0\"/><hp:pos treatAsChar=\"1\" affectLSpacing=\"0\" flowWithText=\"1\" allowOverlap=\"0\" holdAnchorAndSO=\"0\" vertRelTo=\"PARA\" horzRelTo=\"COLUMN\" vertAlign=\"TOP\" horzAlign=\"LEFT\" vertOffset=\"0\" horzOffset=\"0\"/><hp:outMargin left=\"141\" right=\"141\" top=\"141\" bottom=\"141\"/><hp:inMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004642\" paraPrIDRef=\"10\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"12\"><hp:t>표 목 차</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1600\" textheight=\"1600\" baseline=\"1360\" spacing=\"960\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"0\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"282\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004643\" paraPrIDRef=\"21\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"0\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1000\" textheight=\"1000\" baseline=\"850\" spacing=\"0\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"1\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"5669\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr></hp:tbl><hp:t/></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"7833\" textheight=\"7833\" baseline=\"6658\" spacing=\"1120\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 81,
+    "text": "",
+    "xml": "<hp:p id=\"3000004644\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"8953\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 82,
+    "text": "<표 1-1> 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)2",
+    "xml": "<hp:p id=\"3000005788\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 1-1&gt; 건설업 공사금액 규모별 업무상사고 사망자 분포(2024년)<hp:tab width=\"1868\" leader=\"3\" type=\"2\"/>2</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"10825\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 83,
+    "text": "<표 1-2> 연구의 방법과 장별 구성5",
+    "xml": "<hp:p id=\"3000005789\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 1-2&gt; 연구의 방법과 장별 구성<hp:tab width=\"18120\" leader=\"3\" type=\"2\"/>5</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"12697\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 84,
+    "text": "<표 2-1> 시스템 기술 특성 관련 선행연구 요약14",
+    "xml": "<hp:p id=\"3000005790\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 2-1&gt; 시스템 기술 특성 관련 선행연구 요약<hp:tab width=\"10972\" leader=\"3\" type=\"2\"/>14</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"14569\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 85,
+    "text": "<표 2-2> 시스템 기능–담당자 업무–안전관리 실효성 하위요인 연결16",
+    "xml": "<hp:p id=\"3000005791\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"80\"><hp:t>&lt;표 2-2&gt; 시스템 기능–담당자 업무–안전관리 실효성 하위요인 연결<hp:tab width=\"2940\" leader=\"3\" type=\"2\"/>16</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16441\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 86,
+    "text": "<표 2-3> 안전관리 실효성 하위요인과 관련 선행연구21",
+    "xml": "<hp:p id=\"3000005792\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 2-3&gt; 안전관리 실효성 하위요인과 관련 선행연구<hp:tab width=\"8220\" leader=\"3\" type=\"2\"/>21</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"18313\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 87,
+    "text": "<표 2-4> 선행연구와 본 연구의 차별성22",
+    "xml": "<hp:p id=\"3000005793\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 2-4&gt; 선행연구와 본 연구의 차별성<hp:tab width=\"15368\" leader=\"3\" type=\"2\"/>22</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"20185\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 88,
+    "text": "<표 2-5> 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합23",
+    "xml": "<hp:p id=\"3000005794\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 2-5&gt; 스마트 안전기술 활용과 안전관리 실효성 선행연구 종합<hp:tab width=\"1624\" leader=\"3\" type=\"2\"/>23</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"22057\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 89,
+    "text": "<표 3-1> 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항28",
+    "xml": "<hp:p id=\"3000005795\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-1&gt; 중소규모 건설현장 제약과 시스템 기능·비기능 요구사항<hp:tab width=\"1748\" leader=\"3\" type=\"2\"/>28</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"23929\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 90,
+    "text": "<표 3-2> 관련 기술 선행연구 정리30",
+    "xml": "<hp:p id=\"3000005796\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-2&gt; 관련 기술 선행연구 정리<hp:tab width=\"17568\" leader=\"3\" type=\"2\"/>30</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"25801\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 91,
+    "text": "<표 3-3> 시스템 모듈 구성과 역할32",
+    "xml": "<hp:p id=\"3000005797\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-3&gt; 시스템 모듈 구성과 역할<hp:tab width=\"17568\" leader=\"3\" type=\"2\"/>32</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"27673\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 92,
+    "text": "<표 3-4> 시스템 구현 기술 스택39",
+    "xml": "<hp:p id=\"3000005798\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-4&gt; 시스템 구현 기술 스택<hp:tab width=\"18668\" leader=\"3\" type=\"2\"/>39</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"29545\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 93,
+    "text": "<표 3-5> 정·오탐 라벨링 기준42",
+    "xml": "<hp:p id=\"3000005799\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-5&gt; 정·오탐 라벨링 기준<hp:tab width=\"19892\" leader=\"3\" type=\"2\"/>42</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"31417\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 94,
+    "text": "<표 3-6> 성능 평가 지표 정의와 측정 목적43",
+    "xml": "<hp:p id=\"3000005800\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-6&gt; 성능 평가 지표 정의와 측정 목적<hp:tab width=\"13172\" leader=\"3\" type=\"2\"/>43</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"33289\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 95,
+    "text": "<표 3-7> 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)45",
+    "xml": "<hp:p id=\"3000005801\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-7&gt; 1차 후보 조건부 2차 필터 성능 비교(n=878, 38대 카메라)<hp:tab width=\"908\" leader=\"3\" type=\"2\"/>45</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"35161\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 96,
+    "text": "<표 3-8> 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)46",
+    "xml": "<hp:p id=\"3000005802\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"81\"><hp:t>&lt;표 3-8&gt; 제로샷·등록순 최대 k개·RAG의 조건부 성능 비교(n=202, 6개 카메라)<hp:tab width=\"984\" leader=\"3\" type=\"2\"/>46</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"37033\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 97,
+    "text": "<표 3-9> 시스템 적용 타당성의 평가 범위47",
+    "xml": "<hp:p id=\"3000005803\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-9&gt; 시스템 적용 타당성의 평가 범위<hp:tab width=\"13720\" leader=\"3\" type=\"2\"/>47</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"38905\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 98,
+    "text": "<표 3-10> 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의48",
+    "xml": "<hp:p id=\"3000005804\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"80\"><hp:t>&lt;표 3-10&gt; 시스템 특성 인식과 경보 피로도 완화 인식의 조작적 정의<hp:tab width=\"2948\" leader=\"3\" type=\"2\"/>48</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"40777\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 99,
+    "text": "<표 3-11> 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 기술통계(n=34)49",
+    "xml": "<hp:p id=\"3000005805\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"82\"><hp:t>&lt;표 3-11&gt; 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 기술통계(n=34)<hp:tab width=\"420\" leader=\"3\" type=\"2\"/>49</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"42649\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 100,
+    "text": "<표 3-12> 현장 운영 특성(A-7∼A-9)의 분포(도입·미도입 현장별)51",
+    "xml": "<hp:p id=\"3000005806\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 3-12&gt; 현장 운영 특성(A-7∼A-9)의 분포(도입·미도입 현장별)<hp:tab width=\"1444\" leader=\"3\" type=\"2\"/>51</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"44521\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 101,
+    "text": "<표 4-1> 연구변수의 구성54",
+    "xml": "<hp:p id=\"3000005807\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-1&gt; 연구변수의 구성<hp:tab width=\"21964\" leader=\"3\" type=\"2\"/>54</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"46393\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 102,
+    "text": "<표 4-2> 연구 가설 종합55",
+    "xml": "<hp:p id=\"3000005808\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-2&gt; 연구 가설 종합<hp:tab width=\"22516\" leader=\"3\" type=\"2\"/>55</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"48265\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 103,
+    "text": "<표 4-3> 변수의 조작적 정의와 측정도구의 구성58",
+    "xml": "<hp:p id=\"3000005809\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-3&gt; 변수의 조작적 정의와 측정도구의 구성<hp:tab width=\"10420\" leader=\"3\" type=\"2\"/>58</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"50137\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 104,
+    "text": "<표 4-4> 설문지의 최종 구성61",
+    "xml": "<hp:p id=\"3000005810\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-4&gt; 설문지의 최종 구성<hp:tab width=\"20316\" leader=\"3\" type=\"2\"/>61</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"52009\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 105,
+    "text": "<표 4-5> 자료 수집 개요65",
+    "xml": "<hp:p id=\"3000005811\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-5&gt; 자료 수집 개요<hp:tab width=\"22516\" leader=\"3\" type=\"2\"/>65</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 106,
+    "text": "<표 4-6> 조사 대상의 인구통계학적 특성(도입·미도입 현장별)71",
+    "xml": "<hp:p id=\"3000005812\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-6&gt; 조사 대상의 인구통계학적 특성(도입·미도입 현장별)<hp:tab width=\"3648\" leader=\"3\" type=\"2\"/>71</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"1872\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 107,
+    "text": "<표 4-7> 만 나이와 건설현장 경력의 기술통계 및 집단 비교72",
+    "xml": "<hp:p id=\"3000005813\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-7&gt; 만 나이와 건설현장 경력의 기술통계 및 집단 비교<hp:tab width=\"4376\" leader=\"3\" type=\"2\"/>72</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"3744\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 108,
+    "text": "<표 4-8> 안전관리 실효성 문항의 탐색적 요인분석 결과74",
+    "xml": "<hp:p id=\"3000005814\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-8&gt; 안전관리 실효성 문항의 탐색적 요인분석 결과<hp:tab width=\"6572\" leader=\"3\" type=\"2\"/>74</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"5616\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 109,
+    "text": "<표 4-9> 측정도구의 신뢰도 분석 결과75",
+    "xml": "<hp:p id=\"3000005815\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-9&gt; 측정도구의 신뢰도 분석 결과<hp:tab width=\"15368\" leader=\"3\" type=\"2\"/>75</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"7488\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 110,
+    "text": "<표 4-10> 주요 변수의 기술통계(도입·미도입 현장별)76",
+    "xml": "<hp:p id=\"3000005816\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-10&gt; 주요 변수의 기술통계(도입·미도입 현장별)<hp:tab width=\"8044\" leader=\"3\" type=\"2\"/>76</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"9360\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 111,
+    "text": "<표 4-11> 주요 변수 간 상관관계77",
+    "xml": "<hp:p id=\"3000005817\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-11&gt; 주요 변수 간 상관관계<hp:tab width=\"18116\" leader=\"3\" type=\"2\"/>77</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"11232\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 112,
+    "text": "<표 4-12> 안전관리 실효성의 조정 평균과 집단 간 차이80",
+    "xml": "<hp:p id=\"3000005818\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-12&gt; 안전관리 실효성의 조정 평균과 집단 간 차이<hp:tab width=\"6572\" leader=\"3\" type=\"2\"/>80</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"13104\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 113,
+    "text": "<표 4-13> 안전관리 실효성의 도입·미도입 현장 간 차이 검정과 효과크기81",
+    "xml": "<hp:p id=\"3000005819\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"83\"><hp:t>&lt;표 4-13&gt; 안전관리 실효성의 도입·미도입 현장 간 차이 검정과 효과크기<hp:tab width=\"2176\" leader=\"3\" type=\"2\"/>81</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"14976\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 114,
+    "text": "<표 4-14> 하위요인별 공분산분석 결과(조정 차이·Holm 보정 포함)82",
+    "xml": "<hp:p id=\"3000005820\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-14&gt; 하위요인별 공분산분석 결과(조정 차이·Holm 보정 포함)<hp:tab width=\"972\" leader=\"3\" type=\"2\"/>82</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16848\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 115,
+    "text": "<표 4-15> 연구가설 검증 결과 종합83",
+    "xml": "<hp:p id=\"3000005821\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;표 4-15&gt; 연구가설 검증 결과 종합<hp:tab width=\"17016\" leader=\"3\" type=\"2\"/>83</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"18720\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 116,
+    "text": "그 림 목 차",
+    "xml": "<hp:p id=\"3000004696\" paraPrIDRef=\"23\" styleIDRef=\"0\" pageBreak=\"1\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"50\"><hp:tbl id=\"1234908522\" zOrder=\"45\" numberingType=\"TABLE\" textWrap=\"TOP_AND_BOTTOM\" textFlow=\"BOTH_SIDES\" lock=\"0\" dropcapstyle=\"None\" pageBreak=\"NONE\" repeatHeader=\"1\" rowCnt=\"2\" colCnt=\"1\" cellSpacing=\"0\" borderFillIDRef=\"5\" noAdjust=\"0\"><hp:sz width=\"36284\" widthRelTo=\"ABSOLUTE\" height=\"7833\" heightRelTo=\"ABSOLUTE\" protect=\"0\"/><hp:pos treatAsChar=\"1\" affectLSpacing=\"0\" flowWithText=\"1\" allowOverlap=\"0\" holdAnchorAndSO=\"0\" vertRelTo=\"PARA\" horzRelTo=\"COLUMN\" vertAlign=\"TOP\" horzAlign=\"LEFT\" vertOffset=\"0\" horzOffset=\"0\"/><hp:outMargin left=\"141\" right=\"141\" top=\"141\" bottom=\"141\"/><hp:inMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004698\" paraPrIDRef=\"10\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"12\"><hp:t>그 림 목 차</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1600\" textheight=\"1600\" baseline=\"1360\" spacing=\"960\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"0\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"282\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004699\" paraPrIDRef=\"21\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"13\"><hp:t> </hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"5669\" textheight=\"5669\" baseline=\"4819\" spacing=\"0\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"1\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"5669\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr></hp:tbl><hp:t/></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"8115\" textheight=\"8115\" baseline=\"6898\" spacing=\"1120\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 117,
+    "text": "",
+    "xml": "<hp:p id=\"3000004700\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"9235\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 118,
+    "text": "<그림 1-1> 연구의 흐름도6",
+    "xml": "<hp:p id=\"3000005822\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 1-1&gt; 연구의 흐름도<hp:tab width=\"22516\" leader=\"3\" type=\"2\"/>6</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"11107\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 119,
+    "text": "<그림 3-1> YOLO-LLM 안전관제 시스템의 이중 검사 구조31",
+    "xml": "<hp:p id=\"3000005823\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 3-1&gt; YOLO-LLM 안전관제 시스템의 이중 검사 구조<hp:tab width=\"4672\" leader=\"3\" type=\"2\"/>31</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"12979\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 120,
+    "text": "<그림 3-2> LLM 2차 검증 입출력 구조와 판정 흐름35",
+    "xml": "<hp:p id=\"3000005824\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 3-2&gt; LLM 2차 검증 입출력 구조와 판정 흐름<hp:tab width=\"8500\" leader=\"3\" type=\"2\"/>35</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"14851\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 121,
+    "text": "<그림 3-3> RAG 기반 Few-shot 교정 절차37",
+    "xml": "<hp:p id=\"3000005825\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 3-3&gt; RAG 기반 Few-shot 교정 절차<hp:tab width=\"12948\" leader=\"3\" type=\"2\"/>37</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16723\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 122,
+    "text": "<그림 3-4> 시스템 운영 화면(AI CCTV Viewer)40",
+    "xml": "<hp:p id=\"3000005826\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 3-4&gt; 시스템 운영 화면(AI CCTV Viewer)<hp:tab width=\"10300\" leader=\"3\" type=\"2\"/>40</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"18595\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 123,
+    "text": "<그림 4-1> 연구 모형54",
+    "xml": "<hp:p id=\"3000005827\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 4-1&gt; 연구 모형<hp:tab width=\"24164\" leader=\"3\" type=\"2\"/>54</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"20467\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 124,
+    "text": "<그림 4-2> 안전관리 실효성의 조정 평균과 95% 신뢰구간80",
+    "xml": "<hp:p id=\"3000005828\" paraPrIDRef=\"40\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"48\"><hp:t>&lt;그림 4-2&gt; 안전관리 실효성의 조정 평균과 95% 신뢰구간<hp:tab width=\"5556\" leader=\"3\" type=\"2\"/>80</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"22339\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 125,
+    "text": "감사의 글",
+    "xml": "<hp:p id=\"3000004707\" paraPrIDRef=\"41\" styleIDRef=\"0\" pageBreak=\"1\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"44\"><hp:tbl id=\"1234908523\" zOrder=\"55\" numberingType=\"TABLE\" textWrap=\"TOP_AND_BOTTOM\" textFlow=\"BOTH_SIDES\" lock=\"0\" dropcapstyle=\"None\" pageBreak=\"NONE\" repeatHeader=\"1\" rowCnt=\"2\" colCnt=\"1\" cellSpacing=\"0\" borderFillIDRef=\"5\" noAdjust=\"0\"><hp:sz width=\"36284\" widthRelTo=\"ABSOLUTE\" height=\"7551\" heightRelTo=\"ABSOLUTE\" protect=\"0\"/><hp:pos treatAsChar=\"1\" affectLSpacing=\"0\" flowWithText=\"1\" allowOverlap=\"0\" holdAnchorAndSO=\"0\" vertRelTo=\"PARA\" horzRelTo=\"COLUMN\" vertAlign=\"TOP\" horzAlign=\"LEFT\" vertOffset=\"0\" horzOffset=\"0\"/><hp:outMargin left=\"141\" right=\"141\" top=\"141\" bottom=\"141\"/><hp:inMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004709\" paraPrIDRef=\"10\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"12\"><hp:t>감사의 글</hp:t></hp:run><hp:run charPrIDRef=\"59\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1600\" textheight=\"1600\" baseline=\"1360\" spacing=\"960\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"0\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"282\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004710\" paraPrIDRef=\"21\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"0\"><hp:t> </hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1000\" textheight=\"1000\" baseline=\"850\" spacing=\"0\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"1\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"5669\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr></hp:tbl><hp:t/></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"7833\" textheight=\"7833\" baseline=\"6658\" spacing=\"880\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 126,
+    "text": "2025년 3월 대학원에 진학한 지 어느덧 두 해 가까이 지나 졸업 논문을 마무리하게 되었습니다. 현장에서 늘 마음에 걸리던 문제, 카메라는 있는데 사람이 모자라 위험을 제때 보지 못하는 상황을 연구 주제로 삼아 여기까지 오는 동안 많은 분의 도움을 받았습니다.",
+    "xml": "<hp:p id=\"3000005829\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>2025년 3월 대학원에 진학한 지 어느덧 두 해 가까이 지나 졸업 논문을 마무리하게 되었습니다. 현장에서 늘 마음에 걸리던 문제, 카메라는 있는데 사람이 모자라 위험을 제때 보지 못하는 상황을 연구 주제로 삼아 여기까지 오는 동안 많은 분의 도움을 받았습니다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"8713\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"42\" vertpos=\"10585\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"81\" vertpos=\"12457\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"120\" vertpos=\"14329\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 127,
+    "text": "먼저 지도교수 박종용 교수님께 깊이 감사드립니다. 논문을 쓰는 순서와 문단 세우는 법부터 가설을 어디까지 주장하고 어디서 멈출지까지 하나하나 짚어 주시고, 설문 문항을 함께 검토하며 현장에서 통하는 말로 고쳐 주신 덕분에 논문이 지금의 모양을 갖추었습니다. 심사를 맡아 주신 교수님들께도 감사드립니다. 심사에서 주신 지적은 설계의 빈 곳을 메우는 기준이 되었고, 한계를 숨기지 않고 쓰는 태도를 배우게 해 주셨습니다.",
+    "xml": "<hp:p id=\"3000005830\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>먼저 지도교수 박종용 교수님께 깊이 감사드립니다. 논문을 쓰는 순서와 문단 세우는 법부터 가설을 어디까지 주장하고 어디서 멈출지까지 하나하나 짚어 주시고, 설문 문항을 함께 검토하며 현장에서 통하는 말로 고쳐 주신 덕분에 논문이 지금의 모양을 갖추었습니다. 심사를 맡아 주신 교수님들께도 감사드립니다. 심사에서 주신 지적은 설계의 빈 곳을 메우는 기준이 되었고, 한계를 숨기지 않고 쓰는 태도를 배우게 해 주셨습니다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"16201\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"39\" vertpos=\"18073\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"76\" vertpos=\"19945\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"115\" vertpos=\"21817\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"154\" vertpos=\"23689\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"192\" vertpos=\"25561\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"231\" vertpos=\"27433\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 128,
+    "text": "설문 문항을 검토해 주신 건설안전 분야 박사님과, 바쁜 공정 중에도 설문에 응답해 주신 현장 관리자분들께 감사드립니다. 시스템을 설치하고 석 달 넘게 운용하도록 허락해 주신 덕분에 이 연구의 실증이 가능했습니다. 알림이 울릴 때마다 확인해 주신 수고가 이 논문의 표와 그림마다 들어 있습니다.",
+    "xml": "<hp:p id=\"3000005831\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>설문 문항을 검토해 주신 건설안전 분야 박사님과, 바쁜 공정 중에도 설문에 응답해 주신 현장 관리자분들께 감사드립니다. 시스템을 설치하고 석 달 넘게 운용하도록 허락해 주신 덕분에 이 연구의 실증이 가능했습니다. 알림이 울릴 때마다 확인해 주신 수고가 이 논문의 표와 그림마다 들어 있습니다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"29305\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"39\" vertpos=\"31177\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"77\" vertpos=\"33049\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"115\" vertpos=\"34921\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"155\" vertpos=\"36793\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 129,
+    "text": "함께 공부한 대학원 동기들께도 고마움을 전합니다. 같은 시기에 각자의 논문을 붙들고 함께 버틴 시간이 큰 힘이 되었습니다.",
+    "xml": "<hp:p id=\"3000005832\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>함께 공부한 대학원 동기들께도 고마움을 전합니다. 같은 시기에 각자의 논문을 붙들고 함께 버틴 시간이 큰 힘이 되었습니다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"38665\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"39\" vertpos=\"40537\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 130,
+    "text": "끝으로 논문에 매달린 시간을 함께 견뎌 준 가족에게 감사합니다. 이 논문이 작은 현장에서 일하는 분들의 안전에 조금이라도 보탬이 되도록, 배운 것을 현장에서 이어가겠습니다.",
+    "xml": "<hp:p id=\"3000005833\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>끝으로 논문에 매달린 시간을 함께 견뎌 준 가족에게 감사합니다. 이 논문이 작은 현장에서 일하는 분들의 안전에 조금이라도 보탬이 되도록, 배운 것을 현장에서 이어가겠습니다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"42409\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"39\" vertpos=\"44281\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"77\" vertpos=\"46153\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 131,
+    "text": "2026년 11월",
+    "xml": "<hp:p id=\"3000005834\" paraPrIDRef=\"76\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>2026년 11월</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"48025\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 132,
+    "text": "윤 혁",
+    "xml": "<hp:p id=\"3000005835\" paraPrIDRef=\"76\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>윤  혁</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"49897\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 133,
+    "text": "논 문 개 요",
+    "xml": "<hp:p id=\"3000004735\" paraPrIDRef=\"24\" styleIDRef=\"0\" pageBreak=\"1\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"46\"><hp:tbl id=\"1234908524\" zOrder=\"78\" numberingType=\"TABLE\" textWrap=\"TOP_AND_BOTTOM\" textFlow=\"BOTH_SIDES\" lock=\"0\" dropcapstyle=\"None\" pageBreak=\"NONE\" repeatHeader=\"1\" rowCnt=\"2\" colCnt=\"1\" cellSpacing=\"0\" borderFillIDRef=\"5\" noAdjust=\"0\"><hp:sz width=\"36284\" widthRelTo=\"ABSOLUTE\" height=\"6702\" heightRelTo=\"ABSOLUTE\" protect=\"0\"/><hp:pos treatAsChar=\"1\" affectLSpacing=\"0\" flowWithText=\"1\" allowOverlap=\"0\" holdAnchorAndSO=\"0\" vertRelTo=\"PARA\" horzRelTo=\"COLUMN\" vertAlign=\"TOP\" horzAlign=\"LEFT\" vertOffset=\"0\" horzOffset=\"0\"/><hp:outMargin left=\"141\" right=\"141\" top=\"141\" bottom=\"141\"/><hp:inMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004737\" paraPrIDRef=\"10\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"12\"><hp:t>논 문  개 요</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1600\" textheight=\"1600\" baseline=\"1360\" spacing=\"960\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"0\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"282\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr><hp:tr><hp:tc name=\"\" header=\"0\" hasMargin=\"0\" protect=\"0\" editable=\"0\" dirty=\"0\" borderFillIDRef=\"4\"><hp:subList id=\"\" textDirection=\"HORIZONTAL\" lineWrap=\"BREAK\" vertAlign=\"CENTER\" linkListIDRef=\"0\" linkListNextIDRef=\"0\" textWidth=\"0\" textHeight=\"0\" hasTextRef=\"0\" hasNumRef=\"0\"><hp:p id=\"3000004738\" paraPrIDRef=\"21\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"0\"><hp:t>   </hp:t></hp:run><hp:run charPrIDRef=\"45\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"0\" horzpos=\"0\" horzsize=\"35264\" flags=\"393216\"/></hp:linesegarray></hp:p></hp:subList><hp:cellAddr colAddr=\"0\" rowAddr=\"1\"/><hp:cellSpan colSpan=\"1\" rowSpan=\"1\"/><hp:cellSz width=\"36284\" height=\"4820\"/><hp:cellMargin left=\"510\" right=\"510\" top=\"141\" bottom=\"141\"/></hp:tc></hp:tr></hp:tbl><hp:t>  </hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"0\" vertsize=\"6984\" textheight=\"6984\" baseline=\"5936\" spacing=\"700\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 134,
+    "text": "",
+    "xml": "<hp:p id=\"3000005836\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"/><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"7684\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 135,
+    "text": "본 연구는 중소규모 건설현장의 인력·예산 제약과 불필요한 경보에 따른 확인 부담에 대응하기 위해 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 검토하였다. 기존 ONVIF 카메라와 범용 PC를 활용하여, YOLO가 위험해 보이는 장면을 먼저 잡아내고 LLM이 그 장면이 실제 위험한 상황인지 다시 판단한 뒤 관리자에게 알림을 전달하도록 설계하였다.",
+    "xml": "<hp:p id=\"3000005837\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>  본 연구는 중소규모 건설현장의 인력·예산 제약과 불필요한 경보에 따른 확인 부담에 대응하기 위해 YOLO-LLM 안전관제 시스템을 개발하고, 도입 현장과 미도입 현장의 안전관리 실효성 차이를 검토하였다. 기존 ONVIF 카메라와 범용 PC를 활용하여, YOLO가 위험해 보이는 장면을 먼저 잡아내고 LLM이 그 장면이 실제 위험한 상황인지 다시 판단한 뒤 관리자에게 알림을 전달하도록 설계하였다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"9556\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"39\" vertpos=\"11428\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"78\" vertpos=\"13300\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"117\" vertpos=\"15172\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"159\" vertpos=\"17044\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"199\" vertpos=\"18916\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 136,
+    "text": "시스템이 보낸 경보가 얼마나 정확한지는 실제 운영 중에 쌓인 경보 기록으로 평가하였다. 현장 실효성은 A공사 경기지역본부 산하 73개 현장의 관리자 73명(도입 34명·미도입 39명)을 대상으로 조사하였다. 안전관리 실효성은 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 8문항으로 측정하였다. jamovi 2.7.41을 사용한 공분산분석으로 두 집단의 만 나이·경력·소속·성별·역할·총공사비 구간 차이를 분석에서 감안한 뒤 집단 간 평균 차이를 비교하였다.",
+    "xml": "<hp:p id=\"3000005838\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>  시스템이 보낸 경보가 얼마나 정확한지는 실제 운영 중에 쌓인 경보 기록으로 평가하였다. 현장 실효성은 A공사 경기지역본부 산하 73개 현장의 관리자 73명(도입 34명·미도입 39명)을 대상으로 조사하였다. 안전관리 실효성은 조기인지·대응 신속성·원격 파악·순찰부담 경감·위험 통제력의 8문항으로 측정하였다. jamovi 2.7.41을 사용한 공분산분석으로 두 집단의 만 나이·경력·소속·성별·역할·총공사비 구간 차이를 분석에서 감안한 뒤 집단 간 평균 차이를 비교하였다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"20788\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"39\" vertpos=\"22660\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"78\" vertpos=\"24532\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"120\" vertpos=\"26404\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"158\" vertpos=\"28276\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"202\" vertpos=\"30148\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"242\" vertpos=\"32020\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 137,
+    "text": "1차 탐지 후보 878건에 대한 LLM 검증은 오경보를 834건에서 13건으로 줄였으나, 실제 위험 44건 중 5건의 경보도 차단하였다. 관리자가 바로잡아 준 판정 사례를 LLM에 참고시킨 비교에서도 오경보 감소와 실제 위험 경보 손실이 함께 나타났다. 설문 분석에서는 위 조건 차이를 감안한 뒤 도입 현장의 안전관리 실효성이 미도입 현장보다 0.54점 높아 연구가설 (1-1)이 지지되었다(95% 신뢰구간 [0.17, 0.91], p=.005, 부분 η²=0.121). 하위요인 중 조기인지·원격 파악·위험 통제력의 차이는 여러 번 검정한 점을 감안한 Holm 보정 후에도 유의하였으나, 대응 신속성과 순찰부담 경감의 차이는 유의하지 않았다. 위험 인지 후 지시 전달 소요시간에서도 유의한 집단 차이를 확인하지 못하였다(p=.663).",
+    "xml": "<hp:p id=\"3000005839\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>  1차 탐지 후보 878건에 대한 LLM 검증은 오경보를 834건에서 13건으로 줄였으나, 실제 위험 44건 중 5건의 경보도 차단하였다. 관리자가 바로잡아 준 판정 사례를 LLM에 참고시킨 비교에서도 오경보 감소와 실제 위험 경보 손실이 함께 나타났다. 설문 분석에서는 위 조건 차이를 감안한 뒤 도입 현장의 안전관리 실효성이 미도입 현장보다 0.54점 높아 연구가설 (1-1)이 지지되었다(95% 신뢰구간 [0.17, 0.91], p=.005, 부분 η²=0.121). 하위요인 중 조기인지·원격 파악·위험 통제력의 차이는 여러 번 검정한 점을 감안한 Holm 보정 후에도 유의하였으나, 대응 신속성과 순찰부담 경감의 차이는 유의하지 않았다. 위험 인지 후 지시 전달 소요시간에서도 유의한 집단 차이를 확인하지 못하였다(p=.663).</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"33892\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"44\" vertpos=\"35764\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"85\" vertpos=\"37636\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"123\" vertpos=\"39508\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"162\" vertpos=\"41380\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"203\" vertpos=\"43252\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"256\" vertpos=\"45124\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"299\" vertpos=\"46996\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"340\" vertpos=\"48868\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"379\" vertpos=\"50740\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 138,
+    "text": "이 결과는 시스템 경보가 얼마나 정확한지와 관리자가 평가한 안전관리 업무의 실효성을 구분하여 평가할 필요성을 보여준다. 현장에서는 오경보뿐 아니라 실제 위험인데도 경보가 오지 않은 경우를 점검하고, 알림 수신부터 확인·조치까지의 절차를 관리해야 한다. 기술 평가는 YOLO가 먼저 잡아낸 장면만을 대상으로 LLM이 얼마나 잘 걸렀는지를 제시한 것이고, 현장 조사는 한 기관 산하 현장의 관리자가 한 시점에 스스로 답한 설문에서 관찰한 집단 간 차이를 제시한 것이다.",
+    "xml": "<hp:p id=\"3000005840\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>  이 결과는 시스템 경보가 얼마나 정확한지와 관리자가 평가한 안전관리 업무의 실효성을 구분하여 평가할 필요성을 보여준다. 현장에서는 오경보뿐 아니라 실제 위험인데도 경보가 오지 않은 경우를 점검하고, 알림 수신부터 확인·조치까지의 절차를 관리해야 한다. 기술 평가는 YOLO가 먼저 잡아낸 장면만을 대상으로 LLM이 얼마나 잘 걸렀는지를 제시한 것이고, 현장 조사는 한 기관 산하 현장의 관리자가 한 시점에 스스로 답한 설문에서 관찰한 집단 간 차이를 제시한 것이다.</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"52612\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"38\" vertpos=\"0\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"76\" vertpos=\"1872\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"114\" vertpos=\"3744\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"150\" vertpos=\"5616\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"190\" vertpos=\"7488\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"229\" vertpos=\"9360\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  },
+  {
+    "index": 139,
+    "text": "주제어(Keywords): 건설현장 안전관리, YOLO, 거대언어모델(LLM), 안전관리 실효성, 공분산분석(ANCOVA), 경보 피로도",
+    "xml": "<hp:p id=\"3000005841\" paraPrIDRef=\"39\" styleIDRef=\"0\" pageBreak=\"0\" columnBreak=\"0\" merged=\"0\"><hp:run charPrIDRef=\"49\"><hp:t>  주제어(Keywords): 건설현장 안전관리, YOLO, 거대언어모델(LLM), 안전관리 실효성, 공분산분석(ANCOVA), 경보 피로도</hp:t></hp:run><hp:linesegarray><hp:lineseg textpos=\"0\" vertpos=\"11232\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/><hp:lineseg textpos=\"47\" vertpos=\"13104\" vertsize=\"1100\" textheight=\"1100\" baseline=\"935\" spacing=\"772\" horzpos=\"0\" horzsize=\"36852\" flags=\"393216\"/></hp:linesegarray></hp:p>"
+  }
+]

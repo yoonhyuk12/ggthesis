@@ -1,0 +1,61 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1416_윤혁_석사학위논문_심의발표_스토리재구성.pptx",
+  "source_sha256": "670f842a3eb2fb447903e2db0e4544d30a0764a286c192821c9492272b76033d",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1425_윤혁_석사학위논문_심의발표_스토리재구성.pptx",
+  "output_pdf": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1425_윤혁_석사학위논문_심의발표_스토리재구성.pdf",
+  "slide_count": 25,
+  "main_slides": 21,
+  "appendix_slides": 4,
+  "checks": [
+    {
+      "original_slide_content_and_notes_unchanged_except_page_number": true
+    },
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "page_number_sequence": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "powerpoint_open_slides": 25
+    },
+    {
+      "pdf_pages": 25
+    },
+    {
+      "new_toc_text_overflow": []
+    },
+    {
+      "pdf_export": "success"
+    },
+    {
+      "new_toc_visual_review": "passed: WHY/HOW/WHAT 3행 목차 및 부록 안내, 잘림·겹침 없음"
+    }
+  ],
+  "limitations": []
+}

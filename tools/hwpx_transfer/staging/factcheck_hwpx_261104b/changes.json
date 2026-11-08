@@ -1,0 +1,130 @@
+[
+  {
+    "file": "Contents/section2.xml",
+    "i": 100,
+    "text": "  건설안전 분야에서 AI 영상관제는 안전모·안전대 등 개인보호구(PPE) 미착용 감지, 위험구역 침입 감지, 낙상 등 이상행동 인식에 폭넓게 적용되어 왔다(류수영, 2024; 박종학, 2025). 국내 연구는 주로 YOLO 기반 감지 성능과 관제 시스템 구현을 다루었고, 감지 결과를 문맥으로 다시 검증하는 구조는 관제센터 실험 연구(김현수, 2026) 등에서 다루기 시작하였다. 이처럼 AI 영상관제의 적용 범위는 넓지만, 고가 장비와 전담 인력을 전제하는 구성은 인력·예산이 부족한 중소규모 현장에 그대로 옮기기 어렵다(김용선, 2022).",
+    "old": "건설안전 분야에서 AI 영상관제는 안전모·안전대 등 개인보호구(PPE) 미착용 감지, 위험구역 침입 감지, 낙상 등 이상행동 인식에 폭넓게 적용되어 왔다(류수영, 2024; 박종학, 2025).",
+    "new": "산업안전 분야에서 AI 영상관제는 보호구 미착용, 위험구역 내 작업자 체류, 이동 객체 충돌 위험 감지(류수영, 2024)와 건설현장의 추락 관련 위험 객체 탐지(박종학, 2025) 등에 적용되어 왔다.",
+    "after": "  산업안전 분야에서 AI 영상관제는 보호구 미착용, 위험구역 내 작업자 체류, 이동 객체 충돌 위험 감지(류수영, 2024)와 건설현장의 추락 관련 위험 객체 탐지(박종학, 2025) 등에 적용되어 왔다. 국내 연구는 주로 YOLO 기반 감지 성능과 관제 시스템 구현을 다루었고, 감지 결과를 문맥으로 다시 검증하는 구조는 관제센터 실험 연구(김현수, 2026) 등에서 다루기 시작하였다. 이처럼 AI 영상관제의 적용 범위는 넓지만, 고가 장비와 전담 인력을 전제하는 구성은 인력·예산이 부족한 중소규모 현장에 그대로 옮기기 어렵다(김용선, 2022)."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 121,
+    "text": "  선행연구는 탐지 성능과 관제 시스템의 처리 구조를 다루었다. 박종학(2025)은 YOLO 모델별 비교에서 YOLOv8n의 mAP50(mean Average Precision; 탐지 상자와 정답 상자의 겹친 영역 비율(IoU)이 0.5 이상이면 맞은 탐지로 보아 계산한 평균 정밀도) 0.906과 주요 객체 탐지 정확도 0.9 이상으로 실시간 경고에 적합한 탐지 신뢰도를 보고하였다. 류수영(2024)은 겹친 영역 비율 기준을 0.25로 낮추고(IoU 0.25) 자료를 여러 번 나누어 검증한(K-fold 교차검증) 조건에서 객체 검출 성능 99%와 시나리오별 상황인식 성능 65.61∼100%를 보고하고, 객체 검출·관제 처리에 멀티프로세싱을 구현하였다. 이 수치는 평가 조건이 달라 mAP50과 직접 비교할 수 없다. Mi(2025)는 PPE 탐지·작업 자세 인식 모델에서 PPE 탐지 mAP50=0.980을 보고하였다.",
+    "old": "Mi(2025)는 PPE 탐지·작업 자세 인식 모델에서",
+    "new": "Mi(2025)는 개인보호구(PPE) 탐지·작업 자세 인식 모델에서",
+    "after": "  선행연구는 탐지 성능과 관제 시스템의 처리 구조를 다루었다. 박종학(2025)은 YOLO 모델별 비교에서 YOLOv8n의 mAP50(mean Average Precision; 탐지 상자와 정답 상자의 겹친 영역 비율(IoU)이 0.5 이상이면 맞은 탐지로 보아 계산한 평균 정밀도) 0.906과 주요 객체 탐지 정확도 0.9 이상으로 실시간 경고에 적합한 탐지 신뢰도를 보고하였다. 류수영(2024)은 겹친 영역 비율 기준을 0.25로 낮추고(IoU 0.25) 자료를 여러 번 나누어 검증한(K-fold 교차검증) 조건에서 객체 검출 성능 99%와 시나리오별 상황인식 성능 65.61∼100%를 보고하고, 객체 검출·관제 처리에 멀티프로세싱을 구현하였다. 이 수치는 평가 조건이 달라 mAP50과 직접 비교할 수 없다. Mi(2025)는 개인보호구(PPE) 탐지·작업 자세 인식 모델에서 PPE 탐지 mAP50=0.980을 보고하였다."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 168,
+    "text": "이미지+한국어 캡션 결합 알림의 정보 충분성",
+    "old": "이미지+한국어 캡션 결합 알림의 정보 충분성",
+    "new": "위험 상황 한국어 캡션 실시간 자동 생성(평균 79.5ms)",
+    "after": "위험 상황 한국어 캡션 실시간 자동 생성(평균 79.5ms)"
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1800,
+    "text": "[10] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html",
+    "old": "[10] Kim",
+    "new": "[09] Kim",
+    "after": "[09] Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html"
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1801,
+    "text": "[11] Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp.1663–1673. DOI 10.1177/0956797614541991.",
+    "old": "[11] Lynn",
+    "new": "[10] Lynn",
+    "after": "[10] Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp.1663–1673. DOI 10.1177/0956797614541991."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1802,
+    "text": "[12] Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp.1833–1855. DOI 10.1080/00140139.2014.957732.",
+    "old": "[12] Manzey",
+    "new": "[11] Manzey",
+    "after": "[11] Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp.1833–1855. DOI 10.1080/00140139.2014.957732."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1803,
+    "text": "[13] Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025.",
+    "old": "[13] Mi",
+    "new": "[12] Mi",
+    "after": "[12] Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1804,
+    "text": "[14] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285.",
+    "old": "[14] Pisu",
+    "new": "[13] Pisu",
+    "after": "[13] Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1805,
+    "text": "[15] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
+    "old": "[15] Podsakoff",
+    "new": "[14] Podsakoff",
+    "after": "[14] Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1806,
+    "text": "[16] Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp.137–149. DOI 10.3758/BF03207704.",
+    "old": "[16] Stanislaw",
+    "new": "[15] Stanislaw",
+    "after": "[15] Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp.137–149. DOI 10.3758/BF03207704."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1807,
+    "text": "[17] Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp.53–55. DOI 10.5116/ijme.4dfb.8dfd.",
+    "old": "[17] Tavakol",
+    "new": "[16] Tavakol",
+    "after": "[16] Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp.53–55. DOI 10.5116/ijme.4dfb.8dfd."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1808,
+    "text": "[18] Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp.191–199. DOI 10.22260/ISARC2016/0024.",
+    "old": "[18] Teizer",
+    "new": "[17] Teizer",
+    "after": "[17] Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp.191–199. DOI 10.22260/ISARC2016/0024."
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1809,
+    "text": "[19] The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org",
+    "old": "[19] The jamovi project",
+    "new": "[18] The jamovi project",
+    "after": "[18] The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org"
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1810,
+    "text": "[20] Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209-212. DOI 10.1080/01621459.1927.10502953",
+    "old": "[20] Wilson",
+    "new": "[19] Wilson",
+    "after": "[19] Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209-212. DOI 10.1080/01621459.1927.10502953"
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1811,
+    "text": "[21] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1",
+    "old": "[21] Wu",
+    "new": "[20] Wu",
+    "after": "[20] Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1"
+  },
+  {
+    "file": "Contents/section2.xml",
+    "i": 1812,
+    "text": "[22] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp.40167–40175. DOI 10.1609/aaai.v40i47.41452.",
+    "old": "[22] Zhang",
+    "new": "[21] Zhang",
+    "after": "[21] Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp.40167–40175. DOI 10.1609/aaai.v40i47.41452."
+  }
+]

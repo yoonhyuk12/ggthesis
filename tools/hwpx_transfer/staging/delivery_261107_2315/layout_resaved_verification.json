@@ -1,0 +1,261 @@
+{
+  "input": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\tools\\hwpx_transfer\\staging\\delivery_261107_2315\\layout_resaved.hwpx",
+  "ok": true,
+  "errors": [],
+  "scope": "ZIP/XML/content/geometry only; COM and PDF checks are separate",
+  "zip_xml": "PASS",
+  "body_differences": [],
+  "front_differences": [],
+  "structure_items": 112,
+  "table_grid_errors": [],
+  "same_content_table_preservation": [
+    {
+      "caption": "",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "",
+      "nested_index": 1,
+      "preserved": true
+    },
+    {
+      "caption": "",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-14>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-14>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-14>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-1>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-3>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-4>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-5>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표3-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표3-3>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표3-4>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표3-5>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표3-8>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표3-10>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-1>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-3>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-4>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-5>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-6>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-7>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-8>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-9>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-10>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-11>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-12>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표4-14>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 1,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 1,
+      "preserved": true
+    },
+    {
+      "caption": "<표2-2>",
+      "nested_index": 0,
+      "preserved": true
+    }
+  ],
+  "table_count": 49,
+  "markers_actual": [],
+  "markers_expected": [],
+  "images": [
+    {
+      "caption": "<그림 1-1>",
+      "match": true
+    },
+    {
+      "caption": "<그림 3-1>",
+      "match": true
+    },
+    {
+      "caption": "<그림 3-2>",
+      "match": true
+    },
+    {
+      "caption": "<그림 3-3>",
+      "match": true
+    },
+    {
+      "caption": "<그림 3-4>",
+      "match": true
+    },
+    {
+      "caption": "<그림 3-5>",
+      "match": true
+    },
+    {
+      "caption": "<그림 3-6>",
+      "match": true
+    },
+    {
+      "caption": "<그림 4-1>",
+      "match": true
+    }
+  ],
+  "MD_changed": []
+}

@@ -1,0 +1,375 @@
+PAGE 10
+Int. J. Environ. Res. Public Health 2022, 19, 5203
+10 of 24
+3. Test Bed Selection and Operation
+3.1. Test Bed Selection
+As mentioned, accidents at construction sites have not decreased, but rather have
+stagnated, and accidents such as falls and being struck by objects continue to occur. In
+particular, greater numbers of accidents have occurred at small- and medium-sized sites
+because the construction costs and time are limited, and managers and safety management
+personnel may be absent. In this context, the application of SCSTs can alleviate the problems
+associated with small- and medium-sized sites. However, SCSTs have generally not been
+distributed to small- and medium-sized sites owing to cost problems, and the effectiveness
+of such SCSTs has not been veriﬁed.
+Therefore, in this study, three locations were chosen for representative types of struc-
+tures among construction sites. A test bed was operated, its effectiveness was conﬁrmed by
+the conﬁrmation and analysis of the results, and problems and improvement plans were
+derived according to the current technology levels.
+The main site of this project was set as a target for small- and medium-sized sites with
+less than $12 million. Considering the accident type, (1) a site with a small site area and
+high ﬂoor height (A site) and (2) sites with a large area and low ﬂoor height (B and C sites)
+were selected. Front views of the three test beds are shown in Figure 5.
+ 
+(a) A site 
+(b) B site 
+(c) C site 
+Figure 5. Site images of the selected test beds.
+3.2. Test Bed Operating Equipment Conﬁguration
+The test bed was operated from July to October 2021. The equipment and associated
+systems, including site visit and installation plans, were built in June 2021. The number of
+sensors and equipment were selected based on location identiﬁcation, aiming to minimize
+blind spots by selecting proper equipment/sensors for SCSTs. The study also aimed to
+prevent and manage major accidents, such as falls, being struck by objects, and being caught
+in/between objects potentially occurring at each site based on site visits and analyses
+of drawings. To ensure the consistency of data collection, equipment installation was
+conducted simultaneously at all three sites, and the initial settings were established through
+installation and testing. After the initial setting of the equipment and systems, data
+were collected remotely from July to October 2021 (4 months) using an integrated control
+system, and maintenance was performed once a month. The site information, installation
+equipment, and quantities for the three sites selected as test beds are listed in Table 4, and
+the installation locations are shown in Figure 6.
+
+PAGE 11
+Int. J. Environ. Res. Public Health 2022, 19, 5203
+11 of 24
+Table 4. Site information and installation equipment.
+Type
+A Site
+B Site
+C Site
+Site
+information
+Building type
+Commercial building
+Administrative agency
+Sewage treatment plant
+Construction cost
+(million dollar)
+4.2
+10
+5.4
+The number of workers
+20
+40
+20
+Process rate
+55%
+28%
+8%
+The number of ﬂoors
+12th ﬂoor
+2nd basement
+ﬂoor—5th ﬂoor
+3rd Floor
+Equipment
+type
+Integrated control system
+1
+1
+1
+Location sensor
+23
+11
+11
+Fall risk area access (FRAA) sensor
+9
+2
+2
+Heavy equipment access
+(HEA) sensor
+3
+3
+1
+Mobile CCTV
+1
+1
+2
+Hazardous gas detector
+1
+1
+1
+Structure displacement sensor
+2
+2
+2
+ 
+(a) A site-first floor 
+(b) A site-5th floor 
+ 
+(c) B site-2nd basement 
+(d) B site-first floor 
+ 
+ 
+(e) C site-first floor 
+(f) Integrated control system 
+(g) Gateway sensor 
+Figure 6. Site-speciﬁc sensor installation location and basic installation equipment.
+
+PAGE 20
+Int. J. Environ. Res. Public Health 2022, 19, 5203
+20 of 24
+set in advance, and the sensor can be appropriately placed. When an alarm occurs while
+a worker is approaching, it should be necessary for the worker to cancel the alarm after
+conﬁrming with the manager. In addition, when a worker stays in a risk zone for more
+than 5 min, it should be classiﬁed as a dangerous operation, and improvements such as
+linking with the CCTV or checking directly with the manager should be necessary.
+One problem in the operation of smart safety belts when checking for FRAAs is that
+workers must turn on the equipment when starting work, and it is necessary to install a
+separate beacon for transmission and reception at the construction site to check the results in
+the control system. At small- and medium-sized sites, workers change locations frequently,
+and the information entered in the system must be updated each time. In addition, because
+the smart safety belt is an attachment-type sensor, the participation of workers is required.
+If the smart safety belt is distributed to all workers, the budget increases excessively, so
+it is necessary to identify workers who work at a height in advance, and then intensively
+manage them by providing equipment. In addition, smart seatbelts can be checked in the
+control system by recording logs regarding recognition, caution, alarms, and conﬁrmations
+of fastening, but it is believed that more efﬁcient management will be possible if they are
+linked with mobile CCTVs. Currently, such systems work only when the equipment is
+turned on by the worker, but in the future, technological improvements are needed to
+automatically turn on the equipment when approaching a fall risk area. Thus, even if there
+is no worker participation, utilization is expected to be high.
+The CCTVs to which IoT technology is applied are mainly of the movable installation
+type, and the problems identiﬁed after operation are as follows. A current CCTV operates
+individually without being linked to location and FRAA sensors, and there is a problem in
+that it is necessary to visually check the occurrence of an event from time to time during
+monitoring. In addition, the power sources for currently used mobile CCTVs can be
+divided into wired types and external batteries. In the case of the wired type, power
+must be connected over a long distance, which may interfere with workers’ movement.
+In the case of an external battery, there is a problem in that there is a need for a person in
+charge of charging and/or replacing. In addition, it may not be installed at the location
+of hazardous work on the same day (there is no person in charge), and in the case of
+small- and medium-sized sites, it is difﬁcult to allocate a dedicated person in charge of
+such management and monitoring. Therefore, these systems are currently used mainly for
+work process checks, and not for safety management purposes. Mobile CCTVs allow for
+real-time conﬁrmation of hazardous areas and work; therefore, it is easy to manage safety,
+such as by providing guidance.
+From a technical perspective, the battery type is recommended because wired cables
+interfere with workﬂows. In the ﬁeld, and under the active activities of the person in charge,
+it is necessary to install CCTVs at the locations of hazardous work (work at height, welding,
+etc.), monitor them using an integrated control system, and charge or replace the batteries
+after the work is ﬁnished. The effectiveness of mobile CCTV is expected to increase when
+used in conjunction with location and FRAA sensors. Currently, AI monitoring using deep
+learning is being actively developed; therefore, it is expected to be used more effectively
+for small- and medium-sized construction sites without managers in the future.
+The hazardous gas detector has the same problems as the battery, as it has the same
+installation type as the mobile CCTV. As for the other problems, no hazardous gases are
+commonly generated except in special work, so it can generally only be used for measuring
+oxygen, temperature, and humidity. Currently, hazardous gas detectors are divided into
+two types: those attached to a structure, and those using a support. If there is a speciﬁc
+task (retaining concrete in winter and working in a conﬁned space), they tend to only be
+used temporarily; therefore, it is appropriate to use the mobile type. Therefore, depending
+on the type of hazardous-gas detection sensor, it is expected that it can be used to classify,
+e.g., oxygen levels for sealing work, temperature, and humidity for hot and cold weather
+work, and hazardous gases for concrete curing.
+
+PAGE 21
+Int. J. Environ. Res. Public Health 2022, 19, 5203
+21 of 24
+An HEA sensor generates an alarm according to the initially set distance through trans-
+mission and reception between a sensor installed in the heavy equipment and equipment
+(attachable equipment or smartphone) carried by the worker. There is a corresponding
+technical problem in that it is difﬁcult to distinguish between related and unrelated workers.
+The problem from the ﬁeld side is that in the case of small- and medium-sized sites, the
+use of heavy equipment is generally concentrated in a speciﬁc period, so the utilization
+is low, and the manager must frequently install and dismantle the sensors owing to the
+frequently changed heavy equipment, making management difﬁcult. As an improvement
+measure, the battery type can be improved so that it can be used with vehicle power, and
+equipment that operates based on a smartphone is recommended so that it can be operated
+even without an attached accessory. In addition, technological improvements are required
+to enable the same alarm when approaching from the rear side as well as when approaching
+from the side. In addition, the manager must prevent accidents in advance via linking with
+a mobile CCTV, e.g., by providing immediate guidance in a dangerous situation.
+When installing a structure displacement sensor on-site, events may not occur because
+the allowable range is set low to prevent work interruptions owing to frequent alarms.
+Generally, the collapse of formwork or scaffolding occurs suddenly when the threshold
+is exceeded, so it may be difﬁcult to detect only by measuring minute displacements. To
+solve this problem, the risk should be identiﬁed before collapse by preparing an actual
+risk threshold standard for the displacement slope that changes from the level at which
+one threshold is currently set. In addition, it is necessary to ensure the consistency of
+displacement measurements through periodic calibration.
+An integrated control system has different functions depending on the company that
+develops and distributes the smart construction safety equipment, and thus may have
+little compatibility with other products. As the SCST market grows, it is necessary to
+construct common guidelines. Therefore, it is necessary to support the development of
+integrated modules so that SCSTs can be mutually compatible under the leadership of
+government-afﬁliated agencies in charge of safety.
+In this study, SCSTs were introduced at small- and medium-sized sites, and problems
+and improvement measures were presented. If SCSTs are properly improved, as shown in
+Figure 17, the locations of workers, reductions in access to risk areas, and compliance with
+safety rules can be well established.
+Figure 17. SCST installation and operation plan in small- and medium-sized sites.
+
+PAGE 22
+Int. J. Environ. Res. Public Health 2022, 19, 5203
+22 of 24
+4.3. Recommendations for SCST from Test Bed Operation
+The effectiveness of SCSTs for safety management was analyzed based on the strengths
+and weaknesses of each equipment and sensor, ﬁeld application limits, and possible
+potential according to the test bed operation. As described above, there was a problem in
+deriving reasonable results based on the data because it was difﬁcult to obtain meaningful
+data owing to the lack of active participation of workers in the test bed at small- and
+medium-sized sites. Therefore, a value analysis was conducted, focusing on the possibility
+of solving the problems and developing potential for the introduction of SCSTs. However,
+in the case of introducing all SCSTs, a large budget is required, even for small- and medium-
+sized sites. Therefore, the equipment expected to be effective in safety management
+through introduction to small- and medium-sized construction sites was classiﬁed into
+high, medium, and low categories according to necessity, cost, usability, convenience, and
+scalability. If necessary, the data were derived through interviews with ﬁeld workers.
+The combination of recommended technologies may vary depending on the site con-
+ditions, and it is necessary to consider the approximate budget for the introduction of such
+technologies. Based on the “high” and “medium” categories in Table 6, a recommended
+combination can be derived based on disaster type and construction cost, and the approxi-
+mate budget can be analyzed. Most of the installation types are classiﬁed as “high,” and the
+attachment types are classiﬁed as “medium” or “low,” owing to the negative perceptions
+of workers.
+Table 6. Recommendations of SCSTs.
+Equipment and Sensor
+Necessity
+Cost Effectiveness
+Usability
+Convenience
+Scalability
+Total Score
+Location sensor
+△
+#
+△
+#
+#
+#
+FRAA sensor
+#
+#
+#
+#
+#
+#
+Mobile CCTV
+#
+X
+#
+#
+#
+#
+Hazardous gas detector
+#
+#
+△
+#
+X
+△
+HEA sensor
+#
+#
+#
+△
+△
+#
+Structure displacement Sensor
+#
+#
+#
+#
+X
+#
+Integrated control system
+#
+X
+#
+△
+#
+△
+Note. #: high, △: medium, X: low.
+5. Conclusions
+Overall, small- and medium-sized sites have higher mortality rates, so efforts to reduce
+these rates are required. Moreover, there is a tendency for workers at such sites to have
+more accidents owing to poor site conditions, as well as undesirable construction costs,
+periods of work, and absences of safety managers. To minimize this, it is necessary to
+introduce SCSTs. From this perspective, this study built and operated a test bed at three
+sites, and conducted on-site veriﬁcation of the smart safety integrated control system to be
+directly applied to the safety management of construction sites. The conclusions of this
+study can be summarized as follows.
+1.
+Introducing SCSTs associated with incentives will likely lead to corresponding achieve-
+ments, such as increases in workers’ compliance with safety rules and the creation of
+a safe culture.
+2.
+A location sensor can be used for real-time location checks and commuting time
+checks, but it is considered difﬁcult to use for safety management at the current
+technology level. Even if log data is analyzed, hundreds of data are recorded per
+worker per day, and location data omissions occur due to technology limitations and
+lack of workers’ participation; therefore, there is a limit to checking and managing the
+data after the record. Therefore, it can be effective to identify workers’ locations and
+manage associated with a mobile CCTV in real time at the current level.
+
+PAGE 23
+Int. J. Environ. Res. Public Health 2022, 19, 5203
+23 of 24
+3.
+An FRAA sensor generates an alarm and saves data if the movement of workers is
+within the transmission/reception distance of a risk zone approach sensor, similar
+to the functionality of the location sensor. However, there is a lack of quantitative
+criteria for determining whether workers are working in a risk area or simply moving.
+If the FRAA sensor and mobile CCTV are connected, it is easier to identify actual
+dangerous work, but because it is difﬁcult to deploy many mobile CCTVs with high
+unit prices, it is possible to effectively manage workers with a stay period of 5 min or
+more according to standards.
+4.
+In the case of a heavy equipment approach, an entire site alarm did not occur from the
+test bedsite and only the alarm according to the approach and recognition occurred.
+Owing to the characteristics of small- and medium-sized sites, heavy equipment is
+often detected in a single shot. Accordingly, installation and dismantling of HEA
+sensors may occur frequently; therefore, management by the site manager is required.
+5.
+The hazardous gas detector was analyzed only for oxygen, temperature, and humidity
+information based on the absence of harmful gases owing to the construction charac-
+teristics and seasonal requirements. In August, the temperature was recorded as over
+35 ◦C several times, but it was necessary to link with the mobile CCTV to determine
+whether a break time was actually given.
+6.
+Structure displacement sensors for scaffolding and formwork may not experience any
+events during the test bed operation period. In particular, the displacement value is
+often set to be low; thus, events occur more rarely. However, when an event occurs,
+an alarm is sent according to the standard; thus, workers working in the vicinity can
+recognize it, and the effectiveness is judged to be high.
+7.
+Even if a mobile CCTV was installed, there were many cases of workers not wearing
+protective gear and/or non-compliance with safety rules before training and guidance.
+In this context, a mobile CCTV is judged to be highly useful for safety management
+because it can be installed in an appropriate location, and the worker can be viewed
+and guided in real time if the manager is interested. In addition, if the recognition
+accuracy of safety belts can increase through the development of deep neural networks,
+mobile CCTV will also be more effective.
+8.
+The SCST market is now in its infancy, and it is necessary to identify problems by
+applying SCSTs to various sites and to improve the technology, e.g., by reﬂecting the
+opinions of the site. In the case of attachable equipment, improvement is required
+so that it does not interfere with workers’ work, e.g., through lighter weights. In
+addition, institutional improvements and publicity should accompany the activation
+of SCSTs at the government and industrial complex levels. Insofar as the proposed
+recommendations, they have been analyzed based on the current technology levels.
+Moreover, the need for the introduction of SCSTs has been highlighted. It is highly
+likely that technology improvements from suppliers will proceed quickly, so there is a
+need to improve such technology levels through continuous research.
+9.
+The pros and cons and combinations for each SCST are expected to contribute to
+setting the development direction of SCSTs and selecting SCSTs in small- and medium-
+sized sites.
+Author Contributions: Y.-G.Y. conceived and designed the experiments; Y.-S.K. and T.-K.O. per-
+formed the experiments and analyzed the data; Y.-G.Y. and J.Y.L. contributed to the device/analysis
+tools; Y.-G.Y. and T.-K.O. wrote the paper. All authors have read and agreed to the published version
+of the manuscript.
+Funding: This research was supported by the Basic Science Research Program through the National
+Research Foundation of Korea (NRF), and funded by the Ministry of Education (No.2021R1I1A2050912).
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.

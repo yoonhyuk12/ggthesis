@@ -1,0 +1,141 @@
+﻿새 이름,원래 이름(manifest.json·tables.json 기준)
+그림4-2_추정 주변평균 그림(Estimated Marginal Means Plot).png,S18_ANCOVA_I02_34_emm_1_emmPlot.png
+제8절_시스템경로별 대응신속성(Descriptives - Y2_대응신속성).png,S37_Descriptives_T01_Descriptives.png
+제8절_시스템경로별 실효성(Descriptives - Y_실효성).png,S36_Descriptives_T01_Descriptives.png
+참고_CookD 플래그(Descriptives - cook_hi).png,S35_Descriptives_T01_Descriptives.png
+참고_강건성(성별제외 회귀복제본)_Cook 거리(Cook's Distance).png,S26_LinearRegression_T03_Cook'sDistance.png
+참고_강건성(성별제외 회귀복제본)_다중공선성 VIF(Collinearity Statistics).png,S26_LinearRegression_T04_CollinearityStatistics.png
+참고_강건성(성별제외 회귀복제본)_모형적합도(Model Fit Measures).png,S26_LinearRegression_T01_ModelFitMeasures.png
+참고_강건성(성별제외 회귀복제본)_잔차도 경력(Residuals Plot - 경력).png,S26_LinearRegression_I04_68_models_1_assump_resPlots_%2.png
+참고_강건성(성별제외 회귀복제본)_잔차도 나이(Residuals Plot - 나이).png,S26_LinearRegression_I03_68_models_1_assump_resPlots_%2.png
+참고_강건성(성별제외 회귀복제본)_잔차도 실효성(Residuals Plot - Y_실효성).png,S26_LinearRegression_I02_68_models_1_assump_resPlots_%2.png
+참고_강건성(성별제외 회귀복제본)_잔차도 예측값(Residuals Plot - Fitted).png,S26_LinearRegression_I01_68_models_1_assump_resPlots_%2.png
+참고_강건성(성별제외 회귀복제본)_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y_실효성).png,S26_LinearRegression_T02_ModelCoefficients-Y_실효성.png
+참고_회귀기울기동질성_공분산분석(ANCOVA - Y_실효성).png,S24_ANCOVA_T01_ANCOVA-Y_실효성.png
+참고_회귀기울기동질성_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S24_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+참고_회귀기울기동질성_잔차 Q-Q 도표(Q-Q Plot).png,S24_ANCOVA_I01_36_assump_qq.png
+참고_회귀기울기동질성_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S24_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+참고_회귀기울기동질성_추정 주변평균 그림(Estimated Marginal Means Plot).png,S24_ANCOVA_I02_36_emm_1_emmPlot.png
+참고_회귀기울기동질성_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S24_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표3-11_전용부 C·D 기술통계(Descriptives).png,S12_Descriptives_T01_Descriptives.png
+표3-12_A7 위험인지경로 교차표(Contingency Tables).png,S03_ContingencyTables_T01_ContingencyTables.png
+표3-12_A7 위험인지경로 카이제곱·Fisher검정(χ² Tests).png,S03_ContingencyTables_T02_χ²Tests.png
+표3-12_A8 위험인지시점 교차표(Contingency Tables).png,S04_ContingencyTables_T01_ContingencyTables.png
+표3-12_A8 위험인지시점 카이제곱·Fisher검정(χ² Tests).png,S04_ContingencyTables_T02_χ²Tests.png
+표3-12_A9 지시전달시간 교차표(Contingency Tables).png,S05_ContingencyTables_T01_ContingencyTables.png
+표3-12_A9 지시전달시간 카이제곱·Fisher검정(χ² Tests).png,S05_ContingencyTables_T02_χ²Tests.png
+표4-06_성별 Cramér V(Nominal).png,S15_ContingencyTables_T03_Nominal.png
+표4-06_성별 교차표(Contingency Tables).png,S15_ContingencyTables_T01_ContingencyTables.png
+표4-06_성별 빈도분석(Frequencies of 성별).png,S02_Descriptives_T03_Frequenciesof성별.png
+표4-06_성별 카이제곱·Fisher검정(χ² Tests).png,S15_ContingencyTables_T02_χ²Tests.png
+표4-06_소속 Cramér V(Nominal).png,S14_ContingencyTables_T03_Nominal.png
+표4-06_소속 교차표(Contingency Tables).png,S14_ContingencyTables_T01_ContingencyTables.png
+표4-06_소속 빈도분석(Frequencies of 소속).png,S02_Descriptives_T02_Frequenciesof소속.png
+표4-06_소속 카이제곱·Fisher검정(χ² Tests).png,S14_ContingencyTables_T02_χ²Tests.png
+표4-06_역할 Cramér V(Nominal).png,S16_ContingencyTables_T03_Nominal.png
+표4-06_역할 교차표(Contingency Tables).png,S16_ContingencyTables_T01_ContingencyTables.png
+표4-06_역할 빈도분석(Frequencies of 역할).png,S02_Descriptives_T04_Frequenciesof역할.png
+표4-06_역할 카이제곱·Fisher검정(χ² Tests).png,S16_ContingencyTables_T02_χ²Tests.png
+표4-06_총공사비 Cramér V(Nominal).png,S17_ContingencyTables_T03_Nominal.png
+표4-06_총공사비 교차표(Contingency Tables).png,S17_ContingencyTables_T01_ContingencyTables.png
+표4-06_총공사비 빈도분석(Frequencies of 총공사비).png,S02_Descriptives_T05_Frequenciesof총공사비.png
+표4-06_총공사비 카이제곱·Fisher검정(χ² Tests).png,S17_ContingencyTables_T02_χ²Tests.png
+표4-06·07_집단별 인구통계·나이경력 기술통계(Descriptives).png,S02_Descriptives_T01_Descriptives.png
+표4-07_나이·경력 독립표본 t검정(Independent Samples T-Test).png,S13_IndependentSamplesT-Test_T01_IndependentSamplesT-Test.png
+표4-08_Bartlett 구형성 검정(Bartlett's Test of Sphericity).png,S10_ExploratoryFactorAnalysi_T03_Bartlett'sTestofSphericity.png
+표4-08_KMO 표본적합도(KMO Measure of Sampling Adequacy).png,S10_ExploratoryFactorAnalysi_T04_KMOMeasureofSamplingAdequacy.png
+표4-08_스크리 도표(Scree Plot).png,S10_ExploratoryFactorAnalysi_I01_18_eigen_screePlot.png
+표4-08_요인 설명분산(Summary).png,S10_ExploratoryFactorAnalysi_T02_Summary.png
+표4-08_요인적재량(Factor Loadings).png,S10_ExploratoryFactorAnalysi_T01_FactorLoadings.png
+표4-09_B3·B4 원격파악 문항간 상관(Correlation Matrix).png,S07_CorrelationMatrix_T01_CorrelationMatrix.png
+표4-09_B5·B6 순찰부담경감 문항간 상관(Correlation Matrix).png,S08_CorrelationMatrix_T01_CorrelationMatrix.png
+표4-09_B7·B8 위험통제력 문항간 상관(Correlation Matrix).png,S09_CorrelationMatrix_T01_CorrelationMatrix.png
+표4-09_문항 신뢰도(Item Reliability Statistics).png,S06_ReliabilityAnalysis_T02_ItemReliabilityStatistics.png
+표4-09_척도 신뢰도(Scale Reliability Statistics).png,S06_ReliabilityAnalysis_T01_ScaleReliabilityStatistics.png
+표4-10_주요변수 집단별 기술통계(Descriptives).png,S11_Descriptives_T01_Descriptives.png
+표4-10·07_전체73명 기술통계(Descriptives).png,S32_Descriptives_T01_Descriptives.png
+표4-11_주요변수 상관행렬(Correlation Matrix).png,S33_CorrelationMatrix_T01_CorrelationMatrix.png
+표4-12_가정점검_Cook 거리(Cook's Distance).png,S25_LinearRegression_T03_Cook'sDistance.png
+표4-12_가정점검_다중공선성 VIF(Collinearity Statistics).png,S25_LinearRegression_T04_CollinearityStatistics.png
+표4-12_가정점검_잔차도 경력(Residuals Plot - 경력).png,S25_LinearRegression_I04_38_models_1_assump_resPlots_%2.png
+표4-12_가정점검_잔차도 나이(Residuals Plot - 나이).png,S25_LinearRegression_I03_38_models_1_assump_resPlots_%2.png
+표4-12_가정점검_잔차도 실효성(Residuals Plot - Y_실효성).png,S25_LinearRegression_I02_38_models_1_assump_resPlots_%2.png
+표4-12_가정점검_잔차도 예측값(Residuals Plot - Fitted).png,S25_LinearRegression_I01_38_models_1_assump_resPlots_%2.png
+표4-12_모형적합도(Model Fit Measures).png,S25_LinearRegression_T01_ModelFitMeasures.png
+표4-12_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S18_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표4-12_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y_실효성).png,S25_LinearRegression_T02_ModelCoefficients-Y_실효성.png
+표4-12참고_공변량없는 단순비교 t검정(Independent Samples T-Test).png,S34_IndependentSamplesT-Test_T01_IndependentSamplesT-Test.png
+표4-13_가정점검_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S18_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+표4-13_가정점검_잔차 Q-Q 도표(Q-Q Plot).png,S18_ANCOVA_I01_34_assump_qq.png
+표4-13_가정점검_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S18_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+표4-13_안전관리실효성 공분산분석(ANCOVA - Y_실효성).png,S18_ANCOVA_T01_ANCOVA-Y_실효성.png
+표4-14_Y1_조기인지_Cook 거리(Cook's Distance).png,S27_LinearRegression_T03_Cook'sDistance.png
+표4-14_Y1_조기인지_공분산분석(ANCOVA - Y1_조기인지).png,S19_ANCOVA_T01_ANCOVA-Y1_조기인지.png
+표4-14_Y1_조기인지_다중공선성 VIF(Collinearity Statistics).png,S27_LinearRegression_T04_CollinearityStatistics.png
+표4-14_Y1_조기인지_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S19_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+표4-14_Y1_조기인지_모형적합도(Model Fit Measures).png,S27_LinearRegression_T01_ModelFitMeasures.png
+표4-14_Y1_조기인지_잔차 Q-Q 도표(Q-Q Plot).png,S19_ANCOVA_I01_40_assump_qq.png
+표4-14_Y1_조기인지_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S19_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+표4-14_Y1_조기인지_잔차도 경력(Residuals Plot - 경력).png,S27_LinearRegression_I04_50_models_1_assump_resPlots_%2.png
+표4-14_Y1_조기인지_잔차도 나이(Residuals Plot - 나이).png,S27_LinearRegression_I03_50_models_1_assump_resPlots_%2.png
+표4-14_Y1_조기인지_잔차도 예측값(Residuals Plot - Fitted).png,S27_LinearRegression_I01_50_models_1_assump_resPlots_%2.png
+표4-14_Y1_조기인지_잔차도 조기인지(Residuals Plot - Y1_조기인지).png,S27_LinearRegression_I02_50_models_1_assump_resPlots_%2.png
+표4-14_Y1_조기인지_추정 주변평균 그림(Estimated Marginal Means Plot).png,S19_ANCOVA_I02_40_emm_1_emmPlot.png
+표4-14_Y1_조기인지_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S19_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표4-14_Y1_조기인지_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y1_조기인지).png,S27_LinearRegression_T02_ModelCoefficients-Y1_조기인지.png
+표4-14_Y2_대응신속성_Cook 거리(Cook's Distance).png,S28_LinearRegression_T03_Cook'sDistance.png
+표4-14_Y2_대응신속성_공분산분석(ANCOVA - Y2_대응신속성).png,S20_ANCOVA_T01_ANCOVA-Y2_대응신속성.png
+표4-14_Y2_대응신속성_다중공선성 VIF(Collinearity Statistics).png,S28_LinearRegression_T04_CollinearityStatistics.png
+표4-14_Y2_대응신속성_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S20_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+표4-14_Y2_대응신속성_모형적합도(Model Fit Measures).png,S28_LinearRegression_T01_ModelFitMeasures.png
+표4-14_Y2_대응신속성_잔차 Q-Q 도표(Q-Q Plot).png,S20_ANCOVA_I01_42_assump_qq.png
+표4-14_Y2_대응신속성_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S20_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+표4-14_Y2_대응신속성_잔차도 경력(Residuals Plot - 경력).png,S28_LinearRegression_I04_52_models_1_assump_resPlots_%2.png
+표4-14_Y2_대응신속성_잔차도 나이(Residuals Plot - 나이).png,S28_LinearRegression_I03_52_models_1_assump_resPlots_%2.png
+표4-14_Y2_대응신속성_잔차도 대응신속성(Residuals Plot - Y2_대응신속성).png,S28_LinearRegression_I02_52_models_1_assump_resPlots_%2.png
+표4-14_Y2_대응신속성_잔차도 예측값(Residuals Plot - Fitted).png,S28_LinearRegression_I01_52_models_1_assump_resPlots_%2.png
+표4-14_Y2_대응신속성_추정 주변평균 그림(Estimated Marginal Means Plot).png,S20_ANCOVA_I02_42_emm_1_emmPlot.png
+표4-14_Y2_대응신속성_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S20_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표4-14_Y2_대응신속성_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y2_대응신속성).png,S28_LinearRegression_T02_ModelCoefficients-Y2_대응신속성.png
+표4-14_Y3_원격파악_Cook 거리(Cook's Distance).png,S29_LinearRegression_T03_Cook'sDistance.png
+표4-14_Y3_원격파악_공분산분석(ANCOVA - Y3_원격파악).png,S21_ANCOVA_T01_ANCOVA-Y3_원격파악.png
+표4-14_Y3_원격파악_다중공선성 VIF(Collinearity Statistics).png,S29_LinearRegression_T04_CollinearityStatistics.png
+표4-14_Y3_원격파악_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S21_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+표4-14_Y3_원격파악_모형적합도(Model Fit Measures).png,S29_LinearRegression_T01_ModelFitMeasures.png
+표4-14_Y3_원격파악_잔차 Q-Q 도표(Q-Q Plot).png,S21_ANCOVA_I01_44_assump_qq.png
+표4-14_Y3_원격파악_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S21_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+표4-14_Y3_원격파악_잔차도 경력(Residuals Plot - 경력).png,S29_LinearRegression_I04_54_models_1_assump_resPlots_%2.png
+표4-14_Y3_원격파악_잔차도 나이(Residuals Plot - 나이).png,S29_LinearRegression_I03_54_models_1_assump_resPlots_%2.png
+표4-14_Y3_원격파악_잔차도 예측값(Residuals Plot - Fitted).png,S29_LinearRegression_I01_54_models_1_assump_resPlots_%2.png
+표4-14_Y3_원격파악_잔차도 원격파악(Residuals Plot - Y3_원격파악).png,S29_LinearRegression_I02_54_models_1_assump_resPlots_%2.png
+표4-14_Y3_원격파악_추정 주변평균 그림(Estimated Marginal Means Plot).png,S21_ANCOVA_I02_44_emm_1_emmPlot.png
+표4-14_Y3_원격파악_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S21_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표4-14_Y3_원격파악_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y3_원격파악).png,S29_LinearRegression_T02_ModelCoefficients-Y3_원격파악.png
+표4-14_Y4_순찰부담경감_Cook 거리(Cook's Distance).png,S30_LinearRegression_T03_Cook'sDistance.png
+표4-14_Y4_순찰부담경감_공분산분석(ANCOVA - Y4_순찰부담경감).png,S22_ANCOVA_T01_ANCOVA-Y4_순찰부담경감.png
+표4-14_Y4_순찰부담경감_다중공선성 VIF(Collinearity Statistics).png,S30_LinearRegression_T04_CollinearityStatistics.png
+표4-14_Y4_순찰부담경감_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S22_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+표4-14_Y4_순찰부담경감_모형적합도(Model Fit Measures).png,S30_LinearRegression_T01_ModelFitMeasures.png
+표4-14_Y4_순찰부담경감_잔차 Q-Q 도표(Q-Q Plot).png,S22_ANCOVA_I01_46_assump_qq.png
+표4-14_Y4_순찰부담경감_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S22_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+표4-14_Y4_순찰부담경감_잔차도 경력(Residuals Plot - 경력).png,S30_LinearRegression_I04_56_models_1_assump_resPlots_%2.png
+표4-14_Y4_순찰부담경감_잔차도 나이(Residuals Plot - 나이).png,S30_LinearRegression_I03_56_models_1_assump_resPlots_%2.png
+표4-14_Y4_순찰부담경감_잔차도 순찰부담경감(Residuals Plot - Y4_순찰부담경감).png,S30_LinearRegression_I02_56_models_1_assump_resPlots_%2.png
+표4-14_Y4_순찰부담경감_잔차도 예측값(Residuals Plot - Fitted).png,S30_LinearRegression_I01_56_models_1_assump_resPlots_%2.png
+표4-14_Y4_순찰부담경감_추정 주변평균 그림(Estimated Marginal Means Plot).png,S22_ANCOVA_I02_46_emm_1_emmPlot.png
+표4-14_Y4_순찰부담경감_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S22_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표4-14_Y4_순찰부담경감_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y4_순찰부담경감).png,S30_LinearRegression_T02_ModelCoefficients-Y4_순찰부담경감.png
+표4-14_Y5_위험통제력_Cook 거리(Cook's Distance).png,S31_LinearRegression_T03_Cook'sDistance.png
+표4-14_Y5_위험통제력_공분산분석(ANCOVA - Y5_위험통제력).png,S23_ANCOVA_T01_ANCOVA-Y5_위험통제력.png
+표4-14_Y5_위험통제력_다중공선성 VIF(Collinearity Statistics).png,S31_LinearRegression_T04_CollinearityStatistics.png
+표4-14_Y5_위험통제력_등분산성 검정(Homogeneity of Variances Test (Levene's)).png,S23_ANCOVA_T02_HomogeneityofVariancesTest(Lev.png
+표4-14_Y5_위험통제력_모형적합도(Model Fit Measures).png,S31_LinearRegression_T01_ModelFitMeasures.png
+표4-14_Y5_위험통제력_잔차 Q-Q 도표(Q-Q Plot).png,S23_ANCOVA_I01_48_assump_qq.png
+표4-14_Y5_위험통제력_잔차 정규성 검정(Normality Test (Shapiro-Wilk)).png,S23_ANCOVA_T03_NormalityTest(Shapiro-Wilk).png
+표4-14_Y5_위험통제력_잔차도 경력(Residuals Plot - 경력).png,S31_LinearRegression_I04_58_models_1_assump_resPlots_%2.png
+표4-14_Y5_위험통제력_잔차도 나이(Residuals Plot - 나이).png,S31_LinearRegression_I03_58_models_1_assump_resPlots_%2.png
+표4-14_Y5_위험통제력_잔차도 예측값(Residuals Plot - Fitted).png,S31_LinearRegression_I01_58_models_1_assump_resPlots_%2.png
+표4-14_Y5_위험통제력_잔차도 위험통제력(Residuals Plot - Y5_위험통제력).png,S31_LinearRegression_I02_58_models_1_assump_resPlots_%2.png
+표4-14_Y5_위험통제력_추정 주변평균 그림(Estimated Marginal Means Plot).png,S23_ANCOVA_I02_48_emm_1_emmPlot.png
+표4-14_Y5_위험통제력_추정 주변평균(Estimated Marginal Means - D_도입여부).png,S23_ANCOVA_T04_EstimatedMarginalMeans-D_도입여부.png
+표4-14_Y5_위험통제력_회귀계수·도입여부 조정차이 CI(Model Coefficients - Y5_위험통제력).png,S31_LinearRegression_T02_ModelCoefficients-Y5_위험통제력.png

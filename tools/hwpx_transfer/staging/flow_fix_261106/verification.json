@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "pages": 111,
+  "changed_pdf_pages": [
+    19
+  ],
+  "body_text_unchanged": true,
+  "all_other_pages_pixel_identical": true,
+  "toc_and_all_tables_unchanged": true,
+  "image_pixels_match": true,
+  "original_unchanged": true
+}

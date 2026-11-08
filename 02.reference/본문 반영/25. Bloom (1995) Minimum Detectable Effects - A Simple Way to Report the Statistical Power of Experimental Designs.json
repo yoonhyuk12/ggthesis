@@ -1,0 +1,21 @@
+{
+  "title": "Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs",
+  "author": "Howard S. Bloom",
+  "year": 1995,
+  "journal": "Evaluation Review",
+  "volume": "19",
+  "issue": "5",
+  "pages": "547-556",
+  "doi": "10.1177/0193841X9501900504",
+  "crossref_verified": true,
+  "crossref_url": "https://api.crossref.org/works/10.1177/0193841X9501900504",
+  "publisher_url": "https://journals.sagepub.com/doi/10.1177/0193841X9501900504",
+  "source_pdf_url": "https://sites.uci.edu/gduncan/files/2021/03/Bloom-MDES-Eval-Rev-1995-Bloom.pdf",
+  "local_pdf": "02.reference/107. Bloom (1995) Minimum Detectable Effects - A Simple Way to Report the Statistical Power of Experimental Designs.pdf",
+  "sha256": "a8ff8a56a3a7f800ded3062c14ce9c149eb206b0be694d9c83af665e377f9387",
+  "pdf_pages": 10,
+  "printed_pages": "547-556 (PDF 1-10, 인쇄 = PDF + 546)",
+  "verified_at": "2026-11-06T08:57:21.676694+09:00",
+  "verification_note": "UC Irvine(G. Duncan) 게시 SAGE 출판본. 인쇄 550쪽(PDF 4) Table 1: two-sided test, 80% power, .05 level → MDE = 2.80 × standard error of the impact estimate. 인쇄 548쪽에 0.84(검정력)·1.65(단측 .05) 분해 설명. MDRC 계획 페이지가 같은 파일을 링크한다.",
+  "citation_status": "제4장 제8절 둘째 문단의 검출 가능 최소 효과 0.52점 산식(2.80×SE 0.185, 사후 역산) 근거로 인용(2026-11-06). 참고문헌 국외문헌 등재."
+}

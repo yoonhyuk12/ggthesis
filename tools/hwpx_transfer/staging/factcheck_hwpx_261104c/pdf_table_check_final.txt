@@ -1,0 +1,11 @@
+pages with table lines: 46
+overlap with footer: []
+table pages without footer number: [3]
+ p116 table_bottom=626.2 footer_y=672.6
+ p108 table_bottom=625.1 footer_y=672.6
+ p42 table_bottom=608.3 footer_y=672.6
+ p28 table_bottom=599.0 footer_y=672.6
+ p89 table_bottom=590.5 footer_y=672.6
+ p61 table_bottom=563.5 footer_y=672.6
+ p84 table_bottom=547.9 footer_y=672.6
+ p114 table_bottom=544.8 footer_y=672.6

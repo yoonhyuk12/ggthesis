@@ -1,0 +1,63 @@
+{
+  "source_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1442_윤혁_석사학위논문_심의발표_서론결론수정.pptx",
+  "source_sha256": "292d2331aafb2ead099d2ece2b8ee5496eb898b23e3a4838efc64d30d3352f91",
+  "output_pptx": "C:\\Users\\User\\Documents\\2026 개발관련\\03. 경기대 논문\\06. 발표\\261108_1457_윤혁_석사학위논문_심의발표_결론성과보강.pptx",
+  "slide_count": 33,
+  "changed_slides": [
+    27,
+    28,
+    29
+  ],
+  "source_idxs": {
+    "achievements": [
+      1693,
+      1695,
+      1696
+    ],
+    "limitation": [
+      1699
+    ],
+    "future": [
+      1700
+    ]
+  },
+  "checks": [
+    {
+      "other_slides_and_notes_xml_exactly_preserved": true
+    },
+    {
+      "user_edited_slides_16_23_preserved": true
+    },
+    {
+      "source_hash_unchanged": true
+    },
+    {
+      "pdf_generation": false
+    },
+    {
+      "powerpoint_open_slides": 33
+    },
+    {
+      "changed_text_height_overflow": []
+    },
+    {
+      "render": "PowerPoint Slides.Export PNG directly; no PDF"
+    },
+    {
+      "final_other_slides_and_user_edits_xml_exactly_preserved": true
+    },
+    {
+      "three_changed_slides_visual_review": "PowerPoint 직접 PNG 확인, 넘침·겹침·어색한 줄바꿈 정리 완료"
+    },
+    {
+      "single_limitation": "동일 현장의 도입 전후 변화를 비교하지 못함"
+    },
+    {
+      "future_directions_one_slide": 29
+    },
+    {
+      "no_pdf_created": true
+    }
+  ],
+  "limitations": []
+}

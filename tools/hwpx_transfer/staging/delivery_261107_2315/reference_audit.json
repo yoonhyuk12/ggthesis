@@ -1,0 +1,1603 @@
+{
+  "counts": {
+    "by_category": {
+      "1. 국내문헌": 24,
+      "2. 국외문헌": 22,
+      "3. 법령": 3,
+      "4. 표준·기술자료": 4
+    },
+    "total": 53,
+    "previous_total": 49,
+    "live_section_excluded": 2
+  },
+  "changes": {
+    "md_modified": false,
+    "formatting": "내부 관리·검증 메모 제거, 원문에 명시된 웹문헌 열람일 보존, 국내 가나다순·국외 알파벳순 정렬, 확인된 두 법령 조문 URL 모두 보존",
+    "added_or_updated_from_previous": [
+      "고용노동부, 『2025년 유족급여 승인 기준 사고사망 재해 현황』, 보도자료, 2026. 3. 31. https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19160",
+      "대한민국 정부, 『이재명정부 123대 국정과제』, 2025. 9.",
+      "류정·박인선, 「건설현장의 스마트 안전장비 성능과 도입 효과 분석」, 『Crisisonomy』, 제21권 제6호, 2025, pp. 125–135. DOI 10.14251/crisisonomy.2025.21.6.125.",
+      "맹인영·이준원·소한섭·김세훈·박성배, 「건설 현장 스마트 안전 장비 도입에 따른 실효성 제고 방안 연구」, 『안전문화연구』, 제14호, 2021, pp. 47–63. DOI 10.52902/kjsc.2021.14.47.",
+      "이석희·고대식·송석일, 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, 2025, pp. 279–282. DOI 10.14801/jkiit.2025.23.11.279.",
+      "이영미, 「시각장애학생의 인지 및 적응행동 특성」, 대구대학교 대학원 특수교육학과 문학박사학위논문, 2020.",
+      "이창남, 「스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2025.",
+      "한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do (열람일 2026.11.4).",
+      "한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026.",
+      "Bloom, H. S., \"Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs\", Evaluation Review, Vol. 19, No. 5, 1995, pp. 547–556. DOI 10.1177/0193841X9501900504.",
+      "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., & Amodei, D., \"Language Models are Few-Shot Learners\", Advances in Neural Information Processing Systems, Vol. 33, Curran Associates, 2020, pp. 1877–1901. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html",
+      "Costello, A. B., & Osborne, J. W., \"Best practices in exploratory factor analysis: Four recommendations for getting the most from your analysis\", Practical Assessment, Research, and Evaluation, Vol. 10, No. 7, 2005, pp. 1–9. DOI 10.7275/jyj1-4868.",
+      "Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268–277.",
+      "Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319–340.",
+      "Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201.",
+      "Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp. 151–162. https://proceedings.mlr.press/v296/kim25a.html",
+      "Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp. 1663–1673. DOI 10.1177/0956797614541991.",
+      "Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp. 1833–1855. DOI 10.1080/00140139.2014.957732.",
+      "Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp. 137–149. DOI 10.3758/BF03207704.",
+      "Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp. 53–55. DOI 10.5116/ijme.4dfb.8dfd.",
+      "Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp. 191–199. DOI 10.22260/ISARC2016/0024.",
+      "Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209–212. DOI 10.1080/01621459.1927.10502953",
+      "Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp. 40167–40175. DOI 10.1609/aaai.v40i47.41452.",
+      "「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정]. https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451 ; https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1029371815",
+      "Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention (열람일 2026.11.4).",
+      "Ultralytics, YOLO (Version 8.4.23) [Computer software], 2026a.",
+      "Ultralytics, YOLO26, Ultralytics Docs, 2026b. https://docs.ultralytics.com/models/yolo26/ (열람일 2026.11.7)."
+    ],
+    "removed_or_updated_from_previous": [
+      "류정·박인선, 「건설현장의 스마트 안전장비 성능과 도입 효과 분석」, 『Crisisonomy』, 제21권 제6호, 2025, pp.125–135. DOI 10.14251/crisisonomy.2025.21.6.125.",
+      "이석희·고대식·송석일, 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, 2025, pp.279–282. DOI 10.14801/jkiit.2025.23.11.279.",
+      "이창남, 「스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2025. (대표 ref 06; ref 18 중복)",
+      "한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do",
+      "한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026. (번호가 중복된 30번 VLM 학위논문; 전체 파일명으로 식별)",
+      "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., & Amodei, D., \"Language Models are Few-Shot Learners\", Advances in Neural Information Processing Systems, Vol. 33, Curran Associates, 2020, pp.1877–1901. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html",
+      "Costello, A. B., & Osborne, J. W., \"Best practices in exploratory factor analysis: Four recommendations for getting the most from your analysis\", Practical Assessment, Research, and Evaluation, Vol. 10, No. 7, 2005, pp. 1-9. DOI 10.7275/jyj1-4868.",
+      "Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268-277.",
+      "Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319-340.",
+      "Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201. (원전 미보유 — 2026-11-05 사용자 결정: 보유 문헌이 원전을 인용하므로 확인된 것으로 보고 현행 유지. 재인용 근거 ref 86 PDF 2·3쪽, ref 87 PDF 1쪽에 \"Green & Swets, 1966\" 인용 확인)",
+      "Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp.151–162. https://proceedings.mlr.press/v296/kim25a.html",
+      "Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp.1663–1673. DOI 10.1177/0956797614541991.",
+      "Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp.1833–1855. DOI 10.1080/00140139.2014.957732.",
+      "Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P., \"Common method biases in behavioral research: A critical review of the literature and recommended remedies\", Journal of Applied Psychology, Vol. 88, No. 5, 2003, pp. 879-903.",
+      "Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp.137–149. DOI 10.3758/BF03207704.",
+      "Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp.53–55. DOI 10.5116/ijme.4dfb.8dfd.",
+      "Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp.191–199. DOI 10.22260/ISARC2016/0024.",
+      "Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209-212. DOI 10.1080/01621459.1927.10502953",
+      "Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp.40167–40175. DOI 10.1609/aaai.v40i47.41452.",
+      "「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정]. https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451",
+      "「산업안전보건법 시행령」 제16조(안전관리자의 선임 등) 제2항, [시행 2026. 8. 1.] [대통령령, 2026. 7. 28. 공포]. https://www.law.go.kr/법령/산업안전보건법시행령/제16조",
+      "Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention .",
+      "Ultralytics YOLO (Version 8.4.23) [Computer software], 2026."
+    ],
+    "access_dates_restored": [
+      {
+        "before": "한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do",
+        "after": "한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do (열람일 2026.11.4).",
+        "access_date": "2026.11.4"
+      },
+      {
+        "before": "Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention",
+        "after": "Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention (열람일 2026.11.4).",
+        "access_date": "2026.11.4"
+      },
+      {
+        "before": "Ultralytics, YOLO26, Ultralytics Docs, 2026b. https://docs.ultralytics.com/models/yolo26/",
+        "after": "Ultralytics, YOLO26, Ultralytics Docs, 2026b. https://docs.ultralytics.com/models/yolo26/ (열람일 2026.11.7).",
+        "access_date": "2026.11.7"
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "source_text": "「산업안전보건법 시행령」 제16조(안전관리자의 선임 등) 제2항, [시행 2026. 8. 1.] [대통령령, 2026. 7. 28. 공포]. — 01장 제1절 중소규모 건설현장 정의(안전관리자 전담 선임 의무 기준: 공사금액 120억 원, 토목공사업 150억 원 이상)의 근거. https://www.law.go.kr/법령/산업안전보건법시행령/제16조 (2026-10-31 국가법령정보센터 현행 조문 대조; 2027. 1. 1. 시행 예정 일부개정본은 미대조)",
+      "reason": "현행 00~05장·인쇄 부록1에서 시행령명·제16조 제2항 인용 없음; 1장 규모 정의는 김용선(2022) 인용으로 변경됨",
+      "source_line": 388
+    },
+    {
+      "source_text": "**보관·미인용 자료(2026-11-07):** Development Bureau, Smart Site Safety System, Technical Circular (Works) No. 3/2023, The Government of the Hong Kong Special Administrative Region, 2026년 7월 10일 개정본, Annex A, pp. 22–23. https://www.devb.gov.hk/filemanager/technicalcirculars/en/upload/1393/1/C-2023-03-01.pdf (열람일 2026.11.7; ref 108 — 핵심 목표 근거를 KISA로 통일하여 제3장 내주·표에서 제외한 검토 자료. 5(12)(g)(iii): 초기 위험 유형별 AI 감지 정확도 80% 이상, 시험 이미지 10,000장 이상·대상 유무 각 절반; 5(12)(g)(vii): 설치 4주 후 전체 위험 유형 평균 90% 이상 유지. 원문의 accuracy 산식은 미명시이므로 본 연구 정확도·재현율과 동일시하지 않음. 공식 PDF 57쪽 확보(2026-11-07), PDF 28–29쪽 = Annex A 22–23쪽, SHA256 9af41f4f33561e858a5d3bea0262acc922077b1e0ea2cf09c2cfa3bc7acc264d.)",
+      "reason": "보관·미인용 표시 및 본문 내주 없음",
+      "source_line": 399
+    },
+    {
+      "scope": "07 MD ### 6. 미인용 이력 이하 전체",
+      "reason": "미인용 이력과 검증 기록은 인쇄 서지가 아님",
+      "examples": [
+        "Podsakoff et al.(2003)",
+        "Shadish et al.(2002)",
+        "Dixon et al.(2007)",
+        "Yao et al.(2025)",
+        "김정아(2021)",
+        "손형주(2024)",
+        "EN 50136-1 계열"
+      ]
+    },
+    {
+      "scope": "ref 113",
+      "reason": "브리프 지시의 미인용 자료; 07 현행 인용 목록에 없으므로 인쇄에 추가하지 않음"
+    },
+    {
+      "scope": "02/52, 06/18, 29/70 중복 PDF",
+      "reason": "같은 저작물의 중복 보유 파일은 대표 서지 이형도(2024), 이창남(2025), 윤영석(2026) 각 1건만 수록"
+    }
+  ],
+  "unresolved": [],
+  "validation": {
+    "schema": "categories: object<string,array<{text,original_text}>>, flagged: array",
+    "source_sha256": "9df1767ba33782349b8d9f0fdf7be4019b5b047614b03aa2bf8ec356a01c000a",
+    "scope_files": [
+      "01.docs/00_목차.md",
+      "01.docs/01_서론.md",
+      "01.docs/02_이론적배경.md",
+      "01.docs/03_시스템개발.md",
+      "01.docs/04_연구설계및실증분석.md",
+      "01.docs/05_논의및결론.md",
+      "01.docs/부록1_설문지_양식.md"
+    ],
+    "all_printed_entries_have_citation_evidence": true,
+    "no_duplicate_print_text": true,
+    "domestic_sorted": true,
+    "foreign_sorted": true,
+    "no_internal_metadata": true,
+    "ultralytics_2026a_b": true,
+    "new_110_111_112_present": true,
+    "verification_policy": "기존 07 MD 서지·원문 검증 기록 승계; 원전/법령/웹페이지를 이번 작업에서 재검증하지 않음",
+    "reference_mapping": [
+      {
+        "category": "1. 국내문헌",
+        "source_line": 285,
+        "original_text": "고용노동부, 『2024 산업재해 현황분석』, 고용노동부, 2025. (ref 30 통계; 제1장 내주: 고용노동부, 2025)",
+        "print_text": "고용노동부, 『2024 산업재해 현황분석』, 고용노동부, 2025.",
+        "citation_author": "고용노동부",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 10
+          },
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 28
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 287,
+        "original_text": "고용노동부, 『2025년 유족급여 승인 기준 사고사망 재해 현황』, 보도자료, 2026. 3. 31. https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19160 (ref 111; 제1장, PDF 3쪽)",
+        "print_text": "고용노동부, 『2025년 유족급여 승인 기준 사고사망 재해 현황』, 보도자료, 2026. 3. 31. https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19160",
+        "citation_author": "고용노동부",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 10
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 289,
+        "original_text": "국토교통부·국토안전관리원, 『스마트 안전장비 활용 가이드라인』, 2024.03, CS-24-E6-002. (ref 36)",
+        "print_text": "국토교통부·국토안전관리원, 『스마트 안전장비 활용 가이드라인』, 2024.03, CS-24-E6-002.",
+        "citation_author": "국토교통부",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 13
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 43
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 76
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 75
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 72
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 291,
+        "original_text": "김민기·박성호, 『서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안』, 서울연구원, 2026. (서울연 2024-BR-14; ref 33)",
+        "print_text": "김민기·박성호, 『서울시 재난안전관리 지원 생성형 AI 구축과 활용 방안』, 서울연구원, 2026. (서울연 2024-BR-14)",
+        "citation_author": "김민기",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 293,
+        "original_text": "김석기, 「소규모 건설현장 사망사고의 시스템적 원인 규명을 위한 BERTopic-LLM과 AcciMap 통합 분석 프레임워크 개발」, 충북대학교 박사학위논문, 2026. (ref 51)",
+        "print_text": "김석기, 「소규모 건설현장 사망사고의 시스템적 원인 규명을 위한 BERTopic-LLM과 AcciMap 통합 분석 프레임워크 개발」, 충북대학교 박사학위논문, 2026.",
+        "citation_author": "김석기",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 17
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 295,
+        "original_text": "김용선, 「중·소규모 건설현장 재해예방을 위한 스마트 건설안전기술 활용 방안」, 인천대학교 일반대학원 안전공학과 박사학위논문, 2022. (ref 22)",
+        "print_text": "김용선, 「중·소규모 건설현장 재해예방을 위한 스마트 건설안전기술 활용 방안」, 인천대학교 일반대학원 안전공학과 박사학위논문, 2022.",
+        "citation_author": "김용선",
+        "citation_year": "2022",
+        "citation_locations": [
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 24
+          },
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 28
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 13
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 17
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 43
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 77
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 140
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 157
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 76
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 53
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 297,
+        "original_text": "김태헌, 「건설현장 위험상황 이해 및 대응을 위한 인공지능 안전인지 프레임워크 연구」, 성균관대학교 일반대학원 글로벌스마트시티융합전공 박사학위논문, 2026.",
+        "print_text": "김태헌, 「건설현장 위험상황 이해 및 대응을 위한 인공지능 안전인지 프레임워크 연구」, 성균관대학교 일반대학원 글로벌스마트시티융합전공 박사학위논문, 2026.",
+        "citation_author": "김태헌",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 59
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 65
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 84
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 48
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 69
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 255
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 299,
+        "original_text": "김현수, 「통합관제센터 운영을 위한 Vision AI–VLM 비교 및 하이브리드 연구」, 중앙대학교 대학원 ICT안전학과 석사학위논문, 2026.",
+        "print_text": "김현수, 「통합관제센터 운영을 위한 Vision AI–VLM 비교 및 하이브리드 연구」, 중앙대학교 대학원 ICT안전학과 석사학위논문, 2026.",
+        "citation_author": "김현수",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 15
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 17
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 25
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 59
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 84
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 116
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 122
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 128
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 140
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 154
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 155
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 157
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 176
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 186
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 46
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 68
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 255
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 353
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 359
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 301,
+        "original_text": "대한민국 정부, 『이재명정부 123대 국정과제』, 2025. 9. (ref 110; 제1장, PDF 124쪽·인쇄 120쪽)",
+        "print_text": "대한민국 정부, 『이재명정부 123대 국정과제』, 2025. 9.",
+        "citation_author": "대한민국 정부",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 10
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 303,
+        "original_text": "류수영, 「CCTV 기반 산업안전 관제 시스템에 관한 연구」, 배재대학교 대학원 컴퓨터공학과 박사학위논문, 2024. (ref 17)",
+        "print_text": "류수영, 「CCTV 기반 산업안전 관제 시스템에 관한 연구」, 배재대학교 대학원 컴퓨터공학과 박사학위논문, 2024.",
+        "citation_author": "류수영",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 17
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 43
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 49
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 75
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 79
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 134
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 156
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 46
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 62
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 305,
+        "original_text": "류정·박인선, 「건설현장의 스마트 안전장비 성능과 도입 효과 분석」, 『Crisisonomy』, 제21권 제6호, 2025, pp. 125–135. DOI 10.14251/crisisonomy.2025.21.6.125. (ref 32)",
+        "print_text": "류정·박인선, 「건설현장의 스마트 안전장비 성능과 도입 효과 분석」, 『Crisisonomy』, 제21권 제6호, 2025, pp. 125–135. DOI 10.14251/crisisonomy.2025.21.6.125.",
+        "citation_author": "류정",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 26
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 116
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 146
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 158
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 176
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 187
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 355
+          },
+          {
+            "file": "01.docs/05_논의및결론.md",
+            "line": 9
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 307,
+        "original_text": "맹인영·이준원·소한섭·김세훈·박성배, 「건설 현장 스마트 안전 장비 도입에 따른 실효성 제고 방안 연구」, 『안전문화연구』, 제14호, 2021, pp. 47–63. DOI 10.52902/kjsc.2021.14.47. (ref 112; 제1장. 표 8은 공개 저자원고 PDF 14쪽이며 정식 출판 쪽수로 환산하지 않음)",
+        "print_text": "맹인영·이준원·소한섭·김세훈·박성배, 「건설 현장 스마트 안전 장비 도입에 따른 실효성 제고 방안 연구」, 『안전문화연구』, 제14호, 2021, pp. 47–63. DOI 10.52902/kjsc.2021.14.47.",
+        "citation_author": "맹인영",
+        "citation_year": "2021",
+        "citation_locations": [
+          {
+            "file": "01.docs/01_서론.md",
+            "line": 12
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 309,
+        "original_text": "박종학, 「YOLO(You Only Look Once) 모델별 건설 현장 위험 상태 및 객체 인식 성능 비교」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2025.",
+        "print_text": "박종학, 「YOLO(You Only Look Once) 모델별 건설 현장 위험 상태 및 객체 인식 성능 비교」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2025.",
+        "citation_author": "박종학",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 17
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 49
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 78
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 46
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 63
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 106
+          },
+          {
+            "file": "01.docs/05_논의및결론.md",
+            "line": 9
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 311,
+        "original_text": "윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2026. (연도: RISS T17395920 학위수여 2026. 2 대조, 2026-11-04; 원문 제출 2025.12와 구별)",
+        "print_text": "윤영석, 「중·소규모 건설현장 안전관리자 인건비 직접공사비 계상과 안전관리 작동성에 관한 연구」, 경기대학교 공학대학원 건축·안전공학전공 석사학위논문, 2026.",
+        "citation_author": "윤영석",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 17
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 313,
+        "original_text": "이기수, 「건설현장의 안전 확보를 위한 딥러닝 기반의 시스템비계 설치 이상감지 연구」, 명지대학교 박사학위논문, 2024. (ref 49)",
+        "print_text": "이기수, 「건설현장의 안전 확보를 위한 딥러닝 기반의 시스템비계 설치 이상감지 연구」, 명지대학교 박사학위논문, 2024.",
+        "citation_author": "이기수",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 218
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 315,
+        "original_text": "이동건, 「통합기술수용모델(UTAUT)을 활용한 건설근로자들의 스마트안전장비 수용에 영향을 미치는 요인에 관한 연구」, 인하대학교 공학대학원 건축토목공간정보공학과 석사학위논문, 2024.",
+        "print_text": "이동건, 「통합기술수용모델(UTAUT)을 활용한 건설근로자들의 스마트안전장비 수용에 영향을 미치는 요인에 관한 연구」, 인하대학교 공학대학원 건축토목공간정보공학과 석사학위논문, 2024.",
+        "citation_author": "이동건",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 67
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 87
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 188
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 48
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 72
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 317,
+        "original_text": "이석희·고대식·송석일, 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, 2025, pp. 279–282. DOI 10.14801/jkiit.2025.23.11.279.",
+        "print_text": "이석희·고대식·송석일, 「건설 안전 모니터링을 위한 장면그래프와 템플릿 기반 실시간 비디오 캡셔닝 시스템 구현」, 『Journal of KIIT』, 제23권 제11호, 2025, pp. 279–282. DOI 10.14801/jkiit.2025.23.11.279.",
+        "citation_author": "이석희",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 65
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 86
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 48
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 70
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 319,
+        "original_text": "이영미, 「시각장애학생의 인지 및 적응행동 특성」, 대구대학교 대학원 특수교육학과 문학박사학위논문, 2020. (ref 98 — 제4장 제7절 제1항 내주 (이영미, 2020, pp. 41–42): 처치 없는 기존 집단 비교에 나이·교육 연한을 공변량으로 둔 공분산분석 사례)",
+        "print_text": "이영미, 「시각장애학생의 인지 및 적응행동 특성」, 대구대학교 대학원 특수교육학과 문학박사학위논문, 2020.",
+        "citation_author": "이영미",
+        "citation_year": "2020",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 261
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 321,
+        "original_text": "이준호, 「건설현장 중대재해 감소를 위한 스마트 안전장비의 지원방법 개선에 관한 연구」, 한양대학교 융합산업대학원 석사학위논문, 2024.",
+        "print_text": "이준호, 「건설현장 중대재해 감소를 위한 스마트 안전장비의 지원방법 개선에 관한 연구」, 한양대학교 융합산업대학원 석사학위논문, 2024.",
+        "citation_author": "이준호",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 43
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 77
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 48
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 74
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 323,
+        "original_text": "이창남, 「스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2025. (대표 ref 06; ref 18 중복)",
+        "print_text": "이창남, 「스마트장비(Drone·AIoT)를 활용한 건설현장 안전 관리 활성화 방안에 관한 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2025.",
+        "citation_author": "이창남",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 65
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 85
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 128
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 134
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 140
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 155
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 156
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 157
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 176
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 185
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 71
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 359
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 325,
+        "original_text": "이형도, 「객체탐지 알고리즘을 이용한 건설현장 근로자 안전모 실시간 모니터링 기술 활성화 방안 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2024. (ref 52)",
+        "print_text": "이형도, 「객체탐지 알고리즘을 이용한 건설현장 근로자 안전모 실시간 모니터링 기술 활성화 방안 연구」, 경기대학교 대학원 건설안전학과 박사학위논문, 2024.",
+        "citation_author": "이형도",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 46
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 64
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 328,
+        "original_text": "한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do (열람일 2026.11.4; ref 96 — 제3장 제1절 제2항 내주 (한국인터넷진흥원, 2026, p. 12): 일반분야 침입·쓰러짐 정상검출 시각 이벤트 시작 시각 이전 2초∼이후 10초, 표 3-1. 첨부파일명은 '26.6월'이나 내부 표지·게시물 제목은 2026. 9. 제3장 <표 3-6> 목표값의 참고 기준: p.11 일반분야 배회·침입·유기·싸움·방화·쓰러짐의 특이도 90점 이상, p.12 정상검출 시간 범위, pp.17–18 평가사건 정의·산식. 특이도는 결과 해석을 위한 평가 목표이며, 10초는 본 연구 설계 목표로 KISA의 평균시간 기준이 아님.)",
+        "print_text": "한국인터넷진흥원, 『영상정보 분석 성능시험 제도 안내서』, 한국인터넷진흥원, 2026. 9. https://www.ksecurity.or.kr/user/bbs/kisis/28/97/bbsDataView/37569.do (열람일 2026.11.4).",
+        "citation_author": "한국인터넷진흥원",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 23
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 229
+          }
+        ],
+        "metadata_removed": true,
+        "access_date_preserved": "2026.11.4"
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 330,
+        "original_text": "한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026. (번호가 중복된 30번 VLM 학위논문; 전체 파일명으로 식별)",
+        "print_text": "한소은, 「건설현장 ‘일일 위험성 평가서’ 자동 생성 모델: ‘Vision-Language Model (VLM)’을 활용하여」, 인천대학교 대학원 건축학과 석사학위논문, 2026.",
+        "citation_author": "한소은",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 255
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "1. 국내문헌",
+        "source_line": 332,
+        "original_text": "황병복, 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문, 2026.",
+        "print_text": "황병복, 「철도 건설사업에서 스마트 건설기술의 도입 및 활용이 안전 성과에 미치는 영향」, 우송대학교 일반대학원 철도공학과 박사학위논문, 2026.",
+        "citation_author": "황병복",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 116
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 146
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 158
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 176
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 184
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 355
+          },
+          {
+            "file": "01.docs/05_논의및결론.md",
+            "line": 9
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 336,
+        "original_text": "Bloom, H. S., \"Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs\", Evaluation Review, Vol. 19, No. 5, 1995, pp. 547–556. DOI 10.1177/0193841X9501900504. (ref 107; 제4장 제7절 제2항 <표 4-14> 주·제8절 내주 (Bloom, 1995, p. 550) — Table 1 양측·80%·.05 배수 2.80)",
+        "print_text": "Bloom, H. S., \"Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs\", Evaluation Review, Vol. 19, No. 5, 1995, pp. 547–556. DOI 10.1177/0193841X9501900504.",
+        "citation_author": "Bloom",
+        "citation_year": "1995",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 343
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 355
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 338,
+        "original_text": "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., & Amodei, D., \"Language Models are Few-Shot Learners\", Advances in Neural Information Processing Systems, Vol. 33, Curran Associates, 2020, pp. 1877–1901. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html (ref 55)",
+        "print_text": "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., & Amodei, D., \"Language Models are Few-Shot Learners\", Advances in Neural Information Processing Systems, Vol. 33, Curran Associates, 2020, pp. 1877–1901. https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html",
+        "citation_author": "Brown",
+        "citation_year": "2020",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 142
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 340,
+        "original_text": "Chen, X., & Zou, Z., \"Are large pre-trained vision language models effective construction safety inspectors\", Data-Centric Engineering, Vol. 7, 2026, e11. DOI 10.1017/dce.2026.10044. (ref 71; 제3장 데이터 확보 제약; 초록·제1절 직접 확인, 전문 PDF 2026-11-04 확보)",
+        "print_text": "Chen, X., & Zou, Z., \"Are large pre-trained vision language models effective construction safety inspectors\", Data-Centric Engineering, Vol. 7, 2026, e11. DOI 10.1017/dce.2026.10044.",
+        "citation_author": "Chen",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 17
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 342,
+        "original_text": "Chong, H.-Y., Xu, Y., Lun, C., & Chi, M., \"The Adoption Intentions of Wearable Technology for Construction Safety\", Buildings, Vol. 13, No. 11, 2023, 2747. DOI 10.3390/buildings13112747. (ref 41)",
+        "print_text": "Chong, H.-Y., Xu, Y., Lun, C., & Chi, M., \"The Adoption Intentions of Wearable Technology for Construction Safety\", Buildings, Vol. 13, No. 11, 2023, 2747. DOI 10.3390/buildings13112747.",
+        "citation_author": "Chong",
+        "citation_year": "2023",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 67
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 87
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 116
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 178
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 189
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 50
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 73
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 53
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 344,
+        "original_text": "Cochran, W. G., \"The Use of Covariance in Observational Studies\", Applied Statistics, Vol. 18, No. 3, 1969, pp. 270–275. DOI 10.2307/2346587.",
+        "print_text": "Cochran, W. G., \"The Use of Covariance in Observational Studies\", Applied Statistics, Vol. 18, No. 3, 1969, pp. 270–275. DOI 10.2307/2346587.",
+        "citation_author": "Cochran",
+        "citation_year": "1969",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 261
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 346,
+        "original_text": "Costello, A. B., & Osborne, J. W., \"Best practices in exploratory factor analysis: Four recommendations for getting the most from your analysis\", Practical Assessment, Research, and Evaluation, Vol. 10, No. 7, 2005, pp. 1–9. DOI 10.7275/jyj1-4868. (ref 75; 전문 2026-11-04 확보)",
+        "print_text": "Costello, A. B., & Osborne, J. W., \"Best practices in exploratory factor analysis: Four recommendations for getting the most from your analysis\", Practical Assessment, Research, and Evaluation, Vol. 10, No. 7, 2005, pp. 1–9. DOI 10.7275/jyj1-4868.",
+        "citation_author": "Costello",
+        "citation_year": "2005",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 175
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 177
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 348,
+        "original_text": "Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268–277.",
+        "print_text": "Cvach, M., \"Monitor alarm fatigue: An integrative review\", Biomedical Instrumentation & Technology, Vol. 46, No. 4, 2012, pp. 268–277.",
+        "citation_author": "Cvach",
+        "citation_year": "2012",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 23
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 25
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 51
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 81
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 140
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 157
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 50
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 67
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": false
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 350,
+        "original_text": "Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319–340. (ref 80; 원문 2026-11-04 확보)",
+        "print_text": "Davis, F. D., \"Perceived usefulness, perceived ease of use, and user acceptance of information technology\", MIS Quarterly, Vol. 13, No. 3, 1989, pp. 319–340.",
+        "citation_author": "Davis",
+        "citation_year": "1989",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 35
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 99
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 352,
+        "original_text": "Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201. (원전 미보유 — 2026-11-05 사용자 결정: 보유 문헌이 원전을 인용하므로 확인된 것으로 보고 현행 유지. 재인용 근거 ref 86 PDF 2·3쪽, ref 87 PDF 1쪽에 \"Green & Swets, 1966\" 인용 확인)",
+        "print_text": "Green, D. M., & Swets, J. A., Signal Detection Theory and Psychophysics, Wiley, 1966. ISBN 9780471324201.",
+        "citation_author": "Green",
+        "citation_year": "1966",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 23
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 37
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 354,
+        "original_text": "He, C., Hu, Z., Shen, Y., & Wu, C., \"Effects of Demographic Characteristics on Safety Climate and Construction Worker Safety Behavior\", Sustainability, Vol. 15, No. 14, 2023, 10985. DOI 10.3390/su151410985. (ref 74; 전문 2026-11-04 확보)",
+        "print_text": "He, C., Hu, Z., Shen, Y., & Wu, C., \"Effects of Demographic Characteristics on Safety Climate and Construction Worker Safety Behavior\", Sustainability, Vol. 15, No. 14, 2023, 10985. DOI 10.3390/su151410985.",
+        "citation_author": "He",
+        "citation_year": "2023",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 53
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 357,
+        "original_text": "Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp. 151–162. https://proceedings.mlr.press/v296/kim25a.html (ref 08; Kim et al.(2025))",
+        "print_text": "Kim, J., Lee, Y., Yoon, D., Jung, C., & Lee, G., \"An Integrated YOLO and VLM System for Fire Detection in Enclosed Environments\", Proceedings on “I Can't Believe It's Not Better: Challenges in Applied Deep Learning” at ICLR 2025 Workshops, Proceedings of Machine Learning Research, Vol. 296, 2025, pp. 151–162. https://proceedings.mlr.press/v296/kim25a.html",
+        "citation_author": "Kim",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 15
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 57
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 82
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 122
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 154
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 50
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 54
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 65
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 108
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 255
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/05_논의및결론.md",
+            "line": 9
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 359,
+        "original_text": "Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp. 1663–1673. DOI 10.1177/0956797614541991. (ref 86; 제2장 SDT 상충 설명에 Green & Swets(1966)와 병기; 확보본은 OnlineFirst 판이라 본문 쪽수가 최종 권호 쪽과 다름)",
+        "print_text": "Lynn, S. K., & Barrett, L. F., \"“Utilizing” signal detection theory\", Psychological Science, Vol. 25, No. 9, 2014, pp. 1663–1673. DOI 10.1177/0956797614541991.",
+        "citation_author": "Lynn",
+        "citation_year": "2014",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 23
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 361,
+        "original_text": "Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp. 1833–1855. DOI 10.1080/00140139.2014.957732. (ref 77; 제2장 경보 무시 실증 — Dixon et al.(2007) 대체, 2026-11-04; 확보본은 저자 최종원고라 인용 쪽은 저자원고 쪽수)",
+        "print_text": "Manzey, D., Gérard, N., & Wiczorek, R., \"Decision-making and response strategies in interaction with alarms: the impact of alarm reliability, availability of alarm validity information and workload\", Ergonomics, Vol. 57, No. 12, 2014, pp. 1833–1855. DOI 10.1080/00140139.2014.957732.",
+        "citation_author": "Manzey",
+        "citation_year": "2014",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 23
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 363,
+        "original_text": "Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025. (ref 19; 국내 대학 박사학위논문이며 영문 저자 표기에 따라 국외문헌 목록에 수록)",
+        "print_text": "Mi, Y., Deep Learning-Based Safety Analysis for High-Altitude Construction Workers: PPE Detection and Posture Recognition Model Development, Doctoral dissertation, Kyungpook National University, 2025.",
+        "citation_author": "Mi",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 49
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 80
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 365,
+        "original_text": "Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285. (ref 68)",
+        "print_text": "Pisu, A., Elia, N., Pompianu, L., Barchi, F., Acquaviva, A., & Carta, S., \"Enhancing workplace safety: A flexible approach for personal protective equipment monitoring\", Expert Systems with Applications, Vol. 238, 2024, 122285.",
+        "citation_author": "Pisu",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 23
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 367,
+        "original_text": "Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp. 137–149. DOI 10.3758/BF03207704. (ref 87; 제2장 SDT 기준·면적 설명에 Green & Swets(1966)와 병기, 인쇄 p.138)",
+        "print_text": "Stanislaw, H., & Todorov, N., \"Calculation of signal detection theory measures\", Behavior Research Methods, Instruments, & Computers, Vol. 31, No. 1, 1999, pp. 137–149. DOI 10.3758/BF03207704.",
+        "citation_author": "Stanislaw",
+        "citation_year": "1999",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 37
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 369,
+        "original_text": "Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp. 53–55. DOI 10.5116/ijme.4dfb.8dfd. (제4장 신뢰도 기준; 인쇄 p.54) (ref 72; 전문 2026-11-04 확보)",
+        "print_text": "Tavakol, M., & Dennick, R., \"Making sense of Cronbach’s alpha\", International Journal of Medical Education, Vol. 2, 2011, pp. 53–55. DOI 10.5116/ijme.4dfb.8dfd.",
+        "citation_author": "Tavakol",
+        "citation_year": "2011",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 199
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 371,
+        "original_text": "Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp. 191–199. DOI 10.22260/ISARC2016/0024. (ref 63; 직접 대조한 학회본)",
+        "print_text": "Teizer, J., \"The Role of Automation in Right-time Construction Safety\", Proceedings of the 33rd International Symposium on Automation and Robotics in Construction (ISARC 2016), 2016, pp. 191–199. DOI 10.22260/ISARC2016/0024.",
+        "citation_author": "Teizer",
+        "citation_year": "2016",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 122
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 128
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 154
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 155
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 21
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 373,
+        "original_text": "The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org (서지관리번호 #6; 실제 분석 버전 2.7.41 확인(2026-10-27) — 04장 분석 도구 인용)",
+        "print_text": "The jamovi project, jamovi (Version 2.7) [Computer Software], 2026. https://www.jamovi.org",
+        "citation_author": "The jamovi project",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 126
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 165
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 195
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 209
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 227
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 249
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 289
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 307
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 327
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 375,
+        "original_text": "Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209–212. DOI 10.1080/01621459.1927.10502953 (ref 73; 스캔본 2026-11-04 확보)",
+        "print_text": "Wilson, E. B., \"Probable Inference, the Law of Succession, and Statistical Inference\", Journal of the American Statistical Association, Vol. 22, No. 158, 1927, pp. 209–212. DOI 10.1080/01621459.1927.10502953",
+        "citation_author": "Wilson",
+        "citation_year": "1927",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 227
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 377,
+        "original_text": "Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1 (ref 23; 보유·인용 판본)",
+        "print_text": "Wu, J., Wu, S., Ma, Y., Yu, G., Xu, H., Zheng, L., & Duan, J., \"MonitorVLM: A Vision–Language Framework for Safety Violation Detection in Mining Operations\", arXiv:2510.03666v1, 2025. https://arxiv.org/abs/2510.03666v1",
+        "citation_author": "Wu",
+        "citation_year": "2025",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 15
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 57
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 83
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 122
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 154
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 50
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 66
+          },
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 315
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 90
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "2. 국외문헌",
+        "source_line": 379,
+        "original_text": "Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp. 40167–40175. DOI 10.1609/aaai.v40i47.41452. (ref 50; 제2장 원격 파악·순찰부담 경감, pp. 40170–40172)",
+        "print_text": "Zhang, G., Wang, W., Kong, T. L., Xing, K., Li, H., & Wang, Y., \"ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems\", Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 40, No. 47, 2026, pp. 40167–40175. DOI 10.1609/aaai.v40i47.41452.",
+        "citation_author": "Zhang",
+        "citation_year": "2026",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 134
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 140
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 156
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 157
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "3. 법령",
+        "source_line": 385,
+        "original_text": "「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정]. — 03장 제2절 제4항 경보 수신자의 법적 직무 근거; 04장 제3절 소속·역할 통제변수의 선정 근거(발주청의 공사감독자 선임·감독, 2026-11-04 현행 조문 대조). https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451 ; https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1029371815",
+        "print_text": "「건설기술 진흥법」 제39조(건설사업관리 등의 시행)·제49조(건설공사감독자의 감독 의무), [시행 2025. 10. 1.] [법률 제21065호, 2025. 10. 1., 타법개정]. https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033555451 ; https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1029371815",
+        "citation_author": "「건설기술 진흥법」",
+        "citation_year": null,
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 158
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 53
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "3. 법령",
+        "source_line": 386,
+        "original_text": "「건설산업기본법」 제40조(건설기술인의 배치), [시행 2025. 11. 27.] [법률 제21034호]. — 03장 제2절 제4항 현장 배치 건설기술인의 직무 근거. https://www.law.go.kr/법령/건설산업기본법/제40조",
+        "print_text": "「건설산업기본법」 제40조(건설기술인의 배치), [시행 2025. 11. 27.] [법률 제21034호]. https://www.law.go.kr/법령/건설산업기본법/제40조",
+        "citation_author": "「건설산업기본법」",
+        "citation_year": null,
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 158
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "3. 법령",
+        "source_line": 387,
+        "original_text": "「산업안전보건법」 제15조(안전보건관리책임자)·제16조(관리감독자)·제17조(안전관리자)·제63조(도급인의 안전조치 및 보건조치)·제67조(건설공사발주자의 산업재해 예방 조치), [시행 2026. 10. 27.] [법률 제22122호, 2026. 10. 27., 일부개정]. — 03장 제2절 제4항 경보 수신자의 법적 직무 근거(제15·17조); 04장 제3절 소속·역할 통제변수의 선정 근거(제16·17·63·67조). https://www.law.go.kr/법령/산업안전보건법 (2026-11-04 국가법령정보센터 현행본 조문 대조. 2026-09-30에 표기한 [시행 2026. 6. 1.] 법률 제21374호는 같은 날 조회에서 2027. 1. 1. 시행예정 개정으로 나와 현행본으로 바꾸었다. 보유 ref 57의 2025.10.1 판본과 구별하며, 다섯 조문의 제목·요지는 두 판본에서 같다. 최종 제출 직전 현행 여부를 다시 확인한다)",
+        "print_text": "「산업안전보건법」 제15조(안전보건관리책임자)·제16조(관리감독자)·제17조(안전관리자)·제63조(도급인의 안전조치 및 보건조치)·제67조(건설공사발주자의 산업재해 예방 조치), [시행 2026. 10. 27.] [법률 제22122호, 2026. 10. 27., 일부개정]. https://www.law.go.kr/법령/산업안전보건법",
+        "citation_author": "「산업안전보건법」",
+        "citation_year": null,
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 158
+          },
+          {
+            "file": "01.docs/04_연구설계및실증분석.md",
+            "line": 53
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "4. 표준·기술자료",
+        "source_line": 398,
+        "original_text": "Bosch Security Systems, Alarm Verification for Alarm Management, Application note F01U411472, V02, 2024. (ref 69 — 벤더 애플리케이션 노트. 제3장 제1절 제2항 본문 내주(Bosch Security Systems, 2024, p. 8)로만 인용한다)",
+        "print_text": "Bosch Security Systems, Alarm Verification for Alarm Management, Application note F01U411472, V02, 2024.",
+        "citation_author": "Bosch Security Systems",
+        "citation_year": "2024",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 23
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "4. 표준·기술자료",
+        "source_line": 400,
+        "original_text": "Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention (열람일 2026.11.4; 제2장 위험 통제력, Action items 2·3·5·6의 개념 근거; 미국의 실행 지침이며 국내 법적 기준이나 설문척도 아님).",
+        "print_text": "Occupational Safety and Health Administration (OSHA), Hazard Prevention and Control, Safety and Health Programs, 연도 미상. https://www.osha.gov/safety-management/hazard-prevention (열람일 2026.11.4).",
+        "citation_author": "OSHA",
+        "citation_year": "연도 미상",
+        "citation_locations": [
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 146
+          },
+          {
+            "file": "01.docs/02_이론적배경.md",
+            "line": 158
+          }
+        ],
+        "metadata_removed": true,
+        "access_date_preserved": "2026.11.4"
+      },
+      {
+        "category": "4. 표준·기술자료",
+        "source_line": 401,
+        "original_text": "Ultralytics, YOLO (Version 8.4.23) [Computer software], 2026a. (3장 1차 검출기)",
+        "print_text": "Ultralytics, YOLO (Version 8.4.23) [Computer software], 2026a.",
+        "citation_author": "Ultralytics",
+        "citation_year": "2026a",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 110
+          }
+        ],
+        "metadata_removed": true
+      },
+      {
+        "category": "4. 표준·기술자료",
+        "source_line": 402,
+        "original_text": "Ultralytics, YOLO26, Ultralytics Docs, 2026b. https://docs.ultralytics.com/models/yolo26/ (열람일 2026.11.7; 제3장 제4절 제4항 내주 (Ultralytics, 2026b): Detection 성능표 YOLO26m 640px Speed CPU ONNX 220.0±1.4 ms, T4 TensorRT10 4.7±0.1 ms, `nms=False` 측정. COCO 벤치마크이며 본 시스템 PC에서 측정한 값이 아님. 문서는 YOLO26을 2026년 1월 공개로 표기)",
+        "print_text": "Ultralytics, YOLO26, Ultralytics Docs, 2026b. https://docs.ultralytics.com/models/yolo26/ (열람일 2026.11.7).",
+        "citation_author": "Ultralytics",
+        "citation_year": "2026b",
+        "citation_locations": [
+          {
+            "file": "01.docs/03_시스템개발.md",
+            "line": 298
+          }
+        ],
+        "metadata_removed": true,
+        "access_date_preserved": "2026.11.7"
+      }
+    ],
+    "author_year_match_all_entries": true,
+    "reverse_citation_review": "00~05장 본문·표·주와 인쇄 부록1의 저자연도 내주를 대조함: 인쇄 목록에 대응되지 않는 내주 발견 없음; OSHA는 연도 미상, 법령은 명칭으로 대조; 내부 메모·이력은 제외",
+    "source_unchanged": true,
+    "schema_validated": true,
+    "source_memos_preserved": "07 MD 미수정; 시행령 항목은 현행 목록에 남아 있지만 이번 인쇄에서는 미인용으로 제외하며 향후 07 목록의 이력 이동 검토 대상",
+    "inherited_limits": [
+      "Green & Swets(1966)는 원전 미보유·사용자 유지 결정 승계",
+      "Cochran(1969)는 서지·초록 확인 및 로컬 PDF 미확보 기록 승계",
+      "법령 현행 여부는 기존 검증 일자 승계; 이번 서지 정리는 신규 법률 검증이 아님"
+    ],
+    "access_date_policy": "열람일은 서지정보로 보존하고, 같은 괄호 안의 내부 참조번호·인용 위치·검토 메모만 제거한다; 미인용 자료는 열람일 유무와 관계없이 제외한다",
+    "all_explicit_access_dates_preserved": true
+  }
+}

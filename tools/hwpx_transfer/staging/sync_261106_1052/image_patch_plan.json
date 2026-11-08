@@ -1,0 +1,19 @@
+{
+  "caption": "<그림 3-3> RAG 기반 Few-shot 교정 절차",
+  "source": "01.docs/figures/system/fig_3_3_rag_correction.png",
+  "entry": "BinData/image4.png",
+  "binaryItemID": "image4",
+  "patched_section2_unit_index": 214,
+  "pixel_dimensions": [
+    1771,
+    2007
+  ],
+  "HWPX_dimensions": [
+    39104,
+    44315
+  ],
+  "dimension_or_aspect_change": false,
+  "old_sha256": "9412ea1242b9e09d343022e36d7ee8c8db01cf4b401738b10968c346b52dd9e6",
+  "new_sha256": "1ca0fcdcc147cb7ae5d4c2132e43f5a4e15d36e7125efee1033df2255a0bddbd",
+  "method": "replace only BinData/image4.png; keep entry order/compression and all XML bytes"
+}

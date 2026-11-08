@@ -1,0 +1,409 @@
+{
+  "id": 102,
+  "bibliography": {
+    "author": "박재옥",
+    "year": 2013,
+    "title": "통합적 다문화교육 프로그램의 개발과 유아의 다문화 수용성 및 창의적 놀이행동",
+    "university": "인하대학교 대학원",
+    "department": "소비자아동학과 아동복지전공",
+    "degree": "생활과학박사",
+    "file": "02.reference/102. 박재옥(2013)_통합적 다문화교육 프로그램의 개발과 유아의 다문화 수용성 및 창의적 놀이행동.pdf"
+  },
+  "extraction": {
+    "tool": "Kordoc",
+    "version": "4.24.2",
+    "command": "node .claude/kordoc/dist/cli.js \"02.reference/102. 박재옥(2013)_통합적 다문화교육 프로그램의 개발과 유아의 다문화 수용성 및 창의적 놀이행동.pdf\" --no-images --script-tags -o \"02.reference/ANCOVA_교육박사_분석/kordoc/102.md\"",
+    "files": [
+      "kordoc/102.md",
+      "kordoc/102.log"
+    ],
+    "warnings": [
+      "표는 HTML로 추출됨. 수치 및 표 순서는 원본 PDF로 대조. --no-images에도 이미지 참조표기는 남아 있으나 이미지파일 생성 안 함."
+    ]
+  },
+  "design": {
+    "type": "비동질 비교집단 사전·사후 검사설계",
+    "allocation": "5개 어린이집 만5세반 각1반 편의표집, 실험4/비교1 집단에 임의배정(저자표현). 개인무작위배정 근거로 해석하지 않음.",
+    "intervention": "통합적 다문화교육 26회기104차시",
+    "pdf_page": [
+      108,
+      110,
+      111
+    ],
+    "printed_page": "95,97~98"
+  },
+  "sample": {
+    "n": 100,
+    "age": "만5세",
+    "clusters": 5,
+    "sex": {
+      "male": 53,
+      "female": 47
+    },
+    "attrition": "3회 이상 장기결석자 없어100명 전원 최종분석",
+    "pdf_page": [
+      108,
+      110
+    ],
+    "printed_page": "95,97"
+  },
+  "groups": [
+    {
+      "name": "실험1",
+      "n": 20,
+      "description": "담임+결혼이주여성보조교사+다문화가정유아"
+    },
+    {
+      "name": "실험2",
+      "n": 20,
+      "description": "담임+결혼이주여성보조교사"
+    },
+    {
+      "name": "실험3",
+      "n": 20,
+      "description": "담임+다문화가정유아"
+    },
+    {
+      "name": "실험4",
+      "n": 20,
+      "description": "담임"
+    },
+    {
+      "name": "비교",
+      "n": 20,
+      "description": "누리과정만 실시"
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "다문화 수용성",
+      "subscales": [
+        "다문화 인식",
+        "다문화 공감",
+        "다문화 개방성",
+        "관계형성능력"
+      ],
+      "items": 20,
+      "scale": "p99에3점 평정 설명. 결과표 다문화 인식 평균 일부3점 초과로 채점정의 추가확인 필요."
+    },
+    {
+      "name": "창의적 놀이행동",
+      "subscales": [
+        "내재적 동기-상상력",
+        "민감성-호기심",
+        "지속성-몰입",
+        "흥미-도전",
+        "주도성-독립성"
+      ],
+      "scale": "교사평정"
+    }
+  ],
+  "covariates": {
+    "variables": "각 종속하위요인의 사전점수 1개",
+    "group_factor": "5수준 집단",
+    "other_controls": "검토 범위에서 보고 확인 못함",
+    "pdf_page": 124,
+    "printed_page": 111
+  },
+  "software": {
+    "name": "SPSS",
+    "version": "20",
+    "pdf_page": 123,
+    "printed_page": 110
+  },
+  "assumptions": [
+    {
+      "item": "회귀기울기 동질성/집단×사전점수 상호작용",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체검색 및 연구방법 p95~111·결과 p111~128 검토",
+      "pdf_page": "108~141",
+      "printed_page": "95~128"
+    },
+    {
+      "item": "선형성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체검색 및 연구방법 p95~111·결과 p111~128 검토",
+      "pdf_page": "108~141",
+      "printed_page": "95~128"
+    },
+    {
+      "item": "잔차 정규성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체검색 및 연구방법 p95~111·결과 p111~128 검토",
+      "pdf_page": "108~141",
+      "printed_page": "95~128"
+    },
+    {
+      "item": "등분산성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체검색 및 연구방법 p95~111·결과 p111~128 검토",
+      "pdf_page": "108~141",
+      "printed_page": "95~128"
+    },
+    {
+      "item": "영향점",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "Kordoc 전체검색 및 연구방법 p95~111·결과 p111~128 검토",
+      "pdf_page": "108~141",
+      "printed_page": "95~128"
+    },
+    {
+      "item": "관측독립성/기관 군집",
+      "status": "군집 보정 검토 범위에서 보고 확인 못함",
+      "evidence": "5개 어린이집에서 각1반20명씩100명, 집단당 기관1개로 기관효과와 집단조건이 분리되지 않는 설계상 주의점",
+      "pdf_page": [
+        108,
+        134,
+        139
+      ],
+      "printed_page": "95,121,126"
+    },
+    {
+      "item": "사전집단 비교",
+      "status": "보고",
+      "evidence": "사전 일원분산분석 p>.05를 근거로 동질이라고 해석. 유의하지 않음이 동등성 입증은 아니며 ANCOVA 가정점검의 대체도 아님.",
+      "pdf_page": [
+        124,
+        125
+      ],
+      "printed_page": "111~112"
+    }
+  ],
+  "tables": [
+    {
+      "number": 37,
+      "title": "다문화 수용성에 대한 사후검사 점수의 평균과 표준편차",
+      "columns": [
+        "실행유형",
+        "각하위요인 M/SD"
+      ],
+      "pdf_page": 134,
+      "printed_page": 121,
+      "key_values": {
+        "다문화인식_M_비교_실험1_2_3_4": [
+          2.34,
+          3.79,
+          3.55,
+          3.38,
+          3.29
+        ],
+        "mean_type": "사후평균 표기; 교정평균이라는 명시 확인 못함"
+      }
+    },
+    {
+      "number": 38,
+      "title": "다문화 수용성에 대한 사후검사 공분산분석",
+      "columns": [
+        "하위요인",
+        "Source",
+        "SS",
+        "df",
+        "MS",
+        "F"
+      ],
+      "pdf_page": 134,
+      "printed_page": 121,
+      "key_values": {
+        "group_F": {
+          "다문화인식": 87.5,
+          "다문화공감": 100.67,
+          "다문화개방성": 62.5,
+          "관계형성능력": 142.1
+        },
+        "df_group": 4,
+        "df_error": 94,
+        "p_all": "<.001",
+        "다문화인식": {
+          "covariate_SS": 0.149,
+          "covariate_df": 1,
+          "covariate_F": 2.12,
+          "group_SS": 24.544,
+          "group_MS": 6.136,
+          "error_SS": 6.591,
+          "error_MS": 0.07
+        }
+      }
+    },
+    {
+      "number": 39,
+      "title": "다문화 수용성 사후검사에 대한 대비검정(Contrasts test)-단순방법(Simple)",
+      "columns": [
+        "하위요인",
+        "평균차 A-B",
+        "집단쌍 삼각행렬",
+        "유의성 별표"
+      ],
+      "pdf_page": 135,
+      "printed_page": 122,
+      "key_values": {
+        "다문화인식_실험1_minus_비교": 1.47,
+        "p": "<.001",
+        "다문화인식_실험1_minus_실험2": 0.24,
+        "SE_CI": "검토 범위에서 보고 확인 못함"
+      }
+    },
+    {
+      "number": 40,
+      "title": "창의적 놀이행동에 대한 사후검사 점수의 평균과 표준편차",
+      "columns": [
+        "구분",
+        "각하위요인 M/SD"
+      ],
+      "pdf_page": 139,
+      "printed_page": 126,
+      "key_values": {
+        "내재적동기상상력_M_비교_실험1_2_3_4": [
+          2.73,
+          4.72,
+          4.33,
+          3.46,
+          3.01
+        ],
+        "mean_type": "사후평균; 조정평균 명시 확인 못함"
+      }
+    },
+    {
+      "number": 41,
+      "title": "창의적 놀이행동에 대한 사후검사 공분산분석",
+      "columns": [
+        "하위요인",
+        "Source",
+        "SS",
+        "df",
+        "MS",
+        "F"
+      ],
+      "pdf_page": 139,
+      "printed_page": 126,
+      "key_values": {
+        "group_F": {
+          "내재적동기상상력": 138.99,
+          "민감성호기심": 145.26,
+          "지속성몰입": 141.61,
+          "흥미도전": 108.53,
+          "주도성독립성": 114.98
+        },
+        "df_group": 4,
+        "df_error": 94,
+        "p_all": "<.001",
+        "내재적동기상상력": {
+          "covariate_SS": 1.722,
+          "covariate_F": 16.86,
+          "group_SS": 56.767,
+          "group_MS": 14.192,
+          "error_SS": 9.598,
+          "error_MS": 0.102
+        }
+      }
+    },
+    {
+      "number": 42,
+      "title": "창의적 놀이행동 사후검사에 대한 대비검정(Contrasts test)-단순방법(Simple)",
+      "columns": [
+        "하위요인",
+        "평균차 A-B",
+        "집단쌍 삼각행렬",
+        "유의성 별표"
+      ],
+      "pdf_page": 140,
+      "printed_page": 127,
+      "key_values": {
+        "내재적동기상상력_실험1_minus_비교": 1.94,
+        "p": "<.001",
+        "주도성독립성_실험3_minus_실험4": 0.14,
+        "해당별표": "없음"
+      }
+    }
+  ],
+  "results": {
+    "summary": "다문화수용성4개 및 창의적놀이행동5개 하위요인 모두 집단옴니버스F(4,94) p<.001. 이후 Simple 대비검정으로 집단쌍 차이 보고.",
+    "effect_size": "검토 범위에서 보고 확인 못함",
+    "CI": "검토 범위에서 보고 확인 못함",
+    "sum_of_squares_type": "검토 범위에서 보고 확인 못함",
+    "multiplicity": "Simple 대비검정 방법은 명시. 다중 결과/집단쌍 비교 전체를 대상으로 한 Holm·Bonferroni 등 보정 검토 범위에서 보고 확인 못함",
+    "adjusted_mean": "사후평균 M/SD 및 대비차이를 제시하나 EMM 표·계산 기준은 검토 범위에서 보고 확인 못함"
+  },
+  "reporting_strengths": [
+    "기술통계표→ANCOVA검정표→집단쌍 대비표의 구조가 명료",
+    "공변량·집단·오차·수정합계 행과 SS/df/MS/F 열을 일관되게 보고",
+    "다섯 집단 옴니버스 검정과 후속 대비검정의 역할 구분"
+  ],
+  "limitations": [
+    {
+      "type": "design",
+      "text": "각 집단이 서로 다른 어린이집1개 반에 대응하여 기관 차이와 처치 차이를 분리하기 어려움. 군집 보정은 보고 확인 못함."
+    },
+    {
+      "type": "reporting",
+      "text": "기울기동질성 등 가정검정, 효과크기, CI, 명시적 조정평균표 및 다중검정보정은 검토 범위에서 보고 확인 못함."
+    },
+    {
+      "type": "source_consistency_needs_check",
+      "text": "p99의3점평정 설명과 p121표37의 다문화인식 M3.79,3.55,3.38,3.29를 실제 PDF 시각 대조함. 추출오류는 아님. 합산/점수변환/채점정의 설명과 재대조가 필요하며 오류로 확정하지 않음.",
+      "pdf_page": [
+        112,
+        134
+      ],
+      "printed_page": [
+        99,
+        121
+      ]
+    },
+    {
+      "type": "interpretation",
+      "text": "사전 p>.05나 집단쌍 비유의를 동질/동일로 해석한 문구는 동등성 입증과 다르므로 그대로 따르지 않음.",
+      "pdf_page": [
+        124,
+        132
+      ],
+      "printed_page": [
+        111,
+        119
+      ]
+    }
+  ],
+  "applicability_to_ch4": {
+    "use": [
+      "기술통계→통제 후 집단검정→필요한 대비 결과 순서",
+      "표38/41의 SS/df/MS/F 구성은 전통 ANCOVA 보고사례로 참고"
+    ],
+    "do_not_copy": [
+      "현재2집단에5집단 Simple 대비표 추가 불필요",
+      "9개 결과의 유의성 열거보다 현행 주가설+5개하위요인 Holm 구조 유지",
+      "사전사후 향상 해석 또는 비유의=동일 해석",
+      "교정평균으로 명시되지 않은 사후 M을 EMM으로 옮기는 것"
+    ],
+    "current_manuscript_comparison": "현행 제4장은 n73, 두집단34/39, 나이경력공변량+4범주요인, jamovi/TypeIII/EMM/차이CI/부분η²/Holm/가정점검 보고가 이미 있음. 이 자료는 기본 표배치 참고용이며 설계정당화나 수치보고의 최우선 모범으로는 신중."
+  },
+  "verification": {
+    "page_count": 269,
+    "sha256": "c1482563285a443fcc37499559ce06db8710afe8267c6848f8e56bebd58ba0fa",
+    "page_number_convention": "PDF 1-based",
+    "printed_offset": 13,
+    "anchors": [
+      {
+        "pdf_page": 108,
+        "printed_page": 95
+      },
+      {
+        "pdf_page": 112,
+        "printed_page": 99
+      },
+      {
+        "pdf_page": 134,
+        "printed_page": 121
+      },
+      {
+        "pdf_page": 139,
+        "printed_page": 126
+      }
+    ],
+    "method": "Kordoc4.24.2 전체추출269/269 OK. 방법/결과를 Kordoc MD에서 읽은 뒤 PyMuPDF 텍스트로 페이지·대표수치를 검증, PDF112/134 시각확인.",
+    "visual_evidence": [
+      "102_pdf112.png",
+      "102_pdf134.png",
+      "102_pdf139.png"
+    ],
+    "read_ch4": "01.docs/04_연구설계및실증분석.md 제5절 및 제7절 직접 읽음"
+  }
+}

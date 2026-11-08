@@ -1,0 +1,330 @@
+{
+  "previous_pages": 115,
+  "current_pages": 111,
+  "changed_pages": [
+    18,
+    24,
+    25,
+    26,
+    27,
+    29,
+    35,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    52,
+    53,
+    54,
+    60,
+    61,
+    62,
+    63,
+    65,
+    69,
+    72,
+    74,
+    78,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+  ],
+  "same_body_pages": [
+    {
+      "new_page": 1,
+      "previous_page": 1
+    },
+    {
+      "new_page": 2,
+      "previous_page": 2
+    },
+    {
+      "new_page": 3,
+      "previous_page": 3
+    },
+    {
+      "new_page": 4,
+      "previous_page": 4
+    },
+    {
+      "new_page": 5,
+      "previous_page": 5
+    },
+    {
+      "new_page": 6,
+      "previous_page": 6
+    },
+    {
+      "new_page": 7,
+      "previous_page": 7
+    },
+    {
+      "new_page": 8,
+      "previous_page": 8
+    },
+    {
+      "new_page": 9,
+      "previous_page": 9
+    },
+    {
+      "new_page": 10,
+      "previous_page": 10
+    },
+    {
+      "new_page": 11,
+      "previous_page": 11
+    },
+    {
+      "new_page": 12,
+      "previous_page": 12
+    },
+    {
+      "new_page": 13,
+      "previous_page": 13
+    },
+    {
+      "new_page": 14,
+      "previous_page": 14
+    },
+    {
+      "new_page": 15,
+      "previous_page": 15
+    },
+    {
+      "new_page": 16,
+      "previous_page": 16
+    },
+    {
+      "new_page": 17,
+      "previous_page": 17
+    },
+    {
+      "new_page": 19,
+      "previous_page": 19
+    },
+    {
+      "new_page": 20,
+      "previous_page": 20
+    },
+    {
+      "new_page": 21,
+      "previous_page": 21
+    },
+    {
+      "new_page": 22,
+      "previous_page": 22
+    },
+    {
+      "new_page": 23,
+      "previous_page": 23
+    },
+    {
+      "new_page": 28,
+      "previous_page": 28
+    },
+    {
+      "new_page": 30,
+      "previous_page": 31
+    },
+    {
+      "new_page": 31,
+      "previous_page": 32
+    },
+    {
+      "new_page": 32,
+      "previous_page": 33
+    },
+    {
+      "new_page": 33,
+      "previous_page": 34
+    },
+    {
+      "new_page": 34,
+      "previous_page": 35
+    },
+    {
+      "new_page": 36,
+      "previous_page": 37
+    },
+    {
+      "new_page": 37,
+      "previous_page": 38
+    },
+    {
+      "new_page": 38,
+      "previous_page": 39
+    },
+    {
+      "new_page": 39,
+      "previous_page": 40
+    },
+    {
+      "new_page": 50,
+      "previous_page": 52
+    },
+    {
+      "new_page": 51,
+      "previous_page": 53
+    },
+    {
+      "new_page": 55,
+      "previous_page": 57
+    },
+    {
+      "new_page": 56,
+      "previous_page": 58
+    },
+    {
+      "new_page": 57,
+      "previous_page": 59
+    },
+    {
+      "new_page": 58,
+      "previous_page": 60
+    },
+    {
+      "new_page": 59,
+      "previous_page": 61
+    },
+    {
+      "new_page": 64,
+      "previous_page": 66
+    },
+    {
+      "new_page": 66,
+      "previous_page": 68
+    },
+    {
+      "new_page": 67,
+      "previous_page": 69
+    },
+    {
+      "new_page": 68,
+      "previous_page": 70
+    },
+    {
+      "new_page": 70,
+      "previous_page": 72
+    },
+    {
+      "new_page": 71,
+      "previous_page": 73
+    },
+    {
+      "new_page": 73,
+      "previous_page": 75
+    },
+    {
+      "new_page": 75,
+      "previous_page": 78
+    },
+    {
+      "new_page": 76,
+      "previous_page": 79
+    },
+    {
+      "new_page": 77,
+      "previous_page": 80
+    },
+    {
+      "new_page": 79,
+      "previous_page": 82
+    },
+    {
+      "new_page": 92,
+      "previous_page": 96
+    },
+    {
+      "new_page": 93,
+      "previous_page": 97
+    },
+    {
+      "new_page": 94,
+      "previous_page": 98
+    },
+    {
+      "new_page": 95,
+      "previous_page": 99
+    },
+    {
+      "new_page": 96,
+      "previous_page": 100
+    },
+    {
+      "new_page": 97,
+      "previous_page": 101
+    },
+    {
+      "new_page": 98,
+      "previous_page": 102
+    },
+    {
+      "new_page": 99,
+      "previous_page": 103
+    },
+    {
+      "new_page": 100,
+      "previous_page": 104
+    },
+    {
+      "new_page": 101,
+      "previous_page": 105
+    },
+    {
+      "new_page": 102,
+      "previous_page": 106
+    },
+    {
+      "new_page": 103,
+      "previous_page": 107
+    },
+    {
+      "new_page": 104,
+      "previous_page": 108
+    },
+    {
+      "new_page": 105,
+      "previous_page": 109
+    },
+    {
+      "new_page": 106,
+      "previous_page": 110
+    },
+    {
+      "new_page": 107,
+      "previous_page": 111
+    },
+    {
+      "new_page": 108,
+      "previous_page": 112
+    },
+    {
+      "new_page": 109,
+      "previous_page": 113
+    },
+    {
+      "new_page": 110,
+      "previous_page": 114
+    },
+    {
+      "new_page": 111,
+      "previous_page": 115
+    }
+  ],
+  "method": "RGB body pixels at1x, clip y0..660 excluding footer"
+}

@@ -1,0 +1,826 @@
+PDF 1
+20
+25
+BauWatch 
+Crime Report 
+UK
+Delayed, Over Budget, 
+and Under Attack
+
+PDF 2
+Contents
+Executive
+Summary
+04
+06
+07
+08
+09
+10
+11
+12
+14
+16
+Critical Infrastructure 
+at Risk
+Construction Crime 
+Goes High-Tech
+Organised Networks 
+Drive Crime Sophistication
+Seasonal Crime 
+Peaks in Winter
+Crime-Related Delays 
+Impact Projects
+Construction Site Crime 
+Rising Across Europe
+Security Solutions and 
+Best Practices
+Survey 
+Results
+Conclusion & 
+Future Outlook
+ 2
+ 3
+BauWatch Crime Report 2025 – United Kingdom
+
+PDF 3
+"The findings of our report are a wake-up call for 
+the construction industry and policymakers. Crime 
+on construction sites is not a sporadic nuisance, 
+but a systematic challenge with serious economic 
+consequences. Innovative security solutions are 
+essential to protect projects, workers and future 
+infrastructure."
+- Mim Mogul, Managing Director UK & Ireland  
+The UK is facing a construction crisis, with 
+rising site crimes harming housing plans as well 
+as energy and industry transformation. Across 
+Europe, crime on construction sites is not only 
+on the rise, but is also becoming increasingly 
+professional, organised and sophisticated. The 
+economic impact is significant - recent statistics 
+from insurer Allianz Cornhill indicated that theft 
+alone costs the UK building industry £800M a year. 
+The BauWatch Crime Report 2025 now confirms 
+a dramatic change in the nature and impact of 
+criminal activities targeting construction projects. 
+At the same time, our study highlights a worrying 
+trend that goes far beyond individual thefts or 
+isolated incidents.
+In the UK, construction site crime is intensifying, 
+driven by a combination of organised crime and 
+a strong black market for stolen goods. 67% 
+of British respondents observed an increase in 
+construction site crime, 10 percentage points more 
+than the European average. Worryingly, nearly 
+half of respondents (49%) reported being offered 
+“protection”, a clear sign that criminal intimidation 
+is a growing threat.
+Despite these challenges, UK construction 
+companies are leading Europe in technology 
+adoption. 48% of UK respondents use fixed CCTV 
+systems,nearly double the European average, 
+and 31% employ CCTV towers. However, the 
+sophistication of criminal methods is also growing, 
+including the use of drones and cyberattacks, 
+which one in five respondents report as a growing 
+threat. Workers are particularly vulnerable - 33% 
+have had to personally replace stolen equipment, a 
+rate significantly above the EU average.
+The Europe-wide study provides an overview of 
+regional differences in construction crime rates. 
+Austria (71%) and France (71%) have the highest 
+increases. The United Kingdom is just behind with 
+67%, while Italy (44%) and Poland (34%) show 
+lower but notable growth rates. The data indicates 
+that construction site crime is a widespread issue, 
+necessitating coordinated action, information 
+sharing, and improved protective measures.
+Construction crime is becoming more sophisticated, 
+with 63% of respondents noting an increase in 
+professional tactics like hacking security systems, 
+using drones, or cloning digital access credentials. 
+Traditional security measures are now seen as 
+inadequate, highlighting the need for early security 
+planning, smarter surveillance technologies, and 
+targeted staff training.
+The survey highlights the impacts of theft and 
+vandalism. 42% said the project was delayed, 33% 
+reported stolen material needed replacement, with 
+33% saying employees had to buy replacements 
+themselves. Besides material losses, crime damages 
+a company‘s image (18%) and can lead to job losses   
+(23%). 
+Ultimately, the evidence is clear. Crime on 
+construction sites is no longer an isolated 
+operational risk but has become a significant 
+economic problem. It delays projects that are 
+crucial for housing construction, the modernisation 
+of critical infrastructure and energy transition. 
+Furthermore, it places a burden on public finances, 
+affects insurance costs and jeopardises strategic 
+goals in the areas of climate, connectivity and 
+digitalisation by delaying or threatening necessary 
+infrastructure projects.   
+The BauWatch Crime Report 2025 provides a 
+data-driven perspective on where, how, and 
+why construction-site crime is accelerating. By 
+translating hundreds of data points into clear, 
+actionable insights, the report empowers you to 
+harden sites, protect teams, and keep schedules 
+and budgets – on track. Every measure you adopt 
+today does more than secure a single project - it 
+keeps the homes, infrastructure, and clean-energy 
+systems that Europe’s future prosperity depends on 
+moving forward. In short, acting on these findings 
+safeguards your business and the economic, social, 
+and climate goals.
+Continental 
+challenge
+Increasingly sophisticated 
+techniques
+A threat to image, 
+wallet and security
+Why this study’s findings 
+are important for you
+Executive Summary 
+UK Construction Sites Combat Rising Crime with Technology 
+UK Study Findings
+•   Strong rise in site crime - 67% report an increase 
+(10 percentage points above EU average).
+•   Protection rackets - 49% offered “protection” 
+(+12pp) and 27% have admitted paying.
+•   Active stolen goods market - 31% say stolen 
+goods circulate “often” (+11pp).
+•   Personal financial impact - 33% of workers had to 
+pay for replacements (+15pp).
+•   Technology-based solutions - 48% use fixed 
+CCTV (+22pp above EU) and 31% use towers.
+One in four British construction projects delayed by 
+crime lose between three and four weeks, which 
+can have a significant financial impact not only 
+on the companies involved, but also on the entire 
+supply chain, public infrastructure programmes and 
+residential construction projects.
+The analysis conducted for this report identifies six 
+key trends shaping the current state of construction 
+site crime. These include -
+•   Focus on critical infrastructure 
+•   Criminals using advanced technologies
+•   Organised criminal networks involved
+•   Seasonal crime peaks in winter
+•   Economic impact of project delays due to crime
+•   Rising crime rates across Europe
+Each of these trends highlights that construction 
+site crime is no longer a niche problem limited to 
+individual construction companies or local incidents, 
+but a nation- and Europe-wide phenomenon with 
+significant economic implications.
+ 4
+ 5
+ 5
+BauWatch Crime Report 2025 – United Kingdom
+
+PDF 4
+
+
+Construction site crime is becoming a major economic issue, 
+especially for critical infrastructure projects. These include 
+energy systems such as power plants, electrical grids, and 
+renewable energy farms, telecommunications networks (such 
+as mobile towers and data centres), and essential services 
+like water supply, healthcare, and transportation. 
+Construction crime is becoming more advanced, with 63% 
+of British respondents noticing increasing sophistication. 
+A significant 84% of offenders are now seen as professional 
+or somewhat professional, using cutting-edge methods like:
+•	 Drones for surveillance (21%)
+•	 Hacking into security systems (28%)
+•	 Cloning or hacking of digital access credentials (22%)
+Traditional security measures are quickly becoming 
+outdated. That’s why it’s critical for construction 
+companies to act now. Without evolving security 
+approaches, you might risk falling behind in the battle 
+against increasingly tech-savvy criminals. As these 
+threats grow more sophisticated, companies must invest 
+in specialised expertise and advanced systems to protect 
+valuable assets, ensure project continuity, and prevent 
+costly delays. Adapting now is essential to stay ahead in 
+this fast-paced technological arms race.
+Critical Infrastructure 
+at Risk
+Construction 
+Crime Goes 
+High-Tech
+Four Reasons Why Construction Site 
+Crime Threatens Infrastructure Projects
+Rising Threat 
+Energy transition, 
+telecommunications, and public 
+works projects are increasingly 
+targeted by organised crime.
+Crime Surge
+Among all countries surveyed, 
+70.3% of respondents working 
+on critical infrastructure projects 
+report a rise in criminal activity, 
+particularly in remote locations like 
+wind farms and solar parks.
+Serious Impact 
+Small tools and power tools (52%), 
+copper (48%) and cable (33%) are 
+the most common goods stolen 
+at construction sites in the UK, 
+stalling energy and telecom projects 
+and slowing the push for climate 
+neutrality, reliable connectivity, and 
+modern infrastructure.
+Rising Costs 
+Security measures like reinforced 
+storage and 24/7 monitoring are 
+becoming essential, impacting 
+project budgets. 
+
+    6
+ 7
+BauWatch Crime Report 2025 – United Kingdom
+Delays on construction and infrastructure projects reverberate far beyond the job-site, slowing energy 
+transition, connectivity, and logistics networks. Safeguarding critical infrastructure is not just a construction 
+issue – it is a societal imperative. Therefore, it requires an integrated approach combining physical 
+and digital security, along with industry-wide cooperation. Failure to address this could impact future 
+development in critical areas for global competitiveness.
+
+PDF 5
+Around one in six construction site crimes across Europe is linked to organised crime.
+Construction firms are now grappling with tough decisions. Paying for protection doesn’t just inflate 
+project costs and trigger delays – it also funnels cash straight into organised-crime coffers, perpetuating 
+the very threat it is meant to avert. Beyond the immediate hit to timelines and budgets, such payments 
+expose companies to legal risk and raise serious ethical questions about enabling criminal enterprises. 
+Companies need to address this developing issue to avoid further implications.  
+Based on your experience of construction crime in recent years, 
+is it becoming more or less sophisticated?
+Construction crime isn’t just getting more sophisticated. Clear seasonal patterns 
+have emerged, with theft and break-ins spiking sharply during the colder months. 
+In fact, almost two thirds (64%) have reported a noticeable rise in criminal activity 
+during winter. The reasons are clear - longer dark hours  , emptier construction 
+sites around the holidays, and harsher weather make regular security patrols more 
+difficult. Criminals are aware of this and exploit it.
+At the same time, however, it is useful information for construction companies. 
+Instead of being caught off guard, firms can take proactive steps to strengthen 
+their defences when it matters most. Seasonal security adjustments are no longer 
+optional, they are a necessity. This means you should
+•	 Increase lighting and surveillance coverage as daylight hours shrink
+•	 Reinforce site access points and material storage areas
+•	 Schedule frequent security checks, especially over holiday periods
+•	 Launch preventive awareness campaigns before the high-risk season begins
+Longer nights are coming – every year without fail – and with them, heightened 
+risk. Companies that act early and adapt their security strategies to the season will 
+be far better positioned to protect their sites and their workers, minimize losses, 
+and keep projects on track.
+Organised crime is becoming a major driver of construction site crime. Nearly two thirds (60%) of the 
+increase in criminal activity is now driven by coordinated criminal operations and networks. In some 
+areas companies are facing serious pressure.
+Organised Networks Drive 
+Crime Sophistication
+Seasonal 
+Crime Peaks 
+in Winter
+
+49% 
+of respondents were asked 
+for “protection money“.
+63% 
+More [Net]
+32% 
+Neither more nor less
+6% 
+Less [Net] 
+27%
+acknowledged having made 
+payments for “protection”. 
+y
+18%
+45%
+5%
+1%
+Somewhat 
+less 
+Much more
+Somewhat more
+Much 
+less 
+ 8
+ 9
+
+PDF 6
+42%
+of projects experienced 
+delays due to theft or 
+security incidents
+1-4
+One to four weeks 
+are the typical delay 
+caused by crime
+33%
+of projects exceeded 
+their budgets due to 
+crime-related issues 
+Crime-Related Delays 
+Impact Projects
+Construction crime isn‘t just a nuisance, but it’s becoming a major economic burden. Four in ten 
+construction projects have faced delays due to theft or security incidents. On average, these setbacks 
+add one to four weeks to project timelines, creating a ripple effect that stretches far beyond the 
+construction site.
+Beyond direct losses, companies are also feeling the pressure through higher insurance premiums and 
+bigger investments in site security.
+The financial fallout doesn’t stop with construction firms. Delays and rising costs ultimately feed into higher 
+housing prices, steeper infrastructure expenses, and increased burdens for taxpayers. 
+For construction companies tackling site crime isn‘t just about protecting materials; it’s about protecting 
+project timelines, budgets, and long-term affordability. In the longer term, such measures will also benefit 
+society as a whole.
+
+Highest increases 
+reported in Austria (71%) 
+and France (71%)
+Among British respondents, the figure is 67%.
+Lower, but still significant, 
+rises seen in Italy (44%) 
+and Poland (34%) 
+Some regional insights
+Construction Crime Rising 
+Across Europe
+Construction crime is on the rise across nearly all of Europe. In fact, nearly 60% of respondents 
+reported an increase in criminal activity at their sites, making it clear that this is no isolated 
+problem. This continent-wide trend warrants the attention of all stakeholders.
+While the overall trend is consistent, the intensity of crime varies between countries, showing that local 
+factors still play a role. But one thing is clear - no country is immune.
+Tackling this growing threat requires more than isolated efforts. It calls for stronger cross-border 
+collaboration, sharing of best practices, and coordinated security strategies. As crime networks operate 
+internationally, the construction industry must respond with the same level of cooperation and agility
+In your opinion, has construction site crime increased or decreased in the past year?
+
+BauWatch Crime Report 2025 – United Kingdom
+ 10
+ 11
+TOTAL
+The 
+Netherlands Germany
+Spain
+France
+Great 
+Britain
+Italy
+Poland
+Ireland
+Belgium
+Austria
+Increased 
+[Net]
+57%     
+59%     
+64% ↑
+58%     
+71% ↑
+67% ↑
+44% ↓
+34% ↓
+52%        
+63%
+71%
+Significantly 
+increased
+18%     
+14%     
+25% ↑
+21%     
+29% ↑
+17%     
+11% ↓
+9% ↓
+11% ↓
+18%
+24%
+Somewhat 
+increased
+39%     
+45%     
+39%     
+37%     
+42%     
+50% ↑
+33% ↓
+25% ↓
+41%        
+45%
+47%
+Stayed 
+the same
+33%     
+33%     
+30%     
+34%     
+24% ↓
+27% ↓
+44% ↑
+39% ↑
+32%        
+33%
+27%
+Somewhat 
+decreased
+8%     
+7%     
+4% ↓
+6%     
+5%     
+5% ↓
+8%     
+19% ↑
+13% ↑
+4%
+2%
+Significantly 
+decreased
+3%     
+3%     
+1%     
+2%     
+0% ↓
+1%     
+4%     
+8% ↑
+4%        
+1%
+0%
+Decreased 
+[Net]
+10%     
+10%     
+5% ↓
+8%     
+5% ↓
+6% ↓
+12%     
+27% ↑
+17% 
+5% ↓
+2% ↓
+
+PDF 7
+1.
+2.
+3.
+4.
+5.
+6.
+1.	 Use visible deterrents early - Fences, camera 
+towers, warning signs.
+2.	Start with budget and project planning phase - 
+Don‘t leave it for later phases.  
+3.	Train and involve your teams - Awareness is your 
+first line of defense.
+4.	Stay flexible - Risk levels change with seasons, 
+project phases, and local events.
+5.	Communicate clearly - Update all site workers and 
+security partners when procedures change.
+6.	Invest wisely - Security costs upfront can save huge 
+sums down the road.
+Six Quick Tips for 
+Construction Site Security
+ 12
+ 13
+BauWatch Crime Report 2025 – United Kingdom
+Security Solutions 
+and Best Practices 
+Smarter Protection for Smarter Projects
+Keeping construction sites secure is easier and cheaper when you act early, plan smartly, 
+and combine strong physical deterrents with team awareness. From mobile camera towers to 
+flexible risk strategies, smart security makes all the difference.
+Protecting a construction site is much easier than dealing with the aftermath of a crime – 
+and visible deterrents remain among the most effective tools available. Our survey shows 
+that fixed CCTV systems (48%), CCTV towers (31%), warning signs (45%), and alarms 
+(41%) are the most frequently deployed measures to prevent theft and vandalism in the 
+UK. However, the recent rise in the sophistication of crimes, along with increased activity 
+from organised networks, highlights the need to elevate site security through flexible and 
+reliable solutions such as live monitoring systems and modern surveillance technologies.
+At BauWatch, we believe early security planning is essential. Every project should start 
+with a comprehensive risk assessment. Visible solutions like mobile camera towers and 
+sturdy perimeter fences can deter crime before it even happens. Meanwhile, emerging 
+technologies like smart surveillance systems, AI-driven analytics, and remote monitoring 
+provide powerful, cost-effective ways to protect valuable assets, even on tight budgets.
+Technology alone isn‘t enough though. Overall sensitisation for the topic, clear 
+communication and regular training   are essential for generating and maintaining   
+security awareness. Standardised site inductions, training materials, and safety briefings 
+ensure workers understand their roles in site protection. Simple practices like removing 
+keys from machinery, locking tools securely, and closing gates can prevent incidents. 
+Keeping security providers informed about on-site changes is also crucial to avoid false 
+alarms and vulnerabilities.
+
+Investing in security is investing in project success. Cutting corners to save money can 
+lead to much higher costs later, financially and reputationally. Construction security 
+should be seen as an insurance policy - it protects materials, equipment, and people. 
+And because every project is different, flexibility is key. Regular threat assessments, 
+tailored to project phases and local conditions (like upcoming holidays), are critical. A 
+simple traffic light system, highlighting phases of higher risk, helps teams stay alert 
+when it matters most.
+.
+
+E
+
+PDF 8
+Survey Results
+What, if any, are the most common items stolen from 
+construction sites in your experience?
+In which, if any, of the following ways has construction 
+crime impacted a project/work that you were doing? 
+If a project you worked on has been delayed by crime, 
+how long was it delayed by?
+How often do you experience the following types of 
+crime on sites you have worked on? - Theft
+In your experience, in which ways is construction crime 
+becoming more sophisticated?
+What, if any, security measures are used on sites that 
+you work on?
+In your experience of construction crime (theft and 
+trespassing), is it more or less frequent in autumn and 
+winter due to longer evenings?
+The BauWatch Crime Report 2025 survey was conducted in March 
+and April 2025 by market research institute OnePoll. The sample 
+consisted of 3,900 professionals in the construction industry. The 
+respondents come from Germany, Austria, Italy, Great Britain, Spain, 
+France, Belgium, Poland, the Netherlands and Ireland. The industries 
+covered are Commercial Construction (42%), Commercial Real-Estate 
+Management (6%), Energy (12%), Homebuilders and Renovation 
+(34%), Infrastructure (5%), Commercial Manager (9%) and Contracts 
+Manager (6%).
+BauWatch Crime Report 2025 – United Kingdom
+From Winter Peaks to Drone 
+Surveillance - Inside the Evolving 
+World of Construction Theft
+%
+Copper 
+48%
+Small tools, power tools and handheld 
+equipment (e.g., drills, levelling tools) 
+52%
+Cables and cable drums 
+33%
+Fuel 
+23%
+Steel
+21%
+Pipework/ducting 
+22%
+Personal effects (e.g., phones, PPE) 
+20%
+Timber
+22%
+Bricks or blocks, roofing tiles 
+26%
+Household appliances (e.g., boiler) and 
+fixtures and fittings (e.g., bath, curtain rails) 
+19%
+Heavy machinery (e.g., digger) 
+16%
+Vehicles (e.g., vans or cars) 
+12%
+Other 
+1%
+Not sure/none in particular
+0%
+N/A – I have never experienced this 
+3%
+%
+Material substitutions had to be made
+33%
+The project was delayed
+42%
+The project went over budget
+33%
+Workers had to replace their personal equipment
+33%
+Negatively impacted company reputation
+18%
+People lost work because of the incident
+23%
+People were harmed physically or 
+mentally by the crime
+16%
+The project was unable to continue
+14%
+None of the above
+4%
+ %
+More coordinated and organised operations 
+32%
+More stealthy tactics 
+37%
+Organised networks 
+28%
+Insider-assisted crimes 
+25%
+Diversified crimes 
+22%
+Hacking or disabling of security systems 
+28%
+Drones used for surveillance or reconnaissance 
+21%
+Cyberattacks on construction firms 
+20%
+Cloning or hacking of digital access credentials 
+22%
+AI-driven fraud or impersonation 
+13%
+GPS jamming 
+13%
+None of the above
+1%
+ %
+Perimeter fences 
+36%
+Alarms 
+41%
+Warning signs 
+45%
+On-site guards/security personnel 
+36%
+Fire safety 
+29%
+Floodlights 
+30%
+Fixed CCTV Systems 
+48%
+Access Control (e.g., pass card entry, 
+staffed gate for deliveries) 
+28%
+Equipment inventory checks 
+27%
+CCTV towers 
+31%
+Other types of camera surveillance 
+17%
+Hoarding systems 
+14%
+Keyholding Response 
+15%
+Digital inventory management 
+(e.g., recording deliveries virtually) 
+13%
+Guard dog 
+19%
+Trackers 
+17%
+PIDs/PODs modular systems 
+8%
+Drones 
+7%
+N/A – there are no security measures in 
+place on sites I have worked on 
+2%
+How often have you or other people on the sites you 
+work on been approached by people wanting to ‘sell 
+things off the back of a lorry‘ (stolen material) for the 
+project you’re working on?
+Have you ever been approached by individuals or groups 
+offering “protection” for your construction site?
+Very often
+Sometimes
+Never
+Often
+Rarely
+Yes, and we have paid 
+for protection 
+11%
+29%
+27%
+3%
+31%
+19%
+22%
+11%
+Yes, but we 
+refused to pay 
+Sometimes + Rarely [Net] 47%
+No, we have never been approached 47%
+Not sure / Prefer not to say 3%
+Very often + Often [Net] 42%
+Yes [Net] 49%
+Less than 
+a week
+1-2 weeks
+3-4 weeks 
+More than 
+a month
+Weekly
+Monthly 
+Every few 
+months
+Every 6 
+months
+Yearly
+26%
+28%
+20%
+8%
+43%
+18%
+10%
+15%
+16%
+Not sure/can't 
+remember
+2%
+Never
+15%
+Much more 
+frequent
+Somewhat 
+less 
+frequent
+Much 
+less 
+frequent
+16%
+3%
+48%
+1%
+Somewhat more 
+frequent
+Neither more nor less frequent 32%
+Less frequent [Net] 4% 
+More frequent [Net] 64%
+ 14
+ 15
+
+PDF 9
+UK construction firms are increasingly 
+investing in technology-driven security, but 
+they must stay ahead of both traditional and 
+digital threats. BauWatch’s mobile surveillance 
+and digital monitoring expertise can help 
+companies create resilient, future-proof 
+security strategies.
+The bottom line - addressing construction site 
+crime is not just about protecting property. It’s 
+about safeguarding the future of infrastructure 
+development. 
+Let’s build a secure future, together!
+Conclusion and 
+Future Outlook 
+The construction industry is facing an escalating challenge with construction site crime. 
+The trends discussed in our BauWatch Crime Report 2025 show that construction site 
+crime is not just a localised issue but a growing international problem that impacts the 
+entire industry. From increasingly sophisticated criminal activities to economic impacts 
+that extend far beyond the construction sector, the need for robust security measures 
+has never been more urgent.
+As criminals become more organised and their methods more advanced, construction 
+companies must act quickly to protect their projects and investments. Early planning 
+and robust security measures are key to reducing risks and ensuring project timelines 
+and budgets remain intact.
+Construction site crime in the UK is evolving rapidly, with several clear trends 
+emerging from the BauWatch Crime Report 2025 -
+In light of current trends, British construction companies are encouraged to:
+Early planning and appropriate security measures can significantly reduce risks. 
+•	 Increasing digital sophistication among criminals - Techniques such as 
+hacking security systems, cloning digital access credentials, and using 
+drones for surveillance are becoming more widespread.
+•	 Urban areas are hotspots - Britain has the highest concentration of 
+reported construction crimes in cities (52%), indicating criminals focus 
+more on urban areas than in other regions.
+•	 Persistent material theft - Copper and cable thefts remain especially 
+prevalent.
+•	
+Adopt a layered, technology-driven security approach, incorporating CCTV, access control, and smart 
+monitoring systems
+•	
+Provide staff training to help identify and respond appropriately to protection rackets and intimidation 
+tactics
+•	
+Collaborate with local authorities by sharing intelligence on black-market activity and stolen goods
+•	
+Support employees with insurance coverage or reimbursement policies to address theft-related losses
+Tackling the Growing Threat of 
+Construction Site Crime
+Trends and Challenges
+Security Measures and Best Practices
+BauWatch supports 
+Security Excellence
+BauWatch Crime Report 2025 – United Kingdom
+ 16
+ 17
+
+PDF 10
+The UK & Europe’s leading provider of temporary, powered & solar 
+CCTV solution hire. We take over all aspects of site security so that 
+our customers do not have to. 
+Our customised solutions combine highly visible video technology 
+that misses nothing on site, with an Alarm Response Centre that 
+acts quickly and competently anytime, day or night.
+Follow us on
+Get in touch with us now! 
+
+info-uk@bauwatch.com
++44 (0) 800 170 1014
+bauwatch.com
+
+Unseen Threats | 2025 Construction Crime Index

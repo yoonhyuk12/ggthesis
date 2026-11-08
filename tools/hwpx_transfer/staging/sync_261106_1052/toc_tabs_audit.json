@@ -1,0 +1,38 @@
+{
+  "changed": [
+    {
+      "unit_index": 22,
+      "title": "제 1 항 조기인지",
+      "old_page": "19",
+      "tab_width": 26785
+    },
+    {
+      "unit_index": 23,
+      "title": "제 2 항 대응 신속성",
+      "old_page": "20",
+      "tab_width": 25356
+    },
+    {
+      "unit_index": 24,
+      "title": "제 3 항 원격 파악",
+      "old_page": "20",
+      "tab_width": 26456
+    },
+    {
+      "unit_index": 25,
+      "title": "제 4 항 순찰부담 경감",
+      "old_page": "21",
+      "tab_width": 24256
+    },
+    {
+      "unit_index": 26,
+      "title": "제 5 항 위험 통제력",
+      "old_page": "21",
+      "tab_width": 25356
+    }
+  ],
+  "text_unchanged": true,
+  "before_tab_entries": 112,
+  "after_tab_entries": 117,
+  "output": "C:/Users/User/Documents/2026 개발관련/03. 경기대 논문/tools/hwpx_transfer/staging/sync_261106_1052/toc_restored.hwpx"
+}

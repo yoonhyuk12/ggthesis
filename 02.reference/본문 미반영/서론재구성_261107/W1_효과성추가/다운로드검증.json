@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002795730",
+    "status": 200,
+    "type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4021587",
+    "status": 403,
+    "type": null
+  },
+  {
+    "file": "KAIST_스마트건설안전발표.pdf",
+    "bytes": 6319578,
+    "sha256": "992ef3222060261f33ec4fd7f5d025c9e686359154647e500107485f07a062ee"
+  },
+  {
+    "file": "맹인영외2021_실효성제고.pdf",
+    "bytes": 860410,
+    "sha256": "0062e77243584a5e5d80372ec8273c869fcb6f324826bed3a78df542ce0bac05"
+  }
+]

@@ -122,7 +122,7 @@ python tools/hwpx_transfer/verify_replace.py base.hwpx out.hwpx <기대 변경 �
 
 ### 6단계 — 산출
 
-검증 전부 통과 후에만 `00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한다. 내용 수정이라면 그 전에 해당 논문의 MD가 먼저 수정돼 있어야 한다. 레이아웃만 수정했다면 MD는 유지한다.
+검증 전부 통과 후에만 `00. hwpx/YYMMDD_HHMM_논문명.hwpx`로 복사한다. **같은 파일을 `tools/hwpx_transfer/staging/hwpx_snapshots/`에도 같은 이름으로 복사한다** — 사용자가 한글에서 직접 고친 뒤 MD 역동기화의 기준이 된다([역동기화 규칙](../../rules/hwpx-user-edit-backsync.md)). 내용 수정이라면 그 전에 해당 논문의 MD가 먼저 수정돼 있어야 한다. 레이아웃만 수정했다면 MD는 유지한다.
 
 ## 검증 루프 (필수 — 이거 없이 "완료" 금지)
 

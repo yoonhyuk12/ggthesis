@@ -1,0 +1,21 @@
+{
+  "stamp": "261106_0245",
+  "workdir": "tools/hwpx_transfer/staging/full_sync_261106_0245",
+  "base": "00. hwpx/261105_1444_경기공학_건축안전_윤혁_논문.hwpx",
+  "sha256": "4e43d221f6380903e79721e610311fd668ed337982d5965bf797b81a9cb3b75b",
+  "snapshot_sha256": "4e43d221f6380903e79721e610311fd668ed337982d5965bf797b81a9cb3b75b",
+  "md_sha256": {
+    "01.docs\\00_목차.md": "a796087627244494dd1be31ea0f5d0945ce69fde87be68b870e3298f3652758e",
+    "01.docs\\01_서론.md": "85afe78a7903fb254d42a145c9ddb93289a70ddb19aea722012f9c0b59d0aaff",
+    "01.docs\\02_이론적배경.md": "6b91fdb8f92af4e790155b697f7eeb16bafaa45534d75a4a732c6ec8410e54fe",
+    "01.docs\\03_시스템개발.md": "3f8ee832fabf6b8a3edcc0d5246d7d1c98cd171c731155110d7f90c967a948be",
+    "01.docs\\04_연구설계및실증분석.md": "7662a5d891fac2beb47c68604dc7348e91d2c4afec9d92ca2c6c8b22a381c697",
+    "01.docs\\05_논의및결론.md": "7ce4ccb4defaa42f82c35dcdc87a2aa6a2741ec45edae0dab4bd06b6aaf2769d",
+    "01.docs\\07_참조번호목록.md": "393555fff0887bece3be69a09603d160a24ddf39a004b958fef062fb3446eb96",
+    "01.docs\\08_자모비 결과 넣을부분.md": "ff0d35a27604cb64ace6bc89e1e8afb9cdde703c71e325f436907b9168fb7365",
+    "01.docs\\감사의_글.md": "b1003e00955ad70e7bcd89ae7aca9b5247f29d099fb32a918c907748bc03af79",
+    "01.docs\\부록1_설문지_양식.md": "ceaffa7b87db496257f0d66f5f951d250fd51fb72d33db41e9b03f9a5c0f0498",
+    "01.docs\\부록2_설문항목_근거매핑.md": "370bff443557db1aeb655048535927d126f99a5ab03a418379d039bb28c01948",
+    "01.docs\\설문항목_작업이력.md": "3d7a97ac40c3b128eb51516c6314c36d9a84e5c8ad51cda7a32b2d87116a2bd9"
+  }
+}

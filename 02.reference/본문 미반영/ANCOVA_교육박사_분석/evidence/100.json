@@ -1,0 +1,545 @@
+{
+  "id": "100",
+  "bibliography": {
+    "author": "김서연",
+    "year": 2019,
+    "title": "고등학생의 인성함양을 위한 용서프로그램 개발 및 효과성 분석",
+    "university": "건국대학교 대학원 교육학과",
+    "degree": "박사",
+    "file": "02.reference/100. 김서연(2019)_고등학생의 인성함양을 위한 용서프로그램 개발 및 효과성 분석.pdf"
+  },
+  "extraction": {
+    "tool": "Kordoc",
+    "version": "4.24.2",
+    "command": "node .claude/kordoc/dist/cli.js \"02.reference/100. 김서연(2019)_고등학생의 인성함양을 위한 용서프로그램 개발 및 효과성 분석.pdf\" --no-images --script-tags -o \"02.reference/ANCOVA_교육박사_분석/kordoc/100.md\"",
+    "files": [
+      "kordoc/100.md",
+      "kordoc/100.log"
+    ],
+    "warnings": [
+      "CLI 전체 페이지 OK; 통계표는 Kordoc 추출 후 PDF 텍스트 및 렌더로 교차 확인",
+      "문서 전역 키워드 검색은 미보고를 확정하지 않으므로 검토 범위에서 보고 확인 못함으로 표현"
+    ]
+  },
+  "design": {
+    "type": "학급 단위 비무작위 실험·통제집단 사전-사후-추후 비교",
+    "intervention": "한국사 수업에 용서프로그램 9차시 적용; 통제는 한국사 교과서·부교재 수업",
+    "timing": "2018년 5월 사전, 6월 중순 사후, 종료 4주 뒤 7월 초·중순 추후",
+    "analysis": "각 결과의 사전점수를 통제한 사후 및 추후 ANCOVA를 각각 실시",
+    "evidence_pages": {
+      "pdf": [
+        64,
+        77,
+        78
+      ],
+      "printed": [
+        52,
+        65,
+        66
+      ]
+    }
+  },
+  "sample": {
+    "initial": 232,
+    "analyzed": 189,
+    "excluded_experimental": 22,
+    "excluded_control": 21,
+    "exclusions": "체육특기생·특수반, 실험 1회 이상 미참여, 설문 불성실 등",
+    "pdf_page": 64,
+    "printed_page": 52
+  },
+  "groups": [
+    {
+      "name": "실험",
+      "n": 94,
+      "classes": 4,
+      "male": 50,
+      "female": 44,
+      "teacher": "연구자"
+    },
+    {
+      "name": "통제",
+      "n": 95,
+      "classes": 4,
+      "male": 47,
+      "female": 48,
+      "teacher": "동료교사"
+    }
+  ],
+  "outcomes": [
+    "용서",
+    "통합적 인성",
+    "도덕적 정체성",
+    "희망",
+    "삶의 의미",
+    "대인관계조화",
+    "사회적 유대감"
+  ],
+  "covariates": [
+    "분석하는 종속변수의 사전점수 1개"
+  ],
+  "software": {
+    "name": "SPSS",
+    "version": "21.0",
+    "pdf_page": 78,
+    "printed_page": 66
+  },
+  "assumptions": [
+    {
+      "item": "회귀기울기 동질성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p66 및 결과 p82–90 검토; 사전 동질성 t검정이 아래 가정 점검을 대체하지는 않음",
+      "pdf_page": [
+        78,
+        94,
+        102
+      ],
+      "printed_page": [
+        66,
+        82,
+        90
+      ]
+    },
+    {
+      "item": "선형성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p66 및 결과 p82–90 검토; 사전 동질성 t검정이 아래 가정 점검을 대체하지는 않음",
+      "pdf_page": [
+        78,
+        94,
+        102
+      ],
+      "printed_page": [
+        66,
+        82,
+        90
+      ]
+    },
+    {
+      "item": "잔차 정규성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p66 및 결과 p82–90 검토; 사전 동질성 t검정이 아래 가정 점검을 대체하지는 않음",
+      "pdf_page": [
+        78,
+        94,
+        102
+      ],
+      "printed_page": [
+        66,
+        82,
+        90
+      ]
+    },
+    {
+      "item": "등분산성",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p66 및 결과 p82–90 검토; 사전 동질성 t검정이 아래 가정 점검을 대체하지는 않음",
+      "pdf_page": [
+        78,
+        94,
+        102
+      ],
+      "printed_page": [
+        66,
+        82,
+        90
+      ]
+    },
+    {
+      "item": "영향점",
+      "status": "검토 범위에서 보고 확인 못함",
+      "evidence": "방법 p66 및 결과 p82–90 검토; 사전 동질성 t검정이 아래 가정 점검을 대체하지는 않음",
+      "pdf_page": [
+        78,
+        94,
+        102
+      ],
+      "printed_page": [
+        66,
+        82,
+        90
+      ]
+    },
+    {
+      "item": "사전 집단 동질성",
+      "status": "보고",
+      "evidence": "7개 결과 사전 t검정; 사회적 유대감 t=2.015,p=.045로 이를 ANCOVA 선택 이유로 기술",
+      "pdf_page": 95,
+      "printed_page": 83
+    },
+    {
+      "item": "관측 독립성/학급 군집",
+      "status": "군집 보정 검토 범위에서 보고 확인 못함",
+      "evidence": "8개 학급, 교사가 집단과 일치; 표Ⅴ-3 오차df186은 개인 단위 ANCOVA",
+      "pdf_page": [
+        64,
+        95
+      ],
+      "printed_page": [
+        52,
+        83
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "number": "Ⅴ-1",
+      "title": "주요 변인의 집단별 평균과 표준편차",
+      "columns": [
+        "변수",
+        "집단(N)",
+        "사전 M(SD)",
+        "사후 M(SD)",
+        "추후 M(SD)"
+      ],
+      "pdf_page": 94,
+      "printed_page": 82,
+      "key_values": {
+        "용서_실험": [
+          "36.66(6.64)",
+          "38.83(6.58)",
+          "39.52(6.21)"
+        ],
+        "용서_통제": [
+          "35.47(6.29)",
+          "34.63(5.91)",
+          "35.01(6.07)"
+        ]
+      }
+    },
+    {
+      "number": "Ⅴ-2",
+      "title": "집단 간 동질성 검사",
+      "columns": [
+        "변수",
+        "집단별 M",
+        "집단별 SD",
+        "t",
+        "p"
+      ],
+      "pdf_page": 95,
+      "printed_page": 83,
+      "key_values": {
+        "사회적유대감_t": 2.015,
+        "p": ".045"
+      }
+    },
+    {
+      "number": "Ⅴ-3",
+      "title": "용서의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 95,
+      "printed_page": 83,
+      "key_values": {
+        "group_post": {
+          "F": 31.883,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.146
+        },
+        "group_followup": {
+          "F": 33.272,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.152
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    },
+    {
+      "number": "Ⅴ-4",
+      "title": "통합적 인성의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 96,
+      "printed_page": 84,
+      "key_values": {
+        "group_post": {
+          "F": 19.031,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.093
+        },
+        "group_followup": {
+          "F": 13.632,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.068
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    },
+    {
+      "number": "Ⅴ-5",
+      "title": "도덕적 정체성의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 97,
+      "printed_page": 85,
+      "key_values": {
+        "group_post": {
+          "F": 20.36,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.099
+        },
+        "group_followup": {
+          "F": 43.598,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.19
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    },
+    {
+      "number": "Ⅴ-6",
+      "title": "희망의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 98,
+      "printed_page": 86,
+      "key_values": {
+        "group_post": {
+          "F": 5.76,
+          "p_as_printed": ".017",
+          "partial_eta_squared": 0.03
+        },
+        "group_followup": {
+          "F": 3.982,
+          "p_as_printed": ".047",
+          "partial_eta_squared": 0.021
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    },
+    {
+      "number": "Ⅴ-7",
+      "title": "삶의 의미의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 99,
+      "printed_page": 87,
+      "key_values": {
+        "group_post": {
+          "F": 8.898,
+          "p_as_printed": ".003",
+          "partial_eta_squared": 0.046
+        },
+        "group_followup": {
+          "F": 7.005,
+          "p_as_printed": ".009",
+          "partial_eta_squared": 0.036
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    },
+    {
+      "number": "Ⅴ-8",
+      "title": "대인관계조화의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 100,
+      "printed_page": 88,
+      "key_values": {
+        "group_post": {
+          "F": 8.54,
+          "p_as_printed": ".004",
+          "partial_eta_squared": 0.044
+        },
+        "group_followup": {
+          "F": 8.335,
+          "p_as_printed": ".004",
+          "partial_eta_squared": 0.043
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    },
+    {
+      "number": "Ⅴ-9",
+      "title": "사회적 유대감의 공분산분석 결과",
+      "columns": [
+        "구분(사후/추후)",
+        "변량원(공변인/집단/오차)",
+        "제곱합",
+        "자유도",
+        "평균제곱",
+        "F",
+        "p",
+        "partial η²"
+      ],
+      "pdf_page": 101,
+      "printed_page": 89,
+      "key_values": {
+        "group_post": {
+          "F": 6.242,
+          "p_as_printed": ".013",
+          "partial_eta_squared": 0.032
+        },
+        "group_followup": {
+          "F": 12.673,
+          "p_as_printed": ".000",
+          "partial_eta_squared": 0.064
+        },
+        "usual_df": [
+          1,
+          186
+        ],
+        "note": "원문 p=.000은 0이라는 의미가 아니며 인용시 p<.001로 표기. 표Ⅴ-6 df 오기는 limitations 참조"
+      }
+    }
+  ],
+  "results": [
+    "원문은 7개 결과 모두 사후·추후 실험집단 우위를 보고",
+    "표Ⅴ-3 용서 사후 F(1,186)=31.883,p<.001,부분η²=.146; 추후 F=33.272,부분η²=.152",
+    "희망 추후 p=.047처럼 경계선 결과도 있으나 다중검정 보정은 검토 범위에서 보고 확인 못함"
+  ],
+  "reporting_strengths": [
+    "공변인·집단·오차를 구분한 SS/df/MS/F/p/부분η² 표의 구조",
+    "사전·사후·추후 원평균을 먼저 제시하고 변인별 가설검정과 변화 그래프를 배치",
+    "표본 제외 사유와 시점, 교사 역할 명시"
+  ],
+  "limitations": [
+    {
+      "type": "분석 보고",
+      "detail": "조정평균/차이의 CI, Type III 명시, 가정검정, 다중검정 보정은 검토 범위에서 보고 확인 못함"
+    },
+    {
+      "type": "설계",
+      "detail": "집단별 교사가 달라 프로그램과 교사 효과 분리가 어려움; 학급 군집 보정 보고 확인 못함; 사전 동질성 유의성에 따른 ANCOVA 선택 논리를 모방하지 말 것"
+    },
+    {
+      "type": "원문 수치 불일치(시각확인)",
+      "detail": "표Ⅴ-6 추후 오차df1864.00 기재. 다른 모형은186이며 SSE1782.623/MS9.584≈186이므로 오타 추정. 재분석 없이 정답 확정하지 않음",
+      "pdf_page": 98,
+      "printed_page": 86
+    },
+    {
+      "type": "원문 수치 불일치(시각확인)",
+      "detail": "표Ⅴ-5 추후 SSE3143.606/186≈16.901인데 MS17.833 기재",
+      "pdf_page": 97,
+      "printed_page": 85
+    },
+    {
+      "type": "원문 수치 불일치(시각확인)",
+      "detail": "표Ⅴ-8 추후 집단MS1150.781/오차MS119.632≈9.619인데 F8.335 기재",
+      "pdf_page": 100,
+      "printed_page": 88
+    }
+  ],
+  "applicability_to_ch4": {
+    "priority": "부분η² 포함 ANCOVA 검정표 구조 참고에 적합. 수치와 분석절차의 모범사례로 그대로 채택하기는 어려움",
+    "adopt": [
+      "SS/df/MS/F/p/부분η² 열 배열",
+      "기술통계→공변량 명시→집단 검정의 논리적 순서"
+    ],
+    "do_not_adopt": [
+      "현재 횡단비교를 사전-사후 프로그램 향상으로 표현",
+      "사전 t검정 유의성에 따라 ANCOVA 채택",
+      "p=.000 표기 및 원문 수치 오기"
+    ],
+    "current_manuscript": "4장 제5·7절의 73명, 나이·경력+4범주 조정, jamovi TypeIII/EMM/CI/부분η²/Holm/강건성은 유지. 이 논문에 없다고 해당 보고를 줄일 이유 없음"
+  },
+  "verification": {
+    "pdf_pages": 167,
+    "pdf_page_basis": "1-based",
+    "mapping": "본문 PDF쪽 = 인쇄쪽 + 12",
+    "sha256": "825b281036984a0a79630ddcf502328919cc7d4c08bc1ffbc2b002d27e64736e",
+    "method": "Kordoc 주 추출; PyMuPDF는 쪽번호·대표 수치 대조와 렌더 보조만 사용",
+    "keyword_search": [
+      "기울기",
+      "Levene",
+      "Shapiro",
+      "등분산",
+      "정규성",
+      "선형성",
+      "Holm",
+      "Bonferroni",
+      "신뢰구간"
+    ],
+    "keyword_search_result": "양 논문에서 위 키워드 0회; 방법·결과 절 직접 독해 병행",
+    "visual_checked": [
+      "100_pdf95.png",
+      "100_pdf97.png",
+      "100_pdf98.png",
+      "100_pdf100.png"
+    ],
+    "anchor_pages": [
+      {
+        "pdf": 78,
+        "printed": 66
+      },
+      {
+        "pdf": 95,
+        "printed": 83
+      }
+    ]
+  }
+}

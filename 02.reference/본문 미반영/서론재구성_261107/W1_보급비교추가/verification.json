@@ -1,0 +1,30 @@
+[
+  {
+    "file": "104.pdf",
+    "pages": 20,
+    "bytes": 2064274,
+    "sha256": "673b65a83867b4c43bc32ebf2142b5e2995b9c9efb8604159d3ee0903ca5ec7a",
+    "opened": true
+  },
+  {
+    "file": "1431.pdf",
+    "pages": 14,
+    "bytes": 15014054,
+    "sha256": "ec9b88d1d9aaa68188239b2eccaa42270841f5b3d9f3a769f2cc9ca7a11871c5",
+    "opened": true
+  },
+  {
+    "file": "5203.pdf",
+    "pages": 24,
+    "bytes": 10888830,
+    "sha256": "09330c8a01a7c5cb9df394767bf950f527ebace1a6be440ae558f102ccbef60c",
+    "opened": true
+  },
+  {
+    "file": "BauWatch_2025_UK.pdf",
+    "pages": 10,
+    "bytes": 4622947,
+    "sha256": "85246ecd95383b4e3aea5c4766ad4e971f5026267ea9d8a1409d588be584ca31",
+    "opened": true
+  }
+]

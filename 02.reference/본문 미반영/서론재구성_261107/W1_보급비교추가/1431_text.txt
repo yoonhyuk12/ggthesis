@@ -1,0 +1,1099 @@
+PDF 1
+Citation: Kim, T.; Lim, H.; Lee, M.;
+Cha, M.; Cho, K. Performance-
+Inﬂuencing Factors and Causal
+Relationships of Construction
+Projects Using Smart Technology.
+Buildings 2023, 13, 1431. https://
+doi.org/10.3390/buildings13061431
+Academic Editor: Irem Dikmen
+Received: 3 May 2023
+Revised: 26 May 2023
+Accepted: 28 May 2023
+Published: 31 May 2023
+Copyright:
+© 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed
+under
+the
+terms
+and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+buildings
+Article
+Performance-Inﬂuencing Factors and Causal Relationships of
+Construction Projects Using Smart Technology
+Taehoon Kim 1, Hyunsu Lim 2,*, Myungdo Lee 3, Minsu Cha 4 and Kyuman Cho 1
+1
+Department of Architectural Engineering, Chosun University, Gwangju 61452, Republic of Korea;
+thoonkim@chosun.ac.kr (T.K.); cho129@chosun.ac.kr (K.C.)
+2
+Department of Architecture, Soonchunhyang University, Asan 31538, Republic of Korea
+3
+R&D Center, Yunwoo Technologies Co., Ltd., Seoul 05854, Republic of Korea; md.lee@yunwoo.co.kr
+4
+School of Civil, Environmental and Architectural Engineering, Korea University,
+Seoul 02841, Republic of Korea; mscha@korea.ac.kr
+*
+Correspondence: hslim@sch.ac.kr; Tel.: +82-41-530-1539
+Abstract: With the advent of the Fourth Industrial Revolution, construction technology innovation
+through high-tech convergence is actively taking place, and the smart construction technology
+market is growing rapidly. However, as it focuses on the use of individual technologies, research
+into the factors that have a major impact on their intended effect is insufﬁcient. Thus, this study
+investigates these factors and their mutual inﬂuences from various perspectives to promote the use
+of smart technology to improve construction projects. Ten performance-inﬂuencing factors were
+derived from four perspectives based on the balanced scorecard technique. In addition, based on a
+survey of projects that use smart technology, the current status of its application and performance
+characteristics were analyzed, and a causal relationship model among the factors was presented. This
+study provides a foundation for identifying major areas for the efﬁcient use of smart technology
+and performance measurement, and it will contribute to the introduction and activation of smart
+construction technology.
+Keywords:
+smart technology; project performance; inﬂuencing factors; causal relationship;
+balanced scorecard
+1. Introduction
+Recently, the construction industry has been promoting productivity innovation and
+a paradigm shift toward knowledge and high-tech industries through the use of smart
+technology, which combines building information modeling (BIM), the Internet of things
+(IoT), big data, and artiﬁcial intelligence (AI), with traditional construction technologies [1].
+According to MGI [2], the annual productivity growth rate in the construction industry over
+the past 20 years (1995–2015) has been only 1%, which is very low compared with the 3.6%
+average for the total manufacturing industry. The productivity gap is also rapidly widening,
+partly because the construction industry has the lowest level of digital innovation. If it
+were raised to the level in the manufacturing industry, productivity would be expected
+to increase by 25%. In addition, it would be expected to cause positive ripple effects
+such as cost and disaster reduction and increased added value. KPMG [3] investigated
+the application ratio of smart construction technology between the top (20%), central
+(60%), and bottom (20%) groups of construction and engineering companies and found a
+signiﬁcant difference in the ratio of application among these groups, a gap that is expected
+to widen within the next 5–10 years. In other words, the use of smart technology based on
+digital innovation will have a signiﬁcant impact on the competitiveness and survival of
+construction companies in the near future.
+Against this background, major countries around the world are combining smart
+construction technology based on digital innovation to improve economic structures, create
+Buildings 2023, 13, 1431. https://doi.org/10.3390/buildings13061431
+https://www.mdpi.com/journal/buildings
+
+PDF 2
+Buildings 2023, 13, 1431
+2 of 14
+jobs, and enhance industrial competitiveness. Representative government-led policies in-
+clude Construction 2025 in the United Kingdom, I-Construction in Japan, and Construction
+21 in Singapore. In addition, a speciﬁc roadmap to develop and apply smart construction
+technology according to construction life-cycle stages was presented in Korea in 2018 [1].
+Meanwhile, in the United States, the private sector is pursuing ecosystem changes and
+innovation in the construction industry by revitalizing smart construction startups. As a
+result, attempts and related research are actively being conducted to incorporate smart tech-
+nology into existing production processes with active participation from the government
+and the private sector.
+A high-tech-based construction environment can serve as a driving force for dramati-
+cally improved construction performance, but to have the intended effect, organizations,
+processes, and infrastructure must be established. In other words, the effect is determined
+by the ability of the overall system to use technology in the ﬁeld effectively rather than the
+by the type of technology applied. However, the most existing research related to smart
+construction technology focuses on applying and analyzing more efﬁcient methods and
+frameworks [4–8]. In other words, research into factors that have a major impact on the
+intended effect of a speciﬁc technology is insufﬁcient, and research into identifying and
+evaluating their relationship to project performance is also lacking.
+Therefore, this study aims to investigate the major factors that affect the performance
+of construction projects using smart construction technology and analyze the causal rela-
+tionship among these factors. The performance-inﬂuencing factors in this study, except
+for laws and policies, were limited to those that can be controlled and measured at the
+organizational level. These factors were constructed based on the balanced scorecard (BSC)
+methodology, which is widely used as a conceptual model for measuring corporate perfor-
+mance. The results of this study will contribute to providing a basis for the establishment
+of an organizational system and performance evaluation for the efﬁcient use of smart
+construction technology.
+2. Methods
+The procedure for this study is shown in Figure 1. In the ﬁrst step, we reviewed the use
+of smart technology in construction projects to demonstrate the need for this study. Next,
+we investigated studies on success factors and performance impacts after smart technology
+had been introduced. Finally, using the BSC technique, the perspectives and performance-
+inﬂuencing factors of construction projects using smart technology were constructed based
+on reviews and expert interviews.
+In the second step, a four-part questionnaire survey, as shown in Table 1, was con-
+ducted to analyze the adequacy of the performance-inﬂuencing factors and their causal
+relationships. The questionnaire was distributed to the managers of engineering and
+construction companies through e-mail. In the survey, only managers with experience
+in carrying out smart technology-based projects were required to respond to the items
+in Parts 3 and 4.
+First, the importance of each perspective and factor (Part 2) was surveyed, and the
+adequacy of the factors was investigated using reliability and factor analysis and the
+Student’s t-test. Next, in Part 3, information on a representative project was investigated to
+provide an overview of the current use of smart technology and the level of application
+between top- and lower-ranked companies. Finally, satisfaction related to the inﬂuencing
+factors (Part 4) was measured using a 5-point Likert scale. Using statistical analysis,
+including the Student’s t-test and regression analysis, we identiﬁed (1) deﬁciencies in the
+construction projects with smart technology, (2) satisfaction differences among the company
+groups and (3) causal relationships among the factors.
+
+PDF 3
+Buildings 2023, 13, 1431
+3 of 14
+Figure 1. Research procedure.
+Table 1. Questionnaire conﬁguration.
+Section
+Contents
+Remarks
+Part 1
+Basic information of respondents
+- company name
+- work experience in construction
+- experience in smart technology-based projects
+Part 2
+Importance of perspectives and factors in Table 3
+5-point Likert scale
+(from one indicating “not important at
+all” to ﬁve meaning “very important”)
+Part 3
+Basic information on a representative project with
+smart technology
+- building use
+- construction cost
+- applied smart technology
+- management area using smart technology
+Part 4
+Satisfaction related to the inﬂuencing factors in the
+representative project
+5-point Likert scale
+(from one indicating “not satisﬁed at all”
+to ﬁve meaning “very satisﬁed”)
+3. Literature Review
+3.1. Smart Technology in Construction Projects
+Smart technologies are widely applied in all stages of construction production as
+shown in Table 2. They include (1) design automation and legal review using BIM and
+AI in the design stage [9–14], (2) real-time monitoring of construction resources using IoT
+
+PDF 4
+Buildings 2023, 13, 1431
+4 of 14
+and drones and construction automation through intelligent construction equipment and
+robots in the construction stage [15–23], and (3) monitoring and operation optimization
+using sensing and big data analytics in the operation stage [24–29]. According to a sciento-
+metric review of smart construction sites in construction engineering and management by
+Liu et al. [30], the focus gradually shifted from traditional project performance-related
+concerns, such as hybrid information and performance evaluation, to practical applications
+of smart technologies in worker and construction site-associated areas.
+Table 2. Research on smart technology use by construction stage.
+Stage
+Objective
+Application Technology
+References
+Design
+Design
+automation
+Develop a generative BIM prototype for
+conceptual design automation
+BIM, AI, genetic algorithm
+[9]
+Propose a conceptual framework for the
+generative BIM platform
+BIM, generative design
+[10]
+Examine the applicability of the generative
+design concept in the building layout
+BIM, visual programming
+[11]
+Propose an integrated framework for the
+automated design generation of a
+modular house
+BIM, coupled generative adversarial
+network (CoGAN)
+[12]
+Automated
+code checking
+Propose a fully automated semantic NLP-based
+automated compliance-checking system
+BIM, semantic NLP algorithm, EXPRESS data
+processing algorithm, semantic-based logic
+reasoning algorithm
+[13]
+Propose a semantic approach to automate the
+whole automated compliance-checking process
+BIM, semantic NLP algorithm, ifcOWL,
+automatic SPARQL generation
+[14]
+Construction
+Real-time
+monitoring
+UAV system for autonomous mobile 3D
+mapping data acquisition in surveying
+earthworks project
+Drone, laser scanning, autonomous
+vision-based infrastructure sensing
+[15]
+Autonomous inspection of slope movement
+using drones
+Drone, time series residual analysis
+[16]
+Propose a real-time proactive warning system
+with equipment proximity sensing technology
+Wireless radio frequency remote sensing,
+sensor actuation
+[17]
+Develop a smartphone-based data collection
+system for concrete temperature monitoring
+Smartphone, temperature sensor node, Zigbee
+[18]
+Propose a mobile robotic platform for
+autonomous outdoor navigation
+Robot, monocular SLAM, image
+segmentation technique
+[19]
+Construction
+automation
+Develop an autonomous location-aware mobile
+robot for brickwork
+Robot, real-world sensor, mesh
+relaxation algorithm
+[20]
+Propose 3D machine vision metrology for
+mobile construction robots
+Robot manipulator, BIM, 3D scan, visual
+marker-based metrology,
+[21]
+Propose an autonomous mobile robotic system
+for the surveillance of indoor environments
+Robot, multi-sensor platform comprising a
+monocular camera, laser scanner, RFID
+[22]
+Propose a framework of model-driven
+acquisition and analytics for automated
+construction progress monitoring
+Drone, 4D BIM, appearance-based assessment
+[23]
+Operation
+Monitoring
+Propose a robot-aided tunnel inspection and
+maintenance system
+Robot, lightweight robotic tool, vision, and
+laser telemeter
+[24]
+Propose a cloud computing and big data
+processing architecture for real-time
+energy monitoring
+Big data, cloud computing, smart meter, and
+environmental sensor
+[25]
+Propose a building energy management control
+system with real-time adjustments
+AI, IoT, reinforcement learning formulation
+[26]
+Operation
+optimization
+Introduce moving from BIM to digital twins for
+operation and maintenance
+BIM, digital twin
+[27]
+Propose a framework for implementing
+predictive building installation maintenance
+IoT, machine learning, building automation
+system (BAS)
+[28]
+Highlight the concept of big data analytics in
+predictive maintenance
+Big data, vector autoregression,
+Granger causality
+[29]
+
+PDF 5
+Buildings 2023, 13, 1431
+5 of 14
+Despite ongoing practical efforts to use smart technology in construction engineering
+and management, organizational changes and efforts in various aspects are required. These
+can include addressing cost issues with information technology hardware and systems,
+optimizing resource allocation and task processes for immediate acquisition and information
+updating, improving collaboration among related engineers, and increasing user satisfaction
+and engagement [30]. In other words, it is necessary to make efforts in how to promote the
+performance of construction projects by utilizing the advantages of technology rather than
+the problem of applying any smart technology to the construction sites.
+The results of the literature review showed that the research focus is still on which
+technology to apply (i.e., propose more efﬁcient methods or show the effectiveness of
+case applications). By contrast, there is a lack of comprehensive surveys on issues that
+determine the performance of applications in the ﬁeld. Accordingly, research is required to
+recognize factors that can promote the performance of smart technology-based projects.
+Therefore, this study is designed to identify factors and their mutual inﬂuences from
+various perspectives by performing construction engineering and management work at
+construction sites using smart technology. This can provide information on critical and
+vulnerable areas where project performance can be improved and contribute to a more
+effective organizational environment.
+3.2. Performance Inﬂuencing Factors in Smart Technology-Based Projects
+We conducted a literature review on success factors when introducing speciﬁc technolo-
+gies such as RFID and BIM and evaluated the IT performance of construction companies.
+Based on BSC, Song et al. [31] determined 12 factors for measuring BIM project satisfaction
+from ﬁve perspectives: ﬁnancial, customer, internal process, learning and growth, and
+informatization. From a regression analysis, it was found that a signiﬁcant effect on im-
+proved satisfaction came from (1) proﬁtability (the magnitude of ﬁnancial effect compared
+with that of investment) and (2) organizational competency (professional manpower and
+collaboration). Shin et al. [32] developed an IT BSC-based evaluation system for BIM
+performance measurement and derived 13 critical success factors from four perspectives.
+As a result of a causal relationship analysis between the perspective and key success factors,
+it was found that the operational efﬁciency perspective and the BIM-based work process
+factor within that perspective had the greatest inﬂuence. Seo [33] analyzed the success
+factors of RFID system-built companies and their impact on performance and found that
+organizational factors such as CEO support, the cooperation system, member participation
+and understanding had a signiﬁcant impact on performance as did technical factors such
+as system construction and compatibility. Cha and Yu [34] presented indicators for mea-
+suring corporate performance according to construction informatization and highlighted
+proﬁtability, organizational capacity, and market share as major criteria. Li and Wang [35]
+derived 20 measures for evaluating IT beneﬁts in construction companies and found infor-
+mation system capabilities, customer satisfaction, employee capabilities, and productivity
+to be relatively important.
+The BSC technique, which was ﬁrst presented in 1992 by Kaplan and Norton [36]
+and widely used as a conceptual model for performance measurement, was used in most
+previous studies. BSC evaluates a company’s performance from a ﬁnancial perspective
+representing execution results, customer satisfaction, internal business procedure, learning
+and growth. It follows the logic that the innovation and growth of employees and organi-
+zations lead to improved processes that increase customer satisfaction and consequently
+improves ﬁnancial performance [37]. Thus, the four perspectives have a causal relationship,
+and performance can be evaluated while maintaining a balance.
+Based on the literature review and the BSC concept, this study consists of four perspec-
+tives: (1) a business contribution representing the overall project contribution against the
+investment and use of smart technology, (2) a user orientation that evaluates the satisfaction
+of clients and companies, (3) an operational excellence that evaluates the efﬁciency of smart
+technology in the ﬁeld, and (4) a growth and innovation that evaluates the level of an
+
+PDF 6
+Buildings 2023, 13, 1431
+6 of 14
+organization’s capacity and preparation. In addition, 13 factors corresponding to the four
+perspectives were derived, and then 10 factors were ﬁnally derived by integrating and
+adding some factors through expert interviews (Table 3).
+Table 3. Factors inﬂuencing the project performance using smart technology by perspective.
+Perspectives
+Factors
+Deﬁnitions
+(A) Business contribution
+(A1) Proﬁtability
+Cost effectiveness on investment
+(A2) Productivity
+Schedule compliance and duration reduction
+(A3) Management performance
+Improvement in targeted management performance
+(B) User orientation
+(B1) Satisfaction
+Satisfaction of owner and organization members
+(B2) Marketability
+Project contract and marketing effectiveness
+(C) Operational excellence
+(C1) Investment
+Investment and support for related systems
+(C2) Work efﬁciency
+Decision structure and procedure deployment
+(D) Growth and innovation
+(D1) Organizational capability
+Professional manpower retention and cooperation system
+(D2) Technology utilization ability
+Technology understanding and proﬁciency
+(D3) Education
+Adequacy of education and training program
+4. Results
+A questionnaire survey was conducted to identify critical and vulnerable areas for
+using smart technology to enhance project performance. For Parts 1 and 2, 166 question-
+naires from a total of nine companies were analyzed, excluding those judged to be missing
+or unreliable (collective answers). The average experience in the construction industry
+was about 19.2 years, and 50% of the respondents had used smart construction technology.
+Thus, a total of 83 questionnaires were used for the analysis of Parts 3 and 4.
+4.1. Importance of Performance Inﬂuencing Factors
+The consistency of survey responses was measured through Cronbach’s α, and the
+criterion for response reliability was judged to be 0.6 or higher [38]. The results showed
+that business contribution (0.661), operational excellence (0.652) and growth and innova-
+tion (0.797) were higher than baseline, while reliability was low at 0.476 from the user
+orientation perspective. Accordingly, marketability had the lowest importance among
+all factors (see Table 4) and was not grouped because the exploratory factor analysis was
+removed. However, when the item was deleted, the Cronbach’s α value increased to 0.690
+for improved management performance. The difference was not large, and the importance
+of the factor was the largest, so it was judged not desirable to exclude it.
+Table 4. Importance of perspectives and factors.
+Category
+ID
+Mean
+Standard Deviation
+Skewness
+Kurtosis
+Rank
+Perspectives
+A
+4.08
+0.778
+−0.450
+–0.383
+1
+B
+3.86
+0.901
+−0.377
+−0.412
+4
+C
+3.90
+0.912
+−0.571
+−0.173
+2
+D
+3.89
+0.975
+−0.602
+−0.237
+3
+Factors
+A1
+3.85
+0.878
+−0.298
+−0.416
+7
+A2
+3.94
+0.872
+−0.382
+−0.647
+3
+A3
+4.03
+0.774
+−0.290
+−0.654
+1
+B1
+3.99
+0.846
+−0.342
+−0.741
+2
+B2
+3.71
+0.902
+−0.047
+−0.877
+10
+C1
+3.75
+0.899
+0.016
+−0.996
+9
+C2
+3.89
+0.799
+−0.165
+−0.672
+5
+D1
+3.87
+0.891
+−0.204
+−0.908
+6
+D2
+3.92
+0.888
+−0.319
+−0.799
+4
+D3
+3.80
+0.916
+−0.312
+−0.727
+8
+
+PDF 7
+Buildings 2023, 13, 1431
+7 of 14
+Table 4 shows the results of a descriptive statistical analysis according to the im-
+portance of each perspective and factor. Because the absolute values of both skewness
+and kurtosis were less than 1, there was no problem determining the average relation-
+ship among the variables as they did not deviate signiﬁcantly from normal. From this
+perspective, the importance of business contribution (A) was the greatest, followed by
+operational excellence (C). Regarding the factors, management performance (A3) had the
+highest importance, meaning that its targeted improvement from applying smart technol-
+ogy was considered a key factor in project performance. By contrast, the importance of
+user orientation (B) was the lowest, but the satisfaction (B1) factor was the second high-
+est, so the improved satisfaction of the owner and organization members from the smart
+technology had a notable impact on performance. The importance of work efﬁciency (C2)
+and technology use ability (D2) was the highest for operational excellence and growth, and
+innovation, respectively.
+In addition, the average difference among managers with experience in carrying out
+construction projects with smart technology (n = 83) and managers without such experience
+was analyzed using an independent sample Student’s t-test. There was a relatively large
+average difference in factors such as organizational capability and investment, but no
+statistically signiﬁcant difference was found between the groups, so the importance of
+perspectives and factors was considered similar regardless of experience. Consequently, all
+the factors presented in Table 2 showed high importance with an average of 3.5 or more,
+and the factor classiﬁcation by perspective, excluding the marketability (B2) factor, was
+properly conducted. Thus, they are critical factors that affect the performance of smart
+technology-based projects.
+4.2. Analysis of Performance Characteristics and Causal Relationships
+4.2.1. Project Characteristics
+Housing (55.1%) and ofﬁce buildings (29.2%) accounted for the majority of building
+use, and the average construction cost was about USD 211 million (USD 7.5 million to
+1.1 billion). The smart technology was largely classiﬁed into data collection, visualization,
+and data processing and information sharing based on the research by Kim et al. [39].
+The application of detailed technology applied according to each classiﬁcation is shown
+in Figure 2. The application of data collection was the most prevalent, while the use
+of processing and sharing using the collected data was relatively limited. As for the
+detailed technologies, the most actively applied were BIM, drones, intelligent CCTV and
+360 cameras, while big data, augmented/virtual reality, and AI had limited implementation.
+In addition, the management category of smart construction technology use was,
+in order, safety (30.9%), schedule (28.7%), quality (22.7%), cost (9.9%), and material and
+outsourcing management (5.5%). As a result, most of them actively used it in safety and
+schedule management tasks. In addition, each task had a highly speciﬁc relation: schedule
+management with drone and BIM, safety management with CCTV/camera and drone, and
+cost management with BIM.
+As shown in Table 5, the application ratio of smart technology by management
+area was analyzed by dividing the respondent companies into two groups: (1) the top
+100 companies in the local construction capacity ranking (n = 60) and (2) companies ranking
+below the top-100 (n = 23). In this study, the ranking was based on data released by the
+Korean Ministry of Land, Infrastructure and Transport in 2022 by evaluating construction
+capabilities based on performance, management status, technical capabilities and company
+credibility [40]. Except for the intelligent CCTV/360 camera, the technology application
+ratio of the top companies was signiﬁcantly higher than that of the lower-ranked companies;
+in particular, there was a notable difference in the application ratio of 3D laser scanning and
+BIM. In addition, in the top companies, the use of data processing and sharing technologies
+using big data and AI was more prevalent. In management tasks, most of the lower-ranked
+companies were biased toward the use of technology for safety management, while the
+top-ranked companies used it evenly in the areas of schedule, safety, and quality manage-
+
+PDF 8
+Buildings 2023, 13, 1431
+8 of 14
+ment. As a result, lower-ranked companies continued to use data collection technology
+such as CCTV and drones to perform safety management tasks, while the top-ranked
+companies used smart technology—-from data collection to visualization and information
+sharing—-in a wider range of management areas.
+Figure 2. Application ratio of smart technology.
+Table 5. Application ratio of smart technology and management area by group.
+Category
+Application Ratio by Group (%)
+Remark
+(A–B)
+Top-Ranked
+Companies (A)
+Lower-Ranked
+Companies (B)
+Technology
+Intelligent CCTV/360 camera
+58.3
+70.8
+−12.5
+Drone
+76.7
+62.5
+14.2
+3D laser scanning
+48.3
+12.5
+35.8
+IoT/sensing
+26.7
+16.7
+10.0
+BIM
+80.0
+58.3
+21.7
+AR/VR
+20.0
+8.3
+11.7
+Big data
+23.3
+12.5
+10.8
+Mobile/cloud
+41.7
+29.2
+12.5
+AI
+13.3
+4.2
+9.2
+Management
+Schedule
+68.3
+45.8
+22.5
+Safety
+65.0
+70.8
+–5.8
+Quality
+53.3
+37.5
+15.8
+Cost
+26.7
+8.3
+18.3
+Material and outsourcing
+13.3
+8.3
+5.0
+4.2.2. Performance Characteristics
+Table 6 shows the survey items used to investigate satisfaction with the performance
+inﬂuencing factors. Based on the results in Section 4.1, an item related to the marketability
+factor was excluded from the analysis.
+
+PDF 9
+Buildings 2023, 13, 1431
+9 of 14
+Table 6. Survey items for investigating satisfaction with the performance inﬂuencing factors.
+Factors
+Items
+(A1) Proﬁtability
+The use of smart technology in project execution had a ﬁnancial effect
+more than the investment amount.
+(A2) Productivity
+The use of smart technology contributed to project schedule
+compliance and duration reduction.
+(A3) Management
+performance
+It contributed to the improvement of the intended management
+performance through the application of smart technology.
+(B1) Owner
+satisfaction
+The owner was satisﬁed with the results of applying
+smart technology.
+(B2) Satisfaction of
+organization members
+Organization members were satisﬁed with the performance of
+construction management tasks using smart technology.
+(C1) Investment
+Investment in the development and deployment of smart
+technology-related systems needed to carry out the project
+was appropriate.
+(C2) Work efﬁciency
+When performing management tasks using smart technology, the
+decision-making structure was clear, and procedures were properly
+in place.
+(D1) Organizational
+ability
+It appropriately had the professional manpower necessary to perform
+management tasks using smart technology.
+In using smart technology, a cooperative system with the information
+system and related departments was well established.
+(D2) Technology
+use ability
+It had the ability to perform management tasks using smart
+technology on its own.
+(D3) Education
+Education and training for the use of smart technology were properly
+conducted for practitioners.
+As shown in Table 7, the owner satisfaction (B1, 3.65) factor in the user orientation
+perspectives was the highest. Similarly, satisfaction from organization members (B2, 3.61)
+management performance (A3, 3.63) and proﬁtability (A1, 3.42) from a business contri-
+bution perspective were also high, while satisfaction with factors (D1–D3) from a growth
+and innovation perspective was relatively low. In other words, construction managers
+believed that the positive effects of using smart construction technology went beyond
+investment to the improvement of management performance and the satisfaction of owners
+and organization members. On the other hand, results for organizational capabilities and
+education support were relatively insufﬁcient.
+Table 7. Satisfaction by factor on the project using smart technology.
+Factors
+Mean
+Standard Deviation
+Skewness
+Kurtosis
+Rank
+A1
+3.42
+0.960
+−0.344
+−0.333
+4
+A2
+3.12
+1.034
+−0.378
+−0.096
+7
+A3
+3.63
+0.915
+−0.254
+−0.247
+2
+B1
+3.65
+0.938
+0.031
+−0.960
+1
+B2
+3.61
+1.030
+−0.634
+−0.058
+3
+C1
+3.31
+1.029
+−0.183
+−0.289
+5
+C2
+3.13
+1.106
+−0.211
+−0.442
+6
+D1
+2.98
+0.970
+0.153
+−0.0301
+9
+D2
+3.04
+1.113
+−0.125
+−0.514
+8
+D3
+2.87
+0.929
+−0.011
+−0.093
+10
+From the results of Tables 4 and 7, the difference between importance and satisfaction
+for each factor was analyzed to identify deﬁciencies in the construction projects with smart
+technology. As a result of the paired sample Student’s t-test, the average satisfaction
+
+PDF 10
+Buildings 2023, 13, 1431
+10 of 14
+comparison with importance was low for all factors, and there was a statistically signiﬁcant
+difference. In particular, there was a relatively large difference in the factors for growth and
+innovation and operational excellence. Accordingly, the overall organizational system and
+competency level for the effective use of smart technology were found to be insufﬁcient, and
+the achievement of performance such as productivity improvement was also considered
+somewhat poor.
+The average difference in performance was veriﬁed between the top- and lower-
+ranked companies. Table 8 shows the results of an independent sample Student’s t-test on
+the performance from the BSC perspective. As shown in Table 8, there was a statistically
+signiﬁcant difference (p < 0.05) only in the growth and innovation perspective. Accordingly,
+the top-ranked companies were ahead in investment and efforts for growth and innovation.
+In addition, as a result of verifying the average difference in performance by factor, there
+was a statistically signiﬁcant difference (p < 0.05) in organizational capability (D1) and
+technology use ability (D2) in the growth and innovation perspective, indicating that the
+difference between the groups was caused by these factors.
+Table 8. Comparison of performance differences between top- and low-ranked companies.
+Perspectives
+Group 1
+Mean
+Standard Deviation
+t Value
+p
+Business contribution
+A
+3.1667
+0.79855
+−1.536
+0.128
+B
+3.4778
+0.85341
+User orientation
+A
+3.5625
+1.03538
+−0.448
+0.656
+B
+3.6583
+0.82077
+Operational excellence
+A
+2.9792
+1.12751
+−1.454
+0.150
+B
+3.3167
+0.88761
+Growth and innovation
+A
+2.6042
+0.87823
+−2.465
+0.016
+B
+3.1125
+0.84425
+1 A = lower-ranked companies, B = top-ranked companies.
+4.2.3. Causal Relationship
+Based on the satisfaction results of the representative projects, we analyzed the impact
+of other perspectives on business contribution (A) through a linear regression analysis. It
+had a signiﬁcant effect on improving the performance of the business contribution per-
+spective through the use of smart technology in the growth and innovation (D) and user
+orientation (B) perspectives (Table 9). In other words, the proper establishment of orga-
+nizational capabilities and education, rather than the appropriateness of investment and
+the operational procedure, had a somewhat signiﬁcant impact on improved performance.
+Accordingly, efforts should be made to improve the level of factors from the growth and
+innovation perspective, which are currently somewhat insufﬁcient.
+Table 9. Result of regression analysis between perspectives.
+Variables
+Unstandardized
+Coefﬁcients
+Standardized
+Coefﬁcients
+t
+p
+F
+Adjusted R2
+B
+Standard Error
+B
+(B) User orientation
+0.357
+0.093
+0.372
+3.850
+<0.001
+26.262
+(p < 0.001)
+0.496
+(C) Operational excellence
+−0.011
+0.105
+−0.013
+−0.109
+0.913
+(D) Growth and innovation
+0.433
+0.111
+0.451
+3.896
+<0.001
+We also analyzed the relationships between factors based on the conceptual causality
+of BSC. For example, two multiple regression models (1 and 2 in Figure 3) were created
+using three factors within the growth and innovation perspective as independent variables
+and two factors within the operational excellence perspective as dependent variables.
+Accordingly, a total of 15 models were derived, as shown in Figure 3.
+
+PDF 11
+Buildings 2023, 13, 1431
+11 of 14
+Figure 3. Regression models based on conceptual causality of BSC.
+Figure 4 shows the causality model between factors from a regression analysis, where
+causality was based on statistically signiﬁcant variables in each model. The explanatory
+power of each was somewhat low (6.9–50.4%), but all regression models were statistically
+signiﬁcant (p < 0.05). However, no variables had a signiﬁcant effect in the models 8, 10,
+and 13. First, from the perspective of growth and innovation, organizational capability
+(D1) acted as a major factor that affected both factors (i.e., investment (C1) and work
+efﬁciency (C2)) from an operational excellence perspective. That is, the better the pro-
+fessional manpower and cooperation system, the more appropriate the work procedure
+and investments. Appropriate education (D3) also affected efﬁcient work performance
+(C2). Factors C1 and C2 from the operational excellence perspective were relatively closely
+related to the improvement of member satisfaction (B2). In addition, the higher the member
+satisfaction (B2), the better the overall business contribution (i.e., proﬁtability (A1), pro-
+ductivity (A2), and management performance (A3)). Concerning the impact of business
+contribution, productivity (A2) was mainly affected by organizational capability (D1),
+investment (C1), and member satisfaction (B2), while the factors of technology use (D2),
+investment (C1), and satisfaction (B1 and B2) had a major impact on management perfor-
+mance (A3). Consequently, establishing appropriate professionals, cooperative systems,
+and education promotes systematic business procedures and system investment, increasing
+the productivity and performance of the management work.
+
+PDF 12
+Buildings 2023, 13, 1431
+12 of 14
+Figure 4. Causality model between factors by regression analysis.
+5. Discussion and Conclusions
+In recent construction projects, efforts have been made to solve productivity stagnation,
+safety, and quality problems caused by a lack of skilled workers through the use of smart
+technologies. However, their application requires organizational changes in various aspects,
+which greatly inﬂuences how well they are used. Thus, this study investigated major
+factors that affect the performance of construction projects with smart technology and their
+causal relationships.
+Based on the BSC methodology, 10 factors were derived from four perspectives. Except
+for one, the remaining factors were not only properly classiﬁed by perspective but also
+identiﬁed as major factors affecting performance. Next, the performance status and causal
+relationships among factors were presented based on the survey of the actual projects.
+Compared with lower-ranked companies, the top-ranked showed a relatively high ap-
+plication rate of smart technology over a wider range of management areas. This result
+supported the KPMG survey [2] and showed that using smart technology had an important
+impact on competitiveness. From a comparison of the results of importance and satis-
+faction with performance inﬂuencing factors, the level of preparation for the effective
+use of smart technology in Korea was found to be insufﬁcient. This supports the current
+focus on which technology to apply. As a result of the performance impacts and causal
+relationships, proper organizational capabilities and educational support for the use of
+smart technology in the ﬁeld play a key role in improving performance. Song et al. [31]
+found that organizational capabilities signiﬁcantly improved BIM project satisfaction, and
+Yu et al. [41] conﬁrmed that a learning and growth perspective centered on the investment in
+technical personnel was central to the performance management of construction companies.
+Thus, this result agreed to some extent with the ﬁndings of previous studies and showed
+that investment in those areas can provide a critical competitive advantage. In addition,
+similar to the results presented by Yu et al. [41], the top-ranked companies were found to
+be ahead in investing in these factors for growth and innovation compared with the lower-
+ranked companies. Therefore, more active efforts to improve the capabilities including
+securing professional manpower, establishing a cooperative system, and improving educa-
+tional support will contribute to improving the overall project performance and securing
+corporate competitiveness.
+The results of this study will be used to establish a basis for an organizational system
+for the efﬁcient use of smart technology and performance evaluation. However, the
+
+PDF 13
+Buildings 2023, 13, 1431
+13 of 14
+performance characteristics and causal model presented in this study have limitations
+in that they were based on the practitioner’s qualitative evaluation of just one country.
+Thus, although the proposed performance inﬂuencing factors can be applied regardless
+of country, additional comparative studies on performance characteristics need to be
+conducted to provide data to understand the difference in the national levels of preparation
+for the effective use of smart technology. Performance indicators must also be developed
+that can be quantitatively measured for each factor. In addition, continued research is
+needed on the development of a performance evaluation system through weighting to
+reﬂect the impact of each factor on performance.
+Author Contributions: Conceptualization, T.K. and K.C.; Methodology, M.L.; Formal analysis, H.L.;
+Investigation, K.C.; Data curation, M.C.; Writing—original draft, T.K.; Writing—review & editing,
+H.L.; Supervision, H.L.; Project administration, K.C. All authors have read and agreed to the published
+version of the manuscript.
+Funding: This work is supported by the National Research Foundation of Korea (NRF) grant funded
+by the Korean government (MSIT) (No. 2021R1F1A1060087) and Chosun University, 2019.
+Data Availability Statement: The data used in the study is available with the authors and can be
+shared upon reasonable request.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1.
+Ministry of Land, Infrastructure and Transport. Smart Construction Technology Roadmap to Innovate Construction Produc-
+tivity and Enhance Safety. Available online: http://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95081506 (accessed on
+10 December 2022).
+2.
+Digitizing European Initiative Working Group 2. Strengthening Leadership in Digital Technologies and in Digital Industrial
+Platforms across Value Chains in All Sectors of the Economy—The Role of the Construction Chain. Available online: https:
+//ec.europa.eu/futurium/en/system/ﬁles/ged/fercostruzioni_wg2_04052017-1.pdf (accessed on 13 January 2023).
+3.
+Future-Ready Index.
+Leaders and Followers in the Engineering & Construction Industry—Global Construction Survey.
+Available online: https://assets.kpmg/content/dam/kpmg/xx/pdf/2019/04/global-construction-survey-2019.pdf (accessed on
+13 January 2023).
+4.
+Nasir, H.; Haas, C.T.; Young, D.A.; Razavi, S.N.; Caldas, C.; Goodrum, P. An implementation model for automated construction
+materials tracking and locating. Can. J. Civ. Eng. 2010, 37, 588–599.
+5.
+Park, M.; Kim, E.; Lee, H.; Lee, K.; Suh, S.W. Real time safety management framework at construction site based on smart mobile.
+Korean J. Constr. Eng. Manag. 2013, 14, 3–14. [CrossRef]
+6.
+Kim, M.K.; Cheng, J.C.P.; Sohn, H.; Chang, C.C. A framework for dimensional and surface quality assessment of precast concrete
+elements using BIM and 3D laser scanning. Autom. Constr. 2015, 49, 225–238.
+7.
+Lim, H.; Lee, J.W.; Kim, T.; Cho, K.; Cho, H. Economic analysis of USN-based data acquisition systems in tall building construction.
+Sustainability 2017, 9, 1360. [CrossRef]
+8.
+Kim, T.; Yoon, Y.; Lee, B.; Ham, N.; Kim, J.-J. Cost–beneﬁt analysis of scan-vs-BIM-based quality management. Buildings
+2022, 12, 2052. [CrossRef]
+9.
+Abrishami, S.; Goulding, J.; Rahimian, F. Generative BIM workspace for AEC conceptual design automation: Prototype
+development. Eng. Constr. Archit. Manag. 2021, 28, 482–509. [CrossRef]
+10.
+Abrishami, S.; Goulding, J.; Rahimian, F.P.; Ganah, A. Integration of BIM and generative design to exploit AEC conceptual design
+innovation. J. Inf. Technol. Constr. 2014, 19, 350–359.
+11.
+Lee, J.; Cho, W.; Kim, S.; Sohn, D.; Lee, J. Conceptual design algorithm conﬁguration using generative design techniques. J. Korea
+Inst. Ecol. 2023, 23, 5–12.
+12.
+Ghannad, P.; Lee, Y.-C. Automated modular housing design using a module conﬁguration algorithm and a coupled generative
+adversarial network (CoGAN). Autom. Constr. 2022, 139, 104234. [CrossRef]
+13.
+Zhang, J.; El-Gohary, N.M. Integrating semantic NLP and logic reasoning into a uniﬁed system for fully-automated code checking.
+Autom. Constr. 2017, 73, 45–57.
+14.
+Guo, D.; Onstein, E.; Rosa, A.D.L. A semantic approach for automated rule compliance checking in construction industry.
+IEEE Access 2021, 9, 129648–129660. [CrossRef]
+15.
+Siebert, S.; Teizer, J. Mobile 3D mapping for surveying earthwork projects using an unmanned aerial vehicle (UAV) system.
+Autom. Constr. 2014, 41, 1–14. [CrossRef]
+16.
+Shin, S.H. A Study on Development of Slope Inspection Method Using Drone. Master’s Thesis, Hanyang University, Seoul,
+Republic of Korea, 2019.
+
+PDF 14
+Buildings 2023, 13, 1431
+14 of 14
+17.
+Teizer, J.; Allread, B.S.; Fullerton, C.E.; Hinze, J. Autonomous pro-active real-time construction worker and equipment operator
+proximity safety alert system. Autom. Constr. 2010, 19, 630–640.
+18.
+Lim, H.; Kim, T.; Teizer, J. Smartphone-based data collection system for repetitive concrete temperature monitoring in high-rise
+building construction. Sustainability 2019, 11, 5211. [CrossRef]
+19.
+Asadi, K.; Ramshankar, H.; Pullagurla, H.; Bhandare, A.; Shanbhag, S.; Mehta, P.; Kundu, S.; Han, K.; Lobaton, E.; Wu, T.
+Vision-based integrated mobile robotic system for real-time applications in construction. Autom. Constr. 2018, 96, 470–482.
+[CrossRef]
+20.
+Dörﬂer, K.; Sandy, T.; Giftthaler, M.; Gramazio, F.; Kohler, M.; Buchli, J. Mobile robotic brickwork. In Robotic Fabrication in
+Architecture, Art and Design 2016; Springer International Publishing: Cham, Switzerland, 2016; pp. 204–217. [CrossRef]
+21.
+Feng, C.; Xiao, Y.; Willette, A.; McGee, W.; Kamat, V.R. Vision guided autonomous robotic assembly and as-built scanning on
+unstructured construction sites. Autom. Constr. 2015, 59, 128–138. [CrossRef]
+22.
+Paola, D.D.; Milella, A.; Cicirelli, G.; Distante, A. An autonomous mobile robotic system for surveillance of indoor environments.
+Int. J. Adv. Robot. Syst. 2010, 7, 8. [CrossRef]
+23.
+Lin, J.J.; Han, K.K.; Golparvar-Fard, M. A framework for model-driven acquisition and analytics of visual data using UAVs for
+automated construction progress monitoring. J. Comput. Civ. Eng. 2015, 2015, 156–164. [CrossRef]
+24.
+Victores, J.; Martínez, S.; Jardón, A.; Balaguer, C. Robot-aided tunnel inspection and maintenance system by vision and proximity
+sensor integration. Autom. Constr. 2011, 20, 629–636. [CrossRef]
+25.
+Liu, R.-H.; Kuo, C.-F.; Yang, C.-T.; Chen, S.-T.; Liu, J.-C. On construction of an energy monitoring service using big data
+technology for smart campus. In Proceedings of the 2016 7th International Conference on Cloud Computing and Big Data (CCBD),
+Macau, China, 16–18 November 2016; pp. 81–86.
+26.
+Yan, K.; Zhou, X.; Yang, B. Editorial: AI and IoT applications of smart buildings and smart environment design, construction and
+maintenance. Build. Environ. 2023, 229, 109968. [CrossRef]
+27.
+Lu, Q.; Xie, X.; Parlikad, A.K.; Schooling, J.M.; Konstantinou, E. Moving from building information models to digital twins for
+operation and maintenance. Proc. Inst. Civ. Eng. Smart Infrastruct. Constr. 2020, 174, 46–56.
+28.
+Bouabdallaoui, Y.; Lafhaj, Z.; Yim, P.; Ducoulombier, L.; Bennadji, B. Predictive maintenance in building facilities: A machine
+learning-based approach. Sensors 2021, 21, 1044. [CrossRef]
+29.
+Razali, M.N.; Jamaluddin, A.F.; Abdul Jalil, R.; Nguyen, T.K. Big data analytics for predictive maintenance in maintenance
+management. Prop. Manag. 2020, 38, 513–529.
+30.
+Liu, H.; Song, J.; Wang, G. A scientometric review of smart construction site in construction engineering and management:
+Analysis and visualization. Sustainability 2021, 13, 8860. [CrossRef]
+31.
+Song, M.; Yoon, S.W.; Chin, S. BSC based measurement of satisfaction degree for based BIM construction projects. Korean J. Constr.
+Eng. Manag. 2011, 12, 117–129.
+32.
+Shin, J.H.; Choi, J.S.; Kim, I.H. Development of IT BSC-based assessment system to measure BIM performance for architectural
+design ﬁrms. J. Archit. Inst. Korea 2016, 32, 3–12. [CrossRef]
+33.
+Seo, Y.H. A Research on Success Factors of RFID System-Built Company and Introduction Performance. Master’s Thesis,
+Chung-Ang University, Seoul, Republic of Korea, 2016.
+34.
+Cha, H.S.; Yu, I.H. Informatization and business performance measurement system in the construction industry. Rev. Archit. Build.
+Sci. 2006, 50, 22–24.
+35.
+Li, Y.; Wang, S.Q. A framework for evaluating IT beneﬁts in construction companies. In Proceedings of the CIB W78′s 20th
+International Conference on Construction IT, Construction IT Bridging the Distance, Waiheke Island, New Zealand, 23–25 April
+2003; pp. 193–204. Available online: http://itc.scix.net/paper/w78-2003-193 (accessed on 5 April 2023).
+36.
+Kaplan, R.S.; Norton, D.P. The balanced scorecard: Measures that drive performance. Harvard Bus. Rev. 1992, 70, 71–79.
+37.
+Kaplan, R.S.; Norton, D.P. Strategy MAPS: Convert Intangible Assets into Tangible Outcomes; Harvard Business School Press:
+Boston, MA, USA, 2004.
+38.
+Nunnally, J.C. Psychometric Theory, 2nd ed.; McGraw-Hill: New York, NY, USA, 1978.
+39.
+Kim, C.W.; Yoo, W.S.; Lim, H. Priority analysis for applying digital technology to improve the efﬁciency of building supervision
+work. J. Korea Inst. Build. Constr. 2023, 23, 93–102. [CrossRef]
+40.
+Ministry of Land, Infrastructure and Transport. Announcement of Construction Capacity Evaluation of Construction Companies
+in 2022. Available online: http://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95087021 (accessed on 20 January 2023).
+41.
+Yu, I.H.; Kim, K.R.; Jung, Y.; Chin, S. Analysis of quantiﬁed characteristics of the performance indicators for construction
+companies. Korean J. Constr. Eng. Manag. 2006, 7, 154–163.
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

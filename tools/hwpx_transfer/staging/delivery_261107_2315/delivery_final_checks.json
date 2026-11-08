@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "physical_pages": 120,
+  "toc_entries": 117,
+  "blank_pages": [],
+  "references": 53,
+  "reference_pdf_missing": [],
+  "body_pagination_after_toc": "unchanged",
+  "table_footer_overlap": [],
+  "visual_reviews": [
+    "visual_front.json",
+    "visual_back.json"
+  ],
+  "main_visual_fixes": [
+    "3-6 widths and English labels",
+    "3-7 widths",
+    "4-13 B width",
+    "section8 isolated transition",
+    "reference keepLines/left alignment/word breaks"
+  ],
+  "all_existing_text_preserved": true
+}

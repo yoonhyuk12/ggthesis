@@ -13,6 +13,8 @@
 | 3-2 | LLM 2차 검증 입출력 구조와 판정 흐름 | [PNG](system/fig_3_2_llm_verification.png) | [SVG](system/fig_3_2_llm_verification.svg) |
 | 3-3 | RAG 기반 Few-shot 교정 절차 | [PNG](system/fig_3_3_rag_correction.png) | [SVG](system/fig_3_3_rag_correction.svg) |
 | 3-4 | 시스템 운영 화면(AI CCTV Viewer) | [실제 화면 PNG](evidence/assets/fig_3_4_viewer_original.png) | 해당 없음 |
+| 3-5 | 도입 현장의 시스템 특성 인식(C)·경보 피로도 완화 인식(D) 평균(2026-11-05, 옛 표 3-11 대체, 생성: `system/generate_fig_table3_11_chart.py`) | [PNG](system/fig_3_11_chart_v6.png) | [SVG](system/fig_3_11_chart_v6.svg) |
+| 3-6 | 현장 운영 특성(A-7∼A-9)의 응답 비율(2026-11-05, 옛 표 3-11 대체, 나비형, 생성: `system/generate_fig_3_6_field_operation.py`) | [PNG](system/fig_3_6_field_operation_butterfly.png) | [SVG](system/fig_3_6_field_operation_butterfly.svg) |
 | 4-1 | 연구 모형 | [PNG](research/figure_4-1_research_model.png) | [SVG](research/figure_4-1_research_model.svg) |
 
 한글에는 PNG를 가로 150 mm, 원본 비율 유지, 글자처럼 취급으로 삽입한다. 그림 번호와 캡션은 이미지 아래에 둔다. 도식 PNG는 300 dpi이며 SVG에는 편집 가능한 한글 텍스트가 들어 있다. SVG 편집 시 맑은 고딕 글꼴을 사용한다.
